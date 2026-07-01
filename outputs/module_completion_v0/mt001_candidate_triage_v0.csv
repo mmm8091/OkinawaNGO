@@ -1,0 +1,53 @@
+participant_no,candidate_name,origin_guess,actor_class_guess,tier,proposed_decision,review_priority,rationale
+1,Diving Team Rainbow,okinawa_local,environmental_ngo_or_group,A,add_as_signatory_candidate,P2,冲绳本地潜水/海洋环境组，直接相关儒艮/大浦湾海域，能加深 R2/R11。
+3,Dugong no Sato,okinawa_local,environmental_ngo_or_group,A,add_as_signatory_candidate,P2,儒艮主题本地组，直接进入儒艮/生物多样性网络。
+7,Okinawa Reefcheck and Research Group,okinawa_local,environmental_ngo_or_group,A,add_as_signatory_candidate,P2,冲绳珊瑚礁调查组，环境证据链相关。
+8,Okumagawa Basin Protection Foundation,okinawa_local,environmental_ngo_or_group,A,add_as_signatory_candidate,P2,奥间川流域（山原/国头）保护，环境/生物多样性相关；tentative 日文名待核。
+9,Protect Northernmost Dugong Team Zan,okinawa_local,environmental_ngo_or_group,A,add_as_signatory_candidate,P2,ザン=儒艮，本地儒艮保护小队，直接相关。
+14,East Asian Community Institute Ryukyu Okinawa Center,okinawa_local,peace_human_rights_or_other,A,add_as_signatory_candidate,P2,疑为东亚共同体研究所琉球·冲绳中心，本地智库/倡议节点；tentative 别名待核。
+15,Henoko Blue,okinawa_local,peace_human_rights_or_other,A,add_as_signatory_candidate,P2,疑为辺野古ブルー，边野古海上现场抗议组，on-site 核心；tentative 别名待核。
+17,Nago Democracy,okinawa_local,peace_human_rights_or_other,A,add_as_signatory_candidate,P2,名护本地民主/反基地civic组，Henoko-Nago 场域相关。
+19,No Heliport Base Association of 10 Districts North of Futamai,okinawa_local,peace_human_rights_or_other,A,add_as_signatory_candidate,P2,二见以北十区住民组，边野古邻近住民actor，价值高。
+13,"Association of Nightingales, Medical Professionals, and Students for the Protection of Life",okinawa_local,peace_human_rights_or_other,B,defer,P3,本地医护/生命安全主题，身份与持续性不明，待识别后再定。
+20,Nuchi du Takara o keisyosurukai,okinawa_local,peace_human_rights_or_other,B,defer,P3,ぬちどぅ宝继承主题，civic 但可能松散/纪念性，待识别。
+22,Okinawa Nobel Peace Prize Action Committee,okinawa_local,peace_human_rights_or_other,B,defer,P3,倡议委员会，事件性可能强，待识别是否持续组织。
+24,Project Disagree,okinawa_local,peace_human_rights_or_other,B,defer,P3,身份不明的小型项目/团体，待识别。
+26,Wabiai no Sato Foundation,okinawa_local,peace_human_rights_or_other,B,defer,P3,和爱の里，疑为福祉/照护设施，功能存疑，待识别。
+28,"Association for Conservation of Amami Forests, Rivers, and Coastal Ecosystems",japan_domestic,environmental_ngo_or_group,B,defer,P3,奄美环境团体，环境声援层，非冲绳本地，价值中等待评。
+29,Association for Conservation of Marine Communities,japan_domestic,environmental_ngo_or_group,B,defer,P3,本土海洋环境团体，声援层，暂缓。
+30,Environmental Network AMAMI (ENA),japan_domestic,environmental_ngo_or_group,B,defer,P3,奄美环境网络，声援层，暂缓。
+31,Iruka & Kujira (Dolphin & Whale) Action Network,japan_domestic,environmental_ngo_or_group,B,defer,P3,海豚鲸行动网络，环境声援，暂缓。
+35,Pan-Seto Inland Sea Congress,japan_domestic,environmental_ngo_or_group,B,defer,P3,濑户内海会议，本土环境声援，暂缓。
+36,Protect Henoko and Takae! NGO Network,japan_domestic,environmental_ngo_or_group,B,defer,P3,本土守护边野古/高江NGO网络，Henoko 相关度较高，可优先在B层复评。
+38,The Nature and Culture Conservation Group of Amami (NCA),japan_domestic,environmental_ngo_or_group,B,defer,P3,奄美自然文化保护组，声援层，暂缓。
+16,Minshuku Yaponesia,okinawa_local,peace_human_rights_or_other,C,signatory_only_no_add,P3,民宿/场所类署名者，非civic运动actor，仅留共同行动表。
+39,Ainokai Aitou,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,本土一次性声援署名，非冲绳网络actor。
+40,Airin Community Center,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,本土社区中心声援署名，仅留共同行动表。
+41,AKAY JAPAN,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,本土声援署名，身份不明，仅留共同行动表。
+42,AKCDF-MAPALAD KA (The Philippines),international,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,菲律宾团体一次性国际声援，非核心网络。
+43,All Japan Dockworkers' Union (JDU) Kansai Regional Osaka Branch,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,本土工会分部声援署名，仅留共同行动表。
+45,Budounokihoikuen,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,ぶどうの木保育园，福祉/保育设施声援，非civicactor。
+46,East Asian Community Institute,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,东亚共同体研究所本部（东京），与#14冲绳中心区分；本部作声援层，暂不入。
+47,Family Home Suzuran,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,照护设施声援署名，非civicactor。
+48,Family Home Sansouen,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,照护设施声援署名，非civicactor。
+49,Family Home Yamayuri,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,照护设施声援署名，非civicactor。
+51,Henoko ni kichi wo Zettai Tsukurasenai Osaka Kodo,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,大阪反边野古行动，本土声援行动组；如后续建本土声援层可升B。
+52,Henoko no Umi ni Kichi wo Tsukurasenai Kobe Kodo,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,神户反边野古行动，本土声援行动组；同上可升B。
+53,Kyoto Shimin Center,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,京都市民中心声援署名，仅留共同行动表。
+54,Myougasan Tennpoji,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,寺院/宗教设施声援署名，非civicactor。
+55,Nonoyurihoikuen,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,野々ゆり保育园，福祉/保育设施声援。
+56,NPO Active Center Uda,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,本土NPO声援署名，仅留共同行动表。
+57,NPO Myogamura,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,茗荷村相关福祉网络声援，非civicactor。
+58,NPO Sansouen Kazoku,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,山荘园家族相关福祉设施声援。
+59,NPO Warabemura,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,わらべ村相关福祉设施声援。
+60,Ohagi Myogamura,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,茗荷村相关设施声援，与#57同一福祉网络。
+61,Ohisama Firm Ryudo Shizen Noen,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,自然农园/农场声援署名，非civicactor。
+62,Peaceforum-Yamaguchi,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,山口和平论坛声援署名，本土地方组。
+63,Social Democratic Party Miyazaki,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,社民党宫崎，政党地方组织声援，非civicactor。
+64,Social Welfare Organization SHUKO-GAKUEN,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,福祉法人声援署名，非civicactor。
+65,Stop! Henoko Reclamation Campaign,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,本土反边野古填海行动，声援行动组；如建本土声援层可升B。
+66,STOP! Henoko Shinkichikensetsu Osaka Action,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,大阪反边野古新基地行动，本土声援行动组；同上可升B。
+67,Straight Inc.,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,企业署名者，功能存疑，仅留共同行动表。
+69,Yokaichi Megumi Nursery School,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,八日市めぐみ保育园，福祉/保育设施声援。
+70,Yuntaku Takae,japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,ゆんたく高江相关声援，若确认为冲绳高江本地组可复评升A。
+71,"ZENKO, National Assembly for Peace and Democracy",japan_domestic,peace_human_rights_labor_or_other,C,signatory_only_no_add,P3,全国和平民主大会，全国性运动网络；作背景声援节点，如R5需可升B。

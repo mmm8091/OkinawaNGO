@@ -22,7 +22,7 @@ R5 已达到 `full_event_list_v0`：已有 3 个共同行动事件样本、parti
 
 - EV2010_WWF_67：当前 registry 已录入 5 个 participant；下一步：verify participant roles and aliases。
 - EV2015_NACSJ_31：当前 registry 已录入 28 个 participant；下一步：verify participant roles and aliases。
-- EV2020_OEJP_MMC_71：当前 registry 已录入 2 个 participant；下一步：review 71-participant candidate table。
+- EV2020_OEJP_MMC_71：当前 registry 已录入 11 个 participant；下一步：review 71-participant candidate table。
 
 ## 还需要继续做
 
