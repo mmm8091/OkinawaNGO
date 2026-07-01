@@ -1,0 +1,20 @@
+{
+  "source_id": "S070",
+  "source_type": "party_news",
+  "title": "赤旗 与那国 住民投票へ 条例案可決",
+  "year": "2014",
+  "url": "https://www.jcp.or.jp/akahata/aik14/2014-11-18/2014111815_03_1.html",
+  "what_it_supports": "Yonaguni referendum ordinance context",
+  "evidence_level": "E2",
+  "bias_note": "Party-media source; use only as lead unless cross-checked",
+  "review_status": "human_verified",
+  "notes": "HR-003 source supplied by human reviewer; contextual support for referendum process.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S070\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:58:37.2689065Z",
+  "note": "Added during HR-003; raw archive pending."
+}

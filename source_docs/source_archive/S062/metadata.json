@@ -1,0 +1,20 @@
+{
+  "source_id": "S062",
+  "source_type": "legal_international",
+  "title": "Earthjustice Okinawa Dugong case page",
+  "year": "2026",
+  "url": "https://earthjustice.org/case/okinawa-dugong-proposed-airbase",
+  "what_it_supports": "Okinawa Dugong case background and litigation route",
+  "evidence_level": "E4",
+  "bias_note": "Advocacy legal case page; verify case docket if central",
+  "review_status": "human_verified",
+  "notes": "HR-001 source supplied by human reviewer; do not treat as A002 plaintiff evidence.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S062\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
+  "note": "Added during HR-001; raw archive pending."
+}

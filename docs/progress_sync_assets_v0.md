@@ -15,11 +15,11 @@
 - 已将一期主问题收束为：冲绳民间组织 / NGO 如何把基地问题转译为环保、生活安全、地方自治、人权、法律程序和国际倡议等议题。
 - 已明确一期不做复归以来全量 NGO 网络，而是先做可复核的分类底库与重点议题网络原型。
 - 已将 actor universe 扩展到外来 NGO、军属服务组织、公共外交项目、资助 / 委托机构。
-- 已建立 61 条 actor 初版样本。
-- 已建立 26 条 source log 初版。
-- 已建立 110 条 actor-issue 候选边。
-- 已建立 78 条 actor-place 候选边。
-- 已建立 12 条 support/funding sample edge。
+- 已建立 93 条 actor 初版样本。
+- 已建立 92 条 source log 初版。
+- 已建立 180 条 actor-issue 候选边。
+- 已建立 124 条 actor-place 候选边。
+- 已建立 27 条 support/funding sample edge。
 - 已建立人工复核、当地材料收集和人类决策三个任务书。
 
 ## 3. 可截图图表
@@ -72,7 +72,7 @@
 
 数据扩充后新增图表输出目录：`outputs/progress_sync_v1/`
 
-新增图表：
+新增图表（生成于 HR-001 回填前，图中 n 仍对应当时数据快照）：
 
 - `fig_actor_origin_counts.png`：actor 来源分布（n=90）。
 - `fig_actor_class_counts.png`：actor 类型分布（n=90）。
@@ -81,7 +81,7 @@
 - `fig_place_edge_counts.png`：地点 edge 排名（n=122）。
 - `fig_review_status_counts.png`：复核状态分布。
 - `fig_review_priority_counts.png`：人工复核优先级分布。
-- `fig_source_type_counts.png`：来源类型分布（n=48）。
-- `fig_support_relation_types.png`：支持/资助关系类型分布（n=20）。
+- `fig_source_type_counts.png`：来源类型分布（n=56）。
+- `fig_support_relation_types.png`：支持/资助关系类型分布（n=22）。
 
 正式进度沟通稿：`docs/progress_report_v1.md`

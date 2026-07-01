@@ -1,0 +1,20 @@
+{
+  "source_id": "S065",
+  "source_type": "organization_site",
+  "title": "NGO非戦ネット 公式サイト",
+  "year": "2026",
+  "url": "http://ngo-nowar.org/",
+  "what_it_supports": "A008 organization purpose/history as no-war international-cooperation NGO network",
+  "evidence_level": "E4",
+  "bias_note": "Primary organization site; SSL/certificate issue noted by reviewer",
+  "review_status": "human_verified",
+  "notes": "HR-002 source supplied by human reviewer; verify via Web Archive if needed.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S065\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:45:51.7377801Z",
+  "note": "Added during HR-002; raw archive pending."
+}

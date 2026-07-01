@@ -6,7 +6,7 @@
 
 【截图 1：新版方案中“研究对象与边界 / 外来 NGO、军属服务组织与资助关系资料”部分】
 
-数据方面，已经建立初版 actor registry、source log、issue taxonomy、place registry，以及组织-议题、组织-地点和 support/funding sample 三类关系表。当前样本包括 61 条 actor、26 条 source、110 条 actor-issue 候选关系、78 条 actor-place 候选关系和 12 条 support/funding sample edge。现阶段这些关系主要用于搭建研究结构和后续人工复核，并不直接作为最终结论。
+数据方面，已经建立初版 actor registry、actor alias、source log、issue taxonomy、place registry，以及组织-议题、组织-地点和 support/funding sample 三类关系表。截至 2026-07-01，当前样本包括 93 条 actor、14 条 alias、92 条 source、180 条 actor-issue 候选关系、124 条 actor-place 候选关系和 27 条 support/funding sample edge。现阶段这些关系主要用于搭建研究结构和后续人工复核，并不直接作为最终结论。
 
 【截图 2：actor_registry_initial_v0.csv 表格局部】
 

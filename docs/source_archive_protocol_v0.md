@@ -13,14 +13,15 @@
 - 需要馆内数据库、付费数据库或纸质资料的来源：可保存截图、PDF 或照片，但对外引用时只写出处、日期、标题、页码和访问条件。
 - 涉及版权或访问限制的全文材料：只进入内部备份，不直接对外公开传播。
 
-## 3. 第一轮状态
+## 3. 当前状态
 
 执行时间：2026-07-01
 
 结果：
 
 - `archived`：28 条。
-- `failed`：1 条，S007 APJJF 页面被 Cloudflare 阻挡，需用浏览器截图、网页打印或其他人工方式归档。
+- `manual_archived`：1 条，S007 APJJF 已用手工方式归档。
+- `pending_archive`：36 条，新增来源 S057-S092 等待脚本或人工归档。
 - `skipped_inferred_url`：25 条，等待核实真实 URL。
 - `skipped_non_url_reference`：2 条，书籍参考需人工做书目信息或扫描页归档。
 
@@ -46,6 +47,8 @@
 ## 5. 状态字段
 
 - `archived`：已成功保存原始文件。
+- `manual_archived`：已通过手工下载、截图、网页打印或其他方式保存。
+- `pending_archive`：已有真实 URL，但尚未归档。
 - `skipped_inferred_url`：URL 仍是占位符，等待核实。
 - `skipped_non_url_reference`：书籍或非 URL 参考，等待人工书目归档。
 - `failed`：下载失败，需要人工重试或改用截图、网页打印、Internet Archive。

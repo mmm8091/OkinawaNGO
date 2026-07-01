@@ -19,7 +19,7 @@
 5. 与那国采用前线化、地方自治、住民投票、台湾周边安全环境、健康/生活安全框架，不强行写成环保拒止案例。
 6. E4/E3 可以进入事实表述；E2 只能作为线索；E1/E0 不进结论。
 
-请对我给出的对象执行以下复核：
+请辅助人类复核者对给出的对象执行以下复核。AI 负责整理任务要求、列出材料、提示风险点和记录人类判断；最终 evidence_level_final、review_status 和 publishable_claim 由人类复核者确认。
 
 对象：
 
@@ -53,13 +53,17 @@
 
 `对象 - 结论 - evidence_level_final - review_status - 下一步`
 
-## 建议先复核的 P1 对象
+## 当前 P1 对象（以 actor 表为准；HR-001 至 HR-009 已完成首轮人工复核）
 
-1. A002 Save the Dugong Campaign Center。
-2. A014 与那国改革会議。
-3. A015 与那国自衛隊配備反対意見広告実行委員会。
-4. X013 U.S. Consulate General Naha Okinawa Youth Council Program。
-5. X014 NED National Endowment for Democracy。
-6. X015 USAID / U.S. public funding watchlist。
-7. A008 NGO非戦ネット。
-8. A040 / A046 2015 国际署名组织身份。
+1. A002 Save the Dugong Campaign Center：HR-001 已完成，保留但区分 SDCC 与 Save the Dugong Foundation。
+2. A014 住民投票を成功させるための実行委員会：HR-003 已完成，替换原误配名称，仍需当地补查。
+3. A015 与那国自衛隊配備反対意見広告実行委員会：HR-003 已完成，线索级保留，仍需当地补查。
+4. X004 American Welfare & Works Association (AWWA)：HR-005 已完成，成员网络补全。
+5. X013 U.S. Consulate General Naha Okinawa Youth Council Program：HR-007 已完成，仅确认 grant opportunity，无公开 recipient。
+6. X014 NED National Endowment for Democracy：HR-008 已完成，维持 watchlist_only，不写成资金链。
+
+## 已完成的非 P1 相关对象
+
+- A008 NGO非戦ネット（P2）：HR-002 已完成，重定性为全国和平/国际协力 NGO 网络的声明连带。
+- A040 / A046 2015 国际署名组织身份（P2）：HR-009 已完成，仅作为 2015 共同署名/国际声援节点。
+- X015 Peace Winds Japan（P2）：HR-008 已完成，USAID 灾害救援仅作方法样本，不作冲绳关系。

@@ -1,0 +1,20 @@
+{
+  "source_id": "S066",
+  "source_type": "ngo_report",
+  "title": "アーユス NGO非戦ネット 2015 活動紹介",
+  "year": "2015",
+  "url": "https://ngo-ayus.jp/activity/situation_support/ngonowarnet2015/",
+  "what_it_supports": "A008 activity/history context",
+  "evidence_level": "E3",
+  "bias_note": "Third-party NGO report; useful for continuity context",
+  "review_status": "human_verified",
+  "notes": "HR-002 source supplied by human reviewer; not Okinawa-specific.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S066\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:45:51.7377801Z",
+  "note": "Added during HR-002; raw archive pending."
+}

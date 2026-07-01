@@ -1,0 +1,20 @@
+{
+  "source_id": "S092",
+  "source_type": "ngo_directory",
+  "title": "FoE International member page Switzerland Pro Natura",
+  "year": "2026",
+  "url": "https://www.foei.org/member-groups/switzerland/",
+  "what_it_supports": "A046 identity as Pro Natura / FoE Switzerland",
+  "evidence_level": "E4",
+  "bias_note": "FoE International member directory",
+  "review_status": "human_verified",
+  "notes": "HR-009 source; confirms Pro Natura as FoE Switzerland.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S092\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T10:00:00.0000000Z",
+  "note": "Added during HR-009; raw archive pending."
+}

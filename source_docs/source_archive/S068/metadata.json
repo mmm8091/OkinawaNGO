@@ -1,0 +1,20 @@
+{
+  "source_id": "S068",
+  "source_type": "local_news",
+  "title": "沖縄タイムス 日米の合同演習 市民が中止要請 与那国イソバの会",
+  "year": "2024",
+  "url": "https://www.okinawatimes.co.jp/articles/-/1448767",
+  "what_it_supports": "A016 Isobanokai request to halt joint exercises and Osprey flights",
+  "evidence_level": "E3",
+  "bias_note": "Mainstream local newspaper; paywall or excerpt limits may apply",
+  "review_status": "human_verified",
+  "notes": "HR-003 source supplied by human reviewer; cross-supports A016 existence and activity.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S068\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:58:37.2689065Z",
+  "note": "Added during HR-003; raw archive pending."
+}

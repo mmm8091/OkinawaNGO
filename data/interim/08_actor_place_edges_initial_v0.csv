@@ -1,8 +1,8 @@
 edge_id,actor_id,place_id,place_name,relation_basis,source_ref,evidence_level,review_status,notes
 AP001,A001,P002,Henoko,OEJP/MMC Henoko advocacy,S006;S007;S008,E4,ai_seeded,Core place.
 AP002,A001,P003,Oura Bay,OEJP/MMC dugong/Oura Bay advocacy,S006;S007;S008,E4,ai_seeded,Core place.
-AP003,A002,P002,Henoko,Dugong campaign/Henoko legal advocacy context,S007;S009,E3,needs_second_source,Confirm direct organization role.
-AP004,A002,P003,Oura Bay,Dugong habitat issue,S007;S009,E3,needs_second_source,Confirm direct organization role.
+AP003,A002,P002,Henoko,Dugong protection campaign and Henoko/Oura Bay advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 confirms advocacy focus; not a lawsuit plaintiff relation.
+AP004,A002,P003,Oura Bay,Dugong habitat and advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 confirms advocacy focus; not a lawsuit plaintiff relation.
 AP005,A003,P001,Okinawa Prefecture,2010 WWF signatory context,S003,E3,needs_second_source,Okinawa network actor.
 AP006,A003,P002,Henoko,2010 WWF Henoko statement,S003,E3,needs_second_source,Place issue.
 AP007,A004,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Statement place.
@@ -10,21 +10,21 @@ AP008,A004,P003,Oura Bay,2015 NACSJ statement,S004,E4,ai_seeded,Statement place.
 AP009,A005,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.
 AP010,A006,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.
 AP011,A007,P002,Henoko,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement place.
-AP012,A008,P001,Okinawa Prefecture,Peace Boat statement context,S005,E3,needs_second_source,Confirm network structure.
+AP012,A008,P001,Okinawa Prefecture,Henoko referendum solidarity statement context,S064,E3,human_revised,HR-002: Okinawa relation is statement/solidarity context, not site presence.
 AP013,A009,P002,Henoko,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal place.
 AP014,A009,P003,Oura Bay,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong habitat place.
 AP015,A010,P012,Ishigaki,Local news names Ishigaki civic network,S016;S017,E4,ai_seeded,Core Sakishima place.
 AP016,A011,P012,Ishigaki,Ishigaki referendum campaign,S018;S019,E4,ai_seeded,Core Sakishima place.
 AP017,A012,P013,Miyako,Miyako water/deployment local news,S020,E3,needs_second_source,Exact name/continuity needs review.
 AP018,A013,P013,Miyako,Miyako anti-missile group,S021,E4,ai_seeded,Core Sakishima place.
-AP019,A014,P011,Yonaguni,Yonaguni anti-deployment seed,S015,E2,needs_local_retrieval,Needs local confirmation.
-AP020,A015,P011,Yonaguni,Yonaguni opinion-ad committee seed,S015,E2,needs_local_retrieval,Needs local confirmation.
-AP021,A016,P011,Yonaguni,Yonaguni health/ammunition concerns,S011,E2,needs_local_retrieval,Needs primary source.
+AP019,A014,P011,Yonaguni,Yonaguni referendum committee lead,S069;S010;S071,E2,needs_local_retrieval,HR-003: A014 replaced with referendum committee; exact name/continuity need local confirmation.
+AP020,A015,P011,Yonaguni,Yonaguni as solidarity target for Yaeyama opinion-ad committee,S015,E2,needs_local_retrieval,HR-003: committee appears Yaeyama/Ishigaki-led; Yonaguni is issue target not necessarily office location.
+AP021,A016,P011,Yonaguni,Yonaguni civic group activity around deployment/exercises/life safety,S052;S068,E3,human_checked,HR-003: organization/activity cross-supported; local details still need retrieval.
 AP022,A017,P001,Okinawa Prefecture,Okinawa dialogue project,S022,E4,ai_seeded,Broad Okinawa actor.
 AP023,A017,P011,Yonaguni,Ryukyu arc/frontline context includes Yonaguni,S022,E3,ai_seeded,Confirm if used centrally.
 AP024,A018,P001,Okinawa Prefecture,No More Okinawa War organization site,S023,E4,ai_seeded,Broad Okinawa actor.
 AP025,A018,P011,Yonaguni,Ryukyu arc/frontline context,S023;S024,E3,ai_seeded,Confirm if used centrally.
-AP026,A019,P002,Henoko,Henoko direct-action actor seed,S008,E3,needs_second_source,Needs direct source.
+AP026,A019,P002,Henoko,Henoko on-site sit-in and maritime action,S049;S008,E4,human_checked,HR-004: official site supports Henoko site role; 2004 sit-in and maritime action.
 AP027,A020,P002,Henoko,JELF/OEJP legal-environmental channel,S006;S007,E4,ai_seeded,Henoko issue.
 AP028,A020,P003,Oura Bay,JELF/OEJP dugong/Oura Bay context,S006;S007,E4,ai_seeded,Oura Bay issue.
 AP029,X001,P006,Camp Schwab,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence; exact center/program needs check.
@@ -35,10 +35,10 @@ AP033,X001,P009,Camp Kinser,USO Okinawa base/service network,X001,E3,ai_seeded,S
 AP034,X001,P010,MCAS Futenma,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.
 AP035,X002,P001,Okinawa Prefecture,Local business donation to USO Okinawa,X002,E4,ai_seeded,Local sponsor.
 AP036,X003,P001,Okinawa Prefecture,USO Okinawa sponsor listing,X003,E3,ai_seeded,Local/base-related sponsor.
-AP037,X004,P001,Okinawa Prefecture,AWWA Okinawa spouse-club network,X004,E3,needs_second_source,Broad Okinawa base-community network.
-AP038,X005,P001,Okinawa Prefecture,NOSCO spouse club / AWWA relation,X005,E3,ai_seeded,Exact base affiliation to confirm.
-AP039,X006,P005,Kadena,KOSC Kadena spouse club,X006,E3,ai_seeded,Kadena base-community actor.
-AP040,X007,P001,Okinawa Prefecture,OESC Okinawa Stripes lead,X007,E2,needs_second_source,Need official confirmation.
+AP037,X004,P001,Okinawa Prefecture,AWWA Okinawa spouse-club umbrella network,S041;S055;S072,E4,human_checked,HR-005 confirms Okinawa base-community umbrella role.
+AP038,X005,P001,Okinawa Prefecture,NOSCO Okinawa spouse club / AWWA member relation,S055,E4,human_checked,HR-005 confirms member club; exact base-site specificity can be refined later.
+AP039,X006,P005,Kadena,KOSC Kadena spouse club and Kadena Gift Corner,S075;S076,E4,human_checked,HR-005 confirms Kadena base-community actor.
+AP040,X007,P001,Okinawa Prefecture,OESC Okinawa thrift shop/nonprofit and AWWA member role,S053;S054;S055,E4,human_checked,HR-005 confirms OESC identity and USO donation.
 AP041,X008,P007,Camp Foster,Red Cross volunteer program / U.S. Naval Hospital Okinawa,X008,E4,ai_seeded,Service place.
 AP042,X009,P007,Camp Foster,NMCRS emergency assistance office,X009,E4,ai_seeded,Service place.
 AP043,X010,P014,JICA Okinawa,ONC/JICA Okinawa relation,X010;X011,E4,ai_seeded,Institutional relation.
@@ -70,13 +70,13 @@ AP068,A036,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International sign
 AP069,A037,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
 AP070,A038,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
 AP071,A039,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP072,A040,P002,Henoko,2015 NACSJ statement,S004,E4,needs_second_source,Identity needs confirmation.
+AP072,A040,P002,Henoko,2015 NACSJ statement signatory,S004;S089;S090,E4,human_checked,HR-009 identity confirmed; relation is signatory/solidarity context only.
 AP073,A041,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
 AP074,A042,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
 AP075,A043,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
 AP076,A044,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
 AP077,A045,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP078,A046,P002,Henoko,2015 NACSJ statement,S004,E4,needs_second_source,Exact name needs confirmation.
+AP078,A046,P002,Henoko,2015 NACSJ statement signatory,S004;S091;S092,E4,human_checked,HR-009 identity confirmed; relation is signatory/solidarity context only.
 AP079,A047,P001,Okinawa Prefecture,Peace Movement Center headquarters,S031,E4,ai_seeded,Broad Okinawa coordination body.
 AP080,A047,P002,Henoko,Henoko opposition coordination,S031,E3,ai_seeded,Verify direct coordination role.
 AP081,A048,P001,Okinawa Prefecture,Anti-war landowner Okinawa base,S038,E4,ai_seeded,Okinawa land-related actor.
@@ -121,3 +121,5 @@ AP119,A074,P001,Okinawa Prefecture,Prefectural government base affairs,S043,E4,a
 AP120,A074,P020,Naha,Government office location,S043,E4,ai_seeded,Administrative center.
 AP121,A075,P001,Okinawa Prefecture,Defense bureau jurisdiction,S047,E4,ai_seeded,Government office.
 AP122,A075,P002,Henoko,Henoko base construction managing agency,S047,E4,ai_seeded,Construction site.
+AP123,X016,P006,Camp Foster,MOSCO / Marine Gift Shop Island Treasures context,S079;S080,E4,human_checked,HR-005 supplemental: MOSCO Camp Foster/Okinawa base role confirmed.
+AP124,X017,P001,Okinawa Prefecture,Army Community Group of Okinawa / Army on Okinawa Gift Shop lead,S041;S072;S081,E3,needs_second_source,HR-005 supplemental: Torii Station/base specificity needs independent confirmation.

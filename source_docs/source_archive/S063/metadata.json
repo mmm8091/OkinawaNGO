@@ -1,0 +1,20 @@
+{
+  "source_id": "S063",
+  "source_type": "encyclopedia",
+  "title": "琉球新報 用語辞典 ジュゴン保護基金委員会",
+  "year": "2026",
+  "url": "https://ryukyushimpo.jp/okinawa-dic/prentry-41677.html",
+  "what_it_supports": "A076 name and background for Save the Dugong Foundation",
+  "evidence_level": "E3",
+  "bias_note": "Newspaper dictionary secondary source",
+  "review_status": "human_verified",
+  "notes": "HR-001 source supplied by human reviewer; useful for organization identity and local context.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S063\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
+  "note": "Added during HR-001; raw archive pending."
+}

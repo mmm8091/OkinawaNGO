@@ -1,0 +1,20 @@
+{
+  "source_id": "S076",
+  "source_type": "nonprofit_record",
+  "title": "Kadena Officers Spouses Club ProPublica Nonprofit Explorer",
+  "year": "2026",
+  "url": "https://projects.propublica.org/nonprofits/organizations/980214323",
+  "what_it_supports": "KOSC tax status and EIN 98-0214323",
+  "evidence_level": "E4",
+  "bias_note": "ProPublica public records",
+  "review_status": "human_verified",
+  "notes": "HR-005 source; supports X006 legal/tax identity.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S076\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T09:14:53.0233080Z",
+  "note": "Added during HR-005; raw archive pending."
+}

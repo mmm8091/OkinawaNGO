@@ -53,11 +53,11 @@
 - [x] 建立当地补查队列初版。
 - [x] 建立 actor_issue_edges 初版。
 - [x] 建立 actor_place_edges 初版。
-- [x] 扩充 actor registry 到 90 条。
-- [x] 扩充 source log 到 48 条。
-- [x] 扩充 actor-issue edges 到 178 条。
-- [x] 扩充 actor-place edges 到 122 条。
-- [x] 扩充 funding/support edges 到 20 条。
+- [x] 扩充 actor registry 到 93 条。
+- [x] 扩充 source log 到 92 条。
+- [x] 扩充 actor-issue edges 到 180 条。
+- [x] 扩充 actor-place edges 到 124 条。
+- [x] 扩充 funding/support edges 到 27 条。
 - [x] 扩充 place registry 到 20 个地点。
 - [x] 为高风险条目标注复核优先级（P1/P2/P3）。
 
@@ -65,13 +65,14 @@
 
 - [x] 定义人工复核任务书（HR-001 至 HR-009）。
 - [x] 对 P1 条目进行第一轮 web 核实（AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票）。
-- [ ] 对剩余 P1 条目进行人工复核（与那国改革会議/意見広告委、领馆项目 recipient、NED/USAID）。
+- [x] 完成正式人工复核任务 HR-001 至 HR-009，并写入 `human_review_log_v0.csv`。
 - [ ] 补充来源日志中 URL 占位符条目（标记 inferred_url 的需核实）。
 - [ ] 继续扩充 actor registry 到 120-150 条。
-- [ ] 完成 P2 条目人工复核。
+- [ ] 处理 HR 复核后的剩余 `needs_second_source` / `needs_local_retrieval` 条目。
 - [ ] 根据复核结果更新 evidence_level 和可发布措辞。
-- [x] 建立信息源本地备份机制并完成第一轮归档（28 archived / 1 failed / 25 inferred / 2 non-url）。
-- [ ] 处理 S007 手工归档，并核实 `inferred_url` 占位符来源。
+- [x] 建立信息源本地备份机制并完成第一轮归档（28 archived / 1 manual archived / 25 inferred / 2 non-url / 36 pending archive）。
+- [x] 处理 S007 手工归档。
+- [ ] 继续归档 36 条 pending URL，并核实 `inferred_url` 占位符来源。
 
 阶段 D：分析、可视化与进度沟通。
 
@@ -91,8 +92,10 @@
 - `docs/progress_report_v1.md`
 - `docs/source_archive_protocol_v0.md`
 - `docs/p1_review_prompt_v0.md`
+- `docs/human_review_merge_package_v0.md`
 - `data/metadata/coding_schema_v0.md`
 - `data/interim/01_actor_registry_initial_v0.csv`
+- `data/interim/02_actor_aliases_initial_v0.csv`
 - `data/interim/03_issue_taxonomy_v0.csv`
 - `data/interim/04_place_registry_v0.csv`
 - `data/interim/05_source_log_initial_v0.csv`
@@ -103,17 +106,18 @@
 
 ## 当前样本状态
 
-- actor 初版：90 条（含冲绳本土 ~36、国内 NGO ~18、国际/美国 ~28、混合网络 ~3、制度节点 ~5）。
-- funding/support edge 样本：22 条。
-- actor_issue_edges 初版：178 条。
-- actor_place_edges 初版：122 条。
-- source log 初版：56 条（含 30+ 条已验证 URL、20+ 条占位符 URL 需核实）。
+- actor 初版：93 条（HR-001 后新增 A076；HR-005 后新增 X016/X017）。
+- funding/support edge 样本：27 条。
+- actor_issue_edges 初版：180 条。
+- actor_place_edges 初版：124 条。
+- actor alias 初版：14 条。
+- source log 初版：92 条（含 65 条真实 URL、25 条占位符 URL、2 条非 URL 参考）。
 - issue taxonomy：19 个一级议题。
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
-- 已完成第一轮 P1 web 核实：AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票。
-- 信息源备份已开始执行：28 条已归档，S007 需手工归档，25 条 `inferred_url` 占位符等待核实。
+- 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
+- 信息源备份已开始执行：28 条已归档，1 条手工归档，36 条真实 URL 待归档，25 条 `inferred_url` 占位符等待核实。
 
 ## 任务索引
 
@@ -122,7 +126,7 @@
 - 人类决策任务书：`docs/human_decision_tasks_v0.md`
 - 进度沟通稿：`docs/progress_report_v1.md`
 
-当前人工复核优先级：与那国组织、军属服务/慈善网络、美国领馆 grant recipient、NED/USAID watchlist、2015 海外署名组织身份。
+当前人工复核状态：HR-001 至 HR-009 已完成首轮；actor 表仍保留 P1/P2/P3 复核优先级，用于后续补源和当地材料收集，不等于未完成 HR 数。
 
 当前当地补查优先级：与那国早期反部署组织、军属配偶俱乐部慈善 recipient、外务省 / JICA / ONC 关系链。
 
@@ -142,8 +146,8 @@
 
 ## 下一步
 
-1. 生成解释性图表包，先验证图件叙事，再补量。
-2. 对剩余 P1 条目进行人工复核。
-3. 备份已确认 URL，并补充来源日志中 URL 占位符条目。
-4. 继续扩充 actor registry 到 120 条以上。
-5. 整理可确定的当地材料收集任务，写入下一次沟通稿。
+1. 将 `docs/human_review_merge_package_v0.md` 同步给主进程，确认 HR-001 至 HR-009 已 closed for first-pass。
+2. 备份 36 条 pending URL，并补充来源日志中 URL 占位符条目。
+3. 启动 LR-001 至 LR-008 的当地材料收集包，优先处理与那国、军属慈善 recipient、外务省 / JICA / ONC。
+4. 生成解释性图表包，先验证图件叙事，再补量。
+5. 继续扩充 actor registry 到 120 条以上。

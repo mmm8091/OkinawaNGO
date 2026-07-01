@@ -63,19 +63,26 @@
 
 ## 4. 当前数据状态
 
-截至第一次进度同步材料：
+截至 2026-07-01 当前工作台与 `data/interim` 实表：
 
-- actor 初版：61 条。
-- source log 初版：26 条。
-- actor-issue 候选边：110 条。
-- actor-place 候选边：78 条。
-- support/funding sample edge：12 条。
+- actor 初版：93 条。
+- source log 初版：92 条。
+- actor-issue 候选边：180 条。
+- actor-place 候选边：124 条。
+- support/funding sample edge：27 条。
 - issue taxonomy：19 个一级议题。
-- place registry：15 个地点 / 场域节点。
+- place registry：20 个地点 / 场域节点。
+
+人工复核优先对象：
+
+- P1：6 个。
+- P2：17 个。
+- P3：10 个。
 
 主要数据文件：
 
 - `data/interim/01_actor_registry_initial_v0.csv`
+- `data/interim/02_actor_aliases_initial_v0.csv`
 - `data/interim/05_source_log_initial_v0.csv`
 - `data/interim/07_actor_issue_edges_initial_v0.csv`
 - `data/interim/08_actor_place_edges_initial_v0.csv`

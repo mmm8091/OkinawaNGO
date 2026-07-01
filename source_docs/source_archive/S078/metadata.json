@@ -1,0 +1,20 @@
+{
+  "source_id": "S078",
+  "source_type": "local_news_english",
+  "title": "Ryukyu Shimpo English AWWA donated 800 million yen over 40 years",
+  "year": "2012",
+  "url": "https://english.ryukyushimpo.jp/2012/05/09/6954/",
+  "what_it_supports": "AWWA long-term donations to local welfare facilities",
+  "evidence_level": "E3",
+  "bias_note": "News source; aggregate amount not annual recipient table",
+  "review_status": "human_verified",
+  "notes": "HR-005 source; use for aggregate donation context only.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S078\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T09:14:53.0233080Z",
+  "note": "Added during HR-005; raw archive pending."
+}

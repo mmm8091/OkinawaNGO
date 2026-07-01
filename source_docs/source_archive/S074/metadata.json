@@ -1,0 +1,20 @@
+{
+  "source_id": "S074",
+  "source_type": "nonprofit_record",
+  "title": "Cause IQ American Welfare and Works Association EIN 98-0227149",
+  "year": "2026",
+  "url": "https://www.causeiq.com/organizations/american-womens-welfare-association%2C980227149/",
+  "what_it_supports": "AWWA EIN and 501c3 line; Form 990 lead",
+  "evidence_level": "E3",
+  "bias_note": "Third-party nonprofit data; verify with IRS/ProPublica if central",
+  "review_status": "human_verified",
+  "notes": "HR-005 source; supports registered nonprofit lead not final recipient table.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S074\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T09:14:53.0233080Z",
+  "note": "Added during HR-005; raw archive pending."
+}

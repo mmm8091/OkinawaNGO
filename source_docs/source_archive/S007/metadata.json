@@ -9,12 +9,12 @@
   "bias_note": "Interpretive article; verify actor details where possible",
   "review_status": "ai_seeded",
   "notes": "Useful narrative source.",
-  "archive_status": "failed",
-  "local_path": "",
+  "archive_status": "manual_archived",
+  "local_path": "source_docs\\source_archive\\S007\\raw.pdf",
   "metadata_path": "source_docs\\source_archive\\S007\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T07:52:12.992316+00:00",
-  "note": "HTTPError 403: Forbidden"
+  "sha256": "361017c6f5d9eed8e56058dfa47f8cb4142bdfd84883c156a15459c6da85a941",
+  "content_type": "application/pdf",
+  "http_status": "manual",
+  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
+  "note": "Automated archive failed with HTTP 403. Human reviewer opened the page in browser and saved raw.pdf manually."
 }

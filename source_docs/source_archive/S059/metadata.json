@@ -1,0 +1,20 @@
+{
+  "source_id": "S059",
+  "source_type": "ngo_directory",
+  "title": "GEOC団体情報: ジュゴン保護キャンペーンセンター",
+  "year": "2019",
+  "url": "https://www.geoc.jp/rashinban/dantai_detail_591.html",
+  "what_it_supports": "A002 legal status representative address contact fees and activities",
+  "evidence_level": "E4",
+  "bias_note": "GEOC environmental partnership directory",
+  "review_status": "human_verified",
+  "notes": "HR-001 confirms 任意団体 and organization details.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S059\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
+  "note": "Added during HR-001; raw archive pending."
+}

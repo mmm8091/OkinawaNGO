@@ -1,0 +1,20 @@
+{
+  "source_id": "S085",
+  "source_type": "grant_listing",
+  "title": "NED FY2024 Asia Grant Listing PDF",
+  "year": "2025",
+  "url": "https://www.ned.org/wp-content/uploads/2025/04/Asia-Grant-Listing-FY24.pdf",
+  "what_it_supports": "NED FY2024 Asia grants; no Japan/Okinawa/Ryukyu direct recipient found",
+  "evidence_level": "E4",
+  "bias_note": "Official NED grant listing; negative finding for Okinawa recipient",
+  "review_status": "human_verified",
+  "notes": "HR-008 source; human reviewer extracted full text and found Okinawa/Ryukyu/Okinawan 0 and no Japan country section.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S085\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T09:45:00.0000000Z",
+  "note": "Added during HR-008; raw archive pending."
+}

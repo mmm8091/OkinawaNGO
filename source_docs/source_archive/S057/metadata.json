@@ -1,0 +1,20 @@
+{
+  "source_id": "S057",
+  "source_type": "organization_site",
+  "title": "ジュゴン保護キャンペーンセンター公式サイト",
+  "year": "2026",
+  "url": "http://www.sdcc.jp/",
+  "what_it_supports": "A002 official site and contact identity",
+  "evidence_level": "E4",
+  "bias_note": "Primary organization source",
+  "review_status": "human_verified",
+  "notes": "HR-001 confirms SDCC official site; old HTTP site.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S057\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
+  "note": "Added during HR-001; raw archive pending."
+}

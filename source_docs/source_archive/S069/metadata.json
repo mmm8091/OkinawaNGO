@@ -1,0 +1,20 @@
+{
+  "source_id": "S069",
+  "source_type": "magazine_news",
+  "title": "週刊金曜日 自衛隊配備賛否を問う与那国島住民投票 反対派は選挙過程も疑問視",
+  "year": "2015",
+  "url": "http://www.kinyobi.co.jp/kinyobinews/2015/03/11/",
+  "what_it_supports": "A014 referendum opposition committee lead and post-vote concerns",
+  "evidence_level": "E2",
+  "bias_note": "Positioned weekly magazine; needs local newspaper or primary record cross-check",
+  "review_status": "human_verified",
+  "notes": "HR-003 source supplied by human reviewer; supports replacement of unsupported A014 seed.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S069\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:58:37.2689065Z",
+  "note": "Added during HR-003; raw archive pending."
+}

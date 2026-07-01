@@ -1,0 +1,20 @@
+{
+  "source_id": "S071",
+  "source_type": "legal_database",
+  "title": "greenaccess 与那国町住民投票条例資料",
+  "year": "2015",
+  "url": "https://greenaccess.law.osaka-u.ac.jp/archives/7214",
+  "what_it_supports": "Yonaguni referendum ordinance documentation",
+  "evidence_level": "E3",
+  "bias_note": "Legal/access database; confirm ordinance text and expiry details if central",
+  "review_status": "human_verified",
+  "notes": "HR-003 source supplied by human reviewer; supports referendum/local-autonomy context.",
+  "archive_status": "pending_archive",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S071\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T08:58:37.2689065Z",
+  "note": "Added during HR-003; raw archive pending."
+}

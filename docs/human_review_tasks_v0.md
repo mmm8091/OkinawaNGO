@@ -12,6 +12,36 @@
 - 敏感关系必须由人审，尤其是资助、委托、公共外交、军属服务、NED / USAID / 外务省 / 美国使领馆相关线索。
 - 不确定就降级为 `needs_second_source` 或 `needs_local_retrieval`。
 
+## 0. 当前状态（2026-07-01）
+
+HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
+
+- `docs/human_review_merge_package_v0.md`
+- `data/interim/human_review_log_v0.csv`
+
+首轮结论摘要：
+
+| 任务 | 状态 | 合并结论 |
+|---|---|---|
+| HR-001 | closed first-pass | A002 保留并确认为 SDCC / 任意団体 / IUCN 国家级 NGO 会员；新增 A076 Save the Dugong Foundation；不得把 A002 写成美国诉讼法律原告。 |
+| HR-002 | closed first-pass | A008 保留为全国性国际协力 / 和平 NGO 网络；只写 2019 辺野古县民投票连带声明，不写成本地核心 actor。 |
+| HR-003 | closed first-pass | A014 替换为 `住民投票を成功させるための実行委員会` E2；A015 保留为八重山 / 石垣侧声援线索 E2；A016 保留 E3。 |
+| HR-004 | closed first-pass | A019 保留 E4，是辺野古现场核心 actor；legal_status 为任意団体；F013 降为 E2。 |
+| HR-005 | closed first-pass | AWWA 名称修正为 American Welfare & Works Association；补全 X005/X006/X007/X016/X017 五成员网络。 |
+| HR-006 | closed first-pass | X007 OESC 身份、EIN、2025 年 OESC -> USO Okinawa 捐赠可作为 E4 事实。 |
+| HR-007 | closed first-pass | X013 只确认 NOFO / grant opportunity 存在；不得写 recipient 或已拨款。 |
+| HR-008 | closed first-pass | X014 NED 与 X015 Peace Winds Japan 保持 watchlist_only；不得写 NED/USAID 资助冲绳 NGO。 |
+| HR-009 | closed first-pass | A040 / A046 身份确认；A032-A046 只作为 2015 共同署名 / 国际声援节点，不写成稳定联盟。 |
+
+首轮后仍需补的事项不属于 HR 未完成，而是后续补源 / 当地材料收集：
+
+- A014/A015 仍需地方报纸、意见广告实物或议会资料交叉确认。
+- A016 仍需成立年月、代表人、法律身份。
+- A019 / A076 的 2003 年 dugong 诉讼 plaintiff 映射仍待核实。
+- AWWA 网络仍需 charity recipient / Schedule I / 活动手册补证。
+- X013 长期观察 Grants.gov / USASpending / 领馆公告是否出现 award 或 recipient。
+- X014 NED 跨年度排除需要另查，本轮只覆盖 FY2024 亚洲清单。
+
 ## 2. 复核输入材料
 
 主要输入：
@@ -60,7 +90,7 @@
 | E1 | 不进结论 | 是否无法复核或政治性指控为主 |
 | E0 | 剔除 | 是否误配、同名误认、与冲绳无关 |
 
-## 6. 第一批人工复核任务
+## 6. 第一批人工复核任务（原始任务定义，首轮已完成）
 
 ### HR-001 Save the Dugong Campaign Center
 
@@ -284,4 +314,3 @@
 - 没有说明为什么升/降 evidence_level。
 - 把“出现于署名名单”写成“稳定联盟成员”。
 - 把“grant opportunity”写成“已获资助”。
-
