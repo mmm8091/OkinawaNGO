@@ -19,3 +19,5 @@ F017,A063,A048,solidarity_branch,Kanto branch of anti-war landowner movement,Tok
 F018,A067,A025,coordination,Henoko soil council and Henoko construction opposition coordination,Henoko; Japan,E3,not_funding_relation,S040,ai_seeded,yes,Cross-prefecture anti-Henoko coordination. Verify linkage.
 F019,X010,A074,administrative_collaboration,ONC international cooperation coordination with prefectural government,Okinawa,E3,probable_funding,S043;X010,ai_seeded,yes,Verify whether ONC receives prefectural funding/support.
 F020,A051,A050,legal_support,Bar association support for referendum legal process,Okinawa,E3,not_funding_relation,S025;S037,ai_seeded,yes,Verify direct legal support for referendum initiative.
+F021,X007,X001,donation,OESC donates $3250 to USO Okinawa Dec 2025,Okinawa,E4,confirmed_sponsorship,S053,verified,no,Stripes Okinawa confirms amount and date. Direct charitable donation.
+F022,X004,X007,network_membership,OESC as AWWA member club,Okinawa bases,E4,not_funding_relation,S041;S055,verified,no,OESC confirmed as one of 5 AWWA member clubs.
