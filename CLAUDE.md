@@ -2,6 +2,8 @@
 
 This repository supports the Okinawa NGO / civic organization network research project.
 
+For general multi-agent instructions, read `AGENTS.md` first. This file mirrors the same project rules for Claude-specific sessions.
+
 ## Project Rules
 
 - Read `docs/phase1_workbench.md` first. It is the current project control document and must stay under 300 lines.
@@ -14,6 +16,7 @@ This repository supports the Okinawa NGO / civic organization network research p
 
 ## Current Entry Points
 
+- General agent guide: `AGENTS.md`
 - Workbench: `docs/phase1_workbench.md`
 - Progress report: `docs/progress_report_v1.md`
 - Human review tasks: `docs/human_review_tasks_v0.md`
@@ -21,6 +24,8 @@ This repository supports the Okinawa NGO / civic organization network research p
 - Human decision tasks: `docs/human_decision_tasks_v0.md`
 - Coding schema: `data/metadata/coding_schema_v0.md`
 - Progress-sync assets: `docs/progress_sync_assets_v0.md`
+- Module completion package: `outputs/module_completion_v0/README.md`
+- Inferred URL queue: `data/interim/16_inferred_url_resolution_queue_v0.csv`
 
 ## Data Status
 
@@ -30,12 +35,30 @@ Current initial data lives under `data/interim/`. Updated 2026-07-01.
 - `02_actor_aliases_initial_v0.csv` — 14 aliases
 - `03_issue_taxonomy_v0.csv` — 19 issues
 - `04_place_registry_v0.csv` — 20 places
-- `05_source_log_initial_v0.csv` — 92 sources
+- `05_source_log_initial_v0.csv` — 92 sources, currently 76 real URLs, 14 `inferred_url` placeholders, and 2 non-URL references
 - `07_actor_issue_edges_initial_v0.csv` — 180 edges
 - `08_actor_place_edges_initial_v0.csv` — 124 edges
 - `15_funding_or_support_edges_sample_v0.csv` — 27 edges
 
-Generated progress-sync charts live under `outputs/progress_sync_v0/`.
+Generated progress-sync charts live under `outputs/progress_sync_v0/` and `outputs/progress_sync_v1/`.
+
+Current explanatory deliverables live under `outputs/explanatory_v0/`.
+
+Current module deliverables live under `outputs/module_completion_v0/`.
+
+Source archive status:
+
+- 74 `archived`
+- 2 `manual_archived`
+- 14 `skipped_inferred_url`
+- 2 `skipped_non_url_reference`
+- 0 `pending_archive`
+
+Current MT status:
+
+- MT-001: 2020 OEJP/MMC 71-group extraction is basically done; registry review remains.
+- MT-002: first full source-archive pass is basically done.
+- MT-003: in progress; 11 of 25 initial placeholders resolved and archived, 14 remain.
 
 ## Agent Skills
 

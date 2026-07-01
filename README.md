@@ -32,19 +32,21 @@
 
 协作代理或新成员应按这个顺序读：
 
-1. `CLAUDE.md`
-2. `docs/phase1_workbench.md`
-3. `data/metadata/coding_schema_v0.md`
-4. `docs/human_review_tasks_v0.md`
-5. `docs/local_retrieval_tasks_v0.md`
-6. `docs/human_decision_tasks_v0.md`
-7. `docs/progress_sync_assets_v0.md`
+1. `AGENTS.md`
+2. `CLAUDE.md`
+3. `docs/phase1_workbench.md`
+4. `data/metadata/coding_schema_v0.md`
+5. `docs/human_review_tasks_v0.md`
+6. `docs/local_retrieval_tasks_v0.md`
+7. `docs/human_decision_tasks_v0.md`
+8. `docs/progress_sync_assets_v0.md`
 
 ## 3. 目录结构
 
 ```text
 /
 ├── README.md
+├── AGENTS.md
 ├── CLAUDE.md
 ├── CONTEXT.md
 ├── source_docs/
@@ -67,6 +69,7 @@
 
 - actor 初版：93 条。
 - source log 初版：92 条。
+- source log 当前 URL 状态：76 条真实 URL、14 条 `inferred_url` 占位符、2 条非 URL 参考。
 - actor-issue 候选边：180 条。
 - actor-place 候选边：124 条。
 - support/funding sample edge：27 条。
@@ -98,7 +101,18 @@
 
 - `outputs/module_completion_v0/`
 - 覆盖 R2、R3/R4、R5、R11、R14。
-- 含模块 brief、共同行动 event/participant 表、跨国路径节点表和下一步模块调查任务表。
+- 含模块 brief、共同行动 event/participant 表、2020 OEJP/MMC 71 团体完整 participant 表、跨国路径节点表和下一步模块调查任务表。
+
+来源备份：
+
+- `source_docs/source_archive/source_archive_manifest.csv`
+- 当前状态：74 archived、2 manual archived、14 skipped inferred URL、2 skipped non-URL reference、0 pending archive。
+
+MT 任务状态：
+
+- MT-001：2020 OEJP/MMC 71 团体抽取阶段基本完成，剩余 registry review。
+- MT-002：真实 URL 来源归档第一轮基本完成。
+- MT-003：25 条 inferred URL 中 11 条已回填并归档，剩余 14 条继续处理。
 
 ## 5. 当前方案文件
 
