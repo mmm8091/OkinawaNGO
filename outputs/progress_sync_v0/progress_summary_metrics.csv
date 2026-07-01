@@ -1,0 +1,10 @@
+﻿metric,value
+actors_initial,61
+sources_initial,26
+issue_edges_initial,110
+place_edges_initial,78
+support_edges_sample,12
+actor_classes,19
+origin_types,7
+issue_labels_linked,19
+places_linked,14

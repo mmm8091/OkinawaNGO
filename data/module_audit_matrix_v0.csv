@@ -1,0 +1,16 @@
+module,evidence_sample,field_stability,value,difficulty,phase1_recommendation,conclusion
+B0 foundation,NPO portals; source logs; statements; news,high,high,medium,must_do,build registry/source/taxonomy first
+R1 classification,NPO data; statements; Sakishima news; org sites,high,high,medium,core,multilabel classification feasible
+R2 actor_issue,2010/2015/2020 statements; local news,high,high,medium,core,bipartite network feasible
+R3 place_spatial,Yonaguni official/GSDF; Ishigaki/Miyako news,medium_high,high,medium,core,place-issue mapping feasible; avoid full island networks
+R4 environment_life_safety,Henoko dugong; Ishigaki groundwater; Miyako water; Yonaguni health,high,high,medium,core,use environment + life safety + health frame
+R5 coalition,67/31/71/16 group samples,medium_high,high,medium_high,sample_core,sample coalition network feasible
+R6 media_visibility,library DB notice; public news samples,medium,medium,high,extension,do sample only unless DB access
+R7 field_shift,Earthjustice; MMC; local petitions,medium_high,high,medium,sample_core,local-to-international path feasible
+R8 resources_admin,NPO collaboration reports,high,medium,medium,background,do background not main anti-base module
+R9 election_referendum,2019 referendum; Ishigaki/Yonaguni referendum,medium,medium_high,medium_high,background,connect organizations to events; no causal claim
+R10 legal_policy_env,dugong litigation; MMC; referendum lawsuits,medium,high,high,sample,small sample only
+R11 transnational,OEJP; Earthjustice; WWF; NACS-J; Peace Boat,medium_high,high,medium,sample_core,strong value for internationalization
+R12 people_interlock,public figures in news/org pages,medium,high,high,extension,public role log only
+R13 genealogy,archives/library/early orgs,low_medium,high,high,long_term,genealogy clues only
+R14 coverage_bias,source-type comparison,high,high,low_medium,must_do,mandatory audit layer

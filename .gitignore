@@ -1,0 +1,26 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python / script cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Office temp files
+~$*
+*.tmp
+
+# Local scratch / private collection areas
+.scratch/
+private_materials/
+local_materials/
+
+# Large/raw materials should be reviewed before committing
+data/raw/
+data/external/
+source_materials/
+

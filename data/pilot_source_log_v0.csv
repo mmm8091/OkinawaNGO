@@ -1,0 +1,25 @@
+source_id,source_type,title,year,url,what_it_supports,notes
+S001,official_portal,沖縄県NPOプラザ,2026,https://www.pref.okinawa.jp/kurashikankyo/katsudo/1004889/1004890.html,official NPO information entry point,Useful for legal-status layer but not enough for movement groups.
+S002,official_data,令和６年度 NPO等との協働実績調査,2026,https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/004/917/2r6hp.pdf,administrative collaboration/resource-channel module,Good for R8 but may under-cover anti-base actors.
+S003,ngo_statement,67団体がジュゴンの生息地辺野古への基地建設反対に共同声明,2010,https://www.wwf.or.jp/activities/statement/3436.html,alliance network; environment-base linkage,Contains long signer list and global signature context.
+S004,ngo_statement,辺野古の海を守れ NGO 31団体が緊急共同声明,2015,https://www.nacsj.or.jp/statement/50827/,environmental coalition around Henoko/Oura Bay,Good source for actor-issue extraction.
+S005,ngo_statement,Peace Boat statement on Henoko emergency NGO declaration,2015,https://peaceboat.org/3620.html,international peace NGO + environmental coalition,Useful for issue bridge: peace/environment/base.
+S006,international_advocacy,OEJP 71 organizations MMC request,2020,https://okinawaejp.blogspot.com/2020/07/,transnational advocacy; dugong; MMC,Core source for R7/R11.
+S007,academic_article,The Plight of the Okinawa Dugong,2020,https://apjjf.org/2020/16/yoshikawaoejp,OEJP; 71 groups; civil society report,Useful narrative + actor identification.
+S008,local_news,ジュゴン保護 県内外71団体が米海洋哺乳類委員会に要請,2020,https://ryukyushimpo.jp/news/entry-1154960.html,local-news confirmation of 71-group MMC request,Confirms local news visibility.
+S009,legal_international,Ea​​rthjustice dugong litigation explainer,2014,https://earthjustice.org/article/fighting-to-protect-the-dugongs-of-japan-s-henoko-bay,legal/international route,Good for legal channel and U.S. litigation.
+S010,local_news,与那国町住民投票 自衛隊配備 結果は賛成多数,2015,https://www.qab.co.jp/news/2015022363334.html,Yonaguni referendum baseline,Official-ish media record of vote.
+S011,local_news,与那国住民投票 陸自配備を容認,2015,https://ryukyushimpo.jp/news/prentry-239307.html,Yonaguni referendum; opposition concerns,Includes health/electromagnetic and lawsuit intention.
+S012,official_defense,与那国駐屯地 陸上自衛隊公式,2026,https://www.mod.go.jp/gsdf/station/wa/yonaguni/,Yonaguni base facts,Confirms station and units.
+S013,official_defense,令和4年版防衛白書 与那国と台湾,2022,https://www.mod.go.jp/j/press/wp/wp2022/html/nc014000.html,Yonaguni strategic location/security framing,Good for official security-frame comparison.
+S014,local_official,与那国町長期営農計画,2023,https://www.town.yonaguni.okinawa.jp/docs/2023102400019/file_contents/tyoukieinou.pdf,Yonaguni distance facts,States Okinawa main island 509km/Taiwan 111km.
+S015,party_news,与那国に自衛隊いらない 配備反対の意見広告呼びかけ,2012,https://www.jcp.or.jp/akahata/aik12/2012-08-31/2012083115_02_1.html,Yonaguni opposition organization seed,Use cautiously as party source; good for group name.
+S016,local_news,石垣自衛隊配備 初の市民討論会,2016,https://ryukyushimpo.jp/news/entry-385092.html,Ishigaki opposing/supporting groups,Names 石垣島に軍事基地をつくらせない市民連絡会.
+S017,local_news,石垣陸自配備 市民が工事中止要請,2020,https://ryukyushimpo.jp/news/entry-1176922.html,Ishigaki environment/life-safety frame,Groundwater/ecosystem/targetization.
+S018,party_news,石垣 住民投票を求める会 署名開始,2018,https://www.jcp.or.jp/akahata/aik18/2018-10-30/2018103004_01_1.html,Ishigaki referendum organization seed,Use cautiously as party source.
+S019,local_news,RBC 石垣住民投票を求める市民,2023,https://newsdig.tbs.co.jp/articles/rbc/279426?display=1,Ishigaki referendum movement narrative,Useful for civil society framing.
+S020,local_news,宮古 陸自配備阻止訴え 地下水保全求め,2015,https://ryukyushimpo.jp/news/entry-296563.html,Miyako water/life-safety frame,Names 宮古島いのちの水を守ろう.
+S021,party_news,ミサイル基地いらない宮古島住民連絡会,2018,https://www.jcp.or.jp/akahata/aik18/2018-12-25/2018122515_01_1.html,Miyako anti-missile group seed,Use cautiously as party source; good for group name.
+S022,organization_site,沖縄対話プロジェクト,2026,https://okinawataiwa.net/,civil dialogue/anti-war network,Useful for recent Taiwan/Yonaguni/frontline framing.
+S023,organization_site,ノーモア沖縄戦 命どぅ宝の会,2026,https://nomore-okinawasen.org/,anti-war/frontline prevention network,Useful recent movement actor.
+S024,local_news,高市台湾有事答弁後 16市民団体抗議,2025,https://ryukyushimpo.jp/news/national/entry-4802441.html,recent civil society coalition,Useful for current anti-frontline action.

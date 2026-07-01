@@ -1,0 +1,13 @@
+edge_id,source_actor_id,target_actor_id,relation_type,event_or_program,place,evidence_level,funding_relation_confidence,source_ref,review_status,needs_local_retrieval,notes
+F001,X002,X001,donation,Phoenix Park Hotel donation to USO Okinawa,Okinawa,E4,confirmed_sponsorship,X002,ai_seeded,no,Source reports JPY 1000000 donation.
+F002,X003,X001,sponsorship,USO Okinawa sponsor listing,Okinawa,E3,confirmed_sponsorship,X003,ai_seeded,yes,Sponsor page supports relation; amount/year needs check.
+F003,X001,P006,site_presence,USO Okinawa base center,Camp Schwab,E3,confirmed_service_role,X001,ai_seeded,yes,Service presence; not funding.
+F004,X001,P007,site_presence,USO Okinawa/related service ecosystem,Camp Foster,E3,confirmed_service_role,X001,ai_seeded,yes,Service presence; exact center/program needs source refinement.
+F005,X001,P005,site_presence,USO Okinawa Kadena presence,Kadena,E3,confirmed_service_role,X001,ai_seeded,yes,Service presence; exact center/program needs source refinement.
+F006,X004,X005,network_coordination,AWWA spouse club network,Okinawa bases,E3,not_funding_relation,X004,needs_second_source,yes,Membership/coordination relation; formal name needs cleanup.
+F007,X004,X006,network_coordination,AWWA spouse club network,Okinawa bases,E3,not_funding_relation,X004,needs_second_source,yes,Need direct AWWA or club documentation.
+F008,X004,X007,network_coordination,AWWA spouse club network,Okinawa bases,E2,not_funding_relation,X004,needs_second_source,yes,Need direct documentation.
+F009,X008,P007,service,Red Cross volunteer program,U.S. Naval Hospital Okinawa / Camp Foster,E4,confirmed_service_role,X008,ai_seeded,no,Service role confirmed by official military health page.
+F010,X009,P007,service,Emergency assistance / relief society office,Camp Foster,E4,confirmed_service_role,X009,ai_seeded,no,Service role confirmed by Military OneSource.
+F011,X010,X011,consultant_or_partner,MOFA NGO consultant / JICA Okinawa international cooperation,Okinawa,E4,confirmed_commission,X010;X011,ai_seeded,yes,Need ONC annual report for money/project details.
+F012,X013,unknown_recipient,grant_opportunity,Okinawa Youth Council Program,Okinawa,E3,no_public_evidence,X013,needs_local_retrieval,yes,Opportunity only; do not infer award or recipient.

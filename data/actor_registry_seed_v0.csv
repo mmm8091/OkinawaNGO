@@ -1,0 +1,21 @@
+actor_id,canonical_name_jp,actor_type,legal_status_guess,primary_places,issue_tags,source_ids,confidence,notes
+A001,Okinawa Environmental Justice Project,project/network,informal_or_project,Henoko/Oura Bay; international,environment; dugong; Henoko; international_advocacy,S006;S007;S008,high,Core bridge between local environmental justice and U.S. Marine Mammal Commission.
+A002,Save the Dugong Campaign Center,ngo/network,unclear,Henoko/Oura Bay,dugong; environment; anti_base; international_advocacy,S007;S009,medium,Need Japanese name and legal status verification.
+A003,ジュゴンネットワーク沖縄,ngo/network,unclear,Okinawa; Henoko/Oura Bay,dugong; environment; Henoko,S003,medium,Appears in 2010 signatory list.
+A004,日本自然保護協会,ngo,public_interest_foundation_or_association,Japan; Henoko/Oura Bay,environment; biodiversity; Henoko,S004,high,National environmental NGO; useful bridge actor.
+A005,WWFジャパン,ngo,public_interest_foundation,Japan; Henoko/Oura Bay,environment; dugong; biodiversity,S003,high,Statement host for 2010 coalition.
+A006,グリーンピース・ジャパン,ngo,ngo,Japan; Henoko/Oura Bay,environment; anti_base,S003,high,Environmental NGO in Henoko coalition.
+A007,ピースボート,ngo,ngo,Japan; international,peace; anti_base; environment; international,S005,high,Bridge between peace movement and environmental coalition.
+A008,NGO非戦ネット,network,informal_network,Japan; Okinawa,peace; anti_base; referendum,S005,medium,Need exact structure and member list verification.
+A009,Earthjustice,international_ngo,ngo,United States; Henoko/Oura Bay,legal; dugong; international_advocacy,S009,high,Key U.S. legal advocacy node.
+A010,石垣島に軍事基地をつくらせない市民連絡会,citizen_network,informal,Ishigaki,anti_military; referendum; environment; groundwater; life_safety,S016;S017,high,Core Ishigaki anti-base/missile actor.
+A011,石垣市住民投票を求める会,citizen_group,informal,Ishigaki,referendum; local_autonomy; anti_military,S018;S019,high,Youth/citizen-led referendum movement; legal/political channel.
+A012,宮古島いのちの水を守ろう！,citizen_group,informal,Miyako,groundwater; environment; anti_military; life_safety,S020,medium,Need exact full name and later continuity.
+A013,ミサイル基地いらない宮古島住民連絡会,citizen_network,informal,Miyako,anti_military; missile; groundwater; life_safety,S021,high,Core Miyako anti-missile group.
+A014,与那国改革会議,citizen_group,informal,Yonaguni,anti_military; local_autonomy; referendum,S015,medium,Earlier opposition group; verify via local/non-party sources.
+A015,与那国自衛隊配備反対意見広告実行委員会,executive_committee,informal,Yonaguni,anti_military; public_opinion; referendum,S015,medium,Opinion-ad committee; party-source seed needs confirmation.
+A016,与那国島の明るい未来を願うイソバの会,citizen_group,informal,Yonaguni,anti_military; health; ammunition; transparency,S011,low,Name appears in secondary/reported context; verify primary source.
+A017,沖縄対話プロジェクト,civil_dialogue_project,informal_or_project,Okinawa; Ryukyu arc,dialogue; anti_war; Taiwan_contingency; frontline_prevention,S022,high,Useful recent anti-frontline/dialogue actor.
+A018,ノーモア沖縄戦 命どぅ宝の会,citizen_group,informal,Okinawa; Ryukyu arc,anti_war; frontline_prevention; Taiwan_contingency,S023;S024,high,Recent civil society actor against turning Okinawa into battlefield.
+A019,ヘリ基地反対協議会,citizen_network,informal,Henoko; Nago,anti_base; Henoko; direct_action,S008,medium,Important Henoko actor; needs direct source and chronology.
+A020,日本環境法律家連盟（JELF）,lawyers_network,ngo_or_association,Japan; Henoko/Oura Bay,environmental_law; legal; dugong; Henoko,S006;S007,high,Hosts/links civil society dugong report; legal channel.

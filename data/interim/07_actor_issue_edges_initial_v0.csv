@@ -1,0 +1,111 @@
+edge_id,actor_id,issue_id,issue_label,relation_basis,source_ref,evidence_level,review_status,notes
+AI001,A001,I004,dugong,OEJP/MMC dugong advocacy,S006;S007;S008,E4,ai_seeded,Core issue.
+AI002,A001,I012,international_advocacy,Request to U.S. Marine Mammal Commission,S006;S007;S008,E4,ai_seeded,Transnational advocacy route.
+AI003,A001,I003,Henoko,Henoko/Oura Bay focus,S006;S007;S008,E4,ai_seeded,Place issue.
+AI004,A002,I004,dugong,Dugong campaign/legal advocacy context,S007;S009,E3,needs_second_source,Name/legal status needs review.
+AI005,A002,I012,international_advocacy,International legal/advocacy context,S007;S009,E3,needs_second_source,Confirm direct role.
+AI006,A003,I004,dugong,2010 WWF signatory list,S003,E3,needs_second_source,Confirm organization details.
+AI007,A003,I005,biodiversity,2010 WWF Henoko habitat statement,S003,E3,needs_second_source,Environmental actor seed.
+AI008,A004,I005,biodiversity,2015 NACSJ emergency statement,S004,E4,ai_seeded,National environmental NGO.
+AI009,A004,I003,Henoko,Henoko emergency statement,S004,E4,ai_seeded,Issue/place link.
+AI010,A005,I004,dugong,2010 WWF statement host,S003,E4,ai_seeded,Statement host.
+AI011,A005,I005,biodiversity,2010 WWF statement host,S003,E4,ai_seeded,Environmental frame.
+AI012,A006,I005,biodiversity,2010 WWF signatory list,S003,E4,ai_seeded,Environmental NGO.
+AI013,A006,I001,anti_base,Henoko base construction opposition statement,S003,E4,ai_seeded,Statement-based.
+AI014,A007,I019,peace,Peace Boat Henoko statement,S005,E4,ai_seeded,Peace movement bridge.
+AI015,A007,I001,anti_base,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement-based.
+AI016,A007,I012,international_advocacy,International peace NGO role,S005,E4,ai_seeded,Bridge actor.
+AI017,A008,I019,peace,Peace Boat statement context,S005,E3,needs_second_source,Network structure unclear.
+AI018,A008,I001,anti_base,Peace Boat statement context,S005,E3,needs_second_source,Confirm organization role.
+AI019,A009,I011,legal,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal route.
+AI020,A009,I004,dugong,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong protection.
+AI021,A009,I012,international_advocacy,U.S. legal NGO involvement,S009,E4,ai_seeded,International advocacy actor.
+AI022,A010,I002,anti_military,Ishigaki anti-base civic group named in local news,S016;S017,E4,ai_seeded,Core Sakishima actor.
+AI023,A010,I006,groundwater,Ishigaki construction halt request cites water/ecosystem concerns,S017,E4,ai_seeded,Life-safety/environment frame.
+AI024,A010,I009,local_autonomy,Ishigaki public debate/civic mobilization,S016,E3,ai_seeded,Autonomy frame to verify.
+AI025,A011,I010,referendum,Ishigaki referendum campaign,S018;S019,E4,ai_seeded,Referendum actor.
+AI026,A011,I009,local_autonomy,Resident vote framing,S018;S019,E4,ai_seeded,Local autonomy frame.
+AI027,A011,I002,anti_military,Referendum on JSDF deployment,S018;S019,E4,ai_seeded,Deployment issue.
+AI028,A012,I006,groundwater,Miyako water preservation frame,S020,E3,needs_second_source,Exact organization name needs review.
+AI029,A012,I002,anti_military,Miyako JSDF deployment opposition,S020,E3,needs_second_source,Confirm continuity.
+AI030,A012,I007,life_safety,Water/life-safety frame,S020,E3,needs_second_source,Life safety.
+AI031,A013,I002,anti_military,Miyako anti-missile group,S021,E4,ai_seeded,Core Miyako actor.
+AI032,A013,I006,groundwater,Miyako groundwater/water concern,S021,E3,ai_seeded,Source is party news; still actor seed.
+AI033,A013,I007,life_safety,Missile/base life-safety concern,S021,E3,ai_seeded,Needs local follow-up.
+AI034,A014,I002,anti_military,Yonaguni anti-deployment seed,S015,E2,needs_local_retrieval,Party-source seed.
+AI035,A014,I009,local_autonomy,Yonaguni local politics/referendum context,S015,E2,needs_local_retrieval,Needs local confirmation.
+AI036,A015,I002,anti_military,Anti-deployment opinion-ad committee,S015,E2,needs_local_retrieval,Party-source seed.
+AI037,A015,I009,local_autonomy,Public opinion/ad action,S015,E2,needs_local_retrieval,Needs local confirmation.
+AI038,A016,I008,health_risk,Yonaguni health/electromagnetic concerns in report,S011,E2,needs_local_retrieval,Organization identity needs confirmation.
+AI039,A016,I002,anti_military,Yonaguni deployment concern,S011,E2,needs_local_retrieval,Needs primary source.
+AI040,A017,I018,Taiwan_contingency,Okinawa dialogue project frontline/Taiwan context,S022,E4,ai_seeded,Recent security environment frame.
+AI041,A017,I017,frontline_prevention,Okinawa dialogue anti-war/frontline framing,S022,E4,ai_seeded,Recent frontline-prevention frame.
+AI042,A017,I019,peace,Dialogue/anti-war project,S022,E4,ai_seeded,Peace/anti-war.
+AI043,A018,I017,frontline_prevention,No More Okinawa War public framing,S023;S024,E4,ai_seeded,Recent anti-frontline actor.
+AI044,A018,I018,Taiwan_contingency,Recent civil society coalition after Taiwan contingency remarks,S024,E4,ai_seeded,Current issue.
+AI045,A018,I019,peace,Anti-war framing,S023,E4,ai_seeded,Peace/anti-war.
+AI046,A019,I001,anti_base,Henoko direct-action actor seed,S008,E3,needs_second_source,Needs direct source.
+AI047,A019,I003,Henoko,Henoko/Nago base action,S008,E3,needs_second_source,Needs chronology.
+AI048,A020,I011,legal,JELF legal/environmental channel,S006;S007,E4,ai_seeded,Legal channel.
+AI049,A020,I005,biodiversity,Environmental law/dugong report context,S006;S007,E4,ai_seeded,Environmental law.
+AI050,A020,I004,dugong,JELF/OEJP dugong report context,S006;S007,E4,ai_seeded,Dugong issue.
+AI051,X001,I014,military_family_service,USO Okinawa service role,X001,E3,ai_seeded,Service actor; not movement stance.
+AI052,X001,I016,base_community_welfare,USO Okinawa sponsor/service network,X001,E3,ai_seeded,Service/welfare ecology.
+AI053,X002,I016,base_community_welfare,Donation to USO Okinawa,X002,E4,ai_seeded,Sponsor/donor actor.
+AI054,X003,I016,base_community_welfare,Listed USO sponsor,X003,E3,ai_seeded,Amount/year needs check.
+AI055,X004,I014,military_family_service,AWWA spouse-club network,X004,E3,needs_second_source,Formal identity needs review.
+AI056,X004,I016,base_community_welfare,Charity/welfare network,X004,E3,needs_second_source,Recipient records need local check.
+AI057,X005,I014,military_family_service,NOSCO spouse club / AWWA relation,X005,E3,ai_seeded,Need recipient records.
+AI058,X006,I014,military_family_service,KOSC spouse club,X006,E3,ai_seeded,Need recipient records.
+AI059,X007,I014,military_family_service,OESC Stripes lead,X007,E2,needs_second_source,Needs official confirmation.
+AI060,X008,I014,military_family_service,Red Cross Okinawa volunteer/service role,X008,E4,ai_seeded,Service node.
+AI061,X009,I014,military_family_service,NMCRS emergency assistance role,X009,E4,ai_seeded,Service node.
+AI062,X010,I015,international_cooperation,MOFA NGO consultant/JICA relation,X010;X011,E4,ai_seeded,Uses schema tag not issue table yet.
+AI063,X010,I013,public_diplomacy,International cooperation/development education adjacent,X010;X011,E3,ai_seeded,Use cautiously.
+AI064,X011,I015,international_cooperation,JICA Okinawa institutional role,X011,E4,ai_seeded,Institutional node.
+AI065,X012,I013,public_diplomacy,TOMODACHI public-private partnership,X012,E4,ai_seeded,Okinawa-specific link not yet confirmed.
+AI066,X013,I013,public_diplomacy,Okinawa Youth Council grant opportunity,X013,E3,needs_local_retrieval,Opportunity only; recipient unknown.
+AI067,X014,I013,public_diplomacy,NED watchlist / democracy funding context,X014,E2,watchlist_only,No Okinawa recipient confirmed.
+AI068,X015,I015,international_cooperation,Peace Winds Japan USAID method sample,X015,E4,watchlist_only,No Okinawa issue link confirmed.
+AI069,A021,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.
+AI070,A021,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation, not stable alliance.
+AI071,A022,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.
+AI072,A022,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.
+AI073,A023,I001,anti_base,2015 NACSJ signatory local civic group,S004,E4,ai_seeded,Needs local follow-up.
+AI074,A023,I005,biodiversity,Name/framing links sea/Yanbaru protection,S004,E3,needs_second_source,Infer from signatory context.
+AI075,A024,I001,anti_base,2015 NACSJ signatory,S004,E4,ai_seeded,Henoko mobilization seed.
+AI076,A024,I003,Henoko,Name and statement context,S004,E4,ai_seeded,Place issue.
+AI077,A025,I001,anti_base,2015 NACSJ signatory,S004,E4,ai_seeded,Anti-base executive committee.
+AI078,A025,I003,Henoko,Name and statement context,S004,E4,ai_seeded,Place issue.
+AI079,A026,I019,peace,2015 NACSJ signatory / peace news,S004,E3,needs_second_source,Actor type unclear.
+AI080,A027,I005,biodiversity,2015 NACSJ signatory / public works reform frame,S004,E4,ai_seeded,Environment/public works critique.
+AI081,A027,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.
+AI082,A028,I012,international_advocacy,Japan-U.S. citizen network signatory,S004,E4,ai_seeded,International/cross-border actor.
+AI083,A028,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.
+AI084,A029,I005,biodiversity,Okinawa biodiversity citizen network signatory,S004,E4,ai_seeded,Local biodiversity network.
+AI085,A029,I003,Henoko,Henoko/Oura Bay statement context,S004,E4,ai_seeded,Place issue.
+AI086,A030,I005,biodiversity,2015 NACSJ environmental solidarity signatory,S004,E4,ai_seeded,Non-Okinawa environmental actor.
+AI087,A031,I005,biodiversity,2015 NACSJ environmental solidarity signatory,S004,E4,ai_seeded,Non-Okinawa environmental actor.
+AI088,A032,I012,international_advocacy,Peace Philosophy Centre signatory,S004,E4,ai_seeded,International advocacy node.
+AI089,A032,I019,peace,Peace Philosophy Centre framing,S004,E3,ai_seeded,Confirm via own site if central.
+AI090,A033,I012,international_advocacy,Friends of the Earth U.S. signatory,S004,E4,ai_seeded,U.S. NGO.
+AI091,A033,I005,biodiversity,Environmental NGO signatory,S004,E4,ai_seeded,Signatory seed.
+AI092,A034,I012,international_advocacy,KFEM signatory,S004,E4,ai_seeded,Overseas environmental solidarity.
+AI093,A034,I005,biodiversity,KFEM environmental NGO,S004,E4,ai_seeded,Signatory seed.
+AI094,A035,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI095,A036,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI096,A037,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI097,A038,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI098,A039,I011,legal,Legal rights/natural resources center signatory,S004,E4,ai_seeded,Legal/environmental NGO.
+AI099,A039,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI100,A040,I012,international_advocacy,Overseas signatory,S004,E4,needs_second_source,Identity needs confirmation.
+AI101,A041,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI102,A042,I012,international_advocacy,Pacific Environment signatory,S004,E4,ai_seeded,U.S./Pacific NGO.
+AI103,A042,I005,biodiversity,Environmental NGO signatory,S004,E4,ai_seeded,Signatory seed.
+AI104,A043,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI105,A044,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
+AI106,A045,I011,legal,Center for Biological Diversity legal/environmental actor,S004,E4,ai_seeded,Legal/environmental NGO.
+AI107,A045,I005,biodiversity,Center for Biological Diversity signatory,S004,E4,ai_seeded,Biodiversity actor.
+AI108,A045,I012,international_advocacy,U.S. environmental NGO signatory,S004,E4,ai_seeded,International actor.
+AI109,A046,I012,international_advocacy,Overseas signatory,S004,E4,needs_second_source,Exact organization name needs confirmation.
+AI110,A046,I005,biodiversity,Environmental NGO signatory,S004,E4,needs_second_source,Exact identity check.

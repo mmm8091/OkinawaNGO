@@ -1,0 +1,11 @@
+section,item,original,after_audit_recommendation,reason
+5,Module ordering,R1-R14 as originally listed,R14 moved to mandatory quality-control layer; R11/R10 moved up; R6/R12/R13 moved down,R14 is necessary for credibility; transnational/legal channels explain NGO mechanism; media/person/genealogy require heavier sources
+5,Phase-1 core,R1-R5 plus some later modules,B0/R14/R1/R2/R3/R4/R5/R11/R7/R10,These modules can be supported by open sources and produce network/case outputs
+5,Background modules,R8/R9 in mid-list,R9 and R8 as background/small sample,R9 useful but no causal inference; R8 administratively clean but less central to anti-base question
+5,Extension modules,R6/R12/R13 in list,R6/R12/R13 moved to extension or long-term,Need database access/interviews/archives; high bias if done from web only
+6,A light version,4 weeks / 58000 RMB,Keep 4 weeks / 58000 RMB but rename as feasibility audit and small-sample base,Price is reasonable if scope remains 60-80 actors and no full networks
+6,B standard version,6 weeks / 128000 RMB,Recommend 6-7 weeks / 138000-158000 RMB; practical recommended quote 7 weeks / 148000 RMB,Standard package should include R11/R10/R14 and better verification; 6 weeks is tight
+6,B low-price fallback,6 weeks / 128000 RMB,Can keep only if R11/R10 are shallow samples and R6/R8/R12/R13 excluded,Controls scope if client is price-sensitive
+6,C expanded version,10-12 weeks / 220000-280000 RMB,Keep for public-source expanded version; add separate enhanced version 12-14 weeks / 260000-320000 RMB,Full media/person/genealogy needs database/archive/interview work
+6,Deliverables,Actor registry/network/report/PPT,Add coverage audit/coding guide/module review table as explicit deliverables,These are necessary to defend methodology and scope
+7,Module audit mechanism,General note to use a table,Use section7_module_review_table_v0.csv fields and decision rules,Turns the mechanism into a reusable workflow
