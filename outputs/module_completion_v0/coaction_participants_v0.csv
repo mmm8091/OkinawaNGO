@@ -1,0 +1,36 @@
+﻿event_id,source_id,actor_id,canonical_name,origin_type,actor_class,role,relation_strength,evidence_level,review_status,interpretation_limit
+EV2010_WWF_67,S003,A003,ジュゴンネットワーク沖縄,okinawa_local,local_civic_actor,co_signer_or_participant,co_signatory_event,E3,needs_second_source,co-signing does not prove stable alliance
+EV2010_WWF_67,S003,A005,WWFジャパン,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2010_WWF_67,S003,A006,グリーンピース・ジャパン,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2010_WWF_67,S003,A061,日本野鳥の会,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2010_WWF_67,S003,A062,日本湿地ネットワーク（JAWAN）,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A004,日本自然保護協会,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A021,国際環境NGO FoE Japan,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A022,NPO法人 ラムサール・ネットワーク日本,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A023,美ら海にもやんばるにも基地はいらない市民の会,okinawa_local,local_civic_actor,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A024,辺野古リレー,okinawa_local,citizen_network,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A025,辺野古への基地建設を許さない実行委員会,okinawa_local,executive_committee,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A026,ピース・ニュース,japan_domestic,media_or_advocacy_actor,co_signer_or_participant,co_signatory_event,E4,needs_second_source,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A027,公共事業改革市民会議,japan_domestic,citizen_network,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A028,沖縄のための日米市民ネットワーク（JUCON）,mixed_or_network,international_advocacy_actor,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A029,沖縄・生物多様性市民ネットワーク,okinawa_local,citizen_network,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A030,市川三番瀬を守る会,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A031,三番瀬のラムサール条約登録を実現する会,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A032,Peace Philosophy Centre,international,international_advocacy_actor,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A033,Friends of the Earth U.S.,us_origin,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A034,Korea Federation for Environmental Movements (KFEM),international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A035,Russian Social Ecological Union,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A036,Friends of the Siberian Forests,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A037,Centre for Environmental Justice,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A038,Sahabat Alam Malaysia,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A039,The Legal Rights and Natural Resources Center-Kasama sa Kalikasan,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A040,Forum for Protection of Public Interest (Pro Public),international,international_ngo,co_signer_or_participant,co_signatory_event,E4,human_checked,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A041,Friends of the Earth Brisbane,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A042,Pacific Environment,us_origin,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A043,PENGON-FoE Palestine,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A044,Naturvernforbundet / Norwegian Society for the Conservation of Nature,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A045,Center for Biological Diversity,us_origin,international_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A046,Pro Natura,international,international_ngo,co_signer_or_participant,co_signatory_event,E4,human_checked,co-signing does not prove stable alliance
+EV2015_NACSJ_31,S004,A061,日本野鳥の会,japan_domestic,domestic_japan_ngo,co_signer_or_participant,co_signatory_event,E4,ai_seeded,co-signing does not prove stable alliance
+EV2020_OEJP_MMC_71,S006,A001,Okinawa Environmental Justice Project,mixed_or_network,international_advocacy_actor,co_signer_or_participant,request_participant_event,E4,ai_seeded,current registry under-enters the 71 participants
+EV2020_OEJP_MMC_71,S006,A020,日本環境法律家連盟（JELF）,japan_domestic,lawyers_network,co_signer_or_participant,request_participant_event,E4,ai_seeded,current registry under-enters the 71 participants

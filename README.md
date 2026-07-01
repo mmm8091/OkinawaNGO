@@ -94,6 +94,12 @@
 - 5 张解释型 PNG：组织-议题桥接网络、地点-议题矩阵、边野古国际化路径、共同行动样本构成、证据缺口图。
 - 配套 CSV 用于继续调查：`next_investigation_candidates.csv`、`actor_issue_bridge_nodes.csv` 等。
 
+模块完成包：
+
+- `outputs/module_completion_v0/`
+- 覆盖 R2、R3/R4、R5、R11、R14。
+- 含模块 brief、共同行动 event/participant 表、跨国路径节点表和下一步模块调查任务表。
+
 ## 5. 当前方案文件
 
 当前最新版方案：

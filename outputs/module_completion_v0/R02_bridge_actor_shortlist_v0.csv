@@ -1,0 +1,13 @@
+﻿rank,actor_id,canonical_name,issue_count,issues,actor_class,origin_type,review_status,interpretation
+1,A045,Center for Biological Diversity,3,biodiversity;international_advocacy;legal,international_ngo,us_origin,ai_seeded,bridge_actor_candidate
+2,A048,沖縄一坪反戦地主会,3,anti_base;legal;local_autonomy,citizen_group,okinawa_local,ai_seeded,bridge_actor_candidate
+3,A050,沖縄弁護士会,3,anti_base;legal;local_autonomy,lawyers_network,okinawa_local,ai_seeded,bridge_actor_candidate
+4,A052,嘉手納爆音訴訟原告団,3,anti_base;legal;life_safety,citizen_group,okinawa_local,ai_seeded,bridge_actor_candidate
+5,A053,普天間爆音訴訟団,3,anti_base;legal;life_safety,citizen_group,okinawa_local,ai_seeded,bridge_actor_candidate
+6,A066,新外交イニシアティブ（ND）,3,anti_base;legal;local_autonomy,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
+7,A006,グリーンピース・ジャパン,2,anti_base;biodiversity,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
+8,A007,ピースボート,2,anti_base;international_advocacy,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
+9,A009,Earthjustice,2,international_advocacy;legal,international_advocacy_actor,us_origin,ai_seeded,bridge_actor_candidate
+10,A020,日本環境法律家連盟（JELF）,2,biodiversity;legal,lawyers_network,japan_domestic,ai_seeded,bridge_actor_candidate
+11,A021,国際環境NGO FoE Japan,2,anti_base;biodiversity,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
+12,A022,NPO法人 ラムサール・ネットワーク日本,2,anti_base;biodiversity,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate

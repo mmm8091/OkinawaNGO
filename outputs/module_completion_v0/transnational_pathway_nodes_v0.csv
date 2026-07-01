@@ -1,0 +1,14 @@
+﻿node_id,layer,label,evidence,role
+P002/P003,Local site,Henoko / Oura Bay,E4,conflict site
+A019,Local actors,ヘリ基地反対協,E4,Henoko on-site core actor
+A003,Local actors,ジュゴンネットワーク沖縄,E3,local dugong advocacy
+A076,Local actors,Save the Dugong Foundation,E3,lawsuit plaintiff direction; mapping still needs precision
+A004,Domestic NGO / legal,NACSJ,E4,domestic environmental NGO
+A005,Domestic NGO / legal,WWF Japan,E4,domestic/international environmental NGO
+A020,Domestic NGO / legal,JELF,E4,legal/environmental procedure
+F_DUGONG,Translation frames,dugong / biodiversity,E4,environmental translation frame
+F_EIA,Translation frames,EIA / legal procedure,E3/E4,procedure/legal translation frame
+F_AUTONOMY,Translation frames,local autonomy,E3,democratic/autonomy frame
+A001,International route,OEJP -> MMC,E4,U.S. federal institution route
+A009,International route,Earthjustice,E4,U.S. legal advocacy route
+EV2015_2020,International route,2015 / 2020 signatory networks,signatory-only,international co-signing / request context

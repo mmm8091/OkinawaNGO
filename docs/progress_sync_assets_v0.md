@@ -121,3 +121,40 @@
 - 2020 OEJP/MMC 71 团体样本在当前 registry 中展开不足，需要做 event table。
 - 36 条 source 仍为 `pending_archive`，25 条仍为 `inferred_url`。
 - 与那国、军属慈善 recipient、外务省 / JICA / ONC 仍是最值得启动的当地材料方向。
+
+## 11. 模块完成包 v0（2026-07-01）
+
+输出目录：`outputs/module_completion_v0/`
+
+用途：
+
+- 把解释性图表整理成模块交付物。
+- 让 R2、R3/R4、R5、R11、R14 每块都有 brief、表和下一步任务。
+
+核心文件：
+
+- `module_status_table_v0.csv`：模块完成状态总表。
+- `next_module_investigation_tasks_v0.csv`：下一步调查任务表（MT-001 至 MT-008）。
+- `R02_actor_issue_network_brief.md`
+- `R03_R04_place_frame_brief.md`
+- `R05_coaction_event_brief.md`
+- `R11_transnational_pathway_brief.md`
+- `R14_coverage_bias_audit_brief.md`
+- `coaction_events_v0.csv`
+- `coaction_participants_v0.csv`
+- `transnational_pathway_nodes_v0.csv`
+
+当前模块完成度：
+
+- R2：`module_v0`
+- R3/R4：`module_v0`
+- R5：`event_sample_v0`
+- R11：`pathway_v0`
+- R14：`audit_v0`
+
+下一步优先任务：
+
+1. MT-001：抽取 2020 OEJP/MMC 71 团体 participant list。
+2. MT-002：归档 36 条 pending URL。
+3. MT-003：核实 25 条 `inferred_url`。
+4. MT-004：与那国 A014/A015 当地证据包。
