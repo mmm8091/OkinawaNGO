@@ -88,6 +88,12 @@
 - `data/interim/08_actor_place_edges_initial_v0.csv`
 - `data/interim/15_funding_or_support_edges_sample_v0.csv`
 
+解释性图表包：
+
+- `outputs/explanatory_v0/`
+- 5 张解释型 PNG：组织-议题桥接网络、地点-议题矩阵、边野古国际化路径、共同行动样本构成、证据缺口图。
+- 配套 CSV 用于继续调查：`next_investigation_candidates.csv`、`actor_issue_bridge_nodes.csv` 等。
+
 ## 5. 当前方案文件
 
 当前最新版方案：

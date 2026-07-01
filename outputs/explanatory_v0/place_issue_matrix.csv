@@ -1,0 +1,71 @@
+﻿place,frame,actor_count,actor_ids
+Henoko,base / anti-military,20,A001;A004;A006;A007;A019;A021;A022;A023;A024;A025;A027;A028;A029;A047;A051;A059;A067;A068;A069;A075
+Henoko,ecology / environment,24,A001;A002;A003;A004;A005;A006;A009;A020;A021;A022;A023;A027;A029;A030;A031;A033;A034;A042;A045;A046;A061;A062;A067;A069
+Henoko,life / health safety,0,
+Henoko,autonomy / referendum,3,A051;A059;A068
+Henoko,legal / procedure,4,A009;A020;A039;A045
+Henoko,international route,20,A001;A002;A007;A009;A028;A032;A033;A034;A035;A036;A037;A038;A039;A040;A041;A042;A043;A044;A045;A046
+Henoko,frontline / Taiwan,0,
+Oura Bay,base / anti-military,3,A001;A004;A069
+Oura Bay,ecology / environment,6,A001;A002;A004;A009;A020;A069
+Oura Bay,life / health safety,0,
+Oura Bay,autonomy / referendum,0,
+Oura Bay,legal / procedure,2,A009;A020
+Oura Bay,international route,3,A001;A002;A009
+Oura Bay,frontline / Taiwan,0,
+Ishigaki,base / anti-military,3,A010;A011;A065
+Ishigaki,ecology / environment,1,A010
+Ishigaki,life / health safety,0,
+Ishigaki,autonomy / referendum,2,A010;A011
+Ishigaki,legal / procedure,0,
+Ishigaki,international route,0,
+Ishigaki,frontline / Taiwan,1,A065
+Miyako,base / anti-military,3,A012;A013;A065
+Miyako,ecology / environment,2,A012;A013
+Miyako,life / health safety,2,A012;A013
+Miyako,autonomy / referendum,0,
+Miyako,legal / procedure,0,
+Miyako,international route,0,
+Miyako,frontline / Taiwan,1,A065
+Yonaguni,base / anti-military,4,A014;A015;A016;A065
+Yonaguni,ecology / environment,0,
+Yonaguni,life / health safety,1,A016
+Yonaguni,autonomy / referendum,2,A014;A015
+Yonaguni,legal / procedure,0,
+Yonaguni,international route,0,
+Yonaguni,frontline / Taiwan,3,A017;A018;A065
+Kadena,base / anti-military,1,A052
+Kadena,ecology / environment,0,
+Kadena,life / health safety,3,A052;X001;X006
+Kadena,autonomy / referendum,0,
+Kadena,legal / procedure,1,A052
+Kadena,international route,0,
+Kadena,frontline / Taiwan,0,
+Futenma,base / anti-military,1,A053
+Futenma,ecology / environment,0,
+Futenma,life / health safety,1,A053
+Futenma,autonomy / referendum,0,
+Futenma,legal / procedure,1,A053
+Futenma,international route,0,
+Futenma,frontline / Taiwan,0,
+Camp Foster,base / anti-military,0,
+Camp Foster,ecology / environment,0,
+Camp Foster,life / health safety,4,X001;X008;X009;X016
+Camp Foster,autonomy / referendum,0,
+Camp Foster,legal / procedure,0,
+Camp Foster,international route,0,
+Camp Foster,frontline / Taiwan,0,
+U.S. Consulate General Naha,base / anti-military,0,
+U.S. Consulate General Naha,ecology / environment,0,
+U.S. Consulate General Naha,life / health safety,0,
+U.S. Consulate General Naha,autonomy / referendum,0,
+U.S. Consulate General Naha,legal / procedure,0,
+U.S. Consulate General Naha,international route,1,X013
+U.S. Consulate General Naha,frontline / Taiwan,0,
+JICA Okinawa,base / anti-military,0,
+JICA Okinawa,ecology / environment,0,
+JICA Okinawa,life / health safety,0,
+JICA Okinawa,autonomy / referendum,0,
+JICA Okinawa,legal / procedure,0,
+JICA Okinawa,international route,2,X010;X011
+JICA Okinawa,frontline / Taiwan,0,

@@ -85,3 +85,39 @@
 - `fig_support_relation_types.png`：支持/资助关系类型分布（n=22）。
 
 正式进度沟通稿：`docs/progress_report_v1.md`
+
+## 10. 解释性图表包 v0（2026-07-01）
+
+输出目录：`outputs/explanatory_v0/`
+
+用途：
+
+- 不是正式报告，而是下一次沟通前的解释型图件包。
+- 用于从“统计进度”转向“机制解释”：桥接组织、地点框架、国际化路径、共同行动样本和证据缺口。
+
+图件：
+
+- `fig_actor_issue_bridge_network.png`：Top bridge actors，显示哪些 actor 同时连接反基地、环保、法律、自治、国际倡议等议题。
+- `fig_place_issue_matrix_explanatory.png`：地点 × 议题框架矩阵。
+- `fig_henoko_internationalization_pathway.png`：边野古 / 大浦湾国际化路径图。
+- `fig_coaction_sample_composition.png`：2010 / 2015 / 2020 共同行动样本的当前 registry 构成。
+- `fig_evidence_gap_map.png`：HR 合并后的 actor 复核状态和 source archive 状态。
+
+配套 CSV：
+
+- `actor_issue_bridge_nodes.csv`
+- `place_issue_matrix.csv`
+- `coaction_sample_composition.csv`
+- `next_investigation_candidates.csv`
+
+推荐沟通用主图：
+
+1. 地点 × 议题框架矩阵。
+2. 边野古 / 大浦湾国际化路径图。
+3. Top bridge actors 组织-议题桥接网络。
+
+下一轮调查提示：
+
+- 2020 OEJP/MMC 71 团体样本在当前 registry 中展开不足，需要做 event table。
+- 36 条 source 仍为 `pending_archive`，25 条仍为 `inferred_url`。
+- 与那国、军属慈善 recipient、外务省 / JICA / ONC 仍是最值得启动的当地材料方向。

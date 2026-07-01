@@ -78,7 +78,7 @@
 
 - [x] 生成第一次进度沟通图表（outputs/progress_sync_v0/）。
 - [x] 起草第一版内部进度稿（docs/progress_report_v1.md；暂不交付）。
-- [ ] 生成解释性图表包：组织-议题网络、地点-议题矩阵、国际化路径图、共同行动样本网络。
+- [x] 生成解释性图表包 v0：组织-议题桥接网络、地点-议题矩阵、边野古国际化路径图、共同行动样本构成、证据缺口图。
 - [ ] 根据解释性图表和人工复核结果修订正式沟通稿。
 - [ ] 准备组织-议题矩阵和组织-地点矩阵分析。
 
@@ -93,6 +93,7 @@
 - `docs/source_archive_protocol_v0.md`
 - `docs/p1_review_prompt_v0.md`
 - `docs/human_review_merge_package_v0.md`
+- `outputs/explanatory_v0/`
 - `data/metadata/coding_schema_v0.md`
 - `data/interim/01_actor_registry_initial_v0.csv`
 - `data/interim/02_actor_aliases_initial_v0.csv`
@@ -115,6 +116,7 @@
 - issue taxonomy：19 个一级议题。
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
+- 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
 - 信息源备份已开始执行：28 条已归档，1 条手工归档，36 条真实 URL 待归档，25 条 `inferred_url` 占位符等待核实。
@@ -146,8 +148,8 @@
 
 ## 下一步
 
-1. 将 `docs/human_review_merge_package_v0.md` 同步给主进程，确认 HR-001 至 HR-009 已 closed for first-pass。
+1. 用 `outputs/explanatory_v0/` 验证下一次沟通叙事，挑 3 张主图进入正式沟通稿。
 2. 备份 36 条 pending URL，并补充来源日志中 URL 占位符条目。
-3. 启动 LR-001 至 LR-008 的当地材料收集包，优先处理与那国、军属慈善 recipient、外务省 / JICA / ONC。
-4. 生成解释性图表包，先验证图件叙事，再补量。
+3. 将 2010 / 2015 / 2020 共同行动样本整理成 event table，尤其补 2020 OEJP/MMC 71 团体 actor。
+4. 启动 LR-001 至 LR-008 的当地材料收集包，优先处理与那国、军属慈善 recipient、外务省 / JICA / ONC。
 5. 继续扩充 actor registry 到 120 条以上。

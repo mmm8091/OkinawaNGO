@@ -1,0 +1,82 @@
+﻿item_type,item_id,name,priority,status,evidence_level,next_action,notes
+actor,A003,ジュゴンネットワーク沖縄,P2,needs_second_source,E3,second_source_or_local_retrieval,Appears in 2010 signatory list. Need NPO records.
+actor,A012,宮古島いのちの水を守ろう！,P2,needs_second_source,E3,second_source_or_local_retrieval,Need exact full name and continuity.
+actor,A014,住民投票を成功させるための実行委員会,P1,needs_local_retrieval,E2,second_source_or_local_retrieval,HR-003 human_revised 2026-07-01: replaces unsupported 与那国改革会議 seed; anti-deployment referendum committee reported by Weekly Kinyobi; exact name/representatives/continuity need local or primary confirmation.
+actor,A015,与那国自衛隊配備反対意見広告実行委員会,P1,needs_local_retrieval,E2,second_source_or_local_retrieval,HR-003 human_checked: 2012 opinion-ad executive committee led by Yaeyama peace groups/unions; S015 confirms name and co-representatives but is single party-media source; needs Yaeyama local newspaper/ad copy confirmation.
+actor,X014,NED National Endowment for Democracy,P1,watchlist_only,E2,second_source_or_local_retrieval,HR-008 human_checked 2026-07-01: FY2024 Asia grant listing has no Japan/Okinawa/Ryukyu direct recipient; Japan appears only as regional democratic-resilience partner context. Do not write NED funding to Okinawa NGOs.
+actor,X015,Peace Winds Japan,P2,watchlist_only,E4,second_source_or_local_retrieval,HR-008 human_checked 2026-07-01: PWJ exists and has USAID-funded disaster-relief method sample for 2018 West Japan floods/Hokkaido earthquake; no Okinawa base/Sakishima/security-network link found.
+actor,X017,Army Community Group of Okinawa (ACGO),P3,needs_second_source,E3,second_source_or_local_retrieval,HR-005 supplemental: AWWA member and Army on Okinawa Gift Shop lead; independent website/EIN not found; current name legal status and base affiliation need local or second-source confirmation.
+actor,A026,ピース・ニュース,P3,needs_second_source,E4,second_source_or_local_retrieval,2015 signatory; actor type requires confirmation.
+actor,A056,沖縄環境ネットワーク,P3,needs_second_source,E3,second_source_or_local_retrieval,Environmental network. Verify organizational structure and current status.
+actor,A058,沖縄県統一連（沖縄県統一行動連絡会議）,P3,needs_second_source,E3,second_source_or_local_retrieval,Labor/civic umbrella organization. Verify structure and relation to peace movement center.
+actor,A064,外国軍事基地撤去国際ネットワーク（No Bases Network）,P3,needs_second_source,E3,second_source_or_local_retrieval,International network against foreign military bases. Okinawa is a key node. Verify formal Okinawa connection.
+actor,A065,南西諸島ピースネット,P2,needs_second_source,E3,second_source_or_local_retrieval,Southwest Islands peace network. Verify membership and continuity.
+actor,A069,沖縄ジュゴン環境アセスメント監視団,P2,needs_second_source,E3,second_source_or_local_retrieval,Dugong/EIA monitoring group. Verify organizational structure and current status.
+actor,A070,Veterans for Peace Okinawa,P3,needs_second_source,E3,second_source_or_local_retrieval,U.S. veterans peace organization with reported Okinawa presence. Verify chapter status.
+actor,A071,沖縄平和市民連絡会,P3,needs_second_source,E3,second_source_or_local_retrieval,Civic peace liaison network. Verify structure and relation to other peace/anti-base networks.
+actor,A072,沖縄から基地をなくし世界の平和を求める市民連絡会,P3,needs_second_source,E3,second_source_or_local_retrieval,Civic network for base removal and world peace. Verify if distinct from A071.
+actor,A073,琉球沖縄国際支援プログラム,P3,needs_second_source,E2,second_source_or_local_retrieval,International cooperation program based in Okinawa. Verify legal status and activities.
+actor,A076,ジュゴン保護基金委員会（Save the Dugong Foundation）,P2,needs_second_source,E3,second_source_or_local_retrieval,HR-001 proposed new plaintiff node distinct from A002 and A003; founding/continuity/legal status need local retrieval.
+source,S018,石垣市 住民投票条例案 市議会で否決,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S019,石垣市住民投票 署名活動で法定数超え,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S020,宮古島 陸自駐屯地予定地 地下水汚染懸念,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S021,ミサイル基地いらない 宮古島住民連絡会 結成集会,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S022,沖縄対話プロジェクト 公式ページ,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S023,ノーモア沖縄戦 命どぅ宝の会 結成,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S024,台湾有事に備え 南西諸島の軍事化に懸念,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S026,嘉手納爆音訴訟 第三次 那覇地裁判決概要,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S027,普天間爆音訴訟 第二次 那覇地裁判決概要,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S028,高江ヘリパッド建設 住民らが抗議,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S029,島ぐるみ会議 辺野古新基地反対で連帯,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S030,泡瀬干潟埋め立て 住民訴訟,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S031,沖縄平和運動センター 公式,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S033,Tanji Miyume: Myth Protest and Struggle in Okinawa,,skipped_non_url_reference,E4,archive_or_verify_url,Non-URL reference needs manual bibliographic archive.
+source,S034,沖縄意見広告運動 全国紙に一面広告,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S036,南西諸島ピースネット 結成,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S037,沖縄弁護士会 辺野古新基地建設に関する会長声明,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S038,一坪反戦地主会 軍用地契約拒否運動,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S039,基地・軍隊を許さない行動する女たちの会 結成,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S040,辺野古土砂搬入反対全国協議会 結成,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S042,名護市民投票 基地建設反対が多数,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S043,沖縄県 米軍基地の概要,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S044,Inoue Masamichi: Okinawa and the U.S. Military,,skipped_non_url_reference,E4,archive_or_verify_url,Non-URL reference needs manual bibliographic archive.
+source,S045,辺野古新基地 土砂投入開始,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S046,NACSJ 辺野古・大浦湾の生物多様性報告,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S047,沖縄防衛局 辺野古新基地建設事業 環境影響評価書,,skipped_inferred_url,E4,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S048,Veterans for Peace Okinawa / Ryukyu chapter,,skipped_inferred_url,E3,archive_or_verify_url,URL placeholder needs verification before archiving.
+source,S057,ジュゴン保護キャンペーンセンター公式サイト,,pending_archive,E4,archive_or_verify_url,Added during HR-001; raw archive pending.
+source,S058,IUCN member page: Save the Dugong Campaign Center,,pending_archive,E4,archive_or_verify_url,Added during HR-001; raw archive pending.
+source,S059,GEOC団体情報: ジュゴン保護キャンペーンセンター,,pending_archive,E4,archive_or_verify_url,Added during HR-001; raw archive pending.
+source,S060,Earthjustice 2003 Okinawa Dugong lawsuit press release,,pending_archive,E4,archive_or_verify_url,Added during HR-001; raw archive pending.
+source,S061,JELF Okinawa Dugong NHPA lawsuit plaintiff material,,pending_archive,E4,archive_or_verify_url,Added during HR-001; raw archive pending.
+source,S062,Earthjustice Okinawa Dugong case page,,pending_archive,E4,archive_or_verify_url,Added during HR-001; raw archive pending.
+source,S063,琉球新報 用語辞典 ジュゴン保護基金委員会,,pending_archive,E3,archive_or_verify_url,Added during HR-001; raw archive pending.
+source,S064,NGO非戦ネット 辺野古県民投票結果の尊重を求める声明,,pending_archive,E3,archive_or_verify_url,Added during HR-002; raw archive pending.
+source,S065,NGO非戦ネット 公式サイト,,pending_archive,E4,archive_or_verify_url,Added during HR-002; raw archive pending.
+source,S066,アーユス NGO非戦ネット 2015 活動紹介,,pending_archive,E3,archive_or_verify_url,Added during HR-002; raw archive pending.
+source,S067,JVC NGO非戦ネット OSA反対声明 2023,,pending_archive,E3,archive_or_verify_url,Added during HR-002; raw archive pending.
+source,S068,沖縄タイムス 日米の合同演習 市民が中止要請 与那国イソバの会,,pending_archive,E3,archive_or_verify_url,Added during HR-003; raw archive pending.
+source,S069,週刊金曜日 自衛隊配備賛否を問う与那国島住民投票 反対派は選挙過程も疑問視,,pending_archive,E2,archive_or_verify_url,Added during HR-003; raw archive pending.
+source,S070,赤旗 与那国 住民投票へ 条例案可決,,pending_archive,E2,archive_or_verify_url,Added during HR-003; raw archive pending.
+source,S071,greenaccess 与那国町住民投票条例資料,,pending_archive,E3,archive_or_verify_url,Added during HR-003; raw archive pending.
+source,S072,DVIDS American Women's Welfare Association celebrates 40 years,,pending_archive,E3,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S073,AWWA official Facebook American Welfare & Works Association,,pending_archive,E3,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S074,Cause IQ American Welfare and Works Association EIN 98-0227149,,pending_archive,E3,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S075,Kadena Officers' Spouses' Club charity page,,pending_archive,E4,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S076,Kadena Officers Spouses Club ProPublica Nonprofit Explorer,,pending_archive,E4,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S077,USO Okinawa AWWA grant to USO Kinser,,pending_archive,E3,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S078,Ryukyu Shimpo English AWWA donated 800 million yen over 40 years,,pending_archive,E3,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S079,MOSCO official site,,pending_archive,E4,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S080,Marine Officers Spouses Club Okinawa ProPublica Nonprofit Explorer,,pending_archive,E4,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S081,Army on Okinawa Gift Shop Okinawa Hai,,pending_archive,E3,archive_or_verify_url,Added during HR-005; raw archive pending.
+source,S082,Grants.gov Okinawa Youth Council Program opportunity,,pending_archive,E4,archive_or_verify_url,Added during HR-007; raw archive pending.
+source,S083,FederalGrants Okinawa Youth Council Program listing,,pending_archive,E3,archive_or_verify_url,Added during HR-007; raw archive pending.
+source,S084,GrantedAI Okinawa Youth Council Program expired listing,,pending_archive,E2,archive_or_verify_url,Added during HR-007; raw archive pending.
+source,S085,NED FY2024 Asia Grant Listing PDF,,pending_archive,E4,archive_or_verify_url,Added during HR-008; raw archive pending.
+source,S086,NED 2024 Grant Listings entry page,,pending_archive,E4,archive_or_verify_url,Added during HR-008; raw archive pending.
+source,S087,Peace Winds Japan USAID funding for West Japan Floods and Hokkaido Earthquake,,pending_archive,E4,archive_or_verify_url,Added during HR-008; raw archive pending.
+source,S088,Peace Winds America Peace Winds in Japan disaster relief overview,,pending_archive,E3,archive_or_verify_url,Added during HR-008; raw archive pending.
+source,S089,Pro Public official site,,pending_archive,E4,archive_or_verify_url,Added during HR-009; raw archive pending.
+source,S090,FoE International member page Nepal Pro Public,,pending_archive,E4,archive_or_verify_url,Added during HR-009; raw archive pending.
+source,S091,IUCN member page Pro Natura / Friends of the Earth Switzerland,,pending_archive,E4,archive_or_verify_url,Added during HR-009; raw archive pending.
+source,S092,FoE International member page Switzerland Pro Natura,,pending_archive,E4,archive_or_verify_url,Added during HR-009; raw archive pending.
