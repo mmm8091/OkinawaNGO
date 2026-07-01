@@ -7,14 +7,14 @@
   "what_it_supports": "Miyako groundwater concerns near JSDF deployment site",
   "evidence_level": "E3",
   "bias_note": "News source; exact URL needs verification",
-  "review_status": "ai_seeded",
-  "notes": "Referenced by A012. URL placeholder; verify.",
+  "review_status": "needs_local_retrieval",
+  "notes": "MT-003: exact accessible article not found online; keep as evidence gap for local newspaper/database retrieval.",
   "archive_status": "skipped_inferred_url",
   "local_path": "",
   "metadata_path": "source_docs\\source_archive\\S020\\metadata.json",
   "sha256": "",
   "content_type": "",
   "http_status": "",
-  "archived_at_utc": "2026-07-01T10:37:18.745482+00:00",
+  "archived_at_utc": "2026-07-01T19:53:58.690206+00:00",
   "note": ""
 }

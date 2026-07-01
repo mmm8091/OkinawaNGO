@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S019\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S019\\metadata.json",
-  "sha256": "4e083f0374219b206fc89ef000e950e024c8e4b5e37531d4db371aff12debe99",
+  "sha256": "25e7435cc79a5273c1f5e694aced78204fcc187e0f67599531e59255677ef373",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T10:37:17.535380+00:00",
+  "archived_at_utc": "2026-07-01T19:53:58.195430+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.yaeyama-nippo.co.jp/archives/4232",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
     "content_length": "",
-    "last_modified": "Wed, 01 Jul 2026 10:34:31 GMT"
+    "last_modified": "Wed, 01 Jul 2026 19:47:18 GMT"
   }
 }

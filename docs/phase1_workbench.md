@@ -66,14 +66,13 @@
 - [x] 定义人工复核任务书（HR-001 至 HR-009）。
 - [x] 对 P1 条目进行第一轮 web 核实（AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票）。
 - [x] 完成正式人工复核任务 HR-001 至 HR-009，并写入 `human_review_log_v0.csv`。
-- [ ] 补充来源日志中 URL 占位符条目（标记 inferred_url 的需核实）。
+- [x] 补充来源日志中 URL 占位符条目（MT-003：24/25 已解决为真实 URL，仅剩 S020 待当地补查）。
 - [ ] 继续扩充 actor registry 到 120-150 条。
 - [ ] 处理 HR 复核后的剩余 `needs_second_source` / `needs_local_retrieval` 条目。
 - [ ] 根据复核结果更新 evidence_level 和可发布措辞。
-- [x] 建立信息源本地备份机制并完成第一轮归档（74 archived / 2 manual archived / 14 inferred / 2 non-url；真实 URL 已无 pending archive）。
+- [x] 建立信息源本地备份机制并完成归档（85 archived / 2 manual / 2 failed 瞬时 SSL / 1 inferred(S020) / 2 non-url）。
 - [x] 处理 S007 手工归档。
-- [x] 继续归档 36 条 pending URL。
-- [ ] 继续核实剩余 14 条 `inferred_url` 占位符来源；MT-003 队列表已回填 11 条 resolved URL。
+- [x] MT-003：核实并回填 13 条 inferred_url（年份校正 S027/S030/S037/S040），本地归档；仅 S020 留当地补查。
 
 阶段 D：分析、可视化与进度沟通。
 
@@ -82,7 +81,8 @@
 - [x] 生成解释性图表包 v0：组织-议题桥接网络、地点-议题矩阵、边野古国际化路径图、共同行动样本构成、证据缺口图。
 - [x] 生成模块完成包 v0：R2、R3/R4、R5、R11、R14 brief、event table、任务表。
 - [x] 抽取 2020 OEJP / MMC 71 团体完整 participant list，并生成 actor registry extension candidates。
-- [ ] 根据解释性图表和人工复核结果修订正式沟通稿。
+- [x] 生成第二次进度同步稿 formal_comm_v0：对齐第一次文风的简洁 MD（`第二次进度同步_v0.md`），含研究模块菜单进度、七周工期对照、四张截图主图；图源由脚本生成。
+- [x] 重写当地材料任务书 v1：分 Tier 1 线上可完成 / Tier 2 需当地协作两层（沟通稿中只保留一句概括）。
 - [ ] 准备组织-议题矩阵和组织-地点矩阵分析。
 
 ## 文件索引
@@ -91,8 +91,10 @@
 - `docs/human_review_tasks_v0.md`
 - `docs/local_retrieval_tasks_v0.md`
 - `docs/human_decision_tasks_v0.md`
+- `docs/local_retrieval_tasks_v1.md`
 - `docs/progress_sync_assets_v0.md`
 - `docs/progress_report_v1.md`
+- `outputs/formal_comm_v0/`
 - `docs/source_archive_protocol_v0.md`
 - `docs/p1_review_prompt_v0.md`
 - `docs/human_review_merge_package_v0.md`
@@ -112,12 +114,12 @@
 
 ## 当前样本状态
 
-- actor 初版：93 条（HR-001 后新增 A076；HR-005 后新增 X016/X017）。
+- actor 初版：102 条（HR-001 后新增 A076；HR-005 后新增 X016/X017；MT-001 Tier A 新增 A077–A085 九条，均 E2 signatory-only 待核）。
 - funding/support edge 样本：27 条。
 - actor_issue_edges 初版：180 条。
 - actor_place_edges 初版：124 条。
 - actor alias 初版：14 条。
-- source log 初版：92 条（含 65 条真实 URL、25 条占位符 URL、2 条非 URL 参考）。
+- source log 初版：92 条（含 89 条真实 URL、1 条占位符 URL(S020)、2 条非 URL 参考）。
 - issue taxonomy：19 个一级议题。
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
@@ -125,7 +127,7 @@
 - 模块完成包 v0：覆盖 R2、R3/R4、R5、R11、R14；含 5 个 brief、模块状态表、共同行动 event/participant 表、2020 MMC 71 团体完整表、下一步模块调查任务表。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
-- 信息源备份机制已跑通：74 条已归档，2 条手工归档，14 条 `inferred_url` 占位符等待核实，2 条非 URL 书目参考待人工书目归档。
+- 信息源备份机制已跑通：85 条已归档，2 条手工归档，2 条瞬时 SSL 失败（重试恢复），1 条 `inferred_url`(S020) 待当地补查，2 条非 URL 书目参考。
 
 ## 任务索引
 
@@ -154,8 +156,8 @@
 
 ## 下一步
 
-1. 用 `outputs/module_completion_v0/` 选沟通主线，挑 3 张主图进入正式沟通稿。
-2. 执行 `next_module_investigation_tasks_v0.csv`：MT-001/MT-002 已形成可汇报产出，下一步优先 MT-003 URL 核实和 MT-004 与那国证据包。
-3. 启动 LR-001 至 LR-008 的当地材料收集包，优先处理与那国、军属慈善 recipient、外务省 / JICA / ONC。
-4. 继续扩充 actor registry 到 120 条以上。
+1. 第二次进度同步稿已交付（source_docs/current 两份 PDF 并列）；下一轮沟通再议。
+2. MT-001 Tier A 9 条已写入 registry（93→102）并接入 2020 MMC event（R5，2→11）；剩：补 alias（tentative 日文名待核）、二次核实后加议题/地点候选边。B=12 暂缓 / C=31 署名限定。
+3. MT-003 基本完成：24/25 已解决为真实 URL 并归档（年份校正 S027/S030/S037/S040），仅 S020（宫古地下水）留当地补查。
+4. 执行 LR v1 Tier 1 剩余项：T1-A 军属慈善 recipient、T1-B USO 赞助、T1-D/E 线上公开报告，产出 `local_retrieval_tier1_findings_v1`；继续扩 registry 到 120+。
 5. 根据 2020 MMC 71 团体表和 event table 结果生成 R5/R11 的下一版网络图。

@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S063\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S063\\metadata.json",
-  "sha256": "099f3485a8508034a5d9fe46e122243eb73a3e61e06ff4e014ddc8ac17fdbf04",
+  "sha256": "a87f6e4ad6e34b51e78f4c2b2689cc917c9cb39751523cee561ac1047a09204c",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T10:38:03.977366+00:00",
+  "archived_at_utc": "2026-07-01T19:56:06.774431+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://ryukyushimpo.jp/okinawa-dic/prentry-41677.html",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
     "content_length": "",
-    "last_modified": "Wed, 01 Jul 2026 10:35:19 GMT"
+    "last_modified": "Wed, 01 Jul 2026 19:56:07 GMT"
   }
 }

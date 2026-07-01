@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S060\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S060\\metadata.json",
-  "sha256": "eb2bc0014c0f30a6f6870e81ccf17a8fb9e7297a3a2bd92082b574222a1aadfd",
+  "sha256": "d4e5c482a82481c3d01f3102cd676d1a63729e8e0effad3363f60e869e200df4",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T10:37:57.879172+00:00",
+  "archived_at_utc": "2026-07-01T19:56:04.386712+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://earthjustice.org/press/2003/us-japanese-conservation-groups-join-in-legal-effort-to-save-okinawa-dugong-from-extinction",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
-    "content_length": "496552",
+    "content_length": "496580",
     "last_modified": ""
   }
 }
