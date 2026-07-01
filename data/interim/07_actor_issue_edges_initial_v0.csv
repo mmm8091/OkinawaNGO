@@ -60,7 +60,7 @@ AI058,X006,I014,military_family_service,KOSC spouse club,X006,E3,ai_seeded,Need 
 AI059,X007,I014,military_family_service,OESC Stripes lead,X007,E2,needs_second_source,Needs official confirmation.
 AI060,X008,I014,military_family_service,Red Cross Okinawa volunteer/service role,X008,E4,ai_seeded,Service node.
 AI061,X009,I014,military_family_service,NMCRS emergency assistance role,X009,E4,ai_seeded,Service node.
-AI062,X010,I015,international_cooperation,MOFA NGO consultant/JICA relation,X010;X011,E4,ai_seeded,Uses schema tag not issue table yet.
+AI062,X010,I015,international_cooperation,MOFA NGO consultant/JICA relation,X010;X011,E4,ai_seeded,Institutional relation.
 AI063,X010,I013,public_diplomacy,International cooperation/development education adjacent,X010;X011,E3,ai_seeded,Use cautiously.
 AI064,X011,I015,international_cooperation,JICA Okinawa institutional role,X011,E4,ai_seeded,Institutional node.
 AI065,X012,I013,public_diplomacy,TOMODACHI public-private partnership,X012,E4,ai_seeded,Okinawa-specific link not yet confirmed.
@@ -68,7 +68,7 @@ AI066,X013,I013,public_diplomacy,Okinawa Youth Council grant opportunity,X013,E3
 AI067,X014,I013,public_diplomacy,NED watchlist / democracy funding context,X014,E2,watchlist_only,No Okinawa recipient confirmed.
 AI068,X015,I015,international_cooperation,Peace Winds Japan USAID method sample,X015,E4,watchlist_only,No Okinawa issue link confirmed.
 AI069,A021,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.
-AI070,A021,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation, not stable alliance.
+AI070,A021,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation; not stable alliance.
 AI071,A022,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.
 AI072,A022,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.
 AI073,A023,I001,anti_base,2015 NACSJ signatory local civic group,S004,E4,ai_seeded,Needs local follow-up.
@@ -109,3 +109,71 @@ AI107,A045,I005,biodiversity,Center for Biological Diversity signatory,S004,E4,a
 AI108,A045,I012,international_advocacy,U.S. environmental NGO signatory,S004,E4,ai_seeded,International actor.
 AI109,A046,I012,international_advocacy,Overseas signatory,S004,E4,needs_second_source,Exact organization name needs confirmation.
 AI110,A046,I005,biodiversity,Environmental NGO signatory,S004,E4,needs_second_source,Exact identity check.
+AI111,A047,I001,anti_base,Core anti-base coordination body,S031,E4,ai_seeded,Central coordination role in Okinawa peace/anti-base movements.
+AI112,A047,I019,peace,Peace movement coordination,S031,E4,ai_seeded,Peace movement center.
+AI113,A047,I002,anti_military,Anti-military deployment coordination,S031,E4,ai_seeded,Broad anti-military frame.
+AI114,A047,I003,Henoko,Henoko opposition coordination,S031,E3,ai_seeded,Verify direct Henoko coordination role.
+AI115,A048,I001,anti_base,Symbolic landowner resistance to military land leases,S038,E4,ai_seeded,Core anti-base frame.
+AI116,A048,I011,legal,Land lease legal resistance,S038,E4,ai_seeded,Legal channel.
+AI117,A048,I019,peace,Anti-war landowner movement,S038,E4,ai_seeded,Peace frame.
+AI118,A048,I009,local_autonomy,Land rights and local autonomy,S038,E3,ai_seeded,Autonomy frame.
+AI119,A049,I007,life_safety,Women's safety and military violence issues,S039,E4,ai_seeded,Gender/safety frame.
+AI120,A049,I001,anti_base,Women's anti-base movement,S039,E4,ai_seeded,Anti-base frame.
+AI121,A049,I002,anti_military,Opposition to military violence,S039,E4,ai_seeded,Anti-military frame.
+AI122,A050,I011,legal,Bar association legal statements on base issues,S037,E4,ai_seeded,Professional legal frame.
+AI123,A050,I009,local_autonomy,Bar association statements on prefectural autonomy,S037,E4,ai_seeded,Autonomy frame.
+AI124,A050,I001,anti_base,President statements opposing Henoko construction,S037,E4,ai_seeded,Formal professional statement.
+AI125,A051,I010,referendum,2019 prefectural referendum initiative,S025,E4,ai_seeded,Core referendum actor.
+AI126,A051,I003,Henoko,Referendum specifically about Henoko base,S025,E4,ai_seeded,Henoko frame.
+AI127,A051,I009,local_autonomy,Local self-determination via referendum,S025,E4,ai_seeded,Autonomy frame.
+AI128,A052,I011,legal,Kadena noise litigation,S026,E4,ai_seeded,Court litigation.
+AI129,A052,I007,life_safety,Noise damage and daily life impact,S026,E4,ai_seeded,Life safety frame.
+AI130,A052,I001,anti_base,Base noise burden legal action,S026,E4,ai_seeded,Anti-base through legal channel.
+AI131,A053,I011,legal,Futenma noise litigation,S027,E4,ai_seeded,Court litigation.
+AI132,A053,I007,life_safety,Noise damage and daily life impact,S027,E4,ai_seeded,Life safety frame.
+AI133,A053,I001,anti_base,Base noise burden legal action,S027,E4,ai_seeded,Anti-base through legal channel.
+AI134,A054,I007,life_safety,Human rights and safety concerns,S033,E3,ai_seeded,Verify current activities.
+AI135,A055,I005,biodiversity,Tidal flat ecosystem protection,S030,E3,ai_seeded,Environmental frame.
+AI136,A055,I011,legal,Environmental litigation against reclamation,S030,E3,ai_seeded,Legal frame.
+AI137,A056,I005,biodiversity,Environmental network activities,S033,E3,needs_second_source,Verify organizational structure.
+AI138,A056,I001,anti_base,Environmental perspective on base issues,S033,E3,needs_second_source,Verify direct connection.
+AI139,A057,I001,anti_base,National newspaper opinion ads on Okinawa base issues,S034,E3,ai_seeded,Public opinion mobilization.
+AI140,A057,I019,peace,Peace framing in opinion campaigns,S034,E3,ai_seeded,Peace frame.
+AI141,A058,I001,anti_base,Labor/civic umbrella anti-base coordination,S031,E3,needs_second_source,Verify structure.
+AI142,A058,I019,peace,Peace/labor movement coordination,S031,E3,needs_second_source,Verify structure.
+AI143,A059,I001,anti_base,All-island anti-Henoko base coordination,S029,E3,ai_seeded,Municipal-level network.
+AI144,A059,I003,Henoko,Henoko opposition coordination,S029,E3,ai_seeded,Henoko focus.
+AI145,A059,I009,local_autonomy,Municipal/grassroots autonomy expression,S029,E3,ai_seeded,Local autonomy frame.
+AI146,A060,I001,anti_base,Takae helipad opposition,S028,E3,ai_seeded,Anti-base/anti-helipad.
+AI147,A060,I005,biodiversity,Yanbaru forest protection concerns,S028,E3,ai_seeded,Environmental frame.
+AI148,A061,I005,biodiversity,Bird conservation and Henoko habitat statements,S003;S004,E4,ai_seeded,National bird conservation NGO.
+AI149,A062,I005,biodiversity,Wetland conservation and Henoko/Oura Bay statements,S003,E4,ai_seeded,Wetland network.
+AI150,A063,I001,anti_base,Kanto-region anti-war landowner solidarity with Okinawa,S038,E3,ai_seeded,Mainland solidarity.
+AI151,A063,I019,peace,Peace movement mainland branch,S038,E3,ai_seeded,Peace solidarity.
+AI152,A064,I001,anti_base,International network against foreign military bases,S033,E3,needs_second_source,Verify Okinawa connection.
+AI153,A064,I012,international_advocacy,International anti-base advocacy,S033,E3,needs_second_source,Verify participation.
+AI154,A065,I002,anti_military,Southwest Islands anti-militarization network,S036,E3,needs_second_source,Verify membership.
+AI155,A065,I017,frontline_prevention,Anti-frontline framing for Sakishima,S036,E3,needs_second_source,Verify continuity.
+AI156,A065,I018,Taiwan_contingency,Security environment concerns,S036,E3,needs_second_source,Verify framing.
+AI157,A066,I011,legal,International law and base policy arguments,S032,E4,ai_seeded,Policy/legal advocacy.
+AI158,A066,I009,local_autonomy,Okinawa autonomy policy alternatives,S032,E4,ai_seeded,Autonomy frame.
+AI159,A066,I001,anti_base,Base policy alternatives research,S032,E4,ai_seeded,Think tank role.
+AI160,A067,I001,anti_base,National council against Henoko landfill soil import,S040,E3,ai_seeded,Cross-prefecture coordination.
+AI161,A067,I003,Henoko,Henoko-specific soil import opposition,S040,E3,ai_seeded,Henoko focus.
+AI162,A067,I005,biodiversity,Environmental concern about soil import sources,S040,E3,ai_seeded,Environmental frame.
+AI163,A068,I010,referendum,1997 Nago city referendum initiative,S042,E3,ai_seeded,Historical referendum actor.
+AI164,A068,I001,anti_base,Base construction referendum opposition,S042,E3,ai_seeded,Anti-base frame.
+AI165,A068,I003,Henoko,Henoko/Nago base referendum,S042,E3,ai_seeded,Henoko/Nago focus.
+AI166,A069,I004,dugong,Dugong EIA monitoring,S047,E3,needs_second_source,Verify organizational structure.
+AI167,A069,I005,biodiversity,Environmental assessment monitoring,S047,E3,needs_second_source,Verify current status.
+AI168,A069,I003,Henoko,Henoko/Oura Bay EIA focus,S047,E3,needs_second_source,Henoko focus.
+AI169,A070,I019,peace,Veterans peace advocacy in Okinawa,S048,E3,needs_second_source,Verify chapter status.
+AI170,A070,I001,anti_base,Veterans anti-base advocacy,S048,E3,needs_second_source,Verify participation.
+AI171,A070,I012,international_advocacy,U.S. veterans international peace advocacy,S048,E3,needs_second_source,Verify activities.
+AI172,A071,I019,peace,Civic peace liaison activities,S031,E3,needs_second_source,Verify structure.
+AI173,A071,I001,anti_base,Anti-base civic coordination,S031,E3,needs_second_source,Verify if distinct from A047.
+AI174,A072,I001,anti_base,Base removal civic network,S031,E3,needs_second_source,Verify if distinct from A071.
+AI175,A072,I019,peace,World peace framing,S031,E3,needs_second_source,Verify structure.
+AI176,A074,I009,local_autonomy,Prefectural government base affairs,S043,E4,ai_seeded,Government context node.
+AI177,A074,I001,anti_base,Administrative base burden management,S043,E4,ai_seeded,Government role.
+AI178,A075,I001,anti_base,Defense bureau base construction role,S047,E4,ai_seeded,Government context node.

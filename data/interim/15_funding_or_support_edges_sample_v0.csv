@@ -11,3 +11,11 @@ F009,X008,P007,service,Red Cross volunteer program,U.S. Naval Hospital Okinawa /
 F010,X009,P007,service,Emergency assistance / relief society office,Camp Foster,E4,confirmed_service_role,X009,ai_seeded,no,Service role confirmed by Military OneSource.
 F011,X010,X011,consultant_or_partner,MOFA NGO consultant / JICA Okinawa international cooperation,Okinawa,E4,confirmed_commission,X010;X011,ai_seeded,yes,Need ONC annual report for money/project details.
 F012,X013,unknown_recipient,grant_opportunity,Okinawa Youth Council Program,Okinawa,E3,no_public_evidence,X013,needs_local_retrieval,yes,Opportunity only; do not infer award or recipient.
+F013,A047,A019,coordination,Peace Movement Center coordination with Henoko protest groups,Henoko; Okinawa,E3,not_funding_relation,S031,ai_seeded,yes,Coordination relation; verify direct coordination role and scope.
+F014,A047,A048,coordination,Peace Movement Center and anti-war landowner coordination,Okinawa,E3,not_funding_relation,S031,ai_seeded,no,Movement coordination relation.
+F015,A059,A047,coordination,All-island conference and Peace Movement Center coordination,Okinawa,E3,not_funding_relation,S029;S031,ai_seeded,yes,Verify specific coordination mechanism.
+F016,A066,A050,partnership,ND and Okinawa Bar Association joint policy events,Okinawa; Tokyo,E3,not_funding_relation,S032,ai_seeded,yes,Verify specific joint activities.
+F017,A063,A048,solidarity_branch,Kanto branch of anti-war landowner movement,Tokyo; Okinawa,E3,not_funding_relation,S038,ai_seeded,no,Mainland branch of Okinawa-origin movement.
+F018,A067,A025,coordination,Henoko soil council and Henoko construction opposition coordination,Henoko; Japan,E3,not_funding_relation,S040,ai_seeded,yes,Cross-prefecture anti-Henoko coordination. Verify linkage.
+F019,X010,A074,administrative_collaboration,ONC international cooperation coordination with prefectural government,Okinawa,E3,probable_funding,S043;X010,ai_seeded,yes,Verify whether ONC receives prefectural funding/support.
+F020,A051,A050,legal_support,Bar association support for referendum legal process,Okinawa,E3,not_funding_relation,S025;S037,ai_seeded,yes,Verify direct legal support for referendum initiative.

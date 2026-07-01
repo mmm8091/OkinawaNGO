@@ -1,6 +1,6 @@
-# 第一次进度沟通素材包 v0
+# 进度沟通素材包 v0
 
-日期：2026-06-17
+日期：2026-06-17（v1 更新：2026-07-01）
 
 ## 1. 沟通稿主口径
 
@@ -67,3 +67,21 @@
 ## 8. 下一周建议写法
 
 > 下一步将继续补充 actor registry，并对初版组织-议题、组织-地点关系进行人工复核；同时整理当地资料收集任务表，为后续可能需要当地协作者查询的材料做好准备。
+
+## 9. v1 更新（2026-07-01）
+
+数据扩充后新增图表输出目录：`outputs/progress_sync_v1/`
+
+新增图表：
+
+- `fig_actor_origin_counts.png`：actor 来源分布（n=90）。
+- `fig_actor_class_counts.png`：actor 类型分布（n=90）。
+- `fig_actor_evidence_counts.png`：actor 证据等级分布。
+- `fig_issue_edge_counts.png`：议题 edge 排名（n=178）。
+- `fig_place_edge_counts.png`：地点 edge 排名（n=122）。
+- `fig_review_status_counts.png`：复核状态分布。
+- `fig_review_priority_counts.png`：人工复核优先级分布。
+- `fig_source_type_counts.png`：来源类型分布（n=48）。
+- `fig_support_relation_types.png`：支持/资助关系类型分布（n=20）。
+
+正式进度沟通稿：`docs/progress_report_v1.md`

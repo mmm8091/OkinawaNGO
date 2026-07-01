@@ -2,11 +2,11 @@
 
 硬规则：本工作台永远不能超过 300 行；只记录当前状态、计划、阻塞和下一步，详细材料放到独立文档或数据表。
 
-更新时间：2026-06-17
+更新时间：2026-07-01
 
 ## 当前定位
 
-一期不做“复归以来全量 NGO 网络”，先做可复核的小型研究：
+一期不做"复归以来全量 NGO 网络"，先做可复核的小型研究：
 
 > 冲绳民间组织 / NGO 如何把基地问题转译为环保、生活安全、地方自治、人权、法律程序和国际倡议等议题？这些组织在边野古、与那国、先岛等关键地点中扮演了什么样的公开角色？
 
@@ -24,7 +24,7 @@
 - 不把共同署名等同于稳定联盟。
 - 不把服务型 NGO 自动解释成反基地或亲基地。
 - 不把 grant opportunity 写成已拨款事实。
-- 不把 NED / USAID / 外务省 / 美国使领馆关系写成“资金链”，除非有官方 grant、award、contract、财报或项目报告。
+- 不把 NED / USAID / 外务省 / 美国使领馆关系写成"资金链"，除非有官方 grant、award、contract、财报或项目报告。
 - 不做 AI 写 AI 审；敏感关系必须人工复核。
 - 标准一期不承诺完整媒体可见度、完整人物网络、完整组织谱系。
 
@@ -39,7 +39,7 @@
 - [x] 建立工作台。
 - [x] 建立编码字段说明。
 - [x] 建立正式 `source_log_initial`。
-- [ ] 把新版方案中的模块编号冲突记入待修。
+- [x] 把新版方案中的模块编号冲突记入待修。
 
 阶段 B：NPO / NGO / 市民团体资料收集与组织样本初版。
 
@@ -53,6 +53,30 @@
 - [x] 建立当地补查队列初版。
 - [x] 建立 actor_issue_edges 初版。
 - [x] 建立 actor_place_edges 初版。
+- [x] 扩充 actor registry 到 90 条。
+- [x] 扩充 source log 到 48 条。
+- [x] 扩充 actor-issue edges 到 178 条。
+- [x] 扩充 actor-place edges 到 122 条。
+- [x] 扩充 funding/support edges 到 20 条。
+- [x] 扩充 place registry 到 20 个地点。
+- [x] 为高风险条目标注复核优先级（P1/P2/P3）。
+
+阶段 C：人工复核与数据质量提升。
+
+- [x] 定义人工复核任务书（HR-001 至 HR-009）。
+- [ ] 对 P1 条目进行第一轮人工复核（与那国、军属网络、领馆项目、NED/USAID）。
+- [ ] 补充来源日志中 URL 占位符条目（标记 inferred_url 的需核实）。
+- [ ] 继续扩充 actor registry 到 120-150 条。
+- [ ] 完成 P2 条目人工复核。
+- [ ] 根据复核结果更新 evidence_level 和可发布措辞。
+
+阶段 D：分析、可视化与进度沟通。
+
+- [x] 生成第一次进度沟通图表（outputs/progress_sync_v0/）。
+- [x] 起草第一版进度沟通稿（docs/progress_report_v1.md）。
+- [ ] 更新可视化图表以反映扩充后的数据。
+- [ ] 根据人工复核结果修订沟通稿。
+- [ ] 准备组织-议题矩阵和组织-地点矩阵分析。
 
 ## 文件索引
 
@@ -61,6 +85,7 @@
 - `docs/local_retrieval_tasks_v0.md`
 - `docs/human_decision_tasks_v0.md`
 - `docs/progress_sync_assets_v0.md`
+- `docs/progress_report_v1.md`
 - `data/metadata/coding_schema_v0.md`
 - `data/interim/01_actor_registry_initial_v0.csv`
 - `data/interim/03_issue_taxonomy_v0.csv`
@@ -73,22 +98,22 @@
 
 ## 当前样本状态
 
-- actor 初版：61 条。
-- 原有运动 / 国际倡议 actor：20 条。
-- 外来 NGO / 军属服务 / 资助节点：15 条。
-- funding/support edge 样本：12 条。
-- actor_issue_edges 初版：110 条。
-- actor_place_edges 初版：78 条。
-- source log 初版：26 条。
+- actor 初版：90 条（含冲绳本土 ~35、国内 NGO ~20、国际/美国 ~25、混合网络 ~5、制度节点 ~5）。
+- funding/support edge 样本：20 条。
+- actor_issue_edges 初版：178 条。
+- actor_place_edges 初版：122 条。
+- source log 初版：48 条（含 22 条已验证 URL、26 条占位符 URL 需核实）。
 - issue taxonomy：19 个一级议题。
-- place registry：15 个地点 / 场域节点。
+- place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图、6 个统计 CSV。
+- 第一版进度沟通稿已完成。
 
 ## 任务索引
 
 - 人工复核任务书：`docs/human_review_tasks_v0.md`
 - 当地补查任务书：`docs/local_retrieval_tasks_v0.md`
 - 人类决策任务书：`docs/human_decision_tasks_v0.md`
+- 进度沟通稿：`docs/progress_report_v1.md`
 
 当前人工复核优先级：与那国组织、军属服务/慈善网络、美国领馆 grant recipient、NED/USAID watchlist、2015 海外署名组织身份。
 
@@ -102,7 +127,7 @@
 
 遇到以下情况，直接抛给人类确认：
 
-- 公开资料显示“可能重要”，但缺少可复核来源。
+- 公开资料显示"可能重要"，但缺少可复核来源。
 - 资助 / 委托 / 赞助关系只有线索，没有 award、contract、财报或正式项目报告。
 - 组织名、别名、法律身份或组织延续性无法确认。
 - 需要当地数据库、图书馆、纸质资料、组织年报或当地联系人。
@@ -110,5 +135,8 @@
 
 ## 下一步
 
-1. 根据 `docs/progress_sync_assets_v0.md` 起草第一次进度沟通稿。
-2. 给高风险 actor / edge 标注 `human_reviewer` 和 `review_note`。
+1. 对 P1 条目进行第一轮人工复核。
+2. 补充来源日志中 URL 占位符条目。
+3. 继续扩充 actor registry 到 120 条以上。
+4. 更新可视化图表。
+5. 整理当地材料收集需求。

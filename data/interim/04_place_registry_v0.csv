@@ -9,8 +9,13 @@ P007,Camp Foster,base_site,Central Okinawa,U.S. base service network and Red Cro
 P008,Camp Hansen,base_site,Central/Northern Okinawa,U.S. base service network and training area,medium,Service ecology.
 P009,Camp Kinser,base_site,Urasoe,U.S. base service network and logistics,medium,Service ecology.
 P010,MCAS Futenma,base_site,Ginowan,U.S. Marine air station and service network,medium,Distinguish from Futenma issue area when needed.
-P011,Yonaguni,municipality,Sakishima,Coastal surveillance unit, referendum, Taiwan proximity, high frontline relevance,high,Do not over-environmentalize.
-P012,Ishigaki,municipality,Sakishima,Missile/base deployment, groundwater, referendum movement,high,Life safety/environment/autonomy.
-P013,Miyako,municipality,Sakishima,Missile deployment, groundwater/water-source frame,high,Life safety/environment.
+P011,Yonaguni,municipality,Sakishima,Coastal surveillance unit; referendum; Taiwan proximity; high frontline relevance,high,Do not over-environmentalize.
+P012,Ishigaki,municipality,Sakishima,Missile/base deployment; groundwater; referendum movement,high,Life safety/environment/autonomy.
+P013,Miyako,municipality,Sakishima,Missile deployment; groundwater/water-source frame,high,Life safety/environment.
 P014,JICA Okinawa,institutional_site,Urasoe/Okinawa,International cooperation and ONC/JICA linkage,sample,Institutional ecology.
 P015,U.S. Consulate General Naha,institutional_site,Naha,Public diplomacy and grant/exchange programs,sample,Recipient chain needs check.
+P016,Takae,site,Northern Okinawa / Yanbaru,Northern Training Area helipad construction; Yanbaru forest protection,high,Helipad opposition and biodiversity.
+P017,Nago,municipality,Northern Okinawa,Henoko host municipality; 1997 referendum; Nago city politics,high,Municipal governance and referendum context.
+P018,Ginowan,municipality,Central Okinawa,Futenma base host city; noise litigation; relocation origin,medium,Noise/safety issues.
+P019,Awase,site,Okinawa City,Tidal flat reclamation and environmental litigation,medium,Environmental case.
+P020,Naha,municipality,Southern Okinawa,Prefectural capital; civic organization headquarters,medium,Administrative center.

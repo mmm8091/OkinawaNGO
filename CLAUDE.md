@@ -15,6 +15,7 @@ This repository supports the Okinawa NGO / civic organization network research p
 ## Current Entry Points
 
 - Workbench: `docs/phase1_workbench.md`
+- Progress report: `docs/progress_report_v1.md`
 - Human review tasks: `docs/human_review_tasks_v0.md`
 - Local material collection tasks: `docs/local_retrieval_tasks_v0.md`
 - Human decision tasks: `docs/human_decision_tasks_v0.md`
@@ -23,15 +24,15 @@ This repository supports the Okinawa NGO / civic organization network research p
 
 ## Data Status
 
-Current initial data lives under `data/interim/`.
+Current initial data lives under `data/interim/`. Updated 2026-07-01.
 
-- `01_actor_registry_initial_v0.csv`
-- `03_issue_taxonomy_v0.csv`
-- `04_place_registry_v0.csv`
-- `05_source_log_initial_v0.csv`
-- `07_actor_issue_edges_initial_v0.csv`
-- `08_actor_place_edges_initial_v0.csv`
-- `15_funding_or_support_edges_sample_v0.csv`
+- `01_actor_registry_initial_v0.csv` — 90 actors
+- `03_issue_taxonomy_v0.csv` — 19 issues
+- `04_place_registry_v0.csv` — 20 places
+- `05_source_log_initial_v0.csv` — 48 sources
+- `07_actor_issue_edges_initial_v0.csv` — 178 edges
+- `08_actor_place_edges_initial_v0.csv` — 122 edges
+- `15_funding_or_support_edges_sample_v0.csv` — 20 edges
 
 Generated progress-sync charts live under `outputs/progress_sync_v0/`.
 
