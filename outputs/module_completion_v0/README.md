@@ -32,8 +32,14 @@
 
 ## 下一步调查优先级
 
-1. 抽取 2020 OEJP/MMC 71 团体 participant list。
-2. 归档 36 条 pending URL，核实 25 条 inferred_url。
+1. 复核并吸收 2020 OEJP/MMC 71 团体 participant list。
+2. 继续核实剩余 14 条 inferred_url，并使用 `data/interim/16_inferred_url_resolution_queue_v0.csv` 分档推进。
 3. 与那国 A014/A015 当地资料。
 4. AWWA / spouse clubs charity recipients。
 5. ONC / JICA / MOFA 关系链。
+
+## 已可汇报为基本完工
+
+- MT-001 抽取阶段：已形成 2020 OEJP/MMC 71 团体完整表、52 个 registry extension candidates 和抽取说明。
+- MT-002：已有真实 URL 的来源完成第一轮本地备份，当前 archive manifest 为 74 archived / 2 manual_archived / 0 pending_archive。
+- MT-003 第一轮：25 条 `inferred_url` 中 11 条已回填真实 URL 并归档，14 条仍待处理。

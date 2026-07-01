@@ -9,12 +9,19 @@
   "bias_note": "FoE International member directory",
   "review_status": "human_verified",
   "notes": "HR-009 source; confirms Pro Natura as FoE Switzerland.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S092\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S092\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T10:00:00.0000000Z",
-  "note": "Added during HR-009; raw archive pending."
+  "sha256": "a45f4beaa429a6467c4d04e0c96115d02355b1624cf4588d995b3a6bfaad4b98",
+  "content_type": "text/html",
+  "http_status": "202",
+  "archived_at_utc": "2026-07-01T10:38:52.301603+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.foei.org/member-groups/switzerland/",
+    "status_code": "202",
+    "content_type": "text/html",
+    "content_length": "198",
+    "last_modified": ""
+  }
 }

@@ -9,12 +9,19 @@
   "bias_note": "Advocacy legal case page; verify case docket if central",
   "review_status": "human_verified",
   "notes": "HR-001 source supplied by human reviewer; do not treat as A002 plaintiff evidence.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S062\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S062\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
-  "note": "Added during HR-001; raw archive pending."
+  "sha256": "ae4031e2192272053a2c54aba5c238a6f10768f5cd032dad4b3008aa9e9bd889",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:02.188748+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://earthjustice.org/case/okinawa-dugong-proposed-airbase",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "561471",
+    "last_modified": ""
+  }
 }

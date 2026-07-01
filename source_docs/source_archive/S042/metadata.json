@@ -1,20 +1,27 @@
 {
   "source_id": "S042",
-  "source_type": "local_news",
+  "source_type": "local_official",
   "title": "名護市民投票 基地建設反対が多数",
   "year": "1997",
-  "url": "inferred_url:nago_referendum_1997",
+  "url": "https://www.city.nago.okinawa.jp/kurashi/2018071900226/",
   "what_it_supports": "1997 Nago city referendum on Henoko base",
   "evidence_level": "E4",
-  "bias_note": "Historical landmark event; well documented",
+  "bias_note": "Local official timeline; useful for event chronology.",
   "review_status": "ai_seeded",
-  "notes": "Foundational referendum event.",
-  "archive_status": "skipped_inferred_url",
-  "local_path": "",
+  "notes": "MT-003 resolved: Nago city official timeline records 1997 referendum context.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S042\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S042\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T07:52:42.695597+00:00",
-  "note": ""
+  "sha256": "f9c44b1d7e98353f0d22d04b7a3ae362e32dc653ade7f873e64e59e0a1335257",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:37:34.963324+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.nago.okinawa.jp/kurashi/2018071900226/",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "81931",
+    "last_modified": "Thu, 08 Aug 2024 00:53:06 GMT"
+  }
 }

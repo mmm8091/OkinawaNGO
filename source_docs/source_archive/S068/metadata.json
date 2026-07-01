@@ -9,12 +9,19 @@
   "bias_note": "Mainstream local newspaper; paywall or excerpt limits may apply",
   "review_status": "human_verified",
   "notes": "HR-003 source supplied by human reviewer; cross-supports A016 existence and activity.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S068\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S068\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:58:37.2689065Z",
-  "note": "Added during HR-003; raw archive pending."
+  "sha256": "a196d059b37f877a494a6340e6c087983580dfc9460f7b2579fa252daefe19f8",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:11.835848+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.okinawatimes.co.jp/articles/-/1448767",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "115159",
+    "last_modified": ""
+  }
 }

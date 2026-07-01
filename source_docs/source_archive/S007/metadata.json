@@ -10,11 +10,11 @@
   "review_status": "ai_seeded",
   "notes": "Useful narrative source.",
   "archive_status": "manual_archived",
-  "local_path": "source_docs\\source_archive\\S007\\raw.pdf",
+  "local_path": "source_docs/source_archive/S007/raw.pdf",
   "metadata_path": "source_docs\\source_archive\\S007\\metadata.json",
   "sha256": "361017c6f5d9eed8e56058dfa47f8cb4142bdfd84883c156a15459c6da85a941",
   "content_type": "application/pdf",
   "http_status": "manual",
-  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
-  "note": "Automated archive failed with HTTP 403. Human reviewer opened the page in browser and saved raw.pdf manually."
+  "archived_at_utc": "2026-07-01T10:25:55.873951+00:00",
+  "note": "Manual archive preserved because source URL returns HTTP 403 to script."
 }

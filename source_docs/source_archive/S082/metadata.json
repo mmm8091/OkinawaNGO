@@ -9,12 +9,19 @@
   "bias_note": "Official grants.gov opportunity listing; opportunity only not award",
   "review_status": "human_verified",
   "notes": "HR-007 source; confirms NOFO/opportunity and no recipient inference.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S082\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S082\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:30:00.0000000Z",
-  "note": "Added during HR-007; raw archive pending."
+  "sha256": "00bab724c1c3983885267c75f2bd0fa0b6b7b1cf2a08cf5c830744690d1d0bed",
+  "content_type": "text/html;charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:34.489943+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.grants.gov/search-results-detail/351830",
+    "status_code": "200",
+    "content_type": "text/html;charset=utf-8",
+    "content_length": "34858",
+    "last_modified": ""
+  }
 }

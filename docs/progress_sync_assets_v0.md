@@ -118,8 +118,8 @@
 
 下一轮调查提示：
 
-- 2020 OEJP/MMC 71 团体样本在当前 registry 中展开不足，需要做 event table。
-- 36 条 source 仍为 `pending_archive`，25 条仍为 `inferred_url`。
+- 2020 OEJP/MMC 71 团体样本已抽取完整 list；下一步是复核 52 个 registry extension candidates。
+- 已有真实 URL 的 source archive 已完成第一轮归档；25 条 `inferred_url` 已核实/回填 11 条，剩余 14 条需要核成真实 URL 或标记未找到。
 - 与那国、军属慈善 recipient、外务省 / JICA / ONC 仍是最值得启动的当地材料方向。
 
 ## 11. 模块完成包 v0（2026-07-01）
@@ -142,19 +142,27 @@
 - `R14_coverage_bias_audit_brief.md`
 - `coaction_events_v0.csv`
 - `coaction_participants_v0.csv`
+- `coaction_participants_2020_mmc_71_full_v0.csv`
+- `actor_registry_extension_candidates_2020_mmc_v0.csv`
+- `coaction_2020_mmc_71_extraction_note.md`
 - `transnational_pathway_nodes_v0.csv`
 
 当前模块完成度：
 
 - R2：`module_v0`
 - R3/R4：`module_v0`
-- R5：`event_sample_v0`
+- R5：`full_event_list_v0`
 - R11：`pathway_v0`
 - R14：`audit_v0`
 
 下一步优先任务：
 
-1. MT-001：抽取 2020 OEJP/MMC 71 团体 participant list。
-2. MT-002：归档 36 条 pending URL。
-3. MT-003：核实 25 条 `inferred_url`。
-4. MT-004：与那国 A014/A015 当地证据包。
+1. MT-001：复核并吸收 2020 OEJP/MMC 71 团体中的 registry extension candidates。
+2. MT-003：继续核实剩余 14 条 `inferred_url`。
+3. MT-004：与那国 A014/A015 当地证据包。
+
+已基本完工，可对老板汇报为“完成底稿”的 MT：
+
+- MT-001 的抽取阶段：71 团体完整 participant list、52 个 registry extension candidates、抽取说明。
+- MT-002：真实 URL 来源本地备份，当前 74 archived / 2 manual archived / 0 pending archive。
+- MT-003 第一轮：25 条 `inferred_url` 中 11 条已回填真实 URL 并归档，14 条仍待处理。

@@ -9,12 +9,19 @@
   "bias_note": "Newspaper dictionary secondary source",
   "review_status": "human_verified",
   "notes": "HR-001 source supplied by human reviewer; useful for organization identity and local context.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S063\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S063\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
-  "note": "Added during HR-001; raw archive pending."
+  "sha256": "099f3485a8508034a5d9fe46e122243eb73a3e61e06ff4e014ddc8ac17fdbf04",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:03.977366+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/okinawa-dic/prentry-41677.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Wed, 01 Jul 2026 10:35:19 GMT"
+  }
 }

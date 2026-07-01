@@ -70,9 +70,10 @@
 - [ ] 继续扩充 actor registry 到 120-150 条。
 - [ ] 处理 HR 复核后的剩余 `needs_second_source` / `needs_local_retrieval` 条目。
 - [ ] 根据复核结果更新 evidence_level 和可发布措辞。
-- [x] 建立信息源本地备份机制并完成第一轮归档（28 archived / 1 manual archived / 25 inferred / 2 non-url / 36 pending archive）。
+- [x] 建立信息源本地备份机制并完成第一轮归档（74 archived / 2 manual archived / 14 inferred / 2 non-url；真实 URL 已无 pending archive）。
 - [x] 处理 S007 手工归档。
-- [ ] 继续归档 36 条 pending URL，并核实 `inferred_url` 占位符来源。
+- [x] 继续归档 36 条 pending URL。
+- [ ] 继续核实剩余 14 条 `inferred_url` 占位符来源；MT-003 队列表已回填 11 条 resolved URL。
 
 阶段 D：分析、可视化与进度沟通。
 
@@ -80,6 +81,7 @@
 - [x] 起草第一版内部进度稿（docs/progress_report_v1.md；暂不交付）。
 - [x] 生成解释性图表包 v0：组织-议题桥接网络、地点-议题矩阵、边野古国际化路径图、共同行动样本构成、证据缺口图。
 - [x] 生成模块完成包 v0：R2、R3/R4、R5、R11、R14 brief、event table、任务表。
+- [x] 抽取 2020 OEJP / MMC 71 团体完整 participant list，并生成 actor registry extension candidates。
 - [ ] 根据解释性图表和人工复核结果修订正式沟通稿。
 - [ ] 准备组织-议题矩阵和组织-地点矩阵分析。
 
@@ -94,6 +96,7 @@
 - `docs/source_archive_protocol_v0.md`
 - `docs/p1_review_prompt_v0.md`
 - `docs/human_review_merge_package_v0.md`
+- `data/interim/16_inferred_url_resolution_queue_v0.csv`
 - `outputs/explanatory_v0/`
 - `outputs/module_completion_v0/`
 - `data/metadata/coding_schema_v0.md`
@@ -119,10 +122,10 @@
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
-- 模块完成包 v0：覆盖 R2、R3/R4、R5、R11、R14；含 5 个 brief、模块状态表、共同行动 event/participant 表、下一步模块调查任务表。
+- 模块完成包 v0：覆盖 R2、R3/R4、R5、R11、R14；含 5 个 brief、模块状态表、共同行动 event/participant 表、2020 MMC 71 团体完整表、下一步模块调查任务表。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
-- 信息源备份已开始执行：28 条已归档，1 条手工归档，36 条真实 URL 待归档，25 条 `inferred_url` 占位符等待核实。
+- 信息源备份机制已跑通：74 条已归档，2 条手工归档，14 条 `inferred_url` 占位符等待核实，2 条非 URL 书目参考待人工书目归档。
 
 ## 任务索引
 
@@ -152,7 +155,7 @@
 ## 下一步
 
 1. 用 `outputs/module_completion_v0/` 选沟通主线，挑 3 张主图进入正式沟通稿。
-2. 执行 `next_module_investigation_tasks_v0.csv`：优先 MT-001 2020 OEJP/MMC 71 团体、MT-002/003 来源归档与 URL 核实。
+2. 执行 `next_module_investigation_tasks_v0.csv`：MT-001/MT-002 已形成可汇报产出，下一步优先 MT-003 URL 核实和 MT-004 与那国证据包。
 3. 启动 LR-001 至 LR-008 的当地材料收集包，优先处理与那国、军属慈善 recipient、外务省 / JICA / ONC。
 4. 继续扩充 actor registry 到 120 条以上。
-5. 根据 event table 结果生成 R5/R11 的下一版网络图。
+5. 根据 2020 MMC 71 团体表和 event table 结果生成 R5/R11 的下一版网络图。

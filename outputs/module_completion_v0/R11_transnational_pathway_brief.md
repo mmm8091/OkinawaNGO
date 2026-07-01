@@ -25,4 +25,4 @@ R11 已达到 `pathway_v0`：已有边野古 / 大浦湾国际化路径图和路
 
 - 把 lawsuit、MMC request、joint statement 分成独立 event table。
 - 核实 A019 / A076 / 个人 plaintiff 的具体映射。
-- 从 2020 OEJP/MMC 材料抽取完整 participant list。
+- 从 2020 OEJP/MMC 候选表中筛选应进入 actor registry 的 actor。

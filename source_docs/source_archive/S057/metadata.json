@@ -9,12 +9,19 @@
   "bias_note": "Primary organization source",
   "review_status": "human_verified",
   "notes": "HR-001 confirms SDCC official site; old HTTP site.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S057\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S057\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
-  "note": "Added during HR-001; raw archive pending."
+  "sha256": "ed6425343c07e91d16539c07c298189342f7baf4c356e78242be8cebc4ee7bfd",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:37:54.001388+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "http://www.sdcc.jp/",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "2180",
+    "last_modified": "Thu, 15 Aug 2013 12:18:25 GMT"
+  }
 }

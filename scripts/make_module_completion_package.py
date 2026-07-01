@@ -78,11 +78,11 @@ def make_module_status() -> None:
         },
         {
             "module": "R5 co-action network",
-            "completion_level": "event_sample_v0",
-            "current_outputs": "coaction_events_v0.csv; coaction_participants_v0.csv; fig_coaction_sample_composition.png; R05_coaction_event_brief.md",
-            "what_is_publishable_now": "Co-signing samples as event participation, not stable alliance.",
-            "main_gap": "2020 OEJP/MMC 71-group sample under-entered in registry.",
-            "next_action": "Extract full participant list for 2020 and add relation_strength field.",
+            "completion_level": "full_event_list_v0",
+            "current_outputs": "coaction_events_v0.csv; coaction_participants_v0.csv; coaction_participants_2020_mmc_71_full_v0.csv; fig_coaction_sample_composition.png; R05_coaction_event_brief.md",
+            "what_is_publishable_now": "Co-signing/request samples as event participation, including full 2020 MMC 71-group participant list.",
+            "main_gap": "Unmatched 2020 participants need alias/legal identity review before entering actor registry.",
+            "next_action": "Review actor_registry_extension_candidates_2020_mmc_v0.csv and add selected actors.",
         },
         {
             "module": "R11 transnational advocacy",
@@ -295,7 +295,7 @@ def make_r5(actors: list[dict[str, str]], sources: list[dict[str, str]]) -> None
                 "source_url": source.get("url", ""),
                 "registry_participant_count": len(participants),
                 "origin_breakdown": ";".join(f"{k}:{v}" for k, v in origin_counts.most_common()),
-                "next_action": "extract_full_participant_list" if event["source_id"] == "S006" else "verify participant roles and aliases",
+                "next_action": "review 71-participant candidate table" if event["source_id"] == "S006" else "verify participant roles and aliases",
             }
         )
         for actor in participants:
@@ -332,19 +332,21 @@ def make_r5(actors: list[dict[str, str]], sources: list[dict[str, str]]) -> None
 
 ## 当前完成度
 
-R5 已达到 `event_sample_v0`：已有 3 个共同行动事件样本、participant 表和构成图。尚未进入“稳定联盟网络”阶段。
+R5 已达到 `full_event_list_v0`：已有 3 个共同行动事件样本、participant 表、2020 OEJP/MMC 71 团体完整抽取表和构成图。尚未进入“稳定联盟网络”阶段。
 
 ## 可交付图表
 
 - `outputs/explanatory_v0/fig_coaction_sample_composition.png`
 - `outputs/module_completion_v0/coaction_events_v0.csv`
 - `outputs/module_completion_v0/coaction_participants_v0.csv`
+- `outputs/module_completion_v0/coaction_participants_2020_mmc_71_full_v0.csv`
+- `outputs/module_completion_v0/actor_registry_extension_candidates_2020_mmc_v0.csv`
 
 ## 当前可讲结论
 
 1. 当前可以展示共同行动样本如何把本地团体、日本国内 NGO、海外 NGO 放到同一个公开行动中。
 2. 这些关系只能写为共同署名、共同请求、共同在场或声援，不能写成稳定联盟。
-3. 2020 OEJP/MMC 71 团体样本在当前 registry 中明显展开不足，是下一轮补量的高价值入口。
+3. 2020 OEJP/MMC 71 团体样本已抽取完整 participant list；当前 registry 仍需根据候选表继续补 actor。
 
 ## 事件状态
 
@@ -352,11 +354,196 @@ R5 已达到 `event_sample_v0`：已有 3 个共同行动事件样本、particip
 
 ## 还需要继续做
 
-- 从 2020 OEJP/MMC source 中抽取完整 71 团体 participant list。
+- 从 2020 OEJP/MMC 候选表中筛选应进入 actor registry 的 actor。
 - 给每个 participant 标注 role：organizer / signer / plaintiff / attorney / supporter / target。
 - 在进入联盟网络图前，先区分一次性署名、重复共同发声、共同诉讼或长期协作。
 """
     write_text(OUT / "R05_coaction_event_brief.md", content)
+
+
+def mmc_2020_participants() -> list[dict[str, str]]:
+    raw = [
+        (1, "Diving Team Rainbow", "Environmental organizations and groups in Okinawa", "", ""),
+        (2, "Dugong Network Okinawa", "Environmental organizations and groups in Okinawa", "A003", "exact_alias"),
+        (3, "Dugong no Sato", "Environmental organizations and groups in Okinawa", "", ""),
+        (4, "Dugong Protection Foundation", "Environmental organizations and groups in Okinawa", "A076", "exact_alias"),
+        (5, "Okinawa Environmental Justice Project", "Environmental organizations and groups in Okinawa", "A001", "exact"),
+        (6, "Okinawa Environmental Network", "Environmental organizations and groups in Okinawa", "A056", "exact_alias"),
+        (7, "Okinawa Reefcheck and Research Group", "Environmental organizations and groups in Okinawa", "", ""),
+        (8, "Okumagawa Basin Protection Foundation", "Environmental organizations and groups in Okinawa", "", ""),
+        (9, "Protect Northernmost Dugong Team Zan", "Environmental organizations and groups in Okinawa", "", ""),
+        (10, "Save Awasehigata Association (SAA)", "Environmental organizations and groups in Okinawa", "A055", "exact_alias"),
+        (11, "Save the Dugong Campaign Center", "Environmental organizations and groups in Okinawa", "A002", "exact_alias"),
+        (12, "All Okinawa Council for Human Rights (AOCHR)", "Peace, human rights and other organizations and groups in Okinawa", "A054", "tentative_alias"),
+        (13, "Association of Nightingales, Medical Professionals, and Students for the Protection of Life", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (14, "East Asian Community Institute Ryukyu Okinawa Center", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (15, "Henoko Blue", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (16, "Minshuku Yaponesia", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (17, "Nago Democracy", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (18, "No Helipad Takae Resident Society", "Peace, human rights and other organizations and groups in Okinawa", "A060", "exact_alias"),
+        (19, "No Heliport Base Association of 10 Districts North of Futamai", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (20, "Nuchi du Takara o keisyosurukai", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (21, "Okinawa Citizens Network for Peace", "Peace, human rights and other organizations and groups in Okinawa", "A071", "exact_alias"),
+        (22, "Okinawa Nobel Peace Prize Action Committee", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (23, "Okinawa Women Act Against Military Violence", "Peace, human rights and other organizations and groups in Okinawa", "A049", "exact_alias"),
+        (24, "Project Disagree", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (25, "The Conference Opposing Heliport Construction", "Peace, human rights and other organizations and groups in Okinawa", "A019", "exact_alias"),
+        (26, "Wabiai no Sato Foundation", "Peace, human rights and other organizations and groups in Okinawa", "", ""),
+        (27, "Veterans for Peace Ryukyu-Okinawa", "Peace, human rights and other organizations and groups in Okinawa", "A070", "exact_alias"),
+        (28, "Association for Conservation of Amami Forests, Rivers, and Coastal Ecosystems", "Environmental organizations and groups in Japan", "", ""),
+        (29, "Association for Conservation of Marine Communities", "Environmental organizations and groups in Japan", "", ""),
+        (30, "Environmental Network AMAMI (ENA)", "Environmental organizations and groups in Japan", "", ""),
+        (31, "Iruka & Kujira (Dolphin & Whale) Action Network", "Environmental organizations and groups in Japan", "", ""),
+        (32, "Japan Environmental Lawyers for Future (JELF)", "Environmental organizations and groups in Japan", "A020", "exact_alias"),
+        (33, "Japan Wetlands Action Network", "Environmental organizations and groups in Japan", "A062", "exact_alias"),
+        (34, "Nature Conservation Society of Japan", "Environmental organizations and groups in Japan", "A004", "exact_alias"),
+        (35, "Pan-Seto Inland Sea Congress", "Environmental organizations and groups in Japan", "", ""),
+        (36, "Protect Henoko and Takae! NGO Network", "Environmental organizations and groups in Japan", "", ""),
+        (37, "Ramsar Network Japan", "Environmental organizations and groups in Japan", "A022", "exact_alias"),
+        (38, "The Nature and Culture Conservation Group of Amami (NCA)", "Environmental organizations and groups in Japan", "", ""),
+        (39, "Ainokai Aitou", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (40, "Airin Community Center", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (41, "AKAY JAPAN", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (42, "AKCDF-MAPALAD KA (The Philippines)", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (43, "All Japan Dockworkers' Union (JDU) Kansai Regional Osaka Branch", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (44, "Anti-war Network", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "A008", "tentative_alias"),
+        (45, "Budounokihoikuen", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (46, "East Asian Community Institute", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (47, "Family Home Suzuran", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (48, "Family Home Sansouen", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (49, "Family Home Yamayuri", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (50, "Henoko dosha hanshutsu hantai zenkoku renraku kyougikai", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "A067", "exact_alias"),
+        (51, "Henoko ni kichi wo Zettai Tsukurasenai Osaka Kodo", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (52, "Henoko no Umi ni Kichi wo Tsukurasenai Kobe Kodo", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (53, "Kyoto Shimin Center", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (54, "Myougasan Tennpoji", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (55, "Nonoyurihoikuen", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (56, "NPO Active Center Uda", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (57, "NPO Myogamura", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (58, "NPO Sansouen Kazoku", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (59, "NPO Warabemura", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (60, "Ohagi Myogamura", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (61, "Ohisama Firm Ryudo Shizen Noen", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (62, "Peaceforum-Yamaguchi", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (63, "Social Democratic Party Miyazaki", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (64, "Social Welfare Organization SHUKO-GAKUEN", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (65, "Stop! Henoko Reclamation Campaign", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (66, "STOP! Henoko Shinkichikensetsu Osaka Action", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (67, "Straight Inc.", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (68, "The Association for Military Base Free Peaceful Okinawa", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "A072", "tentative_alias"),
+        (69, "Yokaichi Megumi Nursery School", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (70, "Yuntaku Takae", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+        (71, "ZENKO, National Assembly for Peace and Democracy", "Peace, human rights, labor, and other organizations and groups in Japan and the Philippines", "", ""),
+    ]
+    rows = []
+    for number, name, category, actor_id, match_status in raw:
+        if "Okinawa" in category:
+            origin = "okinawa_local"
+        elif "Philippines" in name:
+            origin = "international"
+        else:
+            origin = "japan_domestic"
+        if "Environmental" in category:
+            actor_class = "environmental_ngo_or_group"
+        elif "labor" in category:
+            actor_class = "peace_human_rights_labor_or_other"
+        else:
+            actor_class = "peace_human_rights_or_other"
+        rows.append(
+            {
+                "event_id": "EV2020_OEJP_MMC_71",
+                "participant_no": number,
+                "participant_name_en": name,
+                "participant_category": category,
+                "origin_guess": origin,
+                "actor_class_guess": actor_class,
+                "matched_actor_id": actor_id,
+                "match_status": match_status or "unmatched_registry_candidate",
+                "role": "undersigned_organization_or_group",
+                "relation_strength": "co_signatory_request",
+                "source_id": "S006",
+                "source_detail": "Letter of Request to the U.S. Marine Mammal Commission, July 10 2020, pages 5-7",
+                "evidence_level": "E4 for event participation; actor identity may require separate verification",
+                "publishable_claim": "cautious",
+                "notes": "Co-signing/request participation only; does not prove stable alliance.",
+            }
+        )
+    return rows
+
+
+def make_mmc_2020_full_tables() -> None:
+    rows = mmc_2020_participants()
+    write_csv(
+        OUT / "coaction_participants_2020_mmc_71_full_v0.csv",
+        rows,
+        [
+            "event_id",
+            "participant_no",
+            "participant_name_en",
+            "participant_category",
+            "origin_guess",
+            "actor_class_guess",
+            "matched_actor_id",
+            "match_status",
+            "role",
+            "relation_strength",
+            "source_id",
+            "source_detail",
+            "evidence_level",
+            "publishable_claim",
+            "notes",
+        ],
+    )
+    candidates = [
+        {
+            "participant_no": row["participant_no"],
+            "candidate_name": row["participant_name_en"],
+            "origin_guess": row["origin_guess"],
+            "actor_class_guess": row["actor_class_guess"],
+            "source_id": row["source_id"],
+            "reason_to_add": "2020 OEJP/MMC 71-group request participant",
+            "recommended_review_priority": "P2" if row["origin_guess"] == "okinawa_local" else "P3",
+            "notes": "Add only after alias/legal identity check; signatory-only unless further evidence exists.",
+        }
+        for row in rows
+        if not row["matched_actor_id"]
+    ]
+    write_csv(
+        OUT / "actor_registry_extension_candidates_2020_mmc_v0.csv",
+        candidates,
+        ["participant_no", "candidate_name", "origin_guess", "actor_class_guess", "source_id", "reason_to_add", "recommended_review_priority", "notes"],
+    )
+    summary = Counter(row["match_status"] for row in rows)
+    origin_summary = Counter(row["origin_guess"] for row in rows)
+    content = "\n".join(
+        [
+            "# 2020 OEJP/MMC 71 团体抽取说明 v0",
+            "",
+            "来源：S006 `Letter of Request to the U.S. Marine Mammal Commission`, 2020-07-10, pages 5-7。",
+            "",
+            "## 抽取结果",
+            "",
+            f"- participant 总数：{len(rows)}。",
+            f"- 已匹配到现有 actor：{sum(1 for row in rows if row['matched_actor_id'])}。",
+            f"- 未匹配、可作为 actor registry 候选：{len(candidates)}。",
+            "",
+            "## match_status",
+            "",
+            *[f"- {k}: {v}" for k, v in summary.most_common()],
+            "",
+            "## origin_guess",
+            "",
+            *[f"- {k}: {v}" for k, v in origin_summary.most_common()],
+            "",
+            "## 解释边界",
+            "",
+            "- 本表只证明这些组织 / 团体在 2020 年 request letter 中作为 undersigned 出现。",
+            "- 不能据此写成稳定联盟。",
+            "- 未匹配 candidate 不能直接进入核心解释，需要 alias、法律身份或二次来源核实。",
+        ]
+    )
+    write_text(OUT / "coaction_2020_mmc_71_extraction_note.md", content)
+
 
 
 def make_r11() -> None:
@@ -403,7 +590,7 @@ R11 已达到 `pathway_v0`：已有边野古 / 大浦湾国际化路径图和路
 
 - 把 lawsuit、MMC request、joint statement 分成独立 event table。
 - 核实 A019 / A076 / 个人 plaintiff 的具体映射。
-- 从 2020 OEJP/MMC 材料抽取完整 participant list。
+- 从 2020 OEJP/MMC 候选表中筛选应进入 actor registry 的 actor。
 """
     write_text(OUT / "R11_transnational_pathway_brief.md", content)
 
@@ -458,8 +645,8 @@ R14 已达到 `audit_v0`：已有 source archive manifest、HR review log、next
 
 ## 还需要继续做
 
-- 归档 36 条 pending URL。
-- 核实 25 条 inferred_url。
+- 维护 source archive manifest；新增真实 URL 后继续归档。
+- 继续核实剩余 14 条 inferred_url，并使用 `data/interim/16_inferred_url_resolution_queue_v0.csv` 跟踪 archived_resolved / candidate / local retrieval 状态。
 - 给 source log 增加 source_access / archive_status / coverage_note 字段，或继续使用 manifest 旁表。
 - 建立 missing_cases_log，专门记录离岛、旧组织、失效网站和馆内数据库缺口。
 """
@@ -472,36 +659,40 @@ def make_next_tasks() -> None:
             "task_id": "MT-001",
             "module": "R5/R11",
             "priority": "P1",
-            "task": "Extract 2020 OEJP/MMC 71-group participant list",
+            "status": "basically_done_extraction; in_progress_registry_review",
+            "task": "Review and incorporate 2020 OEJP/MMC 71-group participant list",
             "input": "S006; S007; source archive S006/S007",
-            "output": "coaction_participants_2020_full_v0.csv",
-            "why_it_matters": "Current registry has only 2 participants for a 71-group event; this is the biggest visible network gap.",
-            "done_when": "Each participant has canonical name, origin guess, role, source quote/summary, evidence level, and keep/exclude decision.",
+            "output": "Selected actor registry additions and aliases",
+            "why_it_matters": "The full 71 participant list is now extracted; the next step is deciding which candidates enter actor registry.",
+            "done_when": "Each unmatched participant has add/defer/exclude decision and review priority.",
         },
         {
             "task_id": "MT-002",
             "module": "R14",
             "priority": "P1",
-            "task": "Archive 36 pending URL sources",
+            "status": "basically_done",
+            "task": "Maintain source archive after first full URL pass",
             "input": "source_docs/source_archive/source_archive_manifest.csv",
-            "output": "Updated archive manifest and raw files",
+            "output": "Updated archive manifest and raw files; 0 pending_archive",
             "why_it_matters": "Prevents link rot and makes the evidence package auditable.",
-            "done_when": "pending_archive count is 0 or each remaining item has a manual archive note.",
+            "done_when": "New real URLs are archived as they are added; manual archive note exists for non-scriptable sources.",
         },
         {
             "task_id": "MT-003",
             "module": "R14/R3",
             "priority": "P1",
-            "task": "Resolve 25 inferred_url placeholders",
-            "input": "data/interim/05_source_log_initial_v0.csv",
-            "output": "source_log URL updates or not_found notes",
-            "why_it_matters": "Several Sakishima, court, and local news sources are still placeholders.",
+            "status": "in_progress",
+            "task": "Finish resolving 14 remaining inferred_url placeholders",
+            "input": "data/interim/05_source_log_initial_v0.csv; data/interim/16_inferred_url_resolution_queue_v0.csv",
+            "output": "source_log URL updates, candidate notes, local retrieval notes, or not_found notes",
+            "why_it_matters": "The first pass resolved and archived 11 of 25 placeholders; several Sakishima, court, and local news sources remain.",
             "done_when": "Each inferred_url is replaced by a real URL, local retrieval note, or explicit not_found status.",
         },
         {
             "task_id": "MT-004",
             "module": "R3/R4",
             "priority": "P1",
+            "status": "pending",
             "task": "Yonaguni A014/A015 local evidence pack",
             "input": "A014; A015; HR-003; LR-002",
             "output": "Yonaguni local retrieval memo and source files",
@@ -512,6 +703,7 @@ def make_next_tasks() -> None:
             "task_id": "MT-005",
             "module": "R8/R14",
             "priority": "P2",
+            "status": "pending",
             "task": "AWWA / spouse clubs charity recipient evidence",
             "input": "X004-X007; X016-X017; F025-F027; LR-003",
             "output": "recipient edge table with year/source/evidence",
@@ -522,6 +714,7 @@ def make_next_tasks() -> None:
             "task_id": "MT-006",
             "module": "R8",
             "priority": "P2",
+            "status": "pending",
             "task": "ONC / JICA / MOFA relationship chain",
             "input": "X010; X011; LR-006",
             "output": "administrative collaboration edge memo",
@@ -532,6 +725,7 @@ def make_next_tasks() -> None:
             "task_id": "MT-007",
             "module": "R10/R11",
             "priority": "P2",
+            "status": "pending",
             "task": "Dugong lawsuit plaintiff mapping",
             "input": "A002; A019; A076; S009; HR-001; HR-004",
             "output": "lawsuit_actor_role_table_v0.csv",
@@ -542,6 +736,7 @@ def make_next_tasks() -> None:
             "task_id": "MT-008",
             "module": "R2/R5",
             "priority": "P2",
+            "status": "pending",
             "task": "Add event_id/action_type/relation_strength to relation edges",
             "input": "actor_issue_edges; actor_place_edges; coaction_events_v0.csv",
             "output": "edge enrichment proposal or v1 edge tables",
@@ -552,7 +747,7 @@ def make_next_tasks() -> None:
     write_csv(
         OUT / "next_module_investigation_tasks_v0.csv",
         rows,
-        ["task_id", "module", "priority", "task", "input", "output", "why_it_matters", "done_when"],
+        ["task_id", "module", "priority", "status", "task", "input", "output", "why_it_matters", "done_when"],
     )
 
 
@@ -591,11 +786,17 @@ def write_index() -> None:
 
 ## 下一步调查优先级
 
-1. 抽取 2020 OEJP/MMC 71 团体 participant list。
-2. 归档 36 条 pending URL，核实 25 条 inferred_url。
+1. 复核并吸收 2020 OEJP/MMC 71 团体 participant list。
+2. 继续核实剩余 14 条 inferred_url，并使用 `data/interim/16_inferred_url_resolution_queue_v0.csv` 分档推进。
 3. 与那国 A014/A015 当地资料。
 4. AWWA / spouse clubs charity recipients。
 5. ONC / JICA / MOFA 关系链。
+
+## 已可汇报为基本完工
+
+- MT-001 抽取阶段：已形成 2020 OEJP/MMC 71 团体完整表、52 个 registry extension candidates 和抽取说明。
+- MT-002：已有真实 URL 的来源完成第一轮本地备份，当前 archive manifest 为 74 archived / 2 manual_archived / 0 pending_archive。
+- MT-003 第一轮：25 条 `inferred_url` 中 11 条已回填真实 URL 并归档，14 条仍待处理。
 """
     write_text(OUT / "README.md", content)
 
@@ -615,6 +816,7 @@ def main() -> None:
     make_r2(actors, bridge_nodes)
     make_r3_r4(place_matrix)
     make_r5(actors, sources)
+    make_mmc_2020_full_tables()
     make_r11()
     make_r14(actors, sources, manifest, next_candidates)
     make_next_tasks()

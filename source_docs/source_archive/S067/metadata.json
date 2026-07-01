@@ -9,12 +9,19 @@
   "bias_note": "NGO repost/statement page; not Okinawa-specific",
   "review_status": "human_verified",
   "notes": "HR-002 source supplied by human reviewer; supports network continuity.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S067\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S067\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:45:51.7377801Z",
-  "note": "Added during HR-002; raw archive pending."
+  "sha256": "5a2add6796207bfa98d6f06574be0c766c0339c6151276aaaf1d9011a9485a0b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:10.283075+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ngo-jvc.net/news/news/20230606_osaseimei.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

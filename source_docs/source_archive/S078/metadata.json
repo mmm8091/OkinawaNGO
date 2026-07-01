@@ -9,12 +9,12 @@
   "bias_note": "News source; aggregate amount not annual recipient table",
   "review_status": "human_verified",
   "notes": "HR-005 source; use for aggregate donation context only.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "manual_archived",
+  "local_path": "source_docs/source_archive/S078/raw_manual.html",
   "metadata_path": "source_docs\\source_archive\\S078\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:14:53.0233080Z",
-  "note": "Added during HR-005; raw archive pending."
+  "sha256": "79aa74f3d3db944b698800174213eb50740254409f1f2730d5d3338bb6ff4424",
+  "content_type": "text/html",
+  "http_status": "manual",
+  "archived_at_utc": "2026-07-01T10:25:55.876951+00:00",
+  "note": "Manual archive via curl -k because Python SSL verification failed."
 }

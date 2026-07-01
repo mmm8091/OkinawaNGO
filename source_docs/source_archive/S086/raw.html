@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"c8eb398605",applicationID:"9433139",browserID:"9433151"};;/*! For license information please see nr-loader-rum-1.317.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={384(e,t,r){"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782(e,t,r){"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860(e,t,r){"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},981(e,t,r){"use strict";r.d(t,{R:()=>n});const n={AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738(e,t,r){"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741(e,t,r){"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555(e,t,r){"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614(e,t,r){"use strict";r.d(t,{BB:()=>s,Wt:()=>n,g:()=>c,iL:()=>a,tS:()=>o,wk:()=>i});const n="NRBA_SESSION::",i=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},a={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843(e,t,r){"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},3606(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969(e,t,r){"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261(e,t,r){"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>A,Tb:()=>l,U2:()=>s,V1:()=>x,Wb:()=>R,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",R="wrapLogger",x="measure",A="consent"},5289(e,t,r){"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607(e,t,r){"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154(e,t,r){"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630(e,t,r){"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699(e,t,r){"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836(e,t,r){"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362(e,t,r){"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324(e,t,r){"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.317.0",i="PROD",s="CDN"},9566(e,t,r){"use strict";r.d(t,{LA:()=>o,bz:()=>s});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function o(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,s=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(i(r,s++).toString(16));return o.join("")}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.317.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.317.0.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-dDeLB65HNhC/52vAGvWxqlhzdrCMMyKyfDMLuD3glK6yvtLAoc7fLRa5TyYwZurrYnIgxKx6VGqcGByXhK/6SA=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.317.0.PROD"]=self["webpackChunk:NRBA-1.317.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(384),s=i(1741);var o=i(2555),a=i(981);t.K7.genericEvents,a.R.PA,a.R.UA,a.R.BP;const c="experimental.resources",u="register",d=(t.K7.ajax,"none"),l=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var f=i(2614),g=i(944),p=i(8122);const m="[data-nr-mask]",h=e=>(0,p.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:d},api:{register:{get enabled(){return e.feature_flags.includes(u)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:f.wk,inactiveMs:f.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){l(t)?e.mask_selector="".concat(t,",").concat(m):""===t||null===t?e.mask_selector=m:(0,g.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){l(t)?e.block_selector+=",".concat(t):""!==t&&(0,g.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,g.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var v=i(6154),b=i(9324);let y=0;const _={buildEnv:b.F3,distMethod:b.Xs,version:b.xv,originTime:v.WN},w={consented:!1},R={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||w.consented},set consented(e){w.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++y}};var x=i(7836),A=i(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};function S(e,t={},r,a){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,n.pV)();c=e.init,u=e.info,d=e.loader_config}var g;e.init=h(c||{}),e.loader_config=(g=d||{},(0,p.a)(g,k)),u.jsAttributes??={},v.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,o.D)(u);const m=e.init;e.runtime??=(e=>{const t=(0,p.a)(e,R),r=Object.keys(_).reduce((e,t)=>(e[t]={value:_[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),m.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",i.p=t?e:"https://"+e})(m.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=f,(0,A.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}var T=i(9908),E=i(1863),j=i(4261),P=i(1738);var N=i(1687),O=i(4234),M=i(5289);const I=e=>v.RI&&!0===e?.privacy.cookies_enabled;function D(e){return!!(0,n.dV)().o.MO&&I(e)&&!0===e?.session_trace.enabled}var W=i(6389),V=i(7699);const B=new WeakSet;class K extends O.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,N.Ak)(e,this.featureName),t()}))}):(0,N.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{if(await this.deferred,this.#t(e),!(0,o.f)(e.info))return(0,g.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);let n;try{if(I(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,8));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,T.p)(V.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#r(this.featureName,n,e.init))return(0,N.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,N.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};v.RI?(0,M.GG)(()=>n(),!0):n()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return D(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!B.has(e)&&(B.add(e),!(0,o.f)(e.info))){const t=(0,n.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}S(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var C=i(6630);class U extends K{static featureName=C.T;constructor(e){var t;super(e,C.T),this.setupInspectionEvents(),t=e,(0,P.Y)(j.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,T.p)(j.Pl+j.Fw,[(0,E.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,1324)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,A.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,M.sB)(t=>{e(t,"DOMContentLoaded")}),(0,M.GG)(t=>{e(t,"load")}),(0,M.Qr)(t=>{e(t,"navigate")}),this.ee.on(f.tS.UPDATE,(e,t)=>{(0,A.W)({type:"lifecycle",name:"session",data:t})})}}class F extends e.d{constructor(e){var t;(super(),v.gm)?(this.features={},(0,n.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(U),S(this,e,e.loaderType||"agent"),t=this,(0,P.Y)(j.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,P.U)(t,e,r,j.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,P.Y)(j.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,T.p)(j.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,P.U)(e,"enduser.id",t,j.Dl,!0)},e)}(this),function(e){(0,P.Y)(j.nb,function(t){if("string"==typeof t||null===t)return(0,P.U)(e,"application.version",t,j.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,P.Y)(j.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,P.Y)(j.Pv,function(t=!0){if("boolean"==typeof t){if((0,T.p)(j.Pl+j.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,n.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var L=i(2843),G=i(782);class H extends K{static featureName=G.T;constructor(e){super(e,G.T),v.RI&&((0,L.u)(()=>(0,T.p)("docHidden",[(0,E.t)()],void 0,G.T,this.ee),!0),(0,L.G)(()=>(0,T.p)("winPagehide",[(0,E.t)()],void 0,G.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var z=i(3969);class Y extends K{static featureName=z.TZ;constructor(e){super(e,z.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new F({features:[U,H,Y],loaderType:"lite"})})()})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.ned.org/xmlrpc.php">
+<link rel="shortcut icon" href="https://www.ned.org/wp-content/themes/ned/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://www.ned.org/wp-content/themes/ned/favicon.ico" type="image/x-icon">
+<title>2024 Grants Listings - NATIONAL ENDOWMENT FOR DEMOCRACY</title>
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:standard,max-video-preview:-1" />
+<link rel="canonical" href="https://www.ned.org/2024-grant-listings/" />
+<meta name="description" content="NED’s 2024 grants reflect both the impact of our partners work and our commitment to protecting those who lead it." />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="NATIONAL ENDOWMENT FOR DEMOCRACY" />
+<meta property="og:title" content="2024 Grants Listings - NATIONAL ENDOWMENT FOR DEMOCRACY" />
+<meta property="og:description" content="NED’s 2024 grants reflect both the impact of our partners work and our commitment to protecting those who lead it." />
+<meta property="og:url" content="https://www.ned.org/2024-grant-listings/" />
+<meta property="og:image" content="https://www.ned.org/wp-content/uploads/2025/04/Map-navy.jpg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:image" content="https://www.ned.org/wp-content/uploads/2023/02/DW-sig.png" />
+<meta property="article:published_time" content="2025-04-28T21:22:34+00:00" />
+<meta property="article:modified_time" content="2025-04-29T20:39:41+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="2024 Grants Listings - NATIONAL ENDOWMENT FOR DEMOCRACY" />
+<meta name="twitter:description" content="NED’s 2024 grants reflect both the impact of our partners work and our commitment to protecting those who lead it." />
+<meta name="twitter:image" content="https://www.ned.org/wp-content/uploads/2025/04/Map-navy.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.ned.org/#/schema/WebSite","url":"https://www.ned.org/","name":"NATIONAL ENDOWMENT FOR DEMOCRACY","description":"Supporting Freedom Around the World","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.ned.org/search/{search_term_string}/"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","@id":"https://www.ned.org/#/schema/Organization","name":"NATIONAL ENDOWMENT FOR DEMOCRACY","url":"https://www.ned.org/","logo":{"@type":"ImageObject","url":"https://www.ned.org/wp-content/uploads/2021/05/cropped-ned-favicon.png","contentUrl":"https://www.ned.org/wp-content/uploads/2021/05/cropped-ned-favicon.png","width":512,"height":512}}},{"@type":"WebPage","@id":"https://www.ned.org/2024-grant-listings/","url":"https://www.ned.org/2024-grant-listings/","name":"2024 Grants Listings - NATIONAL ENDOWMENT FOR DEMOCRACY","description":"NED’s 2024 grants reflect both the impact of our partners work and our commitment to protecting those who lead it.","inLanguage":"en-US","isPartOf":{"@id":"https://www.ned.org/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://www.ned.org/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://www.ned.org/","name":"NATIONAL ENDOWMENT FOR DEMOCRACY"},{"@type":"ListItem","position":2,"item":"https://www.ned.org/category/publications/","name":"Category: Publications"},{"@type":"ListItem","position":3,"name":"2024 Grants Listings"}]},"potentialAction":{"@type":"ReadAction","target":"https://www.ned.org/2024-grant-listings/"},"datePublished":"2025-04-28T21:22:34+00:00","dateModified":"2025-04-29T20:39:41+00:00","author":{"@type":"Person","@id":"https://www.ned.org/#/schema/Person/7308f4e3e13e106ab37c3daa12595a3a","name":"Communications Staff"}}]}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 17.60ms meta | 0.37ms boot -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="NATIONAL ENDOWMENT FOR DEMOCRACY &raquo; Feed" href="https://www.ned.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="NATIONAL ENDOWMENT FOR DEMOCRACY &raquo; Comments Feed" href="https://www.ned.org/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.ned.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.ned.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F&#038;format=xml" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v10.2.2 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-D16R2Y00FE"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '10.2.2';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.ned.org\/2024-grant-listings\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-D16R2Y00FE',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-D16R2Y00FE', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.ned.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.6' media='all' />
+<link rel='stylesheet' id='wpsm_infobox_bootstrap-front-css' href='https://www.ned.org/wp-content/plugins/info-box/assets/css/bootstrap-front.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='super-rss-reader-css-css' href='https://www.ned.org/wp-content/plugins/super-rss-reader--forked/public/srr-css.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='add-ons-plg-css' href='https://www.ned.org/wp-content/themes/ned/css/add-ons-plg.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='font-awesome.min-css' href='https://www.ned.org/wp-content/themes/ned/css/font-awesome.min.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='ned-style-css' href='https://www.ned.org/wp-content/themes/ned/style.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='responsive-css' href='https://www.ned.org/wp-content/themes/ned/css/responsive.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='fancybox-css-css' href='https://www.ned.org/wp-content/themes/ned/fancybox/jquery.fancybox.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='Oswald-css' href='//fonts.googleapis.com/css?family=Oswald&#038;ver=7.0' media='all' />
+<link rel='stylesheet' id='heateor_sss_frontend_css-css' href='https://www.ned.org/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css?ver=3.3.79' media='all' />
+<style id="heateor_sss_frontend_css-inline-css">
+.heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}.heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{color:#fff;border-width:0px;border-style:solid;border-color:transparent}.heateor_sss_horizontal_sharing .heateorSssTCBackground{color:#666}.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}.heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{color:#fff;border-width:0px;border-style:solid;border-color:transparent;}.heateor_sss_vertical_sharing .heateorSssTCBackground{color:#666;}.heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}@media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}div.heateor_sss_mobile_footer{display:none;}@media screen and (max-width:783px){div.heateor_sss_bottom_sharing .heateorSssTCBackground{background-color:white}div.heateor_sss_bottom_sharing{width:100%!important;left:0!important;}div.heateor_sss_bottom_sharing a{width:16.666666666667% !important;}div.heateor_sss_bottom_sharing .heateor_sss_svg{width: 100% !important;}div.heateor_sss_bottom_sharing div.heateorSssTotalShareCount{font-size:1em!important;line-height:28px!important}div.heateor_sss_bottom_sharing div.heateorSssTotalShareText{font-size:.7em!important;line-height:0px!important}div.heateor_sss_mobile_footer{display:block;height:40px;}.heateor_sss_bottom_sharing{padding:0!important;display:block!important;width:auto!important;bottom:-2px!important;top: auto!important;}.heateor_sss_bottom_sharing .heateor_sss_square_count{line-height:inherit;}.heateor_sss_bottom_sharing .heateorSssSharingArrow{display:none;}.heateor_sss_bottom_sharing .heateorSssTCBackground{margin-right:1.1em!important}}
+/*# sourceURL=heateor_sss_frontend_css-inline-css */
+</style>
+<link rel='stylesheet' id='rvm_jvectormap_css-css' href='https://www.ned.org/wp-content/plugins/responsive-vector-maps/css/jquery-jvectormap-2.0.4.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='rvm_general_css-css' href='https://www.ned.org/wp-content/plugins/responsive-vector-maps/css/rvm_general.css?ver=1.1' media='all' />
+<link rel='stylesheet' id='msl-main-css' href='https://www.ned.org/wp-content/plugins/master-slider/public/assets/css/masterslider.main.css?ver=3.11.2' media='all' />
+<link rel='stylesheet' id='msl-custom-css' href='https://www.ned.org/wp-content/uploads/master-slider/custom.css?ver=2.9' media='all' />
+<script async data-wp-strategy="async" id="monsterinsights-frontend-script-js" src="https://www.ned.org/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=10.2.2"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.ned.org","hash_tracking":"false","v4_id":"G-D16R2Y00FE"};/* ]]> */
+</script>
+<script id="jquery-core-js" src="https://www.ned.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.ned.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="rvm_jquery-jvectormap-js-js" src="https://www.ned.org/wp-content/plugins/responsive-vector-maps/js/regions-data/jquery-jvectormap-2.0.3.min.js?ver=2.0.3"></script>
+<script id="super-rss-reader-js-js" src="https://www.ned.org/wp-content/plugins/super-rss-reader--forked/public/srr-js.js?ver=7.0"></script>
+<script id="jquery.bxslider-js" src="https://www.ned.org/wp-content/themes/ned/js/jquery.bxslider.js?ver=7.0"></script>
+<script id="modernizr-js" src="https://www.ned.org/wp-content/themes/ned/js/modernizr-2.5.3.min.js?ver=7.0"></script>
+<script id="jquery-fancybox-js" src="https://www.ned.org/wp-content/themes/ned/fancybox/jquery.fancybox.js?ver=7.0"></script>
+<script id="jquery.lazyload-js" src="https://www.ned.org/wp-content/themes/ned/js/jquery.lazyload.js?ver=7.0"></script>
+<script id="html5shiv-js" src="https://www.ned.org/wp-content/themes/ned/js/html5shiv.js?ver=7.0"></script>
+<script id="custom-js-extra">
+var data = {"adminurl":"https://www.ned.org/wp-admin/admin-ajax.php","theamurl":"https://www.ned.org/wp-content/themes/ned"};
+//# sourceURL=custom-js-extra
+</script>
+<script id="custom-js" src="https://www.ned.org/wp-content/themes/ned/js/custom.js?ver=7.0"></script>
+<script id="jquery.jqtransform-js" src="https://www.ned.org/wp-content/themes/ned/js/jquery.jqtransform.js?ver=7.0"></script>
+<script id="jquery.countdown.min-js" src="https://www.ned.org/wp-content/themes/ned/js/jquery.countdown.min.js?ver=7.0"></script>
+<link rel="https://api.w.org/" href="https://www.ned.org/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.ned.org/wp-json/wp/v2/posts/41976" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ned.org/xmlrpc.php?rsd" />
+<script>var ms_grabbing_curosr = 'https://www.ned.org/wp-content/plugins/master-slider/public/assets/css/common/grabbing.cur', ms_grab_curosr = 'https://www.ned.org/wp-content/plugins/master-slider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 3.11.2 - Responsive Touch Image Slider | avt.li/msf" />
+<!-- Stream WordPress user activity plugin v4.2.0 -->
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://www.ned.org/wp-content/uploads/2021/05/cropped-ned-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.ned.org/wp-content/uploads/2021/05/cropped-ned-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.ned.org/wp-content/uploads/2021/05/cropped-ned-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.ned.org/wp-content/uploads/2021/05/cropped-ned-favicon-270x270.png" />
+
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-356463-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</head>
+<body class="wp-singular post-template-default single single-post postid-41976 single-format-standard wp-theme-ned _masterslider _ms_version_3.11.2 group-blog">
+<div id="wrapper">
+	<main>
+		<header id="masthead" class="site-header" role="banner">
+			<div class="top-menu-sec">
+				<div class="top-menu">
+					<ul id="menu-topmenu" class="menu"><li id="menu-item-12288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12288"><a href="https://www.ned.org/press-room/">Press Room</a></li>
+<li id="menu-item-7671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7671"><a href="https://www.ned.org/contact/">Contact Us</a></li>
+</ul>					<ul id="menu-language-menu" class="menu"><li id="menu-item-7699" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ned.org/apply-for-grant/">Apply for a Grant</a></li>
+<li id="menu-item-211" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ned.org/apply-for-grant/fr/">Une demande de subvention</a></li>
+<li id="menu-item-7698" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ned.org/apply-for-grant/pt/">Solicitar um subsídio</a></li>
+<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ned.org/apply-for-grant/ru/">подать заявку на грант</a></li>
+<li id="menu-item-208" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ned.org/apply-for-grant/es/">Aplicar a una subvención</a></li>
+<li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ned.org/apply-for-grant/ar/">التقدم بطلب للحصول على منحة</a></li>
+<li id="menu-item-7861" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.ned.org/apply-for-grant/fa/">درخواست برای کمک مالی</a></li>
+</ul>				</div>
+			</div>
+			<div class="container">
+				<div class="logo-sec">
+					<div class="logo">
+						<a href="https://www.ned.org/"><img src="https://www.ned.org/wp-content/themes/ned/images/logo.png" alt="NATIONAL ENDOWMENT FOR DEMOCRACY" /></a>
+						</div>
+						<div class="logo-rgt">
+							<a class="agent-btn" href="/apply-for-grant/">Apply for a Grant</a>
+							<div class="search-icon"></div>
+							<div class="search-form">
+
+								<form role="search" method="get" id="searchform" class="searchform search-box" action="https://www.ned.org/">
+										<input type="submit" id="searchsubmit" value="" class="search-btn" />
+										<input type="text" value="" name="s" id="s" class="search-text"  placeholder="START TYPING..."/>
+								</form>
+							</div>
+							<div class="social-media-clear"></div>
+							<div class="social-media"><ul><li><a href="https://www.facebook.com/National.Endowment.for.Democracy" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="https://twitter.com/nedemocracy" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="https://www.youtube.com/nationalendowmentfordemocracy" target="_blank"><i class="fa fa-youtube"></i></a></li><li><a href="https://www.linkedin.com/company/national-endowment-for-democracy/" target="_blank"><i class="fa fa-linkedin"></i></a></li><li><a href="https://www.instagram.com/nedemocracy/" target="_blank"><i class="fa fa-instagram"></i></a></li><li><a class="do-subscribe" href="http://eepurl.com/gpmc3D" target="_blank">Subscribe</a></li></ul></div>						</div>
+				</div>
+			</div>
+			<nav class="navigation-sec">
+				<div class=" large-container">
+					<button class="toggle-btn"></button>
+					<div class="nav-main">
+						<div class="navigation-lft">
+							<ul id="menu-main-menu" class="menu"><li id="menu-item-41459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-41459"><a href="https://www.ned.org/ned-grantmaking/">Grantmaking</a>
+<div class='sub-menu' ><ul>
+	<li id="menu-item-7679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7679"><a href="https://www.ned.org/regions-2/">Regions</a></li>
+	<li id="menu-item-41228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41228"><a href="https://www.ned.org/thematic-priorities/">Themes</a></li>
+	<li id="menu-item-43649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43649"><a href="https://www.ned.org/active-grant-listing/">Active Grant Listing</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-4316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4316"><a href="http://www.ned.org/about/">About</a>
+<div class='sub-menu' ><ul>
+	<li id="menu-item-13123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13123"><a href="https://www.ned.org/about/">About the National Endowment for Democracy</a></li>
+	<li id="menu-item-4317" class="breakmenu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4317"><a href="#">Who We Are</a>
+	<ul>
+		<li id="menu-item-4319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4319"><a href="https://www.ned.org/experts/damon-wilson">Meet Our President &#038; CEO</a></li>
+		<li id="menu-item-8362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8362"><a href="https://www.ned.org/about/board-of-directors/">Board of Directors</a></li>
+		<li id="menu-item-8356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8356"><a href="https://www.ned.org/about/staff/">Staff</a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-7676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7676"><a href="https://www.ned.org/about/history/">History</a></li>
+	<li id="menu-item-4321" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4321"><a href="https://www.ned.org/featured-publications/">ANNUAL REPORTS</a></li>
+	<li id="menu-item-41669" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-41669"><a href="https://www.ned.org/category/impact-reports/">Impact Reports</a></li>
+	<li id="menu-item-41294" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-41294"><a href="https://www.ned.org/governance-and-accountability/">Governance and Accountability</a></li>
+	<li id="menu-item-43460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43460"><a href="https://www.ned.org/financials/">Financials</a></li>
+	<li id="menu-item-7701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7701"><a href="https://www.ned.org/about/faqs/">Frequently Asked Questions</a></li>
+	<li id="menu-item-7705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7705"><a href="https://www.ned.org/about/jobs/">Careers</a></li>
+
+</ul></div>
+</li>
+</ul>						</div>
+						<div class="navigation-rgt">
+							<ul id="menu-secondary-menu" class="menu"><li id="menu-item-7687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7687"><a href="https://www.ned.org/fellowships/">Fellowships</a>
+<div class='sub-menu' ><ul>
+	<li id="menu-item-8485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8485"><a href="https://www.ned.org/fellowships/">Fellowships</a></li>
+	<li id="menu-item-7879" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7879"><a href="https://www.ned.org/fellowships/reagan-fascell-democracy-fellows-program/">Reagan-Fascell Democracy Fellows</a></li>
+	<li id="menu-item-7877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7877"><a href="https://www.ned.org/fellowships/hurford-youth-fellows-program/">Hurford Youth Fellows</a></li>
+	<li id="menu-item-17782" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17782"><a href="https://www.ned.org/fellowships/penn-kemble-forum-on-democracy/">Penn Kemble Forum Fellows</a></li>
+	<li id="menu-item-7874" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7874"><a href="https://www.ned.org/fellowships/visiting-fellows-program/">Visiting Fellows</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-37191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-37191"><a href="https://www.ned.org/events/">Events</a>
+<div class='sub-menu' ><ul>
+	<li id="menu-item-11810" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11810"><a href="http://www.ned.org/democracy-award/">Democracy Award</a>
+	<ul>
+		<li id="menu-item-42846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42846"><a href="https://www.ned.org/2025-democracy-award/">2025 Democracy Award</a></li>
+		<li id="menu-item-39686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39686"><a href="https://www.ned.org/2024-democracy-award/">2024 Democracy Award</a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-14995" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14995"><a href="http://www.ned.org/democracy-award/democracy-service-medal/">Democracy Service Medal</a>
+	<ul>
+		<li id="menu-item-42450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42450"><a href="https://www.ned.org/2025-democracy-service-medal/">2025 Democracy Service Medal</a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-11785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11785"><a href="https://www.ned.org/seymour-martin-lipset-lecture-on-democracy-in-the-world/">Lipset Lecture Series</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-7686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7686"><a href="https://www.ned.org/ideas/">Ideas</a>
+<div class='sub-menu' ><ul>
+	<li id="menu-item-8486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8486"><a href="https://www.ned.org/ideas/">International Forum for Democratic Studies</a></li>
+	<li id="menu-item-7850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7850"><a href="https://www.ned.org/ideas/about-the-forum-2/">About the Forum</a></li>
+	<li id="menu-item-20675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20675"><a href="https://www.ned.org/ideas/priority-areas/">Forum Priority Areas</a>
+	<ul>
+		<li id="menu-item-36038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36038"><a href="https://www.ned.org/countering-authoritarian-influence/">Countering Authoritarian Influence</a></li>
+		<li id="menu-item-36039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36039"><a href="https://www.ned.org/emerging-technologies-and-democracy/">Emerging Technologies</a></li>
+
+	</ul>
+</li>
+	<li id="menu-item-20674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20674"><a href="https://www.ned.org/ideas/publications/">Forum Publications</a></li>
+	<li id="menu-item-36044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36044"><a href="https://www.power3point0.org/">Power 3.0 Blog &#038; Podcast</a></li>
+	<li id="menu-item-36041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36041"><a href="https://sharppower.org">Sharp Power Research Portal</a></li>
+	<li id="menu-item-23245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23245"><a href="https://www.ned.org/ideas/democracy-resource-center/">Democracy Resource Center</a></li>
+	<li id="menu-item-8246" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8246"><a href="/category/forum">Forum News Feed</a></li>
+	<li id="menu-item-36042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36042"><a href="https://www.ned.org/events/">Forum Events</a></li>
+
+</ul></div>
+</li>
+<li id="menu-item-37596" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37596"><a href="https://www.ned.org/category/news/">News</a></li>
+</ul>						</div>
+						<form role="search" method="get" class="search-box-mobile" action="https://www.ned.org/">
+								<input type="submit" value="" class="search-btn" />
+								<input type="text" value="" name="s" id="s" class="search-text"  placeholder="START TYPING"/>
+						</form>
+					</div>
+				</div>
+				<div class="clear-nav"></div>
+			</nav>
+		</header>
+	<div class="breadcrumbs"><div class="container"><ul id="breadcrumbs" class="breadcrumbs"><li class="item-home"><a class="bread-link bread-home" href="https://www.ned.org" title="Home">Home</a>|&nbsp;&nbsp;</li><li class="item-cat item-cat-450 item-cat-publications"><a class="bread-cat bread-cat-450 bread-cat-publications" href="https://www.ned.org/category/publications/" title="Publications">Publications</a>      |&nbsp;&nbsp;  </li><li>2024 Grants Listings</li></ul></div></div>	
+		
+<div class="large-container">
+	<article id="post-41976" class="post-41976 post type-post status-publish format-standard has-post-thumbnail hentry category-publications tag-africa tag-asia tag-eurasia tag-europe tag-grants tag-latin_america_and_the_caribbean tag-mena">
+		<header class="entry-header">
+			<h1 class="entry-title">2024 Grants Listings</h1>			<div class="entry-meta">
+				<span class="posted-on">Published on <a href="https://www.ned.org/2024-grant-listings/" rel="bookmark"><time class="entry-date published" datetime="2025-04-28T17:22:34-04:00">April 28, 2025</time></a></span> by <span class="byline author vcard"><a class="url fn n" href="https://www.ned.org/author/communications-staff/">Communications Staff</a></span>			</div><!-- .entry-meta -->
+			<!--  -->
+
+
+		</header><!-- .entry-header -->
+
+		<div class="entry-content">
+			<h6><b><span data-contrast="auto"><img class="aligncenter wp-image-42148 lazyload" alt="" width="700" height="394" data-src="https://www.ned.org/wp-content/uploads/2025/04/Map-navy.jpg" srcset="https://www.ned.org/wp-content/uploads/2025/04/Map-navy.jpg 1280w, https://www.ned.org/wp-content/uploads/2025/04/Map-navy-768x432.jpg 768w, https://www.ned.org/wp-content/uploads/2025/04/Map-navy-853x480.jpg 853w" sizes="(max-width: 700px) 100vw, 700px" /></span></b></h6>
+<h6><b><span data-contrast="auto">Our Commitment: Safeguarding Our Partners and Upholding Transparency</span></b><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></h6>
+<p><span data-contrast="auto">As President and CEO of the National Endowment for Democracy, I stand by our mission to support freedom where repression thrives. Democracy activists work on the frontlines, often in perilous situations, and it is their courage in the face of daunting danger that inspires us every day. Their work&mdash;and the risks they face&mdash;demand that we uphold an uncompromising duty of care and require us to balance transparency with protecting human lives.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">When I joined NED four years ago, I saw firsthand how activists face threats of arrest, prosecution, or physical harm simply for standing up for democracy. Our team has witnessed activists in Hong Kong face prosecution based on fabricated NED documents and Belarusian freedom fighters silenced by manipulated records.&nbsp;</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">Even in countries that were once relatively free&mdash;where our grantees operated openly&mdash;we&rsquo;ve seen them harassed, targeted, or jailed as political circumstances change and democracy has deteriorated, as in Tunisia and Georgia.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">When the Taliban took control of Afghanistan in 2021, they targeted Afghans associated with NED. On the eve of Russia&rsquo;s invasion of Ukraine, U.S. authorities briefed me that some NED grantees were on Russian &ldquo;kill and capture&rdquo; lists. In each of these circumstances, we found ourselves regretting that personal details of our partners were publicly available.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">In every instance, the digital age has amplified these risks. The diminished sphere of anonymity leaves democracy activists even more vulnerable. Publicly exposing identifiable details about those who work behind the scenes to champion freedom jeopardizes their safety and undermines the essential work they do.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">As a result, we&rsquo;ve strengthened both our digital and physical security support within our grants to at-risk partners. We&rsquo;ve reinforced our systems to defend against cyber-attacks. We&rsquo;ve bolstered our security protocols. Our Board of Directors adopted a formal </span><a href="https://www.ned.org/ned-policy/"><span data-contrast="none">Duty of Care policy</span></a><span data-contrast="auto"> to ensure that those who partner with NED are not only more effective in their efforts&mdash;but also more secure. As part of our commitment, we&rsquo;ve taken additional measures to protect sensitive identifying information from falling into the hands of those who might exploit it to cause harm.&nbsp;</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">After temporarily pausing public listings to reassess risks, NED is resuming with a new, responsibly curated public listing of grants that reflects the projects approved for funding in fiscal year 2024.&nbsp;&nbsp;</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">While taking these precautions to protect our partners, we have never stepped back from meeting&mdash;and exceeding&mdash;our statutory and legal commitments regarding reporting and disclosure to stakeholders. As a Congressionally mandated grantmaking institution, oversight and transparency are core principles that reinforce the legitimacy and efficacy of our work. We submit detailed plans and annual reports to our oversight committees, provide regular briefings to Members of Congress and staff, and respond promptly to all Congressional inquiries. We host NED partners visiting Washington on Capitol Hill routinely so Members and staff can meet them directly, and we facilitate meetings when Members and staff are on overseas travel&mdash;so they can see the impact of our partner&rsquo;s efforts firsthand.&nbsp;</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">This approach is designed to uphold transparency and accountability while ensuring the security of our partners. NED&rsquo;s work is guided by four key objectives: ensuring accountability to the American people and their elected representatives; reporting transparently on the use of public funds; coordinating effectively with other democracy assistance organizations and U.S. government agencies; and amplifying the impact of NED&rsquo;s programs and partners. Our relationship with oversight bodies&mdash;along with the information shared publicly through our website and annual reports, including programmatic priorities, regional strategies, grants data, and grantee profiles&mdash;demonstrates NED&rsquo;s enduring commitment to transparency.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<h3><b><span data-contrast="auto">A Legacy of Transparent, Responsible Support</span></b><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></h3>
+<p><span data-contrast="auto">Transparency has always been central to NED&rsquo;s identity. Our founding by Congressman Dante Fascell&mdash;and the bipartisan support championed by President Ronald Reagan&mdash;was driven by the belief that it is not only in the long-term interests of the United States to empower democracy advocates, but to do so openly. This founding commitment to transparency ensured that those on the frontlines know their work is backed by U.S. sources and the enduring accountability of the American people. Transparency builds trust, ensuring activists understand our support comes directly from American taxpayers. It also serves to bolster the ties between Americans and those who share our values around the world.&nbsp;</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">This open approach&mdash;also exemplified by our comprehensive disclosure of grantmaking activities to Congress, the State Department, and other oversight bodies&mdash;has earned us the trust of lawmakers and partners alike, while balancing the imperative to protect our partners on the ground.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559738":240,"335559739":240,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">However, transparency for oversight differs significantly from transparency for public consumption. Publicly sharing comprehensive details about grantees in hostile regions such as China, Iran, Russia, North Korea, Venezuela, and Cuba is dangerous. For activists already contending with systemic state repression and targeted retaliation, such disclosure could, in effect, be a death sentence.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559738":240,"335559739":240,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">Our approach is a testament to our core belief that &ldquo;people are our greatest value.&rdquo; NED&rsquo;s </span><a href="https://www.ned.org/ned-policy/"><span data-contrast="none">Duty of Care Policy</span></a><span data-contrast="auto"> compels us to minimize any additional risks to those who entrust us with their fight for freedom. This is why we honor the choice of our partners: while some are comfortable with public disclosure, many&mdash;particularly those operating under dangerous conditions&mdash;prefer to maintain their anonymity. We never publicly disclose identifying details on their behalf without their explicit consent. This is not simply an operational decision; it is an ethical imperative.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<h2><b><span data-contrast="auto">Governance, Oversight, and Financial Integrity</span></b><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></h2>
+<p><span data-contrast="auto">NED&rsquo;s commitment to transparency is reinforced by a strong governance framework and strict accountability measures. As an independent nonprofit, NED is governed by a bipartisan Board of Directors composed of Members of Congress, former diplomats, foreign policy experts, and private sector leaders. The Board sets our strategic direction and oversee our operations&mdash;from grant approvals to financial management. This bipartisan board, which is not appointed by the U.S. government and includes representatives from both political parties, business, and labor, ensures that partisanship remains separate from our mission.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">Our Board meets at least three times a year to review strategic plans and grantmaking activities. Dedicated subcommittees and rigorous internal controls&mdash;complemented by independent audits and comprehensive Freedom of Information Act (FOIA) compliance&mdash;underscore our duty to the American taxpayer and public stakeholders. </span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">NED maintains detailed financial records for every grant, with systems in place to track how all funds are spent across every project. Grant recipients are closely monitored through narrative, financial, and evaluation reporting to ensure compliance with federal requirements and programmatic objectives. NED&rsquo;s Board of Directors also ensures that all funds are used exclusively for purposes consistent with the NED Act and the organization&rsquo;s Articles of Incorporation. Through this layered oversight, NED guarantees that taxpayer funds are managed according to the highest ethical standards, operational excellence, and fidelity to mission.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">For over a decade, NED has consistently received </span><a href="https://www.ned.org/ned-achieves-more-than-ten-years-of-consecutive-clean-audits/"><span data-contrast="none">clean independent audit opinions</span></a><span data-contrast="auto">, most recently affirmed by our Fiscal Year 2024 audit. This framework of oversight reinforces our ability to support democracy globally while safeguarding our grantees. Additional details on our governance and accountability </span><a href="https://www.ned.org/governance-and-accountability/"><span data-contrast="none">can be found here</span></a><span data-contrast="auto">. </span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<h2><b><span data-contrast="auto">Our Commitment</span></b><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></h2>
+<p><span data-contrast="auto">Our decision represents a carefully considered balance. We uphold the spirit of transparency without exposing our grantees to unnecessary risks or reprisals. Public safety must always take priority over exhaustive public disclosure.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p><span data-contrast="auto">Rather than listing names that could serve as a roadmap for those seeking to silence advocates for freedom, we provide descriptive information that reflects the nature of their work without compromising their security. We also publicly disclose the nature of the work and organizations we support. We continue our long-standing practice of briefing Congress on the details of our work and consulting with the State Department.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240}'>&nbsp;</span></p>
+<p data-ccp-border-bottom="2px solid #000000" data-ccp-padding-bottom="1.3333333333333333px"><span data-contrast="auto">Supporting democracy is courageous&mdash;and often dangerous. Every day, we stand alongside activists who risk everything for a freer, more just world. By safeguarding their identities, we reinforce our duty of care, upholding transparency without compromising the security of those at the very heart of our mission.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240,"335572079":12,"335572080":1,"335572081":4278190080,"469789806":"single"}'>&nbsp;</span></p>
+<p data-ccp-border-top="0px none " data-ccp-padding-top="0px" data-ccp-border-bottom="2px solid #000000" data-ccp-padding-bottom="1.3333333333333333px"><span data-contrast="auto">This commitment&mdash;to empower democracy advocates while prioritizing their safety&mdash;guides every action we take. True transparency means being open about our work while ensuring that we never inadvertently endanger those whose courage makes the world safer for all.</span><span data-ccp-props='{"134233279":true,"201341983":0,"335559740":240,"335572079":12,"335572080":1,"335572081":4278190080,"469789806":"single"}'>&nbsp;</span></p>
+<p><img class="alignnone wp-image-36637 lazyload" alt="" width="326" height="43" data-src="https://www.ned.org/wp-content/uploads/2023/02/DW-sig.png"></p>
+<p>Damon Wilson<br>
+President and CEO</p>
+<p>&nbsp;</p>
+<h1><span class="TextRun SCXW161815169 BCX8" lang="EN-US" xml:lang="EN-US" data-contrast="auto"><span class="NormalTextRun SCXW161815169 BCX8">Grants Listings</span><span class="NormalTextRun SCXW161815169 BCX8"> for Fiscal Year 2024</span></span><span class="EOP SCXW161815169 BCX8" data-ccp-props='{"134233279":true,"201341983":0,"335559740":240,"335572079":12,"335572080":1,"335572081":4278190080,"469789806":"single"}'>&nbsp;</span></h1>
+<h2><a href="https://www.ned.org/wp-content/uploads/2025/04/Africa-Grant-Listing-FY24.pdf">2024 Africa Grants Listing</a></h2>
+<h2><a href="https://www.ned.org/wp-content/uploads/2025/04/Asia-Grant-Listing-FY24.pdf">2024 Asia Grants Listing</a></h2>
+<h2><a href="https://www.ned.org/wp-content/uploads/2025/04/Eurasia-Grant-Listing-FY24.pdf">2024 Eurasia Grants Listing</a></h2>
+<h2><a href="https://www.ned.org/wp-content/uploads/2025/04/Europe-Grant-Listing-FY24-1.pdf">2024 Europe Grants Listing</a></h2>
+<h2><a href="https://www.ned.org/wp-content/uploads/2025/04/LAC-Grant-Listing-FY24.pdf">2024 Latin America and the Caribbean Grants Listing</a></h2>
+<h2><a href="https://www.ned.org/wp-content/uploads/2025/04/MENA-Grant-Listing-FY24.pdf">2024 Middle East and North Africa Grants Listing</a></h2>
+<h2><a href="https://www.ned.org/wp-content/uploads/2025/04/Global-Grant-Listing-FY24.pdf">2024 Global Grants Listing</a></h2>
+<h2><a class="Hyperlink SCXW57564967 BCX8" href="https://www.ned.org/ned-policy/" target="_blank" rel="noreferrer noopener"><span class="TextRun Underlined SCXW57564967 BCX8" lang="EN-US" xml:lang="EN-US" data-contrast="none"><span class="NormalTextRun SCXW57564967 BCX8" data-ccp-charstyle="Hyperlink">NED&rsquo;s Duty of Care and Public Disclosure Policies</span></span></a><span class="EOP SCXW57564967 BCX8" data-ccp-props='{"134233279":true,"201341983":0,"335559740":240,"335572079":12,"335572080":1,"335572081":4278190080,"469789806":"single"}'>&nbsp;</span></h2><div class='heateorSssClear'></div><div  class='heateor_sss_sharing_container heateor_sss_horizontal_sharing' data-heateor-sss-href='https://www.ned.org/2024-grant-listings/'><div class='heateor_sss_sharing_title' style="font-weight:bold" >Share</div><div class="heateor_sss_sharing_ul"><a aria-label="Facebook" class="heateor_sss_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#0765FE;width:40px;height:40px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path fill="#fff" d="M28 16c0-6.627-5.373-12-12-12S4 9.373 4 16c0 5.628 3.875 10.35 9.101 11.647v-7.98h-2.474V16H13.1v-1.58c0-4.085 1.849-5.978 5.859-5.978.76 0 2.072.15 2.608.298v3.325c-.283-.03-.775-.045-1.386-.045-1.967 0-2.728.745-2.728 2.683V16h3.92l-.673 3.667h-3.247v8.245C23.395 27.195 28 22.135 28 16Z"></path></svg></span></a><a aria-label="X" class="heateor_sss_button_x" href="https://twitter.com/intent/tweet?text=2024%20Grants%20Listings&url=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="X" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_x" style="background-color:#2a2a2a;width:40px;height:40px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg width="100%" height="100%" style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#fff" d="M21.751 7h3.067l-6.7 7.658L26 25.078h-6.172l-4.833-6.32-5.531 6.32h-3.07l7.167-8.19L6 7h6.328l4.37 5.777L21.75 7Zm-1.076 16.242h1.7L11.404 8.74H9.58l11.094 14.503Z"></path></svg></span></a><a aria-label="Whatsapp" class="heateor_sss_whatsapp" href="https://api.whatsapp.com/send?text=2024%20Grants%20Listings%20https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="Whatsapp" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#55eb4c;width:40px;height:40px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-6 -5 40 40"><path class="heateor_sss_svg_stroke heateor_sss_no_fill" stroke="#fff" stroke-width="2" fill="none" d="M 11.579798566743314 24.396926207859085 A 10 10 0 1 0 6.808479557110079 20.73576436351046"></path><path d="M 7 19 l -1 6 l 6 -1" class="heateor_sss_no_fill heateor_sss_svg_stroke" stroke="#fff" stroke-width="2" fill="none"></path><path d="M 10 10 q -1 8 8 11 c 5 -1 0 -6 -1 -3 q -4 -3 -5 -5 c 4 -2 -1 -5 -1 -4" fill="#fff"></path></svg></span></a><a aria-label="Linkedin" class="heateor_sss_button_linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="Linkedin" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_linkedin" style="background-color:#0077b5;width:40px;height:40px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#fff"></path></svg></span></a><a aria-label="Email" class="heateor_sss_email" href="https://www.ned.org/2024-grant-listings/" onclick="event.preventDefault();window.open('mailto:?subject=' + decodeURIComponent('2024%20Grants%20Listings').replace('&', '%26') + '&body=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F', '_blank')" title="Email" rel="noopener" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#649a3f;width:40px;height:40px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-.75 -.5 36 36"><path d="M 5.5 11 h 23 v 1 l -11 6 l -11 -6 v -1 m 0 2 l 11 6 l 11 -6 v 11 h -22 v -11" stroke-width="1" fill="#fff"></path></svg></span></a><a class="heateor_sss_more" aria-label="More" title="More" rel="nofollow noopener" style="font-size: 32px!important;border:0;box-shadow:none;display:inline-block!important;font-size:16px;padding:0 4px;vertical-align: middle;display:inline;" href="https://www.ned.org/2024-grant-listings/" onclick="event.preventDefault()"><span class="heateor_sss_svg" style="background-color:#ee8e2d;width:40px;height:40px;display:inline-block!important;opacity:1;float:left;font-size:32px!important;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;display:inline;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box;" onclick="heateorSssMoreSharingPopup(this, 'https://www.ned.org/2024-grant-listings/', '2024%20Grants%20Listings', '' )"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-.3 0 32 32" version="1.1" width="100%" height="100%" style="display:block;" xml:space="preserve"><g><path fill="#fff" d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span></a></div><div class="heateorSssClear"></div></div><div class='heateorSssClear'></div><div class='heateor_sss_sharing_container heateor_sss_vertical_sharing heateor_sss_bottom_sharing' style='width:44px;right: -10px;top: 100px;-webkit-box-shadow:none;box-shadow:none;' data-heateor-sss-href='https://www.ned.org/2024-grant-listings/'><div class="heateor_sss_sharing_ul"><a aria-label="Facebook" class="heateor_sss_facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#0765FE;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path fill="#fff" d="M28 16c0-6.627-5.373-12-12-12S4 9.373 4 16c0 5.628 3.875 10.35 9.101 11.647v-7.98h-2.474V16H13.1v-1.58c0-4.085 1.849-5.978 5.859-5.978.76 0 2.072.15 2.608.298v3.325c-.283-.03-.775-.045-1.386-.045-1.967 0-2.728.745-2.728 2.683V16h3.92l-.673 3.667h-3.247v8.245C23.395 27.195 28 22.135 28 16Z"></path></svg></span></a><a aria-label="X" class="heateor_sss_button_x" href="https://twitter.com/intent/tweet?text=2024%20Grants%20Listings&url=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="X" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_x" style="background-color:#2a2a2a;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg width="100%" height="100%" style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#fff" d="M21.751 7h3.067l-6.7 7.658L26 25.078h-6.172l-4.833-6.32-5.531 6.32h-3.07l7.167-8.19L6 7h6.328l4.37 5.777L21.75 7Zm-1.076 16.242h1.7L11.404 8.74H9.58l11.094 14.503Z"></path></svg></span></a><a aria-label="Whatsapp" class="heateor_sss_whatsapp" href="https://api.whatsapp.com/send?text=2024%20Grants%20Listings%20https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="Whatsapp" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#55eb4c;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-6 -5 40 40"><path class="heateor_sss_svg_stroke heateor_sss_no_fill" stroke="#fff" stroke-width="2" fill="none" d="M 11.579798566743314 24.396926207859085 A 10 10 0 1 0 6.808479557110079 20.73576436351046"></path><path d="M 7 19 l -1 6 l 6 -1" class="heateor_sss_no_fill heateor_sss_svg_stroke" stroke="#fff" stroke-width="2" fill="none"></path><path d="M 10 10 q -1 8 8 11 c 5 -1 0 -6 -1 -3 q -4 -3 -5 -5 c 4 -2 -1 -5 -1 -4" fill="#fff"></path></svg></span></a><a aria-label="Linkedin" class="heateor_sss_button_linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F" title="Linkedin" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_linkedin" style="background-color:#0077b5;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#fff"></path></svg></span></a><a aria-label="Email" class="heateor_sss_email" href="https://www.ned.org/2024-grant-listings/" onclick="event.preventDefault();window.open('mailto:?subject=' + decodeURIComponent('2024%20Grants%20Listings').replace('&', '%26') + '&body=https%3A%2F%2Fwww.ned.org%2F2024-grant-listings%2F', '_blank')" title="Email" rel="noopener" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle"><span class="heateor_sss_svg" style="background-color:#649a3f;width:40px;height:40px;margin:0;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box"><svg style="display:block;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-.75 -.5 36 36"><path d="M 5.5 11 h 23 v 1 l -11 6 l -11 -6 v -1 m 0 2 l 11 6 l 11 -6 v 11 h -22 v -11" stroke-width="1" fill="#fff"></path></svg></span></a><a class="heateor_sss_more" aria-label="More" title="More" rel="nofollow noopener" style="font-size: 32px!important;border:0;box-shadow:none;display:inline-block!important;font-size:16px;padding:0 4px;vertical-align: middle;display:inline;" href="https://www.ned.org/2024-grant-listings/" onclick="event.preventDefault()"><span class="heateor_sss_svg" style="background-color:#ee8e2d;width:40px;height:40px;margin:0;display:inline-block!important;opacity:1;float:left;font-size:32px!important;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;display:inline;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box;" onclick="heateorSssMoreSharingPopup(this, 'https://www.ned.org/2024-grant-listings/', '2024%20Grants%20Listings', '' )"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-.3 0 32 32" version="1.1" width="100%" height="100%" style="display:block;" xml:space="preserve"><g><path fill="#fff" d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span></a></div><div class="heateorSssClear"></div></div>					</div><!-- .entry-content -->
+
+	</article><!-- #post-## -->
+</div>
+	
+	
+	
+<div class="footer-sec">
+	<div class="large-container">
+		<div class="footer-main">
+			<div class="footer-logo">
+				<a href="https://www.ned.org/"><img src="https://www.ned.org/wp-content/themes/ned/images/footer-logo-2.png" alt="NATIONAL ENDOWMENT FOR DEMOCRACY" /></a>
+			</div>
+							<div class="contact">
+					<div class="contact-detail">
+						<span class="small-title">CONTACT US</span>
+						<a class="phone" href="callto:http://(202)%20378-9700">(202) 378-9700</a> | <a class="info-mail" href="mailto:http://INFO@NED.ORG">INFO@NED.ORG</a> | 							<a class="info-mail" href="/privacy-policy/">Privacy Policy</a>
+					</div>
+				</div>
+						<div class="subscribe-btn">
+				<a href="http://eepurl.com/gpmc3D">SUBSCRIBE TODAY</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="copyright-sec">
+	<div class="large-container">
+		<div class="copyright-main">
+			<div class="social-media"><ul><li><a href="https://www.facebook.com/National.Endowment.for.Democracy" target="_blank"><i class="fa fa-facebook"></i></a></li><li><a href="https://twitter.com/nedemocracy" target="_blank"><i class="fa fa-twitter"></i></a></li><li><a href="https://www.youtube.com/nationalendowmentfordemocracy" target="_blank"><i class="fa fa-youtube"></i></a></li><li><a href="https://www.linkedin.com/company/national-endowment-for-democracy/" target="_blank"><i class="fa fa-linkedin"></i></a></li><li><a href="https://www.instagram.com/nedemocracy/" target="_blank"><i class="fa fa-instagram"></i></a></li></ul></div><p>1201 Pennsylvania Ave, NW, Suite 1100, Washington, DC 20004</p>			</div>
+		<div class="footer-link">
+<!--			-->		</div>
+	</div>
+</div>
+</main>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ned/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-hooks-js" src="https://www.ned.org/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
+<script id="wp-i18n-js" src="https://www.ned.org/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://www.ned.org/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.6"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.ned.org\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://www.ned.org/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.6"></script>
+<script id="imagesloaded-js" src="https://www.ned.org/wp-includes/js/imagesloaded.min.js?ver=5.0.0"></script>
+<script id="masonry-js" src="https://www.ned.org/wp-includes/js/masonry.min.js?ver=4.2.2"></script>
+<script id="heateor_sss_sharing_js-js-before">
+function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://www.ned.org/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://www.ned.org/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://www.ned.org/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 1;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+//# sourceURL=heateor_sss_sharing_js-js-before
+</script>
+<script id="heateor_sss_sharing_js-js" src="https://www.ned.org/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.3.79"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.ned.org/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.ned.org/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c8eb398605","applicationID":"9433139","transactionName":"NlBXNhEADxcCAEBRWg8adAEXCA4KTBBdVlINUA==","queueTime":0,"applicationTime":455,"atts":"GhdUQFkaHBk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

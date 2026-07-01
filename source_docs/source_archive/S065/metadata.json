@@ -9,12 +9,19 @@
   "bias_note": "Primary organization site; SSL/certificate issue noted by reviewer",
   "review_status": "human_verified",
   "notes": "HR-002 source supplied by human reviewer; verify via Web Archive if needed.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S065\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S065\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:45:51.7377801Z",
-  "note": "Added during HR-002; raw archive pending."
+  "sha256": "9d685137b6efca48dded88c27d0b66ac00b40b583920c2654ab475b9193d83e9",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:07.284189+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "http://ngo-nowar.org/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

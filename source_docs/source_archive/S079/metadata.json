@@ -9,12 +9,19 @@
   "bias_note": "Primary organization source",
   "review_status": "human_verified",
   "notes": "HR-005 supplemental source; supports X016 identity.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S079\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S079\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:14:53.0233080Z",
-  "note": "Added during HR-005; raw archive pending."
+  "sha256": "c63135bab95c1bebb36a28bb86426f4f74153e38e178abff0f43c48c56def49f",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:29.903413+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.moscoki.com/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

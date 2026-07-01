@@ -9,12 +9,19 @@
   "bias_note": "FoE International member directory",
   "review_status": "human_verified",
   "notes": "HR-009 source; confirms Pro Public as FoE Nepal.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S090\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S090\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T10:00:00.0000000Z",
-  "note": "Added during HR-009; raw archive pending."
+  "sha256": "ed30d99f90693b3f90c6e9f09fd331df53153d1fcbd68ea59396766863e2abdf",
+  "content_type": "text/html",
+  "http_status": "202",
+  "archived_at_utc": "2026-07-01T10:38:49.431994+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.foei.org/member-groups/nepal/",
+    "status_code": "202",
+    "content_type": "text/html",
+    "content_length": "192",
+    "last_modified": ""
+  }
 }

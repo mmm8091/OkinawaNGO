@@ -9,8 +9,8 @@ actor_review_status,verified,1
 actor_evidence_level,E4,65
 actor_evidence_level,E3,24
 actor_evidence_level,E2,4
-source_type,local_news,22
-source_type,organization_site,14
+source_type,local_news,20
+source_type,organization_site,15
 source_type,ngo_statement,7
 source_type,ngo_directory,5
 source_type,nonprofit_record,4
@@ -19,6 +19,7 @@ source_type,academic_article,3
 source_type,legal_international,3
 source_type,official_portal,2
 source_type,official_defense,2
+source_type,local_official,2
 source_type,party_news,2
 source_type,court_record,2
 source_type,encyclopedia,2
@@ -26,7 +27,6 @@ source_type,grant_document,2
 source_type,grant_database,2
 source_type,grant_listing,2
 source_type,international_advocacy,1
-source_type,local_official,1
 source_type,official_referendum,1
 source_type,organization_blog,1
 source_type,news,1
@@ -40,8 +40,7 @@ source_type,organization_story,1
 source_type,local_news_english,1
 source_type,community_site,1
 source_type,organization_report,1
-source_archive_status,pending_archive,36
-source_archive_status,archived,28
-source_archive_status,skipped_inferred_url,25
+source_archive_status,archived,74
+source_archive_status,skipped_inferred_url,14
+source_archive_status,manual_archived,2
 source_archive_status,skipped_non_url_reference,2
-source_archive_status,manual_archived,1

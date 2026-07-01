@@ -9,12 +9,19 @@
   "bias_note": "Official NED grant listing; negative finding for Okinawa recipient",
   "review_status": "human_verified",
   "notes": "HR-008 source; human reviewer extracted full text and found Okinawa/Ryukyu/Okinawan 0 and no Japan country section.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S085\\raw.pdf",
   "metadata_path": "source_docs\\source_archive\\S085\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:45:00.0000000Z",
-  "note": "Added during HR-008; raw archive pending."
+  "sha256": "cebd372a6421790a4bdc6a2d97205c51fc4a53ef73613e65455302057e9360b5",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:37.853891+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ned.org/wp-content/uploads/2025/04/Asia-Grant-Listing-FY24.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "514499",
+    "last_modified": "Mon, 28 Apr 2025 15:47:29 GMT"
+  }
 }

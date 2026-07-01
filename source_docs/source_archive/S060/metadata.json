@@ -9,12 +9,19 @@
   "bias_note": "Advocacy legal press release; verify with case docs if central",
   "review_status": "human_verified",
   "notes": "HR-001 supports distinction between Save the Dugong Foundation and SDCC.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S060\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S060\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
-  "note": "Added during HR-001; raw archive pending."
+  "sha256": "eb2bc0014c0f30a6f6870e81ccf17a8fb9e7297a3a2bd92082b574222a1aadfd",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:37:57.879172+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://earthjustice.org/press/2003/us-japanese-conservation-groups-join-in-legal-effort-to-save-okinawa-dugong-from-extinction",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "496552",
+    "last_modified": ""
+  }
 }

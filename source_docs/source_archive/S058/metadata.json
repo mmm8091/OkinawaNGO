@@ -9,12 +9,19 @@
   "bias_note": "Official IUCN member directory",
   "review_status": "human_verified",
   "notes": "HR-001 confirms international membership and Japan statutory state.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S058\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S058\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
-  "note": "Added during HR-001; raw archive pending."
+  "sha256": "37ffd0b2522de1444f76829db98bfe38aa21df8fbb6fa1f34d387c09841bd6e4",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:37:55.136042+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://iucn.org/our-union/members/iucn-members/save-dugong-campaign-center",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Wed, 01 Jul 2026 08:20:04 GMT"
+  }
 }

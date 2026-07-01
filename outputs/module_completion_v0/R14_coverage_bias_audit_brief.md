@@ -21,8 +21,7 @@ R14 已达到 `audit_v0`：已有 source archive manifest、HR review log、next
 - actor / needs_local_retrieval: 2
 - actor / needs_second_source: 14
 - actor / watchlist_only: 2
-- source / pending_archive: 36
-- source / skipped_inferred_url: 25
+- source / skipped_inferred_url: 14
 - source / skipped_non_url_reference: 2
 
 ## 必须保留的解释边界
@@ -34,7 +33,7 @@ R14 已达到 `audit_v0`：已有 source archive manifest、HR review log、next
 
 ## 还需要继续做
 
-- 归档 36 条 pending URL。
-- 核实 25 条 inferred_url。
+- 维护 source archive manifest；新增真实 URL 后继续归档。
+- 继续核实剩余 14 条 inferred_url，并使用 `data/interim/16_inferred_url_resolution_queue_v0.csv` 跟踪 archived_resolved / candidate / local retrieval 状态。
 - 给 source log 增加 source_access / archive_status / coverage_note 字段，或继续使用 manifest 旁表。
 - 建立 missing_cases_log，专门记录离岛、旧组织、失效网站和馆内数据库缺口。

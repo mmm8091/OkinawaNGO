@@ -9,12 +9,19 @@
   "bias_note": "Primary organization source",
   "review_status": "human_verified",
   "notes": "HR-009 source; confirms Pro Public identity.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S089\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S089\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T10:00:00.0000000Z",
-  "note": "Added during HR-009; raw archive pending."
+  "sha256": "9d7581d251d7886700392d3b04a8b47df0906353f76b6ee61e2f1033d770aa4e",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:47.336478+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://propublic.org/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "106657",
+    "last_modified": ""
+  }
 }

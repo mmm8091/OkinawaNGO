@@ -9,12 +9,19 @@
   "bias_note": "Statement page; co-publication does not prove stable alliance",
   "review_status": "human_verified",
   "notes": "HR-002 source supplied by human reviewer; supports Okinawa relation as statement/solidarity only.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S064\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S064\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:45:51.7377801Z",
-  "note": "Added during HR-002; raw archive pending."
+  "sha256": "70c0f4fcdebfd758d5925b97d68f04cd8034fc984b84b278ebb51bb706dc9eb7",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:05.170655+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://peaceboat.org/26488.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

@@ -19,10 +19,10 @@
 
 结果：
 
-- `archived`：28 条。
-- `manual_archived`：1 条，S007 APJJF 已用手工方式归档。
-- `pending_archive`：36 条，新增来源 S057-S092 等待脚本或人工归档。
-- `skipped_inferred_url`：25 条，等待核实真实 URL。
+- `archived`：74 条。
+- `manual_archived`：2 条，S007 APJJF 和 S078 Ryukyu Shimpo 已用手工方式归档。
+- `pending_archive`：0 条，已有真实 URL 的来源已完成第一轮归档。
+- `skipped_inferred_url`：14 条，等待核实真实 URL。
 - `skipped_non_url_reference`：2 条，书籍参考需人工做书目信息或扫描页归档。
 
 ## 4. 文件结构
@@ -52,6 +52,8 @@
 - `skipped_inferred_url`：URL 仍是占位符，等待核实。
 - `skipped_non_url_reference`：书籍或非 URL 参考，等待人工书目归档。
 - `failed`：下载失败，需要人工重试或改用截图、网页打印、Internet Archive。
+
+当前没有 `failed` 或 `pending_archive` 条目；下一轮重点不是下载，而是把剩余 14 条 `inferred_url` 占位符核成真实 URL 或标记为未找到。
 
 ## 6. 运行方式
 

@@ -9,12 +9,19 @@
   "bias_note": "Positioned weekly magazine; needs local newspaper or primary record cross-check",
   "review_status": "human_verified",
   "notes": "HR-003 source supplied by human reviewer; supports replacement of unsupported A014 seed.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S069\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S069\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:58:37.2689065Z",
-  "note": "Added during HR-003; raw archive pending."
+  "sha256": "ce65855a9635a2aa0466d2c92595cc079fee996632faf4a0b65ef2d7f5f53ee7",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:13.460179+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "http://www.kinyobi.co.jp/kinyobinews/2015/03/11/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

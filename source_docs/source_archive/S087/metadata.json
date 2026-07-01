@@ -9,12 +9,19 @@
   "bias_note": "Organization project report; method sample only not Okinawa relation",
   "review_status": "human_verified",
   "notes": "HR-008 source; confirms USAID support for West Japan floods/Hokkaido earthquake relief only.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S087\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S087\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:45:00.0000000Z",
-  "note": "Added during HR-008; raw archive pending."
+  "sha256": "ce96e17b50caf45d2da057995e23e4cb5002fa5810f867cf9106690131efee6a",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:40.777316+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://global-en.peace-winds.org/news/1790",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

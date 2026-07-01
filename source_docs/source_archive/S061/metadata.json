@@ -9,12 +9,19 @@
   "bias_note": "Organization legal source",
   "review_status": "human_verified",
   "notes": "HR-001 source supplied by human reviewer; supports A076 plaintiff status.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S061\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S061\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:34:07.6045859Z",
-  "note": "Added during HR-001; raw archive pending."
+  "sha256": "48ff18b2b65badd479f6c0e1e47cac45e0c1d6e1d028c035c3fddc090657a0bc",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:37:59.631203+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jelf-justice.org/base_issue/post-1430/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

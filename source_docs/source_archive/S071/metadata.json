@@ -9,12 +9,19 @@
   "bias_note": "Legal/access database; confirm ordinance text and expiry details if central",
   "review_status": "human_verified",
   "notes": "HR-003 source supplied by human reviewer; supports referendum/local-autonomy context.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S071\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S071\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T08:58:37.2689065Z",
-  "note": "Added during HR-003; raw archive pending."
+  "sha256": "490ed181cb976294b1d1925bee7c1ae651c8af5b409b196858808273b038c1d0",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:18.109456+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://greenaccess.law.osaka-u.ac.jp/archives/7214",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

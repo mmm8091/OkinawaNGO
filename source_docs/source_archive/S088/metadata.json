@@ -9,12 +9,19 @@
   "bias_note": "Affiliate/partner site; background only",
   "review_status": "human_verified",
   "notes": "HR-008 source; auxiliary context not Okinawa base-issue evidence.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S088\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S088\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:45:00.0000000Z",
-  "note": "Added during HR-008; raw archive pending."
+  "sha256": "1c6f2b0c87c163ca5f829d634d7bba280560e078902e63c40f7f723fb07ddbb1",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:45.261086+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://peacewindsamerica.org/project/*disaster-relief-japan/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

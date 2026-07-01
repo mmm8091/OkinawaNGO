@@ -9,12 +9,19 @@
   "bias_note": "Third-party grant listing; opportunity only not award",
   "review_status": "human_verified",
   "notes": "HR-007 source; cross-checks opportunity listing.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S083\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S083\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:30:00.0000000Z",
-  "note": "Added during HR-007; raw archive pending."
+  "sha256": "897bec77e20ba3e9497f10dd40d8364cb718cce9f61c5133b9146c48ee990eb6",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:35.558315+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.federalgrants.com/Okinawa-Youth-Council-Program-98421.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

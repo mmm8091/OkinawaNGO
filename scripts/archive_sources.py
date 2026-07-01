@@ -102,11 +102,42 @@ def write_metadata(path: Path, metadata: dict[str, object]) -> None:
         f.write("\n")
 
 
+def existing_manual_archive(row: dict[str, str], source_dir: Path) -> dict[str, str] | None:
+    metadata_path = source_dir / "metadata.json"
+    if not metadata_path.exists():
+        return None
+    try:
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    if metadata.get("archive_status") != "manual_archived":
+        return None
+    local_path = metadata.get("local_path", "")
+    if local_path and not (ROOT / local_path).exists():
+        return None
+    return {
+        "source_id": row["source_id"],
+        "title": row.get("title", ""),
+        "url": row.get("url", ""),
+        "archive_status": "manual_archived",
+        "local_path": local_path,
+        "metadata_path": str(metadata_path.relative_to(ROOT)),
+        "sha256": metadata.get("sha256", ""),
+        "content_type": metadata.get("content_type", ""),
+        "http_status": metadata.get("http_status", ""),
+        "archived_at_utc": metadata.get("archived_at_utc", ""),
+        "note": metadata.get("note", "Preserved existing manual archive."),
+    }
+
+
 def archive_source(row: dict[str, str]) -> dict[str, str]:
     source_id = row["source_id"]
     url = row["url"].strip()
     source_dir = ARCHIVE_ROOT / safe_name(source_id)
     source_dir.mkdir(parents=True, exist_ok=True)
+    manual = existing_manual_archive(row, source_dir)
+    if manual:
+        return manual
     archived_at = datetime.now(timezone.utc).isoformat()
 
     base = {

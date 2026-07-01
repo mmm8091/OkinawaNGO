@@ -9,12 +9,19 @@
   "bias_note": "Official NED index page",
   "review_status": "human_verified",
   "notes": "HR-008 source; supports reproducibility of NED FY2024 grant-listing lookup.",
-  "archive_status": "pending_archive",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S086\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S086\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T09:45:00.0000000Z",
-  "note": "Added during HR-008; raw archive pending."
+  "sha256": "dfc65f61aea911b8016f7fc9ebd0633e982cc5eeb0dd2a8460ec1b60c2b90455",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T10:38:39.676611+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ned.org/2024-grant-listings/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "113969",
+    "last_modified": ""
+  }
 }
