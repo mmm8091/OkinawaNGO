@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>冲绳民间组织网络研究 · 第二轮进度沟通</title>
+<style>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: #f4f6f8; color: #4a5763;
+  font-family: -apple-system, "Segoe UI", "Microsoft YaHei", "Yu Gothic UI",
+    Meiryo, "Noto Sans CJK SC", sans-serif;
+  font-size: 15px; line-height: 1.7; -webkit-font-smoothing: antialiased;
+}
+a { color: #1f4e5f; text-decoration: none; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 26px 90px; }
+
+/* top bar */
+.topbar {
+  position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px); border-bottom: 1px solid #e3e8ec;
+}
+.topbar .inner { max-width: 1080px; margin: 0 auto; padding: 11px 26px;
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.topbar .brand { font-weight: 700; color: #22303a; letter-spacing: .2px; }
+.topbar nav { display: flex; gap: 16px; flex-wrap: wrap; margin-left: auto; }
+.topbar nav a { color: #7c8791; font-size: 13.5px; }
+.topbar nav a:hover { color: #1f4e5f; }
+
+/* hero */
+.hero { padding: 54px 0 30px; border-bottom: 1px solid #e3e8ec; }
+.hero .tag { display:inline-block; background:#eaf1f2; color:#1f4e5f;
+  font-size:12.5px; font-weight:600; padding:4px 12px; border-radius:999px;
+  letter-spacing:.4px; }
+.hero h1 { color:#22303a; font-size:30px; line-height:1.3; margin:16px 0 10px;
+  letter-spacing:.3px; }
+.hero .sub { font-size:16px; color:#4a5763; max-width:760px; }
+.hero .meta { margin-top:16px; color:#7c8791; font-size:13.5px; }
+
+/* sections */
+section { padding: 40px 0 8px; scroll-margin-top: 64px; }
+.kicker { color:#1f4e5f; font-size:12.5px; font-weight:700; letter-spacing:1.4px;
+  text-transform: uppercase; margin-bottom:8px; }
+h2 { color:#22303a; font-size:22px; margin:2px 0 6px; letter-spacing:.3px; }
+h3 { color:#22303a; font-size:16.5px; margin:26px 0 4px; }
+.section-lead { color:#4a5763; max-width:820px; margin:6px 0 20px; }
+p { margin: 10px 0; }
+
+/* metric cards */
+.metrics { display:grid; grid-template-columns: repeat(4,1fr); gap:14px; margin:14px 0 6px; }
+.metric { background:#ffffff; border:1px solid #e3e8ec; border-radius:14px;
+  padding:16px 18px; box-shadow:0 1px 2px rgba(30,50,60,.04); }
+.metric .num { font-size:27px; font-weight:700; color:#1f4e5f; letter-spacing:.4px; }
+.metric .lab { font-size:13px; color:#7c8791; margin-top:2px; }
+.metric .sub { font-size:12px; color:#7c8791; margin-top:6px; border-top:1px dashed #e3e8ec;
+  padding-top:6px; }
+
+/* value cards */
+.vgrid { display:grid; grid-template-columns: repeat(3,1fr); gap:16px; margin-top:10px; }
+.vcard { background:#ffffff; border:1px solid #e3e8ec; border-radius:14px; padding:20px;
+  box-shadow:0 1px 2px rgba(30,50,60,.04); }
+.vcard .n { display:inline-flex; width:28px; height:28px; border-radius:8px;
+  background:#eaf1f2; color:#1f4e5f; font-weight:700; align-items:center;
+  justify-content:center; font-size:14px; }
+.vcard h4 { color:#22303a; font-size:15.5px; margin:12px 0 6px; }
+.vcard p { font-size:14px; margin:0; color:#4a5763; }
+
+/* plan alignment strip */
+.plan { display:grid; grid-template-columns: repeat(4,1fr); gap:12px; margin-top:18px; }
+.pstep { border:1px solid #e3e8ec; border-radius:12px; padding:14px 16px; background:#ffffff; }
+.pstep .ph { font-weight:700; color:#22303a; }
+.pstep .st { font-size:12.5px; font-weight:700; padding:2px 9px; border-radius:999px;
+  display:inline-block; margin-top:8px; }
+.st-done { background:#e7f1ea; color:#3a6b4d; }
+.st-prog { background:#fdf1dc; color:#9a6a1c; }
+.pstep p { font-size:13px; color:#7c8791; margin:8px 0 0; }
+
+/* figure card */
+.figure { background:#ffffff; border:1px solid #e3e8ec; border-radius:16px;
+  padding:24px 26px 20px; margin:18px 0; box-shadow:0 2px 10px rgba(30,50,60,.05); }
+.figure .fig-h { color:#22303a; font-weight:700; font-size:16px; }
+.figure .fig-sub { color:#7c8791; font-size:13px; margin:2px 0 16px; }
+.readnote { font-size:12.8px; color:#7c8791; margin:14px 0 0; padding:10px 14px;
+  background:#f8fafb; border-left:3px solid #c9d5da; border-radius:0 8px 8px 0; }
+.readnote b { color:#4a5763; }
+
+/* heatmap */
+.hm-wrap { display:flex; gap:26px; flex-wrap:wrap; align-items:flex-start; }
+.hm-grid { display:grid; grid-template-columns: 180px repeat(7, 1fr);
+  gap:4px; flex:1 1 560px; min-width:520px; }
+.hm-cell { height:38px; display:flex; align-items:center; justify-content:center;
+  font-size:13px; border-radius:6px; }
+.hm-corner { background:transparent; }
+.hm-head { background:#eaf1f2; color:#1f4e5f; font-weight:700; }
+.hm-row { justify-content:flex-end; padding-right:10px; color:#22303a; font-weight:600;
+  font-size:12.5px; text-align:right; }
+.hm-val { font-weight:700; font-variant-numeric:tabular-nums; }
+.frame-key { list-style:none; margin:0; padding:0; flex:0 0 210px; font-size:13px; }
+.frame-key li { padding:5px 0; color:#4a5763; border-bottom:1px dashed #e3e8ec; }
+.fk-code { display:inline-block; width:30px; font-weight:700; color:#1f4e5f; }
+.fk-en { color:#7c8791; font-size:11.5px; }
+
+/* pathway svg */
+.pathway { width:100%; height:auto; display:block; }
+.pw-title { font-size:13px; font-weight:700; fill:#22303a; }
+.pw-node { font-size:11px; fill:#22303a; }
+.pw-tag { font-size:10px; font-weight:700; }
+
+/* bridge list */
+.bridge-list { list-style:none; margin:6px 0 0; padding:0; }
+.bridge-row { display:flex; align-items:center; gap:12px; padding:9px 4px;
+  border-bottom:1px solid #e3e8ec; }
+.bridge-dot { width:11px; height:11px; border-radius:50%; flex:0 0 auto; }
+.bridge-id { font-family:ui-monospace,Consolas,monospace; font-size:12.5px;
+  color:#7c8791; flex:0 0 46px; }
+.bridge-name { color:#22303a; font-weight:600; font-size:13.5px; flex:1 1 200px;
+  min-width:150px; }
+.bridge-issues { display:flex; gap:5px; flex-wrap:wrap; flex:2 1 300px; }
+.issue-chip { font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid;
+  white-space:nowrap; }
+.ev-badge { color:#fff; font-size:11px; font-weight:700; padding:2px 8px;
+  border-radius:6px; flex:0 0 auto; }
+.bridge-legend { display:flex; gap:16px; flex-wrap:wrap; margin-top:14px;
+  font-size:12.5px; color:#4a5763; align-items:center; }
+.olg { display:inline-flex; align-items:center; gap:6px; }
+.olg i { width:11px; height:11px; border-radius:3px; display:inline-block; }
+.olg-note { color:#7c8791; margin-left:auto; }
+
+/* coaction bars */
+.cbar-wrap { display:flex; flex-direction:column; gap:18px; margin-top:4px; }
+.cbar-label { font-weight:700; color:#22303a; font-size:14px; margin-bottom:6px; }
+.cbar-track { display:flex; height:26px; border-radius:7px; overflow:hidden;
+  background:#eef2f4; }
+.cbar-seg { height:100%; }
+.cbar-meta { font-size:12.5px; color:#7c8791; margin-top:5px; }
+.cbar-meta b { color:#4a5763; }
+
+/* tables */
+.grid-table { width:100%; border-collapse:collapse; margin:8px 0; font-size:13.5px;
+  background:#ffffff; border:1px solid #e3e8ec; border-radius:12px; overflow:hidden; }
+.grid-table th { background:#f4f7f8; color:#22303a; text-align:left; font-weight:700;
+  padding:11px 13px; font-size:12.5px; border-bottom:1px solid #e3e8ec; }
+.grid-table td { padding:11px 13px; border-bottom:1px solid #e3e8ec; vertical-align:top;
+  color:#4a5763; }
+.grid-table tr:last-child td { border-bottom:none; }
+.grid-table .lead { color:#22303a; }
+.mono { font-family:ui-monospace,Consolas,monospace; font-size:12.5px; }
+.mono.go { color:#3a6b4d; font-weight:700; }
+.mono.hold { color:#9a6a1c; font-weight:700; }
+.small { font-size:11.5px; }
+.dim { color:#7c8791; }
+.nowrap { white-space:nowrap; }
+.pill { font-size:11.5px; font-weight:700; padding:2px 9px; border-radius:999px; }
+.pri-p1 { background:#e9f0f4; color:#1f4e5f; }
+.pri-p2 { background:#f1f0f4; color:#6a5f8f; }
+.lr-block { margin:18px 0; }
+.lr-h { font-size:14px; margin:0 0 8px; padding:8px 14px; border-radius:9px; }
+.lr-h-go { background:#e7f1ea; color:#356048; }
+.lr-h-hold { background:#fbf0dc; color:#8a611c; }
+
+/* caveats */
+.caveats { display:grid; grid-template-columns: repeat(2,1fr); gap:14px; margin-top:8px; }
+.cav { background:#ffffff; border:1px solid #e3e8ec; border-left:4px solid #c98e56;
+  border-radius:10px; padding:14px 16px; }
+.cav b { color:#22303a; }
+.cav p { margin:4px 0 0; font-size:13.5px; }
+
+footer { margin-top:40px; padding-top:22px; border-top:1px solid #e3e8ec;
+  color:#7c8791; font-size:12.5px; }
+
+@media (max-width: 860px) {
+  .metrics, .vgrid, .plan, .caveats { grid-template-columns: 1fr 1fr; }
+  .hm-grid { grid-template-columns: 120px repeat(7,1fr); min-width:0; }
+}
+@media print {
+  .topbar { position:static; }
+  body { background:#fff; }
+  .figure, .metric, .vcard { box-shadow:none; }
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="inner">
+  <span class="brand">冲绳民间组织网络研究 · Phase 1</span>
+  <nav>
+    <a href="#overview">进度总览</a>
+    <a href="#value">价值与方向</a>
+    <a href="#figures">正式图表</a>
+    <a href="#roadmap">调查路线图</a>
+    <a href="#lr">当地材料</a>
+    <a href="#caveats">风险边界</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+
+<header class="hero">
+  <span class="tag">第二轮对外沟通 · v0</span>
+  <h1>冲绳民间组织 / NGO 如何把基地问题<br>转译为环保、安全、自治、法律与国际倡议</h1>
+  <p class="sub">本轮从"统计更新"进到"可解释机制 + 下一轮调查路线"。R2、R3/R4、R5、R11、R14 五个模块已有可解释 v0 交付；MT-001 抽取、MT-002 归档、MT-003 首轮 URL 核实是最具体的完工产出。</p>
+  <div class="meta">更新时间 2026-07-01 · 范围：边野古 / 大浦湾 · 与那国 · 先岛 · 相关国际倡议场域 · 全部口径保守、可复核</div>
+</header>
+
+<section id="overview">
+  <div class="kicker">一页进度总览</div>
+  <h2>当前底盘与本轮完工产出</h2>
+  <p class="section-lead">数字来自当前数据表实时统计。所有关系边均为<b>候选</b>，用于分析与继续补证，不作为最终结论。</p>
+  
+<div class="metrics">
+  <div class="metric"><div class="num">102</div><div class="lab">actor 登记</div>
+    <div class="sub">首轮 HR 复核 · 保留 P1/P2/P3 复核优先级</div></div>
+  <div class="metric"><div class="num">92</div><div class="lab">信息源</div>
+    <div class="sub">76 真实 URL · 14 占位待核 · 2 非 URL</div></div>
+  <div class="metric"><div class="num">180+124+27</div>
+    <div class="lab">候选关系边</div>
+    <div class="sub">议题 180 · 地点 124 · 资助样本 27（均为候选）</div></div>
+  <div class="metric"><div class="num">76/92</div><div class="lab">来源本地归档</div>
+    <div class="sub">74 archived + 2 manual · 0 pending</div></div>
+</div>
+<div class="metrics" style="margin-top:14px">
+  <div class="metric"><div class="num">5</div><div class="lab">R 模块 v0 交付</div>
+    <div class="sub">R2 · R3/R4 · R5 · R11 · R14</div></div>
+  <div class="metric"><div class="num">19 / 20</div><div class="lab">议题 / 地点节点</div>
+    <div class="sub">一级议题 19 · 地点 / 场域 20</div></div>
+  <div class="metric"><div class="num">71</div><div class="lab">2020 MMC 团体已抽全</div>
+    <div class="sub">产出 52 个 registry 扩展候选</div></div>
+  <div class="metric"><div class="num">3</div><div class="lab">MT 具体产出</div>
+    <div class="sub">MT-001 抽取 · MT-002 归档 · MT-003 首轮 URL 核实</div></div>
+</div>
+
+</section>
+
+<section id="value">
+  <div class="kicker">为什么做这些方向</div>
+  <h2>价值：一个能不断"生出下一个调查方向"的方法</h2>
+  <p class="section-lead">甲方关心的是"这条线值不值得继续、下一步查什么更清楚"。本项目的核心价值就在这里——它是自证式、可累积的。</p>
+  
+<div class="vgrid">
+  <div class="vcard"><span class="n">1</span>
+    <h4>方向是自然的，不是硬凑的</h4>
+    <p>一期不追"复归以来全量 NGO 网络"这种不可复核的目标，而是问一个可核对的小问题：民间组织如何把基地问题<b>转译</b>为环保、生活安全、地方自治、人权、法律程序、国际倡议等框架，并在边野古、与那国、先岛等场域扮演什么公开角色。这正是这些组织在公开材料里<b>自己使用</b>的话语方式。</p></div>
+  <div class="vcard"><span class="n">2</span>
+    <h4>方法本身会不断产出下一步方向</h4>
+    <p>每一轮不仅出结论，还出"下一步查什么、缺什么材料"：证据分级（E1–E4）、人工复核（HR）、来源本地归档（防链接失效）、覆盖 / 偏差审计（R14）把边界写明。于是可调查方向越滚越清晰——本轮就析出了 52 个 MMC 候选、14 条待核 URL、与那国证据包、军属慈善 recipient、ONC/JICA/外务省关系链。</p></div>
+  <div class="vcard"><span class="n">3</span>
+    <h4>守住保守口径，可对外可复核</h4>
+    <p>候选边不当结论、共同署名不写联盟、grant opportunity 不写拨款、军属服务组织按功能编码、与那国按前线 / 自治 / 生命安全读取。这些护栏让每一条能对外的表述都<b>可追溯到一手来源</b>，减少解释和政治风险。</p></div>
+</div>
+
+  
+<h3>是否符合一开始的规划</h3>
+<p class="section-lead">符合。当前进展落在既定的 A→B→C→D 四阶段上，偏差都是"更保守"而非"跑偏"：把候选关系保留为候选、不夸大资助与联盟。</p>
+<div class="plan">
+  <div class="pstep"><div class="ph">阶段 A</div><div class="st st-done">已完成</div>
+    <p>主问题、actor 边界、证据分级、编码规则、工作台。</p></div>
+  <div class="pstep"><div class="ph">阶段 B</div><div class="st st-done">已完成并扩充</div>
+    <p>样本与 registry：93 actor、180+124+27 边、19 议题、20 地点。</p></div>
+  <div class="pstep"><div class="ph">阶段 C</div><div class="st st-prog">首轮完成 · 持续</div>
+    <p>HR-001~009 复核、来源归档首轮、inferred_url 核实进行中。</p></div>
+  <div class="pstep"><div class="ph">阶段 D</div><div class="st st-prog">进行中</div>
+    <p>R2/R3-4/R5/R11/R14 已有可解释 v0 交付；本沟通包即为其成果。</p></div>
+</div>
+
+</section>
+
+<section id="figures">
+  <div class="kicker">正式图表集</div>
+  <h2>四张主图（网页原生 · 缩放不糊）</h2>
+  <p class="section-lead">全部图表由项目 CSV 实时生成，随数据更新。图注保持保守口径。</p>
+  
+<div class="figure" id="fig1">
+  <div class="fig-h">图 1 · 地点 × 议题框架矩阵</div>
+  <div class="fig-sub">数字＝同时连接该地点与该议题框架的 actor 数（E2 及以上）。深色越强表示该场域越集中。</div>
+  
+<div class="hm-wrap">
+  <div class="hm-grid"><div class="hm-cell hm-corner"></div><div class="hm-cell hm-head" title="base / anti-military">F1</div><div class="hm-cell hm-head" title="ecology / environment">F2</div><div class="hm-cell hm-head" title="life / health safety">F3</div><div class="hm-cell hm-head" title="autonomy / referendum">F4</div><div class="hm-cell hm-head" title="legal / procedure">F5</div><div class="hm-cell hm-head" title="international route">F6</div><div class="hm-cell hm-head" title="frontline / Taiwan">F7</div><div class="hm-cell hm-row">Henoko</div><div class="hm-cell hm-val" style="background:#366170;color:#ffffff">20</div><div class="hm-cell hm-val" style="background:#1f4e5f;color:#ffffff">24</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#b2c8c9;color:#20343b">3</div><div class="hm-cell hm-val" style="background:#a8c0c2;color:#20343b">4</div><div class="hm-cell hm-val" style="background:#366170;color:#ffffff">20</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-row">Oura Bay</div><div class="hm-cell hm-val" style="background:#b2c8c9;color:#20343b">3</div><div class="hm-cell hm-val" style="background:#96b1b6;color:#20343b">6</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#bcd1d1;color:#20343b">2</div><div class="hm-cell hm-val" style="background:#b2c8c9;color:#20343b">3</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-row">Ishigaki</div><div class="hm-cell hm-val" style="background:#b2c8c9;color:#20343b">3</div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#bcd1d1;color:#20343b">2</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-row">Miyako</div><div class="hm-cell hm-val" style="background:#b2c8c9;color:#20343b">3</div><div class="hm-cell hm-val" style="background:#bcd1d1;color:#20343b">2</div><div class="hm-cell hm-val" style="background:#bcd1d1;color:#20343b">2</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-row">Yonaguni</div><div class="hm-cell hm-val" style="background:#a8c0c2;color:#20343b">4</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#bcd1d1;color:#20343b">2</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#b2c8c9;color:#20343b">3</div><div class="hm-cell hm-row">Kadena</div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#b2c8c9;color:#20343b">3</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-row">Futenma</div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-row">Camp Foster</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#a8c0c2;color:#20343b">4</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-row">U.S. Consulate General Naha</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#c9dbda;color:#20343b">1</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-row">JICA Okinawa</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div><div class="hm-cell hm-val" style="background:#bcd1d1;color:#20343b">2</div><div class="hm-cell hm-val" style="background:#f2f5f6;color:#c3ccd2"></div></div>
+  <ul class="frame-key"><li><span class="fk-code">F1</span>反基地 / 反军事 <span class="fk-en">base / anti-military</span></li><li><span class="fk-code">F2</span>环保 / 生态 <span class="fk-en">ecology / environment</span></li><li><span class="fk-code">F3</span>生活 / 健康安全 <span class="fk-en">life / health safety</span></li><li><span class="fk-code">F4</span>地方自治 / 公投 <span class="fk-en">autonomy / referendum</span></li><li><span class="fk-code">F5</span>法律 / 程序 <span class="fk-en">legal / procedure</span></li><li><span class="fk-code">F6</span>国际路径 <span class="fk-en">international route</span></li><li><span class="fk-code">F7</span>前线 / 台湾 <span class="fk-en">frontline / Taiwan</span></li></ul>
+</div>
+
+  <p class="readnote"><b>读法：</b>边野古 / 大浦湾集中承接环保 + 反基地 + 国际路径；石垣 / 宫古偏生活安全、地下水、住民投票；<b>与那国按前线 / 台湾、地方自治、住民投票读取，不强行环保化。</b>矩阵反映公开资料驱动的覆盖，不代表冲绳全量组织生态。</p>
+</div>
+
+  
+<div class="figure" id="fig2">
+  <div class="fig-h">图 2 · 边野古 / 大浦湾：地方基地争议如何被转译为国际倡议</div>
+  <div class="fig-sub">五层路径：地方现场 → 地方 actor → 日本 NGO / 法律 → 转译框架 → 国际路径。方框内标注证据等级。</div>
+  <svg viewBox="0 0 1000 384" class="pathway" role="img" aria-label="边野古国际化路径图"><path d="M208,204 C218,204 218,104 228,104" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M208,204 C218,204 218,204 228,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M208,204 C218,204 218,304 228,304" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M396,104 C406,104 406,104 416,104" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M396,104 C406,104 406,204 416,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M396,204 C406,204 406,104 416,104" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M396,204 C406,204 406,204 416,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M396,204 C406,204 406,304 416,304" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M396,304 C406,304 406,204 416,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M396,304 C406,304 406,304 416,304" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M584,104 C594,104 594,104 604,104" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M584,104 C594,104 594,204 604,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M584,204 C594,204 594,104 604,104" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M584,204 C594,204 594,204 604,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M584,204 C594,204 594,304 604,304" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M584,304 C594,304 594,204 604,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M584,304 C594,304 594,304 604,304" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M772,104 C782,104 782,104 792,104" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M772,104 C782,104 782,204 792,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M772,204 C782,204 782,104 792,104" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M772,204 C782,204 782,204 792,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M772,204 C782,204 782,304 792,304" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M772,304 C782,304 782,204 792,204" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><path d="M772,304 C782,304 782,304 792,304" fill="none" stroke="#9aa8b0" stroke-width="1.1" opacity="0.5"/><text x="124" y="30" text-anchor="middle" class="pw-title">地方现场</text><rect x="40" y="174" width="168" height="60" rx="9" fill="#e7f0f1" stroke="#c2ccd1" stroke-width="1"/><text x="124" y="194" text-anchor="middle" class="pw-node">Henoko /</text><text x="124" y="210" text-anchor="middle" class="pw-node">Oura Bay</text><text x="124" y="225" text-anchor="middle" class="pw-tag" fill="#8b96a0">P002 / P003</text><text x="312" y="30" text-anchor="middle" class="pw-title">地方 actor</text><rect x="228" y="74" width="168" height="60" rx="9" fill="#e8f2ea" stroke="#c2ccd1" stroke-width="1"/><text x="312" y="94" text-anchor="middle" class="pw-node">A019</text><text x="312" y="110" text-anchor="middle" class="pw-node">ヘリ基地反対協</text><text x="312" y="125" text-anchor="middle" class="pw-tag" fill="#2f5d7c">E4</text><rect x="228" y="174" width="168" height="60" rx="9" fill="#e8f2ea" stroke="#c2ccd1" stroke-width="1"/><text x="312" y="194" text-anchor="middle" class="pw-node">A003</text><text x="312" y="210" text-anchor="middle" class="pw-node">ジュゴンネットワーク沖縄</text><text x="312" y="225" text-anchor="middle" class="pw-tag" fill="#5b8266">E3</text><rect x="228" y="274" width="168" height="60" rx="9" fill="#e8f2ea" stroke="#c2ccd1" stroke-width="1"/><text x="312" y="294" text-anchor="middle" class="pw-node">A076</text><text x="312" y="310" text-anchor="middle" class="pw-node">Save the Dugong Fdn.</text><text x="312" y="325" text-anchor="middle" class="pw-tag" fill="#5b8266">E3</text><text x="500" y="30" text-anchor="middle" class="pw-title">日本 NGO / 法律</text><rect x="416" y="74" width="168" height="60" rx="9" fill="#f4ece6" stroke="#c2ccd1" stroke-width="1"/><text x="500" y="94" text-anchor="middle" class="pw-node">A004</text><text x="500" y="110" text-anchor="middle" class="pw-node">NACSJ</text><text x="500" y="125" text-anchor="middle" class="pw-tag" fill="#2f5d7c">E4</text><rect x="416" y="174" width="168" height="60" rx="9" fill="#f4ece6" stroke="#c2ccd1" stroke-width="1"/><text x="500" y="194" text-anchor="middle" class="pw-node">A005</text><text x="500" y="210" text-anchor="middle" class="pw-node">WWF Japan</text><text x="500" y="225" text-anchor="middle" class="pw-tag" fill="#2f5d7c">E4</text><rect x="416" y="274" width="168" height="60" rx="9" fill="#f4ece6" stroke="#c2ccd1" stroke-width="1"/><text x="500" y="294" text-anchor="middle" class="pw-node">A020</text><text x="500" y="310" text-anchor="middle" class="pw-node">JELF</text><text x="500" y="325" text-anchor="middle" class="pw-tag" fill="#2f5d7c">E4</text><text x="688" y="30" text-anchor="middle" class="pw-title">转译框架</text><rect x="604" y="74" width="168" height="60" rx="9" fill="#f4f0dc" stroke="#c2ccd1" stroke-width="1"/><text x="688" y="94" text-anchor="middle" class="pw-node">dugong /</text><text x="688" y="110" text-anchor="middle" class="pw-node">biodiversity</text><text x="688" y="125" text-anchor="middle" class="pw-tag" fill="#2f5d7c">E4</text><rect x="604" y="174" width="168" height="60" rx="9" fill="#f4f0dc" stroke="#c2ccd1" stroke-width="1"/><text x="688" y="194" text-anchor="middle" class="pw-node">EIA / 法律</text><text x="688" y="210" text-anchor="middle" class="pw-node">程序</text><text x="688" y="225" text-anchor="middle" class="pw-tag" fill="#8b96a0">E3/E4</text><rect x="604" y="274" width="168" height="60" rx="9" fill="#f4f0dc" stroke="#c2ccd1" stroke-width="1"/><text x="688" y="294" text-anchor="middle" class="pw-node">local</text><text x="688" y="310" text-anchor="middle" class="pw-node">autonomy</text><text x="688" y="325" text-anchor="middle" class="pw-tag" fill="#5b8266">E3</text><text x="876" y="30" text-anchor="middle" class="pw-title">国际路径</text><rect x="792" y="74" width="168" height="60" rx="9" fill="#eae8f2" stroke="#c2ccd1" stroke-width="1"/><text x="876" y="94" text-anchor="middle" class="pw-node">A001</text><text x="876" y="110" text-anchor="middle" class="pw-node">OEJP → MMC</text><text x="876" y="125" text-anchor="middle" class="pw-tag" fill="#2f5d7c">E4</text><rect x="792" y="174" width="168" height="60" rx="9" fill="#eae8f2" stroke="#c2ccd1" stroke-width="1"/><text x="876" y="194" text-anchor="middle" class="pw-node">A009</text><text x="876" y="210" text-anchor="middle" class="pw-node">Earthjustice</text><text x="876" y="225" text-anchor="middle" class="pw-tag" fill="#2f5d7c">E4</text><rect x="792" y="274" width="168" height="60" rx="9" fill="#eae8f2" stroke="#c2ccd1" stroke-width="1"/><text x="876" y="294" text-anchor="middle" class="pw-node">2015 / 2020</text><text x="876" y="310" text-anchor="middle" class="pw-node">署名网络</text><text x="876" y="325" text-anchor="middle" class="pw-tag" fill="#8b96a0">署名限定</text></svg>
+  <p class="readnote"><b>读法：这是路径图，不是资金链，也不是稳定联盟图。</b>共同署名只表示共同发声；Earthjustice / MMC 路径不写成"外部操控"或资助关系；A002 SDCC 不写成美国诉讼原告。</p>
+</div>
+
+  
+<div class="figure" id="fig3">
+  <div class="fig-h">图 3 · 跨议题桥接组织清单（Top 14）</div>
+  <div class="fig-sub">这些组织在公开资料中同时连接 2 个及以上重点议题，是"把基地问题接到环保 / 自治 / 法律 / 国际倡议"的桥接点。</div>
+  
+<ul class="bridge-list">
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#7a6a3a" title="美国来源"></span>
+      <span class="bridge-id">A045</span>
+      <span class="bridge-name">Center for Biological Diversity</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#4b7f5222;color:#4b7f52;border-color:#4b7f5255">biodiversity</span><span class="issue-chip" style="background:#5f5b9922;color:#5f5b99;border-color:#5f5b9955">international_advocacy</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#2f6f73" title="冲绳本地"></span>
+      <span class="bridge-id">A048</span>
+      <span class="bridge-name">沖縄一坪反戦地主会</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span><span class="issue-chip" style="background:#2f6f7322;color:#2f6f73;border-color:#2f6f7355">local_autonomy</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#2f6f73" title="冲绳本地"></span>
+      <span class="bridge-id">A050</span>
+      <span class="bridge-name">沖縄弁護士会</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span><span class="issue-chip" style="background:#2f6f7322;color:#2f6f73;border-color:#2f6f7355">local_autonomy</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#2f6f73" title="冲绳本地"></span>
+      <span class="bridge-id">A052</span>
+      <span class="bridge-name">嘉手納爆音訴訟原告団</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span><span class="issue-chip" style="background:#c08a3b22;color:#c08a3b;border-color:#c08a3b55">life_safety</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#2f6f73" title="冲绳本地"></span>
+      <span class="bridge-id">A053</span>
+      <span class="bridge-name">普天間爆音訴訟団</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span><span class="issue-chip" style="background:#c08a3b22;color:#c08a3b;border-color:#c08a3b55">life_safety</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#9b5b4d" title="日本国内"></span>
+      <span class="bridge-id">A066</span>
+      <span class="bridge-name">新外交イニシアティブ（ND）</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span><span class="issue-chip" style="background:#2f6f7322;color:#2f6f73;border-color:#2f6f7355">local_autonomy</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#9b5b4d" title="日本国内"></span>
+      <span class="bridge-id">A006</span>
+      <span class="bridge-name">グリーンピース・ジャパン</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#4b7f5222;color:#4b7f52;border-color:#4b7f5255">biodiversity</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#9b5b4d" title="日本国内"></span>
+      <span class="bridge-id">A007</span>
+      <span class="bridge-name">ピースボート</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#5f5b9922;color:#5f5b99;border-color:#5f5b9955">international_advocacy</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#7a6a3a" title="美国来源"></span>
+      <span class="bridge-id">A009</span>
+      <span class="bridge-name">Earthjustice</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#5f5b9922;color:#5f5b99;border-color:#5f5b9955">international_advocacy</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#9b5b4d" title="日本国内"></span>
+      <span class="bridge-id">A020</span>
+      <span class="bridge-name">日本環境法律家連盟（JELF）</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#4b7f5222;color:#4b7f52;border-color:#4b7f5255">biodiversity</span><span class="issue-chip" style="background:#2f5d7c22;color:#2f5d7c;border-color:#2f5d7c55">legal</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#9b5b4d" title="日本国内"></span>
+      <span class="bridge-id">A021</span>
+      <span class="bridge-name">国際環境NGO FoE Japan</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#4b7f5222;color:#4b7f52;border-color:#4b7f5255">biodiversity</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#9b5b4d" title="日本国内"></span>
+      <span class="bridge-id">A022</span>
+      <span class="bridge-name">NPO法人 ラムサール・ネットワーク日本</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#4b7f5222;color:#4b7f52;border-color:#4b7f5255">biodiversity</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#2f6f73" title="冲绳本地"></span>
+      <span class="bridge-id">A023</span>
+      <span class="bridge-name">美ら海にもやんばるにも基地はいらない市民の会</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#4b7f5222;color:#4b7f52;border-color:#4b7f5255">biodiversity</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+    <li class="bridge-row">
+      <span class="bridge-dot" style="background:#9b5b4d" title="日本国内"></span>
+      <span class="bridge-id">A027</span>
+      <span class="bridge-name">公共事業改革市民会議</span>
+      <span class="bridge-issues"><span class="issue-chip" style="background:#9b5b4d22;color:#9b5b4d;border-color:#9b5b4d55">anti_base</span><span class="issue-chip" style="background:#4b7f5222;color:#4b7f52;border-color:#4b7f5255">biodiversity</span></span>
+      <span class="ev-badge" style="background:#2f5d7c">E4</span>
+    </li>
+</ul>
+<div class="bridge-legend"><span class="olg"><i style="background:#7a6a3a"></i>美国来源</span><span class="olg"><i style="background:#2f6f73"></i>冲绳本地</span><span class="olg"><i style="background:#9b5b4d"></i>日本国内</span>
+  <span class="olg olg-note">左侧圆点＝组织来源类型 · 右侧徽章＝证据等级</span>
+</div>
+
+  <p class="readnote">桥接 actor 大致分三类：本地运动 / 法律节点、日本国内 NGO / 倡议节点、海外签名 / 国际倡议节点。此图只说明"公开资料中的议题连接"，<b>不代表组织长期主打议题，也不能把共同署名写成稳定联盟；</b>多数条目仍为 <span class="mono">ai_seeded</span>，需继续补证。</p>
+</div>
+
+  
+<div class="figure" id="fig4">
+  <div class="fig-h">图 4 · 共同行动样本构成（2010 / 2015 / 2020）</div>
+  <div class="fig-sub">三次共同署名 / 共同要请样本中，<b>当前已录入 registry</b> 的参与组织按来源类型构成。</div>
+  
+<div class="cbar-wrap">
+    <div class="cbar-block">
+      <div class="cbar-label">2010 WWF 共同要请</div>
+      <div class="cbar-track"><span class="cbar-seg" style="width:3.6%;background:#2f6f73" title="冲绳本地: 1"></span><span class="cbar-seg" style="width:14.3%;background:#9b5b4d" title="日本国内: 4"></span></div>
+      <div class="cbar-meta">原文署名 <b>67</b> 团体 · 当前录入 registry <b>5</b></div>
+    </div>
+    <div class="cbar-block">
+      <div class="cbar-label">2015 NACSJ 共同声明</div>
+      <div class="cbar-track"><span class="cbar-seg" style="width:14.3%;background:#2f6f73" title="冲绳本地: 4"></span><span class="cbar-seg" style="width:28.6%;background:#9b5b4d" title="日本国内: 8"></span><span class="cbar-seg" style="width:42.9%;background:#5f5b99" title="国际: 12"></span><span class="cbar-seg" style="width:10.7%;background:#7a6a3a" title="美国来源: 3"></span><span class="cbar-seg" style="width:3.6%;background:#4b7f52" title="跨境 / 网络: 1"></span></div>
+      <div class="cbar-meta">原文署名 <b>31</b> 团体 · 当前录入 registry <b>28</b></div>
+    </div>
+    <div class="cbar-block">
+      <div class="cbar-label">2020 OEJP/MMC 71 团体</div>
+      <div class="cbar-track"><span class="cbar-seg" style="width:32.1%;background:#2f6f73" title="冲绳本地: 9"></span><span class="cbar-seg" style="width:3.6%;background:#9b5b4d" title="日本国内: 1"></span><span class="cbar-seg" style="width:3.6%;background:#4b7f52" title="跨境 / 网络: 1"></span></div>
+      <div class="cbar-meta">原文署名 <b>71</b> 团体 · 当前录入 registry <b>11</b></div>
+    </div>
+</div>
+<div class="bridge-legend"><span class="olg"><i style="background:#2f6f73"></i>冲绳本地</span><span class="olg"><i style="background:#9b5b4d"></i>日本国内</span><span class="olg"><i style="background:#5f5b99"></i>国际</span><span class="olg"><i style="background:#7a6a3a"></i>美国来源</span><span class="olg"><i style="background:#4b7f52"></i>跨境 / 网络</span><span class="olg"><i style="background:#9aa0a6"></i>未定</span></div>
+
+  <p class="readnote"><b>注意：色条统计的是当前 registry 中带对应 source_id 的 actor，不是声明原文全量署名数。</b>2020 MMC 71 团体已完整抽取，但多数尚未审入 registry（故当前录入数小）——这正是 MT-001 的下一步：从 52 个候选逐条决定 add / defer / exclude。</p>
+</div>
+
+</section>
+
+<section id="roadmap">
+  <div class="kicker">调查路线图</div>
+  <h2>下一轮为什么更清晰：MT-001 ~ MT-008</h2>
+  <p class="section-lead">这些不是"卡住的前置任务"，而是本轮成果<b>析出的</b>可执行方向，按优先级与成本排列。</p>
+  
+<table class="grid-table">
+  <thead><tr>
+    <th>任务</th><th>模块</th><th>优先</th><th>状态</th><th>做什么 / 为什么现在更清晰</th><th>路径 · 成本</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td class="mono">MT-001</td>
+      <td class="mono dim">R5 / R11</td>
+      <td><span class="pill pri-p1">P1</span></td>
+      <td>抽取完成 · 待审入</td>
+      <td class="lead">2020 MMC 71 团体已抽全，产出 52 个 registry 扩展候选，逐条 add/defer/exclude。</td>
+      <td class="dim nowrap">线上决策 · 低</td>
+    </tr>
+    <tr>
+      <td class="mono">MT-003</td>
+      <td class="mono dim">R14 / R3</td>
+      <td><span class="pill pri-p1">P1</span></td>
+      <td>进行中</td>
+      <td class="lead">剩余 14 条 inferred_url 占位来源核实归档（先岛 / 法院 / 地方新闻为主）。</td>
+      <td class="dim nowrap">线上核实 · 低</td>
+    </tr>
+    <tr>
+      <td class="mono">MT-004</td>
+      <td class="mono dim">R3 / R4</td>
+      <td><span class="pill pri-p1">P1</span></td>
+      <td>待启动</td>
+      <td class="lead">与那国 A014/A015 地方证据包：地方报纸、意见广告实物、议会 / 住民投票资料。</td>
+      <td class="dim nowrap">需当地 / 馆内 · 高</td>
+    </tr>
+    <tr>
+      <td class="mono">MT-005</td>
+      <td class="mono dim">R8 / R14</td>
+      <td><span class="pill pri-p2">P2</span></td>
+      <td>待启动</td>
+      <td class="lead">AWWA / 军属配偶俱乐部慈善 recipient 网络：按年份、来源、证据等级建 recipient 边。</td>
+      <td class="dim nowrap">线上为主 · 中</td>
+    </tr>
+    <tr>
+      <td class="mono">MT-006</td>
+      <td class="mono dim">R8</td>
+      <td><span class="pill pri-p2">P2</span></td>
+      <td>待启动</td>
+      <td class="lead">ONC / JICA / 外务省 关系链：区分行政协作与抗争网络，找合同 / 项目 / 报告证据。</td>
+      <td class="dim nowrap">线上为主 · 中</td>
+    </tr>
+    <tr>
+      <td class="mono">MT-007</td>
+      <td class="mono dim">R10 / R11</td>
+      <td><span class="pill pri-p2">P2</span></td>
+      <td>待启动</td>
+      <td class="lead">儒艮诉讼原告映射：把 plaintiff / support actor 对应到有来源支撑的法律角色。</td>
+      <td class="dim nowrap">线上核实 · 中</td>
+    </tr>
+    <tr>
+      <td class="mono">MT-008</td>
+      <td class="mono dim">R2 / R5</td>
+      <td><span class="pill pri-p2">P2</span></td>
+      <td>待启动</td>
+      <td class="lead">关系边加 event_id / action_type / relation_strength，把静态议题标签变成事件感知网络。</td>
+      <td class="dim nowrap">数据加工 · 中</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+<section id="lr">
+  <div class="kicker">当地材料收集 · LR v1</div>
+  <h2>先锁定"高价值 · 低成本 · 可立即执行"的部分</h2>
+  <p class="section-lead">把当地材料任务分成两层：线上可完成的先锁定、随本沟通稿一并交付；真正需要当地协作者 / 馆内数据库的留作后续正式派单。详见 <span class="mono">docs/local_retrieval_tasks_v1.md</span>。</p>
+  
+<div class="lr-block">
+  <h4 class="lr-h lr-h-go">Tier 1 · 本轮锁定 · 线上可完成 · 高价值低成本（可随沟通稿一并交付）</h4>
+  <table class="grid-table">
+    <thead><tr><th>任务</th><th>对象</th><th>公开可得材料 / 做法</th></tr></thead>
+    <tbody>
+    <tr>
+      <td class="mono go">LR-003</td>
+      <td class="lead"><b>军属配偶俱乐部慈善 recipient</b><br><span class="dim mono small">X004 AWWA / X005 NOSCO / X006 KOSC / X007 OESC</span></td>
+      <td>官网、Facebook / Instagram 公共页、基地社区报（Stripes / DVIDS）公开 recipient 与活动手册。</td>
+    </tr>
+    <tr>
+      <td class="mono go">LR-004</td>
+      <td class="lead"><b>USO Okinawa 赞助与服务网络</b><br><span class="dim mono small">X001 USO Okinawa / X002 Phoenix / X003 AEC</span></td>
+      <td>USO 官网、USO Pacific 新闻、本地 sponsor 公司公开页；建 sponsor 边与 site-presence 表。</td>
+    </tr>
+    <tr>
+      <td class="mono go">LR-008</td>
+      <td class="lead"><b>失效网站 Web Archive 回捞</b><br><span class="dim mono small">A002 SDCC / A008 非戦ネット / A019 反対協 等</span></td>
+      <td>Internet Archive 抓取旧官网 / 声明页，登记 archived_url + capture_date，评估能否升到 E3。</td>
+    </tr>
+    <tr>
+      <td class="mono go">LR-001*</td>
+      <td class="lead"><b>冲绳本地 NPO 法人公开报告（线上部分）</b><br><span class="dim mono small">A003 / A012 / A017 / X010 ONC</span></td>
+      <td>内阁府 NPO 法人 portal 与组织官网可下载的事業報告書 / 財務諸表，先取线上可得部分。</td>
+    </tr>
+    <tr>
+      <td class="mono go">LR-006*</td>
+      <td class="lead"><b>外务省 / JICA / ONC 已公开报告（线上部分）</b><br><span class="dim mono small">X010 ONC / X011 JICA 沖縄</span></td>
+      <td>外务省 NGO 相談員页面、JICA Okinawa、ONC 公开年报中已发布的协作 / 项目记载。</td>
+    </tr>
+    </tbody>
+  </table>
+  <p class="readnote">标注 <span class="mono">*</span> 的任务只承诺其“线上可得”部分；需要现场 / 纸质 / 馆内数据库的深层材料留在 Tier 2。</p>
+</div>
+<div class="lr-block">
+  <h4 class="lr-h lr-h-hold">Tier 2 · 需当地协作者 / 馆内数据库 · 后续正式派单（本轮不承诺时间）</h4>
+  <table class="grid-table">
+    <thead><tr><th>任务</th><th>对象</th><th>为什么需要当地 / 谨慎</th></tr></thead>
+    <tbody>
+    <tr>
+      <td class="mono hold">LR-002</td>
+      <td class="lead"><b>与那国早期反部署组织</b><br><span class="dim mono small">A014 / A015 / A016</span></td>
+      <td>地方新闻原文、町议会记录、住民投票资料、意见广告实物 —— 需县立图书馆 / 馆内数据库或当地保存材料。</td>
+    </tr>
+    <tr>
+      <td class="mono hold">LR-007</td>
+      <td class="lead"><b>先岛 / 边野古核心组织报刊数据库</b><br><span class="dim mono small">A010 / A011 / A012 / A013 / A019</span></td>
+      <td>沖縄タイムス / 琉球新報馆内数据库时间线、代表人物、名称变化 —— 需馆内数据库权限。</td>
+    </tr>
+    <tr>
+      <td class="mono hold">LR-005</td>
+      <td class="lead"><b>美领馆 / 公共外交 recipient（需谨慎）</b><br><span class="dim mono small">X012 TOMODACHI / X013 Consulate Youth</span></td>
+      <td>只有 award / recipient 才写入；仅 NOFO / grant opportunity 标 no_public_evidence，不得写成已资助。</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</section>
+
+<section id="caveats">
+  <div class="kicker">风险与解释边界</div>
+  <h2>对外时必须守住的四条线</h2>
+  
+<div class="caveats">
+  <div class="cav"><b>共同署名 ≠ 稳定联盟</b>
+    <p>共同署名、共同请求、共同在场只写为"事件参与"，进入联盟网络前须先区分一次性署名、重复发声与长期协作。</p></div>
+  <div class="cav"><b>grant opportunity ≠ 已拨款</b>
+    <p>没有官方 grant / award / contract / 财报 / 项目报告，不写成资金链；仅有 NOFO 标 <span class="mono">no_public_evidence</span>。</p></div>
+  <div class="cav"><b>服务型组织按功能编码</b>
+    <p>美军军属服务 / 慈善组织不默认为亲基地或反基地，按观察到的功能编码。</p></div>
+  <div class="cav"><b>候选边不是最终结论</b>
+    <p>issue / place / funding 边均为候选关系；敏感关系须人工复核，不做 AI 写 AI 审。</p></div>
+</div>
+<p class="readnote">旧的 <span class="mono">docs/progress_report_v1.md</span> 是内部草稿，不作为本次对外交付；本沟通包（formal_comm_v0）才是第二轮对外沟通材料。</p>
+
+</section>
+
+<footer>
+  冲绳 NGO / 民间组织网络研究 · Phase 1 · 第二轮对外沟通包（formal_comm_v0）· 生成日期 2026-07-01<br>
+  数据来源：data/interim 各表 · outputs/explanatory_v0 · outputs/module_completion_v0 · source_docs/source_archive。本页可离线打开、可打印。
+</footer>
+
+</div>
+</body>
+</html>
