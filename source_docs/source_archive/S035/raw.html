@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+	<head>
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<title>NPOホームページ | 内閣府</title>
+	<meta name="keywords" content="NPO, ボランティア, NGO, 内閣府" />
+	<meta name="description" content="このホームページは、NPO法人制度や手続きの解説、特定非営利活動法人に関する情報公開、ボランティア団体のイベント情報の提供等を目的として、内閣府政策統括官(共生・共助担当)付参事官(市民活動促進担当)が運営しております。" />
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0" name="viewport" />
+
+	<link rel="icon" type="image/png" href="https://www.npo-homepage.go.jp/iconified/android-chrome.png" />
+	<link rel="shortcut icon" href="https://www.npo-homepage.go.jp/iconified/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="https://www.npo-homepage.go.jp/iconified/apple-touch-icon.png" />
+	
+	<link href="https://www.npo-homepage.go.jp/asset/bootstrap3.3.1/css/bootstrap.css?20190522-1" rel="stylesheet" type="text/css" />
+	<link href="https://www.npo-homepage.go.jp/asset/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+	<link href="https://www.npo-homepage.go.jp/css/common.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="https://www.npo-homepage.go.jp/css/non-responsive.css" rel="stylesheet" type="text/css" media="print" />
+
+	<!--[if lt IE 9]>
+		<script src="https://www.npo-homepage.go.jp/js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body id="top">
+		<div class="container">
+			<div class="row hidden-print skip-link">
+				<div class="col-xs-12 col-sm-12 col-md-12"><a href="#main_text">このページの本文へ移動</a></div>
+			</div>
+			<div class="row hedder-nav">
+				<div class="hidden-xs col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 text-right no-speech">
+					<ul class="list-inline" id="textresizer">
+						<li>文字サイズ</li>
+						<li><a href="#top"><img src="https://www.npo-homepage.go.jp/img/textsize_small.gif" alt="小" /></a></li>
+						<li><a href="#top"><img src="https://www.npo-homepage.go.jp/img/textsize_middle.gif" alt="中" /></a></li>
+						<li><a href="#top"><img src="https://www.npo-homepage.go.jp/img/textsize_large.gif" alt="大" /></a></li>
+					</ul>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-4 text-right">
+					<ul class="list-inline">
+						<li><a href="https://form.cao.go.jp/npo/opinion-0005.html" target="_blank">アンケート</a> <img src="https://www.npo-homepage.go.jp/img/ico_out.gif" alt="別ウィンドウで開きます" />&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+						<li><a href="https://www.npo-homepage.go.jp/sitemap">サイトマップ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<h1><a href="https://www.npo-homepage.go.jp/" title="NPOホームページトップへ"><img src="https://www.npo-homepage.go.jp/img/logo_header.gif" alt="NPOホームページロゴ" title="NPOホームページロゴ" /></a></h1>
+				</div>
+				<div class="hidden-xs col-sm-6 col-md-6 text-right hedder-search">
+					<form method="get" id="searchform" class="searchform" action="https://www.npo-homepage.go.jp/">
+	<div>
+		<label class="screen-reader-text" for="s">サイト内検索</label>
+		<input type="text" value="" name="s" id="s" />
+		<input type="submit" value="検索" />
+	</div>
+</form>				</div>
+
+				<div class="hidden-xs col-sm-6 col-md-6 text-right hedder-naikakuhu">
+					<span class="hidden-xs"><a href="https://www.cao.go.jp/" target="_blank" title="内閣府ホームページへ"><img src="https://www.npo-homepage.go.jp/img/logo_co.gif" alt="内閣府ホームページロゴ" title="内閣府ホームページロゴ" /></a></span>
+				</div>
+				<div class="visible-xs col-xs-12 hidden-print">
+					<div id="xs-trigger" class="text-center hidden-print">
+						<img src="https://www.npo-homepage.go.jp/img/2934.png" width="32" height="32" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 hedder-menu-container">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6 col-sm-4 col-md-2 text-center hedder-menu">
+								<a href="https://www.npo-homepage.go.jp/about" class="linked">NPO基礎情報</a>
+							</div>
+							<div class="col-xs-6 col-sm-4 col-md-2 text-center hedder-menu">
+								<a href="https://www.npo-homepage.go.jp/kaigi" class="linked">有識者会議・研究会等</a>
+							</div>
+							<div class="col-xs-6 col-sm-4 col-md-2 text-center hedder-menu">
+								<a href="https://www.npo-homepage.go.jp/toukei" class="linked">統計調査等</a>
+							</div>
+							<div class="col-xs-6 col-sm-4 col-md-2 text-center hedder-menu">
+								<a href="https://www.npo-homepage.go.jp/kaisei" class="linked">法律・制度改正</a>
+							</div>
+							<div class="col-xs-6 col-sm-4 col-md-2 text-center hedder-menu">
+								<a href="https://www.npo-homepage.go.jp/qa" class="linked">NPO法Ｑ＆Ａ</a>
+							</div>
+							<div class="col-xs-6 col-sm-4 col-md-2 text-center hedder-menu">
+								<a href="https://www.npo-homepage.go.jp/kifu" class="linked">寄附について</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-12 col-md-12 text-right hedder-image">
+					<img src="https://www.npo-homepage.go.jp/img/top_image.jpg" class="img-responsive" alt="" />
+				</div>
+			</div>
+			<div class="row xs-menu hidden-print" id="xs-searchbox">
+				<div class="visible-xs col-xs-12 text-center xs-menu-box">
+					<div class="xs-menu-search">
+						<form method="get" class="searchform" action="https://www.npo-homepage.go.jp/">
+							<div>
+								<label for="xs-s"><img src="https://www.npo-homepage.go.jp//img/ico_search.png" alt="サイト内検索" title="サイト内検索" /></label>
+								<input type="text" value="" name="s" id="xs-s" />
+								<input type="submit" value="検索" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row xs-menu hidden-print">
+				<div class="visible-xs col-xs-12 xs-menu-catchup">
+							<a href="https://www.npo-homepage.go.jp/news/1806news-npo-info"><img src="https://www.npo-homepage.go.jp/uploads/catchup-banner-1806-1-1.png" class="img-responsive" alt="NPO法人の貸借対照表の公告についてのご案内バナーです。クリックすると内閣府NPO法人ポータルサイトにおける公告の方法についての説明ページに移動します。" /></a>
+				</div>
+				<div class="visible-xs col-xs-12 xs-menu-box xs-menu-shokatu">
+					<a href="https://www.npo-homepage.go.jp/shokatsucho" class="xs-menu-box" title="所轄庁一覧">
+						<i class="glyphicon glyphicon-list-alt"><span>&nbsp;</span></i>所轄庁一覧
+					</a>
+				</div>
+				<div class="visible-xs col-xs-12 xs-menu-box xs-menu-houjin">
+					<a href="https://www.npo-homepage.go.jp/npoportal/" class="xs-menu-box" target="_blank" title="NPO法人情報ポータル">
+						<i class="glyphicon glyphicon-search"><span>&nbsp;</span></i>NPO法人情報ポータル<img src="https://www.npo-homepage.go.jp/img/ico_out.gif" alt="別ウィンドウで開きます" />
+					</a>
+				</div>
+				<div class="visible-xs col-xs-12 xs-menu-box xs-menu-sesaku">
+					<a href="https://www.npo-homepage.go.jp/policy-portal/" class="xs-menu-box" target="_blank" title="NPO施策ポータル">
+						<i class="glyphicon glyphicon-search"><span>&nbsp;</span></i>NPO施策ポータル<img src="https://www.npo-homepage.go.jp/img/ico_out.gif" alt="別ウィンドウで開きます" />
+					</a>
+				</div>
+			</div>
+
+			<div class="row visible-sm">
+				<div class="visible-sm col-sm-12 hidden-print">
+					<div class="row top-menu-line">
+						<div class="col-xs-12 col-sm-12">
+							<div class="row top-menu-subbox" style="padding-top:10px;">
+								<div class="col-xs-9 col-sm-9 col-md-9" style="width: 40%;">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 text-left top-menu-title">
+											<span>認証NPO法人</span>
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 top-menu-date">
+											<span>(5月31日現在)</span>
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 text-center top-menu-num">
+											<span>48,944</span> 件
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 text-center top-menu-subtitle">
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-1 col-md-3 text-right top-menu-link">
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/npo-kisochishiki/ninshouseido" title="認証NPO法人 制度">制度</a></span>
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/toukei-info/ninshou-zyuri" title="認証NPO法人 内訳">内訳</a></span>
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/npoportal/" target="_blank" title="認証NPO法人 検索">検索</a></span>
+								</div>
+								<div class="col-xs-6 col-sm-6" style="float: right; padding-top: 10px;">
+									<div class="row top-menu-subbox" style="margin: 0px -16px -6px 5px;">
+										<div class="col-xs-9 col-sm-9 col-md-9">
+											<div class="row">
+												<div class="col-xs-12 col-sm-12 col-md-12 text-left top-menu-title">
+													<span style="font-size: 84%;">うち、所轄庁 認定・特例認定NPO法人</span>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6 top-menu-date">
+													<span>(7月1日現在)</span>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6 text-center top-menu-num">
+													<span>1,314</span> 件
+												</div>
+												<div class="col-xs-12 col-sm-12 col-md-12 text-right top-menu-subtitle">
+													<span>(認定 1,276 件 / 特例認定 38 件)</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-3 col-sm-3 col-md-3 text-right top-menu-link">
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/npo-kisochishiki/ninteiseido" title="所轄庁 認定・特例認定NPO法人 制度">制度</a></span>
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/toukei-info/nintei-houjin" title="所轄庁 認定・特例認定NPO法人 内訳">内訳</a></span>
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/houjin-info/shokatsunintei-meibo" title="所轄庁 認定・特例認定NPO法人 一覧">一覧</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col-xs-12 col-sm-6">
+							<div class="row top-menu-subbox">
+								<div class="col-xs-9 col-sm-9 col-md-9">
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-12 text-left top-menu-title">
+											<span>所轄庁 認定・特例認定NPO法人</span>
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 top-menu-date">
+											<span>(7月1日現在)</span>
+										</div>
+										<div class="col-xs-6 col-sm-6 col-md-6 text-center top-menu-num">
+											<span>1,314</span> 件
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-12 text-right top-menu-subtitle">
+											<span>(認定 1,276 件 / 特例認定 38 件)</span>
+										</div>
+									</div>
+								</div>
+								<div class="text-right top-menu-link">
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/npo-kisochishiki/ninteiseido" title="所轄庁 認定・特例認定NPO法人 制度">制度</a></span>
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/toukei-info/nintei-houjin" title="所轄庁 認定・特例認定NPO法人 内訳">内訳</a></span>
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/houjin-info/shokatsunintei-meibo" title="所轄庁 認定・特例認定NPO法人 一覧">一覧</a></span>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div class="row" id="main_text">
+				<div class="col-xs-12 col-sm-8 col-md-8">
+					<div class="row visible-md">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-xs-6 col-sm-12">
+									<div class="row top-menu-subbox" style="padding-top:10px;">
+										<div class="col-xs-9 col-sm-9 col-md-9" style="width: 40%;">
+											<div class="row">
+												<div class="col-xs-12 col-sm-12 col-md-12 text-left top-menu-title">
+													<span>認証NPO法人</span>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6 top-menu-date">
+													<span>(5月31日現在)</span>
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6 text-center top-menu-num">
+													<span>48,944</span> 件
+												</div>
+												<div class="col-xs-6 col-sm-6 col-md-6 text-center top-menu-subtitle">
+													<span>&nbsp;</span>
+												</div>
+											</div>
+										</div>
+										<div class="text-right top-menu-link" style="margin-left: 15px;">
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/npo-kisochishiki/ninshouseido" title="認証NPO法人 制度">制度</a></span>
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/toukei-info/ninshou-zyuri" title="認証NPO法人 内訳">内訳</a></span>
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/npoportal/" target="_blank" title="認証NPO法人 検索">検索</a></span>
+										</div>
+										<div class="col-xs-6 col-sm-6" style="float: right; padding-top: 10px;">
+											<div class="row top-menu-subbox" style="margin: 0px -16px -6px 5px;">
+												<div class="col-xs-9 col-sm-9 col-md-9">
+													<div class="row">
+														<div class="col-xs-12 col-sm-12 col-md-12 text-left top-menu-title">
+															<span style="font-size: 84%;">うち、所轄庁 認定・特例認定NPO法人</span>
+														</div>
+														<div class="col-xs-6 col-sm-6 col-md-6 top-menu-date">
+															<span>(7月1日現在)</span>
+														</div>
+														<div class="col-xs-6 col-sm-6 col-md-6 text-center top-menu-num">
+															<span>1,314</span> 件
+														</div>
+														<div class="col-xs-12 col-sm-12 col-md-12 text-right top-menu-subtitle">
+															<span>(認定 1,276 件 / 特例認定 38 件)</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-3 col-sm-3 col-md-3 text-right top-menu-link">
+													<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/npo-kisochishiki/ninteiseido" title="所轄庁 認定・特例認定NPO法人 制度">制度</a></span>
+													<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/toukei-info/nintei-houjin" title="所轄庁 認定・特例認定NPO法人 内訳">内訳</a></span>
+													<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/houjin-info/shokatsunintei-meibo" title="所轄庁 認定・特例認定NPO法人 一覧">一覧</a></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row news-label">
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<div class="news-label-title">新着情報</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 text-right">
+							<div class="news-label-rss"><a href="https://www.npo-homepage.go.jp/rssinfo" title="RSS情報"><img src="https://www.npo-homepage.go.jp/img/feed-icon-24x24.png" alt="" /><span>RSS</span></a></div>
+						</div>
+					</div>
+
+					<div class="row news-body news-body-top">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">5月8日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/news/npo-tf-risk">「NPO法人のテロ資金供与対策について」を一部更新しました</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">4月28日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/kaisei/npohou-kanrenshiryou">条例による事務処理特例制度を活用した特定非営利活動促進法に係る所轄庁の事務の移譲状況（令和8年4月1日時点）を掲載しました。</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">4月9日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/toukei/shiminkouken-chousa/2025shiminkouken-chousa">2025年度（令和7年度）市民の社会貢献に関する実態調査 報告書を掲載しました。</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">12月24日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/kaisei/npohou-kanrenshiryou">「条例個別指定の実施状況（2025年9月30日時点）」を掲載しました</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">12月1日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href=" https://www.npo-homepage.go.jp/news/2027shiminkouken-chousa-close">2025年度(令和7年度) 市民の社会貢献に関する実態調査（回答期間終了のお知らせ）</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">12月1日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/kifu#kifu-5">「寄付月間2025 ~Giving December~」が始まりました</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">9月12日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/#topics-shisaku">各府省庁NPO関連施策（令和6年度及び令和7年度予算）を掲載しました。</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">6月2日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/news/npo-tf-risk">「NPO法人のテロ資金供与対策について」を一部更新しました</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">6月2日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/qa/seido-gaiyou/seijikatsudou#Q1-5-4">刑法等の一部を改正する法律の施行に伴う関係法律の整理等に関する法律の一部施行に伴い、政治活動等についてのＱ＆Ａを更新しました（Q1-5-4）。</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">6月2日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/pamphlet-tebiki">刑法等の一部を改正する法律の施行に伴う関係法律の整理等に関する法律の一部施行に伴い、手引きの一部を変更しました。</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">5月26日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/kaisei/npohou-kanrenshiryou">条例による事務処理特例制度を活用した特定非営利活動促進法に係る所轄庁の事務の移譲状況（令和7年4月1日時点）を掲載しました。</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">3月31日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text">R7/4/1より『ＮＰＯポータルサイト　サポートデスク』のフリーダイヤル番号が変更になります。詳細はトピックスをご参照ください。</div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">12月24日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/kaisei/npohou-kanrenshiryou">「条例個別指定の実施状況（2024年9月30日時点）」を掲載しました</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">12月2日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/kifu#kifu-5">「寄付月間2024 ~Giving December~」が始まりました</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">8月7日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/#topics-shisaku">各府省庁NPO関連施策（令和5年度及び令和6年度予算）を掲載しました。</a></div>
+					</div>
+					<div class="row news-body">
+						<div class="col-xs-12 col-sm-2 col-md-2 news-body-date">7月23日</div>
+						<div class="col-xs-12 col-sm-10 col-md-10 news-body-text"><a href="https://www.npo-homepage.go.jp/kaisei/npohou-kanrenshiryou">条例による事務処理特例制度を活用した特定非営利活動促進法に係る所轄庁の事務の移譲状況（令和6年4月1日時点）を掲載しました。</a></div>
+					</div>
+					<div class="row news-list">
+						<div class="col-xs-12 col-sm-12 col-md-12 text-right"><a href="https://www.npo-homepage.go.jp/news"><img src="https://www.npo-homepage.go.jp/img/arrow6.gif" alt="" /> 新着情報一覧へ</a></div>
+					</div>
+
+
+					<div class="row topics-label">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="topics-label-title">トピックス</div>
+						</div>
+					</div>
+					<div class="row topics-container">
+						<div class="col-xs-12 col-sm-12 col-md-12 topics-body">
+							<p><strong>特定非営利活動法人・所轄庁の皆様へ</strong></p>
+<p><span style="text-decoration: underline;">～R7/4/1よりNPOポータルサイト サポートデスクのフリーダイヤル番号が変更になります～</span></p>
+<p>平素よりＷｅｂ報告システムにご対応・ご協力いただきありがとうございます。</p>
+<p>サポートデスクのフリーダイヤル番号が</p>
+<p><span style="color: #CC0033;"><strong>■　0800-170-6451　（令和7年4月1日（火曜日）～）</strong></span></p>
+<p>に変更となります。</p>
+<p>直近のご連絡となり大変申し訳ありません。<br />
+”対応時間(平日9:30-11:59 13:00-18:00)”、&#8221;携帯電話OK&#8221;については従来と変わりません。</p>
+						</div>
+					</div>
+					<div class="row topics-container">
+						<div class="col-xs-12 col-sm-12 col-md-12 topics-body topics-even-background">
+							<p><strong>特定非営利活動法人の皆様へ</strong>～NPO法人ポータルサイトで法人情報が登録できます～<a href="https://www.npo-homepage.go.jp/about/houjin-info/npohoujin-touroku"></a></p>
+<ul>
+<li><a href="https://www.npo-homepage.go.jp/news/20230301_siterenewal">「ＮＰＯ法人ポータルサイト」が新しくなりました！</a></li>
+<li><a href="https://www.npo-homepage.go.jp/about/houjin-info/npohoujin-touroku">NPO法人情報登録(NPO法人限定) について</a>　[ <a href="https://www.npo-homepage.go.jp/npoportal/users/auth/login">法人ログイン</a>  |  <a href="https://www.npo-homepage.go.jp/npoportal/create/confirmation">新規ユーザ登録</a> ]</li>
+<li><a target="_blank" href="https://www.npo-homepage.go.jp/uploads/for-npohoujin-flyers.pdf">内閣府ＮＰＯ法人ポータルサイトをご活用ください！ (PDF形式：224 KB)</a></li>
+</ul>
+						</div>
+					</div>
+					<div class="row topics-container">
+						<div class="col-xs-12 col-sm-12 col-md-12 topics-body">
+							<p><strong>特定非営利活動法人の皆様へ</strong></p>
+<p>内閣府官民人材交流センターでは、民間への再就職を希望する国家公務員（OB・OG）の情報とNPO法人、企業等の求人情報を相互に提供する「<strong>官民人材交流センター求人・求職者情報提供事業</strong>」を開始します。</p>
+<p>詳細は<a href="https://www8.cao.go.jp/jinzai/kyuzin.html">内閣府 官民人材交流センター「求人・求職者情報提供事業について」</a>をご覧ください。</p>
+						</div>
+					</div>
+					<div class="row topics-container">
+						<div class="col-xs-12 col-sm-12 col-md-12 topics-body topics-even-background">
+							<p><strong>特定非営利活動法人の皆様へ　</strong>～社会保障・税番号制度＜法人番号＞について～</p>
+<ul style="list-style-type: circle;">
+<li><a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.nta.go.jp%2Ftaxes%2Ftetsuzuki%2Fmynumberinfo%2Fhoujinbangou%2Findex.htm">法人番号について</a>（国税庁ホームページへ移動します）</li>
+<li><a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.houjin-bangou.nta.go.jp%2Fsetsumei%2F">法人番号とは</a>（国税庁 法人番号公表サイトへ移動します）</li>
+<li><a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.houjin-bangou.nta.go.jp%2Fshitsumon%2F">社会保障・税番号制度＜マイナンバー＞FAQ</a> (国税庁ホームページへ移動します)</li>
+<li><a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.ppc.go.jp%2Flegal%2Fpolicy%2F">特定個人情報の適正な取扱いに関するガイドライン（Q&amp;A）</a> (特定個人情報保護委員会ホームページへ移動します)</li>
+<li><a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.kokusen.go.jp%2Fsoudan_now%2Fdata%2Fmynumber.html">NPO法人を騙るマイナンバー制度に便乗した詐欺にご注意ください</a> (独立行政法人国民生活センター ホームページへ移動します)</li>
+</ul>
+						</div>
+					</div>
+					<div class="row topics-container">
+						<div class="col-xs-12 col-sm-12 col-md-12 topics-body">
+							<p><strong>会計報告書類作成にかかる参考資料<br />
+</strong><a href="https://www.npo-homepage.go.jp/external/?url=http%3A%2F%2Fwww.npokaikeikijun.jp%2Fwp-content%2Fuploads%2F5e817845c3ac3df8402b397e3832a54b.pdf">NPO法人会計基準に準拠した財務諸表作成のために重要な６つのチェックポイント(PDF形式：1.44 MB)</a> (ＮＰＯ法人会計基準協議会のホームページへ移動します)</p>
+						</div>
+					</div>
+					<div class="row topics-container">
+						<div class="col-xs-12 col-sm-12 col-md-12 topics-body topics-even-background">
+							<p><a id="topics-shisaku"></a><strong>国、地方公共団体によるNPO支援・協働等の施策情報を随時掲載しています</strong></p>
+<p>連携協働に係る施策、情報発信に係る施策、資金に係る施策、人材育成・人材交流に係る施策 、設備や備品に係る施策 等 の情報が閲覧できます。</p>
+<div>
+<ul>
+<li><a href="https://www.npo-homepage.go.jp/policy-portal/">NPO施策ポータル(NPO施策情報の閲覧)</a><br />
+※対象は、NPO法人、任意団体、その他の非営利団体などを含みます。</li>
+<li><a href="https://www.npo-homepage.go.jp/uploads/R7_sesakutouroku_ichiran.pdf" target="_blank" rel="noopener noreferrer">各府省庁のNPO関連施策 (令和６年度及び令和７年度予算) 一覧 (PDF形式：860 KB)</a>（令和７年９月１２日更新）</li>
+</ul>
+</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="row catch-up-row">
+						<div class=" hidden-xs col-sm-12 col-md-12 side-menu-catch-up">
+							<a href="https://www.npo-homepage.go.jp/news/1806news-npo-info"><img src="https://www.npo-homepage.go.jp/uploads/catchup-banner-1806-1-1.png" class="img-responsive" alt="NPO法人の貸借対照表の公告についてのご案内バナーです。クリックすると内閣府NPO法人ポータルサイトにおける公告の方法についての説明ページに移動します。" /></a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="hidden-xs col-sm-12 col-md-12 side-menu-container">
+							<div class="side-menu-box side-menu-shokatu">
+								<a href="https://www.npo-homepage.go.jp/shokatsucho" title="所轄庁一覧"><i class="glyphicon glyphicon-list-alt"><span>&nbsp;</span></i>所轄庁一覧</a>
+								<label>NPO団体を管理する行政機関一覧を表示します。</label>
+							</div>
+						</div>
+						<div class="hidden-xs col-sm-12 col-md-12 side-menu-container">
+							<div class="side-menu-box side-menu-houjin">
+								<a href="https://www.npo-homepage.go.jp/npoportal/" target="_blank"><i class="glyphicon glyphicon-search"><span>&nbsp;</span></i>NPO法人ポータルサイト<img src="https://www.npo-homepage.go.jp/img/ico_out.gif" alt="別ウィンドウで開きます" /></a>
+								<label>全国の特定非営利活動法人の情報を検索できます。</label>
+								<form action="https://www.npo-homepage.go.jp/npoportal/list" class="search" method="get" accept-charset="UTF-8" target="_blank">
+									<label for="search_houjin_name">法人名:</label>
+									<input type="text" id="search_houjin_name" name="nnt" size="24" maxlength="256" value="" />
+									<input type="submit" value="検索" />
+								</form>
+								<hr style="margin: 7px;" />
+								<div class="row text-center">
+									<div class="col-sm-12 col-md-4 col-md-offset-1">
+										<form method="get" action="https://www.npo-homepage.go.jp/npoportal/users/auth/login" target="_blank">
+											<button class="btn btn-success" type="submit" id="hojin-login" style="background-color: #227d22;border-color: #1b3d1b;padding: 2px 12px;"><i class="fa fa-fw fa-sign-in">&nbsp;</i>法人ログイン</button>
+										</form>
+									</div>
+									<div class="col-sm-12 hidden-md">
+										<hr style="margin: 7px;" class="hidden-md" />
+									</div>
+									<div class="col-sm-12 col-md-7">
+										<form method="get" action="https://www.npo-homepage.go.jp/npoportal/create/confirmation" target="_blank">
+										    <input type="hidden" name="flag" value="create-user">
+											<button class="btn btn-primary" type="submit" id="account-create" style="border-color: #1b3d1b;padding: 2px 12px;"><i class="fa fa-fw fa-share">&nbsp;</i>新規ユーザ登録</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hidden-xs col-sm-12 col-md-12 side-menu-container">
+							<div class="side-menu-box side-menu-sesaku">
+								<a href="https://www.npo-homepage.go.jp/policy-portal/" target="_blank"><i class="glyphicon glyphicon-search"><span>&nbsp;</span></i>NPO施策ポータルサイト<img src="https://www.npo-homepage.go.jp/img/ico_out.gif" alt="別ウィンドウで開きます" /></a>
+								<label>NPOの支援策等の情報を簡単に検索できます。</label>
+								<div class="hidden-xs">
+									<form action="https://www.npo-homepage.go.jp/policy-portal/list" class="search" method="get" accept-charset="UTF-8" target="_blank">
+										<label for="search_sesaku_name">施策名:</label>
+										<input type="text" id="search_sesaku_name" name="mtt" size="24" maxlength="50" value="" />
+										<input type="submit" value="検索" />
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="visible-xs col-xs-12">
+							<div class="row top-menu-subbox">
+								<div class="visible-xs col-xs-9">
+									<div class="row">
+										<div class="visible-xs col-xs-12 text-left top-menu-title">
+											<span>認証NPO法人</span>
+										</div>
+										<div class="visible-xs col-xs-6 top-menu-date">
+											<span>(5月31日現在)</span>
+										</div>
+										<div class="visible-xs col-xs-6 text-center top-menu-num">
+											<span>48,944</span> 件
+										</div>
+										<div class="visible-xs col-xs-6 text-center top-menu-subtitle">
+											<span>&nbsp;</span>
+										</div>
+									</div>
+								</div>
+								<div class="visible-xs col-xs-3 text-right top-menu-link">
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/npo-kisochishiki/ninshouseido" title="認証NPO法人 制度">制度</a></span>
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/toukei-info/ninshou-zyuri" title="認証NPO法人 内訳">内訳</a></span>
+									<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/npoportal/" target="_blank" title="認証NPO法人 検索">検索</a></span>
+								</div>
+								<div class="visible-xs col-xs-12">
+									<div class="row top-menu-subbox">
+										<div class="visible-xs col-xs-9">
+											<div class="row">
+												<div class="visible-xs col-xs-12 text-left top-menu-title">
+													<span>うち、所轄庁 認定・特例認定NPO法人</span>
+												</div>
+												<div class="visible-xs col-xs-6 top-menu-date">
+													<span>(7月1日現在)</span>
+												</div>
+												<div class="visible-xs col-xs-6 text-center top-menu-num">
+													<span>1,314</span> 件
+												</div>
+												<div class="visible-xs col-xs-12 text-right top-menu-subtitle">
+													<span>(認定 1,276 件 / 特例認定 38 件)</span>
+												</div>
+											</div>
+										</div>
+										<div class="visible-xs col-xs-3 text-right top-menu-link">
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/npo-kisochishiki/ninteiseido" title="所轄庁 認定・特例認定NPO法人 制度">制度</a></span>
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/toukei-info/nintei-houjin" title="所轄庁 認定・特例認定NPO法人 内訳">内訳</a></span>
+											<span><img alt="" src="https://www.npo-homepage.go.jp/img/bullet_arrow.gif" /> <a href="https://www.npo-homepage.go.jp/about/houjin-info/shokatsunintei-meibo" title="所轄庁 認定・特例認定NPO法人 一覧">一覧</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 side-menu-banner">
+							<a href="https://www.npo-homepage.go.jp/pamphlet-tebiki"><span>パンフレット・手引き</span></a>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-12 side-menu-banner">
+							<a href="https://www.npo-homepage.go.jp/koushi-haken"><span>講師派遣</span></a>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 side-menu-banner">
+							<a href="https://www.npo-homepage.go.jp/link"><span>リンク集</span></a>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 side-menu-banner">
+							<a href="https://form.cao.go.jp/npo/opinion-0002.html" target="_blank"><span>御意見・御感想</span></a>
+						</div>
+						
+						<div class="col-xs-12 col-sm-12 col-md-12 side-menu-banner2">
+							<a href="https://www.npo-homepage.go.jp/external/?url=https://www.koeki-info.go.jp/index.html" style="background-image:none;"><span>公益法人information <img alt="別ウィンドウで開きます" src="https://www.npo-homepage.go.jp/img/ico_out.gif" /></span></a>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 side-menu-banner2">
+							<a href="https://www.npo-homepage.go.jp/external/?url=https://www.cao.go.jp/others/koeki_npo/index.html" style="background-image:none;"><span>公益法人と特定非営利活動(NPO)法人 <img alt="別ウィンドウで開きます" src="https://www.npo-homepage.go.jp/img/ico_out.gif" /></span></a>
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www.npo-homepage.go.jp/news/npo-tf-risk"><img src="https://www.npo-homepage.go.jp/uploads/FATFPNG3.webp" alt="NPO法人のテロ資金供与対策について" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www.npo-homepage.go.jp/kifu/kifu-yuuguu/minashijyoto"><img src="https://www.npo-homepage.go.jp/uploads/2020zeiseikaisei3.jpg" alt="認定NPO法人等の現物寄附の税制上の変更について" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www8.cao.go.jp/kyumin_yokin/index.html"><img src="https://www.npo-homepage.go.jp/uploads/side-banner-kyuminyokin_468x120.png" alt="内閣府「民間公益活動促進のための休眠預金等活動」のページに移動します" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fkodomohinkon.go.jp%2F"><img src="https://www.npo-homepage.go.jp/uploads/kodomomirai_468x120-1.png" alt="こどもの未来応援プロジェクト" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.jfc.go.jp%2Fn%2Ffinance%2Fsocial%2Findex.html+"><img src="https://www.npo-homepage.go.jp/uploads/side-banner-jfc.png" alt="日本政策金融公庫 「ソーシャルビジネスお役立ち情報」" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.wam.go.jp%2Fhp%2Fcat%2Fwamjosei%2F"><img src="https://www.npo-homepage.go.jp/uploads/side-banner-wam_468x120.png" alt="独立行政法人福祉医療機構「ＷＡＭ助成（社会福祉振興助成事業）」のご案内" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www.cao.go.jp/bangouseido/"><img src="https://www.npo-homepage.go.jp/uploads/side-banner-mynumber.png" alt="内閣官房 「マイナンバー 社会保障・税番号制度」" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+								<div class="col-xs-6 col-sm-12 col-md-12 text-center side-menu-banner-graphic" style="display:inline-block;">
+									<a href="https://www.npo-homepage.go.jp/external/?url=https%3A%2F%2Fwww.e-gov.go.jp%2F"><img src="https://www.npo-homepage.go.jp/uploads/e-Gov_Logo_B.gif" alt="電子政府の総合窓口 e-Gov" class="img-responsive" style="width:100%;border:none;" /></a>								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+							</div>
+						</div>
+						<div class="visible-md col-md-12 text-center side-menu-adobe">
+							<a href="https://www.npo-homepage.go.jp/external/?url=http://get.adobe.com/jp/reader/"><img src="https://www.npo-homepage.go.jp/img/get_adobe_reader.gif"  alt="Adobe Readerを取得" /></a>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 side-menu-about">
+							<div>当ホームページでの表記について<br />
+							「ＮＰＯ(Non Profit Organization)」とは、様々な社会貢献活動(事業も含む)を行い、団体の構成員に対し収益を分配することを目的としない 団体の総称です。このホームページでは、ＮＰＯの一形態である「特定非営利活動法人」について主に情報を提供しています。
+							また、「特定非営利活動法人」を「ＮＰＯ法人」、認定特定非営利活動法人を「認定ＮＰＯ法人」と表記しています。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer-banner">
+				<div class="col-xs-12 col-sm-6 hidden-md">
+					<a href="/sitemap"><span>サイトマップ</span></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 hidden-md">
+					<a href="/notice"><span>このサイトについて</span></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 hidden-md">
+					<a href="/accessibility"><span>アクセシビリティについて</span></a>
+				</div>
+                <div class="col-xs-12 col-sm-6 hidden-md">
+                    <a href="/npoportal/privacy-policy">個人情報保護方針について</a>
+                </div>
+				<div class="col-xs-12 col-sm-6 hidden-md">
+					<a href="https://form.cao.go.jp/npo/opinion-0005.html" target="_blank"><span>アンケート</span></a>
+				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<div class="row">
+						<div class="col-sm-12 col-sm-12 col-md-12">
+							<img src="https://www.npo-homepage.go.jp/img/logo_footer_1.gif" class="img-responsive"  alt="NPOホームページ" />
+						</div>
+						<div class="col-sm-12 col-sm-12 col-md-12 footer-address">
+							<div>
+								<strong>内閣府政策統括官(共生・共助担当)付参事官(共助社会づくり推進担当)</strong><br />
+								〒100-8914<br />
+								東京都千代田区永田町1-6-1<br />
+								中央合同庁舎第8号館<br />
+								電話番号03-5253-2111(大代表)<br />
+								Copyright&copy;2023 the Cabinet Office All Rights Reserved.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="visible-md col-md-2 footer-menu">
+					<ul>
+						<li><a href="/about">NPO基礎情報</a></li>
+						<li><a href="/kaigi">有識者会議・研究会等</a></li>
+						<li><a href="/toukei">統計調査等</a></li>
+						<li><a href="/kaisei">法律・制度改正</a></li>
+						<li><a href="/qa">NPO法Ｑ＆Ａ</a></li>
+						<li><a href="/kifu">寄附について</a></li>
+					</ul>
+				</div>
+				<div class="visible-md col-md-2 footer-menu">
+					<ul>
+						<li><a href="/shokatsucho">所轄庁一覧</a></li>
+						<li><a href="/pamphlet-tebiki">パンフレット・手引き</a></li>
+						
+						<li><a href="/fukkou">震災復興関連</a></li>
+						<li><a href="/koushi-haken">講師派遣</a></li>
+						<li><a href="/link">リンク集</a></li>
+						<li><a href="https://form.cao.go.jp/npo/opinion-0002.html" target="_blank">御意見・御感想</a></li>
+					</ul>
+				</div>
+				<div class="visible-md col-md-2 footer-menu footer-menu-last">
+					<ul>
+						<li><a href="/sitemap">サイトマップ</a></li>
+						<li><a href="/notice">このサイトについて</a></li>
+						<li><a href="/accessibility">アクセシビリティについて</a></li>
+                        <li><a href="/npoportal/privacy-policy">個人情報保護方針について</a></li>
+						<li><a href="https://form.cao.go.jp/npo/opinion-0005.html" target="_blank">アンケート</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://www.npo-homepage.go.jp/asset/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.npo-homepage.go.jp/asset/jquery.cookie/jquery.cookie.js"></script>
+		<script type="text/javascript" src="https://www.npo-homepage.go.jp/asset/jquery.textresizer/jquery.textresizer.min.js"></script>
+		<script type="text/javascript" src="https://www.npo-homepage.go.jp/asset/jquery.bxslider/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="https://www.npo-homepage.go.jp/js/javascript.js"></script>
+	</body>
+</html>

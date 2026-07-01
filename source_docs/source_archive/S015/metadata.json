@@ -1,0 +1,27 @@
+{
+  "source_id": "S015",
+  "source_type": "party_news",
+  "title": "与那国に自衛隊いらない 配備反対の意見広告呼びかけ",
+  "year": "2012",
+  "url": "https://www.jcp.or.jp/akahata/aik12/2012-08-31/2012083115_02_1.html",
+  "what_it_supports": "Yonaguni opposition organization seed",
+  "evidence_level": "E2",
+  "bias_note": "Party-media source; must cross-check",
+  "review_status": "needs_second_source",
+  "notes": "Use cautiously.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S015\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S015\\metadata.json",
+  "sha256": "ddc3e030aed0e277c811f93b9fe98f5b9812281f6b5d0e58e9068ba2ac1f1e99",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:32.287626+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jcp.or.jp/akahata/aik12/2012-08-31/2012083115_02_1.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "29714",
+    "last_modified": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S041",
+  "source_type": "organization_site",
+  "title": "AWWA / OESC / NOSCO official sites and DVIDS reports",
+  "year": "2024",
+  "url": "https://okinawahai.com/american-womens-welfare-association/",
+  "what_it_supports": "AWWA structure (5 clubs); OESC official site okinawaesc.com; NOSCO AWWA page; DVIDS 40-year history",
+  "evidence_level": "E4",
+  "bias_note": "Multiple confirmed sources: Okinawa Hai / DVIDS / NOSCO / OESC / ProPublica",
+  "review_status": "verified",
+  "notes": "AWWA confirmed as umbrella of 5 spouse clubs. OESC EIN 980346507. Originally Ryukyu American Welfare Council (1952).",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S041\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S041\\metadata.json",
+  "sha256": "263e15288da21e0aeca0f0c40e3106bdc6025dee758a629509ce663022422f30",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:41.166122+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://okinawahai.com/american-womens-welfare-association/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

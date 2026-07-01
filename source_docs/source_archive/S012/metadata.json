@@ -1,0 +1,27 @@
+{
+  "source_id": "S012",
+  "source_type": "official_defense",
+  "title": "与那国駐屯地 陸上自衛隊公式",
+  "year": "2026",
+  "url": "https://www.mod.go.jp/gsdf/station/wa/yonaguni/",
+  "what_it_supports": "Yonaguni station facts",
+  "evidence_level": "E4",
+  "bias_note": "Official defense framing",
+  "review_status": "ai_seeded",
+  "notes": "Use for base facts.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S012\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S012\\metadata.json",
+  "sha256": "8b6fc5a05acf92fc35a8aa754374aa0454509c37bb7807d6267f05a809867c84",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:19.496207+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.mod.go.jp/gsdf/station/wa/yonaguni/",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "",
+    "last_modified": "Wed, 31 Dec 2025 15:05:54 GMT"
+  }
+}

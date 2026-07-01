@@ -1,0 +1,20 @@
+{
+  "source_id": "S024",
+  "source_type": "local_news",
+  "title": "台湾有事に備え 南西諸島の軍事化に懸念",
+  "year": "2023",
+  "url": "inferred_url:okinawatimes_taiwan_contingency_2023",
+  "what_it_supports": "Taiwan contingency civil society concerns in Okinawa",
+  "evidence_level": "E3",
+  "bias_note": "News interpretation; verify actor details",
+  "review_status": "ai_seeded",
+  "notes": "Referenced by A018.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S024\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:35.377936+00:00",
+  "note": ""
+}

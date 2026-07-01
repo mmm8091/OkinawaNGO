@@ -1,0 +1,27 @@
+{
+  "source_id": "S025",
+  "source_type": "official_referendum",
+  "title": "辺野古米軍基地建設のための埋立ての賛否を問う県民投票 結果",
+  "year": "2019",
+  "url": "https://www.city.nago.okinawa.jp/kurashi/2019020300029/",
+  "what_it_supports": "2019 prefectural referendum: 反対434273票(71.7%) 投票率52.48%",
+  "evidence_level": "E4",
+  "bias_note": "Official government source; Wikipedia also available",
+  "review_status": "verified",
+  "notes": "Core governance/referendum event. All municipalities had majority opposition.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S025\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S025\\metadata.json",
+  "sha256": "c17bfcaf7ce59ed1347257aed4e740311dc83eebf1e6ec17794d29c5a265dd23",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:35.378443+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.nago.okinawa.jp/kurashi/2019020300029/",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "18728",
+    "last_modified": "Thu, 06 Jun 2024 01:03:27 GMT"
+  }
+}

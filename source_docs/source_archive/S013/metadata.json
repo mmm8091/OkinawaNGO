@@ -1,0 +1,27 @@
+{
+  "source_id": "S013",
+  "source_type": "official_defense",
+  "title": "令和4年版防衛白書 与那国と台湾",
+  "year": "2022",
+  "url": "https://www.mod.go.jp/j/press/wp/wp2022/html/nc014000.html",
+  "what_it_supports": "Yonaguni strategic location/security framing",
+  "evidence_level": "E4",
+  "bias_note": "Official defense framing",
+  "review_status": "ai_seeded",
+  "notes": "Use for official security frame.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S013\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S013\\metadata.json",
+  "sha256": "c6e6ae48ab5bcbcae03d47f15240dbf358c5514428c2123e9390045dcafeec5f",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:20.132661+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.mod.go.jp/j/press/wp/wp2022/html/nc014000.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "",
+    "last_modified": "Thu, 09 Feb 2023 03:09:59 GMT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S008",
+  "source_type": "local_news",
+  "title": "ジュゴン保護 県内外71団体が米海洋哺乳類委員会に要請",
+  "year": "2020",
+  "url": "https://ryukyushimpo.jp/news/entry-1154960.html",
+  "what_it_supports": "local-news confirmation of 71-group MMC request",
+  "evidence_level": "E3",
+  "bias_note": "News summary; may omit full list",
+  "review_status": "ai_seeded",
+  "notes": "Confirms local visibility.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S008\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S008\\metadata.json",
+  "sha256": "19272924109bbf4f8a24d631617df6bf3b14b378c8d251aac2f374eed5774e70",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:13.925447+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-1154960.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Wed, 01 Jul 2026 07:48:29 GMT"
+  }
+}

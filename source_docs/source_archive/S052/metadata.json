@@ -1,0 +1,27 @@
+{
+  "source_id": "S052",
+  "source_type": "organization_blog",
+  "title": "与那国イソバの会 ブログ",
+  "year": "2026",
+  "url": "https://isobanokai.ti-da.net/",
+  "what_it_supports": "Isobanoka civic group activities; anti-military-exercise protests",
+  "evidence_level": "E3",
+  "bias_note": "Organization self-published blog",
+  "review_status": "verified",
+  "notes": "Active blog and X/Twitter presence; protests joint exercises and missile deployment.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S052\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S052\\metadata.json",
+  "sha256": "07aea0c8827d31cf78889f69b3428b8452b6670123213d966580334f448181c1",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:49.601032+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://isobanokai.ti-da.net/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

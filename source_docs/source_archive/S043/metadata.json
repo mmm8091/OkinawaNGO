@@ -1,0 +1,20 @@
+{
+  "source_id": "S043",
+  "source_type": "official_data",
+  "title": "沖縄県 米軍基地の概要",
+  "year": "2024",
+  "url": "inferred_url:pref_okinawa_base_overview_2024",
+  "what_it_supports": "Okinawa prefecture official base burden data",
+  "evidence_level": "E4",
+  "bias_note": "Official government data",
+  "review_status": "ai_seeded",
+  "notes": "Use for base burden context.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S043\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:42.696613+00:00",
+  "note": ""
+}

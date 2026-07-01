@@ -1,0 +1,27 @@
+{
+  "source_id": "S005",
+  "source_type": "ngo_statement",
+  "title": "Peace Boat statement on Henoko emergency NGO declaration",
+  "year": "2015",
+  "url": "https://peaceboat.org/3620.html",
+  "what_it_supports": "peace/environment/base issue bridge",
+  "evidence_level": "E4",
+  "bias_note": "Organization framing source; not full network",
+  "review_status": "ai_seeded",
+  "notes": "Useful bridge actor.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S005\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S005\\metadata.json",
+  "sha256": "dd98716694ea330f0156f7eaafe93def9606e11e684e95f998b0a1f40ee83105",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:09.468625+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://peaceboat.org/3620.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

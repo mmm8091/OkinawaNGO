@@ -1,0 +1,20 @@
+{
+  "source_id": "S018",
+  "source_type": "local_news",
+  "title": "石垣市 住民投票条例案 市議会で否決",
+  "year": "2018",
+  "url": "inferred_url:ryukyushimpo_ishigaki_referendum_2018",
+  "what_it_supports": "Ishigaki referendum movement; A011 actor baseline",
+  "evidence_level": "E3",
+  "bias_note": "News source; exact URL needs verification",
+  "review_status": "ai_seeded",
+  "notes": "Referenced by A011. URL placeholder; verify.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S018\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:35.374363+00:00",
+  "note": ""
+}

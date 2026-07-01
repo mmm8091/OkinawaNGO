@@ -1,0 +1,27 @@
+{
+  "source_id": "S014",
+  "source_type": "local_official",
+  "title": "与那国町長期営農計画",
+  "year": "2023",
+  "url": "https://www.town.yonaguni.okinawa.jp/docs/2023102400019/file_contents/tyoukieinou.pdf",
+  "what_it_supports": "Yonaguni distance facts",
+  "evidence_level": "E4",
+  "bias_note": "Local official planning document",
+  "review_status": "ai_seeded",
+  "notes": "Distance facts.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S014\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S014\\metadata.json",
+  "sha256": "a8207fc24a619e35f4b7a3489d39cdb95f7afdbfdb83df9846ad10c03287951a",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:20.841615+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.town.yonaguni.okinawa.jp/docs/2023102400019/file_contents/tyoukieinou.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "8845530",
+    "last_modified": "Wed, 11 Dec 2024 00:33:57 GMT"
+  }
+}

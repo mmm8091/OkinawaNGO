@@ -1,0 +1,27 @@
+{
+  "source_id": "S016",
+  "source_type": "local_news",
+  "title": "石垣自衛隊配備 初の市民討論会",
+  "year": "2016",
+  "url": "https://ryukyushimpo.jp/news/entry-385092.html",
+  "what_it_supports": "Ishigaki opposing/supporting groups",
+  "evidence_level": "E3",
+  "bias_note": "News source; actor details need source triangulation",
+  "review_status": "ai_seeded",
+  "notes": "Names Ishigaki civic network.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S016\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S016\\metadata.json",
+  "sha256": "2169f6cf86cda6e18c8f7b8ebc148cb5ecccb77aabbc69c44c8a5c48d57c9b68",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:33.099709+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-385092.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Wed, 01 Jul 2026 07:48:58 GMT"
+  }
+}

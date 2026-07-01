@@ -1,0 +1,20 @@
+{
+  "source_id": "S045",
+  "source_type": "local_news",
+  "title": "辺野古新基地 土砂投入開始",
+  "year": "2018",
+  "url": "inferred_url:ryukyushimpo_henoko_soil_2018",
+  "what_it_supports": "Henoko landfill soil dumping begins",
+  "evidence_level": "E4",
+  "bias_note": "Well-documented landmark event",
+  "review_status": "ai_seeded",
+  "notes": "Key timeline event.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S045\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:42.697723+00:00",
+  "note": ""
+}

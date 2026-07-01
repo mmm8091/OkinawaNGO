@@ -1,0 +1,27 @@
+{
+  "source_id": "S010",
+  "source_type": "local_news",
+  "title": "与那国町住民投票 自衛隊配備 結果は賛成多数",
+  "year": "2015",
+  "url": "https://www.qab.co.jp/news/2015022363334.html",
+  "what_it_supports": "Yonaguni referendum baseline",
+  "evidence_level": "E3",
+  "bias_note": "News source; not full referendum archive",
+  "review_status": "ai_seeded",
+  "notes": "Use for event baseline.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S010\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S010\\metadata.json",
+  "sha256": "61f9db4dc00c38149f476257b190e7ae7599489f1c7b219e98670bdc8ab4d724",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:16.608097+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.qab.co.jp/news/2015022363334.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

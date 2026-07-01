@@ -1,0 +1,20 @@
+{
+  "source_id": "S048",
+  "source_type": "organization_site",
+  "title": "Veterans for Peace Okinawa / Ryukyu chapter",
+  "year": "2024",
+  "url": "inferred_url:vfp_okinawa",
+  "what_it_supports": "VFP activities in Okinawa",
+  "evidence_level": "E3",
+  "bias_note": "Organization framing; verify chapter status",
+  "review_status": "needs_second_source",
+  "notes": "URL placeholder; verify chapter existence.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S048\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:42.698727+00:00",
+  "note": ""
+}

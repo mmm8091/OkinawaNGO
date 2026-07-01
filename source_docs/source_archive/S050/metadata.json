@@ -1,0 +1,27 @@
+{
+  "source_id": "S050",
+  "source_type": "encyclopedia",
+  "title": "ヘリ基地反対協議会 Wikipedia",
+  "year": "2026",
+  "url": "https://ja.wikipedia.org/wiki/ヘリ基地反対協議会",
+  "what_it_supports": "Organization history and structure; est. 1998; co-representatives",
+  "evidence_level": "E3",
+  "bias_note": "Wikipedia secondary source; cross-check with primary",
+  "review_status": "verified",
+  "notes": "Confirms founding from 名護市民投票推進協議会.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S050\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S050\\metadata.json",
+  "sha256": "c31d9fa159afba3ef1c91931544ddc163c3312a9caf55466d3440610d8f5b347",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:46.039980+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ja.wikipedia.org/wiki/%E3%83%98%E3%83%AA%E5%9F%BA%E5%9C%B0%E5%8F%8D%E5%AF%BE%E5%8D%94%E8%AD%B0%E4%BC%9A",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "256923",
+    "last_modified": "Sun, 28 Jun 2026 18:37:20 GMT"
+  }
+}

@@ -70,13 +70,15 @@
 - [ ] 继续扩充 actor registry 到 120-150 条。
 - [ ] 完成 P2 条目人工复核。
 - [ ] 根据复核结果更新 evidence_level 和可发布措辞。
+- [x] 建立信息源本地备份机制并完成第一轮归档（28 archived / 1 failed / 25 inferred / 2 non-url）。
+- [ ] 处理 S007 手工归档，并核实 `inferred_url` 占位符来源。
 
 阶段 D：分析、可视化与进度沟通。
 
 - [x] 生成第一次进度沟通图表（outputs/progress_sync_v0/）。
-- [x] 起草第一版进度沟通稿（docs/progress_report_v1.md）。
-- [ ] 更新可视化图表以反映扩充后的数据。
-- [ ] 根据人工复核结果修订沟通稿。
+- [x] 起草第一版内部进度稿（docs/progress_report_v1.md；暂不交付）。
+- [ ] 生成解释性图表包：组织-议题网络、地点-议题矩阵、国际化路径图、共同行动样本网络。
+- [ ] 根据解释性图表和人工复核结果修订正式沟通稿。
 - [ ] 准备组织-议题矩阵和组织-地点矩阵分析。
 
 ## 文件索引
@@ -87,6 +89,8 @@
 - `docs/human_decision_tasks_v0.md`
 - `docs/progress_sync_assets_v0.md`
 - `docs/progress_report_v1.md`
+- `docs/source_archive_protocol_v0.md`
+- `docs/p1_review_prompt_v0.md`
 - `data/metadata/coding_schema_v0.md`
 - `data/interim/01_actor_registry_initial_v0.csv`
 - `data/interim/03_issue_taxonomy_v0.csv`
@@ -107,8 +111,9 @@
 - issue taxonomy：19 个一级议题。
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
-- 第一版进度沟通稿已完成。
+- 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成第一轮 P1 web 核实：AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票。
+- 信息源备份已开始执行：28 条已归档，S007 需手工归档，25 条 `inferred_url` 占位符等待核实。
 
 ## 任务索引
 
@@ -121,7 +126,7 @@
 
 当前当地补查优先级：与那国早期反部署组织、军属配偶俱乐部慈善 recipient、外务省 / JICA / ONC 关系链。
 
-当前人类决策状态：HD-001 至 HD-006 已决策完成；第一次沟通稿采用保守口径，不急派当地协作者。
+当前人类决策状态：HD-001 至 HD-008 已决策完成；下一次沟通采用普通 / 保守口径，但必须先完成解释性图表包；暂不急派当地协作者。
 
 ## 问题抛出机制
 
@@ -137,8 +142,8 @@
 
 ## 下一步
 
-1. 对 P1 条目进行第一轮人工复核。
-2. 补充来源日志中 URL 占位符条目。
-3. 继续扩充 actor registry 到 120 条以上。
-4. 更新可视化图表。
-5. 整理当地材料收集需求。
+1. 生成解释性图表包，先验证图件叙事，再补量。
+2. 对剩余 P1 条目进行人工复核。
+3. 备份已确认 URL，并补充来源日志中 URL 占位符条目。
+4. 继续扩充 actor registry 到 120 条以上。
+5. 整理可确定的当地材料收集任务，写入下一次沟通稿。

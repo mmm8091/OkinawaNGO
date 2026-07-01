@@ -1,0 +1,20 @@
+{
+  "source_id": "S028",
+  "source_type": "local_news",
+  "title": "高江ヘリパッド建設 住民らが抗議",
+  "year": "2016",
+  "url": "inferred_url:ryukyushimpo_takae_2016",
+  "what_it_supports": "Takae helipad construction and civilian protest",
+  "evidence_level": "E3",
+  "bias_note": "News source; multiple incidents covered",
+  "review_status": "ai_seeded",
+  "notes": "Core Northern Training Area / Yanbaru issue.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S028\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:36.681962+00:00",
+  "note": ""
+}

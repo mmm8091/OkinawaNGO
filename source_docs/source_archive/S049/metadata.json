@@ -1,0 +1,27 @@
+{
+  "source_id": "S049",
+  "source_type": "organization_site",
+  "title": "ヘリ基地反対協議会 公式サイト",
+  "year": "2026",
+  "url": "https://lovehenoko.org/",
+  "what_it_supports": "Henoko anti-base coordination; sit-in since 2004; co-reps verified",
+  "evidence_level": "E4",
+  "bias_note": "Primary organization source",
+  "review_status": "verified",
+  "notes": "Full name: 海上ヘリ基地建設反対・平和と名護市政民主化を求める協議会.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S049\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S049\\metadata.json",
+  "sha256": "dd127499ed5c4c297a5e237addaaf89030eea05f238eb70e4ba999e686534a8c",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:42.699730+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://lovehenoko.org/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

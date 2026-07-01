@@ -1,0 +1,27 @@
+{
+  "source_id": "S003",
+  "source_type": "ngo_statement",
+  "title": "67団体がジュゴンの生息地辺野古への基地建設反対に共同声明",
+  "year": "2010",
+  "url": "https://www.wwf.or.jp/activities/statement/3436.html",
+  "what_it_supports": "alliance network; environment-base linkage",
+  "evidence_level": "E4",
+  "bias_note": "Signatory list does not prove stable alliance",
+  "review_status": "ai_seeded",
+  "notes": "Use for coalition seed.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S003\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S003\\metadata.json",
+  "sha256": "a59c6b4b58e449879a33b99bd5558f466f69ac6556a67f876e532ad0efa11fef",
+  "content_type": "text/html;charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:06.680530+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.wwf.or.jp/activities/statement/3436.html",
+    "status_code": "200",
+    "content_type": "text/html;charset=utf-8",
+    "content_length": "65766",
+    "last_modified": ""
+  }
+}

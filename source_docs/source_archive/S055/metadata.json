@@ -1,0 +1,27 @@
+{
+  "source_id": "S055",
+  "source_type": "organization_site",
+  "title": "NOSCO AWWA page",
+  "year": "2026",
+  "url": "https://nosco.wildapricot.org/awwa",
+  "what_it_supports": "AWWA umbrella structure and member clubs",
+  "evidence_level": "E4",
+  "bias_note": "NOSCO official page",
+  "review_status": "verified",
+  "notes": "Confirms AWWA as umbrella of 5 spouse clubs.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S055\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S055\\metadata.json",
+  "sha256": "c546c8b344564bcf15d48875439c4fe8cb015adaac5dd66eb4223b7d1aec9a4a",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:54.536876+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://nosco.wildapricot.org/awwa",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "28539",
+    "last_modified": ""
+  }
+}

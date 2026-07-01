@@ -1,0 +1,20 @@
+{
+  "source_id": "S020",
+  "source_type": "local_news",
+  "title": "宮古島 陸自駐屯地予定地 地下水汚染懸念",
+  "year": "2018",
+  "url": "inferred_url:ryukyushimpo_miyako_water_2018",
+  "what_it_supports": "Miyako groundwater concerns near JSDF deployment site",
+  "evidence_level": "E3",
+  "bias_note": "News source; exact URL needs verification",
+  "review_status": "ai_seeded",
+  "notes": "Referenced by A012. URL placeholder; verify.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S020\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:35.375378+00:00",
+  "note": ""
+}

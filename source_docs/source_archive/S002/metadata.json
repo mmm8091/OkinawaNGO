@@ -1,0 +1,27 @@
+{
+  "source_id": "S002",
+  "source_type": "official_data",
+  "title": "令和６年度 NPO等との協働実績調査",
+  "year": "2026",
+  "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/004/917/2r6hp.pdf",
+  "what_it_supports": "administrative collaboration/resource-channel module",
+  "evidence_level": "E4",
+  "bias_note": "Administrative collaboration bias; may miss contentious groups",
+  "review_status": "ai_seeded",
+  "notes": "Good for R8 background.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S002\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S002\\metadata.json",
+  "sha256": "0f79e9bdb9b17de31aa42179a1d072824ca47d4d5f4a2763ce5dbb8b7285d247",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:04.369585+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/004/917/2r6hp.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "590648",
+    "last_modified": "Tue, 09 Sep 2025 02:57:41 GMT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S001",
+  "source_type": "official_portal",
+  "title": "沖縄県NPOプラザ",
+  "year": "2026",
+  "url": "https://www.pref.okinawa.jp/kurashikankyo/katsudo/1004889/1004890.html",
+  "what_it_supports": "official NPO information entry point",
+  "evidence_level": "E4",
+  "bias_note": "NPO/legal-status bias; movement groups undercovered",
+  "review_status": "ai_seeded",
+  "notes": "Use for legal-status layer.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S001\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S001\\metadata.json",
+  "sha256": "99a712b37f83e245b1538b4841d4fd04161dc8d3a2c9e115c799823f2743be5a",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:02.831690+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kurashikankyo/katsudo/1004889/1004890.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "",
+    "last_modified": "Wed, 01 Jul 2026 07:14:23 GMT"
+  }
+}

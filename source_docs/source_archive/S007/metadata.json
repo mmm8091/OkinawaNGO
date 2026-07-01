@@ -1,0 +1,20 @@
+{
+  "source_id": "S007",
+  "source_type": "academic_article",
+  "title": "The Plight of the Okinawa Dugong",
+  "year": "2020",
+  "url": "https://apjjf.org/2020/16/yoshikawaoejp",
+  "what_it_supports": "OEJP; 71 groups; civil society report",
+  "evidence_level": "E3",
+  "bias_note": "Interpretive article; verify actor details where possible",
+  "review_status": "ai_seeded",
+  "notes": "Useful narrative source.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S007\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:12.992316+00:00",
+  "note": "HTTPError 403: Forbidden"
+}

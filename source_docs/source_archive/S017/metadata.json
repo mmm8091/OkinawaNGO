@@ -1,0 +1,27 @@
+{
+  "source_id": "S017",
+  "source_type": "local_news",
+  "title": "石垣陸自配備 市民が工事中止要請",
+  "year": "2020",
+  "url": "https://ryukyushimpo.jp/news/entry-1176922.html",
+  "what_it_supports": "Ishigaki environment/life-safety frame",
+  "evidence_level": "E3",
+  "bias_note": "News source; not full campaign archive",
+  "review_status": "ai_seeded",
+  "notes": "Groundwater/ecosystem/targetization.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S017\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S017\\metadata.json",
+  "sha256": "c530a8dd389f39afb0ca7f10ad9f6d0840534a688aab29b871f09f670d89f1c5",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:34.212714+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-1176922.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Wed, 01 Jul 2026 07:49:00 GMT"
+  }
+}

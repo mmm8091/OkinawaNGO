@@ -1,0 +1,20 @@
+{
+  "source_id": "S046",
+  "source_type": "ngo_statement",
+  "title": "NACSJ 辺野古・大浦湾の生物多様性報告",
+  "year": "2014",
+  "url": "inferred_url:nacsj_oura_bay_biodiversity_2014",
+  "what_it_supports": "NACSJ scientific survey report on Oura Bay biodiversity",
+  "evidence_level": "E4",
+  "bias_note": "Scientific NGO report",
+  "review_status": "ai_seeded",
+  "notes": "Core environmental evidence.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S046\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:42.697723+00:00",
+  "note": ""
+}

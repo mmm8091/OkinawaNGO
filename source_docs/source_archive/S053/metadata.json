@@ -1,0 +1,27 @@
+{
+  "source_id": "S053",
+  "source_type": "news",
+  "title": "OESC donates $3250 to USO Okinawa",
+  "year": "2025",
+  "url": "https://okinawa.stripes.com/community-news/okinawa-enlisted-spouses-club-uso-okinawa.html",
+  "what_it_supports": "OESC charitable donation to USO confirmed",
+  "evidence_level": "E4",
+  "bias_note": "Stripes Okinawa; amount and date specified",
+  "review_status": "verified",
+  "notes": "Dec 2025 donation.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S053\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S053\\metadata.json",
+  "sha256": "5bf193db3fe2c0d92ebbc7150a433177efa2add20710dac24d75539f18f9b6bc",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:51.543049+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://okinawa.stripes.com/community-news/okinawa-enlisted-spouses-club-uso-okinawa.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "109182",
+    "last_modified": "Fri, 12 Dec 2025 04:23:07 GMT"
+  }
+}

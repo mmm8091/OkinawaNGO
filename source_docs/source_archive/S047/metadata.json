@@ -1,0 +1,20 @@
+{
+  "source_id": "S047",
+  "source_type": "official_data",
+  "title": "沖縄防衛局 辺野古新基地建設事業 環境影響評価書",
+  "year": "2012",
+  "url": "inferred_url:okinawa_defense_bureau_eia_2012",
+  "what_it_supports": "Henoko base EIA official document",
+  "evidence_level": "E4",
+  "bias_note": "Official defense document; controversial methodology",
+  "review_status": "ai_seeded",
+  "notes": "Government EIA; contested by NGOs.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S047\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:42.698727+00:00",
+  "note": ""
+}

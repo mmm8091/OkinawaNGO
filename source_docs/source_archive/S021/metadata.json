@@ -1,0 +1,20 @@
+{
+  "source_id": "S021",
+  "source_type": "local_news",
+  "title": "ミサイル基地いらない 宮古島住民連絡会 結成集会",
+  "year": "2016",
+  "url": "inferred_url:okinawatimes_miyako_missile_2016",
+  "what_it_supports": "Miyako anti-missile citizen network formation",
+  "evidence_level": "E3",
+  "bias_note": "News source; exact URL needs verification",
+  "review_status": "ai_seeded",
+  "notes": "Referenced by A013. URL placeholder; verify.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S021\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:35.375891+00:00",
+  "note": ""
+}

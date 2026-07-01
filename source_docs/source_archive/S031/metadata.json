@@ -1,0 +1,20 @@
+{
+  "source_id": "S031",
+  "source_type": "organization_site",
+  "title": "沖縄平和運動センター 公式",
+  "year": "2026",
+  "url": "inferred_url:peace_okinawa_center",
+  "what_it_supports": "Okinawa Peace Movement Center organization info",
+  "evidence_level": "E3",
+  "bias_note": "Organization self-description; verify structure",
+  "review_status": "ai_seeded",
+  "notes": "URL placeholder; verify.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S031\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:36.683980+00:00",
+  "note": ""
+}

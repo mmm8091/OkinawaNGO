@@ -1,0 +1,20 @@
+{
+  "source_id": "S027",
+  "source_type": "court_record",
+  "title": "普天間爆音訴訟 第二次 那覇地裁判決概要",
+  "year": "2020",
+  "url": "inferred_url:courts_go_jp_futenma_2020",
+  "what_it_supports": "Futenma noise litigation second-round ruling",
+  "evidence_level": "E4",
+  "bias_note": "Court document; authoritative",
+  "review_status": "ai_seeded",
+  "notes": "URL placeholder; verify exact ruling URL.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S027\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:36.680958+00:00",
+  "note": ""
+}

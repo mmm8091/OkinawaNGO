@@ -1,0 +1,20 @@
+{
+  "source_id": "S029",
+  "source_type": "local_news",
+  "title": "島ぐるみ会議 辺野古新基地反対で連帯",
+  "year": "2015",
+  "url": "inferred_url:okinawatimes_shimagurumi_2015",
+  "what_it_supports": "All-island conference formation and activities",
+  "evidence_level": "E3",
+  "bias_note": "News source; actor details need follow-up",
+  "review_status": "ai_seeded",
+  "notes": "Municipal-level anti-base coordination.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S029\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:36.682977+00:00",
+  "note": ""
+}

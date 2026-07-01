@@ -1,0 +1,27 @@
+{
+  "source_id": "S035",
+  "source_type": "official_portal",
+  "title": "内閣府NPO法人ポータル",
+  "year": "2026",
+  "url": "https://www.npo-homepage.go.jp/",
+  "what_it_supports": "NPO legal status verification portal",
+  "evidence_level": "E4",
+  "bias_note": "Official government database",
+  "review_status": "ai_seeded",
+  "notes": "Use for NPO verification.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S035\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S035\\metadata.json",
+  "sha256": "1658104d650726dd167047c96b7e108c46ce600889ed900d5a555fccbd297795",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T07:52:39.684926+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-homepage.go.jp/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

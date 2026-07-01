@@ -1,0 +1,20 @@
+{
+  "source_id": "S030",
+  "source_type": "local_news",
+  "title": "泡瀬干潟埋め立て 住民訴訟",
+  "year": "2009",
+  "url": "inferred_url:ryukyushimpo_awase_2009",
+  "what_it_supports": "Awase tidal flat reclamation and litigation",
+  "evidence_level": "E3",
+  "bias_note": "News source; legal case details",
+  "review_status": "ai_seeded",
+  "notes": "Environmental litigation case.",
+  "archive_status": "skipped_inferred_url",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S030\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T07:52:36.682977+00:00",
+  "note": ""
+}
