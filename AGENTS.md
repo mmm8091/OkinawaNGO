@@ -66,7 +66,7 @@ Updated: 2026-07-02.
 - MT-005: in progress; named AWWA recipient edges F028–F030 added (E3, DVIDS-sourced); full recipient table still needs Form 990 / annual reports.
 - MT-006: basically done; ONC placed in the international-cooperation/multicultural admin layer (MOFA consultant, prefecture/city commissions, JICA festival), separate from the anti-base movement; F019 downgraded.
 - MT-008: basically done; `actor_relation_events_v1.csv` event-aware side table (54 rows, 9 events, 5 action types).
-- MT-004: pending; Yonaguni A014/A015 local evidence pack.
+- MT-004: online pass done; 2015 Yonaguni referendum context corroborated by mainstream RS/OT/QAB, A015 kept E2 (no non-party source online); org-level identity still needs Yaeyama local retrieval (LR Tier 2).
 - MT-005: pending; AWWA / spouse clubs charity recipient evidence.
 - MT-006: pending; ONC / JICA / MOFA relationship chain.
 - MT-007: pending; dugong lawsuit plaintiff mapping.
