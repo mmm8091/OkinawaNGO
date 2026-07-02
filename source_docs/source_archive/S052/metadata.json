@@ -12,10 +12,10 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S052\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S052\\metadata.json",
-  "sha256": "fc1ed826fff53f6d0ef4567afa86f95772adb7a9729ce77d152e8315686d6411",
+  "sha256": "0a4c1bead5e11c86ea9990c7a3d0cc71a67c11f1ad2c981241f78db78e55fe62",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T18:19:18.828953+00:00",
+  "archived_at_utc": "2026-07-02T18:58:00.071799+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://isobanokai.ti-da.net/",

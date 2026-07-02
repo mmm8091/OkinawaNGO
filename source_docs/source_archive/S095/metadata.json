@@ -1,0 +1,27 @@
+{
+  "source_id": "S095",
+  "source_type": "organization_site",
+  "title": "特定非営利活動法人 沖縄NGOセンター（ONC）公式サイト",
+  "year": "2026",
+  "url": "https://www.oki-ngo.org/",
+  "what_it_supports": "MT-006 ONC identity and administrative role: MOFA NGO consultant; Okinawa Prefecture multicultural project; Okinawa City commission; JICA Okinawa festival",
+  "evidence_level": "E4",
+  "bias_note": "Primary organization site",
+  "review_status": "ai_seeded",
+  "notes": "MT-006 source; ONC is an international-cooperation/multicultural-coexistence NGO (founded 1999 as council; NPO 2008); states NGO consultant role and prefecture/city commissioned work.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S095\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S095\\metadata.json",
+  "sha256": "156dc15fa0df1ff1ed0b80485b45c0f6d11e37a49daf81b21321060efd98cadf",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-02T18:59:13.856255+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.oki-ngo.org/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

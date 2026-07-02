@@ -12,10 +12,10 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S012\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S012\\metadata.json",
-  "sha256": "a2d576c122e7f79e2b2b07f388e9dc84e991089cd2accab3a1fd012af3498d86",
+  "sha256": "0bc3940dcfb11cc9b04679024dd30bb54e9a09e0451720fb73b6294aab31079b",
   "content_type": "text/html",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T18:17:58.877750+00:00",
+  "archived_at_utc": "2026-07-02T18:56:42.967691+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.mod.go.jp/gsdf/station/wa/yonaguni/",

@@ -28,13 +28,13 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 Updated: 2026-07-02.
 
 - Actor registry: 103 actors (MT-001 Tier A added A077–A085 E2 signatory-only; MT-007 added A086 Turtle Island Restoration Network).
-- Source log: 94 sources, currently 91 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references.
+- Source log: 96 sources, currently 93 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references.
 - Actor-issue candidate edges: 180.
 - Actor-place candidate edges: 124.
-- Funding/support sample edges: 30 (MT-005 added named AWWA recipient edges F028–F030).
+- Funding/support sample edges: 33 (MT-005 AWWA recipients F028–F030; MT-006 ONC admin edges F031–F033).
 - Issue taxonomy: 19 issue categories.
 - Place registry: 20 place/field nodes.
-- Source archive: 89 `archived`, 2 `manual_archived`, 1 `skipped_inferred_url` (S020), 2 `skipped_non_url_reference` (0 failed on last clean run; transient SSL failures recover on re-run).
+- Source archive: 90 `archived`, 2 `manual_archived`, 1 `failed` (S096 MOFA 403, not bot-archivable), 1 `skipped_inferred_url` (S020), 2 `skipped_non_url_reference` (transient SSL failures on other hosts recover on re-run).
 
 ## Current Deliverables
 
@@ -64,6 +64,8 @@ Updated: 2026-07-02.
 - MT-003: basically done; 24 of 25 placeholders resolved to verified URLs; only S020 remains as a local-retrieval gap.
 - MT-007: basically done; `lawsuit_actor_role_table_v0.csv` maps Okinawa Dugong v. Rumsfeld parties (A076 named plaintiff; A002/A019 non-parties; JELF plaintiff; Earthjustice counsel; Turtle Island Restoration Network the only plaintiff still outside the registry).
 - MT-005: in progress; named AWWA recipient edges F028–F030 added (E3, DVIDS-sourced); full recipient table still needs Form 990 / annual reports.
+- MT-006: basically done; ONC placed in the international-cooperation/multicultural admin layer (MOFA consultant, prefecture/city commissions, JICA festival), separate from the anti-base movement; F019 downgraded.
+- MT-008: basically done; `actor_relation_events_v1.csv` event-aware side table (54 rows, 9 events, 5 action types).
 - MT-004: pending; Yonaguni A014/A015 local evidence pack.
 - MT-005: pending; AWWA / spouse clubs charity recipient evidence.
 - MT-006: pending; ONC / JICA / MOFA relationship chain.

@@ -36,10 +36,10 @@ Current initial data lives under `data/interim/`. Updated 2026-07-02.
 - `02_actor_aliases_initial_v0.csv` — 14 aliases
 - `03_issue_taxonomy_v0.csv` — 19 issues
 - `04_place_registry_v0.csv` — 20 places
-- `05_source_log_initial_v0.csv` — 94 sources, currently 91 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
+- `05_source_log_initial_v0.csv` — 96 sources, currently 93 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
 - `07_actor_issue_edges_initial_v0.csv` — 180 edges
 - `08_actor_place_edges_initial_v0.csv` — 124 edges
-- `15_funding_or_support_edges_sample_v0.csv` — 30 edges (MT-005 added named AWWA recipient edges F028–F030)
+- `15_funding_or_support_edges_sample_v0.csv` — 33 edges (MT-005 AWWA recipients F028–F030; MT-006 ONC admin edges F031–F033)
 
 Generated progress-sync charts live under `outputs/progress_sync_v0/` and `outputs/progress_sync_v1/`.
 
@@ -49,11 +49,12 @@ Current module deliverables live under `outputs/module_completion_v0/`.
 
 Source archive status:
 
-- 89 `archived`
+- 90 `archived`
 - 2 `manual_archived`
+- 1 `failed` (S096 MOFA page returns HTTP 403 to the bot; public URL, not bot-archivable)
 - 1 `skipped_inferred_url` (S020)
 - 2 `skipped_non_url_reference`
-- (0 pending/failed on last clean run; occasional transient SSL failures recover on re-run)
+- (occasional transient SSL failures on other hosts recover on re-run)
 
 Current MT status:
 
@@ -62,6 +63,8 @@ Current MT status:
 - MT-003: basically done; 24 of 25 placeholders resolved to verified URLs (year fixes on S027/S030/S037/S040); only S020 (Miyako groundwater) remains as a local-retrieval gap.
 - MT-007: basically done; `lawsuit_actor_role_table_v0.csv` maps the Okinawa Dugong v. Rumsfeld parties — A076 confirmed named plaintiff, A002/A019 non-parties, JELF plaintiff, Earthjustice counsel; Turtle Island Restoration Network is the only named plaintiff still outside the registry.
 - MT-005: in progress; named AWWA recipient edges added (F028–F030: Yomitan Quegoen, Uruma Social Welfare, Boy Scouts Far East; E3, DVIDS-sourced); full annual recipient table still needs Form 990 / annual reports. See `MT005_awwa_recipient_note.md`.
+- MT-006: basically done; ONC placed in the international-cooperation/multicultural admin layer (MOFA NGO consultant F031, prefecture/city commissions F032–F033, JICA festival F011), separate from the anti-base movement; F019 (ONC–base-affairs) downgraded. See `MT006_onc_admin_chain_note.md`.
+- MT-008: basically done; `actor_relation_events_v1.csv` (54 rows, 9 events) adds event_id/action_type/relation_strength as an event-aware side table. See `MT008_edge_enrichment_note.md`.
 
 ## Agent Skills
 

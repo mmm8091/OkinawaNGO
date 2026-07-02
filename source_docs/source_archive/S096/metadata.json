@@ -1,0 +1,20 @@
+{
+  "source_id": "S096",
+  "source_type": "official_portal",
+  "title": "外務省 NGO相談員リスト 令和7年度",
+  "year": "2025",
+  "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/about/shimin/pagew_000001_00002.html",
+  "what_it_supports": "MT-006 MOFA NGO consultant program listing (ONC is a designated consultant)",
+  "evidence_level": "E4",
+  "bias_note": "Official MOFA ODA citizen-participation list; bot got HTTP 403 but list is public and ONC site confirms the role",
+  "review_status": "ai_seeded",
+  "notes": "MT-006 source; MOFA-designated NGO consultant is a commissioned advisory role; amount/contract details not verified.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S096\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-02T18:59:16.311777+00:00",
+  "note": "HTTPError 403: Forbidden"
+}

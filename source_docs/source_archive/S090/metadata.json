@@ -12,10 +12,10 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S090\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S090\\metadata.json",
-  "sha256": "5a86f6c3704275729ee5bd02a44d1bc7ba664decd5fe32ea9c3d5928b89a1436",
+  "sha256": "99e4318718c95b2abcef6b852f0f6349ce00479c1bf7e27fabff312cd8926daf",
   "content_type": "text/html",
   "http_status": "202",
-  "archived_at_utc": "2026-07-02T18:20:31.999968+00:00",
+  "archived_at_utc": "2026-07-02T18:59:06.871031+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.foei.org/member-groups/nepal/",
