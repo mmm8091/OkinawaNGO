@@ -9,12 +9,19 @@
   "bias_note": "Official IUCN member directory",
   "review_status": "human_verified",
   "notes": "HR-009 source; confirms Pro Natura and FoE Switzerland as same member identity.",
-  "archive_status": "failed",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S091\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S091\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T19:56:56.060630+00:00",
-  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+  "sha256": "1db43df0d1c3aefad4ff5fd7dd95ef75be1c97f0a6614fc4ad17aa0a61955f09",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T20:55:53.227747+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://iucn.org/our-union/members/iucn-members/pro-natura-friends-earth-switzerland",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Wed, 01 Jul 2026 20:55:54 GMT"
+  }
 }

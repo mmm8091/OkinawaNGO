@@ -21,7 +21,7 @@ R14 已达到 `audit_v0`：已有 source archive manifest、HR review log、next
 - actor / needs_local_retrieval: 2
 - actor / needs_second_source: 23
 - actor / watchlist_only: 2
-- source / skipped_inferred_url: 14
+- source / skipped_inferred_url: 1
 - source / skipped_non_url_reference: 2
 
 ## 必须保留的解释边界

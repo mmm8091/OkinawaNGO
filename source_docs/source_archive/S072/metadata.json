@@ -9,19 +9,12 @@
   "bias_note": "Military public-affairs source; supports structure but not full recipient list",
   "review_status": "human_verified",
   "notes": "HR-005 source; confirms five spouse organizations and coordination role.",
-  "archive_status": "archived",
-  "local_path": "source_docs\\source_archive\\S072\\raw.html",
+  "archive_status": "failed",
+  "local_path": "",
   "metadata_path": "source_docs\\source_archive\\S072\\metadata.json",
-  "sha256": "9076200ca6f0eea1518193d12c75d32bc84bac004cc1bdc495a0a527f8d176ec",
-  "content_type": "text/html; charset=UTF-8",
-  "http_status": "200",
-  "archived_at_utc": "2026-07-01T19:56:14.878619+00:00",
-  "note": "",
-  "response_headers": {
-    "final_url": "https://www.dvidshub.net/news/87854/american-womens-welfare-association-celebrates-40-years",
-    "status_code": "200",
-    "content_type": "text/html; charset=UTF-8",
-    "content_length": "",
-    "last_modified": ""
-  }
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T20:54:39.612601+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
 }

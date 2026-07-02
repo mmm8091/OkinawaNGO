@@ -9,19 +9,12 @@
   "bias_note": "GEOC environmental partnership directory",
   "review_status": "human_verified",
   "notes": "HR-001 confirms 任意団体 and organization details.",
-  "archive_status": "archived",
-  "local_path": "source_docs\\source_archive\\S059\\raw.html",
+  "archive_status": "failed",
+  "local_path": "",
   "metadata_path": "source_docs\\source_archive\\S059\\metadata.json",
-  "sha256": "b14520f3ce2ab7e2860f1eaa625444f91b760af7890d9cb51bf9feaa9fb8f620",
-  "content_type": "text/html; charset=UTF-8",
-  "http_status": "200",
-  "archived_at_utc": "2026-07-01T19:55:58.869625+00:00",
-  "note": "",
-  "response_headers": {
-    "final_url": "https://www.geoc.jp/rashinban/dantai_detail_591.html",
-    "status_code": "200",
-    "content_type": "text/html; charset=UTF-8",
-    "content_length": "",
-    "last_modified": ""
-  }
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-01T20:54:06.514549+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
 }

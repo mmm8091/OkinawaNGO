@@ -1,0 +1,12 @@
+party_name,actor_id,role,side,evidence_level,source_refs,note
+Center for Biological Diversity,A045,named_plaintiff,plaintiff,E4,S060;S062;S093,US NGO co-plaintiff in Okinawa Dugong v Rumsfeld (filed 2003-09-25); case continued as CBD v Esper (9th Cir 2020).
+Turtle Island Restoration Network,,named_plaintiff,plaintiff,E4,S060;S093,US NGO co-plaintiff; NOT yet in actor registry (candidate to add for R10/R11 legal-plaintiff layer).
+日本環境法律家連盟（JELF）,A020,named_plaintiff,plaintiff,E4,S061;S060;S093,JELF is a co-PLAINTIFF here (not counsel); registry role clarified by MT-007.
+ジュゴン保護基金委員会（Save the Dugong Foundation）,A076,named_plaintiff,plaintiff,E4,S060;S061;S063;S093,Confirms A076 named-plaintiff status; distinct from A002 SDCC (resolves HR-001/HR-004 open item).
+Anna Shimabukuro,,named_plaintiff_individual,plaintiff,E4,S060;S093,Individual Okinawan plaintiff; person not an organization.
+東恩納琢磨（Takuma Higashionna）,,named_plaintiff_individual,plaintiff,E4,S060;S093,Individual plaintiff; dugong-network activist associated with A003 ジュゴンネットワーク沖縄 (person-level only; A003 org is not a named plaintiff).
+真喜志好一（Yoshikazu Makishi）,,named_plaintiff_individual,plaintiff,E4,S060;S093,Individual Okinawan plaintiff (architect/activist).
+Earthjustice,A009,legal_counsel,plaintiff_side_counsel,E4,S009;S060;S062,ATTORNEYS / counsel for plaintiffs; NOT a named plaintiff.
+ジュゴン保護キャンペーンセンター（SDCC）,A002,not_plaintiff_advocacy,non_party,E4,S007;S057;S058;S059,Advocacy / campaign org; NOT a named plaintiff; do not code as legal plaintiff (HR-001); distinct from A076.
+ヘリ基地反対協議会,A019,not_plaintiff_onsite_movement,non_party,E3,S049;S050,Henoko on-site movement org; NOT a party to the US suit; its co-rep 東恩納琢磨 is an individual plaintiff but the organization is not (HR-004).
+U.S. Department of Defense (Rumsfeld/Gates/Mattis/Esper),,defendant,defendant,E4,S060;S093,Defendant in the NHPA Section 402 suit over the Henoko/Oura Bay airbase.

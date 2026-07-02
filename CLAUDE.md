@@ -36,7 +36,7 @@ Current initial data lives under `data/interim/`. Updated 2026-07-02.
 - `02_actor_aliases_initial_v0.csv` — 14 aliases
 - `03_issue_taxonomy_v0.csv` — 19 issues
 - `04_place_registry_v0.csv` — 20 places
-- `05_source_log_initial_v0.csv` — 92 sources, currently 89 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
+- `05_source_log_initial_v0.csv` — 93 sources, currently 90 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
 - `07_actor_issue_edges_initial_v0.csv` — 180 edges
 - `08_actor_place_edges_initial_v0.csv` — 124 edges
 - `15_funding_or_support_edges_sample_v0.csv` — 27 edges
@@ -49,9 +49,9 @@ Current module deliverables live under `outputs/module_completion_v0/`.
 
 Source archive status:
 
-- 85 `archived`
+- 84 `archived`
 - 2 `manual_archived`
-- 2 `failed` (transient SSL; recover on re-run)
+- 4 `failed` (transient SSL; raw copies persist, recover on re-run)
 - 1 `skipped_inferred_url` (S020)
 - 2 `skipped_non_url_reference`
 
@@ -60,6 +60,7 @@ Current MT status:
 - MT-001: Tier A 9 actors (A077–A085) added at E2 signatory-only and wired into the 2020 MMC co-action event; Tier B deferred, Tier C signatory-only.
 - MT-002: first full source-archive pass is basically done.
 - MT-003: basically done; 24 of 25 placeholders resolved to verified URLs (year fixes on S027/S030/S037/S040); only S020 (Miyako groundwater) remains as a local-retrieval gap.
+- MT-007: basically done; `lawsuit_actor_role_table_v0.csv` maps the Okinawa Dugong v. Rumsfeld parties — A076 confirmed named plaintiff, A002/A019 non-parties, JELF plaintiff, Earthjustice counsel; Turtle Island Restoration Network is the only named plaintiff still outside the registry.
 
 ## Agent Skills
 

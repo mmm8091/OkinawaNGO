@@ -9,12 +9,19 @@
   "bias_note": "Party-media source; activity confirmation only",
   "review_status": "ai_seeded",
   "notes": "MT-003 resolved (activity): Akahata confirms municipal Shimagurumi meeting and new-base opposition; not Okinawa Times; activity only.",
-  "archive_status": "failed",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S029\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S029\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T19:54:19.865638+00:00",
-  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+  "sha256": "c0c7278f7584f8d8058c43103f4610c7e0343b47613c48bbe7431379fc760622",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T20:53:01.082861+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jcp.or.jp/akahata/aik15/2015-06-29/2015062903_01_1.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "31082",
+    "last_modified": ""
+  }
 }

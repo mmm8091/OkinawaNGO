@@ -119,7 +119,7 @@
 - actor_issue_edges 初版：180 条。
 - actor_place_edges 初版：124 条。
 - actor alias 初版：14 条。
-- source log 初版：92 条（含 89 条真实 URL、1 条占位符 URL(S020)、2 条非 URL 参考）。
+- source log 初版：93 条（含 90 条真实 URL、1 条占位符 URL(S020)、2 条非 URL 参考；S093 为儒艮诉讼一手 court docket）。
 - issue taxonomy：19 个一级议题。
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
@@ -127,7 +127,7 @@
 - 模块完成包 v0：覆盖 R2、R3/R4、R5、R11、R14；含 5 个 brief、模块状态表、共同行动 event/participant 表、2020 MMC 71 团体完整表、下一步模块调查任务表。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
-- 信息源备份机制已跑通：85 条已归档，2 条手工归档，2 条瞬时 SSL 失败（重试恢复），1 条 `inferred_url`(S020) 待当地补查，2 条非 URL 书目参考。
+- 信息源备份机制已跑通：84 条已归档，2 条手工归档，4 条瞬时 SSL 失败（本地副本仍在，重试恢复），1 条 `inferred_url`(S020) 待当地补查，2 条非 URL 书目参考。
 
 ## 任务索引
 
@@ -159,5 +159,6 @@
 1. 第二次进度同步稿已交付（source_docs/current 两份 PDF 并列）；下一轮沟通再议。
 2. MT-001 Tier A 9 条已写入 registry（93→102）并接入 2020 MMC event（R5，2→11）；剩：补 alias（tentative 日文名待核）、二次核实后加议题/地点候选边。B=12 暂缓 / C=31 署名限定。
 3. MT-003 基本完成：24/25 已解决为真实 URL 并归档（年份校正 S027/S030/S037/S040），仅 S020（宫古地下水）留当地补查。
-4. 执行 LR v1 Tier 1 剩余项：T1-A 军属慈善 recipient、T1-B USO 赞助、T1-D/E 线上公开报告，产出 `local_retrieval_tier1_findings_v1`；继续扩 registry 到 120+。
-5. 根据 2020 MMC 71 团体表和 event table 结果生成 R5/R11 的下一版网络图。
+4. MT-007 基本完成：`lawsuit_actor_role_table_v0.csv` 已定案 Okinawa Dugong v. Rumsfeld 各方角色（A076 原告确认、A002/A019 非当事方、JELF 原告、Earthjustice 律师）；剩 Turtle Island Restoration Network 未入表可作候选。
+5. 执行 LR v1 Tier 1 剩余项：T1-A 军属慈善 recipient、T1-B USO 赞助、T1-D/E 线上公开报告，产出 `local_retrieval_tier1_findings_v1`；继续扩 registry 到 120+。
+6. 根据 2020 MMC 71 团体表和 event table 结果生成 R5/R11 的下一版网络图。

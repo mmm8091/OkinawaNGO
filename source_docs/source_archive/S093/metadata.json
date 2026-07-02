@@ -1,0 +1,27 @@
+{
+  "source_id": "S093",
+  "source_type": "court_record",
+  "title": "Okinawa Dugong v Rumsfeld docket USCOURTS-cand-3_03-cv-04350",
+  "year": "2003",
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_03-cv-04350/pdf/USCOURTS-cand-3_03-cv-04350-16.pdf",
+  "what_it_supports": "MT-007 named plaintiffs and defendant in the NHPA dugong suit",
+  "evidence_level": "E4",
+  "bias_note": "Primary US court docket; PDF scanned so caption cross-checked with case briefs and JELF",
+  "review_status": "ai_seeded",
+  "notes": "MT-007 primary source; plaintiffs CBD/TIRN/JELF/Save the Dugong Foundation + 3 individuals; Earthjustice counsel; DoD defendant.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S093\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S093\\metadata.json",
+  "sha256": "9d4e8bedab9016c5284c7c3bdc5c6b734b6d36dac1e7c39734ef18258082e2e3",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-01T20:55:57.463610+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_03-cv-04350/pdf/USCOURTS-cand-3_03-cv-04350-16.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "250482",
+    "last_modified": "Fri, 09 Apr 2021 09:14:00 GMT"
+  }
+}

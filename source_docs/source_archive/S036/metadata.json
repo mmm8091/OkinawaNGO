@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S036\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S036\\metadata.json",
-  "sha256": "a086027895789ecd823ca7ba983aca48979f521e06b1ad8c9bf6bf3cf51be31d",
+  "sha256": "fd12a559f0fa62df58bb67b608e107520697ecb7f19ecc6b938465ce4be294b4",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T19:54:50.179691+00:00",
+  "archived_at_utc": "2026-07-01T20:53:06.797548+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://ryukyushimpo.jp/news/entry-452562.html",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
     "content_length": "",
-    "last_modified": "Wed, 01 Jul 2026 19:54:55 GMT"
+    "last_modified": "Wed, 01 Jul 2026 20:53:07 GMT"
   }
 }
