@@ -32,7 +32,7 @@ For general multi-agent instructions, read `AGENTS.md` first. This file mirrors 
 
 Current initial data lives under `data/interim/`. Updated 2026-07-02.
 
-- `01_actor_registry_initial_v0.csv` — 102 actors (MT-001 added A077–A085, E2 signatory-only)
+- `01_actor_registry_initial_v0.csv` — 103 actors (MT-001 added A077–A085 E2 signatory-only; MT-007 added A086 Turtle Island Restoration Network)
 - `02_actor_aliases_initial_v0.csv` — 14 aliases
 - `03_issue_taxonomy_v0.csv` — 19 issues
 - `04_place_registry_v0.csv` — 20 places

@@ -27,7 +27,7 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 
 Updated: 2026-07-02.
 
-- Actor registry: 102 actors (MT-001 Tier A added A077–A085, E2 signatory-only, pending verification).
+- Actor registry: 103 actors (MT-001 Tier A added A077–A085 E2 signatory-only; MT-007 added A086 Turtle Island Restoration Network).
 - Source log: 94 sources, currently 91 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references.
 - Actor-issue candidate edges: 180.
 - Actor-place candidate edges: 124.

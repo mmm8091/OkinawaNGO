@@ -114,7 +114,7 @@
 
 ## 当前样本状态
 
-- actor 初版：102 条（HR-001 后新增 A076；HR-005 后新增 X016/X017；MT-001 Tier A 新增 A077–A085 九条，均 E2 signatory-only 待核）。
+- actor 初版：103 条（HR-001 后新增 A076；HR-005 后新增 X016/X017；MT-001 Tier A 新增 A077–A085 九条 E2 signatory-only；MT-007 新增 A086 Turtle Island Restoration Network）。
 - funding/support edge 样本：30 条（MT-005 新增命名 AWWA recipient 边 F028–F030）。
 - actor_issue_edges 初版：180 条。
 - actor_place_edges 初版：124 条。

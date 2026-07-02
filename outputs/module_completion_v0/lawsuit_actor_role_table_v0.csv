@@ -1,6 +1,6 @@
 party_name,actor_id,role,side,evidence_level,source_refs,note
 Center for Biological Diversity,A045,named_plaintiff,plaintiff,E4,S060;S062;S093,US NGO co-plaintiff in Okinawa Dugong v Rumsfeld (filed 2003-09-25); case continued as CBD v Esper (9th Cir 2020).
-Turtle Island Restoration Network,,named_plaintiff,plaintiff,E4,S060;S093,US NGO co-plaintiff; NOT yet in actor registry (candidate to add for R10/R11 legal-plaintiff layer).
+Turtle Island Restoration Network,A086,named_plaintiff,plaintiff,E4,S060;S093,US NGO co-plaintiff; added to actor registry as A086 (MT-007 tie-off).
 日本環境法律家連盟（JELF）,A020,named_plaintiff,plaintiff,E4,S061;S060;S093,JELF is a co-PLAINTIFF here (not counsel); registry role clarified by MT-007.
 ジュゴン保護基金委員会（Save the Dugong Foundation）,A076,named_plaintiff,plaintiff,E4,S060;S061;S063;S093,Confirms A076 named-plaintiff status; distinct from A002 SDCC (resolves HR-001/HR-004 open item).
 Anna Shimabukuro,,named_plaintiff_individual,plaintiff,E4,S060;S093,Individual Okinawan plaintiff; person not an organization.

@@ -1,12 +1,12 @@
 ﻿metric_group,metric,count
-actor_review_status,ai_seeded,62
+actor_review_status,ai_seeded,63
 actor_review_status,needs_second_source,23
 actor_review_status,human_checked,9
 actor_review_status,human_revised,3
 actor_review_status,needs_local_retrieval,2
 actor_review_status,watchlist_only,2
 actor_review_status,verified,1
-actor_evidence_level,E4,65
+actor_evidence_level,E4,66
 actor_evidence_level,E3,24
 actor_evidence_level,E2,13
 source_type,organization_site,17
