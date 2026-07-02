@@ -1,0 +1,27 @@
+{
+  "source_id": "S094",
+  "source_type": "military_news",
+  "title": "AWWA donates wheelchair van to Yomitan Quegoen",
+  "year": "2015",
+  "url": "https://www.dvidshub.net/news/184071/american-womens-welfare-association-donates-van-disabled-okinawan-residents",
+  "what_it_supports": "MT-005 named AWWA recipient: Yomitan Quegoen disability facility received a wheelchair van (2 million yen) 2015-12-02",
+  "evidence_level": "E3",
+  "bias_note": "Military public-affairs source (DVIDS); named in-kind donation not annual recipient table",
+  "review_status": "ai_seeded",
+  "notes": "MT-005 source; supports named recipient edge F028; DVIDS reports the recipient facility and amount.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S094\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S094\\metadata.json",
+  "sha256": "89368451d381453d55fb8486a537dfc405326fee44448adf2ab6b0d9fd791978",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-02T18:20:39.745050+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.dvidshub.net/news/184071/american-womens-welfare-association-donates-van-disabled-okinawan-residents",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

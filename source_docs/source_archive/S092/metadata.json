@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S092\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S092\\metadata.json",
-  "sha256": "8aa727e30b5e63af84576b16c1fc52bd8da34bf5054e212a325ac72083518a0f",
-  "content_type": "text/html; charset=UTF-8",
-  "http_status": "200",
-  "archived_at_utc": "2026-07-01T20:55:54.937076+00:00",
+  "sha256": "b130b2fefd86b0c15394b0be35c5a3dd0df649c189d73e3c92fb6592e8eb4411",
+  "content_type": "text/html",
+  "http_status": "202",
+  "archived_at_utc": "2026-07-02T18:20:35.652615+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.foei.org/member-groups/switzerland/",
-    "status_code": "200",
-    "content_type": "text/html; charset=UTF-8",
-    "content_length": "",
-    "last_modified": "Wed, 01 Jul 2026 13:44:37 GMT"
+    "status_code": "202",
+    "content_type": "text/html",
+    "content_length": "198",
+    "last_modified": ""
   }
 }

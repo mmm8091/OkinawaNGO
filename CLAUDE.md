@@ -36,10 +36,10 @@ Current initial data lives under `data/interim/`. Updated 2026-07-02.
 - `02_actor_aliases_initial_v0.csv` — 14 aliases
 - `03_issue_taxonomy_v0.csv` — 19 issues
 - `04_place_registry_v0.csv` — 20 places
-- `05_source_log_initial_v0.csv` — 93 sources, currently 90 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
+- `05_source_log_initial_v0.csv` — 94 sources, currently 91 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
 - `07_actor_issue_edges_initial_v0.csv` — 180 edges
 - `08_actor_place_edges_initial_v0.csv` — 124 edges
-- `15_funding_or_support_edges_sample_v0.csv` — 27 edges
+- `15_funding_or_support_edges_sample_v0.csv` — 30 edges (MT-005 added named AWWA recipient edges F028–F030)
 
 Generated progress-sync charts live under `outputs/progress_sync_v0/` and `outputs/progress_sync_v1/`.
 
@@ -49,11 +49,11 @@ Current module deliverables live under `outputs/module_completion_v0/`.
 
 Source archive status:
 
-- 84 `archived`
+- 89 `archived`
 - 2 `manual_archived`
-- 4 `failed` (transient SSL; raw copies persist, recover on re-run)
 - 1 `skipped_inferred_url` (S020)
 - 2 `skipped_non_url_reference`
+- (0 pending/failed on last clean run; occasional transient SSL failures recover on re-run)
 
 Current MT status:
 
@@ -61,6 +61,7 @@ Current MT status:
 - MT-002: first full source-archive pass is basically done.
 - MT-003: basically done; 24 of 25 placeholders resolved to verified URLs (year fixes on S027/S030/S037/S040); only S020 (Miyako groundwater) remains as a local-retrieval gap.
 - MT-007: basically done; `lawsuit_actor_role_table_v0.csv` maps the Okinawa Dugong v. Rumsfeld parties — A076 confirmed named plaintiff, A002/A019 non-parties, JELF plaintiff, Earthjustice counsel; Turtle Island Restoration Network is the only named plaintiff still outside the registry.
+- MT-005: in progress; named AWWA recipient edges added (F028–F030: Yomitan Quegoen, Uruma Social Welfare, Boy Scouts Far East; E3, DVIDS-sourced); full annual recipient table still needs Form 990 / annual reports. See `MT005_awwa_recipient_note.md`.
 
 ## Agent Skills
 

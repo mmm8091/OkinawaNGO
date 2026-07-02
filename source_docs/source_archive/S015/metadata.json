@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S015\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S015\\metadata.json",
-  "sha256": "2774cf3723d9822c9e055900926ed51610961812691af4c1b51f7381af66572b",
+  "sha256": "3f7f3979f057cb66b62dd20f6fc1ee55e3fa0e5674044ff7a987ff219ed3df5d",
   "content_type": "text/html",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T20:52:32.661395+00:00",
+  "archived_at_utc": "2026-07-02T18:18:11.796450+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.jcp.or.jp/akahata/aik12/2012-08-31/2012083115_02_1.html",
     "status_code": "200",
     "content_type": "text/html",
-    "content_length": "29754",
+    "content_length": "29714",
     "last_modified": ""
   }
 }

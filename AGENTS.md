@@ -28,13 +28,13 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 Updated: 2026-07-02.
 
 - Actor registry: 102 actors (MT-001 Tier A added A077–A085, E2 signatory-only, pending verification).
-- Source log: 93 sources, currently 90 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references.
+- Source log: 94 sources, currently 91 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references.
 - Actor-issue candidate edges: 180.
 - Actor-place candidate edges: 124.
-- Funding/support sample edges: 27.
+- Funding/support sample edges: 30 (MT-005 added named AWWA recipient edges F028–F030).
 - Issue taxonomy: 19 issue categories.
 - Place registry: 20 place/field nodes.
-- Source archive: 84 `archived`, 2 `manual_archived`, 4 `failed` (transient SSL; raw copies persist, recover on re-run), 1 `skipped_inferred_url`, 2 `skipped_non_url_reference`.
+- Source archive: 89 `archived`, 2 `manual_archived`, 1 `skipped_inferred_url` (S020), 2 `skipped_non_url_reference` (0 failed on last clean run; transient SSL failures recover on re-run).
 
 ## Current Deliverables
 
@@ -63,6 +63,7 @@ Updated: 2026-07-02.
 - MT-002: basically done; first full source-archive pass has 0 pending real URLs.
 - MT-003: basically done; 24 of 25 placeholders resolved to verified URLs; only S020 remains as a local-retrieval gap.
 - MT-007: basically done; `lawsuit_actor_role_table_v0.csv` maps Okinawa Dugong v. Rumsfeld parties (A076 named plaintiff; A002/A019 non-parties; JELF plaintiff; Earthjustice counsel; Turtle Island Restoration Network the only plaintiff still outside the registry).
+- MT-005: in progress; named AWWA recipient edges F028–F030 added (E3, DVIDS-sourced); full recipient table still needs Form 990 / annual reports.
 - MT-004: pending; Yonaguni A014/A015 local evidence pack.
 - MT-005: pending; AWWA / spouse clubs charity recipient evidence.
 - MT-006: pending; ONC / JICA / MOFA relationship chain.

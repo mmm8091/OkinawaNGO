@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S009\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S009\\metadata.json",
-  "sha256": "fd1f2c7e81e04710a5105a664edf30058b7f96be48d0f46d16ce5a420ccaed51",
+  "sha256": "593033de050467ab4c44fb4b165c34472aa9727a5064b9ef2149e6fd8043ba4e",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T20:52:18.979440+00:00",
+  "archived_at_utc": "2026-07-02T18:17:53.256133+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://earthjustice.org/article/fighting-to-protect-the-dugongs-of-japan-s-henoko-bay",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
-    "content_length": "500314",
+    "content_length": "590164",
     "last_modified": ""
   }
 }

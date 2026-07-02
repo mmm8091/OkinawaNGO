@@ -12,10 +12,10 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S089\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S089\\metadata.json",
-  "sha256": "b7f1ccee2eee2687c6fb4f18592d46032bbdacd5e27956e866afb93387737e02",
+  "sha256": "6624f0072a121b7530b80a2aa4f685b33aa58ff6faccb06868dbdeedd6626576",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T20:55:49.589450+00:00",
+  "archived_at_utc": "2026-07-02T18:20:30.161342+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://propublic.org/",

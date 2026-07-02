@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S050\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S050\\metadata.json",
-  "sha256": "07f6241f37a778ac4e54869c117efe5c4f77b794f6aabf06aa0628c5615baac2",
+  "sha256": "c31d9fa159afba3ef1c91931544ddc163c3312a9caf55466d3440610d8f5b347",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-01T20:53:47.595580+00:00",
+  "archived_at_utc": "2026-07-02T18:19:15.004383+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://ja.wikipedia.org/wiki/%E3%83%98%E3%83%AA%E5%9F%BA%E5%9C%B0%E5%8F%8D%E5%AF%BE%E5%8D%94%E8%AD%B0%E4%BC%9A",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
-    "content_length": "256850",
+    "content_length": "256923",
     "last_modified": "Sun, 28 Jun 2026 18:37:20 GMT"
   }
 }

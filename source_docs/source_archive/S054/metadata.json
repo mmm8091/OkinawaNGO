@@ -9,12 +9,19 @@
   "bias_note": "ProPublica public records",
   "review_status": "verified",
   "notes": "EIN 980346507.",
-  "archive_status": "failed",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S054\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S054\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-01T20:53:52.149595+00:00",
-  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+  "sha256": "c4169f26936c468a2c012873cde6dfc7299b17f74b2cdeee85ee2ce73c98679a",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-02T18:19:23.213558+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://projects.propublica.org/nonprofits/organizations/980346507",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "",
+    "last_modified": ""
+  }
 }

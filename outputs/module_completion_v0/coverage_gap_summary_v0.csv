@@ -24,6 +24,7 @@ source_type,local_official,2
 source_type,magazine_news,2
 source_type,encyclopedia,2
 source_type,grant_document,2
+source_type,military_news,2
 source_type,grant_database,2
 source_type,grant_listing,2
 source_type,international_advocacy,1
@@ -33,15 +34,13 @@ source_type,news,1
 source_type,legal_source,1
 source_type,ngo_report,1
 source_type,legal_database,1
-source_type,military_news,1
 source_type,organization_social,1
 source_type,organization_story,1
 source_type,local_news_english,1
 source_type,community_site,1
 source_type,organization_report,1
 source_type,court_record,1
-source_archive_status,archived,84
-source_archive_status,failed,4
+source_archive_status,archived,89
 source_archive_status,manual_archived,2
 source_archive_status,skipped_non_url_reference,2
 source_archive_status,skipped_inferred_url,1
