@@ -161,5 +161,6 @@
 3. MT-003 基本完成：24/25 已解决为真实 URL 并归档（年份校正 S027/S030/S037/S040），仅 S020（宫古地下水）留当地补查。
 4. MT-007 基本完成：`lawsuit_actor_role_table_v0.csv` 已定案 Okinawa Dugong v. Rumsfeld 各方角色（A076 原告确认、A002/A019 非当事方、JELF 原告、Earthjustice 律师）；剩 Turtle Island Restoration Network 未入表可作候选。
 5. MT-005 进行中：已把 AWWA aggregate 落成命名 recipient 边 F028–F030（Yomitan Quegoen / Uruma 社福 / Boy Scouts Far East，E3 DVIDS 源）；剩完整年表需 Form 990 / 年报。见 `MT005_awwa_recipient_note.md`。
-6. 执行 LR v1 Tier 1 剩余项：T1-B USO 赞助、T1-D/E 线上公开报告；继续扩 registry 到 120+。
-7. 根据 2020 MMC 71 团体表和 event table 结果生成 R5/R11 的下一版网络图。
+6. MT-008 基本完成：`actor_relation_events_v1.csv`（54 行 / 9 事件 / 5 action 类型）把 co-action+诉讼+公投统一成事件感知层；schema 增强提案待并入 07/08。见 `MT008_edge_enrichment_note.md`。
+7. 执行 LR v1 Tier 1 剩余项：T1-B USO 赞助、T1-D/E 线上公开报告；MT-006 ONC/JICA/外务省；继续扩 registry 到 120+。
+8. 根据事件感知表生成 R5/R11 的下一版网络图。

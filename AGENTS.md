@@ -76,6 +76,8 @@ Updated: 2026-07-02.
 python scripts\archive_sources.py
 python scripts\make_explanatory_graph_package.py
 python scripts\make_module_completion_package.py
+python scripts\make_relation_events.py
+python scripts\make_formal_comm_package.py
 ```
 
 After source-log or archive changes, rerun the archive script first, then regenerate explanatory and module packages.

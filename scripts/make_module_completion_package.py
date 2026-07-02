@@ -736,12 +736,12 @@ def make_next_tasks() -> None:
             "task_id": "MT-008",
             "module": "R2/R5",
             "priority": "P2",
-            "status": "pending",
+            "status": "basically_done; event-aware side table v1 built, schema proposal pending merge",
             "task": "Add event_id/action_type/relation_strength to relation edges",
-            "input": "actor_issue_edges; actor_place_edges; coaction_events_v0.csv",
-            "output": "edge enrichment proposal or v1 edge tables",
-            "why_it_matters": "Turns static issue tags into event-aware network data.",
-            "done_when": "At least the 2010/2015/2020 samples have event-specific actor roles and relation strength.",
+            "input": "coaction_participants_v0.csv; lawsuit_actor_role_table_v0.csv; referendum spec",
+            "output": "actor_relation_events_v1.csv (54 rows, 9 events, 5 action types) + MT008 note with schema proposal",
+            "why_it_matters": "Turns static issue tags into event-aware network data; separates co-signing, litigation, and referendum roles.",
+            "done_when": "07/08 edge tables get optional event_id/action_type/relation_strength columns once the side table is validated; protest and noise-lawsuit events still to add.",
         },
     ]
     write_csv(
