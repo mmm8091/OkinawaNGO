@@ -28,13 +28,13 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 Updated: 2026-07-02.
 
 - Actor registry: 103 actors (MT-001 Tier A added A077–A085 E2 signatory-only; MT-007 added A086 Turtle Island Restoration Network).
-- Source log: 96 sources, currently 93 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references.
+- Source log: 98 sources, currently 95 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references.
 - Actor-issue candidate edges: 180.
 - Actor-place candidate edges: 124.
-- Funding/support sample edges: 33 (MT-005 AWWA recipients F028–F030; MT-006 ONC admin edges F031–F033).
+- Funding/support sample edges: 35 (MT-005 AWWA F028–F030; MT-006 ONC F031–F033; LR-T1B USO sponsors F034–F035).
 - Issue taxonomy: 19 issue categories.
 - Place registry: 20 place/field nodes.
-- Source archive: 90 `archived`, 2 `manual_archived`, 1 `failed` (S096 MOFA 403, not bot-archivable), 1 `skipped_inferred_url` (S020), 2 `skipped_non_url_reference` (transient SSL failures on other hosts recover on re-run).
+- Source archive: ~91 `archived`, 2 `manual_archived`, S096 a persistent `failed` (MOFA 403, not bot-archivable), 1 `skipped_inferred_url` (S020), 2 `skipped_non_url_reference`. Archived/failed counts flap ±1-2 per run from transient SSL failures (QAB/akahata/IUCN) that recover on re-run.
 
 ## Current Deliverables
 

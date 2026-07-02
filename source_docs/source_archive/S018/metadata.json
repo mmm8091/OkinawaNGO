@@ -9,19 +9,12 @@
   "bias_note": "News source; exact URL needs verification",
   "review_status": "ai_seeded",
   "notes": "MT-003 resolved: QAB article directly reports Ishigaki city council rejection of the referendum ordinance.",
-  "archive_status": "archived",
-  "local_path": "source_docs\\source_archive\\S018\\raw.html",
+  "archive_status": "failed",
+  "local_path": "",
   "metadata_path": "source_docs\\source_archive\\S018\\metadata.json",
-  "sha256": "54731f1119231e7630ad2cd5fe40bce0eb4bddcd9c371a9d959050ce77c71ce6",
-  "content_type": "text/html; charset=UTF-8",
-  "http_status": "200",
-  "archived_at_utc": "2026-07-02T18:57:01.468692+00:00",
-  "note": "",
-  "response_headers": {
-    "final_url": "https://www.qab.co.jp/news/20190202110874.html",
-    "status_code": "200",
-    "content_type": "text/html; charset=UTF-8",
-    "content_length": "",
-    "last_modified": ""
-  }
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-02T19:03:29.383875+00:00",
+  "note": "URLError: _ssl.c:983: The handshake operation timed out"
 }

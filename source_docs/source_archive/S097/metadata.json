@@ -1,0 +1,27 @@
+{
+  "source_id": "S097",
+  "source_type": "organization_site",
+  "title": "USO Okinawa Sponsors page",
+  "year": "2026",
+  "url": "https://okinawa.uso.org/sponsors",
+  "what_it_supports": "LR-T1B USO Okinawa named corporate sponsors and 8 base centers",
+  "evidence_level": "E4",
+  "bias_note": "Primary organization site; sponsor tiers and center list",
+  "review_status": "ai_seeded",
+  "notes": "LR-T1B source; sponsors Matson/UMGC/AIG/MBC(Mediatti)/AEC/Billabong/AK Kogyo/Dominos; 8 centers; serves US military members and families.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S097\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S097\\metadata.json",
+  "sha256": "ddb6ee8f700ec097ea9d151bbe822d2b0a640a2dab20a53f5b9f02e497c069e0",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-02T19:06:08.231479+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://okinawa.uso.org/sponsors",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "32108",
+    "last_modified": ""
+  }
+}

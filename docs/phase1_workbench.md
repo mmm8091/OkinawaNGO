@@ -115,11 +115,11 @@
 ## 当前样本状态
 
 - actor 初版：103 条（HR-001 后新增 A076；HR-005 后新增 X016/X017；MT-001 Tier A 新增 A077–A085 九条 E2 signatory-only；MT-007 新增 A086 Turtle Island Restoration Network）。
-- funding/support edge 样本：33 条（MT-005 AWWA recipient F028–F030；MT-006 ONC 行政协作边 F031–F033）。
+- funding/support edge 样本：35 条（MT-005 AWWA F028–F030；MT-006 ONC F031–F033；LR-T1B USO 赞助 F034–F035，F002 升 E4）。
 - actor_issue_edges 初版：180 条。
 - actor_place_edges 初版：124 条。
 - actor alias 初版：14 条。
-- source log 初版：96 条（含 93 条真实 URL、1 条占位符 URL(S020)、2 条非 URL 参考；S093 court docket、S094 AWWA DVIDS、S095 ONC、S096 外务省相談員名单）。
+- source log 初版：98 条（含 95 条真实 URL、1 条占位符 URL(S020)、2 条非 URL 参考；新增 S093-S098：court docket / AWWA / ONC / 外务省 / USO sponsors / Stripes）。
 - issue taxonomy：19 个一级议题。
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
@@ -127,7 +127,7 @@
 - 模块完成包 v0：覆盖 R2、R3/R4、R5、R11、R14；含 5 个 brief、模块状态表、共同行动 event/participant 表、2020 MMC 71 团体完整表、下一步模块调查任务表。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
-- 信息源备份机制已跑通：90 条已归档，2 条手工归档，1 条 failed(S096 外务省对 bot 返回 403)，1 条 `inferred_url`(S020) 待当地补查，2 条非 URL 书目参考。
+- 信息源备份机制已跑通：约 91 条已归档，2 条手工归档，S096(外务省对 bot 返回 403)持久失败，1 条 `inferred_url`(S020) 待当地补查，2 条非 URL 书目参考；归档/失败数每次跑会因瞬时 SSL(QAB/akahata/IUCN)±1-2，重试恢复。
 
 ## 任务索引
 
@@ -163,5 +163,5 @@
 5. MT-005 进行中：已把 AWWA aggregate 落成命名 recipient 边 F028–F030（Yomitan Quegoen / Uruma 社福 / Boy Scouts Far East，E3 DVIDS 源）；剩完整年表需 Form 990 / 年报。见 `MT005_awwa_recipient_note.md`。
 6. MT-008 基本完成：`actor_relation_events_v1.csv`（54 行 / 9 事件 / 5 action 类型）把 co-action+诉讼+公投统一成事件感知层；schema 增强提案待并入 07/08。见 `MT008_edge_enrichment_note.md`。
 7. MT-006 基本完成：ONC 归入国际协作/多文化共生行政层（外务省相談員 F031、县/市委託 F032-F033、JICA festival F011），与反基地网络分开；F019 下调。见 `MT006_onc_admin_chain_note.md`。
-8. 执行 LR v1 Tier 1 剩余项：T1-B USO 赞助、T1-D/E 线上公开报告；继续扩 registry 到 120+。
+8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。剩 T1-D/E 线上公开报告；继续扩 registry 到 120+。
 9. 根据事件感知表生成 R5/R11 的下一版网络图。

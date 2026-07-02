@@ -36,10 +36,10 @@ Current initial data lives under `data/interim/`. Updated 2026-07-02.
 - `02_actor_aliases_initial_v0.csv` — 14 aliases
 - `03_issue_taxonomy_v0.csv` — 19 issues
 - `04_place_registry_v0.csv` — 20 places
-- `05_source_log_initial_v0.csv` — 96 sources, currently 93 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
+- `05_source_log_initial_v0.csv` — 98 sources, currently 95 real URLs, 1 `inferred_url` placeholder (S020), and 2 non-URL references
 - `07_actor_issue_edges_initial_v0.csv` — 180 edges
 - `08_actor_place_edges_initial_v0.csv` — 124 edges
-- `15_funding_or_support_edges_sample_v0.csv` — 33 edges (MT-005 AWWA recipients F028–F030; MT-006 ONC admin edges F031–F033)
+- `15_funding_or_support_edges_sample_v0.csv` — 35 edges (MT-005 AWWA F028–F030; MT-006 ONC F031–F033; LR-T1B USO sponsors F034–F035, F002 upgraded)
 
 Generated progress-sync charts live under `outputs/progress_sync_v0/` and `outputs/progress_sync_v1/`.
 
@@ -49,12 +49,12 @@ Current module deliverables live under `outputs/module_completion_v0/`.
 
 Source archive status:
 
-- 90 `archived`
+- ~91 `archived`
 - 2 `manual_archived`
-- 1 `failed` (S096 MOFA page returns HTTP 403 to the bot; public URL, not bot-archivable)
+- 1 persistent `failed`: S096 (MOFA page returns HTTP 403 to the bot; public URL, not bot-archivable)
 - 1 `skipped_inferred_url` (S020)
 - 2 `skipped_non_url_reference`
-- (occasional transient SSL failures on other hosts recover on re-run)
+- (the archived/failed counts flap by ±1-2 per run from transient SSL failures on other hosts, e.g. QAB/akahata/IUCN, which recover on re-run)
 
 Current MT status:
 

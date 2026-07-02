@@ -1,0 +1,27 @@
+{
+  "source_id": "S098",
+  "source_type": "news",
+  "title": "AEC $16000 donation and center refresh to USO Okinawa",
+  "year": "2026",
+  "url": "https://okinawa.stripes.com/community-news/american-engineering-corporation-uso-okinawa.html",
+  "what_it_supports": "LR-T1B AEC longstanding USO sponsor with named donation and center projects",
+  "evidence_level": "E4",
+  "bias_note": "Stripes Okinawa; amount and projects specified",
+  "review_status": "ai_seeded",
+  "notes": "LR-T1B source; AEC 52-year partner; built USO Camp Schwab center 2022 and Indo-Pacific office relocation; latest 16000 USD donation.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S098\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S098\\metadata.json",
+  "sha256": "6d9e06be9d00b8448a8fd676aa5ac2f07eb772a45e2eeee0d08399540c81d954",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-02T19:06:09.706748+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://okinawa.stripes.com/community-news/american-engineering-corporation-uso-okinawa.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Tue, 25 Nov 2025 23:14:16 GMT"
+  }
+}
