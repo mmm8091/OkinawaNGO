@@ -120,6 +120,9 @@
 - `docs/phase1_research_report_v0.md`
 - `docs/phase1_scheme_acceptance_audit_v1.md`
 - `outputs/phase1_acceptance_audit_v0/`
+- `outputs/phase1_foundation_v1/`
+- `outputs/registry_expansion_v1/`
+- `outputs/R08_legal_procedure_v0/`
 
 ## 当前样本状态
 
@@ -137,6 +140,7 @@
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
 - 信息源备份机制已跑通：2026-07-12 manifest 为 93 archived、2 manual_archived、5 failed、2 non-URL；S020/S099/S100/S102 已归档，S096/S101 MOFA 页面与若干来源可能失败，归档/失败数会因瞬时网络波动变化。
+- 方案验收后第一批实作：foundation seed（49 evidence / 16 venue / 64 actor-event-venue）、registry 36 候选（首批建议 25，待人工合并）、R8 六案/五渠道/五地点证据包（待 source/role 审核后合并）。
 
 ## 任务索引
 
@@ -175,4 +179,4 @@
 8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。
 9. MT-004 线上 pass 完成：A014 事件语境有主流佐证（RS/OT/QAB）、A015 无非党派源保持 E2；组织级身份仍需与那国当地补查（LR Tier 2）。见 `MT004_yonaguni_online_pass_note.md`。
 10. R5/R11 事件感知图已出：`fig/fig_event_repertoire.png`（集体行动 repertoire 时间线，`make_event_repertoire_fig.py`）。
-11. 下一轮按 P0–P4 推进：schema/lint 与缺表 → 模块驱动 registry 扩样 → R7/R8/R9/R10 等缺口补料 → 指定核心图与各模块解释 → 正式报告/论文/PPT → 精确当地任务。详见方案验收总表。
+11. 下一轮先审核并合并三项候选包：foundation evidence/venue → registry 首批 25 候选 → R8 六案来源/角色；随后推进 R9 公投阶段、R10 行政协作年度表、R4 框架语料和指定核心图。详见方案验收总表。

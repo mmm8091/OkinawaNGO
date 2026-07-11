@@ -1,0 +1,43 @@
+source_candidate_id,title,url,source_type,primary_or_secondary,candidates_supported,accessed_date,why_useful,limitations
+SC001,NPO法人世界版「平和の礎」を提案する会 行政入力情報,https://www.npo-homepage.go.jp/npoportal/gyosei-print/047006834,official_npo_portal,primary,C001,2026-07-12,确认法人名称所在地成立日期目的与法定文件,新设组织持续性仍待后续观察
+SC002,NPO法人信息检索结果：沖縄平和協力センター,https://www.npo-homepage.go.jp/npoportal/list?fiscal_year_end_first=&fiscal_year_end_second=&fiscal_year_start_first=&fiscal_year_start_second=&goc%5B0%5D=000&order=desc&page=260&sort=gov_code,official_npo_portal,primary,C002,2026-07-12,确认法人身份与所在地,需打开个体页和年报核活动
+SC003,沖教組とは,https://www.oki-tu.org/about_us,organization_website,primary,C003,2026-07-12,确认组织构成历史与和平教育,基地议题需另取具体行动页
+SC004,組合について：沖縄県高等学校障害児学校教職員組合,https://www.oki-htu.or.jp/about.php,organization_website,primary,C004,2026-07-12,确认组织与基地和平行进历史,需补具体事件页
+SC005,連合沖縄とは,https://www.rengo-okinawa.jp/about-us/,organization_website,primary,C005,2026-07-12,确认正式名称规模和组织性质,规模为官网自报
+SC006,在日米軍関係者によって繰り返される性的暴行事件に関する抗議・要請,https://www.rengo-okinawa.jp/cat-news/post-2485/,organization_action_record,primary,C005,2026-07-12,确认具体基地人权要请行动,单一行动不能代表全部定位
+SC007,沖縄県労連の紹介,https://okinawakenroren.org/kenrorenshokai.html,organization_website,primary,C006,2026-07-12,确认章程和基地撤去和平目标,需补冲绳具体共同行动
+SC008,自治労沖縄県本部,https://www.jichiro.okinawa/,organization_website,primary,C007,2026-07-12,确认持续和平行进与边野古记录,网站新闻需逐条归档
+SC009,一般社団法人沖縄県女性連合会,https://www.okifuren.com/,organization_website,primary,C008,2026-07-12,确认法律身份成员结构和目的,未直接证明基地议题参与
+SC010,日本YWCA 沖縄专题页,https://www.ywca.or.jp/tag/%E6%B2%96%E7%B8%84/,parent_organization_website,primary,C009,2026-07-12,确认冲绳YWCA持续存在和活动,仍需冲绳YWCA独立身份资料
+SC011,ひめゆり平和祈念財団について,https://www.himeyuri.or.jp/establish/foundation/,organization_website,primary,C010,2026-07-12,确认成立法律身份与教育事业,与基地网络关联需另证
+SC012,公益財団法人おきなわ女性財団,https://www.okinawajosei.org/,public_interest_foundation_website,primary,C011,2026-07-12,事业记录确认女性团体联络协议会持续活动,不是候选组织自有页面
+SC013,沖縄を再び戦場にさせない県民の会発足报道,https://ryukyushimpo.jp/news/entry-1754082.html,local_news,secondary,C012,2026-07-12,确认成立时间目标和全县组织定位,需补组织自有资料或章程
+SC014,沖縄県議会委員会记录：宫古两团体陈情,https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/017/050/inkaihou.compressed.pdf,official_legislative_record,primary,C013;C014,2026-07-12,确认团体名称共同代表和正式陈情,不能单独证明持续年限
+SC015,考える会・郡民の会抗议报道,https://www.miyakomainichi.com/news/post-82976/,local_news,secondary,C013;C015,2026-07-12,确认具名代表共同活动和水/部署框架,需官方或组织第二来源
+SC016,宮古島環境クラブ,https://www.npo-mec.net/,organization_website,primary,C016,2026-07-12,确认任意团体身份项目和地下水保全,需记录成立与代表字段
+SC017,宮古島海の環境ネットワーク,https://econet.jpn.org/,organization_website,primary,C017,2026-07-12,确认NPO及海洋调查教育项目,与军事设施争议连接待核
+SC018,PFAS汚染から市民の生命を守る連絡会について,https://darkwater.okinawa/about/,organization_website,primary,C018,2026-07-12,确认2019成立代表目标和基地来源框架,部分因果表述为组织主张需保留归属
+SC019,沖縄県PFAS健康影响委员会议事概要,https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/026/790/r7_04gijigaiyou.pdf,official_government_record,primary,C018,2026-07-12,政府记录确认团体参与听证,不证明所有因果主张
+SC020,うるま市议会会议录：ミサイル配備から命を守る市民の会,https://www.city.uruma.lg.jp/documents/2778/163164165kaigiroku_2.pdf,official_legislative_record,primary,C019,2026-07-12,确认团体成立与地方议题,会议发言需与组织资料交叉
+SC021,うるま市民の会发足报道,https://ryukyushimpo.jp/news/entry-1623776.html,local_news,secondary,C019,2026-07-12,确认成立集会和参与规模,需补自有网站
+SC022,沖縄・琉球弧の声を届ける会,https://ryukyukohp.jimdofree.com/,organization_website,primary,C020,2026-07-12,确认共同代表多期讲座与跨岛主题,非正式组织法律身份未定
+SC023,全国公害弁護団連絡会議,https://www.kogai-net.com/,organization_website,primary,C021,2026-07-12,确认跨诉讼律师网络组织性质,需提取冲绳案件具体参与
+SC024,全国基地爆音訴訟原告団連絡会議介绍,https://bakuon.org/yonjitop/zenkoku.html,member_organization_website,primary,C022,2026-07-12,确认组织目标和共同政府交涉,由成员原告团托管非独立官网
+SC025,全国基地爆音訴訟原告団連絡会政府要请报道,https://bakuon.org/2026/06/22/2026-06-18%E3%80%80%E5%85%A8%E5%9B%BD%E5%9F%BA%E5%9C%B0%E7%88%86%E9%9F%B3%E8%A8%B4%E8%A8%9F%E5%8E%9F%E5%91%8A%E5%9B%A3%E9%80%A3%E7%B5%A1%E4%BC%9A%E3%81%8C%E5%9B%BD%E4%BC%9A%E4%BA%A4%E6%B8%89/,member_organization_action_record,primary,C022,2026-07-12,列出嘉手纳普天间等参与团体,共同行动不等于稳定联盟
+SC026,第4次嘉手納基地爆音差止訴訟提诉说明,https://ameblo.jp/hibikilaw-staff/entry-12727218527.html,participating_law_firm_record,primary,C023,2026-07-12,确认40名律师组成弁护团及诉求,需正式诉状或弁护团页升级
+SC027,普天間基地爆音訴訟报告,https://www.kogai-net.com/sokai-document/document38/38-200/38-223/,legal_network_report,primary,C024,2026-07-12,确认弁护团主张原告规模和判决,历史阶段需与当前诉讼代际区分
+SC028,日本YWCA辺野古新基地建設声明,https://www.ywca.or.jp/wp-content/uploads/2020/05/0526.pdf,organization_statement,primary,C025,2026-07-12,确认组织身份和边野古立场,单份声明需结合长期活动页
+SC029,第4次嘉手納基地爆音差止訴訟原告団博客,https://ameblo.jp/kadenabakuongenkokudan/,organization_website,primary,C026,2026-07-12,持续记录诉讼和组织活动,需与A052做身份合并判断
+SC030,うるま市设施预约表列第4次嘉手纳原告团,https://www.city.uruma.lg.jp/documents/3796/sigei_yoyaku_05.pdf,official_municipal_record,primary,C026,2026-07-12,2026年仍有原告团总会证明持续性,仅能确认活动存在
+SC031,普天間基地第1次/第2次诉讼法院判决,https://www.courts.go.jp/assets/hanrei/hanrei-pdf-91354.pdf,court_judgment,primary,C027,2026-07-12,确认两个原告团及诉讼区别,不提供完整组织沿革
+SC032,自治労地方自治研究报告：石垣自卫队部署,https://www.jichiro.gr.jp/jichiken_kako/report/rep_tosa37/08/0802_yre/index.htm,union_research_report,secondary,C028,2026-07-12,确认居民会成立和行动背景,需本地一手源核与A010关系
+SC033,NPO Portal：ピースメーカーズネットワーク,https://www.npo-homepage.go.jp/npoportal/list?fiscal_year_end_first=&fiscal_year_end_second=&fiscal_year_start_first=&fiscal_year_start_second=&goc%5B0%5D=000&order=desc&page=259&sort=gov_code,official_npo_portal,primary,C029,2026-07-12,确认法人存在,缺本项目实质连接
+SC034,NPO Portal：環境の未来を考える会,https://www.npo-homepage.go.jp/npoportal/detail/047024571,official_npo_portal,primary,C030,2026-07-12,确认法人所在地目的和多年报告,目的偏资源循环
+SC035,NPO Portal：宮古島自然緑化協会,https://www.npo-homepage.go.jp/npoportal/gyosei-print/047023569,official_npo_portal,primary,C031,2026-07-12,确认法人目的和宫古海岸保全,缺军事争议连接
+SC036,NPO法人美ぎ島MIYAKO,https://www.kagisuma.jp/,organization_website,primary,C032,2026-07-12,确认自然环境和文化活动,需核公共议题行动
+SC037,おきなわ環境クラブ团体概要,https://npo-oec.com/aboutUs/OEC_pamphlet_ver20220804.pdf,organization_report,primary,C033,2026-07-12,确认法人历史人员和项目,缺基地环境直接连接
+SC038,沖縄県サンゴ礁保全推進協議会,https://ocrcc.sakura.ne.jp/index.html,organization_website,primary,C034,2026-07-12,确认跨主体珊瑚保全网络,需区分行政协作与倡议角色
+SC039,辺野古の海を土砂で埋めるな首都圏連絡会,https://henokoumeruna2018.exblog.jp/,organization_website,primary,C035,2026-07-12,持续行动博客证明非一次性署名,正式组织信息较少
+SC040,JAWAN对首都圈联络会行动记录,https://www.jawan.jp/rept/rp2019-j129/4.html,partner_organization_record,primary,C035,2026-07-12,独立伙伴组织记录行动,仅覆盖单次示威
+SC041,辺野古に基地を絶対つくらせない大阪行動,https://blog.livedoor.jp/henoko_osaka/,organization_website,primary,C036,2026-07-12,长期更新和固定行动记录,博客型来源需归档
+SC042,IWJ大阪行动记录,https://iwj.co.jp/wj/open/archives/146582,media_record,secondary,C036,2026-07-12,外部记录2014年固定行动,单场活动不能独立证明全部沿革
