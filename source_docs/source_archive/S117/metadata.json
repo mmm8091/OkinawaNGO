@@ -1,0 +1,20 @@
+{
+  "source_id": "S117",
+  "source_type": "official_government_record",
+  "title": "沖縄県PFAS健康影响委员会议事概要",
+  "year": "2026",
+  "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/026/790/r7_04gijigaiyou.pdf",
+  "what_it_supports": "REG-01 C018: 政府记录确认团体参与听证",
+  "evidence_level": "E4",
+  "bias_note": "不证明所有因果主张",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC019; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S117\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T20:50:37.171691+00:00",
+  "note": "HTTPError 404: Not Found"
+}

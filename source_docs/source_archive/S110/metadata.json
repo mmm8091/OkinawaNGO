@@ -1,0 +1,27 @@
+{
+  "source_id": "S110",
+  "source_type": "organization_site",
+  "title": "自治労沖縄県本部",
+  "year": "2026",
+  "url": "https://www.jichiro.okinawa/",
+  "what_it_supports": "REG-01 C007: 确认持续和平行进与边野古记录",
+  "evidence_level": "E4",
+  "bias_note": "网站新闻需逐条归档",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC008; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S110\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S110\\metadata.json",
+  "sha256": "aaf3890f70f3136e36dbe1edc826de0f2df61f7aaf517ed80694e3fe8adfea2f",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:24.790365+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jichiro.okinawa/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

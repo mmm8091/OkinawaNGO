@@ -1,0 +1,20 @@
+{
+  "source_id": "S119",
+  "source_type": "local_news",
+  "title": "うるま市民の会发足报道",
+  "year": "2026",
+  "url": "https://ryukyushimpo.jp/news/entry-1623776.html",
+  "what_it_supports": "REG-01 C019: 确认成立集会和参与规模",
+  "evidence_level": "E4",
+  "bias_note": "需补自有网站",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC021; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S119\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T20:50:38.981887+00:00",
+  "note": "URLError: _ssl.c:983: The handshake operation timed out"
+}

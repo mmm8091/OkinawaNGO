@@ -1,0 +1,27 @@
+{
+  "source_id": "S136",
+  "source_type": "formal_counsel_material",
+  "title": "「普天間基地爆音訴訟団」のホームページができました",
+  "year": "2022",
+  "url": "https://okinawagodo.org/blog/1230/",
+  "what_it_supports": "R8-01 R8C04: A053 formal name plaintiff-group identity filing date and counsel-secretariat role",
+  "evidence_level": "E4",
+  "bias_note": "Does not fully crosswalk both official joined case numbers.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S11; primary/secondary=primary_organization; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S136\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S136\\metadata.json",
+  "sha256": "aab0aa5f02cd6edb4a3518d3e9c1019ed193a7a45884cd455bbd805ed8b0c68d",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:52:03.911634+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://okinawagodo.org/blog/1230/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

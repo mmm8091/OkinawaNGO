@@ -1,0 +1,27 @@
+{
+  "source_id": "S127",
+  "source_type": "partner_organization_record",
+  "title": "JAWAN对首都圈联络会行动记录",
+  "year": "2026",
+  "url": "https://www.jawan.jp/rept/rp2019-j129/4.html",
+  "what_it_supports": "REG-01 C035: 独立伙伴组织记录行动",
+  "evidence_level": "E4",
+  "bias_note": "仅覆盖单次示威",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC040; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S127\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S127\\metadata.json",
+  "sha256": "f7dbe127504190f761f4800497a476ac14a77fe9ee5886977280e151d81b2e16",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:51.760073+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jawan.jp/rept/rp2019-j129/4.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "5039",
+    "last_modified": "Tue, 14 Apr 2026 09:23:34 GMT"
+  }
+}

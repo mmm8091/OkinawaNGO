@@ -1,0 +1,20 @@
+{
+  "source_id": "S139",
+  "source_type": "legal_source",
+  "title": "在外日本人国民審査権確認等請求事件最高裁判決を踏まえた原告ら代理人の意見",
+  "year": "2020",
+  "url": "https://ishigaki-tohyo.com/wp-content/uploads/2022/07/%E5%9C%A8%E5%A4%96%E6%97%A5%E6%9C%AC%E4%BA%BA%E5%9B%BD%E6%B0%91%E5%AF%A9%E6%9F%BB%E6%A8%A9%E7%A2%BA%E8%AA%8D%E7%AD%89%E8%AB%8B%E6%B1%82%E4%BA%8B%E4%BB%B6%E6%9C%80%E9%AB%98%E8%A3%81%E5%88%A4%E6%89%80%E5%A4%A7%E6%B3%95%E5%BB%B7%E5%88%A4%E6%B1%BA%E3%82%92%E8%B8%8F%E3%81%BE%E3%81%88%E3%81%9F-1.pdf",
+  "what_it_supports": "R8-01 R8C05: counsel role and later status-confirmation claims",
+  "evidence_level": "E4",
+  "bias_note": "Related later litigation phase; do not substitute for official 2020 judgment.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S14; primary/secondary=primary_organization; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S139\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T20:52:07.401764+00:00",
+  "note": "HTTPError 404: Not Found"
+}

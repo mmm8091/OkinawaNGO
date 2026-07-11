@@ -1,0 +1,27 @@
+{
+  "source_id": "S115",
+  "source_type": "organization_site",
+  "title": "宮古島海の環境ネットワーク",
+  "year": "2026",
+  "url": "https://econet.jpn.org/",
+  "what_it_supports": "REG-01 C017: 确认NPO及海洋调查教育项目",
+  "evidence_level": "E4",
+  "bias_note": "与军事设施争议连接待核",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC017; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S115\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S115\\metadata.json",
+  "sha256": "0e6cb6087d044935e31f79b066577ff70d05fee588d458e0343dd0bf424b5cd0",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:32.625055+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://econet.jpn.org/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

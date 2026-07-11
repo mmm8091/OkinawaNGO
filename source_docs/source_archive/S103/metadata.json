@@ -1,0 +1,27 @@
+{
+  "source_id": "S103",
+  "source_type": "official_portal",
+  "title": "NPO法人世界版「平和の礎」を提案する会 行政入力情報",
+  "year": "2026",
+  "url": "https://www.npo-homepage.go.jp/npoportal/gyosei-print/047006834",
+  "what_it_supports": "REG-01 C001: 确认法人名称所在地成立日期目的与法定文件",
+  "evidence_level": "E4",
+  "bias_note": "新设组织持续性仍待后续观察",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC001; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S103\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S103\\metadata.json",
+  "sha256": "33e58406102224cb568a75cce1fe9979c6b9ca1938ff81171988eee860a976d1",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:13.474769+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-homepage.go.jp/npoportal/gyosei-print/047006834",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -67,10 +67,10 @@
 - [x] 对 P1 条目进行第一轮 web 核实（AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票）。
 - [x] 完成正式人工复核任务 HR-001 至 HR-009，并写入 `human_review_log_v0.csv`。
 - [x] 补充来源日志中 URL 占位符条目（MT-003/W1：25/25 已解决；S020 恢复为 2016 年真实 URL）。
-- [ ] 按原方案和模块缺口扩充 actor registry 至至少 120（合同范围 120–180；模块未饱和时可超过 180）。
+- [x] 按原方案和模块缺口扩充 actor registry 至至少 120（当前 123；合同范围 120–180；模块未饱和时可继续扩展）。
 - [ ] 处理 HR 复核后的剩余 `needs_second_source` / `needs_local_retrieval` 条目。
 - [ ] 根据复核结果更新 evidence_level 和可发布措辞。
-- [x] 建立信息源本地备份机制并持续归档（2026-07-12：93 archived / 2 manual / 5 failed / 2 non-url；失败含 MOFA 403 与瞬时网络波动）。
+- [x] 建立信息源本地备份机制并持续归档（2026-07-12 安全合并后：128 archived / 2 manual / 11 failed / 2 non-url；失败含访问限制与瞬时网络波动）。
 - [x] 处理 S007 手工归档。
 - [x] MT-003/W1：25 条 inferred_url 全部解决；S020 恢复为 2016 年琉球新报真实 URL并归档。
 
@@ -126,21 +126,23 @@
 
 ## 当前样本状态
 
-- actor 初版：103 条（HR-001 后新增 A076；HR-005 后新增 X016/X017；MT-001 Tier A 新增 A077–A085 九条 E2 signatory-only；MT-007 新增 A086 Turtle Island Restoration Network）。
+- actor 初版：123 条；A087-A106 为 REG-01 的 20 个 E4 身份级安全合并，分类、别名和关系边待 HR-010。
 - funding/support edge 样本：36 条（新增 NOSCO 共同实物捐赠事件 F036；不得归为 NOSCO 单独捐赠）。
 - actor_issue_edges 初版：180 条。
 - actor_place_edges 初版：124 条。
 - actor alias 初版：14 条。
-- source log：102 条（100 条真实 URL、2 条非 URL 参考；S020 已恢复，新增 S099-S102：ONC 法定报告 / JICA 受托报告 / MOFA 名单 / NOSCO 共同捐赠）。
+- source log：143 条（141 条真实 URL、2 条非 URL 参考）；新增来源用于 A087-A106 身份与 R8 六案，归档状态以 manifest 为准。
 - issue taxonomy：19 个一级议题。
 - place registry：20 个地点 / 场域节点。
+- venue taxonomy：16 类，已作为非结论性元数据合并。
+- R8 case registry：6 案，均为 `needs_human_review`；角色 crosswalk 不进入主关系数据，待 HR-014。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
 - 旧编号模块包 v0：含 R2、R3/R4、R5、跨国路径和 coverage 等现有 brief；最终方案中跨国路径属于 R6，coverage 属基础建设，不能用旧 R11/R14 编号判定验收。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
-- 信息源备份机制已跑通：2026-07-12 manifest 为 93 archived、2 manual_archived、5 failed、2 non-URL；S020/S099/S100/S102 已归档，S096/S101 MOFA 页面与若干来源可能失败，归档/失败数会因瞬时网络波动变化。
-- 方案验收后第一批实作：foundation seed（49 evidence / 16 venue / 64 actor-event-venue）、registry 36 候选（首批建议 25，待人工合并）、R8 六案/五渠道/五地点证据包（待 source/role 审核后合并）。
+- 信息源备份机制已跑通：2026-07-12 合并后 manifest 为 128 archived、2 manual_archived、11 failed、2 non-URL；S103-S143 中 35 archived、6 failed，失败保留访问错误供后续手工归档。
+- 方案验收后第一批实作：16 类 venue、20 个 E4 actor 身份、41 条来源和 R8 六案元数据已安全合并；49 evidence、64 actor-event-venue、E3/沿革/范围候选及 R8 角色进入 HR-010 至 HR-015。
 
 ## 任务索引
 
@@ -149,7 +151,7 @@
 - 人类决策任务书：`docs/human_decision_tasks_v0.md`
 - 进度沟通稿：`docs/progress_report_v1.md`
 
-当前人工复核状态：HR-001 至 HR-009 已完成首轮；actor 表仍保留 P1/P2/P3 复核优先级，用于后续补源和当地材料收集，不等于未完成 HR 数。
+当前人工复核状态：HR-001 至 HR-009 已完成首轮；HR-010 至 HR-015 已建任务，覆盖新增主体定性、E3 补源、沿革/别名、范围边界、R8 角色和 evidence/venue seed。
 
 当前当地补查优先级：与那国早期反部署组织、先岛/边野古核心组织报刊时间线、军属配偶俱乐部完整 recipient 年表。ONC 公开年度事业费和 S020 已在线解决。
 
@@ -179,4 +181,4 @@
 8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。
 9. MT-004 线上 pass 完成：A014 事件语境有主流佐证（RS/OT/QAB）、A015 无非党派源保持 E2；组织级身份仍需与那国当地补查（LR Tier 2）。见 `MT004_yonaguni_online_pass_note.md`。
 10. R5/R11 事件感知图已出：`fig/fig_event_repertoire.png`（集体行动 repertoire 时间线，`make_event_repertoire_fig.py`）。
-11. 下一轮先审核并合并三项候选包：foundation evidence/venue → registry 首批 25 候选 → R8 六案来源/角色；随后推进 R9 公投阶段、R10 行政协作年度表、R4 框架语料和指定核心图。详见方案验收总表。
+11. 第一批安全合并已完成：venue taxonomy、20 个 E4 actor 身份、41 条来源和 R8 六案元数据。下一轮人工按 HR-010 至 HR-015 审核字段、E3 候选、沿革、范围、法律角色和 seed；线上继续推进 R9 公投阶段、R10 行政协作年度表、R4 框架语料和指定核心图。

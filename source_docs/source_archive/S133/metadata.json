@@ -1,0 +1,27 @@
+{
+  "source_id": "S133",
+  "source_type": "court_record",
+  "title": "Third Kadena Air Base noise injunction appeal judgment",
+  "year": "2019",
+  "url": "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-88988.pdf",
+  "what_it_supports": "R8-01 R8C03: claims parties legal reasoning and outcome",
+  "evidence_level": "E4",
+  "bias_note": "Official judgment PDF; title metadata should be rechecked before main source-log merge.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S08; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S133\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S133\\metadata.json",
+  "sha256": "9fdf17b7e15a08a40455cc757298142f27cf7f063095de020d024061e506344a",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:58.030168+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-88988.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "608468",
+    "last_modified": "Tue, 09 Sep 2025 11:34:55 GMT"
+  }
+}

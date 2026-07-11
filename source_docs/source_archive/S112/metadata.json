@@ -1,0 +1,27 @@
+{
+  "source_id": "S112",
+  "source_type": "official_legislative_record",
+  "title": "沖縄県議会委員会记录：宫古两团体陈情",
+  "year": "2026",
+  "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/017/050/inkaihou.compressed.pdf",
+  "what_it_supports": "REG-01 C013;C014: 确认团体名称共同代表和正式陈情",
+  "evidence_level": "E4",
+  "bias_note": "不能单独证明持续年限",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC014; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S112\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S112\\metadata.json",
+  "sha256": "db66002911db153a8a4e3f68e86c8690d3e972cd8e610c3fab4a56f4acffe926",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:26.606004+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/017/050/inkaihou.compressed.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "1799968",
+    "last_modified": "Tue, 30 Jan 2024 02:20:58 GMT"
+  }
+}

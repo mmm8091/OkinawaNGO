@@ -1,0 +1,27 @@
+{
+  "source_id": "S116",
+  "source_type": "organization_site",
+  "title": "PFAS汚染から市民の生命を守る連絡会について",
+  "year": "2026",
+  "url": "https://darkwater.okinawa/about/",
+  "what_it_supports": "REG-01 C018: 确认2019成立代表目标和基地来源框架",
+  "evidence_level": "E4",
+  "bias_note": "部分因果表述为组织主张需保留归属",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC018; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S116\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S116\\metadata.json",
+  "sha256": "e946ea8c3da37b6e9578419914ad7b7250346007a3ddace0c2803a32c0bb13f8",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:34.963644+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://darkwater.okinawa/about/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

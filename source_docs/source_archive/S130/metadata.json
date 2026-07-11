@@ -1,0 +1,27 @@
+{
+  "source_id": "S130",
+  "source_type": "official_data",
+  "title": "普天間飛行場代替施設建設事業に係る環境影響評価書（補正後） publication hub",
+  "year": "2013",
+  "url": "https://www.mod.go.jp/rdb/okinawa/effort/base/evaluation/hyoukayouyaku.html",
+  "what_it_supports": "R8-01 R8C02: EIA proponent procedure and corrected assessment",
+  "evidence_level": "E4",
+  "bias_note": "Official publication hub; S047 in main log points to a closely related Defense Bureau EIA page.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S05; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S130\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S130\\metadata.json",
+  "sha256": "a3e609f0a3ce8decb0abdde6ba47e1061ea12e18ecd31ee54335ed79270f24b1",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:54.295413+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.mod.go.jp/rdb/okinawa/effort/base/evaluation/hyoukayouyaku.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "",
+    "last_modified": "Tue, 28 Nov 2023 07:32:47 GMT"
+  }
+}

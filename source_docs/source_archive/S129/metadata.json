@@ -1,0 +1,27 @@
+{
+  "source_id": "S129",
+  "source_type": "court_record",
+  "title": "Center for Biological Diversity v. Esper No. 18-16836 opinion",
+  "year": "2020",
+  "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2020/05/06/18-16836.pdf",
+  "what_it_supports": "R8-01 R8C01: final appellate outcome and Section 402 standard",
+  "evidence_level": "E4",
+  "bias_note": "Official published appellate opinion filed 2020-05-06.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S03; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S129\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S129\\metadata.json",
+  "sha256": "940fd65f9f7d538f7172bd9425c1b923befd90191a5508aecb45f2c5b654c739",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:53.678314+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2020/05/06/18-16836.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "174093",
+    "last_modified": "Wed, 06 May 2020 14:16:04 GMT"
+  }
+}

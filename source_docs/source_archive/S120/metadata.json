@@ -1,0 +1,20 @@
+{
+  "source_id": "S120",
+  "source_type": "organization_site",
+  "title": "沖縄・琉球弧の声を届ける会",
+  "year": "2026",
+  "url": "https://ryukyukohp.jimdofree.com/",
+  "what_it_supports": "REG-01 C020: 确认共同代表多期讲座与跨岛主题",
+  "evidence_level": "E4",
+  "bias_note": "非正式组织法律身份未定",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC022; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S120\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T20:51:08.988243+00:00",
+  "note": "URLError: _ssl.c:983: The handshake operation timed out"
+}

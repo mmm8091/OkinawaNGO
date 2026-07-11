@@ -1,0 +1,27 @@
+{
+  "source_id": "S131",
+  "source_type": "organization_statement",
+  "title": "「普天間飛行場代替施設建設事業に係る環境影響評価書（補正後）」への意見",
+  "year": "2013",
+  "url": "https://www.nacsj.or.jp/statement/50946/",
+  "what_it_supports": "R8-01 R8C02: commenter role targets claims and date",
+  "evidence_level": "E4",
+  "bias_note": "Dated 2013-02-12 formal submission to national and prefectural officials.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S06; primary/secondary=primary_organization; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S131\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S131\\metadata.json",
+  "sha256": "0e600521fb1bb9c4d88e0296dc054ae43994219cd29045eca0795c8d70a1e097",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:54.687616+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.nacsj.or.jp/statement/50946/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

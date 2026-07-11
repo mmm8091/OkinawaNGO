@@ -1,0 +1,27 @@
+{
+  "source_id": "S114",
+  "source_type": "organization_site",
+  "title": "宮古島環境クラブ",
+  "year": "2026",
+  "url": "https://www.npo-mec.net/",
+  "what_it_supports": "REG-01 C016: 确认任意团体身份项目和地下水保全",
+  "evidence_level": "E4",
+  "bias_note": "需记录成立与代表字段",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC016; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S114\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S114\\metadata.json",
+  "sha256": "46a58899646d6d0a7cfd82e77c83503a277aab7cc1c4c228337e409d6407c12b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:31.133493+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-mec.net/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

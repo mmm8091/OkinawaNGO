@@ -1,0 +1,27 @@
+{
+  "source_id": "S109",
+  "source_type": "organization_site",
+  "title": "沖縄県労連の紹介",
+  "year": "2026",
+  "url": "https://okinawakenroren.org/kenrorenshokai.html",
+  "what_it_supports": "REG-01 C006: 确认章程和基地撤去和平目标",
+  "evidence_level": "E4",
+  "bias_note": "需补冲绳具体共同行动",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC007; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S109\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S109\\metadata.json",
+  "sha256": "792334c3225c51ec48b06630bfb9be8fae97f3f13d26fb96739929836fab54a4",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:23.298745+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://okinawakenroren.org/kenrorenshokai.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

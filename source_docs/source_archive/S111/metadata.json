@@ -1,0 +1,27 @@
+{
+  "source_id": "S111",
+  "source_type": "organization_site",
+  "title": "一般社団法人沖縄県女性連合会",
+  "year": "2026",
+  "url": "https://www.okifuren.com/",
+  "what_it_supports": "REG-01 C008: 确认法律身份成员结构和目的",
+  "evidence_level": "E4",
+  "bias_note": "未直接证明基地议题参与",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC009; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S111\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S111\\metadata.json",
+  "sha256": "787f6e25c68b00aa2afd6252f9ec17d7410957509154c61503b4d70ce1fcb19d",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:25.766289+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.okifuren.com/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S135",
+  "source_type": "court_record",
+  "title": "令和4年3月10日 普天間飛行場周辺損害賠償請求事件判決",
+  "year": "2022",
+  "url": "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-91354.pdf",
+  "what_it_supports": "R8-01 R8C04: case numbers resident plaintiffs claims and partial damages outcome",
+  "evidence_level": "E4",
+  "bias_note": "Official judgment: Heisei 30 (wa) 201 and Reiwa 2 (wa) 33.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S10; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S135\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S135\\metadata.json",
+  "sha256": "469a4429e5f66289bc75784097dd7c948e030b8bb9a7cd7c94fbbd4385b75beb",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:52:01.239214+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.courts.go.jp/assets/hanrei/hanrei-pdf-91354.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "2314282",
+    "last_modified": "Tue, 23 Sep 2025 14:17:33 GMT"
+  }
+}

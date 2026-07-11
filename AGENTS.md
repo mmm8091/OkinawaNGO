@@ -28,14 +28,15 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 
 Updated: 2026-07-12.
 
-- Actor registry: 103 actors (MT-001 Tier A added A077–A085 E2 signatory-only; MT-007 added A086 Turtle Island Restoration Network).
-- Source log: 102 sources, currently 100 real URLs and 2 non-URL references; no `inferred_url` placeholders remain.
+- Actor registry: 123 actors. A087–A106 are E4 identity-only safe merges from REG-01; their classification, aliases and edges require HR-010.
+- Source log: 143 sources, currently 141 real URLs and 2 non-URL references; no `inferred_url` placeholders remain.
 - Actor-issue candidate edges: 180.
 - Actor-place candidate edges: 124.
 - Funding/support sample edges: 36 (MT-005 AWWA F028–F030; MT-006 ONC F031–F033; LR-T1B USO sponsors F034–F035; W1 NOSCO joint donation F036).
 - Issue taxonomy: 19 issue categories.
 - Place registry: 20 place/field nodes.
-- Source archive (2026-07-12 run): 93 `archived`, 2 `manual_archived`, 5 `failed`, 2 `skipped_non_url_reference`. S020/S099/S100/S102 are archived; S096/S101 MOFA pages and several transient sources failed. Archived/failed counts can flap between runs.
+- Legal/policy procedure case registry: 6 cases, all `needs_human_review`; actor-role crosswalks remain outside the main relation data pending HR-014.
+- Source archive (2026-07-12 post-merge run): 128 `archived`, 2 `manual_archived`, 11 `failed`, 2 `skipped_non_url_reference`. Of S103-S143, 35 archived and 6 failed; failures remain auditable and may include access/SSL restrictions rather than missing evidence.
 
 ## Current Deliverables
 
@@ -58,10 +59,10 @@ Updated: 2026-07-12.
   - Complete v0 draft for internal review; not yet the boss-facing final report.
 - Phase-1 acceptance audit: `docs/phase1_scheme_acceptance_audit_v1.md` and `outputs/phase1_acceptance_audit_v0/`
   - The authoritative gap/done_when assessment against the original DOCX.
-- First post-audit candidate packages (not yet merged into main data):
-  - `outputs/phase1_foundation_v1/`: evidence-note and venue seeds, all AI-seeded.
-  - `outputs/registry_expansion_v1/`: 36 candidates; first-batch recommendation of 25 would take the registry from 103 to 128 after review.
-  - `outputs/R08_legal_procedure_v0/`: six-case legal/policy/EIA comparison package; source and role crosswalk review still required.
+- First post-audit candidate packages and controlled merge:
+  - `outputs/phase1_foundation_v1/`: evidence-note and actor-event-venue seeds remain AI-seeded; the 16-row venue taxonomy is merged.
+  - `outputs/registry_expansion_v1/`: 20 E4 actor identities and their sources are merged; HR-010–HR-013 cover field review, E3 additions, lineage and scope decisions.
+  - `outputs/R08_legal_procedure_v0/`: six case records and E3/E4 sources are merged as review-pending; role crosswalks and legal summaries require HR-014.
 - Local retrieval task book v1: `docs/local_retrieval_tasks_v1.md`
   - Splits LR into Tier 1 (online-doable, locked for this round) and Tier 2 (needs local collaborator / in-library databases).
 - Source archive: `source_docs/source_archive/`

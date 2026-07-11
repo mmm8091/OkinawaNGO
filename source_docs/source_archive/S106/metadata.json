@@ -1,0 +1,27 @@
+{
+  "source_id": "S106",
+  "source_type": "organization_site",
+  "title": "組合について：沖縄県高等学校障害児学校教職員組合",
+  "year": "2026",
+  "url": "https://www.oki-htu.or.jp/about.php",
+  "what_it_supports": "REG-01 C004: 确认组织与基地和平行进历史",
+  "evidence_level": "E4",
+  "bias_note": "需补具体事件页",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC004; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S106\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S106\\metadata.json",
+  "sha256": "2252592d592bce3a56c880affbf4ba1cca31899918285c43138b9b2fd2802bcd",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:16.652134+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.oki-htu.or.jp/about.php",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

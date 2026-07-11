@@ -1,0 +1,27 @@
+{
+  "source_id": "S108",
+  "source_type": "organization_action_record",
+  "title": "在日米軍関係者によって繰り返される性的暴行事件に関する抗議・要請",
+  "year": "2026",
+  "url": "https://www.rengo-okinawa.jp/cat-news/post-2485/",
+  "what_it_supports": "REG-01 C005: 确认具体基地人权要请行动",
+  "evidence_level": "E4",
+  "bias_note": "单一行动不能代表全部定位",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC006; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S108\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S108\\metadata.json",
+  "sha256": "8f0c1d49344ab19bec4bd32f145365b47b89c7b7222a0a3db1e5c88f002af818",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:20.377906+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.rengo-okinawa.jp/cat-news/post-2485/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

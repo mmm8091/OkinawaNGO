@@ -1,0 +1,27 @@
+{
+  "source_id": "S118",
+  "source_type": "official_legislative_record",
+  "title": "うるま市议会会议录：ミサイル配備から命を守る市民の会",
+  "year": "2026",
+  "url": "https://www.city.uruma.lg.jp/documents/2778/163164165kaigiroku_2.pdf",
+  "what_it_supports": "REG-01 C019: 确认团体成立与地方议题",
+  "evidence_level": "E4",
+  "bias_note": "会议发言需与组织资料交叉",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC020; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S118\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S118\\metadata.json",
+  "sha256": "07f70bb0703656a05cd962b122c10bc68b32896efed3f03437c156830a3265f9",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:36.919169+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.uruma.lg.jp/documents/2778/163164165kaigiroku_2.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "5778748",
+    "last_modified": "Fri, 24 Nov 2023 09:36:54 GMT"
+  }
+}

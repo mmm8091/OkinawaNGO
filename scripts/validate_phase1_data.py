@@ -18,6 +18,7 @@ TABLES = {
     "actor_issue": (DATA / "07_actor_issue_edges_initial_v0.csv", "edge_id"),
     "actor_place": (DATA / "08_actor_place_edges_initial_v0.csv", "edge_id"),
     "funding": (DATA / "15_funding_or_support_edges_sample_v0.csv", "edge_id"),
+    "legal_cases": (DATA / "17_legal_policy_procedure_cases_v0.csv", "case_id"),
 }
 
 VALID_EVIDENCE = {"E0", "E1", "E2", "E3", "E4"}
@@ -83,7 +84,14 @@ def main() -> int:
         if row["place_id"] not in place_ids:
             errors.append(f"actor_place {row['edge_id']}: unknown place {row['place_id']}")
 
-    for table_name in ("actors", "sources", "actor_issue", "actor_place", "funding"):
+    for table_name in (
+        "actors",
+        "sources",
+        "actor_issue",
+        "actor_place",
+        "funding",
+        "legal_cases",
+    ):
         for row in rows[table_name]:
             value = row.get("evidence_level", "").strip()
             if value and value not in VALID_EVIDENCE:

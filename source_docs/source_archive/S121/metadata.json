@@ -1,0 +1,27 @@
+{
+  "source_id": "S121",
+  "source_type": "organization_site",
+  "title": "全国公害弁護団連絡会議",
+  "year": "2026",
+  "url": "https://www.kogai-net.com/",
+  "what_it_supports": "REG-01 C021: 确认跨诉讼律师网络组织性质",
+  "evidence_level": "E4",
+  "bias_note": "需提取冲绳案件具体参与",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC023; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S121\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S121\\metadata.json",
+  "sha256": "dbe261f89cc2f275309a1e9a69a8b138ed10bdeef82584a789e9a4a5375cfcd1",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:38.994148+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.kogai-net.com/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

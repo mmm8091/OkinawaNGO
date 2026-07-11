@@ -1,0 +1,27 @@
+{
+  "source_id": "S138",
+  "source_type": "local_official",
+  "title": "石垣市平得大俣地域への陸上自衛隊配備計画の賛否を問う住民投票条例に係る議会審議の結果",
+  "year": "2020",
+  "url": "https://www.city.ishigaki.okinawa.jp/jieiteikannrenn/news/3615.html",
+  "what_it_supports": "R8-01 R8C05: ordinance request and council result",
+  "evidence_level": "E4",
+  "bias_note": "Official city page links the deliberation result.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S13; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S138\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S138\\metadata.json",
+  "sha256": "d29ad3dfe477b02e7f2619d2d738928b8ee18037f2a8f2d0a35be48bccd633d0",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:52:06.575203+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ishigaki.okinawa.jp/jieiteikannrenn/news/3615.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "38900",
+    "last_modified": "Mon, 06 Jul 2026 08:30:50 GMT"
+  }
+}

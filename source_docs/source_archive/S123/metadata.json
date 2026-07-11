@@ -1,0 +1,27 @@
+{
+  "source_id": "S123",
+  "source_type": "member_organization_action_record",
+  "title": "全国基地爆音訴訟原告団連絡会政府要请报道",
+  "year": "2026",
+  "url": "https://bakuon.org/2026/06/22/2026-06-18%E3%80%80%E5%85%A8%E5%9B%BD%E5%9F%BA%E5%9C%B0%E7%88%86%E9%9F%B3%E8%A8%B4%E8%A8%9F%E5%8E%9F%E5%91%8A%E5%9B%A3%E9%80%A3%E7%B5%A1%E4%BC%9A%E3%81%8C%E5%9B%BD%E4%BC%9A%E4%BA%A4%E6%B8%89/",
+  "what_it_supports": "REG-01 C022: 列出嘉手纳普天间等参与团体",
+  "evidence_level": "E4",
+  "bias_note": "共同行动不等于稳定联盟",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC025; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S123\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S123\\metadata.json",
+  "sha256": "8cf53b89a39c7098c0fc7a21f8c3e54a4f488383a67fd3642141e11458812240",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:42.522018+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://bakuon.org/2026/06/22/2026-06-18%E3%80%80%E5%85%A8%E5%9B%BD%E5%9F%BA%E5%9C%B0%E7%88%86%E9%9F%B3%E8%A8%B4%E8%A8%9F%E5%8E%9F%E5%91%8A%E5%9B%A3%E9%80%A3%E7%B5%A1%E4%BC%9A%E3%81%8C%E5%9B%BD%E4%BC%9A%E4%BA%A4%E6%B8%89/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S105",
+  "source_type": "organization_site",
+  "title": "沖教組とは",
+  "year": "2026",
+  "url": "https://www.oki-tu.org/about_us",
+  "what_it_supports": "REG-01 C003: 确认组织构成历史与和平教育",
+  "evidence_level": "E4",
+  "bias_note": "基地议题需另取具体行动页",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC003; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S105\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S105\\metadata.json",
+  "sha256": "691ddb3ad69aacd94f9a73b6da908a05535e45129d61cf7c4b27a2e516ad08b1",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:14.639021+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.oki-tu.org/about_us",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

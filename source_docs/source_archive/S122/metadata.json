@@ -1,0 +1,27 @@
+{
+  "source_id": "S122",
+  "source_type": "member_organization_website",
+  "title": "全国基地爆音訴訟原告団連絡会議介绍",
+  "year": "2026",
+  "url": "https://bakuon.org/yonjitop/zenkoku.html",
+  "what_it_supports": "REG-01 C022: 确认组织目标和共同政府交涉",
+  "evidence_level": "E4",
+  "bias_note": "由成员原告团托管非独立官网",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC024; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S122\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S122\\metadata.json",
+  "sha256": "f5656bcf3a3741b21d6a08c15252210a2133197d61d40a1f599b1d49dd53637d",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:41.071464+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://bakuon.org/yonjitop/zenkoku.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "19176",
+    "last_modified": "Wed, 15 Feb 2023 13:31:49 GMT"
+  }
+}

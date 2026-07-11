@@ -1,0 +1,27 @@
+{
+  "source_id": "S113",
+  "source_type": "local_news",
+  "title": "考える会・郡民の会抗议报道",
+  "year": "2026",
+  "url": "https://www.miyakomainichi.com/news/post-82976/",
+  "what_it_supports": "REG-01 C013;C015: 确认具名代表共同活动和水/部署框架",
+  "evidence_level": "E4",
+  "bias_note": "需官方或组织第二来源",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC015; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S113\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S113\\metadata.json",
+  "sha256": "4a9d8a4221a9aee0a17233243ddc4b5298716fb9a1e6a2b6f5c70e2ba92ddebd",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:27.619554+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.miyakomainichi.com/news/post-82976/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

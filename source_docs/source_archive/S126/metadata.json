@@ -1,0 +1,27 @@
+{
+  "source_id": "S126",
+  "source_type": "organization_site",
+  "title": "辺野古の海を土砂で埋めるな首都圏連絡会",
+  "year": "2026",
+  "url": "https://henokoumeruna2018.exblog.jp/",
+  "what_it_supports": "REG-01 C035: 持续行动博客证明非一次性署名",
+  "evidence_level": "E4",
+  "bias_note": "正式组织信息较少",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC039; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S126\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S126\\metadata.json",
+  "sha256": "fe1a1d5513b1e8b5e1a0dbf1d5d1ac6ad83d3444473d1758924d83c0e348a783",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:50.646080+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://henokoumeruna2018.exblog.jp/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

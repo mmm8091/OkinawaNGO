@@ -1,0 +1,20 @@
+{
+  "source_id": "S104",
+  "source_type": "official_portal",
+  "title": "NPO法人信息检索结果：沖縄平和協力センター",
+  "year": "2026",
+  "url": "https://www.npo-homepage.go.jp/npoportal/list?fiscal_year_end_first=&fiscal_year_end_second=&fiscal_year_start_first=&fiscal_year_start_second=&goc%5B0%5D=000&order=desc&page=260&sort=gov_code",
+  "what_it_supports": "REG-01 C002: 确认法人身份与所在地",
+  "evidence_level": "E4",
+  "bias_note": "需打开个体页和年报核活动",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC002; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S104\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T20:50:14.292959+00:00",
+  "note": "HTTPError 403: Forbidden"
+}

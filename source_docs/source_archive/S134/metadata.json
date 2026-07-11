@@ -1,0 +1,27 @@
+{
+  "source_id": "S134",
+  "source_type": "official_data",
+  "title": "爆音響く 第三次嘉手納基地爆音差止訴訟の記録 2011.4-2022.3 総集編",
+  "year": "2011",
+  "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032624657",
+  "what_it_supports": "R8-01 R8C03: plaintiff-group and counsel-group identity",
+  "evidence_level": "E3",
+  "bias_note": "Official library catalog identifies author/publisher; content itself not yet retrieved.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S09; primary/secondary=primary_official_catalog; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S134\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S134\\metadata.json",
+  "sha256": "1ea7d5aebb39b83d85d027d27caa16a530e7de0ee5c772d561bfd35c4632ca42",
+  "content_type": "text/html;charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:52:00.392164+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ndlsearch.ndl.go.jp/books/R100000002-I032624657",
+    "status_code": "200",
+    "content_type": "text/html;charset=utf-8",
+    "content_length": "217426",
+    "last_modified": ""
+  }
+}

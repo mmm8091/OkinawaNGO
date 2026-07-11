@@ -1,0 +1,20 @@
+{
+  "source_id": "S137",
+  "source_type": "court_record",
+  "title": "石垣市住民投票実施義務付け等請求事件判決",
+  "year": "2020",
+  "url": "https://www.courts.go.jp/app/files/hanrei_jp/731/089731_hanrei.pdf",
+  "what_it_supports": "R8-01 R8C05: claims plaintiff category ordinance text and dismissal",
+  "evidence_level": "E4",
+  "bias_note": "Naha District Court judgment dated 2020-08-27; official PDF anonymizes plaintiffs.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S12; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S137\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T20:52:05.095254+00:00",
+  "note": "HTTPError 404: Not Found"
+}

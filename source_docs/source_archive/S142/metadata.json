@@ -1,0 +1,27 @@
+{
+  "source_id": "S142",
+  "source_type": "legal_source",
+  "title": "第2次泡瀬干潟埋立住民訴訟の上告棄却に関する原告と弁護団の声明",
+  "year": "2017",
+  "url": "https://www.jelf-justice.org/?p=1114",
+  "what_it_supports": "R8-01 R8C06: second-wave claimant and counsel roles appellate and Supreme Court outcomes",
+  "evidence_level": "E4",
+  "bias_note": "Use as litigant-side formal record; outcome dates can be checked against court register.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S17; primary/secondary=primary_organization; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S142\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S142\\metadata.json",
+  "sha256": "3a7f97d4c635e4cdcc464a4556a7eaf8560a24d61ed2fc62b8c3160c8d91cd01",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:52:13.445420+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jelf-justice.org/?p=1114",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

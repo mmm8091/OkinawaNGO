@@ -1,0 +1,27 @@
+{
+  "source_id": "S124",
+  "source_type": "legal_network_report",
+  "title": "普天間基地爆音訴訟报告",
+  "year": "2026",
+  "url": "https://www.kogai-net.com/sokai-document/document38/38-200/38-223/",
+  "what_it_supports": "REG-01 C024: 确认弁护团主张原告规模和判决",
+  "evidence_level": "E4",
+  "bias_note": "历史阶段需与当前诉讼代际区分",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC027; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S124\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S124\\metadata.json",
+  "sha256": "c40df7889c55c0ba48216f5e553faa2e419ee106cd2e748fa8f67da2c98b0cf4",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:45.540640+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.kogai-net.com/sokai-document/document38/38-200/38-223/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

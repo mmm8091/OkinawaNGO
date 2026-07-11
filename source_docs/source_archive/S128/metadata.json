@@ -1,0 +1,27 @@
+{
+  "source_id": "S128",
+  "source_type": "court_record",
+  "title": "Center for Biological Diversity v. Mattis No. 15-15695 opinion",
+  "year": "2020",
+  "url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2017/08/21/15-15695.pdf",
+  "what_it_supports": "R8-01 R8C01: party list NHPA posture and 2017 remand",
+  "evidence_level": "E4",
+  "bias_note": "Official published appellate opinion.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S02; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S128\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S128\\metadata.json",
+  "sha256": "5de412cdb9b0e72c679f56230476d2f01c5012c74f4e7357d2c0b5ea685e506f",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:52.947496+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://cdn.ca9.uscourts.gov/datastore/opinions/2017/08/21/15-15695.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "344026",
+    "last_modified": "Fri, 15 Sep 2017 17:23:28 GMT"
+  }
+}

@@ -482,12 +482,17 @@ def save_evidence_gap_map(actors: list[dict[str, str]], sources: list[dict[str, 
     )
 
 
-def write_readme() -> None:
-    content = """# 解释性图表包 v0
+def write_readme(
+    actors: list[dict[str, str]],
+    sources: list[dict[str, str]],
+    manifest: list[dict[str, str]],
+) -> None:
+    archive_status = Counter(row["archive_status"] for row in manifest)
+    content = f"""# 解释性图表包 v0
 
-日期：2026-07-01
+日期：2026-07-12（数据刷新）
 
-目的：把当前 93 个 actor、92 条 source 和首轮 HR 复核结果转成可沟通、可继续探索的图件。此包不是最终报告；它用于下一次沟通前验证叙事，并暴露下一轮补源方向。
+目的：把当前 {len(actors)} 个 actor、{len(sources)} 条 source 和人工复核状态转成可沟通、可继续探索的图件。此包不是最终报告；它用于下一次沟通前验证叙事，并暴露下一轮补源方向。A087-A106 只完成 E4 身份级合并，分类与关系仍待 HR-010。
 
 ## 图件
 
@@ -521,12 +526,11 @@ def write_readme() -> None:
 
 ## 当前最适合继续调查的方向
 
-1. 归档 36 条 `pending_archive` source。
-2. 核实 25 条 `inferred_url` 占位来源。
+1. 手工处理 {archive_status.get('failed', 0)} 条自动归档失败来源；失败状态不等于证据不存在。
+2. 执行 HR-010 至 HR-015：新增主体定性、E3 补源、沿革/范围、R8 角色及 evidence/venue seed。
 3. 与那国 A014/A015 的地方报纸、意见广告实物、议会资料。
 4. AWWA / spouse club charity recipients 和 Schedule I / 活动手册。
-5. A019 / A076 的 dugong 诉讼 plaintiff 映射。
-6. 先把 2010 / 2015 / 2020 共同行动样本做成 event table，再考虑联盟网络。
+5. 继续把共同行动保持为 event table，不因重复同场直接生成联盟网络。
 
 ## 禁止误读
 
@@ -552,7 +556,7 @@ def main() -> None:
     save_henoko_pathway()
     save_coaction_event_composition(actors)
     save_evidence_gap_map(actors, sources, manifest)
-    write_readme()
+    write_readme(actors, sources, manifest)
     print(f"Wrote explanatory graph package to {OUT.relative_to(ROOT)}")
 
 

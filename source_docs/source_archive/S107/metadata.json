@@ -1,0 +1,27 @@
+{
+  "source_id": "S107",
+  "source_type": "organization_site",
+  "title": "連合沖縄とは",
+  "year": "2026",
+  "url": "https://www.rengo-okinawa.jp/about-us/",
+  "what_it_supports": "REG-01 C005: 确认正式名称规模和组织性质",
+  "evidence_level": "E4",
+  "bias_note": "规模为官网自报",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC005; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S107\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S107\\metadata.json",
+  "sha256": "f0ce8d25933c41982bebf384a64cfd4860847cff7f67aa9d92eef06b9dc24e64",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:50:17.508766+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.rengo-okinawa.jp/about-us/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

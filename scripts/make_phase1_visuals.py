@@ -30,6 +30,7 @@ FAMILY_COLORS = {
     "服务／慈善": "#b0823d",
     "行政／国际协作": "#4e8a63",
     "公共外交／资助": "#9b5b4d",
+    "待人工分类": "#9a7b4f",
     "其他观察节点": "#7d858d",
 }
 
@@ -102,7 +103,10 @@ def save_function_ecology(actors: list[dict[str, str]]) -> None:
     family_order = list(FAMILY_COLORS)
     cells: dict[tuple[str, str], list[dict[str, str]]] = defaultdict(list)
     for actor in actors:
-        family = CLASS_FAMILY.get(actor["actor_class"], "其他观察节点")
+        if "safe identity merge" in actor.get("notes", ""):
+            family = "待人工分类"
+        else:
+            family = CLASS_FAMILY.get(actor["actor_class"], "其他观察节点")
         cells[(family, actor["origin_type"])].append(actor)
 
     rows: list[dict[str, object]] = []
@@ -149,7 +153,7 @@ def save_function_ecology(actors: list[dict[str, str]]) -> None:
     ax.set_title("一期组织功能生态：功能层 × 来源层", fontsize=17, loc="left", pad=22, fontweight="bold")
     ax.text(
         0, 1.035,
-        "气泡面积＝registry 中 actor 数；透明度越低表示 E2 占比越高。分类按观察到的功能，不代表政治立场。",
+        "气泡面积＝registry 中 actor 数；透明度越低表示 E2 占比越高。身份级安全合并单列为“待人工分类”。",
         transform=ax.transAxes, fontsize=10, color="#52616b",
     )
     ax.text(
@@ -421,7 +425,7 @@ README = r"""# 一期核心可视化补图包 v1
 
 ## 图件
 
-1. `fig1_functional_ecology.png` — 组织功能生态（功能层 × 来源层）。回答 registry 中不同功能 actor 如何构成，并把军属服务、行政协作和公共外交观察层与倡议网络分开。配套 `functional_ecology_matrix.csv`。
+1. `fig1_functional_ecology.png` — 组织功能生态（功能层 × 来源层）。回答 registry 中不同功能 actor 如何构成，并把军属服务、行政协作和公共外交观察层与倡议网络分开；A087-A106 在 HR-010 前单列为“待人工分类”。配套 `functional_ecology_matrix.csv`。
 2. `fig2_actor_place_matrix.png` — 组织—地点矩阵。直接显示哪些组织在关键地点的公开资料中出现，证据等级由圆点颜色与大小标注。配套 `actor_place_matrix_selected.csv`。
 3. `fig3_support_service_layers_strict.png` — 严格 E3/E4 的支持、委托与服务分层图。仅保留 confirmed 类或明确的 `not_funding_relation`，排除 probable funding、NOFO/grant opportunity、E2 线索。配套 `support_relations_strict_e3e4.csv`。
 

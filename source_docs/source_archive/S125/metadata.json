@@ -1,0 +1,27 @@
+{
+  "source_id": "S125",
+  "source_type": "organization_statement",
+  "title": "日本YWCA辺野古新基地建設声明",
+  "year": "2026",
+  "url": "https://www.ywca.or.jp/wp-content/uploads/2020/05/0526.pdf",
+  "what_it_supports": "REG-01 C025: 确认组织身份和边野古立场",
+  "evidence_level": "E4",
+  "bias_note": "单份声明需结合长期活动页",
+  "review_status": "ai_seeded",
+  "notes": "Merged from SC028; accessed 2026-07-12; actor identity may be merged before classification/edge human review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S125\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S125\\metadata.json",
+  "sha256": "9cf68063512fcfbd15f56579d0ec4f4b3c4425b495776e874d0292b9ed1e8aad",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:51:47.862332+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ywca.or.jp/wp-content/uploads/2020/05/0526.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "161395",
+    "last_modified": "Wed, 22 Jun 2022 01:47:02 GMT"
+  }
+}

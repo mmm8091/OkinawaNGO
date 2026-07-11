@@ -1,0 +1,27 @@
+{
+  "source_id": "S143",
+  "source_type": "official_data",
+  "title": "平成19年度沖縄県訟務年報",
+  "year": "2017",
+  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/016/473/syoumu_nenpou_h19.pdf",
+  "what_it_supports": "R8-01 R8C06: first-wave case numbers defendants and pending status",
+  "evidence_level": "E4",
+  "bias_note": "Official prefectural litigation annual report.",
+  "review_status": "ai_seeded",
+  "notes": "Merged from R8S18; primary/secondary=primary; legal outcome and actor-role wording remain subject to HR-014.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S143\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S143\\metadata.json",
+  "sha256": "192ea33e9f049142763189ae04bc9cce921fdea8fa4d9048705bb2d4b0aa2a6e",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T20:52:15.609958+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/016/473/syoumu_nenpou_h19.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "794765",
+    "last_modified": "Fri, 08 Dec 2023 09:35:46 GMT"
+  }
+}
