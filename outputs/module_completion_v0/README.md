@@ -1,6 +1,6 @@
 # 模块完成包 v0
 
-日期：2026-07-01
+日期：2026-07-12（状态更新；模块产出仍为 v0）
 
 本目录把解释性图表包进一步整理成模块交付物。目标是让下一次沟通不只展示统计，而是展示可解释机制和下一轮调查路线。
 
@@ -32,14 +32,20 @@
 
 ## 下一步调查优先级
 
-1. 复核并吸收 2020 OEJP/MMC 71 团体 participant list。
-2. 继续核实剩余 14 条 inferred_url，并使用 `data/interim/16_inferred_url_resolution_queue_v0.csv` 分档推进。
-3. 与那国 A014/A015 当地资料。
-4. AWWA / spouse clubs charity recipients。
-5. ONC / JICA / MOFA 关系链。
+1. 完成 LR Tier 1 线上收口：AWWA / spouse clubs、冲绳本地 NPO 公开报告、ONC / JICA / MOFA 公开报告。
+2. 核实 Tier A 9 个 actor 的别名和第二来源；Tier B 仅在建立独立本土声援层时分层纳入。
+3. 审计并补齐一期有价值的可视化，形成图、数据、brief 和报告段落的对应关系。
+4. 完成一期研究报告 v0。
+5. 达到 `docs/phase1_online_completion_plan_v0.md` 的门槛后，再正式派当地协作者处理与那国、地方报刊、AWWA Form 990、ONC 金额和 S020。
 
-## 已可汇报为基本完工
+## 当前已完成或基本完成
 
-- MT-001 抽取阶段：已形成 2020 OEJP/MMC 71 团体完整表、52 个 registry extension candidates 和抽取说明。
-- MT-002：已有真实 URL 的来源完成第一轮本地备份，当前 archive manifest 为 74 archived / 2 manual_archived / 0 pending_archive。
-- MT-003 第一轮：25 条 `inferred_url` 中 11 条已回填真实 URL 并归档，14 条仍待处理。
+- MT-001：71 团体完整表已形成；Tier A 9 个组织已入 registry 和 R5，Tier B/C 按分层决策暂不入表。
+- MT-002：第一轮真实 URL 归档已完成；2026-07-12 manifest 为 91 archived / 2 manual_archived / 2 failed / 1 skipped inferred URL / 2 non-URL references。
+- MT-003：25 条 `inferred_url` 已解决 24 条，仅 S020 保留为当地数据库缺口。
+- MT-004：线上 pass 完成，组织级身份仍需当地材料。
+- MT-006：ONC 行政协作定位基本完成，金额仍待公开年报或当地材料。
+- MT-007：诉讼角色表完成，Turtle Island Restoration Network 已作为 A086 入 registry。
+- MT-008：54 行事件感知侧表完成，主表 schema 是否合并仍待验证。
+
+MT-005 仍在进行：已有 AWWA 三条命名 recipient 边，完整年度表仍需继续线上检索并记录证据上限。

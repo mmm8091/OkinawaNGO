@@ -166,3 +166,18 @@
 - MT-001 的抽取阶段：71 团体完整 participant list、52 个 registry extension candidates、抽取说明。
 - MT-002：真实 URL 来源本地备份，当前 74 archived / 2 manual archived / 0 pending archive。
 - MT-003 第一轮：25 条 `inferred_url` 中 11 条已回填真实 URL 并归档，14 条仍待处理。
+
+## 12. 2026-07-12 主线程状态更新
+
+前述第 1–11 节保留为第一次/第二次同步时的历史快照，不再用于判断当前内部进度。当前数据为 103 actors、98 sources、180 actor–issue 候选边、124 actor–place 候选边、35 funding/support 样本边；另有 54 行事件感知关系表。
+
+当前推进原则已经明确：先完成所有合理的线上工作、一期核心可视化和研究报告 v0，再派当地协作者。正式门槛见 `docs/phase1_online_completion_plan_v0.md`。
+
+Registry 不再为达到 120+ 而机械扩充。2020 MMC Tier A 9 个组织已入表；Tier B 12 个组织只有在形成独立“日本本土声援层”并服务 R5/R11 分析时才分层纳入；Tier C 31 个一次性署名者维持事件限定。
+
+下一轮对外沟通前，应优先形成：
+
+1. 完整的一期可视化清单与缺口审计。
+2. 新增组织功能生态、组织—地点、事件感知关系和严格证据分层的 support/service 图。
+3. 一期研究报告 v0。
+4. 从报告证据缺口反推的当地协作者正式任务包。

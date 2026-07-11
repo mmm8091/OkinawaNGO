@@ -2,7 +2,7 @@
 
 硬规则：本工作台永远不能超过 300 行；只记录当前状态、计划、阻塞和下一步，详细材料放到独立文档或数据表。
 
-更新时间：2026-07-01
+更新时间：2026-07-12
 
 ## 当前定位
 
@@ -67,7 +67,7 @@
 - [x] 对 P1 条目进行第一轮 web 核实（AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票）。
 - [x] 完成正式人工复核任务 HR-001 至 HR-009，并写入 `human_review_log_v0.csv`。
 - [x] 补充来源日志中 URL 占位符条目（MT-003：24/25 已解决为真实 URL，仅剩 S020 待当地补查）。
-- [ ] 继续扩充 actor registry 到 120-150 条。
+- [ ] 按分析价值扩充 actor registry；不再以 120-150 条作为机械验收指标。
 - [ ] 处理 HR 复核后的剩余 `needs_second_source` / `needs_local_retrieval` 条目。
 - [ ] 根据复核结果更新 evidence_level 和可发布措辞。
 - [x] 建立信息源本地备份机制并完成归档（85 archived / 2 manual / 2 failed 瞬时 SSL / 1 inferred(S020) / 2 non-url）。
@@ -84,6 +84,7 @@
 - [x] 生成第二次进度同步稿 formal_comm_v0：对齐第一次文风的简洁 MD（`第二次进度同步_v0.md`），含研究模块菜单进度、七周工期对照、四张截图主图；图源由脚本生成。
 - [x] 重写当地材料任务书 v1：分 Tier 1 线上可完成 / Tier 2 需当地协作两层（沟通稿中只保留一句概括）。
 - [ ] 准备组织-议题矩阵和组织-地点矩阵分析。
+- [ ] 完成一期线上收口、核心可视化包和研究报告 v0，再正式派当地协作者。
 
 ## 文件索引
 
@@ -96,6 +97,7 @@
 - `docs/progress_report_v1.md`
 - `outputs/formal_comm_v0/`
 - `docs/source_archive_protocol_v0.md`
+- `docs/phase1_online_completion_plan_v0.md`
 - `docs/p1_review_prompt_v0.md`
 - `docs/human_review_merge_package_v0.md`
 - `data/interim/16_inferred_url_resolution_queue_v0.csv`
@@ -140,7 +142,7 @@
 
 当前当地补查优先级：与那国早期反部署组织、军属配偶俱乐部慈善 recipient、外务省 / JICA / ONC 关系链。
 
-当前人类决策状态：HD-001 至 HD-008 已决策完成；下一次沟通采用普通 / 保守口径，但必须先完成解释性图表包；暂不急派当地协作者。
+当前人类决策状态：HD-001 至 HD-010 已决策完成。HD-009 明确先完成全部合理线上工作、一期核心可视化和研究报告 v0，再正式派当地协作者；HD-010 取消 registry 120+ 的机械数量目标，Tier B 仅在形成独立本土声援分析层时分层纳入。
 
 ## 问题抛出机制
 
@@ -157,13 +159,13 @@
 ## 下一步
 
 1. 第二次进度同步稿已交付（source_docs/current 两份 PDF 并列）；下一轮沟通再议。
-2. MT-001 Tier A 9 条已写入 registry（93→102）并接入 2020 MMC event（R5，2→11）；剩：补 alias（tentative 日文名待核）、二次核实后加议题/地点候选边。B=12 暂缓 / C=31 署名限定。
+2. MT-001 Tier A 9 条已写入 registry（93→102）并接入 2020 MMC event（R5，2→11）；剩：补 alias（tentative 日文名待核）、二次核实后加议题/地点候选边。B=12 仅在建立独立本土声援层时分层纳入；C=31 署名限定。
 3. MT-003 基本完成：24/25 已解决为真实 URL 并归档（年份校正 S027/S030/S037/S040），仅 S020（宫古地下水）留当地补查。
-4. MT-007 基本完成：`lawsuit_actor_role_table_v0.csv` 已定案 Okinawa Dugong v. Rumsfeld 各方角色（A076 原告确认、A002/A019 非当事方、JELF 原告、Earthjustice 律师）；剩 Turtle Island Restoration Network 未入表可作候选。
+4. MT-007 基本完成：`lawsuit_actor_role_table_v0.csv` 已定案 Okinawa Dugong v. Rumsfeld 各方角色（A076 原告确认、A002/A019 非当事方、JELF 原告、Earthjustice 律师）；Turtle Island Restoration Network 已作为 A086 入表。
 5. MT-005 进行中：已把 AWWA aggregate 落成命名 recipient 边 F028–F030（Yomitan Quegoen / Uruma 社福 / Boy Scouts Far East，E3 DVIDS 源）；剩完整年表需 Form 990 / 年报。见 `MT005_awwa_recipient_note.md`。
 6. MT-008 基本完成：`actor_relation_events_v1.csv`（54 行 / 9 事件 / 5 action 类型）把 co-action+诉讼+公投统一成事件感知层；schema 增强提案待并入 07/08。见 `MT008_edge_enrichment_note.md`。
 7. MT-006 基本完成：ONC 归入国际协作/多文化共生行政层（外务省相談員 F031、县/市委託 F032-F033、JICA festival F011），与反基地网络分开；F019 下调。见 `MT006_onc_admin_chain_note.md`。
 8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。
 9. MT-004 线上 pass 完成：A014 事件语境有主流佐证（RS/OT/QAB）、A015 无非党派源保持 E2；组织级身份仍需与那国当地补查（LR Tier 2）。见 `MT004_yonaguni_online_pass_note.md`。
 10. R5/R11 事件感知图已出：`fig/fig_event_repertoire.png`（集体行动 repertoire 时间线，`make_event_repertoire_fig.py`）。
-11. 剩（局部/当地）：LR T1-D/E 线上公开报告；继续扩 registry 到 120+；A014/A015、AWWA Form 990、ONC 年报金额等需当地补查（LR Tier 2）。
+11. 当前先做线上收口：LR T1-A/D/E、Tier A 别名/第二来源、事件层验证、一期可视化审计与研究报告 v0。达到 `phase1_online_completion_plan_v0.md` 的完成门槛后，再派 A014/A015、AWWA Form 990、ONC 年报金额、S020 等 LR Tier 2 任务。

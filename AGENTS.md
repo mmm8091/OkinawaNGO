@@ -62,15 +62,19 @@ Updated: 2026-07-02.
 - MT-001: basically done for extraction; still needs registry review of 2020 MMC extension candidates.
 - MT-002: basically done; first full source-archive pass has 0 pending real URLs.
 - MT-003: basically done; 24 of 25 placeholders resolved to verified URLs; only S020 remains as a local-retrieval gap.
-- MT-007: basically done; `lawsuit_actor_role_table_v0.csv` maps Okinawa Dugong v. Rumsfeld parties (A076 named plaintiff; A002/A019 non-parties; JELF plaintiff; Earthjustice counsel; Turtle Island Restoration Network the only plaintiff still outside the registry).
+- MT-007: basically done; `lawsuit_actor_role_table_v0.csv` maps Okinawa Dugong v. Rumsfeld parties (A076 named plaintiff; A002/A019 non-parties; JELF plaintiff; Earthjustice counsel); Turtle Island Restoration Network is now A086 in the registry.
 - MT-005: in progress; named AWWA recipient edges F028–F030 added (E3, DVIDS-sourced); full recipient table still needs Form 990 / annual reports.
 - MT-006: basically done; ONC placed in the international-cooperation/multicultural admin layer (MOFA consultant, prefecture/city commissions, JICA festival), separate from the anti-base movement; F019 downgraded.
 - MT-008: basically done; `actor_relation_events_v1.csv` event-aware side table (54 rows, 9 events, 5 action types).
 - MT-004: online pass done; 2015 Yonaguni referendum context corroborated by mainstream RS/OT/QAB, A015 kept E2 (no non-party source online); org-level identity still needs Yaeyama local retrieval (LR Tier 2).
-- MT-005: pending; AWWA / spouse clubs charity recipient evidence.
-- MT-006: pending; ONC / JICA / MOFA relationship chain.
-- MT-007: pending; dugong lawsuit plaintiff mapping.
-- MT-008: pending; add event/action/relation-strength fields to relation data.
+
+## Current Phase-1 Direction (2026-07-12)
+
+- Finish all reasonable online work before assigning local collaborators.
+- Complete the valuable Phase-1 visualizations and a research-report v0 first; use their explicit evidence gaps to generate local tasks.
+- Local assignment starts only after Tier 1 is complete or logged as `online_exhausted`, figures have data/scripts/briefs, and the report draft identifies exact missing fields.
+- Registry growth is value-driven, not a mechanical 120+ target. MMC Tier B may enter only as a separate mainland-solidarity layer that materially improves R5/R11; Tier C stays event-only.
+- Authoritative plan: `docs/phase1_online_completion_plan_v0.md`.
 
 ## Useful Commands
 
@@ -91,4 +95,3 @@ After source-log or archive changes, rerun the archive script first, then regene
 - Next boss-facing communication should use explanatory outputs, not only statistics.
 - Safe current message: R2, R3/R4, R5, R11, and R14 now have interpretable v0 deliverables; MT-001 extraction, MT-002 archive, and MT-003 first URL-resolution pass are the most concrete progress items.
 - Keep all claims conservative: "publicly visible event participation", "candidate relation", "source-backed role", or "needs local retrieval" are preferred to over-strong network claims.
-
