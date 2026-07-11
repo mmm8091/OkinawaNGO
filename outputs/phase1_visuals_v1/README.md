@@ -4,6 +4,8 @@
 
 本包补足一期现有 `explanatory_v0` / `module_completion_v0` 尚未充分回答的三个问题。它不是对既有图的替换，也不把候选关系升级为最终发现。
 
+验收说明：本包是补图包，不代表对应 R1/R3/R10 模块已经完成，也不能替代原方案指定但仍缺失的完整组织—议题网络、与那国/先岛专题图和多维覆盖偏差图。权威状态见 `docs/phase1_scheme_acceptance_audit_v1.md`。
+
 ## 图件
 
 1. `fig1_functional_ecology.png` — 组织功能生态（功能层 × 来源层）。回答 registry 中不同功能 actor 如何构成，并把军属服务、行政协作和公共外交观察层与倡议网络分开。配套 `functional_ecology_matrix.csv`。

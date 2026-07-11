@@ -10,7 +10,7 @@ AP008,A004,P003,Oura Bay,2015 NACSJ statement,S004,E4,ai_seeded,Statement place.
 AP009,A005,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.
 AP010,A006,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.
 AP011,A007,P002,Henoko,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement place.
-AP012,A008,P001,Okinawa Prefecture,Henoko referendum solidarity statement context,S064,E3,human_revised,HR-002: Okinawa relation is statement/solidarity context, not site presence.
+AP012,A008,P001,Okinawa Prefecture,Henoko referendum solidarity statement context,S064,E3,human_revised,"HR-002: Okinawa relation is statement/solidarity context, not site presence."
 AP013,A009,P002,Henoko,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal place.
 AP014,A009,P003,Oura Bay,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong habitat place.
 AP015,A010,P012,Ishigaki,Local news names Ishigaki civic network,S016;S017,E4,ai_seeded,Core Sakishima place.

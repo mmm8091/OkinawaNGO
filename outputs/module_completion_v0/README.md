@@ -2,6 +2,8 @@
 
 日期：2026-07-12（状态更新；模块产出仍为 v0）
 
+编号说明：本包沿用早期内部编号。对最终 DOCX 方案验收时，Henoko/跨国路径归入 R6，coverage audit 归入基础建设；最终方案 R11 是外来 actor 进入生态，R14 是扩展模块“组织谱系”。本包不能替代 `docs/phase1_scheme_acceptance_audit_v1.md` 的 R1–R11 验收状态。
+
 本目录把解释性图表包进一步整理成模块交付物。目标是让下一次沟通不只展示统计，而是展示可解释机制和下一轮调查路线。
 
 ## 覆盖模块
@@ -9,8 +11,8 @@
 - R2 组织-议题网络：`R02_actor_issue_network_brief.md`
 - R3/R4 地点-议题框架：`R03_R04_place_frame_brief.md`
 - R5 共同行动事件样本：`R05_coaction_event_brief.md`
-- R11 跨国 / 国际倡议路径：`R11_transnational_pathway_brief.md`
-- R14 覆盖与偏差审计：`R14_coverage_bias_audit_brief.md`
+- R6 跨国 / 国际倡议路径：`R11_transnational_pathway_brief.md`（旧文件名）
+- 基础建设覆盖与偏差审计：`R14_coverage_bias_audit_brief.md`（旧文件名）
 
 ## 总表
 

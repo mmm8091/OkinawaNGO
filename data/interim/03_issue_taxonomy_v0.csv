@@ -5,16 +5,16 @@ I003,Henoko,place_issue,Henoko/Oura Bay base construction and relocation conflic
 I004,dugong,environment,Protection of Okinawa dugong habitat and related legal/international advocacy,yes,Strong transnational chain.
 I005,biodiversity,environment,Coral/marine ecosystem and biodiversity protection,yes,Use with environment.
 I006,groundwater,life_safety,Groundwater/water-source concern around Miyako/Ishigaki deployment,yes,Key Sakishima frame.
-I007,life_safety,life_safety,Daily safety, evacuation, risk, noise, accident, targetization concerns,yes,Broader than environment.
-I008,health_risk,life_safety,Electromagnetic waves, ammunition, contamination or health-risk claims,yes,Use evidence cautiously.
-I009,local_autonomy,governance,Self-determination, local referendum, municipal autonomy, prefectural autonomy,yes,Core frame.
+I007,life_safety,life_safety,"Daily safety, evacuation, risk, noise, accident, targetization concerns",yes,Broader than environment.
+I008,health_risk,life_safety,"Electromagnetic waves, ammunition, contamination or health-risk claims",yes,Use evidence cautiously.
+I009,local_autonomy,governance,"Self-determination, local referendum, municipal autonomy, prefectural autonomy",yes,Core frame.
 I010,referendum,governance,Prefectural or municipal referendum and signature campaigns,yes,Connects to prior election project.
-I011,legal,legal_policy,Litigation, plaintiffs, lawyers, environmental procedure, administrative law,yes,Sample not full legal database.
-I012,international_advocacy,transnational,UN, U.S. institutions, international NGOs, cross-border advocacy,yes,Core mechanism.
-I013,public_diplomacy,external_network,U.S. consulate, exchange, scholarship, youth leadership, alliance-related outreach,sample,New observation layer.
+I011,legal,legal_policy,"Litigation, plaintiffs, lawyers, environmental procedure, administrative law",yes,Sample not full legal database.
+I012,international_advocacy,transnational,"UN, U.S. institutions, international NGOs, cross-border advocacy",yes,Core mechanism.
+I013,public_diplomacy,external_network,"U.S. consulate, exchange, scholarship, youth leadership, alliance-related outreach",sample,New observation layer.
 I014,military_family_service,base_community,Services and welfare for U.S. service members and families,sample,Do not code as movement stance.
 I015,international_cooperation,external_network,JICA/MOFA/NGO cooperation and development education,sample,Institutional ecology layer.
-I016,base_community_welfare,base_community,Welfare, charity, donation and service networks around U.S. base communities,sample,Service ecology, not movement stance.
+I016,base_community_welfare,base_community,"Welfare, charity, donation and service networks around U.S. base communities",sample,"Service ecology, not movement stance."
 I017,frontline_prevention,security_politics,Opposition to Okinawa/Ryukyu arc becoming a battlefield or frontline,yes,Recent anti-war/frontline frame.
 I018,Taiwan_contingency,security_politics,Taiwan contingency and surrounding security environment as public issue,yes,Use neutral wording.
-I019,peace,peace_human_rights,Peace movement, anti-war and demilitarization framing,yes,Often bridges anti-base and civic networks.
+I019,peace,peace_human_rights,"Peace movement, anti-war and demilitarization framing",yes,Often bridges anti-base and civic networks.

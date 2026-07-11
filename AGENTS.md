@@ -7,10 +7,11 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 ## First Read
 
 1. `docs/phase1_workbench.md` — current control document; must stay under 300 lines.
-2. `data/metadata/coding_schema_v0.md` — field definitions and evidence levels.
-3. `docs/progress_sync_assets_v0.md` — communication assets and current completion notes.
-4. `outputs/module_completion_v0/README.md` — current R-module deliverables and MT task status.
-5. `CONTEXT.md` — stable domain context.
+2. `docs/phase1_scheme_acceptance_audit_v1.md` — authoritative acceptance audit against the original Phase-1 DOCX.
+3. `data/metadata/coding_schema_v0.md` — field definitions and evidence levels.
+4. `docs/progress_sync_assets_v0.md` — communication assets and current completion notes.
+5. `outputs/module_completion_v0/README.md` — existing v0 module deliverables; not the full Phase-1 acceptance status.
+6. `CONTEXT.md` — stable domain context.
 
 ## Hard Rules
 
@@ -78,8 +79,10 @@ Updated: 2026-07-12.
 - Finish all reasonable online work before assigning local collaborators.
 - Complete the valuable Phase-1 visualizations and a research-report v0 first; use their explicit evidence gaps to generate local tasks.
 - Local assignment starts only after Tier 1 is complete or logged as `online_exhausted`, figures have data/scripts/briefs, and the report draft identifies exact missing fields.
-- Registry growth is value-driven, not a mechanical 120+ target. MMC Tier B may enter only as a separate mainland-solidarity layer that materially improves R5/R11; Tier C stays event-only.
-- Authoritative plan: `docs/phase1_online_completion_plan_v0.md`.
+- The original Phase-1 DOCX is the acceptance contract: 120–180 verifiable actors, all R1–R11 at differentiated depth, five specified core figures, a 25–35 page report, an 8k–12k paper, and a 15–20 page PPT.
+- Registry growth remains module/value-driven but must reach at least 120; it may exceed 180 if the module audit still shows unsaturated actor/place/channel/role layers. MMC Tier B enters only as a separate mainland-solidarity layer when analytically justified; Tier C stays event-only.
+- Existing `R14 coverage` outputs are a foundation coverage audit under the final DOCX numbering; final R14 is organizational genealogy and is an expansion module.
+- Authoritative acceptance audit: `docs/phase1_scheme_acceptance_audit_v1.md`. Online/local sequencing remains in `docs/phase1_online_completion_plan_v0.md`.
 
 ## Useful Commands
 
@@ -90,6 +93,8 @@ python scripts\make_module_completion_package.py
 python scripts\make_relation_events.py
 python scripts\make_event_repertoire_fig.py
 python scripts\make_formal_comm_package.py
+python scripts\make_phase1_visuals.py
+python scripts\validate_phase1_data.py
 ```
 
 After source-log or archive changes, rerun the archive script first, then regenerate explanatory and module packages.

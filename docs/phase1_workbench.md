@@ -67,7 +67,7 @@
 - [x] 对 P1 条目进行第一轮 web 核实（AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票）。
 - [x] 完成正式人工复核任务 HR-001 至 HR-009，并写入 `human_review_log_v0.csv`。
 - [x] 补充来源日志中 URL 占位符条目（MT-003/W1：25/25 已解决；S020 恢复为 2016 年真实 URL）。
-- [ ] 按分析价值扩充 actor registry；不再以 120-150 条作为机械验收指标。
+- [ ] 按原方案和模块缺口扩充 actor registry 至至少 120（合同范围 120–180；模块未饱和时可超过 180）。
 - [ ] 处理 HR 复核后的剩余 `needs_second_source` / `needs_local_retrieval` 条目。
 - [ ] 根据复核结果更新 evidence_level 和可发布措辞。
 - [x] 建立信息源本地备份机制并持续归档（2026-07-12：93 archived / 2 manual / 5 failed / 2 non-url；失败含 MOFA 403 与瞬时网络波动）。
@@ -79,12 +79,14 @@
 - [x] 生成第一次进度沟通图表（outputs/progress_sync_v0/）。
 - [x] 起草第一版内部进度稿（docs/progress_report_v1.md；暂不交付）。
 - [x] 生成解释性图表包 v0：组织-议题桥接网络、地点-议题矩阵、边野古国际化路径图、共同行动样本构成、证据缺口图。
-- [x] 生成模块完成包 v0：R2、R3/R4、R5、R11、R14 brief、event table、任务表。
+- [x] 生成旧编号模块包 v0：R2、R3/R4、R5、跨国路径、coverage brief、event table、任务表；仅作现有产出索引，不代表原方案 R1–R11 验收。
 - [x] 抽取 2020 OEJP / MMC 71 团体完整 participant list，并生成 actor registry extension candidates。
 - [x] 生成第二次进度同步稿 formal_comm_v0：对齐第一次文风的简洁 MD（`第二次进度同步_v0.md`），含研究模块菜单进度、七周工期对照、四张截图主图；图源由脚本生成。
 - [x] 重写当地材料任务书 v1：分 Tier 1 线上可完成 / Tier 2 需当地协作两层（沟通稿中只保留一句概括）。
-- [ ] 准备组织-议题矩阵和组织-地点矩阵分析。
-- [x] 完成 W1 线上材料收口、一期补图包和研究报告 v0 草稿；下一步做图文/证据一致性与剩余 W2 事件层工作。
+- [ ] 完成原方案指定的完整组织—议题网络和与那国/先岛专题图；组织—地点补图已完成。
+- [x] 完成 W1 线上材料 pass、一期补图包和研究报告 v0 草稿；不等于一期线上收口或最终验收。
+- [x] 按原始 DOCX 完成基础建设、R1–R11、五图及最终交付验收审计。
+- [ ] 完成 R1–R11 缺口补料、解释性成果、论文、25–35 页报告和 15–20 页 PPT。
 
 ## 文件索引
 
@@ -116,6 +118,8 @@
 - `outputs/online_completion_v0/`
 - `outputs/phase1_visuals_v1/`
 - `docs/phase1_research_report_v0.md`
+- `docs/phase1_scheme_acceptance_audit_v1.md`
+- `outputs/phase1_acceptance_audit_v0/`
 
 ## 当前样本状态
 
@@ -129,7 +133,7 @@
 - place registry：20 个地点 / 场域节点。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
-- 模块完成包 v0：覆盖 R2、R3/R4、R5、R11、R14；含 5 个 brief、模块状态表、共同行动 event/participant 表、2020 MMC 71 团体完整表、下一步模块调查任务表。
+- 旧编号模块包 v0：含 R2、R3/R4、R5、跨国路径和 coverage 等现有 brief；最终方案中跨国路径属于 R6，coverage 属基础建设，不能用旧 R11/R14 编号判定验收。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
 - 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
 - 信息源备份机制已跑通：2026-07-12 manifest 为 93 archived、2 manual_archived、5 failed、2 non-URL；S020/S099/S100/S102 已归档，S096/S101 MOFA 页面与若干来源可能失败，归档/失败数会因瞬时网络波动变化。
@@ -145,7 +149,7 @@
 
 当前当地补查优先级：与那国早期反部署组织、先岛/边野古核心组织报刊时间线、军属配偶俱乐部完整 recipient 年表。ONC 公开年度事业费和 S020 已在线解决。
 
-当前人类决策状态：HD-001 至 HD-010 已决策完成。HD-009 明确先完成全部合理线上工作、一期核心可视化和研究报告 v0，再正式派当地协作者；HD-010 取消 registry 120+ 的机械数量目标，Tier B 仅在形成独立本土声援分析层时分层纳入。
+当前人类决策状态：HD-001 至 HD-011 已决策完成。HD-011 以原始 DOCX 为唯一验收合同，并纠正 HD-010：registry 必须达到 120–180，仍由模块价值驱动，模块未饱和时可超过 180；Tier B 分层纳入、Tier C 事件限定。
 
 ## 问题抛出机制
 
@@ -161,7 +165,7 @@
 
 ## 下一步
 
-1. 第二次进度同步稿已交付（source_docs/current 两份 PDF 并列）；下一轮沟通再议。
+1. 以 `docs/phase1_scheme_acceptance_audit_v1.md` 为权威：当前不具备一期验收条件；第二次进度同步只代表甲方已知快照。
 2. MT-001 Tier A 9 条已写入 registry（93→102）并接入 2020 MMC event（R5，2→11）；剩：补 alias（tentative 日文名待核）、二次核实后加议题/地点候选边。B=12 仅在建立独立本土声援层时分层纳入；C=31 署名限定。
 3. MT-003 已完成：25/25 inferred URL 全部解决；S020 恢复为 2016 年琉球新报文章并归档，不再派当地补查。
 4. MT-007 基本完成：`lawsuit_actor_role_table_v0.csv` 已定案 Okinawa Dugong v. Rumsfeld 各方角色（A076 原告确认、A002/A019 非当事方、JELF 原告、Earthjustice 律师）；Turtle Island Restoration Network 已作为 A086 入表。
@@ -171,4 +175,4 @@
 8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。
 9. MT-004 线上 pass 完成：A014 事件语境有主流佐证（RS/OT/QAB）、A015 无非党派源保持 E2；组织级身份仍需与那国当地补查（LR Tier 2）。见 `MT004_yonaguni_online_pass_note.md`。
 10. R5/R11 事件感知图已出：`fig/fig_event_repertoire.png`（集体行动 repertoire 时间线，`make_event_repertoire_fig.py`）。
-11. W1/W3/W4 已完成：见 `outputs/online_completion_v0/`、`outputs/phase1_visuals_v1/`、`docs/phase1_research_report_v0.md`。剩 W2：Tier A 别名/第二来源、事件层验证与报告图文一致性；当地任务保留 A014/A015、核心组织报刊时间线、AWWA Form 990，不再含 S020 或 ONC 公开年报金额。
+11. 下一轮按 P0–P4 推进：schema/lint 与缺表 → 模块驱动 registry 扩样 → R7/R8/R9/R10 等缺口补料 → 指定核心图与各模块解释 → 正式报告/论文/PPT → 精确当地任务。详见方案验收总表。

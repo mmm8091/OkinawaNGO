@@ -16,7 +16,7 @@ AI014,A007,I019,peace,Peace Boat Henoko statement,S005,E4,ai_seeded,Peace moveme
 AI015,A007,I001,anti_base,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement-based.
 AI016,A007,I012,international_advocacy,International peace NGO role,S005,E4,ai_seeded,Bridge actor.
 AI017,A008,I019,peace,No-war/international-cooperation NGO network purpose,S065;S066;S067,E4,human_revised,HR-002 confirms peace/no-war as core purpose.
-AI018,A008,I001,anti_base,Henoko referendum solidarity statement context,S064,E3,human_revised,HR-002: anti-base relation is statement/solidarity context, not local core activity or stable alliance.
+AI018,A008,I001,anti_base,Henoko referendum solidarity statement context,S064,E3,human_revised,"HR-002: anti-base relation is statement/solidarity context, not local core activity or stable alliance."
 AI019,A009,I011,legal,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal route.
 AI020,A009,I004,dugong,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong protection.
 AI021,A009,I012,international_advocacy,U.S. legal NGO involvement,S009,E4,ai_seeded,International advocacy actor.

@@ -85,7 +85,7 @@ def make_module_status() -> None:
             "next_action": "Review actor_registry_extension_candidates_2020_mmc_v0.csv and add selected actors.",
         },
         {
-            "module": "R11 transnational advocacy",
+            "module": "R6 transnational advocacy (legacy R11 filenames)",
             "completion_level": "pathway_v0",
             "current_outputs": "fig_henoko_internationalization_pathway.png; transnational_pathway_nodes_v0.csv; R11_transnational_pathway_brief.md",
             "what_is_publishable_now": "Henoko/Oura Bay issue internationalization pathway.",
@@ -93,7 +93,7 @@ def make_module_status() -> None:
             "next_action": "Separate lawsuit, MMC request, and international signatory event tables.",
         },
         {
-            "module": "R14 coverage bias audit",
+            "module": "Foundation coverage bias audit (legacy R14 filenames)",
             "completion_level": "audit_v0",
             "current_outputs": "fig_evidence_gap_map.png; coverage_gap_summary_v0.csv; R14_coverage_bias_audit_brief.md",
             "what_is_publishable_now": "Transparent limits of source coverage, review status, and archive status.",
@@ -657,7 +657,7 @@ def make_next_tasks() -> None:
     rows = [
         {
             "task_id": "MT-001",
-            "module": "R5/R11",
+            "module": "R5/R6",
             "priority": "P1",
             "status": "tier_A_added_to_registry_and_R5; B_layer_conditional_C_signatory_only",
             "task": "Review and incorporate 2020 OEJP/MMC 71-group participant list",
@@ -668,7 +668,7 @@ def make_next_tasks() -> None:
         },
         {
             "task_id": "MT-002",
-            "module": "R14",
+            "module": "Foundation",
             "priority": "P1",
             "status": "basically_done",
             "task": "Maintain source archive after first full URL pass",
@@ -679,7 +679,7 @@ def make_next_tasks() -> None:
         },
         {
             "task_id": "MT-003",
-            "module": "R14/R3",
+            "module": "Foundation/R3",
             "priority": "P1",
             "status": "done; all 25 inferred_url placeholders resolved",
             "task": "Resolve remaining inferred_url placeholders",
@@ -701,7 +701,7 @@ def make_next_tasks() -> None:
         },
         {
             "task_id": "MT-005",
-            "module": "R8/R14",
+            "module": "R11/Foundation",
             "priority": "P2",
             "status": "online_pass_done; named recipients F028-F030 and joint NOSCO event F036 added; full table needs Form 990/internal reports",
             "task": "AWWA / spouse clubs charity recipient evidence",
@@ -712,7 +712,7 @@ def make_next_tasks() -> None:
         },
         {
             "task_id": "MT-006",
-            "module": "R8",
+            "module": "R10",
             "priority": "P2",
             "status": "basically_done",
             "task": "ONC / JICA / MOFA relationship chain",
@@ -723,7 +723,7 @@ def make_next_tasks() -> None:
         },
         {
             "task_id": "MT-007",
-            "module": "R10/R11",
+            "module": "R8/R6",
             "priority": "P2",
             "status": "basically_done",
             "task": "Dugong lawsuit plaintiff mapping",
@@ -756,6 +756,8 @@ def write_index() -> None:
 
 日期：2026-07-12（状态更新；模块产出仍为 v0）
 
+编号说明：本包沿用早期内部编号。对最终 DOCX 方案验收时，Henoko/跨国路径归入 R6，coverage audit 归入基础建设；最终方案 R11 是外来 actor 进入生态，R14 是扩展模块“组织谱系”。本包不能替代 `docs/phase1_scheme_acceptance_audit_v1.md` 的 R1–R11 验收状态。
+
 本目录把解释性图表包进一步整理成模块交付物。目标是让下一次沟通不只展示统计，而是展示可解释机制和下一轮调查路线。
 
 ## 覆盖模块
@@ -763,8 +765,8 @@ def write_index() -> None:
 - R2 组织-议题网络：`R02_actor_issue_network_brief.md`
 - R3/R4 地点-议题框架：`R03_R04_place_frame_brief.md`
 - R5 共同行动事件样本：`R05_coaction_event_brief.md`
-- R11 跨国 / 国际倡议路径：`R11_transnational_pathway_brief.md`
-- R14 覆盖与偏差审计：`R14_coverage_bias_audit_brief.md`
+- R6 跨国 / 国际倡议路径：`R11_transnational_pathway_brief.md`（旧文件名）
+- 基础建设覆盖与偏差审计：`R14_coverage_bias_audit_brief.md`（旧文件名）
 
 ## 总表
 
