@@ -1,0 +1,20 @@
+{
+  "source_id": "S101",
+  "source_type": "official_portal",
+  "title": "外務省 NGO相談員リスト 令和8年度",
+  "year": "2026",
+  "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/about/shimin/pagew_000001_00006.html",
+  "what_it_supports": "W1 T1-E continuation of ONC designation as Okinawa NGO consultant in FY2026",
+  "evidence_level": "E4",
+  "bias_note": "Official MOFA list confirms designation but not amount",
+  "review_status": "ai_seeded",
+  "notes": "W1 source; supports continuity beyond S096 FY2025; bot archive failed with HTTP 403.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S101\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T18:44:56.950687+00:00",
+  "note": "HTTPError 403: Forbidden"
+}

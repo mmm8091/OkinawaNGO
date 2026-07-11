@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S086\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S086\\metadata.json",
-  "sha256": "36efd15498aa057058f27844c93b5bee1745fdca273c952806da516d59056f80",
+  "sha256": "b96560df9df120ecb20e4d6cc42e20b9c395a38f7bedb30ae19e57c3af34b5af",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:05:49.107800+00:00",
+  "archived_at_utc": "2026-07-11T18:44:24.620489+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.ned.org/2024-grant-listings/",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
-    "content_length": "113969",
+    "content_length": "113972",
     "last_modified": ""
   }
 }

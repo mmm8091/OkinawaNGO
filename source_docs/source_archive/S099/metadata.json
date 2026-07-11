@@ -1,0 +1,27 @@
+{
+  "source_id": "S099",
+  "source_type": "official_npo_report",
+  "title": "沖縄NGOセンター 2024年度事業報告書等",
+  "year": "2025",
+  "url": "https://www.npo-homepage.go.jp/npoportal/document/047021403/hokoku/2024700/2024%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf",
+  "what_it_supports": "W1 T1-D/E legal annual report and project-level costs for MOFA Okinawa Prefecture and Okinawa City commissions",
+  "evidence_level": "E4",
+  "bias_note": "Official statutory NPO report; project cost is not identical to year-end receivable or cash paid",
+  "review_status": "ai_seeded",
+  "notes": "W1 source; FY2024 project costs: MOFA NGO consultant JPY 2.894m; Okinawa City KIP JPY 16.04m; Okinawa Pref multicultural policy-conference support JPY 5.53m; archived.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S099\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S099\\metadata.json",
+  "sha256": "7c5baa8a86f728d80d4b201f92152d1b0c6a494f12ade0d33cb4cc88482b863f",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T18:44:53.401643+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-homepage.go.jp/npoportal/document/047021403/hokoku/2024700/2024%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "200684",
+    "last_modified": ""
+  }
+}

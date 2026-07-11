@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S038\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S038\\metadata.json",
-  "sha256": "0568e99ea59e3d94fb7ef3141ab5e4d8d0f910b159120da6b0763a58db92c635",
+  "sha256": "b278a86590c4b1111f6e67f06d53db7f62282c9422d1b855113b5089d3d00c65",
   "content_type": "text/html",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:04:29.479284+00:00",
+  "archived_at_utc": "2026-07-11T18:43:03.270134+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.jca.apc.org/HHK/",
     "status_code": "200",
     "content_type": "text/html",
-    "content_length": "115812",
-    "last_modified": "Mon, 15 Jun 2026 15:01:14 GMT"
+    "content_length": "108204",
+    "last_modified": "Mon, 06 Jul 2026 16:23:25 GMT"
   }
 }

@@ -1,0 +1,50 @@
+﻿functional_family,origin_type,actor_count,E2,E3,E4,actor_ids,actor_names
+本地公民行动,okinawa_local,43,11,16,16,A003;A010;A011;A012;A013;A014;A015;A016;A017;A018;A019;A023;A024;A025;A029;A047;A048;A049;A051;A052;A053;A054;A055;A056;A057;A058;A059;A060;A065;A068;A069;A071;A072;A076;A077;A078;A079;A080;A081;A082;A083;A084;A085,ジュゴンネットワーク沖縄;石垣島に軍事基地をつくらせない市民連絡会;石垣市住民投票を求める会;宮古島いのちの水を守ろう！;ミサイル基地いらない宮古島住民連絡会;住民投票を成功させるための実行委員会;与那国自衛隊配備反対意見広告実行委員会;与那国島の明るい未来を願うイソバの会;沖縄対話プロジェクト;ノーモア沖縄戦 命どぅ宝の会;ヘリ基地反対協議会（海上ヘリ基地建設反対・平和と名護市政民主化を求める協議会）;美ら海にもやんばるにも基地はいらない市民の会;辺野古リレー;辺野古への基地建設を許さない実行委員会;沖縄・生物多様性市民ネットワーク;沖縄平和運動センター;沖縄一坪反戦地主会;基地・軍隊を許さない行動する女たちの会;「辺野古」県民投票の会;嘉手納爆音訴訟原告団;普天間爆音訴訟団;沖縄人権協会;泡瀬干潟を守る連絡会;沖縄環境ネットワーク;沖縄意見広告運動;沖縄県統一連（沖縄県統一行動連絡会議）;島ぐるみ会議;高江のヘリパッドいらない住民の会;南西諸島ピースネット;名護市民投票の会;沖縄ジュゴン環境アセスメント監視団;沖縄平和市民連絡会;沖縄から基地をなくし世界の平和を求める市民連絡会;ジュゴン保護基金委員会（Save the Dugong Foundation）;Diving Team Rainbow;Dugong no Sato;Okinawa Reefcheck and Research Group;Okumagawa Basin Protection Foundation;Protect Northernmost Dugong Team Zan;East Asian Community Institute Ryukyu Okinawa Center;Henoko Blue;Nago Democracy;No Heliport Base Association of 10 Districts North of Futamai
+本地公民行动,japan_domestic,4,0,3,1,A008;A027;A063;A067,NGO非戦ネット;公共事業改革市民会議;一坪反戦地主会関東ブロック;辺野古土砂搬入反対全国協議会（辺野古土砂全協）
+本地公民行动,mixed_or_network,0,0,0,0,,
+本地公民行动,international,0,0,0,0,,
+本地公民行动,us_origin,0,0,0,0,,
+本地公民行动,public_institution,0,0,0,0,,
+本地公民行动,corporate,0,0,0,0,,
+环保／国际倡议,okinawa_local,0,0,0,0,,
+环保／国际倡议,japan_domestic,14,0,0,14,A002;A004;A005;A006;A007;X015;A021;A022;A026;A030;A031;A061;A062;A066,ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）;日本自然保護協会;WWFジャパン;グリーンピース・ジャパン;ピースボート;Peace Winds Japan;国際環境NGO FoE Japan;NPO法人 ラムサール・ネットワーク日本;ピース・ニュース;市川三番瀬を守る会;三番瀬のラムサール条約登録を実現する会;日本野鳥の会;日本湿地ネットワーク（JAWAN）;新外交イニシアティブ（ND）
+环保／国际倡议,mixed_or_network,2,0,0,2,A001;A028,Okinawa Environmental Justice Project;沖縄のための日米市民ネットワーク（JUCON）
+环保／国际倡议,international,13,0,1,12,A032;A034;A035;A036;A037;A038;A039;A040;A041;A043;A044;A046;A064,Peace Philosophy Centre;Korea Federation for Environmental Movements (KFEM);Russian Social Ecological Union;Friends of the Siberian Forests;Centre for Environmental Justice;Sahabat Alam Malaysia;The Legal Rights and Natural Resources Center-Kasama sa Kalikasan;Forum for Protection of Public Interest (Pro Public);Friends of the Earth Brisbane;PENGON-FoE Palestine;Naturvernforbundet / Norwegian Society for the Conservation of Nature;Pro Natura;外国軍事基地撤去国際ネットワーク（No Bases Network）
+环保／国际倡议,us_origin,6,0,1,5,A009;A033;A042;A045;A070;A086,Earthjustice;Friends of the Earth U.S.;Pacific Environment;Center for Biological Diversity;Veterans for Peace Okinawa;Turtle Island Restoration Network
+环保／国际倡议,public_institution,0,0,0,0,,
+环保／国际倡议,corporate,0,0,0,0,,
+法律／制度渠道,okinawa_local,1,0,0,1,A050,沖縄弁護士会
+法律／制度渠道,japan_domestic,1,0,0,1,A020,日本環境法律家連盟（JELF）
+法律／制度渠道,mixed_or_network,0,0,0,0,,
+法律／制度渠道,international,0,0,0,0,,
+法律／制度渠道,us_origin,0,0,0,0,,
+法律／制度渠道,public_institution,0,0,0,0,,
+法律／制度渠道,corporate,0,0,0,0,,
+服务／慈善,okinawa_local,0,0,0,0,,
+服务／慈善,japan_domestic,0,0,0,0,,
+服务／慈善,mixed_or_network,0,0,0,0,,
+服务／慈善,international,0,0,0,0,,
+服务／慈善,us_origin,9,0,2,7,X001;X004;X005;X006;X007;X008;X009;X016;X017,USO Okinawa;American Welfare & Works Association (AWWA / 米国福祉事業協会);Naval Officers' Spouses' Club of Okinawa NOSCO;Kadena Officers' Spouses' Club KOSC;Okinawa Enlisted Spouses' Club (OESC);American Red Cross Okinawa;Navy-Marine Corps Relief Society Okinawa;Marine Officers' Spouses' Club Okinawa (MOSCO / MOSC);Army Community Group of Okinawa (ACGO)
+服务／慈善,public_institution,0,0,0,0,,
+服务／慈善,corporate,0,0,0,0,,
+行政／国际协作,okinawa_local,2,1,0,1,X010;A073,沖縄NGOセンター;琉球沖縄国際支援プログラム
+行政／国际协作,japan_domestic,0,0,0,0,,
+行政／国际协作,mixed_or_network,0,0,0,0,,
+行政／国际协作,international,0,0,0,0,,
+行政／国际协作,us_origin,0,0,0,0,,
+行政／国际协作,public_institution,3,0,0,3,X011;A074;A075,JICA沖縄;沖縄県知事公室基地対策課;沖縄防衛局
+行政／国际协作,corporate,0,0,0,0,,
+公共外交／资助,okinawa_local,0,0,0,0,,
+公共外交／资助,japan_domestic,0,0,0,0,,
+公共外交／资助,mixed_or_network,1,0,0,1,X012,TOMODACHI Initiative
+公共外交／资助,international,0,0,0,0,,
+公共外交／资助,us_origin,2,1,0,1,X013;X014,U.S. Consulate General Naha Okinawa Youth Council Program;NED National Endowment for Democracy
+公共外交／资助,public_institution,0,0,0,0,,
+公共外交／资助,corporate,2,0,1,1,X002;X003,Phoenix Corporation / Phoenix Park Hotel;American Engineering Corporation AEC
+其他观察节点,okinawa_local,0,0,0,0,,
+其他观察节点,japan_domestic,0,0,0,0,,
+其他观察节点,mixed_or_network,0,0,0,0,,
+其他观察节点,international,0,0,0,0,,
+其他观察节点,us_origin,0,0,0,0,,
+其他观察节点,public_institution,0,0,0,0,,
+其他观察节点,corporate,0,0,0,0,,

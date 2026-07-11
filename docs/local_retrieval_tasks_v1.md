@@ -2,6 +2,8 @@
 
 日期：2026-07-01
 
+状态更新：2026-07-12。W1 线上收口结果见 `outputs/online_completion_v0/`。
+
 ## 0. 这一版改了什么
 
 v0（`docs/local_retrieval_tasks_v0.md`）把 8 个方向一次性列成"未来可能需要当地协作者"的清单，但没有区分"其实线上就能做"和"必须当地人到场 / 进馆内数据库"。
@@ -27,6 +29,8 @@ v0 仍作为每个方向的详细目录保留；v1 是当前的优先级与交�
 ---
 
 ## 3. Tier 1 · 本轮锁定 · 线上可完成（可随沟通稿交付）
+
+当前状态：T1-A/D/E 已完成公开网络 pass，并对缺失字段记录 `online_exhausted`；T1-B/C 此前已完成。S020 已恢复为 2016 年真实 URL，不再进入当地派单。ONC FY2024 年度事业费与 JICA 受托角色已由 S099/S100 补足；金额仅表示项目成本，不等于合同支付额。
 
 每项给出：对象、公开可得材料、**本轮交付定义（done_when）**、证据上限。
 
@@ -67,6 +71,8 @@ v0 仍作为每个方向的详细目录保留；v1 是当前的优先级与交�
 - 本轮交付：ONC – 外务省 / JICA 边是否可定到 E4 / E3；有金额则记金额、年度、来源页码；可写入报告的 2–3 句事实。**合同 / 委托金额若无公开件，转 Tier 2。**
 
 **Tier 1 汇总交付物**：一份 `local_retrieval_tier1_findings_v1`（可为 CSV + 摘要），每条含 actor_id / edge_id、来源 URL、证据等级、可否写入报告（yes / cautious / no）。这份即可随第二轮沟通稿"顺便交上去"。
+
+实际交付：`outputs/online_completion_v0/findings_v0.csv`、`search_log_v0.md`、`summary_v0.md`。AWWA/NOSCO/KOSC/OESC 的完整年度 recipient 表、A003/A012 的组织法律/持续性字段仍需内部或当地材料；这属于字段级缺口，不代表线上 pass 未完成。
 
 ---
 

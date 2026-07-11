@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S084\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S084\\metadata.json",
-  "sha256": "91185fa4e7da2fcdd59fdeb6c24ab0ce806c153ae687ab23a533539726ffb43f",
+  "sha256": "71b835cfbf7920c26276879e743b91f85017ee0798f244f5f2bace4b49c02e6b",
   "content_type": "text/html; charset=utf-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:05:46.245167+00:00",
+  "archived_at_utc": "2026-07-11T18:44:22.454951+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://grantedai.com/grants/okinawa-youth-council-program-u-s-mission-to-japan-d2b756a3",
     "status_code": "200",
     "content_type": "text/html; charset=utf-8",
-    "content_length": "157453",
+    "content_length": "119186",
     "last_modified": ""
   }
 }

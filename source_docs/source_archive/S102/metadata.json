@@ -1,0 +1,27 @@
+{
+  "source_id": "S102",
+  "source_type": "military_news",
+  "title": "NOSCO joins donation of cooling fans to Heshikiya after-school childcare center",
+  "year": "2025",
+  "url": "https://www.dvidshub.net/news/546868/us-navy-sailors-help-okinawan-childcare-center-beat-heat",
+  "what_it_supports": "W1 T1-A named local recipient context and NOSCO joint in-kind donation",
+  "evidence_level": "E3",
+  "bias_note": "Military public-affairs source; joint contribution and recipient legal name/value are not separated",
+  "review_status": "ai_seeded",
+  "notes": "W1 source; three industrial cooling fans donated jointly with CFAO VP-9 and CFAO CPOA; archived.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S102\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S102\\metadata.json",
+  "sha256": "2c6a5fdd851ab1bad144f8857e67dc097340a77f1337b48fd5721d3c99df3bf9",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T18:44:57.514093+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.dvidshub.net/news/546868/us-navy-sailors-help-okinawan-childcare-center-beat-heat",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

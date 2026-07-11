@@ -659,12 +659,12 @@ def make_next_tasks() -> None:
             "task_id": "MT-001",
             "module": "R5/R11",
             "priority": "P1",
-            "status": "tier_A_added_to_registry_and_R5; B_deferred_C_signatory_only",
+            "status": "tier_A_added_to_registry_and_R5; B_layer_conditional_C_signatory_only",
             "task": "Review and incorporate 2020 OEJP/MMC 71-group participant list",
             "input": "S006; mt001_candidate_triage_v0.csv; coaction_participants_v0.csv",
             "output": "Tier A 9 actors (A077-A085) added at E2 signatory-only and wired into 2020 MMC co-action event",
-            "why_it_matters": "Registry grew 93->102 and the 2020 co-action sample now enters 11 participants; Tier B/C kept out to avoid diluting the Okinawa civic network with one-off mainland signatories.",
-            "done_when": "Tier A issue/place candidate edges added after second-source verification; aliases confirmed; Tier B reassessed when a mainland-solidarity layer is built.",
+            "why_it_matters": "Registry grew 93->102 and the 2020 co-action sample now enters 11 participants; Tier B enters only as a separately coded mainland-solidarity layer when it improves R5/R11; Tier C remains event-only.",
+            "done_when": "Tier A aliases and second sources confirmed; issue/place candidate edges added where supported; any Tier B addition is visibly separated from the Okinawa core.",
         },
         {
             "task_id": "MT-002",
@@ -681,12 +681,12 @@ def make_next_tasks() -> None:
             "task_id": "MT-003",
             "module": "R14/R3",
             "priority": "P1",
-            "status": "basically_done; 1 local-retrieval gap remaining (S020)",
+            "status": "done; all 25 inferred_url placeholders resolved",
             "task": "Resolve remaining inferred_url placeholders",
             "input": "data/interim/05_source_log_initial_v0.csv; data/interim/16_inferred_url_resolution_queue_v0.csv",
-            "output": "13 of 14 remaining placeholders resolved to verified URLs (24/25 total); year corrections on S027/S030/S037/S040; S020 kept as local-retrieval gap",
-            "why_it_matters": "Source log now has 89 real URLs (1 inferred left) and 85 locally archived; makes the evidence base auditable and link-rot resistant.",
-            "done_when": "Only S020 (Miyako groundwater) remains, flagged for local newspaper/database retrieval; transient SSL archive failures re-run to recover.",
+            "output": "All 25 placeholders resolved; S020 recovered as a 2016 Ryukyu Shimpo article; year corrections also made on S027/S030/S037/S040",
+            "why_it_matters": "Source log now has 100 real URLs and 2 non-URL references; the evidence base no longer contains inferred URL placeholders.",
+            "done_when": "Completed; maintain archive for new URLs and rerun transient failures where appropriate.",
         },
         {
             "task_id": "MT-004",
@@ -703,12 +703,12 @@ def make_next_tasks() -> None:
             "task_id": "MT-005",
             "module": "R8/R14",
             "priority": "P2",
-            "status": "in_progress; named recipients added (F028-F030), full table needs Form 990",
+            "status": "online_pass_done; named recipients F028-F030 and joint NOSCO event F036 added; full table needs Form 990/internal reports",
             "task": "AWWA / spouse clubs charity recipient evidence",
-            "input": "X004; F025-F030; S072; S078; S094; LR-003",
-            "output": "Named E3 recipient edges (Yomitan Quegoen, Uruma Social Welfare, Boy Scouts Far East) + MT005 note",
+            "input": "X004-X007; F025-F030; F036; S072; S078; S094; S102; LR-003",
+            "output": "Named E3 recipient edges plus NOSCO joint in-kind donation event and field-level online_exhausted logs",
             "why_it_matters": "Turns the unnamed AWWA aggregate (F027) into named, source-backed recipient edges without over-claiming.",
-            "done_when": "Full annual recipient table still needs AWWA/club Form 990 Schedule I or annual reports; KOSC $102k split and CSWC in-kind items remain to verify.",
+            "done_when": "Full annual recipient table still needs AWWA/club Form 990 Schedule I, annual reports, or internal activity booklets; do not attribute joint gifts to one club.",
         },
         {
             "task_id": "MT-006",
@@ -716,10 +716,10 @@ def make_next_tasks() -> None:
             "priority": "P2",
             "status": "basically_done",
             "task": "ONC / JICA / MOFA relationship chain",
-            "input": "X010; X011; A074; S095; S096; F011; F019; F031-F033",
-            "output": "MT006 memo + edges F031-F033 (MOFA consultant, prefecture/city commissions); F019 downgraded",
+            "input": "X010; X011; A074; S095-S101; F011; F019; F031-F033",
+            "output": "MT006 memo + E4 edges F031-F033 with FY2024 project costs; JICA report confirms ONC contractor role without amount; F019 downgraded",
             "why_it_matters": "Places ONC in the international-cooperation/multicultural administrative layer, separate from the anti-base movement and from the base-affairs division.",
-            "done_when": "Annual-report amounts for the MOFA consultant / prefecture / city commissions remain to verify; JICA project-level edges optional.",
+            "done_when": "Completed for public online records; retain project-cost wording and do not treat FY2024 costs as contract payment amounts or movement funding.",
         },
         {
             "task_id": "MT-007",
@@ -727,10 +727,10 @@ def make_next_tasks() -> None:
             "priority": "P2",
             "status": "basically_done",
             "task": "Dugong lawsuit plaintiff mapping",
-            "input": "A002; A019; A020; A045; A076; S060; S061; S062; S093",
+            "input": "A002; A019; A020; A045; A076; A086; S060; S061; S062; S093",
             "output": "lawsuit_actor_role_table_v0.csv + MT007_dugong_lawsuit_note.md",
             "why_it_matters": "Confirms A076 as named plaintiff, keeps A002 SDCC and A019 as non-parties, and clarifies JELF as plaintiff (not counsel) and Earthjustice as counsel.",
-            "done_when": "Turtle Island Restoration Network is the only named plaintiff still outside the registry (candidate to add); individuals stay in the role table only.",
+            "done_when": "Organization-level parties are mapped and Turtle Island Restoration Network is A086; individuals stay in the role table only.",
         },
         {
             "task_id": "MT-008",
@@ -754,7 +754,7 @@ def make_next_tasks() -> None:
 def write_index() -> None:
     content = """# 模块完成包 v0
 
-日期：2026-07-01
+日期：2026-07-12（状态更新；模块产出仍为 v0）
 
 本目录把解释性图表包进一步整理成模块交付物。目标是让下一次沟通不只展示统计，而是展示可解释机制和下一轮调查路线。
 
@@ -786,17 +786,21 @@ def write_index() -> None:
 
 ## 下一步调查优先级
 
-1. 复核并吸收 2020 OEJP/MMC 71 团体 participant list。
-2. 继续核实剩余 14 条 inferred_url，并使用 `data/interim/16_inferred_url_resolution_queue_v0.csv` 分档推进。
-3. 与那国 A014/A015 当地资料。
-4. AWWA / spouse clubs charity recipients。
-5. ONC / JICA / MOFA 关系链。
+1. 核实 Tier A 9 个 actor 的别名和第二来源；Tier B 仅在建立独立本土声援层时分层纳入。
+2. 验证事件感知侧表，并补充有足够线上证据的 protest / noise-litigation 事件。
+3. 使用 `outputs/phase1_visuals_v1/` 和 `docs/phase1_research_report_v0.md` 完成跨图、图文和证据一致性审查。
+4. 把已经字段级 `online_exhausted` 的缺口整理为当地协作者正式任务包。
 
-## 已可汇报为基本完工
+## 当前状态
 
-- MT-001 抽取阶段：已形成 2020 OEJP/MMC 71 团体完整表、52 个 registry extension candidates 和抽取说明。
-- MT-002：已有真实 URL 的来源完成第一轮本地备份，当前 archive manifest 为 74 archived / 2 manual_archived / 0 pending_archive。
-- MT-003 第一轮：25 条 `inferred_url` 中 11 条已回填真实 URL 并归档，14 条仍待处理。
+- MT-001：Tier A 9 个组织已入 registry 和 R5；Tier B/C 按分层决策暂不入表。
+- MT-002：归档机制持续运行；2026-07-12 新增的 S020、S099、S100、S102 已归档，MOFA 页面及少数来源仍可能失败或瞬时波动。
+- MT-003：25 条 `inferred_url` 已全部解决；S020 已恢复为 2016 年真实 URL。
+- MT-004：线上 pass 完成，组织级身份仍需当地材料。
+- MT-005：线上 pass 完成，已有命名 recipient 与 NOSCO 共同捐赠事件；完整年度表仍需 Form 990 / 内部年报。
+- MT-006：ONC 公开年报金额和 JICA 受托角色已补齐，按行政协作层解释。
+- MT-007：诉讼角色表完成，Turtle Island Restoration Network 已作为 A086 入 registry。
+- MT-008：54 行事件感知侧表完成，主表 schema 是否合并仍待验证。
 """
     write_text(OUT / "README.md", content)
 

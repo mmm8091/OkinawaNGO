@@ -12,10 +12,10 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S082\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S082\\metadata.json",
-  "sha256": "a58bbb0934680f201734c3a12a4b5080a00a4872ec0577dcbc491edc630080d9",
+  "sha256": "8173d22d1960632d781c30aafd8e2d6a33f81a4cf7428cfee1364db439f3a472",
   "content_type": "text/html;charset=utf-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:05:44.148258+00:00",
+  "archived_at_utc": "2026-07-11T18:44:19.609627+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.grants.gov/search-results-detail/351830",

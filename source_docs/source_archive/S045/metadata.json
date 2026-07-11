@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S045\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S045\\metadata.json",
-  "sha256": "879cf77e78a5969862d3279f892c99231d80b72135c9f85e97f358a707cdbd03",
+  "sha256": "222b124b0ce4ac14af62e0c3ee1c8267f16be46d30d168d7573ee565bc7ce37f",
   "content_type": "text/html; charset=utf-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:04:43.225989+00:00",
+  "archived_at_utc": "2026-07-11T18:43:15.129790+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.okinawatimes.co.jp/articles/-/359236",
     "status_code": "200",
     "content_type": "text/html; charset=utf-8",
-    "content_length": "",
+    "content_length": "118173",
     "last_modified": ""
   }
 }

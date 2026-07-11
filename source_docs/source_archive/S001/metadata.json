@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S001\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S001\\metadata.json",
-  "sha256": "99a712b37f83e245b1538b4841d4fd04161dc8d3a2c9e115c799823f2743be5a",
+  "sha256": "7d11ba41cb6cb0cad3fc36a5f5525d63ba83f6fa13332d683e83a3e094772a7c",
   "content_type": "text/html",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:02:51.730586+00:00",
+  "archived_at_utc": "2026-07-11T18:42:07.449115+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.pref.okinawa.jp/kurashikankyo/katsudo/1004889/1004890.html",
     "status_code": "200",
     "content_type": "text/html",
     "content_length": "",
-    "last_modified": "Thu, 02 Jul 2026 18:14:09 GMT"
+    "last_modified": "Sat, 11 Jul 2026 18:14:07 GMT"
   }
 }

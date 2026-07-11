@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S091\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S091\\metadata.json",
-  "sha256": "c671efbfd7d9a28ed781af716983fb453d7dcebba501270d04bd155821dece30",
+  "sha256": "6928773eff98e0d2a74d73a751ea3edc0d8c3ddfa6ce2351b8cef1b68e3d4a45",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:06:00.180959+00:00",
+  "archived_at_utc": "2026-07-11T18:44:36.645858+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://iucn.org/our-union/members/iucn-members/pro-natura-friends-earth-switzerland",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
     "content_length": "",
-    "last_modified": "Thu, 02 Jul 2026 18:20:34 GMT"
+    "last_modified": "Sat, 11 Jul 2026 18:44:01 GMT"
   }
 }

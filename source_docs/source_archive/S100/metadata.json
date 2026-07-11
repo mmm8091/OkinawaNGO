@@ -1,0 +1,27 @@
+{
+  "source_id": "S100",
+  "source_type": "official_project_report",
+  "title": "JICA 2019年度教師海外研修 九州沖縄 報告書",
+  "year": "2020",
+  "url": "https://www.jica.go.jp/domestic/kyushu/activities/kaihatsu/__icsFiles/afieldfile/2025/03/27/report_2019.pdf",
+  "what_it_supports": "W1 T1-E ONC identified as contractor for JICA teacher overseas training program and report",
+  "evidence_level": "E4",
+  "bias_note": "Official JICA report confirms contractor role but does not state contract amount",
+  "review_status": "ai_seeded",
+  "notes": "W1 source; ONC named as 本事業・本報告書等受託者 on page 103 PDF page index 102; archived.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S100\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S100\\metadata.json",
+  "sha256": "02ee8b2dce229f0c0bf2f7590f10b4fa123b140899fb63faa49453f52db8b684",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-11T18:44:54.738369+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jica.go.jp/domestic/kyushu/activities/kaihatsu/__icsFiles/afieldfile/2025/03/27/report_2019.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "8559743",
+    "last_modified": "Thu, 27 Mar 2025 07:29:56 GMT"
+  }
+}

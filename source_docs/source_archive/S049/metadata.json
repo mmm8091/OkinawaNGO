@@ -12,10 +12,10 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S049\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S049\\metadata.json",
-  "sha256": "dd127499ed5c4c297a5e237addaaf89030eea05f238eb70e4ba999e686534a8c",
+  "sha256": "be8930719f9c4b1f62faf307b30110f0087d2706c0427f2fd96490f396852860",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:04:48.842901+00:00",
+  "archived_at_utc": "2026-07-11T18:43:22.742704+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://lovehenoko.org/",

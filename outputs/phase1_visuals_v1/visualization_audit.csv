@@ -1,0 +1,15 @@
+﻿module,research_question,existing_figure,gap,recommendation_or_new_figure,status,report_section
+R1,组织分类与组织生态,仅有早期 actor class 计数图,缺功能层与来源层的交叉解释,fig1_functional_ecology.png,已补,报告第3节
+R2,组织—议题网络,bridge network + shortlist,只显示桥接 actor，非完整网络；E2 需保留边界,保留现图；完整网络待报告按需,基本覆盖,报告第4节
+R3,地点与空间分布,地点—议题矩阵,缺 actor 直接对应关键地点,fig2_actor_place_matrix.png,已补,报告第5节
+R4,环保／生活安全与军事设施,地点—议题矩阵,现图已能显示场域差异；与那国需避免环保化,保留现图,基本覆盖,报告第5节
+R5,共同行动网络,样本构成 + event repertoire 时间线,尚不足以证明稳定联盟；重复参与很少,保留事件感知时间线，不补静态联盟图,基本覆盖,报告第6节
+R6,跨国／国际倡议,Henoko internationalization pathway,当前集中边野古／大浦湾，其他国际路径较薄,保留现图；当地或后续源补足后再扩,基本覆盖,报告第4/6节
+R7,场域与对象转移,路径图提供单案例,缺跨事件、跨制度场域的可比时间数据,暂不作图，先补 event/venue 字段,数据不足,二期／报告局限
+R8,法律／政策／环境程序,路径图 + lawsuit role table,缺多案件／程序的统一事件表,暂不重复作图；先扩法律事件,部分覆盖,报告第6节
+R9,选举／公投连接,event repertoire 含公投,只有发起组织，非完整参与网络,保留时间线，避免把单节点当全体,部分覆盖,报告第5/6节
+R10,公开资源／行政协作,support/funding 样本早期计数,资金、委托、服务、非资金关系曾混在一起,fig3_support_service_layers_strict.png,已补,报告第7节
+R11,外来 NGO 与国际倡议,Henoko pathway + event layer,军属服务与倡议层需明确分开,fig1 + fig3 共同呈现功能分层,已补边界,报告第6/7节
+R12,媒体可见度,无,一期已排除，且需要报刊数据库,不作图,扩展模块,报告局限
+R13,人物—组织互锁,无,人物字段与人工复核不足,不作图,扩展模块,报告局限
+R14,覆盖／证据偏差,evidence gap map + coverage brief,现有图偏状态计数，未比较功能层可见度,fig1 透明度补充功能层证据差异,基本覆盖,报告第8节

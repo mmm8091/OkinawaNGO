@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S058\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S058\\metadata.json",
-  "sha256": "ebb7f0a2b84d8ff65d095dc8d3b745b3d78b3bce41dbcde60a203d8772148c63",
+  "sha256": "864740a872465ff679ce2b872c6da81c2e8af2a6198953cfee3695e591823403",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:05:04.208365+00:00",
+  "archived_at_utc": "2026-07-11T18:43:42.257107+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://iucn.org/our-union/members/iucn-members/save-dugong-campaign-center",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
     "content_length": "",
-    "last_modified": "Thu, 02 Jul 2026 18:19:29 GMT"
+    "last_modified": "Sat, 11 Jul 2026 18:42:39 GMT"
   }
 }

@@ -9,19 +9,12 @@
   "bias_note": "FoE International member directory",
   "review_status": "human_verified",
   "notes": "HR-009 source; confirms Pro Public as FoE Nepal.",
-  "archive_status": "archived",
-  "local_path": "source_docs\\source_archive\\S090\\raw.html",
+  "archive_status": "failed",
+  "local_path": "",
   "metadata_path": "source_docs\\source_archive\\S090\\metadata.json",
-  "sha256": "db31a67dea5c945ec974c09a7f2e98b2c7f832775e4466265c14758b0d1fc4fa",
-  "content_type": "text/html",
-  "http_status": "202",
-  "archived_at_utc": "2026-07-02T19:05:58.320312+00:00",
-  "note": "",
-  "response_headers": {
-    "final_url": "https://www.foei.org/member-groups/nepal/",
-    "status_code": "202",
-    "content_type": "text/html",
-    "content_length": "192",
-    "last_modified": ""
-  }
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-11T18:44:35.343642+00:00",
+  "note": "HTTPError 500: Internal Server Error"
 }

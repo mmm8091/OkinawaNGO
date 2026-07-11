@@ -12,16 +12,16 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S011\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S011\\metadata.json",
-  "sha256": "2ff2d9e21dde7200b7a047043525cba4a031153421ea2c46628288299b13ea3d",
+  "sha256": "aff3aa07b1d9f64a5b450824bc374096cf92b8c06920889e4a87b2d4a2490a23",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:03:09.076010+00:00",
+  "archived_at_utc": "2026-07-11T18:42:20.673810+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://ryukyushimpo.jp/news/prentry-239307.html",
     "status_code": "200",
     "content_type": "text/html; charset=UTF-8",
     "content_length": "",
-    "last_modified": "Thu, 02 Jul 2026 19:03:10 GMT"
+    "last_modified": "Sat, 11 Jul 2026 18:41:09 GMT"
   }
 }

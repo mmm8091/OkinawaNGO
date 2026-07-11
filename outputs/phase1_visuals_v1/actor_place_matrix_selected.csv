@@ -1,0 +1,37 @@
+﻿actor_id,canonical_name,functional_family,origin_type,place,evidence_level,candidate_edge
+A065,南西諸島ピースネット,本地公民行动,okinawa_local,Ishigaki,E3,yes
+A065,南西諸島ピースネット,本地公民行动,okinawa_local,Miyako,E3,yes
+A065,南西諸島ピースネット,本地公民行动,okinawa_local,Yonaguni,E3,yes
+A002,ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）,环保／国际倡议,japan_domestic,Henoko,E4,yes
+A002,ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）,环保／国际倡议,japan_domestic,Oura Bay,E4,yes
+A004,日本自然保護協会,环保／国际倡议,japan_domestic,Henoko,E4,yes
+A004,日本自然保護協会,环保／国际倡议,japan_domestic,Oura Bay,E4,yes
+A020,日本環境法律家連盟（JELF）,法律／制度渠道,japan_domestic,Henoko,E4,yes
+A020,日本環境法律家連盟（JELF）,法律／制度渠道,japan_domestic,Oura Bay,E4,yes
+A001,Okinawa Environmental Justice Project,环保／国际倡议,mixed_or_network,Henoko,E4,yes
+A001,Okinawa Environmental Justice Project,环保／国际倡议,mixed_or_network,Oura Bay,E4,yes
+A052,嘉手納爆音訴訟原告団,本地公民行动,okinawa_local,Kadena,E4,yes
+A052,嘉手納爆音訴訟原告団,本地公民行动,okinawa_local,Ginowan,E3,yes
+A053,普天間爆音訴訟団,本地公民行动,okinawa_local,Futenma,E4,yes
+A053,普天間爆音訴訟団,本地公民行动,okinawa_local,Ginowan,E4,yes
+A068,名護市民投票の会,本地公民行动,okinawa_local,Henoko,E3,yes
+A068,名護市民投票の会,本地公民行动,okinawa_local,Nago,E3,yes
+A069,沖縄ジュゴン環境アセスメント監視団,本地公民行动,okinawa_local,Henoko,E3,yes
+A069,沖縄ジュゴン環境アセスメント監視団,本地公民行动,okinawa_local,Oura Bay,E3,yes
+A009,Earthjustice,环保／国际倡议,us_origin,Henoko,E4,yes
+A009,Earthjustice,环保／国际倡议,us_origin,Oura Bay,E4,yes
+X001,USO Okinawa,服务／慈善,us_origin,Kadena,E3,yes
+X001,USO Okinawa,服务／慈善,us_origin,Camp Foster,E3,yes
+A005,WWFジャパン,环保／国际倡议,japan_domestic,Henoko,E4,yes
+A006,グリーンピース・ジャパン,环保／国际倡议,japan_domestic,Henoko,E4,yes
+A007,ピースボート,环保／国际倡议,japan_domestic,Henoko,E4,yes
+A021,国際環境NGO FoE Japan,环保／国际倡议,japan_domestic,Henoko,E4,yes
+A022,NPO法人 ラムサール・ネットワーク日本,环保／国际倡议,japan_domestic,Henoko,E4,yes
+A010,石垣島に軍事基地をつくらせない市民連絡会,本地公民行动,okinawa_local,Ishigaki,E4,yes
+A011,石垣市住民投票を求める会,本地公民行动,okinawa_local,Ishigaki,E4,yes
+A013,ミサイル基地いらない宮古島住民連絡会,本地公民行动,okinawa_local,Miyako,E4,yes
+A019,ヘリ基地反対協議会（海上ヘリ基地建設反対・平和と名護市政民主化を求める協議会）,本地公民行动,okinawa_local,Henoko,E4,yes
+A023,美ら海にもやんばるにも基地はいらない市民の会,本地公民行动,okinawa_local,Henoko,E4,yes
+A024,辺野古リレー,本地公民行动,okinawa_local,Henoko,E4,yes
+A060,高江のヘリパッドいらない住民の会,本地公民行动,okinawa_local,Takae,E3,yes
+X010,沖縄NGOセンター,行政／国际协作,okinawa_local,JICA Okinawa,E4,yes

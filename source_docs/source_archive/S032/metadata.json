@@ -12,10 +12,10 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S032\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S032\\metadata.json",
-  "sha256": "89c804b0263d94ffd69c89d7fb07ea5925b092017e83503dde095a20ed54cb6f",
+  "sha256": "8fa44a5a0f43ba819015b5d86ee05125f2e2fa1c5f49d4f1edbc1d696efa132b",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
-  "archived_at_utc": "2026-07-02T19:04:20.382968+00:00",
+  "archived_at_utc": "2026-07-11T18:42:54.840245+00:00",
   "note": "",
   "response_headers": {
     "final_url": "https://www.nd-initiative.org/",
