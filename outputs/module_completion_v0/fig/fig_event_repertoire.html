@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+.viz-root{--surface:#fcfcfb;--band:#f4f3ef;--text-primary:#0b0b0b;--text-secondary:#52514e;
+--muted:#898781;--axis:#c3c2b7;--grid:#e1e0d9;--a0:#2a78d6;--a1:#1baf7a;--a2:#eda100;--a3:#008300;--a4:#4a3aa7;
+background:var(--surface);padding:20px 22px 16px;max-width:1000px;
+font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;}
+@media (prefers-color-scheme: dark){.viz-root{--surface:#1a1a19;--band:#232321;
+--text-primary:#fff;--text-secondary:#c3c2b7;--muted:#898781;--axis:#383835;--grid:#2c2c2a;--a0:#3987e5;--a1:#199e70;--a2:#c98500;--a3:#008300;--a4:#9085e9;}}
+.viz-root h3{margin:0 0 2px;font-size:16px;color:var(--text-primary);}
+.viz-root .sub{margin:0 0 6px;font-size:12.5px;color:var(--text-secondary);}
+.repviz{width:100%;height:auto;display:block;}
+.lane{font-size:12px;fill:var(--text-secondary);font-weight:600;}
+.axis{stroke:var(--axis);stroke-width:1.5;}
+.grid{stroke:var(--grid);stroke-width:1;}
+.tick{font-size:11px;fill:var(--muted);font-variant-numeric:tabular-nums;}
+.cnt-in{font-size:12px;fill:#fff;font-weight:700;font-variant-numeric:tabular-nums;}
+.cnt{font-size:11px;fill:var(--text-secondary);font-weight:700;font-variant-numeric:tabular-nums;}
+.evlab{font-size:10.5px;fill:var(--text-secondary);}
+.note{margin:8px 0 0;font-size:12px;color:var(--text-secondary);line-height:1.5;}
+.note b{color:var(--text-primary);}
+</style></head><body>
+<div class="viz-root">
+<h3>集体行动 repertoire 时间线（R5 / R11 事件感知层）</h3>
+<p class="sub">每个气泡＝一次事件，落在其行动类型泳道上；气泡面积＝当前 registry 已录入的参与组织数；横轴＝年份。</p>
+<svg viewBox="0 0 1000 468" class="repviz" role="img" aria-label="集体行动 repertoire 时间线"><rect x="182" y="58" width="784" height="66" fill="var(--band)"/><text x="168" y="95" text-anchor="end" class="lane">共同署名 co-signing</text><text x="168" y="161" text-anchor="end" class="lane">共同要请 request</text><rect x="182" y="190" width="784" height="66" fill="var(--band)"/><text x="168" y="227" text-anchor="end" class="lane">诉讼 litigation</text><text x="168" y="293" text-anchor="end" class="lane">公投 referendum</text><rect x="182" y="322" width="784" height="66" fill="var(--band)"/><text x="168" y="359" text-anchor="end" class="lane">意见广告 opinion-ad</text><line x1="182" y1="394" x2="966" y2="394" class="axis"/><line x1="213" y1="58" x2="213" y2="394" class="grid"/><text x="213" y="412" text-anchor="middle" class="tick">1997</text><line x1="402" y1="58" x2="402" y2="394" class="grid"/><text x="402" y="412" text-anchor="middle" class="tick">2003</text><line x1="621" y1="58" x2="621" y2="394" class="grid"/><text x="621" y="412" text-anchor="middle" class="tick">2010</text><line x1="684" y1="58" x2="684" y2="394" class="grid"/><text x="684" y="412" text-anchor="middle" class="tick">2012</text><line x1="778" y1="58" x2="778" y2="394" class="grid"/><text x="778" y="412" text-anchor="middle" class="tick">2015</text><line x1="903" y1="58" x2="903" y2="394" class="grid"/><text x="903" y="412" text-anchor="middle" class="tick">2019</text><line x1="935" y1="58" x2="935" y2="394" class="grid"/><text x="935" y="412" text-anchor="middle" class="tick">2020</text><circle cx="621" cy="91" r="15.4" fill="var(--a0)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="621" y="95" text-anchor="middle" class="cnt-in">5</text><text x="621" y="120" text-anchor="middle" class="evlab">WWF 67</text><circle cx="778" cy="91" r="28.2" fill="var(--a0)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="778" y="95" text-anchor="middle" class="cnt-in">28</text><text x="778" y="133" text-anchor="middle" class="evlab">NACSJ 31</text><circle cx="935" cy="157" r="19.9" fill="var(--a1)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="935" y="161" text-anchor="middle" class="cnt-in">11</text><text x="935" y="191" text-anchor="middle" class="evlab">OEJP/MMC 71</text><circle cx="402" cy="223" r="15.4" fill="var(--a2)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="402" y="227" text-anchor="middle" class="cnt-in">5</text><text x="402" y="252" text-anchor="middle" class="evlab">儒艮诉讼</text><circle cx="903" cy="289" r="10.2" fill="var(--a3)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="903" y="275" text-anchor="middle" class="cnt">1</text><text x="903" y="313" text-anchor="middle" class="evlab">县民投票</text><circle cx="213" cy="289" r="10.2" fill="var(--a3)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="213" y="275" text-anchor="middle" class="cnt">1</text><text x="213" y="313" text-anchor="middle" class="evlab">名护公投</text><circle cx="929" cy="289" r="10.2" fill="var(--a3)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="929" y="275" text-anchor="middle" class="cnt">1</text><text x="929" y="326" text-anchor="middle" class="evlab">石垣公投</text><circle cx="778" cy="289" r="10.2" fill="var(--a3)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="778" y="275" text-anchor="middle" class="cnt">1</text><text x="778" y="313" text-anchor="middle" class="evlab">与那国公投</text><circle cx="684" cy="355" r="10.2" fill="var(--a4)" fill-opacity="0.82" stroke="var(--surface)" stroke-width="2"/><text x="684" y="341" text-anchor="middle" class="cnt">1</text><text x="684" y="379" text-anchor="middle" class="evlab">与那国意见广告</text></svg>
+<p class="note"><b>读法：</b>基地议题的公开行动方式随时间从共同署名（2010/2015）扩展到国际要请（2020 MMC）、法律诉讼（2003 儒艮案）与住民投票（名护 1997 → 与那国 / 县民 / 石垣）。
+跨事件重复出现的组织极少——仅 A020、A045、A061——其余多为一次性署名，<b>印证"共同署名≠稳定联盟"</b>。公投泳道气泡多为 1，因当前只录入了发起委员会一个组织，非全部参与者。</p>
+</div></body></html>

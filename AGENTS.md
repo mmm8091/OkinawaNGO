@@ -79,6 +79,7 @@ python scripts\archive_sources.py
 python scripts\make_explanatory_graph_package.py
 python scripts\make_module_completion_package.py
 python scripts\make_relation_events.py
+python scripts\make_event_repertoire_fig.py
 python scripts\make_formal_comm_package.py
 ```
 

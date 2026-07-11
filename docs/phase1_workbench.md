@@ -165,4 +165,5 @@
 7. MT-006 基本完成：ONC 归入国际协作/多文化共生行政层（外务省相談員 F031、县/市委託 F032-F033、JICA festival F011），与反基地网络分开；F019 下调。见 `MT006_onc_admin_chain_note.md`。
 8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。
 9. MT-004 线上 pass 完成：A014 事件语境有主流佐证（RS/OT/QAB）、A015 无非党派源保持 E2；组织级身份仍需与那国当地补查（LR Tier 2）。见 `MT004_yonaguni_online_pass_note.md`。
-10. 剩：LR T1-D/E 线上公开报告；继续扩 registry 到 120+；据事件感知表生成 R5/R11 下一版网络图。
+10. R5/R11 事件感知图已出：`fig/fig_event_repertoire.png`（集体行动 repertoire 时间线，`make_event_repertoire_fig.py`）。
+11. 剩（局部/当地）：LR T1-D/E 线上公开报告；继续扩 registry 到 120+；A014/A015、AWWA Form 990、ONC 年报金额等需当地补查（LR Tier 2）。

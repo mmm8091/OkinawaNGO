@@ -22,6 +22,10 @@
 
 数据来源：co-action 部分从 `coaction_participants_v0.csv` 派生（不重复录入），诉讼部分从 `lawsuit_actor_role_table_v0.csv` 派生（只取有 actor_id 的原告/律师，个人原告不进网络层），公投/意见广告为手工 spec。
 
+## 可视化（R5/R11 下一版）
+
+`scripts/make_event_repertoire_fig.py` 读本表生成 `fig/fig_event_repertoire.png`：**集体行动 repertoire 时间线**——每个事件一个气泡，落在其 action_type 泳道（共同署名 / 共同要请 / 诉讼 / 公投 / 意见广告）上，横轴年份，气泡面积＝已录入参与组织数。它显示基地议题的公开行动方式随时间从共同署名扩展到国际要请、诉讼、住民投票；并直观展示跨事件重复组织极少（仅 A020 JELF、A045 CBD、A061 野鳥の会），印证"共同署名≠稳定联盟"。配色用 dataviz 参考色板 slots 1-5（已过验证器，worst adjacent CVD ΔE 24.2；泳道+气泡直接标签满足 relief）。
+
 ## 价值
 
 - 同一个 actor 在不同事件里的角色现在可分开读：例如 A020 JELF 既是 2020 共同要请参与者（request_participant），又是儒艮诉讼原告（named_plaintiff）——静态议题标签看不出这种差别。
