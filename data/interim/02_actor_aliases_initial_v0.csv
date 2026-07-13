@@ -1,4 +1,4 @@
-actor_id,alias,alias_type,source_ref,notes
+﻿actor_id,alias,alias_type,source_ref,notes
 X004,American Women's Welfare Association,former_name,S041;S072;S078,Old/common English name used in earlier sources.
 X004,Ryukyu American Welfare Council,original_name,S041;S055,Original 1952 name.
 X004,米国福祉事業協会,japanese_name,S073,Japanese name used by current official social media.
@@ -13,3 +13,4 @@ A040,Friends of the Earth Nepal,network_name,S090,FoE International member name.
 A046,Pro Natura / FoE Switzerland,signatory_name,S004,Name used in 2015 NACSJ signatory list.
 A046,Friends of the Earth Switzerland,network_name,S091;S092,FoE/IUCN membership alias.
 A046,Swiss League for the Protection of Nature,former_name,S091,Historical name noted in organization identity sources.
+A106,辺野古の海を土砂で埋めるな！首都圏キャンペーン,possible_canonical_variant,S126,HR-010 batch 5: source-preferred name; final canonical choice remains a targeted human check.

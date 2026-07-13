@@ -804,7 +804,7 @@ def write_index() -> None:
 - MT-006：ONC 公开年报金额和 JICA 受托角色已补齐，按行政协作层解释。
 - MT-007：诉讼角色表完成，Turtle Island Restoration Network 已作为 A086 入 registry。
 - MT-008：54 行事件感知侧表完成，主表 schema 是否合并仍待验证。
-- REG-01：20 个 E4 主体完成身份级安全合并，registry 达 123；分类、别名与关系边待 HR-010。
+- REG-01：20 个 E4 主体完成身份级安全合并，registry 达 123；HR-010 批5已审 A102-A106，A087-A101 仍待分类/边复核。
 - R8：六案元数据以 `needs_human_review` 合并；角色 crosswalk 待 HR-014。
 """
     write_text(OUT / "README.md", content)

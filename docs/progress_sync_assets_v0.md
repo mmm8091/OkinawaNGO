@@ -169,7 +169,7 @@
 
 ## 12. 2026-07-12 主线程状态更新
 
-前述第 1–11 节保留为第一次/第二次同步时的历史快照，不再用于判断当前内部进度。当前数据为 123 actors、143 sources、180 actor–issue 候选边、124 actor–place 候选边、36 funding/support 样本边；另有 54 行事件感知关系表和 6 案 R8 case registry。A087-A106 为身份级安全合并，分类和关系边待 HR-010。
+前述第 1–11 节保留为第一次/第二次同步时的历史快照，不再用于判断当前内部进度。当前数据为 123 actors、143 sources、200 actor–issue 候选/人审边、124 actor–place 候选边、41 funding/support/non-funding relation 样本边；另有 54 行事件感知关系表和 6 案 R8 case registry。HR-010 批5已完成 A102-A106，A087-A101 仍待复核。
 
 当前推进原则已经纠偏：先按原始 DOCX 完成三个基础问题、基础建设、R1–R11、指定核心图和最终交付的线上可做部分，再派当地协作者。当前报告和补图只是 v0，不代表一期收口。验收总表见 `docs/phase1_scheme_acceptance_audit_v1.md`。
 

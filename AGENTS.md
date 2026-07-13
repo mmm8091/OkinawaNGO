@@ -28,12 +28,12 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 
 Updated: 2026-07-12.
 
-- Actor registry: 123 actors. A087–A106 are E4 identity-only safe merges from REG-01; their classification, aliases and edges require HR-010.
+- Actor registry: 123 actors. HR-010 batch 5 human-checked A102–A106; A087–A101 remain E4 identity-only merges awaiting classification/edge review.
 - Source log: 143 sources, currently 141 real URLs and 2 non-URL references; no `inferred_url` placeholders remain.
-- Actor-issue candidate edges: 180.
+- Actor-issue candidate/reviewed edges: 200 (AI181–AI200 are HR-010 batch 5 human-checked).
 - Actor-place candidate edges: 124.
-- Funding/support sample edges: 36 (MT-005 AWWA F028–F030; MT-006 ONC F031–F033; LR-T1B USO sponsors F034–F035; W1 NOSCO joint donation F036).
-- Issue taxonomy: 19 issue categories.
+- Funding/support/relation sample edges: 41 (F037–F041 are HR-010 batch 5 non-funding membership/counsel/action relations).
+- Issue taxonomy: 24 issue categories; HR-010 added environment, noise, women, human_rights, and solidarity.
 - Place registry: 20 place/field nodes.
 - Legal/policy procedure case registry: 6 cases, all `needs_human_review`; actor-role crosswalks remain outside the main relation data pending HR-014.
 - Source archive (2026-07-12 post-merge run): 128 `archived`, 2 `manual_archived`, 11 `failed`, 2 `skipped_non_url_reference`. Of S103-S143, 35 archived and 6 failed; failures remain auditable and may include access/SSL restrictions rather than missing evidence.
@@ -61,7 +61,7 @@ Updated: 2026-07-12.
   - The authoritative gap/done_when assessment against the original DOCX.
 - First post-audit candidate packages and controlled merge:
   - `outputs/phase1_foundation_v1/`: evidence-note and actor-event-venue seeds remain AI-seeded; the 16-row venue taxonomy is merged.
-  - `outputs/registry_expansion_v1/`: 20 E4 actor identities and their sources are merged; HR-010–HR-013 cover field review, E3 additions, lineage and scope decisions.
+  - `outputs/registry_expansion_v1/`: 20 E4 actor identities and their sources are merged; HR-010 batch 5 closed A102–A106, while A087–A101 and HR-011–HR-013 remain.
   - `outputs/R08_legal_procedure_v0/`: six case records and E3/E4 sources are merged as review-pending; role crosswalks and legal summaries require HR-014.
 - Local retrieval task book v1: `docs/local_retrieval_tasks_v1.md`
   - Splits LR into Tier 1 (online-doable, locked for this round) and Tier 2 (needs local collaborator / in-library databases).

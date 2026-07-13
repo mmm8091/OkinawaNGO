@@ -1,4 +1,4 @@
-issue_id,issue_label,issue_group,definition,include_in_phase1,notes
+﻿issue_id,issue_label,issue_group,definition,include_in_phase1,notes
 I001,anti_base,base_politics,Opposition to U.S. base construction/relocation/burden,yes,Core issue.
 I002,anti_military,security_politics,Opposition to JSDF deployment or missile/base militarization,yes,Important for Sakishima.
 I003,Henoko,place_issue,Henoko/Oura Bay base construction and relocation conflict,yes,Core place-issue.
@@ -18,3 +18,8 @@ I016,base_community_welfare,base_community,"Welfare, charity, donation and servi
 I017,frontline_prevention,security_politics,Opposition to Okinawa/Ryukyu arc becoming a battlefield or frontline,yes,Recent anti-war/frontline frame.
 I018,Taiwan_contingency,security_politics,Taiwan contingency and surrounding security environment as public issue,yes,Use neutral wording.
 I019,peace,peace_human_rights,"Peace movement, anti-war and demilitarization framing",yes,Often bridges anti-base and civic networks.
+I020,environment,environment,General environmental protection or pollution framing not limited to biodiversity,yes,Added through HR-010 batch 5; keep distinct from biodiversity and specific pollution media.
+I021,noise,life_safety,Aircraft and base noise as daily-life harm and litigation subject,yes,Added through HR-010 batch 5 for Kadena/Futenma legal coordination.
+I022,women,peace_human_rights,"Women's organizations, gendered civic participation, and women-focused advocacy",yes,Added through HR-010 batch 5; organization type alone does not imply political stance.
+I023,human_rights,peace_human_rights,"Human-rights framing in civic, legal, peace, or international advocacy",yes,Added through HR-010 batch 5; code only when source-backed.
+I024,solidarity,collective_action,Public solidarity or support action outside the Okinawa-local core,yes,Added through HR-010 batch 5; solidarity action is not a stable alliance.

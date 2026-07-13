@@ -83,6 +83,11 @@ def main() -> int:
             errors.append(f"actor_place {row['edge_id']}: unknown actor {row['actor_id']}")
         if row["place_id"] not in place_ids:
             errors.append(f"actor_place {row['edge_id']}: unknown place {row['place_id']}")
+    for row in rows["funding"]:
+        for field in ("source_actor_id", "target_actor_id"):
+            value = row[field]
+            if value.startswith(("A", "X")) and value not in actor_ids:
+                errors.append(f"funding {row['edge_id']}: unknown {field} {value}")
 
     for table_name in (
         "actors",

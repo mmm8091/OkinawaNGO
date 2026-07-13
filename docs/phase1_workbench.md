@@ -2,7 +2,7 @@
 
 硬规则：本工作台永远不能超过 300 行；只记录当前状态、计划、阻塞和下一步，详细材料放到独立文档或数据表。
 
-更新时间：2026-07-12
+更新时间：2026-07-13
 
 ## 当前定位
 
@@ -126,13 +126,13 @@
 
 ## 当前样本状态
 
-- actor 初版：123 条；A087-A106 为 REG-01 的 20 个 E4 身份级安全合并，分类、别名和关系边待 HR-010。
-- funding/support edge 样本：36 条（新增 NOSCO 共同实物捐赠事件 F036；不得归为 NOSCO 单独捐赠）。
-- actor_issue_edges 初版：180 条。
+- actor 初版：123 条；HR-010 批5 已人审 A102-A106，A087-A101 仍为 E4 身份级安全合并待复核。
+- funding/support/relation edge 样本：41 条；F037-F041 为人审后的成员、法律代理和事件/伙伴行动关系，均明确 `not_funding_relation`。
+- actor_issue_edges：200 条；AI181-AI200 为 HR-010 批5 人审议题边。
 - actor_place_edges 初版：124 条。
-- actor alias 初版：14 条。
+- actor alias：15 条；A106 新增 `首都圏キャンペーン` 待定 canonical variant。
 - source log：143 条（141 条真实 URL、2 条非 URL 参考）；新增来源用于 A087-A106 身份与 R8 六案，归档状态以 manifest 为准。
-- issue taxonomy：19 个一级议题。
+- issue taxonomy：24 个一级议题；新增 environment、noise、women、human_rights、solidarity。
 - place registry：20 个地点 / 场域节点。
 - venue taxonomy：16 类，已作为非结论性元数据合并。
 - R8 case registry：6 案，均为 `needs_human_review`；角色 crosswalk 不进入主关系数据，待 HR-014。
@@ -140,7 +140,7 @@
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
 - 旧编号模块包 v0：含 R2、R3/R4、R5、跨国路径和 coverage 等现有 brief；最终方案中跨国路径属于 R6，coverage 属基础建设，不能用旧 R11/R14 编号判定验收。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
-- 已完成 HR-001 至 HR-009 正式人工复核，并建立 9 条 human review log。
+- 已完成 HR-001 至 HR-009 及 HR-010 批5（A102-A106），共 14 条 human review log。
 - 信息源备份机制已跑通：2026-07-12 合并后 manifest 为 128 archived、2 manual_archived、11 failed、2 non-URL；S103-S143 中 35 archived、6 failed，失败保留访问错误供后续手工归档。
 - 方案验收后第一批实作：16 类 venue、20 个 E4 actor 身份、41 条来源和 R8 六案元数据已安全合并；49 evidence、64 actor-event-venue、E3/沿革/范围候选及 R8 角色进入 HR-010 至 HR-015。
 
@@ -151,7 +151,7 @@
 - 人类决策任务书：`docs/human_decision_tasks_v0.md`
 - 进度沟通稿：`docs/progress_report_v1.md`
 
-当前人工复核状态：HR-001 至 HR-009 已完成首轮；HR-010 至 HR-015 已建任务，覆盖新增主体定性、E3 补源、沿革/别名、范围边界、R8 角色和 evidence/venue seed。
+当前人工复核状态：HR-001 至 HR-009 已完成首轮；HR-010 批5 A102-A106 已合并，A087-A101 仍待分批复核；HR-011 至 HR-015 覆盖 E3 补源、沿革/别名、范围边界、R8 角色和 evidence/venue seed。
 
 当前当地补查优先级：与那国早期反部署组织、先岛/边野古核心组织报刊时间线、军属配偶俱乐部完整 recipient 年表。ONC 公开年度事业费和 S020 已在线解决。
 
@@ -181,4 +181,4 @@
 8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。
 9. MT-004 线上 pass 完成：A014 事件语境有主流佐证（RS/OT/QAB）、A015 无非党派源保持 E2；组织级身份仍需与那国当地补查（LR Tier 2）。见 `MT004_yonaguni_online_pass_note.md`。
 10. R5/R11 事件感知图已出：`fig/fig_event_repertoire.png`（集体行动 repertoire 时间线，`make_event_repertoire_fig.py`）。
-11. 第一批安全合并已完成：venue taxonomy、20 个 E4 actor 身份、41 条来源和 R8 六案元数据。下一轮人工按 HR-010 至 HR-015 审核字段、E3 候选、沿革、范围、法律角色和 seed；线上继续推进 R9 公投阶段、R10 行政协作年度表、R4 框架语料和指定核心图。
+11. 第一批安全合并已完成，HR-010 批5 A102-A106 已人审回写。下一轮继续 HR-010 剩余 A087-A101 与 HR-011 至 HR-015；线上 R4/R9/R10 候选包已由子线程产出，待主线程审核后再决定合并。

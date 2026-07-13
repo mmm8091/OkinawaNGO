@@ -1,4 +1,4 @@
-edge_id,actor_id,issue_id,issue_label,relation_basis,source_ref,evidence_level,review_status,notes
+﻿edge_id,actor_id,issue_id,issue_label,relation_basis,source_ref,evidence_level,review_status,notes
 AI001,A001,I004,dugong,OEJP/MMC dugong advocacy,S006;S007;S008,E4,ai_seeded,Core issue.
 AI002,A001,I012,international_advocacy,Request to U.S. Marine Mammal Commission,S006;S007;S008,E4,ai_seeded,Transnational advocacy route.
 AI003,A001,I003,Henoko,Henoko/Oura Bay focus,S006;S007;S008,E4,ai_seeded,Place issue.
@@ -179,3 +179,23 @@ AI177,A074,I001,anti_base,Administrative base burden management,S043,E4,ai_seede
 AI178,A075,I001,anti_base,Defense bureau base construction role,S047,E4,ai_seeded,Government context node.
 AI179,X016,I014,military_family_service,MOSCO spouse club and AWWA member role,S079;S080;S055,E4,human_checked,HR-005 supplemental: MOSCO identity and tax record confirmed.
 AI180,X017,I014,military_family_service,Army Community Group / AWWA member and gift shop lead,S041;S072;S081,E3,needs_second_source,HR-005 supplemental: identity supported by AWWA/community sources; no independent website/EIN found.
+AI181,A102,I011,legal,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI182,A102,I020,environment,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI183,A102,I021,noise,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI184,A102,I007,life_safety,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI185,A103,I021,noise,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI186,A103,I007,life_safety,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI187,A103,I011,legal,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI188,A103,I001,anti_base,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI189,A104,I021,noise,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI190,A104,I007,life_safety,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI191,A104,I011,legal,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI192,A104,I001,anti_base,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI193,A105,I022,women,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI194,A105,I023,human_rights,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI195,A105,I019,peace,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI196,A105,I003,Henoko,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI197,A106,I003,Henoko,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI198,A106,I020,environment,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI199,A106,I001,anti_base,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
+AI200,A106,I024,solidarity,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.

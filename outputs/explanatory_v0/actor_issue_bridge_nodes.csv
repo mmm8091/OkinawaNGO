@@ -1,9 +1,11 @@
 ﻿actor_id,canonical_name,origin_type,actor_class,issue_count,issues,evidence_level,review_status
 A066,新外交イニシアティブ（ND）,japan_domestic,domestic_japan_ngo,3,anti_base;legal;local_autonomy,E4,ai_seeded
+A103,全国基地爆音訴訟原告団連絡会議,japan_domestic,citizen_network,3,anti_base;legal;life_safety,E4,human_checked
 A048,沖縄一坪反戦地主会,okinawa_local,citizen_group,3,anti_base;legal;local_autonomy,E4,ai_seeded
 A050,沖縄弁護士会,okinawa_local,lawyers_network,3,anti_base;legal;local_autonomy,E4,ai_seeded
 A052,嘉手納爆音訴訟原告団,okinawa_local,citizen_group,3,anti_base;legal;life_safety,E4,ai_seeded
 A053,普天間爆音訴訟団,okinawa_local,citizen_group,3,anti_base;legal;life_safety,E4,ai_seeded
+A104,普天間基地爆音訴訟弁護団,okinawa_local,lawyers_network,3,anti_base;legal;life_safety,E4,human_checked
 A045,Center for Biological Diversity,us_origin,international_ngo,3,biodiversity;international_advocacy;legal,E4,ai_seeded
 A034,Korea Federation for Environmental Movements (KFEM),international,international_ngo,2,biodiversity;international_advocacy,E4,ai_seeded
 A039,The Legal Rights and Natural Resources Center-Kasama sa Kalikasan,international,international_ngo,2,international_advocacy;legal,E4,ai_seeded
@@ -16,6 +18,7 @@ A021,国際環境NGO FoE Japan,japan_domestic,domestic_japan_ngo,2,anti_base;bio
 A022,NPO法人 ラムサール・ネットワーク日本,japan_domestic,domestic_japan_ngo,2,anti_base;biodiversity,E4,ai_seeded
 A027,公共事業改革市民会議,japan_domestic,citizen_network,2,anti_base;biodiversity,E4,ai_seeded
 A067,辺野古土砂搬入反対全国協議会（辺野古土砂全協）,japan_domestic,citizen_network,2,anti_base;biodiversity,E3,ai_seeded
+A102,全国公害弁護団連絡会議,japan_domestic,lawyers_network,2,legal;life_safety,E4,human_checked
 A028,沖縄のための日米市民ネットワーク（JUCON）,mixed_or_network,international_advocacy_actor,2,anti_base;international_advocacy,E4,ai_seeded
 A023,美ら海にもやんばるにも基地はいらない市民の会,okinawa_local,local_civic_actor,2,anti_base;biodiversity,E4,ai_seeded
 A049,基地・軍隊を許さない行動する女たちの会,okinawa_local,citizen_group,2,anti_base;life_safety,E4,ai_seeded

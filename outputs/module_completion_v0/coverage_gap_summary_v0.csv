@@ -1,7 +1,7 @@
 ﻿metric_group,metric,count
-actor_review_status,ai_seeded,83
+actor_review_status,ai_seeded,78
 actor_review_status,needs_second_source,23
-actor_review_status,human_checked,9
+actor_review_status,human_checked,14
 actor_review_status,human_revised,3
 actor_review_status,needs_local_retrieval,2
 actor_review_status,watchlist_only,2

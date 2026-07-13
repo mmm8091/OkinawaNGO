@@ -8,7 +8,7 @@
 
 ## 图件
 
-1. `fig1_functional_ecology.png` — 组织功能生态（功能层 × 来源层）。回答 registry 中不同功能 actor 如何构成，并把军属服务、行政协作和公共外交观察层与倡议网络分开；A087-A106 在 HR-010 前单列为“待人工分类”。配套 `functional_ecology_matrix.csv`。
+1. `fig1_functional_ecology.png` — 组织功能生态（功能层 × 来源层）。回答 registry 中不同功能 actor 如何构成，并把军属服务、行政协作和公共外交观察层与倡议网络分开；A102-A106 使用 HR-010 人审分类，A087-A101 单列为“待人工分类”。配套 `functional_ecology_matrix.csv`。
 2. `fig2_actor_place_matrix.png` — 组织—地点矩阵。直接显示哪些组织在关键地点的公开资料中出现，证据等级由圆点颜色与大小标注。配套 `actor_place_matrix_selected.csv`。
 3. `fig3_support_service_layers_strict.png` — 严格 E3/E4 的支持、委托与服务分层图。仅保留 confirmed 类或明确的 `not_funding_relation`，排除 probable funding、NOFO/grant opportunity、E2 线索。配套 `support_relations_strict_e3e4.csv`。
 

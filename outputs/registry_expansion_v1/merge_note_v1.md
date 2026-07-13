@@ -11,6 +11,8 @@
 
 actor 合并只确认“这个组织可核验存在”。候选包中的 `actor_class`、`legal_status`、`primary_places`、`issue_tags` 用于组织复核，不构成最终审定；本轮没有为新增主体自动生成 actor-issue、actor-place、actor-event 或 actor-relation 边。
 
+后续状态：2026-07-13 HR-010 批5已完成 A102-A106 的人工审定并新增人审议题/关系边；具体见 `hr010_batch5_merge_note.md`。上述身份级边界继续适用于 A087-A101。
+
 正式 actor/source 映射见 `merge_manifest_v1.csv`。合并脚本为 `scripts/merge_phase1_candidate_seeds.py`，可重复运行而不重复新增行。
 
 ## 未直接合并

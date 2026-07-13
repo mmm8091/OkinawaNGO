@@ -23,8 +23,8 @@ R2 已达到 `module_v0`：已有 actor-issue edge 表、Top bridge actors 图�
 - A052 嘉手納爆音訴訟原告団：连接 anti_base;legal;life_safety；状态 `ai_seeded`。
 - A053 普天間爆音訴訟団：连接 anti_base;legal;life_safety；状态 `ai_seeded`。
 - A066 新外交イニシアティブ（ND）：连接 anti_base;legal;local_autonomy；状态 `ai_seeded`。
-- A006 グリーンピース・ジャパン：连接 anti_base;biodiversity；状态 `ai_seeded`。
-- A007 ピースボート：连接 anti_base;international_advocacy；状态 `ai_seeded`。
+- A103 全国基地爆音訴訟原告団連絡会議：连接 anti_base;legal;life_safety；状态 `human_checked`。
+- A104 普天間基地爆音訴訟弁護団：连接 anti_base;legal;life_safety；状态 `human_checked`。
 
 ## 还需要继续做
 

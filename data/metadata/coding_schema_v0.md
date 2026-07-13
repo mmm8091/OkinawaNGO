@@ -114,7 +114,7 @@
 | edge_id | 稳定编号 |
 | source_actor_id | 起点 actor |
 | target_actor_id | 终点 actor |
-| relation_type | sponsorship / donation / service / partnership / grant_opportunity / consultant / member_of / site_presence 等 |
+| relation_type | sponsorship / donation / service / partnership / grant_opportunity / consultant / network_membership / legal_counsel / event_affiliation / partner_action / site_presence 等 |
 | event_or_program | 具体项目、活动或事件 |
 | place | 地点 |
 | evidence_level | E0-E4 |
