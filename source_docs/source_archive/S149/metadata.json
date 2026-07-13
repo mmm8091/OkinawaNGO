@@ -1,0 +1,27 @@
+{
+  "source_id": "S149",
+  "source_type": "local_news",
+  "title": "嘉手納爆音、第4次訴訟を提起―原告3万5566人",
+  "year": "2022",
+  "url": "https://ryukyushimpo.jp/news/entry-1461735.html",
+  "what_it_supports": "HR-011/012 A052/A109: fourth Kadena round, filing, plaintiff scale, households, municipalities, and counsel-team existence",
+  "evidence_level": "E4",
+  "bias_note": "News account; does not establish a complete individual-lawyer roster",
+  "review_status": "human_checked",
+  "notes": "User-reviewed 2026-07-13; published 2022-01-28.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S149\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S149\\metadata.json",
+  "sha256": "bc80f68aeea281381002bed33130130e6c3948f040fba7ffda0a316ffd2b4299",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:38.407961+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-1461735.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 08:20:39 GMT"
+  }
+}

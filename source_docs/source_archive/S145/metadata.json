@@ -1,0 +1,27 @@
+{
+  "source_id": "S145",
+  "source_type": "parent_organization_topic_page",
+  "title": "日本YWCA 沖縄专题页",
+  "year": "2026",
+  "url": "https://www.ywca.or.jp/tag/%E6%B2%96%E7%B8%84/",
+  "what_it_supports": "HR-011 A107: continuing parent-body coverage of Okinawa YWCA and Okinawa-related activity",
+  "evidence_level": "E3",
+  "bias_note": "Parent-body topic index; use with the specific organization profile S144",
+  "review_status": "human_checked",
+  "notes": "Merged from SC010; accessed and human-reviewed 2026-07-13.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S145\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S145\\metadata.json",
+  "sha256": "59548d182370581c6c44c315c0cdbc3839ff9c70efdce923bb076067901a3341",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:19.621590+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ywca.or.jp/tag/%E6%B2%96%E7%B8%84/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

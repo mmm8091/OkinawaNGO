@@ -1,0 +1,27 @@
+{
+  "source_id": "S154",
+  "source_type": "media_record",
+  "title": "IWJ 大阪・辺野古声援行动记录",
+  "year": "2014",
+  "url": "https://iwj.co.jp/wj/open/archives/146582",
+  "what_it_supports": "HR-011 A110: externally reported Osaka action concerning Henoko",
+  "evidence_level": "E3",
+  "bias_note": "Single event report; cannot by itself establish full organizational continuity",
+  "review_status": "human_checked",
+  "notes": "Merged from SC042; user-reviewed 2026-07-13.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S154\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S154\\metadata.json",
+  "sha256": "3e5477f15a6ecac2ed77b08adc021e6db6758daa93d7baec317236e0e4ae3f3d",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:58.099592+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://iwj.co.jp/wj/open/archives/146582",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -21,6 +21,7 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - **candidate edge**: A provisional relationship recorded for review; not a final analytic claim.
 - **evidence_level**: E0-E4 confidence scheme used to separate confirmed evidence from leads.
 - **human review**: Human judgment over seeded actors, sources, and edges.
+- **event-only participant**: A name supported for participation in a specific event but lacking enough identity/continuity evidence for the actor registry. Event-only names must not be counted as organizations or treated as stable network members.
 - **local material collection**: Collection of local/offline/hard-to-access materials such as library database records, organizational reports, activity booklets, or local archives.
 
 ## Main Cautions
@@ -29,4 +30,4 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - Do not write grant opportunities as awarded grants.
 - Do not treat service NGOs as political stance actors unless public evidence supports it.
 - Do not over-environmentalize Yonaguni; its stronger frame is frontline/security environment, local autonomy, referendum, Taiwan proximity, and health/life-safety concerns.
-
+- The original Phase-1 DOCX is the acceptance contract. Current internal status and next work are controlled by `docs/phase1_workbench.md` and `docs/phase1_scheme_acceptance_audit_v1.md`; the second progress-sync package is a historical client snapshot, not current acceptance status.

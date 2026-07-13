@@ -16,13 +16,13 @@ R5 已达到 `full_event_list_v0`：已有 3 个共同行动事件样本、parti
 
 1. 当前可以展示共同行动样本如何把本地团体、日本国内 NGO、海外 NGO 放到同一个公开行动中。
 2. 这些关系只能写为共同署名、共同请求、共同在场或声援，不能写成稳定联盟。
-3. 2020 OEJP/MMC 71 团体样本已抽取完整 participant list；当前 registry 仍需根据候选表继续补 actor。
+3. 2020 OEJP/MMC 71 团体样本已抽取完整 participant list；HR-015 将其中九个仅有 E2 署名线索的名称保留在事件表、撤出 actor registry。后续只有补足组织身份与持续性二源后，才可重新考虑入表。
 
 ## 事件状态
 
 - EV2010_WWF_67：当前 registry 已录入 5 个 participant；下一步：verify participant roles and aliases。
 - EV2015_NACSJ_31：当前 registry 已录入 28 个 participant；下一步：verify participant roles and aliases。
-- EV2020_OEJP_MMC_71：当前 registry 已录入 11 个 participant；下一步：review 71-participant candidate table。
+- EV2020_OEJP_MMC_71：当前 registry 已录入 2 个 participant；下一步：verify event-only identities before any actor entry。
 
 ## 还需要继续做
 

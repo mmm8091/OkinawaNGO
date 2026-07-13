@@ -1,0 +1,20 @@
+{
+  "source_id": "S151",
+  "source_type": "organization_site",
+  "title": "嘉手納基地爆音差止訴訟原告団 公式サイト",
+  "year": "2026",
+  "url": "https://kadena-bakuon.jp/",
+  "what_it_supports": "HR-011/012 A052/A109: official plaintiff-group identity and fourth-round litigation context",
+  "evidence_level": "E4",
+  "bias_note": "Plaintiff-group source; strong for self-identity and case chronology",
+  "review_status": "human_checked",
+  "notes": "User-reviewed 2026-07-13.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S151\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T08:20:50.617485+00:00",
+  "note": "HTTPError 403: Forbidden"
+}

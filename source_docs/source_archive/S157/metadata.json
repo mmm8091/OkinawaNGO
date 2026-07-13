@@ -1,0 +1,27 @@
+{
+  "source_id": "S157",
+  "source_type": "union_research_report",
+  "title": "島の未来は市民が決める―石垣島の自衛隊配備問題―",
+  "year": "2018",
+  "url": "https://www.jichiro.gr.jp/jichiken_kako/report/rep_tosa37/08/0802_yre/index.htm",
+  "what_it_supports": "HR-012 A010: predecessor formed 2015-08-20 and wider citizens liaison group formed 2016-09",
+  "evidence_level": "E4",
+  "bias_note": "Movement-side local-government research report; detailed first-hand chronology",
+  "review_status": "human_checked",
+  "notes": "Merged from SC032; user-reviewed 2026-07-13.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S157\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S157\\metadata.json",
+  "sha256": "42ab242790e7295b56ad9c1e203903dd2dcafdc2aa85da1d9398ea43d5fa713e",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:21:04.431662+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jichiro.gr.jp/jichiken_kako/report/rep_tosa37/08/0802_yre/index.htm",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "22593",
+    "last_modified": "Mon, 18 Jul 2022 05:35:17 GMT"
+  }
+}

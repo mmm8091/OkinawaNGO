@@ -14,3 +14,9 @@ A046,Pro Natura / FoE Switzerland,signatory_name,S004,Name used in 2015 NACSJ si
 A046,Friends of the Earth Switzerland,network_name,S091;S092,FoE/IUCN membership alias.
 A046,Swiss League for the Protection of Nature,former_name,S091,Historical name noted in organization identity sources.
 A106,辺野古の海を土砂で埋めるな！首都圏キャンペーン,possible_canonical_variant,S126,HR-010 batch 5: source-preferred name; final canonical choice remains a targeted human check.
+A052,嘉手納爆音訴訟原告団,former_canonical,S026,HR-012: previous registry canonical name; retained for lookup after canonical-name normalization.
+A052,第4次嘉手納基地爆音差止訴訟原告団,round_of,S149;S151;S155,HR-012: fourth-round case designation of A052; no separate actor created and cross-round membership is not assumed identical.
+A053,普天間爆音訴訟団,former_canonical,S027,HR-012: previous registry canonical name; retained for lookup after canonical-name normalization.
+A053,普天間基地第2次爆音訴訟原告団,round_of,S135;S156,HR-012: second-round case designation of A053; no separate actor created and cross-round membership is not assumed identical.
+A010,石垣島への自衛隊配備を止める住民の会,predecessor_of,S157,"HR-012: predecessor formed 2015-08-20; A010 emerged as a wider coalition in 2016-09. This is lineage metadata, not a claim that both names denote an identical organization."
+A053,普天間基地爆音訴訟原告団,descriptive_variant,S135;S136,HR-012: descriptive plaintiff-group variant; canonical follows the official site name 普天間基地爆音訴訟団.

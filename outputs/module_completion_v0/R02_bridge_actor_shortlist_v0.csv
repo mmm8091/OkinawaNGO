@@ -2,12 +2,12 @@
 1,A045,Center for Biological Diversity,3,biodiversity;international_advocacy;legal,international_ngo,us_origin,ai_seeded,bridge_actor_candidate
 2,A048,沖縄一坪反戦地主会,3,anti_base;legal;local_autonomy,citizen_group,okinawa_local,ai_seeded,bridge_actor_candidate
 3,A050,沖縄弁護士会,3,anti_base;legal;local_autonomy,lawyers_network,okinawa_local,ai_seeded,bridge_actor_candidate
-4,A052,嘉手納爆音訴訟原告団,3,anti_base;legal;life_safety,citizen_group,okinawa_local,ai_seeded,bridge_actor_candidate
-5,A053,普天間爆音訴訟団,3,anti_base;legal;life_safety,citizen_group,okinawa_local,ai_seeded,bridge_actor_candidate
+4,A052,嘉手納基地爆音差止訴訟原告団,3,anti_base;legal;life_safety,citizen_group,okinawa_local,human_checked,bridge_actor_candidate
+5,A053,普天間基地爆音訴訟団,3,anti_base;legal;life_safety,citizen_group,okinawa_local,human_checked,bridge_actor_candidate
 6,A066,新外交イニシアティブ（ND）,3,anti_base;legal;local_autonomy,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
 7,A103,全国基地爆音訴訟原告団連絡会議,3,anti_base;legal;life_safety,citizen_network,japan_domestic,human_checked,bridge_actor_candidate
 8,A104,普天間基地爆音訴訟弁護団,3,anti_base;legal;life_safety,lawyers_network,okinawa_local,human_checked,bridge_actor_candidate
-9,A006,グリーンピース・ジャパン,2,anti_base;biodiversity,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
-10,A007,ピースボート,2,anti_base;international_advocacy,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
-11,A009,Earthjustice,2,international_advocacy;legal,international_advocacy_actor,us_origin,ai_seeded,bridge_actor_candidate
-12,A020,日本環境法律家連盟（JELF）,2,biodiversity;legal,lawyers_network,japan_domestic,ai_seeded,bridge_actor_candidate
+9,A109,第4次嘉手納基地爆音差止訴訟弁護団,3,anti_base;legal;life_safety,lawyers_network,okinawa_local,human_checked,bridge_actor_candidate
+10,A006,グリーンピース・ジャパン,2,anti_base;biodiversity,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
+11,A007,ピースボート,2,anti_base;international_advocacy,domestic_japan_ngo,japan_domestic,ai_seeded,bridge_actor_candidate
+12,A009,Earthjustice,2,international_advocacy;legal,international_advocacy_actor,us_origin,ai_seeded,bridge_actor_candidate

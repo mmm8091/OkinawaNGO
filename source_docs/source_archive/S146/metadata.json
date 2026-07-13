@@ -1,0 +1,20 @@
+{
+  "source_id": "S146",
+  "source_type": "organization_site",
+  "title": "沖縄を再び戦場にさせない県民の会 公式サイト",
+  "year": "2023",
+  "url": "https://kenminnokai.okinawa/",
+  "what_it_supports": "HR-011 A108: official name, representatives, purpose, structure, and activities",
+  "evidence_level": "E4",
+  "bias_note": "Primary movement source; use news sources for attendance and external corroboration",
+  "review_status": "human_checked",
+  "notes": "User-reviewed 2026-07-13.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S146\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T08:20:24.428614+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+}

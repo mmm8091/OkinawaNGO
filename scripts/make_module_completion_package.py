@@ -98,7 +98,7 @@ def make_module_status() -> None:
             "current_outputs": "fig_evidence_gap_map.png; coverage_gap_summary_v0.csv; R14_coverage_bias_audit_brief.md",
             "what_is_publishable_now": "Transparent limits of source coverage, review status, and archive status.",
             "main_gap": "Source access classification and missing-cases log need ongoing maintenance.",
-            "next_action": "Review failed archives, maintain evidence notes, and execute HR-010–HR-015.",
+            "next_action": "Review failed archives, maintain evidence notes, and use completed HR-010/011/012/014/015 results in module analysis; HR-013 is pending.",
         },
     ]
     write_csv(
@@ -279,7 +279,7 @@ def make_r5(actors: list[dict[str, str]], sources: list[dict[str, str]]) -> None
             "source_id": "S006",
             "relation_type": "request_letter_report",
             "relation_strength": "request_participant_event",
-            "interpretation_limit": "current registry under-enters the 71 participants",
+            "interpretation_limit": "nine E2 identity-unverified participants remain event-only outside the actor registry",
         },
     ]
     event_rows = []
@@ -295,7 +295,7 @@ def make_r5(actors: list[dict[str, str]], sources: list[dict[str, str]]) -> None
                 "source_url": source.get("url", ""),
                 "registry_participant_count": len(participants),
                 "origin_breakdown": ";".join(f"{k}:{v}" for k, v in origin_counts.most_common()),
-                "next_action": "review 71-participant candidate table" if event["source_id"] == "S006" else "verify participant roles and aliases",
+                "next_action": "verify event-only identities before any actor entry" if event["source_id"] == "S006" else "verify participant roles and aliases",
             }
         )
         for actor in participants:
@@ -346,7 +346,7 @@ R5 已达到 `full_event_list_v0`：已有 3 个共同行动事件样本、parti
 
 1. 当前可以展示共同行动样本如何把本地团体、日本国内 NGO、海外 NGO 放到同一个公开行动中。
 2. 这些关系只能写为共同署名、共同请求、共同在场或声援，不能写成稳定联盟。
-3. 2020 OEJP/MMC 71 团体样本已抽取完整 participant list；当前 registry 仍需根据候选表继续补 actor。
+3. 2020 OEJP/MMC 71 团体样本已抽取完整 participant list；HR-015 将其中九个仅有 E2 署名线索的名称保留在事件表、撤出 actor registry。后续只有补足组织身份与持续性二源后，才可重新考虑入表。
 
 ## 事件状态
 
@@ -647,7 +647,7 @@ R14 已达到 `audit_v0`：已有 source archive manifest、HR review log、next
 
 - 维护 source archive manifest；新增真实 URL 后继续归档。
 - `inferred_url` 已全部解决；手工处理高价值归档失败来源，并记录访问限制。
-- 按 HR-010 至 HR-015 复核新增主体字段、法律角色、evidence note 和 event-venue seed。
+- 按已收到的 HR-010、011、012、014、015 复核新增主体字段、法律角色、evidence note 和 event-venue seed；HR-013 仍待提交。
 - 给 source log 增加 source_access / archive_status / coverage_note 字段，或继续使用 manifest 旁表。
 - 建立 missing_cases_log，专门记录离岛、旧组织、失效网站和馆内数据库缺口。
 """
@@ -660,12 +660,12 @@ def make_next_tasks() -> None:
             "task_id": "MT-001",
             "module": "R5/R6",
             "priority": "P1",
-            "status": "tier_A_added_to_registry_and_R5; B_layer_conditional_C_signatory_only",
+            "status": "nine_E2_names_event_only_after_HR015; B_layer_conditional; C_signatory_only",
             "task": "Review and incorporate 2020 OEJP/MMC 71-group participant list",
             "input": "S006; mt001_candidate_triage_v0.csv; coaction_participants_v0.csv",
-            "output": "Tier A 9 actors (A077-A085) added at E2 signatory-only and wired into 2020 MMC co-action event",
-            "why_it_matters": "Registry grew 93->102 and the 2020 co-action sample now enters 11 participants; Tier B enters only as a separately coded mainland-solidarity layer when it improves R5/R11; Tier C remains event-only.",
-            "done_when": "Tier A aliases and second sources confirmed; issue/place candidate edges added where supported; any Tier B addition is visibly separated from the Okinawa core.",
+            "output": "HR-015 retained nine E2 names as unverified event participants and removed legacy A077-A085 from the main registry",
+            "why_it_matters": "Prevents one-off English signatory names from inflating the organizational registry; Tier B enters only as a separately coded mainland-solidarity layer when it improves R5/R11; Tier C remains event-only.",
+            "done_when": "The nine event-only names obtain independent identity/continuity sources before any actor entry; any Tier B addition is visibly separated from the Okinawa core.",
         },
         {
             "task_id": "MT-002",
@@ -740,7 +740,7 @@ def make_next_tasks() -> None:
             "status": "basically_done; event-aware side table v1 built, schema proposal pending merge",
             "task": "Add event_id/action_type/relation_strength to relation edges",
             "input": "coaction_participants_v0.csv; lawsuit_actor_role_table_v0.csv; referendum spec",
-            "output": "actor_relation_events_v1.csv (54 rows, 9 events, 5 action types) + MT008 note with schema proposal",
+            "output": "registry-only actor_relation_events_v1.csv (45 rows, 9 events, 5 action types); HR-015 formal AEV table has 64 rows including nine E2 event-only participants and four analytical seeds",
             "why_it_matters": "Turns static issue tags into event-aware network data; separates co-signing, litigation, and referendum roles.",
             "done_when": "07/08 edge tables get optional event_id/action_type/relation_strength columns once the side table is validated; protest and noise-lawsuit events still to add.",
         },
@@ -789,23 +789,23 @@ def write_index() -> None:
 
 ## 下一步调查优先级
 
-1. 按 HR-010–HR-015 复核新增主体字段、E3/沿革/范围候选、R8 角色及 evidence/venue seed。
+1. 使用已完成的 HR-010、011、012、014、015 结果重生模块图表，等待 HR-013，并继续处理 A087-A101 的分类／关系复核。
 2. 验证事件感知侧表，并补充有足够线上证据的 protest / noise-litigation 事件。
 3. 使用 `outputs/phase1_visuals_v1/` 和 `docs/phase1_research_report_v0.md` 完成跨图、图文和证据一致性审查。
 4. 把已经字段级 `online_exhausted` 的缺口整理为当地协作者正式任务包。
 
 ## 当前状态
 
-- MT-001：Tier A 9 个组织已入 registry 和 R5；Tier B/C 按分层决策暂不入表。
-- MT-002：归档机制持续运行；合并后 143 条来源为 128 archived、2 manual、11 failed、2 non-URL；失败状态保留供手工处理。
+- MT-001：HR-015 已将九个 E2、身份未确认的署名名称撤出 registry，保留为 R5 事件参与线索；Tier B 仅在独立本土声援层中条件纳入，Tier C 继续事件限定。
+- MT-002：归档机制持续运行；当前 159 条来源为 135 archived、2 manual、20 failed、2 non-URL；失败状态保留供手工处理，不等于证据不存在。
 - MT-003：25 条 `inferred_url` 已全部解决；S020 已恢复为 2016 年真实 URL。
 - MT-004：线上 pass 完成，组织级身份仍需当地材料。
 - MT-005：线上 pass 完成，已有命名 recipient 与 NOSCO 共同捐赠事件；完整年度表仍需 Form 990 / 内部年报。
 - MT-006：ONC 公开年报金额和 JICA 受托角色已补齐，按行政协作层解释。
 - MT-007：诉讼角色表完成，Turtle Island Restoration Network 已作为 A086 入 registry。
-- MT-008：54 行事件感知侧表完成，主表 schema 是否合并仍待验证。
-- REG-01：20 个 E4 主体完成身份级安全合并，registry 达 123；HR-010 批5已审 A102-A106，A087-A101 仍待分类/边复核。
-- R8：六案元数据以 `needs_human_review` 合并；角色 crosswalk 待 HR-014。
+- MT-008：registry-only 事件感知侧表为 45 行、9 事件、5 动作类型；HR-015 正式 AEV 表为 64 行（含 9 个 E2 event-only 参与者与 4 个 analytical seed），主表 schema 是否合并仍待验证。
+- REG-01：20 个 E4 主体完成身份级安全合并；HR-010 批5与 HR-011/012 已回写，HR-015 收紧 E2 署名条目后 registry 为 118，重新低于合同 120 下限；A087-A101 仍待分类/边复核。
+- R8：六案与 27 个角色均已完成 HR-014；案件、组织 actor 与 provisional procedural node 已分表。
 """
     write_text(OUT / "README.md", content)
 

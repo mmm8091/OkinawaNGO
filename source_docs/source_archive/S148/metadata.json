@@ -1,0 +1,27 @@
+{
+  "source_id": "S148",
+  "source_type": "local_news",
+  "title": "沖縄を再び戦場にさせない県民の会 发足报道",
+  "year": "2023",
+  "url": "https://ryukyushimpo.jp/news/entry-1754082.html",
+  "what_it_supports": "HR-011 A108: formation, purpose, and prefecture-wide network positioning",
+  "evidence_level": "E4",
+  "bias_note": "News account; umbrella formation does not make every participant a stable member edge",
+  "review_status": "human_checked",
+  "notes": "Merged from SC013; user-reviewed 2026-07-13.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S148\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S148\\metadata.json",
+  "sha256": "42970d2360812e3388c776f715ae6dcaaabb72c6f1cbf116c659732611e7f9c7",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:32.991396+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-1754082.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 08:20:33 GMT"
+  }
+}

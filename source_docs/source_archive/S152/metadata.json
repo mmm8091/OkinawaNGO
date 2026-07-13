@@ -1,0 +1,27 @@
+{
+  "source_id": "S152",
+  "source_type": "participating_law_firm_record",
+  "title": "第4次嘉手納基地爆音差止訴訟 提訴说明",
+  "year": "2022",
+  "url": "https://ameblo.jp/hibikilaw-staff/entry-12727218527.html",
+  "what_it_supports": "HR-011 A109: participating-law-firm confirmation of a case-specific counsel team",
+  "evidence_level": "E3",
+  "bias_note": "Participating firm account; do not infer a complete roster or representation scope",
+  "review_status": "human_checked",
+  "notes": "Merged from SC026; bounded by the user's no-roster-inference decision.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S152\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S152\\metadata.json",
+  "sha256": "eb178f24dbd7e499307fc5a435d6474b97a73146198d7192e90b1e9a054504f8",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:52.274524+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ameblo.jp/hibikilaw-staff/entry-12727218527.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "102681",
+    "last_modified": ""
+  }
+}

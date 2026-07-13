@@ -23,3 +23,5 @@ I021,noise,life_safety,Aircraft and base noise as daily-life harm and litigation
 I022,women,peace_human_rights,"Women's organizations, gendered civic participation, and women-focused advocacy",yes,Added through HR-010 batch 5; organization type alone does not imply political stance.
 I023,human_rights,peace_human_rights,"Human-rights framing in civic, legal, peace, or international advocacy",yes,Added through HR-010 batch 5; code only when source-backed.
 I024,solidarity,collective_action,Public solidarity or support action outside the Okinawa-local core,yes,Added through HR-010 batch 5; solidarity action is not a stable alliance.
+I025,anti_war,peace_human_rights,"Opposition to war, military escalation, or the conversion of Okinawa into a battlefield",yes,Added through HR-011; distinct from a narrower anti-base or anti-deployment code.
+I026,mobilization,collective_action,"Sustained public organizing, street action, or campaign mobilization",yes,Added through HR-011; mobilization does not itself establish stable alliance ties.

@@ -67,10 +67,12 @@
 - [x] 对 P1 条目进行第一轮 web 核实（AWWA/OESC/ヘリ基地反対協/イソバの会/石垣住民投票）。
 - [x] 完成正式人工复核任务 HR-001 至 HR-009，并写入 `human_review_log_v0.csv`。
 - [x] 补充来源日志中 URL 占位符条目（MT-003/W1：25/25 已解决；S020 恢复为 2016 年真实 URL）。
-- [x] 按原方案和模块缺口扩充 actor registry 至至少 120（当前 123；合同范围 120–180；模块未饱和时可继续扩展）。
+- [x] 曾按原方案和模块缺口扩充 actor registry 至 123；HR-015 后撤出 9 个仅有 E2 一次署名线索的名称，当前为 118。
+- [ ] 以组织身份／持续性可核的 actor 补足合同 120 下限；不得把一次署名者重新塞回主表凑数。
 - [ ] 处理 HR 复核后的剩余 `needs_second_source` / `needs_local_retrieval` 条目。
-- [ ] 根据复核结果更新 evidence_level 和可发布措辞。
-- [x] 建立信息源本地备份机制并持续归档（2026-07-12 安全合并后：128 archived / 2 manual / 11 failed / 2 non-url；失败含访问限制与瞬时网络波动）。
+- [x] HR-011、HR-012、HR-014、HR-015 已落库；HR-013 未收到记录，不作推定。
+- [x] 根据本批复核结果更新 evidence_level、案件角色、事件边界和可发布措辞。
+- [x] 建立信息源本地备份机制并持续归档（2026-07-13：135 archived / 2 manual / 20 failed / 2 non-url；失败含 403、SSL 与瞬时网络波动，不等于证据不存在）。
 - [x] 处理 S007 手工归档。
 - [x] MT-003/W1：25 条 inferred_url 全部解决；S020 恢复为 2016 年琉球新报真实 URL并归档。
 
@@ -86,6 +88,7 @@
 - [ ] 完成原方案指定的完整组织—议题网络和与那国/先岛专题图；组织—地点补图已完成。
 - [x] 完成 W1 线上材料 pass、一期补图包和研究报告 v0 草稿；不等于一期线上收口或最终验收。
 - [x] 按原始 DOCX 完成基础建设、R1–R11、五图及最终交付验收审计。
+- [x] 完成 R4／R9／R10 候选包交叉 QA；三包原始候选均不直接入主表，改用 corrected / reviewed 层继续收口。
 - [ ] 完成 R1–R11 缺口补料、解释性成果、论文、25–35 页报告和 15–20 页 PPT。
 
 ## 文件索引
@@ -111,9 +114,13 @@
 - `data/interim/03_issue_taxonomy_v0.csv`
 - `data/interim/04_place_registry_v0.csv`
 - `data/interim/05_source_log_initial_v0.csv`
+- `data/interim/06_evidence_notes_v0.csv`
 - `data/interim/07_actor_issue_edges_initial_v0.csv`
 - `data/interim/08_actor_place_edges_initial_v0.csv`
+- `data/interim/09_actor_event_venue_edges_v0.csv`
 - `data/interim/15_funding_or_support_edges_sample_v0.csv`
+- `data/interim/17_legal_policy_procedure_cases_v0.csv`
+- `data/interim/18_legal_policy_actor_roles_v0.csv`
 - `outputs/progress_sync_v0/`
 - `outputs/online_completion_v0/`
 - `outputs/phase1_visuals_v1/`
@@ -123,26 +130,31 @@
 - `outputs/phase1_foundation_v1/`
 - `outputs/registry_expansion_v1/`
 - `outputs/R08_legal_procedure_v0/`
+- `outputs/R04_sakishima_frame_corpus_v0/`
+- `outputs/R09_referendum_process_v0/`
+- `outputs/R10_administrative_collaboration_v0/`
 
 ## 当前样本状态
 
-- actor 初版：123 条；HR-010 批5 已人审 A102-A106，A087-A101 仍为 E4 身份级安全合并待复核。
-- funding/support/relation edge 样本：41 条；F037-F041 为人审后的成员、法律代理和事件/伙伴行动关系，均明确 `not_funding_relation`。
-- actor_issue_edges：200 条；AI181-AI200 为 HR-010 批5 人审议题边。
+- actor registry：118 条。HR-011 新增 A107–A110；HR-015 将旧 A077–A085 撤出主表、保留为 E2 事件参与线索。A087–A101 仍为 E4 身份级安全合并待分类／关系复核。
+- funding/support/relation edge 样本：43 条；F042 为 A109→A052 第4次嘉手纳法律代理，F043 为 A105→A107 全国／地域 YWCA 组织隶属，均明确 `not_funding_relation`。
+- actor_issue_edges：218 条；本批补足 A107–A110 的 women／human_rights／anti_war／mobilization／noise／legal 等人审议题边。
 - actor_place_edges 初版：124 条。
-- actor alias：15 条；A106 新增 `首都圏キャンペーン` 待定 canonical variant。
-- source log：143 条（141 条真实 URL、2 条非 URL 参考）；新增来源用于 A087-A106 身份与 R8 六案，归档状态以 manifest 为准。
-- issue taxonomy：24 个一级议题；新增 environment、noise、women、human_rights、solidarity。
+- actor alias：以主表为准；A010 前身、A052/A053 诉讼轮次及正式名已按 HR-012 处理。
+- source log：159 条；S144–S159 用于 HR-011/012 精确来源，S051 已降为 E0 `rejected_archive_mismatch`，不得再用于 A011。
+- issue taxonomy：26 个一级议题；本批新增 anti_war、mobilization。
 - place registry：20 个地点 / 场域节点。
 - venue taxonomy：16 类，已作为非结论性元数据合并。
-- R8 case registry：6 案，均为 `needs_human_review`；角色 crosswalk 不进入主关系数据，待 HR-014。
+- evidence notes：49 条正式表，HR-015 全批复核；其中五条 locator 仍明确待精确定位。
+- actor-event-venue：64 条正式表；九个 MMC 小团体为 E2 `unverified_event_participant`，四条 pathway 为 `analytical_seed`。
+- R8 case registry：6 案全部 `human_checked`；27 个角色全部 accept，正式表区分 registry actor 与 provisional procedural node。
 - 第一次沟通素材：7 张 PNG 图（v0）、9 张 PNG 图（v1）。
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
 - 旧编号模块包 v0：含 R2、R3/R4、R5、跨国路径和 coverage 等现有 brief；最终方案中跨国路径属于 R6，coverage 属基础建设，不能用旧 R11/R14 编号判定验收。
 - 第一版进度稿已完成，但暂作为内部草稿；下一次沟通需先完成解释性图表包。
-- 已完成 HR-001 至 HR-009 及 HR-010 批5（A102-A106），共 14 条 human review log。
-- 信息源备份机制已跑通：2026-07-12 合并后 manifest 为 128 archived、2 manual_archived、11 failed、2 non-URL；S103-S143 中 35 archived、6 failed，失败保留访问错误供后续手工归档。
-- 方案验收后第一批实作：16 类 venue、20 个 E4 actor 身份、41 条来源和 R8 六案元数据已安全合并；49 evidence、64 actor-event-venue、E3/沿革/范围候选及 R8 角色进入 HR-010 至 HR-015。
+- 已完成 HR-001 至 HR-012、HR-014、HR-015 的已提供记录，共 31 条 human review log；HR-013 未收到材料，未代填。
+- 信息源备份机制已跑通：2026-07-13 manifest 为 135 archived、2 manual_archived、20 failed、2 non-URL。archive 脚本现默认复用未变化的缓存，`--retry-failed` 可定向重试失败源；失败记录保留访问错误供后续手工归档。
+- 方案验收后第一批实作：16 类 venue、20 个 E4 actor 身份、41 条来源和 R8 六案元数据已安全合并；49 evidence、64 actor-event-venue、E3/沿革/范围候选及 R8 角色已进入 HR-010、011、012、014、015；HR-013 尚未收到。
 
 ## 任务索引
 
@@ -151,7 +163,7 @@
 - 人类决策任务书：`docs/human_decision_tasks_v0.md`
 - 进度沟通稿：`docs/progress_report_v1.md`
 
-当前人工复核状态：HR-001 至 HR-009 已完成首轮；HR-010 批5 A102-A106 已合并，A087-A101 仍待分批复核；HR-011 至 HR-015 覆盖 E3 补源、沿革/别名、范围边界、R8 角色和 evidence/venue seed。
+当前人工复核状态：HR-001 至 HR-012、HR-014、HR-015 的已提供记录均已合并；HR-013 无记录，保持空缺。A087-A101 仍待分批做分类／关系复核，C015 维持 `needs_second_source`。
 
 当前当地补查优先级：与那国早期反部署组织、先岛/边野古核心组织报刊时间线、军属配偶俱乐部完整 recipient 年表。ONC 公开年度事业费和 S020 已在线解决。
 
@@ -171,14 +183,14 @@
 
 ## 下一步
 
-1. 以 `docs/phase1_scheme_acceptance_audit_v1.md` 为权威：当前不具备一期验收条件；第二次进度同步只代表甲方已知快照。
-2. MT-001 Tier A 9 条已写入 registry（93→102）并接入 2020 MMC event（R5，2→11）；剩：补 alias（tentative 日文名待核）、二次核实后加议题/地点候选边。B=12 仅在建立独立本土声援层时分层纳入；C=31 署名限定。
-3. MT-003 已完成：25/25 inferred URL 全部解决；S020 恢复为 2016 年琉球新报文章并归档，不再派当地补查。
-4. MT-007 基本完成：`lawsuit_actor_role_table_v0.csv` 已定案 Okinawa Dugong v. Rumsfeld 各方角色（A076 原告确认、A002/A019 非当事方、JELF 原告、Earthjustice 律师）；Turtle Island Restoration Network 已作为 A086 入表。
-5. MT-005 线上 pass 完成：AWWA 命名 recipient 边 F028–F030；新增 NOSCO 共同捐赠 F036。完整年表仍需 Form 990 / 内部年报。见 `outputs/online_completion_v0/`。
-6. MT-008 基本完成：`actor_relation_events_v1.csv`（54 行 / 9 事件 / 5 action 类型）把 co-action+诉讼+公投统一成事件感知层；schema 增强提案待并入 07/08。见 `MT008_edge_enrichment_note.md`。
-7. MT-006 线上公开记录基本完成：ONC 归入国际协作/多文化行政层；S099 补足 FY2024 年度事业费，S100 确认 JICA 受托角色。金额只写项目成本，不写合同支付额。
-8. LR T1-B 基本完成：USO Okinawa 8 中心 + 命名赞助方（AEC 升 E4、MBC/Matson 边），服务对象=美军社区。见 `LR_T1B_uso_note.md`。
-9. MT-004 线上 pass 完成：A014 事件语境有主流佐证（RS/OT/QAB）、A015 无非党派源保持 E2；组织级身份仍需与那国当地补查（LR Tier 2）。见 `MT004_yonaguni_online_pass_note.md`。
-10. R5/R11 事件感知图已出：`fig/fig_event_repertoire.png`（集体行动 repertoire 时间线，`make_event_repertoire_fig.py`）。
-11. 第一批安全合并已完成，HR-010 批5 A102-A106 已人审回写。下一轮继续 HR-010 剩余 A087-A101 与 HR-011 至 HR-015；线上 R4/R9/R10 候选包已由子线程产出，待主线程审核后再决定合并。
+1. 以 `docs/phase1_scheme_acceptance_audit_v1.md` 为验收权威：第二次进度同步仍是甲方已知快照；当前不具备一期最终验收条件。
+2. 先补回 registry 合同下限：当前 118，至少还需 2 个组织级身份／持续性可核的 actor；优先从 A087-A101 人审与模块缺层候选中选择，禁止把 A077-A085 一次署名名称重新入表凑数。
+3. R4 下一轮：仅从 corrected QA 层收口先岛 framing corpus；原始 26 条 actor-frame 候选为 11 safe／7 semantic-human／8 reject，S051 已撤销。
+4. R9 下一轮：使用 corrected process/role/source 三表，拆开石垣两条诉讼链、纠正 2019-06-17 条例案发起者，并把 2024 最高裁结果在取得一手裁定前写成中性状态。
+5. R10 下一轮：按正式机制码拆分委托／提案型委托／补助，分开合同额、合格委托部分和组织事业费；不得把 ONC project cost 写成行政支付额。
+6. R8 已完成人审：六案与 27 角色进入正式表；A002/A019 non-party、A011 requester、A055/A020 supporter、A020 跨案异角均为强制边界。
+7. HR-015 已形成 49 evidence notes 与 64 AEV 正式表；后续图表优先从正式表读取，event participation 与 analytical seed 不进入稳定关系结论。
+8. MT-003、MT-005、MT-006、MT-007、MT-008 与 LR T1-B 的线上 pass 结论继续有效；金额、服务、署名和案件角色按最新人审边界解释。
+9. C015、A014/A015、完整 AWWA recipient 年表等真正线上耗尽项，继续留在复核／当地任务书；未到派当地协作者阶段前，不用当地材料掩盖线上模块缺口。
+10. 完成 R4/R9/R10 的解释性表／图／brief 后，回到 R1–R11 验收矩阵，逐模块补解释、缺口和 done_when。
+11. 下一次甲方材料必须以研究报告与解释性图为主，不直接覆盖第二次同步历史快照；先形成内部 v1，再决定第三次同步。

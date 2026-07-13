@@ -7,8 +7,9 @@ action-type lanes (y) against year (x); bubble area = registered participants.
 Shows how base issues move across co-signing, litigation, referendum, and
 international-request action over 1997-2020.
 
-Output: outputs/module_completion_v0/fig/fig_event_repertoire.html
-Screenshot to fig_event_repertoire.png separately (headless Chrome).
+Current output: outputs/module_completion_v0/fig/fig_event_repertoire.html
+The pre-HR-015 screenshot is retained as fig_event_repertoire_pre_hr015.png;
+do not restore the canonical PNG name until a fresh screenshot is captured.
 
 Palette: dataviz reference categorical slots 1-5 (validated: worst adjacent
 CVD dE 24.2; contrast WARN relieved by labelled lanes + per-bubble labels).

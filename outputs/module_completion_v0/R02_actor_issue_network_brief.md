@@ -20,8 +20,8 @@ R2 已达到 `module_v0`：已有 actor-issue edge 表、Top bridge actors 图�
 - A045 Center for Biological Diversity：连接 biodiversity;international_advocacy;legal；状态 `ai_seeded`。
 - A048 沖縄一坪反戦地主会：连接 anti_base;legal;local_autonomy；状态 `ai_seeded`。
 - A050 沖縄弁護士会：连接 anti_base;legal;local_autonomy；状态 `ai_seeded`。
-- A052 嘉手納爆音訴訟原告団：连接 anti_base;legal;life_safety；状态 `ai_seeded`。
-- A053 普天間爆音訴訟団：连接 anti_base;legal;life_safety；状态 `ai_seeded`。
+- A052 嘉手納基地爆音差止訴訟原告団：连接 anti_base;legal;life_safety；状态 `human_checked`。
+- A053 普天間基地爆音訴訟団：连接 anti_base;legal;life_safety；状态 `human_checked`。
 - A066 新外交イニシアティブ（ND）：连接 anti_base;legal;local_autonomy；状态 `ai_seeded`。
 - A103 全国基地爆音訴訟原告団連絡会議：连接 anti_base;legal;life_safety；状态 `human_checked`。
 - A104 普天間基地爆音訴訟弁護団：连接 anti_base;legal;life_safety；状态 `human_checked`。

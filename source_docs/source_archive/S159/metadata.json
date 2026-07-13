@@ -1,0 +1,27 @@
+{
+  "source_id": "S159",
+  "source_type": "news_magazine",
+  "title": "週刊金曜日 石垣島に軍事基地をつくらせない市民連絡会 2023年行动报道",
+  "year": "2023",
+  "url": "https://www.kinyobi.co.jp/kinyobinews/2023/04/04/antena-1238/",
+  "what_it_supports": "HR-012 A010: the established canonical name remained in documented use in 2023",
+  "evidence_level": "E3",
+  "bias_note": "Movement-oriented magazine; useful for name-in-use cross-check",
+  "review_status": "human_checked",
+  "notes": "Supports rejecting the unverified 2023 rename claim; not proof of every organizational detail.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S159\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S159\\metadata.json",
+  "sha256": "4e3519c8db4878bbff21d72046193a7c9adb38ec0e6fa4613806910b0d415624",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:21:09.293499+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.kinyobi.co.jp/kinyobinews/2023/04/04/antena-1238/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

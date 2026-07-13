@@ -1,0 +1,27 @@
+{
+  "source_id": "S147",
+  "source_type": "local_news",
+  "title": "QAB『沖縄を再び戦場にさせない「県民平和大集会」』",
+  "year": "2023",
+  "url": "https://www.qab.co.jp/news/20231123193623.html",
+  "what_it_supports": "HR-011 A108: 2023-11-23 prefectural peace rally and organizer-reported attendance",
+  "evidence_level": "E4",
+  "bias_note": "Attendance is organizer-reported and must be attributed as such",
+  "review_status": "human_checked",
+  "notes": "User-reviewed 2026-07-13; event participation does not establish stable alliances.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S147\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S147\\metadata.json",
+  "sha256": "fa569fa4ef1618c0cee626f912d2e6dccc81181068479b8f783923698d8c325b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:25.834873+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.qab.co.jp/news/20231123193623.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

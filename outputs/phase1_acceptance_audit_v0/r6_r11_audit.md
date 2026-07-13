@@ -181,7 +181,7 @@ NGO／市民团体如何作为选举政治、县民投票和反边野古议题�
 ### 现有解释性图表／brief
 
 - `actor_relation_events_v1.csv` 中 4 条 referendum actor 记录和 1 条 opinion_ad 记录。
-- `fig_event_repertoire.png` 将公投放入整体行动方式时间线，但没有展开程序阶段和组织网络。
+- 当前 `fig_event_repertoire.html` 将公投放入整体行动方式时间线，但没有展开程序阶段和组织网络；`fig_event_repertoire_pre_hr015.png` 是旧 registry 口径的历史快照。
 - 地点—议题矩阵和研究报告第 5、6 节解释名护、石垣、与那国、公投与自治的关系。
 - 前期 2014／2018／2022 知事选市町村得票研究可作为背景，但当前仓库模块尚未建立可复核连接表。
 

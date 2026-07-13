@@ -1,0 +1,20 @@
+{
+  "source_id": "S153",
+  "source_type": "organization_site",
+  "title": "辺野古に基地を絶対つくらせない大阪行動 公式博客",
+  "year": "2026",
+  "url": "https://blog.livedoor.jp/henoko_osaka/",
+  "what_it_supports": "HR-011 A110: sustained Osaka/Kansai Henoko solidarity action",
+  "evidence_level": "E3",
+  "bias_note": "Self-published action record; use only as mainland solidarity layer",
+  "review_status": "human_checked",
+  "notes": "Merged from SC041; public action does not establish a stable alliance.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S153\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T08:20:57.355862+00:00",
+  "note": "URLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)"
+}

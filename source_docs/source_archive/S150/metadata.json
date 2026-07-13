@@ -1,0 +1,27 @@
+{
+  "source_id": "S150",
+  "source_type": "local_news",
+  "title": "QAB 第4次嘉手納基地爆音差止訴訟 第1回口頭弁論前夜集会",
+  "year": "2023",
+  "url": "https://www.qab.co.jp/news/20230119159860.html",
+  "what_it_supports": "HR-011 A109: fourth-round plaintiffs and lawyers preparing the first oral hearing",
+  "evidence_level": "E3",
+  "bias_note": "Event report; confirms case-specific role, not the full counsel roster",
+  "review_status": "human_checked",
+  "notes": "Exact QAB page located during main-thread integration; user had identified the 2023-01-19 report.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S150\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S150\\metadata.json",
+  "sha256": "67c9ff2cf5e54bcc8027f0df0c79187598c506669ee27092e50e400a55ff6a90",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:44.974909+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.qab.co.jp/news/20230119159860.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

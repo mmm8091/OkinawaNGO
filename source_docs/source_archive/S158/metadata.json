@@ -1,0 +1,27 @@
+{
+  "source_id": "S158",
+  "source_type": "organization_profile",
+  "title": "宮古島地下水研究会 団体概要",
+  "year": "2026",
+  "url": "https://miyakojima-tikasui.com/about_us.html",
+  "what_it_supports": "HR-011 C015 defer: comparison organization has a distinct confirmed name and named co-representatives",
+  "evidence_level": "E4",
+  "bias_note": "Comparison source only; does not establish identity of C015",
+  "review_status": "human_checked",
+  "notes": "Use to prevent mistaken merger; C015 remains needs_second_source and outside the registry.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S158\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S158\\metadata.json",
+  "sha256": "3d7223aea002e3ee993eadf44da86cae7ede947533d1024067027780d929d5f9",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:21:06.164726+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://miyakojima-tikasui.com/about_us.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "11818",
+    "last_modified": "Wed, 17 Jan 2024 08:28:49 GMT"
+  }
+}

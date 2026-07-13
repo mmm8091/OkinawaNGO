@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -130,7 +131,55 @@ def existing_manual_archive(row: dict[str, str], source_dir: Path) -> dict[str, 
     }
 
 
-def archive_source(row: dict[str, str]) -> dict[str, str]:
+def existing_cached_archive(
+    row: dict[str, str], source_dir: Path, *, retry_failed: bool
+) -> dict[str, str] | None:
+    """Reuse a prior result when the source URL and local artifact are unchanged."""
+
+    metadata_path = source_dir / "metadata.json"
+    if not metadata_path.exists():
+        return None
+    try:
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+
+    status = str(metadata.get("archive_status", ""))
+    if status == "manual_archived":
+        return None  # handled by existing_manual_archive
+    if str(metadata.get("url", "")).strip() != row.get("url", "").strip():
+        return None
+    if status == "failed" and retry_failed:
+        return None
+    if status not in {
+        "archived",
+        "failed",
+        "skipped_inferred_url",
+        "skipped_non_url_reference",
+    }:
+        return None
+
+    local_path = str(metadata.get("local_path", ""))
+    if status == "archived" and (not local_path or not (ROOT / local_path).exists()):
+        return None
+    return {
+        "source_id": row["source_id"],
+        "title": row.get("title", ""),
+        "url": row.get("url", "").strip(),
+        "archive_status": status,
+        "local_path": local_path,
+        "metadata_path": str(metadata_path.relative_to(ROOT)),
+        "sha256": str(metadata.get("sha256", "")),
+        "content_type": str(metadata.get("content_type", "")),
+        "http_status": str(metadata.get("http_status", "")),
+        "archived_at_utc": str(metadata.get("archived_at_utc", "")),
+        "note": str(metadata.get("note", "")),
+    }
+
+
+def archive_source(
+    row: dict[str, str], *, retry_failed: bool = False, refresh_all: bool = False
+) -> dict[str, str]:
     source_id = row["source_id"]
     url = row["url"].strip()
     source_dir = ARCHIVE_ROOT / safe_name(source_id)
@@ -138,6 +187,10 @@ def archive_source(row: dict[str, str]) -> dict[str, str]:
     manual = existing_manual_archive(row, source_dir)
     if manual:
         return manual
+    if not refresh_all:
+        cached = existing_cached_archive(row, source_dir, retry_failed=retry_failed)
+        if cached:
+            return cached
     archived_at = datetime.now(timezone.utc).isoformat()
 
     base = {
@@ -227,9 +280,32 @@ def write_manifest(rows: list[dict[str, str]]) -> None:
         writer.writerows(rows)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Archive source-log URLs locally.")
+    parser.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="Retry unchanged sources whose previous archive status was failed.",
+    )
+    parser.add_argument(
+        "--refresh-all",
+        action="store_true",
+        help="Refetch every non-manual HTTP source instead of using cached archives.",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     ARCHIVE_ROOT.mkdir(parents=True, exist_ok=True)
-    manifest_rows = [archive_source(row) for row in read_sources()]
+    manifest_rows = [
+        archive_source(
+            row,
+            retry_failed=args.retry_failed,
+            refresh_all=args.refresh_all,
+        )
+        for row in read_sources()
+    ]
     write_manifest(manifest_rows)
     counts: dict[str, int] = {}
     for row in manifest_rows:

@@ -1,49 +1,36 @@
 # MT-008 关系边事件化 note v0
 
-日期：2026-07-03
+日期：2026-07-13（HR-015 同步）
 
-**目标**：把静态的 actor-issue / actor-place 边升级成"事件感知"数据——即每条关系尽量挂上 `event_id`、`action_type`、`relation_strength`，从而区分长期组织定位、事件性署名、法律程序角色、公投参与等不同性质。
+**目标**：把静态 actor–issue / actor–place 边升级为事件感知数据，用 `event_id`、`action_type` 与 `relation_strength` 区分长期组织定位、事件性署名、法律程序角色、公投参与和分析种子。
 
-## 本轮产出：`actor_relation_events_v1.csv`
+## 两层数据，不混用
 
-由 `scripts/make_relation_events.py` 生成，把已有的事件角色统一成一张表，覆盖 9 个事件、5 类 action、54 行：
+- `actor_relation_events_v1.csv` 是 **registry-only 派生表**：45 行、9 个事件、5 类 action。它只保留已有 `actor_id` 的组织级角色，用于当前网络图。
+- `data/interim/09_actor_event_venue_edges_v0.csv` 是 HR-015 正式事实／分析表：64 行；其中 60 行 `human_checked`、4 行 `analytical_seed`。它保留九个 E2 `unverified_event_participant`，这些名称不在 actor registry。
 
-| action_type | 事件 | 行数 |
-|---|---|---|
-| co_signing | 2010 WWF / 2015 NACSJ 共同署名 | 33 |
-| request_letter | 2020 OEJP/MMC 共同要请 | 11 |
-| litigation | 2003 Okinawa Dugong v. Rumsfeld | 5 |
-| referendum | 2019 县民投票 / 1997 名护 / 石垣 / 与那国 | 4 |
-| opinion_ad | 2012 与那国意见广告 | 1 |
+| action_type | registry-only 行数 | 正式 AEV 行数 |
+|---|---:|---:|
+| co_signing | 33 | 33 |
+| request_letter | 2 | 11 |
+| litigation | 5 | 11 |
+| referendum | 4 | 4 |
+| opinion_ad | 1 | 1 |
+| pathway_role | 0 | 4 |
 
-字段：`event_id, event_name, event_year, action_type, actor_id, canonical_name, role, relation_strength, evidence_level, source_ref, interpretation_limit`。
+## 解释边界
 
-`relation_strength` 取值：`one_off_co_signatory`（一次性联署）、`request_participant`（要请参与）、`named_plaintiff` / `plaintiff_counsel`（诉讼）、`referendum_initiator` / `referendum_committee`、`opinion_ad_committee`。
+- 共同署名、共同要请、同场参与只证明一次事件角色，不构成稳定联盟。
+- 四条 `pathway_role` 是解释性分析种子，不是事实关系。
+- E2 event-only 名称在取得独立身份与持续性证据前不得回填 registry。
+- 诉讼中的个人、组织、律师、请求者、支援者与 non-party 必须分开；个人角色不得转嫁给其所属组织。
 
-数据来源：co-action 部分从 `coaction_participants_v0.csv` 派生（不重复录入），诉讼部分从 `lawsuit_actor_role_table_v0.csv` 派生（只取有 actor_id 的原告/律师，个人原告不进网络层），公投/意见广告为手工 spec。
+## 可视化
 
-## 可视化（R5/R11 下一版）
+`fig/fig_event_repertoire.html` 读取 registry-only 表生成当前 repertoire 时间线，气泡面积只表示当前 registry 中可核组织角色数。HR-015 前的旧截图已改名 `fig_event_repertoire_pre_hr015.png`，只作历史快照；正式全量事件参与以 AEV 表为准。
 
-`scripts/make_event_repertoire_fig.py` 读本表生成 `fig/fig_event_repertoire.png`：**集体行动 repertoire 时间线**——每个事件一个气泡，落在其 action_type 泳道（共同署名 / 共同要请 / 诉讼 / 公投 / 意见广告）上，横轴年份，气泡面积＝已录入参与组织数。它显示基地议题的公开行动方式随时间从共同署名扩展到国际要请、诉讼、住民投票；并直观展示跨事件重复组织极少（仅 A020 JELF、A045 CBD、A061 野鳥の会），印证"共同署名≠稳定联盟"。配色用 dataviz 参考色板 slots 1-5（已过验证器，worst adjacent CVD ΔE 24.2；泳道+气泡直接标签满足 relief）。
+## 下一步
 
-## 价值
-
-- 同一个 actor 在不同事件里的角色现在可分开读：例如 A020 JELF 既是 2020 共同要请参与者（request_participant），又是儒艮诉讼原告（named_plaintiff）——静态议题标签看不出这种差别。
-- `action_type` 让"共同署名"和"诉讼""公投"不再混为一谈，直接支撑 R5/R10/R11 的事件化叙事。
-- 保守口径内置：`interpretation_limit` 每行标注"一次性联署≠稳定联盟"。
-
-## schema 增强提案（下一版 edge 表）
-
-建议给 `07_actor_issue_edges` / `08_actor_place_edges` 增补三列（默认可空）：
-
-- `event_id`：关系若来自具体事件，回指本表 event_id；长期组织定位留空。
-- `action_type`：`co_signing / request_letter / litigation / referendum / opinion_ad / protest / statement / administrative`。
-- `relation_strength`：`one_off / repeated / sustained_core / named_plaintiff / …`。
-
-暂不直接改写 07/08（避免破坏现有图脚本），先以本 `actor_relation_events_v1.csv` 作为事件层旁表；确认可用后再决定是否并入主边表 v1。
-
-## 待办
-
-- 补 2010/2015 联署里更细的 role（organizer / signer / host），目前统一为 co_signer_or_participant。
-- 噪音诉讼（A052 嘉手納 / A053 普天間）与泡瀬诉讼可作为额外 litigation 事件补入。
-- 抗议/直接行动（A019 现场、A060 高江）作为 protest action_type 补入。
+- 从正式 AEV 重做事实事件图，并把四条 analytical seed 分层显示。
+- 将嘉手纳、普天间与泡瀬案件按案件／轮次补入 event 层。
+- 在不破坏现有 07/08 图脚本前提下，评估把 `event_id`、`action_type`、`relation_strength` 作为可空字段并入下一版边表。

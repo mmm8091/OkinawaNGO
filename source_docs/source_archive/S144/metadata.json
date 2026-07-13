@@ -1,0 +1,27 @@
+{
+  "source_id": "S144",
+  "source_type": "parent_organization_profile",
+  "title": "日本YWCA『沖縄YWCAのご紹介』",
+  "year": "2022",
+  "url": "https://www.ywca.or.jp/kaze/0214news-2/",
+  "what_it_supports": "HR-011 A107: 2002 founding, regional-YWCA identity, named officers, youth activity, and direct Henoko activity",
+  "evidence_level": "E4",
+  "bias_note": "Parent-body profile; strong for organizational affiliation and reported activity, not independent evaluation",
+  "review_status": "human_checked",
+  "notes": "User-reviewed 2026-07-13; specific article dated 2022-02-14.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S144\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S144\\metadata.json",
+  "sha256": "06efffc177676e742948b3ab4dc833792d996fafe15f31ab1c6a0fb2feffdc21",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T08:20:12.645083+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ywca.or.jp/kaze/0214news-2/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_id": "S155",
+  "source_type": "organization_history",
+  "title": "嘉手納基地爆音差止訴訟原告団 訴訟の歴史",
+  "year": "2026",
+  "url": "https://kadena-bakuon.jp/trial/history/",
+  "what_it_supports": "HR-012 A052: continuity from the first through fourth Kadena litigation rounds",
+  "evidence_level": "E4",
+  "bias_note": "Plaintiff-group history; strong for self-described organizational continuity",
+  "review_status": "human_checked",
+  "notes": "User-reviewed 2026-07-13; rounds are not separate registry actors.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S155\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T08:21:02.339702+00:00",
+  "note": "HTTPError 403: Forbidden"
+}
