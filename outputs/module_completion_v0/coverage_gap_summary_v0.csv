@@ -8,9 +8,12 @@ actor_review_status,watchlist_only,2
 actor_evidence_level,E4,88
 actor_evidence_level,E3,26
 actor_evidence_level,E2,4
-source_type,organization_site,35
-source_type,local_news,22
-source_type,court_record,8
+source_type,organization_site,36
+source_type,local_news,24
+source_type,local_official,15
+source_type,court_record,12
+source_type,official_legislative_record,10
+source_type,prefectural_official,9
 source_type,ngo_statement,7
 source_type,official_portal,6
 source_type,official_data,6
@@ -19,7 +22,6 @@ source_type,academic_article,4
 source_type,party_news,4
 source_type,nonprofit_record,4
 source_type,legal_international,3
-source_type,local_official,3
 source_type,legal_source,3
 source_type,military_news,3
 source_type,organization_statement,3
@@ -30,7 +32,7 @@ source_type,news,2
 source_type,grant_document,2
 source_type,grant_database,2
 source_type,grant_listing,2
-source_type,official_legislative_record,2
+source_type,national_official,2
 source_type,international_advocacy,1
 source_type,official_referendum,1
 source_type,organization_blog,1
@@ -58,7 +60,8 @@ source_type,organization_history,1
 source_type,union_research_report,1
 source_type,organization_profile,1
 source_type,news_magazine,1
-source_archive_status,archived,135
-source_archive_status,failed,20
+source_type,official_or_primary_web_record,1
+source_archive_status,archived,176
+source_archive_status,failed,18
 source_archive_status,manual_archived,2
 source_archive_status,skipped_non_url_reference,2

@@ -1,0 +1,27 @@
+{
+  "source_id": "S188",
+  "source_type": "prefectural_official",
+  "title": "沖縄県公報号外第43号・県民投票条例第62号",
+  "year": "2018",
+  "url": "https://www.pref.okinawa.jp/kenkouhou/H30/10gatsu/181031gogai43.pdf",
+  "what_it_supports": "R9C_PREF_2019: 条例公布、目的、执行与通知制度",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC042; module refs=R9:R9S010. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S188\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S188\\metadata.json",
+  "sha256": "070576452d530579ea27726b14d305d02f614b1f8260bef791b695ff6d459067",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:08.697232+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kenkouhou/H30/10gatsu/181031gogai43.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "851274",
+    "last_modified": "Wed, 31 Oct 2018 00:56:16 GMT"
+  }
+}

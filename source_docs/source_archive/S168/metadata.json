@@ -1,0 +1,27 @@
+{
+  "source_id": "S168",
+  "source_type": "local_official",
+  "title": "宮古島市新市施策：水源保护条例",
+  "year": "undated",
+  "url": "https://www.city.miyakojima.lg.jp/gyosei/kihonkeikaku/kensetsu/shisaku2.html",
+  "what_it_supports": "Miyako: 市政府把地下水源保护表述为岛民守护饮用水的共同意志 [groundwater_life_safety]",
+  "evidence_level": "E4",
+  "bias_note": "这是一般水政策背景；不得自动归因于自卫队部署 | 一般地下水政策可作宫古背景；没有部署连接，删除 environment_deployment",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC015; module refs=R4:R4S001. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_year_or_period.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S168\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S168\\metadata.json",
+  "sha256": "60e95de58cf61e7424fe5bc7c014c9ef3da196a38679d77fa016f826f1431b50",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:10.796869+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.miyakojima.lg.jp/gyosei/kihonkeikaku/kensetsu/shisaku2.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "21240",
+    "last_modified": "Thu, 07 Mar 2024 08:33:19 GMT"
+  }
+}

@@ -438,6 +438,121 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - 经接受的 evidence note 和 event-venue 行；被拒或需补源的独立清单。
 - 复核完成前不得把这些 seed 用作报告中的确定性关系结论。
 
+### HR-016 先岛框架语义与来源定位复核 — pending
+
+状态（2026-07-13）：R4 线上安全层已分流为 11 条正式事实、7 条 actor/frame 语义待审与 5 条 source locator/speaker 待审。12 个待审项没有预填决定；8 条已拒绝 actor/frame 候选与 1 条已拒绝 locator 不进入本任务。
+
+复核包：
+
+- `outputs/R04_sakishima_frame_corpus_v0/hr016_review_items_v0.csv`
+- `outputs/R04_sakishima_frame_corpus_v0/HR016_human_review_packet.md`
+
+人工重点：
+
+- 宫古 6・11 集会执行委员会与 A012／其他地下水组织的 crosswalk。
+- 具名议员、匿名居民、行政材料与持续组织角色不得互相替代。
+- 每项 `accept` / `revise` / `reject` 后，说明是否改变正式事实表、三地比较图、entity–frame 图或 brief。
+- 与那国仍以安全环境、自治、公投、台湾邻近和生活／健康安全为主；语料缺少直接环境—部署连接不等于当地不存在环境关切。
+
+### HR-017 公投程序阶段与角色复核 — pending
+
+状态（2026-07-13）：R9 中央正式层现含 24 个 accepted 阶段和 25 个 accepted 角色；9 个阶段与 9 个角色留在 reviewed-all／图中待审层，没有进入正式表。18 项均未预填决定。
+
+复核包：
+
+- `outputs/R09_referendum_process_v0/hr017_review_queue_v0.csv`
+- `outputs/R09_referendum_process_v0/HR017_review_packet_v0.md`
+
+人工重点：
+
+- A068 与官方事件名「名護市民投票推進協議会」的 alias／改名／拆分判断。
+- A014／A015 的事件角色、持续性与当地材料；意见广告或反对运动不得写成投票正式发起／实施。
+- 石垣两条诉讼链、个人原告／组织支援／律师／法院的角色分离，以及最高裁处分的中性措辞。
+- `accept` / `revise` / `reject` 后同步检查正式阶段／角色表、空心／星号图层和 brief。
+
+### HR-018 行政协作、金额与服务关系复核 — pending
+
+状态（2026-07-13）：R10 已把 35 条关系、26 条金额和 43 条功能观察规范化。9 条关系沿用既有 `human_checked`／`human_revised`；其余 26 条按关系级打包待审，关联金额与功能不重复拆成独立任务。R10S05–R10S12 的 8 个新来源另列归档／source-log 前置项，尚未预审。
+
+复核包：
+
+- `outputs/R10_administrative_collaboration_v0/HR018_relation_review_v0.csv`
+- `outputs/R10_administrative_collaboration_v0/HR018_source_prerequisites_v0.csv`
+- `outputs/R10_administrative_collaboration_v0/HR018_review_guide_v0.md`
+
+人工重点：
+
+- 区分 actual contract、named recipient flow、project cost、aggregate、NOFO、sponsor tier、membership 与 service presence。
+- 14 条 project-cost observation 一律不得当作 actor payment 或图中金额线宽；JPY／USD 不跨币种求和。
+- ONC 的行政／公共服务功能不得泛化为运动资金关系；USO／AWWA／OESC／NOSCO 的服务对象不得替代政治立场证据。
+- 每项 `accept` / `revise` / `reject` 后再决定是否执行 `main_merge_proposal_v1.csv`；不得让 AI 自行把敏感关系升级为人审结论。
+
+### HR-019 R1/R2 分类词、桥梁机制与议题边范围复核 — pending
+
+状态（2026-07-13）：R1/R2 线上 v1 已覆盖 118 actors、26 issues 和 218 条 actor–issue edge。当前有 100 个 actor 连入议题层、18 个 actor 仍无 edge；55 条 edge 已人审、163 条为候选。HR-019 的三张表共 102 项，决定栏、复核人和日期全部留空。
+
+复核包：
+
+- `outputs/R01_R02_actor_issue_v1/HR019/HR019_review_v0.csv`（9 个规则／受控词决定）
+- `outputs/R01_R02_actor_issue_v1/HR019/HR019_bridge_actor_review_queue_v0.csv`（30 个 bridge actor）
+- `outputs/R01_R02_actor_issue_v1/HR019/HR019_edge_scope_review_queue_v0.csv`（63 条 edge scope）
+- `outputs/R01_R02_actor_issue_v1/HR019/HR019_review_guide_v0.md`
+
+人工重点：
+
+- 决定 6 个 schema 外 `actor_class` 术语是扩充受控词还是映射既有宽类；不得把组织法律身份、行动形态和政治立场压成同一字段。
+- 对跨议题 actor 区分长期组织定位、案件／制度角色和事件性参加；共同署名或多议题出现不构成稳定联盟或长期经纪地位。
+- 对 63 条范围不清 edge 只审 `organizational_positioning`／`institutional_or_case_role`／`event_specific`／`remain_unclear`，不得把 actor–issue edge 改写为 actor–actor 关系。
+- 18 个 edge-isolated actor 应先补边级证据；9 个扩样候选均为 `count_ready=no`，不能为越过 120 下限而直接入表。
+
+### HR-020 R5 名称、别名与名单切分复核 — pending
+
+状态（2026-07-13）：2010／2015／2020 三张一手名单已完整结构化为 169 条事件参与观察，其中 63 条映射 registry actor、84 条保留为 event-only name、22 条为 alias pending。严格身份口径下有 15 个 registry actor 重复参与；14 个名称／切分问题的决定、复核人、日期和说明全部留空。
+
+复核包：
+
+- `outputs/R05_coaction_v1/HR020_review_packet_v0.md`
+- `data/interim/25_coaction_event_participation_v0.csv`
+- `outputs/R05_coaction_v1/repeat_participation_bridges_v0.csv`
+
+人工重点：
+
+- 核实日英／罗马字别名、跨事件同一主体和组织／项目层级，不凭名称相似或共同署名自动合并。
+- 2010 来源自称 67 团体，但原字符串缺一处分隔符；HR020-06 决定应为 66 个 source-literal 名称还是拆为 67 个可辨组织。
+- 接受 alias 只改变 entity crosswalk、事件重叠和重复参与计数；不把 event-only name 自动升为 registry actor，也不生成联盟、成员或资金边。
+- 人审完成后须重跑参与表、二部边、重复桥梁、重叠表、两图和 brief，并保留原始 `source_name`。
+
+### HR-021 R6/R7/R11 下游纳入与 analytical seed 复核 — pending
+
+状态（2026-07-13）：69 条正式 actor–event–venue–target／entry-mode 事实和 4 条独立 analytical seed 已分层。HR-021 共 8 项、决定栏全空；前 7 项依赖 HR-018 的关系事实决定，只审其后是否及以何种边界进入 R6/R11，不重复审核同一关系。第 8 项只审四条 seed 是否有独立事实边证据。
+
+复核包：
+
+- `outputs/R06_R07_R11_pathways_v1/HR021_review_items_v0.csv`
+- `outputs/R06_R07_R11_pathways_v1/HR021_review_packet.md`
+
+人工重点：
+
+- `dependent_on_hr018` 项在对应 HR-018 `accept`／`revise` 前不得填写；之后只选 `include_after_hr018`／`revise_scope_after_hr018`／`exclude`。
+- 行政协作不得外推资金方向、政府认同或基地政治立场；服务、慈善与 sponsor tier 不得推断亲／反基地立场或金额。
+- analytical seed 只有取得独立事实性有向边证据才能升级；否则保持 seed，不能在路径图中画成因果或稳定关系。
+
+### HR-022 跨模块来源元数据与支持范围复核 — pending
+
+状态（2026-07-13）：R4／R9／R10 的 57 条可用模块来源记录已归并为 54 个 URL；其中 39 条新来源以 S160–S198 进入主来源表并保持 `ai_seeded`。49 个需要人工确认元数据或支持边界的唯一 URL 已逐项打包，所有决定栏为空。HR-019、HR-020、HR-021 已分别用于 R1/R2、R5、R6/R7/R11，编号不再预留。
+
+复核包：
+
+- `outputs/phase1_source_integration_v1/HR022_source_metadata_review_v0.csv`
+- `outputs/phase1_source_integration_v1/HR022_review_guide_v0.md`
+
+人工重点：
+
+- 打开 URL 或本地归档，核对 title、source_type、year/period、evidence_level 和可支持范围。
+- `archived` 只表示保存成功，不表示元数据、actor relation、金额、角色或解释已获认可。
+- R9 `usable_with_limit`、R4 locator/speaker 和 R10 type/year 推定必须保留原边界；来源入表不能自动升级模块结论。
+- 对失败 URL 可记录权威替代副本与定位，但不得删除失败日志或把无法访问写成证据不存在。
+
 ## 7. 人工复核节奏
 
 建议每轮 60-90 分钟，先处理 8-12 个高风险条目。

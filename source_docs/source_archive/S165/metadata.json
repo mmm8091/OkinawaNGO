@@ -1,0 +1,27 @@
+{
+  "source_id": "S165",
+  "source_type": "local_official",
+  "title": "石垣市避難実施要領概要",
+  "year": "2022",
+  "url": "https://www.city.ishigaki.okinawa.jp/soshiki/1/kokuminhogokankei/10812.html",
+  "what_it_supports": "Ishigaki: 石垣市连续公开年度撤离实施要领概要 [frontline_taiwan_evacuation;life_safety]",
+  "evidence_level": "E4",
+  "bias_note": "需下载各年度PDF比较变化 | 年度链接与页面更新时间 2026-02-27 可复核",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC012; module refs=R4:R4S013. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S165\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S165\\metadata.json",
+  "sha256": "acbbd0b4615577969dfa93d6876b7accae1b7b763f6cc0294315fda4e2251ac3",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:01.917605+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ishigaki.okinawa.jp/soshiki/1/kokuminhogokankei/10812.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "40168",
+    "last_modified": "Mon, 06 Jul 2026 08:39:43 GMT"
+  }
+}

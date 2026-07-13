@@ -29,7 +29,7 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 Updated: 2026-07-13.
 
 - Actor registry: 118 organization-level actors. HR-011 added A107–A110; HR-015 withdrew legacy A077–A085 from the registry and retained them only as E2 unverified event participants. The registry is again below the Phase-1 minimum of 120. A087–A101 remain E4 identity-only merges awaiting classification/edge review.
-- Source log: 159 sources; no `inferred_url` placeholders remain. S051 is E0 `rejected_archive_mismatch` and must not support A011.
+- Source log: 198 sources; no `inferred_url` placeholders remain. S160–S198 are R4/R9/R10 module-source integrations and remain `ai_seeded`; source inclusion does not approve a relation or interpretation. S051 is E0 `rejected_archive_mismatch` and must not support A011.
 - Actor-issue candidate/reviewed edges: 218.
 - Actor-place candidate edges: 124.
 - Funding/support/relation sample edges: 43. F042 is A109→A052 fourth-round legal counsel; F043 is A105→A107 organizational affiliation. Both are explicitly non-funding/non-alliance relations.
@@ -38,7 +38,7 @@ Updated: 2026-07-13.
 - Evidence notes: 49 formal HR-015 rows; five locator refinements remain explicit.
 - Actor-event-venue: 64 formal rows; 60 `human_checked`, 4 `analytical_seed`. Nine MMC names are E2 event-only legacy candidates, not actors.
 - Legal/policy procedure: 6 cases and 27 roles are HR-014 `human_checked`/accepted. `data/interim/18_legal_policy_actor_roles_v0.csv` separates registry actors from provisional procedural nodes.
-- Source archive: 135 `archived`, 2 `manual_archived`, 20 `failed`, 2 `skipped_non_url_reference`. Failures may be 403/SSL/transient restrictions and do not negate source content. The archive script now reuses unchanged cached results; use `--retry-failed` deliberately.
+- Source archive: 176 `archived`, 2 `manual_archived`, 18 `failed`, 2 `skipped_non_url_reference`. Of S160–S198, 37 archived and S197/S198 remain SSL failures after a targeted retry. Failures may be 403/SSL/transient restrictions and do not negate source content. All 178 preserved artifacts currently match manifest SHA. The archive script refuses silent cache-hash drift, supports `--from-id`/`--to-id`, and allows `--reconcile-cache-hashes` only after manual inspection; raw archive artifacts are Git-binary to preserve bytes.
 
 ## Current Deliverables
 
@@ -65,7 +65,14 @@ Updated: 2026-07-13.
   - `outputs/phase1_foundation_v1/`: 49 evidence notes and 64 AEV rows completed HR-015 and have formal `06`/`09` tables.
   - `outputs/registry_expansion_v1/`: HR-011/012 are merged; A107–A110 are new actors, C015 remains deferred, and A052/A053/A010 history/round crosswalks are resolved. HR-013 was not supplied and must not be inferred.
   - `outputs/R08_legal_procedure_v0/`: six cases and 27 roles completed HR-014; third-Kadena counsel remains a provisional procedural collective, not an actor.
-  - `outputs/R04_sakishima_frame_corpus_v0/`, `outputs/R09_referendum_process_v0/`, and `outputs/R10_administrative_collaboration_v0/`: candidate packages have cross-QA. Their original rows are not merge-ready; continue only from corrected/reviewed layers.
+  - `outputs/R04_sakishima_frame_corpus_v0/`: 11 formal safe facts, 19 safe source excerpts, two explanatory SVG/HTML figures and brief; HR-016 holds 12 semantic/locator decisions.
+  - `outputs/R09_referendum_process_v0/`: 24 formal accepted stages, 25 formal accepted roles, four-case timeline and institutional-gate figure; HR-017 holds 18 reviewed-all items outside the formal layer.
+  - `outputs/R10_administrative_collaboration_v0/`: normalized 35 relations, 26 amount observations and 43 function observations with two boundary figures; only 9 relations inherit human review and HR-018 gates the other 26.
+  - `outputs/R06_R07_R11_pathways_v1/`: 69 formal actor-event-venue-target/entry-mode observations, 4 separate analytical seeds, six R6 pathway families, three R7 case sequences and 44 R11 entry observations. HR-021 has eight blank downstream decisions; its first seven depend on HR-018 and do not re-review relation facts.
+  - `outputs/phase1_source_integration_v1/`: 57 module-source crosswalk rows over 54 unique URLs; 39 new sources were integrated as S160–S198 with `relation_or_claim_approved=no`. HR-022 holds 49 source-metadata/support-boundary decisions with blank decision fields.
+  - `outputs/R01_R02_actor_issue_v1/`: full 118-actor × 26-issue layered network, classification ecology, issue co-occurrence and bridge-mechanism figures. Only 55/218 edges are human-reviewed; HR-019 keeps 9 rule, 30 bridge and 63 scope decisions blank.
+  - `outputs/R05_coaction_v1/`: complete 2010/2015/2020 lists as 169 event-participation observations, 15 strict repeat registry actors and two explanatory figures. HR-020 holds 14 blank identity/alias/segmentation decisions; repeat co-signing is not an alliance.
+  - `outputs/coverage_audit_v1/`: six-dimension, 125-cell visibility-bias audit with Q1–Q3/R1–R11 implications. It is mechanical aggregation, so no HR-023 was created.
 - Local retrieval task book v1: `docs/local_retrieval_tasks_v1.md`
   - Splits LR into Tier 1 (online-doable, locked for this round) and Tier 2 (needs local collaborator / in-library databases).
 - Source archive: `source_docs/source_archive/`
@@ -90,7 +97,7 @@ Updated: 2026-07-13.
 - Complete the valuable Phase-1 visualizations and a research-report v0 first; use their explicit evidence gaps to generate local tasks.
 - Local assignment starts only after Tier 1 is complete or logged as `online_exhausted`, figures have data/scripts/briefs, and the report draft identifies exact missing fields.
 - The original Phase-1 DOCX is the acceptance contract: 120–180 verifiable actors, all R1–R11 at differentiated depth, five specified core figures, a 25–35 page report, an 8k–12k paper, and a 15–20 page PPT.
-- Registry growth remains module/value-driven but must first recover from 118 to at least 120 with organization-level evidence; it may exceed 180 if the module audit still shows unsaturated actor/place/channel/role layers. Do not reinsert legacy A077–A085 to meet the number. MMC Tier B enters only as a separate mainland-solidarity layer when analytically justified; Tier C stays event-only.
+- Registry growth remains module/value-driven and must eventually recover from 118 to at least 120 with organization-level evidence. R1/R2 now shows that 18 existing actors lack edge-level evidence and all nine expansion candidates are `count_ready=no`; activate those existing actors first, then add only candidates with continuity plus a direct Phase-1 issue connection. The registry may exceed 180 if actor/place/channel/role layers remain unsaturated. Do not reinsert legacy A077–A085 to meet the number. MMC Tier B enters only as a separate mainland-solidarity layer when analytically justified; Tier C stays event-only.
 - Existing `R14 coverage` outputs are a foundation coverage audit under the final DOCX numbering; final R14 is organizational genealogy and is an expansion module.
 - Authoritative acceptance audit: `docs/phase1_scheme_acceptance_audit_v1.md`. Online/local sequencing remains in `docs/phase1_online_completion_plan_v0.md`.
 
@@ -99,6 +106,19 @@ Updated: 2026-07-13.
 ```powershell
 python scripts\archive_sources.py
 python scripts\archive_sources.py --retry-failed
+python scripts\archive_sources.py --from-id 197 --to-id 198 --retry-failed
+python scripts\archive_sources.py --reconcile-cache-hashes
+python scripts\normalize_actor_issue_tags.py
+python scripts\make_r04_sakishima_formal.py
+python scripts\make_r04_hr016_packet.py
+python scripts\make_r09_referendum_process.py
+python scripts\make_r10_admin_collaboration.py
+python scripts\make_r06_r07_r11_pathways.py
+python scripts\make_r01_r02_actor_issue.py
+python scripts\make_r05_coaction_v1.py
+python scripts\make_coverage_audit_v1.py
+python scripts\make_phase1_source_merge_proposal.py
+python scripts\integrate_phase1_module_sources.py
 python scripts\merge_hr011_hr012.py
 python scripts\merge_hr014.py
 python scripts\merge_hr015.py
@@ -118,5 +138,5 @@ After source-log or archive changes, rerun the archive script first, then regene
 
 - The old `docs/progress_report_v1.md` is an internal draft, not a deliverable.
 - Next boss-facing communication should use explanatory outputs, not only statistics.
-- Safe current message: HR-011/012/014/015 are integrated; R8 now has six human-checked cases and 27 accepted roles; 49 evidence notes and 64 AEV rows are formal. Registry quality was tightened to 118, so Phase-1 still misses the 120 minimum and R4/R9/R10 corrected packages are the next online explanation work.
+- Safe current message: HR-011/012/014/015 are integrated; R1/R2, R4/R5/R9/R10, R6/R7/R11 and the six-dimension coverage audit now have online explanatory packages. HR-016–022 preserve unresolved human decisions, HR-013 remains missing, and the registry remains 118; Phase-1 still misses the 120 minimum and final report/paper/PPT deliverables.
 - Keep all claims conservative: "publicly visible event participation", "candidate relation", "source-backed role", or "needs local retrieval" are preferred to over-strong network claims.

@@ -1,0 +1,20 @@
+{
+  "source_id": "S197",
+  "source_type": "official_legislative_record",
+  "title": "沖縄県議会会議録・県民投票条例直接請求",
+  "year": "2018",
+  "url": "https://www2.pref.okinawa.jp/oki/Gikairep1.nsf/GoZentai/20180703000000",
+  "what_it_supports": "R9C_PREF_2019: 法定23,171、有效92,848签名与直接请求性质",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC053; module refs=R9:R9S013. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S197\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T10:10:29.699490+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+}

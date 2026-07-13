@@ -1,0 +1,27 @@
+{
+  "source_id": "S184",
+  "source_type": "prefectural_official",
+  "title": "冲绳县 FY2024 第一季度随意合同实绩（知事公室）",
+  "year": "2024",
+  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/015/127/koushitsu1.pdf",
+  "what_it_supports": "R10 administrative-collaboration evidence: PDF p.1 A066; p.2 A088",
+  "evidence_level": "E4",
+  "bias_note": "key official contract source; archive and add before merge | source metadata inferred from crosswalk; no archive performed",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC038; module refs=R10:R10S11. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_R10_inferred_type_year_and_support_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S184\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S184\\metadata.json",
+  "sha256": "ae7aef62bc9be549d9156cc96ca6fb1df28a2f92fab42a7429c0ff4cad98c105",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:36.380820+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/015/127/koushitsu1.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "97346",
+    "last_modified": "Fri, 20 Dec 2024 06:58:42 GMT"
+  }
+}

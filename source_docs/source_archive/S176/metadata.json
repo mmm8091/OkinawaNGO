@@ -1,0 +1,27 @@
+{
+  "source_id": "S176",
+  "source_type": "national_official",
+  "title": "Koza International Plaza 设施页",
+  "year": "undated",
+  "url": "https://www.city.okinawa.okinawa.jp/k034/sportsbunka/bunkarekishi/bunkageijutsu/3938939394.html",
+  "what_it_supports": "R10 administrative-collaboration evidence: facility/service scope",
+  "evidence_level": "E4",
+  "bias_note": "function evidence only | source metadata inferred from crosswalk; no archive performed",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC024; module refs=R10:R10S10. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_R10_inferred_type_year_and_support_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S176\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S176\\metadata.json",
+  "sha256": "5a5cb4264fe55abb7f43f2bdb932c3f749ae13f871b032b4fb7d67d6cec4fb0f",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:44.940589+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.okinawa.okinawa.jp/k034/sportsbunka/bunkarekishi/bunkageijutsu/3938939394.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "28680",
+    "last_modified": "Mon, 13 Jul 2026 06:30:08 GMT"
+  }
+}

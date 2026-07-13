@@ -1,0 +1,27 @@
+{
+  "source_id": "S193",
+  "source_type": "prefectural_official",
+  "title": "沖縄県国民保護共同図上訓練结果",
+  "year": "2025",
+  "url": "https://www.pref.okinawa.lg.jp/bosaianzen/kokuminhogo/1023175/1026163/1032696/1032939.html",
+  "what_it_supports": "Sakishima: 县级推演把运输能力与要照护者撤离列为先岛重点课题 [frontline_taiwan_evacuation;life_safety]",
+  "evidence_level": "E4",
+  "bias_note": "覆盖先岛整体；不可全部归为与那国特有 | 来源覆盖先岛五市町村；只能作为先岛区域背景，不能计作与那国独有密度",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC047; module refs=R4:R4S021. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S193\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S193\\metadata.json",
+  "sha256": "76993cb81da7a41f4e86664f5a73057592840a79e64283f07280a458f4c61ebf",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:48.369519+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.lg.jp/bosaianzen/kokuminhogo/1023175/1026163/1032696/1032939.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "36077",
+    "last_modified": "Mon, 13 Jul 2026 09:28:14 GMT"
+  }
+}

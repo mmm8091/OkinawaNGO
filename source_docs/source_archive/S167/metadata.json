@@ -1,0 +1,27 @@
+{
+  "source_id": "S167",
+  "source_type": "official_legislative_record",
+  "title": "令和元年第4回石垣市議会定例会提出議案と議決結果",
+  "year": "2019",
+  "url": "https://www.city.ishigaki.okinawa.jp/soshiki/gikai/teireikairinnjikai/teisyutugianntokekka/reiwagannnenndo/1314.html",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 2019-06-17議員提出議案第2号及否决",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC014; module refs=R9:R9S024. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S167\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S167\\metadata.json",
+  "sha256": "dd276db4458047de8c24c7bf77bfdec88fe7bc44e5f2ed015d9eafe614452480",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:06.772567+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ishigaki.okinawa.jp/soshiki/gikai/teireikairinnjikai/teisyutugianntokekka/reiwagannnenndo/1314.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "54304",
+    "last_modified": "Mon, 06 Jul 2026 08:48:27 GMT"
+  }
+}

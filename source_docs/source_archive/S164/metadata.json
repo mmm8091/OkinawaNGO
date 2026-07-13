@@ -1,0 +1,27 @@
+{
+  "source_id": "S164",
+  "source_type": "local_official",
+  "title": "石垣市自治基本条例 これまでの見直し・改正",
+  "year": "2025",
+  "url": "https://www.city.ishigaki.okinawa.jp/material/files/group/9/r71zitikihon_siryou1-3.pdf",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 2021年删除第27/28条",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC011; module refs=R9:R9S018. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S164\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S164\\metadata.json",
+  "sha256": "609e76d192d0a4891113f3df60989b782004b53d2fe2083ba59c22572962e326",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:05:29.935519+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ishigaki.okinawa.jp/material/files/group/9/r71zitikihon_siryou1-3.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "435649",
+    "last_modified": "Fri, 12 Dec 2025 00:39:29 GMT"
+  }
+}

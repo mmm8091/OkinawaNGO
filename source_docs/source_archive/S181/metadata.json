@@ -1,0 +1,27 @@
+{
+  "source_id": "S181",
+  "source_type": "organization_site",
+  "title": "ONC 的活动",
+  "year": "undated",
+  "url": "https://www.oki-ngo.org/project",
+  "what_it_supports": "R10 administrative-collaboration evidence: KIP/NGO consultant function",
+  "evidence_level": "E4",
+  "bias_note": "distinct subpage; do not collapse into S095 without a page-level policy | source metadata inferred from crosswalk; no archive performed",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC034; module refs=R10:R10S09. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_R10_inferred_type_year_and_support_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S181\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S181\\metadata.json",
+  "sha256": "7aa5196eff0f8bd6efea438975486efd7737f6b7bbf5f2fd49274dbf8ead533a",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:24.076008+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.oki-ngo.org/project",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

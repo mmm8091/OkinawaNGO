@@ -1,0 +1,27 @@
+{
+  "source_id": "S192",
+  "source_type": "prefectural_official",
+  "title": "沖縄の米軍基地・基地問題の沿革（1997年部分）",
+  "year": "2003",
+  "url": "https://www.pref.okinawa.jp/kititaisaku/DP-08-13.pdf",
+  "what_it_supports": "R9C_NAGO_1997: 名护代表者证明、签名、直接请求、议会修正、条例与投票程序",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC046; module refs=R9:R9S001. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S192\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S192\\metadata.json",
+  "sha256": "c0bec866eeb74bf4f464cde2c841e768474d599677f6b4a315ea255666c40ec2",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:41.131623+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kititaisaku/DP-08-13.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "594705",
+    "last_modified": "Fri, 26 Mar 2004 08:25:44 GMT"
+  }
+}

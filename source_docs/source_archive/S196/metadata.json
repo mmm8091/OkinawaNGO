@@ -1,0 +1,27 @@
+{
+  "source_id": "S196",
+  "source_type": "local_official",
+  "title": "与那国町国民保護計画",
+  "year": "2017",
+  "url": "https://www.town.yonaguni.okinawa.jp/docs/2018041100144/hogokeikaku.html",
+  "what_it_supports": "Yonaguni: 町政府把居民撤离和救援列为武力攻击灾害时措施 [frontline_taiwan_evacuation;life_safety]",
+  "evidence_level": "E4",
+  "bias_note": "法定计划与当前扩军争议需分开 | 计划制定于 2017-05、网页发布于 2018-04-11；两日期宜并列",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC051; module refs=R4:R4S020. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S196\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S196\\metadata.json",
+  "sha256": "d98e7082264e6393f61a14eecfbfca8ed18fad17c150dc178d9306f44d68560c",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:59.572283+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.town.yonaguni.okinawa.jp/docs/2018041100144/hogokeikaku.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "24201",
+    "last_modified": "Wed, 27 May 2026 02:13:52 GMT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S163",
+  "source_type": "official_legislative_record",
+  "title": "令和3年第5回石垣市議会定例会議事日程",
+  "year": "2021",
+  "url": "https://www.city.ishigaki.okinawa.jp/material/files/group/33/r3-6-28gijinittei.pdf",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 2021-06-28自治基本条例修正议案与议决",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC010; module refs=R9:R9S025. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S163\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S163\\metadata.json",
+  "sha256": "b7591a117b63f3bb51e06b9967513a6035cb7533be61b329fc8522784e35456f",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:05:24.145698+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ishigaki.okinawa.jp/material/files/group/33/r3-6-28gijinittei.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "179915",
+    "last_modified": "Mon, 28 Jun 2021 09:57:25 GMT"
+  }
+}

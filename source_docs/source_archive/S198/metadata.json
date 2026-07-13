@@ -1,0 +1,20 @@
+{
+  "source_id": "S198",
+  "source_type": "official_legislative_record",
+  "title": "石垣自卫队配备环境质询",
+  "year": "2019",
+  "url": "https://www2.pref.okinawa.jp/oki/Gikairep1.nsf/bf76642d1ed57158492581ed00348311/6cc4b1801bbb16124925861e00087c7a?Click=&OpenDocument=",
+  "what_it_supports": "Ishigaki: 县议会记录把冠鹫营巢、施工重启与说明充分性并置 [environment_deployment;procedural_fairness]",
+  "evidence_level": "E4",
+  "bias_note": "需区分提问者陈述和环境部长回答 | 原文日期为 2019-07-02；摘录是议员转述“石垣市民”声音，不是环境部长答复，也没有具名 A010",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC054; module refs=R4:R4S016. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S198\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T10:10:30.019543+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+}

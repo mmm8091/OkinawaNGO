@@ -19,12 +19,13 @@
 
 结果：
 
-- `archived`：135 条。
+- `archived`：176 条。
 - `manual_archived`：2 条，S007 APJJF 和 S078 Ryukyu Shimpo 已用手工方式归档。
-- `failed`：20 条，主要为 403、SSL/证书和瞬时访问限制；失败不等于来源或主张不存在。
+- `failed`：18 条，主要为 403、SSL/证书和瞬时访问限制；失败不等于来源或主张不存在。
 - `pending_archive`：0 条。
 - `skipped_inferred_url`：0 条；25 个历史占位符已全部解决。
 - `skipped_non_url_reference`：2 条，书籍参考需人工做书目信息或扫描页归档。
+- 本地 artifact SHA 校验：178 个 archived／manual artifact 全部与 manifest 相符；26 个历史 metadata 漂移项已在不重抓正文的前提下显式对账，并在各自 metadata 中保留旧 hash、当前 artifact hash、时间和方法。
 
 ## 4. 文件结构
 
@@ -62,9 +63,13 @@
 python scripts/archive_sources.py
 python scripts/archive_sources.py --retry-failed
 python scripts/archive_sources.py --refresh-all
+python scripts/archive_sources.py --from-id 197 --to-id 198 --retry-failed
+python scripts/archive_sources.py --reconcile-cache-hashes
 ```
 
-默认运行复用 URL 未变化且本地文件仍存在的缓存，只抓取新增或变化来源；`--retry-failed` 重试上次失败项；`--refresh-all` 重新抓取除手工归档外的所有线上来源。
+默认运行复用 URL 未变化、artifact 存在且 SHA 与 metadata 一致的缓存，只抓取新增或变化来源；`--retry-failed` 重试上次失败项；`--refresh-all` 重新抓取除手工归档外的所有线上来源。`--from-id`／`--to-id` 可定向重试并保留清单其余行。
+
+若 artifact SHA 与 metadata 不一致，默认运行会停止，避免把本地文件漂移静默接受为可信归档。只有人工确认当前本地 artifact 就是应保留的副本后，才可运行 `--reconcile-cache-hashes`；脚本不重抓内容，并在 metadata 的 `sha256_reconciliation_history` 中保留前后 hash。`.gitattributes` 将 `source_docs/source_archive/**/raw.*` 标为 binary，防止 Git 换行规范化再次改变证据文件字节。
 
 脚本会读取：
 

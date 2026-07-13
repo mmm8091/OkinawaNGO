@@ -1,0 +1,27 @@
+{
+  "source_id": "S160",
+  "source_type": "court_record",
+  "title": "令和5年行コ第6号判決",
+  "year": "2024",
+  "url": "https://www.call4.jp/file/pdf/202407/5f499d29696072751d0d60cc3a9077f5.pdf",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 第二诉讼链高裁判决与前审信息",
+  "evidence_level": "E3",
+  "bias_note": "CALL4托管而非法院官网；需官方裁判书。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC006; module refs=R9:R9S027. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;retain_usable_with_limit_boundary.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S160\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S160\\metadata.json",
+  "sha256": "9807a06cba6e11c5803b40d8cc7985252067d690dfc9dfeee2e349044c5ca006",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:04:59.316100+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.call4.jp/file/pdf/202407/5f499d29696072751d0d60cc3a9077f5.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "1054705",
+    "last_modified": "Mon, 15 Jul 2024 03:26:18 GMT"
+  }
+}

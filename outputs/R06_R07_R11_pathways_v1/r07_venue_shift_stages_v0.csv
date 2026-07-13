@@ -1,0 +1,10 @@
+﻿case_id,case_name,stage_order,date_or_period,venue_or_field,observed_stage,fact_observation_ids,source_refs,sequence_basis,arrow_semantics
+R7C01,Dugong international litigation,1,2003,Henoko/Oura Bay,Dugong/base project translated into an NHPA Section 402 claim,OBS_R8R001;OBS_R8R003,S128;S129;S062,procedural chronology,ordered observation only; no causal inference
+R7C01,Dugong international litigation,2,2003,U.S. District Court,Named plaintiffs and counsel entered a U.S. federal legal venue,OBS_R8R001;OBS_R8R002;OBS_R8R003;OBS_R8R004;OBS_R8R005,S128;S129;S062,procedural chronology,ordered observation only; no causal inference
+R7C01,Dugong international litigation,3,2020,Ninth Circuit,Opinion articulated a Section 402 standard and affirmed judgment for DoD,OBS_R8R001;OBS_R8R005,S128;S129;S062,procedural chronology,ordered observation only; no causal inference
+R7C02,2020 MMC request,1,2020,Henoko/Oura Bay issue,Dugong and construction issue stated in the request context,OBS_AEV0034,S006,within-event role order,ordered observation only; no causal inference
+R7C02,2020 MMC request,2,2020,civil-society request,"OEJP, JELF and event participants appear on the request",OBS_AEV0034;OBS_AEV0035,S006,within-event role order,ordered observation only; no causal inference
+R7C02,2020 MMC request,3,2020,U.S. Marine Mammal Commission,Request was directed to a U.S. federal institution,OBS_AEV0034;OBS_AEV0035,S006,within-event role order,ordered observation only; no causal inference
+R7C03,2015 transnational statement,1,2015,Henoko/Oura Bay,Local policy/ecology object anchors the statement,OBS_AEV0006,S004,event composition order,ordered observation only; no causal inference
+R7C03,2015 transnational statement,2,2015,NACSJ/Peace Boat statement venue,Statement hosts organized a public advocacy venue,OBS_AEV0006,S004,event composition order,ordered observation only; no causal inference
+R7C03,2015 transnational statement,3,2015,domestic and overseas signatory field,"Public participation spans local, Japan-based and overseas organizations",OBS_AEV0006;OBS_AEV0019;OBS_AEV0031,S004,event composition order,ordered observation only; no causal inference

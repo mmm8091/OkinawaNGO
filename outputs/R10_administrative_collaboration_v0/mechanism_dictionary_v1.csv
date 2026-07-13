@@ -1,0 +1,8 @@
+﻿mechanism_code,mechanism_label,relation_semantics,amount_rule,visual_rule
+C1,委託,public body commissions a named organization,project-cost field is not payment unless a contract/funds-flow record says so,solid administrative relation; no amount width from project cost
+C2,提案型公募による委託,proposal-based public commission,"proposal ceiling, project cost, and actual contract must remain separate",solid administrative relation; width only for exact contract or named flow
+C4,補助,subsidy/grant relation,collaboration-table project cost is not automatically the award amount,grant line without amount width until award decision is sourced
+,指定角色,official designation or service role,designation alone carries no amount,dashed role line
+,赞助／捐赠,corporate or charitable support,sponsor tier is non-numeric; named donation may carry its stated currency,separate from administrative commissions
+,成员／服务存在,"umbrella membership, beneficiary service, or site presence",no funding inference,dotted non-financial line
+,NOFO／机会,opportunity exists,"no award, recipient, or payment unless separately sourced",open outline; never a funding edge

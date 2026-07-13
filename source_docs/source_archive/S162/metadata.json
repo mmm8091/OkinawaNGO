@@ -1,0 +1,27 @@
+{
+  "source_id": "S162",
+  "source_type": "official_legislative_record",
+  "title": "国民保护计划改正要请决议",
+  "year": "2024",
+  "url": "https://www.city.ishigaki.okinawa.jp/material/files/group/33/iinkai2024-1.pdf",
+  "what_it_supports": "Ishigaki: 市议会要求在撤离制度中确认市民意愿并说明补偿与协作机制 [frontline_taiwan_evacuation;life_safety;local_autonomy_referendum;procedural_fairness]",
+  "evidence_level": "E4",
+  "bias_note": "决议是政策要求不是已落实措施 | 市议会决议文字和制度角色清楚；不得写成已落实",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC009; module refs=R4:R4S014. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S162\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S162\\metadata.json",
+  "sha256": "99a37925d74ac07c1873da5f4970048ef366660b8cf75a646e221b43bcd1f70b",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:05:21.703670+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ishigaki.okinawa.jp/material/files/group/33/iinkai2024-1.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "131924",
+    "last_modified": "Wed, 28 Feb 2024 02:15:49 GMT"
+  }
+}

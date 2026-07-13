@@ -1,0 +1,27 @@
+{
+  "source_id": "S191",
+  "source_type": "official_legislative_record",
+  "title": "平成30年第6回沖縄県議会臨時会 提案説明",
+  "year": "2018",
+  "url": "https://www.pref.okinawa.jp/kensei/kencho/1001519/1001591/1018974/1018988.html",
+  "what_it_supports": "R9C_PREF_2019: 9月5日直接请求、签名与条例付议",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC045; module refs=R9:R9S009. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S191\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S191\\metadata.json",
+  "sha256": "53f9e85583a88f83772979ac7cbc3ceb480a0b656a97c2e264cc499db0a29bd3",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:34.364976+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kensei/kencho/1001519/1001591/1018974/1018988.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "34292",
+    "last_modified": "Mon, 13 Jul 2026 09:06:42 GMT"
+  }
+}

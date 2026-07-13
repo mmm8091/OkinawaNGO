@@ -1,0 +1,27 @@
+{
+  "source_id": "S182",
+  "source_type": "local_news",
+  "title": "石垣市住民投票を求める会が解散",
+  "year": "2024",
+  "url": "https://www.otv.co.jp/okitive/news/post/00012171/index.html",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 最高裁后终局与组织解散报道",
+  "evidence_level": "E2",
+  "bias_note": "最高裁程序措辞与QAB冲突；组织沿革需历史材料。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC036; module refs=R9:R9S019. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;retain_usable_with_limit_boundary.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S182\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S182\\metadata.json",
+  "sha256": "5f4f871ef65a38f26981f4f88e58acad22a41948d5cc30f1df7ba2ff44f3526b",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:28.385062+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.otv.co.jp/okitive/news/post/00012171/index.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "25724",
+    "last_modified": "Thu, 27 Feb 2025 15:00:29 GMT"
+  }
+}

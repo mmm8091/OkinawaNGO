@@ -1,0 +1,31 @@
+﻿source_ref,title,url,status,locator_coverage,merge_note
+R10S05,冲绳市 FY2019 交付金事业检证表,https://www.city.okinawa.okinawa.jp/documents/1858/1kanryou.pdf,module_candidate_not_in_main_log,KIP PDF pp.9-10,archive and add to source log before main-table merge
+R10S06,冲绳市 FY2020 交付金事业检证表,https://www.city.okinawa.okinawa.jp/documents/1858/2kannryou.pdf,module_candidate_not_in_main_log,KIP PDF pp.9-10,archive and add to source log before main-table merge
+R10S07,冲绳市 FY2024 交付金事业检证表,https://www.city.okinawa.okinawa.jp/documents/1858/r0607okinawashi.pdf,module_candidate_not_in_main_log,KIP PDF pp.5-6,archive and add to source log before main-table merge
+R10S08,FY2024 第3回多文化共生万国津梁会议纪要,https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/034/046/3gaiyo.pdf,module_candidate_not_in_main_log,secretariat role,archive and add to source log before main-table merge
+R10S09,ONC 的活动,https://www.oki-ngo.org/project,module_candidate_not_in_main_log,KIP/NGO consultant function,distinct subpage; do not collapse into S095 without a page-level policy
+R10S10,Koza International Plaza 设施页,https://www.city.okinawa.okinawa.jp/k034/sportsbunka/bunkarekishi/bunkageijutsu/3938939394.html,module_candidate_not_in_main_log,facility/service scope,function evidence only
+R10S11,冲绳县 FY2024 第一季度随意合同实绩（知事公室）,https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/015/127/koushitsu1.pdf,module_candidate_not_in_main_log,PDF p.1 A066; p.2 A088,key official contract source; archive and add before merge
+R10S12,冲绳县 FY2024 NPO 协作调查结果汇总,https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/917/2r6kekka.pdf,module_candidate_not_in_main_log,PDF p.2 mechanism-code dictionary,code-definition source; archive and add before merge
+S002,令和６年度 NPO等との協働実績調査,https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/004/917/2r6hp.pdf,existing_main_source,see observation rows,reuse; do not duplicate
+S041,AWWA / OESC / NOSCO official sites and DVIDS reports,https://okinawahai.com/american-womens-welfare-association/,existing_main_source,see observation rows,reuse; do not duplicate
+S053,OESC donates $3250 to USO Okinawa,https://okinawa.stripes.com/community-news/okinawa-enlisted-spouses-club-uso-okinawa.html,existing_main_source,see observation rows,reuse; do not duplicate
+S055,NOSCO AWWA page,https://nosco.wildapricot.org/awwa,existing_main_source,see observation rows,reuse; do not duplicate
+S056,U.S. Consulate Naha Okinawa Youth Council NOFO PDF,https://jp.usembassy.gov/wp-content/uploads/sites/7/2024/05/nofo-2024-naha-pas-02-okinawa-youth-council-e.pdf,existing_main_source,see observation rows,reuse; do not duplicate
+S072,DVIDS American Women's Welfare Association celebrates 40 years,https://www.dvidshub.net/news/87854/american-womens-welfare-association-celebrates-40-years,existing_main_source,see observation rows,reuse; do not duplicate
+S075,Kadena Officers' Spouses' Club charity page,https://www.kadenaofficersspousesclub.com/charity,existing_main_source,see observation rows,reuse; do not duplicate
+S077,USO Okinawa AWWA grant to USO Kinser,https://okinawa.uso.org/stories/81,existing_main_source,see observation rows,reuse; do not duplicate
+S078,Ryukyu Shimpo English AWWA donated 800 million yen over 40 years,https://english.ryukyushimpo.jp/2012/05/09/6954/,existing_main_source,see observation rows,reuse; do not duplicate
+S079,MOSCO official site,https://www.moscoki.com/,existing_main_source,see observation rows,reuse; do not duplicate
+S081,Army on Okinawa Gift Shop Okinawa Hai,https://okinawahai.com/army-on-okinawa-gift-shop/,existing_main_source,see observation rows,reuse; do not duplicate
+S082,Grants.gov Okinawa Youth Council Program opportunity,https://www.grants.gov/search-results-detail/351830,existing_main_source,see observation rows,reuse; do not duplicate
+S083,FederalGrants Okinawa Youth Council Program listing,https://www.federalgrants.com/Okinawa-Youth-Council-Program-98421.html,existing_main_source,see observation rows,reuse; do not duplicate
+S084,GrantedAI Okinawa Youth Council Program expired listing,https://grantedai.com/grants/okinawa-youth-council-program-u-s-mission-to-japan-d2b756a3,existing_main_source,see observation rows,reuse; do not duplicate
+S094,AWWA donates wheelchair van to Yomitan Quegoen,https://www.dvidshub.net/news/184071/american-womens-welfare-association-donates-van-disabled-okinawan-residents,existing_main_source,see observation rows,reuse; do not duplicate
+S095,特定非営利活動法人 沖縄NGOセンター（ONC）公式サイト,https://www.oki-ngo.org/,existing_main_source,see observation rows,reuse; do not duplicate
+S097,USO Okinawa Sponsors page,https://okinawa.uso.org/sponsors,existing_main_source,see observation rows,reuse; do not duplicate
+S098,AEC $16000 donation and center refresh to USO Okinawa,https://okinawa.stripes.com/community-news/american-engineering-corporation-uso-okinawa.html,existing_main_source,see observation rows,reuse; do not duplicate
+S099,沖縄NGOセンター 2024年度事業報告書等,https://www.npo-homepage.go.jp/npoportal/document/047021403/hokoku/2024700/2024%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf,existing_main_source,see observation rows,reuse; do not duplicate
+S100,JICA 2019年度教師海外研修 九州沖縄 報告書,https://www.jica.go.jp/domestic/kyushu/activities/kaihatsu/__icsFiles/afieldfile/2025/03/27/report_2019.pdf,existing_main_source,see observation rows,reuse; do not duplicate
+S101,外務省 NGO相談員リスト 令和8年度,https://www.mofa.go.jp/mofaj/gaiko/oda/about/shimin/pagew_000001_00006.html,existing_main_source,see observation rows,reuse; do not duplicate
+S102,NOSCO joins donation of cooling fans to Heshikiya after-school childcare center,https://www.dvidshub.net/news/546868/us-navy-sailors-help-okinawan-childcare-center-beat-heat,existing_main_source,see observation rows,reuse; do not duplicate

@@ -1,0 +1,26 @@
+corpus_source_id,qa_disposition,corrected_date_or_period,corrected_locator,corrected_excerpt_short,corrected_frame_candidates,qa_reason
+R4S001,safe_with_correction,,,,groundwater_life_safety,一般地下水政策可作宫古背景；没有部署连接，删除 environment_deployment
+R4S002,human_semantic_review,,,地下水の環境保全について注視,groundwater_life_safety;environment_deployment;procedural_fairness,摘录和 p.6 定位成立，但文字是县环境部对陈情的行政回应；不得归为 A013 自身措辞
+R4S003,safe_with_correction,,正文第140-147行／集会主办者与地下水诉求,地下水保全求め,groundwater_life_safety;environment_deployment,正文明确具名 6・11 市民集会実行委員会及地下水诉求；与 A012 的稳定 actor 身份仍需 crosswalk
+R4S004,safe_with_correction,,,,environment_background_not_deployment,官网只支持水边自然保护和环境教育；既非地下水证据也非部署争议证据
+R4S005,safe_with_correction,,,,environment_background_not_deployment,官网只支持海岸清扫、海洋调查与环境教育；不得编码 environment_deployment
+R4S006,safe_merge,,,,frontline_taiwan_evacuation;life_safety,法定国民保护计划情境定位准确
+R4S007,human_locator_review,,PDF Pattern 1 的具体印刷页码待补,,frontline_taiwan_evacuation;life_safety,来源与情境成立但“表 Pattern 1”不足以稳定复核；正式引用前补印刷页码
+R4S008,human_semantic_review,,印刷 p.139-140／久貝美奈子提问与総務部長上地俊暢答复分段,,frontline_taiwan_evacuation;life_safety;procedural_fairness,现摘录来自行政答复；local_autonomy 主要来自议员对市民参与的追问，须拆分 speaker
+R4S009,safe_with_correction,2025-2026,页面第53行起“各機関の回答”／第188-190行问答,空港や港湾などで混乱が生じないよう,frontline_taiwan_evacuation;procedural_fairness,原摘录“空港や港湾などのインフラ”在页面及两份附件中未找到；原“基础设施仍可用”释义也不受该问答支持
+R4S010,safe_with_correction,2020,p.4（PDF P3）前提事实（2）,１万４２６３名の有効署名,local_autonomy_referendum;procedural_fairness,判决日期为 2020-08-27；事实链和签名数成立，但判决不具名 A011；本行工作 URL 可用而 S137 source-log 旧 URL 为 404，合并前须统一回指
+R4S011,safe_with_correction,2019-2020,页面标题 H31.2.4；更新日 2020-03-30,条例案を２度にわたり否決,local_autonomy_referendum;procedural_fairness,不能写 current；页面给出事件日期和更新日期
+R4S012,reject_current_locator,,,,,域名现已改作“石垣島ヘイヨー”旅游站；2026-07-11 本地归档亦无该组织或摘录，不能回指历史组织自述
+R4S013,safe_merge,2022-2026,页面第84-98行 R4-R7 年度 PDF 链接区,避難実施要領（案）,frontline_taiwan_evacuation;life_safety,年度链接与页面更新时间 2026-02-27 可复核
+R4S014,safe_merge,2024,p.2（PDF P1）决议事项 3-5,市民の意思確認を進めること,frontline_taiwan_evacuation;life_safety;local_autonomy_referendum;procedural_fairness,市议会决议文字和制度角色清楚；不得写成已落实
+R4S015,human_semantic_review,2024,p.1 起；逐条保留“意见”和箭头后的行政答复,住民との意見交換,frontline_taiwan_evacuation;life_safety;procedural_fairness,23 名参加者是匿名小样本；居民意见与防灾危机管理课答复必须逐条拆分
+R4S016,safe_with_correction,2019,次呂久成崇一般質問 2(2)（网页第228-230行）；环境部长答复第259-263行,説明が不十分で納得できない,environment_deployment;procedural_fairness,原文日期为 2019-07-02；摘录是议员转述“石垣市民”声音，不是环境部长答复，也没有具名 A010
+R4S017,safe_with_correction,2015,正文第31-38行／投票结果与反对方委员会,結果は「賛成」多数,local_autonomy_referendum;frontline_taiwan_evacuation,QAB 第35行明确具名 A014 及上地国生委员长；原“未独立确认委员会身份”提示错误
+R4S018,safe_merge,2022,解说正文首段,国境の最前線,frontline_taiwan_evacuation,防卫省的前线／台湾邻近自我框架明确；不得外推居民共识
+R4S019,safe_with_correction,current,所在部队列表,与那国沿岸監視隊,frontline_taiwan_evacuation,驻屯地页面只证实设施和部队存在；删除 environment_deployment
+R4S020,safe_merge,2017-2018,页面计划说明第93-97行,住民の避難、救援,frontline_taiwan_evacuation;life_safety,计划制定于 2017-05、网页发布于 2018-04-11；两日期宜并列
+R4S021,safe_with_correction,2025,页面训练项目第203-214行,要配慮者の避難,frontline_taiwan_evacuation;life_safety,来源覆盖先岛五市町村；只能作为先岛区域背景，不能计作与那国独有密度
+R4S022,safe_with_correction,2017,归档文章“この島は何処へ”（2017-08-04；/e9762436.html）,与那国の住民主体の自治を、取り戻してほしい,local_autonomy_referendum,原“明るい未来を願う”只是组织名片段，不支持三项 frame；改用可定位的组织博文，仍不支持 life_safety
+R4S023,safe_with_correction,2024,标题及正文第177行具名组织与请求,合同演習の中止要請,frontline_taiwan_evacuation,可确认 A016 提交停止训练请求；可见正文不支持 life_safety，删除该标签
+R4S024,human_semantic_review,2026,正文第16行说明会目的,町民の皆様のご理解,frontline_taiwan_evacuation,可证明新导弹部队说明会及防卫省宣称的沟通目的；仅此不足以编码 procedural_fairness
+R4S025,safe_merge,2025,训练项目（3）与现地确认（1）-（2）,与那国町の避難計画,frontline_taiwan_evacuation;life_safety,与那国到佐贺的避难、接收与救护节点均可复核；训练不等于能力验证

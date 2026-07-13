@@ -1,0 +1,14 @@
+﻿metric,value
+registry_actor_count,118
+actor_class_distinct_count,25
+out_of_schema_actor_class_term_count,6
+issue_count,26
+actor_issue_edge_count,218
+actors_with_actor_issue_edge,100
+actors_without_actor_issue_edge,18
+human_reviewed_edge_count,55
+candidate_edge_count,163
+issue_pair_with_shared_actor_count,67
+cross_issue_actor_count,71
+double_human_reviewed_cross_issue_actor_count,15
+expansion_candidate_count_not_added,9

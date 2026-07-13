@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<!--ヘッダー-->
+<script type="text/javascript">
+  window.pbjs = window.pbjs || {};
+  window.pbjs.que = window.pbjs.que || [];
+</script>
+<script async='async' src="https://flux-cdn.com/client/1000345/otv_01614.min.js"></script>
+
+<script type="text/javascript">
+  window.googletag = window.googletag || {};
+  window.googletag.cmd = window.googletag.cmd || [];
+</script>
+<script async='async' src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+
+<script type="text/javascript">
+  window.fluxtag = {
+    readyBids: {
+      prebid: false,
+      amazon: false,
+      google: false
+    },
+    failSafeTimeout: 3e3,
+    isFn: function isFn(object) {
+      var _t = 'Function';
+      var toString = Object.prototype.toString;
+      return toString.call(object) === '[object ' + _t + ']';
+    },
+    launchAdServer: function() {
+      if (!fluxtag.readyBids.prebid || !fluxtag.readyBids.amazon) {
+        return;
+      }
+      fluxtag.requestAdServer();
+    },
+    requestAdServer: function() {
+      if (!fluxtag.readyBids.google) {
+        fluxtag.readyBids.google = true;
+        googletag.cmd.push(function () {
+          if (!!(pbjs.setTargetingForGPTAsync) && fluxtag.isFn(pbjs.setTargetingForGPTAsync)) {
+            pbjs.que.push(function () {
+              pbjs.setTargetingForGPTAsync();
+            });
+          }
+          googletag.pubads().refresh();
+        });
+      }
+    }
+  };
+</script>
+
+<script type="text/javascript">
+  setTimeout(function() {
+    fluxtag.requestAdServer();
+  }, fluxtag.failSafeTimeout);
+</script>
+
+<script type='text/javascript'>
+  ! function (a9, a, p, s, t, A, g) {
+    if (a[a9]) return;
+
+    function q(c, r) {
+      a[a9]._Q.push([c, r])
+    }
+    a[a9] = {
+      init: function () {
+        q("i", arguments)
+      },
+      fetchBids: function () {
+        q("f", arguments)
+      },
+      setDisplayBids: function () {},
+      targetingKeys: function () {
+        return []
+      },
+      _Q: []
+    };
+    A = p.createElement(s);
+    A.async = !0;
+    A.src = t;
+    g = p.getElementsByTagName(s)[0];
+    g.parentNode.insertBefore(A, g)
+  }("apstag", window, document, "script", "//c.amazon-adsystem.com/aax2/apstag.js");
+  apstag.init({
+    pubID: 'c06cc614-f284-4373-8e7b-e334e4dcb9d3',
+    adServer: 'googletag',
+    bidTimeout: 1e3,
+    schain: {
+      complete: 1,
+      ver: '1.0',
+      nodes: [{
+        asi: 'i-mobile.co.jp',
+        sid: '82319',
+        hp: 1,
+      }]
+    }
+  });
+
+  googletag.cmd.push(function () {
+    apstag.fetchBids({
+      slots:  [
+        {
+          slotID: 'div-gpt-ad-1719990039378-0',
+          slotName: '/9176203/1864493',
+          sizes: [[300, 250]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990099794-0',
+          slotName: '/9176203/1864494',
+          sizes: [[300, 250]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990166257-0',
+          slotName: '/9176203/1864495',
+          sizes: [[300, 250]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990226201-0',
+          slotName: '/9176203/1864496',
+          sizes: [[300, 250]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990289609-0',
+          slotName: '/9176203/1864497',
+          sizes: [[300, 250]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990351026-0',
+          slotName: '/9176203/1864498',
+          sizes: [[728, 90]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990411931-0',
+          slotName: '/9176203/1864499',
+          sizes: [[728, 90]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990470880-0',
+          slotName: '/9176203/1864500',
+          sizes: [[300, 250], [336, 280]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990529997-0',
+          slotName: '/9176203/1864501',
+          sizes: [[300, 250], [336, 280]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990593704-0',
+          slotName: '/9176203/1864502',
+          sizes: [[300, 250], [336, 280]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990658944-0',
+          slotName: '/9176203/1864503',
+          sizes: [[300, 250], [336, 280]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990719272-0',
+          slotName: '/9176203/1864504',
+          sizes: [[300, 250], [336, 280]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990780427-0',
+          slotName: '/9176203/1864505',
+          sizes: [[320, 100], [320, 50]]
+        },
+        {
+          slotID: 'div-gpt-ad-1719990842317-0',
+          slotName: '/9176203/1864506',
+          sizes: [[320, 100], [320, 50]]
+        }]
+    }, function (bids) {
+      googletag.cmd.push(function () {
+        apstag.setDisplayBids();
+        fluxtag.readyBids.amazon = true;
+        fluxtag.launchAdServer();
+      });
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  var imobile_gam_slots = [];
+  googletag.cmd.push(function() {
+    var PC_300x250 = googletag.sizeMapping()
+    .addSize([770, 0], [300, 250])
+    .addSize([0, 0], [])
+    .build();
+    var PC_728x90 = googletag.sizeMapping()
+    .addSize([770, 0], [728, 90])
+    .addSize([0, 0], [])
+    .build();
+    var SP_rect = googletag.sizeMapping()
+    .addSize([770, 0], [])
+    .addSize([0, 0], [[336, 280], [300, 250]])
+    .build();
+    var SP_banner = googletag.sizeMapping()
+    .addSize([770, 0], [])
+    .addSize([0, 0], [[320, 100], [320, 50]])
+    .build();
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864493', [300, 250], 'div-gpt-ad-1719990039378-0').defineSizeMapping(PC_300x250).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864494', [300, 250], 'div-gpt-ad-1719990099794-0').defineSizeMapping(PC_300x250).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864495', [300, 250], 'div-gpt-ad-1719990166257-0').defineSizeMapping(PC_300x250).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864496', [300, 250], 'div-gpt-ad-1719990226201-0').defineSizeMapping(PC_300x250).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864497', [300, 250], 'div-gpt-ad-1719990289609-0').defineSizeMapping(PC_300x250).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864498', [728, 90], 'div-gpt-ad-1719990351026-0').defineSizeMapping(PC_728x90).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864499', [728, 90], 'div-gpt-ad-1719990411931-0').defineSizeMapping(PC_728x90).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864500', [[336, 280], [300, 250]], 'div-gpt-ad-1719990470880-0').defineSizeMapping(SP_rect).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864501', [[336, 280], [300, 250]], 'div-gpt-ad-1719990529997-0').defineSizeMapping(SP_rect).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864502', [[300, 250], [336, 280]], 'div-gpt-ad-1719990593704-0').defineSizeMapping(SP_rect).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864503', [[300, 250], [336, 280]], 'div-gpt-ad-1719990658944-0').defineSizeMapping(SP_rect).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864504', [[336, 280], [300, 250]], 'div-gpt-ad-1719990719272-0').defineSizeMapping(SP_rect).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864505', [[320, 100], [320, 50]], 'div-gpt-ad-1719990780427-0').defineSizeMapping(SP_banner).addService(googletag.pubads()));
+    imobile_gam_slots.push(googletag.defineSlot('/9176203,22500079873/1864506', [[320, 100], [320, 50]], 'div-gpt-ad-1719990842317-0').defineSizeMapping(SP_banner).addService(googletag.pubads()));
+
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().disableInitialLoad();
+    googletag.enableServices();
+
+    if (!!(window.pbFlux) && !!(window.pbFlux.prebidBidder) && fluxtag.isFn(window.pbFlux.prebidBidder)) {
+      pbjs.que.push(function () {
+        window.pbFlux.prebidBidder();
+      });
+    } else {
+      fluxtag.readyBids.prebid = true;
+      fluxtag.launchAdServer();
+    }
+  });
+</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>石垣市住民投票を求める会が解散　６年間の活動を支えてくれた市民に感謝 | OKITIVE</title>
+  <meta name="description" content="石垣島への自衛隊配備の賛否を問う住民投票の実施を求め、６年間活動してきた市民団体が２７日解散しました。「石垣市住民投票を求める会」は、２０１８年石垣市の中山市長が自衛隊配備の受け入れを表明した事を受け…">
+  <link rel="canonical" href="https://www.otv.co.jp/okitive/news/post/00012171/index.html">
+  <meta property="og:site_name" content="OKITIVE">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="石垣市住民投票を求める会が解散　６年間の活動を支えてくれた市民に感謝 | OKITIVE">
+  <meta property="og:description" content="石垣島への自衛隊配備の賛否を問う住民投票の実施を求め、６年間活動してきた市民団体が２７日解散しました。「石垣市住民投票を求める会」は、２０１８年石垣市の中山市長が自衛隊配備の受け入れを表明した事を受け…">
+  <meta property="og:url" content="https://www.otv.co.jp/okitive/news/post/00012171/index.html">
+  <meta property="og:image" content="https://www.otv.co.jp/okitive/news/post/00012171/00012171.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="石垣市住民投票を求める会が解散　６年間の活動を支えてくれた市民に感謝 | OKITIVE">
+  <meta name="twitter:description" content="石垣島への自衛隊配備の賛否を問う住民投票の実施を求め、６年間活動してきた市民団体が２７日解散しました。「石垣市住民投票を求める会」は、２０１８年石垣市の中山市長が自衛隊配備の受け入れを表明した事を受け…">
+  <meta name="twitter:image" content="https://www.otv.co.jp/okitive/news/post/00012171/00012171.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/okitive/wp-content/themes/okitive/assets/css/common.css">
+  <link rel="stylesheet" href="/okitive/wp-content/themes/okitive/assets/css/theme.css">
+  <link rel="shortcut icon" href="/okitive/wp-content/themes/okitive/assets/img/common/favicon.ico">
+  <link rel="apple-touch-icon" href="/okitive/wp-content/themes/okitive/assets/img/common/apple-touch-icon.png">
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MLJNT3F');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Ad Global -->
+  <script type="text/javascript">
+    var global = {};
+    global.screen_width = window.parent.screen.width;
+    global.ad_show_pc = true;
+    if (global.screen_width <= 767) {
+      global.ad_show_pc = false;
+    }
+  </script>
+  <!-- End Ad Global -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLJNT3F" height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ヘッダー -->
+  <script src="/okitive/wp-content/themes/okitive/assets/js/external/header.js"></script>
+
+  <main class="post_contents">
+    <div class="post_inner">
+      <div class="o_post_article">
+        <div class="o_post_article__inner">
+
+          <!-- NOTE: カテゴリ（キーワード）は構築時は使用しない -->
+          <!-- <p class="o_post_article__tag">グルメ,おでかけ,沖縄ニュース</p> -->
+
+          <div class="o_post_article__head">
+            <div class="o_post_article__head__date">
+              <span class="o_post_article__head__date__update">
+                <time datetime="2024-11-28">2024/11/28</time>
+              </span>
+              <span class="o_post_article__head__date__publish">公開日
+                <time datetime="2024-11-28">2024/11/28</time>
+              </span>
+            </div>
+
+          </div>
+          <h1 class="o_post_article__title">石垣市住民投票を求める会が解散　６年間の活動を支えてくれた市民に感謝</h1>
+          <div class="o_post_article__kv" id="kvArea">
+            <script type="text/javascript">
+              window.onload = function() {
+                setNewsMovie('00012171', '/news/mpg/00012171.mp4', '/news/mpg/00012171.jpg');
+              }
+            </script>
+          </div>
+
+          <!-- 本文エリア -->
+          <div class="o_post_article__wp">
+            <p>石垣島への自衛隊配備の賛否を問う住民投票の実施を求め、６年間活動してきた市民団体が２７日解散しました。<br><br>「石垣市住民投票を求める会」は、２０１８年石垣市の中山市長が自衛隊配備の受け入れを表明した事を受け、配備の賛否を問う住民投票の実施を求めてきました。<br><br>当時の条例に基づき、有権者の４分の１以上となる１万４０００人分あまりの署名を集めましたが、市議会がこれを否決し、実現しませんでした。<br><br>このため、司法の場に救済を求め訴訟を起こしましたが、２０２４年９月、最高裁が上告を棄却し敗訴が確定しました。<br><br>石垣市住民投票を求める会金城龍太郎：<br>「頑張れよという声がずっと支え続けてくれた。本当に多くの方の声で元気づけられましたし勇気づけられました」<br><br>会は活動の記録を残す方法を検討しています。</p>
+          </div>
+
+          <div class="o_post_article__share">
+            <div class="o_post_article__share__inner">
+              <p class="o_post_article__share__title">記事をシェアする</p>
+              <ul class="o_post_article__share__list">
+                <li>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.otv.co.jp/okitive/news/post/00012171/index.html" target="_blank" rel="noopener noreferrer">
+                    <svg class="a_svg a_svg--share_fb" role="img">
+                      <title>Facebook</title>
+                      <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_theme.svg#share_fb">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/share?text=%E7%9F%B3%E5%9E%A3%E5%B8%82%E4%BD%8F%E6%B0%91%E6%8A%95%E7%A5%A8%E3%82%92%E6%B1%82%E3%82%81%E3%82%8B%E4%BC%9A%E3%81%8C%E8%A7%A3%E6%95%A3%E3%80%80%EF%BC%96%E5%B9%B4%E9%96%93%E3%81%AE%E6%B4%BB%E5%8B%95%E3%82%92%E6%94%AF%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E5%B8%82%E6%B0%91%E3%81%AB%E6%84%9F%E8%AC%9D+%7C+OKITIVE&url=https://www.otv.co.jp/okitive/news/post/00012171/index.html" target="_blank" rel="noopener noreferrer">
+                    <svg class="a_svg a_svg--share_tw" role="img">
+                      <title>Twitter</title>
+                      <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_theme.svg#share_tw">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://line.me/R/msg/text/?%E7%9F%B3%E5%9E%A3%E5%B8%82%E4%BD%8F%E6%B0%91%E6%8A%95%E7%A5%A8%E3%82%92%E6%B1%82%E3%82%81%E3%82%8B%E4%BC%9A%E3%81%8C%E8%A7%A3%E6%95%A3%E3%80%80%EF%BC%96%E5%B9%B4%E9%96%93%E3%81%AE%E6%B4%BB%E5%8B%95%E3%82%92%E6%94%AF%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E5%B8%82%E6%B0%91%E3%81%AB%E6%84%9F%E8%AC%9D+%7C+OKITIVE%0D%0Ahttps://www.otv.co.jp/okitive/news/post/00012171/index.html" target="_blank" rel="noopener noreferrer">
+                    <svg class="a_svg a_svg--share_line" role="img">
+                      <title>Line</title>
+                      <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_theme.svg#share_line">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:%20void(0);" rel="noopener noreferrer" data-trigger="share_copy" data-url="https://www.otv.co.jp/okitive/news/post/00012171/index.html">
+                    <svg class="a_svg a_svg--share_copy" role="img">
+                      <title>Copy</title>
+                      <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_theme.svg#share_copy">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://b.hatena.ne.jp/entry/panel/?url=https://www.otv.co.jp/okitive/news/post/00012171/index.html&btitle=%E7%9F%B3%E5%9E%A3%E5%B8%82%E4%BD%8F%E6%B0%91%E6%8A%95%E7%A5%A8%E3%82%92%E6%B1%82%E3%82%81%E3%82%8B%E4%BC%9A%E3%81%8C%E8%A7%A3%E6%95%A3%E3%80%80%EF%BC%96%E5%B9%B4%E9%96%93%E3%81%AE%E6%B4%BB%E5%8B%95%E3%82%92%E6%94%AF%E3%81%88%E3%81%A6%E3%81%8F%E3%82%8C%E3%81%9F%E5%B8%82%E6%B0%91%E3%81%AB%E6%84%9F%E8%AC%9D+%7C+OKITIVE" target="_blank" rel="noopener noreferrer">
+                    <svg class="a_svg a_svg--share_hatebu" role="img">
+                      <title>Hatebu</title>
+                      <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_theme.svg#share_hatebu">
+                      </use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="o_post_article__breadcrumbs m_breadcrumbs">
+            <ul class="o_post_article__breadcrumbs__list m_breadcrumbs__list">
+              <li>
+                <a class="o_post_article__breadcrumbs__anchor m_breadcrumbs__anchor" href="/okitive">TOP</a>
+              </li>
+              <li>
+                <a class="o_post_article__breadcrumbs__anchor m_breadcrumbs__anchor" href="/okitive/news">沖縄ニュース</a>
+              </li>
+              <li class="is-current">
+                <a class="o_post_article__breadcrumbs__anchor m_breadcrumbs__anchor">石垣市住民投票を求める会が解散　６年間の活動を支えてくれた市民に感謝</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- NOTE: popin -->
+          <!-- I-SEARCH_EXCEPT_TAG_START -->
+          <div class="o_recommend__together">
+            <div class="o_recommend__together__inner">
+              <div class="o_recommend__together__head">
+                <p class="o_recommend__together__title">
+                  <span>あわせて読みたい記事
+                    <svg class="a_svg a_svg--illust_gallirallus_okinawae" role="img">
+                      <title>ヤンバルクイナ</title>
+                      <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_illust.svg#illust_gallirallus_okinawae">
+                      </use>
+                    </svg>
+                  </span>
+                </p>
+              </div>
+              <div class="o_recommend__together__popin">
+                <div id="_popIn_recommend_post">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- I-SEARCH_EXCEPT_TAG_END -->
+
+        </div>
+      </div>
+
+      <!-- 右カラム -->
+      <script src="/okitive/wp-content/themes/okitive/assets/js/external/aside.js"></script>
+
+    </div>
+    <div class="post_other">
+      <div class="post_ad">
+        <div class="post_ad__inner">
+            <div class="post_ad__banner">
+                    <div class="post_ad__banner--static">
+                                <!-- /9176203,22500079873/1864495 PC OKITIVE_インラインレクタングル1 -->
+                                <div id='div-gpt-ad-1719990166257-0'>
+                                    <script>
+                                    googletag.cmd.push(function() {
+                                        googletag.display('div-gpt-ad-1719990166257-0');
+                                    });
+                                    </script>
+                                </div>
+                                <!-- /9176203,22500079873/1864502 SP OKITIVE_インラインレクタングル1 -->
+                                <div id='div-gpt-ad-1719990593704-0' style='margin:auto;text-align:center;'>
+                                    <script>
+                                    googletag.cmd.push(function() {
+                                        googletag.display('div-gpt-ad-1719990593704-0');
+                                    });
+                                    </script>
+                                </div>
+                    </div>
+            </div>
+            <div class="post_ad__banner">
+                    <div class="post_ad__banner--static">
+                        <!-- /9176203,22500079873/1864496 PC OKITIVE_インラインレクタングル2 -->
+                        <div id='div-gpt-ad-1719990226201-0'>
+                            <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1719990226201-0');
+                            });
+                            </script>
+                        </div>
+
+                        <!-- /9176203,22500079873/1864503 SP OKITIVE_インラインレクタングル2 -->
+                        <div id='div-gpt-ad-1719990658944-0' style='margin:auto;text-align:center;'>
+                            <script>
+                            googletag.cmd.push(function() {
+                                googletag.display('div-gpt-ad-1719990658944-0');
+                            });
+                            </script>
+                        </div>
+                    </div>
+            </div>
+          <div class="post_ad__banner">
+            <script type="text/javascript" src="//yads.c.yimg.jp/js/yads-async.js"></script>
+            <!-- /Yahoo広告PC -->
+            <div id="yads_pc" class='u_hidden_sp'></div>
+            <script type="text/javascript">
+              if (global.ad_show_pc) {
+                yadsRequestAsync({
+                  yads_ad_ds : '38754_584989',
+                  yads_parent_element : 'yads_pc'
+                });
+              }
+            </script>
+            <!-- /Yahoo広告SP -->
+            <div id="yads_sp" class='u_hidden_pc'></div>
+            <script type="text/javascript">
+              if (!global.ad_show_pc) {
+                yadsRequestAsync({
+                  yads_ad_ds : '38754_584990',
+                  yads_parent_element : 'yads_sp'
+                });
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTE: popin -->
+      <!-- I-SEARCH_EXCEPT_TAG_START -->
+      <section class="o_recommend">
+        <div class="o_recommend__inner">
+          <div class="o_recommend__head">
+            <h2 class="o_recommend__title">
+              <span>あなたへおすすめ！
+                <svg class="a_svg a_svg--illust_anemone_fish_small" role="img">
+                  <title>クマノミ 小</title>
+                  <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_illust.svg#illust_anemone_fish_small">
+                  </use>
+                </svg>
+                <svg class="a_svg a_svg--illust_anemone_fish_big" role="img">
+                  <title>クマノミ 大きい</title>
+                  <use xlink:href="/okitive/wp-content/themes/okitive/assets/img/common/svg/sprite_illust.svg#illust_anemone_fish_big">
+                  </use>
+                </svg>
+              </span>
+            </h2>
+          </div>
+          <div class="o_recommend__popin">
+            <div id="_popIn_recommend_post_2">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- I-SEARCH_EXCEPT_TAG_END -->
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <script src="/okitive/wp-content/themes/okitive/assets/js/external/footer.js"></script>
+  <script type="text/javascript" src="/wp-content/themes/otv/assets/js/news/vplayer.js"></script>
+
+  <!-- NOTE: popin読み込み -->
+  <script type="text/javascript">
+  (function() {
+        var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.charset = "utf-8"; pa.async = true;
+        pa.src = window.location.protocol + "//api.popin.cc/searchbox/otv_okitive_LMC.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+    })();
+  </script>
+
+</body>
+
+</html>

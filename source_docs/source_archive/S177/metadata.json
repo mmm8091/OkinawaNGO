@@ -1,0 +1,27 @@
+{
+  "source_id": "S177",
+  "source_type": "court_record",
+  "title": "福岡高等裁判所特別保存事件一覧",
+  "year": "2025",
+  "url": "https://www.courts.go.jp/fukuoka-h/vc-files/fukuoka-h/reiwa7.pdf",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 令和2年行コ3号与令和5年行コ6号案号",
+  "evidence_level": "E4",
+  "bias_note": "保存表确认案号，不能替代判决主文。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC026; module refs=R9:R9S026. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S177\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S177\\metadata.json",
+  "sha256": "9ceeaabfdc19cb6bb4d7cd133dbf025271180704740fa9be45d6f427cf845262",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:47.013536+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.courts.go.jp/fukuoka-h/vc-files/fukuoka-h/reiwa7.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "1304942",
+    "last_modified": "Fri, 06 Feb 2026 03:05:51 GMT"
+  }
+}

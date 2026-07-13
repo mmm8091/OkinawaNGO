@@ -1,0 +1,27 @@
+{
+  "source_id": "S180",
+  "source_type": "national_official",
+  "title": "与那国町住民避难联合训练",
+  "year": "2025",
+  "url": "https://www.kokuminhogo.go.jp/kunren/kyodo/post-103.html",
+  "what_it_supports": "Yonaguni: 国家与接收地政府把与那国撤离和安置作为联合推演对象 [frontline_taiwan_evacuation;life_safety]",
+  "evidence_level": "E4",
+  "bias_note": "训练计划不是实际撤离能力验证 | 与那国到佐贺的避难、接收与救护节点均可复核；训练不等于能力验证",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC030; module refs=R4:R4S025. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S180\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S180\\metadata.json",
+  "sha256": "6b9a263ce6d2ed4ea6161f07a574ccc0f4a4560a0bab12e32a18d8795658bf09",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:22.778513+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.kokuminhogo.go.jp/kunren/kyodo/post-103.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "16099",
+    "last_modified": "Fri, 13 Mar 2026 12:36:14 GMT"
+  }
+}

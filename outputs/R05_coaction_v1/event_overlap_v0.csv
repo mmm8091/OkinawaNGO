@@ -1,0 +1,4 @@
+﻿event_a,event_b,confirmed_registry_actors_a,confirmed_registry_actors_b,shared_confirmed_registry_actors,jaccard_confirmed_registry,shared_actor_ids,interpretation_limit
+EV2010_WWF_67,EV2015_NACSJ_31,16,31,10,0.2703,A002;A004;A005;A006;A007;A022;A026;A028;A029;A032,Overlap uses only confirmed current-registry matches; HR-020 aliases are excluded and overlap does not establish alliance durability.
+EV2010_WWF_67,EV2020_OEJP_MMC_71,16,16,8,0.3333,A002;A003;A004;A020;A022;A056;A060;A062,Overlap uses only confirmed current-registry matches; HR-020 aliases are excluded and overlap does not establish alliance durability.
+EV2015_NACSJ_31,EV2020_OEJP_MMC_71,31,16,3,0.0682,A002;A004;A022,Overlap uses only confirmed current-registry matches; HR-020 aliases are excluded and overlap does not establish alliance durability.

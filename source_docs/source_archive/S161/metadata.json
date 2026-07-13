@@ -1,0 +1,27 @@
+{
+  "source_id": "S161",
+  "source_type": "court_record",
+  "title": "石垣市住民投票を求める裁判 CALL4案件页",
+  "year": "2024",
+  "url": "https://www.call4.jp/search.php?items_id=I0000141&items_id_PAL%5B%5D=match+comp&run=true&type=action",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 组织自述成立、诉讼支持与最高裁通知日期",
+  "evidence_level": "E3",
+  "bias_note": "组织侧材料不等于法院确认组织原告身份。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC007; module refs=R9:R9S029. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;retain_usable_with_limit_boundary.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S161\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S161\\metadata.json",
+  "sha256": "e16d208fef639dbb947aa14ddd9f572caae01b2020a4dbd337d93fc448b4a054",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:05:16.470314+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.call4.jp/search.php?items_id=I0000141&items_id_PAL%5B%5D=match+comp&run=true&type=action",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

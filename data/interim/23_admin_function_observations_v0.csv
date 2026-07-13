@@ -1,0 +1,44 @@
+﻿function_observation_id,relation_observation_id,fiscal_year,actor_id,actor_name,function_type,function_description,beneficiary_or_audience,place_or_facility,mechanism_context,financial_inference_allowed,political_stance_inference_allowed,source_refs,source_locators,evidence_level,review_status,interpretation_limit
+R10FN001,R10R001,2019,X010,沖縄NGOセンター,international_cooperation_training,承担教师海外研修与报告制作,九州/冲绳教师与国际理解教育参与者,JICA 九州・冲绳项目,commission,no,no,S100,PDF p.103,E4,ai_seeded,
+R10FN002,R10R004,2024,X010,沖縄NGOセンター,multilingual_consultation,每周六日提供多语言生活咨询并转介专业机构,外国居民及多语种服务使用者,Koza International Plaza,commission,no,no,R10S07;R10S09;R10S10,R10S07 PDF pp.5-6,E4,ai_seeded,
+R10FN003,R10R004,2024,X010,沖縄NGOセンター,language_education,开设英语、西班牙语、中文、日语与越南语课程,冲绳市居民与外国居民,Koza International Plaza,commission,no,no,R10S07;R10S09;R10S10,R10S07 PDF pp.5-6,E4,ai_seeded,
+R10FN004,R10R004,2024,X010,沖縄NGOセンター,international_exchange_service,举办多国籍居民交流会与文化活动,多国籍居民与本地居民,Koza International Plaza,commission,no,no,R10S07;R10S09;R10S10,R10S07 PDF pp.5-6,E4,ai_seeded,
+R10FN005,R10R005,2024,X010,沖縄NGOセンター,multicultural_policy_support,运营多文化共生政策会议并整理建议,冲绳县政策部门、会议委员与在住外国人相关议题,冲绳县,C1 commission,no,no,S002;S099,S002 PDF p.59; S099 PDF p.3,E4,ai_seeded,
+R10FN006,R10R005,2024,X010,沖縄NGOセンター,meeting_secretariat,ONC 人员在会议纪要中以事务局角色出现,政策会议参与者,万国津梁会议,role evidence attached to commission,no,no,R10S08,official meeting minutes,E4,ai_seeded,事务局功能不另造资金边。
+R10FN007,R10R006,2024,X010,沖縄NGOセンター,ngo_consultation,提供国际协力与 ODA 市民参与相关咨询,NGO、市民与国际协力参与者,冲绳/日本,commission,no,no,S099,PDF p.2,E4,ai_seeded,
+R10FN008,R10R007,2026,X010,沖縄NGOセンター,ngo_consultation,作为外务省指定 NGO 相談員持续提供咨询,NGO 与市民,冲绳/日本,designated role,no,no,S101,official FY2026 list,E4,ai_seeded,
+R10FN009,R10R008,2024,A066,新外交イニシアティブ（ND）,base_policy_public_information,举办在冲美军基地问题研讨会并对外传播信息,县内外公众,冲绳县项目,C2 commission,no,no,S002;R10S11,S002 PDF p.1; R10S11 PDF p.1,E4,ai_seeded,
+R10FN010,R10R009,2024,A088,冲绳和平协力中心,peace_education_exchange,组织冲绳、广岛、长崎及亚洲青年共同学习和平教育,青年参与者与公众,冲绳和平祈念资料馆项目,C2 commission,no,no,S002;R10S11,S002 PDF p.2; R10S11 PDF p.2,E4,ai_seeded,
+R10FN011,R10R010,2024,A088,冲绳和平协力中心,oral_history_training,培养冲绳战讲述者与传承人才,讲述者候选与公众,冲绳和平祈念资料馆项目,C2 commission,no,no,S002;R10S11,S002 PDF p.2; R10S11 PDF p.2,E4,ai_seeded,
+R10FN012,R10R011,2024,P_R10_IC_HRD_JV,国际协力人才培养事业共同企业体,international_cooperation_training,派遣高中生观察 ODA 现场并开展出前讲座,冲绳县内高中生,冲绳/开发中国家,C2 commission,no,no,S002,PDF p.59 row 432,E4,ai_seeded,
+R10FN013,R10R012,2024,P_R10_WYUR,世界若者ウチナーンチュ连合会,diaspora_network_service,运营 Uchina Network Concierge 平台,世界冲绳人网络与下一代参与者,线上/冲绳,C1 commission,no,no,S002,PDF pp.59-60 row 433,E4,ai_seeded,
+R10FN014,R10R013,2024,P_R10_TEAM_OKIYUA,Team OKIYUA,diaspora_student_exchange,接收海外冲绳人子弟及亚洲地区留学生,留学生与县内大学/企业,冲绳,C1 commission,no,no,S002,PDF p.60 row 434,E4,ai_seeded,
+R10FN015,R10R014,2024,P_R10_JOCA_OKINAWA,青年海外协力协会冲绳事务所,migration_history_education,面向学校开展移民史与 Uchina Network 出前讲座,县内小中高校学生,冲绳县内学校,C2 commission,no,no,S002,PDF p.60 row 435,E4,ai_seeded,
+R10FN016,R10R015,2024,P_R10_JUNIOR_STUDY_JV,Uchina Junior Study 共同企业体,diaspora_youth_exchange,让海外县系人子弟与县内学生共同学习历史文化与自然,海外县系人子弟与县内学生,冲绳,C2 commission,no,no,S002,PDF p.60 row 436,E4,ai_seeded,
+R10FN017,R10R016,2024,P_R10_OIHF,冲绳县国际交流·人才育成财团,international_exchange_grant_program,开展国际交流与协力事业,国际交流参与者,冲绳/国际,C4 grant,no,no,S002,PDF p.60 row 437,E4,ai_seeded,功能与补助关系可确认；项目费不等于 award amount。
+R10FN018,R10R017,,X010,沖縄NGOセンター,event_collaboration,参与 JICA 国际协力 festival,国际协力活动参与者,冲绳,non-funding collaboration,no,no,S095,official program page,E4,human_checked,公开共同参与不证明资金或稳定联盟。
+R10FN019,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Camp Kinser,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN020,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Camp Hansen,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN021,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Kadena,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN022,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Camp Foster,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN023,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Kadena AMC Terminal,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN024,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Okinawa Area Office,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN025,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Futenma,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN026,R10R018,,X001,USO Okinawa,base_community_service_site,提供休息、联络与军人家庭支持服务,美军现役人员、预备役/国民警卫队、配偶及家属,Camp Schwab,service presence; no funding inference,no,no,S097,USO Okinawa centers page,E4,ai_seeded,服务对象与设点不推导亲基地或反基地立场。
+R10FN027,R10R019,2026,X003,AEC,corporate_sponsorship,长期支持 USO Okinawa 并参与中心建设/翻新,USO Okinawa 服务对象,Camp Schwab 等,sponsorship plus named donation,no,no,S097;S098,sponsors page and donation report,E4,human_checked,
+R10FN028,R10R020,,P_R10_MBC,Mediatti Broadband,corporate_sponsorship,以 Platinum sponsor 身份支持 USO Okinawa,USO Okinawa 服务对象,冲绳,sponsor tier; no amount,no,no,S097,sponsors page,E3,ai_seeded,
+R10FN029,R10R021,,P_R10_MATSON,Matson,corporate_sponsorship,以 Mission Partner 身份支持 USO Okinawa,USO Okinawa 服务对象,冲绳,sponsor tier; no amount,no,no,S097,sponsors page,E3,ai_seeded,
+R10FN030,R10R022,2025,X007,OESC,charitable_donation,"向 USO Okinawa 捐赠 3,250 美元",USO Okinawa 服务对象,冲绳,named donation,no,no,S053,Dec. 2025 report,E4,human_checked,
+R10FN031,R10R023,,X004,AWWA,charitable_grant,支持 USO Kinser 厨房翻新,USO Kinser 使用者,Camp Kinser,named grant; amount unknown,no,no,S077,USO official story,E3,human_checked,
+R10FN032,R10R024,,X004,AWWA,umbrella_coordination,连接 NOSCO 等军属配偶俱乐部,成员俱乐部,冲绳美军基地社区,membership; no funding inference,no,no,S041;S055;S072,membership pages,E4,human_revised,
+R10FN033,R10R025,,X004,AWWA,umbrella_coordination,连接 KOSC 等军属配偶俱乐部,成员俱乐部,Kadena/冲绳,membership; no funding inference,no,no,S041;S055;S072;S075,membership pages,E4,human_revised,
+R10FN034,R10R026,,X004,AWWA,umbrella_coordination,连接 OESC 等军属配偶俱乐部,成员俱乐部,冲绳美军基地社区,membership; no funding inference,no,no,S041;S055,membership pages,E4,human_revised,
+R10FN035,R10R027,,X004,AWWA,umbrella_coordination,连接 MOSCO 等军属配偶俱乐部,成员俱乐部,Camp Foster/冲绳,membership; no funding inference,no,no,S041;S055;S079,membership pages,E4,human_revised,
+R10FN036,R10R028,,X004,AWWA,umbrella_coordination,Army Community Group 成员线索,成员俱乐部,冲绳美军基地社区,membership; identity pending,no,no,S041;S072;S081,community sources,E3,needs_second_source,
+R10FN037,R10R029,,X006,KOSC,aggregate_charity_reporting,报告 scholarships 与 AWWA 合计捐赠,混合 recipient 范围,Kadena/冲绳,aggregate; no allocation,no,no,S075,KOSC charity page,E4,needs_local_retrieval,
+R10FN038,R10R030,,X004,AWWA,aggregate_charity_reporting,长期支持冲绳福利设施的累计口径,未逐一列名福利设施,冲绳,aggregate; no annual allocation,no,no,S078,long-term aggregate report,E3,needs_local_retrieval,
+R10FN039,R10R031,2015,X004,AWWA,local_welfare_in_kind_support,向读谷残障成人设施捐赠无障碍车辆,残障成人与设施使用者,读谷,named in-kind donation,no,no,S094,DVIDS 2015-12-02,E3,needs_second_source,
+R10FN040,R10R032,2012,X004,AWWA,local_welfare_in_kind_support,向宇流麻社会福利机构捐赠无障碍车辆,老年人与福利服务使用者,宇流麻,named in-kind donation,no,no,S072,DVIDS 40-year article,E3,needs_second_source,
+R10FN041,R10R033,2012,X004,AWWA,military_community_youth_support,向 Boy Scouts Far East Council 捐赠皮划艇,美军社区童军,冲绳,named in-kind donation,no,no,S072,DVIDS 40-year article,E3,needs_second_source,
+R10FN042,R10R034,2025,X005,NOSCO,joint_local_childcare_support,参与向平敷屋课后托育中心交付三台工业冷风机,课后托育儿童与工作人员,平敷屋/宇流麻,joint in-kind contribution,no,no,S102,DVIDS joint donation report,E3,needs_second_source,只确认参与共同交付，不能归属全部物品或价值。
+R10FN043,R10R035,2024,X013,Okinawa Youth Council Program,public_diplomacy_opportunity,发布青年项目 NOFO,潜在申请者；recipient 未公开,冲绳,opportunity only; no award,no,no,S056;S082;S083;S084,NOFO and award-search records,E4,human_checked,机会公告不是拨款、award 或 recipient 关系。

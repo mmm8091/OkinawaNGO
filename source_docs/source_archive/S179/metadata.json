@@ -1,0 +1,27 @@
+{
+  "source_id": "S179",
+  "source_type": "official_or_primary_web_record",
+  "title": "辺野古県民投票の民意とこれから・元山仁士郎講座記録",
+  "year": "2021",
+  "url": "https://www.ichikawa-fusae.or.jp/20210313-1",
+  "what_it_supports": "R9C_PREF_2019: 2018-04-16组织成立日期",
+  "evidence_level": "E3",
+  "bias_note": "后续讲座记录；组织与请求代表角色优先使用官方R9S030/R9S031。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC028; module refs=R9:R9S021. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;retain_usable_with_limit_boundary.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S179\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S179\\metadata.json",
+  "sha256": "31ba306e06dbd36d2a9dddd788c6798fd9bed9dee585bb79541fdbf5374ad93b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:21.373800+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ichikawa-fusae.or.jp/20210313-1",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

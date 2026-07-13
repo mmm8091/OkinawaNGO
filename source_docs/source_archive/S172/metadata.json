@@ -1,0 +1,27 @@
+{
+  "source_id": "S172",
+  "source_type": "local_official",
+  "title": "1997年12月21日名護市民投票結果",
+  "year": "1997",
+  "url": "https://www.city.nago.okinawa.jp/kurashi/2018071901216/file_contents/19971221simintouhyou.xls",
+  "what_it_supports": "R9C_NAGO_1997: 完整票数、选举人、投票者、有效无效票和投票率",
+  "evidence_level": "E4",
+  "bias_note": "核心总计一致；不引用有90票差异的当日投票小计。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC020; module refs=R9:R9S022. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S172\\raw.xls",
+  "metadata_path": "source_docs\\source_archive\\S172\\metadata.json",
+  "sha256": "07ac1d864da150564a46ab9a5f05c130ac9b95c5e9e9b89f47c385a2286c69b4",
+  "content_type": "application/vnd.ms-excel",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:20.283492+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.nago.okinawa.jp/kurashi/2018071901216/file_contents/19971221simintouhyou.xls",
+    "status_code": "200",
+    "content_type": "application/vnd.ms-excel",
+    "content_length": "24064",
+    "last_modified": "Mon, 26 Aug 2019 07:31:48 GMT"
+  }
+}

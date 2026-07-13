@@ -1,0 +1,27 @@
+candidate_edge_id,qa_disposition,corrected_actor_id_or_provisional,corrected_place,corrected_frame_code,corrected_corpus_source_ids,qa_reason
+R4E001,human_semantic_review,PROV_R4_611_EXECUTIVE_COMMITTEE,,,R4S003,新闻具名的是“6・11自衛隊配備を止める市民集会”実行委員会；与 A012 的名称和持续性需人工 crosswalk
+R4E002,reject,,,,,R4S002 只给出县政府对一项陈情的处理说明，未具名 A013，也不能证明 A013 使用环境措辞
+R4E003,reject,,,,,R4S003 未具名 C015；组织名称相近不能替代正文归属
+R4E004,reject,A097,,,,R4S004 只支持一般水边环境保护；不支持 groundwater，也不支持部署争议 actor-frame
+R4E005,reject,A098,,,,R4S005 只支持一般海洋环境功能；environment_deployment 会把服务型环保 NPO 强行政治化
+R4E006,safe_merge,,,,R4S001,仅可作为宫古市地下水政策背景节点，不是反部署立场
+R4E007,safe_merge,,,,R4S006;R4S007;R4S009,官方计划和公开回答支持制度化撤离框架；R4S009 使用修正摘录
+R4E008,human_semantic_review,PROV_COUNCILOR_KUGAI_MINAKO,,,R4S008,自治参与质询来自具名议员；不能把个人提问直接归为整个市议会
+R4E009,human_semantic_review,PROV_COUNCILOR_KUGAI_MINAKO,,,R4S008,台湾有事／全岛撤离陈述来自具名议员，行政答复另行编码；不能聚合成 council stance
+R4E010,reject_current_evidence,,,,,R4S012 域名已转作旅游站；R4S010 判决匿名化且不具名 A011，当前两来源组合不能回指组织
+R4E011,reject,,,,,R4S016 只转述“石垣市民”意见，未具名 A010；不得把泛居民声音归给该组织
+R4E012,safe_merge,,,,R4S011,只表示石垣市发布议会审议结果的程序记录，不表示市政府赞成或反对公投
+R4E013,safe_merge,,,,R4S013,年度官方预案关系成立；各年度内容变化仍需另表比较
+R4E014,safe_merge,,,,R4S014,市议会决议明确要求医疗福祉、交通和补偿说明；政策要求不等于落实
+R4E015,safe_merge,,,,R4S014,市议会决议明确要求问卷等市民意思确认；不是部署公投
+R4E016,human_semantic_review,,,,R4S015,只能保留为“该场 23 人意见交换会出现的匿名发言”；不能代表石垣居民总体
+R4E017,human_semantic_review,,,,R4S015,需逐条区分匿名居民问题和行政答复；不宜建立统一 RESIDENTS_ISHIGAKI actor
+R4E018,safe_merge,,,,R4S017,QAB 明确具名 A014、委员长和投票事件；仅支持 2015 当次事件，不支持组织长期持续性
+R4E019,reject,,,,,本包没有 corpus source；E2 旧线索不能在本包生成可合并关系
+R4E020,reject,,Yonaguni,F_LIFE,R4S022;R4S023,修正后的 R4S022 支持自治，R4S023 支持停止联合训练；两者均不足以编码 life_safety
+R4E021,safe_merge,,,,R4S023,新闻明确具名 A016 并记录停止联合训练请求；一次行动不代表全部长期主张
+R4E022,safe_merge,,,,R4S020,町政府法定国民保护计划关系成立；不代表部署立场
+R4E023,safe_merge,,,,R4S018;R4S019,防卫省／陆自的前线与沿岸监视自我框架明确；必须与地方社会声音分栏
+R4E024,human_semantic_review,,,F_FTE,R4S024,可安全编码“防卫省举办新导弹部队说明会”；procedural_fairness 需有程序评价或居民回应后再用
+R4E025,human_semantic_review,,Sakishima,,R4S021,来源覆盖先岛五市町村；若保留应改为先岛区域级，不应只落到与那国
+R4E026,safe_merge,,,,R4S025,与那国—佐贺撤离接收图上训练关系明确；不能写成实际运力已验证

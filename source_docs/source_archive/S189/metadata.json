@@ -1,0 +1,27 @@
+{
+  "source_id": "S189",
+  "source_type": "prefectural_official",
+  "title": "沖縄県公報号外第17号 条例制定請求代表者証明書",
+  "year": "2018",
+  "url": "https://www.pref.okinawa.jp/kenkouhou/H30/5gatsu/180523gogai17.pdf",
+  "what_it_supports": "R9C_PREF_2019: 33名条例制定请求代表者名单",
+  "evidence_level": "E4",
+  "bias_note": "名单不是组织成员名册。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC043; module refs=R9:R9S031. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S189\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S189\\metadata.json",
+  "sha256": "69f8f8bd173bcb15d0ca731938fdc34206b897f7434b80cc44f3936cffbde270",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:27.300721+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kenkouhou/H30/5gatsu/180523gogai17.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "230604",
+    "last_modified": "Wed, 23 May 2018 01:18:42 GMT"
+  }
+}

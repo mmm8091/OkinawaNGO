@@ -113,7 +113,9 @@ def load_metrics() -> dict[str, int]:
     candidates = read_csv(MODULE / "actor_registry_extension_candidates_2020_mmc_v0.csv")
 
     arch = Counter(r["archive_status"] for r in manifest)
-    real_url = arch.get("archived", 0) + arch.get("manual_archived", 0)
+    local_archived = arch.get("archived", 0) + arch.get("manual_archived", 0)
+    failed = arch.get("failed", 0)
+    real_url = local_archived + failed
     inferred = arch.get("skipped_inferred_url", 0)
     non_url = arch.get("skipped_non_url_reference", 0)
 
@@ -126,6 +128,8 @@ def load_metrics() -> dict[str, int]:
         "places": len(places),
         "sources": len(manifest),
         "real_url": real_url,
+        "local_archived": local_archived,
+        "failed": failed,
         "inferred": inferred,
         "non_url": non_url,
         "archived": arch.get("archived", 0),
@@ -723,8 +727,8 @@ def build_html(m: dict[str, int]) -> str:
   <div class="metric"><div class="num">{m['issue_edges']}+{m['place_edges']}+{m['funding']}</div>
     <div class="lab">候选关系边</div>
     <div class="sub">议题 {m['issue_edges']} · 地点 {m['place_edges']} · 资助样本 {m['funding']}（均为候选）</div></div>
-  <div class="metric"><div class="num">{m['real_url']}/{m['sources']}</div><div class="lab">来源本地归档</div>
-    <div class="sub">{m['archived']} archived + {m['manual_archived']} manual · 0 pending</div></div>
+  <div class="metric"><div class="num">{m['local_archived']}/{m['real_url']}</div><div class="lab">HTTP 来源本地归档</div>
+    <div class="sub">{m['archived']} archived + {m['manual_archived']} manual · {m['failed']} access failed</div></div>
 </div>
 <div class="metrics" style="margin-top:14px">
   <div class="metric"><div class="num">5</div><div class="lab">R 模块 v0 交付</div>

@@ -1,0 +1,27 @@
+{
+  "source_id": "S170",
+  "source_type": "local_official",
+  "title": "国民保護共同訓練住民意見と回答",
+  "year": "2025",
+  "url": "https://www.city.miyakojima.lg.jp/soshiki/shityo/soumubu/bousaikikikannri/oshirase/2026-0513-1044-269.html",
+  "what_it_supports": "Miyako: 公开问答说明撤离推演以港口机场仍可使用为前提 [frontline_taiwan_evacuation;procedural_fairness]",
+  "evidence_level": "E4",
+  "bias_note": "应人工编码居民疑问与政府回答的不同立场 | 原摘录“空港や港湾などのインフラ”在页面及两份附件中未找到；原“基础设施仍可用”释义也不受该问答支持",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC017; module refs=R4:R4S009. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S170\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S170\\metadata.json",
+  "sha256": "908bf080fb905a6450be781af428710379e93533d0ed83307af02191b06643a5",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:15.111831+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.miyakojima.lg.jp/soshiki/shityo/soumubu/bousaikikikannri/oshirase/2026-0513-1044-269.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "43267",
+    "last_modified": "Thu, 09 Jul 2026 08:22:24 GMT"
+  }
+}

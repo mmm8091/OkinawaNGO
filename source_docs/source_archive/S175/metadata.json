@@ -1,0 +1,27 @@
+{
+  "source_id": "S175",
+  "source_type": "local_official",
+  "title": "冲绳市 FY2024 交付金事业检证表",
+  "year": "2024",
+  "url": "https://www.city.okinawa.okinawa.jp/documents/1858/r0607okinawashi.pdf",
+  "what_it_supports": "R10 administrative-collaboration evidence: KIP PDF pp.5-6",
+  "evidence_level": "E4",
+  "bias_note": "archive and add to source log before main-table merge | source metadata inferred from crosswalk; no archive performed",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC023; module refs=R10:R10S07. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_R10_inferred_type_year_and_support_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S175\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S175\\metadata.json",
+  "sha256": "992e473a4f374d5db0510e6e48d8a676cbd1704cf44f99b0b9fe6b8a4cabd1d6",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:38.841905+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.okinawa.okinawa.jp/documents/1858/r0607okinawashi.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "559817",
+    "last_modified": "Fri, 24 Oct 2025 07:15:03 GMT"
+  }
+}

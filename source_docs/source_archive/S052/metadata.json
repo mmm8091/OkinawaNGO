@@ -12,7 +12,7 @@
   "archive_status": "archived",
   "local_path": "source_docs\\source_archive\\S052\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S052\\metadata.json",
-  "sha256": "8aee36239be661a57c3801fca91279807a01518e082f9a9a0ed1225d33842de1",
+  "sha256": "6aa498888ec1680e8d88100ca5312a91cb8f32dd1bd065ecb50b6467cafb5d35",
   "content_type": "text/html; charset=UTF-8",
   "http_status": "200",
   "archived_at_utc": "2026-07-11T20:49:06.462382+00:00",
@@ -23,5 +23,13 @@
     "content_type": "text/html; charset=UTF-8",
     "content_length": "",
     "last_modified": ""
-  }
+  },
+  "sha256_reconciliation_history": [
+    {
+      "previous_sha256": "8aee36239be661a57c3801fca91279807a01518e082f9a9a0ed1225d33842de1",
+      "artifact_sha256": "6aa498888ec1680e8d88100ca5312a91cb8f32dd1bd065ecb50b6467cafb5d35",
+      "reconciled_at_utc": "2026-07-13T11:05:51.973154+00:00",
+      "method": "local_artifact_no_refetch"
+    }
+  ]
 }

@@ -1,0 +1,27 @@
+{
+  "source_id": "S171",
+  "source_type": "local_official",
+  "title": "その他の選挙（県民投票・市民投票）",
+  "year": "2026",
+  "url": "https://www.city.nago.okinawa.jp/kurashi/2018071901216",
+  "what_it_supports": "R9C_NAGO_1997: 1997投票日期与官方结果文件入口",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC019; module refs=R9:R9S003. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S171\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S171\\metadata.json",
+  "sha256": "e93874c8f0fe5be3fa964d47b0b752af8172f9bf450044b25a3d37f462a82c70",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:18.076895+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.nago.okinawa.jp/kurashi/2018071901216",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "13824",
+    "last_modified": "Thu, 06 Jun 2024 01:01:34 GMT"
+  }
+}

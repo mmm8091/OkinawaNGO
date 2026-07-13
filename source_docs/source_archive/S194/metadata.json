@@ -1,0 +1,27 @@
+{
+  "source_id": "S194",
+  "source_type": "local_news",
+  "title": "石垣住民投票訴訟 最高裁で敗訴確定",
+  "year": "2024",
+  "url": "https://www.qab.co.jp/news/20241007226830.html",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 2024-09-26最高裁决定后败诉确定",
+  "evidence_level": "E2",
+  "bias_note": "不据此确定棄却或不受理。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC049; module refs=R9:R9S028. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;retain_usable_with_limit_boundary.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S194\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S194\\metadata.json",
+  "sha256": "fe846e9d7ea800ac2b039e96ec34c55b5d8b4fd57210462affde60fa250f8bb3",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:50.166395+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.qab.co.jp/news/20241007226830.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

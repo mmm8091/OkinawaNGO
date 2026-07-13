@@ -1,0 +1,27 @@
+{
+  "source_id": "S186",
+  "source_type": "prefectural_official",
+  "title": "FY2024 第3回多文化共生万国津梁会议纪要",
+  "year": "2024",
+  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/034/046/3gaiyo.pdf",
+  "what_it_supports": "R10 administrative-collaboration evidence: secretariat role",
+  "evidence_level": "E4",
+  "bias_note": "archive and add to source log before main-table merge | source metadata inferred from crosswalk; no archive performed",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC040; module refs=R10:R10S08. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_R10_inferred_type_year_and_support_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S186\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S186\\metadata.json",
+  "sha256": "c5d950f3e96cac20c7fa64cc22a4d5ccafac00f097e20cd743c7def5930b0393",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:49.973300+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/034/046/3gaiyo.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "946289",
+    "last_modified": "Fri, 14 Mar 2025 08:18:01 GMT"
+  }
+}

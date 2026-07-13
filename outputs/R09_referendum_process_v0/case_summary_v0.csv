@@ -1,0 +1,5 @@
+﻿case_id,case_name,place,date_start,date_end,vote_held,institutional_entry,institutional_gate_result,post_gate_path,accepted_stage_count,pending_stage_count,mechanism_summary,interpretation_limit
+R9C_NAGO_1997,1997 Nago heliport referendum,Nago,1997-06-27,1997-12-24,yes,"地方自治法第74条直接请求与17,539份有效签名",议会修正为四选项并立法，实际举行投票,"反对16,639对赞成14,267；三日后市长接受并辞职",6,0,公民诉求通过签名与条例门槛，但咨询型结果没有自动约束后续行政决定。,不能把反对多数写成法律否决；A068规范名仍待人工决定。
+R9C_YONAGUNI_2015,2015 Yonaguni JSDF-deployment referendum,Yonaguni,2012-08-31,2015-03,yes,自治体个别条例路径；2012意见广告与2015反对运动是并行公众动员,町议会／町长条例及修正后实施投票,地方报道632赞成、445反对；町长解释为推进依据,4,3,制度入口来自自治体条例，反对运动在制度外围争夺解释；投票结果再由行政解释。,A014/A015均维持E2并需当地检索；结果缺町选管原表。
+R9C_PREF_2019,2019 Okinawa Henoko prefectural referendum,Okinawa Prefecture,2018-04-16,2019-03-01,yes,"A051与请求代表组织全县直接请求；92,848份有效签名",县议会立法并以三选项修法实现全41市町村投票,"反对434,273（71.7%）；知事向日美政府通知",7,0,公民动员被转换为县条例、行政执行和对外通知资源。,签名者／请求代表不自动等于组织成员；结果不直接停止工程。
+R9C_ISHIGAKI_2018_2024,Ishigaki JSDF referendum drive and two litigation chains,Ishigaki,2018-10,2024-11-27,no,"14,263份有效签名与27名请求代表的直接请求",第一次市长提交案被否决；第二次市议员提案也被否决,实施义务付け与地位确认两条诉讼链；2021年常设条款删除,7,6,签名门槛达成仍可在议会议程和司法可诉性门槛被阻断，行动路径转向法院。,两条诉讼链必须分开；最高裁处分无一手前用中性措辞；A011不写组织原告。

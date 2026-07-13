@@ -1,0 +1,27 @@
+{
+  "source_id": "S190",
+  "source_type": "prefectural_official",
+  "title": "沖縄県公報号外第2号・県民投票条例一部改正",
+  "year": "2019",
+  "url": "https://www.pref.okinawa.jp/kenkouhou/H31/1gatsu/190131gogai2.pdf",
+  "what_it_supports": "R9C_PREF_2019: 加入第三选项",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC044; module refs=R9:R9S011. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S190\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S190\\metadata.json",
+  "sha256": "7344c0c492e21f482e0ced6e2bf8d347ca526a0d37f9fed0919f6846d4b38dc0",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:28.163588+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kenkouhou/H31/1gatsu/190131gogai2.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "214809",
+    "last_modified": "Thu, 31 Jan 2019 07:43:04 GMT"
+  }
+}

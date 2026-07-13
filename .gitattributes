@@ -10,3 +10,5 @@
 *.xls binary
 *.zip binary
 
+# Preserve source-archive evidence byte-for-byte; text normalization invalidates SHA256.
+source_docs/source_archive/**/raw.* binary

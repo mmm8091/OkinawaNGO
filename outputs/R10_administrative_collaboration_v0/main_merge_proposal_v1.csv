@@ -1,0 +1,36 @@
+﻿relation_observation_id,source_record_ids,merge_disposition,proposal_scope,human_gate
+R10R001,R10A001,propose_new_relation,candidate new relation after source archive and human review,required_before_main_table_mutation
+R10R002,R10A002,propose_new_relation,candidate new relation after source archive and human review,required_before_main_table_mutation
+R10R003,R10A003,propose_new_relation,candidate new relation after source archive and human review,required_before_main_table_mutation
+R10R004,R10A004;R10A005;R10A020;F033,update_existing_F033,evidence/time/amount observation update only; no duplicate edge,required_before_main_table_mutation
+R10R005,R10A006;R10A007;R10A019;F032,update_existing_F032,evidence/time/amount observation update only; no duplicate edge,required_before_main_table_mutation
+R10R006,R10A008;F031,update_existing_F031,evidence/time/amount observation update only; no duplicate edge,required_before_main_table_mutation
+R10R007,R10A009;F031,update_existing_F031_time_extension,evidence/time/amount observation update only; no duplicate edge,required_before_main_table_mutation
+R10R008,R10A010;R10V008,propose_new_relation_after_human_review,candidate new relation after source archive and human review,required_before_main_table_mutation
+R10R009,R10A011;R10V009,propose_new_relation_after_human_review,candidate new relation after source archive and human review,required_before_main_table_mutation
+R10R010,R10A012;R10V010,propose_new_relation_after_human_review,candidate new relation after source archive and human review,required_before_main_table_mutation
+R10R011,R10A013,module_only_pending_actor_crosswalk,module-only until actor/source/award crosswalk is resolved,required_before_main_table_mutation
+R10R012,R10A014;R10V012,module_only_pending_actor_crosswalk,module-only until actor/source/award crosswalk is resolved,required_before_main_table_mutation
+R10R013,R10A015,module_only_pending_actor_crosswalk,module-only until actor/source/award crosswalk is resolved,required_before_main_table_mutation
+R10R014,R10A016;R10V014,module_only_pending_actor_crosswalk,module-only until actor/source/award crosswalk is resolved,required_before_main_table_mutation
+R10R015,R10A017,module_only_pending_actor_crosswalk,module-only until actor/source/award crosswalk is resolved,required_before_main_table_mutation
+R10R016,R10A018,module_only_pending_award_record,module-only until actor/source/award crosswalk is resolved,required_before_main_table_mutation
+R10R017,F011,already_in_main_F011,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R018,F003;F004;F005,module_only_consolidated_service_relation,module-only until actor/source/award crosswalk is resolved,required_before_main_table_mutation
+R10R019,F002,already_in_main_F002,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R020,F034,already_in_main_F034,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R021,F035,already_in_main_F035,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R022,F021,already_in_main_F021,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R023,F026,already_in_main_F026,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R024,F006,already_in_main_F006,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R025,F007,already_in_main_F007,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R026,F022,already_in_main_F022,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R027,F023,already_in_main_F023,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R028,F024,already_in_main_F024,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R029,F025,replace_F025_with_aggregate_observation_proposal,candidate new relation after source archive and human review,required_before_main_table_mutation
+R10R030,F027,already_in_main_F027,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R031,F028,already_in_main_F028,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R032,F029,already_in_main_F029,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R033,F030,already_in_main_F030,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R034,F036,already_in_main_F036,no new edge; preserve as formal R10 crosswalk,required_before_main_table_mutation
+R10R035,F012,do_not_merge_as_award_or_recipient,retain opportunity-only relation; never merge as award/recipient,required_before_main_table_mutation

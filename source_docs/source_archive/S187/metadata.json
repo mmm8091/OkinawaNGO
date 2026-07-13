@@ -1,0 +1,27 @@
+{
+  "source_id": "S187",
+  "source_type": "prefectural_official",
+  "title": "辺野古新基地建設問題の経緯",
+  "year": "2026",
+  "url": "https://www.pref.okinawa.jp/heiwakichi/futenma/1017409/1017427.html",
+  "what_it_supports": "R9C_PREF_2019: 投票结果与结果通知",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC041; module refs=R9:R9S012. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S187\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S187\\metadata.json",
+  "sha256": "ab63082ff6ab113df5cb98db3df9a5a2b50b3d2dda4c88d538e14d49288da9ba",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:06.262878+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/heiwakichi/futenma/1017409/1017427.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 09:28:45 GMT"
+  }
+}

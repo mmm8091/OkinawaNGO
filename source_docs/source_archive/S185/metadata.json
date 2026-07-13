@@ -1,0 +1,27 @@
+{
+  "source_id": "S185",
+  "source_type": "official_legislative_record",
+  "title": "沖縄県議会軍特委員会記録 県民投票条例請求代表者参考人",
+  "year": "2018",
+  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/021/212/h301002gun-1.pdf",
+  "what_it_supports": "R9C_PREF_2019: A051、元山、安里、中村的组织身份与请求代表角色",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC039; module refs=R9:R9S030. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S185\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S185\\metadata.json",
+  "sha256": "e30f2936ba78d7ca6c4b617330779744324ff34a321c5bafb57cb1df67b88360",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:44.662030+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/021/212/h301002gun-1.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "421114",
+    "last_modified": "Mon, 04 Aug 2025 00:12:59 GMT"
+  }
+}

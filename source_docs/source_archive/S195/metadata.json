@@ -1,0 +1,27 @@
+{
+  "source_id": "S195",
+  "source_type": "local_official",
+  "title": "平成27年度 与那国町施政方針",
+  "year": "2015",
+  "url": "https://www.town.yonaguni.okinawa.jp/docs/2018041100076/file_contents/H27siseihousin.pdf",
+  "what_it_supports": "R9C_YONAGUNI_2015: 町长对投票结果的行政解释",
+  "evidence_level": "E4",
+  "bias_note": "官方立场不替代完整结果表。",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC050; module refs=R9:R9S006. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S195\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S195\\metadata.json",
+  "sha256": "92d79a3396fc637ccd1d0889232334cf41490c78d663197e06488ec41a710a0c",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:08:57.267016+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.town.yonaguni.okinawa.jp/docs/2018041100076/file_contents/H27siseihousin.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "512803",
+    "last_modified": "Tue, 11 Mar 2025 01:26:41 GMT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S173",
+  "source_type": "local_official",
+  "title": "冲绳市 FY2019 交付金事业检证表",
+  "year": "2019",
+  "url": "https://www.city.okinawa.okinawa.jp/documents/1858/1kanryou.pdf",
+  "what_it_supports": "R10 administrative-collaboration evidence: KIP PDF pp.9-10",
+  "evidence_level": "E4",
+  "bias_note": "archive and add to source log before main-table merge | source metadata inferred from crosswalk; no archive performed",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC021; module refs=R10:R10S05. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_R10_inferred_type_year_and_support_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S173\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S173\\metadata.json",
+  "sha256": "cebbb180a28b7897f89eca99cc82f642fa42f8b791cf406a3025a05af0e90ef4",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:22.618588+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.okinawa.okinawa.jp/documents/1858/1kanryou.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "750695",
+    "last_modified": "Wed, 10 Aug 2022 08:30:05 GMT"
+  }
+}

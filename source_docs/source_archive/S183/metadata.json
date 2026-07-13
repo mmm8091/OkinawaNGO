@@ -1,0 +1,27 @@
+{
+  "source_id": "S183",
+  "source_type": "prefectural_official",
+  "title": "冲绳县 FY2024 NPO 协作调查结果汇总",
+  "year": "2024",
+  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/917/2r6kekka.pdf",
+  "what_it_supports": "R10 administrative-collaboration evidence: PDF p.2 mechanism-code dictionary",
+  "evidence_level": "E4",
+  "bias_note": "code-definition source; archive and add before merge | source metadata inferred from crosswalk; no archive performed",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC037; module refs=R10:R10S12. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope;confirm_R10_inferred_type_year_and_support_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S183\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S183\\metadata.json",
+  "sha256": "2b23a64bbf49fb74ba1ebac86391aebae4a36aad509c0f72bb53ef841f4ed0a7",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:29.546865+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/917/2r6kekka.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "448728",
+    "last_modified": "Tue, 09 Sep 2025 02:57:07 GMT"
+  }
+}

@@ -1,0 +1,9 @@
+﻿source_prerequisite_id,source_ref,title,url,required_locator,current_status,affected_review_item_ids,archive_verified,main_source_id,human_notes
+HR-018-S01,R10S05,冲绳市 FY2019 交付金事业检证表,https://www.city.okinawa.okinawa.jp/documents/1858/1kanryou.pdf,KIP PDF pp.9-10,pending_archive_and_source_log_prerequisite,HR-018-02,,,
+HR-018-S02,R10S06,冲绳市 FY2020 交付金事业检证表,https://www.city.okinawa.okinawa.jp/documents/1858/2kannryou.pdf,KIP PDF pp.9-10,pending_archive_and_source_log_prerequisite,HR-018-03,,,
+HR-018-S03,R10S07,冲绳市 FY2024 交付金事业检证表,https://www.city.okinawa.okinawa.jp/documents/1858/r0607okinawashi.pdf,KIP PDF pp.5-6,pending_archive_and_source_log_prerequisite,HR-018-04,,,
+HR-018-S04,R10S08,FY2024 第3回多文化共生万国津梁会议纪要,https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/034/046/3gaiyo.pdf,secretariat role,pending_archive_and_source_log_prerequisite,HR-018-05,,,
+HR-018-S05,R10S09,ONC 的活动,https://www.oki-ngo.org/project,KIP/NGO consultant function,pending_archive_and_source_log_prerequisite,HR-018-04,,,
+HR-018-S06,R10S10,Koza International Plaza 设施页,https://www.city.okinawa.okinawa.jp/k034/sportsbunka/bunkarekishi/bunkageijutsu/3938939394.html,facility/service scope,pending_archive_and_source_log_prerequisite,HR-018-04,,,
+HR-018-S07,R10S11,冲绳县 FY2024 第一季度随意合同实绩（知事公室）,https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/015/127/koushitsu1.pdf,PDF p.1 A066; p.2 A088,pending_archive_and_source_log_prerequisite,HR-018-08;HR-018-09;HR-018-10,,,
+HR-018-S08,R10S12,冲绳县 FY2024 NPO 协作调查结果汇总,https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/917/2r6kekka.pdf,PDF p.2 mechanism-code dictionary,pending_archive_and_source_log_prerequisite,HR-018-05;HR-018-08;HR-018-09;HR-018-10;HR-018-11;HR-018-12;HR-018-13;HR-018-14;HR-018-15;HR-018-16,,,

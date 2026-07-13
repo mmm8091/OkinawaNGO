@@ -1,0 +1,27 @@
+{
+  "source_id": "S178",
+  "source_type": "court_record",
+  "title": "那覇地方裁判所特別保存事件一覧",
+  "year": "2024",
+  "url": "https://www.courts.go.jp/naha/vc-files/naha/2024/chisai/minji/tokubetuhozon/R3kanketubunitiranhyou.pdf",
+  "what_it_supports": "R9C_ISHIGAKI_2018_2024: 令和元年行ウ14/15及终局日",
+  "evidence_level": "E4",
+  "bias_note": "Process/source fact only; do not infer organization continuity, alliance, or later authorization.",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC027; module refs=R9:R9S016. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S178\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S178\\metadata.json",
+  "sha256": "214e352ea135c75d31e25100a15a6b908aa6db91aabaf81c8fe30e5cdf405a58",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:07:15.300195+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.courts.go.jp/naha/vc-files/naha/2024/chisai/minji/tokubetuhozon/R3kanketubunitiranhyou.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "406649",
+    "last_modified": "Tue, 09 Sep 2025 11:37:50 GMT"
+  }
+}

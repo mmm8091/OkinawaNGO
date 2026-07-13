@@ -1,0 +1,27 @@
+{
+  "source_id": "S169",
+  "source_type": "local_official",
+  "title": "宮古島市国民保護計画",
+  "year": "2019",
+  "url": "https://www.city.miyakojima.lg.jp/kurashi/bousai/bousaijyouhou/2019-0613-1126-269.html",
+  "what_it_supports": "Miyako: 市政府以武力攻击和大规模恐怖事件为国民保护计划的法定情境 [frontline_taiwan_evacuation;life_safety]",
+  "evidence_level": "E4",
+  "bias_note": "法定规划不等于冲突将发生 | 法定国民保护计划情境定位准确",
+  "review_status": "ai_seeded",
+  "notes": "Phase-1 module source integration SMC016; module refs=R4:R4S006. Source metadata remains AI-seeded; source inclusion does not approve the supported relation or interpretation. Review prerequisite: approve_new_source_metadata_and_scope.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S169\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S169\\metadata.json",
+  "sha256": "ee0b319a2c87075ffcb591f778bcda82f5d91c5db325e8b32c068046b6cd860d",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T10:06:14.130310+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.miyakojima.lg.jp/kurashi/bousai/bousaijyouhou/2019-0613-1126-269.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "16410",
+    "last_modified": "Thu, 07 Mar 2024 08:33:33 GMT"
+  }
+}
