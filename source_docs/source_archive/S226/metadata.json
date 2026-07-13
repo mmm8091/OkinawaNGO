@@ -1,0 +1,27 @@
+{
+  "source_id": "S226",
+  "source_type": "organization_website",
+  "title": "沖縄県サンゴ礁保全推進協議会設立の経緯",
+  "year": "2007",
+  "url": "https://ocrcc.sakura.ne.jp/about/keii.html",
+  "what_it_supports": "C034: preparatory meetings, 2008 founding and governance structure",
+  "evidence_level": "E4",
+  "bias_note": "Formation by a prefectural project does not make the council identical to Okinawa Prefecture.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S226\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S226\\metadata.json",
+  "sha256": "c6e2ac85abd2592b6e099ec6a5670e7617b6e4ce375839adf34ab4709aa34738",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:57:02.750093+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ocrcc.sakura.ne.jp/about/keii.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "6647",
+    "last_modified": "Mon, 31 Mar 2025 06:28:48 GMT"
+  }
+}

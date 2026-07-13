@@ -1,0 +1,27 @@
+{
+  "source_id": "S210",
+  "source_type": "local_news",
+  "title": "島の水や歴史学ぶ／自衛隊配備考える集会",
+  "year": "2015",
+  "url": "https://www.miyakomainichi.com/news/post-79534/",
+  "what_it_supports": "C015: self-hosted groundwater/history/JSDF-deployment meeting and representative",
+  "evidence_level": "E3",
+  "bias_note": "Name appears in a quoted 基地配備 form; preserve as alias evidence pending human canonical decision.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S210\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S210\\metadata.json",
+  "sha256": "56f2e40ed88d8f2dcb8081196a897202c7f387831170ad9de406e6d965bcf278",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:55:14.533395+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.miyakomainichi.com/news/post-79534/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

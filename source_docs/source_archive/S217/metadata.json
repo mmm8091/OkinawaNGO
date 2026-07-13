@@ -1,0 +1,27 @@
+{
+  "source_id": "S217",
+  "source_type": "organization_filing",
+  "title": "2021年度事業報告書等",
+  "year": "2021",
+  "url": "https://www.npo-homepage.go.jp/npoportal/document/047024571/hokoku/2021700/2021%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf",
+  "what_it_supports": "C030: states activity was suspended and no FY2022 activity was planned",
+  "evidence_level": "E4",
+  "bias_note": "Negative action evidence; generic charter purpose alone is insufficient for this expansion round.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S217\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S217\\metadata.json",
+  "sha256": "1f63da53435908835a99315482c469125a74b746cb126adf9199ed8e176a38c7",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:12.111869+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-homepage.go.jp/npoportal/document/047024571/hokoku/2021700/2021%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "471937",
+    "last_modified": ""
+  }
+}

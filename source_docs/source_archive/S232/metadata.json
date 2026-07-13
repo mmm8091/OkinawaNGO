@@ -1,0 +1,27 @@
+{
+  "source_id": "S232",
+  "source_type": "official_jica_project_record",
+  "title": "沖縄県の平和希求の心をカンボジアの地雷対策に活かす草の根技術協力",
+  "year": "2023",
+  "url": "https://www.jica.go.jp/domestic/okinawa/information/topics/2023/1525168_14644.html",
+  "what_it_supports": "A088 identity: yes_designated_organization | direct issue support: yes_project_specific",
+  "evidence_level": "E4",
+  "bias_note": "Confirms a project role, not a payment amount or movement relation.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S232\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S232\\metadata.json",
+  "sha256": "ec12df938184cf95a18179573b89b811494ceae3bd12f2c3d4ecf00735c895d6",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:27.233458+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jica.go.jp/domestic/okinawa/information/topics/2023/1525168_14644.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "124708",
+    "last_modified": "Thu, 09 Jul 2026 09:59:14 GMT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S206",
+  "source_type": "government_report",
+  "title": "民間団体（女性団体等）のネットワーク（都道府県・政令指定都市）",
+  "year": "2024",
+  "url": "https://www.gender.go.jp/research/kenkyu/suishinjokyo/2024/pdf/rep/10.pdf",
+  "what_it_supports": "C011: current organization identity and network size",
+  "evidence_level": "E4",
+  "bias_note": "Network membership does not create stable alliance edges.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S206\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S206\\metadata.json",
+  "sha256": "011c3e6c1df40739670fee0d99e6443c9c25e64474005e21874ada56a816fead",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:54:55.661983+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.gender.go.jp/research/kenkyu/suishinjokyo/2024/pdf/rep/10.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "127712",
+    "last_modified": "Fri, 31 Jan 2025 03:57:17 GMT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S220",
+  "source_type": "government_corporate_record",
+  "title": "特定非営利活動法人美ぎ島宮古島",
+  "year": "2025",
+  "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=2360005003935",
+  "what_it_supports": "C032: current legal name and corporate identity",
+  "evidence_level": "E4",
+  "bias_note": "Corporate identity alone does not approve issue edges.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S220\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S220\\metadata.json",
+  "sha256": "efb7746c2b77bc726c98937a059be77af84bcca02f7daecf4ffe7fd63e9a1aa0",
+  "content_type": "text/html;charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:27.977780+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=2360005003935",
+    "status_code": "200",
+    "content_type": "text/html;charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

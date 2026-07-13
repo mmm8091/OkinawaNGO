@@ -1,0 +1,27 @@
+{
+  "source_id": "S201",
+  "source_type": "local_news",
+  "title": "琉球新報―女団協、米軍性暴力を巡る県民大会を呼び掛け",
+  "year": "2024",
+  "url": "https://ryukyushimpo.jp/national/entry-3299439.html",
+  "what_it_supports": "HR-013 A111: organizational history, named leadership and 2024 anti-sexual-violence mobilization",
+  "evidence_level": "E4",
+  "bias_note": "Use the historical base-removal action as a dated event, not proof of an unchanged alliance structure.",
+  "review_status": "human_checked",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S201\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S201\\metadata.json",
+  "sha256": "35d6cb070f73317609c1793b18f1c66c79463636d9d3d2628b2c5a201475fac0",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:53:52.493744+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/national/entry-3299439.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 11:53:53 GMT"
+  }
+}

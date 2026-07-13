@@ -1,0 +1,2 @@
+﻿actor_id,actor_name,human_decision_ref,human_decision,current_queue_disposition,affected_activation_ids,affected_source_keys,affected_HR010_task_ids,reason
+A094,一般社団法人沖縄県女性連合会,HR-013,out_of_scope_rejected,excluded_after_human_rejection,EA028;EA029;EA030;EA031,EA-S022;EA-S023,HR010-B6-021;HR010-B6-022;HR010-B6-023;HR010-B6-024,一般妇人会；HR-013明确剔除，不再进入registry或edge复核队列。

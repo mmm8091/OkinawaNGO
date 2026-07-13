@@ -1,0 +1,27 @@
+{
+  "source_id": "S240",
+  "source_type": "local_newspaper",
+  "title": "下地島への自衛隊配備に反対／平和運動連絡協",
+  "year": "2011",
+  "url": "https://www.miyakomainichi.com/2011/06/20401/",
+  "what_it_supports": "A096 identity: yes_secondary | direct issue support: yes_event_specific",
+  "evidence_level": "E2",
+  "bias_note": "Reported event and speaker claims; do not infer a stable coalition from attendance.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S240\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S240\\metadata.json",
+  "sha256": "5cecbe7718d2daaa7733f36995265ab370b194a8b818694ed4181acfe8ca3c30",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:00:38.946853+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.miyakomainichi.com/2011/06/20401/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

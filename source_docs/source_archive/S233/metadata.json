@@ -1,0 +1,27 @@
+{
+  "source_id": "S233",
+  "source_type": "organization_site_subunit_page",
+  "title": "各支部｜沖縄県教職員組合",
+  "year": "2026",
+  "url": "https://www.oki-tu.org/branch",
+  "what_it_supports": "A089 identity: yes_parent_site | direct issue support: yes_with_attribution_caveat",
+  "evidence_level": "E4",
+  "bias_note": "A branch statement cannot automatically be generalized to every prefectural-union unit; HR-010 must decide attribution.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S233\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S233\\metadata.json",
+  "sha256": "125e83d407d8cf6f8db8f7052687ccd6fe79b17e017c140d8244796ec509e4ff",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:28.118770+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.oki-tu.org/branch",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

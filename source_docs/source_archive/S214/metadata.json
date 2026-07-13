@@ -1,0 +1,27 @@
+{
+  "source_id": "S214",
+  "source_type": "organization_filing",
+  "title": "2024年度事業報告書等",
+  "year": "2024",
+  "url": "https://www.npo-homepage.go.jp/npoportal/document/047024579/hokoku/2024700/2024%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf",
+  "what_it_supports": "C029: states no principal activity and no operational foundation in FY2024",
+  "evidence_level": "E4",
+  "bias_note": "Negative continuity evidence; it must be carried into any actor note.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S214\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S214\\metadata.json",
+  "sha256": "1c044da32626a42fe699d62d53aa6bbbf50419d8f5267faf5a488acdb0cca8ae",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:04.285871+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-homepage.go.jp/npoportal/document/047024579/hokoku/2024700/2024%E5%B9%B4%E5%BA%A6%E4%BA%8B%E6%A5%AD%E5%A0%B1%E5%91%8A%E6%9B%B8%E7%AD%89.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "82096",
+    "last_modified": ""
+  }
+}

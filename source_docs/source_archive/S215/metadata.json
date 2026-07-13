@@ -1,0 +1,27 @@
+{
+  "source_id": "S215",
+  "source_type": "event_report",
+  "title": "辺野古埋め立て承認撤回シンポジウム",
+  "year": "2014",
+  "url": "https://iwj.co.jp/wj/open/archives/177154",
+  "what_it_supports": "C029: C029 organizer role in a Henoko-specific public symposium",
+  "evidence_level": "E3",
+  "bias_note": "An event organizer role is not proof of continued post-2014 activity or a stable alliance.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S215\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S215\\metadata.json",
+  "sha256": "e354aa9f8b362c868e3223f701ae06d945dc55abee104eee089e886dfea463e4",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:06.020782+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://iwj.co.jp/wj/open/archives/177154",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

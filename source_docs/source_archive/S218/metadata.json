@@ -1,0 +1,27 @@
+{
+  "source_id": "S218",
+  "source_type": "official_npo_portal",
+  "title": "宮古島自然緑化協会 行政入力情報",
+  "year": "2023",
+  "url": "https://www.npo-homepage.go.jp/npoportal/gyosei-print/047023569",
+  "what_it_supports": "C031: exact identity, representative, 2012 authorization, coastal/environment purpose and annual filings",
+  "evidence_level": "E4",
+  "bias_note": "No deployment-politics claim is supported.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S218\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S218\\metadata.json",
+  "sha256": "e0a4c412fcb4a5b1b1b4ebed88974977d35cf203652713ade30ed1e24f9f189c",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:21.981406+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-homepage.go.jp/npoportal/gyosei-print/047023569",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

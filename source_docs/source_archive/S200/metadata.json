@@ -1,0 +1,27 @@
+{
+  "source_id": "S200",
+  "source_type": "local_news",
+  "title": "沖縄タイムス―女団協、米軍性暴力を受け県民大会開催へ",
+  "year": "2024",
+  "url": "https://www.okinawatimes.co.jp/articles/-/1474162",
+  "what_it_supports": "HR-013 A111: named chair and 2024 prefectural rally concerning U.S. military sexual violence",
+  "evidence_level": "E4",
+  "bias_note": "Event-level mobilization; does not create stable alliance edges among participating groups.",
+  "review_status": "human_checked",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S200\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S200\\metadata.json",
+  "sha256": "218f03f5eba3f18852d685e1dafaf7b9302ed70e97826b6225360d38829593d1",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:53:44.913063+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.okinawatimes.co.jp/articles/-/1474162",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

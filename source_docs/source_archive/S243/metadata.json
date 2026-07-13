@@ -1,0 +1,27 @@
+{
+  "source_id": "S243",
+  "source_type": "organization_action_record",
+  "title": "PFAS血中濃度調査へ 市民連絡会が拡大幹事会",
+  "year": "2022",
+  "url": "https://darkwater.okinawa/pfas%E8%A1%80%E4%B8%AD%E6%BF%83%E5%BA%A6%E8%AA%BF%E6%9F%BB%E3%81%B8%E3%80%80%E5%B8%82%E6%B0%91%E9%80%A3%E7%B5%A1%E4%BC%9A%E3%81%8C%E6%8B%A1%E5%A4%A7%E5%B9%B9%E4%BA%8B%E4%BC%9A%EF%BC%885%E6%9C%8825/",
+  "what_it_supports": "A099 identity: yes | direct issue support: yes_event_specific",
+  "evidence_level": "E4",
+  "bias_note": "Evidence of the group’s health-risk action; not independent validation of causal claims.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S243\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S243\\metadata.json",
+  "sha256": "1f6e17ea43c5c9795db453b62422808a932d9e3e808d67f701ada53f374fe2d3",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:00:56.066226+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://darkwater.okinawa/pfas%E8%A1%80%E4%B8%AD%E6%BF%83%E5%BA%A6%E8%AA%BF%E6%9F%BB%E3%81%B8%E3%80%80%E5%B8%82%E6%B0%91%E9%80%A3%E7%B5%A1%E4%BC%9A%E3%81%8C%E6%8B%A1%E5%A4%A7%E5%B9%B9%E4%BA%8B%E4%BC%9A%EF%BC%885%E6%9C%8825/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

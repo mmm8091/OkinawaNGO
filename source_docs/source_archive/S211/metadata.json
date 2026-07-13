@@ -1,0 +1,27 @@
+{
+  "source_id": "S211",
+  "source_type": "association_report",
+  "title": "離島で初 石垣島と宮古島に支部結成",
+  "year": "2018",
+  "url": "https://www.min-iren.gr.jp/news-press/genki/20180731_35632.html",
+  "what_it_supports": "C015: same representative and explicit groundwater/base-contamination framing in 2018",
+  "evidence_level": "E3",
+  "bias_note": "Independent organizational mention; publisher has an advocacy position, so use for continuity and attributed statement only.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S211\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S211\\metadata.json",
+  "sha256": "fd48aec2f5fdf2a87d3e3cf2ca58893cb0c9f7a1777f03f5cffda71c25ac482b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:55:51.928512+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.min-iren.gr.jp/news-press/genki/20180731_35632.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

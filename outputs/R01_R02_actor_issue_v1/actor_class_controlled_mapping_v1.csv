@@ -22,5 +22,5 @@ media_or_advocacy_actor,1,out_of_schema_term,媒体／倡议观察节点,A026,ye
 public_diplomacy_grant_program,1,schema_term,国际合作／公共外交,X013,no,retain class term and map to analysis family,
 public_diplomacy_or_exchange_actor,1,schema_term,国际合作／公共外交,X012,no,retain class term and map to analysis family,
 public_institution_partner,3,schema_term,资助／赞助／公共机构,X011;A074;A075,no,retain class term and map to analysis family,
-womens_or_community_organization,1,out_of_schema_term,女性／人权／社区,A094,yes,decide whether to extend actor_class vocabulary or collapse to an existing broad class,
+womens_or_community_organization,1,out_of_schema_term,女性／人权／社区,A111,yes,decide whether to extend actor_class vocabulary or collapse to an existing broad class,
 womens_or_human_rights_ngo,2,out_of_schema_term,女性／人权／社区,A105;A107,yes,decide whether to extend actor_class vocabulary or collapse to an existing broad class,

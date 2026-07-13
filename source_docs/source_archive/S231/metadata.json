@@ -1,0 +1,27 @@
+{
+  "source_id": "S231",
+  "source_type": "official_jica_partner_page",
+  "title": "特定非営利活動法人 沖縄平和協力センター（OPAC）",
+  "year": "2022",
+  "url": "https://www.jica.go.jp/domestic/okinawa/activities/kaihatsu/festival/2022/organization_02/08.html",
+  "what_it_supports": "A088 identity: yes | direct issue support: yes_positioning",
+  "evidence_level": "E4",
+  "bias_note": "Administrative/international-cooperation node; do not recode as anti-base or movement funding.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S231\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S231\\metadata.json",
+  "sha256": "d2516f8d5fb129e1f7e6dcdd57a4fbb0ad0e60259bad9e900ebe383e40fdd22e",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:23.773219+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jica.go.jp/domestic/okinawa/activities/kaihatsu/festival/2022/organization_02/08.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "123380",
+    "last_modified": "Thu, 09 Jul 2026 09:59:12 GMT"
+  }
+}

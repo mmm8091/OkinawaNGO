@@ -1,0 +1,27 @@
+{
+  "source_id": "S238",
+  "source_type": "local_newspaper",
+  "title": "反対派市民が署名提出／陸自配備",
+  "year": "2015",
+  "url": "https://www.miyakomainichi.com/news/post-81162/",
+  "what_it_supports": "A095 identity: yes_secondary | direct issue support: yes_event_specific",
+  "evidence_level": "E2",
+  "bias_note": "Signature count is an event record, not membership size or alliance strength.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S238\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S238\\metadata.json",
+  "sha256": "d260fe117054e2b0ac9ceeda5851d2f0266b1514382b4fe0ea45602d141d9a4c",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:51.525385+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.miyakomainichi.com/news/post-81162/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

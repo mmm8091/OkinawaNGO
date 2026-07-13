@@ -1,0 +1,27 @@
+{
+  "source_id": "S204",
+  "source_type": "organization_site",
+  "title": "宮古島地下水研究会 公式サイト",
+  "year": "2026",
+  "url": "https://miyakojima-tikasui.com/",
+  "what_it_supports": "HR-013 follow-up lead: distinct Miyako groundwater organization for later direct phase-one assessment",
+  "evidence_level": "E4",
+  "bias_note": "Candidate lead only; does not resolve C015 identity and does not authorize registry entry.",
+  "review_status": "human_checked",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S204\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S204\\metadata.json",
+  "sha256": "2d970b2a70a836519b63eaedb5001e6ab468b9323099075440ea9817504a85f0",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:54:02.137066+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://miyakojima-tikasui.com/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

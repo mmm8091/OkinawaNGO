@@ -1,0 +1,19 @@
+﻿actor_id,actor_name,queries,domains_or_source_families_checked,exact_name_hits,retained_source_records,candidate_edge_count,online_outcome,searched_on
+A073,琉球沖縄国際支援プログラム,"""琉球沖縄国際支援プログラム"" | ""琉球・沖縄国際支援プログラム"" | ""Ryukyu Okinawa International Support Program""",general web; Japanese/English exact-name and variant searches,0,0,0,No exact organization or program record found; S033 is generic academic context and does not identify this entity.,2026-07-13
+A076,ジュゴン保護基金委員会（Save the Dugong Foundation）,"""ジュゴン保護基金委員会"" | ""Save the Dugong Foundation""",GovInfo; Earthjustice; JELF; Ryukyu Shimpo,multiple,3,3,Case-specific identity and direct issue link closed; continuity/legal status remain local.,2026-07-13
+A086,Turtle Island Restoration Network,site:seaturtles.org Okinawa dugong | Turtle Island Restoration Network mission,TIRN filings; Earthjustice; GovInfo,multiple,3,4,Identity and case-specific issue links closed.,2026-07-13
+A087,NPO法人世界版「平和の礎」を提案する会,"""世界版「平和の礎」を提案する会""",Cabinet Office NPO portal; organization site,multiple,2,3,Identity and statutory positioning closed.,2026-07-13
+A088,特定非営利活動法人沖縄平和協力センター,"""沖縄平和協力センター"" 国際平和協力 | site:opac.or.jp",Cabinet Office NPO portal; JICA; OPAC,multiple,3,2,Peace and international-cooperation links closed; no movement stance inferred.,2026-07-13
+A089,沖縄県教職員組合,site:oki-tu.org 沖縄県教職員組合 平和 基地,organization site and branch pages,multiple,2,2,Peace/anti-war links closed; branch Henoko attribution held back.,2026-07-13
+A090,沖縄県高等学校障害児学校教職員組合,site:oki-htu.or.jp 沖縄県高等学校障害児学校教職員組合 平和 基地,organization site,multiple,1,2,Peace and base-free march links closed.,2026-07-13
+A091,日本労働組合総連合会沖縄県連合会（連合沖縄）,site:rengo-okinawa.jp 米軍 基地 要請 辺野古 平和,organization site/action archive,multiple,4,5,Human-rights/life-safety/base/Henoko/peace candidates found.,2026-07-13
+A092,沖縄県労働組合総連合,site:okinawakenroren.org 沖縄県労連 基地 撤去 平和,organization site,multiple,1,3,Charter-level base/peace/anti-war links closed.,2026-07-13
+A093,全日本自治団体労働組合沖縄県本部,site:jichiro.okinawa 辺野古 平和行進 地方自治,organization site/action index,multiple,2,3,Henoko/autonomy/peace links found; some locators members-only.,2026-07-13
+A094,一般社団法人沖縄県女性連合会,site:okifuren.com 沖縄県女性連合会 平和 環境 基地,organization site/history,multiple,2,4,Women/peace/environment and dated base-action links found.,2026-07-13
+A095,止めよう「自衛隊配備」宮古郡民の会,"""止めよう「自衛隊配備」宮古郡民の会""",Okinawa legislature; Miyako Mainichi; Ryukyu Shimpo,multiple,3,4,"Anti-deployment, life-safety, groundwater concern and mobilization found.",2026-07-13
+A096,宮古平和運動連絡協議会,"""宮古平和運動連絡協議会"" 自衛隊 配備",Miyakojima council; Okinawa legislature; Miyako Mainichi,multiple,2,2,Formal anti-deployment and peace-framed event found.,2026-07-13
+A097,宮古島環境クラブ,site:npo-mec.net 宮古島環境クラブ 地下水,organization site,multiple,2,3,Environment/groundwater/biodiversity positioning found; no military link inferred.,2026-07-13
+A098,特定非営利活動法人宮古島海の環境ネットワーク,site:econet.jpn.org 宮古島海の環境ネットワーク 活動,organization site,multiple,2,2,Marine environment/biodiversity positioning found; no military link inferred.,2026-07-13
+A099,有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会,site:darkwater.okinawa PFAS 嘉手納 水道水 健康調査,organization site; Okinawa Prefecture health committee context,multiple,2,4,Groundwater/health/life-safety/environment links found with causality caveat.,2026-07-13
+A100,ミサイル配備から命を守るうるま市民の会,"""ミサイル配備から命を守るうるま市民の会""",Uruma council; Ryukyu Shimpo; Okinawa Times; Akahata,multiple,3,5,Anti-deployment/life-safety/frontline/Taiwan/mobilization links found; no own site.,2026-07-13
+A101,沖縄・琉球弧の声を届ける会,site:ryukyukohp.jimdofree.com 沖縄 琉球弧 声を届ける会,"organization multilingual site, event archive and statements",multiple,3,7,Security/frontline/Taiwan/anti-war/human-rights/international/environment links found.,2026-07-13

@@ -1,0 +1,27 @@
+{
+  "source_id": "S234",
+  "source_type": "organization_action_record",
+  "title": "連合2024平和行動in沖縄を開催",
+  "year": "2024",
+  "url": "https://www.rengo-okinawa.jp/cat-news/post-2174/",
+  "what_it_supports": "A091 identity: yes | direct issue support: yes_repeated_program",
+  "evidence_level": "E4",
+  "bias_note": "Participation and hosting are not proof of stable alliance with every attendee.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S234\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S234\\metadata.json",
+  "sha256": "ce8358a47bc71bd16f57f62f163fae110a11819e002d44212b1ac4184b3bf8fa",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:33.265923+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.rengo-okinawa.jp/cat-news/post-2174/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

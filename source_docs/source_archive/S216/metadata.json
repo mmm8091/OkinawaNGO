@@ -1,0 +1,27 @@
+{
+  "source_id": "S216",
+  "source_type": "official_npo_portal",
+  "title": "環境の未来を考える会 行政入力情報",
+  "year": "2026",
+  "url": "https://www.npo-homepage.go.jp/npoportal/gyosei-print/047024571",
+  "what_it_supports": "C030: 1999 authorization; 2025-12-07 dissolution after revocation of authorization",
+  "evidence_level": "E4",
+  "bias_note": "Current dissolution status blocks silent use as a current actor.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S216\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S216\\metadata.json",
+  "sha256": "c9a8f73eace479ea1828399b6abbdca24be943ebeb9a86f277e2e9f92a1a40b8",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:10.800183+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-homepage.go.jp/npoportal/gyosei-print/047024571",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

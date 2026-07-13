@@ -9,7 +9,7 @@
 
 当前 registry 有 118 个 actor，覆盖冲绳本地公民团体与 NPO、日本国内 NGO、国际倡议组织、法律网络、劳工／教育组织、女性／人权组织、基地社区服务与军属慈善、国际合作／公共外交项目，以及资助／赞助／公共机构节点。这个宽生态符合方案“不预设全部 actor 都是反基地阵营”的边界。
 
-但“118”不是完成指标。18 个 actor 尚无正式 actor–issue edge：A073 琉球沖縄国際支援プログラム、A076 ジュゴン保護基金委員会（Save the Dugong Foundation）、A086 Turtle Island Restoration Network、A087 NPO法人世界版「平和の礎」を提案する会、A088 特定非営利活動法人沖縄平和協力センター、A089 沖縄県教職員組合、A090 沖縄県高等学校障害児学校教職員組合、A091 日本労働組合総連合会沖縄県連合会（連合沖縄）、A092 沖縄県労働組合総連合、A093 全日本自治団体労働組合沖縄県本部、A094 一般社団法人沖縄県女性連合会、A095 止めよう「自衛隊配備」宮古郡民の会、A096 宮古平和運動連絡協議会、A097 宮古島環境クラブ、A098 特定非営利活動法人宮古島海の環境ネットワーク、A099 有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会、A100 ミサイル配備から命を守るうるま市民の会、A101 沖縄・琉球弧の声を届ける会。其中多为最近扩入的宫古、劳工、女性、PFAS 和和平教育组织。它们已有 registry `issue_tags`，但这些标签不能自动当成 edge；必须逐条回到来源建立关系证据。因此，下一轮线上工作的第一优先级是补齐这 18 个现有 actor 的 edge-level evidence，而不是机械补到 120。
+但“118”不是完成指标。17 个 actor 尚无正式 actor–issue edge：A073 琉球沖縄国際支援プログラム、A076 ジュゴン保護基金委員会（Save the Dugong Foundation）、A086 Turtle Island Restoration Network、A087 NPO法人世界版「平和の礎」を提案する会、A088 特定非営利活動法人沖縄平和協力センター、A089 沖縄県教職員組合、A090 沖縄県高等学校障害児学校教職員組合、A091 日本労働組合総連合会沖縄県連合会（連合沖縄）、A092 沖縄県労働組合総連合、A093 全日本自治団体労働組合沖縄県本部、A095 止めよう「自衛隊配備」宮古郡民の会、A096 宮古平和運動連絡協議会、A097 宮古島環境クラブ、A098 特定非営利活動法人宮古島海の環境ネットワーク、A099 有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会、A100 ミサイル配備から命を守るうるま市民の会、A101 沖縄・琉球弧の声を届ける会。其中多为最近扩入的宫古、劳工、女性、PFAS 和和平教育组织。它们已有 registry `issue_tags`，但这些标签不能自动当成 edge；必须逐条回到来源建立关系证据。因此，下一轮线上工作的第一优先级是补齐这 17 个现有 actor 的 edge-level evidence，而不是机械补到 120。
 
 ## Q2 / R1：这些组织如何分类？
 
@@ -21,11 +21,11 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 
 ## R2：哪些组织连接了哪些议题？
 
-当前 actor–issue 表有 218 条 edge，连接 100 个 actor 与 26 个议题；另有 18 个 registry actor 在图中保留为孤立节点。按复核层，55 条已人审，163 条仍是候选。按解释范围，42 条暂归为长期组织定位／持续角色，40 条为制度／案件角色，73 条为事件性声明／署名／行动，63 条仍待判定。
+当前 actor–issue 表有 222 条 edge，连接 101 个 actor 与 26 个议题；另有 17 个 registry actor 在图中保留为孤立节点。按复核层，59 条已人审，163 条仍是候选。按解释范围，43 条暂归为长期组织定位／持续角色，40 条为制度／案件角色，74 条为事件性声明／署名／行动，65 条仍待判定。
 
 这四层解决了旧 R2 的核心缺口：同一个 actor 同时出现于多个议题，并不自动证明它长期以这些议题为组织定位。`event_specific` 只能写成“公开参与某次声明／署名／行动”；`institutional_or_case_role` 只能写成“在某诉讼、服务或项目中承担公开角色”；只有来源支持使命、持续行动或组织目的时，才暂列 `organizational_positioning`。
 
-当前共有 71 个 actor 在 edge 表中连接至少两个议题，但只有 15 个 actor 至少有两个议题在 edge 两侧均已人审，10 个可暂归为长期定位型 bridge。正文优先使用双侧人审者：
+当前共有 72 个 actor 在 edge 表中连接至少两个议题，但只有 16 个 actor 至少有两个议题在 edge 两侧均已人审，10 个可暂归为长期定位型 bridge。正文优先使用双侧人审者：
 
 - A102 全国公害弁護団連絡会議：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
 - A103 全国基地爆音訴訟原告団連絡会議：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
@@ -36,15 +36,15 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 - A108 沖縄を再び戦場にさせない県民の会：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
 - A109 第4次嘉手納基地爆音差止訴訟弁護団：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
 - A110 辺野古に基地を絶対つくらせない大阪行動：全部 4 个议题，双侧人审可用 4 个；mixed_candidate_bridge。
+- A111 沖縄県女性団体連絡協議会：全部 4 个议题，双侧人审可用 4 个；mixed_candidate_bridge。
 - A002 ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）：全部 2 个议题，双侧人审可用 2 个；case_or_institutional_bridge。
 - A008 NGO非戦ネット：全部 2 个议题，双侧人审可用 2 个；mixed_candidate_bridge。
-- A016 与那国島の明るい未来を願うイソバの会：全部 2 个议题，双侧人审可用 2 个；mixed_candidate_bridge。
 
 ## 议题转化的当前证据
 
 共现最高的议题对如下。它们说明“同一 actor 的议题组合”，不表示 actor 之间结盟：
 
-- `anti_base × peace`：11 个共享 actor，其中 2 个在两侧均已人审，4 个在两侧均有长期定位标记。
+- `anti_base × peace`：12 个共享 actor，其中 3 个在两侧均已人审，4 个在两侧均有长期定位标记。
 - `anti_base × Henoko`：9 个共享 actor，其中 3 个在两侧均已人审，1 个在两侧均有长期定位标记。
 - `anti_base × biodiversity`：8 个共享 actor，其中 0 个在两侧均已人审，0 个在两侧均有长期定位标记。
 - `anti_base × legal`：8 个共享 actor，其中 3 个在两侧均已人审，0 个在两侧均有长期定位标记。
@@ -57,15 +57,15 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 
 ## 明显缺口与继续补材料的标准
 
-- **数据联接缺口**：18 个已登记 actor 没有 actor–issue edge。优先补来源摘录和 edge，不从 registry `issue_tags` 自动生成。
-- **薄议题层**：当前 actor 数不超过 3 的议题为：groundwater(3)、health_risk(1)、referendum(3)、international_cooperation(3)、environment(2)、women(2)、human_rights(2)、solidarity(2)、anti_war(1)、mobilization(1)。薄层中若又没有双侧人审，不能承担核心叙事。
+- **数据联接缺口**：17 个已登记 actor 没有 actor–issue edge。优先补来源摘录和 edge，不从 registry `issue_tags` 自动生成。
+- **薄议题层**：当前 actor 数不超过 3 的议题为：groundwater(3)、health_risk(1)、referendum(3)、international_cooperation(3)、environment(2)、women(3)、human_rights(3)、solidarity(2)、anti_war(1)、mobilization(1)。薄层中若又没有双侧人审，不能承担核心叙事。
 - **分类词表缺口**：6 个超出 schema 的 actor_class 术语和 2 个 `watchlist_only` 状态需 HR-019 决策。
-- **时间范围缺口**：63 条 edge 仍无法从当前 `relation_basis` 稳妥区分长期／案件／事件；已全部进入 HR-019 scope queue。
+- **时间范围缺口**：65 条 edge 仍无法从当前 `relation_basis` 稳妥区分长期／案件／事件；已全部进入 HR-019 scope queue。
 - **历史覆盖缺口**：当前网络明显偏向可在线检索的近年行动、2010/2015/2020 联署和现存官网，不能据此描述 1972 年以来各时期的总体组织结构。
 
 ## Registry 扩样：数量从属于模块缺层
 
-本包提出 9 个组织级候选，全部明确排除“一次性署名凑数”，且暂不计入 registry。7 个已有在线可核的持续组织／法人证据，但仍需找到与一期议题直接相连的 edge-level source；其余先解决组织身份或持续性。推荐顺序是：先激活现有 18 个孤立 actor，再对候选执行直接议题连接检索，最后才决定是否扩表。Registry 可以超过 120，也可以暂不超过；验收看的是新增 actor 是否补上 R1/R2 的解释层。
+本包提出 9 个组织级候选，全部明确排除“一次性署名凑数”，且暂不计入 registry。7 个已有在线可核的持续组织／法人证据，但仍需找到与一期议题直接相连的 edge-level source；其余先解决组织身份或持续性。推荐顺序是：先激活现有 17 个孤立 actor，再对候选执行直接议题连接检索，最后才决定是否扩表。Registry 可以超过 120，也可以暂不超过；验收看的是新增 actor 是否补上 R1/R2 的解释层。
 
 ## 图件怎么读
 

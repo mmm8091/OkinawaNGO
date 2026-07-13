@@ -1,0 +1,27 @@
+{
+  "source_id": "S205",
+  "source_type": "organization_report",
+  "title": "資料館だより No.73",
+  "year": "2024",
+  "url": "https://www.himeyuri.or.jp/wp/wp-content/uploads/dayori-new-073_20240531.pdf",
+  "what_it_supports": "C010: dated exhibitions, workshops, teacher training, publications and peace-memory work",
+  "evidence_level": "E4",
+  "bias_note": "Use for peace/education programming; overseas exhibition is not automatically international advocacy.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S205\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S205\\metadata.json",
+  "sha256": "4808ec5a33360e0c9b3aad54a2e45111ceda75413d3390289487a69673e41a96",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:54:04.481435+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.himeyuri.or.jp/wp/wp-content/uploads/dayori-new-073_20240531.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "2786245",
+    "last_modified": "Fri, 31 May 2024 01:16:12 GMT"
+  }
+}

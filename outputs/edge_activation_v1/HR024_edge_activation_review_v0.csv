@@ -1,0 +1,9 @@
+﻿task_id,review_object,actor_id,actor_name,issue_id,claim_or_question,source_keys,evidence_level,scope,prior_human_anchor,decision,reviewer,review_date,review_note
+HR024-001,identity_and_registry_retention,A073,琉球沖縄国際支援プログラム,,多轮日/英精确名称检索无可核实体；S033不支持该组织身份。应保留待当地核实、纠正名称，还是移出registry？,,E0,identity,,,,,
+HR024-002,actor_issue_edge_mapping,A076,ジュゴン保護基金委員会（Save the Dugong Foundation）,I004,A076以具名原告身份参加保护冲绳儒艮及其栖息地的NHPA诉讼。,EA-S002;EA-S001;EA-S003,E4,case,HR-014 R8C01/R8R004,,,,
+HR024-003,actor_issue_edge_mapping,A076,ジュゴン保護基金委員会（Save the Dugong Foundation）,I011,A076通过美国NHPA司法程序对国防部的域外文化资源审查提出挑战。,EA-S002;EA-S001,E4,case,HR-014 R8C01/R8R004,,,,
+HR024-004,actor_issue_edge_mapping,A076,ジュゴン保護基金委員会（Save the Dugong Foundation）,I003,该诉讼直接针对普天间机场迁往边野古沿岸、可能影响儒艮栖息地的计划。,EA-S001;EA-S002,E4,case,HR-014 R8C01/R8R004,,,,
+HR024-005,actor_issue_edge_mapping,A086,Turtle Island Restoration Network,I004,A086以美方具名原告身份参加冲绳儒艮保护诉讼。,EA-S006;EA-S005,E4,case,HR-014 R8C01/R8R002,,,,
+HR024-006,actor_issue_edge_mapping,A086,Turtle Island Restoration Network,I011,A086通过NHPA诉讼进入法律程序。,EA-S006;EA-S005,E4,case,HR-014 R8C01/R8R002,,,,
+HR024-007,actor_issue_edge_mapping,A086,Turtle Island Restoration Network,I012,A086作为美国海洋保护NGO原告，构成跨太平洋法律倡议路径的一环。,EA-S005;EA-S006,E4,case,HR-014 R8C01/R8R002,,,,
+HR024-008,actor_issue_edge_mapping,A086,Turtle Island Restoration Network,I005,A086参与的案件以珊瑚礁、海草床和濒危海洋物种栖息地受影响为核心事实背景。,EA-S005;EA-S004,E4,case,HR-014 R8C01/R8R002,,,,

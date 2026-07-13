@@ -4,6 +4,8 @@
 
 本目录是面向甲方的第二次进度同步材料，文风对齐第一次同步（简洁、保守、图表截图嵌入）。
 
+> 状态说明（2026-07-13）：`第二次进度同步_v0.md` 与 `fig/*.png` 是甲方已收到的历史快照，不随内部数据追改。`index.html` 与 `fig/*.html` 可由脚本重算当前数据；只有完成重新截图和人工图文复核后，才可另起版本对外发送。
+
 ## 对外交付物（发飞书云文档用）
 
 - `第二次进度同步_v0.md` — **主交付物**，手写的简洁进度稿。结构：本轮进展、研究模块菜单进度、
@@ -25,8 +27,8 @@ python scripts\make_formal_comm_package.py
 ```
 
 脚本读取 `data/interim` 各表、`outputs/explanatory_v0` 的矩阵 / 桥接 / 共同行动 CSV、
-`source_docs/source_archive` 归档 manifest 与 2020 MMC 候选表，因此图表数字始终反映当前数据。
-数据更新后重跑脚本，再用无头浏览器重截 `fig/*.png` 即可刷新。
+`source_docs/source_archive` 归档 manifest 与 2020 MMC 候选表，因此 HTML 图源反映当前数据。
+PNG 属已交付快照；数据更新后需重跑脚本、重截 PNG、检查图注，再以新版本号发布，不能静默覆盖既有对外材料。
 
 ## 口径
 

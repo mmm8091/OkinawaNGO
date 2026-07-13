@@ -1,0 +1,27 @@
+{
+  "source_id": "S229",
+  "source_type": "party_legal_filing",
+  "title": "Opening Brief, Center for Biological Diversity et al. v. Esper",
+  "year": "2019",
+  "url": "https://seaturtles.org/wp-content/uploads/2019/01/19-01-02-OPENING-BRIEF.pdf",
+  "what_it_supports": "A086 identity: yes_named_party | direct issue support: yes_case_specific",
+  "evidence_level": "E4",
+  "bias_note": "Use as litigation evidence only; do not infer broader political stance.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S229\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S229\\metadata.json",
+  "sha256": "e926b4fa886c91e6d06b23baa999c1737ff4ace41d3a686e634cbba4d7bc961e",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:57:59.114173+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://seaturtles.org/wp-content/uploads/2019/01/19-01-02-OPENING-BRIEF.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "995270",
+    "last_modified": "Tue, 08 Jan 2019 23:03:55 GMT"
+  }
+}

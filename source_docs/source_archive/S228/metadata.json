@@ -1,0 +1,27 @@
+{
+  "source_id": "S228",
+  "source_type": "organization_financial_filing",
+  "title": "Turtle Island Restoration Network Form 990 public disclosure",
+  "year": "2023",
+  "url": "https://seaturtles.org/wp-content/uploads/2025/01/TIRN-6.30.2024-Public-Disclosure-Copy-2.pdf",
+  "what_it_supports": "A086 identity: yes | direct issue support: mission_only",
+  "evidence_level": "E4",
+  "bias_note": "Establishes organizational identity and general marine mission, not the Okinawa case by itself.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S228\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S228\\metadata.json",
+  "sha256": "13034572e15ce25257b0f3b04278e87a13877d38dcd3fb2f72b4e720bf759fef",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:57:51.240570+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://seaturtles.org/wp-content/uploads/2025/01/TIRN-6.30.2024-Public-Disclosure-Copy-2.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "341873",
+    "last_modified": "Thu, 23 Jan 2025 21:42:42 GMT"
+  }
+}

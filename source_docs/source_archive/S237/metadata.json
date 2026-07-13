@@ -1,0 +1,27 @@
+{
+  "source_id": "S237",
+  "source_type": "local_newspaper",
+  "title": "止めよう「自衛隊配備」―70人の市民結集し結成会",
+  "year": "2015",
+  "url": "https://www.miyakomainichi.com/news/post-76312/",
+  "what_it_supports": "A095 identity: yes_secondary | direct issue support: yes_foundation_event",
+  "evidence_level": "E2",
+  "bias_note": "Statements are reported at the founding meeting; claims about risk and water impacts remain attributed to the group/speakers.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S237\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S237\\metadata.json",
+  "sha256": "13cf97e88f7b98d4b577d30521cc3054f12b45bb8a8116653ad4506be01e5272",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:46.454893+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.miyakomainichi.com/news/post-76312/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

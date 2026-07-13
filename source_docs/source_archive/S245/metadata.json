@@ -1,0 +1,27 @@
+{
+  "source_id": "S245",
+  "source_type": "organization_site",
+  "title": "沖縄・琉球弧の声とは",
+  "year": "2023",
+  "url": "https://ryukyukohp.jimdofree.com/%E3%83%9B%E3%83%BC%E3%83%A0/%E6%B2%96%E7%B8%84-%E7%90%89%E7%90%83%E5%BC%A7%E3%81%AE%E5%A3%B0%E3%81%A8%E3%81%AF/",
+  "what_it_supports": "A101 identity: yes | direct issue support: yes_positioning",
+  "evidence_level": "E4",
+  "bias_note": "Organization-authored positioning; does not establish the truth of projected contingency scenarios.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S245\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S245\\metadata.json",
+  "sha256": "0816892be47da0e33955a0563e6e855344ae6de89e519b55a497a1f81ce4564c",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:01:12.669338+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyukohp.jimdofree.com/%E3%83%9B%E3%83%BC%E3%83%A0/%E6%B2%96%E7%B8%84-%E7%90%89%E7%90%83%E5%BC%A7%E3%81%AE%E5%A3%B0%E3%81%A8%E3%81%AF/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

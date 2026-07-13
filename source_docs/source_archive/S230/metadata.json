@@ -1,0 +1,27 @@
+{
+  "source_id": "S230",
+  "source_type": "organization_site",
+  "title": "概要｜世界版「平和の礎」を提案する会",
+  "year": "2025",
+  "url": "https://www.ishiji.org/about",
+  "what_it_supports": "A087 identity: yes | direct issue support: yes_positioning",
+  "evidence_level": "E4",
+  "bias_note": "Organization-authored framing; distinguish aspiration from completed international participation.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S230\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S230\\metadata.json",
+  "sha256": "e16f1297ec033b4660de1b06970cd13c1ae24ad597b4b57a91e42845afb963d7",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:14.527531+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ishiji.org/about",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

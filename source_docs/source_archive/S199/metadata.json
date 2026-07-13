@@ -1,0 +1,27 @@
+{
+  "source_id": "S199",
+  "source_type": "foundation_site",
+  "title": "公益財団法人おきなわ女性財団 公式サイト",
+  "year": "2026",
+  "url": "https://www.okinawajosei.org/",
+  "what_it_supports": "Third-party program context for C011; not C011 organizational identity",
+  "evidence_level": "E4",
+  "bias_note": "The site belongs to おきなわ女性財団, not 沖縄県女性団体連絡協議会; do not label it C011's official site.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S199\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S199\\metadata.json",
+  "sha256": "995c666829d2cc161706c5a88b82cd5b1f9d730ea903fe0c0b06bcd045acc02d",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:53:41.089722+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.okinawajosei.org/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

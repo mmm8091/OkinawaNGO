@@ -1,0 +1,27 @@
+{
+  "source_id": "S203",
+  "source_type": "organization_site",
+  "title": "沖縄県サンゴ礁保全推進協議会 公式サイト",
+  "year": "2026",
+  "url": "https://ocrcc.sakura.ne.jp/",
+  "what_it_supports": "HR-013 C034: continuing mixed-sector coral-conservation platform | C034: current operation, election/general meeting and coral-conservation mission",
+  "evidence_level": "E4",
+  "bias_note": "Background administrative/coral platform; membership or public collaboration does not imply an anti-base stance. | Member presence is not an alliance edge.",
+  "review_status": "human_checked",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S203\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S203\\metadata.json",
+  "sha256": "dbb37ed3bde446f79911a1bea296fb7b0657e08097c127dd3436f9f7af7f0a73",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:54:00.172510+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ocrcc.sakura.ne.jp/",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "22213",
+    "last_modified": "Thu, 11 Jun 2026 02:46:30 GMT"
+  }
+}

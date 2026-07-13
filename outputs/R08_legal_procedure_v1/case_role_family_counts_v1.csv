@@ -1,0 +1,55 @@
+﻿case_id,case_short_label,role_family,accepted_role_count,cell_semantics
+R8C01,边野古／大浦湾儒艮,plaintiff,4,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,counsel,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,requester,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,commenter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,supporter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,non_party,2,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,defendant,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,proponent,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C01,边野古／大浦湾儒艮,institutional_recipient,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,plaintiff,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,counsel,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,requester,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,commenter,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,supporter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,non_party,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,defendant,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,proponent,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C02,边野古／大浦湾 EIA,institutional_recipient,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,plaintiff,2,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,counsel,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,requester,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,commenter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,supporter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,non_party,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,defendant,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,proponent,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C03,第三次嘉手纳噪音,institutional_recipient,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,plaintiff,2,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,counsel,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,requester,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,commenter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,supporter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,non_party,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,defendant,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,proponent,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C04,普天间周边噪音,institutional_recipient,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,plaintiff,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,counsel,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,requester,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,commenter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,supporter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,non_party,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,defendant,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,proponent,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C05,石垣部署住民投票,institutional_recipient,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,plaintiff,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,counsel,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,requester,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,commenter,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,supporter,2,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,non_party,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,defendant,1,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,proponent,0,accepted HR-014 role observations; zero means no accepted role row in this case
+R8C06,泡濑公金支出,institutional_recipient,0,accepted HR-014 role observations; zero means no accepted role row in this case

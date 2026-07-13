@@ -1,0 +1,27 @@
+{
+  "source_id": "S236",
+  "source_type": "organization_site",
+  "title": "自治労とは？｜自治労沖縄県本部",
+  "year": "2026",
+  "url": "https://www.jichiro.okinawa/about.php",
+  "what_it_supports": "A093 identity: yes | direct issue support: no",
+  "evidence_level": "E4",
+  "bias_note": "Identity only.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S236\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S236\\metadata.json",
+  "sha256": "bf652d1efb84fc54f06a006380557eb730db3861aa6a345144c8ecd097cce448",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:43.951925+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jichiro.okinawa/about.php",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

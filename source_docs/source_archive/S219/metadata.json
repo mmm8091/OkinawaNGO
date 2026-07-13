@@ -1,0 +1,27 @@
+{
+  "source_id": "S219",
+  "source_type": "association_directory",
+  "title": "NPO法人宮古島自然緑化協会",
+  "year": "2026",
+  "url": "https://miyako-island.net/activity/npo%E6%B3%95%E4%BA%BA%E5%AE%AE%E5%8F%A4%E5%B3%B6%E8%87%AA%E7%84%B6%E7%B7%91%E5%8C%96%E5%8D%94%E4%BC%9A/",
+  "what_it_supports": "C031: regular beach cleanups and continuing nature/tourism operation",
+  "evidence_level": "E3",
+  "bias_note": "Supports general environment/community function only.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S219\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S219\\metadata.json",
+  "sha256": "4d9f741181e52995542bfba947b50482ff181d53eeb4fc2bd1c74a205e4b3a2b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:23.443784+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://miyako-island.net/activity/npo%E6%B3%95%E4%BA%BA%E5%AE%AE%E5%8F%A4%E5%B3%B6%E8%87%AA%E7%84%B6%E7%B7%91%E5%8C%96%E5%8D%94%E4%BC%9A/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

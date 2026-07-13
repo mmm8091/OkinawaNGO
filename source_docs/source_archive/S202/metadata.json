@@ -1,0 +1,27 @@
+{
+  "source_id": "S202",
+  "source_type": "organization_site",
+  "title": "ひめゆり平和祈念財団について",
+  "year": "2026",
+  "url": "https://www.himeyuri.or.jp/establish/foundation/",
+  "what_it_supports": "HR-013 C010: public-interest foundation identity and war-memory/peace-education function | C010: full legal name; 1960 foundation; 2011 public-interest transition; museum/education mission",
+  "evidence_level": "E4",
+  "bias_note": "Background war-memory node only; do not infer an anti-base position or relation. | Approves identity/continuity only; does not imply base-politics stance.",
+  "review_status": "human_checked",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S202\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S202\\metadata.json",
+  "sha256": "ce103ca6718174904fbf716abc29d6ef1bdcca0ad23307c8f559b93fc860f03d",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:53:56.613243+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.himeyuri.or.jp/establish/foundation/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

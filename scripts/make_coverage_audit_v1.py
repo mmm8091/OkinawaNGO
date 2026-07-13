@@ -249,10 +249,13 @@ def build_implications(cells: list[dict[str, str]]) -> list[dict[str, str]]:
         int(row["count"]) for row in cells
         if row["facet"] == "source_type_x_archive" and row["subcategory"] == "failed"
     )
+    source_total = int(recent["denominator"])
+    place_total = int(henoko["denominator"])
+    actor_total = int(local["denominator"])
     return [
         {
             "dimension_id": "D1", "dimension_label": "时间",
-            "observed_skew": f"2020-current {recent['count']}/198 ({recent['share_pct']}%); 1972-1997 {early['count']}/198 ({early['share_pct']}%).",
+            "observed_skew": f"2020-current {recent['count']}/{source_total} ({recent['share_pct']}%); 1972-1997 {early['count']}/{source_total} ({early['share_pct']}%).",
             "visibility_mechanism": "Current official and organization pages survive and are searchable; early informal groups and renamed organizations leave thinner web traces.",
             "impact_on_q1_q3": "Q1/Q2 become a present-biased inventory/classification; longitudinal claims about organizational ecology are weakest.",
             "affected_modules": "R1;R5;R6;R7;R8;R10;R11",
@@ -262,7 +265,7 @@ def build_implications(cells: list[dict[str, str]]) -> list[dict[str, str]]:
         },
         {
             "dimension_id": "D2", "dimension_label": "地点",
-            "observed_skew": f"Henoko {henoko['count']} plus Okinawa Prefecture {prefecture['count']} = {int(henoko['count']) + int(prefecture['count'])}/124 actor-place observations.",
+            "observed_skew": f"Henoko {henoko['count']} plus Okinawa Prefecture {prefecture['count']} = {int(henoko['count']) + int(prefecture['count'])}/{place_total} actor-place observations.",
             "visibility_mechanism": "Henoko produces durable litigation, statement and NGO records; broad prefecture coding absorbs records without a more precise location.",
             "impact_on_q1_q3": "Q3 and comparisons among Henoko, Futenma, Kadena, Yonaguni, Ishigaki and Miyako are not symmetric.",
             "affected_modules": "R3;R4;R5;R8;R9",
@@ -272,11 +275,11 @@ def build_implications(cells: list[dict[str, str]]) -> list[dict[str, str]]:
         },
         {
             "dimension_id": "D3", "dimension_label": "actor 功能／来源层",
-            "observed_skew": f"Okinawa-local actors are {local['count']}/118 ({local['share_pct']}%); registry visibility is concentrated in citizen networks/groups and web-visible domestic/international NGOs.",
+            "observed_skew": f"Okinawa-local actors are {local['count']}/{actor_total} ({local['share_pct']}%); registry visibility is concentrated in citizen networks/groups and web-visible domestic/international NGOs.",
             "visibility_mechanism": "Named, incorporated or networked actors are easier to identify than short-lived committees, informal neighborhood groups and legacy names.",
             "impact_on_q1_q3": "Q1/Q2 and R1 may overstate durable/networked forms; R10/R11 layers are deliberately sampled and cannot be treated as complete sectors.",
             "affected_modules": "R1;R2;R5;R10;R11",
-            "interpretation_boundary": "The 118 actors are a value-driven working registry, not a census or a functional population distribution.",
+            "interpretation_boundary": f"The {actor_total} actors are a value-driven working registry, not a census or a functional population distribution.",
             "online_gap_action": "Resolve aliases, defunct sites, directories, membership pages and event lists for under-visible functional forms.",
             "local_gap_action": "Verify temporary committees, neighborhood groups, former names, continuity and representatives through local holdings."
         },
@@ -292,7 +295,7 @@ def build_implications(cells: list[dict[str, str]]) -> list[dict[str, str]]:
         },
         {
             "dimension_id": "D5", "dimension_label": "source type／archive",
-            "observed_skew": f"{archived}/198 records are archived/manual archived; {failed}/198 are failed captures. Organization sites and local news are the largest exact source types.",
+            "observed_skew": f"{archived}/{source_total} records are archived/manual archived; {failed}/{source_total} are failed captures. Organization sites and local news are the largest exact source types.",
             "visibility_mechanism": "The sample favors discoverable web pages and official/public records; transient pages and non-indexed local materials are disadvantaged.",
             "impact_on_q1_q3": "All three questions inherit survival, institutional-record and web-search bias; event/relationship modules are especially sensitive.",
             "affected_modules": "R1-R11",
@@ -350,11 +353,16 @@ def render_svg(
     places: list[dict[str, str]],
     archive: list[dict[str, str]],
 ) -> str:
+    actor_total = len(actors)
+    source_total = len(sources)
+    issue_total = len(issues)
+    place_total = len(places)
     period_counts = Counter(source_period(row["year"]) for row in sources)
     period_items = [(label, period_counts[label]) for label in ("1972-1997", "1998-2012", "2013-2019", "2020-current", "unknown")]
     period_items[-1] = ("unknown", period_counts["unknown/undated"])
 
     place_counts = Counter(row["place_name"] for row in places)
+    broad_place_count = place_counts["Henoko"] + place_counts["Okinawa Prefecture"]
     place_top, place_rest = top_categories(place_counts, 7)
     place_items = [(label, place_counts[label]) for label in place_top]
     place_items.append(("other places", sum(place_counts[label] for label in place_rest)))
@@ -374,6 +382,7 @@ def render_svg(
     issue_items.append(("other groups*", sum(issue_counts[label] for label in issue_rest)))
 
     archive_by_id = {row["source_id"]: row["archive_status"] for row in archive}
+    failed_total = sum(status == "failed" for status in archive_by_id.values())
     type_counts = Counter(row["source_type"] for row in sources)
     type_top, _ = top_categories(type_counts, 7)
     status_order = ["archived", "manual", "failed", "non-URL"]
@@ -441,22 +450,22 @@ def render_svg(
             xx += width
 
     body = ''.join([
-        panel(30, 170, "D1 时间", "source-log 年份分箱（n=198）", content_time,
-              "2020+ 资料占 63.1%；这反映网页存续与检索路径，不是组织增长。"),
-        panel(820, 170, "D2 地点", "actor-place 观察（n=124）", content_place,
-              "Henoko 与全县宽泛编码占 83/124；关键地点之间不能作对称密度比较。"),
-        panel(30, 580, "D3 actor 功能／来源层", "registry 原始 class 与 origin（n=118）", content_actor,
-              "名单偏向具名、网络化、网页可见 actor；118 是工作 registry，不是总体普查。"),
-        panel(820, 580, "D4 议题", "每组去重 actor；组间可重叠（n=118）", content_issue,
+        panel(30, 170, "D1 时间", f"source-log 年份分箱（n={source_total}）", content_time,
+              f"2020+ 资料占 {period_counts['2020-current'] / source_total * 100:.1f}%；这反映网页存续与检索路径，不是组织增长。"),
+        panel(820, 170, "D2 地点", f"actor-place 观察（n={place_total}）", content_place,
+              f"Henoko 与全县宽泛编码占 {broad_place_count}/{place_total}；关键地点之间不能作对称密度比较。"),
+        panel(30, 580, "D3 actor 功能／来源层", f"registry 原始 class 与 origin（n={actor_total}）", content_actor,
+              f"名单偏向具名、网络化、网页可见 actor；{actor_total} 是工作 registry，不是总体普查。"),
+        panel(820, 580, "D4 议题", f"每组去重 actor；组间可重叠（n={actor_total}）", content_issue,
               "base/environment/transnational 更可见；标签数量不是议题投入、声量或支持度。"),
-        panel(30, 990, "D5 source type × archive", "前 7 类 + 机械合并其余类型（n=198）", content_source,
-              "failed=18 只表示抓取失败，不表示证据不存在；archived 也不保证结论充分。"),
-        panel(820, 990, "D6 review × evidence", "actors n=118；actor-issue n=218", content_review,
+        panel(30, 990, "D5 source type × archive", f"前 7 类 + 机械合并其余类型（n={source_total}）", content_source,
+              f"failed={failed_total} 只表示抓取失败，不表示证据不存在；archived 也不保证结论充分。"),
+        panel(820, 990, "D6 review × evidence", f"actors n={actor_total}；actor-issue n={issue_total}", content_review,
               "E4 与 human-reviewed 是不同轴；高来源等级不能替代身份、关系和解释复核。"),
     ])
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1420" viewBox="0 0 1600 1420" role="img" aria-labelledby="title desc">
 <title id="title">一期公开资料样本的六维覆盖偏差审计</title>
-<desc id="desc">Six-panel audit of time, place, actor class and origin, issue, source type and archive status, and review and evidence status for 118 registry actors and 198 sources.</desc>
+<desc id="desc">Six-panel audit of time, place, actor class and origin, issue, source type and archive status, and review and evidence status for {actor_total} registry actors and {source_total} sources.</desc>
 <rect width="1600" height="1420" fill="#f3f0e8"/>
 <style>
 text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#19312b}} .title{{font-size:32px;font-weight:700}} .subtitle{{font-size:16px;fill:#52635d}} .sample{{font-size:14px;fill:#6a4b16}} .panel{{fill:#fffdf8;stroke:#d7d3c8;stroke-width:1}} .ph{{font-size:22px;font-weight:700}} .sub{{font-size:13px;fill:#66736e}} .lab{{font-size:12px}} .mini{{font-size:11px;fill:#66736e}} .val{{font-size:12px;font-weight:700}} .bar{{fill:#26735f}} .cell{{font-size:11px;font-weight:700;fill:#15342c}} .inside{{font-size:11px;font-weight:700;fill:#ffffff}} .note-bg{{fill:#f2e5c9}} .note{{font-size:12px;fill:#5b431c}}
@@ -464,7 +473,7 @@ text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#19
 <text x="45" y="52" class="title">一期公开资料样本：六维 coverage bias 核心图 v1</text>
 <text x="45" y="82" class="subtitle">偏差审计说明“当前资料让什么更可见”，不估计冲绳民间组织总体分布。</text>
 <rect x="45" y="105" width="1510" height="44" rx="8" fill="#f2e5c9"/>
-<text x="62" y="123" class="sample">118 actors + 198 sources 均为公开资料驱动的工作样本；无总体分母。source 条数不等于组织活跃度；archive failed 不等于证据不存在。</text>
+<text x="62" y="123" class="sample">{actor_total} actors + {source_total} sources 均为公开资料驱动的工作样本；无总体分母。source 条数不等于组织活跃度；archive failed 不等于证据不存在。</text>
 <text x="62" y="141" class="sample">每个面板的计数单位不同，不能跨面板相加或排序为“研究完成度”。</text>
 {body}
 <text x="45" y="1402" class="mini">* D4 “other groups” 是剩余 issue-group 的 actor-group presence 合计；同一 actor 可跨组，因此不构成互斥分布。</text>
@@ -477,19 +486,28 @@ def render_brief(cells: list[dict[str, str]], implications: list[dict[str, str]]
     for row in cells:
         if row["facet"] == "source_type_x_archive":
             archive_counts[row["subcategory"]] += int(row["count"])
+    actor_total = int(next(row["denominator"] for row in cells if row["facet"] == "origin_type"))
+    source_total = int(next(row["denominator"] for row in cells if row["facet"] == "source_year_period"))
+    place_total = int(next(row["denominator"] for row in cells if row["facet"] == "actor_place_pair"))
+    place_counts = {
+        row["category"]: int(row["count"])
+        for row in cells
+        if row["facet"] == "actor_place_pair"
+    }
+    broad_place_count = place_counts.get("Henoko", 0) + place_counts.get("Okinawa Prefecture", 0)
     return f"""# Coverage audit v1：公开资料样本的可见性偏差
 
 日期：2026-07-13
 
 ## 结论先行
 
-当前 **118 actor registry** 与 **198 source log** 是公开资料驱动的工作样本，不是冲绳民间组织或资料总体的概率样本，也没有可用于估计覆盖率的总体分母。因此，本审计解释的是“哪些对象在当前检索路径下更可见”，不估计总体分布。
+当前 **{actor_total} actor registry** 与 **{source_total} source log** 是公开资料驱动的工作样本，不是冲绳民间组织或资料总体的概率样本，也没有可用于估计覆盖率的总体分母。因此，本审计解释的是“哪些对象在当前检索路径下更可见”，不估计总体分布。
 
-- 时间：2020 年以来资料 {time['2020-current']['count']}/198（{time['2020-current']['share_pct']}%），1972–1997 仅 {time['1972-1997']['count']}/198。早期组织谱系和更名连续性明显更弱。
-- 地点：Henoko 与 Okinawa Prefecture 宽泛节点合计 83/124 个 actor-place 观察，不能把关键地点间计数差解释为真实组织密度差。
+- 时间：2020 年以来资料 {time['2020-current']['count']}/{source_total}（{time['2020-current']['share_pct']}%），1972–1997 仅 {time['1972-1997']['count']}/{source_total}。早期组织谱系和更名连续性明显更弱。
+- 地点：Henoko 与 Okinawa Prefecture 宽泛节点合计 {broad_place_count}/{place_total} 个 actor-place 观察，不能把关键地点间计数差解释为真实组织密度差。
 - actor 功能／来源层：registry 偏向具名、网络化、有持续网页或正式记录的 actor；短期委员会、社区小组和旧名称更难被捕捉。
 - 议题：基地政治、环境与跨国议题覆盖较宽；劳动、女性／人权、健康及若干生活安全子题更依赖专项补查。
-- source/archive：{archive_counts['archived'] + archive_counts['manual_archived']}/198 已归档或人工归档，{archive_counts['failed']}/198 抓取失败。**archive failed 不等于证据不存在**；反过来，archived 也不保证某项编码结论充分。
+- source/archive：{archive_counts['archived'] + archive_counts['manual_archived']}/{source_total} 已归档或人工归档，{archive_counts['failed']}/{source_total} 抓取失败。**archive failed 不等于证据不存在**；反过来，archived 也不保证某项编码结论充分。
 - review/evidence：E4 与 human-reviewed 是不同维度；官方或一手资料等级较高，不代表 actor 身份、关系边界或分析结论已经人工接受。
 
 ## 对基础问题的影响
@@ -512,7 +530,7 @@ def render_brief(cells: list[dict[str, str]], implications: list[dict[str, str]]
 
 1. source 条数不等于组织活跃度、社会支持度或事件频率。
 2. archive failed 是技术／可得性状态，不等于证据不存在；archived 也不等于证据充分。
-3. 118 actors 与 198 sources 仅描述当前公开资料样本，不能估计冲绳民间组织总体分布。
+3. {actor_total} actors 与 {source_total} sources 仅描述当前公开资料样本，不能估计冲绳民间组织总体分布。
 
 ## HR-023
 
@@ -527,14 +545,19 @@ def main() -> None:
     places = read_csv(ACTOR_PLACES)
     archive = read_csv(ARCHIVE)
 
-    if len(actors) != 118 or len(sources) != 198:
-        raise ValueError(f"expected 118 actors / 198 sources, got {len(actors)} / {len(sources)}")
-    if len(issues) != 218 or len(places) != 124 or len(archive) != 198:
-        raise ValueError("input count changed: expected 218 actor-issue, 124 actor-place, 198 archive rows")
+    if not actors or not sources or not issues or not places:
+        raise ValueError("coverage audit inputs must be non-empty")
     source_ids = {row["source_id"] for row in sources}
     archive_ids = {row["source_id"] for row in archive}
-    if len(source_ids) != 198 or source_ids != archive_ids:
-        raise ValueError("source log and archive manifest IDs do not form the same 198-source set")
+    if len(source_ids) != len(sources) or source_ids != archive_ids:
+        raise ValueError("source log and archive manifest IDs must form the same unique source set")
+    actor_ids = {row["actor_id"] for row in actors}
+    if len(actor_ids) != len(actors):
+        raise ValueError("actor registry contains duplicate actor IDs")
+    if not {row["actor_id"] for row in issues}.issubset(actor_ids):
+        raise ValueError("actor-issue table contains an actor outside the registry")
+    if not {row["actor_id"] for row in places}.issubset(actor_ids):
+        raise ValueError("actor-place table contains an actor outside the registry")
     if len({(row["actor_id"], row["place_name"]) for row in places}) != len(places):
         raise ValueError("actor-place table contains duplicate actor/place pairs")
 
@@ -567,7 +590,7 @@ def main() -> None:
 
     if read_csv(CELLS) != cells or read_csv(IMPLICATIONS) != implications:
         raise ValueError("CSV roundtrip mismatch")
-    if "118 actors + 198 sources" not in svg:
+    if f"{len(actors)} actors + {len(sources)} sources" not in svg:
         raise ValueError("sample boundary missing from core figure")
     print(
         f"coverage audit OK: {len(cells)} cells; 6 dimensions; "

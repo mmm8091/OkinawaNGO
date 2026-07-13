@@ -1,0 +1,27 @@
+{
+  "source_id": "S242",
+  "source_type": "organization_site",
+  "title": "法人概要｜宮古島 海の環境ネットワーク",
+  "year": "2026",
+  "url": "https://econet.jpn.org/outline",
+  "what_it_supports": "A098 identity: yes | direct issue support: yes_statutory_purpose",
+  "evidence_level": "E4",
+  "bias_note": "Supports environment/biodiversity positioning only.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S242\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S242\\metadata.json",
+  "sha256": "cc17c6d83ca526916e55f66cb25846d99df9fea4e6cbb9b77276674f4f22435b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:00:51.487290+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://econet.jpn.org/outline",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S241",
+  "source_type": "organization_site",
+  "title": "宮古島環境クラブ（MEC）の活動とは？",
+  "year": "2026",
+  "url": "https://www.npo-mec.net/services",
+  "what_it_supports": "A097 identity: yes | direct issue support: yes_program_specific",
+  "evidence_level": "E4",
+  "bias_note": "Groundwater conservation is confirmed; no automatic military-facility linkage.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S241\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S241\\metadata.json",
+  "sha256": "f3c7306cc02549aee448ef80eb937f4c51402876ad4b0bab772a055d5ddf8a9c",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:00:44.012782+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-mec.net/services",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -1,41 +1,41 @@
 ﻿actor_id,canonical_name,actor_class_original,actor_class_term_status,analysis_family_v1,family_mapping_status,origin_type,evidence_level,review_status_original,review_status_term_status,human_decision,interpretation_limit
 A001,Okinawa Environmental Justice Project,international_advocacy_actor,schema_term,跨国 NGO／国际倡议,rule_applied,mixed_or_network,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X001,USO Okinawa,base_community_service_actor,schema_term,基地社区服务／慈善,rule_applied,us_origin,E3,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A002,ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）,international_advocacy_actor,schema_term,跨国 NGO／国际倡议,rule_applied,japan_domestic,E4,human_revised,schema_term,,analysis-only mapping; actor registry is unchanged
+X002,Phoenix Corporation / Phoenix Park Hotel,local_business_sponsor,schema_term,资助／赞助／公共机构,rule_applied,corporate,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A003,ジュゴンネットワーク沖縄,local_civic_actor,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E3,needs_second_source,schema_term,,analysis-only mapping; actor registry is unchanged
+X003,American Engineering Corporation AEC,corporate_sponsor,schema_term,资助／赞助／公共机构,rule_applied,corporate,E3,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A004,日本自然保護協会,domestic_japan_ngo,schema_term,日本国内 NGO／声援,rule_applied,japan_domestic,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X004,American Welfare & Works Association (AWWA / 米国福祉事業協会),base_spouse_charity_network,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_revised,schema_term,,analysis-only mapping; actor registry is unchanged
 A005,WWFジャパン,domestic_japan_ngo,schema_term,日本国内 NGO／声援,rule_applied,japan_domestic,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X005,Naval Officers' Spouses' Club of Okinawa NOSCO,base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A006,グリーンピース・ジャパン,domestic_japan_ngo,schema_term,日本国内 NGO／声援,rule_applied,japan_domestic,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X006,Kadena Officers' Spouses' Club KOSC,base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A007,ピースボート,domestic_japan_ngo,schema_term,日本国内 NGO／声援,rule_applied,japan_domestic,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X007,Okinawa Enlisted Spouses' Club (OESC),base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A008,NGO非戦ネット,citizen_network,schema_term,冲绳本地公民行动,rule_applied,japan_domestic,E3,human_revised,schema_term,,analysis-only mapping; actor registry is unchanged
+X008,American Red Cross Okinawa,base_community_service_actor,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A009,Earthjustice,international_advocacy_actor,schema_term,跨国 NGO／国际倡议,rule_applied,us_origin,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X009,Navy-Marine Corps Relief Society Okinawa,base_community_service_actor,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A010,石垣島に軍事基地をつくらせない市民連絡会,citizen_network,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,human_revised,schema_term,,analysis-only mapping; actor registry is unchanged
+X010,沖縄NGOセンター,local_international_cooperation_ngo,schema_term,国际合作／公共外交,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A011,石垣市住民投票を求める会,citizen_group,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
+X011,JICA沖縄,public_institution_partner,schema_term,资助／赞助／公共机构,rule_applied,public_institution,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A012,宮古島いのちの水を守ろう！,citizen_group,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E3,needs_second_source,schema_term,,analysis-only mapping; actor registry is unchanged
+X012,TOMODACHI Initiative,public_diplomacy_or_exchange_actor,schema_term,国际合作／公共外交,rule_applied,mixed_or_network,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A013,ミサイル基地いらない宮古島住民連絡会,citizen_network,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X013,U.S. Consulate General Naha Okinawa Youth Council Program,public_diplomacy_grant_program,schema_term,国际合作／公共外交,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A014,住民投票を成功させるための実行委員会,executive_committee,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E2,needs_local_retrieval,schema_term,,analysis-only mapping; actor registry is unchanged
+X014,NED National Endowment for Democracy,funder_or_intermediary,schema_term,资助／赞助／公共机构,rule_applied,us_origin,E2,watchlist_only,out_of_schema_term,,analysis-only mapping; actor registry is unchanged
 A015,与那国自衛隊配備反対意見広告実行委員会,executive_committee,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E2,needs_local_retrieval,schema_term,,analysis-only mapping; actor registry is unchanged
+X015,Peace Winds Japan,international_ngo,schema_term,跨国 NGO／国际倡议,rule_applied,japan_domestic,E4,watchlist_only,out_of_schema_term,,analysis-only mapping; actor registry is unchanged
 A016,与那国島の明るい未来を願うイソバの会,citizen_group,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E3,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
+X016,Marine Officers' Spouses' Club Okinawa (MOSCO / MOSC),base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A017,沖縄対話プロジェクト,citizen_network,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
+X017,Army Community Group of Okinawa (ACGO),base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E3,needs_second_source,schema_term,,analysis-only mapping; actor registry is unchanged
 A018,ノーモア沖縄戦 命どぅ宝の会,citizen_group,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A019,ヘリ基地反対協議会（海上ヘリ基地建設反対・平和と名護市政民主化を求める協議会）,citizen_network,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A020,日本環境法律家連盟（JELF）,lawyers_network,schema_term,法律／制度程序,rule_applied,japan_domestic,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X001,USO Okinawa,base_community_service_actor,schema_term,基地社区服务／慈善,rule_applied,us_origin,E3,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X002,Phoenix Corporation / Phoenix Park Hotel,local_business_sponsor,schema_term,资助／赞助／公共机构,rule_applied,corporate,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X003,American Engineering Corporation AEC,corporate_sponsor,schema_term,资助／赞助／公共机构,rule_applied,corporate,E3,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X004,American Welfare & Works Association (AWWA / 米国福祉事業協会),base_spouse_charity_network,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_revised,schema_term,,analysis-only mapping; actor registry is unchanged
-X005,Naval Officers' Spouses' Club of Okinawa NOSCO,base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
-X006,Kadena Officers' Spouses' Club KOSC,base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
-X007,Okinawa Enlisted Spouses' Club (OESC),base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
-X008,American Red Cross Okinawa,base_community_service_actor,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X009,Navy-Marine Corps Relief Society Okinawa,base_community_service_actor,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X010,沖縄NGOセンター,local_international_cooperation_ngo,schema_term,国际合作／公共外交,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X011,JICA沖縄,public_institution_partner,schema_term,资助／赞助／公共机构,rule_applied,public_institution,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X012,TOMODACHI Initiative,public_diplomacy_or_exchange_actor,schema_term,国际合作／公共外交,rule_applied,mixed_or_network,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-X013,U.S. Consulate General Naha Okinawa Youth Council Program,public_diplomacy_grant_program,schema_term,国际合作／公共外交,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
-X014,NED National Endowment for Democracy,funder_or_intermediary,schema_term,资助／赞助／公共机构,rule_applied,us_origin,E2,watchlist_only,out_of_schema_term,,analysis-only mapping; actor registry is unchanged
-X015,Peace Winds Japan,international_ngo,schema_term,跨国 NGO／国际倡议,rule_applied,japan_domestic,E4,watchlist_only,out_of_schema_term,,analysis-only mapping; actor registry is unchanged
-X016,Marine Officers' Spouses' Club Okinawa (MOSCO / MOSC),base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
-X017,Army Community Group of Okinawa (ACGO),base_spouse_club,schema_term,基地社区服务／慈善,rule_applied,us_origin,E3,needs_second_source,schema_term,,analysis-only mapping; actor registry is unchanged
 A021,国際環境NGO FoE Japan,domestic_japan_ngo,schema_term,日本国内 NGO／声援,rule_applied,japan_domestic,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A022,NPO法人 ラムサール・ネットワーク日本,domestic_japan_ngo,schema_term,日本国内 NGO／声援,rule_applied,japan_domestic,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A023,美ら海にもやんばるにも基地はいらない市民の会,local_civic_actor,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
@@ -100,7 +100,6 @@ A090,沖縄県高等学校障害児学校教職員組合,labor_or_education_unio
 A091,日本労働組合総連合会沖縄県連合会（連合沖縄）,labor_union_federation,out_of_schema_term,劳工／教育组织,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A092,沖縄県労働組合総連合,labor_union_federation,out_of_schema_term,劳工／教育组织,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A093,全日本自治団体労働組合沖縄県本部,labor_union,out_of_schema_term,劳工／教育组织,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
-A094,一般社団法人沖縄県女性連合会,womens_or_community_organization,out_of_schema_term,女性／人权／社区,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A095,止めよう「自衛隊配備」宮古郡民の会,citizen_group,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A096,宮古平和運動連絡協議会,citizen_network,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
 A097,宮古島環境クラブ,local_civic_actor,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,ai_seeded,schema_term,,analysis-only mapping; actor registry is unchanged
@@ -117,3 +116,4 @@ A107,沖縄YWCA,womens_or_human_rights_ngo,out_of_schema_term,女性／人权／
 A108,沖縄を再び戦場にさせない県民の会,citizen_network,schema_term,冲绳本地公民行动,rule_applied,okinawa_local,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A109,第4次嘉手納基地爆音差止訴訟弁護団,lawyers_network,schema_term,法律／制度程序,rule_applied,okinawa_local,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
 A110,辺野古に基地を絶対つくらせない大阪行動,citizen_group,schema_term,冲绳本地公民行动,rule_applied,japan_domestic,E3,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged
+A111,沖縄県女性団体連絡協議会,womens_or_community_organization,out_of_schema_term,女性／人权／社区,rule_applied,okinawa_local,E4,human_checked,schema_term,,analysis-only mapping; actor registry is unchanged

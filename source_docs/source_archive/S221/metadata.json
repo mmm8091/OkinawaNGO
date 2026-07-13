@@ -1,0 +1,27 @@
+{
+  "source_id": "S221",
+  "source_type": "organization_website",
+  "title": "NPO法人美ぎ島宮古島",
+  "year": "2026",
+  "url": "https://www.kagisuma.jp/",
+  "what_it_supports": "C032: sustained coral conservation, planting and environmental protection",
+  "evidence_level": "E4",
+  "bias_note": "Use 美ぎ島MIYAKO as an alias; no anti-deployment stance is shown.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S221\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S221\\metadata.json",
+  "sha256": "1eb059b3bb6951e58fe2d7430fc3e971b821ccc49d48d9947f8f5d7c8405d1c5",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:30.700732+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.kagisuma.jp/",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "21750",
+    "last_modified": "Mon, 05 Nov 2018 10:04:00 GMT"
+  }
+}

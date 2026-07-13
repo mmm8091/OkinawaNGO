@@ -1,0 +1,27 @@
+{
+  "source_id": "S235",
+  "source_type": "organization_action_record",
+  "title": "連合沖縄2025新春の集いを開催",
+  "year": "2025",
+  "url": "https://www.rengo-okinawa.jp/cat-news/post-2414/",
+  "what_it_supports": "A091 identity: yes | direct issue support: yes_declared_direction",
+  "evidence_level": "E4",
+  "bias_note": "A leadership statement is source-backed positioning for this period, not timeless consensus.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S235\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S235\\metadata.json",
+  "sha256": "a345b2e6921ef2b36bfa9e543bf014dbe9eeed5f0b898ac57ec51cf1f69ef9e2",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:58:38.941952+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.rengo-okinawa.jp/cat-news/post-2414/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

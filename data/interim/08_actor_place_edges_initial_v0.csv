@@ -1,4 +1,4 @@
-edge_id,actor_id,place_id,place_name,relation_basis,source_ref,evidence_level,review_status,notes
+﻿edge_id,actor_id,place_id,place_name,relation_basis,source_ref,evidence_level,review_status,notes
 AP001,A001,P002,Henoko,OEJP/MMC Henoko advocacy,S006;S007;S008,E4,ai_seeded,Core place.
 AP002,A001,P003,Oura Bay,OEJP/MMC dugong/Oura Bay advocacy,S006;S007;S008,E4,ai_seeded,Core place.
 AP003,A002,P002,Henoko,Dugong protection campaign and Henoko/Oura Bay advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 confirms advocacy focus; not a lawsuit plaintiff relation.
@@ -123,3 +123,4 @@ AP121,A075,P001,Okinawa Prefecture,Defense bureau jurisdiction,S047,E4,ai_seeded
 AP122,A075,P002,Henoko,Henoko base construction managing agency,S047,E4,ai_seeded,Construction site.
 AP123,X016,P006,Camp Foster,MOSCO / Marine Gift Shop Island Treasures context,S079;S080,E4,human_checked,HR-005 supplemental: MOSCO Camp Foster/Okinawa base role confirmed.
 AP124,X017,P001,Okinawa Prefecture,Army Community Group of Okinawa / Army on Okinawa Gift Shop lead,S041;S072;S081,E3,needs_second_source,HR-005 supplemental: Torii Station/base specificity needs independent confirmation.
+AP125,A111,P001,Okinawa Prefecture,Prefecture-wide women's network and prefectural public mobilization,S200;S201,E4,human_checked,HR-013: broad prefectural field only; no municipality-level location is inferred.

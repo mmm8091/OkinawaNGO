@@ -1,0 +1,27 @@
+{
+  "source_id": "S227",
+  "source_type": "organization_program_document",
+  "title": "サンゴ礁ウィーク2024 実施要領",
+  "year": "2024",
+  "url": "https://ocrcc.sakura.ne.jp/doc/sango_week/sw_application2024.pdf",
+  "what_it_supports": "C034: dated council-led coordination/program activity",
+  "evidence_level": "E4",
+  "bias_note": "Program coordination is not evidence that every participating organization has a stable relation to the council.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S227\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S227\\metadata.json",
+  "sha256": "369de3f39097a167305f931f977cb64ee680f926321511c5e8963fa6936c20b9",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:57:04.705960+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ocrcc.sakura.ne.jp/doc/sango_week/sw_application2024.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "1194892",
+    "last_modified": "Tue, 21 Nov 2023 10:58:00 GMT"
+  }
+}

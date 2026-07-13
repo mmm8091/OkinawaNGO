@@ -1,0 +1,27 @@
+{
+  "source_id": "S212",
+  "source_type": "local_news",
+  "title": "宮古陸自配備に抗議 60人が集会とデモ行進",
+  "year": "2019",
+  "url": "https://ryukyushimpo.jp/news/entry-892189.html",
+  "what_it_supports": "C015: 2019 continuity and missile-deployment protest role",
+  "evidence_level": "E3",
+  "bias_note": "Participation/remarks at one event do not establish alliance ties.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S212\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S212\\metadata.json",
+  "sha256": "ea66a2a0080b24195e06f0d1f7054d012756079df1ad8a399794c539757f19dc",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:55:53.702032+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-892189.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 11:55:59 GMT"
+  }
+}

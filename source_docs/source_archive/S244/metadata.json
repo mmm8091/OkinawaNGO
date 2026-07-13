@@ -1,0 +1,27 @@
+{
+  "source_id": "S244",
+  "source_type": "main_local_newspaper",
+  "title": "陸自ミサイル配備計画「反対を」―知事や県議会に要請",
+  "year": "2024",
+  "url": "https://ryukyushimpo.jp/news/national/entry-2869997.html",
+  "what_it_supports": "A100 identity: yes_secondary | direct issue support: yes_event_specific",
+  "evidence_level": "E2",
+  "bias_note": "Signature count and request are event-specific; no stable alliance inference.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S244\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S244\\metadata.json",
+  "sha256": "053c2ad5ad9118de6a02740ee8ab4f06f486b46f0bcc9ec63d5ee84c04ff2567",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:01:01.565515+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/national/entry-2869997.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 12:01:08 GMT"
+  }
+}

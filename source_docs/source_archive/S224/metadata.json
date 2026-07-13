@@ -1,0 +1,27 @@
+{
+  "source_id": "S224",
+  "source_type": "funded_project_report",
+  "title": "漫湖周辺の自然再生エリアにおける調査発見型環境学習プログラム",
+  "year": "2025",
+  "url": "https://www.jstage.jst.go.jp/article/pronatura/34/0/34_207/_pdf/-char/en",
+  "what_it_supports": "C033: current Manko wetland restoration, citizen science and environmental education",
+  "evidence_level": "E4",
+  "bias_note": "Supports environment/biodiversity programming; the grant must not be generalized beyond the stated project.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S224\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S224\\metadata.json",
+  "sha256": "598e0974275d7c775086fa706936d8527601ea5e36271140192387c5b8836efe",
+  "content_type": "application/pdf;charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:49.405922+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jstage.jst.go.jp/article/pronatura/34/0/34_207/_pdf/-char/en",
+    "status_code": "200",
+    "content_type": "application/pdf;charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

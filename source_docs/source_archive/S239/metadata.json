@@ -1,0 +1,27 @@
+{
+  "source_id": "S239",
+  "source_type": "official_legislative_record",
+  "title": "宮古島市議会 平成27年6月定例会会議録",
+  "year": "2015",
+  "url": "https://www.city.miyakojima.lg.jp/gyosei/gikai/files/h27.6.dai4kaikaigiroku.pdf",
+  "what_it_supports": "A096 identity: yes_named_petitioner | direct issue support: yes_procedural_action",
+  "evidence_level": "E4",
+  "bias_note": "Proves a formal anti-deployment request; it does not prove all registry tags.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S239\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S239\\metadata.json",
+  "sha256": "f2a358cb4b298ef515f0722f5be046abc6e4faac85d74cd5c1a4ca78d7a36e74",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:00:12.498647+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.miyakojima.lg.jp/gyosei/gikai/files/h27.6.dai4kaikaigiroku.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "3912017",
+    "last_modified": "Thu, 17 Sep 2015 00:53:37 GMT"
+  }
+}

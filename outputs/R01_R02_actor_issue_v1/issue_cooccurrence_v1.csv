@@ -1,5 +1,5 @@
 ﻿issue_id_1,issue_label_1,issue_id_2,issue_label_2,shared_actor_count_all,shared_actor_ids_all,shared_actor_count_human_reviewed,shared_actor_ids_human_reviewed,shared_actor_count_positioning,shared_actor_ids_positioning,shared_actor_count_event_only,shared_actor_ids_event_only,interpretation_limit
-I001,anti_base,I019,peace,11,A007;A008;A047;A048;A057;A058;A063;A070;A071;A072;A107,2,A008;A107,4,A047;A048;A058;A072,1,A007,shared actor issue profile; not an organization-to-organization alliance
+I001,anti_base,I019,peace,12,A007;A008;A047;A048;A057;A058;A063;A070;A071;A072;A107;A111,3,A008;A107;A111,4,A047;A048;A058;A072,1,A007,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I003,Henoko,9,A019;A024;A025;A047;A059;A067;A068;A106;A110,3,A019;A106;A110,1,A047,4,A024;A025;A106;A110,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I005,biodiversity,8,A006;A021;A022;A023;A027;A056;A060;A067,0,,0,,5,A006;A021;A022;A023;A027,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I011,legal,8,A048;A050;A052;A053;A066;A103;A104;A109,3,A103;A104;A109,0,,1,A050,shared actor issue profile; not an organization-to-organization alliance
@@ -24,7 +24,12 @@ I011,legal,I012,international_advocacy,3,A009;A039;A045,0,,0,,1,A039,shared acto
 I012,international_advocacy,I019,peace,3,A007;A032;A070,0,,0,,0,,shared actor issue profile; not an organization-to-organization alliance
 I017,frontline_prevention,I019,peace,3,A017;A018;A108,1,A108,1,A018,0,,shared actor issue profile; not an organization-to-organization alliance
 I018,Taiwan_contingency,I019,peace,3,A017;A018;A108,1,A108,0,,0,,shared actor issue profile; not an organization-to-organization alliance
+I019,peace,I022,women,3,A105;A107;A111,3,A105;A107;A111,2,A105;A107,0,,shared actor issue profile; not an organization-to-organization alliance
+I019,peace,I023,human_rights,3,A105;A107;A111,3,A105;A107;A111,2,A105;A107,0,,shared actor issue profile; not an organization-to-organization alliance
+I022,women,I023,human_rights,3,A105;A107;A111,3,A105;A107;A111,2,A105;A107,0,,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I002,anti_military,2,A047;A049,0,,1,A047,0,,shared actor issue profile; not an organization-to-organization alliance
+I001,anti_base,I022,women,2,A107;A111,2,A107;A111,0,,0,,shared actor issue profile; not an organization-to-organization alliance
+I001,anti_base,I023,human_rights,2,A107;A111,2,A107;A111,0,,0,,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I024,solidarity,2,A106;A110,2,A106;A110,0,,1,A106,shared actor issue profile; not an organization-to-organization alliance
 I003,Henoko,I004,dugong,2,A001;A069,0,,1,A001,0,,shared actor issue profile; not an organization-to-organization alliance
 I003,Henoko,I009,local_autonomy,2,A051;A059,0,,0,,0,,shared actor issue profile; not an organization-to-organization alliance
@@ -35,13 +40,8 @@ I004,dugong,I011,legal,2,A009;A020,0,,0,,0,,shared actor issue profile; not an o
 I006,groundwater,I007,life_safety,2,A012;A013,0,,0,,0,,shared actor issue profile; not an organization-to-organization alliance
 I009,local_autonomy,I010,referendum,2,A011;A051,0,,0,,0,,shared actor issue profile; not an organization-to-organization alliance
 I014,military_family_service,I016,base_community_welfare,2,X001;X004,1,X004,0,,0,,shared actor issue profile; not an organization-to-organization alliance
-I019,peace,I022,women,2,A105;A107,2,A105;A107,2,A105;A107,0,,shared actor issue profile; not an organization-to-organization alliance
-I019,peace,I023,human_rights,2,A105;A107,2,A105;A107,2,A105;A107,0,,shared actor issue profile; not an organization-to-organization alliance
-I022,women,I023,human_rights,2,A105;A107,2,A105;A107,2,A105;A107,0,,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I010,referendum,1,A068,0,,0,,0,,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I020,environment,1,A106,1,A106,0,,1,A106,shared actor issue profile; not an organization-to-organization alliance
-I001,anti_base,I022,women,1,A107,1,A107,0,,0,,shared actor issue profile; not an organization-to-organization alliance
-I001,anti_base,I023,human_rights,1,A107,1,A107,0,,0,,shared actor issue profile; not an organization-to-organization alliance
 I001,anti_base,I026,mobilization,1,A110,1,A110,0,,0,,shared actor issue profile; not an organization-to-organization alliance
 I002,anti_military,I003,Henoko,1,A047,0,,1,A047,0,,shared actor issue profile; not an organization-to-organization alliance
 I002,anti_military,I008,health_risk,1,A016,1,A016,0,,0,,shared actor issue profile; not an organization-to-organization alliance

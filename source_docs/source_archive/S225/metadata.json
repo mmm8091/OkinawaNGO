@@ -1,0 +1,27 @@
+{
+  "source_id": "S225",
+  "source_type": "government_webpage",
+  "title": "民間参加型サンゴ礁生態系保全活動推進事業",
+  "year": "2008",
+  "url": "https://www.pref.okinawa.jp/kurashikankyo/kankyo/1004287/1004527.html",
+  "what_it_supports": "C034: government-supported formation and cross-sector purpose",
+  "evidence_level": "E4",
+  "bias_note": "Supports mixed cross-sector origin, not a purely grassroots classification.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S225\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S225\\metadata.json",
+  "sha256": "ea856bb74fe58146fa521b7055396e3a5199a1a42121eedce36ad131fabb922c",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:57:01.311359+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kurashikankyo/kankyo/1004287/1004527.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "37008",
+    "last_modified": "Mon, 13 Jul 2026 11:14:03 GMT"
+  }
+}

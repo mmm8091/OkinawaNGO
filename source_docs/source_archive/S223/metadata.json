@@ -1,0 +1,27 @@
+{
+  "source_id": "S223",
+  "source_type": "organization_website",
+  "title": "団体概要",
+  "year": "2024",
+  "url": "https://www.npo-oec.com/aboutUs.html",
+  "what_it_supports": "C033: 1999/2002 identity, staff, repeated water-edge restoration, education and JICA programs",
+  "evidence_level": "E4",
+  "bias_note": "Project participation is a functional observation, not a political stance or funding inference.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S223\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S223\\metadata.json",
+  "sha256": "77e6d4948ead0b77cd94c636a6aaa2a97619227fc50957658e9586976173c243",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:48.201221+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.npo-oec.com/aboutUs.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "21132",
+    "last_modified": "Thu, 10 Jul 2025 07:17:19 GMT"
+  }
+}

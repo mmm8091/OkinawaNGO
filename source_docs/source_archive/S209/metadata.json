@@ -1,0 +1,27 @@
+{
+  "source_id": "S209",
+  "source_type": "government_webpage",
+  "title": "日米地位協定の見直しに係る諸団体の主な支援行動",
+  "year": "2004",
+  "url": "https://www.pref.okinawa.jp/heiwakichi/kichi/1017255/1017256/1017262.html",
+  "what_it_supports": "C011: C011 lecture on Status of Forces Agreement review",
+  "evidence_level": "E4",
+  "bias_note": "Documents one direct issue action; do not infer a stable coalition with the other listed organizations.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S209\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S209\\metadata.json",
+  "sha256": "705356a06816b53ffdc47dc1324c64f5fa6963434dd58acdcb21adef02a66a7f",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:55:11.557204+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/heiwakichi/kichi/1017255/1017256/1017262.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "40336",
+    "last_modified": "Mon, 13 Jul 2026 11:28:45 GMT"
+  }
+}

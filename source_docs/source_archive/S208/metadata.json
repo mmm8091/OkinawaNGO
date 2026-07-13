@@ -1,0 +1,27 @@
+{
+  "source_id": "S208",
+  "source_type": "foundation_program_record",
+  "title": "事業計画・事業報告",
+  "year": "2016",
+  "url": "https://www.okinawajosei.org/support.php",
+  "what_it_supports": "C011: repeated organization activity and 2023 security-documents course",
+  "evidence_level": "E4",
+  "bias_note": "This publisher is not C011 itself; use as independent program record, not organizational self-description.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S208\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S208\\metadata.json",
+  "sha256": "2fc7d2b66bd3ca9ad835932c10d331d880884ad5949623b829525b9dd83cc36f",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:55:08.478656+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.okinawajosei.org/support.php",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

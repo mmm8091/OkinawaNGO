@@ -1,0 +1,12 @@
+﻿metric,value,expected,status
+post_HR013_target_actor_count,17,17,pass
+post_HR013_actor_conclusion_count,17,17,pass
+post_HR013_actors_with_candidate_edge,16,16,pass
+post_HR013_candidate_edge_count,54,54,pass
+post_HR013_source_record_count,38,38,pass
+post_HR013_actors_with_identity_source,16,16,pass
+post_HR013_actors_with_direct_issue_source,16,16,pass
+post_HR013_HR024_blank_decisions,8,8,pass
+post_HR013_HR010_batch6_blank_decisions,47,47,pass
+post_HR013_excluded_A094_rows,0,0,pass
+post_HR013_disposition_recorded,1,1,pass

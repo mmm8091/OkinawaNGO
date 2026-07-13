@@ -20,3 +20,5 @@ A053,普天間爆音訴訟団,former_canonical,S027,HR-012: previous registry ca
 A053,普天間基地第2次爆音訴訟原告団,round_of,S135;S156,HR-012: second-round case designation of A053; no separate actor created and cross-round membership is not assumed identical.
 A010,石垣島への自衛隊配備を止める住民の会,predecessor_of,S157,"HR-012: predecessor formed 2015-08-20; A010 emerged as a wider coalition in 2016-09. This is lineage metadata, not a claim that both names denote an identical organization."
 A053,普天間基地爆音訴訟原告団,descriptive_variant,S135;S136,HR-012: descriptive plaintiff-group variant; canonical follows the official site name 普天間基地爆音訴訟団.
+A111,県婦人団体連絡協議会,former_name,S201,HR-013: historical name used in the 1995 base-removal mobilization context.
+A111,女団協,acronym,S208,"HR-013: documented abbreviation. Do not transfer 沖女連, which is associated with former A094."

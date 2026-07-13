@@ -42,22 +42,22 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - X013 长期观察 Grants.gov / USASpending / 领馆公告是否出现 award 或 recipient。
 - X014 NED 跨年度排除需要另查，本轮只覆盖 FY2024 亚洲清单。
 
-2026-07-12 建立 HR-010 至 HR-015 编号段；截至 2026-07-13 已收到并回写 HR-010、011、012、014、015，HR-013 尚待提交。A087-A106 已按 E4 一手来源先合并“组织身份”；其分类、议题、地点、事件和关系不因身份合并而自动成立。下列任务原文保留为审核轨迹，实际状态以本节和各任务标题为准。
+2026-07-12 建立 HR-010 至 HR-015 编号段；截至 2026-07-13 已收到并回写 HR-010 至 HR-015。A087-A106 已按 E4 一手来源先合并“组织身份”；其分类、议题、地点、事件和关系不因身份合并而自动成立。下列任务原文保留为审核轨迹，实际状态以本节和各任务标题为准。
 
-2026-07-13：HR-010 批5（A102-A106）已完成并合并。A102/A103 为全国法律/原告团 background-support，A104 为普天间诉讼 core-support，A105 为声明层 background-solidarity，A106 为本土声援层；F037-F041 仅编码成员、法律代理和事件/伙伴行动，均非资金边或稳定联盟。A106 的 `首都圏キャンペーン` 暂作可能 canonical variant，待定名。HR-010 剩余对象为 A087-A101。
+2026-07-13：HR-010 批5（A102-A106）已完成并合并。A102/A103 为全国法律/原告团 background-support，A104 为普天间诉讼 core-support，A105 为声明层 background-solidarity，A106 为本土声援层；F037-F041 仅编码成员、法律代理和事件/伙伴行动，均非资金边或稳定联盟。A106 的 `首都圏キャンペーン` 暂作可能 canonical variant，待定名。HR-010 剩余对象为 A087-A093、A095-A101；A094 已按范围修正撤出。
 
-同日，用户已提供并落库 HR-011、HR-012、HR-014、HR-015 结论；HR-013 **未收到人工结论，保持 pending，不由 AI 推断**。当前状态为：
+同日，用户已提供并落库 HR-011、HR-012、HR-013、HR-014、HR-015 结论。HR-013 只新增 A111，并按 HR-010 范围修正撤出 A094，故 registry 净数不变。当前状态为：
 
 | 任务 | 状态 | 当前结论 |
 |---|---|---|
-| HR-010 | partial / pending | A102-A106 已完成；A087-A101 仍待分类、范围与关系复核。 |
+| HR-010 | partial / pending | A102-A106 已完成；A094 已按范围修正撤出；A087-A093、A095-A101 仍待分类、范围与关系复核。 |
 | HR-011 | completed | 新增 A107 沖縄YWCA、A108 沖縄を再び戦場にさせない県民の会、A109 第4次嘉手納弁护团、A110 大阪行动；C015 defer，不入主 registry。 |
 | HR-012 | completed | A052/A053 完成规范名与诉讼轮次 alias；C026/C027 分别为 `round_of` A052/A053；C028 为 A010 的 `predecessor_of`，不另建 actor。 |
-| HR-013 | pending | 未收到用户结论；C010、C011、C029-C034 不作范围判断或自动入表。 |
+| HR-013 | completed | C011 以 A111 入表；C010、C034 只作 background；C029-C033 rejected。`okinawajosei.org` 属おきなわ女性財団，不能作为 A111 官网；A111 不接 `沖女連` alias。 |
 | HR-014 | completed | 六案与 27 条案件角色已按案件特定边界人审落库。 |
 | HR-015 | completed | 49 条 evidence note 与 64 条 actor-event-venue 记录已人审；A077-A085 撤出主 registry，保留为 E2 事件参与线索。 |
 
-主 registry 当前为 **118 actor**：历史 103 条中撤出 A077-A085 九个一次性署名名称，保留 A087-A106 二十个 E4 身份级 actor，并由 HR-011 新增 A107-A110 四个 actor。118 低于原方案 120–180 的数量区间下限，但不得把 A077-A085 或未审候选重新入表凑数。
+主 registry 当前为 **118 actor**：历史 103 条中撤出 A077-A085 九个一次性署名名称，HR-013 又按范围修正撤出 A094；保留其余 E4 身份级 actor，并由 HR-011 新增 A107-A110、HR-013 新增 A111。118 仍低于原方案 120–180 的数量区间下限，但不得把 A077-A085、A094 或未审候选重新入表凑数。当前主数据另有 **247 sources、222 actor–issue edges、125 actor–place edges、65 AEV rows 和 40 human-review log rows**；来源归档状态为 224 archived、2 manual_archived、19 failed、2 non-URL。
 
 ## 2. 复核输入材料
 
@@ -312,9 +312,9 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-010 新增 E4 主体的分类与入网复核 — partial / pending
 
-状态（2026-07-13）：A102-A106 已完成；A087-A101 仍待审核。以下保留原任务要求。
+状态（2026-07-13）：A102-A106 已完成；A094 已撤出；A087-A093、A095-A101 仍待审核。以下保留原任务要求。
 
-对象：A087-A101（A102-A106 已于批5完成；对应 `outputs/registry_expansion_v1/merge_manifest_v1.csv`）
+对象：A087-A093、A095-A101（A094 已按 HR-013 范围修正撤出；A102-A106 已于批5完成；对应 `outputs/registry_expansion_v1/merge_manifest_v1.csv`）
 
 已完成的安全合并：
 
@@ -379,9 +379,13 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - 如拆分，给出新 actor ID 和有效时间；如合并，给出 alias 与依据。
 - 不能确认时保留候选，不写跨期稳定关系。
 
-### HR-013 范围边界与一般公益组织复核 — pending
+### HR-013 范围边界与一般公益组织复核 — completed
 
-状态（2026-07-13）：**未收到用户人工结论**。C010、C011、C029-C034 继续保持候选／待审状态；不得根据组织名称或一般公益使命推断一期议题连接。以下保留原任务要求。
+完成状态（2026-07-13）：C011 `沖縄県女性団体連絡協議会` 以 A111 入表，作为有直接基地相关女性动员证据的 core-support actor；C010 `ひめゆり平和祈念財団` 与 C034 `沖縄県サンゴ礁保全推進協議会` 只作 background actor，不生成反基地关系或政治立场；C029-C033 因只有一般公益功能而无一期直接连接，均 `out_of_scope`／`rejected`。C015 仍属 HR-011 defer，不因本轮 gate 重开而入表。
+
+范围修正：A094 `沖縄県女性連合会` 作为一般妇人会撤出 registry；A111 的加入与 A094 的撤出相抵，registry 仍为 118。后续在线核查还确认 `okinawajosei.org` 属 `公益財団法人おきなわ女性財団`，不是 A111 的组织官网；因此不以该域名支持 A111 身份，也不把歧义简称 `沖女連` 接到 A111。A111 只保留来源可核的正式名及 `女団協` 等无歧义写法。
+
+机器 gate 已由本次人工决定覆盖：`outputs/registry_expansion_gate_v1/` 只保留为检索和提案轨迹，不再代表待定入表建议。以下保留原任务要求。
 
 对象：C010、C011、C029-C034
 
@@ -489,7 +493,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-019 R1/R2 分类词、桥梁机制与议题边范围复核 — pending
 
-状态（2026-07-13）：R1/R2 线上 v1 已覆盖 118 actors、26 issues 和 218 条 actor–issue edge。当前有 100 个 actor 连入议题层、18 个 actor 仍无 edge；55 条 edge 已人审、163 条为候选。HR-019 的三张表共 102 项，决定栏、复核人和日期全部留空。
+状态（2026-07-13）：R1/R2 线上 v1 已覆盖 118 actors、26 issues 和 222 条 actor–issue edge。当前有 101 个 actor 连入议题层、17 个 actor 仍无 edge；59 条 edge 已人审、163 条为候选。scope 分层为 43 条 organizational positioning、40 条 case/institution role、74 条 event-specific、65 条 remain unclear。HR-019 的决定栏、复核人和日期继续留空。
 
 复核包：
 
@@ -502,8 +506,8 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 - 决定 6 个 schema 外 `actor_class` 术语是扩充受控词还是映射既有宽类；不得把组织法律身份、行动形态和政治立场压成同一字段。
 - 对跨议题 actor 区分长期组织定位、案件／制度角色和事件性参加；共同署名或多议题出现不构成稳定联盟或长期经纪地位。
-- 对 63 条范围不清 edge 只审 `organizational_positioning`／`institutional_or_case_role`／`event_specific`／`remain_unclear`，不得把 actor–issue edge 改写为 actor–actor 关系。
-- 18 个 edge-isolated actor 应先补边级证据；9 个扩样候选均为 `count_ready=no`，不能为越过 120 下限而直接入表。
+- 对 65 条范围不清 edge 只审 `organizational_positioning`／`institutional_or_case_role`／`event_specific`／`remain_unclear`，不得把 actor–issue edge 改写为 actor–actor 关系。
+- 17 个 edge-isolated actor 应先补边级证据；扩样 gate 已由 HR-013 人工决定覆盖，不能为越过 120 下限而恢复已拒或仅背景对象。
 
 ### HR-020 R5 名称、别名与名单切分复核 — pending
 
@@ -552,6 +556,29 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - `archived` 只表示保存成功，不表示元数据、actor relation、金额、角色或解释已获认可。
 - R9 `usable_with_limit`、R4 locator/speaker 和 R10 type/year 推定必须保留原边界；来源入表不能自动升级模块结论。
 - 对失败 URL 可记录权威替代副本与定位，但不得删除失败日志或把无法访问写成证据不存在。
+
+### HR-023 覆盖审计
+
+未建立人工决定任务。六维 coverage audit 是对既有字段的机械聚合，不含新的关系、角色或解释判断；因此保留编号说明，不伪造空白人审项。
+
+### HR-024 既有 actor 的议题边补证复核 — pending
+
+状态（2026-07-13）：原 18 个 edge-isolated actor 完成在线逐项检索；HR-013 撤出 A094 后，post-HR-013 包覆盖 17 个在表 actor，形成 54 条 `ai_seeded` candidate edge 和 38 条来源记录。A087-A093、A095-A101 的 47 条补证项回送 HR-010；HR-024 只保留 A073、A076、A086 的 8 条新复核项。所有决定、复核人、日期与说明字段保持空白，候选边未并入主 actor–issue 表。
+
+复核包：
+
+- `outputs/edge_activation_v1/post_hr013_HR010_batch6_edge_evidence_addendum_v1.csv`
+- `outputs/edge_activation_v1/HR024_edge_activation_review_v0.csv`
+- `outputs/edge_activation_v1/post_hr013_edge_activation_candidates_v1.csv`
+- `outputs/edge_activation_v1/post_hr013_source_evidence_crosswalk_v1.csv`
+- `outputs/edge_activation_v1/HR_review_guide_v0.md`
+
+人工重点：
+
+- 分开确认“组织身份存在”与“组织和一期议题有直接连接”；不得从 registry 的 `issue_tags` 反推边。
+- 逐条选择 `accept`／`revise`／`reject`，并核对 source locator、scope、事件性／持续性和 actor 身份。
+- 共同署名、同场参与或案件中的个人角色不得升级为组织的稳定联盟、常设定位或跨案件角色。
+- A073 在线检索已耗尽且组织身份仍不闭合；不能仅凭旧名单或名称相似激活。
 
 ## 7. 人工复核节奏
 

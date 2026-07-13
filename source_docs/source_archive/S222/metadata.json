@@ -1,0 +1,27 @@
+{
+  "source_id": "S222",
+  "source_type": "government_report",
+  "title": "沖縄県が実施するその他の事業（サンゴ礁保全再生）",
+  "year": "2011",
+  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/633/sangohosaisoukatsu5.pdf",
+  "what_it_supports": "C032: prefectural program record for planting to reduce nutrient-rich groundwater outflow and conserve groundwater",
+  "evidence_level": "E4",
+  "bias_note": "Human review must verify the row/year crosswalk before creating a groundwater edge; do not infer a payment amount from this gate packet.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S222\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S222\\metadata.json",
+  "sha256": "e2e65bb35f8e7b63f42c8a25e019833d16374d9e58e5133f5aa4a019da5e8f39",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:56:32.590032+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/633/sangohosaisoukatsu5.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "1328637",
+    "last_modified": "Fri, 08 Dec 2023 08:49:05 GMT"
+  }
+}

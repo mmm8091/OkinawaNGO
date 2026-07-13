@@ -1,0 +1,27 @@
+{
+  "source_id": "S246",
+  "source_type": "organization_event_record",
+  "title": "第1回連続講座（2023.11.12）",
+  "year": "2023",
+  "url": "https://ryukyukohp.jimdofree.com/%E3%83%9B%E3%83%BC%E3%83%A0/%E7%AC%AC1%E5%9B%9E-2023-11-12/",
+  "what_it_supports": "A101 identity: yes | direct issue support: yes_event_specific",
+  "evidence_level": "E4",
+  "bias_note": "One event does not prove stable alliance among speakers or supporting groups.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S246\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S246\\metadata.json",
+  "sha256": "53b9c733cca6326dce9ad0397cc9d6fe587470fe614016542dfe671fa91f4a8c",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T12:01:16.580248+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyukohp.jimdofree.com/%E3%83%9B%E3%83%BC%E3%83%A0/%E7%AC%AC1%E5%9B%9E-2023-11-12/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

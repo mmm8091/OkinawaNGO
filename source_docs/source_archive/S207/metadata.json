@@ -1,0 +1,27 @@
+{
+  "source_id": "S207",
+  "source_type": "government_webpage",
+  "title": "令和5年度 Womanちゅ応援宣言リーダー一覧",
+  "year": "2024",
+  "url": "https://www.pref.okinawa.jp/kurashikankyo/danjo/1021609/1027355/1027407/1027458.html",
+  "what_it_supports": "C011: current chair 伊良波純子 for C011 and separate chair/entity for A094",
+  "evidence_level": "E4",
+  "bias_note": "Dedup evidence: C011 and A094 are separately named current organizations.",
+  "review_status": "ai_seeded",
+  "notes": "HR-013/online-wave source integration 2026-07-13. Source inclusion does not approve candidate actor-issue edges, actor entry, alliance, funding, or political-position inference.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S207\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S207\\metadata.json",
+  "sha256": "2b1b07d9fd5a27c8be92883871acc2c0eb57cec88b4c7bc69a54720cd790eeee",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T11:54:59.692826+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/kurashikankyo/danjo/1021609/1027355/1027407/1027458.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 11:14:24 GMT"
+  }
+}
