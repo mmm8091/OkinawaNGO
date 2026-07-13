@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "interim"
 OUT = ROOT / "outputs" / "R08_legal_procedure_v1"
+LEGACY_ROLES = ROOT / "outputs" / "R08_legal_procedure_v0" / "case_actor_roles_v0.csv"
 
 CASES = DATA / "17_legal_policy_procedure_cases_v0.csv"
 ROLES = DATA / "18_legal_policy_actor_roles_v0.csv"
@@ -60,6 +61,12 @@ MATRIX_FIELDS = [
     "case_evidence_level", "role_evidence_level", "case_review_status",
     "role_review_status", "human_decision", "case_interpretation_limit",
     "role_interpretation_limit",
+]
+
+LEGACY_ROLE_FIELDS = [
+    "role_id", "case_id", "actor_id", "actor_name", "role", "side",
+    "target_or_recipient", "role_evidence_summary", "source_refs", "evidence_level",
+    "review_status", "interpretation_limit",
 ]
 
 
@@ -156,6 +163,40 @@ def split_refs(value: str) -> list[str]:
 
 def unique_join(values: list[str]) -> str:
     return ";".join(dict.fromkeys(value for value in values if value))
+
+
+def canonicalize_registered_actor_names(
+    roles: list[dict[str, str]], actors_by_id: dict[str, dict[str, str]],
+) -> list[dict[str, str]]:
+    """Use the central registry canonical name for every registered-actor role.
+
+    Role facts remain case-specific.  This only prevents an older alias captured
+    during HR-014 seeding from leaking into current R8 display products.
+    """
+    normalized: list[dict[str, str]] = []
+    for source_row in roles:
+        row = dict(source_row)
+        if row["actor_id"]:
+            actor = actors_by_id.get(row["actor_id"])
+            if actor is None:
+                raise ValueError(f"actor FK missing: {row['role_id']}")
+            row["actor_name"] = actor["canonical_name"]
+        normalized.append(row)
+    return normalized
+
+
+def sync_legacy_role_actor_names(actors_by_id: dict[str, dict[str, str]]) -> None:
+    """Keep the accepted HR-014 v0 role table aligned with registry canonicals."""
+    legacy_rows = read_csv(LEGACY_ROLES)
+    for row in legacy_rows:
+        if row["actor_id"]:
+            actor = actors_by_id.get(row["actor_id"])
+            if actor is None:
+                raise ValueError(f"legacy actor FK missing: {row['role_id']}")
+            row["actor_name"] = actor["canonical_name"]
+    write_csv(LEGACY_ROLES, legacy_rows, LEGACY_ROLE_FIELDS)
+    if read_csv(LEGACY_ROLES) != legacy_rows:
+        raise ValueError("legacy R8 role CSV roundtrip mismatch")
 
 
 def build_case_comparison(
@@ -444,7 +485,8 @@ def render_brief(
 
 def validate(
     cases: list[dict[str, str]], roles: list[dict[str, str]], matrix: list[dict[str, str]],
-    comparison: list[dict[str, str]], counts: list[dict[str, str]], source_ids: set[str], actor_ids: set[str]
+    comparison: list[dict[str, str]], counts: list[dict[str, str]], source_ids: set[str],
+    actors_by_id: dict[str, dict[str, str]],
 ) -> None:
     if len(cases) != 6 or {row["case_id"] for row in cases} != set(CASE_SPECS):
         raise ValueError("R8 v1 requires exactly the six HR-014 cases")
@@ -459,8 +501,10 @@ def validate(
     for row in roles:
         if bool(row["actor_id"]) == bool(row["provisional_entity_id"]):
             raise ValueError(f"role must have exactly one entity reference: {row['role_id']}")
-        if row["actor_id"] and row["actor_id"] not in actor_ids:
+        if row["actor_id"] and row["actor_id"] not in actors_by_id:
             raise ValueError(f"actor FK missing: {row['role_id']}")
+        if row["actor_id"] and row["actor_name"] != actors_by_id[row["actor_id"]]["canonical_name"]:
+            raise ValueError(f"stale actor display name: {row['role_id']}")
         if not set(split_refs(row["source_refs"])).issubset(source_ids):
             raise ValueError(f"role source FK missing: {row['role_id']}")
     for row in cases:
@@ -495,15 +539,16 @@ def validate(
 
 def main() -> None:
     cases = read_csv(CASES)
-    roles = read_csv(ROLES)
-    actor_ids = {row["actor_id"] for row in read_csv(ACTORS)}
+    actors_by_id = {row["actor_id"]: row for row in read_csv(ACTORS)}
+    roles = canonicalize_registered_actor_names(read_csv(ROLES), actors_by_id)
     source_ids = {row["source_id"] for row in read_csv(SOURCES)}
 
     comparison = build_case_comparison(cases, roles)
     matrix = build_matrix(cases, roles)
     counts = build_role_counts(roles)
     residual = residual_rows()
-    validate(cases, roles, matrix, comparison, counts, source_ids, actor_ids)
+    validate(cases, roles, matrix, comparison, counts, source_ids, actors_by_id)
+    sync_legacy_role_actor_names(actors_by_id)
 
     OUT.mkdir(parents=True, exist_ok=True)
     write_csv(MATRIX, matrix, MATRIX_FIELDS)
@@ -520,8 +565,13 @@ def main() -> None:
     BRIEF.write_text(render_brief(comparison, roles, residual), encoding="utf-8")
     REPORT_INSERT.write_text("# R8 报告插入段落\n\n" + report_paragraph() + "\n", encoding="utf-8")
     HR026.write_text(
-        "# HR-026 status\n\n本轮不创建 HR-026。六案与 27 个角色全部来自已完成的 HR-014；"
-        "三项 residual gap 仅涉及非阻断的案号、phase locator 或 subcase 粒度，不需要新的关系／角色判断。\n",
+        "# R8 module-local historical status note — not the global HR-026 task\n\n"
+        "R8 本轮当时未创建新的人工任务：六案与 27 个角色全部来自已完成的 HR-014；"
+        "三项 residual gap 仅涉及非阻断的案号、phase locator 或 subcase 粒度，不需要新的关系／角色判断。\n\n"
+        "此文件只记录 **R8 模块当时的局部状态**，不能解释为全项目‘没有 HR-026’。"
+        "全局 HR-026 后续已分配给 R9 三届县知事选—市民组织接口，共 19 项；权威任务文件为 "
+        "`outputs/R09_election_civic_interface_v1/HR026_election_civic_role_review_v0.csv`，"
+        "总导航见 `docs/human_review_tasks_v0.md`。\n",
         encoding="utf-8",
     )
 

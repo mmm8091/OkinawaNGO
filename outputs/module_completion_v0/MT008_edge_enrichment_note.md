@@ -7,13 +7,13 @@
 ## 两层数据，不混用
 
 - `actor_relation_events_v1.csv` 是 **registry-only 派生表**：45 行、9 个事件、5 类 action。它只保留已有 `actor_id` 的组织级角色，用于当前网络图。
-- `data/interim/09_actor_event_venue_edges_v0.csv` 是 HR-015 正式事实／分析表：65 行；其中 61 行 `human_checked`、4 行 `analytical_seed`。它保留九个 E2 `unverified_event_participant`，这些名称不在 actor registry。
+- `data/interim/09_actor_event_venue_edges_v0.csv` 是 HR-015 正式事实／分析表：67 行；其中 63 行 `human_checked`、4 行 `analytical_seed`。它保留九个 E2 `unverified_event_participant`，这些名称不在 actor registry。
 
 | action_type | registry-only 行数 | 正式 AEV 行数 |
 |---|---:|---:|
 | co_signing | 33 | 33 |
 | request_letter | 2 | 11 |
-| litigation | 5 | 11 |
+| litigation | 5 | 12 |
 | referendum | 4 | 4 |
 | opinion_ad | 1 | 1 |
 | pathway_role | 0 | 4 |

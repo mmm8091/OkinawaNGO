@@ -11,4 +11,9 @@ candidate_edge_count,163
 issue_pair_with_shared_actor_count,67
 cross_issue_actor_count,72
 double_human_reviewed_cross_issue_actor_count,16
-expansion_candidate_count_not_added,9
+expansion_disposition_audit_row_count,9
+expansion_already_added_count,1
+expansion_background_only_count,2
+expansion_rejected_count,5
+expansion_deferred_identity_count,1
+active_expansion_candidate_count,0

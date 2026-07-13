@@ -1,22 +1,22 @@
 ﻿metric,value,definition
-relation_observations,35,unique normalized relation observations
-mechanism_figure_admin_layer,16,public_to* relations in upper administrative layer
-mechanism_figure_lower_layer,19,service/charity/non-funding-boundary relations in lower layer
-amount_observations,26,separate monetary observations; not additive by default
-function_observations,43,service/role/site observations with no independent funding inference
+relation_observations,35,unique normalized relations in the current purposive cross-source R10 sample
+mechanism_figure_admin_layer,16,public_to* relations in the current sample's upper administrative layer
+mechanism_figure_lower_layer,19,service/charity/non-funding-boundary relations in the current sample's lower layer
+amount_observations,26,selected monetary observations in the current sample; not additive by default
+function_observations,43,selected service/role/site observations with no independent funding inference
 actual_contract_amounts,3,exact official named-counterparty contracts
 project_cost_observations,14,context only; not actor payment
 aggregate_amount_observations,2,not allocable to actor/year
 human_checked_or_revised_relations,9,inherits existing human decisions only
-relation_type_aggregate_history,2,exhaustive relation_type count; sums to relation_observations
-relation_type_commission,14,exhaustive relation_type count; sums to relation_observations
-relation_type_designated_role,1,exhaustive relation_type count; sums to relation_observations
-relation_type_donation,1,exhaustive relation_type count; sums to relation_observations
-relation_type_event_collaboration,1,exhaustive relation_type count; sums to relation_observations
-relation_type_grant,2,exhaustive relation_type count; sums to relation_observations
-relation_type_grant_opportunity,1,exhaustive relation_type count; sums to relation_observations
-relation_type_in_kind_donation,3,exhaustive relation_type count; sums to relation_observations
-relation_type_joint_in_kind_contribution,1,exhaustive relation_type count; sums to relation_observations
-relation_type_network_membership,5,exhaustive relation_type count; sums to relation_observations
-relation_type_service_presence,1,exhaustive relation_type count; sums to relation_observations
-relation_type_sponsorship,3,exhaustive relation_type count; sums to relation_observations
+relation_type_aggregate_history,2,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_commission,14,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_designated_role,1,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_donation,1,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_event_collaboration,1,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_grant,2,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_grant_opportunity,1,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_in_kind_donation,3,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_joint_in_kind_contribution,1,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_network_membership,5,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_service_presence,1,within-package relation_type count; sums to the current purposive relation sample only
+relation_type_sponsorship,3,within-package relation_type count; sums to the current purposive relation sample only

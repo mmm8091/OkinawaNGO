@@ -266,11 +266,12 @@ ACTOR_UPDATES = {
     "A107": {
         "legal_status_guess": "association_or_regional_ywca",
         "issue_tags": "women;human_rights;peace;anti_base",
-        "source_refs": "S144;S145",
+        "source_refs": "S144;S295",
         "evidence_level": "E3",
         "review_status": "human_checked",
         "notes": (
             "HR-011: local/regional YWCA founded in 2002, distinct from A105 Japan YWCA; direct Henoko photo-exhibit activity is documented. "
+            "S295 is an externally hosted YWCA contribution, not independent reporting or standalone identity proof. "
             "The A105-to-A107 affiliation is organizational, not funding or a movement alliance; parent-body actions do not automatically transfer to A107."
         ),
     },
@@ -356,7 +357,7 @@ ACTOR_ISSUE_SPECS = {
 
 
 ACTOR_ISSUE_SOURCE = {
-    "A107": "S144;S145",
+    "A107": "S144;S295",
     "A108": "S146;S147;S148",
     "A109": "S149;S150;S151;S152",
     "A110": "S153;S154",
@@ -653,22 +654,64 @@ def update_candidate_decisions() -> None:
     fields, rows = read_csv(path)
     by_id = {row["candidate_id"]: row for row in rows}
     changes = {
-        "C009": ("A107", "human_checked", "added_hr011", "Added as core-support; permanent sources S144/S145."),
+        "C008": ("", "rejected", "removed_hr010_scope", "Removed from the registry by the HR-010 scope correction; evidence remains historical only."),
+        "C009": ("A107", "human_checked", "added_hr011", "Added as core-support; permanent sources S144/S295. S295 is YWCA-authored rather than independent reporting."),
+        "C010": ("", "human_checked", "background_only_hr013", "HR-013 retained this foundation only as a war-memory background node, not a base-dispute actor."),
+        "C011": ("A111", "human_checked", "added_hr013", "HR-013 added A111 as a core-support women/peace/human-rights actor; do not confuse it with A094 or おきなわ女性財団."),
         "C012": ("A108", "human_checked", "added_hr011", "Added as core at E4; permanent sources S146-S148."),
+        "C013": ("A095", "ai_seeded", "merged_identity_only", "Merged as A095 at the E4 identity layer; classification and relations still require the applicable human gate."),
+        "C014": ("A096", "ai_seeded", "merged_identity_only", "Merged as A096 at the E4 identity layer; classification and relations still require the applicable human gate."),
         "C015": ("", "needs_second_source", "defer", "Exact identity remains unresolved; do not merge with 宮古島地下水研究会."),
+        "C016": ("A097", "ai_seeded", "merged_identity_only", "Merged as A097 at the E4 identity layer; classification and relations still require the applicable human gate."),
+        "C017": ("A098", "ai_seeded", "merged_identity_only", "Merged as A098 at the E4 identity layer; classification and relations still require the applicable human gate."),
+        "C018": ("A099", "ai_seeded", "merged_identity_only", "Merged as A099 at the E4 identity layer; classification and relations still require the applicable human gate."),
+        "C019": ("A100", "ai_seeded", "merged_identity_only", "Merged as A100 at the E4 identity layer; classification and relations still require the applicable human gate."),
+        "C020": ("A101", "ai_seeded", "merged_identity_only", "Merged as A101 at the E4 identity layer; classification and relations still require the applicable human gate."),
+        "C021": ("A102", "human_checked", "added_hr010", "HR-010 added the national pollution-lawyers network as a background/support legal actor."),
+        "C022": ("A103", "human_checked", "added_hr010", "HR-010 added the national base-noise plaintiff liaison as a background/support legal actor."),
         "C023": ("A109", "human_checked", "added_hr011", "Added as fourth-round counsel team at E4 existence; roster remains bounded."),
+        "C024": ("A104", "human_checked", "added_hr010", "HR-010 added the Futenma noise-litigation counsel team; it is distinct from the plaintiff group A053."),
+        "C025": ("A105", "human_checked", "added_hr010_background", "HR-010 added Japan YWCA only as a mainland statement/solidarity actor; no stable-alliance edge."),
         "C026": ("A052", "human_checked", "merged_round_of", "Fourth-round designation of continuous A052; no new actor."),
         "C027": ("A053", "human_checked", "merged_round_of", "Second-round designation of continuous A053; no new actor."),
         "C028": ("A010", "human_revised", "merged_predecessor_of", "2015 predecessor/founding core of wider A010 formed 2016-09; not a rename."),
+        "C029": ("", "rejected", "out_of_scope_hr013", "HR-013 rejected this general public-interest organization because no direct Phase-1 issue connection was verified."),
+        "C030": ("", "rejected", "out_of_scope_hr013", "HR-013 rejected this general public-interest organization because no direct Phase-1 issue connection was verified."),
+        "C031": ("", "rejected", "out_of_scope_hr013", "HR-013 rejected this general public-interest organization because no direct Phase-1 issue connection was verified."),
+        "C032": ("", "rejected", "out_of_scope_hr013", "HR-013 rejected this general public-interest organization because no direct Phase-1 issue connection was verified."),
+        "C033": ("", "rejected", "out_of_scope_hr013", "HR-013 rejected this general public-interest organization because no direct Phase-1 issue connection was verified."),
+        "C034": ("", "human_checked", "background_only_hr013", "HR-013 retained this administrative coral-conservation platform only as a background node; no political stance or anti-base edge."),
+        "C035": ("A106", "human_checked", "added_hr010_background", "HR-010 added this mainland solidarity actor as A106; canonical キャンペーン／連絡会 alias remains a bounded check."),
         "C036": ("A110", "human_checked", "added_hr011_background", "Added only to mainland-solidarity/R11 background layer."),
     }
     for candidate_id, (final_id, status, recommendation, reason) in changes.items():
         row = by_id[candidate_id]
-        if final_id:
-            row["proposed_id"] = final_id
+        row["proposed_id"] = final_id
         row["review_status"] = status
         row["triage_recommendation"] = recommendation
         row["add_or_defer_reason"] = reason
+    by_id["C011"]["issue_tags"] = "women;peace;anti_base;human_rights"
+    by_id["C011"]["evidence_level"] = "E4"
+    by_id["C012"]["evidence_level"] = "E4"
+    by_id["C023"]["evidence_level"] = "E4"
+    write_csv(path, fields, rows)
+
+
+def update_hr014_source_metadata() -> None:
+    """Keep source-level metadata distinct from the completed HR-014 case review."""
+    path = DATA / "05_source_log_initial_v0.csv"
+    fields, rows = read_csv(path)
+    by_id = {row["source_id"]: row for row in rows}
+    year_corrections = {"S128": "2017", "S132": "2004", "S143": "2007"}
+    for source_id in (f"S{number:03d}" for number in range(128, 144)):
+        row = by_id[source_id]
+        if source_id in year_corrections:
+            row["year"] = year_corrections[source_id]
+        prefix = row["notes"].split("; legal outcome", 1)[0]
+        row["notes"] = (
+            f"{prefix}; case outcome and actor-role semantics were accepted by the user in HR-014; "
+            "source metadata remains ai_seeded unless separately reviewed."
+        )
     write_csv(path, fields, rows)
 
 
@@ -678,6 +721,9 @@ def validate() -> None:
     assert all(f"S{number:03d}" in source_ids for number in range(144, 160))
     s051 = next(row for row in sources if row["source_id"] == "S051")
     assert s051["evidence_level"] == "E0" and s051["review_status"] == "rejected_archive_mismatch"
+    assert next(row for row in sources if row["source_id"] == "S128")["year"] == "2017"
+    assert next(row for row in sources if row["source_id"] == "S132")["year"] == "2004"
+    assert next(row for row in sources if row["source_id"] == "S143")["year"] == "2007"
 
     _, actors = read_csv(DATA / "01_actor_registry_initial_v0.csv")
     actor_by_id = {row["actor_id"]: row for row in actors}
@@ -710,6 +756,7 @@ def main() -> None:
     update_relations()
     update_review_log()
     update_candidate_decisions()
+    update_hr014_source_metadata()
     validate()
     print(
         "Finalized HR-011/012/014/015 cross-task state: S144-S159, S051 rejection, "

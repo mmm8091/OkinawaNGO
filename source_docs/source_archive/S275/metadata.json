@@ -1,0 +1,27 @@
+{
+  "source_id": "S275",
+  "source_type": "news",
+  "title": "学校敷地から化学物質PFOS 沖縄米軍基地に隣接",
+  "year": "2022",
+  "url": "https://www.asahi.com/articles/ASQ9S5J0LQ96TPOB004.html",
+  "what_it_supports": "Independent direct-role evidence for resident-funded field sampling",
+  "evidence_level": "E3",
+  "bias_note": "Paywalled after the visible evidence; preserve the visible locator and do not infer beyond it.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS030; proposal refs=NW2-C_registry_gate:RV2SP009. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 web/archive flags=preserve_visible_locator_under_paywall_boundary. Sensitive boundary tags=PFAS_health_or_source_causality_not_inferred;request_or_coparticipation_not_partnership.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S275\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S275\\metadata.json",
+  "sha256": "7e5c7e688c2064df38e41de8450ffedd641ee6ed31d3253906f51cbff9623752",
+  "content_type": "text/html;charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:20.804650+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.asahi.com/articles/ASQ9S5J0LQ96TPOB004.html",
+    "status_code": "200",
+    "content_type": "text/html;charset=UTF-8",
+    "content_length": "197838",
+    "last_modified": ""
+  }
+}

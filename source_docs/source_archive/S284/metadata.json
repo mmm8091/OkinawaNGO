@@ -1,0 +1,27 @@
+{
+  "source_id": "S284",
+  "source_type": "legal_source",
+  "title": "中央労働委員会命令書 沖縄セメント工業事件",
+  "year": "2014",
+  "url": "https://www.mhlw.go.jp/churoi/meirei_db/mei/pdf/m11367.pdf",
+  "what_it_supports": "Formal exact identity and regional-union party status",
+  "evidence_level": "E4",
+  "bias_note": "Use for identity and legal procedure only; the merits are unrelated to Phase-1 issue coding.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS039; proposal refs=NW2-C_registry_gate:RV2SP019. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=strike_legality_or_effect_not_adjudicated;common_event_not_stable_alliance.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S284\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S284\\metadata.json",
+  "sha256": "c7e699debeafefefb132b4e3f93addda1abc5f4f13b0a6e125753284457bd82b",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:05:02.005367+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.mhlw.go.jp/churoi/meirei_db/mei/pdf/m11367.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "193320",
+    "last_modified": "Thu, 28 Jun 2018 12:22:04 GMT"
+  }
+}

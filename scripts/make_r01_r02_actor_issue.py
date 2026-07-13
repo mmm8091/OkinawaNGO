@@ -397,56 +397,92 @@ def build_issue_coverage(
     return rows
 
 
-def build_expansion_candidates() -> list[dict[str, object]]:
+def build_expansion_candidates(
+    actors_by_id: dict[str, dict[str, str]],
+) -> list[dict[str, object]]:
+    """Render the HR-013 disposition ledger for the former R1/R2 shortlist.
+
+    The filename is retained for traceability, but these nine rows are no longer
+    an active expansion shortlist.  Their final state must come from the shared
+    candidate table rather than from pre-HR-013 heuristics in this generator.
+    """
     candidates = read_csv(EXPANSION)
     selected = {"C010", "C011", "C015", "C029", "C030", "C031", "C032", "C033", "C034"}
-    gap = {
-        "C010": "R1 女性／和平教育层；当前生态偏运动组织",
-        "C011": "R1/R2 女性—和平—人权桥接层",
-        "C015": "R2/R3/R4 宫古地下水—生活安全—部署桥接层",
-        "C029": "R1/R2 非对抗型和平与冲突解决层",
-        "C030": "R1/R4 宫古一般环境组织对照层",
-        "C031": "R1/R3 宫古海岸／绿化组织对照层",
-        "C032": "R1/R3/R4 宫古社区—环境层",
-        "C033": "R1/R2 湿地与环境教育组织层",
-        "C034": "R1/R2 珊瑚礁—生物多样性—行政协作层",
+    expected_dispositions = {
+        "C010": ("", "background_only_hr013"),
+        "C011": ("A111", "added_hr013"),
+        "C015": ("", "defer"),
+        "C029": ("", "out_of_scope_hr013"),
+        "C030": ("", "out_of_scope_hr013"),
+        "C031": ("", "out_of_scope_hr013"),
+        "C032": ("", "out_of_scope_hr013"),
+        "C033": ("", "out_of_scope_hr013"),
+        "C034": ("", "background_only_hr013"),
     }
-    continuity = {
-        "C010": "verified_official_foundation_page",
-        "C011": "partial_online_identity; second organizational source needed",
-        "C015": "unresolved_exact_identity; do not merge with 宮古島地下水研究会",
-        "C029": "verified_official_NPO_record",
-        "C030": "verified_official_NPO_record_and_reports",
-        "C031": "verified_official_NPO_record",
-        "C032": "verified_sustained_organization_site",
-        "C033": "verified_NPO_and_sustained_materials",
-        "C034": "verified_sustained_network_site",
+    module_use = {
+        "C010": "R1/R4 background context: war-memory education only",
+        "C011": "R1/R2 core-support actor already represented by A111",
+        "C015": "possible R2/R3/R4 groundwater-deployment bridge only if identity is resolved",
+        "C029": "none: general public-interest function is outside Phase-1 scope",
+        "C030": "none: general public-interest function is outside Phase-1 scope",
+        "C031": "none: general public-interest function is outside Phase-1 scope",
+        "C032": "none: general public-interest function is outside Phase-1 scope",
+        "C033": "none: general public-interest function is outside Phase-1 scope",
+        "C034": "R4 background context: general coral-conservation platform only",
     }
+    state = {
+        "added_hr013": (
+            "already_in_registry", "closed_merged",
+            "No expansion action. Use the central actor row and its reviewed edges.",
+            "Already counted once in the registry; this ledger row is not a candidate actor.",
+        ),
+        "background_only_hr013": (
+            "background_only_not_registry", "closed_background_only",
+            "No actor-expansion task. Retain only as bounded module context.",
+            "Background context only; do not count as a Phase-1 actor or infer a political stance.",
+        ),
+        "out_of_scope_hr013": (
+            "rejected_not_registry", "closed_rejected",
+            "No further Phase-1 expansion work unless a new human decision reopens scope.",
+            "Human-rejected as out of scope; organization identity does not establish Phase-1 relevance.",
+        ),
+        "defer": (
+            "deferred_not_registry", "deferred_second_source",
+            "Resolve exact organization identity and continuity with an independent second source; do not merge with 宮古島地下水研究会.",
+            "Deferred identity item, not an active or count-ready expansion candidate.",
+        ),
+    }
+    selected_rows = [c for c in candidates if c["candidate_id"] in selected]
+    if {c["candidate_id"] for c in selected_rows} != selected:
+        raise ValueError("R1/R2 HR-013 disposition ledger is missing a selected candidate")
     rows: list[dict[str, object]] = []
-    for c in candidates:
-        if c["candidate_id"] not in selected:
-            continue
-        verified = continuity[c["candidate_id"]].startswith("verified")
+    for c in selected_rows:
+        candidate_id = c["candidate_id"]
+        expected_id, expected_disposition = expected_dispositions[candidate_id]
+        if c["proposed_id"] != expected_id or c["triage_recommendation"] != expected_disposition:
+            raise ValueError(
+                f"stale HR-013 candidate state for {candidate_id}: "
+                f"{c['proposed_id']!r}/{c['triage_recommendation']!r}"
+            )
+        registry_status, task_status, next_task, limit = state[expected_disposition]
+        if expected_disposition == "added_hr013":
+            actor = actors_by_id.get(expected_id)
+            if actor is None or actor["canonical_name"] != c["canonical_name"]:
+                raise ValueError(f"{candidate_id} does not crosswalk cleanly to {expected_id}")
+            limit += " The historical candidate URL is a third-party program record, not A111's official site."
         rows.append({
-            "candidate_id": c["candidate_id"], "canonical_name": c["canonical_name"],
+            "candidate_id": candidate_id, "proposed_id": c["proposed_id"],
+            "canonical_name": c["canonical_name"],
             "actor_class_proposed": c["actor_class"], "origin_type": c["origin_type"],
             "primary_places": c["primary_places"], "issue_tags_candidate": c["issue_tags"],
-            "module_gap_target": gap[c["candidate_id"]],
-            "organization_level_candidate": "yes",
-            "one_off_signatory_only": "no",
-            "online_continuity_status": continuity[c["candidate_id"]],
-            "direct_project_issue_link_status": (
-                "needs_online_check" if c["candidate_id"] != "C015" else "identity_first"
-            ),
-            "count_ready": "no",
-            "recommended_next_online_task": (
-                "find dated self-published or official records linking the organization to a Phase-1 issue; add only after edge-level evidence"
-                if verified else
-                "resolve organization identity and continuity with a second organization-level source before issue coding"
-            ),
+            "module_use_after_hr013": module_use[candidate_id],
             "source_url": c["source_url"], "evidence_level_current": c["evidence_level"],
-            "current_triage": c["triage_recommendation"],
-            "interpretation_limit": "candidate shortlist only; not added to registry and not counted as an actor",
+            "final_review_status": c["review_status"],
+            "final_disposition": c["triage_recommendation"],
+            "registry_status": registry_status, "remaining_task_status": task_status,
+            "recommended_next_task": next_task,
+            "decision_basis": c["add_or_defer_reason"],
+            "interpretation_limit": limit,
         })
     return rows
 
@@ -475,7 +511,7 @@ def save_ecology_figure(actors: list[dict[str, str]]) -> None:
     ax.invert_yaxis()
     ax.grid(color="#dde4e8", linewidth=0.8)
     ax.set_axisbelow(True)
-    ax.set_title("R1｜118 个 actor 的组织生态：功能层 × 来源层", fontsize=18, loc="left", pad=25, fontweight="bold")
+    ax.set_title(f"R1｜{len(actors)} 个 actor 的组织生态：功能层 × 来源层", fontsize=18, loc="left", pad=25, fontweight="bold")
     ax.text(0, 1.035, "气泡面积＝actor 数；H＝actor registry 中 human_checked / human_revised 数。",
             transform=ax.transAxes, fontsize=10, color="#52616b")
     ax.text(0, -0.12,
@@ -534,10 +570,11 @@ def save_bipartite_figure(
     ax.set_ylim(-2, len(sorted_actors) + 1)
     ax.invert_yaxis()
     ax.axis("off")
-    ax.set_title("R2｜完整 actor–issue 二模网络：118 actors × 26 issues × 218 candidate edges",
+    isolated_count = len(actors) - len({str(edge["actor_id"]) for edge in layered})
+    ax.set_title(f"R2｜完整 actor–issue 二模网络：{len(actors)} actors × {len(issues)} issues × {len(layered)} edges",
                  fontsize=20, loc="left", pad=24, fontweight="bold")
     ax.text(0.01, 1.002,
-            "左：全部 registry actors（含 18 个当前无 actor–issue edge 的孤立节点）；右：全部议题。深线＝已人审，浅线＝候选。",
+            f"左：全部 registry actors（含 {isolated_count} 个当前无 actor–issue edge 的孤立节点）；右：全部议题。深线＝已人审，浅线＝候选。",
             transform=ax.transAxes, fontsize=11, color="#52616b")
     scope_handles = [Line2D([0], [0], color=c, lw=3, label=l) for l, c in [
         ("长期定位／持续角色", SCOPE_COLORS["organizational_positioning"]),
@@ -747,12 +784,13 @@ def make_brief(
         f"- {r['actor_id']} {r['canonical_name']}：全部 {r['issue_count_all']} 个议题，双侧人审可用 {r['issue_count_human_reviewed']} 个；{r['bridge_classification_v1']}。"
         for r in top_human
     )
+    expansion_dispositions = Counter(str(r["final_disposition"]) for r in expansion)
     write_text(OUT / "R01_R02_explanatory_brief_v1.md", f"""
 # R1/R2 解释性验收 brief v1
 
 ## 验收结论
 
-按《复归后冲绳民间组织 / NGO 分类与议题网络一期研究方案》的原始标准，R1/R2 已从“桥梁组织示例图”推进为可验收的完整 v1 包：R1 有 118 个 actor 的分类审计、标准化分析映射和组织生态图；R2 有 118 actors × 26 issues 的完整二模网络、议题共现图、跨议题 actor 表和证据／时间范围分层。它仍是公开资料驱动的候选网络，不是冲绳组织总体名录，也不是稳定联盟图。
+按《复归后冲绳民间组织 / NGO 分类与议题网络一期研究方案》的原始标准，R1/R2 已从“桥梁组织示例图”推进为可验收的完整 v1 包：R1 有 {len(actors)} 个 actor 的分类审计、标准化分析映射和组织生态图；R2 有 {len(actors)} actors × {len(issues)} issues 的完整二模网络、议题共现图、跨议题 actor 表和证据／时间范围分层。它仍是公开资料驱动的候选网络，不是冲绳组织总体名录，也不是稳定联盟图。
 
 ## Q1：冲绳有哪些相关民间组织？
 
@@ -796,12 +834,12 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 
 ## Registry 扩样：数量从属于模块缺层
 
-本包提出 {len(expansion)} 个组织级候选，全部明确排除“一次性署名凑数”，且暂不计入 registry。{sum(str(r['online_continuity_status']).startswith('verified') for r in expansion)} 个已有在线可核的持续组织／法人证据，但仍需找到与一期议题直接相连的 edge-level source；其余先解决组织身份或持续性。推荐顺序是：先激活现有 {len(isolated)} 个孤立 actor，再对候选执行直接议题连接检索，最后才决定是否扩表。Registry 可以超过 120，也可以暂不超过；验收看的是新增 actor 是否补上 R1/R2 的解释层。
+`registry_expansion_candidates_v1.csv` 现在是这批 **{len(expansion)} 行历史候选的 HR-013 最终处置账**，不是仍待补入的核心候选清单。其中 {expansion_dispositions['added_hr013']} 行已并入 registry（C011→A111），{expansion_dispositions['background_only_hr013']} 行只作背景节点（C010／C034），{expansion_dispositions['out_of_scope_hr013']} 行已因缺少一期直接连接而剔除（C029–C033），另有 {expansion_dispositions['defer']} 行 C015 因组织身份与独立二源不足继续 defer。背景与 rejected 项都没有继续扩表任务，C015 也不是 count-ready actor；它只能在身份、持续性及与“宮古島地下水研究会”的关系厘清后重新提交人审。当前扩表决定应读取独立的价值门槛包，不能把本表九行重新解释成 active shortlist。
 
 ## 图件怎么读
 
 1. `fig1_r01_actor_ecology.png`：回答“有哪些组织、如何分类”，同时显示来源层和 actor-level 人审量。
-2. `fig2_r02_full_bipartite_network.png`：方案要求的完整组织—议题二模网络；保留全部 118 actors 和 26 issues。
+2. `fig2_r02_full_bipartite_network.png`：方案要求的完整组织—议题二模网络；保留全部 {len(actors)} actors 和 {len(issues)} issues。
 3. `fig3_r02_issue_cooccurrence.png`：显示同一 actor 连接的议题对，并单列双侧人审计数。
 4. `fig4_r02_cross_issue_actors.png`：把 bridge 拆为长期定位、制度／案件、事件性和待判定四种机制。
 """)
@@ -827,7 +865,7 @@ def main() -> None:
     cross = build_cross_issue(actors, layered)
     co = build_cooccurrence(layered, issues)
     coverage = build_issue_coverage(issues, layered)
-    expansion = build_expansion_candidates()
+    expansion = build_expansion_candidates(actors_by_id)
 
     write_csv(
         DERIVED, layered,
@@ -870,17 +908,16 @@ def main() -> None:
     )
     write_csv(
         OUT / "registry_expansion_candidates_v1.csv", expansion,
-        ["candidate_id", "canonical_name", "actor_class_proposed", "origin_type", "primary_places",
-         "issue_tags_candidate", "module_gap_target", "organization_level_candidate", "one_off_signatory_only",
-         "online_continuity_status", "direct_project_issue_link_status", "count_ready",
-         "recommended_next_online_task", "source_url", "evidence_level_current", "current_triage",
-         "interpretation_limit"],
+        ["candidate_id", "proposed_id", "canonical_name", "actor_class_proposed", "origin_type",
+         "primary_places", "issue_tags_candidate", "module_use_after_hr013", "source_url",
+         "evidence_level_current", "final_review_status", "final_disposition", "registry_status",
+         "remaining_task_status", "recommended_next_task", "decision_basis", "interpretation_limit"],
     )
     acceptance = [
         {
             "module": "R1", "plan_output": "组织分类表", "delivery_status": "delivered_v1",
             "deliverable": "actor_class_audit_118_v1.csv; actor_class_controlled_mapping_v1.csv",
-            "acceptance_note": "118 actors audited; analysis mapping is separate from registry; HR-019 decisions remain blank",
+            "acceptance_note": f"{len(actors)} actors audited; analysis mapping is separate from registry; HR-019 decisions remain blank",
         },
         {
             "module": "R1", "plan_output": "组织生态图", "delivery_status": "delivered_v1",
@@ -890,22 +927,22 @@ def main() -> None:
         {
             "module": "R1", "plan_output": "重点组织清单", "delivery_status": "delivered_with_scope",
             "deliverable": "cross_issue_actors_v1.csv",
-            "acceptance_note": "priority list is mechanism-aware; 15 actors currently have at least two human-reviewed issues",
+            "acceptance_note": f"priority list is mechanism-aware; {sum(int(r['issue_count_human_reviewed']) >= 2 for r in cross)} actors currently have at least two human-reviewed issues",
         },
         {
             "module": "R2", "plan_output": "组织—议题网络图", "delivery_status": "delivered_v1",
             "deliverable": "fig2_r02_full_bipartite_network.png; data/interim/24_r01_r02_actor_issue_layered_v0.csv",
-            "acceptance_note": "all 118 actors and all 26 issues retained; 218 edges split by review and temporal scope",
+            "acceptance_note": f"all {len(actors)} actors and all {len(issues)} issues retained; {len(layered)} edges split by review and temporal scope",
         },
         {
             "module": "R2", "plan_output": "议题共现图", "delivery_status": "delivered_v1",
             "deliverable": "fig3_r02_issue_cooccurrence.png; issue_cooccurrence_v1.csv",
-            "acceptance_note": "all 67 observed issue pairs; human-reviewed and positioning counts remain separate",
+            "acceptance_note": f"all {len(co)} observed issue pairs; human-reviewed and positioning counts remain separate",
         },
         {
             "module": "R2", "plan_output": "跨议题组织名单", "delivery_status": "delivered_v1",
             "deliverable": "cross_issue_actors_v1.csv; fig4_r02_cross_issue_actors.png",
-            "acceptance_note": "71 actors span at least two issues, but only 15 have at least two human-reviewed issue links",
+            "acceptance_note": f"{sum(int(r['issue_count_all']) >= 2 for r in cross)} actors span at least two issues, but only {sum(int(r['issue_count_human_reviewed']) >= 2 for r in cross)} have at least two human-reviewed issue links",
         },
     ]
     write_csv(
@@ -933,7 +970,12 @@ def main() -> None:
         {"metric": "issue_pair_with_shared_actor_count", "value": len(co)},
         {"metric": "cross_issue_actor_count", "value": sum(int(r["issue_count_all"]) >= 2 for r in cross)},
         {"metric": "double_human_reviewed_cross_issue_actor_count", "value": sum(int(r["issue_count_human_reviewed"]) >= 2 for r in cross)},
-        {"metric": "expansion_candidate_count_not_added", "value": len(expansion)},
+        {"metric": "expansion_disposition_audit_row_count", "value": len(expansion)},
+        {"metric": "expansion_already_added_count", "value": sum(r["final_disposition"] == "added_hr013" for r in expansion)},
+        {"metric": "expansion_background_only_count", "value": sum(r["final_disposition"] == "background_only_hr013" for r in expansion)},
+        {"metric": "expansion_rejected_count", "value": sum(r["final_disposition"] == "out_of_scope_hr013" for r in expansion)},
+        {"metric": "expansion_deferred_identity_count", "value": sum(r["final_disposition"] == "defer" for r in expansion)},
+        {"metric": "active_expansion_candidate_count", "value": 0},
     ]
     write_csv(OUT / "validation_metrics_v1.csv", metrics, ["metric", "value"])
     write_text(OUT / "README.md", r"""

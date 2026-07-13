@@ -1,0 +1,27 @@
+{
+  "source_id": "S286",
+  "source_type": "local_news",
+  "title": "全港湾沖縄が安保法案反対訴え抗議集会",
+  "year": "2015",
+  "url": "https://ryukyushimpo.jp/news/prentry-249100.html",
+  "what_it_supports": "Direct anti-Henoko/security-law labor action and port-workplace framing",
+  "evidence_level": "E3",
+  "bias_note": "Participant count is organizer-reported; the event does not establish alliance ties.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS041; proposal refs=NW2-C_registry_gate:RV2SP021. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=strike_legality_or_effect_not_adjudicated;common_event_not_stable_alliance.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S286\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S286\\metadata.json",
+  "sha256": "a2a33d8122e89b420913629288c946de0915d3d215dcbec7ead01455d5b6776b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:05:03.576144+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/prentry-249100.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 13:05:14 GMT"
+  }
+}

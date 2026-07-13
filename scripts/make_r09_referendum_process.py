@@ -41,6 +41,10 @@ README_PATH = OUT / "README.md"
 VALIDATION_PATH = OUT / "validation_report_v0.md"
 TIMELINE_PATH = OUT / "referendum_process_timeline_v0.png"
 FLOW_PATH = OUT / "institutional_gate_flow_v0.png"
+ACCEPTED_TIMELINE_PNG_PATH = OUT / "referendum_process_timeline_accepted_v1.png"
+ACCEPTED_TIMELINE_SVG_PATH = OUT / "referendum_process_timeline_accepted_v1.svg"
+ACCEPTED_FLOW_PNG_PATH = OUT / "institutional_gate_flow_accepted_v1.png"
+ACCEPTED_FLOW_SVG_PATH = OUT / "institutional_gate_flow_accepted_v1.svg"
 
 
 STAGE_FIELDS = [
@@ -791,6 +795,17 @@ def date_for_plot(row: dict[str, str]) -> datetime:
 def setup_fonts() -> None:
     plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "Yu Gothic", "DejaVu Sans"]
     plt.rcParams["axes.unicode_minus"] = False
+    plt.rcParams["svg.hashsalt"] = "r09-referendum-accepted-v1"
+
+
+def normalize_svg_trailing_whitespace(path: Path) -> None:
+    """Keep generated SVGs diff-clean and byte-stable across repeated runs."""
+    content = path.read_text(encoding="utf-8")
+    path.write_text(
+        "\n".join(line.rstrip() for line in content.splitlines()) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
 
 
 def make_timeline() -> None:
@@ -907,6 +922,259 @@ def make_gate_flow() -> None:
     plt.close(fig)
 
 
+ACCEPTED_CASE_TITLES = {
+    NAGO: "名护 1997｜直接请求进入投票，结果与其后行政决定分离",
+    YONAGUNI: "与那国 2014–2015｜正式层从自治体条例开始，不绘入待审运动节点与票数",
+    PREF: "冲绳县 2018–2019｜公民请求经条例设计进入全县投票与对外通知",
+    ISHIGAKI: "石垣 2018–2021｜两次议会否决后进入诉讼，随后公投条款被删除",
+}
+
+ACCEPTED_STAGE_LABELS = {
+    "R9ST001": "请求准备",
+    "R9ST002": "19,734份提交\n17,539份有效",
+    "R9ST003": "四选项条例成立",
+    "R9ST004": "实施住民投票",
+    "R9ST005": "反对16,639\n赞成14,267",
+    "R9ST006": "市长接受建设并辞职",
+    "R9ST008": "条例第23号成立",
+    "R9ST009": "条例两次修正",
+    "R9ST011": "实施住民投票",
+    "R9ST013": "町长解释为推进",
+    "R9ST014": "A051组织发起",
+    "R9ST015": "92,848份有效签名",
+    "R9ST016": "正式直接请求",
+    "R9ST017": "条例第62号成立",
+    "R9ST018": "加入第三选项",
+    "R9ST019": "全41市町村投票",
+    "R9ST020": "反对434,273\n知事通知日美",
+    "R9ST021": "14,263份有效签名",
+    "R9ST022": "27名请求代表",
+    "R9ST023": "首次条例案否决",
+    "R9ST024": "市议员条例案再否决",
+    "R9ST025": "义务付け诉讼提起",
+    "R9ST026": "全部程序性却下",
+    "R9ST029": "公投条款删除",
+}
+
+ACCEPTED_STAGE_GATE = {
+    "R9ST001": 0, "R9ST002": 0, "R9ST003": 1, "R9ST004": 2,
+    "R9ST005": 3, "R9ST006": 4,
+    "R9ST008": 1, "R9ST009": 1, "R9ST011": 2, "R9ST013": 4,
+    "R9ST014": 0, "R9ST015": 0, "R9ST016": 0, "R9ST017": 1,
+    "R9ST018": 1, "R9ST019": 2, "R9ST020": 3,
+    "R9ST021": 0, "R9ST022": 0, "R9ST023": 1, "R9ST024": 1,
+    "R9ST025": 2, "R9ST026": 3, "R9ST029": 4,
+}
+
+ACCEPTED_FLOW_LABELS = {
+    "R9ST001": "请求准备", "R9ST002": "17,539有效签名",
+    "R9ST003": "四选项条例", "R9ST004": "实施投票",
+    "R9ST005": "反对16,639／赞成14,267", "R9ST006": "市长接受并辞职",
+    "R9ST008": "条例第23号", "R9ST009": "两次修正",
+    "R9ST011": "实施投票", "R9ST013": "町长解释为推进",
+    "R9ST014": "A051组织发起", "R9ST015": "92,848有效签名",
+    "R9ST016": "正式直接请求", "R9ST017": "条例第62号",
+    "R9ST018": "加入第三选项", "R9ST019": "全41市町村投票",
+    "R9ST020": "反对434,273；知事通知日美",
+    "R9ST021": "14,263有效签名", "R9ST022": "27名请求代表",
+    "R9ST023": "市长案否决", "R9ST024": "市议员案再否决",
+    "R9ST025": "义务付け诉讼", "R9ST026": "程序性却下",
+    "R9ST029": "公投条款删除",
+}
+
+
+def accepted_figure_inputs() -> tuple[list[dict[str, str]], list[dict[str, str]]]:
+    """Read the two formal tables; never fall back to reviewed-all inputs."""
+    stages = read_csv_rows(STAGE_PATH)
+    roles = read_csv_rows(ROLE_PATH)
+    stage_ids = {row["stage_id"] for row in stages}
+    if len(stages) != 24 or any(row["review_status"] != "accepted" for row in stages):
+        raise ValueError("Accepted-only figure input must be the 24-row formal stage table")
+    if len(roles) != 25 or any(row["review_status"] != "accepted" for row in roles):
+        raise ValueError("Accepted-only figure input must be the 25-row formal role table")
+    if stage_ids != set(ACCEPTED_STAGE_LABELS) or stage_ids != set(ACCEPTED_STAGE_GATE):
+        raise ValueError("Accepted-only figure mappings must cover all and only 24 formal stages")
+    forbidden = ("needs_human_review", "HR-017", "HR017", "pending")
+    for row in [*stages, *roles]:
+        joined = " ".join(row.values())
+        if any(token in joined for token in forbidden):
+            raise ValueError(f"Accepted-only figure input contains pending-layer token: {row}")
+    return stages, roles
+
+
+def accepted_display_date(row: dict[str, str]) -> str:
+    start, end = row["date_start"], row["date_end"]
+    if start and end and start != end:
+        return f"{start}→{end}"
+    return start or end or "日期未列"
+
+
+def save_accepted_figure(fig: plt.Figure, png_path: Path, svg_path: Path) -> None:
+    png_meta = {"Software": "R09 accepted-only process builder"}
+    svg_meta = {
+        "Creator": "R09 accepted-only process builder",
+        "Date": "2026-07-13",
+    }
+    fig.savefig(png_path, dpi=180, bbox_inches="tight", metadata=png_meta)
+    fig.savefig(svg_path, format="svg", bbox_inches="tight", metadata=svg_meta)
+    normalize_svg_trailing_whitespace(svg_path)
+
+
+def make_accepted_timeline(
+    stages: list[dict[str, str]], roles: list[dict[str, str]],
+) -> None:
+    """Formal report timeline: 24 accepted stages only, with no HR-017 layer."""
+    setup_fonts()
+    case_order = (NAGO, YONAGUNI, PREF, ISHIGAKI)
+    colors = {
+        NAGO: "#246A8D", YONAGUNI: "#2E8B78",
+        PREF: "#3E7C78", ISHIGAKI: "#7A5AA6",
+    }
+    by_case: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in stages:
+        by_case[row["case_id"]].append(row)
+    for rows in by_case.values():
+        rows.sort(key=lambda row: int(row["stage_order"]))
+
+    fig, axes = plt.subplots(4, 1, figsize=(18, 11.5), constrained_layout=True)
+    for ax, case_id in zip(axes, case_order):
+        rows = by_case[case_id]
+        color = colors[case_id]
+        xs = list(range(len(rows)))
+        ax.hlines(0, 0, max(xs), color="#B8C2CC", linewidth=2.2, zorder=1)
+        for idx, (row, x) in enumerate(zip(rows, xs)):
+            ax.scatter(
+                x, 0, s=105, facecolors=color, edgecolors="white",
+                linewidths=1.3, zorder=3,
+            )
+            y = 0.48 if idx % 2 == 0 else -0.50
+            label = f"{accepted_display_date(row)}\n{ACCEPTED_STAGE_LABELS[row['stage_id']]}"
+            ax.annotate(
+                label, (x, 0), xytext=(x, y), textcoords="data",
+                ha="center", va="bottom" if y > 0 else "top", fontsize=8.4,
+                linespacing=1.25,
+                bbox={
+                    "boxstyle": "round,pad=0.25", "facecolor": "white",
+                    "edgecolor": color, "linewidth": 1.2, "alpha": 0.98,
+                },
+                arrowprops={"arrowstyle": "-", "color": color, "lw": 0.9},
+            )
+            if idx < len(rows) - 1:
+                ax.annotate(
+                    "", xy=(x + 0.88, 0), xytext=(x + 0.14, 0),
+                    arrowprops={"arrowstyle": "-|>", "color": "#B8C2CC", "lw": 1.1},
+                )
+        ax.set_title(ACCEPTED_CASE_TITLES[case_id], loc="left", fontsize=11.8, fontweight="bold")
+        ax.set_xlim(-0.48, len(rows) - 0.52)
+        ax.set_ylim(-1.0, 1.0)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        ax.spines[["left", "right", "top", "bottom"]].set_visible(False)
+
+    fig.suptitle("R9 四案程序时间线｜accepted-only 正文版", fontsize=18, fontweight="bold")
+    fig.text(
+        0.5, 0.965,
+        f"仅绘制中央正式表的 {len(stages)} 个 accepted 阶段；角色边界依据 {len(roles)} 条 accepted 角色记录。HR-017 扩展节点未绘入。",
+        ha="center", fontsize=10.2, color="#3E4A59",
+    )
+    fig.text(
+        0.01, 0.004,
+        "注：箭头与左右顺序只表示程序编排，不表示动员造成议会、投票、法院或行政结果。A011 是住民投票请求/运动主体（requester），不是诉讼中的个体原告（plaintiff）。",
+        fontsize=9.1, color="#333333",
+    )
+    save_accepted_figure(fig, ACCEPTED_TIMELINE_PNG_PATH, ACCEPTED_TIMELINE_SVG_PATH)
+    plt.close(fig)
+
+
+def make_accepted_gate_flow(
+    stages: list[dict[str, str]], roles: list[dict[str, str]],
+) -> None:
+    """Formal report gate comparison derived exclusively from accepted rows."""
+    setup_fonts()
+    case_order = (NAGO, YONAGUNI, PREF, ISHIGAKI)
+    case_names = {NAGO: "名护", YONAGUNI: "与那国", PREF: "县民投票", ISHIGAKI: "石垣"}
+    colors = {
+        NAGO: "#246A8D", YONAGUNI: "#2E8B78",
+        PREF: "#3E7C78", ISHIGAKI: "#7A5AA6",
+    }
+    gate_titles = [
+        "请求／签名入口", "条例／议会转换", "投票／司法入口",
+        "正式结果／裁判处理", "后续行政／制度动作",
+    ]
+    groups: dict[str, dict[int, list[dict[str, str]]]] = {
+        case_id: defaultdict(list) for case_id in case_order
+    }
+    for row in sorted(stages, key=lambda item: (item["case_id"], int(item["stage_order"]))):
+        groups[row["case_id"]][ACCEPTED_STAGE_GATE[row["stage_id"]]].append(row)
+
+    fig, ax = plt.subplots(figsize=(18, 10))
+    ax.set_xlim(-1.2, 16.6)
+    ax.set_ylim(0, 10.2)
+    ax.axis("off")
+    gate_x = [1.2, 4.45, 7.7, 10.95, 14.2]
+    row_y = {NAGO: 7.2, YONAGUNI: 5.55, PREF: 3.9, ISHIGAKI: 2.25}
+
+    for x, title in zip(gate_x, gate_titles):
+        box = FancyBboxPatch(
+            (x - 1.18, 8.35), 2.36, 0.72, boxstyle="round,pad=0.08",
+            facecolor="#E9EEF2", edgecolor="#697784", linewidth=1.2,
+        )
+        ax.add_patch(box)
+        ax.text(x, 8.71, title, ha="center", va="center", fontsize=10.1, fontweight="bold")
+
+    for case_id in case_order:
+        y = row_y[case_id]
+        color = colors[case_id]
+        ax.text(-1.0, y, case_names[case_id], ha="left", va="center", fontsize=12, fontweight="bold", color=color)
+        occupied: list[int] = []
+        for gate_index, x in enumerate(gate_x):
+            rows = groups[case_id].get(gate_index, [])
+            if not rows:
+                ax.text(x, y, "—", ha="center", va="center", fontsize=13, color="#9AA4AE")
+                continue
+            occupied.append(gate_index)
+            label = "\n".join(ACCEPTED_FLOW_LABELS[row["stage_id"]] for row in rows)
+            box = FancyBboxPatch(
+                (x - 1.22, y - 0.55), 2.44, 1.10, boxstyle="round,pad=0.07",
+                facecolor="white", edgecolor=color, linewidth=1.8,
+            )
+            ax.add_patch(box)
+            ax.text(x, y, label, ha="center", va="center", fontsize=8.5, linespacing=1.25)
+        for left_index, right_index in zip(occupied, occupied[1:]):
+            if right_index - left_index != 1:
+                continue
+            left_x, right_x = gate_x[left_index], gate_x[right_index]
+            ax.add_patch(FancyArrowPatch(
+                (left_x + 1.24, y), (right_x - 1.24, y),
+                arrowstyle="-|>", mutation_scale=12, color=color,
+                linewidth=1.2, linestyle=(0, (3, 2)),
+            ))
+
+    boundary_box = FancyBboxPatch(
+        (0.05, 0.35), 15.35, 0.88, boxstyle="round,pad=0.08",
+        facecolor="#FFF8E7", edgecolor="#C28B2C", linewidth=1.2,
+    )
+    ax.add_patch(boundary_box)
+    ax.text(
+        7.72, 0.79,
+        "角色边界：A011＝住民投票请求／运动主体（requester），≠ 法院列名的个体原告（plaintiff）；27名请求代表、签名居民与组织成员也不得互相替代。",
+        ha="center", va="center", fontsize=9.6, color="#5D461A",
+    )
+    ax.set_title("住民投票与自治诉求的制度门槛｜accepted-only 正文版", fontsize=18, fontweight="bold", pad=18)
+    ax.text(
+        -1.0, 9.55,
+        f"仅使用 {len(stages)} 个 accepted 阶段与 {len(roles)} 条 accepted 角色记录；HR-017 只控制扩展层，未决节点不进入本图。",
+        fontsize=10.5, color="#3E4A59",
+    )
+    ax.text(
+        -1.0, 9.18,
+        "虚线箭头只连接同案的程序编排顺序，不表示前一动作造成后一决定，也不识别公投、诉讼或组织动员的政策效果。",
+        fontsize=9.8, color="#333333",
+    )
+    save_accepted_figure(fig, ACCEPTED_FLOW_PNG_PATH, ACCEPTED_FLOW_SVG_PATH)
+    plt.close(fig)
+
+
 def make_brief(stats: dict[str, object], case_rows: list[dict[str, str]]) -> str:
     case_lookup = {row["case_id"]: row for row in case_rows}
     source_disp = stats["source_disposition"]
@@ -927,11 +1195,13 @@ def make_brief(stats: dict[str, object], case_rows: list[dict[str, str]]) -> str
 
     这条链说明，民间组织提出的自治诉求必须经过多个制度门槛。门槛既可能放行，也可能改变问题设计、阻断投票、把行动推向法院，或把结果转化为行政与对外倡议资源。
 
-    ![四案程序时间线](referendum_process_timeline_v0.png)
+    ![四案程序时间线（accepted-only正文版）](referendum_process_timeline_accepted_v1.png)
 
-    ![制度门槛流程](institutional_gate_flow_v0.png)
+    ![制度门槛流程（accepted-only正文版）](institutional_gate_flow_accepted_v1.png)
 
-    两图从模块内 `reviewed_all` 审计表生成，以便显示缺口。**空心点和星号只属于HR-017待审层，不在中央正式阶段表或正式角色表中。** 实心节点才对应当前正式层。
+    两张正文图只读取中央正式表的 **24 个 accepted 阶段**与模块正式表的 **25 条 accepted 角色记录**，不含 HR-017 待审节点。HR-017 只控制扩展层，不再阻断正文图。旧版 `referendum_process_timeline_v0.png` 与 `institutional_gate_flow_v0.png` 继续作为 reviewed-all 历史审计附录保留，不用于正文确定性结论。
+
+    图中的箭头与左右顺序仅表示程序编排，不识别动员对议会、投票、法院、行政或政策结果的因果效果。角色上，**A011 是住民投票请求／运动主体（requester），不是法院列名的个体原告（plaintiff）**；请求代表、签名居民、组织成员和个人原告不得互相替代。
 
     ## 2. 四案比较结论
 
@@ -987,7 +1257,7 @@ def make_brief(stats: dict[str, object], case_rows: list[dict[str, str]]) -> str
 
     R9 支持的解释是“自治诉求如何被程序门槛转换”，不是“公投必然导致政策变化”的因果识别。共同动员、意见广告、请求、投票与诉讼支持都不能自动写成稳定联盟；法院程序结果也不能转写为组织政治立场。
 
-    正式表、审计全量表与图由 `scripts/make_r09_referendum_process.py` 同源生成：正式表严格过滤为 accepted，图读取reviewed_all并显式标出HR-017空心节点。外键、来源、票数、关键措辞、图文计数和重复运行稳定性均已检查。
+    正式表、审计全量表与图由 `scripts/make_r09_referendum_process.py` 同源生成：accepted-only 正文图只读取正式表；旧 reviewed-all 图单独保留为历史审计附录。外键、来源、票数、关键措辞、图文计数和重复运行稳定性均已检查。
     """).strip() + "\n"
 
 
@@ -1075,7 +1345,7 @@ def make_readme(stats: dict[str, object]) -> str:
     ## Formal outputs
 
     - `../../data/interim/20_referendum_process_stages_v0.csv` — 24 accepted stages only; no pending rows.
-    - `process_stages_reviewed_all_v0.csv` — all {stats['stage_count']} reviewed stages used for audit and figures, including 9 HR-017 pending rows.
+    - `process_stages_reviewed_all_v0.csv` — all {stats['stage_count']} reviewed stages retained for audit, including 9 HR-017 pending rows.
     - `actor_process_roles_v0.csv` — 25 accepted roles only; no pending rows.
     - `actor_process_roles_reviewed_all_v0.csv` — all {stats['role_count']} reviewed roles, including 9 HR-017 pending rows.
     - `source_register_v0.csv` — module-local source IDs and source-log mappings; rejected captures are explicit.
@@ -1083,14 +1353,18 @@ def make_readme(stats: dict[str, object]) -> str:
     - `rejected_claims_v0.csv` — {stats['rejected_claim_count']} claims prohibited from formal reporting.
     - `hr017_review_queue_v0.csv` — {stats['review_queue_count']} pending stage/role records with blank human-decision fields, source locators and decision impacts.
     - `HR017_review_packet_v0.md` — Chinese human-review packet; no decision is prefilled.
-    - `referendum_process_timeline_v0.png` — four-panel small-multiple timeline.
-    - `institutional_gate_flow_v0.png` — explanatory institutional-gate flow.
+    - `referendum_process_timeline_accepted_v1.png/.svg` — accepted-only four-case timeline for formal-report use.
+    - `institutional_gate_flow_accepted_v1.png/.svg` — accepted-only institutional-gate comparison for formal-report use.
+    - `referendum_process_timeline_v0.png` — historical reviewed-all timeline with explicit pending markers; audit appendix only.
+    - `institutional_gate_flow_v0.png` — historical reviewed-all gate flow with explicit pending markers; audit appendix only.
     - `R09_process_brief_v1.md` — interpretation and evidence boundaries.
     - `validation_report_v0.md` — generated validation summary.
 
     ## Status boundary
 
-    `accepted` means the bounded stage/role is present in the formal table and may be used in reporting at its recorded evidence level. `needs_human_review` exists only in the module `reviewed_all` tables, HR-017 packet and hollow/starred figure layer; it is absent from both formal tables.
+    `accepted` means the bounded stage/role is present in the formal table and may be used in reporting at its recorded evidence level. The two `accepted_v1` figures read only the 24-row formal stage table and 25-row formal role table. `needs_human_review` exists only in the module `reviewed_all` tables, HR-017 packet and historical hollow/starred figure layer; it is absent from both formal tables and both formal-report figures. HR-017 therefore controls only the expansion layer.
+
+    Figure arrows and ordering represent procedural sequence, not causal effects. A011 is a referendum requester/movement actor, not an individual plaintiff; the figures do not transfer person-level litigation status to the organization.
 
     Historical candidate and QA files remain in this directory for audit provenance; v1 formal outputs supersede the original v0 brief for current R9 reporting.
     """).strip() + "\n"
@@ -1121,7 +1395,9 @@ def make_validation_report(stats: dict[str, object]) -> str:
     - Ishigaki two-chain and neutral Supreme Court wording assertions: passed.
     - A014 E2 / needs-human-review / local-retrieval boundary: passed.
     - Individual plaintiff roles not transferred to A011: passed.
-    - Figures generated from reviewed-all rows; hollow/starred nodes are absent from formal tables: passed.
+    - Formal-report figures generated only from 24 accepted stages and 25 accepted roles: passed.
+    - HR-017 pending nodes absent from accepted-only PNG/SVG figures; reviewed-all figures retained as historical audit appendix: passed.
+    - Figure note preserves sequence-not-causality and A011 requester ≠ individual plaintiff boundaries: passed.
     - Two consecutive executions on 2026-07-13: all generated outputs byte-stable by SHA-256.
     """).strip() + "\n"
 
@@ -1147,6 +1423,9 @@ def main() -> None:
     LEGACY_REVIEW_QUEUE_PATH.unlink(missing_ok=True)
     make_timeline()
     make_gate_flow()
+    accepted_stages, accepted_roles = accepted_figure_inputs()
+    make_accepted_timeline(accepted_stages, accepted_roles)
+    make_accepted_gate_flow(accepted_stages, accepted_roles)
 
     brief = make_brief(stats, case_rows)
     BRIEF_PATH.write_text(brief, encoding="utf-8")
@@ -1166,12 +1445,21 @@ def main() -> None:
         raise ValueError("HR-017 must contain 18 rows with blank human-decision fields")
     if hr017_packet.count("### R9Q-") != 18:
         raise ValueError("HR-017 packet must render all 18 review items")
-    for token in ("24 条 accepted", "18条待人审", "2019-06-17市议员", "16,639", "14,267", "空心点和星号只属于HR-017"):
+    for token in (
+        "24 条 accepted", "18条待人审", "2019-06-17市议员", "16,639", "14,267",
+        "HR-017 只控制扩展层", "A011 是住民投票请求／运动主体（requester）",
+    ):
         if token not in brief:
             raise ValueError(f"Brief consistency token missing: {token}")
     for path in (TIMELINE_PATH, FLOW_PATH):
         if not path.exists() or path.stat().st_size < 20_000:
             raise ValueError(f"Figure missing or unexpectedly small: {path}")
+    for path in (
+        ACCEPTED_TIMELINE_PNG_PATH, ACCEPTED_FLOW_PNG_PATH,
+        ACCEPTED_TIMELINE_SVG_PATH, ACCEPTED_FLOW_SVG_PATH,
+    ):
+        if not path.exists() or path.stat().st_size < 15_000:
+            raise ValueError(f"Accepted-only figure missing or unexpectedly small: {path}")
 
     print(
         "R09 formal package generated: "

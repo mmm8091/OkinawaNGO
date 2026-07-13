@@ -1,0 +1,20 @@
+{
+  "source_id": "S290",
+  "source_type": "community_site",
+  "title": "やいまタイム地域年表 2015年12月23日",
+  "year": "2015",
+  "url": "https://yaimatime.com/schedule/archive/2302/12/23",
+  "what_it_supports": "A formation-date lead and issue purpose",
+  "evidence_level": "E2",
+  "bias_note": "Archive URL metadata is unusual; verify the original local-newspaper record before freezing the formation date.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS045; proposal refs=NW2-C_registry_gate:RV2SP025. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 metadata flags=source_type_human_choice;archive_path_date_alignment_needs_confirmation. HR-030 web/archive flags=verify_unusual_archive_path_against_displayed_event_date. Sensitive boundary tags=component_or_coorganization_not_stable_alliance;historical_continuity_not_inferred.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S290\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T13:05:28.738099+00:00",
+  "note": "URLError: _ssl.c:983: The handshake operation timed out"
+}

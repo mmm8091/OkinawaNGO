@@ -1,0 +1,16 @@
+﻿election_year,action_type,candidate_row_count,status_boundary
+2014,endorsement,1,machine-structured candidate; not a human-reviewed finding
+2014,issue_campaign,1,machine-structured candidate; not a human-reviewed finding
+2014,public_meeting,0,machine-structured candidate; not a human-reviewed finding
+2014,request,1,machine-structured candidate; not a human-reviewed finding
+2014,observation,2,machine-structured candidate; not a human-reviewed finding
+2018,endorsement,0,machine-structured candidate; not a human-reviewed finding
+2018,issue_campaign,2,machine-structured candidate; not a human-reviewed finding
+2018,public_meeting,1,machine-structured candidate; not a human-reviewed finding
+2018,request,2,machine-structured candidate; not a human-reviewed finding
+2018,observation,2,machine-structured candidate; not a human-reviewed finding
+2022,endorsement,3,machine-structured candidate; not a human-reviewed finding
+2022,issue_campaign,1,machine-structured candidate; not a human-reviewed finding
+2022,public_meeting,1,machine-structured candidate; not a human-reviewed finding
+2022,request,1,machine-structured candidate; not a human-reviewed finding
+2022,observation,1,machine-structured candidate; not a human-reviewed finding

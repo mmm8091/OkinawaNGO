@@ -1,5 +1,5 @@
 ﻿place,frame,actor_count,actor_ids
-Henoko,base / anti-military,20,A001;A004;A006;A007;A019;A021;A022;A023;A024;A025;A027;A028;A029;A047;A051;A059;A067;A068;A069;A075
+Henoko,base / anti-military,21,A001;A004;A006;A007;A019;A021;A022;A023;A024;A025;A027;A028;A029;A047;A051;A059;A067;A068;A069;A075;A110
 Henoko,ecology / environment,24,A001;A002;A003;A004;A005;A006;A009;A020;A021;A022;A023;A027;A029;A030;A031;A033;A034;A042;A045;A046;A061;A062;A067;A069
 Henoko,life / health safety,0,
 Henoko,autonomy / referendum,3,A051;A059;A068
@@ -34,11 +34,11 @@ Yonaguni,autonomy / referendum,2,A014;A015
 Yonaguni,legal / procedure,0,
 Yonaguni,international route,0,
 Yonaguni,frontline / Taiwan,3,A017;A018;A065
-Kadena,base / anti-military,1,A052
+Kadena,base / anti-military,2,A052;A109
 Kadena,ecology / environment,0,
-Kadena,life / health safety,3,A052;X001;X006
+Kadena,life / health safety,4,A052;A109;X001;X006
 Kadena,autonomy / referendum,0,
-Kadena,legal / procedure,1,A052
+Kadena,legal / procedure,2,A052;A109
 Kadena,international route,0,
 Kadena,frontline / Taiwan,0,
 Futenma,base / anti-military,1,A053

@@ -1,0 +1,7 @@
+﻿source_program_id,program_name,activity_table_page,reported_project_cost_thousand_jpy,exact_category_cost_jpy_page8,explicit_external_commission,represented_relation_id,represented_amount_id,coverage_status,interpretation_limit
+S099P01,NGO相談員（外務省委託）,2,2894,2894630,yes,R10R006,R10AM009,represented,Organization-side project cost; not MOFA payment or contract amount.
+S099P02,コザ・インターナショナル・プラザ（沖縄市委託）,2,16040,,yes,R10R004,R10AM006,represented,"Program-row cost; the broader accounting category totals JPY17,724,340 and includes other activities."
+S099P03,出前事業,2,70,,no,,,not_selected_noncommission_program_cost,Activity cost only; no independent external administrative relation is asserted.
+S099P04,開発教育関連活動,2,85,,no,,,not_selected_noncommission_program_cost,Activity cost only; no independent external administrative relation is asserted.
+S099P05,Peace & Democracy 2024（沖縄平和賞委員会委託）,3,1530,,no,,,not_selected_nonpublic_commission_program_cost,"A commissioned activity, but not one of the three public-administration relations currently modeled in R10."
+S099P06,多文化共生社会の構築に関する万国津梁会議運営等支援業務（沖縄県委託）,3,5530,5530234,yes,R10R005,R10AM008,represented,Organization-side project cost; not a prefectural payment or contract amount.

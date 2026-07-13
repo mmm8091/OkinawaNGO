@@ -1,0 +1,27 @@
+{
+  "source_id": "S254",
+  "source_type": "organization_statement",
+  "title": "談話：沖縄県知事選で圧勝の民意に応え、ただちに新基地建設中止を",
+  "year": "2014",
+  "url": "https://www.shinfujin.gr.jp/2943",
+  "what_it_supports": "2014 organization public interpretation and bounded self-report | Official national-body attribution of dated Okinawa-headquarters anti-new-base activity",
+  "evidence_level": "E4",
+  "bias_note": "Organizational self-report is not independent evidence of electoral effect. | Supports the branch's attributed activity; election commentary must not become a causal claim.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS007; proposal refs=NW2-B_R09:R9EC_S007;NW2-C_registry_gate:RV2SP015. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 metadata flags=cross_batch_title_variant;cross_batch_publisher_label_variant. Sensitive boundary tags=election_causality_not_inferred;self_report_reach_or_effect_not_inferred;branch_parent_action_not_automatically_transferred;party_affiliation_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S254\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S254\\metadata.json",
+  "sha256": "3ad9a7e9a0efce2744351368e4349f299086cf9f4a36dfefe412a35fba3de203",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:08.844968+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.shinfujin.gr.jp/2943/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

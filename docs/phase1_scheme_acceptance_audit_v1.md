@@ -83,17 +83,17 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 | 合同项 | 当前状态 | 解释性判断 | 验收前主要动作 |
 |---|---|---|---|
 | Actor registry 120–180 | 118；A111 按 HR-013 加入、A094 按范围勘误移出，净数不变；A087–A093、A095–A101 待分类／边复核；九个 E2 署名名称仍在事件层 | 仍比合同下限少 2；17 个在表 actor 没有 edge-level evidence；C010/C034 为背景节点、C029–C033 剔除、C015 defer | 完成 17 个孤立 actor 的边级复核，再按模块价值补至少 2 个“持续身份＋一期直接连接”均可核 actor；完成 A087–A093、A095–A101 |
-| Actor alias | 23 行 | 已覆盖部分旧称、前身和诉讼轮次；全体双语/简称仍不足 | 优先覆盖正文、图中 actor 和跨期组织，与 schema 一并冻结 |
+| Actor alias | 23 行；schema/alias 冻结审计另有 467 个候选单元 | 已覆盖部分旧称、前身和诉讼轮次；确认 A105/A107、A094/A111 等相近单位不可自动合并 | 完成 HR-029 的 34 项分类、alias、地点、venue 与关系语义决定后冻结 |
 | Issue taxonomy | 26 项；registry 的 issue-tag 分隔空白已机械清零 | 已补 environment/noise/women/human_rights/solidarity/anti_war/mobilization；层级仍需标准化 | 检查重复／近义标签并冻结受控词 |
 | Place registry | 20 项 | 可以支撑初版地点比较 | 增加 alias、父子层级及 place/venue 分工 |
-| Source log | 247 条；226 archived/manual、19 failed、2 non-URL | HR-013／边级补证波新增 S199–S247 共 49 条，48 条已归档，S213 持续 403；来源入表仍不批准候选关系／解释 | 完成 HR-022 的 49 个元数据／支持边界项；对新来源沿用同一边界，保留 403/失败日志 |
+| Source log | 295 条；267 archived/manual、26 failed、2 non-URL | 新一波 49 unique URL 复用 S158/S204、以 provisional 口径加入 S248–S294；47 条中 40 archived、7 failed；S295 为 HR-011 定位补充，不属于该波次，也不是独立身份二源；来源入表仍不批准候选关系／解释 | 完成 HR-022 的 49 项与 HR-030 的 22 个唯一 URL；失败不撤号、不等于证据不存在 |
 | Evidence notes | 49 条正式表，全部 HR-015 处理 | 核心敏感条目有 claim、locator、等级和解释边界；仍有 5 个 locator 待精修 | 补完五个 locator，并扩到最终正文／图的全部关键主张 |
 | Actor–issue | 222 条；101 个 actor 已连接、17 个 edge-isolated；59 人审／163 候选 | 已形成完整 118×26 二模网络、议题共现和四类 bridge mechanism；65 条 scope 未决 | 完成 HR-019、审定 17 个孤立 actor 的边级证据并冻结核心 edge |
-| Actor–place | 125 条 | 能发现地点分工；A111 仅以全县场域进入，未外推市町尺度 | 区分 HQ/site/event/target，补先岛并复核图中边 |
-| Actor–venue sample | 16 类 venue + 65 条正式 AEV；61 human_checked、4 analytical_seed | R7 已有可运行底表；新增 A111 的 2024 县民大会事件角色，pathway seed 仍不能当事实关系 | 补异质行动与跨案例时间比较，形成场域转移成果 |
-| Joint-action sample | 65 条正式 AEV；另有三次名单 169 条事件参与观察 | 2010／2015／2020 已全量结构化，15 个 registry actor 重复参与；共同出现仍非稳定联盟 | 完成 HR-020 的 14 个身份／切分决定，并为 R5/R7 补 protest、噪音诉讼或行政行动等异质样本 |
+| Actor–place | 129 条；129/129 已生成候选空间语义 | 60 target、37 site、6 institutional venue、5 event site、4 HQ、17 unclear；边野古 45 条中 42 条是 target；AP123 有 Camp Schwab/Foster 键值冲突 | 完成 HR-025 的 41 项并冻结 HQ/site/event/target/venue；三地 dossier 已补，不再把密度读成据点数 |
+| Actor–venue sample | 16 类 venue + 67 条 AEV；63 human_checked、4 analytical_seed | R5/R7 已把既有正式事实汇成 148 条观察、39 个去重单元、15 类行动和 9 类场域 | HR-029 处理 9 条 `R10_VENUE`／场域引用问题；按冻结值重生图 |
+| Joint-action sample | 67 条 AEV；三次名单 169 条事件参与；异质行动 39 个去重单元 | 2010／2015／2020 已全量结构化；噪音诉讼、公投、县民大会、服务／慈善与行政关系已进入跨类型比较；共同出现仍非稳定联盟 | 完成 HR-020 的 14 个身份／切分决定；异质行动包无新事实，HR-028 为 0 |
 | Coverage audit | 六维 v1：125 cells、6 条模块影响映射 | 已解释时间、地点、功能／来源、议题、归档和复核偏差；不估计总体覆盖率 | 将 v1 图纳入正式报告；后续只随冻结数据重生，不另设 HR-023 |
-| Coding guide | 有 v0 | 风险口径较好，完整数据字典不足 | 覆盖全部表、主外键、受控值、工时与 lint 规则 |
+| Coding guide | 有 v0；冻结审计覆盖 467 个字段／受控值候选 | 建议 actor_class 25→24、legal_status 44→33、relation 28→25、action 14→12；不确定身份保留 `_unresolved` | 完成 HR-029 后更新 schema、跨表 lint、place hierarchy 与 venue 引用 |
 
 ## 5. R1–R11 模块解释与验收判断
 
@@ -115,11 +115,11 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 
 验收成果应为：完整分层二模网络、议题共现图、跨议题组织名单，以及 2–3 个有证据链的桥接机制解释。
 
-### R3 地点与空间分布（含与那国/先岛）— 部分完成
+### R3 地点与空间分布（含与那国/先岛）— 强部分完成
 
-当前成果：地点—议题矩阵和 actor–place 精选图能说明本岛与先岛的框架差异。
+当前成果：除地点—议题矩阵和精选 actor–place 图外，R3 v1 已对 129/129 条地点边给出候选语义：60 advocacy target、37 site presence、6 institutional venue、5 event site、4 headquarters、17 unclear。全量 92 actor×20 place 矩阵把候选／人审和语义分层；三地 dossier 分列与那国 6、石垣 3、宫古 3 条组织—地点观察，并接入 R4/R9 正式上下文。边野古 45 条中 42 条为争议／倡议对象、仅 3 条是在场，直接纠正“地点密度=组织据点”的读法。
 
-关键不足：缺先岛 actor 清单、与那国/石垣/宫古独立 dossier 和方案指定专题图；地点边没有稳定区分所在地、行动现场和议题对象。
+关键不足：空间语义本身仍全部是机器候选；41 条 site/unclear/event 项进入 HR-025。AP123 的 P006 在 place registry 是 Camp Schwab、边表文字与人审证据却指 Camp Foster，必须人工纠键。三地 dossier 已完成线上层，但与那国 A014/A015 等组织身份仍需当地材料。
 
 验收成果应为：地点—议题图、组织—地点图、先岛比较专题图及 dossier。
 
@@ -133,51 +133,51 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 
 ### R5 联盟/共同行动网络 — 强部分完成但不能称稳定联盟
 
-当前成果：R5 v1 已将 2010 WWF 67、2015 NACSJ 31 和 2020 OEJP/MMC 71 三张一手名单全量结构化为 169 条事件参与观察：63 条 registry actor、84 条 event-only、22 条 alias pending。严格口径识别 15 个重复参与 actor，其中 A002、A004、A022 跨越三次；已确认 registry actor 的事件重叠为 2010–2015 10、2010–2020 8、2015–2020 3。完整事件二部图和重复桥梁图均不生成 actor–actor 联盟边。
+当前成果：R5 v1 已将 2010 WWF 67、2015 NACSJ 31 和 2020 OEJP/MMC 71 三张一手名单全量结构化为 169 条事件参与观察：63 条 registry actor、84 条 event-only、22 条 alias pending。严格口径识别 15 个重复参与 actor，其中 A002、A004、A022 跨越三次；已确认 registry actor 的事件重叠为 2010–2015 10、2010–2020 8、2015–2020 3。异质行动包又把 148 条既有人审正式观察去重为 39 个 `case/event × action × venue` 单元，覆盖 15 类行动／关系语法和 9 类场域；33 条共同署名角色只对应 2 个声明事件，44 条法律相关观察只对应 7 个法律行动单元。
 
-关键不足：HR-020 仍有 14 个日英别名、实体边界和名单切分决定；2010 原页标称 67 团体但字符串缺一处分隔符。三次样本集中于边野古／大浦湾—儒艮倡议，事件类型仍需补 protest、噪音诉讼或行政行动，不能概括复归后全部共同行动，也不能把重复出现写成稳定联盟。
+关键不足：HR-020 仍有 14 个日英别名、实体边界和名单切分决定；2010 原页标称 67 团体但字符串缺一处分隔符。异质行动比较已补噪音诉讼、公投、服务／慈善与行政关系，但仍是目的性案例集，不能估计复归后行动频率或把重复出现写成稳定联盟。新包不新增事实，HR-028 为 0。
 
 验收成果应为：统一 actor–event 表、全量 2010/2015/2020 抽取、异质行动样本、重复参与/行动桥梁名单和事件二部图。报告只能写“共同行动结构”，不能写稳定联盟。
 
 ### R6 跨国/国际倡议网络 — 强部分完成
 
-当前成果：在边野古／大浦湾主案例之外，69 条正式 actor–event–venue–target／entry-mode 事实支持 6 类目标路径比较：国际法律、国际机构请求、国内环境声援、海外声援、行政协作和公共外交机会。路径图明确区分 plaintiff/counsel/non-party、request participant、statement participant、行政协作及 NOFO opportunity，不把它们压成单一“国际网络”。
+当前成果：在边野古／大浦湾主案例之外，71 条正式 actor–event–venue–target／entry-mode 事实支持 6 类目标路径比较：国际法律、国际机构请求、国内环境声援、海外声援、行政协作和公共外交机会。路径图明确区分 plaintiff/counsel/non-party、request participant、statement participant、行政协作及 NOFO opportunity，不把它们压成单一“国际网络”。
 
 关键不足：六类路径仍以边野古相关公开事件为主要材料，行政协作和公共外交只各有 1 条正式观察；国际机构请求只能证明入口，不能证明机构回应或政策改变。4 条 pathway seed 已分表，只有独立事实边证据才能升级。
 
 验收成果应为：至少三类国际目标/场域、多个倡议事件的 actor–target 表、国际桥梁组织名单和边野古主案例加边界比较。
 
-### R7 场域与对象转移 — 强部分完成
+### R7 场域与对象转移 — 限定深度完成（案例序列，不作长期转移识别）
 
-当前已有 16 类 venue、65 条 AEV 正式表及 69 条扩展到 target／entry-mode 的正式事实；新增的 A111 记录只表示 2024 县民大会的组织／召集角色。三案例小倍图分别展示国际法律、MMC 请求和跨国声明的三阶段场域构成。法律案可以按程序时间排序，另外两案只按同一事件角色／入口展示。
+当前已有 16 类 venue、67 条 AEV 及 71 条扩展到 target／entry-mode 的正式事实；A111/A108 的记录只表示有界县民大会角色，A109 的记录只表示第4次嘉手纳诉讼律师团角色。异质行动层再汇集 148 条正式观察并形成 39 个去重单元。六案例／17 阶段小倍图覆盖跨国声明、MMC 请求、儒艮诉讼、嘉手纳噪音、石垣公投和 OESC→USO 慈善；法律案可按程序时间排序，其余只按正式记录顺序或关系方向展示。
 
-缺口是增加与噪音诉讼、公投或行政程序不同的案例，并补跨事件时间。图中虚线只表示程序时间或展示顺序，不表示前一场域导致后一场域或产生政策效果；四条 seed 仍不进入事实表。
+一期可交付口径是“不同案例的场域／对象序列与行动 repertoire 比较”，不是长期场域转移识别。剩余工作是冻结 9 条 `R10_VENUE` 占位／场域引用；若后续坚持“长期转移”的强标题，才需要另补真正跨事件的纵向时间线。图中箭头只表示时间、构成或关系方向，不表示前一场域导致后一场域或产生政策效果；四条 seed 仍不进入事实表。
 
-验收成果应为：actor–event–venue–target 表，以及至少三个案例的场域转移时间线/路径小倍图。
+一期验收成果为：actor–event–venue–target 表，以及至少三个案例的有界场域／对象序列或路径小倍图；不能据此主张长期迁移规律。
 
 ### R8 法律/政策/环境程序渠道 — 强部分完成
 
 当前成果：六案全部 HR-014 `human_checked`，27/27 角色 accept。R8 v1 已形成 27 行 case×channel×place×role×result 规范矩阵、54 格 role-family 表、程序入口—对象—产出图和角色边界图；13 条 registered actor role 与 14 条 provisional procedural node 严格分开。正式层覆盖跨国 NHPA／APA、EIA、嘉手纳／普天间噪音、石垣住民投票司法和泡濑公金诉讼。
 
-关键不足：3 项 residual gap 仍涉及案号、phase locator 和泡濑 subcase 粒度，但不阻断当前比较解释。案件角色不能自动成为跨案稳定关系；图中横向顺序不是因果链或胜败排行。无新增判断，故不创建 HR-026。
+关键不足：3 项 residual gap 仍涉及案号、phase locator 和泡濑 subcase 粒度，但不阻断当前比较解释。案件角色不能自动成为跨案稳定关系；图中横向顺序不是因果链或胜败排行。R8 本包没有新增人审任务；HR-026 现用于 R9 选举候选层。
 
 验收成果应为：至少 5 个案件/程序、4 类渠道、3 个地点的 case registry、角色表、渠道矩阵和比较机制 brief。
 
 ### R9 选举/县民投票与市民组织连接 — 强部分完成
 
-当前成果：中央正式层含 24 个 accepted 阶段和 25 个 accepted 角色，形成名护、与那国、2019 县民投票、石垣四案时间线与制度门槛图。解释机制是“公众动员→资格／签名→条例议程与设计→议会／行政执行→投票或司法可诉性→结果再解释”，说明自治诉求如何被多重制度门槛转换，而不是公投结果必然造成政策改变。
+当前成果：中央正式层含 24 个 accepted 阶段和 25 个 accepted 角色，形成名护、与那国、2019 县民投票、石垣四案时间线与制度门槛图。解释机制是“公众动员→资格／签名→条例议程与设计→议会／行政执行→投票或司法可诉性→结果再解释”。选举侧候选包又覆盖 2014／2018／2022 三届县知事选的 19 条 actor–event 观察，拆为公开支持 4、议题行动 4、公开会议 2、请求 4、观察 5，显示选举公共接口不只有 endorsement。
 
-关键不足：reviewed-all 层仍有 9 个阶段和 9 个角色进入 HR-017；两张图用空心点／星号显示缺口，但这些节点不属于正式表。A068 alias、A014/A015 组织角色、与那国正式票数、石垣两条司法链与最高裁决定仍待人审／当地材料；2019-06-17 第二条例案已纠正为议员提出。
+关键不足：reviewed-all 层仍有 9 个阶段和 9 个角色进入 HR-017；选举侧 19 条则全部进入 HR-026，尚不是正式事实。A068 alias、A014/A015 组织角色、与那国正式票数、石垣两条司法链与最高裁决定仍待人审／当地材料；2019-06-17 第二条例案已纠正为议员提出。任何组织—选举接口都不能升级为票数、投票率、胜负或政策因果。
 
 验收成果应为：至少四个投票事件的阶段—角色表、选举/公投—市民组织连接表和一页非因果机制说明。
 
 ### R10 公开资源/行政协作渠道 — 结构性强部分完成
 
-当前成果：R10 已把 35 条关系、26 条金额和 43 条功能观察拆开，形成行政机制／服务慈善生态图和金额证据边界图。上层 16 条行政机制与下层 19 条服务／慈善／非资金边界完整覆盖全部关系类型；解释上可区分委托、提案型委托、补助、指定角色、慈善、成员和服务据点，并把 ONC 定位为行政协作／公共服务节点，而非运动资金节点。
+当前成果：R10 已先把 S002 的 86 页／616 条 FY2024 官方协作记录建立为独立来源总体，形成逐行清单、19×10 事业分野—机制表、15×10 部门—机制表、公开资源类型统计和两张可直接使用的结构图。该总体有 390 个原表 partner 字符串和 365 个机器排版标签，均不是组织数；C1–C4 合计 469/616、前五部门 443/616、人权／和平及国际合作／交流两个相邻分野 19/616，说明该表首先呈现广义公共服务协作生态。另将目的性跨来源样本拆成 35 条关系、26 条金额和 43 条功能观察，形成行政机制／服务慈善生态图和金额证据边界图；其中 10 条 S002 样本行只作跨表案例，不代表总体。
 
-关键不足：只有 9 条关系沿用既有 `human_checked`／`human_revised`，其余 26 条进入 HR-018；三笔 exact-contract 候选、点名委托流和 JV crosswalk 在人审前不写成最终关系。14 条 project cost 一律 `not_actor_payment`，aggregate、NOFO、sponsor tier、membership 和 service presence 不进入金额线宽；JPY／USD 不跨币种求和。
+关键不足：只有 9 条关系沿用既有 `human_checked`／`human_revised`，其余 26 条进入 HR-018；三笔 exact-contract 候选和点名委托流在人审前不写成最终关系。14 条 project cost 一律 `not_actor_payment`，aggregate、NOFO、sponsor tier、membership 和 service presence 不进入金额线宽；JPY／USD 不跨币种求和。当前两张 616-row 图无需等待 HR-032，但任何 canonical alias、JV 拆分、registry crosswalk 或 actor-level 中心性都须先完成 HR-032 的 8 项人工判断。
 
-验收成果应为：至少一个完整年度的官方协作表全量/系统抽取、10 个以上组织或 15 个以上项目、行政资源二模图和资源类型对照 brief。
+按原方案 R10 表格，验收成果应为：行政协作清单、公开资源类型表、组织—资源双模／结构图与描述统计；其中官方来源总体、目的性案例样本和经 HR-018 接受的事实关系必须分层，不能把来源行自动写成 actor 关系或资金流。
 
 ### R11 跨国/外来 NGO 与国际倡议生态 — 强部分完成
 
@@ -194,7 +194,7 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 | 组织—议题网络 | 已有完整 118×26 二模图、议题共现图与 bridge mechanism 图 | 线上 v1 已形成；59/222 edge 人审、65 条 scope 待 HR-019，冻结前仍是候选／人审混合网络 |
 | 地点—议题图 | 已有矩阵 | 最接近完成；需用冻结最终数据重生并补图文一致性 |
 | 国际倡议/法律程序路径 | 边野古主图＋R6 六类目标路径＋R7 三案例小倍图＋R8 六案程序/角色比较图 | 强半成品；已补六案渠道、角色和程序产出比较，仍需 HR 后冻结及正式报告统一排版 |
-| 与那国/先岛专题图 | 已有三地框架图＋entity–frame 图 | 强半成品；已比较宫古、石垣、与那国并显示证据稀疏／制度材料偏置，待 HR-016 与组织层 dossier 后冻结 |
+| 与那国/先岛专题图 | 三地框架图＋entity–frame 图＋12 行 actor–place dossier 卡片 | 线上解释层已形成；与那国 6、石垣 3、宫古 3 条组织—地点观察与框架／程序上下文分层，待 HR-016、HR-025 和当地身份材料后冻结 |
 | 覆盖偏差图 | 已有六维 coverage audit v1 核心图 | 线上 v1 已形成；同时覆盖时间、地点、功能／来源、议题、归档和复核，明确无总体分母、source 数≠活跃度、failed≠证据不存在 |
 
 新增的功能生态、组织—地点和严格 support/service 图补充了方案指定五图；五类核心图目前均有线上 v1，但仍需完成相应 HR、冻结数据、统一图注与正式报告排版后才能验收。
@@ -203,10 +203,10 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 
 | 合同交付 | 当前状态 | 判断 |
 |---|---|---|
-| 8,000–12,000 字论文 | 缺独立论文 | 未开始；必须实质连接前期知事选研究与本期组织/议题机制 |
-| 25–35 页研究报告 | 约 10,000 汉字／20,100 字符 Markdown v0，核心图与模块解释已大幅回填 | 仍未达标；需完成 HR 后冻结事实、形成正式 DOCX/PDF、嵌图、引用、页数与附录 |
-| 15–20 页 PPT | 仓库无 PPT | 未开始 |
-| 最小资料包 | evidence notes、venue/AEV、case/role 已补；先岛 dossier、正式 referendum stage、行政协作主表等仍缺 | 部分完成 |
+| 8,000–12,000 字论文 | 缺独立论文；仓库也缺前期 1990–2022 选举研究正文／数据 | `MA018` blocked；先由 HD-012 取得输入，再实质连接本期组织／议题机制 |
+| 25–35 页研究报告 | 约 25,500 字符 Markdown v0＋32 页装配蓝图 | 仍未达标；`MA017` 须在 HR 冻结后形成正式 DOCX/PDF、嵌图、引用、页数与渲染 QA |
+| 15–20 页 PPT | 有 20 页分模块蓝图，仓库无 PPTX | `MA019` 未生产；蓝图不计合同成品 |
+| 最小资料包 | 核心 CSV、evidence/AEV/case-role 已补；`12_yonaguni_sakishima_dossier.docx`、`14_public_web_data/` 和冻结 coding guide 仍缺 | 部分完成；分别由 `MA020`、`MA021`、`MA022` 控制 |
 
 ## 8. Registry 扩展规则
 
@@ -232,13 +232,13 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 
 - **R3 空间层＋先岛 dossier**：冻结 HQ/site/event/target 地点语义，形成与那国／石垣／宫古独立组织清单、证据卡和比较图；R4 已有框架语料，本轮重点是补组织层。
 - **R9 选举侧**：在已有公投程序链之上，补选举／知事选研究与市民组织的连接，不把共现写成选举因果。
-- **R5/R7 异质行动**：在三次共同发声之外，补 protest、噪音诉讼或行政事件，比较行动类型与场域转移。
+- **R5/R7 异质行动**：148 条既有正式观察／39 个去重单元的线上比较已形成；只在相应 HR 否决关键事实或最终报告需要新的精确案例时定向补源，不再无边界扩搜。
 - **价值驱动扩样**：完成 17 个 edge-isolated actor 的边级复核，再从 R3/R9/薄议题与缺失功能层补至少 2 个组织级 actor；C015 继续 defer，C010/C034 不为凑数转入 registry。
 
 ### P2 解释性成果与核心图
 
-- 完整组织—议题网络、议题共现、R5 三名单二部图、R8 六案程序比较和六维 coverage 图均已形成线上 v1；下一步按冻结数据重生。
-- 当前最明显的图件缺口是 R3 与那国／石垣／宫古 dossier 对应的空间专题图，以及 R5/R7 跨行动类型比较图。
+- 完整组织—议题网络、议题共现、R3 空间／三地 dossier、R5 三名单与异质行动、R8 六案程序比较、R10 官方来源总体和六维 coverage 图均已形成线上 v1；下一步按人工冻结数据重生受 gate 图件。
+- 当前已没有明显的线上模块骨架型图件缺口；剩余图件工作主要是 HR-019／025／029 后的冻结重生、统一版式与来源注，而不是继续扩充无目标图表。
 - 将多维 coverage audit 纳入报告限制和当地任务优先级，不把它当方案 R14。
 
 ### P3 最终写作
@@ -264,22 +264,30 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 
 ## 11. 第一批缺口实作回收（尚未等同主表验收）
 
-方案审计后已完成十四个可审计数据／模块包：
+方案审计后已完成二十二个可审计数据／模块包：
 
-1. `outputs/phase1_foundation_v1/`：49 条 evidence note 与当前 65 条 actor–event–venue 进入正式 `06`/`09` 表；61 条 AEV `human_checked`、4 条为 `analytical_seed`。旧 A077–A085 已撤出 registry，作为九个 event-only legacy candidate 保留。
+1. `outputs/phase1_foundation_v1/`：49 条 evidence note 与其轮次的 64 条 actor–event–venue 形成 HR-015 基础层；中央 `09` 表当前为 67 条，其中 63 条 AEV `human_checked`、4 条为 `analytical_seed`。旧 A077–A085 已撤出 registry，作为九个 event-only legacy candidate 保留。
 2. `outputs/registry_expansion_v1/`：HR-011 新增 A107–A110；HR-012 完成 A052/A053 诉讼轮次与 A010 前身 crosswalk；C015 继续 defer。HR-013 已加入 A111、移出 A094，并将 C010/C034 定为背景节点、C029–C033 定为 out_of_scope；A087–A093、A095–A101 仍待分类/边复核。
 3. `outputs/R08_legal_procedure_v0/`：6 个案件/程序、27 条角色已完成 HR-014；正式 `17`/`18` 表区分案件、registry actor 与 provisional procedural node。
 4. `outputs/R04_sakishima_frame_corpus_v0/`：11 条安全事实、19 条安全来源、两张图与 brief 已正式化；HR-016 保留 12 个未决项。
 5. `outputs/R09_referendum_process_v0/`：24 个正式阶段、25 个正式角色、两张图与 brief 已正式化；HR-017 保留 18 个 reviewed-all 未决项。
-6. `outputs/R10_administrative_collaboration_v0/`：35／26／43 三层规范表、两张图与 brief 已形成；HR-018 控制 26 条敏感关系和 8 个来源前置。
+6. `outputs/R10_administrative_collaboration_v0/`：目的性案例样本的 35／26／43 三层规范表、两张图与 brief 已形成；HR-018 控制 26 条敏感关系和 8 个来源前置。`outputs/R10_completeness_audit_v1/` 又以 S002 616 行和 S099 六条非零项目成本行锁定“样本内完整、外部总体不完整”的表述边界。
 7. `outputs/phase1_source_integration_v1/`：57 条模块来源记录映射为 54 个 URL；39 条新来源 S160–S198 已以 `ai_seeded` 入表并完成 37/39 归档，所有 crosswalk 行均为 `relation_or_claim_approved=no`。
-8. `outputs/R06_R07_R11_pathways_v1/`：69 条正式事实、4 条独立 seed、R6 六类路径、R7 三案例小倍图和 R11 44 条进入观察已形成；HR-021 八项中前七项依赖 HR-018，不重复审关系事实。
+8. `outputs/R06_R07_R11_pathways_v1/`：71 条正式事实、4 条独立 seed、R6 六类路径、R7 三案例小倍图和 R11 44 条进入观察已形成；HR-021 八项中前七项依赖 HR-018，不重复审关系事实。
 9. `outputs/R01_R02_actor_issue_v1/`：118×26 完整二模网络、议题共现、跨议题机制和分类生态已形成；17 个 edge-isolated actor、30 个 bridge 和 65 条 scope 待 HR-019。
 10. `outputs/R05_coaction_v1/`：2010／2015／2020 三名单共 169 条参与观察、15 个严格重复 actor 和两张解释图已形成；HR-020 保留 14 个身份／切分问题。
 11. `outputs/coverage_audit_v1/`：六维、125-cell 覆盖审计及 Q1–Q3／R1–R11 影响表已形成；其内容为机械统计，不创建 HR-023。
 12. `outputs/R08_legal_procedure_v1/`：六案、27 个 accepted role、两张比较图和报告插入段已形成；13 个 registered role 与 14 个 provisional node 分层，无 HR-026。
 13. `outputs/hr013_online_wave_integration_v1/`：HR-013 范围决定、A111 的 4 条议题边／1 条地点边／1 条事件角色及新一轮来源 crosswalk 已合并；S199–S247 共 49 条新来源中 48 条已归档，S213 为 403，候选边仍未因来源入表而自动获批。
 14. `outputs/edge_activation_v1/` 与 `outputs/registry_expansion_gate_v1/`：前者把 post-HR-013 的 17 个 edge-isolated actor、54 条候选边和 38 条来源单独审计，并生成 HR-010 addendum／HR-024 空白决定表；后者保留扩表候选的机器门槛记录，但 HR-013 的人工决定优先，不能据机器 gate 自动入表。
+15. `outputs/R03_spatial_dossier_v1/`：129 条 actor—place 边完成关系语义拆分和三张解释图；HR-025 保留 41 个未决项，并以 AP123 为显式键冲突，不把 target 数量写成在地组织数量。
+16. `outputs/R09_election_civic_interface_v1/`：2014／2018／2022 三届县知事选形成 19 条候选介入观察、两张非因果解释图和 HR-026；全部候选在人工接受前不进入正式事实层。
+17. `outputs/registry_value_gate_v2/`：按模块解释价值筛出 4 个 HR-027 候选和 1 个 defer 线索；未分配 A 编号，也未写中央 actor／edge。
+18. `outputs/R05_R07_heterogeneous_repertoire_v1/`：148 条既有正式观察压缩为 39 个去重行动单元、15 类行动、9 类场域和 6 案／17 阶段；只重组既有事实，HR-028 为 0。
+19. `outputs/schema_alias_freeze_v1/`：467 个受控值／别名／层级候选与 34 个 HR-029 决定项已形成；必须在 HR-027 合并后按实际 actor 数重跑，AP123 决定权归 HR-025。
+20. `outputs/next_wave_source_proposal_audit_v1/` 与 `outputs/next_wave_source_integration_v1/`：50 个提案行去重为 49 个 URL，复用 S158/S204，另以 provisional、`ai_seeded` 口径加入 S248-S294；40/47 归档成功，HR-030 保留 22 个 metadata／archive 问题，来源入表不批准候选事实。
+21. `outputs/report_assembly_v1/` 与 `outputs/report_claim_audit_v1/`：73 个现有资源已按 ready／freeze／superseded 分类，形成 32 页正式报告与 20 页 PPT 的装配蓝图；27 张非 superseded 正文图已全部建立图—数据—source crosswalk—脚本—人审 gate 追溯链，其中 14 张可立即使用、13 张待 gate 后重生。78 条报告主张完成数字、来源和措辞审计，32 组数字无不一致、source／formal path 缺失为 0，3 个解释强度问题进入 HR-031。蓝图不等于合同成品；正式报告、论文、PPT、先岛 dossier DOCX、public data 与冻结 codebook 已作为 MA017–MA023 明列。
+22. `outputs/R10_official_collaboration_universe_v1/`：S002 全部 616 条来源行、19 个事业分野、10 种机制、15 个部门及 partner source-label 结构已形成权威来源总体、描述统计和两张 `ready_now` 图；HR-032 的 8 项只控制未来 canonical/JV/registry crosswalk，不阻断当前来源总体图。
 
 主要解释增量是：
 
@@ -290,6 +298,6 @@ R4 已补出与那国／石垣／宫古三地安全语料对照图和 entity–f
 - R9 把住民投票拆成动员、资格、条例、实施／司法和结果再解释的门槛链；R10 则把行政合同、project cost、慈善、服务和非资金关系拆成不同证据语法。
 - 来源整合把在线发现、主编号、归档和人审边界连接起来，但不把来源可得性误写为关系已确认。
 - R1/R2 显示样本扩张的首要矛盾不是“118 少两个”，而是 17 个在表 actor 缺少边级证据、163/222 条议题边仍未人审；R5 则把少数跨事件桥梁与大量一次性事件名称分开。
-- 六维审计显示 2020+ 来源占 160/247，1972–1997 仅 4，Henoko 与全县宽泛节点占 84/125 个地点观察；这些是检索可见性偏差，不是组织真实密度。
+- 六维审计显示 2020+ 来源占 185/295，1972–1997 仅 4，Henoko 与全县宽泛节点占 87/129 个地点观察；这些是检索可见性偏差，不是组织真实密度。
 
-基础图已按 118 actors／247 sources 重生，R1/R2、R5、R8 和六维 coverage 线上 v1 已回收。下一轮依原方案优先做 R3 空间层与 dossier、R9 选举侧、R5/R7 异质行动、价值驱动补至少 2 个 actor、schema/alias 冻结，再将研究报告推进到正式 DOCX/PDF、论文和 PPT 结构。未审候选、事件级名称和 analytical seed 不写入确定性关系结论。
+基础图已按当前中央数据重生；R3 空间语义／三地 dossier、R9 三届选举候选层、R5/R7 异质行动、R10 完整来源总体、registry 价值门槛、来源整合和报告装配均已回收。四个补样候选进入 HR-027，schema／alias 冻结的 34 项进入 HR-029，来源问题进入 HR-030，三项核心解释进入 HR-031，R10 身份/JV crosswalk 的 8 项进入 HR-032。下一轮核心不再是继续铺模块骨架，而是按依赖关系完成人审：先 HR-027，再重跑／执行 HR-029；同时处理 HR-018、HR-025、HR-026、HR-030、HR-031、HR-032。冻结后重生图，再将研究报告推进到正式 DOCX/PDF、论文和 PPT。未审候选、事件级名称和 analytical seed 不写入确定性关系结论。

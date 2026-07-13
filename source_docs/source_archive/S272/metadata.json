@@ -1,0 +1,27 @@
+{
+  "source_id": "S272",
+  "source_type": "local_news",
+  "title": "宮古島の地下水施策 市長選立候補予定者の回答公表",
+  "year": "2020",
+  "url": "https://ryukyushimpo.jp/news/entry-1254033.html",
+  "what_it_supports": "Independent 2020 identity, leadership and local-policy intervention",
+  "evidence_level": "E3",
+  "bias_note": "An election questionnaire is a dated public intervention, not proof of later policy effect.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS027; proposal refs=NW2-C_registry_gate:RV2SP006. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=stated_environmental_risk_not_proven_contamination;administrative_contact_not_agreement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S272\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S272\\metadata.json",
+  "sha256": "05a4539ee64082e9ea413fbe86dc15dc5145887a7758457249b8f99925f97acc",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:15.507924+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-1254033.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 13:04:17 GMT"
+  }
+}

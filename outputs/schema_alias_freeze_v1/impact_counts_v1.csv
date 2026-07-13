@@ -1,0 +1,18 @@
+﻿metric_group,metric,count,current_distinct_values,proposed_distinct_values,note
+actor,registry_actors_audited,118,,,All actor_class/legal_status_guess/origin_type cells covered.
+actor,actor_field_cells_audited,354,,,
+actor,actor_class_vocabulary,118,25,24,
+actor,legal_status_vocabulary,118,44,33,Uncertain forms map to explicit unresolved codes.
+actor,origin_vocabulary,118,7,7,
+alias,alias_rows_audited,23,15,13,
+alias,cross_actor_normalized_alias_collisions,0,,,Zero; similarity guard still remains mandatory.
+alias,same_actor_source_sensitive_normalized_duplicates,1,,,"Counted as normalized collision groups, not alias rows."
+place,place_nodes_audited,20,5,5,
+place,actor_place_crosskey_mismatches,1,,,AP123 is deferred to the authoritative HR-025 gate; no P007 correction is proposed here.
+venue,venue_taxonomy_rows,16,12,12,
+venue,orphan_placeholder_references,9,,,All are R10_VENUE; six need human choice and three have V016 mechanical candidates.
+relation,relation_rows_inventoried,78,28,25,
+action,action_rows_inventoried,255,14,12,
+package,unified_freeze_candidate_rows,467,,,
+package,HR029_review_items,34,,,Stable IDs; human/final/status fields are preserved on regeneration.
+package,HR029_filled_review_items,0,,,Rows with at least one human-owned value.

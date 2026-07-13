@@ -1,0 +1,27 @@
+{
+  "source_id": "S283",
+  "source_type": "party_news",
+  "title": "沖縄県民投票条例へ 新婦人が署名開始",
+  "year": "2018",
+  "url": "https://www.jcp.or.jp/akahata/aik18/2018-06-18/2018061801_03_1.html",
+  "what_it_supports": "Okinawa-headquarters organization identity and Henoko referendum-signature campaign role",
+  "evidence_level": "E3",
+  "bias_note": "Use for the dated public role only; do not code party affiliation or a stable alliance.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS038; proposal refs=NW2-C_registry_gate:RV2SP018. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=branch_parent_action_not_automatically_transferred;party_affiliation_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S283\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S283\\metadata.json",
+  "sha256": "d4a32a8f7b7160f39b1db3f308948ead571eb7bafe8115937a2b28931a54adba",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:56.391875+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jcp.or.jp/akahata/aik18/2018-06-18/2018061801_03_1.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "21916",
+    "last_modified": ""
+  }
+}

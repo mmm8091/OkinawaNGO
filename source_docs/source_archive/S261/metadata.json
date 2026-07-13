@@ -1,0 +1,20 @@
+{
+  "source_id": "S261",
+  "source_type": "official_data",
+  "title": "令和4年沖縄県知事選挙 特設ページ",
+  "year": "2022",
+  "url": "https://www.pref.okinawa.jp/kensei/senkyo/1005009/1023802/1025046/index.html",
+  "what_it_supports": "2022 election-window date and institutional context only",
+  "evidence_level": "E4",
+  "bias_note": "Does not support any civic-actor role or causal effect.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS014; proposal refs=NW2-B_R09:R9EC_S014. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S261\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T13:03:12.772783+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+}

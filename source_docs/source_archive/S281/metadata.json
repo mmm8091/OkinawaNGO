@@ -1,0 +1,27 @@
+{
+  "source_id": "S281",
+  "source_type": "organization_statement",
+  "title": "沖縄米兵少女暴行事件とその隠蔽につよく抗議し根本的対策を求める要請",
+  "year": "2024",
+  "url": "https://www.shinfujin.gr.jp/wp-content/uploads/2024/06/%E7%B1%B3%E5%85%B5%E5%B0%91%E5%A5%B3%E6%9A%B4%E8%A1%8C%E4%BA%8B%E4%BB%B6%E3%80%80%E5%86%85%E9%96%A3%E7%B7%8F%E7%90%86%E5%A4%A7%E8%87%A3%E5%B2%B8%E7%94%B0%E6%96%87%E9%9B%84%E6%A7%981.pdf",
+  "what_it_supports": "Exact local-unit name, chair and direct military-violence/human-rights request role",
+  "evidence_level": "E4",
+  "bias_note": "Joint signature with the central body proves a bounded request, not all-purpose identity equivalence.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS036; proposal refs=NW2-C_registry_gate:RV2SP016. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=branch_parent_action_not_automatically_transferred;party_affiliation_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S281\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S281\\metadata.json",
+  "sha256": "95bcd84f71e86c11e838f916e9cdf1ff91648ca0b239723b1ab45dfd0c00b8de",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:54.611369+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.shinfujin.gr.jp/wp-content/uploads/2024/06/%E7%B1%B3%E5%85%B5%E5%B0%91%E5%A5%B3%E6%9A%B4%E8%A1%8C%E4%BA%8B%E4%BB%B6%E3%80%80%E5%86%85%E9%96%A3%E7%B7%8F%E7%90%86%E5%A4%A7%E8%87%A3%E5%B2%B8%E7%94%B0%E6%96%87%E9%9B%84%E6%A7%981.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "122420",
+    "last_modified": "Thu, 27 Jun 2024 10:05:59 GMT"
+  }
+}

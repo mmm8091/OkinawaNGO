@@ -1,0 +1,27 @@
+{
+  "source_id": "S270",
+  "source_type": "organization_program_document",
+  "title": "水道水源保全区域を宮古島市全域に拡大する理由",
+  "year": "2021",
+  "url": "https://miyakojima-tikasui.com/report_activity/2021-10-08-04.pdf",
+  "what_it_supports": "A dated ordinance/monitoring proposal explicitly covering SDF-facility wastewater risks",
+  "evidence_level": "E3",
+  "bias_note": "Policy advocacy evidence; it does not independently verify the asserted environmental risk level.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS025; proposal refs=NW2-C_registry_gate:RV2SP004. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=stated_environmental_risk_not_proven_contamination;administrative_contact_not_agreement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S270\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S270\\metadata.json",
+  "sha256": "1555188cc4b5511d95a6ef484c25863fe6ef82bb198563b2ecb12fd510eea4db",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:02.100885+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://miyakojima-tikasui.com/report_activity/2021-10-08-04.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "659925",
+    "last_modified": "Fri, 08 Oct 2021 11:58:00 GMT"
+  }
+}

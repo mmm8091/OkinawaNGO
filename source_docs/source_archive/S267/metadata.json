@@ -1,0 +1,27 @@
+{
+  "source_id": "S267",
+  "source_type": "local_news",
+  "title": "候補者アンケートを基に沖縄知事選の争点考える",
+  "year": "2022",
+  "url": "https://ryukyushimpo.jp/news/entry-1579341.html",
+  "what_it_supports": "2022 multi-issue candidate observation and public deliberation",
+  "evidence_level": "E3",
+  "bias_note": "Named individuals do not transfer roles to their organizations; original response sheet was not located.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS020; proposal refs=NW2-B_R09:R9EC_S020. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;person_or_masked_actor_not_transferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S267\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S267\\metadata.json",
+  "sha256": "0000640295555cda24ecd5f8255c7b5802744e2f0286845d9ae33336d279b19a",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:03:47.971113+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-1579341.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 13:03:48 GMT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "source_id": "S285",
+  "source_type": "prefectural_official",
+  "title": "争議行為の届出と予告",
+  "year": "2026",
+  "url": "https://www.pref.okinawa.lg.jp/shigoto/koyorodo/1012030/1012056.html",
+  "what_it_supports": "Current exact identity and repeated organizational operation through official notices",
+  "evidence_level": "E4",
+  "bias_note": "Generic strike notices establish continuity, not Phase-1 political positions.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS040; proposal refs=NW2-C_registry_gate:RV2SP020. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 metadata flags=rolling_record_range_vs_access_year;locator_needs_named_entry_or_snapshot_date. HR-030 web/archive flags=snapshot_rolling_official_page;domain_archive_history_has_material_failure_share. Sensitive boundary tags=strike_legality_or_effect_not_adjudicated;common_event_not_stable_alliance.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S285\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S285\\metadata.json",
+  "sha256": "beeb2290007af8dfd4ac88fd5af503c850ee423e3f9f574c5509f231a2b66420",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:05:02.880124+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.lg.jp/shigoto/koyorodo/1012030/1012056.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "41099",
+    "last_modified": "Mon, 13 Jul 2026 12:25:10 GMT"
+  }
+}

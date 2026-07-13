@@ -1,0 +1,27 @@
+{
+  "source_id": "S289",
+  "source_type": "organization_report",
+  "title": "2025 5.15平和行進 全港湾沖縄地方本部報告",
+  "year": "2025",
+  "url": "https://www.zenkowan.org/wp-content/uploads/2025/06/%E6%B2%96%E7%B8%84%E5%9C%B0%E6%96%B9%E3%80%80%E6%AF%94%E5%98%89%E5%8B%81%E5%B8%8C.pdf",
+  "what_it_supports": "Current branch-level peace-march and base-issue learning activity",
+  "evidence_level": "E3",
+  "bias_note": "A participant report supports a bounded activity observation, not the position of every union member.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS044; proposal refs=NW2-C_registry_gate:RV2SP024. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=strike_legality_or_effect_not_adjudicated;common_event_not_stable_alliance.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S289\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S289\\metadata.json",
+  "sha256": "b09dc45c7636a4624aabaec60566a248f1a84784c405916c54865dce7d9041b4",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:05:17.625612+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.zenkowan.org/wp-content/uploads/2025/06/%E6%B2%96%E7%B8%84%E5%9C%B0%E6%96%B9%E3%80%80%E6%AF%94%E5%98%89%E5%8B%81%E5%B8%8C.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "167625",
+    "last_modified": "Fri, 06 Jun 2025 00:25:20 GMT"
+  }
+}

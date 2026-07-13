@@ -1,6 +1,6 @@
 # Validation note
 
-- Formal observations: 69
+- Formal observations: 71
 - Analytical seeds: 4
 - R6 pathway families: 6
 - R7 cases/stages: 3 / 9

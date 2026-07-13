@@ -1,0 +1,27 @@
+{
+  "source_id": "S264",
+  "source_type": "organization_event_record",
+  "title": "7月30日オンライン配信『復帰50年！新たな基地負担を許さない県民大会』",
+  "year": "2022",
+  "url": "https://all-okinawa.jp/2005",
+  "what_it_supports": "2022 election-adjacent issue campaign",
+  "evidence_level": "E4",
+  "bias_note": "Organizer framing is issue campaign; classification remains HR-026 because election framing was disputed.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS017; proposal refs=NW2-B_R09:R9EC_S017. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;issue_event_not_automatic_endorsement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S264\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S264\\metadata.json",
+  "sha256": "e31e805aef7ba4f0edfbc16d5c778685c12151c1560ecfd43d8a801c6a8702f9",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:03:35.625518+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://all-okinawa.jp/2005/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

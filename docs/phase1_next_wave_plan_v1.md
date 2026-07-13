@@ -7,12 +7,14 @@
 
 ## 1. 本轮判断
 
-本轮三条线上执行线已回收。HR-013 以 A111 替换范围不符的 A094，主 registry 仍为 118 个 organization-level actor，低于方案 120–180 的下限。当前底盘为：
+本轮三条线上执行线已回收。HR-013 以 A111 替换范围不符的 A094，主 registry 仍为 118 个 organization-level actor，低于方案 120–180 的下限。以下 247-source 数字是本轮启动快照；后续增量状态见本节末的“回收后更新”。
 
 - 222 条 actor–issue edge：101 个 actor 已连接、17 个仍 edge-isolated；59 条 human-reviewed、163 条 candidate；scope 为 43 positioning、40 case/institution、74 event、65 unclear；
-- 125 条 actor–place edge；65 条 AEV，其中 61 条 human-checked、4 条 analytical seed；
+- 125 条 actor–place edge；65 条 AEV，其中 61 条 human-checked、4 条 analytical seed（本段为启动快照，不作当前口径）；
 - 247 条 source：224 archived、2 manual_archived、19 failed、2 non-URL；
 - human-review log 40 行；HR-016–HR-024 的未决字段继续留空。
+
+回收后更新（2026-07-13）：R3、R9 election、R5/R7、R10 616-row 官方来源总体、registry gate v2、schema freeze 预审和 source integration 已完成；当前主表为 295 sources（265 archived、2 manual、26 failed、2 non-URL）、129 actor–place 与 67 AEV。四个扩表决定进入 HR-027，schema 34 项进入 HR-029，来源 22 项进入 HR-030，报告解释 3 项进入 HR-031，R10 partner alias／JV crosswalk 8 项进入 HR-032。上述候选／复核层不改变 118 actor；HR-032 不阻断当前两张来源总体图。
 
 结论仍是先补现有样本的数据联接，再按模块缺层扩样。最终仍须恢复 120 下限，但不得以一次署名、名称相似、一般公益使命或已被人审剔除的主体凑数。
 

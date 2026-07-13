@@ -1,0 +1,3 @@
+﻿boundary_id,object_ids,labels,boundary_type,current_state,proposed_rule,human_anchor,reason,candidate_id,requires_human_review,hr_item_id
+AB001,A105;A107,日本YWCA;沖縄YWCA,national_local_brand,two registry actors plus organizational affiliation,distinct_entities_with_affiliation_not_alias,HR-011;F043,Parent/national and local/regional YWCA are distinct actors; actions do not automatically transfer.,SF0378,no,
+AB002,A111;retired_A094,女団協;沖女連,retired_actor_alias_guard,A111 has 女団協; A094 is removed,do_not_transfer_retired_alias_or_reinsert_actor,HR-010;HR-013,The HR-013 decision explicitly distinguishes A111 from the removed A094 and A049.,SF0379,no,

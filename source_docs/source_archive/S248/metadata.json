@@ -1,0 +1,27 @@
+{
+  "source_id": "S248",
+  "source_type": "official_data",
+  "title": "平成26年版 選挙管理委員会年報",
+  "year": "2015",
+  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/927/h26nenpou.pdf",
+  "what_it_supports": "2014 election-window date and official institutional context only",
+  "evidence_level": "E4",
+  "bias_note": "Does not support any civic-actor role or causal effect.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS001; proposal refs=NW2-B_R09:R9EC_S001. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S248\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S248\\metadata.json",
+  "sha256": "5818b8abf0028ecd453ff9910d3fb3a3d78496dcb513bd90ad5daf9f19272293",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:01.102192+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/004/927/h26nenpou.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "541357",
+    "last_modified": "Fri, 08 Dec 2023 09:21:02 GMT"
+  }
+}

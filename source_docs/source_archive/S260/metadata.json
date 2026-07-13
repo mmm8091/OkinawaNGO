@@ -1,0 +1,27 @@
+{
+  "source_id": "S260",
+  "source_type": "organization_statement",
+  "title": "声明：沖縄県知事選挙で歴史的勝利！新基地建設はただちに中止を",
+  "year": "2018",
+  "url": "https://www.shinfujin.gr.jp/wp-content/uploads/2018/11/20181003_seimei_okinawatidisen.pdf",
+  "what_it_supports": "2018 post-result public interpretation and bounded self-report",
+  "evidence_level": "E4",
+  "bias_note": "Does not independently prove participation scale or effect on votes.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS013; proposal refs=NW2-B_R09:R9EC_S013. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;self_report_reach_or_effect_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S260\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S260\\metadata.json",
+  "sha256": "208f5a09522de09d54c11451680c1b139dc9ebe718f573f134a5411f94010466",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:03:01.948963+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.shinfujin.gr.jp/wp-content/uploads/2018/11/20181003_seimei_okinawatidisen.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "155079",
+    "last_modified": "Tue, 27 Nov 2018 01:41:36 GMT"
+  }
+}

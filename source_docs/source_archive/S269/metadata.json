@@ -1,0 +1,27 @@
+{
+  "source_id": "S269",
+  "source_type": "organization_site",
+  "title": "地下水の危機とは？",
+  "year": "2026",
+  "url": "https://miyakojima-tikasui.com/crisis.html",
+  "what_it_supports": "The group's explicit framing of SDF-facility water use/wastewater as a groundwater-risk category",
+  "evidence_level": "E3",
+  "bias_note": "Supports the group's public position, not a finding that contamination or a health effect occurred.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS024; proposal refs=NW2-C_registry_gate:RV2SP003. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 metadata flags=publication_date_unavailable_access_date_only. HR-030 web/archive flags=snapshot_current_page_and_record_access_date. Sensitive boundary tags=stated_environmental_risk_not_proven_contamination;administrative_contact_not_agreement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S269\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S269\\metadata.json",
+  "sha256": "e235d58e8d67ccb5d0bf682df1248c4c1ec633d3f8dac3f811d273b757e6dda6",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:03:51.149775+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://miyakojima-tikasui.com/crisis.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "13680",
+    "last_modified": "Sat, 10 Aug 2019 07:20:41 GMT"
+  }
+}

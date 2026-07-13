@@ -1,0 +1,27 @@
+{
+  "source_id": "S292",
+  "source_type": "magazine_news",
+  "title": "陸自配備で受け入れ表明 住民裏切りの石垣市長",
+  "year": "2017",
+  "url": "https://www.kinyobi.co.jp/kinyobinews/2017/01/25/%E9%99%B8%E8%87%AA%E9%85%8D%E5%82%99%E3%81%A7%E3%80%8C%E5%8F%97%E3%81%91%E5%85%A5%E3%82%8C%E3%80%8D%E8%A1%A8%E6%98%8E%E2%80%95%E2%80%95%E4%BD%8F%E6%B0%91%E8%A3%8F%E5%88%87%E3%82%8A%E3%81%AE%E7%9F%B3",
+  "what_it_supports": "2017 identity/leadership and war-memory framing of SDF deployment",
+  "evidence_level": "E3",
+  "bias_note": "Attributed statement only; publisher has an advocacy position.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS047; proposal refs=NW2-C_registry_gate:RV2SP027. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=component_or_coorganization_not_stable_alliance;historical_continuity_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S292\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S292\\metadata.json",
+  "sha256": "dbea6879c9e3767fdb05b1da0c9163c7ad53cdee55d9cb100193aa7d8e17080e",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:06:36.324310+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.kinyobi.co.jp/kinyobinews/2017/01/25/%E9%99%B8%E8%87%AA%E9%85%8D%E5%82%99%E3%81%A7%E3%80%8C%E5%8F%97%E3%81%91%E5%85%A5%E3%82%8C%E3%80%8D%E8%A1%A8%E6%98%8E%E2%80%95%E2%80%95%E4%BD%8F%E6%B0%91%E8%A3%8F%E5%88%87%E3%82%8A%E3%81%AE%E7%9F%B3/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

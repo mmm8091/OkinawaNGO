@@ -34,6 +34,6 @@ R14 已达到 `audit_v0`：已有 source archive manifest、HR review log、next
 
 - 维护 source archive manifest；新增真实 URL 后继续归档。
 - `inferred_url` 已全部解决；手工处理高价值归档失败来源，并记录访问限制。
-- 按已收到的 HR-010、011、012、014、015 复核新增主体字段、法律角色、evidence note 和 event-venue seed；HR-013 仍待提交。
+- HR-010～015 已并入中央数据；继续按 HR-016 以后的统一任务簿冻结未决身份、关系、分类与解释。
 - 给 source log 增加 source_access / archive_status / coverage_note 字段，或继续使用 manifest 旁表。
 - 建立 missing_cases_log，专门记录离岛、旧组织、失效网站和馆内数据库缺口。

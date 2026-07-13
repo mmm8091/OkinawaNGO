@@ -1,0 +1,27 @@
+{
+  "source_id": "S287",
+  "source_type": "official_legislative_record",
+  "title": "米海軍ミサイル駆逐艦ラファエル・ペラルタ寄港反対決議",
+  "year": "2024",
+  "url": "https://www.city.ishigaki.okinawa.jp/material/files/group/33/giin-2024-3.pdf",
+  "what_it_supports": "Official recipient-side record of the union's Ishigaki/Naha port action plan and stated safety frame",
+  "evidence_level": "E4",
+  "bias_note": "The resolution recounts the plan; it is not a union membership record or legal judgment.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS042; proposal refs=NW2-C_registry_gate:RV2SP022. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=strike_legality_or_effect_not_adjudicated;common_event_not_stable_alliance.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S287\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S287\\metadata.json",
+  "sha256": "804b95eff7ecbe3b13f8c011495ca7f297a5751adf115188040f963dc59ff6ba",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:05:14.788448+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ishigaki.okinawa.jp/material/files/group/33/giin-2024-3.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "127238",
+    "last_modified": "Mon, 04 Mar 2024 07:48:04 GMT"
+  }
+}

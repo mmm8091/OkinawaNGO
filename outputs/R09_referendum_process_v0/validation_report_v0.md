@@ -17,5 +17,7 @@ Generated: 2026-07-13
 - Ishigaki two-chain and neutral Supreme Court wording assertions: passed.
 - A014 E2 / needs-human-review / local-retrieval boundary: passed.
 - Individual plaintiff roles not transferred to A011: passed.
-- Figures generated from reviewed-all rows; hollow/starred nodes are absent from formal tables: passed.
+- Formal-report figures generated only from 24 accepted stages and 25 accepted roles: passed.
+- HR-017 pending nodes absent from accepted-only PNG/SVG figures; reviewed-all figures retained as historical audit appendix: passed.
+- Figure note preserves sequence-not-causality and A011 requester ≠ individual plaintiff boundaries: passed.
 - Two consecutive executions on 2026-07-13: all generated outputs byte-stable by SHA-256.

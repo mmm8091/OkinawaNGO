@@ -1,0 +1,23 @@
+﻿rule_id,domain,severity,trigger,expected_or_fix,detected_count,detected_examples,automatic_or_human,interpretation_limit
+L001,actor,error,actor_id format,Unique [AX]### identifier,0,,automatic,ID lint says nothing about actor scope.
+L002,actor,error,duplicate actor_id,No duplicate IDs,0,,automatic,Never resolve duplicate IDs by name similarity.
+L003,actor,error,actor_class outside mapping,Value must exist in frozen actor_class vocabulary,0,,automatic,Vocabulary membership does not approve actor assignment.
+L004,actor,error,legal_status_guess outside mapping,Use a controlled status or explicit unresolved code,0,,automatic,Unresolved is preferable to inventing法人格.
+L005,actor,error,origin_type outside mapping,Use one of seven origin codes,0,,automatic,Origin does not imply political stance.
+L006,actor_name,error,normalized canonical-name collision,Human entity decision; never auto-merge,0,,human,Similarity is not identity.
+L007,alias,error,normalized alias assigned to multiple actors,Human entity-boundary review,0,,human,Do not auto-merge aliases or actors.
+L008,alias,info,same-actor normalized duplicate,Allow only when source-sensitive spelling/type is documented,1,marineofficersspousesclubokinawa,human_if_undocumented,Punctuation variants can coexist for source matching.
+L009,alias,error,round/predecessor label used as identity alias,Use nonidentity lineage alias types,0,,automatic,Round membership and predecessor identity are not transferred.
+L010,alias,error,national/local brand treated as one actor,Keep A105/A107 distinct; relation is affiliation,0,A105/A107 guarded,automatic_guard,Parent actions do not transfer to local chapter.
+L011,alias,error,retired A094 or 沖女連 reinserted via A111 alias,Keep A111 distinct; new human decision required for any re-entry,0,A111/retired A094 guarded,automatic_guard,Do not number-fill the registry.
+L012,place,error,invalid or duplicate place_id,Unique P### identifier,0,,automatic,Place IDs do not establish jurisdiction.
+L013,actor_place,error,place_id/place_name cross-key mismatch,Defer source-backed spatial meaning to HR-025,1,AP123,defer_to_HR025,Schema freeze must not silently choose P007 or duplicate the decision in HR-029.
+L014,place,warning,island/municipality/locality/installation level ambiguous,Human hierarchy and alias decision,5,P004;P005;P011;P012;P013,human,Never merge spatial levels by similar names.
+L015,venue,error,venue_id absent from 16-row taxonomy,Resolve row-specific FK or explicitly allow no venue,9,OBS_R10R017;OBS_R10R019;OBS_R10R022;OBS_R10R023;OBS_R10R024;OBS_R10R025;OBS_R10R026;OBS_R10R027;OBS_R10R035,mixed,"Membership, service sites and program channels need different treatment."
+L016,venue,warning,defined venue has zero current references,Keep as reserved category unless human removes it,7,,automatic,Zero use is not evidence that the venue type is invalid.
+L017,relation_type,error,unmapped relation type,Every value maps to a controlled relation or deprecated nonrelation,0,,automatic,Mapping does not approve relation facts.
+L018,relation_type,warning,deprecated duplicate sentinel stored as relation_type,Exclude F008 from relation analysis,1,F008,automatic,A rejected duplicate is not an edge type.
+L019,funding,error,grant_opportunity treated as award,Opportunity remains non-award/no-recipient,0,,automatic,NOFO does not prove funding or recipient.
+L020,action_type,error,unmapped action type,Every value maps to factual or explicitly analytical vocabulary,0,,automatic,Action mapping does not approve event roles.
+L021,action_type,warning,pathway_role mixed with factual actions,Map to analytical_pathway_role and keep analytical_seed status,4,AEV0061-AEV0064,automatic,Analytical sequence is not a factual relation or causal pathway.
+L022,coaction,error,co-signing/request participation promoted to stable alliance,Retain event-level participation only,0,,human_interpretation,Shared event participation is not stable alliance evidence.

@@ -1,0 +1,27 @@
+{
+  "source_id": "S274",
+  "source_type": "official_legislative_record",
+  "title": "有機フッ素化合物PFOS及びPFOA汚染の対策を求める意見書",
+  "year": "2022",
+  "url": "https://www.city.ginowan.lg.jp/material/files/group/61/ikensyo1.pdf",
+  "what_it_supports": "Official recognition of the group's sampling and its consequence for a municipal opinion",
+  "evidence_level": "E4",
+  "bias_note": "The resolution uses probability language for a base source; do not strengthen it to established causation.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS029; proposal refs=NW2-C_registry_gate:RV2SP008. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=PFAS_health_or_source_causality_not_inferred;request_or_coparticipation_not_partnership.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S274\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S274\\metadata.json",
+  "sha256": "5a6ee4874e6325d55f61947d2f2c7f3630b4de60c9611dfb614a9fbd6a62767c",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:19.939171+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ginowan.lg.jp/material/files/group/61/ikensyo1.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "100299",
+    "last_modified": "Fri, 25 Nov 2022 05:42:10 GMT"
+  }
+}

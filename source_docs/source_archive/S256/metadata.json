@@ -1,0 +1,27 @@
+{
+  "source_id": "S256",
+  "source_type": "local_news",
+  "title": "『知事、頑張れ』緊急集会で撤回表明に喜びと決意",
+  "year": "2018",
+  "url": "https://ryukyushimpo.jp/news/entry-770040.html",
+  "what_it_supports": "2018 pre-election issue campaign supporting a gubernatorial administrative act",
+  "evidence_level": "E3",
+  "bias_note": "Support for a policy act is not a candidate endorsement or vote-effect claim.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS009; proposal refs=NW2-B_R09:R9EC_S009. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;issue_event_not_automatic_endorsement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S256\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S256\\metadata.json",
+  "sha256": "66121635657ddda46cfaba188ff456c1260ac78c6bb5fab075697554609a48cb",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:11.142015+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-770040.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 13:02:25 GMT"
+  }
+}

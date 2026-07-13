@@ -1,0 +1,27 @@
+{
+  "source_id": "S271",
+  "source_type": "local_official",
+  "title": "宮古島地下水研究会の見解に対する回答書",
+  "year": "2023",
+  "url": "https://www.city.miyakojima.lg.jp/kurashi/seikatsu/kankyohozen/files/tikasui.pdf",
+  "what_it_supports": "Independent municipal recognition of the group as a repeated administrative interlocutor",
+  "evidence_level": "E4",
+  "bias_note": "Supports identity and recipient-side procedure, not agreement with the group's scientific interpretation.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS026; proposal refs=NW2-C_registry_gate:RV2SP005. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 metadata flags=pdf_locator_needs_page_pinpoint. Sensitive boundary tags=stated_environmental_risk_not_proven_contamination;administrative_contact_not_agreement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S271\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S271\\metadata.json",
+  "sha256": "46c64845d2abdcf8e60a10a7b7a92e8bd3e73f77dd4c3bf8dbdeda4c4c102bb7",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:08.648536+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.miyakojima.lg.jp/kurashi/seikatsu/kankyohozen/files/tikasui.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "5589234",
+    "last_modified": "Wed, 05 Jul 2023 02:12:41 GMT"
+  }
+}

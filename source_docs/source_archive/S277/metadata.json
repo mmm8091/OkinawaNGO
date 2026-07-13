@@ -1,0 +1,27 @@
+{
+  "source_id": "S277",
+  "source_type": "local_news",
+  "title": "PFAS汚染 米軍との意見交換に市民の参加を",
+  "year": "2023",
+  "url": "https://ryukyushimpo.jp/news/entry-1730706.html",
+  "what_it_supports": "2023 continuity and request for citizen participation in a city-base meeting",
+  "evidence_level": "E3",
+  "bias_note": "Documents a request, not its acceptance or an institutional partnership.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS032; proposal refs=NW2-C_registry_gate:RV2SP011. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=PFAS_health_or_source_causality_not_inferred;request_or_coparticipation_not_partnership.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S277\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S277\\metadata.json",
+  "sha256": "6389fde9325790ad506691de751bea8c0c4adf4c092f96326af1d30096d8db5b",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:29.645779+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://ryukyushimpo.jp/news/entry-1730706.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": "Mon, 13 Jul 2026 13:04:30 GMT"
+  }
+}

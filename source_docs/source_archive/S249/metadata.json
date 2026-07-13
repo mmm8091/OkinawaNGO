@@ -1,0 +1,27 @@
+{
+  "source_id": "S249",
+  "source_type": "organization_report",
+  "title": "きちきちニュースレター Vol.6（島ぐるみ会議結成）",
+  "year": "2014",
+  "url": "https://www.ywca.or.jp/pdf/2014/0716.pdf",
+  "what_it_supports": "2014 Shimagurumi founding as issue-campaign window and non-endorsement boundary",
+  "evidence_level": "E3",
+  "bias_note": "Participant/advocacy publication; exact crosswalk to A059 requires human review.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS002; proposal refs=NW2-B_R09:R9EC_S002. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;actor_crosswalk_requires_human_review.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S249\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S249\\metadata.json",
+  "sha256": "a40deb056a782502a0b49d5194c5db4889fbd8d12c79cfb144f1bf2b47fdf0ce",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:02.272553+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.ywca.or.jp/pdf/2014/0716.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "1016161",
+    "last_modified": "Thu, 17 Jul 2014 03:56:34 GMT"
+  }
+}

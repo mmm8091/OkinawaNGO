@@ -20,4 +20,4 @@
 
 ## 影响范围
 
-每条主复核项列出会影响的 main-table proposal、两张 R10 图与 brief 章节。任何 project cost、aggregate、sponsor tier、membership、service presence 或 NOFO 的 revise，都应同步检查资金证据边界图；任何 relation_type 的 revise，都应同步检查机制生态图 16+19=35 的完整计数。
+每条主复核项列出会影响的 main-table proposal、两张 R10 图与 brief 章节。任何 project cost、aggregate、sponsor tier、membership、service presence 或 NOFO 的 revise，都应同步检查资金证据边界图；任何 relation_type 的 revise，都应同步检查当前目的性样本内 16+19=35 的加总计数。

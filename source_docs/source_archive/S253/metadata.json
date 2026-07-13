@@ -1,0 +1,27 @@
+{
+  "source_id": "S253",
+  "source_type": "community_site",
+  "title": "『ゆんたく』から始まった、沖縄・若者の抵抗",
+  "year": "2015",
+  "url": "https://www.magazine9.jp/article/yuntacrew/18975",
+  "what_it_supports": "2014 youth observation/dialogue intervention",
+  "evidence_level": "E3",
+  "bias_note": "Retrospective first-person account; does not establish turnout or vote effects.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS006; proposal refs=NW2-B_R09:R9EC_S006. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 metadata flags=source_type_human_choice. Sensitive boundary tags=election_causality_not_inferred;person_or_masked_actor_not_transferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S253\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S253\\metadata.json",
+  "sha256": "dc7d3a834e6fbd47e27190c17afb9dce85ee807c2f8c82f46c2a3fafde714638",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:06.398349+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.magazine9.jp/article/yuntacrew/18975/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

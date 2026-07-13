@@ -1,0 +1,20 @@
+{
+  "source_id": "S263",
+  "source_type": "organization_action_record",
+  "title": "全国の連帯で平和な沖縄―沖縄県知事選集会ひらく",
+  "year": "2022",
+  "url": "https://www.min-iren.gr.jp/news-press/shinbun/20220816_46093.html",
+  "what_it_supports": "2022 mainland/medical-network endorsement meeting",
+  "evidence_level": "E4",
+  "bias_note": "Self-reported attendance/access; does not prove voter reach or effect.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS016; proposal refs=NW2-B_R09:R9EC_S016. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;self_report_reach_or_effect_not_inferred.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S263\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T13:03:25.296101+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+}

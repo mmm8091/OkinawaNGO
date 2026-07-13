@@ -1,0 +1,20 @@
+{
+  "source_id": "S291",
+  "source_type": "local_news",
+  "title": "陸自配備反対を決議 石垣、住民180人が緊急集会",
+  "year": "2016",
+  "url": "https://ryukyushimpo.jp/news/entry-209354.html",
+  "what_it_supports": "Exact identity, representative and anti-deployment organizer role",
+  "evidence_level": "E3",
+  "bias_note": "The wider meeting had multiple organizers; do not infer a stable alliance.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS046; proposal refs=NW2-C_registry_gate:RV2SP026. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=component_or_coorganization_not_stable_alliance;historical_continuity_not_inferred.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S291\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T13:05:58.756240+00:00",
+  "note": "TimeoutError"
+}

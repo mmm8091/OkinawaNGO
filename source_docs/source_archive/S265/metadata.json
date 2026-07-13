@@ -1,0 +1,27 @@
+{
+  "source_id": "S265",
+  "source_type": "local_news",
+  "title": "『知事選を前にいい発信』与野党の受け止め",
+  "year": "2022",
+  "url": "https://www.okinawatimes.co.jp/articles/-/1000372",
+  "what_it_supports": "Classification dispute for 2022 All Okinawa issue event",
+  "evidence_level": "E3",
+  "bias_note": "Quoted partisan interpretations are observations, not adjudicated event purpose.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS018; proposal refs=NW2-B_R09:R9EC_S018. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 web/archive flags=verify_accessible_text_and_paywall_boundary. Sensitive boundary tags=election_causality_not_inferred;issue_event_not_automatic_endorsement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S265\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S265\\metadata.json",
+  "sha256": "c9ff2545e61db9277af3cfd711eaa67234161c05330b5c82433f00080fcd526f",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:03:38.307697+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.okinawatimes.co.jp/articles/-/1000372",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

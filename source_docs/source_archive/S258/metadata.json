@@ -1,0 +1,20 @@
+{
+  "source_id": "S258",
+  "source_type": "local_news",
+  "title": "沖縄県知事選 出遅れ危機感『結束優先』 玉城氏、出馬要請受諾",
+  "year": "2018",
+  "url": "https://ryukyushimpo.jp/news/entry-789039.html",
+  "what_it_supports": "2018 candidate-selection request by a temporary mixed coalition",
+  "evidence_level": "E3",
+  "bias_note": "The temporary council is an event node, not an NGO or stable alliance.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS011; proposal refs=NW2-B_R09:R9EC_S011. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;temporary_coalition_not_stable_alliance.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S258\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T13:02:30.036293+00:00",
+  "note": "TimeoutError"
+}

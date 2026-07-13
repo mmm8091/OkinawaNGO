@@ -1,0 +1,27 @@
+{
+  "source_id": "S250",
+  "source_type": "local_news",
+  "title": "翁長那覇市長に保革双方が出馬を要請",
+  "year": "2014",
+  "url": "https://www.qab.co.jp/news/2014082157456.html",
+  "what_it_supports": "2014 women-group request to Takeshi Onaga to stand",
+  "evidence_level": "E3",
+  "bias_note": "Does not provide the full member roster of either ad hoc request body.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS003; proposal refs=NW2-B_R09:R9EC_S003. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;ad_hoc_body_or_roster_not_generalized.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S250\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S250\\metadata.json",
+  "sha256": "4eeec71ff798571bd3eb083d30170766cdacb97766c186f9be97a9ae8a5041a0",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:03.727681+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.qab.co.jp/news/2014082157456.html",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

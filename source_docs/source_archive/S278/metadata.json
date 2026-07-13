@@ -1,0 +1,27 @@
+{
+  "source_id": "S278",
+  "source_type": "news",
+  "title": "泡が消えた後に残った白い粉からPFAS検出",
+  "year": "2026",
+  "url": "https://newsdig.tbs.co.jp/articles/-/2642471?display=1",
+  "what_it_supports": "Current 2026 identity/continuity and a bounded sampling role",
+  "evidence_level": "E3",
+  "bias_note": "The expert explicitly says the sample cannot be converted to foam volume or sewer concentration.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS033; proposal refs=NW2-C_registry_gate:RV2SP012. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 web/archive flags=verify_dynamic_query_page_and_final_url. Sensitive boundary tags=PFAS_health_or_source_causality_not_inferred;request_or_coparticipation_not_partnership.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S278\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S278\\metadata.json",
+  "sha256": "9205540636d5365d7b4a50c6efe25b349e6d82194a023b3c3a40a6842bb8bd9c",
+  "content_type": "text/html; charset=utf-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:31.738953+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://newsdig.tbs.co.jp/articles/-/2642471?display=1",
+    "status_code": "200",
+    "content_type": "text/html; charset=utf-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

@@ -98,7 +98,7 @@ def make_module_status() -> None:
             "current_outputs": "fig_evidence_gap_map.png; coverage_gap_summary_v0.csv; R14_coverage_bias_audit_brief.md",
             "what_is_publishable_now": "Transparent limits of source coverage, review status, and archive status.",
             "main_gap": "Source access classification and missing-cases log need ongoing maintenance.",
-            "next_action": "Review failed archives, maintain evidence notes, and use completed HR-010/011/012/014/015 results in module analysis; HR-013 is pending.",
+            "next_action": "Review failed archives, maintain evidence notes, and use completed HR-010 through HR-015 results in module analysis.",
         },
     ]
     write_csv(
@@ -647,7 +647,7 @@ R14 已达到 `audit_v0`：已有 source archive manifest、HR review log、next
 
 - 维护 source archive manifest；新增真实 URL 后继续归档。
 - `inferred_url` 已全部解决；手工处理高价值归档失败来源，并记录访问限制。
-- 按已收到的 HR-010、011、012、014、015 复核新增主体字段、法律角色、evidence note 和 event-venue seed；HR-013 仍待提交。
+- HR-010～015 已并入中央数据；继续按 HR-016 以后的统一任务簿冻结未决身份、关系、分类与解释。
 - 给 source log 增加 source_access / archive_status / coverage_note 字段，或继续使用 manifest 旁表。
 - 建立 missing_cases_log，专门记录离岛、旧组织、失效网站和馆内数据库缺口。
 """
@@ -740,7 +740,7 @@ def make_next_tasks() -> None:
             "status": "basically_done; event-aware side table v1 built, schema proposal pending merge",
             "task": "Add event_id/action_type/relation_strength to relation edges",
             "input": "coaction_participants_v0.csv; lawsuit_actor_role_table_v0.csv; referendum spec",
-            "output": "registry-only actor_relation_events_v1.csv (45 rows, 9 events, 5 action types); HR-015 formal AEV table has 64 rows including nine E2 event-only participants and four analytical seeds",
+            "output": "registry-only actor_relation_events_v1.csv (45 rows, 9 events, 5 action types); formal AEV table has 67 rows including 63 human-checked observations and four analytical seeds",
             "why_it_matters": "Turns static issue tags into event-aware network data; separates co-signing, litigation, and referendum roles.",
             "done_when": "07/08 edge tables get optional event_id/action_type/relation_strength columns once the side table is validated; protest and noise-lawsuit events still to add.",
         },
@@ -752,8 +752,15 @@ def make_next_tasks() -> None:
     )
 
 
-def write_index() -> None:
-    content = """# 模块完成包 v0
+def write_index(
+    actors: list[dict[str, str]],
+    sources: list[dict[str, str]],
+    manifest: list[dict[str, str]],
+    aev: list[dict[str, str]],
+) -> None:
+    archive_status = Counter(row.get("archive_status", row.get("status", "")) for row in manifest)
+    aev_review = Counter(row.get("reviewer_status", "") for row in aev)
+    content = f"""# 模块完成包 v0
 
 日期：2026-07-12（状态更新；模块产出仍为 v0）
 
@@ -789,7 +796,7 @@ def write_index() -> None:
 
 ## 下一步调查优先级
 
-1. 使用已完成的 HR-010、011、012、014、015 结果重生模块图表，等待 HR-013，并继续处理 A087-A101 的分类／关系复核。
+1. 使用已完成的 HR-010～015 结果重生模块图表，并通过 HR-016～032 统一控制后续分类、关系与解释冻结。
 2. 验证事件感知侧表，并补充有足够线上证据的 protest / noise-litigation 事件。
 3. 使用 `outputs/phase1_visuals_v1/` 和 `docs/phase1_research_report_v0.md` 完成跨图、图文和证据一致性审查。
 4. 把已经字段级 `online_exhausted` 的缺口整理为当地协作者正式任务包。
@@ -797,14 +804,14 @@ def write_index() -> None:
 ## 当前状态
 
 - MT-001：HR-015 已将九个 E2、身份未确认的署名名称撤出 registry，保留为 R5 事件参与线索；Tier B 仅在独立本土声援层中条件纳入，Tier C 继续事件限定。
-- MT-002：归档机制持续运行；当前 159 条来源为 135 archived、2 manual、20 failed、2 non-URL；失败状态保留供手工处理，不等于证据不存在。
+- MT-002：归档机制持续运行；当前 {len(sources)} 条来源为 {archive_status['archived']} archived、{archive_status['manual_archived']} manual、{archive_status['failed']} failed、{archive_status['skipped_non_url_reference']} non-URL；失败状态保留供手工处理，不等于证据不存在。
 - MT-003：25 条 `inferred_url` 已全部解决；S020 已恢复为 2016 年真实 URL。
 - MT-004：线上 pass 完成，组织级身份仍需当地材料。
 - MT-005：线上 pass 完成，已有命名 recipient 与 NOSCO 共同捐赠事件；完整年度表仍需 Form 990 / 内部年报。
 - MT-006：ONC 公开年报金额和 JICA 受托角色已补齐，按行政协作层解释。
 - MT-007：诉讼角色表完成，Turtle Island Restoration Network 已作为 A086 入 registry。
-- MT-008：registry-only 事件感知侧表为 45 行、9 事件、5 动作类型；HR-015 正式 AEV 表为 64 行（含 9 个 E2 event-only 参与者与 4 个 analytical seed），主表 schema 是否合并仍待验证。
-- REG-01：20 个 E4 主体完成身份级安全合并；HR-010 批5与 HR-011/012 已回写，HR-015 收紧 E2 署名条目后 registry 为 118，重新低于合同 120 下限；A087-A101 仍待分类/边复核。
+- MT-008：registry-only 事件感知侧表为 45 行、9 事件、5 动作类型；正式 AEV 表为 {len(aev)} 行（{aev_review['human_checked']} 个 human-checked 观察／角色与 {aev_review['analytical_seed']} 个 analytical seed），两层用途已分开。
+- REG-01：20 个 E4 主体完成身份级安全合并；HR-010～015 已回写，HR-015 收紧 E2 署名条目后 registry 为 {len(actors)}，低于方案 120 下限；新增 actor 继续受 HR-027 的价值驱动门槛控制。
 - R8：六案与 27 个角色均已完成 HR-014；案件、组织 actor 与 provisional procedural node 已分表。
 """
     write_text(OUT / "README.md", content)
@@ -817,6 +824,7 @@ def main() -> None:
     issue_edges = read_csv(DATA / "07_actor_issue_edges_initial_v0.csv")
     place_edges = read_csv(DATA / "08_actor_place_edges_initial_v0.csv")
     manifest = read_csv(ARCHIVE_MANIFEST)
+    aev = read_csv(DATA / "09_actor_event_venue_edges_v0.csv")
     bridge_nodes = read_csv(EXPLAIN / "actor_issue_bridge_nodes.csv")
     place_matrix = read_csv(EXPLAIN / "place_issue_matrix.csv")
     next_candidates = read_csv(EXPLAIN / "next_investigation_candidates.csv")
@@ -829,7 +837,7 @@ def main() -> None:
     make_r11()
     make_r14(actors, sources, manifest, next_candidates)
     make_next_tasks()
-    write_index()
+    write_index(actors, sources, manifest, aev)
     print(f"Wrote module completion package to {OUT.relative_to(ROOT)}")
 
 

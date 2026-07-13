@@ -1,0 +1,20 @@
+{
+  "source_id": "S279",
+  "source_type": "party_news",
+  "title": "沖縄の米軍基地PFAS汚染 全国交流集会",
+  "year": "2026",
+  "url": "https://www.jcp.or.jp/akahata/aik25/2026-02-16/2026021611_01_0.php",
+  "what_it_supports": "Name-level evidence that the two PFAS groups were treated as separate organizations in one event",
+  "evidence_level": "E3",
+  "bias_note": "Use only for identity separation and attributed participation; co-participation is not an alliance.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS034; proposal refs=NW2-C_registry_gate:RV2SP013. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=PFAS_health_or_source_causality_not_inferred;request_or_coparticipation_not_partnership.",
+  "archive_status": "failed",
+  "local_path": "",
+  "metadata_path": "source_docs\\source_archive\\S279\\metadata.json",
+  "sha256": "",
+  "content_type": "",
+  "http_status": "",
+  "archived_at_utc": "2026-07-13T13:04:33.126881+00:00",
+  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+}

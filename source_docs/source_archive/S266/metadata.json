@@ -1,0 +1,27 @@
+{
+  "source_id": "S266",
+  "source_type": "organization_statement",
+  "title": "沖縄県知事選挙―二度と戦場にしない平和で誇りある豊かな沖縄を",
+  "year": "2022",
+  "url": "https://www.shinfujin.gr.jp/up/newspaper/12908",
+  "what_it_supports": "2022 organization endorsement/campaign call",
+  "evidence_level": "E4",
+  "bias_note": "Endorsement is observable; audience reach and electoral effect are not.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS019; proposal refs=NW2-B_R09:R9EC_S019. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;self_report_reach_or_effect_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S266\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S266\\metadata.json",
+  "sha256": "08ae462fb5975f03511a7a3d08935c6c36caa3eb3cfb98bd40a296de085790aa",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:03:41.616816+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.shinfujin.gr.jp/up/newspaper/12908/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

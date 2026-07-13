@@ -1,0 +1,27 @@
+{
+  "source_id": "S257",
+  "source_type": "organization_event_record",
+  "title": "8.11県民大会（辺野古新基地建設断念要求）",
+  "year": "2018",
+  "url": "https://all-okinawa.jp/492",
+  "what_it_supports": "2018 issue campaign and memorial rally; no candidate endorsement coded",
+  "evidence_level": "E4",
+  "bias_note": "Election proximity does not convert the rally into an endorsement without explicit evidence.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS010; proposal refs=NW2-B_R09:R9EC_S010. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;issue_event_not_automatic_endorsement.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S257\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S257\\metadata.json",
+  "sha256": "c21184ad50e3b62517bcaf3022cacb0b4e0f54080e1efd5b220856cfa76f88d6",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:27.801845+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://all-okinawa.jp/492/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

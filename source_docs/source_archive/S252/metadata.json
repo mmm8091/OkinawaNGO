@@ -1,0 +1,27 @@
+{
+  "source_id": "S252",
+  "source_type": "party_news",
+  "title": "『新基地ノー』心一つ／沖縄知事選 女性29団体が集会",
+  "year": "2014",
+  "url": "https://www.jcp.or.jp/akahata/aik14/2014-10-11/2014101104_01_1.html",
+  "what_it_supports": "2014 public endorsement/mobilization meeting",
+  "evidence_level": "E2",
+  "bias_note": "Single party-media report; full 29-group roster is not available online.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS005; proposal refs=NW2-B_R09:R9EC_S005. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=election_causality_not_inferred;ad_hoc_body_or_roster_not_generalized.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S252\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S252\\metadata.json",
+  "sha256": "a29447be9dd751578be105341107c6a5edc87f958755f67ed1bc502e31f78db4",
+  "content_type": "text/html",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:02:05.741600+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jcp.or.jp/akahata/aik14/2014-10-11/2014101104_01_1.html",
+    "status_code": "200",
+    "content_type": "text/html",
+    "content_length": "29917",
+    "last_modified": ""
+  }
+}

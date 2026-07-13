@@ -100,6 +100,7 @@ def aev_entry_mode(row: dict[str, str]) -> str:
         "litigation": "international_legal",
         "referendum": "local_democratic_procedure",
         "opinion_ad": "public_opinion_advocacy",
+        "public_rally": "public_civic_mobilization",
     }[row["action_type"]]
 
 
@@ -651,7 +652,7 @@ R6 比较 {len(r6)} 类入口，而不是复制单一边野古国际化链：
 4. **行政协作**只确认公开活动协作，不自动产生资金方向或基地政治立场。
 5. **公共外交机会**只确认 NOFO；recipient 与 award 均未知。
 
-## R7：场域转移
+## R7：场域／对象的案例序列（非长期转移识别）
 
 三组小倍图覆盖国际法律、MMC 请求和跨国声明。法律案例可按程序时间排序；MMC 与声明案例只能按同一事件中的角色／入口构成排序。所有虚线都表示**展示顺序**，不是因果箭头，也不证明前一场域造成后一场域或带来政策效果。
 
@@ -703,8 +704,8 @@ def render_hr021(rows: list[dict[str, str]]) -> str:
 
 def validate(facts, seeds, r6, r7, r11, hr021) -> None:
     source_ids = {row["source_id"] for row in read_csv(SOURCES)}
-    if len(facts) != 69:
-        raise ValueError(f"expected 69 formal observations, found {len(facts)}")
+    if len(facts) != 71:
+        raise ValueError(f"expected 71 formal observations after HR-011/013 event normalization, found {len(facts)}")
     if len({row["observation_id"] for row in facts}) != len(facts):
         raise ValueError("duplicate fact observation ID")
     if any(row["review_status"] == "analytical_seed" for row in facts):

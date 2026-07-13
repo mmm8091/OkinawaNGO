@@ -1,0 +1,27 @@
+{
+  "source_id": "S295",
+  "source_type": "media_record",
+  "title": "【FROM YWCA】基地に囲まれた沖縄－うちなんちゅの想い－",
+  "year": "2016",
+  "url": "https://www.earth-garden.jp/study/51190/",
+  "what_it_supports": "A107 bounded issue link: YWCA-authored article records Okinawa-resident YWCA members speaking about U.S. bases women's human rights and peace",
+  "evidence_level": "E3",
+  "bias_note": "External hosting but YWCA-authored contribution; not independent reporting and the text does not explicitly name 沖縄YWCA",
+  "review_status": "human_checked",
+  "notes": "Exact source named in the user's HR-011 review; URL and 2016-08-01 date resolved online 2026-07-13. Use jointly with S144, not as standalone proof of A107 identity or affiliation.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S295\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S295\\metadata.json",
+  "sha256": "09fcfbfae0318a4c0980f2292597046dd40f9d8a66687e39ca4ab89f72b2c1af",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T15:34:02.202834+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.earth-garden.jp/study/51190/",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

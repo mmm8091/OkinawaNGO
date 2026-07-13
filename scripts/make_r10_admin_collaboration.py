@@ -69,6 +69,31 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def preserve_human_review_rows(
+    path: Path,
+    rows: list[dict[str, str]],
+    business_key: str,
+    id_field: str,
+    human_fields: tuple[str, ...],
+) -> None:
+    """Preserve stable IDs and completed human fields across generator reruns."""
+    if not path.exists():
+        return
+    previous_rows = read_csv(path)
+    previous = {row.get(business_key, ""): row for row in previous_rows if row.get(business_key, "")}
+    if len(previous) != len([row for row in previous_rows if row.get(business_key, "")]):
+        raise RuntimeError(f"Duplicate {business_key} in {path}")
+    for row in rows:
+        old = previous.get(row[business_key])
+        if not old:
+            continue
+        if old.get(id_field):
+            row[id_field] = old[id_field]
+        for field in human_fields:
+            if old.get(field, "").strip():
+                row[field] = old[field]
+
+
 def rel(
     rid: str, records: str, fy: str, start: str, end: str,
     source_id: str, source_name: str, source_kind: str,
@@ -409,7 +434,7 @@ def save_mechanism_figure(relations: list[dict[str, str]]) -> None:
     ax.set_ylim(0, 1)
     ax.axis("off")
     ax.text(0.03, 0.95, "R10 行政与服务生态：机制不同，不构成同一“运动资金网”", fontsize=19, fontweight="bold", color="#20343d")
-    ax.text(0.03, 0.905, f"{len(relations)} 条规范化关系观察＝上层行政机制 {len(admin)} 条＋下层服务／慈善／非资金边界 {len(lower)} 条。", fontsize=10.5, color="#5b6d76")
+    ax.text(0.03, 0.905, f"当前目的性跨来源样本：{len(relations)} 条规范化关系观察＝上层行政机制 {len(admin)} 条＋下层服务／慈善／非资金边界 {len(lower)} 条；非官方表全量。", fontsize=10.5, color="#5b6d76")
 
     card(ax, 0.03, 0.64, 0.18, 0.18, "公共部门", "冲绳县／冲绳市\n外务省／JICA", "#dbeaf0")
     card(ax, 0.28, 0.60, 0.28, 0.26, "行政机制", f"C1 委託：{c1} 条\nC2 提案型公募委託：{c2} 条\nC4 補助：{c4} 条\n其他委托／指定角色：{other_admin} 条", "#e7f0dc")
@@ -444,7 +469,7 @@ def save_amount_boundary_figure(relations: list[dict[str, str]], amounts: list[d
     ax.set_ylim(0, 1)
     ax.axis("off")
     ax.text(0.04, 0.95, "R10 资金证据边界：能说到哪一步", fontsize=19, fontweight="bold", color="#20343d")
-    ax.text(0.04, 0.91, f"{len(amounts)} 条金额观察；币种保留 JPY／USD，不跨币种求和，不把项目成本画成付款线宽。", fontsize=10.5, color="#5b6d76")
+    ax.text(0.04, 0.91, f"当前目的性样本内 {len(amounts)} 条金额观察；币种保留 JPY／USD，不跨币种求和，不把项目成本画成付款线宽。", fontsize=10.5, color="#5b6d76")
 
     rows = [
         (0.75, "A  实际合同／点名资金流", f"实际合同 {len(contracts)} 条；点名委托流／捐赠／实物价值 {len(named_flows)} 条", "可写：合同额、点名资金流或原币种捐赠。\n仍须说明机制与范围；不自动成为“运动资金”。", "#dceee3"),
@@ -620,8 +645,18 @@ def write_hr018_package(
         "current_status", "affected_review_item_ids", "archive_verified",
         "main_source_id", "human_notes",
     ]
-    write_csv(OUT / "HR018_relation_review_v0.csv", review_rows, HR018_FIELDS)
-    write_csv(OUT / "HR018_source_prerequisites_v0.csv", prerequisite_rows, prerequisite_fields)
+    review_path = OUT / "HR018_relation_review_v0.csv"
+    prerequisite_path = OUT / "HR018_source_prerequisites_v0.csv"
+    preserve_human_review_rows(
+        review_path, review_rows, "relation_observation_id", "review_item_id",
+        ("accept", "revise", "reject", "revision_instructions", "human_notes"),
+    )
+    preserve_human_review_rows(
+        prerequisite_path, prerequisite_rows, "source_ref", "source_prerequisite_id",
+        ("archive_verified", "main_source_id", "human_notes"),
+    )
+    write_csv(review_path, review_rows, HR018_FIELDS)
+    write_csv(prerequisite_path, prerequisite_rows, prerequisite_fields)
 
     guide = f"""# HR-018 R10 关系级人工复核指南
 
@@ -645,7 +680,7 @@ def write_hr018_package(
 
 ## 影响范围
 
-每条主复核项列出会影响的 main-table proposal、两张 R10 图与 brief 章节。任何 project cost、aggregate、sponsor tier、membership、service presence 或 NOFO 的 revise，都应同步检查资金证据边界图；任何 relation_type 的 revise，都应同步检查机制生态图 16+19=35 的完整计数。
+每条主复核项列出会影响的 main-table proposal、两张 R10 图与 brief 章节。任何 project cost、aggregate、sponsor tier、membership、service presence 或 NOFO 的 revise，都应同步检查资金证据边界图；任何 relation_type 的 revise，都应同步检查当前目的性样本内 16+19=35 的加总计数。
 """
     (OUT / "HR018_review_guide_v0.md").write_text(guide, encoding="utf-8")
 
@@ -667,15 +702,15 @@ def write_brief(relations: list[dict[str, str]], amounts: list[dict[str, object]
 
 R10 回答的是：冲绳的民间／非营利组织如何通过公开委托、补助、指定角色、慈善、成员网络和服务据点进入公共与基地社区生态；同时说明公开材料能够确认的金额语义上限。它不回答“谁资助反基地运动”，也不把服务美军人员与军属家庭的组织默认为亲基地或反基地 actor。
 
-规范化后共有 **{len(relations)} 条关系观察、{len(amounts)} 条金额观察、{len(functions)} 条功能观察**。机制生态图完整分为上层行政机制 **{len(admin)} 条**与下层服务／慈善／非资金边界 **{len(lower)} 条**，合计 {len(admin)}+{len(lower)}={len(relations)}。
+当前**目的性、跨来源 R10 样本**内共有 **{len(relations)} 条关系观察、{len(amounts)} 条金额观察、{len(functions)} 条功能观察**。机制生态图在样本内分为上层行政机制 **{len(admin)} 条**与下层服务／慈善／非资金边界 **{len(lower)} 条**，内部加总为 {len(admin)}+{len(lower)}={len(relations)}。该计数不代表任何官方表、部门、年度或机制的全量抽取。
 
-关系类型完整计数为：commission {rel_types['commission']}、designated_role {rel_types['designated_role']}、grant {rel_types['grant']}、sponsorship {rel_types['sponsorship']}、donation {rel_types['donation']}、network_membership {rel_types['network_membership']}、in_kind_donation {rel_types['in_kind_donation']}、joint_in_kind_contribution {rel_types['joint_in_kind_contribution']}、service_presence {rel_types['service_presence']}、aggregate_history {rel_types['aggregate_history']}、grant_opportunity {rel_types['grant_opportunity']}、event_collaboration {rel_types['event_collaboration']}；以上恰好覆盖全部 {len(relations)} 条，没有把活动协作或慈善 grant 隐入其他类型。
+样本内关系类型计数为：commission {rel_types['commission']}、designated_role {rel_types['designated_role']}、grant {rel_types['grant']}、sponsorship {rel_types['sponsorship']}、donation {rel_types['donation']}、network_membership {rel_types['network_membership']}、in_kind_donation {rel_types['in_kind_donation']}、joint_in_kind_contribution {rel_types['joint_in_kind_contribution']}、service_presence {rel_types['service_presence']}、aggregate_history {rel_types['aggregate_history']}、grant_opportunity {rel_types['grant_opportunity']}、event_collaboration {rel_types['event_collaboration']}；以上对当前 {len(relations)} 条内部加总完备，没有把活动协作或慈善 grant 隐入其他类型。
 
-## 2. 最强解释结论
+## 2. 解释性候选与已审边界
 
-1. **ONC 是行政协作与公共服务节点，不是基地抗争资金节点。** 公开材料显示其先后承担 JICA 教师海外研修、冲绳市 KIP 管理运营、冲绳县多文化共生会议运营支援与外务省 NGO 相談員。KIP 的多语咨询、语言课程与交流活动解释了委托的公共功能；没有证据把这些行政关系连到反基地运动网络。
+1. **ONC 的组织功能位于国际合作／多文化共生层；具体行政关系仍待 HR-018。** 公开材料为 JICA 教师海外研修、冲绳市 KIP 管理运营、冲绳县多文化共生会议运营支援与外务省 NGO 相談員形成官方来源候选。KIP 的多语咨询、语言课程与交流活动可解释其公共功能；但这些敏感行政关系须经 HR-018 接受／修订后才能作为事实关系发布，也没有证据把它们连到反基地运动网络。
 2. **官方机制码把“服务内容”和“资金机制”分开。** 本包采用 C1=委託、C2=提案型公募による委託、C4=補助，并修正原候选五个错分：R10A010/A011/A012/A014/A016 全部是 commission，服务／教育留在功能表。
-3. **A066 与 A088 的三份合同可确认为采购合同。** 精确合同额分别为 {confirmed_contracts[0]['amount_value']:,}、{confirmed_contracts[1]['amount_value']:,}、{confirmed_contracts[2]['amount_value']:,} 日元；它们证明具体年度的受托关系，不证明 grant、无条件行政支持、稳定政治联盟或“运动资金”。
+3. **官方记录形成 A066 与 A088 三份采购合同候选。** 记录金额分别为 {confirmed_contracts[0]['amount_value']:,}、{confirmed_contracts[1]['amount_value']:,}、{confirmed_contracts[2]['amount_value']:,} 日元；HR-018 接受前不得作为已冻结受托关系发布。即使接受，它们也只证明具体项目／年度的采购关系，不证明 grant、无条件行政支持、稳定政治联盟或“运动资金”。
 4. **USO／AWWA／OESC／NOSCO 构成服务与慈善观察层。** USO 的公开对象是美军人员及军属家庭，AWWA 是军属配偶俱乐部伞状网络；赞助、成员、直接捐赠、实物支持和服务设点使用不同边型。OESC→USO 的直接捐赠与 NOSCO 共同交付冷风机均只能按具体事件表述。
 5. **NOFO、aggregate 和 sponsor tier 必须留在证据边界外侧。** Okinawa Youth Council 只有机会公告，没有公开 award／recipient；AWWA 40 年累计口径与 KOSC 102,000 美元混合口径不能拆给具体 recipient；USO sponsor tier 不产生金额。
 
@@ -722,11 +757,11 @@ def write_metrics(relations: list[dict[str, str]], amounts: list[dict[str, objec
     lower = [r for r in relations if r not in admin]
     relation_types = Counter(r["relation_type"] for r in relations)
     rows = [
-        {"metric": "relation_observations", "value": len(relations), "definition": "unique normalized relation observations"},
-        {"metric": "mechanism_figure_admin_layer", "value": len(admin), "definition": "public_to* relations in upper administrative layer"},
-        {"metric": "mechanism_figure_lower_layer", "value": len(lower), "definition": "service/charity/non-funding-boundary relations in lower layer"},
-        {"metric": "amount_observations", "value": len(amounts), "definition": "separate monetary observations; not additive by default"},
-        {"metric": "function_observations", "value": len(functions), "definition": "service/role/site observations with no independent funding inference"},
+        {"metric": "relation_observations", "value": len(relations), "definition": "unique normalized relations in the current purposive cross-source R10 sample"},
+        {"metric": "mechanism_figure_admin_layer", "value": len(admin), "definition": "public_to* relations in the current sample's upper administrative layer"},
+        {"metric": "mechanism_figure_lower_layer", "value": len(lower), "definition": "service/charity/non-funding-boundary relations in the current sample's lower layer"},
+        {"metric": "amount_observations", "value": len(amounts), "definition": "selected monetary observations in the current sample; not additive by default"},
+        {"metric": "function_observations", "value": len(functions), "definition": "selected service/role/site observations with no independent funding inference"},
         {"metric": "actual_contract_amounts", "value": sum(r["amount_basis"] == "actual_contract_amount" for r in amounts), "definition": "exact official named-counterparty contracts"},
         {"metric": "project_cost_observations", "value": sum("project_cost" in str(r["amount_basis"]) for r in amounts), "definition": "context only; not actor payment"},
         {"metric": "aggregate_amount_observations", "value": sum("aggregate" in str(r["amount_basis"]) for r in amounts), "definition": "not allocable to actor/year"},
@@ -736,7 +771,7 @@ def write_metrics(relations: list[dict[str, str]], amounts: list[dict[str, objec
         rows.append({
             "metric": f"relation_type_{relation_type}",
             "value": relation_types[relation_type],
-            "definition": "exhaustive relation_type count; sums to relation_observations",
+            "definition": "within-package relation_type count; sums to the current purposive relation sample only",
         })
     write_csv(OUT / "figure_metrics_v1.csv", rows, fields)
 

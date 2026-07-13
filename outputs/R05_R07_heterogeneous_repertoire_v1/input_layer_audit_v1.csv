@@ -1,0 +1,6 @@
+﻿source_module,input_row_count,included_formal_row_count,excluded_row_count,inclusion_rule,boundary_note
+AEV_HR015,67,63,4,reviewer_status=human_checked,4 analytical_seed rows excluded
+R8_HR014,27,27,0,review_status=human_checked and decision=accept,all 27 accepted roles included
+R9_FORMAL_STAGE,33,24,9,review_status=accepted,9 needs_human_review stages excluded
+R9_FORMAL_ROLE,25,25,0,review_status=accepted,all 25 formal roles included; three point to stages whose result text remains pending
+R10_HUMAN_RELATION,35,9,26,review_status=human_checked or human_revised,26 pending R10 relations excluded

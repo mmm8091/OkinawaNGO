@@ -14,11 +14,13 @@
 
 这条链说明，民间组织提出的自治诉求必须经过多个制度门槛。门槛既可能放行，也可能改变问题设计、阻断投票、把行动推向法院，或把结果转化为行政与对外倡议资源。
 
-![四案程序时间线](referendum_process_timeline_v0.png)
+![四案程序时间线（accepted-only正文版）](referendum_process_timeline_accepted_v1.png)
 
-![制度门槛流程](institutional_gate_flow_v0.png)
+![制度门槛流程（accepted-only正文版）](institutional_gate_flow_accepted_v1.png)
 
-两图从模块内 `reviewed_all` 审计表生成，以便显示缺口。**空心点和星号只属于HR-017待审层，不在中央正式阶段表或正式角色表中。** 实心节点才对应当前正式层。
+两张正文图只读取中央正式表的 **24 个 accepted 阶段**与模块正式表的 **25 条 accepted 角色记录**，不含 HR-017 待审节点。HR-017 只控制扩展层，不再阻断正文图。旧版 `referendum_process_timeline_v0.png` 与 `institutional_gate_flow_v0.png` 继续作为 reviewed-all 历史审计附录保留，不用于正文确定性结论。
+
+图中的箭头与左右顺序仅表示程序编排，不识别动员对议会、投票、法院、行政或政策结果的因果效果。角色上，**A011 是住民投票请求／运动主体（requester），不是法院列名的个体原告（plaintiff）**；请求代表、签名居民、组织成员和个人原告不得互相替代。
 
 ## 2. 四案比较结论
 
@@ -74,4 +76,4 @@ A015 的2012意见广告和 A014 的2015反对运动只在reviewed-all／HR-017�
 
 R9 支持的解释是“自治诉求如何被程序门槛转换”，不是“公投必然导致政策变化”的因果识别。共同动员、意见广告、请求、投票与诉讼支持都不能自动写成稳定联盟；法院程序结果也不能转写为组织政治立场。
 
-正式表、审计全量表与图由 `scripts/make_r09_referendum_process.py` 同源生成：正式表严格过滤为 accepted，图读取reviewed_all并显式标出HR-017空心节点。外键、来源、票数、关键措辞、图文计数和重复运行稳定性均已检查。
+正式表、审计全量表与图由 `scripts/make_r09_referendum_process.py` 同源生成：accepted-only 正文图只读取正式表；旧 reviewed-all 图单独保留为历史审计附录。外键、来源、票数、关键措辞、图文计数和重复运行稳定性均已检查。

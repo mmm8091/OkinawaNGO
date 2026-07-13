@@ -1,0 +1,27 @@
+{
+  "source_id": "S259",
+  "source_type": "academic_article",
+  "title": "主体的な主権者教育を育むための一考察―#みんなごと実践記録",
+  "year": "2019",
+  "url": "https://www.jstage.jst.go.jp/article/isvsjapan/19/0/19_45/_pdf/-char/en",
+  "what_it_supports": "2018 nonpartisan civic-learning, public-meeting, policy-proposal and observation windows",
+  "evidence_level": "E4",
+  "bias_note": "First-party academic record; candidates are kept as generic event nodes as the paper masks names.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS012; proposal refs=NW2-B_R09:R9EC_S012. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 web/archive flags=verify_pdf_content_type_for_extensionless_jstage_endpoint. Sensitive boundary tags=election_causality_not_inferred;person_or_masked_actor_not_transferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S259\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S259\\metadata.json",
+  "sha256": "4def725a1e4aebb4929e96e110a88dfe1b4a4757e65da557ea5c9a758dbb7138",
+  "content_type": "application/pdf;charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:03:00.358431+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jstage.jst.go.jp/article/isvsjapan/19/0/19_45/_pdf/-char/en",
+    "status_code": "200",
+    "content_type": "application/pdf;charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

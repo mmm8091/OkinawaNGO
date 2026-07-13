@@ -1,0 +1,27 @@
+{
+  "source_id": "S282",
+  "source_type": "prefectural_official",
+  "title": "沖縄県行政記録 平成20年",
+  "year": "2008",
+  "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/014/905/h20gyouseikiroku.pdf",
+  "what_it_supports": "Independent official record of an Okinawa-headquarters request over a U.S.-Marine sexual-assault case",
+  "evidence_level": "E4",
+  "bias_note": "An administrative diary entry confirms a request, not the full content or outcome.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS037; proposal refs=NW2-C_registry_gate:RV2SP017. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 web/archive flags=domain_archive_history_has_material_failure_share. Sensitive boundary tags=branch_parent_action_not_automatically_transferred;party_affiliation_not_inferred.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S282\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S282\\metadata.json",
+  "sha256": "1ea02aaa3a8d09405e670cd6f85dea97110f2d231593abe548558ebdfff9894d",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:55.446538+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/014/905/h20gyouseikiroku.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "307116",
+    "last_modified": "Fri, 08 Dec 2023 07:55:55 GMT"
+  }
+}

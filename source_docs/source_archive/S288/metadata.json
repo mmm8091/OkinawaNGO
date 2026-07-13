@@ -1,0 +1,27 @@
+{
+  "source_id": "S288",
+  "source_type": "official_legislative_record",
+  "title": "第213回国会参議院特別委員会 第5号",
+  "year": "2024",
+  "url": "https://kokkai.ndl.go.jp/simple/detail?minId=121315359X00520240524",
+  "what_it_supports": "Independent official acknowledgment that the Okinawa headquarters carried out the Ishigaki Port strike",
+  "evidence_level": "E4",
+  "bias_note": "The record contains contested characterizations of legality; this gate records occurrence and attributed rationale only.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS043; proposal refs=NW2-C_registry_gate:RV2SP023. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 web/archive flags=verify_dynamic_query_page_and_final_url. Sensitive boundary tags=strike_legality_or_effect_not_adjudicated;common_event_not_stable_alliance.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S288\\raw.html",
+  "metadata_path": "source_docs\\source_archive\\S288\\metadata.json",
+  "sha256": "edb5925f9d44cfb494899451887b9ca70a0e8a084a3d4964311dbd83648a7149",
+  "content_type": "text/html;charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:05:16.455833+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://kokkai.ndl.go.jp/simple/detail?minId=121315359X00520240524",
+    "status_code": "200",
+    "content_type": "text/html;charset=UTF-8",
+    "content_length": "",
+    "last_modified": ""
+  }
+}

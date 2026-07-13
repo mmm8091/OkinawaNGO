@@ -57,7 +57,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 | HR-014 | completed | 六案与 27 条案件角色已按案件特定边界人审落库。 |
 | HR-015 | completed | 49 条 evidence note 与 64 条 actor-event-venue 记录已人审；A077-A085 撤出主 registry，保留为 E2 事件参与线索。 |
 
-主 registry 当前为 **118 actor**：历史 103 条中撤出 A077-A085 九个一次性署名名称，HR-013 又按范围修正撤出 A094；保留其余 E4 身份级 actor，并由 HR-011 新增 A107-A110、HR-013 新增 A111。118 仍低于原方案 120–180 的数量区间下限，但不得把 A077-A085、A094 或未审候选重新入表凑数。当前主数据另有 **247 sources、222 actor–issue edges、125 actor–place edges、65 AEV rows 和 40 human-review log rows**；来源归档状态为 224 archived、2 manual_archived、19 failed、2 non-URL。
+主 registry 当前为 **118 actor**：历史 103 条中撤出 A077-A085 九个一次性署名名称，HR-013 又按范围修正撤出 A094；保留其余 E4 身份级 actor，并由 HR-011 新增 A107-A110、HR-013 新增 A111。118 仍低于原方案 120–180 的数量区间下限，但不得把 A077-A085、A094 或未审候选重新入表凑数。当前主数据另有 **295 sources、222 actor–issue edges、129 actor–place edges、67 AEV rows 和 40 human-review log rows**；S248-S294 为 provisional、`ai_seeded` 来源索引，不批准相关候选事实，S295 是 HR-011 定位补充而非独立身份二源。来源归档状态为 265 archived、2 manual_archived、26 failed、2 non-URL。
 
 ## 2. 复核输入材料
 
@@ -360,7 +360,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-012 组织沿革、别名与诉讼代际复核 — completed
 
-完成状态（2026-07-13）：A052 规范名为 `嘉手納基地爆音差止訴訟原告団`，C026 是其 `round_of`；A053 规范名为 `普天間基地爆音訴訟原告団`，C027 是其 `round_of`。C028 `石垣島への自衛隊配備を止める住民の会` 于 2015-08-20 成立，记录为 2016 年 9 月形成的较广联盟 A010 的 `predecessor_of`。三项均不另建 actor，也不推定跨轮次成员完全相同或前身与后继完全同体。
+完成状态（2026-07-13）：A052 规范名为 `嘉手納基地爆音差止訴訟原告団`，C026 是其 `round_of`；A053 规范名为 `普天間基地爆音訴訟団`，C027 是其 `round_of`。C028 `石垣島への自衛隊配備を止める住民の会` 于 2015-08-20 成立，记录为 2016 年 9 月形成的较广联盟 A010 的 `predecessor_of`。三项均不另建 actor，也不推定跨轮次成员完全相同或前身与后继完全同体。
 
 以下保留原任务要求。
 
@@ -406,7 +406,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 以下保留原任务要求。
 
-对象：`data/interim/17_legal_policy_procedure_cases_v0.csv` 六个案件；`outputs/R08_legal_procedure_v0/actor_procedure_roles_v0.csv` 的候选角色。
+对象：`data/interim/17_legal_policy_procedure_cases_v0.csv` 六个案件；`data/interim/18_legal_policy_actor_roles_v0.csv`（模块镜像为 `outputs/R08_legal_procedure_v0/case_actor_roles_v0.csv`）的候选角色。
 
 要查：
 
@@ -427,7 +427,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 以下保留原任务要求。
 
-对象：`outputs/phase1_foundation_v1/evidence_note_seeds_v1.csv` 49 条；`outputs/phase1_foundation_v1/actor_event_venue_seeds_v1.csv` 64 条。
+对象：`outputs/phase1_foundation_v1/evidence_notes_seed_v0.csv` 49 条；`outputs/phase1_foundation_v1/actor_event_venue_seed_v0.csv` 64 条。
 
 要查：
 
@@ -476,7 +476,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-018 行政协作、金额与服务关系复核 — pending
 
-状态（2026-07-13）：R10 已把 35 条关系、26 条金额和 43 条功能观察规范化。9 条关系沿用既有 `human_checked`／`human_revised`；其余 26 条按关系级打包待审，关联金额与功能不重复拆成独立任务。R10S05–R10S12 的 8 个新来源另列归档／source-log 前置项，尚未预审。
+状态（2026-07-13）：R10 已把当前目的性跨来源样本内的 35 条关系、26 条金额和 43 条功能观察规范化；三组数字不是 FY2024、部门或机制全量。9 条关系沿用既有 `human_checked`／`human_revised`；其余 26 条按关系级打包待审，关联金额与功能不重复拆成独立任务。R10S05–R10S12 的 8 个新来源另列归档／source-log 前置项，尚未预审。
 
 复核包：
 
@@ -499,7 +499,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 - `outputs/R01_R02_actor_issue_v1/HR019/HR019_review_v0.csv`（9 个规则／受控词决定）
 - `outputs/R01_R02_actor_issue_v1/HR019/HR019_bridge_actor_review_queue_v0.csv`（30 个 bridge actor）
-- `outputs/R01_R02_actor_issue_v1/HR019/HR019_edge_scope_review_queue_v0.csv`（63 条 edge scope）
+- `outputs/R01_R02_actor_issue_v1/HR019/HR019_edge_scope_review_queue_v0.csv`（65 条 edge scope）
 - `outputs/R01_R02_actor_issue_v1/HR019/HR019_review_guide_v0.md`
 
 人工重点：
@@ -516,6 +516,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 复核包：
 
 - `outputs/R05_coaction_v1/HR020_review_packet_v0.md`
+- `outputs/R05_coaction_v1/hr020_review_queue_v0.csv`
 - `data/interim/25_coaction_event_participation_v0.csv`
 - `outputs/R05_coaction_v1/repeat_participation_bridges_v0.csv`
 
@@ -528,7 +529,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-021 R6/R7/R11 下游纳入与 analytical seed 复核 — pending
 
-状态（2026-07-13）：69 条正式 actor–event–venue–target／entry-mode 事实和 4 条独立 analytical seed 已分层。HR-021 共 8 项、决定栏全空；前 7 项依赖 HR-018 的关系事实决定，只审其后是否及以何种边界进入 R6/R11，不重复审核同一关系。第 8 项只审四条 seed 是否有独立事实边证据。
+状态（2026-07-13）：71 条正式 actor–event–venue–target／entry-mode 事实和 4 条独立 analytical seed 已分层。HR-021 共 8 项、决定栏全空；前 7 项依赖 HR-018 的关系事实决定，只审其后是否及以何种边界进入 R6/R11，不重复审核同一关系。第 8 项只审四条 seed 是否有独立事实边证据。
 
 复核包：
 
@@ -580,16 +581,137 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - 共同署名、同场参与或案件中的个人角色不得升级为组织的稳定联盟、常设定位或跨案件角色。
 - A073 在线检索已耗尽且组织身份仍不闭合；不能仅凭旧名单或名称相似激活。
 
+### HR-025 actor—place 语义与 AP123 键冲突复核 — pending
+
+状态（2026-07-13）：129 条 actor—place 基础边已拆为 `target`、`site_presence`、`institutional_scope`、`event_location`、`headquarters` 与 `unclear` 等语义候选；41 条需要人工决定，所有决定栏为空。该复核批准的是地点关系的语义与键值，不批准组织间联盟、长期在场或总体代表性。
+
+复核包：
+
+- `outputs/R03_spatial_dossier_v1/HR025_actor_place_semantics_review_v0.csv`
+- `outputs/R03_spatial_dossier_v1/R03_spatial_dossier_brief_v1.md`
+- `data/interim/32_actor_place_semantic_candidates_v1.csv`
+
+人工重点：
+
+- AP123 的现有 `place_id=P006` 指向 Camp Schwab，但边文本与证据指向 Camp Foster；必须由 HR-025 决定修订为 P007、改写证据范围或拒绝，任何 schema／脚本不得机械覆盖。
+- `target` 表示行动、倡议或争议所指向的地点，不等于组织驻地；`site_presence`、`headquarters` 与广义 `institutional_scope` 必须分开。
+- 边野古 44 条候选中 41 条为 target、3 条为 presence；该差异是解释重点，不得把 44 写成“44 个在地组织”。
+
+### HR-026 三届县知事选—市民组织接口复核 — pending
+
+状态（2026-07-13）：2014、2018、2022 三届县知事选共形成 19 条候选观察，区分公开支持、议题行动、公开会议、出马／政策请求与观察／信息活动；19 条决定栏全空，21 条来源已进入 provisional 来源索引。
+
+复核包：
+
+- `outputs/R09_election_civic_interface_v1/HR026_election_civic_role_review_v0.csv`
+- `outputs/R09_election_civic_interface_v1/R09_election_civic_interface_brief_v1.md`
+- `data/interim/33_r09_election_civic_events_v1.csv`
+
+人工重点：
+
+- 逐项确认 actor 身份、选举年份、行动类型、对象与证据 locator；全国组织的行为不得转嫁给冲绳县本部，反之亦然。
+- endorsement、出马请求、政策问卷、主权者教育和议题行动不能互换；候选人、政党和临时选举协调体不自动进入 NGO registry。
+- 本任务不批准票数、投票率、胜负或政策效果的因果解释。
+
+### HR-027 registry 价值门槛 v2 — pending / first priority
+
+状态（2026-07-13）：线上检索形成 5 个价值候选，其中 4 个进入人工决定、1 个因持续性不足继续 defer。所有候选均未分配正式 A 编号、未写入 registry，也未生成中心关系边。若前四项中至少两项被接受，registry 将从 118 达到方案下限 120，但不得以凑数代替范围判断。
+
+复核包：
+
+- `outputs/registry_value_gate_v2/HR027_registry_value_review_v0.csv`
+- `outputs/registry_value_gate_v2/registry_value_gate_brief_v2.md`
+- `data/interim/34_registry_value_candidates_v2.csv`
+
+候选：
+
+1. 宮古島地下水研究会；
+2. 宜野湾ちゅら水会；
+3. 全日本港湾労働組合沖縄地方本部；
+4. 新日本婦人の会沖縄県本部。
+
+八重山大地会仅保留为 defer 线索。人工应分别判断持续组织身份、一期直接连接、全国／地方层级与新增解释价值；接受后才由主线程顺序分配 A 编号并更新下游数据。
+
+### HR-028 R5/R7 异质行动包
+
+未建立人工决定任务。该包只把 148 条既有正式观察重组为 39 个去重行动单元和 6 案／17 阶段展示，不新增 actor、事实角色、关系、联盟或因果判断；因此保留编号说明，不伪造空白人审项。
+
+### HR-029 schema 与 alias 冻结复核 — pending / after HR-027
+
+状态（2026-07-13）：对 actor class、legal status、alias type、relation type 与 action type 形成 467 条规范化候选，其中 34 条需要人工决定。HR-029 必须在 HR-027 接受项合并并重跑动态 schema audit 后执行；当前 118-actor 包只是预审快照，不是最终 freeze。
+
+复核包：
+
+- `outputs/schema_alias_freeze_v1/HR029_schema_alias_freeze_review_v0.csv`
+- `outputs/schema_alias_freeze_v1/schema_alias_freeze_brief_v1.md`
+- `data/interim/36_schema_alias_freeze_candidates_v1.csv`
+
+人工重点：
+
+- 不合并全国组织与冲绳地方组织、前身与后继、诉讼轮次与持续原告团、律师团与原告团。
+- AP123 不在 HR-029 作机械修订，唯一决定权归 HR-025。
+- 规范词表旨在消除同义写法，不得抹去研究上有意义的组织层级、案件代际和历史有效期。
+
+### HR-030 下一波来源元数据与归档复核 — pending
+
+状态（2026-07-13）：S248-S294 共 47 条新来源已按 provisional、`ai_seeded` 方式进入 source log；40 条归档成功，7 条失败。去重后有 22 个 URL 需要补 metadata、locator、archive 或替代副本，所有人工决定栏为空。来源建索引不等于 HR-026／027 的候选事实获得批准。
+
+复核包：
+
+- `outputs/next_wave_source_integration_v1/HR030_source_metadata_archive_review_v0.csv`
+- `outputs/next_wave_source_integration_v1/README.md`
+- `outputs/next_wave_source_integration_v1/proposal_to_source_crosswalk_v1.csv`
+
+人工重点：
+
+- 核对 title、机构／发布者、年份、source type、evidence level、locator 与可支持范围。
+- 失败 URL 应记录权威替代副本或人工归档，不把抓取失败写成证据不存在。
+- 不在本任务中批准 actor 纳入、选举角色、污染／健康因果、劳工效果、关系或资金流。
+
+### HR-031 报告解释强度复核 — pending
+
+状态（2026-07-13）：机械 claim audit 在 78 条报告主张中识别出 3 个必须由研究负责人决定的解释强度问题；32 组数字全部匹配，事实表和来源可支持相关观察，但不能替代研究判断。所有决定栏为空。
+
+复核包：
+
+- `outputs/report_claim_audit_v1/HR031_report_claim_review_v0.csv`
+- `outputs/report_claim_audit_v1/report_claim_audit_summary_v1.md`
+- `data/interim/38_report_claim_evidence_audit_v1.csv`
+
+人工重点：
+
+- “基地问题的转译”可否作为一期中心解释，还是只称多议题并置／框架化。
+- 地点差异可表述到何种强度，是否需要进一步用同口径材料控制资料可见度偏差。
+- 边野古国际化是否可称“连续转换”；若保留，必须明确为分析性重建，不表达因果、指挥、资金或稳定联盟。
+
+### HR-032 S002 高价值 partner alias／复合体 crosswalk 复核 — pending
+
+状态（2026-07-13）：R10 已将 S002 FY2024《NPO 等との協働実績調査》86 页、616 条来源行做成独立正式总体层。总体表与两张图按 source rows／machine display labels 聚合，不创建 actor、relation 或 payment；当前图均可作为 source-universe 事实层使用。HR-032 仅保留 8 个会改变高频 partner-label 图或一期相邻 field10／11 核心解释的身份／复合体问题，决定、复核人和日期栏全部留空。
+
+复核包：
+
+- `outputs/R10_official_collaboration_universe_v1/HR032_partner_alias_crosswalk_review_v1.csv`
+- `outputs/R10_official_collaboration_universe_v1/HR032_review_guide_v1.md`
+- `outputs/R10_official_collaboration_universe_v1/official_collaboration_source_universe_v1.csv`
+
+人工重点：
+
+- 确认「沖縄県社会福祉協議会」的法律前缀省略是否仅作报告级 alias；这会改变第二图的高频 source-label 计数，但不使其进入一期 registry。
+- 核对「沖縄県平和祈念財団」「おきなわ女性財団／男女共同参画センター」「沖縄平和協力センター A088」「沖縄県ユネスコ協会」及「レインボーハートokinawa」的同名连续性、法律类别与组织层级；不得与ひめゆり财团、A111 女団協或已移出 registry 的 A094 混同。
+- JOCA 冲绳事务所、世界若者ウチナーンチュ连合会与各共同企业体必须区分 standalone actor、项目复合体和成员 crosswalk；即使接受成员说明，也不得拆分项目事业费或生成稳定关系。
+- 当前两张 616-row source-universe 图不等待 HR-032；只有 canonical alias、JV 成员展开、registry crosswalk 或 actor-level 中心性解释受该任务控制。任何新行政关系／金额解释仍由 HR-018 或其后继任务决定。
+
 ## 7. 人工复核节奏
 
 建议每轮 60-90 分钟，先处理 8-12 个高风险条目。
 
 优先级：
 
-1. E2 但可能进入结论的条目。
-2. 资助 / 赞助 / 公共外交 / 军属服务关系。
-3. 与那国 / 先岛专题核心组织。
-4. 组织名、别名、法律身份不稳定的条目。
+1. HR-027 registry 价值门槛；先决定新增 actor，不直接执行当前 HR-029 预审快照。
+2. HR-010／019／024 的现有 actor 分类、议题边与 bridge／scope，以及 HR-025 的 AP123／空间语义、HR-026 的选举角色；这些都会改变最终图或计数。
+3. HR-018 资助／委托／公共外交／军属服务关系；它控制 R10 正文图和 HR-021 前 7 项。
+4. 合并上述 actor／edge 决定后重跑并执行 HR-029 schema／alias freeze；同时处理 HR-022／030 来源元数据、HR-031 报告解释强度与 HR-032 的 8 项 partner alias／JV crosswalk。HR-032 不阻断当前两张 R10 来源总体图。
+5. 其余 E2、与那国／先岛组织身份和需要当地材料的条目。
 
 ## 8. 不合格复核示例
 

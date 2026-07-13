@@ -1,0 +1,23 @@
+# NW2-F validation report
+
+- input proposal rows: 50 = 21 R9 + 29 registry gate
+- normalized unique URLs: 49
+- cross-batch duplicate URL groups: 1
+- current source-log matches: 2 (S158, S204)
+- proposed new unique URLs: 47
+- suggested source sequence: S248-S294; historical_proposal_sequence
+- provisional indexing requires human claim approval: no; claims approved by indexing: 0
+- observed source-log snapshot: 295 rows
+- recognized NW2-H provisional batch matches: 47
+- metadata-review URL groups: 11
+- web/archive-review URL groups: 11
+- source-type categories needing human choice: 3
+- source-type categories mechanically normalized: 20
+- relation_or_claim_approved: 0 yes / 49 no
+- missing required proposal metadata: 0
+- new URLs without provisional-index/archive boundary: 0
+- central source-log writes: 0
+- archive manifest/artifact writes: 0
+- central source-log SHA-256 (read-only baseline): `a0c9a5c2236c00d9d6a09e7ea27422a5771b8a47d4712a0f4804598df848f11b`
+- archive manifest SHA-256 (read-only baseline): `18e351db11f702e6fe4a296a3aa7320a1fd0ae6d81f69e018d82c906b34b665d`
+- output/interim unique crosswalk SHA-256 match: yes

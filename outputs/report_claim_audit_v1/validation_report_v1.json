@@ -1,0 +1,17 @@
+{
+  "report_sha256": "aa7509bc582f7d73192df694b217b1939ef4d3f8fd5f1d1c37cd76fc3e163887",
+  "claim_count": 78,
+  "publish_status": {
+    "safe": 71,
+    "revise": 6,
+    "block": 1
+  },
+  "numeric_checks": 32,
+  "numeric_mismatches": 0,
+  "missing_source_ids": 0,
+  "missing_formal_paths": 0,
+  "mechanical_fix_count": 0,
+  "publication_blocker_count": 1,
+  "hr031_count": 3,
+  "all_hr_decision_fields_blank": true
+}

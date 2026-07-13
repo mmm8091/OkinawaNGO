@@ -1,0 +1,11 @@
+﻿official_mechanism_code,official_mechanism_label,official_mechanism_definition,mechanism_analytical_family,source_row_count,share_of_616_percent,distinct_partner_display_alias_count,department_count,issue_field_count,cash_transfer_inference_allowed_from_s002_alone,interpretation_limit
+1,委託,NPO等へ業務委託を行った事業,delegated_public_program,303,49.2,173,14,18,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+2,提案型公募による委託,提案型公募による委託,proposal_based_delegated_program,60,9.7,44,10,11,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+3,指定管理者制度による委任,指定管理者制度による委任,designated_management,13,2.1,11,4,6,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+4,補助,補助金・助成金の支給又は物的支援,subsidy_assistance_or_in_kind,93,15.1,74,9,12,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+5,共催,NPO等と共催という形で実施,cohosting,25,4.1,17,9,10,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+6,後援,NPO等の事業を後援という形で支援,endorsement_or_support,65,10.6,56,6,10,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+7,実行委員会等,委員会等にNPO等のメンバーを加えた事業,committee_participation,9,1.5,9,4,5,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+8,事業協力,共催以外の形態で協力・連携,program_cooperation,21,3.4,20,8,8,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+9,講師等,講演会等の講師をNPO等が担当,lecturer_or_expertise,21,3.4,20,4,6,no,Official collaboration-form category; project cost is not automatically an actor payment or award.
+10,その他,上記以外の協働形態,other_collaboration,6,1.0,5,4,4,no,Official collaboration-form category; project cost is not automatically an actor payment or award.

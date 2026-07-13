@@ -1,0 +1,27 @@
+{
+  "source_id": "S273",
+  "source_type": "official_legislative_record",
+  "title": "宜野湾市議会 福祉教育常任委員会審査記録（請願第1号）",
+  "year": "2023",
+  "url": "https://www.city.ginowan.lg.jp/material/files/group/61/hukusi_202212.pdf",
+  "what_it_supports": "Exact identity, named co-representatives, PFAS work history and health-investigation request",
+  "evidence_level": "E4",
+  "bias_note": "The testimony says work began with the 2016 PFOS disclosure; it does not give a precise legal formation date.",
+  "review_status": "ai_seeded",
+  "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS028; proposal refs=NW2-C_registry_gate:RV2SP007. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. HR-030 metadata flags=hearing_date_vs_report_date_choose_source_log_year. Sensitive boundary tags=PFAS_health_or_source_causality_not_inferred;request_or_coparticipation_not_partnership.",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S273\\raw.pdf",
+  "metadata_path": "source_docs\\source_archive\\S273\\metadata.json",
+  "sha256": "3f1887341f012d5d6a7e9c88c614c0366083ea5827f587db6cab1db10143b47b",
+  "content_type": "application/pdf",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-13T13:04:18.457100+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.city.ginowan.lg.jp/material/files/group/61/hukusi_202212.pdf",
+    "status_code": "200",
+    "content_type": "application/pdf",
+    "content_length": "625140",
+    "last_modified": "Thu, 09 Nov 2023 00:09:39 GMT"
+  }
+}

@@ -18,12 +18,12 @@ R3/R4 已达到 `module_v0`：已有地点登记表、actor-place edge、地点 
 
 ## 地点画像
 
-- Henoko：环保-反基地-国际倡议主场 主要框架：ecology / environment (24); base / anti-military (20); international route (20)。
+- Henoko：环保-反基地-国际倡议主场 主要框架：ecology / environment (24); base / anti-military (21); international route (20)。
 - Oura Bay：生态 / 儒艮 / 大浦湾环境框架 主要框架：ecology / environment (6); base / anti-military (3); international route (3)。
 - Ishigaki：自卫队配备、住民投票、生活安全与地下水线索 主要框架：base / anti-military (3); autonomy / referendum (2); ecology / environment (1)。
 - Miyako：导弹 / 弹药库、地下水与生活安全线索 主要框架：base / anti-military (3); ecology / environment (2); life / health safety (2)。
 - Yonaguni：前线化、地方自治、住民投票与健康风险线索 主要框架：base / anti-military (4); frontline / Taiwan (3); autonomy / referendum (2)。
-- Kadena：爆音诉讼、生活安全、基地负担 主要框架：life / health safety (3); base / anti-military (1); legal / procedure (1)。
+- Kadena：爆音诉讼、生活安全、基地负担 主要框架：life / health safety (4); base / anti-military (2); legal / procedure (2)。
 - Futenma：城市安全、基地风险与法律程序 主要框架：base / anti-military (1); life / health safety (1); legal / procedure (1)。
 - Camp Foster：基地社区服务 / 军属服务场域 主要框架：life / health safety (4)。
 - U.S. Consulate General Naha：公共外交 / grant opportunity 场域 主要框架：international route (1)。
