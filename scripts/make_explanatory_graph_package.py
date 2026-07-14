@@ -256,7 +256,7 @@ def save_place_issue_matrix(issue_edges: list[dict[str, str]], place_edges: list
 
     fig, ax = plt.subplots(figsize=(13.5, 6.4))
     im = ax.imshow(data, cmap="YlGnBu")
-    ax.set_title("地点 × 议题框架矩阵：不同场域承接的组织议题组合", fontsize=15, pad=18)
+    ax.set_title("已退役方法审计图：actor 层地点 × 议题宽投影（不可作正式结论）", fontsize=15, pad=18, color="#9b2c2c")
     frame_labels = [f"F{i}" for i in range(1, len(frames) + 1)]
     ax.set_xticks(range(len(frames)), labels=frame_labels, rotation=0, ha="center", fontsize=8.2)
     ax.set_yticks(range(len(place_focus)), labels=place_focus, fontsize=10)
@@ -278,7 +278,7 @@ def save_place_issue_matrix(issue_edges: list[dict[str, str]], place_edges: list
     fig.text(
         0.29,
         0.055,
-        "数字表示同时连接该地点与该议题框架的 actor 数；与那国不强行环保化，按前线化 / 自治 / 健康风险读取。",
+        "警告：place 与 issue 不要求同源／同事件／同时期；仅作宽投影敏感性历史记录，正式 MA002 必须使用三元事实。",
         fontsize=9,
         color="#555",
     )
@@ -490,9 +490,9 @@ def write_readme(
     archive_status = Counter(row["archive_status"] for row in manifest)
     content = f"""# 解释性图表包 v0
 
-日期：2026-07-12（数据刷新）
+日期：2026-07-14（方法更正）
 
-目的：把当前 {len(actors)} 个 actor、{len(sources)} 条 source 和人工复核状态转成可沟通、可继续探索的图件。此包不是最终报告；它用于下一次沟通前验证叙事，并暴露下一轮补源方向。HR-011/012/014/015 已回写；HR-013 尚未收到；A087-A101 仍只完成 E4 身份级合并，A077-A085 依 HR-015 仅保留为 E2 事件参与者、不进入 registry。
+目的：保留早期探索图及其方法审计轨迹。此包不是最终报告。HR-010～015 已回写；当前 registry 为 {len(actors)}。旧地点—议题图已退役，其他旧图也须服从当前人工／解释 gate。
 
 ## 图件
 
@@ -502,8 +502,8 @@ def write_readme(
    - 注意：E2 边只作线索。
 
 2. `fig_place_issue_matrix_explanatory.png`
-   - 显示地点和议题框架的交叉强度。
-   - 读法：边野古/大浦湾承接环保和国际倡议，石垣/宫古承接生活安全，与那国按前线化/自治/健康风险读取。
+   - **已退役，不得作为合同地点×议题图或正文证据。**
+   - 旧算法把同一 actor 的全部 actor–place 边与全部 actor–issue 边作宽投影，不要求同一来源／事件／时期；正式 MA002 必须使用 `actor × place × issue × event/document × date × source` 三元事实。
 
 3. `fig_henoko_internationalization_pathway.png`
    - 显示边野古/大浦湾如何从地方基地争议转译为儒艮、生物多样性、法律程序和国际倡议。
@@ -527,7 +527,7 @@ def write_readme(
 ## 当前最适合继续调查的方向
 
 1. 手工处理 {archive_status.get('failed', 0)} 条自动归档失败来源；失败状态不等于证据不存在。
-2. 执行已收到的 HR-010、011、012、014、015：新增主体定性、E3 补源、沿革/范围、R8 角色及 evidence/venue seed；HR-013 仍待提交。
+2. HR-010～015 已合并；当前第一人工批为 HR-027，随后按依赖冻结 publication-critical HR。
 3. 与那国 A014/A015 的地方报纸、意见广告实物、议会资料。
 4. AWWA / spouse club charity recipients 和 Schedule I / 活动手册。
 5. 继续把共同行动保持为 event table，不因重复同场直接生成联盟网络。
@@ -552,6 +552,8 @@ def main() -> None:
     manifest = read_csv(ARCHIVE_MANIFEST)
 
     save_actor_issue_bridge_network(actors, issue_edges)
+    # Retained only as a visibly deprecated wide-projection sensitivity artifact.
+    # It must never be promoted to the formal MA002 place-issue finding.
     save_place_issue_matrix(issue_edges, place_edges)
     save_henoko_pathway()
     save_coaction_event_composition(actors)

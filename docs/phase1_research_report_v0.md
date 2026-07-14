@@ -35,7 +35,7 @@
 | --- | --- | --- |
 | 哪些 actor 在公开资料中连接多个议题 | `outputs/explanatory_v0/fig_actor_issue_bridge_network.png` | 候选议题桥接，不等于长期领导或联盟 |
 | 组织生态、完整议题网络和桥梁机制如何分层 | `outputs/R01_R02_actor_issue_v1/fig1_r01_actor_ecology.png`、`fig2_r02_full_bipartite_network.png`、`fig3_r02_issue_cooccurrence.png`、`fig4_r02_cross_issue_actors.png` | 118×26 候选／人审混合网络；节点度数不等于影响力 |
-| 不同地点承接何种框架 | `outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png` | 当前候选边的地点—议题分布 |
+| 不同地点承接何种框架 | **正式图待 MA002 重建**；`outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png` 已退役 | 旧图是 actor 层宽投影，不能证明地点与议题来自同一事件／来源；正式图只用同源或同事件三元事实 |
 | 边野古争议如何进入外部制度场域 | `outputs/explanatory_v0/fig_henoko_internationalization_pathway.png` | 倡议／法律路径，不是资金链 |
 | 国际目标路径与外来 actor 进入方式有何差异 | `outputs/R06_R07_R11_pathways_v1/fig_r06_target_pathways_v0.svg`、`fig_r11_external_entry_matrix_v0.svg` | 正式角色／入口比较，不是统一国际联盟或资金网络 |
 | 场域序列如何展示 | `outputs/R06_R07_R11_pathways_v1/fig_r07_venue_shift_small_multiples_v0.svg` | 虚线仅为程序时间／展示顺序，不是因果 |
@@ -77,7 +77,7 @@ R2 完整层把全部 118 actors 与 26 issues 保留在同一二模结构中。
 
 ### 5.1 边野古／大浦湾：生态、程序与国际倡议的高密度交叉
 
-在当前地点—议题矩阵中，边野古是候选关系最密集的具体场域；其主要框架为生态／环境、基地／反军事和国际路径。大浦湾则更集中于儒艮、生物多样性与环境程序。2010 年 WWF Japan 的 67 团体共同声明（S003）、2015 年 NACSJ／Peace Boat 的 31 NGO 紧急共同声明（S004）、2020 年 OEJP 向美国海洋哺乳动物委员会相关渠道提出的 71 团体请求（S006），共同显示环保语言可以把地方建设争议带入日本国内与跨国组织场域。它们证明的是特定年份、特定文本中的共同发声或请求参与，不证明 67、31 或 71 个组织构成持续联盟。
+旧地点—议题矩阵曾显示边野古／大浦湾与生态、基地和国际路径的高密度组合，但该图把同一 actor 的全部地点边和全部议题边作宽投影，不要求两者来自同一来源、同一事件或同一时期，故已退役，不能用于正式地点差异推论。能够保留的是有共同文本锚点的案例事实：2010 年 WWF Japan 的 67 团体共同声明（S003）、2015 年 NACSJ／Peace Boat 的 31 NGO 紧急共同声明（S004）、2020 年 OEJP 向美国海洋哺乳动物委员会相关渠道提出的 71 团体请求（S006），分别在具名文本中同时锚定边野古／大浦湾、生态议题和公开行动角色。这些材料说明环保语言可以进入日本国内与跨国组织场域；它们仍只证明特定年份、特定文本中的共同发声或请求参与，不证明 67、31 或 71 个组织构成持续联盟。正式 MA002 将只使用同一来源或同一事件的 actor–place–issue 三元事实。
 
 美国 NHPA 诉讼进一步展示了法律路径的角色分化。法院材料和组织法律资料确认 Center for Biological Diversity（A045）、Turtle Island Restoration Network（A086）、日本环境法律家联盟 JELF（A020）和 Save the Dugong Foundation（A076）为具名原告，Earthjustice（A009）为原告方律师（S009、S060—S062、S093）。SDCC（A002）是倡议组织但不是该案原告；ヘリ基地反対協議会（A019）也不是组织层面的诉讼当事方。这个区分说明：现场运动、环境倡议、原告身份和法律代理必须分开编码，不能用一条笼统“合作边”替代。
 

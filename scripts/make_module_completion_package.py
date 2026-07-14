@@ -70,11 +70,11 @@ def make_module_status() -> None:
         },
         {
             "module": "R3/R4 place-frame matrix",
-            "completion_level": "module_v0",
+            "completion_level": "retired_method_invalid",
             "current_outputs": "fig_place_issue_matrix_explanatory.png; place_issue_matrix.csv; R03_R04_place_frame_brief.md",
-            "what_is_publishable_now": "Place division of labor: Henoko/Oura Bay ecology-international route; Sakishima life-safety/frontline/autonomy.",
-            "main_gap": "Yonaguni, Ishigaki, Miyako still need local newspaper/database reinforcement.",
-            "next_action": "Local retrieval package for Yonaguni/Ishigaki/Miyako evidence lines.",
+            "what_is_publishable_now": "Historical actor-level wide projection only; no formal place-issue finding.",
+            "main_gap": "Old matrix does not require place and issue to share a source/event/date; MA002 strict triple is missing.",
+            "next_action": "Build actor-place-issue-event/document-date-source facts; use same-source/event in the report and wide projection only as sensitivity appendix.",
         },
         {
             "module": "R5 co-action network",
@@ -190,16 +190,18 @@ def make_r3_r4(place_matrix: list[dict[str, str]]) -> None:
     profile_lines = "\n".join(f"- {r['place']}：{r['interpretation']} 主要框架：{'; '.join(v for v in [r['top_frame_1'], r['top_frame_2'], r['top_frame_3']] if v)}。" for r in rows)
     content = f"""# R3/R4 地点-议题框架 brief v0
 
+> **已退役（2026-07-14）：** 下列矩阵和地点画像来自 actor 层宽投影，把不同来源／事件中的地点边与议题边拼接，不能证明地点—议题关系。本文件仅作历史审计，不得进入正式报告、论文或下一次甲方同步。正式 MA002 须用 `actor × place × issue × event/document × date × source` 同源／同事件三元事实重建。
+
 ## 当前完成度
 
-R3/R4 已达到 `module_v0`：已有地点登记表、actor-place edge、地点 × 议题框架矩阵和地点画像表。
+历史状态曾记为 `module_v0`；经方法审计，正式地点 × 议题成果现为缺失／待重建。
 
 ## 可交付图件
 
 - `outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png`
 - `outputs/module_completion_v0/R03_R04_place_frame_profiles_v0.csv`
 
-## 当前可讲结论
+## 历史探索性读法（不得作为正式结论）
 
 1. 边野古 / 大浦湾是环保、生物多样性、法律程序与国际倡议最集中的场域。
 2. 石垣 / 宫古更适合承接生活安全、地下水、住民投票和自卫队配备相关框架。
@@ -766,6 +768,8 @@ def write_index(
 
 编号说明：本包沿用早期内部编号。对最终 DOCX 方案验收时，Henoko/跨国路径归入 R6，coverage audit 归入基础建设；最终方案 R11 是外来 actor 进入生态，R14 是扩展模块“组织谱系”。本包不能替代 `docs/phase1_scheme_acceptance_audit_v1.md` 的 R1–R11 验收状态。
 
+2026-07-14 方法更正：本包原有 R3/R4 地点—议题矩阵把 actor 的全部地点与全部议题作宽投影，未要求同一来源／事件，现已退役。`R03_R04_place_frame_brief.md` 仅保留为历史审计记录；其计数和地点画像不得引用为正式结论。正式替代物是待建的 MA002 同源／同事件三元事实图。
+
 本目录把解释性图表包进一步整理成模块交付物。目标是让下一次沟通不只展示统计，而是展示可解释机制和下一轮调查路线。
 
 ## 覆盖模块
@@ -783,9 +787,9 @@ def write_index(
 
 ## 沟通建议
 
-下一次沟通建议主用三张图：
+以下为历史沟通建议，现已失效；下一次沟通按 `docs/third_sync_correction_ledger_v1.md` 重新选图：
 
-1. `outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png`
+1. `outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png`（已退役，不得使用）
 2. `outputs/explanatory_v0/fig_henoko_internationalization_pathway.png`
 3. `outputs/explanatory_v0/fig_actor_issue_bridge_network.png`
 

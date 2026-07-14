@@ -4,6 +4,8 @@
 
 编号说明：本包沿用早期内部编号。对最终 DOCX 方案验收时，Henoko/跨国路径归入 R6，coverage audit 归入基础建设；最终方案 R11 是外来 actor 进入生态，R14 是扩展模块“组织谱系”。本包不能替代 `docs/phase1_scheme_acceptance_audit_v1.md` 的 R1–R11 验收状态。
 
+2026-07-14 方法更正：本包原有 R3/R4 地点—议题矩阵把 actor 的全部地点与全部议题作宽投影，未要求同一来源／事件，现已退役。`R03_R04_place_frame_brief.md` 仅保留为历史审计记录；其计数和地点画像不得引用为正式结论。正式替代物是待建的 MA002 同源／同事件三元事实图。
+
 本目录把解释性图表包进一步整理成模块交付物。目标是让下一次沟通不只展示统计，而是展示可解释机制和下一轮调查路线。
 
 ## 覆盖模块
@@ -21,9 +23,9 @@
 
 ## 沟通建议
 
-下一次沟通建议主用三张图：
+以下为历史沟通建议，现已失效；下一次沟通按 `docs/third_sync_correction_ledger_v1.md` 重新选图：
 
-1. `outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png`
+1. `outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png`（已退役，不得使用）
 2. `outputs/explanatory_v0/fig_henoko_internationalization_pathway.png`
 3. `outputs/explanatory_v0/fig_actor_issue_bridge_network.png`
 

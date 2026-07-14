@@ -26,7 +26,7 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 
 ## Current Data Status
 
-Updated: 2026-07-13.
+Updated: 2026-07-14.
 
 - Actor registry: 118 organization-level actors. HR-013 added A111 and the user's HR-010 scope correction removed A094, so the net count stayed 118 and remains below the Phase-1 minimum of 120. A087–A093/A095–A101 remain E4 identity-only merges awaiting classification/edge review; A094 evidence is retained as history but must not return to the registry without a new human decision.
 - Source log: 295 sources; no `inferred_url` placeholders remain. NW2-H reused S158/S204 and provisionally added 47 `ai_seeded` proposal-derived URLs as S248–S294; S295 is a separately archived HR-011 locator correction and not an independent identity source. Source inclusion does not approve an actor, edge, alliance, funding relation, election role, causal claim or interpretation. S051 is E0 `rejected_archive_mismatch` and must not support A011.
@@ -44,7 +44,8 @@ Updated: 2026-07-13.
 
 - Explanatory graph package: `outputs/explanatory_v0/`
   - 5 PNG figures.
-  - Main communication figures: place-issue matrix, Henoko/Oura Bay internationalization pathway, actor-issue bridge network.
+  - Historical exploration package. The old place-issue matrix is retired after the 2026-07-14 method audit found actor-level Cartesian projection; it must not be used as a formal finding. Rebuild MA002 from same-source/same-event actor-place-issue facts.
+  - The Henoko/Oura Bay pathway and actor-issue bridge network remain candidate communication assets subject to their human/interpretive gates.
 - Module completion package: `outputs/module_completion_v0/`
   - Covers R2, R3/R4, R5, R11, and R14.
   - R5 now includes the full 2020 OEJP/MMC 71-group participant extraction.
@@ -61,6 +62,12 @@ Updated: 2026-07-13.
   - Complete v0 draft for internal review; not yet the boss-facing final report.
 - Phase-1 acceptance audit: `docs/phase1_scheme_acceptance_audit_v1.md` and `outputs/phase1_acceptance_audit_v0/`
   - The authoritative gap/done_when assessment against the original DOCX.
+- Academic/client red-team audit: `docs/phase1_academic_client_redteam_audit_v1.md`
+  - The current harsh acceptance and academic-value assessment. It separates the broad client report from the narrow R4+R8+R9 paper and records the retired spatial projection.
+- Current formal human assignment: `docs/human_review_assignment_HR027_v1.md`
+  - HR-027 is the B01/P0 batch. It has four blank add/defer/reject decisions; HD-012 separately requests the prior 1990–2022 election-study inputs.
+- Third-sync correction ledger: `docs/third_sync_correction_ledger_v1.md`
+  - The second sync remains a historical snapshot. The next client communication must explicitly correct its spatial figure, bridge, internationalization and schedule claims.
 - First post-audit candidate packages and controlled merge:
   - `outputs/phase1_foundation_v1/`: 49 evidence notes and the original 64 AEV rows completed HR-015; the central `09` table now has 67 rows after HR-013 and the HR-011 bounded event additions.
   - `outputs/registry_expansion_v1/`: HR-011/012 are merged; A107–A110 are retained, C015 remains deferred, and A052/A053/A010 history/round crosswalks are resolved.
@@ -107,7 +114,7 @@ Updated: 2026-07-13.
 - MT-008: basically done; registry-only `actor_relation_events_v1.csv` has 45 rows, 9 events, and 5 action types after withdrawing A077–A085. The central AEV table has 67 rows after HR-013 and bounded HR-011 additions, while preserving the nine event-only participants separately.
 - MT-004: online pass done; 2015 Yonaguni referendum context corroborated by mainstream RS/OT/QAB, A015 kept E2 (no non-party source online); org-level identity still needs Yaeyama local retrieval (LR Tier 2).
 
-## Current Phase-1 Direction (2026-07-13)
+## Current Phase-1 Direction (2026-07-14)
 
 - Finish all reasonable online work before assigning local collaborators.
 - Complete the valuable Phase-1 visualizations and a research-report v0 first; use their explicit evidence gaps to generate local tasks.
@@ -116,6 +123,8 @@ Updated: 2026-07-13.
 - Registry growth remains module/value-driven and must eventually recover from 118 to at least 120 with organization-level evidence. HR-027 now holds four value-gated candidates; accepting at least two would reach the minimum, but the reason must be module repair rather than number filling. The post-HR013 edge-activation pass leaves 17 current isolates; 16 have 54 candidate edges awaiting HR-010/HR-024, while A073 remains online-exhausted. Do not reinsert legacy A077–A085 or A094 without a new human decision. MMC Tier B enters only as a separate mainland-solidarity layer when analytically justified; Tier C stays event-only.
 - Existing `R14 coverage` outputs are a foundation coverage audit under the final DOCX numbering; final R14 is organizational genealogy and is an expansion module.
 - Authoritative acceptance audit: `docs/phase1_scheme_acceptance_audit_v1.md`. Online/local sequencing remains in `docs/phase1_online_completion_plan_v0.md`; the current sub-agent execution briefs are in `docs/phase1_next_wave_execution_v2.md`.
+- If delivered today, the conservative client verdict is reject-and-rectify: registry is 118, the formal same-source/event place-issue figure is missing, and final DOCX/PDF, paper, PPTX, Sakishima dossier, public-data bundle and frozen codebook do not yet exist.
+- Academic work now follows a separate line: operationalize 12–18 translation episodes around R4+R8+R9, add negative cases and reviewed-only/source-cluster/identity-uncertainty robustness checks, and do not infer process from issue co-occurrence.
 
 ## Useful Commands
 
@@ -152,10 +161,12 @@ python scripts\merge_hr011_hr012.py
 python scripts\merge_hr014.py
 python scripts\merge_hr015.py
 python scripts\finalize_hr011_hr015_main.py
+# Historical exploration packages only; regenerated spatial output is visibly retired.
 python scripts\make_explanatory_graph_package.py
 python scripts\make_module_completion_package.py
 python scripts\make_relation_events.py
 python scripts\make_event_repertoire_fig.py
+# Historical second-sync reproduction only; never overwrite the delivered snapshot for a new sync.
 python scripts\make_formal_comm_package.py
 python scripts\make_report_traceability_crosswalk_v1.py
 python scripts\audit_report_claims_v1.py
@@ -170,5 +181,5 @@ After source-log or archive changes, rerun the archive script first, then regene
 
 - The old `docs/progress_report_v1.md` is an internal draft, not a deliverable.
 - Next boss-facing communication should use explanatory outputs, not only statistics.
-- Safe current message: HR-011–015 are integrated; R1–R11 now all have differentiated online explanatory layers, including R3 spatial dossiers, R9 election candidates, heterogeneous R5/R7 actions and the complete 616-row R10 official-source universe. The registry remains 118 after replacing A094 with A111; four value-gated candidates are in HR-027, and no candidate has been auto-added. HR-016–022 and HR-024–027/029–032 preserve unresolved human decisions; HR-028 is zero. HR-032 does not block the two current R10 source-universe figures. The main remaining online work is human freeze/merge, final figure regeneration and the 32-page DOCX/PDF plus paper/PPT derivations.
+- Safe current message: HR-011–015 are integrated; R1–R11 now all have differentiated online explanatory layers, including R3 spatial dossiers, R9 election candidates, heterogeneous R5/R7 actions and the complete 616-row R10 official-source universe. The registry remains 118 after replacing A094 with A111; four value-gated candidates are formally assigned in HR-027, and no candidate has been auto-added. The old place-issue matrix is retired; its same-source/event replacement is still missing. HR-016–022 and HR-024–027/029–032 preserve unresolved human decisions; HR-028 is zero. The main remaining work is the publication-critical human freeze, corrected core figures, translation-episode/robustness analysis and final contract artifacts.
 - Keep all claims conservative: "publicly visible event participation", "candidate relation", "source-backed role", or "needs local retrieval" are preferred to over-strong network claims.

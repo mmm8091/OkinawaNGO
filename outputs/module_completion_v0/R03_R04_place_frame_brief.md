@@ -1,15 +1,17 @@
 # R3/R4 地点-议题框架 brief v0
 
+> **已退役（2026-07-14）：** 下列矩阵和地点画像来自 actor 层宽投影，把不同来源／事件中的地点边与议题边拼接，不能证明地点—议题关系。本文件仅作历史审计，不得进入正式报告、论文或下一次甲方同步。正式 MA002 须用 `actor × place × issue × event/document × date × source` 同源／同事件三元事实重建。
+
 ## 当前完成度
 
-R3/R4 已达到 `module_v0`：已有地点登记表、actor-place edge、地点 × 议题框架矩阵和地点画像表。
+历史状态曾记为 `module_v0`；经方法审计，正式地点 × 议题成果现为缺失／待重建。
 
 ## 可交付图件
 
 - `outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png`
 - `outputs/module_completion_v0/R03_R04_place_frame_profiles_v0.csv`
 
-## 当前可讲结论
+## 历史探索性读法（不得作为正式结论）
 
 1. 边野古 / 大浦湾是环保、生物多样性、法律程序与国际倡议最集中的场域。
 2. 石垣 / 宫古更适合承接生活安全、地下水、住民投票和自卫队配备相关框架。

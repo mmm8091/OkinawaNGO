@@ -13,3 +13,5 @@
 主线程综合结论与权威推进顺序见：`docs/phase1_scheme_acceptance_audit_v1.md`。
 
 注意：审计生成后，主线程已修复审计中发现的 11 行 CSV quoting 错误；其他 schema、标准化、样本和解释性缺口仍有效。
+
+2026-07-14 后续方法审计又推翻了本包对旧地点—议题矩阵“最接近验收／基本成形”的判断：该图存在 actor 层笛卡尔投影，已退役。当前权威状态以 `docs/phase1_scheme_acceptance_audit_v1.md` 和 `docs/phase1_academic_client_redteam_audit_v1.md` 为准；本包正文保留为当时快照，不逐页覆盖。

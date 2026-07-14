@@ -11,7 +11,9 @@
 1. [`AGENTS.md`](AGENTS.md) — 唯一通用协作与操作入口。
 2. [`docs/phase1_workbench.md`](docs/phase1_workbench.md) — 当前控制文档与下一步。
 3. [`docs/phase1_scheme_acceptance_audit_v1.md`](docs/phase1_scheme_acceptance_audit_v1.md) — 对原始一期方案的权威验收审计。
-4. [`docs/phase1_research_report_v0.md`](docs/phase1_research_report_v0.md) — 内部研究报告草稿。
+4. [`docs/phase1_academic_client_redteam_audit_v1.md`](docs/phase1_academic_client_redteam_audit_v1.md) — 学术价值与最严甲方口径整改审计。
+5. [`docs/human_review_assignment_HR027_v1.md`](docs/human_review_assignment_HR027_v1.md) — 当前正式人工派工单。
+6. [`docs/phase1_research_report_v0.md`](docs/phase1_research_report_v0.md) — 内部研究报告草稿。
 
 原始一期方案位于 `source_docs/current/`，字段与证据分级见 `data/metadata/coding_schema_v0.md`。
 
@@ -28,6 +30,7 @@
 
 ```powershell
 python scripts\archive_sources.py
+# 历史探索包；地点—议题宽投影已退役
 python scripts\make_explanatory_graph_package.py
 python scripts\make_module_completion_package.py
 python scripts\make_phase1_visuals.py

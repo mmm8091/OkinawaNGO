@@ -1,7 +1,7 @@
 # 一期研究报告 claim→source/evidence 审计 v1
 
 审计对象：`docs/phase1_research_report_v0.md`
-报告 SHA-256：`aa7509bc582f7d73192df694b217b1939ef4d3f8fd5f1d1c37cd76fc3e163887`
+报告 SHA-256：`c9d1e97bf2dc0869d422c5397fa35c3df34098f939022472e7395b9a0f2cafb7`
 
 ## 结果
 

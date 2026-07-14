@@ -913,6 +913,8 @@ README = f"""# 第二次进度同步包 formal_comm_v0
 
 本目录是面向甲方的第二次进度同步材料，文风对齐第一次同步（简洁、保守、图表截图嵌入）。
 
+> 这是已交付的历史快照，2026-07-14 方法审计后不得用本脚本刷新为第三次同步。旧地点—议题图已退役；下一次沟通按 `docs/third_sync_correction_ledger_v1.md` 另建新包并主动说明更正。
+
 ## 对外交付物（发飞书云文档用）
 
 - `第二次进度同步_v0.md` — **主交付物**，手写的简洁进度稿。结构：本轮进展、研究模块菜单进度、
@@ -935,7 +937,7 @@ python scripts\\make_formal_comm_package.py
 
 脚本读取 `data/interim` 各表、`outputs/explanatory_v0` 的矩阵 / 桥接 / 共同行动 CSV、
 `source_docs/source_archive` 归档 manifest 与 2020 MMC 候选表，因此图表数字始终反映当前数据。
-数据更新后重跑脚本，再用无头浏览器重截 `fig/*.png` 即可刷新。
+本命令只用于复现历史包；不得以更新后的数字覆盖已交付快照，也不得把生成结果作为当前结论。
 
 ## 口径
 
@@ -962,8 +964,8 @@ def write_figure_pages() -> None:
     figdir.mkdir(parents=True, exist_ok=True)
     pages = {
         "fig1_place_issue": (
-            "地点 × 议题框架矩阵",
-            "数字＝同时连接该地点与该议题框架的组织数（E2 及以上）；深色越强表示越集中。",
+            "已退役历史图：地点 × 议题宽投影",
+            "方法警告：地点与议题未要求同源／同事件；本图只用于复现第二次同步，不得作当前结论。",
             build_place_matrix(),
         ),
         "fig2_pathway": (
