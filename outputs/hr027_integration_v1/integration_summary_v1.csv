@@ -1,0 +1,7 @@
+﻿metric,value,note
+registry_actors,122,118 + four HR-027 additions
+hr027_human_checked_actors,4,A112-A115
+candidate_issue_edges_added,19,ai_seeded; not publication-approved
+candidate_place_edges_added,6,ai_seeded; semantics pending review
+event_candidates_not_in_aev,17,dedicated human-review queue
+inter_actor_edges_added,0,explicit HR-027 boundary

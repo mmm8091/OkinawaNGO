@@ -106,16 +106,16 @@ SEMANTIC_EDGE_SETS = {
         AP054 AP055 AP057 AP058 AP059 AP061 AP062 AP063 AP064 AP065 AP066
         AP067 AP068 AP069 AP070 AP071 AP072 AP073 AP074 AP075 AP076 AP077
         AP078 AP080 AP086 AP087 AP089 AP090 AP098 AP100 AP101 AP102 AP103
-        AP104 AP109 AP111 AP113 AP128 AP129""".split()
+        AP104 AP109 AP111 AP113 AP128 AP129 AP132""".split()
     ),
     "site_presence": set(
         """AP015 AP017 AP018 AP021 AP022 AP024 AP026 AP029 AP030 AP031
         AP032 AP033 AP034 AP037 AP038 AP039 AP040 AP041 AP042 AP044 AP081
         AP092 AP097 AP099 AP106 AP107 AP108 AP114 AP115 AP116 AP117 AP118
-        AP122 AP123 AP125 AP126 AP127""".split()
+        AP122 AP123 AP125 AP126 AP127 AP130 AP131 AP135""".split()
     ),
-    "event_site": set("AP016 AP019 AP085 AP095 AP112".split()),
-    "headquarters": set("AP079 AP082 AP084 AP120".split()),
+    "event_site": set("AP016 AP019 AP085 AP095 AP112 AP134".split()),
+    "headquarters": set("AP079 AP082 AP084 AP120 AP133".split()),
     "institutional_venue": set("AP043 AP045 AP047 AP083 AP119 AP121".split()),
     "unclear": set(
         """AP005 AP035 AP036 AP046 AP048 AP049 AP052 AP056 AP060 AP088
@@ -129,7 +129,7 @@ SEMANTIC_EDGE_SETS = {
 AMBIGUOUS_EDGE_IDS = set(
     """AP022 AP024 AP029 AP037 AP038 AP040 AP044 AP081 AP085 AP092 AP095
     AP097 AP099 AP106 AP107 AP108 AP114 AP115 AP116 AP117 AP118 AP122 AP123
-    AP125""".split()
+    AP125 AP130 AP131 AP132 AP133 AP134 AP135""".split()
 )
 
 PLACE_ORDER = [
@@ -884,7 +884,7 @@ def validate(
 
     input_ids = [row["edge_id"] for row in edges]
     derived_ids = [str(row["edge_id"]) for row in rows]
-    expected_edge_count = 129
+    expected_edge_count = 135
     require(len(edges) == expected_edge_count, f"expected {expected_edge_count} central actor-place edges, found {len(edges)}")
     require(len(rows) == expected_edge_count, f"expected {expected_edge_count} derived semantic rows, found {len(rows)}")
     require(len(set(input_ids)) == expected_edge_count and set(input_ids) == set(derived_ids), "edge coverage or uniqueness failed")
@@ -898,7 +898,7 @@ def validate(
     require({str(row["semantic_candidate_v1"]) for row in rows}.issubset(VALID_SEMANTICS), "invalid semantic value")
     require(sum(int(row["edge_count"]) for row in summary) == expected_edge_count, f"summary does not sum to {expected_edge_count}")
     require(sum(row["edge_review_layer"] == "human_reviewed_edge" for row in rows) == 17, "expected 17 human-reviewed underlying edges")
-    require(sum(row["edge_review_layer"] == "candidate_edge" for row in rows) == 112, "expected 112 candidate underlying edges")
+    require(sum(row["edge_review_layer"] == "candidate_edge" for row in rows) == 118, "expected 118 candidate underlying edges")
 
     mismatch = [row for row in rows if row["place_name_integrity"] != "match"]
     require(len(mismatch) == 1 and mismatch[0]["edge_id"] == "AP123", "place ID/name mismatch audit changed")
@@ -919,16 +919,16 @@ def validate(
     )
 
     expected_dossier_ids = {row["edge_id"] for row in edges if row["place_id"] in DOSSIER_PLACES}
-    require(len(expected_dossier_ids) == 12, f"expected 12 Sakishima actor-place rows, found {len(expected_dossier_ids)}")
+    require(len(expected_dossier_ids) == 14, f"expected 14 Sakishima actor-place rows, found {len(expected_dossier_ids)}")
     require({str(row["edge_id"]) for row in dossier} == expected_dossier_ids, "dossier edge coverage failed")
     require(len([row for row in dossier if row["place"] == "Yonaguni"]) == 6, "Yonaguni dossier must have six rows")
-    require(len([row for row in dossier if row["place"] == "Ishigaki"]) == 3, "Ishigaki dossier must have three rows")
-    require(len([row for row in dossier if row["place"] == "Miyako"]) == 3, "Miyako dossier must have three rows")
+    require(len([row for row in dossier if row["place"] == "Ishigaki"]) == 4, "Ishigaki dossier must have four rows")
+    require(len([row for row in dossier if row["place"] == "Miyako"]) == 4, "Miyako dossier must have four rows")
     require(all("不将其强行环境化" in str(row["place_guardrail"]) for row in dossier if row["place"] == "Yonaguni"), "Yonaguni framing guardrail missing")
 
     edge_crosswalk = [row for row in crosswalk if row["usage_scope"] == "actor_place_edge"]
     expected_ref_count = sum(len(split_refs(row["source_ref"])) for row in edges)
-    require(len(edge_crosswalk) == expected_ref_count == 169, "actor-place source crosswalk must expand all 169 refs")
+    require(len(edge_crosswalk) == expected_ref_count == 186, "actor-place source crosswalk must expand all 186 refs")
     require({row["usage_object_id"] for row in edge_crosswalk} == set(input_ids), "source crosswalk misses an edge")
     require(all(row["interpretation_limit"] for row in crosswalk), "source crosswalk lacks interpretation boundary")
 
@@ -1031,7 +1031,7 @@ stance, funding, or causal effects.
 - Derived semantics: {len(rows)} unique rows; six allowed candidate values; no default or missing classification.
 - Underlying review layer: {sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in rows)} human-reviewed / {sum(row['edge_review_layer'] == 'candidate_edge' for row in rows)} candidate or evidence-gap rows.
 - HR-025: {len(hr025)} semantic items; {filled_hr025} rows contain preserved human fields and reruns retain them by stable `object_id`.
-- Sakishima: 12/12 rows (Yonaguni 6 / Ishigaki 3 / Miyako 3).
+- Sakishima: 14/14 rows (Yonaguni 6 / Ishigaki 4 / Miyako 4).
 - Source crosswalk: {len(crosswalk)} rows; actor-place refs expanded {sum(row['usage_scope'] == 'actor_place_edge' for row in crosswalk)}.
 - Place-key integrity: one explicit mismatch, AP123, retained for human review.
 - SVG XML parse and trailing-whitespace check: pass for 3/3 figures. PNG size check: pass for 3/3 figures.
@@ -1051,7 +1051,7 @@ table was modified; derived interim32 was regenerated.
         f"R3 spatial dossier OK: {len(rows)} semantics; "
         f"{sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in rows)} human/"
         f"{sum(row['edge_review_layer'] == 'candidate_edge' for row in rows)} candidate edges; "
-        f"{len(hr025)} HR025 items; 12 Sakishima rows; {len(crosswalk)} source crosswalk rows."
+        f"{len(hr025)} HR025 items; 14 Sakishima rows; {len(crosswalk)} source crosswalk rows."
     )
 
 

@@ -4,7 +4,7 @@
 
 编号说明：本包沿用早期内部编号。对最终 DOCX 方案验收时，Henoko/跨国路径归入 R6，coverage audit 归入基础建设；最终方案 R11 是外来 actor 进入生态，R14 是扩展模块“组织谱系”。本包不能替代 `docs/phase1_scheme_acceptance_audit_v1.md` 的 R1–R11 验收状态。
 
-2026-07-14 方法更正：本包原有 R3/R4 地点—议题矩阵把 actor 的全部地点与全部议题作宽投影，未要求同一来源／事件，现已退役。`R03_R04_place_frame_brief.md` 仅保留为历史审计记录；其计数和地点画像不得引用为正式结论。正式替代物是待建的 MA002 同源／同事件三元事实图。
+2026-07-16 方法更正进展：本包原有 R3/R4 地点—议题宽投影继续退役。第一版正式替代层位于 `outputs/R03_strict_place_issue_v1/`：330 条同源三元事实、323 条 E3/E4 候选、67 条双边人审，100 条可附着正式事件观察。它是 MA002 的可审计底盘，仍须继续收紧 source×event×date 和人工冻结。
 
 本目录把解释性图表包进一步整理成模块交付物。目标是让下一次沟通不只展示统计，而是展示可解释机制和下一轮调查路线。
 
@@ -51,5 +51,5 @@
 - MT-006：ONC 公开年报金额和 JICA 受托角色已补齐，按行政协作层解释。
 - MT-007：诉讼角色表完成，Turtle Island Restoration Network 已作为 A086 入 registry。
 - MT-008：registry-only 事件感知侧表为 45 行、9 事件、5 动作类型；正式 AEV 表为 67 行（63 个 human-checked 观察／角色与 4 个 analytical seed），两层用途已分开。
-- REG-01：20 个 E4 主体完成身份级安全合并；HR-010～015 已回写，HR-015 收紧 E2 署名条目后 registry 为 118，低于方案 120 下限；新增 actor 继续受 HR-027 的价值驱动门槛控制。
+- REG-01：HR-027 已按模块价值批准 A112–A115，registry 为 122，达到方案 120 下限；事件与关系未随 actor 准入自动批准。
 - R8：六案与 27 个角色均已完成 HR-014；案件、组织 actor 与 provisional procedural node 已分表。

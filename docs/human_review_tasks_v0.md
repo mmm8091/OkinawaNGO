@@ -1,6 +1,6 @@
 # 人工复核任务书 v0
 
-日期：2026-07-12（状态更新至 2026-07-14）
+日期：2026-07-12（状态更新至 2026-07-16）
 
 ## 1. 目的
 
@@ -12,9 +12,9 @@
 - 敏感关系必须由人审，尤其是资助、委托、公共外交、军属服务、NED / USAID / 外务省 / 美国使领馆相关线索。
 - 不确定就降级为 `needs_second_source` 或 `needs_local_retrieval`。
 
-## 0. 当前状态（更新至 2026-07-14）
+## 0. 当前状态（更新至 2026-07-16）
 
-2026-07-14：**HR-027 已作为 B01_REGISTRY_GATE 正式派给项目负责人复核**。权威派工单为 `docs/human_review_assignment_HR027_v1.md`，决定回填表为 `outputs/registry_value_gate_v2/HR027_registry_value_review_v0.csv`。本批 4 个对象全部仍为空白；不得以 registry 需达到 120 为由自动接受。HR-027 回收、分配 A 号并合并后，才允许重生并执行 HR-029。
+2026-07-16：**HR-027 已由项目负责人完成 4/4 add 并合并**。权威回交为 `docs/human_review_return_HR027_v1.md`；A112–A115 已入 registry。19 条 issue 与 6 条 place 只作为候选边，17 个事件仍在待审包，组织关系边新增 0。HR-029 已按 122-actor 状态重生为 36 项中间快照，但必须等 HR-019／024／025 与外部 HR-010 合并后再最终重生和执行。
 
 HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
@@ -58,8 +58,9 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 | HR-013 | completed | C011 以 A111 入表；C010、C034 只作 background；C029-C033 rejected。`okinawajosei.org` 属おきなわ女性財団，不能作为 A111 官网；A111 不接 `沖女連` alias。 |
 | HR-014 | completed | 六案与 27 条案件角色已按案件特定边界人审落库。 |
 | HR-015 | completed | 49 条 evidence note 与 64 条 actor-event-venue 记录已人审；A077-A085 撤出主 registry，保留为 E2 事件参与线索。 |
+| HR-027 | completed | A112 宮古島地下水研究会、A113 宜野湾ちゅら水会、A114 全港湾沖縄地方本部、A115 新婦人沖縄県本部按模块价值入表；不自动批准事件或关系。 |
 
-主 registry 当前为 **118 actor**：历史 103 条中撤出 A077-A085 九个一次性署名名称，HR-013 又按范围修正撤出 A094；保留其余 E4 身份级 actor，并由 HR-011 新增 A107-A110、HR-013 新增 A111。118 仍低于原方案 120–180 的数量区间下限，但不得把 A077-A085、A094 或未审候选重新入表凑数。当前主数据另有 **295 sources、222 actor–issue edges、129 actor–place edges、67 AEV rows 和 40 human-review log rows**；S248-S294 为 provisional、`ai_seeded` 来源索引，不批准相关候选事实，S295 是 HR-011 定位补充而非独立身份二源。来源归档状态为 265 archived、2 manual_archived、26 failed、2 non-URL。
+主 registry 当前为 **122 actor**，已达到原方案 120–180 下限；准入依据是四项模块修复，不是补数字。当前主数据另有 **295 sources、241 actor–issue edges、135 actor–place edges、67 AEV rows**；issue/place 新边仍是候选，AEV 未随 HR-027 增长。来源归档状态为 266 archived、2 manual_archived、25 failed、2 non-URL。
 
 ## 2. 复核输入材料
 
@@ -495,7 +496,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-019 R1/R2 分类词、桥梁机制与议题边范围复核 — pending
 
-状态（2026-07-13）：R1/R2 线上 v1 已覆盖 118 actors、26 issues 和 222 条 actor–issue edge。当前有 101 个 actor 连入议题层、17 个 actor 仍无 edge；59 条 edge 已人审、163 条为候选。scope 分层为 43 条 organizational positioning、40 条 case/institution role、74 条 event-specific、65 条 remain unclear。HR-019 的决定栏、复核人和日期继续留空。
+状态（2026-07-16）：R1/R2 线上 v1 已覆盖 122 actors、26 issues 和 241 条 actor–issue edge。当前有 105 个 actor 连入议题层、17 个 actor 仍无 edge；59 条 edge 已人审、182 条为候选。HR-019 重生为 9 条规则、30 个 bridge 与 76 条 scope，决定栏继续留空。
 
 复核包：
 
@@ -640,7 +641,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-029 schema 与 alias 冻结复核 — pending / after HR-027
 
-状态（2026-07-13）：对 actor class、legal status、alias type、relation type 与 action type 形成 467 条规范化候选，其中 34 条需要人工决定。HR-029 必须在 HR-027 接受项合并并重跑动态 schema audit 后执行；当前 118-actor 包只是预审快照，不是最终 freeze。
+状态（2026-07-16）：对 actor class、legal status、alias type、relation type 与 action type 形成 483 条规范化候选，其中 36 条需要人工决定。HR-027 接受项已合并并重生 122-actor 中间快照；仍须等待 HR-019／024／025 与外部 HR-010 后最终重生，当前包不是最终 freeze。
 
 复核包：
 

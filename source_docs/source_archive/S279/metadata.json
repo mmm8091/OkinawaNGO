@@ -9,12 +9,19 @@
   "bias_note": "Use only for identity separation and attributed participation; co-participation is not an alliance.",
   "review_status": "ai_seeded",
   "notes": "NW2-H controlled source integration 2026-07-13; audit=NW2FS034; proposal refs=NW2-C_registry_gate:RV2SP013. Metadata is proposal-derived and remains ai_seeded. Source inclusion does not approve actor entry, relation, alliance, funding, causal interpretation, legal conclusion, electoral effect, or organization classification. Sensitive boundary tags=PFAS_health_or_source_causality_not_inferred;request_or_coparticipation_not_partnership.",
-  "archive_status": "failed",
-  "local_path": "",
+  "archive_status": "archived",
+  "local_path": "source_docs\\source_archive\\S279\\raw.html",
   "metadata_path": "source_docs\\source_archive\\S279\\metadata.json",
-  "sha256": "",
-  "content_type": "",
-  "http_status": "",
-  "archived_at_utc": "2026-07-13T13:04:33.126881+00:00",
-  "note": "URLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)"
+  "sha256": "5e5dd743eba26c08a95cfc1d1770564510a9160b9dbb160141655b748d9668a1",
+  "content_type": "text/html; charset=UTF-8",
+  "http_status": "200",
+  "archived_at_utc": "2026-07-16T12:27:17.345115+00:00",
+  "note": "",
+  "response_headers": {
+    "final_url": "https://www.jcp.or.jp/akahata/aik25/2026-02-16/2026021611_01_0.php",
+    "status_code": "200",
+    "content_type": "text/html; charset=UTF-8",
+    "content_length": "45957",
+    "last_modified": "Mon, 16 Feb 2026 00:32:14 GMT"
+  }
 }

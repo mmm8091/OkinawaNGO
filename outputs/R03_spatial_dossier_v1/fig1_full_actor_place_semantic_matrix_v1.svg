@@ -2879,14 +2879,14 @@ z
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_41">
-      <path d="M 268.09775 123.512
-L 1384.81775 123.512
+      <path d="M 268.09775 122.178877
+L 1384.81775 122.178877
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_42"/>
      <g id="text_21">
       <!-- A003  ジュゴンネットワーク沖縄 -->
-      <g transform="translate(150.182125 126.549625) scale(0.076 -0.076)">
+      <g transform="translate(150.182125 125.216502) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30" d="M 284 2325
 Q 284 3606 709 4264
@@ -3297,14 +3297,14 @@ z
     </g>
     <g id="ytick_2">
      <g id="line2d_43">
-      <path d="M 268.09775 144.592
-L 1384.81775 144.592
+      <path d="M 268.09775 142.425676
+L 1384.81775 142.425676
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_44"/>
      <g id="text_22">
       <!-- A008  NGO非戦ネット -->
-      <g transform="translate(185.35825 147.629625) scale(0.076 -0.076)">
+      <g transform="translate(185.35825 145.463301) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-38" d="M 306 1350
 Q 306 1769 556 2122
@@ -3544,14 +3544,14 @@ z
     </g>
     <g id="ytick_3">
      <g id="line2d_45">
-      <path d="M 268.09775 165.672
-L 1384.81775 165.672
+      <path d="M 268.09775 162.672474
+L 1384.81775 162.672474
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_46"/>
      <g id="text_23">
       <!-- A017  沖縄対話プロジェクト -->
-      <g transform="translate(165.382125 168.709625) scale(0.076 -0.076)">
+      <g transform="translate(165.382125 165.710099) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-31" d="M 1781 0
 L 1781 4141
@@ -3782,14 +3782,14 @@ z
     </g>
     <g id="ytick_4">
      <g id="line2d_47">
-      <path d="M 268.09775 186.752
-L 1384.81775 186.752
+      <path d="M 268.09775 182.919273
+L 1384.81775 182.919273
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_48"/>
      <g id="text_24">
       <!-- A018  ノーモア沖縄戦 命どぅ宝の会 -->
-      <g transform="translate(140.333 189.789625) scale(0.076 -0.076)">
+      <g transform="translate(140.333 185.956898) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30ce" d="M 4763 4581
 Q 4441 2966 3745 1858
@@ -4077,14 +4077,14 @@ z
     </g>
     <g id="ytick_5">
      <g id="line2d_49">
-      <path d="M 268.09775 207.832
-L 1384.81775 207.832
+      <path d="M 268.09775 203.166071
+L 1384.81775 203.166071
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_50"/>
      <g id="text_25">
       <!-- A023  美ら海にもやんばるにも基地はいらない市民の会 -->
-      <g transform="translate(74.182125 210.869625) scale(0.076 -0.076)">
+      <g transform="translate(74.182125 206.203696) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-32" d="M 2666 3572
 Q 2666 3963 2419 4186
@@ -4749,14 +4749,14 @@ z
     </g>
     <g id="ytick_6">
      <g id="line2d_51">
-      <path d="M 268.09775 228.912
-L 1384.81775 228.912
+      <path d="M 268.09775 223.41287
+L 1384.81775 223.41287
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_52"/>
      <g id="text_26">
       <!-- A026  ピース・ニュース -->
-      <g transform="translate(180.582125 231.949625) scale(0.076 -0.076)">
+      <g transform="translate(180.582125 226.450495) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-36" d="M 3181 4219
 Q 2803 4413 2391 4413
@@ -4880,14 +4880,14 @@ z
     </g>
     <g id="ytick_7">
      <g id="line2d_53">
-      <path d="M 268.09775 249.992
-L 1384.81775 249.992
+      <path d="M 268.09775 243.659668
+L 1384.81775 243.659668
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_54"/>
      <g id="text_27">
       <!-- A028  沖縄のための日米市民ネットワーク（JUCON） -->
-      <g transform="translate(78.547375 253.029625) scale(0.076 -0.076)">
+      <g transform="translate(78.547375 246.697293) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-305f" d="M 3756 3484
 Q 3038 3338 2413 3269
@@ -5081,14 +5081,14 @@ z
     </g>
     <g id="ytick_8">
      <g id="line2d_55">
-      <path d="M 268.09775 271.072
-L 1384.81775 271.072
+      <path d="M 268.09775 263.906466
+L 1384.81775 263.906466
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_56"/>
      <g id="text_28">
       <!-- A029  沖縄・生物多様性市民ネットワーク -->
-      <g transform="translate(119.782125 274.109625) scale(0.076 -0.076)">
+      <g transform="translate(119.782125 266.944091) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-39" d="M 578 656
 Q 978 425 1441 425
@@ -5397,14 +5397,14 @@ z
     </g>
     <g id="ytick_9">
      <g id="line2d_57">
-      <path d="M 268.09775 292.152
-L 1384.81775 292.152
+      <path d="M 268.09775 284.153265
+L 1384.81775 284.153265
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_58"/>
      <g id="text_29">
       <!-- A047  沖縄平和運動センター -->
-      <g transform="translate(165.382125 295.189625) scale(0.076 -0.076)">
+      <g transform="translate(165.382125 287.19089) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-34" d="M 2906 4841
 L 2906 1644
@@ -5750,14 +5750,14 @@ z
     </g>
     <g id="ytick_10">
      <g id="line2d_59">
-      <path d="M 268.09775 313.232
-L 1384.81775 313.232
+      <path d="M 268.09775 304.400063
+L 1384.81775 304.400063
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_60"/>
      <g id="text_30">
       <!-- A048  沖縄一坪反戦地主会 -->
-      <g transform="translate(172.982125 316.269625) scale(0.076 -0.076)">
+      <g transform="translate(172.982125 307.437688) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-4e00" d="M 100 2703
 L 6313 2703
@@ -5893,14 +5893,14 @@ z
     </g>
     <g id="ytick_11">
      <g id="line2d_61">
-      <path d="M 268.09775 334.312
-L 1384.81775 334.312
+      <path d="M 268.09775 324.646862
+L 1384.81775 324.646862
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_62"/>
      <g id="text_31">
       <!-- A049  基地・軍隊を許さない行動する女たちの会 -->
-      <g transform="translate(96.982125 337.349625) scale(0.076 -0.076)">
+      <g transform="translate(96.982125 327.684487) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-8ecd" d="M 2975 -803
 L 2975 34
@@ -6323,14 +6323,14 @@ z
     </g>
     <g id="ytick_12">
      <g id="line2d_63">
-      <path d="M 268.09775 355.392
-L 1384.81775 355.392
+      <path d="M 268.09775 344.89366
+L 1384.81775 344.89366
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_64"/>
      <g id="text_32">
       <!-- A050  沖縄弁護士会 -->
-      <g transform="translate(195.782125 358.429625) scale(0.076 -0.076)">
+      <g transform="translate(195.782125 347.931285) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-35" d="M 3294 1494
 Q 3294 784 2823 350
@@ -6557,14 +6557,14 @@ z
     </g>
     <g id="ytick_13">
      <g id="line2d_65">
-      <path d="M 268.09775 376.472
-L 1384.81775 376.472
+      <path d="M 268.09775 365.140458
+L 1384.81775 365.140458
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_66"/>
      <g id="text_33">
       <!-- A051  「辺野古」県民投票の会 -->
-      <g transform="translate(157.782125 379.509625) scale(0.076 -0.076)">
+      <g transform="translate(157.782125 368.178083) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-300c" d="M 5900 5297
 L 5900 4816
@@ -6841,14 +6841,14 @@ z
     </g>
     <g id="ytick_14">
      <g id="line2d_67">
-      <path d="M 268.09775 397.552
-L 1384.81775 397.552
+      <path d="M 268.09775 385.387257
+L 1384.81775 385.387257
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_68"/>
      <g id="text_34">
       <!-- A054  沖縄人権協会 -->
-      <g transform="translate(195.782125 400.589625) scale(0.076 -0.076)">
+      <g transform="translate(195.782125 388.424882) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-4eba" d="M 100 -303
 Q 2825 1272 2981 5222
@@ -7045,14 +7045,14 @@ z
     </g>
     <g id="ytick_15">
      <g id="line2d_69">
-      <path d="M 268.09775 418.632
-L 1384.81775 418.632
+      <path d="M 268.09775 405.634055
+L 1384.81775 405.634055
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_70"/>
      <g id="text_35">
       <!-- A055  泡瀬干潟を守る連絡会 -->
-      <g transform="translate(165.382125 421.669625) scale(0.076 -0.076)">
+      <g transform="translate(165.382125 408.67168) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-702c" d="M 3981 3816
 L 4613 3816
@@ -7488,14 +7488,14 @@ z
     </g>
     <g id="ytick_16">
      <g id="line2d_71">
-      <path d="M 268.09775 439.712
-L 1384.81775 439.712
+      <path d="M 268.09775 425.880854
+L 1384.81775 425.880854
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_72"/>
      <g id="text_36">
       <!-- A056  沖縄環境ネットワーク -->
-      <g transform="translate(165.382125 442.749625) scale(0.076 -0.076)">
+      <g transform="translate(165.382125 428.918479) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-74b0" d="M 5875 1072
 L 6138 741
@@ -7696,14 +7696,14 @@ z
     </g>
     <g id="ytick_17">
      <g id="line2d_73">
-      <path d="M 268.09775 460.792
-L 1384.81775 460.792
+      <path d="M 268.09775 446.127652
+L 1384.81775 446.127652
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_74"/>
      <g id="text_37">
       <!-- A057  沖縄意見広告運動 -->
-      <g transform="translate(180.582125 463.829625) scale(0.076 -0.076)">
+      <g transform="translate(180.582125 449.165277) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-610f" d="M 2706 759
 L 3022 1028
@@ -7924,14 +7924,14 @@ z
     </g>
     <g id="ytick_18">
      <g id="line2d_75">
-      <path d="M 268.09775 481.872
-L 1384.81775 481.872
+      <path d="M 268.09775 466.374451
+L 1384.81775 466.374451
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_76"/>
      <g id="text_38">
       <!-- A058  沖縄県統一連（沖縄県統一行動連絡会議） -->
-      <g transform="translate(96.982125 484.909625) scale(0.076 -0.076)">
+      <g transform="translate(96.982125 469.412076) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-7d71" d="M 5113 3597
 Q 5756 2766 6238 2034
@@ -8173,14 +8173,14 @@ z
     </g>
     <g id="ytick_19">
      <g id="line2d_77">
-      <path d="M 268.09775 502.952
-L 1384.81775 502.952
+      <path d="M 268.09775 486.621249
+L 1384.81775 486.621249
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_78"/>
      <g id="text_39">
       <!-- A059  島ぐるみ会議 -->
-      <g transform="translate(195.782125 505.989625) scale(0.076 -0.076)">
+      <g transform="translate(195.782125 489.658874) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-5cf6" d="M 900 4797
 L 2444 4797
@@ -8313,14 +8313,14 @@ z
     </g>
     <g id="ytick_20">
      <g id="line2d_79">
-      <path d="M 268.09775 524.032
-L 1384.81775 524.032
+      <path d="M 268.09775 506.868047
+L 1384.81775 506.868047
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_80"/>
      <g id="text_40">
       <!-- A060  高江のヘリパッドいらない住民の会 -->
-      <g transform="translate(119.782125 527.069625) scale(0.076 -0.076)">
+      <g transform="translate(119.782125 509.905672) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30d8" d="M 6009 1113
 L 5656 703
@@ -8476,14 +8476,14 @@ z
     </g>
     <g id="ytick_21">
      <g id="line2d_81">
-      <path d="M 268.09775 545.112
-L 1384.81775 545.112
+      <path d="M 268.09775 527.114846
+L 1384.81775 527.114846
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_82"/>
      <g id="text_41">
       <!-- A061  日本野鳥の会 -->
-      <g transform="translate(195.782125 548.149625) scale(0.076 -0.076)">
+      <g transform="translate(195.782125 530.152471) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-672c" d="M 6281 803
 Q 6119 641 5856 366
@@ -8597,14 +8597,14 @@ z
     </g>
     <g id="ytick_22">
      <g id="line2d_83">
-      <path d="M 268.09775 566.192
-L 1384.81775 566.192
+      <path d="M 268.09775 547.361644
+L 1384.81775 547.361644
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_84"/>
      <g id="text_42">
       <!-- A063  一坪反戦地主会関東ブロック -->
-      <g transform="translate(142.582125 569.229625) scale(0.076 -0.076)">
+      <g transform="translate(142.582125 550.399269) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-95a2" d="M 3556 5059
 L 5988 5059
@@ -8790,14 +8790,14 @@ z
     </g>
     <g id="ytick_23">
      <g id="line2d_85">
-      <path d="M 268.09775 587.272
-L 1384.81775 587.272
+      <path d="M 268.09775 567.608443
+L 1384.81775 567.608443
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_86"/>
      <g id="text_43">
       <!-- A064  外国軍事基地撤去国際ネットワーク（No Bases Netw… -->
-      <g transform="translate(51.258625 590.309625) scale(0.076 -0.076)">
+      <g transform="translate(51.258625 570.646068) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-5916" d="M 38 2084
 Q 969 3503 1438 5316
@@ -9230,14 +9230,14 @@ z
     </g>
     <g id="ytick_24">
      <g id="line2d_87">
-      <path d="M 268.09775 608.352
-L 1384.81775 608.352
+      <path d="M 268.09775 587.855241
+L 1384.81775 587.855241
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_88"/>
      <g id="text_44">
       <!-- A066  新外交イニシアティブ（ND） -->
-      <g transform="translate(138.2145 611.389625) scale(0.076 -0.076)">
+      <g transform="translate(138.2145 590.892866) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-65b0" d="M 3594 4797
 Q 4888 4809 5981 5053
@@ -9459,14 +9459,14 @@ z
     </g>
     <g id="ytick_25">
      <g id="line2d_89">
-      <path d="M 268.09775 629.432
-L 1384.81775 629.432
+      <path d="M 268.09775 608.10204
+L 1384.81775 608.10204
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_90"/>
      <g id="text_45">
       <!-- A070  Veterans for Peace Okinawa -->
-      <g transform="translate(140.523 632.469625) scale(0.076 -0.076)">
+      <g transform="translate(140.523 611.139665) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-56" d="M 4272 4841
 L 2494 0
@@ -9559,14 +9559,14 @@ z
     </g>
     <g id="ytick_26">
      <g id="line2d_91">
-      <path d="M 268.09775 650.512
-L 1384.81775 650.512
+      <path d="M 268.09775 628.348838
+L 1384.81775 628.348838
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_92"/>
      <g id="text_46">
       <!-- A071  沖縄平和市民連絡会 -->
-      <g transform="translate(172.982125 653.549625) scale(0.076 -0.076)">
+      <g transform="translate(172.982125 631.386463) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-37" x="129.003906"/>
@@ -9587,14 +9587,14 @@ L 1384.81775 650.512
     </g>
     <g id="ytick_27">
      <g id="line2d_93">
-      <path d="M 268.09775 671.592
-L 1384.81775 671.592
+      <path d="M 268.09775 648.595636
+L 1384.81775 648.595636
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_94"/>
      <g id="text_47">
       <!-- A072  沖縄から基地をなくし世界の平和を求める市民連絡会 -->
-      <g transform="translate(58.982125 674.629625) scale(0.076 -0.076)">
+      <g transform="translate(58.982125 651.633261) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-304b" d="M 2291 3384
 Q 2913 3369 3103 3348
@@ -9830,14 +9830,14 @@ z
     </g>
     <g id="ytick_28">
      <g id="line2d_95">
-      <path d="M 268.09775 692.672
-L 1384.81775 692.672
+      <path d="M 268.09775 668.842435
+L 1384.81775 668.842435
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_96"/>
      <g id="text_48">
       <!-- A074  沖縄県知事公室基地対策課 -->
-      <g transform="translate(150.182125 695.709625) scale(0.076 -0.076)">
+      <g transform="translate(150.182125 671.88006) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-77e5" d="M 3375 4641
 L 6038 4641
@@ -10148,14 +10148,14 @@ z
     </g>
     <g id="ytick_29">
      <g id="line2d_97">
-      <path d="M 268.09775 713.752
-L 1384.81775 713.752
+      <path d="M 268.09775 689.089233
+L 1384.81775 689.089233
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_98"/>
      <g id="text_49">
       <!-- A075  沖縄防衛局 -->
-      <g transform="translate(203.382125 716.789625) scale(0.076 -0.076)">
+      <g transform="translate(203.382125 692.126858) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-9632" d="M 2300 4341
 L 4181 4341
@@ -10359,14 +10359,14 @@ z
     </g>
     <g id="ytick_30">
      <g id="line2d_99">
-      <path d="M 268.09775 734.832
-L 1384.81775 734.832
+      <path d="M 268.09775 709.336032
+L 1384.81775 709.336032
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_100"/>
      <g id="text_50">
       <!-- A107  沖縄YWCA -->
-      <g transform="translate(203.429625 737.869625) scale(0.076 -0.076)">
+      <g transform="translate(203.429625 712.373657) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-59" d="M 3828 4841
 L 2234 1781
@@ -10426,14 +10426,14 @@ z
     </g>
     <g id="ytick_31">
      <g id="line2d_101">
-      <path d="M 268.09775 755.912
-L 1384.81775 755.912
+      <path d="M 268.09775 729.58283
+L 1384.81775 729.58283
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_102"/>
      <g id="text_51">
       <!-- A108  沖縄を再び戦場にさせない県民の会 -->
-      <g transform="translate(119.782125 758.949625) scale(0.076 -0.076)">
+      <g transform="translate(119.782125 732.620455) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-518d" d="M 1425 -803
 L 931 -803
@@ -10655,14 +10655,14 @@ z
     </g>
     <g id="ytick_32">
      <g id="line2d_103">
-      <path d="M 268.09775 776.992
-L 1384.81775 776.992
+      <path d="M 268.09775 749.829628
+L 1384.81775 749.829628
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_104"/>
      <g id="text_52">
       <!-- A111  沖縄県女性団体連絡協議会 -->
-      <g transform="translate(150.182125 780.029625) scale(0.076 -0.076)">
+      <g transform="translate(150.182125 752.867253) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-56e3" d="M 469 4984
 L 5938 4984
@@ -10769,14 +10769,180 @@ z
     </g>
     <g id="ytick_33">
      <g id="line2d_105">
-      <path d="M 268.09775 798.072
-L 1384.81775 798.072
+      <path d="M 268.09775 770.076427
+L 1384.81775 770.076427
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
      <g id="line2d_106"/>
      <g id="text_53">
+      <!-- A115  新日本婦人の会沖縄県本部 -->
+      <g transform="translate(150.182125 773.114052) scale(0.076 -0.076)">
+       <defs>
+        <path id="MicrosoftYaHei-5a66" d="M 2344 266
+L 2000 -122
+Q 1700 209 1375 541
+Q 950 -203 306 -778
+Q 200 -578 50 -378
+Q 644 109 1050 866
+Q 675 1228 269 1597
+Q 481 2434 656 3534
+L 119 3534
+L 119 3972
+L 725 3972
+Q 813 4584 894 5272
+L 1338 5222
+Q 1244 4541 1156 3972
+L 2088 3972
+L 2088 3578
+Q 1950 1828 1588 966
+Q 1938 647 2344 266
+z
+M 2600 1641
+L 3969 1641
+L 3969 2272
+L 2563 2272
+L 2563 1759
+L 2138 1759
+L 2138 2672
+L 6250 2672
+L 6250 1753
+L 5825 1753
+L 5825 2272
+L 4419 2272
+L 4419 1641
+L 5813 1641
+L 5813 272
+Q 5800 -328 5294 -359
+Q 5194 -366 4713 -366
+Q 4675 -134 4581 97
+Q 4881 66 5131 66
+Q 5375 66 5375 341
+L 5375 1241
+L 4419 1241
+L 4419 -841
+L 3969 -841
+L 3969 1241
+L 3038 1241
+L 3038 -409
+L 2600 -409
+L 2600 1641
+z
+M 2713 4234
+L 5356 4234
+L 5356 4622
+L 2481 4622
+L 2481 4997
+L 5794 4997
+L 5794 2922
+L 5356 2922
+L 5356 3097
+L 2456 3097
+L 2456 3472
+L 5356 3472
+L 5356 3859
+L 2713 3859
+L 2713 4234
+z
+M 1650 3534
+L 1088 3534
+Q 900 2391 719 1741
+Q 956 1534 1238 1278
+Q 1569 2122 1650 3534
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-90e8" d="M 6288 1247
+Q 6288 172 5444 84
+Q 5125 47 4594 109
+Q 4563 334 4513 659
+Q 4969 584 5294 584
+Q 5844 584 5794 1341
+Q 5769 2009 4838 2709
+Q 5244 3516 5663 4503
+L 4388 4503
+L 4388 -828
+L 3913 -828
+L 3913 4966
+L 6163 4966
+L 6163 4453
+Q 5919 3822 5406 2816
+Q 6288 2128 6288 1247
+z
+M 575 1753
+L 3275 1753
+L 3275 -791
+L 2813 -791
+L 2813 -328
+L 1038 -328
+L 1038 -797
+L 575 -797
+L 575 1753
+z
+M 2813 1334
+L 1038 1334
+L 1038 103
+L 2813 103
+L 2813 1334
+z
+M 125 2822
+L 2125 2822
+Q 2497 3466 2731 3997
+L 3194 3759
+Q 2922 3284 2616 2822
+L 3706 2822
+L 3706 2403
+L 125 2403
+L 125 2822
+z
+M 263 4472
+L 1825 4472
+Q 1703 4753 1456 5159
+L 1888 5359
+Q 2169 4891 2288 4616
+L 1981 4472
+L 3594 4472
+L 3594 4053
+L 263 4053
+L 263 4472
+z
+M 681 3728
+L 1063 3959
+Q 1375 3516 1631 3072
+L 1206 2828
+Q 1013 3222 681 3728
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#MicrosoftYaHei-41"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="70.361328"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="129.003906"/>
+       <use xlink:href="#MicrosoftYaHei-35" x="187.646484"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="246.289062"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="275.878906"/>
+       <use xlink:href="#MicrosoftYaHei-65b0" x="305.46875"/>
+       <use xlink:href="#MicrosoftYaHei-65e5" x="405.46875"/>
+       <use xlink:href="#MicrosoftYaHei-672c" x="505.46875"/>
+       <use xlink:href="#MicrosoftYaHei-5a66" x="605.46875"/>
+       <use xlink:href="#MicrosoftYaHei-4eba" x="705.46875"/>
+       <use xlink:href="#MicrosoftYaHei-306e" x="805.46875"/>
+       <use xlink:href="#MicrosoftYaHei-4f1a" x="905.46875"/>
+       <use xlink:href="#MicrosoftYaHei-6c96" x="1005.46875"/>
+       <use xlink:href="#MicrosoftYaHei-7e04" x="1105.46875"/>
+       <use xlink:href="#MicrosoftYaHei-770c" x="1205.46875"/>
+       <use xlink:href="#MicrosoftYaHei-672c" x="1305.46875"/>
+       <use xlink:href="#MicrosoftYaHei-90e8" x="1405.46875"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_34">
+     <g id="line2d_107">
+      <path d="M 268.09775 790.323225
+L 1384.81775 790.323225
+" clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_108"/>
+     <g id="text_54">
       <!-- X002  Phoenix Corporation / Phoenix … -->
-      <g transform="translate(121.3615 801.109625) scale(0.076 -0.076)">
+      <g transform="translate(121.3615 793.36085) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-58" d="M 4034 0
 L 3275 0
@@ -10867,16 +11033,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_34">
-     <g id="line2d_107">
-      <path d="M 268.09775 819.152
-L 1384.81775 819.152
+    <g id="ytick_35">
+     <g id="line2d_109">
+      <path d="M 268.09775 810.570024
+L 1384.81775 810.570024
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_108"/>
-     <g id="text_54">
+     <g id="line2d_110"/>
+     <g id="text_55">
       <!-- X003  American Engineering Corporati… -->
-      <g transform="translate(118.762062 822.167656) scale(0.076 -0.076)">
+      <g transform="translate(118.762062 813.58568) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-45" d="M 3228 0
 L 625 0
@@ -10965,16 +11131,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_35">
-     <g id="line2d_109">
-      <path d="M 268.09775 840.232
-L 1384.81775 840.232
+    <g id="ytick_36">
+     <g id="line2d_111">
+      <path d="M 268.09775 830.816822
+L 1384.81775 830.816822
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_110"/>
-     <g id="text_55">
+     <g id="line2d_112"/>
+     <g id="text_56">
       <!-- X004  American Welfare &amp; Works Assoc… -->
-      <g transform="translate(113.868375 843.269625) scale(0.076 -0.076)">
+      <g transform="translate(113.868375 833.854447) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-6c" d="M 544 0
 L 544 5116
@@ -11068,16 +11234,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_36">
-     <g id="line2d_111">
-      <path d="M 268.09775 861.312
-L 1384.81775 861.312
+    <g id="ytick_37">
+     <g id="line2d_113">
+      <path d="M 268.09775 851.063621
+L 1384.81775 851.063621
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_112"/>
-     <g id="text_56">
+     <g id="line2d_114"/>
+     <g id="text_57">
       <!-- X005  Naval Officers' Spouses' Club … -->
-      <g transform="translate(127.47475 864.394156) scale(0.076 -0.076)">
+      <g transform="translate(127.47475 854.145777) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-76" d="M 3331 3456
 L 1963 0
@@ -11140,16 +11306,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_37">
-     <g id="line2d_113">
-      <path d="M 268.09775 882.392
-L 1384.81775 882.392
+    <g id="ytick_38">
+     <g id="line2d_115">
+      <path d="M 268.09775 871.310419
+L 1384.81775 871.310419
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_114"/>
-     <g id="text_57">
+     <g id="line2d_116"/>
+     <g id="text_58">
       <!-- X007  Okinawa Enlisted Spouses' Club… -->
-      <g transform="translate(120.396062 885.429625) scale(0.076 -0.076)">
+      <g transform="translate(120.396062 874.348044) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-64" d="M 3547 0
 L 2934 0
@@ -11219,16 +11385,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_38">
-     <g id="line2d_115">
-      <path d="M 268.09775 903.472
-L 1384.81775 903.472
+    <g id="ytick_39">
+     <g id="line2d_117">
+      <path d="M 268.09775 891.557217
+L 1384.81775 891.557217
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_116"/>
-     <g id="text_58">
+     <g id="line2d_118"/>
+     <g id="text_59">
       <!-- X010  沖縄NGOセンター -->
-      <g transform="translate(178.203562 906.509625) scale(0.076 -0.076)">
+      <g transform="translate(178.203562 894.594842) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-31" x="123.144531"/>
@@ -11247,16 +11413,16 @@ L 1384.81775 903.472
       </g>
      </g>
     </g>
-    <g id="ytick_39">
-     <g id="line2d_117">
-      <path d="M 268.09775 924.552
-L 1384.81775 924.552
+    <g id="ytick_40">
+     <g id="line2d_119">
+      <path d="M 268.09775 911.804016
+L 1384.81775 911.804016
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_118"/>
-     <g id="text_59">
+     <g id="line2d_120"/>
+     <g id="text_60">
       <!-- X012  TOMODACHI Initiative -->
-      <g transform="translate(160.583437 927.589625) scale(0.076 -0.076)">
+      <g transform="translate(160.583437 914.841641) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-54" d="M 3550 4284
 L 2153 4284
@@ -11299,16 +11465,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_40">
-     <g id="line2d_119">
-      <path d="M 268.09775 945.632
-L 1384.81775 945.632
+    <g id="ytick_41">
+     <g id="line2d_121">
+      <path d="M 268.09775 932.050814
+L 1384.81775 932.050814
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_120"/>
-     <g id="text_60">
+     <g id="line2d_122"/>
+     <g id="text_61">
       <!-- X014  NED National Endowment for Dem… -->
-      <g transform="translate(108.434375 948.669625) scale(0.076 -0.076)">
+      <g transform="translate(108.434375 935.088439) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-31" x="123.144531"/>
@@ -11349,16 +11515,16 @@ L 1384.81775 945.632
       </g>
      </g>
     </g>
-    <g id="ytick_41">
-     <g id="line2d_121">
-      <path d="M 268.09775 966.712
-L 1384.81775 966.712
+    <g id="ytick_42">
+     <g id="line2d_123">
+      <path d="M 268.09775 952.297613
+L 1384.81775 952.297613
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_122"/>
-     <g id="text_61">
+     <g id="line2d_124"/>
+     <g id="text_62">
       <!-- X015  Peace Winds Japan -->
-      <g transform="translate(172.786187 969.749625) scale(0.076 -0.076)">
+      <g transform="translate(172.786187 955.335238) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-31" x="123.144531"/>
@@ -11385,16 +11551,16 @@ L 1384.81775 966.712
       </g>
      </g>
     </g>
-    <g id="ytick_42">
-     <g id="line2d_123">
-      <path d="M 268.09775 987.792
-L 1384.81775 987.792
+    <g id="ytick_43">
+     <g id="line2d_125">
+      <path d="M 268.09775 972.544411
+L 1384.81775 972.544411
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_124"/>
-     <g id="text_62">
+     <g id="line2d_126"/>
+     <g id="text_63">
       <!-- X017  Army Community Group of Okinaw… -->
-      <g transform="translate(107.907125 990.874156) scale(0.076 -0.076)">
+      <g transform="translate(107.907125 975.626567) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-79" d="M 3359 3456
 L 1791 -522
@@ -11455,16 +11621,408 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_43">
-     <g id="line2d_125">
-      <path d="M 268.09775 1008.872
-L 1384.81775 1008.872
+    <g id="ytick_44">
+     <g id="line2d_127">
+      <path d="M 268.09775 992.791209
+L 1384.81775 992.791209
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_126"/>
-     <g id="text_63">
+     <g id="line2d_128"/>
+     <g id="text_64">
+      <!-- A114  全日本港湾労働組合沖縄地方本部 -->
+      <g transform="translate(127.382125 995.828834) scale(0.076 -0.076)">
+       <defs>
+        <path id="MicrosoftYaHei-6e2f" d="M 1544 3347
+L 2713 3347
+L 2713 4153
+L 1856 4153
+L 1856 4566
+L 2713 4566
+L 2713 5297
+L 3175 5297
+L 3175 4566
+L 4425 4566
+L 4425 5297
+L 4888 5297
+L 4888 4566
+L 5875 4566
+L 5875 4153
+L 4888 4153
+L 4888 3347
+L 6131 3347
+L 6131 2934
+L 4909 2934
+Q 5434 2119 6313 1578
+Q 6119 1372 5981 1166
+Q 5425 1556 5006 2047
+L 5006 466
+L 4556 466
+L 4556 628
+L 2775 628
+L 2775 216
+Q 2775 -203 3169 -203
+L 4863 -203
+Q 5263 -203 5375 166
+Q 5438 409 5488 822
+Q 5681 734 5950 634
+Q 5875 272 5806 22
+Q 5625 -628 4931 -628
+L 3081 -628
+Q 2313 -628 2313 147
+L 2313 1722
+Q 1991 1378 1594 1072
+Q 1472 1259 1281 1488
+Q 1013 278 781 -791
+L 231 -628
+Q 525 366 831 1947
+Q 1094 1822 1338 1741
+Q 1313 1625 1284 1513
+Q 2172 2063 2656 2934
+L 1544 2934
+L 1544 3347
+z
+M 4556 1778
+L 2775 1778
+L 2775 1028
+L 4556 1028
+L 4556 1778
+z
+M 2691 2178
+L 4897 2178
+Q 4616 2531 4397 2934
+L 3150 2934
+Q 2959 2538 2691 2178
+z
+M 3175 3347
+L 4425 3347
+L 4425 4153
+L 3175 4153
+L 3175 3347
+z
+M 363 3666
+Q 950 3241 1488 2784
+L 1125 2384
+Q 394 3022 81 3272
+L 363 3666
+z
+M 644 5184
+Q 1138 4797 1713 4278
+L 1338 3903
+Q 650 4578 325 4841
+L 644 5184
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-52b4" d="M 613 2147
+L 2544 2147
+Q 2563 2478 2563 2941
+L 3056 2941
+Q 3050 2472 3031 2147
+L 5519 2147
+Q 5463 884 5413 378
+Q 5331 -697 4306 -678
+Q 4069 -684 3175 -672
+Q 3125 -397 3069 -159
+Q 3694 -197 4263 -197
+Q 4881 -203 4931 428
+Q 4988 922 5019 1709
+L 3000 1709
+Q 2819 -191 506 -884
+Q 369 -628 206 -391
+Q 2350 166 2506 1709
+L 613 1709
+L 613 2147
+z
+M 338 3722
+L 6069 3722
+L 6069 2447
+L 5594 2447
+L 5594 3272
+L 813 3272
+L 813 2434
+L 338 2434
+L 338 3722
+z
+M 4325 4116
+Q 4763 4647 5175 5272
+L 5638 4953
+Q 5238 4422 4719 3791
+L 4325 4116
+z
+M 2538 5122
+L 2950 5347
+Q 3319 4791 3663 4203
+L 3206 3953
+Q 2944 4484 2538 5122
+z
+M 856 4878
+L 1219 5166
+Q 1606 4678 1969 4172
+L 1556 3866
+Q 1269 4334 856 4878
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-50cd" d="M 4225 3966
+L 4731 3966
+Q 4738 4478 4738 5247
+L 5125 5247
+L 5125 3966
+L 6106 3966
+Q 6063 1028 6044 134
+Q 6019 -697 5344 -697
+Q 5131 -697 4831 -672
+Q 4806 -416 4763 -159
+Q 5113 -228 5306 -228
+Q 5638 -228 5650 184
+Q 5663 959 5713 3509
+L 5125 3509
+Q 5125 1722 4838 741
+Q 4575 -153 3906 -891
+Q 3775 -647 3613 -472
+Q 3806 -278 3969 -59
+Q 2675 -253 1600 -447
+L 1500 -3
+Q 2094 72 2694 159
+L 2694 734
+L 1675 734
+L 1675 1084
+L 2694 1084
+L 2694 1572
+L 2119 1572
+L 2119 1409
+L 1756 1409
+L 1756 3378
+L 2694 3378
+L 2694 3828
+L 1613 3828
+L 1613 4184
+L 2694 4184
+L 2694 4578
+Q 2225 4541 1750 4522
+L 1700 4909
+Q 2906 4953 4013 5122
+L 4075 4728
+Q 3575 4659 3069 4609
+L 3069 4184
+L 4113 4184
+L 4113 3828
+L 3069 3828
+L 3069 3378
+L 4006 3378
+L 4006 1409
+L 3644 1409
+L 3644 1572
+L 3069 1572
+L 3069 1084
+L 4075 1084
+L 4075 734
+L 3069 734
+L 3069 209
+Q 3575 284 4081 372
+Q 4069 234 4069 91
+Q 4319 466 4450 916
+Q 4719 1778 4725 3509
+L 4225 3509
+L 4225 3966
+z
+M 38 2341
+Q 800 3597 1181 5297
+L 1625 5178
+Q 1431 4447 1206 3816
+L 1206 -853
+L 800 -853
+L 800 2834
+Q 531 2272 231 1809
+Q 131 2091 38 2341
+z
+M 3069 1891
+L 3644 1891
+L 3644 2328
+L 3069 2328
+L 3069 1891
+z
+M 2119 1891
+L 2694 1891
+L 2694 2328
+L 2119 2328
+L 2119 1891
+z
+M 3644 3059
+L 3069 3059
+L 3069 2628
+L 3644 2628
+L 3644 3059
+z
+M 2119 2628
+L 2694 2628
+L 2694 3059
+L 2119 3059
+L 2119 2628
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-7d44" d="M 2188 -628
+L 2188 -191
+L 2888 -191
+L 2888 4922
+L 5756 4922
+L 5756 -191
+L 6338 -191
+L 6338 -628
+L 2188 -628
+z
+M 913 1766
+Q 1444 1816 1938 1878
+Q 1819 2147 1694 2428
+L 2056 2572
+Q 2350 1953 2613 1341
+L 2219 1184
+Q 2163 1334 2100 1484
+Q 775 1328 363 1241
+L 244 1672
+Q 694 2097 1225 2903
+Q 631 2866 244 2828
+L 131 3209
+Q 844 4053 1431 5303
+L 1875 5134
+Q 1213 4028 663 3241
+Q 1006 3253 1463 3278
+Q 1719 3691 1994 4191
+L 2438 3991
+Q 1606 2678 913 1766
+z
+M 3350 -191
+L 5294 -191
+L 5294 1097
+L 3350 1097
+L 3350 -191
+z
+M 3350 1522
+L 5294 1522
+L 5294 2791
+L 3350 2791
+L 3350 1522
+z
+M 5294 4484
+L 3350 4484
+L 3350 3216
+L 5294 3216
+L 5294 4484
+z
+M 819 734
+Q 650 -22 481 -566
+L 81 -441
+Q 306 103 438 822
+L 819 734
+z
+M 1481 853
+Q 1575 459 1694 -241
+L 1275 -322
+Q 1225 191 1125 803
+L 1481 853
+z
+M 2188 1059
+Q 2469 422 2600 84
+L 2213 -53
+Q 2063 397 1850 934
+L 2188 1059
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-5408" d="M 1025 1909
+L 5381 1909
+L 5381 -866
+L 4881 -866
+L 4881 -447
+L 1525 -447
+L 1525 -878
+L 1025 -878
+L 1025 1909
+z
+M 3700 5234
+L 3550 5053
+Q 4594 3697 6319 3009
+Q 6125 2734 5988 2509
+Q 5481 2753 5025 3059
+L 5025 2703
+L 1369 2703
+L 1369 3016
+Q 913 2716 394 2428
+Q 269 2641 81 2897
+Q 2013 3866 3000 5234
+L 3700 5234
+z
+M 4881 1453
+L 1525 1453
+L 1525 -3
+L 4881 -3
+L 4881 1453
+z
+M 3219 4691
+Q 2581 3872 1550 3147
+L 4894 3147
+Q 3944 3797 3219 4691
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-65b9" d="M 194 4241
+L 3194 4241
+Q 2878 4841 2700 5116
+L 3188 5347
+Q 3363 5078 3713 4472
+L 3256 4241
+L 6219 4241
+L 6219 3766
+L 2428 3766
+Q 2406 3197 2381 2797
+L 5400 2797
+Q 5325 1441 5238 441
+Q 5169 -691 4138 -691
+Q 3663 -691 2869 -641
+Q 2838 -403 2775 -66
+Q 3569 -172 4063 -172
+Q 4638 -172 4706 509
+Q 4781 1253 4838 2328
+L 2347 2328
+Q 2172 266 438 -872
+Q 269 -672 56 -447
+Q 1706 641 1825 2466
+Q 1869 2959 1897 3766
+L 194 3766
+L 194 4241
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#MicrosoftYaHei-41"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="70.361328"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="129.003906"/>
+       <use xlink:href="#MicrosoftYaHei-34" x="187.646484"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="246.289062"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="275.878906"/>
+       <use xlink:href="#MicrosoftYaHei-5168" x="305.46875"/>
+       <use xlink:href="#MicrosoftYaHei-65e5" x="405.46875"/>
+       <use xlink:href="#MicrosoftYaHei-672c" x="505.46875"/>
+       <use xlink:href="#MicrosoftYaHei-6e2f" x="605.46875"/>
+       <use xlink:href="#MicrosoftYaHei-6e7e" x="705.46875"/>
+       <use xlink:href="#MicrosoftYaHei-52b4" x="805.46875"/>
+       <use xlink:href="#MicrosoftYaHei-50cd" x="905.46875"/>
+       <use xlink:href="#MicrosoftYaHei-7d44" x="1005.46875"/>
+       <use xlink:href="#MicrosoftYaHei-5408" x="1105.46875"/>
+       <use xlink:href="#MicrosoftYaHei-6c96" x="1205.46875"/>
+       <use xlink:href="#MicrosoftYaHei-7e04" x="1305.46875"/>
+       <use xlink:href="#MicrosoftYaHei-5730" x="1405.46875"/>
+       <use xlink:href="#MicrosoftYaHei-65b9" x="1505.46875"/>
+       <use xlink:href="#MicrosoftYaHei-672c" x="1605.46875"/>
+       <use xlink:href="#MicrosoftYaHei-90e8" x="1705.46875"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_45">
+     <g id="line2d_129">
+      <path d="M 268.09775 1013.038008
+L 1384.81775 1013.038008
+" clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_130"/>
+     <g id="text_65">
       <!-- A068  名護市民投票の会 -->
-      <g transform="translate(180.582125 1011.909625) scale(0.076 -0.076)">
+      <g transform="translate(180.582125 1016.075633) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-36" x="129.003906"/>
@@ -11482,16 +12040,16 @@ L 1384.81775 1008.872
       </g>
      </g>
     </g>
-    <g id="ytick_44">
-     <g id="line2d_127">
-      <path d="M 268.09775 1029.952
-L 1384.81775 1029.952
+    <g id="ytick_46">
+     <g id="line2d_131">
+      <path d="M 268.09775 1033.284806
+L 1384.81775 1033.284806
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_128"/>
-     <g id="text_64">
+     <g id="line2d_132"/>
+     <g id="text_66">
       <!-- A001  Okinawa Environmental Justice … -->
-      <g transform="translate(120.467312 1032.989625) scale(0.076 -0.076)">
+      <g transform="translate(120.467312 1036.322431) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-30" x="129.003906"/>
@@ -11532,16 +12090,16 @@ L 1384.81775 1029.952
       </g>
      </g>
     </g>
-    <g id="ytick_45">
-     <g id="line2d_129">
-      <path d="M 268.09775 1051.032
-L 1384.81775 1051.032
+    <g id="ytick_47">
+     <g id="line2d_133">
+      <path d="M 268.09775 1053.531605
+L 1384.81775 1053.531605
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_130"/>
-     <g id="text_65">
+     <g id="line2d_134"/>
+     <g id="text_67">
       <!-- A002  ジュゴン保護キャンペーンセンター（Save the Dugo… -->
-      <g transform="translate(52.67175 1054.203219) scale(0.076 -0.076)">
+      <g transform="translate(52.67175 1056.702823) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-4fdd" d="M 2263 5003
 L 5750 5003
@@ -11703,16 +12261,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_46">
-     <g id="line2d_131">
-      <path d="M 268.09775 1072.112
-L 1384.81775 1072.112
+    <g id="ytick_48">
+     <g id="line2d_135">
+      <path d="M 268.09775 1073.778403
+L 1384.81775 1073.778403
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_132"/>
-     <g id="text_66">
+     <g id="line2d_136"/>
+     <g id="text_68">
       <!-- A004  日本自然保護協会 -->
-      <g transform="translate(180.582125 1075.149625) scale(0.076 -0.076)">
+      <g transform="translate(180.582125 1076.816028) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-81ea" d="M 775 4466
 L 2391 4466
@@ -11834,16 +12392,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_47">
-     <g id="line2d_133">
-      <path d="M 268.09775 1093.192
-L 1384.81775 1093.192
+    <g id="ytick_49">
+     <g id="line2d_137">
+      <path d="M 268.09775 1094.025202
+L 1384.81775 1094.025202
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_134"/>
-     <g id="text_67">
+     <g id="line2d_138"/>
+     <g id="text_69">
       <!-- A005  WWFジャパン -->
-      <g transform="translate(191.47625 1096.229625) scale(0.076 -0.076)">
+      <g transform="translate(191.47625 1097.062827) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-30" x="129.003906"/>
@@ -11860,14 +12418,14 @@ L 1384.81775 1093.192
       </g>
      </g>
     </g>
-    <g id="ytick_48">
-     <g id="line2d_135">
+    <g id="ytick_50">
+     <g id="line2d_139">
       <path d="M 268.09775 1114.272
 L 1384.81775 1114.272
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_136"/>
-     <g id="text_68">
+     <g id="line2d_140"/>
+     <g id="text_70">
       <!-- A006  グリーンピース・ジャパン -->
       <g transform="translate(150.182125 1117.309625) scale(0.076 -0.076)">
        <defs>
@@ -11920,16 +12478,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_49">
-     <g id="line2d_137">
-      <path d="M 268.09775 1135.352
-L 1384.81775 1135.352
+    <g id="ytick_51">
+     <g id="line2d_141">
+      <path d="M 268.09775 1134.518798
+L 1384.81775 1134.518798
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_138"/>
-     <g id="text_69">
+     <g id="line2d_142"/>
+     <g id="text_71">
       <!-- A007  ピースボート -->
-      <g transform="translate(195.782125 1138.389625) scale(0.076 -0.076)">
+      <g transform="translate(195.782125 1137.556423) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30dc" d="M 5941 4300
 L 5575 4038
@@ -11986,16 +12544,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_50">
-     <g id="line2d_139">
-      <path d="M 268.09775 1156.432
-L 1384.81775 1156.432
+    <g id="ytick_52">
+     <g id="line2d_143">
+      <path d="M 268.09775 1154.765597
+L 1384.81775 1154.765597
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_140"/>
-     <g id="text_70">
+     <g id="line2d_144"/>
+     <g id="text_72">
       <!-- A009  Earthjustice -->
-      <g transform="translate(199.143937 1159.469625) scale(0.076 -0.076)">
+      <g transform="translate(199.143937 1157.803222) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-6a" d="M 475 4675
 Q 475 4838 584 4948
@@ -12041,16 +12599,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_51">
-     <g id="line2d_141">
-      <path d="M 268.09775 1177.512
-L 1384.81775 1177.512
+    <g id="ytick_53">
+     <g id="line2d_145">
+      <path d="M 268.09775 1175.012395
+L 1384.81775 1175.012395
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_142"/>
-     <g id="text_71">
+     <g id="line2d_146"/>
+     <g id="text_73">
       <!-- A019  ヘリ基地反対協議会（海上ヘリ基地建設反対・平和と名護市政民主… -->
-      <g transform="translate(7.2 1180.549625) scale(0.076 -0.076)">
+      <g transform="translate(7.2 1178.05002) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-4e0a" d="M 163 47
 L 2613 47
@@ -12331,16 +12889,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_52">
-     <g id="line2d_143">
-      <path d="M 268.09775 1198.592
-L 1384.81775 1198.592
+    <g id="ytick_54">
+     <g id="line2d_147">
+      <path d="M 268.09775 1195.259194
+L 1384.81775 1195.259194
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_144"/>
-     <g id="text_72">
+     <g id="line2d_148"/>
+     <g id="text_74">
       <!-- A020  日本環境法律家連盟（JELF） -->
-      <g transform="translate(142.656937 1201.629625) scale(0.076 -0.076)">
+      <g transform="translate(142.656937 1198.296819) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-6cd5" d="M 4888 1328
 Q 5488 509 6181 -553
@@ -12624,16 +13182,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_53">
-     <g id="line2d_145">
-      <path d="M 268.09775 1219.672
-L 1384.81775 1219.672
+    <g id="ytick_55">
+     <g id="line2d_149">
+      <path d="M 268.09775 1215.505992
+L 1384.81775 1215.505992
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_146"/>
-     <g id="text_73">
+     <g id="line2d_150"/>
+     <g id="text_75">
       <!-- A021  国際環境NGO FoE Japan -->
-      <g transform="translate(154.670875 1222.843219) scale(0.076 -0.076)">
+      <g transform="translate(154.670875 1218.677211) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-32" x="129.003906"/>
@@ -12660,16 +13218,16 @@ L 1384.81775 1219.672
       </g>
      </g>
     </g>
-    <g id="ytick_54">
-     <g id="line2d_147">
-      <path d="M 268.09775 1240.752
-L 1384.81775 1240.752
+    <g id="ytick_56">
+     <g id="line2d_151">
+      <path d="M 268.09775 1235.752791
+L 1384.81775 1235.752791
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_148"/>
-     <g id="text_74">
+     <g id="line2d_152"/>
+     <g id="text_76">
       <!-- A022  NPO法人 ラムサール・ネットワーク日本 -->
-      <g transform="translate(100.510187 1243.789625) scale(0.076 -0.076)">
+      <g transform="translate(100.510187 1238.790416) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30e9" d="M 4997 4319
 L 1447 4319
@@ -12779,16 +13337,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_55">
-     <g id="line2d_149">
-      <path d="M 268.09775 1261.832
-L 1384.81775 1261.832
+    <g id="ytick_57">
+     <g id="line2d_153">
+      <path d="M 268.09775 1255.999589
+L 1384.81775 1255.999589
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_150"/>
-     <g id="text_75">
+     <g id="line2d_154"/>
+     <g id="text_77">
       <!-- A024  辺野古リレー -->
-      <g transform="translate(195.782125 1264.869625) scale(0.076 -0.076)">
+      <g transform="translate(195.782125 1259.037214) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30ec" d="M 5491 2647
 Q 4641 1463 3694 869
@@ -12817,16 +13375,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_56">
-     <g id="line2d_151">
-      <path d="M 268.09775 1282.912
-L 1384.81775 1282.912
+    <g id="ytick_58">
+     <g id="line2d_155">
+      <path d="M 268.09775 1276.246387
+L 1384.81775 1276.246387
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_152"/>
-     <g id="text_76">
+     <g id="line2d_156"/>
+     <g id="text_78">
       <!-- A025  辺野古への基地建設を許さない実行委員会 -->
-      <g transform="translate(96.982125 1285.949625) scale(0.076 -0.076)">
+      <g transform="translate(96.982125 1279.284012) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-3078" d="M 6034 1228
 L 5691 831
@@ -13027,16 +13585,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_57">
-     <g id="line2d_153">
-      <path d="M 268.09775 1303.992
-L 1384.81775 1303.992
+    <g id="ytick_59">
+     <g id="line2d_157">
+      <path d="M 268.09775 1296.493186
+L 1384.81775 1296.493186
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_154"/>
-     <g id="text_77">
+     <g id="line2d_158"/>
+     <g id="text_79">
       <!-- A027  公共事業改革市民会議 -->
-      <g transform="translate(165.382125 1307.029625) scale(0.076 -0.076)">
+      <g transform="translate(165.382125 1299.530811) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-5171" d="M 125 1847
 L 1738 1847
@@ -13277,16 +13835,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_58">
-     <g id="line2d_155">
-      <path d="M 268.09775 1325.072
-L 1384.81775 1325.072
+    <g id="ytick_60">
+     <g id="line2d_159">
+      <path d="M 268.09775 1316.739984
+L 1384.81775 1316.739984
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_156"/>
-     <g id="text_78">
+     <g id="line2d_160"/>
+     <g id="text_80">
       <!-- A030  市川三番瀬を守る会 -->
-      <g transform="translate(172.982125 1328.109625) scale(0.076 -0.076)">
+      <g transform="translate(172.982125 1319.777609) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-5ddd" d="M 5194 5247
 L 5700 5247
@@ -13417,16 +13975,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_59">
-     <g id="line2d_157">
-      <path d="M 268.09775 1346.152
-L 1384.81775 1346.152
+    <g id="ytick_61">
+     <g id="line2d_161">
+      <path d="M 268.09775 1336.986783
+L 1384.81775 1336.986783
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_158"/>
-     <g id="text_79">
+     <g id="line2d_162"/>
+     <g id="text_81">
       <!-- A031  三番瀬のラムサール条約登録を実現する会 -->
-      <g transform="translate(96.982125 1349.189625) scale(0.076 -0.076)">
+      <g transform="translate(96.982125 1340.024408) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-6761" d="M 375 3347
 Q 1388 4178 2113 5328
@@ -13796,16 +14354,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_60">
-     <g id="line2d_159">
-      <path d="M 268.09775 1367.232
-L 1384.81775 1367.232
+    <g id="ytick_62">
+     <g id="line2d_163">
+      <path d="M 268.09775 1357.233581
+L 1384.81775 1357.233581
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_160"/>
-     <g id="text_80">
+     <g id="line2d_164"/>
+     <g id="text_82">
       <!-- A032  Peace Philosophy Centre -->
-      <g transform="translate(151.767437 1370.269625) scale(0.076 -0.076)">
+      <g transform="translate(151.767437 1360.271206) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-33" x="129.003906"/>
@@ -13838,16 +14396,16 @@ L 1384.81775 1367.232
       </g>
      </g>
     </g>
-    <g id="ytick_61">
-     <g id="line2d_161">
-      <path d="M 268.09775 1388.312
-L 1384.81775 1388.312
+    <g id="ytick_63">
+     <g id="line2d_165">
+      <path d="M 268.09775 1377.480379
+L 1384.81775 1377.480379
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_162"/>
-     <g id="text_81">
+     <g id="line2d_166"/>
+     <g id="text_83">
       <!-- A033  Friends of the Earth U.S. -->
-      <g transform="translate(154.159062 1391.349625) scale(0.076 -0.076)">
+      <g transform="translate(154.159062 1380.518004) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-2e" d="M 372 322
 Q 372 491 487 606
@@ -13895,16 +14453,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_62">
-     <g id="line2d_163">
-      <path d="M 268.09775 1409.392
-L 1384.81775 1409.392
+    <g id="ytick_64">
+     <g id="line2d_167">
+      <path d="M 268.09775 1397.727178
+L 1384.81775 1397.727178
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_164"/>
-     <g id="text_82">
+     <g id="line2d_168"/>
+     <g id="text_84">
       <!-- A034  Korea Federation for Environme… -->
-      <g transform="translate(119.605187 1412.429625) scale(0.076 -0.076)">
+      <g transform="translate(119.605187 1400.764803) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-33" x="129.003906"/>
@@ -13945,16 +14503,16 @@ L 1384.81775 1409.392
       </g>
      </g>
     </g>
-    <g id="ytick_63">
-     <g id="line2d_165">
-      <path d="M 268.09775 1430.472
-L 1384.81775 1430.472
+    <g id="ytick_65">
+     <g id="line2d_169">
+      <path d="M 268.09775 1417.973976
+L 1384.81775 1417.973976
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_166"/>
-     <g id="text_83">
+     <g id="line2d_170"/>
+     <g id="text_85">
       <!-- A035  Russian Social Ecological Union -->
-      <g transform="translate(127.281187 1433.509625) scale(0.076 -0.076)">
+      <g transform="translate(127.281187 1421.011601) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-52" d="M 4159 0
 L 3422 0
@@ -14025,16 +14583,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_64">
-     <g id="line2d_167">
-      <path d="M 268.09775 1451.552
-L 1384.81775 1451.552
+    <g id="ytick_66">
+     <g id="line2d_171">
+      <path d="M 268.09775 1438.220775
+L 1384.81775 1438.220775
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_168"/>
-     <g id="text_84">
+     <g id="line2d_172"/>
+     <g id="text_86">
       <!-- A036  Friends of the Siberian Forests -->
-      <g transform="translate(131.6785 1454.589625) scale(0.076 -0.076)">
+      <g transform="translate(131.6785 1441.2584) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-33" x="129.003906"/>
@@ -14075,16 +14633,16 @@ L 1384.81775 1451.552
       </g>
      </g>
     </g>
-    <g id="ytick_65">
-     <g id="line2d_169">
-      <path d="M 268.09775 1472.632
-L 1384.81775 1472.632
+    <g id="ytick_67">
+     <g id="line2d_173">
+      <path d="M 268.09775 1458.467573
+L 1384.81775 1458.467573
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_170"/>
-     <g id="text_85">
+     <g id="line2d_174"/>
+     <g id="text_87">
       <!-- A037  Centre for Environmental Justi… -->
-      <g transform="translate(125.64125 1475.669625) scale(0.076 -0.076)">
+      <g transform="translate(125.64125 1461.505198) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-33" x="129.003906"/>
@@ -14125,16 +14683,16 @@ L 1384.81775 1472.632
       </g>
      </g>
     </g>
-    <g id="ytick_66">
-     <g id="line2d_171">
-      <path d="M 268.09775 1493.712
-L 1384.81775 1493.712
+    <g id="ytick_68">
+     <g id="line2d_175">
+      <path d="M 268.09775 1478.714372
+L 1384.81775 1478.714372
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_172"/>
-     <g id="text_86">
+     <g id="line2d_176"/>
+     <g id="text_88">
       <!-- A038  Sahabat Alam Malaysia -->
-      <g transform="translate(157.32375 1496.749625) scale(0.076 -0.076)">
+      <g transform="translate(157.32375 1481.751997) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-33" x="129.003906"/>
@@ -14165,16 +14723,16 @@ L 1384.81775 1493.712
       </g>
      </g>
     </g>
-    <g id="ytick_67">
-     <g id="line2d_173">
-      <path d="M 268.09775 1514.792
-L 1384.81775 1514.792
+    <g id="ytick_69">
+     <g id="line2d_177">
+      <path d="M 268.09775 1498.96117
+L 1384.81775 1498.96117
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_174"/>
-     <g id="text_87">
+     <g id="line2d_178"/>
+     <g id="text_89">
       <!-- A039  The Legal Rights and Natural R… -->
-      <g transform="translate(122.70575 1517.829625) scale(0.076 -0.076)">
+      <g transform="translate(122.70575 1501.998795) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-33" x="129.003906"/>
@@ -14215,16 +14773,16 @@ L 1384.81775 1514.792
       </g>
      </g>
     </g>
-    <g id="ytick_68">
-     <g id="line2d_175">
-      <path d="M 268.09775 1535.872
-L 1384.81775 1535.872
+    <g id="ytick_70">
+     <g id="line2d_179">
+      <path d="M 268.09775 1519.207968
+L 1384.81775 1519.207968
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_176"/>
-     <g id="text_88">
+     <g id="line2d_180"/>
+     <g id="text_90">
       <!-- A040  Forum for Protection of Public… -->
-      <g transform="translate(125.363375 1538.909625) scale(0.076 -0.076)">
+      <g transform="translate(125.363375 1522.245593) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-34" x="129.003906"/>
@@ -14265,16 +14823,16 @@ L 1384.81775 1535.872
       </g>
      </g>
     </g>
-    <g id="ytick_69">
-     <g id="line2d_177">
-      <path d="M 268.09775 1556.952
-L 1384.81775 1556.952
+    <g id="ytick_71">
+     <g id="line2d_181">
+      <path d="M 268.09775 1539.454767
+L 1384.81775 1539.454767
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_178"/>
-     <g id="text_89">
+     <g id="line2d_182"/>
+     <g id="text_91">
       <!-- A041  Friends of the Earth Brisbane -->
-      <g transform="translate(136.720625 1559.989625) scale(0.076 -0.076)">
+      <g transform="translate(136.720625 1542.492392) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-34" x="129.003906"/>
@@ -14313,16 +14871,16 @@ L 1384.81775 1556.952
       </g>
      </g>
     </g>
-    <g id="ytick_70">
-     <g id="line2d_179">
-      <path d="M 268.09775 1578.032
-L 1384.81775 1578.032
+    <g id="ytick_72">
+     <g id="line2d_183">
+      <path d="M 268.09775 1559.701565
+L 1384.81775 1559.701565
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_180"/>
-     <g id="text_90">
+     <g id="line2d_184"/>
+     <g id="text_92">
       <!-- A042  Pacific Environment -->
-      <g transform="translate(170.111937 1581.069625) scale(0.076 -0.076)">
+      <g transform="translate(170.111937 1562.73919) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-34" x="129.003906"/>
@@ -14351,16 +14909,16 @@ L 1384.81775 1578.032
       </g>
      </g>
     </g>
-    <g id="ytick_71">
-     <g id="line2d_181">
-      <path d="M 268.09775 1599.112
-L 1384.81775 1599.112
+    <g id="ytick_73">
+     <g id="line2d_185">
+      <path d="M 268.09775 1579.948364
+L 1384.81775 1579.948364
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_182"/>
-     <g id="text_91">
+     <g id="line2d_186"/>
+     <g id="text_93">
       <!-- A043  PENGON-FoE Palestine -->
-      <g transform="translate(157.478125 1602.149625) scale(0.076 -0.076)">
+      <g transform="translate(157.478125 1582.985989) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-2d" d="M 2328 1681
 L 488 1681
@@ -14399,16 +14957,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_72">
-     <g id="line2d_183">
-      <path d="M 268.09775 1620.192
-L 1384.81775 1620.192
+    <g id="ytick_74">
+     <g id="line2d_187">
+      <path d="M 268.09775 1600.195162
+L 1384.81775 1600.195162
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_184"/>
-     <g id="text_92">
+     <g id="line2d_188"/>
+     <g id="text_94">
       <!-- A044  Naturvernforbundet / Norwegian… -->
-      <g transform="translate(113.622562 1623.274156) scale(0.076 -0.076)">
+      <g transform="translate(113.622562 1603.277318) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-34" x="129.003906"/>
@@ -14449,16 +15007,16 @@ L 1384.81775 1620.192
       </g>
      </g>
     </g>
-    <g id="ytick_73">
-     <g id="line2d_185">
-      <path d="M 268.09775 1641.272
-L 1384.81775 1641.272
+    <g id="ytick_75">
+     <g id="line2d_189">
+      <path d="M 268.09775 1620.44196
+L 1384.81775 1620.44196
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_186"/>
-     <g id="text_93">
+     <g id="line2d_190"/>
+     <g id="text_95">
       <!-- A045  Center for Biological Diversity -->
-      <g transform="translate(133.39325 1644.354156) scale(0.076 -0.076)">
+      <g transform="translate(133.39325 1623.524117) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-34" x="129.003906"/>
@@ -14499,16 +15057,16 @@ L 1384.81775 1641.272
       </g>
      </g>
     </g>
-    <g id="ytick_74">
-     <g id="line2d_187">
-      <path d="M 268.09775 1662.352
-L 1384.81775 1662.352
+    <g id="ytick_76">
+     <g id="line2d_191">
+      <path d="M 268.09775 1640.688759
+L 1384.81775 1640.688759
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_188"/>
-     <g id="text_94">
+     <g id="line2d_192"/>
+     <g id="text_96">
       <!-- A046  Pro Natura -->
-      <g transform="translate(201.855 1665.389625) scale(0.076 -0.076)">
+      <g transform="translate(201.855 1643.726384) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-34" x="129.003906"/>
@@ -14528,16 +15086,16 @@ L 1384.81775 1662.352
       </g>
      </g>
     </g>
-    <g id="ytick_75">
-     <g id="line2d_189">
-      <path d="M 268.09775 1683.432
-L 1384.81775 1683.432
+    <g id="ytick_77">
+     <g id="line2d_193">
+      <path d="M 268.09775 1660.935557
+L 1384.81775 1660.935557
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_190"/>
-     <g id="text_95">
+     <g id="line2d_194"/>
+     <g id="text_97">
       <!-- A062  日本湿地ネットワーク（JAWAN） -->
-      <g transform="translate(123.306625 1686.469625) scale(0.076 -0.076)">
+      <g transform="translate(123.306625 1663.973182) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-6e7f" d="M 2138 5009
 L 5788 5009
@@ -14633,16 +15191,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_76">
-     <g id="line2d_191">
-      <path d="M 268.09775 1704.512
-L 1384.81775 1704.512
+    <g id="ytick_78">
+     <g id="line2d_195">
+      <path d="M 268.09775 1681.182356
+L 1384.81775 1681.182356
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_192"/>
-     <g id="text_96">
+     <g id="line2d_196"/>
+     <g id="text_98">
       <!-- A067  辺野古土砂搬入反対全国協議会（辺野古土砂全協） -->
-      <g transform="translate(66.582125 1707.549625) scale(0.076 -0.076)">
+      <g transform="translate(66.582125 1684.219981) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-571f" d="M 144 97
 L 2919 97
@@ -14861,16 +15419,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_77">
-     <g id="line2d_193">
-      <path d="M 268.09775 1725.592
-L 1384.81775 1725.592
+    <g id="ytick_79">
+     <g id="line2d_197">
+      <path d="M 268.09775 1701.429154
+L 1384.81775 1701.429154
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_194"/>
-     <g id="text_97">
+     <g id="line2d_198"/>
+     <g id="text_99">
       <!-- A069  沖縄ジュゴン環境アセスメント監視団 -->
-      <g transform="translate(112.182125 1728.629625) scale(0.076 -0.076)">
+      <g transform="translate(112.182125 1704.466779) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30e1" d="M 5294 1509
 L 5006 1100
@@ -15062,16 +15620,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_78">
-     <g id="line2d_195">
-      <path d="M 268.09775 1746.672
-L 1384.81775 1746.672
+    <g id="ytick_80">
+     <g id="line2d_199">
+      <path d="M 268.09775 1721.675953
+L 1384.81775 1721.675953
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_196"/>
-     <g id="text_98">
+     <g id="line2d_200"/>
+     <g id="text_100">
       <!-- A110  辺野古に基地を絶対つくらせない大阪行動 -->
-      <g transform="translate(96.982125 1749.709625) scale(0.076 -0.076)">
+      <g transform="translate(96.982125 1724.713578) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-7d76" d="M 3281 253
 Q 3281 -209 3706 -209
@@ -15245,16 +15803,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_79">
-     <g id="line2d_197">
-      <path d="M 268.09775 1767.752
-L 1384.81775 1767.752
+    <g id="ytick_81">
+     <g id="line2d_201">
+      <path d="M 268.09775 1741.922751
+L 1384.81775 1741.922751
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_198"/>
-     <g id="text_99">
+     <g id="line2d_202"/>
+     <g id="text_101">
       <!-- X001  USO Okinawa -->
-      <g transform="translate(191.883562 1770.789625) scale(0.076 -0.076)">
+      <g transform="translate(191.883562 1744.960376) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-30" x="123.144531"/>
@@ -15275,16 +15833,16 @@ L 1384.81775 1767.752
       </g>
      </g>
     </g>
-    <g id="ytick_80">
-     <g id="line2d_199">
-      <path d="M 268.09775 1788.832
-L 1384.81775 1788.832
+    <g id="ytick_82">
+     <g id="line2d_203">
+      <path d="M 268.09775 1762.169549
+L 1384.81775 1762.169549
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_200"/>
-     <g id="text_100">
+     <g id="line2d_204"/>
+     <g id="text_102">
       <!-- X016  Marine Officers' Spouses' Club… -->
-      <g transform="translate(124.617625 1791.914156) scale(0.076 -0.076)">
+      <g transform="translate(124.617625 1765.251706) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-31" x="123.144531"/>
@@ -15325,16 +15883,16 @@ L 1384.81775 1788.832
       </g>
      </g>
     </g>
-    <g id="ytick_81">
-     <g id="line2d_201">
-      <path d="M 268.09775 1809.912
-L 1384.81775 1809.912
+    <g id="ytick_83">
+     <g id="line2d_205">
+      <path d="M 268.09775 1782.416348
+L 1384.81775 1782.416348
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_202"/>
-     <g id="text_101">
+     <g id="line2d_206"/>
+     <g id="text_103">
       <!-- A053  普天間基地爆音訴訟団 -->
-      <g transform="translate(165.382125 1812.949625) scale(0.076 -0.076)">
+      <g transform="translate(165.382125 1785.453973) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-9593" d="M 3556 5059
 L 5988 5059
@@ -15714,16 +16272,109 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_82">
-     <g id="line2d_203">
-      <path d="M 268.09775 1830.992
-L 1384.81775 1830.992
+    <g id="ytick_84">
+     <g id="line2d_207">
+      <path d="M 268.09775 1802.663146
+L 1384.81775 1802.663146
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_204"/>
-     <g id="text_102">
+     <g id="line2d_208"/>
+     <g id="text_104">
+      <!-- A113  宜野湾ちゅら水会 -->
+      <g transform="translate(180.582125 1805.700771) scale(0.076 -0.076)">
+       <defs>
+        <path id="MicrosoftYaHei-3085" d="M 4125 3159
+Q 4766 3188 5150 2756
+Q 5534 2325 5534 1669
+Q 5534 1044 5150 645
+Q 4766 247 4197 247
+Q 4078 247 3959 266
+Q 3716 -256 3244 -628
+L 2769 -316
+Q 3266 44 3453 428
+Q 2884 753 2538 1328
+L 2922 1713
+Q 3241 1188 3600 956
+Q 3625 1181 3625 1322
+Q 3625 2247 3613 2538
+Q 2969 2356 2522 1709
+Q 2075 1063 2075 719
+Q 2075 447 2244 50
+L 1725 -72
+Q 1484 572 1484 1381
+Q 1484 2191 1731 3319
+L 2263 3216
+Q 2041 2250 2013 1797
+Q 2650 2888 3600 3081
+L 3575 3881
+L 4100 3881
+Q 4125 3366 4125 3159
+z
+M 4106 791
+Q 4509 759 4756 1014
+Q 5003 1269 5003 1688
+Q 5003 2106 4773 2368
+Q 4544 2631 4138 2622
+Q 4150 2228 4150 1322
+Q 4150 1009 4106 791
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-6c34" d="M 2925 5297
+L 3431 5297
+L 3431 4294
+Q 3700 3563 4047 2934
+Q 4738 3509 5425 4309
+L 5844 3934
+Q 5113 3169 4300 2506
+Q 5125 1200 6319 384
+Q 6056 122 5894 -84
+Q 4250 1209 3431 3119
+L 3431 197
+Q 3431 -734 2538 -734
+Q 2263 -734 1725 -728
+Q 1694 -497 1625 -166
+Q 2125 -216 2438 -216
+Q 2925 -216 2925 253
+L 2925 5297
+z
+M 256 3297
+L 256 3772
+L 2413 3772
+L 2413 3316
+Q 1881 1266 475 -197
+Q 263 47 94 184
+Q 1506 1672 1913 3297
+L 256 3297
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#MicrosoftYaHei-41"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="70.361328"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="129.003906"/>
+       <use xlink:href="#MicrosoftYaHei-33" x="187.646484"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="246.289062"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="275.878906"/>
+       <use xlink:href="#MicrosoftYaHei-5b9c" x="305.46875"/>
+       <use xlink:href="#MicrosoftYaHei-91ce" x="405.46875"/>
+       <use xlink:href="#MicrosoftYaHei-6e7e" x="505.46875"/>
+       <use xlink:href="#MicrosoftYaHei-3061" x="605.46875"/>
+       <use xlink:href="#MicrosoftYaHei-3085" x="705.46875"/>
+       <use xlink:href="#MicrosoftYaHei-3089" x="805.46875"/>
+       <use xlink:href="#MicrosoftYaHei-6c34" x="905.46875"/>
+       <use xlink:href="#MicrosoftYaHei-4f1a" x="1005.46875"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_85">
+     <g id="line2d_209">
+      <path d="M 268.09775 1822.909945
+L 1384.81775 1822.909945
+" clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_210"/>
+     <g id="text_105">
       <!-- A052  嘉手納基地爆音差止訴訟原告団 -->
-      <g transform="translate(134.982125 1834.029625) scale(0.076 -0.076)">
+      <g transform="translate(134.982125 1825.94757) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-7d0d" d="M 3106 -809
 L 2663 -809
@@ -15948,16 +16599,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_83">
-     <g id="line2d_205">
-      <path d="M 268.09775 1852.072
-L 1384.81775 1852.072
+    <g id="ytick_86">
+     <g id="line2d_211">
+      <path d="M 268.09775 1843.156743
+L 1384.81775 1843.156743
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_206"/>
-     <g id="text_103">
+     <g id="line2d_212"/>
+     <g id="text_106">
       <!-- A109  第4次嘉手納基地爆音差止訴訟弁護団 -->
-      <g transform="translate(115.325437 1855.109625) scale(0.076 -0.076)">
+      <g transform="translate(115.325437 1846.194368) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-7b2c" d="M 4006 5347
 L 4544 5347
@@ -16094,16 +16745,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_84">
-     <g id="line2d_207">
-      <path d="M 268.09775 1873.152
-L 1384.81775 1873.152
+    <g id="ytick_87">
+     <g id="line2d_213">
+      <path d="M 268.09775 1863.403542
+L 1384.81775 1863.403542
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_208"/>
-     <g id="text_104">
+     <g id="line2d_214"/>
+     <g id="text_107">
       <!-- X006  Kadena Officers' Spouses' Club… -->
-      <g transform="translate(123.079812 1876.234156) scale(0.076 -0.076)">
+      <g transform="translate(123.079812 1866.485698) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-30" x="123.144531"/>
@@ -16144,16 +16795,16 @@ L 1384.81775 1873.152
       </g>
      </g>
     </g>
-    <g id="ytick_85">
-     <g id="line2d_209">
-      <path d="M 268.09775 1894.232
-L 1384.81775 1894.232
+    <g id="ytick_88">
+     <g id="line2d_215">
+      <path d="M 268.09775 1883.65034
+L 1384.81775 1883.65034
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_210"/>
-     <g id="text_105">
+     <g id="line2d_216"/>
+     <g id="text_108">
       <!-- X008  American Red Cross Okinawa -->
-      <g transform="translate(135.581812 1897.269625) scale(0.076 -0.076)">
+      <g transform="translate(135.581812 1886.687965) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-30" x="123.144531"/>
@@ -16189,16 +16840,16 @@ L 1384.81775 1894.232
       </g>
      </g>
     </g>
-    <g id="ytick_86">
-     <g id="line2d_211">
-      <path d="M 268.09775 1915.312
-L 1384.81775 1915.312
+    <g id="ytick_89">
+     <g id="line2d_217">
+      <path d="M 268.09775 1903.897138
+L 1384.81775 1903.897138
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_212"/>
-     <g id="text_106">
+     <g id="line2d_218"/>
+     <g id="text_109">
       <!-- X009  Navy-Marine Corps Relief Socie… -->
-      <g transform="translate(121.080062 1918.394156) scale(0.076 -0.076)">
+      <g transform="translate(121.080062 1906.979295) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-30" x="123.144531"/>
@@ -16239,16 +16890,16 @@ L 1384.81775 1915.312
       </g>
      </g>
     </g>
-    <g id="ytick_87">
-     <g id="line2d_213">
-      <path d="M 268.09775 1936.392
-L 1384.81775 1936.392
+    <g id="ytick_90">
+     <g id="line2d_219">
+      <path d="M 268.09775 1924.143937
+L 1384.81775 1924.143937
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_214"/>
-     <g id="text_107">
+     <g id="line2d_220"/>
+     <g id="text_110">
       <!-- A014  住民投票を成功させるための実行委員会 -->
-      <g transform="translate(104.582125 1939.429625) scale(0.076 -0.076)">
+      <g transform="translate(104.582125 1927.181562) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-6210" d="M 2750 -347
 Q 3472 138 4038 781
@@ -16362,16 +17013,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_88">
-     <g id="line2d_215">
-      <path d="M 268.09775 1957.472
-L 1384.81775 1957.472
+    <g id="ytick_91">
+     <g id="line2d_221">
+      <path d="M 268.09775 1944.390735
+L 1384.81775 1944.390735
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_216"/>
-     <g id="text_108">
+     <g id="line2d_222"/>
+     <g id="text_111">
       <!-- A015  与那国自衛隊配備反対意見広告実行委員会 -->
-      <g transform="translate(96.982125 1960.509625) scale(0.076 -0.076)">
+      <g transform="translate(96.982125 1947.42836) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-914d" d="M 388 3697
 L 1244 3697
@@ -16564,16 +17215,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_89">
-     <g id="line2d_217">
-      <path d="M 268.09775 1978.552
-L 1384.81775 1978.552
+    <g id="ytick_92">
+     <g id="line2d_223">
+      <path d="M 268.09775 1964.637534
+L 1384.81775 1964.637534
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_218"/>
-     <g id="text_109">
+     <g id="line2d_224"/>
+     <g id="text_112">
       <!-- A016  与那国島の明るい未来を願うイソバの会 -->
-      <g transform="translate(104.582125 1981.589625) scale(0.076 -0.076)">
+      <g transform="translate(104.582125 1967.675159) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-660e" d="M 2350 -872
 Q 2188 -691 1944 -491
@@ -16889,16 +17540,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_90">
-     <g id="line2d_219">
-      <path d="M 268.09775 1999.632
-L 1384.81775 1999.632
+    <g id="ytick_93">
+     <g id="line2d_225">
+      <path d="M 268.09775 1984.884332
+L 1384.81775 1984.884332
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_220"/>
-     <g id="text_110">
+     <g id="line2d_226"/>
+     <g id="text_113">
       <!-- A065  南西諸島ピースネット -->
-      <g transform="translate(165.382125 2002.669625) scale(0.076 -0.076)">
+      <g transform="translate(165.382125 1987.921957) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-5357" d="M 163 4553
 L 2969 4553
@@ -17107,16 +17758,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_91">
-     <g id="line2d_221">
-      <path d="M 268.09775 2020.712
-L 1384.81775 2020.712
+    <g id="ytick_94">
+     <g id="line2d_227">
+      <path d="M 268.09775 2005.13113
+L 1384.81775 2005.13113
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_222"/>
-     <g id="text_111">
+     <g id="line2d_228"/>
+     <g id="text_114">
       <!-- A010  石垣島に軍事基地をつくらせない市民連絡会 -->
-      <g transform="translate(89.382125 2023.749625) scale(0.076 -0.076)">
+      <g transform="translate(89.382125 2008.168755) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-31" x="129.003906"/>
@@ -17146,16 +17797,16 @@ L 1384.81775 2020.712
       </g>
      </g>
     </g>
-    <g id="ytick_92">
-     <g id="line2d_223">
-      <path d="M 268.09775 2041.792
-L 1384.81775 2041.792
+    <g id="ytick_95">
+     <g id="line2d_229">
+      <path d="M 268.09775 2025.377929
+L 1384.81775 2025.377929
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_224"/>
-     <g id="text_112">
+     <g id="line2d_230"/>
+     <g id="text_115">
       <!-- A011  石垣市住民投票を求める会 -->
-      <g transform="translate(150.182125 2044.829625) scale(0.076 -0.076)">
+      <g transform="translate(150.182125 2028.415554) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-41"/>
        <use xlink:href="#MicrosoftYaHei-30" x="70.361328"/>
        <use xlink:href="#MicrosoftYaHei-31" x="129.003906"/>
@@ -17177,16 +17828,16 @@ L 1384.81775 2041.792
       </g>
      </g>
     </g>
-    <g id="ytick_93">
-     <g id="line2d_225">
-      <path d="M 268.09775 2062.872
-L 1384.81775 2062.872
+    <g id="ytick_96">
+     <g id="line2d_231">
+      <path d="M 268.09775 2045.624727
+L 1384.81775 2045.624727
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_226"/>
-     <g id="text_113">
+     <g id="line2d_232"/>
+     <g id="text_116">
       <!-- A012  宮古島いのちの水を守ろう！ -->
-      <g transform="translate(142.582125 2065.909625) scale(0.076 -0.076)">
+      <g transform="translate(142.582125 2048.662352) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-5bae" d="M 813 1303
 L 2419 1303
@@ -17235,34 +17886,6 @@ L 1625 3166
 L 1625 2397
 L 4769 2397
 L 4769 3166
-z
-" transform="scale(0.015625)"/>
-        <path id="MicrosoftYaHei-6c34" d="M 2925 5297
-L 3431 5297
-L 3431 4294
-Q 3700 3563 4047 2934
-Q 4738 3509 5425 4309
-L 5844 3934
-Q 5113 3169 4300 2506
-Q 5125 1200 6319 384
-Q 6056 122 5894 -84
-Q 4250 1209 3431 3119
-L 3431 197
-Q 3431 -734 2538 -734
-Q 2263 -734 1725 -728
-Q 1694 -497 1625 -166
-Q 2125 -216 2438 -216
-Q 2925 -216 2925 253
-L 2925 5297
-z
-M 256 3297
-L 256 3772
-L 2413 3772
-L 2413 3316
-Q 1881 1266 475 -197
-Q 263 47 94 184
-Q 1506 1672 1913 3297
-L 256 3297
 z
 " transform="scale(0.015625)"/>
         <path id="MicrosoftYaHei-308d" d="M 2713 2544
@@ -17329,16 +17952,16 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_94">
-     <g id="line2d_227">
-      <path d="M 268.09775 2083.952
-L 1384.81775 2083.952
+    <g id="ytick_97">
+     <g id="line2d_233">
+      <path d="M 268.09775 2065.871526
+L 1384.81775 2065.871526
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_228"/>
-     <g id="text_114">
+     <g id="line2d_234"/>
+     <g id="text_117">
       <!-- A013  ミサイル基地いらない宮古島住民連絡会 -->
-      <g transform="translate(104.582125 2086.989625) scale(0.076 -0.076)">
+      <g transform="translate(104.582125 2068.909151) scale(0.076 -0.076)">
        <defs>
         <path id="MicrosoftYaHei-30df" d="M 4744 4050
 L 4594 3531
@@ -17387,16 +18010,166 @@ z
       </g>
      </g>
     </g>
-    <g id="ytick_95">
-     <g id="line2d_229">
-      <path d="M 268.09775 2105.032
-L 1384.81775 2105.032
+    <g id="ytick_98">
+     <g id="line2d_235">
+      <path d="M 268.09775 2086.118324
+L 1384.81775 2086.118324
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_230"/>
-     <g id="text_115">
+     <g id="line2d_236"/>
+     <g id="text_118">
+      <!-- A112  宮古島地下水研究会 -->
+      <g transform="translate(172.982125 2089.155949) scale(0.076 -0.076)">
+       <defs>
+        <path id="MicrosoftYaHei-4e0b" d="M 163 4803
+L 6238 4803
+L 6238 4291
+L 3200 4291
+L 3200 2928
+L 3488 3328
+Q 4919 2484 5888 1809
+L 5519 1303
+Q 4550 2047 3200 2872
+L 3200 -797
+L 2631 -797
+L 2631 4291
+L 163 4291
+L 163 4803
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-7814" d="M 2506 2616
+L 3259 2616
+Q 3263 2763 3263 4478
+L 2756 4478
+L 2756 4941
+L 6063 4941
+L 6063 4478
+L 5431 4478
+L 5431 2616
+L 6288 2616
+L 6288 2153
+L 5431 2153
+L 5431 -803
+L 4950 -803
+L 4950 2153
+L 3728 2153
+Q 3713 303 2525 -853
+Q 2331 -659 2113 -491
+Q 3225 553 3241 2153
+L 2506 2153
+L 2506 2616
+z
+M 238 4916
+L 2519 4916
+L 2519 4478
+L 1613 4478
+Q 1459 3725 1209 3059
+L 2263 3059
+L 2263 128
+L 1088 128
+L 1088 -391
+L 650 -391
+L 650 1875
+Q 522 1656 381 1453
+Q 238 1678 81 1841
+Q 872 3022 1147 4478
+L 238 4478
+L 238 4916
+z
+M 3741 2616
+L 4950 2616
+L 4950 4478
+L 3744 4478
+Q 3744 2859 3741 2616
+z
+M 1825 559
+L 1825 2628
+L 1088 2628
+L 1088 559
+L 1825 559
+z
+" transform="scale(0.015625)"/>
+        <path id="MicrosoftYaHei-7a76" d="M 4613 2053
+L 4613 266
+Q 4613 -147 4944 -147
+L 5394 -147
+Q 5694 -147 5731 159
+Q 5775 466 5806 997
+Q 6019 897 6294 809
+Q 6269 478 6200 9
+Q 6125 -616 5525 -616
+L 4806 -616
+Q 4106 -616 4106 222
+L 4106 1603
+L 2700 1603
+Q 2466 -219 456 -834
+Q 269 -528 156 -391
+Q 2000 156 2200 1603
+L 606 1603
+L 606 2053
+L 2250 2053
+Q 2281 2409 2306 2934
+L 2800 2934
+Q 2778 2431 2747 2053
+L 4613 2053
+z
+M 388 4528
+L 3028 4528
+Q 2841 4884 2688 5128
+L 3131 5359
+Q 3338 5047 3563 4659
+L 3288 4528
+L 6031 4528
+L 6031 3291
+L 5531 3291
+L 5531 4066
+L 888 4066
+L 888 3291
+L 388 3291
+L 388 4528
+z
+M 3938 3834
+Q 4950 3241 5988 2559
+L 5663 2134
+Q 4656 2866 3638 3484
+L 3938 3834
+z
+M 2244 3847
+L 2588 3509
+Q 1600 2734 588 2172
+Q 406 2428 281 2572
+Q 1400 3128 2244 3847
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#MicrosoftYaHei-41"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="70.361328"/>
+       <use xlink:href="#MicrosoftYaHei-31" x="129.003906"/>
+       <use xlink:href="#MicrosoftYaHei-32" x="187.646484"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="246.289062"/>
+       <use xlink:href="#MicrosoftYaHei-20" x="275.878906"/>
+       <use xlink:href="#MicrosoftYaHei-5bae" x="305.46875"/>
+       <use xlink:href="#MicrosoftYaHei-53e4" x="405.46875"/>
+       <use xlink:href="#MicrosoftYaHei-5cf6" x="505.46875"/>
+       <use xlink:href="#MicrosoftYaHei-5730" x="605.46875"/>
+       <use xlink:href="#MicrosoftYaHei-4e0b" x="705.46875"/>
+       <use xlink:href="#MicrosoftYaHei-6c34" x="805.46875"/>
+       <use xlink:href="#MicrosoftYaHei-7814" x="905.46875"/>
+       <use xlink:href="#MicrosoftYaHei-7a76" x="1005.46875"/>
+       <use xlink:href="#MicrosoftYaHei-4f1a" x="1105.46875"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_99">
+     <g id="line2d_237">
+      <path d="M 268.09775 2106.365123
+L 1384.81775 2106.365123
+" clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_238"/>
+     <g id="text_119">
       <!-- X011  JICA沖縄 -->
-      <g transform="translate(210.953625 2108.069625) scale(0.076 -0.076)">
+      <g transform="translate(210.953625 2109.402748) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-31" x="123.144531"/>
@@ -17412,16 +18185,16 @@ L 1384.81775 2105.032
       </g>
      </g>
     </g>
-    <g id="ytick_96">
-     <g id="line2d_231">
-      <path d="M 268.09775 2126.112
-L 1384.81775 2126.112
+    <g id="ytick_100">
+     <g id="line2d_239">
+      <path d="M 268.09775 2126.611921
+L 1384.81775 2126.611921
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #e4e3de; stroke-width: 0.34; stroke-linecap: square"/>
      </g>
-     <g id="line2d_232"/>
-     <g id="text_116">
+     <g id="line2d_240"/>
+     <g id="text_120">
       <!-- X013  U.S. Consulate General Naha Ok… -->
-      <g transform="translate(118.817875 2129.149625) scale(0.076 -0.076)">
+      <g transform="translate(118.817875 2129.649546) scale(0.076 -0.076)">
        <use xlink:href="#MicrosoftYaHei-58"/>
        <use xlink:href="#MicrosoftYaHei-30" x="64.501953"/>
        <use xlink:href="#MicrosoftYaHei-31" x="123.144531"/>
@@ -17478,12 +18251,12 @@ z
 " style="stroke: #a4484d; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1029.952" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1033.284806" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_2">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1029.952" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1033.284806" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_3">
@@ -17501,7 +18274,7 @@ z
 " style="stroke: #8a9197; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="123.512" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="122.178877" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_4">
@@ -17519,22 +18292,22 @@ z
 " style="stroke: #a4484d; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="468.887307" y="123.512" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="468.887307" y="122.178877" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_5">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1072.112" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1073.778403" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_6">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1072.112" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1073.778403" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_7">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1093.192" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1094.025202" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_8">
@@ -17544,17 +18317,17 @@ z
    </g>
    <g id="PathCollection_9">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1135.352" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1134.518798" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_10">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1156.432" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1154.765597" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_11">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1156.432" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1154.765597" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_12">
@@ -17572,7 +18345,7 @@ z
 " style="stroke: #2c7a6b; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="1184.028193" y="2020.712" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="1184.028193" y="2005.13113" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_13">
@@ -17590,7 +18363,7 @@ z
 " style="stroke: #d47a35; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m1b540d3b3f" x="1184.028193" y="2041.792" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
+     <use xlink:href="#m1b540d3b3f" x="1184.028193" y="2025.377929" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_14">
@@ -17608,12 +18381,12 @@ z
 " style="stroke: #2c7a6b; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="1239.039031" y="2062.872" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="1239.039031" y="2045.624727" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_15">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="1239.039031" y="2083.952" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="1239.039031" y="2065.871526" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_16">
@@ -17631,7 +18404,7 @@ z
 " style="stroke: #d47a35; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mbb0d7a2939" x="1129.017356" y="1936.392" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
+     <use xlink:href="#mbb0d7a2939" x="1129.017356" y="1924.143937" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_17">
@@ -17649,67 +18422,67 @@ z
 " style="stroke: #a4484d; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m8fac33e5c5" x="1129.017356" y="1957.472" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m8fac33e5c5" x="1129.017356" y="1944.390735" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_18">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="303.854794" y="165.672" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="303.854794" y="162.672474" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_19">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="1129.017356" y="165.672" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="1129.017356" y="162.672474" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_20">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="303.854794" y="186.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="303.854794" y="182.919273" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_21">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="1129.017356" y="186.752" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="1129.017356" y="182.919273" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_22">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1198.592" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1195.259194" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_23">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1198.592" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="523.898144" y="1195.259194" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_24">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="578.908982" y="1767.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="578.908982" y="1741.922751" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_25">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="908.974006" y="1767.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="908.974006" y="1741.922751" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_26">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="963.984844" y="1767.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="963.984844" y="1741.922751" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_27">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="1018.995681" y="1767.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="1018.995681" y="1741.922751" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_28">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="1074.006518" y="1767.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="1074.006518" y="1741.922751" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_29">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="798.952331" y="1767.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="798.952331" y="1741.922751" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_30">
@@ -17727,22 +18500,22 @@ z
 " style="stroke: #8a9197; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m0794e375a6" x="303.854794" y="798.072" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m0794e375a6" x="303.854794" y="790.323225" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_31">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="819.152" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="810.570024" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_32">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="963.984844" y="1894.232" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="963.984844" y="1883.65034" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_33">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="963.984844" y="1915.312" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="963.984844" y="1903.897138" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_34">
@@ -17760,17 +18533,17 @@ z
 " style="stroke: #725a9a; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mbbe97d38cb" x="1294.049868" y="903.472" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
+     <use xlink:href="#mbbe97d38cb" x="1294.049868" y="891.557217" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_35">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="303.854794" y="903.472" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="303.854794" y="891.557217" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_36">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mbbe97d38cb" x="1294.049868" y="2105.032" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
+     <use xlink:href="#mbbe97d38cb" x="1294.049868" y="2106.365123" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_37">
@@ -17788,7 +18561,7 @@ z
 " style="stroke: #8a9197; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mc1e0f2f731" x="303.854794" y="924.552" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#mc1e0f2f731" x="303.854794" y="911.804016" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_38">
@@ -17806,152 +18579,152 @@ z
 " style="stroke: #725a9a; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m6ee832699f" x="1349.060706" y="2126.112" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
+     <use xlink:href="#m6ee832699f" x="1349.060706" y="2126.611921" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_39">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mc1e0f2f731" x="303.854794" y="945.632" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#mc1e0f2f731" x="303.854794" y="932.050814" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_40">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mc1e0f2f731" x="303.854794" y="966.712" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#mc1e0f2f731" x="303.854794" y="952.297613" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_41">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1219.672" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1215.505992" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_42">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1240.752" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1235.752791" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_43">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m0794e375a6" x="303.854794" y="207.832" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m0794e375a6" x="303.854794" y="203.166071" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_44">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="207.832" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="203.166071" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_45">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1261.832" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1255.999589" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_46">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1282.912" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1276.246387" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_47">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="228.912" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="223.41287" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_48">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1303.992" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1296.493186" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_49">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="303.854794" y="249.992" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="303.854794" y="243.659668" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_50">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="249.992" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="243.659668" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_51">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m0794e375a6" x="303.854794" y="271.072" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m0794e375a6" x="303.854794" y="263.906466" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_52">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="271.072" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="263.906466" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_53">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1325.072" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1316.739984" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_54">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1346.152" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1336.986783" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_55">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1367.232" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1357.233581" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_56">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1388.312" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1377.480379" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_57">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1409.392" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1397.727178" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_58">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1430.472" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1417.973976" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_59">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1451.552" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1438.220775" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_60">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1472.632" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1458.467573" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_61">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1493.712" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1478.714372" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_62">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1514.792" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1498.96117" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_63">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1556.952" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1539.454767" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_64">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1578.032" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1559.701565" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_65">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1599.112" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1579.948364" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_66">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1620.192" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1600.195162" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_67">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1641.272" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1620.44196" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_68">
@@ -17969,82 +18742,82 @@ z
 " style="stroke: #355c7d; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m565fefc599" x="303.854794" y="292.152" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
+     <use xlink:href="#m565fefc599" x="303.854794" y="284.153265" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_69">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="468.887307" y="292.152" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="468.887307" y="284.153265" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_70">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="303.854794" y="313.232" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="303.854794" y="304.400063" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_71">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m565fefc599" x="303.854794" y="334.312" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
+     <use xlink:href="#m565fefc599" x="303.854794" y="324.646862" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_72">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mbbe97d38cb" x="303.854794" y="355.392" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
+     <use xlink:href="#mbbe97d38cb" x="303.854794" y="344.89366" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_73">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m565fefc599" x="358.865632" y="355.392" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
+     <use xlink:href="#m565fefc599" x="358.865632" y="344.89366" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_74">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m1b540d3b3f" x="303.854794" y="376.472" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
+     <use xlink:href="#m1b540d3b3f" x="303.854794" y="365.140458" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_75">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="376.472" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="365.140458" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_76">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="908.974006" y="1830.992" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="908.974006" y="1822.909945" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_77">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="853.963169" y="1830.992" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="853.963169" y="1822.909945" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_78">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="743.941494" y="1809.912" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="743.941494" y="1782.416348" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_79">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="853.963169" y="1809.912" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="853.963169" y="1782.416348" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_80">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="397.552" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="385.387257" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_81">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="688.930656" y="418.632" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="688.930656" y="405.634055" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_82">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="418.632" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="405.634055" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_83">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="439.712" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="425.880854" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_84">
@@ -18062,150 +18835,180 @@ z
 " style="stroke: #d47a35; stroke-width: 1.5"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mb5cef367c0" x="303.854794" y="460.792" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
+     <use xlink:href="#mb5cef367c0" x="303.854794" y="446.127652" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_85">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="481.872" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="466.374451" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_86">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="303.854794" y="502.952" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="303.854794" y="486.621249" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_87">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="468.887307" y="502.952" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="468.887307" y="486.621249" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_88">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="633.919819" y="524.032" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="633.919819" y="506.868047" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_89">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="303.854794" y="524.032" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="303.854794" y="506.868047" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_90">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="303.854794" y="545.112" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="303.854794" y="527.114846" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_91">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="545.112" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="527.114846" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_92">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1683.432" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="468.887307" y="1660.935557" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_93">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="303.854794" y="566.192" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="303.854794" y="547.361644" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_94">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="587.272" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="567.608443" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_95">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="1184.028193" y="1999.632" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="1184.028193" y="1984.884332" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_96">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="1239.039031" y="1999.632" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="1239.039031" y="1984.884332" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_97">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="1129.017356" y="1999.632" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="1129.017356" y="1984.884332" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_98">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mf2cc6ce0fe" x="303.854794" y="608.352" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#mf2cc6ce0fe" x="303.854794" y="587.855241" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_99">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="358.865632" y="608.352" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="358.865632" y="587.855241" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_100">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="468.887307" y="1704.512" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="468.887307" y="1681.182356" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_101">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mb5cef367c0" x="413.876469" y="1008.872" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
+     <use xlink:href="#mb5cef367c0" x="413.876469" y="1013.038008" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_102">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m840d8fa1b8" x="468.887307" y="1008.872" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+     <use xlink:href="#m840d8fa1b8" x="468.887307" y="1013.038008" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_103">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="468.887307" y="1725.592" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="468.887307" y="1701.429154" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_104">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="523.898144" y="1725.592" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="523.898144" y="1701.429154" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_105">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="303.854794" y="629.432" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="303.854794" y="608.10204" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_106">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="303.854794" y="650.512" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="303.854794" y="628.348838" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_107">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m2a4715a239" x="303.854794" y="671.592" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#m2a4715a239" x="303.854794" y="648.595636" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_108">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mbbe97d38cb" x="303.854794" y="692.672" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
+     <use xlink:href="#mbbe97d38cb" x="303.854794" y="668.842435" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_109">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m565fefc599" x="358.865632" y="692.672" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
+     <use xlink:href="#m565fefc599" x="358.865632" y="668.842435" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_110">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mbbe97d38cb" x="303.854794" y="713.752" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
+     <use xlink:href="#mbbe97d38cb" x="303.854794" y="689.089233" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_111">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#ma0e290e770" x="468.887307" y="713.752" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+     <use xlink:href="#ma0e290e770" x="468.887307" y="689.089233" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_112">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m85d21ca0f5" x="303.854794" y="987.792" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
+     <use xlink:href="#m85d21ca0f5" x="303.854794" y="972.544411" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.5"/>
     </g>
    </g>
    <g id="PathCollection_113">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#ma0e290e770" x="1239.039031" y="2086.118324" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="PathCollection_114">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#ma0e290e770" x="853.963169" y="1802.663146" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="PathCollection_115">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#mf2cc6ce0fe" x="743.941494" y="1802.663146" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="PathCollection_116">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#m565fefc599" x="358.865632" y="992.791209" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="PathCollection_117">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#m1b540d3b3f" x="1184.028193" y="992.791209" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="PathCollection_118">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#ma0e290e770" x="303.854794" y="770.076427" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.5"/>
+    </g>
+   </g>
+   <g id="PathCollection_119">
     <defs>
      <path id="m4d34579775" d="M 0 4.527693
 C 1.200758 4.527693 2.352498 4.050626 3.201562 3.201562
@@ -18220,15 +19023,15 @@ z
 " style="stroke: #1f2d29; stroke-width: 0.8"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m4d34579775" x="468.887307" y="1051.032" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#m4d34579775" x="468.887307" y="1053.531605" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
-   <g id="PathCollection_114">
+   <g id="PathCollection_120">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m4d34579775" x="523.898144" y="1051.032" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#m4d34579775" x="523.898144" y="1053.531605" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
-   <g id="PathCollection_115">
+   <g id="PathCollection_121">
     <defs>
      <path id="m0e9cc1b106" d="M 0 3.937004
 C 1.044106 3.937004 2.045588 3.522176 2.783882 2.783882
@@ -18243,10 +19046,10 @@ z
 " style="stroke: #1f2d29; stroke-width: 0.8"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m0e9cc1b106" x="303.854794" y="144.592" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#m0e9cc1b106" x="303.854794" y="142.425676" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
-   <g id="PathCollection_116">
+   <g id="PathCollection_122">
     <defs>
      <path id="m5825423f70" d="M 0 3.937004
 C 1.044106 3.937004 2.045588 3.522176 2.783882 2.783882
@@ -18261,10 +19064,10 @@ z
 " style="stroke: #1f2d29; stroke-width: 0.8"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m5825423f70" x="1129.017356" y="1978.552" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#m5825423f70" x="1129.017356" y="1964.637534" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
-   <g id="PathCollection_117">
+   <g id="PathCollection_123">
     <defs>
      <path id="mebf8e2bc24" d="M 0 4.527693
 C 1.200758 4.527693 2.352498 4.050626 3.201562 3.201562
@@ -18279,75 +19082,75 @@ z
 " style="stroke: #1f2d29; stroke-width: 0.8"/>
     </defs>
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mebf8e2bc24" x="468.887307" y="1177.512" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
-    </g>
-   </g>
-   <g id="PathCollection_118">
-    <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mebf8e2bc24" x="303.854794" y="840.232" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
-    </g>
-   </g>
-   <g id="PathCollection_119">
-    <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mebf8e2bc24" x="303.854794" y="861.312" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
-    </g>
-   </g>
-   <g id="PathCollection_120">
-    <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mebf8e2bc24" x="908.974006" y="1873.152" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
-    </g>
-   </g>
-   <g id="PathCollection_121">
-    <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mebf8e2bc24" x="303.854794" y="882.392" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
-    </g>
-   </g>
-   <g id="PathCollection_122">
-    <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m4d34579775" x="468.887307" y="1535.872" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
-    </g>
-   </g>
-   <g id="PathCollection_123">
-    <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m4d34579775" x="468.887307" y="1662.352" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#mebf8e2bc24" x="468.887307" y="1175.012395" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="PathCollection_124">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mebf8e2bc24" x="303.854794" y="776.992" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#mebf8e2bc24" x="303.854794" y="830.816822" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="PathCollection_125">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m5825423f70" x="303.854794" y="734.832" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#mebf8e2bc24" x="303.854794" y="851.063621" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="PathCollection_126">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#mebf8e2bc24" x="303.854794" y="755.912" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#mebf8e2bc24" x="908.974006" y="1863.403542" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="PathCollection_127">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m4d34579775" x="908.974006" y="1852.072" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#mebf8e2bc24" x="303.854794" y="871.310419" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="PathCollection_128">
     <g clip-path="url(#p646cb0e021)">
-     <use xlink:href="#m0e9cc1b106" x="468.887307" y="1746.672" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+     <use xlink:href="#m4d34579775" x="468.887307" y="1519.207968" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
     </g>
    </g>
    <g id="PathCollection_129">
-    <path d="M 578.908982 1796.542383
-L 586.619364 1788.832
-L 578.908982 1781.121617
-L 571.198599 1788.832
-L 578.908982 1796.542383
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#m4d34579775" x="468.887307" y="1640.688759" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="PathCollection_130">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#mebf8e2bc24" x="303.854794" y="749.829628" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="PathCollection_131">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#m5825423f70" x="303.854794" y="709.336032" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="PathCollection_132">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#mebf8e2bc24" x="303.854794" y="729.58283" style="fill: #2c7a6b; stroke: #1f2d29; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="PathCollection_133">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#m4d34579775" x="908.974006" y="1843.156743" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="PathCollection_134">
+    <g clip-path="url(#p646cb0e021)">
+     <use xlink:href="#m0e9cc1b106" x="468.887307" y="1721.675953" style="fill: #a4484d; stroke: #1f2d29; stroke-width: 0.8"/>
+    </g>
+   </g>
+   <g id="PathCollection_135">
+    <path d="M 578.908982 1769.879932
+L 586.619364 1762.169549
+L 578.908982 1754.459167
+L 571.198599 1762.169549
+L 578.908982 1769.879932
 z
 " clip-path="url(#p646cb0e021)" style="fill: none; stroke: #c62027; stroke-width: 2.1"/>
    </g>
    <g id="legend_1">
-    <g id="line2d_233">
+    <g id="line2d_241">
      <path d="M 275.74775 74.617
 L 284.24775 74.617
 L 292.74775 74.617
@@ -18369,7 +19172,7 @@ z
       <use xlink:href="#md02dd4bea9" x="284.24775" y="74.617" style="fill: #ffffff; stroke: #a4484d; stroke-width: 1.8"/>
      </g>
     </g>
-    <g id="text_117">
+    <g id="text_121">
      <!-- 倡议／争议对象 -->
      <g transform="translate(299.54775 77.592) scale(0.085 -0.085)">
       <defs>
@@ -18647,7 +19450,7 @@ z
       <use xlink:href="#MicrosoftYaHei-8c61" x="600"/>
      </g>
     </g>
-    <g id="line2d_234">
+    <g id="line2d_242">
      <path d="M 275.74775 87.774734
 L 284.24775 87.774734
 L 292.74775 87.774734
@@ -18669,7 +19472,7 @@ z
       <use xlink:href="#mc1160716c3" x="284.24775" y="87.774734" style="fill: #ffffff; stroke: #2c7a6b; stroke-width: 1.8"/>
      </g>
     </g>
-    <g id="text_118">
+    <g id="text_122">
      <!-- 持续活动／服务在场 -->
      <g transform="translate(299.54775 90.749734) scale(0.085 -0.085)">
       <defs>
@@ -19109,7 +19912,7 @@ z
       <use xlink:href="#MicrosoftYaHei-573a" x="800"/>
      </g>
     </g>
-    <g id="line2d_235">
+    <g id="line2d_243">
      <path d="M 393.04775 74.617
 L 401.54775 74.617
 L 410.04775 74.617
@@ -19131,7 +19934,7 @@ z
       <use xlink:href="#m67928b6f15" x="401.54775" y="74.617" style="fill: #ffffff; stroke: #d47a35; stroke-width: 1.8"/>
      </g>
     </g>
-    <g id="text_119">
+    <g id="text_123">
      <!-- 事件／程序场域 -->
      <g transform="translate(416.84775 77.592) scale(0.085 -0.085)">
       <defs>
@@ -19367,7 +20170,7 @@ z
       <use xlink:href="#MicrosoftYaHei-57df" x="600"/>
      </g>
     </g>
-    <g id="line2d_236">
+    <g id="line2d_244">
      <path d="M 393.04775 87.774734
 L 401.54775 87.774734
 L 410.04775 87.774734
@@ -19389,71 +20192,10 @@ z
       <use xlink:href="#mf6fe5de267" x="401.54775" y="87.774734" style="fill: #ffffff; stroke: #355c7d; stroke-width: 1.8"/>
      </g>
     </g>
-    <g id="text_120">
+    <g id="text_124">
      <!-- 总部／办公室 -->
      <g transform="translate(416.84775 90.749734) scale(0.085 -0.085)">
       <defs>
-       <path id="MicrosoftYaHei-90e8" d="M 6288 1247
-Q 6288 172 5444 84
-Q 5125 47 4594 109
-Q 4563 334 4513 659
-Q 4969 584 5294 584
-Q 5844 584 5794 1341
-Q 5769 2009 4838 2709
-Q 5244 3516 5663 4503
-L 4388 4503
-L 4388 -828
-L 3913 -828
-L 3913 4966
-L 6163 4966
-L 6163 4453
-Q 5919 3822 5406 2816
-Q 6288 2128 6288 1247
-z
-M 575 1753
-L 3275 1753
-L 3275 -791
-L 2813 -791
-L 2813 -328
-L 1038 -328
-L 1038 -797
-L 575 -797
-L 575 1753
-z
-M 2813 1334
-L 1038 1334
-L 1038 103
-L 2813 103
-L 2813 1334
-z
-M 125 2822
-L 2125 2822
-Q 2497 3466 2731 3997
-L 3194 3759
-Q 2922 3284 2616 2822
-L 3706 2822
-L 3706 2403
-L 125 2403
-L 125 2822
-z
-M 263 4472
-L 1825 4472
-Q 1703 4753 1456 5159
-L 1888 5359
-Q 2169 4891 2288 4616
-L 1981 4472
-L 3594 4472
-L 3594 4053
-L 263 4053
-L 263 4472
-z
-M 681 3728
-L 1063 3959
-Q 1375 3516 1631 3072
-L 1206 2828
-Q 1013 3222 681 3728
-z
-" transform="scale(0.015625)"/>
        <path id="MicrosoftYaHei-529e" d="M 456 4166
 L 2291 4166
 Q 2313 4725 2319 5297
@@ -19498,7 +20240,7 @@ z
       <use xlink:href="#MicrosoftYaHei-5ba4" x="500"/>
      </g>
     </g>
-    <g id="line2d_237">
+    <g id="line2d_245">
      <path d="M 493.34775 74.617
 L 501.84775 74.617
 L 510.34775 74.617
@@ -19520,7 +20262,7 @@ z
       <use xlink:href="#m9bc7b35fba" x="501.84775" y="74.617" style="fill: #ffffff; stroke: #725a9a; stroke-width: 1.8"/>
      </g>
     </g>
-    <g id="text_121">
+    <g id="text_125">
      <!-- 制度／机构场域 -->
      <g transform="translate(517.14775 77.592) scale(0.085 -0.085)">
       <defs>
@@ -19754,7 +20496,7 @@ z
       <use xlink:href="#MicrosoftYaHei-57df" x="600"/>
      </g>
     </g>
-    <g id="line2d_238">
+    <g id="line2d_246">
      <path d="M 493.34775 87.774734
 L 501.84775 87.774734
 L 510.34775 87.774734
@@ -19776,7 +20518,7 @@ z
       <use xlink:href="#m4b9d28e470" x="501.84775" y="87.774734" style="fill: #ffffff; stroke: #8a9197; stroke-width: 1.8"/>
      </g>
     </g>
-    <g id="text_122">
+    <g id="text_126">
      <!-- 语义未明 -->
      <g transform="translate(517.14775 90.749734) scale(0.085 -0.085)">
       <defs>
@@ -19871,7 +20613,7 @@ z
     </g>
    </g>
    <g id="legend_2">
-    <g id="line2d_239">
+    <g id="line2d_247">
      <path d="M 1135.76775 74.617
 L 1144.26775 74.617
 L 1152.76775 74.617
@@ -19893,7 +20635,7 @@ z
       <use xlink:href="#mcd6c982ae4" x="1144.26775" y="74.617" style="fill: #456e68; stroke: #1f2d29"/>
      </g>
     </g>
-    <g id="text_123">
+    <g id="text_127">
      <!-- 底层边已人审 -->
      <g transform="translate(1159.56775 77.592) scale(0.085 -0.085)">
       <defs>
@@ -20086,7 +20828,7 @@ z
       <use xlink:href="#MicrosoftYaHei-5ba1" x="500"/>
      </g>
     </g>
-    <g id="line2d_240">
+    <g id="line2d_248">
      <path d="M 1227.56775 74.617
 L 1236.06775 74.617
 L 1244.56775 74.617
@@ -20108,7 +20850,7 @@ z
       <use xlink:href="#m5270f1563d" x="1236.06775" y="74.617" style="fill: #ffffff; stroke: #456e68; stroke-width: 1.7"/>
      </g>
     </g>
-    <g id="text_124">
+    <g id="text_128">
      <!-- 底层候选边 -->
      <g transform="translate(1251.36775 77.592) scale(0.085 -0.085)">
       <defs>
@@ -20238,7 +20980,7 @@ z
       <use xlink:href="#MicrosoftYaHei-8fb9" x="400"/>
      </g>
     </g>
-    <g id="line2d_241">
+    <g id="line2d_249">
      <path d="M 1310.86775 74.617
 L 1319.36775 74.617
 L 1327.86775 74.617
@@ -20255,7 +20997,7 @@ z
       <use xlink:href="#m0f5e003ebb" x="1319.36775" y="74.617" style="fill: #ffffff; stroke: #c62027; stroke-width: 1.8; stroke-linejoin: miter"/>
      </g>
     </g>
-    <g id="text_125">
+    <g id="text_129">
      <!-- 地点键冲突 -->
      <g transform="translate(1334.66775 77.592) scale(0.085 -0.085)">
       <defs>
@@ -20483,8 +21225,8 @@ z
     </g>
    </g>
   </g>
-  <g id="text_126">
-   <!-- R3 全量组织 × 地点空间关系（129 条候选／人审边） -->
+  <g id="text_130">
+   <!-- R3 全量组织 × 地点空间关系（135 条候选／人审边） -->
    <g transform="translate(14.65775 24.78625) scale(0.22 -0.22)">
     <defs>
      <path id="MicrosoftYaHei-Bold-52" d="M 4553 0
@@ -21042,54 +21784,24 @@ Q 1447 4472 2072 4947
 L 2716 4947
 z
 " transform="scale(0.015625)"/>
-     <path id="MicrosoftYaHei-Bold-32" d="M 1500 841
-L 3553 841
-L 3553 0
-L 334 0
-L 334 359
-Q 334 738 473 1050
-Q 613 1363 856 1633
-Q 1100 1903 1613 2266
-Q 2081 2616 2268 2886
-Q 2456 3156 2456 3459
-Q 2456 4113 1744 4113
-Q 1119 4113 550 3613
-L 550 4513
-Q 1184 4922 1975 4922
-Q 2700 4922 3122 4551
-Q 3544 4181 3544 3531
-Q 3544 3169 3422 2876
-Q 3300 2584 3069 2328
-Q 2838 2072 2328 1713
-Q 1838 1363 1669 1172
-Q 1500 981 1500 841
-z
-" transform="scale(0.015625)"/>
-     <path id="MicrosoftYaHei-Bold-39" d="M 544 941
-Q 931 691 1456 691
-Q 2628 691 2653 2216
-L 2634 2222
-Q 2316 1731 1650 1731
-Q 1047 1731 658 2154
-Q 269 2578 269 3222
-Q 269 3978 737 4450
-Q 1206 4922 1959 4922
-Q 2744 4922 3191 4325
-Q 3638 3728 3638 2659
-Q 3638 1391 3098 653
-Q 2559 -84 1547 -84
-Q 975 -84 544 100
-L 544 941
-z
-M 1259 3313
-Q 1259 2928 1445 2709
-Q 1631 2491 1953 2491
-Q 2241 2491 2427 2700
-Q 2613 2909 2613 3219
-Q 2613 3591 2427 3869
-Q 2241 4147 1928 4147
-Q 1625 4147 1442 3906
-Q 1259 3666 1259 3313
+     <path id="MicrosoftYaHei-Bold-35" d="M 541 125
+L 541 997
+Q 1044 691 1613 691
+Q 2041 691 2283 902
+Q 2525 1113 2525 1472
+Q 2525 2225 1494 2225
+Q 1113 2225 616 2169
+L 797 4841
+L 3359 4841
+L 3359 4009
+L 1613 4009
+L 1544 2991
+Q 1803 3013 2022 3013
+Q 2731 3013 3142 2625
+Q 3553 2238 3553 1575
+Q 3553 844 3056 380
+Q 2559 -84 1706 -84
+Q 1016 -84 541 125
 z
 " transform="scale(0.015625)"/>
      <path id="MicrosoftYaHei-Bold-6761" d="M 5581 4797
@@ -21415,8 +22127,8 @@ z
     <use xlink:href="#MicrosoftYaHei-Bold-7cfb" x="1196.972656"/>
     <use xlink:href="#MicrosoftYaHei-Bold-ff08" x="1296.972656"/>
     <use xlink:href="#MicrosoftYaHei-Bold-31" x="1396.972656"/>
-    <use xlink:href="#MicrosoftYaHei-Bold-32" x="1458.642578"/>
-    <use xlink:href="#MicrosoftYaHei-Bold-39" x="1520.3125"/>
+    <use xlink:href="#MicrosoftYaHei-Bold-33" x="1458.642578"/>
+    <use xlink:href="#MicrosoftYaHei-Bold-35" x="1520.3125"/>
     <use xlink:href="#MicrosoftYaHei-Bold-20" x="1581.982422"/>
     <use xlink:href="#MicrosoftYaHei-Bold-6761" x="1611.767578"/>
     <use xlink:href="#MicrosoftYaHei-Bold-5019" x="1711.767578"/>
@@ -21428,7 +22140,7 @@ z
     <use xlink:href="#MicrosoftYaHei-Bold-ff09" x="2311.767578"/>
    </g>
   </g>
-  <g id="text_127">
+  <g id="text_131">
    <!-- 每个点对应中央 actor–place 表的一条边；实心＝底层边已人审，空心＝候选边；颜色＝空间语义候选，大小＝E2/E3/E4。语义候选本身尚未人审。 -->
    <g style="fill: #4d5955" transform="translate(14.65775 45.080297) scale(0.105 -0.105)">
     <defs>
@@ -22212,7 +22924,7 @@ z
     <use xlink:href="#MicrosoftYaHei-3002" x="6435.697266"/>
    </g>
   </g>
-  <g id="text_128">
+  <g id="text_132">
    <!-- 绿色底纹：先岛三地 -->
    <g style="fill: #2c6a60" transform="translate(1060.09775 44.609437) scale(0.105 -0.105)">
     <defs>

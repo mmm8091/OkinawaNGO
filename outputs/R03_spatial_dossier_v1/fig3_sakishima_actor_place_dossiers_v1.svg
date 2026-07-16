@@ -10301,9 +10301,32 @@ z
     </g>
    </g>
    <g id="text_27">
-    <!-- 3 条空间边 · 0 条底层边人审 · 1 条显式补证缺口 -->
+    <!-- 4 条空间边 · 0 条底层边人审 · 1 条显式补证缺口 -->
     <g style="fill: #52605a" transform="translate(470.738111 188.409462) scale(0.095 -0.095)">
-     <use xlink:href="#MicrosoftYaHei-33"/>
+     <defs>
+      <path id="MicrosoftYaHei-34" d="M 2906 4841
+L 2906 1644
+L 3631 1644
+L 3631 1138
+L 2906 1138
+L 2906 0
+L 2313 0
+L 2313 1138
+L 53 1138
+L 53 1616
+Q 656 2294 1265 3178
+Q 1875 4063 2272 4841
+L 2906 4841
+z
+M 741 1644
+L 2313 1644
+L 2313 3950
+Q 1988 3366 1616 2817
+Q 1244 2269 741 1644
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#MicrosoftYaHei-34"/>
      <use xlink:href="#MicrosoftYaHei-20" x="58.642578"/>
      <use xlink:href="#MicrosoftYaHei-6761" x="88.232422"/>
      <use xlink:href="#MicrosoftYaHei-7a7a" x="188.232422"/>
@@ -10444,29 +10467,6 @@ z
    <g id="text_30">
     <!-- 事件／程序场域 · E4 · ai_seeded -->
     <g style="fill: #59645f" transform="translate(489.787622 239.877757) scale(0.081 -0.081)">
-     <defs>
-      <path id="MicrosoftYaHei-34" d="M 2906 4841
-L 2906 1644
-L 3631 1644
-L 3631 1138
-L 2906 1138
-L 2906 0
-L 2313 0
-L 2313 1138
-L 53 1138
-L 53 1616
-Q 656 2294 1265 3178
-Q 1875 4063 2272 4841
-L 2906 4841
-z
-M 741 1644
-L 2313 1644
-L 2313 3950
-Q 1988 3366 1616 2817
-Q 1244 2269 741 1644
-z
-" transform="scale(0.015625)"/>
-     </defs>
      <use xlink:href="#MicrosoftYaHei-4e8b"/>
      <use xlink:href="#MicrosoftYaHei-4ef6" x="100"/>
      <use xlink:href="#MicrosoftYaHei-ff0f" x="200"/>
@@ -10495,13 +10495,569 @@ z
    </g>
    <g id="text_31">
     <!-- ○ -->
-    <g style="fill: #2c7a6b" transform="translate(472.854723 275.859589) scale(0.14 -0.14)">
+    <g style="fill: #d47a35" transform="translate(472.854723 275.859589) scale(0.14 -0.14)">
      <use xlink:href="#MicrosoftYaHei-Bold-25cb"/>
     </g>
    </g>
    <g id="text_32">
-    <!-- A010  石垣島に軍事基地をつくらせない市民連絡会 -->
+    <!-- A114  全日本港湾労働組合沖縄地方本部 -->
     <g transform="translate(489.787622 269.691211) scale(0.095 -0.095)">
+     <defs>
+      <path id="MicrosoftYaHei-Bold-65e5" d="M 750 -778
+L 750 4972
+L 5688 4972
+L 5688 -778
+L 4725 -778
+L 4725 -341
+L 1713 -341
+L 1713 -778
+L 750 -778
+z
+M 4725 4084
+L 1713 4084
+L 1713 2772
+L 4725 2772
+L 4725 4084
+z
+M 1713 547
+L 4725 547
+L 4725 1909
+L 1713 1909
+L 1713 547
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-6e2f" d="M 4294 5297
+L 5094 5297
+L 5094 4709
+L 5850 4709
+L 5850 4047
+L 5094 4047
+L 5094 3491
+L 6163 3491
+L 6163 2828
+L 5163 2828
+Q 5603 2341 6319 1966
+Q 6100 1622 5881 1172
+Q 5450 1447 5100 1803
+L 5100 572
+L 2925 572
+L 2925 303
+Q 2925 3 3213 3
+L 4894 3
+Q 5131 3 5212 161
+Q 5294 319 5306 1041
+Q 5756 816 6125 703
+Q 6041 -194 5787 -473
+Q 5534 -753 4963 -753
+L 2963 -753
+Q 2138 -753 2138 72
+L 2138 1275
+Q 2016 1172 1888 1072
+Q 1619 1516 1375 1834
+Q 2072 2272 2525 2828
+L 1613 2828
+L 1613 3491
+L 2550 3491
+L 2550 4047
+L 1850 4047
+L 1850 4709
+L 2550 4709
+L 2550 5297
+L 3350 5297
+L 3350 4709
+L 4294 4709
+L 4294 5297
+z
+M 3350 3491
+L 4294 3491
+L 4294 4047
+L 3350 4047
+L 3350 3491
+z
+M 3122 2347
+L 4644 2347
+Q 4478 2575 4341 2828
+L 3413 2828
+Q 3284 2578 3122 2347
+z
+M 4325 1209
+L 4325 1709
+L 2925 1709
+L 2925 1209
+L 4325 1209
+z
+M 781 5278
+Q 1306 4897 1738 4534
+L 1138 3916
+Q 725 4334 244 4747
+L 781 5278
+z
+M 606 3647
+Q 1081 3303 1594 2859
+L 1019 2209
+Q 825 2403 81 3078
+L 606 3647
+z
+M 781 1766
+Q 1188 1591 1588 1472
+Q 1350 547 1050 -822
+Q 644 -678 225 -566
+Q 444 116 781 1766
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-52b4" d="M 2300 3041
+L 3200 3041
+Q 3181 2628 3150 2303
+L 5669 2303
+Q 5613 1147 5550 428
+Q 5475 -666 4550 -722
+Q 3950 -766 3163 -741
+Q 3063 -172 2963 178
+Q 3619 116 4113 122
+Q 4656 109 4681 603
+Q 4725 1128 4738 1528
+L 3056 1528
+Q 2713 -266 681 -872
+Q 431 -497 75 -66
+Q 1813 397 2131 1528
+L 625 1528
+L 625 2303
+L 2250 2303
+Q 2281 2622 2300 3041
+z
+M 1419 5297
+Q 1794 4872 2181 4347
+L 1713 4034
+L 3038 4034
+Q 2725 4634 2475 5034
+L 3238 5372
+Q 3488 4991 3825 4384
+L 3069 4034
+L 3963 4034
+Q 4513 4809 4863 5353
+L 5706 4891
+Q 5363 4478 4988 4034
+L 6113 4034
+L 6113 2497
+L 5238 2497
+L 5238 3272
+L 1156 3272
+L 1156 2497
+L 281 2497
+L 281 4034
+L 1388 4034
+Q 1063 4484 763 4853
+L 1419 5297
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-50cd" d="M 5219 5316
+Q 5213 4709 5206 4178
+L 6113 4178
+Q 6088 2316 6063 397
+Q 6063 -747 5388 -753
+Q 5138 -766 4869 -766
+Q 4800 -366 4700 66
+Q 4988 34 5106 34
+Q 5406 34 5413 459
+Q 5444 1791 5456 3453
+L 5206 3453
+Q 5194 416 4175 -809
+Q 3963 -584 3600 -334
+Q 2538 -478 1625 -578
+L 1556 159
+Q 2044 184 2538 222
+L 2538 597
+L 1675 597
+L 1675 1172
+L 2538 1172
+L 2538 1453
+L 1694 1453
+L 1694 3447
+L 2538 3447
+L 2538 3684
+L 1644 3684
+L 1644 4259
+L 2538 4259
+L 2538 4484
+Q 2156 4459 1781 4441
+Q 1744 4616 1694 4922
+Q 1550 4416 1388 3934
+L 1388 -834
+L 688 -834
+L 688 2309
+Q 494 1941 288 1597
+Q 175 2209 81 2666
+Q 725 3941 1031 5353
+L 1763 5166
+Q 1744 5091 1719 5022
+Q 2856 5072 3925 5191
+L 4094 4609
+Q 3669 4572 3238 4534
+L 3238 4259
+L 4075 4259
+L 4075 3684
+L 3238 3684
+L 3238 3447
+L 4081 3447
+L 4081 1453
+L 3238 1453
+L 3238 1172
+L 4113 1172
+L 4113 609
+Q 4519 1647 4538 3453
+L 4225 3453
+L 4225 4178
+L 4538 4178
+Q 4544 4747 4550 5316
+L 5219 5316
+z
+M 4019 397
+Q 4063 497 4106 597
+L 3238 597
+L 3238 297
+Q 3625 341 4019 397
+z
+M 3569 1953
+L 3569 2241
+L 3238 2241
+L 3238 1953
+L 3569 1953
+z
+M 2206 1953
+L 2538 1953
+L 2538 2241
+L 2206 2241
+L 2206 1953
+z
+M 3569 2947
+L 3238 2947
+L 3238 2666
+L 3569 2666
+L 3569 2947
+z
+M 2206 2666
+L 2538 2666
+L 2538 2947
+L 2206 2947
+L 2206 2666
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-7d44" d="M 2500 1091
+Q 2606 809 2794 203
+L 2981 203
+L 2981 5053
+L 5925 5053
+L 5925 203
+L 6306 203
+L 6306 -603
+L 2575 -603
+L 2575 -253
+L 2281 -328
+Q 2250 -197 1956 972
+L 2500 1091
+z
+M 1044 3628
+L 1481 3628
+Q 1700 4022 1931 4472
+L 2719 4166
+Q 1988 2972 1231 2003
+Q 1506 2028 1925 2066
+Q 1831 2353 1725 2603
+L 2350 2803
+Q 2531 2297 2888 1328
+L 2219 1147
+L 2144 1409
+Q 756 1303 400 1209
+L 138 1828
+Q 444 2053 631 2291
+Q 856 2597 1100 2991
+Q 581 2953 319 2903
+L 88 3541
+Q 263 3684 388 3872
+Q 863 4597 1188 5359
+L 2019 5109
+Q 1463 4228 1044 3628
+z
+M 413 1022
+L 1031 941
+Q 956 222 806 -753
+L 88 -634
+Q 300 241 413 1022
+z
+M 3800 203
+L 5113 203
+L 5113 1041
+L 3800 1041
+L 3800 203
+z
+M 5113 4247
+L 3800 4247
+L 3800 3428
+L 5113 3428
+L 5113 4247
+z
+M 3800 1828
+L 5113 1828
+L 5113 2641
+L 3800 2641
+L 3800 1828
+z
+M 1956 -522
+L 1281 -578
+Q 1238 147 1175 947
+L 1756 991
+Q 1900 34 1956 -522
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-5408" d="M 875 -872
+L 875 2028
+L 5525 2028
+L 5525 -872
+L 4675 -872
+L 4675 -584
+L 1725 -584
+L 1725 -872
+L 875 -872
+z
+M 3988 5316
+L 3763 5041
+Q 4619 3947 6306 3228
+Q 5975 2809 5738 2484
+Q 5338 2672 4975 2897
+L 4975 2553
+L 1425 2553
+L 1425 2922
+Q 1063 2684 644 2441
+Q 388 2828 88 3178
+Q 2031 4178 2800 5316
+L 3988 5316
+z
+M 4675 1216
+L 1725 1216
+L 1725 228
+L 4675 228
+L 4675 1216
+z
+M 3194 4409
+Q 2756 3891 2031 3353
+L 4313 3353
+Q 3694 3822 3194 4409
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-5730" d="M 3706 5341
+L 4538 5341
+L 4538 4041
+L 5994 4378
+L 5966 3200
+Q 5928 1759 5848 1584
+Q 5769 1409 5637 1289
+Q 5506 1169 4775 1103
+Q 4688 1516 4569 1934
+Q 4706 1922 4816 1922
+Q 5006 1922 5064 1955
+Q 5122 1988 5142 2048
+Q 5163 2109 5178 2440
+Q 5194 2772 5194 3397
+L 4538 3234
+L 4538 422
+L 3706 422
+L 3706 3028
+L 3125 2884
+L 3125 409
+Q 3125 59 3538 59
+L 4763 59
+Q 4994 59 5144 121
+Q 5294 184 5341 337
+Q 5388 491 5469 1078
+Q 5975 859 6313 728
+Q 6144 -41 6023 -247
+Q 5903 -453 5695 -565
+Q 5488 -678 5206 -678
+L 3363 -678
+Q 2294 -678 2294 291
+L 2294 2681
+L 1875 2578
+L 1828 2784
+L 1544 2784
+L 1544 894
+L 2088 1066
+Q 2069 803 2088 184
+L 256 -459
+L 94 472
+L 713 647
+L 713 2784
+L 225 2784
+L 225 3641
+L 713 3641
+L 713 5328
+L 1544 5328
+L 1544 3641
+L 1906 3641
+L 1906 3431
+L 2294 3522
+L 2294 4784
+L 3125 4784
+L 3125 3713
+L 3706 3847
+L 3706 5341
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-65b9" d="M 2975 -747
+Q 2863 -184 2750 209
+Q 3528 178 3822 178
+Q 4031 178 4142 214
+Q 4253 250 4325 329
+Q 4397 409 4422 509
+Q 4447 609 4476 1196
+Q 4506 1784 4506 2003
+L 2531 2003
+Q 2341 213 769 -878
+Q 613 -653 94 -53
+Q 784 397 1142 962
+Q 1500 1528 1562 2073
+Q 1625 2619 1641 3628
+L 231 3628
+L 231 4453
+L 2828 4453
+L 2581 5084
+L 3575 5316
+Q 3781 4800 3888 4453
+L 6175 4453
+L 6175 3628
+L 2594 3628
+Q 2588 3241 2572 2828
+L 5494 2828
+Q 5466 2006 5419 1132
+Q 5372 259 5330 46
+Q 5288 -166 5152 -352
+Q 5016 -538 4825 -617
+Q 4634 -697 4232 -722
+Q 3831 -747 2975 -747
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-90e8" d="M 3488 3941
+L 2666 3941
+L 3344 3666
+Q 3141 3347 2903 3003
+L 3625 3003
+L 3625 2303
+L 119 2303
+L 119 3003
+L 866 3003
+Q 684 3284 450 3591
+L 1059 3941
+L 263 3941
+L 263 4641
+L 1475 4641
+Q 1375 4931 1256 5191
+L 2194 5347
+Q 2316 5028 2422 4641
+L 3488 4641
+L 3488 3941
+z
+M 1706 3241
+L 1278 3003
+L 1969 3003
+Q 2278 3475 2484 3941
+L 1159 3941
+Q 1525 3522 1706 3241
+z
+M 5500 2716
+Q 6294 1922 6294 997
+Q 6294 481 6017 192
+Q 5741 -97 4875 -84
+Q 4831 359 4719 816
+Q 4959 778 5066 778
+Q 5450 778 5450 1159
+Q 5450 1859 4700 2641
+Q 5025 3409 5313 4291
+L 4631 4291
+L 4631 -847
+L 3831 -847
+L 3831 5016
+L 6175 5016
+L 6175 4416
+Q 5956 3816 5500 2716
+z
+M 400 -703
+L 400 1828
+L 3344 1828
+L 3344 -666
+L 2556 -666
+L 2556 -347
+L 1188 -347
+L 1188 -703
+L 400 -703
+z
+M 2556 1128
+L 1188 1128
+L 1188 353
+L 2556 353
+L 2556 1128
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#MicrosoftYaHei-Bold-41"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-31" x="75.195312"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-31" x="136.865234"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-34" x="198.535156"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-20" x="260.205078"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-20" x="289.990234"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-5168" x="319.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-65e5" x="419.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-672c" x="519.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-6e2f" x="619.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-6e7e" x="719.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-52b4" x="819.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-50cd" x="919.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-7d44" x="1019.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-5408" x="1119.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-6c96" x="1219.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-7e04" x="1319.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-5730" x="1419.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-65b9" x="1519.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-672c" x="1619.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-90e8" x="1719.775391"/>
+    </g>
+   </g>
+   <g id="text_33">
+    <!-- 事件／程序场域 · E4 · ai_seeded -->
+    <g style="fill: #59645f" transform="translate(489.787622 291.017377) scale(0.081 -0.081)">
+     <use xlink:href="#MicrosoftYaHei-4e8b"/>
+     <use xlink:href="#MicrosoftYaHei-4ef6" x="100"/>
+     <use xlink:href="#MicrosoftYaHei-ff0f" x="200"/>
+     <use xlink:href="#MicrosoftYaHei-7a0b" x="300"/>
+     <use xlink:href="#MicrosoftYaHei-5e8f" x="400"/>
+     <use xlink:href="#MicrosoftYaHei-573a" x="500"/>
+     <use xlink:href="#MicrosoftYaHei-57df" x="600"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="700"/>
+     <use xlink:href="#MicrosoftYaHei-b7" x="729.589844"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="753.662109"/>
+     <use xlink:href="#MicrosoftYaHei-45" x="783.251953"/>
+     <use xlink:href="#MicrosoftYaHei-34" x="838.232422"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="896.875"/>
+     <use xlink:href="#MicrosoftYaHei-b7" x="926.464844"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="950.537109"/>
+     <use xlink:href="#MicrosoftYaHei-61" x="980.126953"/>
+     <use xlink:href="#MicrosoftYaHei-69" x="1035.400391"/>
+     <use xlink:href="#MicrosoftYaHei-5f" x="1062.011719"/>
+     <use xlink:href="#MicrosoftYaHei-73" x="1106.835938"/>
+     <use xlink:href="#MicrosoftYaHei-65" x="1153.125"/>
+     <use xlink:href="#MicrosoftYaHei-65" x="1209.863281"/>
+     <use xlink:href="#MicrosoftYaHei-64" x="1266.601562"/>
+     <use xlink:href="#MicrosoftYaHei-65" x="1330.566406"/>
+     <use xlink:href="#MicrosoftYaHei-64" x="1387.304688"/>
+    </g>
+   </g>
+   <g id="text_34">
+    <!-- ○ -->
+    <g style="fill: #2c7a6b" transform="translate(472.854723 326.999209) scale(0.14 -0.14)">
+     <use xlink:href="#MicrosoftYaHei-Bold-25cb"/>
+    </g>
+   </g>
+   <g id="text_35">
+    <!-- A010  石垣島に軍事基地をつくらせない市民連絡会 -->
+    <g transform="translate(489.787622 320.830831) scale(0.095 -0.095)">
      <defs>
       <path id="MicrosoftYaHei-Bold-306b" d="M 1897 4697
 Q 1541 3013 1541 1784
@@ -10734,64 +11290,6 @@ L 2319 1584
 Q 2050 1284 1759 1028
 L 2775 1028
 L 2775 1466
-z
-" transform="scale(0.015625)"/>
-      <path id="MicrosoftYaHei-Bold-5730" d="M 3706 5341
-L 4538 5341
-L 4538 4041
-L 5994 4378
-L 5966 3200
-Q 5928 1759 5848 1584
-Q 5769 1409 5637 1289
-Q 5506 1169 4775 1103
-Q 4688 1516 4569 1934
-Q 4706 1922 4816 1922
-Q 5006 1922 5064 1955
-Q 5122 1988 5142 2048
-Q 5163 2109 5178 2440
-Q 5194 2772 5194 3397
-L 4538 3234
-L 4538 422
-L 3706 422
-L 3706 3028
-L 3125 2884
-L 3125 409
-Q 3125 59 3538 59
-L 4763 59
-Q 4994 59 5144 121
-Q 5294 184 5341 337
-Q 5388 491 5469 1078
-Q 5975 859 6313 728
-Q 6144 -41 6023 -247
-Q 5903 -453 5695 -565
-Q 5488 -678 5206 -678
-L 3363 -678
-Q 2294 -678 2294 291
-L 2294 2681
-L 1875 2578
-L 1828 2784
-L 1544 2784
-L 1544 894
-L 2088 1066
-Q 2069 803 2088 184
-L 256 -459
-L 94 472
-L 713 647
-L 713 2784
-L 225 2784
-L 225 3641
-L 713 3641
-L 713 5328
-L 1544 5328
-L 1544 3641
-L 1906 3641
-L 1906 3431
-L 2294 3522
-L 2294 4784
-L 3125 4784
-L 3125 3713
-L 3706 3847
-L 3706 5341
 z
 " transform="scale(0.015625)"/>
       <path id="MicrosoftYaHei-Bold-3064" d="M 341 3319
@@ -11072,9 +11570,9 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-4f1a" x="2219.775391"/>
     </g>
    </g>
-   <g id="text_33">
+   <g id="text_36">
     <!-- 持续活动／服务在场 · E4 · ai_seeded -->
-    <g style="fill: #59645f" transform="translate(489.787622 291.017377) scale(0.081 -0.081)">
+    <g style="fill: #59645f" transform="translate(489.787622 342.156997) scale(0.081 -0.081)">
      <use xlink:href="#MicrosoftYaHei-6301"/>
      <use xlink:href="#MicrosoftYaHei-7eed" x="100"/>
      <use xlink:href="#MicrosoftYaHei-6d3b" x="200"/>
@@ -11103,15 +11601,15 @@ z
      <use xlink:href="#MicrosoftYaHei-64" x="1587.304688"/>
     </g>
    </g>
-   <g id="text_34">
+   <g id="text_37">
     <!-- ○ -->
-    <g style="fill: #2c7a6b" transform="translate(472.854723 326.999209) scale(0.14 -0.14)">
+    <g style="fill: #2c7a6b" transform="translate(472.854723 378.138829) scale(0.14 -0.14)">
      <use xlink:href="#MicrosoftYaHei-Bold-25cb"/>
     </g>
    </g>
-   <g id="text_35">
+   <g id="text_38">
     <!-- A065  南西諸島ピースネット -->
-    <g transform="translate(489.787622 320.830831) scale(0.095 -0.095)">
+    <g transform="translate(489.787622 371.970451) scale(0.095 -0.095)">
      <use xlink:href="#MicrosoftYaHei-Bold-41"/>
      <use xlink:href="#MicrosoftYaHei-Bold-30" x="75.195312"/>
      <use xlink:href="#MicrosoftYaHei-Bold-36" x="136.865234"/>
@@ -11130,9 +11628,9 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-30c8" x="1219.775391"/>
     </g>
    </g>
-   <g id="text_36">
+   <g id="text_39">
     <!-- 持续活动／服务在场 · E3 · needs_second_source -->
-    <g style="fill: #59645f" transform="translate(489.787622 342.156997) scale(0.081 -0.081)">
+    <g style="fill: #59645f" transform="translate(489.787622 393.296617) scale(0.081 -0.081)">
      <use xlink:href="#MicrosoftYaHei-6301"/>
      <use xlink:href="#MicrosoftYaHei-7eed" x="100"/>
      <use xlink:href="#MicrosoftYaHei-6d3b" x="200"/>
@@ -11171,7 +11669,7 @@ z
      <use xlink:href="#MicrosoftYaHei-65" x="2155.900391"/>
     </g>
    </g>
-   <g id="text_37">
+   <g id="text_40">
     <!-- 已证／正式上下文 -->
     <g style="fill: #243a34" transform="translate(472.854723 538.1766) scale(0.105 -0.105)">
      <use xlink:href="#MicrosoftYaHei-Bold-5df2"/>
@@ -11184,7 +11682,7 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-6587" x="700"/>
     </g>
    </g>
-   <g id="text_38">
+   <g id="text_41">
     <!-- 自治／公投=3;前线／台湾邻近／撤离=2;健康／生活安全=2;环境—部署连接 -->
     <g style="fill: #364640" transform="translate(472.854723 566.696062) scale(0.087 -0.087)">
      <use xlink:href="#MicrosoftYaHei-81ea"/>
@@ -11242,7 +11740,7 @@ z
      <use xlink:href="#MicrosoftYaHei-30" x="931.054688"/>
     </g>
    </g>
-   <g id="text_39">
+   <g id="text_42">
     <!-- 制度链／候选解释 -->
     <g style="fill: #243a34" transform="translate(472.854723 602.8713) scale(0.105 -0.105)">
      <use xlink:href="#MicrosoftYaHei-Bold-5236"/>
@@ -11255,7 +11753,7 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-91ca" x="700"/>
     </g>
    </g>
-   <g id="text_40">
+   <g id="text_43">
     <!-- 签名门槛达成仍可在议会议程和司法可诉性门槛被阻断，行动路径转向法院。 -->
     <g style="fill: #364640" transform="translate(472.854723 631.110981) scale(0.0835 -0.0835)">
      <defs>
@@ -12367,7 +12865,7 @@ z
      <use xlink:href="#MicrosoftYaHei-3002" x="3300"/>
     </g>
    </g>
-   <g id="text_41">
+   <g id="text_44">
     <!-- 自治程序、反部署与生活安全分层；地下水线索不能从宫古类推。 -->
     <g style="fill: #8a3f42" transform="translate(472.854723 683.602787) scale(0.085 -0.085)">
      <defs>
@@ -12476,67 +12974,6 @@ M 4725 2847
 L 2934 2847
 L 3828 2244
 L 4725 2847
-z
-" transform="scale(0.015625)"/>
-      <path id="MicrosoftYaHei-Bold-90e8" d="M 3488 3941
-L 2666 3941
-L 3344 3666
-Q 3141 3347 2903 3003
-L 3625 3003
-L 3625 2303
-L 119 2303
-L 119 3003
-L 866 3003
-Q 684 3284 450 3591
-L 1059 3941
-L 263 3941
-L 263 4641
-L 1475 4641
-Q 1375 4931 1256 5191
-L 2194 5347
-Q 2316 5028 2422 4641
-L 3488 4641
-L 3488 3941
-z
-M 1706 3241
-L 1278 3003
-L 1969 3003
-Q 2278 3475 2484 3941
-L 1159 3941
-Q 1525 3522 1706 3241
-z
-M 5500 2716
-Q 6294 1922 6294 997
-Q 6294 481 6017 192
-Q 5741 -97 4875 -84
-Q 4831 359 4719 816
-Q 4959 778 5066 778
-Q 5450 778 5450 1159
-Q 5450 1859 4700 2641
-Q 5025 3409 5313 4291
-L 4631 4291
-L 4631 -847
-L 3831 -847
-L 3831 5016
-L 6175 5016
-L 6175 4416
-Q 5956 3816 5500 2716
-z
-M 400 -703
-L 400 1828
-L 3344 1828
-L 3344 -666
-L 2556 -666
-L 2556 -347
-L 1188 -347
-L 1188 -703
-L 400 -703
-z
-M 2556 1128
-L 1188 1128
-L 1188 353
-L 2556 353
-L 2556 1128
 z
 " transform="scale(0.015625)"/>
       <path id="MicrosoftYaHei-Bold-7f72" d="M 150 2472
@@ -13176,17 +13613,17 @@ Q 884.747492 727.33158 895.330554 727.33158
 z
 " clip-path="url(#p1d6aa3a770)" style="fill: #e8eef3; stroke: #c8cfcc; stroke-linejoin: miter"/>
    </g>
-   <g id="text_42">
+   <g id="text_45">
     <!-- 宫古 -->
     <g transform="translate(908.876873 169.875975) scale(0.21 -0.21)">
      <use xlink:href="#MicrosoftYaHei-Bold-5bab"/>
      <use xlink:href="#MicrosoftYaHei-Bold-53e4" x="100"/>
     </g>
    </g>
-   <g id="text_43">
-    <!-- 3 条空间边 · 0 条底层边人审 · 2 条显式补证缺口 -->
+   <g id="text_46">
+    <!-- 4 条空间边 · 0 条底层边人审 · 2 条显式补证缺口 -->
     <g style="fill: #52605a" transform="translate(908.876873 188.409462) scale(0.095 -0.095)">
-     <use xlink:href="#MicrosoftYaHei-33"/>
+     <use xlink:href="#MicrosoftYaHei-34"/>
      <use xlink:href="#MicrosoftYaHei-20" x="58.642578"/>
      <use xlink:href="#MicrosoftYaHei-6761" x="88.232422"/>
      <use xlink:href="#MicrosoftYaHei-7a7a" x="188.232422"/>
@@ -13217,13 +13654,13 @@ z
      <use xlink:href="#MicrosoftYaHei-53e3" x="2031.201172"/>
     </g>
    </g>
-   <g id="text_44">
+   <g id="text_47">
     <!-- ○ -->
     <g style="fill: #2c7a6b" transform="translate(910.993485 224.719969) scale(0.14 -0.14)">
      <use xlink:href="#MicrosoftYaHei-Bold-25cb"/>
     </g>
    </g>
-   <g id="text_45">
+   <g id="text_48">
     <!-- A012  宮古島いのちの水を守ろう！ -->
     <g transform="translate(927.926384 218.551591) scale(0.095 -0.095)">
      <defs>
@@ -13424,7 +13861,7 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-ff01" x="1519.775391"/>
     </g>
    </g>
-   <g id="text_46">
+   <g id="text_49">
     <!-- 持续活动／服务在场 · E3 · needs_second_source -->
     <g style="fill: #59645f" transform="translate(927.926384 239.877757) scale(0.081 -0.081)">
      <use xlink:href="#MicrosoftYaHei-6301"/>
@@ -13465,13 +13902,13 @@ z
      <use xlink:href="#MicrosoftYaHei-65" x="2155.900391"/>
     </g>
    </g>
-   <g id="text_47">
+   <g id="text_50">
     <!-- ○ -->
     <g style="fill: #2c7a6b" transform="translate(910.993485 275.859589) scale(0.14 -0.14)">
      <use xlink:href="#MicrosoftYaHei-Bold-25cb"/>
     </g>
    </g>
-   <g id="text_48">
+   <g id="text_51">
     <!-- A013  ミサイル基地いらない宮古島住民連絡会 -->
     <g transform="translate(927.926384 269.691211) scale(0.095 -0.095)">
      <defs>
@@ -13592,7 +14029,7 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-4f1a" x="2019.775391"/>
     </g>
    </g>
-   <g id="text_49">
+   <g id="text_52">
     <!-- 持续活动／服务在场 · E4 · ai_seeded -->
     <g style="fill: #59645f" transform="translate(927.926384 291.017377) scale(0.081 -0.081)">
      <use xlink:href="#MicrosoftYaHei-6301"/>
@@ -13623,13 +14060,13 @@ z
      <use xlink:href="#MicrosoftYaHei-64" x="1587.304688"/>
     </g>
    </g>
-   <g id="text_50">
+   <g id="text_53">
     <!-- ○ -->
     <g style="fill: #2c7a6b" transform="translate(910.993485 326.999209) scale(0.14 -0.14)">
      <use xlink:href="#MicrosoftYaHei-Bold-25cb"/>
     </g>
    </g>
-   <g id="text_51">
+   <g id="text_54">
     <!-- A065  南西諸島ピースネット -->
     <g transform="translate(927.926384 320.830831) scale(0.095 -0.095)">
      <use xlink:href="#MicrosoftYaHei-Bold-41"/>
@@ -13650,7 +14087,7 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-30c8" x="1219.775391"/>
     </g>
    </g>
-   <g id="text_52">
+   <g id="text_55">
     <!-- 持续活动／服务在场 · E3 · needs_second_source -->
     <g style="fill: #59645f" transform="translate(927.926384 342.156997) scale(0.081 -0.081)">
      <use xlink:href="#MicrosoftYaHei-6301"/>
@@ -13691,7 +14128,169 @@ z
      <use xlink:href="#MicrosoftYaHei-65" x="2155.900391"/>
     </g>
    </g>
-   <g id="text_53">
+   <g id="text_56">
+    <!-- ○ -->
+    <g style="fill: #2c7a6b" transform="translate(910.993485 378.138829) scale(0.14 -0.14)">
+     <use xlink:href="#MicrosoftYaHei-Bold-25cb"/>
+    </g>
+   </g>
+   <g id="text_57">
+    <!-- A112  宮古島地下水研究会 -->
+    <g transform="translate(927.926384 371.970451) scale(0.095 -0.095)">
+     <defs>
+      <path id="MicrosoftYaHei-Bold-7814" d="M 2494 2591
+L 3163 2591
+L 3163 4216
+L 2650 4216
+L 2650 4966
+L 6138 4966
+L 6138 4216
+L 5575 4216
+L 5575 2591
+L 6306 2591
+L 6306 1841
+L 5575 1841
+L 5575 -759
+L 4763 -759
+L 4763 1841
+L 3963 1841
+Q 3859 6 2956 -866
+Q 2588 -578 2175 -309
+Q 3013 400 3138 1841
+L 2494 1841
+L 2494 2591
+z
+M 3975 2591
+L 4763 2591
+L 4763 4216
+L 3975 4216
+L 3975 2591
+z
+M 2400 4191
+L 1659 4191
+Q 1531 3669 1356 3184
+L 2344 3184
+L 2344 -84
+L 1281 -84
+L 1281 -459
+L 588 -459
+L 588 1603
+Q 478 1431 363 1266
+Q 244 1797 38 2228
+Q 619 3081 866 4191
+L 250 4191
+L 250 4941
+L 2400 4941
+L 2400 4191
+z
+M 1650 603
+L 1650 2497
+L 1281 2497
+L 1281 603
+L 1650 603
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftYaHei-Bold-7a76" d="M 3506 5334
+Q 3625 5019 3719 4728
+L 6075 4728
+L 6075 3391
+L 5275 3391
+L 5275 3978
+L 1125 3978
+L 1125 3391
+L 325 3391
+L 325 4728
+L 2741 4728
+Q 2656 4988 2569 5234
+L 3506 5334
+z
+M 3956 3959
+Q 5038 3409 5988 2853
+L 5506 2122
+L 3463 3334
+L 3956 3959
+z
+M 2331 3953
+L 2800 3297
+Q 1794 2734 750 2253
+Q 538 2628 300 2984
+Q 1431 3416 2331 3953
+z
+M 4775 2191
+L 4775 303
+Q 4775 22 5031 22
+L 5169 22
+Q 5391 22 5445 189
+Q 5500 356 5588 1234
+L 6338 997
+Q 6200 -284 5934 -478
+Q 5669 -672 5356 -672
+L 4719 -672
+Q 3925 -672 3925 97
+L 3925 1466
+L 2988 1466
+Q 2769 -206 825 -859
+Q 619 -522 319 -59
+Q 1881 394 2122 1466
+L 588 1466
+L 588 2191
+L 2194 2191
+L 2250 2922
+L 3100 2922
+Q 3088 2591 3056 2191
+L 4775 2191
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#MicrosoftYaHei-Bold-41"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-31" x="75.195312"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-31" x="136.865234"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-32" x="198.535156"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-20" x="260.205078"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-20" x="289.990234"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-5bae" x="319.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-53e4" x="419.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-5cf6" x="519.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-5730" x="619.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-4e0b" x="719.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-6c34" x="819.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-7814" x="919.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-7a76" x="1019.775391"/>
+     <use xlink:href="#MicrosoftYaHei-Bold-4f1a" x="1119.775391"/>
+    </g>
+   </g>
+   <g id="text_58">
+    <!-- 持续活动／服务在场 · E4 · ai_seeded -->
+    <g style="fill: #59645f" transform="translate(927.926384 393.296617) scale(0.081 -0.081)">
+     <use xlink:href="#MicrosoftYaHei-6301"/>
+     <use xlink:href="#MicrosoftYaHei-7eed" x="100"/>
+     <use xlink:href="#MicrosoftYaHei-6d3b" x="200"/>
+     <use xlink:href="#MicrosoftYaHei-52a8" x="300"/>
+     <use xlink:href="#MicrosoftYaHei-ff0f" x="400"/>
+     <use xlink:href="#MicrosoftYaHei-670d" x="500"/>
+     <use xlink:href="#MicrosoftYaHei-52a1" x="600"/>
+     <use xlink:href="#MicrosoftYaHei-5728" x="700"/>
+     <use xlink:href="#MicrosoftYaHei-573a" x="800"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="900"/>
+     <use xlink:href="#MicrosoftYaHei-b7" x="929.589844"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="953.662109"/>
+     <use xlink:href="#MicrosoftYaHei-45" x="983.251953"/>
+     <use xlink:href="#MicrosoftYaHei-34" x="1038.232422"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="1096.875"/>
+     <use xlink:href="#MicrosoftYaHei-b7" x="1126.464844"/>
+     <use xlink:href="#MicrosoftYaHei-20" x="1150.537109"/>
+     <use xlink:href="#MicrosoftYaHei-61" x="1180.126953"/>
+     <use xlink:href="#MicrosoftYaHei-69" x="1235.400391"/>
+     <use xlink:href="#MicrosoftYaHei-5f" x="1262.011719"/>
+     <use xlink:href="#MicrosoftYaHei-73" x="1306.835938"/>
+     <use xlink:href="#MicrosoftYaHei-65" x="1353.125"/>
+     <use xlink:href="#MicrosoftYaHei-65" x="1409.863281"/>
+     <use xlink:href="#MicrosoftYaHei-64" x="1466.601562"/>
+     <use xlink:href="#MicrosoftYaHei-65" x="1530.566406"/>
+     <use xlink:href="#MicrosoftYaHei-64" x="1587.304688"/>
+    </g>
+   </g>
+   <g id="text_59">
     <!-- 已证／正式上下文 -->
     <g style="fill: #243a34" transform="translate(910.993485 538.1766) scale(0.105 -0.105)">
      <use xlink:href="#MicrosoftYaHei-Bold-5df2"/>
@@ -13704,7 +14303,7 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-6587" x="700"/>
     </g>
    </g>
-   <g id="text_54">
+   <g id="text_60">
     <!-- 前线／台湾邻近／撤离=2;地下水／饮用水=2;环境—部署连接=1;健康／生活 -->
     <g style="fill: #364640" transform="translate(910.993485 566.696062) scale(0.087 -0.087)">
      <use xlink:href="#MicrosoftYaHei-524d"/>
@@ -13762,7 +14361,7 @@ z
      <use xlink:href="#MicrosoftYaHei-30" x="931.054688"/>
     </g>
    </g>
-   <g id="text_55">
+   <g id="text_61">
     <!-- 制度链／候选解释 -->
     <g style="fill: #243a34" transform="translate(910.993485 602.8713) scale(0.105 -0.105)">
      <use xlink:href="#MicrosoftYaHei-Bold-5236"/>
@@ -13775,7 +14374,7 @@ z
      <use xlink:href="#MicrosoftYaHei-Bold-91ca" x="700"/>
     </g>
    </g>
-   <g id="text_56">
+   <g id="text_62">
     <!-- 当前 R9 正式包未建立该地公投案例链；这只是模块范围边界。 -->
     <g style="fill: #364640" transform="translate(910.993485 631.110981) scale(0.0835 -0.0835)">
      <defs>
@@ -14678,7 +15277,7 @@ z
      <use xlink:href="#MicrosoftYaHei-3002" x="2683.105469"/>
     </g>
    </g>
-   <g id="text_57">
+   <g id="text_63">
     <!-- 地下水／饮用水是地方生活条件；一般环保活动不能自动写成反部署。 -->
     <g style="fill: #8a3f42" transform="translate(910.993485 683.602787) scale(0.085 -0.085)">
      <defs>
@@ -14819,39 +15418,6 @@ L 1194 1503
 L 1981 1209
 Q 1891 931 1788 681
 Q 2194 253 2844 113
-z
-" transform="scale(0.015625)"/>
-      <path id="MicrosoftYaHei-Bold-65b9" d="M 2975 -747
-Q 2863 -184 2750 209
-Q 3528 178 3822 178
-Q 4031 178 4142 214
-Q 4253 250 4325 329
-Q 4397 409 4422 509
-Q 4447 609 4476 1196
-Q 4506 1784 4506 2003
-L 2531 2003
-Q 2341 213 769 -878
-Q 613 -653 94 -53
-Q 784 397 1142 962
-Q 1500 1528 1562 2073
-Q 1625 2619 1641 3628
-L 231 3628
-L 231 4453
-L 2828 4453
-L 2581 5084
-L 3575 5316
-Q 3781 4800 3888 4453
-L 6175 4453
-L 6175 3628
-L 2594 3628
-Q 2588 3241 2572 2828
-L 5494 2828
-Q 5466 2006 5419 1132
-Q 5372 259 5330 46
-Q 5288 -166 5152 -352
-Q 5016 -538 4825 -617
-Q 4634 -697 4232 -722
-Q 3831 -747 2975 -747
 z
 " transform="scale(0.015625)"/>
       <path id="MicrosoftYaHei-Bold-6761" d="M 5581 4797
@@ -15185,7 +15751,7 @@ z
     </g>
    </g>
   </g>
-  <g id="text_58">
+  <g id="text_64">
    <!-- R3 先岛三地 actor–place dossier -->
    <g transform="translate(20.88 24.725156) scale(0.21 -0.21)">
     <defs>
@@ -15576,7 +16142,7 @@ z
     <use xlink:href="#MicrosoftYaHei-Bold-72" x="1515.808594"/>
    </g>
   </g>
-  <g id="text_59">
+  <g id="text_65">
    <!-- actor–place 行、R4 有限线上框架语料与 R9 正式程序链分层呈现；圆点实心仅表示底层空间边已人审，不表示组织关系或地方代表性。 -->
    <g style="fill: #4d5955" transform="translate(20.88 63.9) scale(0.103 -0.103)">
     <defs>

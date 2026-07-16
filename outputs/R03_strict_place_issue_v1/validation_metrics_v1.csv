@@ -1,0 +1,8 @@
+﻿metric,value,note
+all_same_source_triples,330,all evidence levels
+e3plus_same_source_triples,323,strict candidate layer
+human_reviewed_same_source_triples,67,both underlying edges human-reviewed
+strict_triples_with_formal_event_attachment,100,same actor/source found in formal AEV-derived observation table
+wide_nonzero_cells,43,retired upper-bound method
+strict_e3plus_nonzero_cells,42,source-constrained
+reviewed_nonzero_cells,13,source-constrained and dual reviewed

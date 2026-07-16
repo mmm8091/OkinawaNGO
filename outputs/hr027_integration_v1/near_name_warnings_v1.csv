@@ -1,0 +1,4 @@
+﻿warning_id,verified_actor_id,near_name,disposition,boundary_note,review_status,source_document
+NN027-01,A112,宮古の地下水を守る会,separate_unregistered_group,A 2025 independent group; not an alias of 宮古島地下水研究会 and no merger/personnel-overlap claim is approved.,human_checked,docs/human_review_return_HR027_v1.md §5.1
+NN027-02,A113,名護ちゅら水会,separate_unregistered_group,A Nago-area group with a globally ambiguous short name; do not resolve bare ちゅら水会 without place context.,human_checked,docs/human_review_return_HR027_v1.md §5.1
+NN027-03,A115,新日本婦人の会沖縄県支部,unresolved_name_form,A ti-da blog self-title that does not match the verified 県本部 hierarchy; do not merge until independently resolved.,human_checked,docs/human_review_return_HR027_v1.md §5.1

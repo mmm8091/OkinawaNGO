@@ -124,11 +124,11 @@ TASKS: dict[str, dict[str, object]] = {
             ),
         ],
         "hard": "none within HR016–032; external HR010 decisions remain part of final central freeze",
-        "recommended": "decide 9 controlled-term rules before 30 bridge and 65 scope rows; merge before regenerating HR029",
+        "recommended": "decide 9 controlled-term rules before 30 bridge and 76 scope rows; merge before the final HR029 regeneration",
         "central": "actor_class controlled mapping; actor–issue scope/classification and accepted edge layer",
         "module_figures": "F009–F012; R1/R2 tables and explanatory brief",
         "rerun": "merge rules and accepted/revised edge scopes, regenerate R1/R2, then regenerate HR029 candidate packet",
-        "issue": "docs/human_review_tasks_v0.md says 63 edge-scope rows, but the live CSV and current control docs contain 65",
+        "issue": "docs/human_review_tasks_v0.md preserves a pre-HR027 63-row task description; the live regenerated scope queue contains 76",
         "boundary": "Cross-issue appearance is not stable brokerage; actor–issue edges do not become actor–actor alliances.",
     },
     "HR020": {
@@ -217,7 +217,7 @@ TASKS: dict[str, dict[str, object]] = {
             decision_fields=("decision",),
         )],
         "hard": "none",
-        "recommended": "complete AP123 and all 41 semantics before regenerating HR029/place outputs",
+        "recommended": "complete AP123 and all 47 semantics before the final HR029/place regeneration",
         "central": "actor–place semantic field and AP123 place key (P006 Camp Schwab vs P007 Camp Foster)",
         "module_figures": "F013–F015; R3 semantic tables/dossier; MA020",
         "rerun": "apply human decision to AP123 and accepted semantics, regenerate R3 outputs, then regenerate HR029; HR029 must not repair AP123",
@@ -242,18 +242,18 @@ TASKS: dict[str, dict[str, object]] = {
     },
     "HR027": {
         "name": "registry 价值门槛 v2",
-        "priority": "P0_first",
+        "priority": "completed_2026-07-16",
         "work_lane": "online_human",
         "files": [FileSpec(
             "outputs/registry_value_gate_v2/HR027_registry_value_review_v0.csv",
             decision_fields=("decision",),
         )],
         "hard": "none",
-        "recommended": "first decision batch; accepted actors must be assigned A IDs and merged before HR029 is regenerated",
+        "recommended": "completed: four accepted actors were assigned A112-A115 and merged before HR029 regeneration",
         "central": "actor registry and registry count; source/alias crosswalk; no automatic central edges",
         "module_figures": "global R1/R2/R3 counts and figures after merge",
-        "rerun": "assign sequential A IDs only to accepted candidates, merge registry, regenerate all dynamic audits including HR029",
-        "issue": "none",
+        "rerun": "completed; retain as an audit batch and do not reopen without a new human decision",
+        "issue": "four decisions are populated and must remain preserved by later orchestration regeneration",
         "boundary": "Module repair/value, not reaching 120 by itself, is the acceptance basis.",
     },
     "HR028": {
@@ -277,12 +277,12 @@ TASKS: dict[str, dict[str, object]] = {
             "outputs/schema_alias_freeze_v1/HR029_schema_alias_freeze_review_v0.csv",
             decision_fields=("decision",),
         )],
-        "hard": "HR027 merge then HR029 regeneration; final freeze also requires HR019/HR024/HR025 merges and external HR010",
+        "hard": "HR027 merge and first regeneration are complete; final freeze still requires HR019/HR024/HR025 merges and external HR010",
         "recommended": "also finish HR018 relation vocabulary and HR020 alias crosswalk before the one final freeze",
         "central": "coding schema; actor_class/legal_status; alias; place/venue/relation/action vocabularies",
         "module_figures": "F009/F010/F012/F013/F031 and all schema-sensitive tables",
-        "rerun": "discard the 118-actor pre-review snapshot, regenerate HR029 from merged central state, then review 34 current rows and freeze/lint",
-        "issue": "current HR029 CSV is a pre-review snapshot; reviewing it before HR027 merge would create a stale freeze",
+        "rerun": "after HR019/HR024/HR025/external HR010 merge, regenerate the current 122-actor HR029 packet again, then review 36 rows and freeze/lint",
+        "issue": "current HR029 is a valid post-HR027 intermediate snapshot, but not the final post-edge/place freeze packet",
         "boundary": "AP123 is excluded from mechanical HR029 correction and remains exclusively HR025.",
     },
     "HR030": {
@@ -509,9 +509,9 @@ def batch_rows(inventory: list[dict[str, object]]) -> list[dict[str, object]]:
             "batch_name_cn": "registry 价值门槛先决批", "priority_lane": "P0_first",
             "work_lane": "online_human",
             "hr_scope": "HR027", "row_scope": f"all {dec('HR027')} decision rows",
-            "decision_rows": dec("HR027"), "ancillary_rows": 0, "entry_condition": "now",
-            "why_this_order": "HR029 is dynamic over registry state; deciding HR027 first prevents freezing the current 118-actor snapshot",
-            "merge_or_rerun_after": "main thread assigns A IDs only to accepted candidates, merges registry, then regenerates HR029 inputs",
+            "decision_rows": dec("HR027"), "ancillary_rows": 0, "entry_condition": "completed 2026-07-16",
+            "why_this_order": "completed prerequisite: HR027 was decided before the 122-actor HR029 snapshot was generated",
+            "merge_or_rerun_after": "completed: A112-A115 merged and dynamic registry-dependent packages regenerated",
             "unblocks": "registry minimum decision; dynamic actor/schema audits; MA001/MA002/MA008/MA012/MA021/MA022",
             "do_not_do": "do not accept candidates merely to reach 120; do not auto-create central edges",
         },
@@ -522,7 +522,7 @@ def batch_rows(inventory: list[dict[str, object]]) -> list[dict[str, object]]:
             "hr_scope": "HR019;HR024;HR025",
             "row_scope": f"HR019 non-local={online19} (rules 9 first); HR024 A076/A086={hr024_ready}; HR025={dec('HR025')} including AP123",
             "decision_rows": online19 + hr024_ready + dec("HR025"), "ancillary_rows": 0,
-            "entry_condition": "may start now; final central merge follows HR027 actor-ID assignment",
+            "entry_condition": "may start now; HR027 actor-ID assignment is complete",
             "why_this_order": "these decisions change classifications, issue edges, place semantics and the inputs used to regenerate HR029",
             "merge_or_rerun_after": "merge accepted/revised central values once; apply AP123 only from HR025; regenerate R1/R2/R3 and HR029 inputs",
             "unblocks": "MA001–MA004, MA008, MA012, MA020–MA022 and schema regeneration",
@@ -608,10 +608,10 @@ def batch_rows(inventory: list[dict[str, object]]) -> list[dict[str, object]]:
             "row_scope": "0 human decisions; regeneration step",
             "decision_rows": 0, "ancillary_rows": 0,
             "entry_condition": "HR027 accepted actors assigned/merged; HR019/HR024/HR025 and external HR010 merged; AP123 resolved by HR025",
-            "why_this_order": "prevents reviewing a stale 118-actor, pre-AP123, pre-edge snapshot and minimizes repeated global regeneration",
+            "why_this_order": "the 122-actor intermediate snapshot exists; this gate prevents freezing it before AP123 and edge/place decisions are merged",
             "merge_or_rerun_after": "rerun dynamic schema/alias audit and replace the HR029 review packet with the regenerated current-state packet",
             "unblocks": "valid HR029 review; final global count/schema/alias/place/venue/relation/action freeze",
-            "do_not_do": "do not execute decisions from the current pre-regeneration HR029 snapshot",
+            "do_not_do": "do not execute the current intermediate HR029 decisions before the final dependency merge/regeneration",
         },
         {
             "batch_order": "09", "batch_id": "B09_SCHEMA_FREEZE",
@@ -739,7 +739,7 @@ def make_dependency_graph(inventory: list[dict[str, object]]) -> None:
         "source_freeze": "来源 metadata / locator 冻结\n不批准事实关系",
         "central_merge": "中央 actor / edge / place 合并\n含外部 HR010",
         "ap123": "AP123 专属纠键\n只接受 HR025 决定",
-        "regen": "重生 HR029 packet\n替换 118-actor 预审快照",
+        "regen": "最终重生 HR029 packet\n替换 122-actor 中间快照",
         "final_data": "最终 data / schema / figures 冻结\n运行跨表 lint",
         "report_lock": "报告 / 论文措辞锁定\nMA017 / MA018",
         "local_lane": "当地／新一手材料队列\n不强行填决定",
@@ -853,7 +853,7 @@ def make_readme(inventory: list[dict[str, object]], batches: list[dict[str, obje
 
     ## 2. 五条不可改写的主依赖
 
-    1. **HR027 → 合并获准 actor／分配 A 号 → 重生 HR029 → 再审 HR029。** 当前 HR029 是 118-actor 预审快照，不能直接作为最终 freeze。
+    1. **HR027 已完成并合并 A112–A115；122-actor 的 HR029 中间快照已重生。** 仍须先合并 HR019／024／025 与外部 HR010，再做最后一次 HR029 重生和审查；当前 36 行不能直接作为最终 freeze。
     2. **HR018 的 8 个来源前置 → HR018 的 26 条敏感关系 → HR021-001–007。** HR021 只决定下游是否纳入，不重复审核关系事实；HR021-008 可独立复核。
     3. **AP123 只由 HR025 决定。** Camp Schwab/P006 与 Camp Foster/P007 的键冲突不能由 HR029 或脚本机械覆盖。
     4. **HR031 只管解释强度。** 它可以改变报告／论文措辞，不能批准中央事实、角色、边、金额、资金或因果。
@@ -903,7 +903,7 @@ def make_readme(inventory: list[dict[str, object]], batches: list[dict[str, obje
 
     - **没有发现两个同时有效的同号 CSV 人审队列。**
     - HR026 有表面命名冲突：R08 目录存在 `HR026_status_v0.md`，但控制文档明确 R8 没有新增 HR026，实际有效 HR026 是 R9 选举的 19 行 CSV。该 R8 文件只能视为状态／墓碑文件，不能当成第二个任务。
-    - HR019 的任务书仍写 63 条 edge scope；实际 `HR019_edge_scope_review_queue_v0.csv` 和当前控制文档均为 **65**。本包按实际 65 计数，不修改原任务书。
+    - HR019 的任务书仍写 63 条 edge scope；HR-027 合并并重生后，`HR019_edge_scope_review_queue_v0.csv` 实际为 **76**。本包按当前实数计数，不修改原任务书。
     - HR020 的任务书“复核包”清单漏列实际 14 行决定队列 `hr020_review_queue_v0.csv`；本包将其作为唯一 live queue 计数，不修改任务书。
     - HR018 的 26 条关系使用 `accept`／`revise`／`reject` 三列，而不是统一 `decision` 字段；8 条 source prerequisite 没有决定字段。编排时必须避免把 34 行全部误报为 34 个空白决定。
     - HR023／HR028 的状态文件不代表空白人审队列。
@@ -960,8 +960,8 @@ def validate(inventory: list[dict[str, object]], batches: list[dict[str, object]
     lookup = by_hr(inventory)
     if int(lookup["HR018"]["ancillary_row_count"]) != 8:
         raise ValueError("HR018 must distinguish 8 source prerequisites from decision rows")
-    if int(lookup["HR019"]["actual_row_count_total"]) != 104:
-        raise ValueError("HR019 live CSV total should be 9+30+65=104")
+    if int(lookup["HR019"]["actual_row_count_total"]) != 115:
+        raise ValueError("HR019 live CSV total should be 9+30+76=115 after HR-027")
     if int(lookup["HR032"]["actual_row_count_total"]) != 8:
         raise ValueError("HR032 live partner alias/JV crosswalk queue should contain 8 rows")
     if int(lookup["HR032"]["decision_row_count"]) != 8:
@@ -969,10 +969,10 @@ def validate(inventory: list[dict[str, object]], batches: list[dict[str, object]
     for hr in ("HR023", "HR028"):
         if int(lookup[hr]["actual_row_count_total"]) != 0:
             raise ValueError(f"{hr} should have no CSV rows in this package")
-    if sum(int(row["actual_row_count_total"]) for row in inventory) != 378:
-        raise ValueError("Expected 378 current HR016–HR032 CSV rows")
-    if inventory_decisions != 370:
-        raise ValueError("Expected 370 current HR016–HR032 decision rows")
+    if sum(int(row["actual_row_count_total"]) for row in inventory) != 397:
+        raise ValueError("Expected 397 current HR016–HR032 CSV rows after HR-027 and dependent package regeneration")
+    if inventory_decisions != 389:
+        raise ValueError("Expected 389 current HR016–HR032 decision rows after HR-027 and dependent package regeneration")
     if inventory_ancillary != 8:
         raise ValueError("Expected 8 current ancillary source-prerequisite rows")
     required_tokens = (

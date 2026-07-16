@@ -22,3 +22,7 @@ A010,石垣島への自衛隊配備を止める住民の会,predecessor_of,S157,
 A053,普天間基地爆音訴訟原告団,descriptive_variant,S135;S136,HR-012: descriptive plaintiff-group variant; canonical follows the official site name 普天間基地爆音訴訟団.
 A111,県婦人団体連絡協議会,former_name,S201,HR-013: historical name used in the 1995 base-removal mobilization context.
 A111,女団協,acronym,S208,"HR-013: documented abbreviation. Do not transfer 沖女連, which is associated with former A094."
+A113,ちゅら水会,context_limited_alias,S273;S274,"HR-027: valid only in explicit Ginowan context; 名護ちゅら水会 is a separate near-name, so display/search must retain the Ginowan qualifier."
+A114,全港湾沖縄地方本部,short_name,S289,HR-027 accepted branch-qualified short form; do not collapse into the national 全港湾 organization.
+A114,全港湾沖縄,media_short_name,S286,HR-027 accepted media headline form; branch context remains mandatory.
+A115,新婦人沖縄県本部,short_name,S283,HR-027 accepted prefecture-qualified short form. Bare 新婦人 refers to the national organization and is rejected as an unconditional alias.

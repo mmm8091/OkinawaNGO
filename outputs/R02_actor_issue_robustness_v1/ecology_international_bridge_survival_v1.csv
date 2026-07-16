@@ -1,0 +1,9 @@
+﻿actor_id,actor_name,actor_class,origin_type,FULL,NO_S003,NO_S004,NO_S006,NO_BIG3,REVIEWED
+A001,Okinawa Environmental Justice Project,international_advocacy_actor,mixed_or_network,survives,survives,survives,survives,survives,drops
+A002,ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）,international_advocacy_actor,japan_domestic,survives,survives,survives,survives,survives,survives
+A009,Earthjustice,international_advocacy_actor,us_origin,survives,survives,survives,survives,survives,drops
+A033,Friends of the Earth U.S.,international_ngo,us_origin,survives,survives,drops,survives,drops,drops
+A034,Korea Federation for Environmental Movements (KFEM),international_ngo,international,survives,survives,drops,survives,drops,drops
+A042,Pacific Environment,international_ngo,us_origin,survives,survives,drops,survives,drops,drops
+A045,Center for Biological Diversity,international_ngo,us_origin,survives,survives,drops,survives,drops,drops
+A046,Pro Natura,international_ngo,international,survives,survives,survives,survives,survives,survives

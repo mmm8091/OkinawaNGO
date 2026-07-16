@@ -1043,8 +1043,8 @@ z
    </g>
    <g id="patch_6">
     <path d="M 76.526562 209.982881
-L 327.685653 209.982881
-L 327.685653 228.311849
+L 361.173532 209.982881
+L 361.173532 228.311849
 L 76.526562 228.311849
 z
 " clip-path="url(#p321e3a4560)" style="fill: #7d8c86"/>
@@ -1107,8 +1107,8 @@ z
    </g>
    <g id="patch_14">
     <path d="M 76.526562 228.311849
-L 294.197775 228.311849
-L 294.197775 246.640818
+L 327.685653 228.311849
+L 327.685653 246.640818
 L 76.526562 246.640818
 z
 " clip-path="url(#p321e3a4560)" style="fill: #2a6f6b"/>
@@ -1228,17 +1228,17 @@ z
     </g>
    </g>
    <g id="text_21">
-    <!-- 15 -->
-    <g transform="translate(332.708835 221.901271) scale(0.1 -0.1)">
+    <!-- 17 -->
+    <g transform="translate(366.196714 221.901271) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftYaHei-31"/>
-     <use xlink:href="#MicrosoftYaHei-35" x="58.642578"/>
+     <use xlink:href="#MicrosoftYaHei-37" x="58.642578"/>
     </g>
    </g>
    <g id="text_22">
-    <!-- 13 -->
-    <g transform="translate(299.220956 240.23024) scale(0.1 -0.1)">
+    <!-- 15 -->
+    <g transform="translate(332.708835 240.23024) scale(0.1 -0.1)">
      <use xlink:href="#MicrosoftYaHei-31"/>
-     <use xlink:href="#MicrosoftYaHei-33" x="58.642578"/>
+     <use xlink:href="#MicrosoftYaHei-35" x="58.642578"/>
     </g>
    </g>
    <g id="text_23">

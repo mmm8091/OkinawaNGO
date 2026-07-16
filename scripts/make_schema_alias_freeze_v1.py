@@ -160,10 +160,12 @@ LEGAL_STATUS_MAP = {
 ALIAS_TYPE_MAP = {
     "acronym": ("acronym", "freeze_as_is", False),
     "canonical_variant": ("orthographic_variant", "mechanical_normalize", False),
+    "context_limited_alias": ("context_limited_alias", "human_review", True),
     "descriptive_variant": ("descriptive_variant", "freeze_as_is", False),
     "former_canonical": ("former_registry_canonical", "mechanical_normalize", False),
     "former_name": ("former_name", "freeze_as_is", False),
     "japanese_name": ("language_name", "mechanical_normalize", False),
+    "media_short_name": ("media_short_name", "freeze_from_human_anchor", False),
     "network_name": ("network_name", "freeze_from_human_anchor", False),
     "original_name": ("former_name", "mechanical_normalize", False),
     "possible_canonical_variant": ("unresolved_canonical_variant", "human_review", True),
@@ -1227,9 +1229,9 @@ def validate(
         for field in ("actor_class", "legal_status_guess", "origin_type")
     }
     assert {(row["actor_id"], row["field_name"]) for row in actor_rows} == expected_actor_cells
-    assert len(aliases) == 23 and len(alias_rows) == 23
+    assert len(aliases) == 27 and len(alias_rows) == 27
     assert len(places) == 20 and len(place_rows) == 20
-    assert len(actor_place_edges) == 129
+    assert len(actor_place_edges) == 135
     assert len(place_conflicts) == 1
     assert place_conflicts[0]["edge_id"] == "AP123"
     assert place_conflicts[0]["proposed_resolution"] == "defer_to_HR025"

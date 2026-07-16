@@ -6,7 +6,7 @@
 
 ## 1. 结论先行
 
-当前 registry 的 118 个 actor，其 `actor_class`、`legal_status_guess`、`origin_type` 共 **354 个字段单元（N×3）**已逐项覆盖。HR-027 若新增／移除 actor，必须先完成受控合并再重生本包，新增 actor 会自动进入三字段审计。当前共有 **467 条统一候选**，其中 **34 条进入 HR-029**；人工字段按稳定 review item ID 保留，当前已填写 0 条、待处理 34 条。
+当前 registry 的 122 个 actor，其 `actor_class`、`legal_status_guess`、`origin_type` 共 **366 个字段单元（N×3）**已逐项覆盖。HR-027 若新增／移除 actor，必须先完成受控合并再重生本包，新增 actor 会自动进入三字段审计。当前共有 **483 条统一候选**，其中 **36 条进入 HR-029**；人工字段按稳定 review item ID 保留，当前已填写 0 条、待处理 36 条。
 
 `origin_type` 的 7 个值已闭合，可原样冻结。`actor_class` 从 25 个表面值收敛为 24 个建议值；A087–A093、A095–A101仍只是身份级合并，14 个 actor 的 class assignment 继续人工决定。`legal_status_guess` 从 44 种表面写法收敛到 33 个受控值；无法确认法人格者明确落到 `*_unresolved`，而不是猜成 NPO、基金会或正式网络。
 
@@ -14,7 +14,7 @@
 
 ## 2. Alias：查找等价不等于实体等价
 
-现有 23 条 alias、15 种 alias_type 全部入审计。没有发现跨 actor 的规范化 alias 冲突；有 1 组同一 actor 的标点差异（X016 的 spouses' / spouses），因税务记录与组织写法来源不同可保留。
+现有 27 条 alias、15 种 alias_type 全部入审计。没有发现跨 actor 的规范化 alias 冲突；有 1 组同一 actor 的标点差异（X016 的 spouses' / spouses），因税务记录与组织写法来源不同可保留。
 
 三类名称必须和普通 alias 分开：
 
@@ -28,7 +28,7 @@ A106 的「首都圏連絡会／首都圏キャンペーン」canonical 选择�
 
 20 个 place 都获得 parent 与查询 alias 候选。P004 Futenma 与 P010 MCAS Futenma必须分别代表议题／地域层与实体基地层；P005 Kadena 需明确是 Kadena Air Base；P011–P013 的与那国、石垣、宫古必须区分町／市与岛屿／区域写法。这五项进入 HR-029。
 
-129 条 actor–place 边发现 **1 个交叉键冲突**：AP123 的 `place_id=P006` 指向 Camp Schwab，而 `place_name=Camp Foster`。本包将其显式标为 `defer_to_HR025`／needs-human；HR-025 是唯一权威语义闸门，schema 包不另建 HR-029，也不静默建议 P007。
+135 条 actor–place 边发现 **1 个交叉键冲突**：AP123 的 `place_id=P006` 指向 Camp Schwab，而 `place_name=Camp Foster`。本包将其显式标为 `defer_to_HR025`／needs-human；HR-025 是唯一权威语义闸门，schema 包不另建 HR-029，也不静默建议 P007。
 
 16 项 venue taxonomy 的 ID 与 label/group 本身无重复；但 event/pathway 表有 **9 条 `R10_VENUE` 占位引用**。其中 USO 的三条服务／捐赠观察可机械候选为 V016；伞状 membership 未必需要 venue，JICA活动与公共外交 opportunity 也不是同一种场域，所以 6 条进入 HR-029。V015 已实际使用 1 次，其“future expansion”旧 note 已过时，但本包不改 note。
 
