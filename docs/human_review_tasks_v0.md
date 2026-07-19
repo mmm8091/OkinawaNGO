@@ -1,6 +1,6 @@
 # 人工复核任务书 v0
 
-日期：2026-07-12（状态更新至 2026-07-16）
+日期：2026-07-12（状态更新至 2026-07-20）
 
 ## 1. 目的
 
@@ -12,9 +12,14 @@
 - 敏感关系必须由人审，尤其是资助、委托、公共外交、军属服务、NED / USAID / 外务省 / 美国使领馆相关线索。
 - 不确定就降级为 `needs_second_source` 或 `needs_local_retrieval`。
 
-## 0. 当前状态（更新至 2026-07-16）
+## 0. 当前状态（更新至 2026-07-20）
 
-2026-07-16：**HR-027 已由项目负责人完成 4/4 add 并合并**。权威回交为 `docs/human_review_return_HR027_v1.md`；A112–A115 已入 registry。19 条 issue 与 6 条 place 只作为候选边，17 个事件仍在待审包，组织关系边新增 0。HR-029 已按 122-actor 状态重生为 36 项中间快照，但必须等 HR-019／024／025 与外部 HR-010 合并后再最终重生和执行。
+2026-07-20：负责人已经回交的 HR-016–033 线上决定均已合并。HR-027 的 A112–A115 保留；AP123 已修复为 P007 Camp Foster；HR-033 的 dyadic relation 与 aggregate observation 已分层；HR-029 已重生为 505 个候选／41 个空白决定。
+
+合并后的重新核账确认仍有三组前置人工任务：HR-010 批 6 的 47 条 actor–issue 补证、LCR001–004 的 4 条生命周期个案，以及 HR-034 的 50 条 `review_status` 交叉表。它们完成并合并以后才最终重生 HR-029；HR-031 的 3 条解释强度仍最后处理。完整总账见：
+
+- `docs/principal_online_human_tasks_v1.md`
+- `docs/principal_human_review_remaining_v14.md`
 
 HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
@@ -52,15 +57,16 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 | 任务 | 状态 | 当前结论 |
 |---|---|---|
-| HR-010 | partial / pending | A102-A106 已完成；A094 已按范围修正撤出；A087-A093、A095-A101 仍待分类、范围与关系复核。 |
+| HR-010 | partial / pending | A102-A106 已完成；A094 已按范围修正撤出；A087-A093、A095-A101 的 47 条边级补证仍待复核。 |
 | HR-011 | completed | 新增 A107 沖縄YWCA、A108 沖縄を再び戦場にさせない県民の会、A109 第4次嘉手納弁护团、A110 大阪行动；C015 defer，不入主 registry。 |
 | HR-012 | completed | A052/A053 完成规范名与诉讼轮次 alias；C026/C027 分别为 `round_of` A052/A053；C028 为 A010 的 `predecessor_of`，不另建 actor。 |
 | HR-013 | completed | C011 以 A111 入表；C010、C034 只作 background；C029-C033 rejected。`okinawajosei.org` 属おきなわ女性財団，不能作为 A111 官网；A111 不接 `沖女連` alias。 |
 | HR-014 | completed | 六案与 27 条案件角色已按案件特定边界人审落库。 |
 | HR-015 | completed | 49 条 evidence note 与 64 条 actor-event-venue 记录已人审；A077-A085 撤出主 registry，保留为 E2 事件参与线索。 |
 | HR-027 | completed | A112 宮古島地下水研究会、A113 宜野湾ちゅら水会、A114 全港湾沖縄地方本部、A115 新婦人沖縄県本部按模块价值入表；不自动批准事件或关系。 |
+| HR-034 | pending | 45 条 source-log 行、AI068 及 4 条表级字段政策待人工 crosswalk；不得把 legacy 状态自动改成 `human_checked`。 |
 
-主 registry 当前为 **122 actor**，已达到原方案 120–180 下限；准入依据是四项模块修复，不是补数字。当前主数据另有 **295 sources、241 actor–issue edges、135 actor–place edges、67 AEV rows**；issue/place 新边仍是候选，AEV 未随 HR-027 增长。来源归档状态为 266 archived、2 manual_archived、25 failed、2 non-URL。
+主 registry 保留 **122 条历史记录**，其中 A072 是合并到 A071 的重复组织 tombstone，当前为 **121 个有效 actor**，仍达到原方案 120–180 下限。当前中央表另有 **295 sources、248 条 actor–issue 历史边、135 条 actor–place 历史边、67 条 AEV**。来源归档状态为 273 archived、2 manual_archived、18 failed、2 non-URL；归档失败不否定来源内容。
 
 ## 2. 复核输入材料
 
@@ -639,9 +645,9 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 未建立人工决定任务。该包只把 148 条既有正式观察重组为 39 个去重行动单元和 6 案／17 阶段展示，不新增 actor、事实角色、关系、联盟或因果判断；因此保留编号说明，不伪造空白人审项。
 
-### HR-029 schema 与 alias 冻结复核 — pending / after HR-027
+### HR-029 schema 与 alias 冻结复核 — pending / after HR-010, lifecycle and HR-034
 
-状态（2026-07-16）：对 actor class、legal status、alias type、relation type 与 action type 形成 483 条规范化候选，其中 36 条需要人工决定。HR-027 接受项已合并并重生 122-actor 中间快照；仍须等待 HR-019／024／025 与外部 HR-010 后最终重生，当前包不是最终 freeze。
+状态（2026-07-20）：post-merge 包形成 505 个统一候选，其中 41 条需要人工决定。HR-019／024／025／032／033 已合并，AP123 已解决；当前仍须等待 HR-010 批 6、LCR001–004 与 HR-034 后最终重生，当前包不是最终 freeze。
 
 复核包：
 
@@ -655,9 +661,9 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - AP123 不在 HR-029 作机械修订，唯一决定权归 HR-025。
 - 规范词表旨在消除同义写法，不得抹去研究上有意义的组织层级、案件代际和历史有效期。
 
-### HR-030 下一波来源元数据与归档复核 — pending
+### HR-030 下一波来源元数据与归档复核 — completed / merged
 
-状态（2026-07-13）：S248-S294 共 47 条新来源已按 provisional、`ai_seeded` 方式进入 source log；40 条归档成功，7 条失败。去重后有 22 个 URL 需要补 metadata、locator、archive 或替代副本，所有人工决定栏为空。来源建索引不等于 HR-026／027 的候选事实获得批准。
+状态（2026-07-20）：22 个 URL 的 metadata／archive 决定已经由负责人完成并合并。当前 archive manifest 为 273 archived、2 manual_archived、18 failed、2 non-URL；失败仍可能来自 SSL、403 或动态页面，不等于来源内容被否定。来源建索引不等于 HR-026／027 的候选事实获得批准。
 
 复核包：
 
@@ -687,9 +693,9 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - 地点差异可表述到何种强度，是否需要进一步用同口径材料控制资料可见度偏差。
 - 边野古国际化是否可称“连续转换”；若保留，必须明确为分析性重建，不表达因果、指挥、资金或稳定联盟。
 
-### HR-032 S002 高价值 partner alias／复合体 crosswalk 复核 — pending
+### HR-032 S002 高价值 partner alias／复合体 crosswalk 复核 — completed / merged
 
-状态（2026-07-13）：R10 已将 S002 FY2024《NPO 等との協働実績調査》86 页、616 条来源行做成独立正式总体层。总体表与两张图按 source rows／machine display labels 聚合，不创建 actor、relation 或 payment；当前图均可作为 source-universe 事实层使用。HR-032 仅保留 8 个会改变高频 partner-label 图或一期相邻 field10／11 核心解释的身份／复合体问题，决定、复核人和日期栏全部留空。
+状态（2026-07-20）：8/8 identity／composite crosswalk 已由负责人完成并合并。R10 的 616 条来源行、machine display labels、standalone actor、办事机构、复合体与成员 crosswalk 继续分层；成员展开没有变成付款、资金边或稳定组织关系。
 
 复核包：
 
@@ -704,17 +710,34 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - JOCA 冲绳事务所、世界若者ウチナーンチュ连合会与各共同企业体必须区分 standalone actor、项目复合体和成员 crosswalk；即使接受成员说明，也不得拆分项目事业费或生成稳定关系。
 - 当前两张 616-row source-universe 图不等待 HR-032；只有 canonical alias、JV 成员展开、registry crosswalk 或 actor-level 中心性解释受该任务控制。任何新行政关系／金额解释仍由 HR-018 或其后继任务决定。
 
+### HR-034 legacy `review_status` 交叉复核 — pending
+
+状态（2026-07-20）：中央表和派生模块仍混有 `verified`、`human_verified`、`watchlist_only`、`qa_safe_online`、`accepted` 及 lifecycle 工作流状态。已建立 50 个空白人工任务，不作自动字符串迁移。
+
+复核包：
+
+- `outputs/review_status_crosswalk_v1/HR034_review_status_crosswalk_v1.csv`
+- `outputs/review_status_crosswalk_v1/downstream_mechanical_impacts_v1.csv`
+- `outputs/review_status_crosswalk_v1/README.md`
+
+人工重点：
+
+- 45 条 source-log 行逐条判断合法状态；source 状态不批准 actor、edge、资金或解释。
+- AI067 已被 HR-019 拒绝；当前需处理的是 AI068，且不得把它重新纳入默认冲绳关系图。
+- R4、R9、异质行动和 lifecycle 四项只决定字段语义与迁移规则，不能把所影响的行批量推定为人审通过。
+- lifecycle 工作流状态应与 `review_status` 分栏；不改写仍为空白的 LCR001–004 个案决定。
+
 ## 7. 人工复核节奏
 
 建议每轮 60-90 分钟，先处理 8-12 个高风险条目。
 
 优先级：
 
-1. HR-027 registry 价值门槛；先决定新增 actor，不直接执行当前 HR-029 预审快照。
-2. HR-010／019／024 的现有 actor 分类、议题边与 bridge／scope，以及 HR-025 的 AP123／空间语义、HR-026 的选举角色；这些都会改变最终图或计数。
-3. HR-018 资助／委托／公共外交／军属服务关系；它控制 R10 正文图和 HR-021 前 7 项。
-4. 合并上述 actor／edge 决定后重跑并执行 HR-029 schema／alias freeze；同时处理 HR-022／030 来源元数据、HR-031 报告解释强度与 HR-032 的 8 项 partner alias／JV crosswalk。HR-032 不阻断当前两张 R10 来源总体图。
-5. 其余 E2、与那国／先岛组织身份和需要当地材料的条目。
+1. HR-010 批 6 的 47 条 actor–issue 边级证据。
+2. LCR001–004 的 4 条生命周期个案。
+3. HR-034 的 50 条 legacy status crosswalk／表级政策。
+4. 合并上述决定后最终重生并分批执行 HR-029 的 41 项 schema／alias freeze。
+5. 最后处理 HR-031 的 3 条解释强度；当地 12 项等待一手材料。
 
 ## 8. 不合格复核示例
 
