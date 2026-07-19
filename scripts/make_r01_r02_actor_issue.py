@@ -39,7 +39,8 @@ SCHEMA_CLASSES = {
     "base_spouse_charity_network", "public_diplomacy_or_exchange_actor",
     "public_diplomacy_grant_program", "local_international_cooperation_ngo",
     "public_institution_partner", "corporate_sponsor",
-    "local_business_sponsor", "funder_or_intermediary",
+    "local_business_sponsor", "funder_or_intermediary", "labor_union",
+    "womens_organization",
 }
 SCHEMA_REVIEW = {
     "ai_seeded", "human_checked", "human_revised", "needs_second_source",
@@ -61,6 +62,7 @@ CLASS_FAMILY = {
     "labor_union": "劳工／教育组织",
     "womens_or_community_organization": "女性／人权／社区",
     "womens_or_human_rights_ngo": "女性／人权／社区",
+    "womens_organization": "女性／人权／社区",
     "base_community_service_actor": "基地社区服务／慈善",
     "base_spouse_club": "基地社区服务／慈善",
     "base_spouse_charity_network": "基地社区服务／慈善",
@@ -133,6 +135,19 @@ def write_csv(path: Path, rows: list[dict[str, object]], fields: list[str]) -> N
         writer.writerows(rows)
 
 
+def preserve_completed_hr_queue(
+    path: Path, generated_rows: list[dict[str, object]], fields: list[str],
+) -> tuple[list[dict[str, str]] | list[dict[str, object]], bool]:
+    """Keep a closed human-review ledger intact while regenerating derivatives."""
+
+    if path.exists():
+        existing = read_csv(path)
+        if existing and all(row.get("review_decision", "").strip() for row in existing):
+            return existing, True
+    write_csv(path, generated_rows, fields)
+    return generated_rows, False
+
+
 def write_text(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text.rstrip() + "\n", encoding="utf-8")
@@ -157,6 +172,19 @@ def short(value: str, width: int = 24) -> str:
 
 
 def classify_scope(edge: dict[str, str]) -> tuple[str, str]:
+    reviewed_scope = edge.get("scope_kind", "").strip()
+    if edge.get("scope_review_status") in HUMAN_STATUSES and reviewed_scope:
+        reviewed_map = {
+            "organizational_positioning": "organizational_positioning",
+            "institutional_or_case_role": "institutional_or_case_role",
+            "event_specific": "event_specific",
+            "remain_unclear": "mixed_or_unclear",
+            "case": "institutional_or_case_role",
+        }
+        if reviewed_scope not in reviewed_map:
+            raise ValueError(f"Unknown reviewed scope_kind: {reviewed_scope}")
+        return reviewed_map[reviewed_scope], "human-reviewed scope_kind from central actor-issue edge"
+
     text = f"{edge.get('relation_basis', '')} {edge.get('notes', '')}".lower()
     issue = edge.get("issue_label", "").lower()
     event_terms = (
@@ -696,7 +724,7 @@ def make_hr019(
         "recommended_option": "批准为派生分析层；不覆盖 registry 原 actor_class",
         "review_decision": "", "human_reviewer": "", "review_date": "", "review_notes": "",
     })
-    write_csv(
+    tasks, tasks_closed = preserve_completed_hr_queue(
         HR / "HR019_review_v0.csv", tasks,
         ["review_item_id", "review_type", "object_id", "current_value", "question",
          "recommended_option", "review_decision", "human_reviewer", "review_date", "review_notes"],
@@ -714,7 +742,7 @@ def make_hr019(
             "review_question": "现有来源是否足以将其写入跨议题组织正文，且是否需限制为事件性／案件性角色？",
             "review_decision": "", "human_reviewer": "", "review_date": "", "review_notes": "",
         })
-    write_csv(
+    bridge_rows, bridges_closed = preserve_completed_hr_queue(
         HR / "HR019_bridge_actor_review_queue_v0.csv", bridge_rows,
         ["actor_id", "canonical_name", "issue_ids_all", "issue_count_all", "bridge_classification_v1",
          "actor_review_status", "review_question", "review_decision", "human_reviewer", "review_date", "review_notes"],
@@ -732,22 +760,23 @@ def make_hr019(
             "review_question": "该 edge 应归为长期定位、制度／案件角色，还是事件性标签？",
             "review_decision": "", "human_reviewer": "", "review_date": "", "review_notes": "",
         })
-    write_csv(
+    scope_rows, scopes_closed = preserve_completed_hr_queue(
         HR / "HR019_edge_scope_review_queue_v0.csv", scope_rows,
         ["edge_id", "actor_id", "actor_name", "issue_id", "issue_label", "relation_basis_original",
          "evidence_level", "review_status", "review_question", "review_decision", "human_reviewer",
          "review_date", "review_notes"],
     )
+    closed = tasks_closed and bridges_closed and scopes_closed
     write_text(HR / "HR019_review_guide_v0.md", f"""
 # HR-019｜R1/R2 分类与解释边界人工复核包
 
-本包不包含 AI 代替人审的决定。所有 `review_decision`、`human_reviewer`、`review_date` 均留空。
+{"三张任务表均已由负责人完成；本轮重生只保留其历史决定，不重开或覆盖人工字段。" if closed else "本包不包含 AI 代替人审的决定；未完成人工字段保持空白。"}
 
-## 需要决定的三类问题
+## 三类复核记录
 
-1. `HR019_review_v0.csv`：{len(tasks)} 个规则／受控词决定。重点是 6 个超出当前 schema 的 `actor_class` 术语，以及 `watchlist_only` 是否应继续作为 review status。
-2. `HR019_bridge_actor_review_queue_v0.csv`：{len(bridge_rows)} 个“跨议题但尚未形成双侧人审证据”的 actor。复核时必须区分长期组织定位、案件角色和事件性参加。
-3. `HR019_edge_scope_review_queue_v0.csv`：{len(scope_rows)} 条当前文字无法可靠判断时间范围的 actor–issue edge。这里只审核 edge 的解释层，不把它改写成组织间关系。
+1. `HR019_review_v0.csv`：{len(tasks)} 个规则／受控词决定。
+2. `HR019_bridge_actor_review_queue_v0.csv`：{len(bridge_rows)} 个跨议题 actor 的解释边界决定。
+3. `HR019_edge_scope_review_queue_v0.csv`：{len(scope_rows)} 条 actor–issue edge 的时间／案件／事件范围决定；只审核解释层，不把它改写成组织间关系。
 
 ## 推荐决策值
 
