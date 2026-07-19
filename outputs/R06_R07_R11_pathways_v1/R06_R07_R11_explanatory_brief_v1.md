@@ -30,4 +30,4 @@ AEV0061–0064 继续作为分析性路径假说。已有的共同要请、调�
 
 ## 图状态
 
-本轮没有重绘 R6／R7／R11 SVG/HTML；这些图是 pre-HR021 快照。当前事实计数与下游范围以 CSV、本 brief 与 validation note 为准。
+R6／R7／R11 的三张 SVG 与三张 HTML 已由独立 renderer 按当前 6／9／53 行 CSV 重绘。renderer 只读三张模块表、只写六个图件；不回写正式事实表、HR-021、brief 或 validation note。

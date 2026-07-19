@@ -92,7 +92,7 @@ R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留 135 �
 | Actor–place | 135 历史／130 有效／5 retired | 有效层 53 人审／77 候选；HR-025 已合并；AP123=P007 | 当前 v1 已重生；最终只待 schema/alias freeze、统一图注与正式版式 |
 | Actor–venue sample | 16 类 venue + 67 条 AEV；63 human_checked、4 analytical_seed | R5/R7 已把既有正式事实汇成 148 条观察、39 个去重单元、15 类行动和 9 类场域 | HR-029 处理 9 条 `R10_VENUE`／场域引用问题；按冻结值重生图 |
 | Joint-action sample | 67 条 AEV；三次名单 169 条事件参与；异质行动 39 个去重单元 | HR-020 已合并：64 registry rows、22 human-reviewed event-only identities、83 other names、0 alias pending；共同出现仍非稳定联盟 | 当前 v1 已重生；最终只待 schema/alias freeze、统一图注与正式版式；HR-028 为 0 |
-| Coverage audit | 六维 v1：125 cells、6 条模块影响映射；当前为 pre-merge snapshot | 已解释时间、地点、功能／来源、议题、归档和复核偏差；不估计总体覆盖率 | 正式报告前随冻结数据重生；不另设 HR-023 |
+| Coverage audit | 六维 v1：当前有效层 121 actors／238 actor-issue／130 actor-place／295 sources；本次生成 120 cells、6 条模块影响映射 | 中央历史边界 122／248／135 单列；cell 数不是稳定契约；不估计总体覆盖率 | HR-010／034／029 后随最终冻结再重生；不另设 HR-023 |
 | Coding guide | 有 v0/v1；冻结审计覆盖 505 个字段／受控值候选 | 中央 schema 尚未冻结；HR-034 新增 legacy status crosswalk | 完成 HR-034 与 HR-029 后更新 schema、跨表 lint、place hierarchy 与 venue 引用 |
 
 ## 5. R1–R11 模块解释与验收判断
@@ -143,7 +143,7 @@ R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留 135 �
 
 当前成果：在边野古／大浦湾主案例之外，HR-021 合并后的 80 条正式 actor–event–venue–target／entry-mode 事实支持 6 类目标路径比较：国际法律、国际机构请求、国内环境声援、海外声援、行政协作和公共外交机会。规范表明确区分 plaintiff/counsel/non-party、request participant、statement participant、行政协作及 NOFO opportunity，不把它们压成单一“国际网络”。
 
-关键不足：六类路径仍以边野古相关公开事件为主要材料，行政协作和公共外交仍薄；国际机构请求只能证明入口，不能证明机构回应或政策改变。4 条 pathway seed 已分表，只有独立事实边证据才能升级；现有路径 SVG/HTML 还是 HR-021 前快照，须按 80 条正式层重画。
+关键不足：六类路径仍以边野古相关公开事件为主要材料，行政协作和公共外交仍薄；国际机构请求只能证明入口，不能证明机构回应或政策改变。4 条 pathway seed 已分表，只有独立事实边证据才能升级。路径 SVG/HTML 已按当前模块表重画，但制图更新不增加事实强度。
 
 验收成果应为：至少三类国际目标/场域、多个倡议事件的 actor–target 表、国际桥梁组织名单和边野古主案例加边界比较。
 
@@ -183,7 +183,7 @@ R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留 135 �
 
 当前成果：HR-021 合并后，R6/R7/R11 共用正式层有 80 条观察，R6 保留 6 类路径，R7 有 3 案／9 个阶段，R11 外来进入矩阵增至 53 条观察。entry-mode 分析把“外来 actor 如何进入”同 R6 的“议题如何走出去”分开，服务、慈善、赞助和 NOFO 使用不同证据语法。
 
-关键不足：行政和公共外交观察仍极薄，43 条 support/relation 主表也是目的性样本，不代表总体资金结构。HR-021 的 8 项决定已全部合并，新增 9 条仅限 R10 的正式观察；4 条 analytical seed 继续排除在事实与计数之外。现有 SVG/HTML 仍是 HR-021 前快照，须按当前表重画。公共外交 opportunity 仍无 actual award／recipient 证据。
+关键不足：行政和公共外交观察仍极薄，43 条 support/relation 主表也是目的性样本，不代表总体资金结构。HR-021 的 8 项决定已全部合并，新增 9 条仅限 R10 的正式观察；4 条 analytical seed 继续排除在事实与计数之外。SVG/HTML 已按当前 53 条进入观察重画，并将 A066 县基地政策合同与 USO/service 分开。公共外交 opportunity 仍无 actual award／recipient 证据。
 
 验收成果应为：外来 actor entry-mode 表、四层分面生态图、本地连接证据矩阵和独立 R11 brief。R6 回答“议题如何走出去”，R11 回答“外来 actor 如何进入”，不得混用同一张边野古图验收。
 
@@ -277,7 +277,7 @@ R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留 135 �
 8. `outputs/R06_R07_R11_pathways_v1/`：HR-021 合并后共用正式层为 80 条，另有 4 条独立 seed；R6 六类路径、R7 三案／九阶段和 R11 53 条进入观察已形成，现有 SVG/HTML 仍需按当前表重画。
 9. `outputs/R01_R02_actor_issue_v1/`：历史审计保留 122 actors／248 edges，当前图使用 121 actors／238 edges（65 人审／173 候选，103 connected／18 isolated）；HR-019 已合并，10 条失效边仅留历史。
 10. `outputs/R05_coaction_v1/`：2010／2015／2020 三名单共 169 条参与观察、21 个严格重复身份（15 registry＋6 人审 event-only）和两张解释图已形成；HR-020 已合并且 alias pending 为 0。
-11. `outputs/coverage_audit_v1/`：六维、125-cell 覆盖审计及 Q1–Q3／R1–R11 影响表已形成；其内容为机械统计，不创建 HR-023。
+11. `outputs/coverage_audit_v1/`：六维当前有效层覆盖审计及 Q1–Q3／R1–R11 影响表已形成；本次有 120 个动态 category cells，固定契约是 D1–D6 的字段语义而非行数；其内容为机械统计，不创建 HR-023。
 12. `outputs/R08_legal_procedure_v1/`：六案、27 个 accepted role、两张比较图和报告插入段已形成；13 个 registered role 与 14 个 provisional node 分层，无 HR-026。
 13. `outputs/hr013_online_wave_integration_v1/`：HR-013 范围决定、A111 的 4 条议题边／1 条地点边／1 条事件角色及新一轮来源 crosswalk 已合并；S199–S247 共 49 条新来源中 48 条已归档，S213 为 403，候选边仍未因来源入表而自动获批。
 14. `outputs/edge_activation_v1/` 与 `outputs/registry_expansion_gate_v1/`：前者保留 post-HR-013 的孤立 actor／候选边／来源审计；HR-024 线上决定已合并，A073 保持 `online_exhausted`，HR-010 批 6 的 47 条 addendum 仍空白。后者是机器门槛历史，不能自动入表。
@@ -305,6 +305,6 @@ R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留 135 �
 - R9 把住民投票拆成动员、资格、条例、实施／司法和结果再解释的门槛链；R10 则把行政合同、project cost、慈善、服务和非资金关系拆成不同证据语法。
 - 来源整合把在线发现、主编号、归档和人审边界连接起来，但不把来源可得性误写为关系已确认。
 - R1/R2 显示数量下限已修复，首要矛盾转为 18 个有效 actor 缺少有效边、173/238 条当前议题边仍为候选；R5 则把少数跨事件重复身份与大量一次性事件名称分开。
-- 六维审计 v1 的重生前快照显示 2020+ 来源占 185/295，1972–1997 仅 4，Henoko 与全县宽泛节点占 88/135 个历史地点观察；这些是检索可见性偏差，不是组织真实密度，正式报告前须按冻结数据重生。
+- 六维审计 v1 已按当前有效层重生：2020+ 来源占 170/295，1972–1997 仅 4，Henoko 与全县宽泛节点占 82/130 个有效地点观察；中央 122／248／135 历史行只作审计边界。这些是检索可见性偏差，不是组织真实密度；最终冻结后仍须再重生一次。
 
 基础图和前端已按 122 条历史／121 个有效 actor 的中央数据重生；HR-016–033 中凡已回交的线上决定均已合并，HR-029 当前为 505／41 的受依赖中间快照。下一步先完成 HR-010 批 6、LCR001–004 和 HR-034，再最终重生 HR-029，最后处理 HR-031；12 项当地材料任务保持独立。冻结后再装配正式 DOCX/PDF、论文和 PPT。未审候选、事件级名称和 analytical seed 不写入确定性关系结论。

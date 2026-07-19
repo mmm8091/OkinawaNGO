@@ -252,7 +252,9 @@ v2 的六项解释性发现：
 - R9 公投正式层为 29 stages／29 roles；选举 19 条均已人审，18 条确认发生、1 条只确认预告。
 - R10 目的性样本为 35 relations／28 amounts／43 functions；与 S002 616-row 官方来源总体保持分层。实际合同金额只有 5 条，project cost 不是付款。
 - Source archive 当前为 273 archived、2 manual、18 failed、2 non-URL；HR-030 已合并。
+- R6/R7/R11 的六个 SVG/HTML 已按当前 80 条正式观察／53 条 R11 进入观察重绘；A066 县基地政策合同与 USO/service 分列，4 条 analytical seed 不进事实图。
+- 六维 coverage 已按 121 个有效 actor、238 条有效 actor–issue、130 条有效 actor–place 和 295 条来源重生；2020+ 来源为 170/295，1972–1997 仍只有 4。当前 120 个 category cells 是生成结果，不是固定契约。
 - 在 HR-016–033 中，凡已回交的线上决定均已合并；HR-029／031 仍后置空白。当前真实剩余总账为 157：现在可做线上 101、依赖后做线上 44、当地材料 12，见 `docs/principal_human_review_remaining_v14.md`。
-- 探索系统已按当前数据重生并通过 builder、60 项 Python 测试和前端 production build；已核 dyadic、行政、汇总、事件、案件角色与研究线索分层显示。
+- 探索系统已按当前数据重生并通过 builder、65 项 Python 测试和前端 production build；已核 dyadic、行政、汇总、事件、案件角色与研究线索分层显示。
 
 对外使用时，第二次同步仍是最后已经交付的历史客户快照；`outputs/formal_comm_v2/` 是第三次同步准备稿，最终 PDF 由项目负责人排版。OPI-00 仍暂停／未完成，在其完成前不启动新的广泛研究波次。

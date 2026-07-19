@@ -170,7 +170,7 @@
 - actor-event-venue：67 条；63 条 `human_checked`、4 条 pathway `analytical_seed`。AEV0065–0067 只记录 A111/A108 的有界县民大会角色与 A109 的第4次嘉手纳诉讼角色；九个 MMC 小团体仍为 E2 event-only。
 - R4 先岛框架：19 条人审／QA-safe 事实、24 条安全摘录、14 个分层实体；HR-016 线上队列为 0，2 个 registry actor 对 9 个制度节点的结构仍提示来源偏差。
 - R5 三名单：169 条参与观察＝64 条 registry actor、22 条人审核定的 event-only identity、83 条其他 event-only name，alias pending 为 0；6 个 event-only identity 跨事件重复。共同出现只作事件关系。
-- R6/R7/R11 共用正式层：80 条 observation＋4 条独立 seed；R6 六类路径、R7 三案／九阶段、R11 53 条外来进入观察。现有 SVG/HTML 是 HR-021 前快照，须重画。
+- R6/R7/R11 共用正式层：80 条 observation＋4 条独立 seed；R6 六类路径、R7 三案／九阶段、R11 53 条外来进入观察。六个 SVG/HTML 已由只读当前模块表的 renderer 重绘；A066 县基地政策合同单列，不误归 USO/service。
 - R8 case registry：6 案全部 `human_checked`；27 个角色全部 accept，正式表区分 registry actor 与 provisional procedural node。
 - R8 比较 v1：27 行 case×channel×place×role×result 矩阵、54 格 role-family 表和两张 SVG/HTML 图已完成；13 条 registered role／14 条 provisional node，泡濑两波分列，无 HR-026。
 - R9：公投正式层 29 stages／29 roles，HR-017 仍有当地 9 项；选举层 19/19 已人审，其中 18 条确认发生、1 条只确认预告。
@@ -180,7 +180,7 @@
 - 第一版进度稿仍是内部历史草稿；第三次 findings-led v2 与探索前端已经形成，下一次沟通应从当前系统和冻结后图件取材。
 - 在 HR-016–033 中，凡已回交的线上决定均已合并；HR-023／028 为零项任务，HR-029／031 仍后置空白。当前剩余总账为：HR-010 批 6 共 47、LCR 4、HR-034 50、后置 HR-029 41、最终 HR-031 3、当地材料 12。
 - 信息源备份机制已跑通：manifest 为 273 archived、2 manual_archived、18 failed、2 non-URL；失败条目不等于证据不存在。
-- 六维 coverage audit v1 是 pre-merge 快照：2020+ 来源 185/295，1972–1997 仅 4；Henoko 与全县宽泛节点合计 88/135 个历史地点观察。统计只描述公开资料样本可见性；正式报告前须按冻结数据重生，无新增判断，故不创建 HR-023。
+- 六维 coverage audit v1 已按当前有效层重生：121 actors／238 actor-issue／130 actor-place／295 sources，中央历史边界为 122／248／135；2020+ 来源 170/295，1972–1997 仅 4，Henoko 与全县宽泛节点合计 82/130。当前生成有 120 个 category cells，但 cell 数不是稳定契约；统计只描述公开资料样本可见性，不创建 HR-023。
 - post-HR013 edge activation 的 17 actor／54 edge 是历史审计包，不是当前网络总量；HR-024 线上决定已合并，A073 为 `online_exhausted`／当地项，HR-010 补证 47 项仍待人工。
 - R3 空间语义已完成 HR-025：135 条历史／130 条有效，当前先岛 dossier 13 条（与那国6／石垣3／宫古4）；AP106 仅作 rejected history，AP123 已固定为 P007 Camp Foster。
 - R9 选举层 19/19 已人审：18 条确认公开参与发生，1 条仅确认活动预告；不得写票数、胜负或政策因果。

@@ -88,11 +88,11 @@ Updated: 2026-07-20.
   - `outputs/R10_administrative_collaboration_v0/`: a purposive cross-source sample with 35 relations, 28 amount observations and 43 function observations plus two boundary figures; these are within-package counts, not an official annual/department census. The formal layers are 24/10/1 reviewed/revised/local for relations, 21/6/1 for amounts and 29/13/1 for functions. HR-018 online decisions are merged; two original local/internal-record decisions remain deferred.
   - `outputs/R10_completeness_audit_v1/`: verifies the R10 sample boundary against the full 86-page/616-row S002 source universe and the six non-zero S099 program-cost rows. S002 coverage is 10/616; S099's three explicitly public-commissioned rows are represented, without approving relation/payment semantics.
   - `outputs/R10_official_collaboration_universe_v1/`: complete S002 616-row source universe, official resource-type tables, descriptive statistics and two ready-now figures. Its 365 machine display labels are not actors; HR-032's 8 canonical/JV/registry crosswalk decisions are complete and merged without creating payment edges.
-  - `outputs/R06_R07_R11_pathways_v1/`: 80 formal actor-event-venue-target/entry-mode observations, 4 separate analytical seeds, six R6 pathway families, three R7 cases/nine stages and 53 R11 entry observations. HR-021's 8 downstream decisions are complete and merged; existing SVG/HTML figures are pre-HR021 snapshots and need regeneration.
+  - `outputs/R06_R07_R11_pathways_v1/`: 80 formal actor-event-venue-target/entry-mode observations, 4 separate analytical seeds, six R6 pathway families, three R7 cases/nine stages and 53 R11 entry observations. HR-021's 8 downstream decisions are complete and merged; the six SVG/HTML assets are regenerated from the current module CSVs by a render-only script.
   - `outputs/phase1_source_integration_v1/`: 57 module-source crosswalk rows over 54 unique URLs; 39 new sources were integrated as S160–S198 with `relation_or_claim_approved=no`. HR-022's 49 source-metadata/support-boundary decisions are complete and merged.
   - `outputs/R01_R02_actor_issue_v1/`: history audit covers 122 registry rows and 248 actor-issue rows; current figures use 121 active actors and 238 active edges (65 reviewed/173 candidate), with 103 connected and 18 isolated. HR-019 is complete and merged; ten invalidated rows remain history-only.
   - `outputs/R05_coaction_v1/`: complete 2010/2015/2020 lists as 169 event-participation observations: 64 registry rows, 22 human-reviewed event-only identities and 83 other event-only names; alias pending is zero. HR-020 is complete and merged; repeat co-signing is not an alliance.
-  - `outputs/coverage_audit_v1/`: six-dimension, 125-cell visibility-bias audit with Q1–Q3/R1–R11 implications. It is mechanical aggregation, so no HR-023 was created.
+  - `outputs/coverage_audit_v1/`: current-layer six-dimension visibility-bias audit over 121 active actors, 238 active actor-issue edges, 130 active actor-place edges and 295 sources; the central 122/248/135 history boundary is retained in the brief. The current generation has 120 category cells, but cell count is not a stable contract. It is mechanical aggregation, so no HR-023 was created.
   - `outputs/R08_legal_procedure_v1/`: 27 accepted role×case rows across six human-checked cases, 54 role-family cells, two comparison figures and a report insert. It preserves 13 registered-actor roles versus 14 provisional nodes and creates no R8-specific HR task; HR-026 is now used by the election-civic candidate layer.
   - `outputs/edge_activation_v1/`: historical 18-actor/58-edge snapshot plus the post-HR013 evidence package. A094 is excluded; HR-024's online rows are merged, while HR-010 still has 47 blank evidence-addendum rows and A073 remains local/online-exhausted.
   - `outputs/registry_expansion_gate_v1/`: machine evidence gate retained as a pre-human audit snapshot. HR-013 overrides it: A111 added; C010/C034 background-only; C029-C033 rejected; C015 remains in HR-011.
@@ -154,7 +154,7 @@ python scripts\make_r04_hr016_packet.py
 python scripts\make_r09_referendum_process.py
 python scripts\make_r10_admin_collaboration.py
 python scripts\make_r10_official_collaboration_universe_v1.py
-python scripts\make_r06_r07_r11_pathways.py
+python scripts\render_r06_r07_r11_current.py
 python scripts\make_r08_legal_procedure_v1.py
 python scripts\make_edge_activation_v1.py
 python scripts\validate_registry_expansion_gate_v1.py
@@ -184,7 +184,6 @@ python scripts\make_event_repertoire_fig.py
 # Historical second-sync reproduction only; never overwrite the delivered snapshot for a new sync.
 python scripts\make_formal_comm_package.py
 python scripts\make_report_traceability_crosswalk_v1.py
-python scripts\audit_report_claims_v1.py
 python scripts\make_human_review_orchestration_v1.py
 python scripts\make_review_status_crosswalk_v1.py
 python scripts\build_exploration_system_data_v1.py
@@ -193,6 +192,8 @@ python scripts\validate_phase1_data.py
 ```
 
 After source-log or archive changes, rerun the archive script first, then regenerate explanatory and module packages.
+
+Do not run `scripts/make_r06_r07_r11_pathways.py` against the current merged layer; use the render-only command above. Do not rerun `scripts/audit_report_claims_v1.py` until HR-031 and its hard-coded historical counts have been updated.
 
 ## Communication Guidance
 

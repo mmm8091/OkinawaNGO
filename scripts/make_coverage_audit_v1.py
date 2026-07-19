@@ -1,7 +1,17 @@
-"""Build the Phase-1 coverage-bias audit and explanatory figure.
+"""Build the Phase-1 current-layer coverage-bias audit and explanatory figure.
 
 The audit is descriptive of the current public-material-driven working sample.
 It never treats registry/source counts as estimates of a population.
+
+Central history rows remain visible as an audit boundary, while all category
+cells and plotted distributions use the current analytical layer:
+
+* active actors exclude merged-duplicate tombstones;
+* actor-issue rows require ``analysis_inclusion=active``;
+* actor-place rows require ``graph_eligibility!=excluded``.
+
+The six dimensions are stable.  The number of emitted category cells is not:
+it can change when exact categories or workflow states change.
 """
 
 from __future__ import annotations
@@ -28,6 +38,8 @@ BRIEF = OUT / "coverage_audit_brief_v1.md"
 HR023 = OUT / "HR023_status_v0.md"
 SVG = OUT / "fig_coverage_bias_core_v1.svg"
 HTML = OUT / "fig_coverage_bias_core_v1.html"
+
+AUDIT_DATE = "2026-07-20"
 
 
 CELL_FIELDS = [
@@ -60,6 +72,12 @@ IMPLICATION_FIELDS = [
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8-sig", newline="") as handle:
         return list(csv.DictReader(handle))
+
+
+def is_active_actor(row: dict[str, str]) -> bool:
+    """Exclude provenance-only merged duplicates from current statistics."""
+
+    return not row.get("merged_duplicate_of") and row.get("scope_status") != "merged_duplicate"
 
 
 def write_csv(path: Path, fields: list[str], rows: list[dict[str, str]]) -> None:
@@ -155,28 +173,28 @@ def build_cells(
             "Source counts measure documentary visibility, not organization activity. " + public_sample_limit,
         )
 
-    # D2 — exact actor-place pairs; no duplicate pair exists in the current table.
+    # D2 — exact current actor-place pairs; excluded history rows are not counted.
     place_counts = Counter(row["place_name"] for row in places)
     for place in sorted(place_counts, key=lambda item: (-place_counts[item], item)):
         add_cell(
             rows, "D2", "地点", "actor_place_pair", place,
             place_counts[place], len(places), "distinct actor-place observations",
-            "Exact place_name values; one row per actor-place pair.",
+            "Current rows only (graph_eligibility != excluded); exact place_name values; one row per actor-place pair.",
             "Presence in the table is not frequency or intensity of activity. " + public_sample_limit,
         )
 
-    # D3 — retain exact actor classes and origins rather than recoding functions by judgment.
+    # D3 — active registry actors only; retain exact values rather than recoding.
     for facet, field in (("actor_class", "actor_class"), ("origin_type", "origin_type")):
         counts = Counter(row[field] for row in actors)
         for category in sorted(counts, key=lambda item: (-counts[item], item)):
             add_cell(
                 rows, "D3", "actor 功能／来源层", facet, category,
                 counts[category], len(actors), "registry actors",
-                f"Exact {field} values from the actor registry; no new recoding.",
+                f"Exact {field} values from active registry actors; merged-duplicate tombstones excluded; no new recoding.",
                 "Registry composition reflects discoverability and inclusion choices, not the population of Okinawa civil society."
             )
 
-    # D4 — unique actors per current issue group; shares are non-additive.
+    # D4 — unique actors per active issue group; shares are non-additive.
     issue_actors: dict[str, set[str]] = defaultdict(set)
     for row in issues:
         issue_actors[row["issue_group"]].add(row["actor_id"])
@@ -184,7 +202,7 @@ def build_cells(
         add_cell(
             rows, "D4", "议题", "unique_actor_by_issue_group", issue_group,
             len(issue_actors[issue_group]), len(actors), "unique registry actors",
-            "Distinct actor_id within each existing issue_group.",
+            "Distinct actor_id within each analysis_inclusion=active issue_group.",
             "Actors may appear in multiple groups; percentages do not sum to 100%. Labels are evidence-bounded, not activity volumes."
         )
 
@@ -211,7 +229,7 @@ def build_cells(
         cross[("other source types", status)] for status in statuses
     )
 
-    # D6 — exact evidence/review states plus deterministic display buckets.
+    # D6 — exact evidence/review states in current actors/issues plus display buckets.
     corpora = (("actor_registry", actors), ("actor_issue_observations", issues))
     for corpus_name, corpus in corpora:
         for field, facet in (("evidence_level", "evidence_level"), ("review_status", "review_status_exact")):
@@ -220,7 +238,7 @@ def build_cells(
                 add_cell(
                     rows, "D6", "review／evidence", f"{corpus_name}_{facet}", category,
                     counts[category], len(corpus), corpus_name,
-                    f"Exact {field} values in {corpus_name}.",
+                    f"Exact {field} values in current-layer {corpus_name}.",
                     "Evidence level and review state are different axes; E4 does not itself mean a claim was human accepted."
                 )
         review_counts = Counter(review_bucket(row["review_status"]) for row in corpus)
@@ -352,6 +370,7 @@ def render_svg(
     issues: list[dict[str, str]],
     places: list[dict[str, str]],
     archive: list[dict[str, str]],
+    history_counts: dict[str, int],
 ) -> str:
     actor_total = len(actors)
     source_total = len(sources)
@@ -452,35 +471,41 @@ def render_svg(
     body = ''.join([
         panel(30, 170, "D1 时间", f"source-log 年份分箱（n={source_total}）", content_time,
               f"2020+ 资料占 {period_counts['2020-current'] / source_total * 100:.1f}%；这反映网页存续与检索路径，不是组织增长。"),
-        panel(820, 170, "D2 地点", f"actor-place 观察（n={place_total}）", content_place,
+        panel(820, 170, "D2 地点", f"当前有效 actor-place 观察（n={place_total}）", content_place,
               f"Henoko 与全县宽泛编码占 {broad_place_count}/{place_total}；关键地点之间不能作对称密度比较。"),
-        panel(30, 580, "D3 actor 功能／来源层", f"registry 原始 class 与 origin（n={actor_total}）", content_actor,
-              f"名单偏向具名、网络化、网页可见 actor；{actor_total} 是工作 registry，不是总体普查。"),
-        panel(820, 580, "D4 议题", f"每组去重 actor；组间可重叠（n={actor_total}）", content_issue,
+        panel(30, 580, "D3 actor 功能／来源层", f"有效 registry 的原始 class 与 origin（n={actor_total}）", content_actor,
+              f"名单偏向具名、网络化、网页可见 actor；{actor_total} 是有效工作层，不是总体普查。"),
+        panel(820, 580, "D4 议题", f"{issue_total} 条有效边；每组去重 actor（n={actor_total}）", content_issue,
               "base/environment/transnational 更可见；标签数量不是议题投入、声量或支持度。"),
         panel(30, 990, "D5 source type × archive", f"前 7 类 + 机械合并其余类型（n={source_total}）", content_source,
               f"failed={failed_total} 只表示抓取失败，不表示证据不存在；archived 也不保证结论充分。"),
-        panel(820, 990, "D6 review × evidence", f"actors n={actor_total}；actor-issue n={issue_total}", content_review,
+        panel(820, 990, "D6 review × evidence", f"有效 actors n={actor_total}；有效 actor-issue n={issue_total}", content_review,
               "E4 与 human-reviewed 是不同轴；高来源等级不能替代身份、关系和解释复核。"),
     ])
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1420" viewBox="0 0 1600 1420" role="img" aria-labelledby="title desc">
 <title id="title">一期公开资料样本的六维覆盖偏差审计</title>
-<desc id="desc">Six-panel audit of time, place, actor class and origin, issue, source type and archive status, and review and evidence status for {actor_total} registry actors and {source_total} sources.</desc>
+<desc id="desc">Six-panel current-layer audit for {actor_total} active actors, {issue_total} active actor-issue rows, {place_total} active actor-place rows and {source_total} sources. Central history retains {history_counts['actors']} actor rows, {history_counts['issues']} actor-issue rows and {history_counts['places']} actor-place rows.</desc>
 <rect width="1600" height="1420" fill="#f3f0e8"/>
 <style>
 text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#19312b}} .title{{font-size:32px;font-weight:700}} .subtitle{{font-size:16px;fill:#52635d}} .sample{{font-size:14px;fill:#6a4b16}} .panel{{fill:#fffdf8;stroke:#d7d3c8;stroke-width:1}} .ph{{font-size:22px;font-weight:700}} .sub{{font-size:13px;fill:#66736e}} .lab{{font-size:12px}} .mini{{font-size:11px;fill:#66736e}} .val{{font-size:12px;font-weight:700}} .bar{{fill:#26735f}} .cell{{font-size:11px;font-weight:700;fill:#15342c}} .inside{{font-size:11px;font-weight:700;fill:#ffffff}} .note-bg{{fill:#f2e5c9}} .note{{font-size:12px;fill:#5b431c}}
 </style>
-<text x="45" y="52" class="title">一期公开资料样本：六维 coverage bias 核心图 v1</text>
-<text x="45" y="82" class="subtitle">偏差审计说明“当前资料让什么更可见”，不估计冲绳民间组织总体分布。</text>
-<rect x="45" y="105" width="1510" height="44" rx="8" fill="#f2e5c9"/>
-<text x="62" y="123" class="sample">{actor_total} actors + {source_total} sources 均为公开资料驱动的工作样本；无总体分母。source 条数不等于组织活跃度；archive failed 不等于证据不存在。</text>
-<text x="62" y="141" class="sample">每个面板的计数单位不同，不能跨面板相加或排序为“研究完成度”。</text>
+<text x="45" y="52" class="title">一期公开资料样本：当前有效层六维 coverage bias v1</text>
+<text x="45" y="82" class="subtitle">样本截点 {AUDIT_DATE}；说明“当前资料让什么更可见”，不估计冲绳民间组织总体分布。</text>
+<rect x="45" y="100" width="1510" height="58" rx="8" fill="#f2e5c9"/>
+<text x="62" y="120" class="sample">当前可视统计：{actor_total} active actors／{issue_total} active actor-issue／{place_total} active actor-place／{source_total} sources；无总体分母。</text>
+<text x="62" y="139" class="sample">中央历史边界：{history_counts['actors']} actor rows／{history_counts['issues']} actor-issue rows／{history_counts['places']} actor-place rows；tombstone／excluded 只留审计历史。</text>
+<text x="62" y="156" class="sample">每个面板计数单位不同，不能跨面板相加；source 数不等于活跃度，archive failed 不等于证据不存在。</text>
 {body}
 <text x="45" y="1402" class="mini">* D4 “other groups” 是剩余 issue-group 的 actor-group presence 合计；同一 actor 可跨组，因此不构成互斥分布。</text>
 </svg>'''
 
 
-def render_brief(cells: list[dict[str, str]], implications: list[dict[str, str]]) -> str:
+def render_brief(
+    cells: list[dict[str, str]],
+    implications: list[dict[str, str]],
+    history_counts: dict[str, int],
+    issue_total: int,
+) -> str:
     time = {row["category"]: row for row in cells if row["facet"] == "source_year_period"}
     archive_counts = Counter()
     for row in cells:
@@ -497,18 +522,27 @@ def render_brief(cells: list[dict[str, str]], implications: list[dict[str, str]]
     broad_place_count = place_counts.get("Henoko", 0) + place_counts.get("Okinawa Prefecture", 0)
     return f"""# Coverage audit v1：公开资料样本的可见性偏差
 
-日期：2026-07-13
+日期：{AUDIT_DATE}
 
 ## 结论先行
 
-当前 **{actor_total} actor registry** 与 **{source_total} source log** 是公开资料驱动的工作样本，不是冲绳民间组织或资料总体的概率样本，也没有可用于估计覆盖率的总体分母。因此，本审计解释的是“哪些对象在当前检索路径下更可见”，不估计总体分布。
+当前默认统计层为 **{actor_total} 个有效 actor、{issue_total} 条有效 actor–issue 边、{place_total} 条有效 actor–place 边与 {source_total} 条 source log**。中央表同时保留 **{history_counts['actors']}／{history_counts['issues']}／{history_counts['places']}** 条 actor／actor–issue／actor–place 历史记录，供 tombstone、rejected 与 excluded 记录的来源审计；这些历史行不进入本轮 category cells 和图中分布。
+
+这仍是公开资料驱动的工作样本，不是冲绳民间组织或资料总体的概率样本，也没有可用于估计覆盖率的总体分母。因此，本审计解释的是“哪些对象在当前检索路径下更可见”，不估计总体分布。
 
 - 时间：2020 年以来资料 {time['2020-current']['count']}/{source_total}（{time['2020-current']['share_pct']}%），1972–1997 仅 {time['1972-1997']['count']}/{source_total}。早期组织谱系和更名连续性明显更弱。
-- 地点：Henoko 与 Okinawa Prefecture 宽泛节点合计 {broad_place_count}/{place_total} 个 actor-place 观察，不能把关键地点间计数差解释为真实组织密度差。
+- 地点：Henoko 与 Okinawa Prefecture 宽泛节点合计 {broad_place_count}/{place_total} 个有效 actor-place 观察，不能把关键地点间计数差解释为真实组织密度差。
 - actor 功能／来源层：registry 偏向具名、网络化、有持续网页或正式记录的 actor；短期委员会、社区小组和旧名称更难被捕捉。
 - 议题：基地政治、环境与跨国议题覆盖较宽；劳动、女性／人权、健康及若干生活安全子题更依赖专项补查。
 - source/archive：{archive_counts['archived'] + archive_counts['manual_archived']}/{source_total} 已归档或人工归档，{archive_counts['failed']}/{source_total} 抓取失败。**archive failed 不等于证据不存在**；反过来，archived 也不保证某项编码结论充分。
 - review/evidence：E4 与 human-reviewed 是不同维度；官方或一手资料等级较高，不代表 actor 身份、关系边界或分析结论已经人工接受。
+
+## 统计层与输出契约
+
+- actor：排除并入 A071 的 A072 tombstone；其余 {actor_total} 个 actor 进入当前层。
+- actor–issue：只纳入 `analysis_inclusion=active` 的 {issue_total} 条边。
+- actor–place：只纳入 `graph_eligibility!=excluded` 的 {place_total} 条边。
+- coverage 输出稳定的是 **D1–D6 六个维度及字段语义**，不是 category-cell 的固定行数。精确分类或 workflow 状态变化时，cell 数可随之变化。
 
 ## 对基础问题的影响
 
@@ -530,36 +564,52 @@ def render_brief(cells: list[dict[str, str]], implications: list[dict[str, str]]
 
 1. source 条数不等于组织活跃度、社会支持度或事件频率。
 2. archive failed 是技术／可得性状态，不等于证据不存在；archived 也不等于证据充分。
-3. {actor_total} actors 与 {source_total} sources 仅描述当前公开资料样本，不能估计冲绳民间组织总体分布。
+3. {actor_total} 个有效 actors 与 {source_total} 条 sources 仅描述当前公开资料样本；中央历史行也不能用于估计冲绳民间组织总体分布。
 
 ## HR-023
 
-本轮不创建 HR-023 决策项。六维统计、Top-N 展示和 review bucket 均为可复现机械审计，没有新增 actor 分类、关系接受、证据等级修改或研究口径决定。需要人审的既有关系和身份问题继续留在原有 HR 队列；不为凑任务重复创建。
+本轮不创建 HR-023 决策项。六维统计、Top-N 展示、current/history 过滤和 review bucket 均为可复现机械审计，没有新增 actor 分类、关系接受、证据等级修改或研究口径决定。需要人审的既有关系和身份问题继续留在原有 HR 队列；不为凑任务重复创建。
 """
 
 
 def main() -> None:
-    actors = read_csv(ACTORS)
+    actor_history = read_csv(ACTORS)
     sources = read_csv(SOURCES)
-    issues = read_csv(ACTOR_ISSUES)
-    places = read_csv(ACTOR_PLACES)
+    issue_history = read_csv(ACTOR_ISSUES)
+    place_history = read_csv(ACTOR_PLACES)
     archive = read_csv(ARCHIVE)
 
-    if not actors or not sources or not issues or not places:
+    if not actor_history or not sources or not issue_history or not place_history:
         raise ValueError("coverage audit inputs must be non-empty")
+    actors = [row for row in actor_history if is_active_actor(row)]
+    issues = [row for row in issue_history if row["analysis_inclusion"] == "active"]
+    places = [row for row in place_history if row["graph_eligibility"] != "excluded"]
+    history_counts = {
+        "actors": len(actor_history),
+        "issues": len(issue_history),
+        "places": len(place_history),
+    }
+
     source_ids = {row["source_id"] for row in sources}
     archive_ids = {row["source_id"] for row in archive}
     if len(source_ids) != len(sources) or source_ids != archive_ids:
         raise ValueError("source log and archive manifest IDs must form the same unique source set")
+    historical_actor_ids = {row["actor_id"] for row in actor_history}
     actor_ids = {row["actor_id"] for row in actors}
-    if len(actor_ids) != len(actors):
+    if len(historical_actor_ids) != len(actor_history):
         raise ValueError("actor registry contains duplicate actor IDs")
+    if "A072" not in historical_actor_ids or "A072" in actor_ids:
+        raise ValueError("A072 must remain a historical tombstone and stay out of current coverage")
+    if any(row["analysis_inclusion"] != "active" for row in issues):
+        raise ValueError("current actor-issue layer contains a non-active row")
+    if any(row["graph_eligibility"] == "excluded" for row in places):
+        raise ValueError("current actor-place layer contains an excluded row")
     if not {row["actor_id"] for row in issues}.issubset(actor_ids):
-        raise ValueError("actor-issue table contains an actor outside the registry")
+        raise ValueError("active actor-issue table contains an actor outside the active registry")
     if not {row["actor_id"] for row in places}.issubset(actor_ids):
-        raise ValueError("actor-place table contains an actor outside the registry")
+        raise ValueError("active actor-place table contains an actor outside the active registry")
     if len({(row["actor_id"], row["place_name"]) for row in places}) != len(places):
-        raise ValueError("actor-place table contains duplicate actor/place pairs")
+        raise ValueError("active actor-place table contains duplicate actor/place pairs")
 
     cells = build_cells(actors, sources, issues, places, archive)
     implications = build_implications(cells)
@@ -568,7 +618,7 @@ def main() -> None:
     if len(implications) != 6:
         raise ValueError("expected six bias implication rows")
 
-    svg = render_svg(actors, sources, issues, places, archive)
+    svg = render_svg(actors, sources, issues, places, archive, history_counts)
     html_page = f"""<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Coverage bias core v1</title><style>body{{margin:0;background:#e9e6de}}main{{max-width:1600px;margin:20px auto;background:#f3f0e8;box-shadow:0 8px 28px #0002}}svg{{display:block;width:100%;height:auto}}@media(max-width:700px){{main{{margin:0;box-shadow:none}}}}</style></head>
@@ -579,10 +629,15 @@ def main() -> None:
     write_csv(IMPLICATIONS, IMPLICATION_FIELDS, implications)
     SVG.write_text(svg, encoding="utf-8")
     HTML.write_text(html_page, encoding="utf-8")
-    BRIEF.write_text(render_brief(cells, implications), encoding="utf-8")
+    BRIEF.write_text(
+        render_brief(cells, implications, history_counts, len(issues)),
+        encoding="utf-8",
+    )
     HR023.write_text(
         "# HR-023 status\n\n"
-        "本轮无需创建 HR-023 决策项。coverage audit 仅执行可复现的机械统计与展示聚合，"
+        f"日期：{AUDIT_DATE}\n\n"
+        "本轮无需创建 HR-023 决策项。coverage audit 仅执行 current/history 可复现过滤、"
+        "机械统计与展示聚合；六个维度固定，但 category-cell 行数不是稳定契约。"
         "没有新增 actor 分类、关系接受、证据等级修改或口径决策。既有人审问题继续使用原 HR 队列，"
         "不在此重复造任务。\n",
         encoding="utf-8",
@@ -590,11 +645,21 @@ def main() -> None:
 
     if read_csv(CELLS) != cells or read_csv(IMPLICATIONS) != implications:
         raise ValueError("CSV roundtrip mismatch")
-    if f"{len(actors)} actors + {len(sources)} sources" not in svg:
-        raise ValueError("sample boundary missing from core figure")
+    current_boundary = (
+        f"{len(actors)} active actors／{len(issues)} active actor-issue／"
+        f"{len(places)} active actor-place／{len(sources)} sources"
+    )
+    history_boundary = (
+        f"{history_counts['actors']} actor rows／{history_counts['issues']} actor-issue rows／"
+        f"{history_counts['places']} actor-place rows"
+    )
+    if current_boundary not in svg or history_boundary not in svg:
+        raise ValueError("current/history sample boundaries missing from core figure")
     print(
         f"coverage audit OK: {len(cells)} cells; 6 dimensions; "
-        f"{len(actors)} actors; {len(sources)} sources; {len(implications)} implication rows"
+        f"current={len(actors)} actors/{len(issues)} issue edges/{len(places)} place edges; "
+        f"history={history_counts['actors']}/{history_counts['issues']}/{history_counts['places']}; "
+        f"{len(sources)} sources; {len(implications)} implication rows"
     )
 
 

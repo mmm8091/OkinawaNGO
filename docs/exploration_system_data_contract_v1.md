@@ -236,8 +236,12 @@ Camp Schwab。构建模块不修中央表，自动将 AP123 隔离到 research �
 
 ### P4 `evidence_coverage.json`
 
-提供 coverage audit 的 125 个 cell 与 6 条 implication。计数单位按 cell 保留，前端不得
-跨 dimension 相加，也不得把覆盖率解释为冲绳民间组织总体分布。
+提供 coverage audit 的 D1–D6 六个维度 category cells 与 6 条 implication。2026-07-20
+当前层重生后的 cell 数只是一项生成结果，不是前端契约；精确分类或 workflow 状态变化时可
+增减。契约只固定六个 dimension、字段语义和解释边界。计数单位按 cell 保留，前端不得跨
+dimension 相加，也不得把覆盖率解释为冲绳民间组织总体分布。当前默认统计使用 121 个有效
+actor、238 条 `analysis_inclusion=active` actor–issue 边和 130 条
+`graph_eligibility!=excluded` actor–place 边；122／248／135 的中央历史行仅作为审计边界。
 
 ### G1/G2 `global.json`
 

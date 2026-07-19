@@ -55,8 +55,8 @@ ROUTES = [
     },
     {
         "prefix": "outputs/R06_R07_R11_pathways_v1/",
-        "script": "scripts/make_r06_r07_r11_pathways.py",
-        "data": "data/interim/26_actor_event_venue_target_entry_modes_v0.csv;outputs/R06_R07_R11_pathways_v1/analytical_seeds_v0.csv",
+        "script": "scripts/render_r06_r07_r11_current.py",
+        "data": "outputs/R06_R07_R11_pathways_v1/r06_pathway_comparison_v0.csv;outputs/R06_R07_R11_pathways_v1/r07_venue_shift_stages_v0.csv;outputs/R06_R07_R11_pathways_v1/r11_external_entry_matrix_v0.csv",
         "sources": "data/interim/26_actor_event_venue_target_entry_modes_v0.csv",
     },
     {
@@ -92,7 +92,7 @@ ROUTES = [
     {
         "prefix": "outputs/coverage_audit_v1/",
         "script": "scripts/make_coverage_audit_v1.py",
-        "data": "data/interim/01_actor_registry_initial_v0.csv;data/interim/05_source_log_initial_v0.csv;data/interim/07_actor_issue_edges_initial_v0.csv;data/interim/08_actor_place_edges_initial_v0.csv;data/interim/27_coverage_audit_cells_v1.csv",
+        "data": "data/interim/01_actor_registry_initial_v0.csv;data/interim/05_source_log_initial_v0.csv;data/interim/24_r01_r02_actor_issue_layered_v0.csv;data/interim/08_actor_place_edges_initial_v0.csv;data/interim/27_coverage_audit_cells_v1.csv",
         "sources": "data/interim/05_source_log_initial_v0.csv;source_docs/source_archive/source_archive_manifest.csv",
     },
 ]

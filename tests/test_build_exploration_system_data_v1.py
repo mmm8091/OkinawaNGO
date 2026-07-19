@@ -184,8 +184,41 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         self.assertEqual("P3", views["pathways"]["view_id"])
         self.assertEqual(9, len(views["pathways"]["episode_ids"]))
         self.assertEqual("P4", views["evidence_coverage"]["view_id"])
-        self.assertEqual(125, len(views["evidence_coverage"]["cells"]))
-        self.assertEqual(6, len(views["evidence_coverage"]["implications"]))
+        coverage_cells = views["evidence_coverage"]["cells"]
+        coverage_implications = views["evidence_coverage"]["implications"]
+        self.assertGreater(len(coverage_cells), 6)
+        self.assertEqual(
+            {"D1", "D2", "D3", "D4", "D5", "D6"},
+            {row["dimension_id"] for row in coverage_cells},
+        )
+        self.assertEqual(
+            {"D1", "D2", "D3", "D4", "D5", "D6"},
+            {row["dimension_id"] for row in coverage_implications},
+        )
+        self.assertEqual(
+            {130},
+            {
+                row["denominator"]
+                for row in coverage_cells
+                if row["dimension_id"] == "D2"
+            },
+        )
+        self.assertEqual(
+            {121},
+            {
+                row["denominator"]
+                for row in coverage_cells
+                if row["dimension_id"] in {"D3", "D4"}
+            },
+        )
+        self.assertEqual(
+            {238},
+            {
+                row["denominator"]
+                for row in coverage_cells
+                if row["facet"].startswith("actor_issue_observations_")
+            },
+        )
         self.assertEqual("G1+G2", views["global"]["view_id"])
 
     def test_packages_map_geometry_for_the_overview_view(self) -> None:

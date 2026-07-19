@@ -38,7 +38,7 @@ Status: **PASS**
 - PASS — event-only names do not enter actor collection: actors=122
 - PASS — E0 sources cannot support claims: E0 sources=1
 - PASS — archive manifest coverage: sources=295
-- PASS — coverage dimensions complete: cells=125
+- PASS — coverage dimensions complete: cells=120
 - PASS — map geometry packaged: features=42
 
 ## Warnings

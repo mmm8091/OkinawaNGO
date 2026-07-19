@@ -1,7 +1,7 @@
 {
   "artifact": "exploration_system_data_v1",
   "as_of_date": "2026-07-18",
-  "build_id": "cfc898f64cd4bc2c",
+  "build_id": "dc204fa82fa44509",
   "counts": {
     "demo": {
       "actor_aliases": 39,
@@ -70,8 +70,8 @@
     "actor_place": "9d71ab892b74fbe73387ea978c458e5926e76e93a2ef667bebee21d5ec174324",
     "actors": "03653fe12665abc754ef09d9d30e76c6e53dd495eaceba0fef4bc5ce5540b0a3",
     "archive_manifest": "1e57f7e7df749b5ed0714994dc4176b69e7ad51c993c058198c4fd9bdf180d78",
-    "coverage_cells": "70882acffbc4093ac277227f439da3f5bc1ed38436be506c097e99aa5461c2fd",
-    "coverage_implications": "23ff72304645448645db78e164814453da2e3d3e5d8ff341c076e8a325efefff",
+    "coverage_cells": "e2e85b773b56db2eb0ce5afff92404decc5d6b2ebc3dd0f89fbf2135c723b85d",
+    "coverage_implications": "93564245fad8978438b4f5c8e0b63509e842580982c56972cf7c915e2be8368a",
     "episodes": "caa4135d7aa9c388f504d61e3c30c505aade512c9c589250f20daa217b99ca82",
     "event_participation": "c28d5098bbd4f1ea894fc53f5cd65decd19668a7ff0718987eac9101f3effdd9",
     "evidence_notes": "e43d35a804aec5fb0d749b2d3b822f55256d022f3f9d1a62fe91cda4627f6c0e",
@@ -106,10 +106,10 @@
     "demo/typed_event_participation.json": "94588532f0a026278d70baf52c947011553e773bebaa7b6224f5afa45f8e082e",
     "demo/venues.json": "785f877b1ad26850f542fd82d6ebf47d92dd76d3b46c61f5d13ec40642bb32e9",
     "research/candidates.json": "0e0de29773971a69731eefe9c9ce3eaf0b63c208883522d6e86f27461f63f43b",
-    "validation_report.md": "0fb018abee1b7fa9ec754db0d7e53667e6fb45aa67f2d4b1e5d1bcbc0811cf1f",
+    "validation_report.md": "233516ac2ff5bea495c6f48956b5921276b201256af3a41fa7f1d153adffc9e7",
     "views/actors.json": "0ee0f005753e5a9b04ec3e71203ade3f55e4079a0bf36a532b82b47da069d69f",
-    "views/evidence_coverage.json": "4f370b9bf095daeea2d39e9a767b169816c08d50229e0486b35ef786906451d4",
-    "views/global.json": "c2b01fb40547e53b57eb56575013cd12a7885a4491b833af27a5c7178bd9b131",
+    "views/evidence_coverage.json": "ca58947ed190232c38ba32ade9777875984e15b50ce9c2e3984a7abd7784cd37",
+    "views/global.json": "b5aefdd8bab9d3d5542ff3280cd3626ca983f9351ebd671d959719bd75b05150",
     "views/overview.json": "ee619271ac0f32312add91a42cd4f5c62117bb70382c89d694c3fad88fc1463f",
     "views/pathways.json": "4e719db64017f0023068428024f57f510c8834824ab6691a0a848eed09513358"
   },

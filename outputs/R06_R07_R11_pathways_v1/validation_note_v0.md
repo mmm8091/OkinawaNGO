@@ -13,4 +13,6 @@ HR-018 human review is necessary but not sufficient for pathway admission.  The
 formal shared table adds only the nine relations explicitly approved by HR-021.
 R11 carries no amount field and does not duplicate, sum, or reinterpret R10
 amount observations.  AEV0061–0064 remain analytical seeds outside facts and
-counts.  Existing SVG/HTML figures were not redrawn and are pre-HR021 snapshots.
+counts.  The three SVG and three HTML figures were redrawn from the current
+6/9/53-row module CSVs by `scripts/render_r06_r07_r11_current.py`; the renderer
+does not write central facts, HR-021, this note, or the explanatory brief.
