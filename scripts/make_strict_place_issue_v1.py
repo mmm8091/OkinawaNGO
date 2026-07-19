@@ -78,13 +78,26 @@ def frame_for(issue_label: str) -> tuple[str, str] | None:
     return None
 
 
+def active_edge(row: dict[str, str]) -> bool:
+    status = row.get("scope_status", "")
+    return not (
+        row.get("review_status") == "rejected"
+        or row.get("claim_status") == "unsupported"
+        or row.get("graph_eligibility") == "excluded"
+        or status.startswith("retired_")
+        or status.startswith("deactivated_")
+    )
+
+
 def main() -> None:
     configure_fonts()
     OUT.mkdir(parents=True, exist_ok=True)
     actors = {row["actor_id"]: row for row in read_csv(DATA / "01_actor_registry_initial_v0.csv")}
     sources = {row["source_id"]: row for row in read_csv(DATA / "05_source_log_initial_v0.csv")}
-    issues = read_csv(DATA / "07_actor_issue_edges_initial_v0.csv")
-    places = read_csv(DATA / "08_actor_place_edges_initial_v0.csv")
+    issue_history = read_csv(DATA / "07_actor_issue_edges_initial_v0.csv")
+    place_history = read_csv(DATA / "08_actor_place_edges_initial_v0.csv")
+    issues = [row for row in issue_history if active_edge(row)]
+    places = [row for row in place_history if active_edge(row)]
     observations = read_csv(DATA / "26_actor_event_venue_target_entry_modes_v0.csv")
 
     event_index: dict[tuple[str, str], list[dict[str, str]]] = defaultdict(list)
@@ -250,6 +263,10 @@ def main() -> None:
     reviewed_rows = [row for row in triples if row["triple_layer"] == "human_reviewed_same_source"]
     event_rows = [row for row in strict_rows if row["event_ids"]]
     summary = [
+        {"metric": "actor_issue_history_rows", "value": len(issue_history), "note": "includes retained rejected/deactivated audit rows"},
+        {"metric": "actor_issue_active_rows", "value": len(issues), "note": "used by this strict layer"},
+        {"metric": "actor_place_history_rows", "value": len(place_history), "note": "includes retained rejected audit rows"},
+        {"metric": "actor_place_active_rows", "value": len(places), "note": "used by this strict layer"},
         {"metric": "all_same_source_triples", "value": len(triples), "note": "all evidence levels"},
         {"metric": "e3plus_same_source_triples", "value": len(strict_rows), "note": "strict candidate layer"},
         {"metric": "human_reviewed_same_source_triples", "value": len(reviewed_rows), "note": "both underlying edges human-reviewed"},
@@ -264,6 +281,7 @@ def main() -> None:
 
 This package replaces the interpretive use of the retired actor-level Cartesian projection.
 
+- The input gate retains `{len(issue_history)}` actor–issue and `{len(place_history)}` actor–place history rows, but excludes rejected/deactivated records; `{len(issues)}` and `{len(places)}` active rows enter the strict join.
 - `{len(triples)}` document-level same-source triples were found.
 - `{len(strict_rows)}` are E3/E4 strict candidates.
 - `{len(reviewed_rows)}` have both underlying edges human-reviewed.

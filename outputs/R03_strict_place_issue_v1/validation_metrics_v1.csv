@@ -1,8 +1,12 @@
 ﻿metric,value,note
-all_same_source_triples,330,all evidence levels
-e3plus_same_source_triples,323,strict candidate layer
-human_reviewed_same_source_triples,67,both underlying edges human-reviewed
+actor_issue_history_rows,248,includes retained rejected/deactivated audit rows
+actor_issue_active_rows,239,used by this strict layer
+actor_place_history_rows,135,includes retained rejected audit rows
+actor_place_active_rows,130,used by this strict layer
+all_same_source_triples,312,all evidence levels
+e3plus_same_source_triples,305,strict candidate layer
+human_reviewed_same_source_triples,65,both underlying edges human-reviewed
 strict_triples_with_formal_event_attachment,100,same actor/source found in formal AEV-derived observation table
-wide_nonzero_cells,43,retired upper-bound method
-strict_e3plus_nonzero_cells,42,source-constrained
-reviewed_nonzero_cells,13,source-constrained and dual reviewed
+wide_nonzero_cells,42,retired upper-bound method
+strict_e3plus_nonzero_cells,40,source-constrained
+reviewed_nonzero_cells,12,source-constrained and dual reviewed
