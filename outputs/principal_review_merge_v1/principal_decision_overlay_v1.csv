@@ -1,0 +1,274 @@
+﻿task_family,object_id,decision,approved_formulation,scope_boundary,source_report,human_reviewer,review_date
+HR016,HR016-001,revise,只保留 2016 年具名集会执行委员会，不 crosswalk 到 A012,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35A_v1.md,项目负责人,2026-07-20
+HR016,HR016-006,revise,R4E024 改为 MOD_JAPAN 的 F_FTE 说明会事件，删除 F_PROC,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35A_v1.md,项目负责人,2026-07-20
+HR016,HR016-007,revise,R4E025 改为 place=Sakishima 的县级区域观察，不计为与那国特有事实,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35A_v1.md,项目负责人,2026-07-20
+HR016,HR016-008,revise,p.6 是环境部长宣读的行政处理方针，不是陈情者原文，不回指 A013,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35A_v1.md,项目负责人,2026-07-20
+HR016,HR016-009,accept,Pattern 1 稳定印刷页码已定位为 pp.27–29，可加入 R4S007／R4E007 source_ref,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35A_v1.md,项目负责人,2026-07-20
+HR016,HR016-012,revise,R4S024 只保留 F_FTE source scope，拒绝 procedural_fairness,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35A_v1.md,项目负责人,2026-07-20
+HR016,HR016-002,revise,R4E008 改归具名议员久貝美奈子，不归整个宫古岛市议会,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35B_v1.md,项目负责人,2026-07-20
+HR016,HR016-003,revise,F_FTE 拆为议员问题与市行政答复两条不同 observation,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35B_v1.md,项目负责人,2026-07-20
+HR016,HR016-004,revise,F_FTE 只保留为该次意见交换会中的匿名发言单元，不建立居民 actor,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35B_v1.md,项目负责人,2026-07-20
+HR016,HR016-005,revise,F_AUT 只保留意见 1、4、7 的匿名程序／地方意见疑问，不概括为全市立场,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35B_v1.md,项目负责人,2026-07-20
+HR016,HR016-010,revise,R4S008 按印刷 pp.139–140 冻结逐段 speaker 与 frame,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35B_v1.md,项目负责人,2026-07-20
+HR016,HR016-011,revise,R4S015 按九个意见主题块和箭头后行政答复拆分，不把 23 人等同发言者,仅冻结该来源中的 speaker、frame 与 locator；不得把个人、匿名意见或行政答复升级为组织／地区总体立场。,docs/human_review_return_HR016_sakishima_batch35B_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9ST027,revise,日期改为 2021-04-26；明确三名自然人提起当事者诉讼,第二诉讼起诉；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9ST028,accept,保持 2021-03-23 和 E3；不补写未知的控诉起日或主文,第一诉讼控诉审终结；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9ST030,revise,加一审判决 locator；结果写三名原告之诉全部却下,第二诉讼地裁判决；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9ST031,revise,结果写三项控诉全部棄却；保持 E3,第二诉讼高裁判决；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9ST032,accept,保持中性“最高裁决定后败诉确定”；不冻结单一处分类型,第二诉讼最高裁终结；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9R001,revise,A068 正名后映射；限定 1997 直接请求与签名组织角色,名护推进协议会角色；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9R030,accept,保持程序性 collective；不映射 A011，不新建 actor,第二诉讼三名个人原告；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9R031,accept,只记录 counsel 功能；不新建个人或组织 actor,第二诉讼原告代理律师；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR017_ONLINE,R9R034,accept,以 E2 记录司法场域；保留无官方决定书／案号限制,最高裁司法场域；仅限在线可闭合的程序阶段／角色，不替代另9项当地资料任务。,docs/human_review_return_HR017_online_batch36_v1.md,项目负责人,2026-07-20
+HR018_PREREQUISITE,HR-018-S01,prerequisite_satisfied,"R10S05 → S173；PDF pp.9–10 点名沖縄NGOセンター、KIP 运营、委託料 17,157千円",可送 HR-018-02 关系判断；来源前置本身不批准 commission edge,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_PREREQUISITE,HR-018-S02,prerequisite_satisfied,"R10S06 → S174；PDF pp.9–10 点名沖縄NGOセンター、KIP 运营、委託料 16,970千円",可送 HR-018-03；不从归档成功自动批准金额流,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_PREREQUISITE,HR-018-S03,prerequisite_satisfied,"R10S07 → S175；PDF pp.5–6 载总事业费 18,858 千円、ONC 委托料 16,662 千円及另列交付对象外 3 月运营费 2,196 千円",三个数的关系语义仍由 HR-018-04 决定；不得在前置层合并或推定同一 recipient,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_PREREQUISITE,HR-018-S04,prerequisite_satisfied,R10S08 → S186；会议纪要参加者表把四名沖縄NGOセンター人员列在【事務局】,只支持会议的事务局参与；不单独证明合同、付款或完整职责,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_PREREQUISITE,HR-018-S05,prerequisite_satisfied,R10S09 → S181；ONC 自有活动页明确写 KIP 運営（沖縄市委託），并分别介绍 NGO相談員功能,支持自报角色与功能；不支持具体金额，也不能替代公共机构方向证据,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_PREREQUISITE,HR-018-S06,prerequisite_satisfied,R10S10 → S176；冲绳市设施页说明 KIP 地址、国际交流据点、语学讲座、多语言交流与活动范围,只支持设施／服务范围；页面没有单独承担 ONC recipient 或金额证明,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_PREREQUISITE,HR-018-S07,prerequisite_satisfied,"R10S11 → S184；PDF p.1 点名新外交イニシアティブ、合同 12,842,500 円；p.2 点名沖縄平和協力センター两份独立合同 26,439,000 円与 8,479,000 円",可支持合同记录送 HR-018-08/09/10；仍须分别核 actor crosswalk 与项目边界,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_PREREQUISITE,HR-018-S08,prerequisite_satisfied,R10S12 → S183；PDF p.2 给出协作形态字典：委託、提案型公募による委託、指定管理、補助等,只支持机制代码解释；不能用汇总字典单独批准某一 actor 关系或金额,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR018_RELATION,HR-018-01,accept,ONC 是该事业及报告书受托者,无公开合同金额；不写资金规模,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-02,accept,"官方资金流点名委托料 17,157,000 円",公共设施运营委托，不是 grant 或运动资金,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-03,accept,"官方资金流点名委托料 16,970,000 円",同上,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-04,accept,"16,662,000 円是点名 ONC 的交付对象部分委托流",18.858m 是总事业费；2.196m recipient 未在该支路点名；16.040m 是组织侧事业费,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-05,accept,县表确认 C1 委托关系；会议纪要确认事务局功能,5.140m 与 5.530234m 都不是合同／付款额；两种期间口径分别保留,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-06,accept,ONC 法定年报确认外务省委托,2.894630m 仅为组织侧事业分类成本,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-07,accept,外务省确认 FY2026 指定角色与服务范围,名单不含金额，也不证明 recipient 网络,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-08,accept,"实际合同 12,842,500 円；C2 提案型公募委托",12.843m 是取整项目费；不是 grant、政治支持或运动资金,docs/human_review_return_HR018_relations_batch19_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-09,accept,"C2 委托；实际合同 26,439,000 円",25.547m 是事业费；与 HR-018-10 是两份独立合同,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-10,accept,"C2 委托；实际合同 8,479,000 円",6.496m 是事业费；与 HR-018-09 是两份独立合同,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-11,revise,"C2 委托；实际合同 27,199,000 円",21.799m 是事业费；JV 为项目复合主体；合同额不得拆给成员,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-12,accept,委托关系、对象、期间和 S002 C1 成立,10.329m 是事业费／提案上限，不是实际合同额；registry crosswalk 留给 HR-032,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-13,revise,"委托关系；实际合同 37,220,999 円",39.739m 是事业费；C1 是 S002 分类，proposal 是合同采购程序；不得拆额,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-14,accept,C2 委托关系、期间和教育功能成立,7.171m 只是事业费；事务所不是独立法人；registry crosswalk 留给 HR-032,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-15,accept,C2 委托关系、期间、JV 和成员构成成立,15.442m 只是事业费；JV 为项目复合主体；不得拆额,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-16,accept,C4 补助关系成立,17.932m 是事业费；21.127m 是初始预算；均不是 award 或 paid amount,docs/human_review_return_HR018_relations_batch20_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-17,accept,一条服务关系＋8 个 site/function observations,不生成资金、政治立场或八条组织关系,docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-18,accept,MBC 是现行 Platinum Sponsor,无公开 relation amount；现金与实物支持不估值、不合并,docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-19,revise,Matson 是 USO Indo-Pacific Mission Partner,不写成本地定向资助；USO Okinawa 页面只是公开展示入口,docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-20,revise,ACGO 在 2012、2015 被列为 AWWA 成员,改成历史 membership；当前名单不含 ACGO；不推断精确退出日,docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-23,revise,2015-12-02 捐赠一辆价值 2m 円的无障碍车辆,校正设施名和运营法人；2m 是实物价值，不是现金,docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-24,revise,2012 年捐赠无障碍车辆,校正法人名；具体下属设施 unresolved；无金额,docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-21,deferred_local_or_internal_record,"102,000 美元是 scholarships＋AWWA 混合口径；拆分需要 KOSC 年报／Form 990 或等价内部记录","不得把全额给 AWWA；本 overlay 不重复 HR033，合并时保留 HR033 已批准的 amount-empty KOSC→AWWA dyad 与独立 aggregate observation。",docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-22,deferred_local_or_internal_record,约 8 亿日元／40 年是跨年度、未逐一列 recipient 的累计报道；年度和 recipient 分解需要年报／Form 990 或当地记录,只可保留不可分配 aggregate history,docs/human_review_return_HR018_relations_batch21_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-25,revise,AWWA 曾帮助当时的 Boy Scouts of America Far East Council 获得皮划艇,事件日期不明；2012 只是报道时点；不补数量、金额、份额或冲绳专属配置,docs/human_review_return_HR018_relations_batch22_v1.md,项目负责人,2026-07-20
+HR018_RELATION,HR-018-26,revise,NOSCO 是 2025-08-15 三台工业冷风机共同交付事件的四个贡献团体之一,recipient 正式名称未确认；不把三台设备或全部价值归给 NOSCO,docs/human_review_return_HR018_relations_batch22_v1.md,项目负责人,2026-07-20
+HR019_RULE,HR019-CLASS-01,map_to_existing,A089、A090 actor_class 映射为 labor_union,教育属性留在 sector／issue／notes；不批准 issue edge。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-CLASS-02,approve_extension,将 labor_union 加入 actor_class 受控词并用于六个工会／联合体,组织类型不赋予和平、反基地或其他政治立场。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-CLASS-03,map_to_existing,A091、A092 actor_class 映射为 labor_union,联合体结构保留在 legal_status_guess／notes；不推定成员或联盟。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-CLASS-04,map_to_existing,A026 actor_class 映射为 citizen_group,newsletter／机关报只作行动方式；不自动批准长期议题或关系。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-CLASS-05,map_to_womens_organization,A111、A115 actor_class 统一为 womens_organization,社区、和平、人权属于议题／功能，不写入组织类型。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-CLASS-06,map_to_womens_organization,A105、A107 actor_class 统一为 womens_organization,全国／地域层级与法律身份另存；不转移动作。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-STATUS-X014,split_review_and_scope,review_status=human_checked；scope_status=watchlist_only；默认网络排除,公开资料未确认 NED—冲绳 recipient／project；AP048 退役；不是跨年度绝无关系。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-STATUS-X015,split_review_and_scope,review_status=human_checked；scope_status=in_scope_limited,仅限先岛社区防灾／居民避难规划接口；不编码军事立场、合同或实际部署。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_RULE,HR019-FAMILY-01,approve_with_revision,analysis_family_v1 从十层修订为九层；默认121 actor＋X014 watchlist,派生展示层不覆盖 actor_class、origin 或 issue；不生成政治、组织或资金关系。,docs/human_review_return_HR019_batch01_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A113,include_with_scope,PFAS 居民采样／健康请求→市议会请愿、公害调停等程序；是单一污染风险的多渠道转译，不是五个独立议题,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A114,include_with_scope,港湾劳动／罢工能力把基地、先岛军舰寄港与职业安全带入工作场所；多数政治议题边有事件时间,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A115,include_with_scope,县本部把女性／人权、军事性暴力、和平、边野古和公投动员连接；不得转移全国母体全部行动,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A047,include_with_scope,长期和平／反基地定位连接边野古与先岛反军事化；4 个标签有明显语义重叠,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A048,candidate_only,土地拒租／收用程序确有反基地—法律—和平连接，但当前 actor 与关东 block 来源发生单位混淆,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A052,include_with_scope,仅作为嘉手纳各轮噪音诉讼的案件／原告团桥梁：噪音与生活损害→法律程序,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A053,include_with_scope,仅作为普天间各轮噪音诉讼的案件／原告团桥梁：噪音与生活损害→法律程序,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A112,include_with_scope,地下水研究／风险表达→水源保护、监测条例与市政回应；不证明自卫队设施污染,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A001,include_with_scope,边野古—儒艮环境争议→美国海洋哺乳动物委员会；是国际制度翻译桥梁,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A007,include_with_scope,长期 Okinawa project 把和平／反基地、环境传播与对美国社会的倡议连接；不由 NGO 身份自动生成国际边,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch08_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A009,include_with_scope,严格限于冲绳儒艮案的代理律师／国际法律渠道；不是具名原告,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A010,include_with_scope,持续反军事部署定位连接地下水调查和地方参与／决策诉求；风险陈述按组织主张归属,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A011,include_with_scope,自卫队部署争议→住民投票条例请求、市议会与后续司法争议；是请求／运动主体，不是具名组织原告,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A012,candidate_only,现有材料更像单次活动执行委员会；精确组织身份与持续性仍无独立第二来源,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A013,include_with_scope,反军事部署定位连接地下水、危险物与交通／生活安全请求；不证明实际污染或伤害,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A017,include_with_scope,以对话活动连接台湾有事、冲绳前线化预防与和平；三个标签主要属于同一预防性框架,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A018,include_with_scope,持续反战定位连接台湾有事、冲绳／先岛前线化与和平动员；不得推出所有共同参与者关系,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A020,include_with_scope,严格区分案件角色：儒艮案具名原告；泡濑案仅为支持者／正式材料发布者,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A045,include_with_scope,冲绳儒艮案具名组织原告，把生物多样性争议带入美国司法／国际倡议渠道,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A049,include_with_scope,以女性人权与军事性暴力／生活安全框架连接反基地和反军事行动；不能压缩成一般反军事 actor,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch09_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A050,include_with_scope,以律师会决议／会长声明连接基地人权、地方自治和法律论证；不是单次事件 actor,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A051,include_with_scope,2018–2019 年严格程序桥梁：边野古填海争议→直接请求与县民投票；2019-03-26 已决议解散,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A059,include_with_scope,全县 umbrella 把《建白书》、边野古反对、地方组织和自治／自决表达连接；须补全正式名称并与市町村分会分开,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A065,include_with_scope,2016–2018 可证的先岛／琉球弧反军事化—前线化预防定位；当前持续性不外推,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A066,include_with_scope,通过政策研究、法律／自治论证和对美／外交传播连接冲绳基地替代方案；不代表冲绳整体,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A067,include_with_scope,土砂搬出地网络把边野古新基地、外来物种／生物多样性和跨县行动连接；正式名称需纠正,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A068,candidate_only,1997 公投机制成立，但 registry 名称未获史料支持；须改为正式推進協議会并处理其发展性解散／后继关系,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A069,include_with_scope,2003–2012 至少可证的项目型环境评估监督：边野古工程程序→儒艮／生物多样性意见与监测,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A070,include_with_scope,VFP Ryukyu/Okinawa 国际分会把美国退伍军人和平行动与冲绳反基地诉求连接；规范名称待统一,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_BRIDGE,A003,exclude_from_narrative,组织身份和持续性得到补强，但当前两边均属同一儒艮／生物多样性生态簇，不构成有解释价值的跨议题 bridge,bridge 只表示有界议题／场域／制度转换；不表示影响力、中心性、稳定联盟或政策效果。,docs/human_review_return_HR019_bridge_batch10_v1.md,项目负责人,2026-07-19
+HR019_EDGE_SCOPE,AI016,organizational_positioning,由长期 Okinawa project 的对美／跨国传播支持；S005 单次声明不足，须补官网项目页,A007 ピースボート—international_advocacy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI021,institutional_or_case_role,严格限于冲绳儒艮案的美国法律渠道；Earthjustice 是律师，不是原告,A009 Earthjustice—international_advocacy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI025,institutional_or_case_role,住民投票直接请求及后续程序的核心角色，不是无限期组织定位,A011 石垣市住民投票を求める会—referendum；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI027,institutional_or_case_role,仅限该公投程序所针对的石垣陆自部署，不泛化为所有反军事议题,A011—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI040,organizational_positioning,台湾有事是其持续对话／前线化预防框架的一部分,A017 沖縄対話プロジェクト—Taiwan_contingency；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI042,organizational_positioning,和平／冲突预防是组织目的；不表示活动已产生和平政策效果,A017—peace；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI044,organizational_positioning,组织成立以来的持续框架；S024 错位，须改用 S023＋组织官网,A018 ノーモア沖縄戦 命どぅ宝の会—Taiwan_contingency；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI048,institutional_or_case_role,冲绳议题中的法律角色须逐案确定，不由律师组织身份无限外推,A020 JELF—legal；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI049,event_specific,当前 S006/S007 只闭合 2020 MMC 儒艮请求／报告语境，不能支撑一般长期 biodiversity 定位,A020—biodiversity；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI050,institutional_or_case_role,以冲绳儒艮案具名原告角色为主；2020 MMC 共同请求是另一个事件，不是联盟,A020—dugong；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch11_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI057,organizational_positioning,军属配偶俱乐部的持续服务／慈善功能；AWWA membership 是组织 affiliation，不是政治立场,X005 NOSCO—military_family_service；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI068,event_specific,当前 edge 只由 2018 年西日本／北海道 USAID 灾害救援样本支持；与先岛活动和冲绳资金无关,X015 Peace Winds Japan—international_cooperation；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI106,institutional_or_case_role,严格限于冲绳儒艮案具名组织原告角色,A045 Center for Biological Diversity—legal；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI116,remain_unclear,土地拒租／收用法律机制可信，但 S038 属关东 block；组织单位未修复前不能归给 A048 本体,A048 沖縄一坪反戦地主会—legal；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI119,organizational_positioning,女性人权、军事性暴力与日常安全是持续组织框架，不是一般化“治安”标签,A049 行动する女たちの会—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI121,organizational_positioning,反对军事结构性暴力是持续定位；不代表每次行动或所有成员观点完全相同,A049—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI126,institutional_or_case_role,严格限于 2018–2019 边野古填海县民投票过程；组织已解散,A051 「辺野古」県民投票の会—Henoko；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI127,institutional_or_case_role,地方自治通过直接请求／县民投票程序表达，不是无限期一般自治组织,A051—local_autonomy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI129,institutional_or_case_role,噪音、睡眠与日常生活损害进入各轮诉讼；轮次成员不得假定相同,A052 嘉手纳爆音诉讼原告团—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI132,institutional_or_case_role,同样限定于普天间各轮噪音诉讼；部分赔偿不等于噪音停止或运行禁令,A053 普天间爆音诉讼团—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch12_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI157,organizational_positioning,持续政策研究中的行政法、地方自治法和制度论证；删除目前证据不足的笼统“国际法”表述,A066 ND—legal；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI158,organizational_positioning,持续讨论国—地方权限、地域外交和冲绳政策替代方案；不代表冲绳整体,A066 ND—local_autonomy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI159,organizational_positioning,由持续边野古／基地政策替代研究支持；须按具体政策主张表述,A066 ND—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI176,remain_unclear,现有资料只证明基地行政职责；地方自治论证及边野古程序还可能属于另设部门,A074 沖縄県知事公室基地対策課—local_autonomy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI178,institutional_or_case_role,仅表示基地建设实施／行政争议 actor；绝不表示沖縄防衛局持反基地立场,A075 沖縄防衛局—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI179,organizational_positioning,军属配偶俱乐部的持续服务／慈善功能；AWWA membership 不生成政治或资金推断,X016 MOSCO—military_family_service；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI206,organizational_positioning,自 2023 年成立以来的和平／前线化预防核心目的,A108 沖縄を再び戦場にさせない県民の会—peace；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI217,organizational_positioning,组织名称、目的和持续活动直接支持；与 peace 属同一框架,A108—anti_war；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI221,event_specific,只按 1995 等具日且明确提出基地撤去的行动使用；2024 人权动员本身不自动证明反基地立场,A111 沖縄県女性団体連絡協議会—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI222,organizational_positioning,1995–2024 多期重复的人权、尊严和美军性暴力问责功能；不表示逐年连续,A111—human_rights；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch13_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI223,organizational_positioning,组织名称、设立目的、研究、监测、条例倡议和持续事业计划直接支持,A112—groundwater；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI225,organizational_positioning,持续把地下水作为饮用水源和“命之水”保护；不证明健康损害,A112—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI226,organizational_positioning,地下水保全、井泉调查、污染预防及珊瑚礁关切属于持续环境功能,A112—environment；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI231,institutional_or_case_role,限于2022请愿及2025–2026公害调停等正式程序；不是一般法律组织,A113—legal；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI232,organizational_positioning,2015–2026分支级行动反复连接边野古、基地负担和“基地ない沖縄”,A114—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI233,organizational_positioning,严格限定为民用港军事利用、军舰寄港及日美演习反对,A114—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI234,organizational_positioning,2015行动及2024–2026连续和平行进支持持续和平活动,A114—peace；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI236,organizational_positioning,集会、罢工、港湾抗议和年度行进构成重复组织 repertoire,A114—mobilization；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI237,organizational_positioning,女性会员组织及县本部—支部—班结构的核心组织属性,A115—women；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI240,organizational_positioning,县本部多期具名行动支持；不得由全国中央声明或共同署名单独承担,A115—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch14_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI241,institutional_or_case_role,限于 2018–2019 边野古县民投票条例／投票程序中的签名动员角色,A115—referendum；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI024,organizational_positioning,多阶段持续提出住民同意、信息公开、居民说明和地方决策参与；不是 A011 的公投程序角色,A010—local_autonomy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI028,event_specific,只限 2016-06-11 集会执行委员会的水源保护框架；持续 actor 身份未闭合,A012—groundwater；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI029,event_specific,只限同一 6・11 反陆自部署集会／次日抗议安排,A012—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI030,event_specific,只限同一事件把饮用水源、后代生活和部署风险并置；不新增健康因果,A012—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI032,organizational_positioning,2018–2020 多期调查、信息开示和抗议持续提出地下水／燃料设施风险,A013—groundwater；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI033,organizational_positioning,2020–2025 重复提出弹药库、运输、交通、说明和居民日常安全要求,A013—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI038,remain_unclear,当前三份 source ref 均不能支持 I008；建议从可发布层停用，等待直接健康／暴露材料,A016—health_risk；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI039,organizational_positioning,2011 年以来博客及 2024 行动支持持续反部署／反演习定位,A016—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI056,organizational_positioning,福利／慈善申请审查与支持是持续功能；不产生政治立场或未证 recipient 边,X004—base_community_welfare；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch15_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI063,remain_unclear,ONC 的正式角色属于国际合作／开发教育和行政协作；当前 I013 定义不宜被“相邻性”扩张，AI062 已承载准确的 I015 角色,X010—public_diplomacy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI118,remain_unclear,S038 属 A063 关东 block，不能移作 A048 直接证据；等待具名 A048 的自治／土地权材料,A048—local_autonomy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI134,remain_unclear,一般人权与反战材料不等于 I007；建议从可发布层停用,A054—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI135,organizational_positioning,2001–2024 持续的潮间带调查、导览、保护和拉姆萨尔倡议,A055—biodiversity；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI138,organizational_positioning,长期从环境评估、污染、生物多样性等角度批评具体基地建设／军事设施,A056—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI143,organizational_positioning,《建白书》与边野古新基地反对是全县组织的持续主轴,A059—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI145,organizational_positioning,限于地方尊严、自决权及“冲绳事务由冲绳决定”的组织框架,A059—local_autonomy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI146,organizational_positioning,2007–2016 可见期内持续反对高江直升机坪建设,A060—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI147,organizational_positioning,具名请求直接涉及やんばる动植物、生态调查和生物多样性保护,A060—biodiversity；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI150,organizational_positioning,关东／首都圈层面的长期反基地与冲绳声援；不是冲绳本地组织,A063—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch16_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI152,organizational_positioning,2007 年形成时的明确反外国军事基地宗旨；不写成当前仍活跃,A064—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI153,organizational_positioning,2007 年跨国会议、网络和全球行动计划；冲绳是倡议对象／参与来源，不是已证正式分支,A064—international_advocacy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI154,organizational_positioning,限于 2016–2018 可证的琉球弧／先岛反军事化网络定位,A065—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI160,organizational_positioning,2015 年以来持续反对边野古填海土砂搬出及新基地建设,A067—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI162,organizational_positioning,持续处理外来种、搬出地自然环境与边野古海域生物多样性风险,A067—biodiversity；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI164,institutional_or_case_role,限于 1997 年海上直升机基地市民投票的直接请求／签名／公投程序；先修复 actor 名称和谱系,A068—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI166,organizational_positioning,2003–2012 项目型 EIA 监督中的核心物种／调查定位,A069—dugong；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI167,organizational_positioning,同期环境评估、藻场及沿岸生态监督；不外推 2013 年后连续性,A069—biodiversity；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI169,organizational_positioning,Ryukyu/Okinawa chapter 的退伍军人和平行动定位,A070—peace；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI170,organizational_positioning,分会自身材料支持冲绳反基地立场；不转移美国母体全部行动,A070—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch17_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI171,organizational_positioning,VFP Ryukyu/Okinawa chapter 持续把冲绳诉求带入跨国退伍军人和平渠道；不转移美国母体全部活动,A070—international_advocacy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch18_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI172,organizational_positioning,正式组织目的和跨期和平／基地行动支持持续定位；先合并 A072、替换错误 S031,A071—peace；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch18_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI213,organizational_positioning,2004–2026 可见的长期大阪／关西边野古声援功能；不生成稳定联盟,A110—solidarity；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch18_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI034,event_specific,只限 2015 与那国部署公投前总决起集会／投票事件链；身份和连续性仍需当地材料,A014—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch18_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI036,event_specific,只限 2012 与那国反部署意见广告征集／刊登行动；保持 E2,A015—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch18_v1.md,项目负责人,2026-07-20
+HR019_EDGE_SCOPE,AI067,remain_unclear,issue 定义不匹配且无冲绳项目连接；从默认可发布／制图层退役，NED 只保留外部 watchlist,X014—public_diplomacy；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。,docs/human_review_return_HR019_edge_scope_batch18_v1.md,项目负责人,2026-07-20
+HR020,HR020-01,revise,AOCHR 是 沖縄国際人権法研究会，不是 A054 沖縄人権協会,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-02,revise,Anti-war Network 是爱知／名古屋的 不戦へのネットワーク，不是 A008 NGO非戦ネット,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-03,revise,对应 基地のない平和で豊かな沖縄をめざす会・大阪，不是已判定退役的 A072,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-04,accept,罗马字逐词对应 A110 辺野古に基地を絶対つくらせない大阪行動,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-05,revise,对应 Stop!辺野古埋め立てキャンペーン，不是 A106 首都圏連絡会,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-06,accept,缺失分隔符，应切为两个独立组织，保持 67 行,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-07,accept,2010 日文名与 2020 英文名是同一二见以北十区组织,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-08,revise,2020 英文名指现场调查队 北限のジュゴン調査チーム・ザン；与 2010 母体有关联但不是严格别名,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34A_v1.md,项目负责人,2026-07-20
+HR020,HR020-09,accept,Pan-Seto Inland Sea Congress 是環瀬戸内海会議自用英文名,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34B_v1.md,项目负责人,2026-07-20
+HR020,HR020-10,accept,2020 日英同序号确认同一组织；来源英文误用 Conservation，官方英文为 Protection,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34B_v1.md,项目负责人,2026-07-20
+HR020,HR020-11,accept,Minshuku Yaponesia 对应みん宿／民宿ヤポネシア；实体是家族经营小型宿泊设施，不自动视为 NGO,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34B_v1.md,项目负责人,2026-07-20
+HR020,HR020-12,accept,Dugong no Sato 是じゅごんの里的直接罗马字对应,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34B_v1.md,项目负责人,2026-07-20
+HR020,HR020-13,revise,2010 爱知组织与 2020 冲绳的命どぅ宝を継承する会不是同一组织,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34B_v1.md,项目负责人,2026-07-20
+HR020,HR020-14,revise,“自然の権利”基金与 JELF 有紧密事务／人员协作，但有独立组织与财务边界，不是 A020 别名,仅决定名单名称同一性、别名、组织层级或切分；source_name 原样保留；event-only 不自动入 registry，跨年同名不证明联盟或逐年连续。,docs/human_review_return_HR020_names_batch34B_v1.md,项目负责人,2026-07-20
+HR021,HR021-001,include_after_hr018,纳入 R6 行政入口与 R11，entry mode=administrative_commission,无公开金额；与普通 event co-participation 分开,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR021,HR021-002,include_after_hr018,纳入 R11 的公共设施运营委托,R11 不复制金额；四个金额口径只留 R10,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR021,HR021-003,include_after_hr018,纳入 R11 的行政委托／事务局功能,两个 project-cost observation 不是付款或运动资金,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR021,HR021-004,revise_scope_after_hr018,分成 FY2024 委托和 FY2026 指定角色两个时间观察,不把两年合并成无期限关系；不继承金额,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR021,HR021-005,include_after_hr018,纳入 R6／R11 advocacy–administration boundary,合同可确认；不等于 grant、认可、联盟或运动资金,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR021,HR021-006,include_after_hr018,一条 service relation＋8 个 site/function observations,不生成八条组织关系；不推断政治立场,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR021,HR021-007,revise_scope_after_hr018,MBC 纳入本地 direct row；Matson 只进 regional context／外围层,无金额；Matson 不是已证实的 Okinawa 定向赞助,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR021,HR021-008,retain_analytical_seed,四条继续与正式事实层分开,已有事件角色不构成有向传递或因果链,docs/human_review_return_HR021_downstream_batch23_v1.md,项目负责人,2026-07-20
+HR024,HR024-002,accept,A076→I004 dugong；仅指其作为具名原告参加冲绳儒艮／栖息地案件,统一 scope=case、case_id=R8C01、review_status=human_checked；不补组织持续性，不生成联盟、胜诉或工程效果。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR024,HR024-003,accept,A076→I011 legal；仅指通过美国 NHPA／APA 司法程序进入法律路径；不外推其他案件,统一 scope=case、case_id=R8C01、review_status=human_checked；不补组织持续性，不生成联盟、胜诉或工程效果。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR024,HR024-004,accept,A076→I003 Henoko；仅指该案件以边野古沿岸迁移计划为对象；不证明 A076 在所有时期都有独立边野古现场行动,统一 scope=case、case_id=R8C01、review_status=human_checked；不补组织持续性，不生成联盟、胜诉或工程效果。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR024,HR024-005,accept,A086→I004 dugong；只确认同案具名原告与冲绳儒艮议题连接,统一 scope=case、case_id=R8C01、review_status=human_checked；不补组织持续性，不生成联盟、胜诉或工程效果。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR024,HR024-006,accept,A086→I011 legal；只确认 NHPA／APA 案件程序；不外推其他冲绳诉讼,统一 scope=case、case_id=R8C01、review_status=human_checked；不补组织持续性，不生成联盟、胜诉或工程效果。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR024,HR024-007,revise,A086→I012 international_advocacy；把“跨太平洋法律倡议路径的一环”改成可观察事实：“美国海洋保护组织以具名原告身份参加涉及冲绳儒艮的美国联邦诉讼”；共同诉讼不等于稳定联盟,统一 scope=case、case_id=R8C01、review_status=human_checked；不补组织持续性，不生成联盟、胜诉或工程效果。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR024,HR024-008,accept_with_revision,A086→I005 biodiversity；写成“案件材料把珊瑚礁、海草床与濒危儒艮栖息地作为案件背景”；不写成 A086 在冲绳另有持续、全面的 biodiversity program,统一 scope=case、case_id=R8C01、review_status=human_checked；不补组织持续性，不生成联盟、胜诉或工程效果。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR025,AP048,reject_edge／retire_candidate,删除 NED—Okinawa actor-place candidate；X014 watchlist 记录保留,无公开证据支持冲绳 recipient／project／地点关系；未确认不等于跨年度从未存在。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR025,AP049,revise_pending_source_and_place_integration,X015→P021 Sakishima Islands；site_presence,仅指 FY2024 先岛整体社区防灾联系网络；不得向与那国／石垣／宫古扇出，不表示总部、分支或永久驻点。,docs/human_review_return_HR024_HR025_batch03_v1.md,项目负责人,2026-07-19
+HR025,AP123,revise,X016 place_id P006→P007 Camp Foster；site_presence,只支持来源覆盖期的奖学金／Marine Gift Shop 慈善筹资场域；不是 headquarters、MCCS 隶属、政治立场或联盟。,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,项目负责人,2026-07-19
+HR025,AP088,reject_edge／retire_candidate,A052→P018 Ginowan unclear；执行 reject_edge／retire_candidate,S026 只证明嘉手纳基地周边居民诉讼，没有宜野湾地点依据；A052→P005 Kadena 的 AP087 已另行存在,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP106,reject_edge／retire_candidate,A065→P012 Ishigaki site_presence；执行 reject_edge／retire_candidate,S036 把 A065 与八重山大地会列为两个共同交涉团体，不能据此推定 A065 有“石垣节点”,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP107,revise→event_site,A065→P013 Miyako site_presence；执行 revise→event_site,找到 2016 年宫古岛活动中 A065 共同代表登台的直接报道；只支持有界事件，不支持常设节点,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP108,accept_with_revision,A065→P011 Yonaguni site_presence；执行 accept_with_revision,2016、2023 材料反复确认 A065 共同代表猪股哲为与那国居民并以该身份公开活动；不等于总部／正式分支,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP114,revise→advocacy_target,A069→P002 Henoko site_presence；执行 revise→advocacy_target,独立材料充分证明其以边野古环境影响评价、海上工程和保护诉求为行动对象；现有材料不足以把组织据点写在边野古,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP115,revise→advocacy_target,A069→P003 Oura Bay site_presence；执行 revise→advocacy_target,多份意见书明确以边野古—大浦湾沿岸生态与工程为诉求对象；不把共同声明推成常设现场节点,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP122,accept_with_revision,A075→P002 Henoko site_presence；执行 accept_with_revision,S047 是冲绳防卫局官方边野古环境影响评价页面，支持该机构在项目实施／管理上的地点连接；不是办公室位置,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP130,revise→headquarters,A112→P013 Miyako site_presence；执行 revise→headquarters,A112 官方页面列出“宮古島地下水研究会事務局”及宫古岛市地址，证据比一般在场更精确,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP131,accept,A113→P018 Ginowan site_presence；执行 accept,市议会记录和多年度报道持续确认该宜野湾居民团体在市内采样、请愿和行政请求,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP132,accept,A113→P004 Futenma advocacy_target；执行 accept,证据把普天间基地及其周边 PFAS、基地进入／信息交换请求置于行动对象；不证明基地内设点,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP134,accept,A114→P012 Ishigaki event_site；执行 accept,两份官方记录确认 2024 年石垣港罢工／行动发生地点；不批准争议中的合法性或效果判断,docs/human_review_return_HR025_batch04_v1.md,项目负责人,2026-07-19
+HR025,AP029,accept,X001 USO Okinawa→Camp Schwab site_presence；执行 accept,USO Okinawa 官方页面确认 Camp Schwab Bldg. 3000 的常设中心、联系方式和服务,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP081,accept_with_revision,A048→Okinawa Prefecture site_presence；执行 accept_with_revision,冲绳军用地共有与当地收用程序支持冲绳在场；S038 是关东板块网站，不能写成 A048 的冲绳办公室或把两者合并,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP092,accept,A055→Awase site_presence；执行 accept,当地环境机构名录及长期调查、导览、保全请求证明泡濑持续活动在场,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP097,accept_with_revision,A059→Okinawa Prefecture site_presence；执行 accept_with_revision,确认全县性“冲绳建白书…”组织；同时把含混简称规范为正式全称＋简称,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP099,accept,A060→Takae site_presence；执行 accept,当地居民会、代表和高江反直升机坪行动有新闻与县议会记录交叉支持,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP116,accept_with_revision,A070→Okinawa Prefecture site_presence；执行 accept_with_revision,官方 VFP 和地方报道确认 VFP-ROCK 是在冲绳组成并活动的 chapter；需改成精确名称,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP117,accept_with_revision,A071→Okinawa Prefecture site_presence；执行 accept_with_revision,A071 是长名称的简称；合并 A072 后保留一条全县持续活动边并更新来源,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP118,retire_duplicate_edge,A072→Okinawa Prefecture site_presence；执行 retire_duplicate_edge,A072 与 A071 为同一组织，不能保留两条重复 actor／地点边,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP125,accept,A111→Okinawa Prefecture site_presence；执行 accept,HR-013 已确认全县性女性网络及跨时期县级公开动员；不下沉为具体市町据点,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP133,accept,A114→Naha headquarters；执行 accept,劳委会法律材料明确把冲绳地方本部列为那霸市当事人，历史命令书另有那霸地址,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP135,accept,A115→Okinawa Prefecture site_presence；执行 accept,省级本部身份及跨年度县内请求／签名行动成立；P001 记录的是县域在场，不充当那霸办公室地址,docs/human_review_return_HR025_batch05_v1.md,项目负责人,2026-07-19
+HR025,AP022,accept,A017 沖縄対話プロジェクト→P001 site_presence；执行 accept,组织规约明确在名护设主事务所，并记录冲绳内连续对话活动；P001 只保留县域在场,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP035,accept_with_revision：site_presence,X002 Phoenix Corporation / Phoenix Park Hotel→P001 unclear；执行 accept_with_revision：site_presence,USO Okinawa 报道直接定位 Phoenix Park Hotel 在名护，并确认其属于 Phoenix Corporation；不得由捐赠反推企业总部,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP036,accept_with_revision：改键 P018 Ginowan、headquarters,X003 AEC→P001 unclear；执行 accept_with_revision：改键 P018 Ginowan、headquarters,AEC 官方公司页明确“沖縄本社”位于宜野湾市大山,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP037,accept,X004 AWWA→P001 site_presence；执行 accept,多个来源确认其由冲绳美军配偶组织组成、在冲绳定期协调及开展慈善活动,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP038,accept,X005 NOSCO→P001 site_presence；执行 accept,组织名、AWWA 成员身份及冲绳配偶会功能共同支持县域在场,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP040,accept,X007 OESC→P001 site_presence；执行 accept,捐赠报道、非营利记录及 AWWA 材料共同支持冲绳持续服务组织身份,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP044,accept_with_revision：改键 P018 Ginowan、headquarters,X010 沖縄NGOセンター→P001 site_presence；执行 accept_with_revision：改键 P018 Ginowan、headquarters,政府法人资料明确本店位于宜野湾市宜野湾 3-23-52,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP046,accept_with_revision：site_presence,X012 TOMODACHI Initiative→P001 unclear；执行 accept_with_revision：site_presence,TOMODACHI 官方设有“冲绳区域”校友框架及冲绳联系人，并有冲绳特定项目；不是冲绳总部,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP105,accept_with_revision：advocacy_target,A064 No Bases Network→P001 unclear；执行 accept_with_revision：advocacy_target,可证冲绳代表参与及网络公开声援冲绳斗争，但不能证明正式“冲绳节点”,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP110,accept_with_revision：event_site,A066 新外交イニシアティブ→P020 Naha unclear；执行 accept_with_revision：event_site,ND 官方记录多次在那霸举办／运营活动；其机构总部仍在东京,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP124,accept_with_revision：有时间边界的 site_presence,X017 ACGO→P001 unclear；执行 accept_with_revision：有时间边界的 site_presence,2006 新闻、2012 AWWA 材料及免税组织索引支持冲绳组织身份；不据此声称当前连续运作或 Torii Station 总部,docs/human_review_return_HR025_batch06_v1.md,项目负责人,2026-07-19
+HR025,AP005,accept_with_revision：site_presence,A003 ジュゴンネットワーク沖縄→P001 unclear；执行 accept_with_revision：site_presence,独立材料证明该组织长期在冲绳海域调查，并以组织身份参加政府交涉；不再仅靠 2010 共同署名,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP024,accept,A018 ノーモア沖縄戦 命どぅ宝の会→P001 site_presence；执行 accept,官方网站持续记录冲绳县内活动并更新至 2026 年，足以支持县域在场,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP052,accept_with_revision：advocacy_target,A023 美ら海にもやんばるにも基地はいらない市民の会→P001 unclear；执行 accept_with_revision：advocacy_target,可证活动主要是围绕边野古／高江的东京政府交涉与院内活动，未证实冲绳办公室或在地节点,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP056,accept_with_revision：advocacy_target,A026 ピース・ニュース→P001 unclear；执行 accept_with_revision：advocacy_target,组织自述证明它是开展反战学习、行动和实地考察的市民团体；本条原始依据仍是边野古声明，不能写成常设在场,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP060,accept_with_revision：site_presence,A029 沖縄・生物多様性市民ネットワーク→P001 unclear；执行 accept_with_revision：site_presence,冲绳现场活动、在地成员和国际倡议材料交叉支持持续在场,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP085,accept,A051 「辺野古」県民投票の会→P001 event_site；执行 accept,2018–2019 全县公投条例直接请求和宣传活动是明确、有界的程序／动员场域,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP091,accept_with_revision：有时间边界的 site_presence,A054 沖縄人権協会→P001 unclear；执行 accept_with_revision：有时间边界的 site_presence,1961 年成立、2019 年在那霸召开第 56 次总会可证历史在场；未找到更新的连续性材料,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP093,retire_redundant_parent_place_edge,A055 泡瀬干潟を守る連絡会→P001 unclear；执行 retire_redundant_parent_place_edge,AP092 已精确记录 A055→P019 Awase site_presence；P001 只重复上位地理层级，没有独立全县功能,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP094,accept_with_revision：site_presence,A056 沖縄環境ネットワーク→P001 unclear；执行 accept_with_revision：site_presence,官方通信已达 104 号并含 2025 年总会材料，证明持续的冲绳环境网络活动,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP095,accept_with_revision：advocacy_target,A057 沖縄意見広告運動→P001 event_site；执行 accept_with_revision：advocacy_target,官方联系方式在东京，广告同时投向冲绳、全国及海外媒体；“冲绳”是核心诉求对象而非组织地点,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR025,AP096,accept_with_revision：site_presence,A058 沖縄県統一連→P001 unclear；执行 accept_with_revision：site_presence,多年份材料给出那霸地址、全称及县内行动；原 S031 属于另一组织，必须撤掉,docs/human_review_return_HR025_batch07_v1.md,项目负责人,2026-07-19
+HR026,HR026-01,accept_with_revision,确认举行；issue_campaign；crosswalk=A059；使用正式全称,S249 是预告，需补 QAB 当日报道；明确不是直接知事选目的,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-02,accept,request；临时请求 collective,“52 团体和个人”不是组织名单；不等于稳定联盟,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-03,accept,endorsement；campaign event node,单一党派媒体 E2；29 团体不进入 registry,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-04,accept,observation；青年现场学习／同辈对话,只有 bounded window，没有精确 tour 日期；不推断选票效果,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-05,accept_with_revision,国家级组织的 observation／选后解释,不 crosswalk 到 A115；冲绳县本部活动只作为国家组织自报,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-06,accept,issue_campaign；支持知事行政行为,不是候选 endorsement；不推断选举效果,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-07,accept,issue_campaign；反土砂投入／追悼语境,临近选举不改变动作类型；排除人数与效果,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-08,accept,request；temporary mixed event node,8 月 23 日只确认正式请求，当时尚未确认接受,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-09,accept,public_meeting；civic-learning role,候选人匿名；不声称中立性已独立审核,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-10,accept_with_revision,粗类保留 request，role=policy_proposal_drafter,只确认起草提言案；不写交付、接受、候选 uptake,docs/human_review_return_HR026_election_batch24_v1.md,项目负责人,2026-07-20
+HR026,HR026-11,accept_with_revision,日期改为 9/12–9/19：先比较候选政策，再公开政策提言,不声称阅读量、中立性认证、说服或效果,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-12,accept_with_revision,国家组织；署名中央常任委员会；不 crosswalk A115,组织自报全国行动不证明规模或因果,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-13,accept,request；具名 ad hoc collective,玉城当时只说考虑；不推断成员名单或持续性,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-14,accept,国家组织 endorsement,436 个接入点不是人数、选民或效果,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-15,accept_with_revision,保留 issue_campaign，增加 election-adjacent contested reception,原始声明无连任号召；政治评价不等于组织目的,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-16,accept_with_revision,国家组织的明确 endorsement；不 crosswalk A115,全国声援、扩散与募金号召不证明执行或效果,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-17,accept_with_revision,确认问卷实施和基于结果的活动；删去“完整答卷已公开”暗示,原始答卷未找到；个人角色不转移给 A051 等组织,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-18,accept_with_revision,改成 announced／scheduled public meetings；不写 held,无会后证据；不进入已举行事件计数,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR026,HR026-19,accept_with_revision,接受 event-level endorsement；主办方保持 unidentified,不作为 actor、不进入组织数或稳定妇女联盟,docs/human_review_return_HR026_election_batch25_v1.md,项目负责人,2026-07-20
+HR032,HR032-01,accept_display_alias_only,两种写法统一显示为 社会福祉法人沖縄県社会福祉協議会,只是法人前缀省略；不自动进 registry,docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20
+HR032,HR032-02,revise,两行归同一 公益財団法人沖縄県平和祈念財団；保留原始 kind，另记 row496 类别冲突,"不与ひめゆり财团混同；241,109 千円不是付款",docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20
+HR032,HR032-03,revise,rows197/205/206 归女性财团；row207 保留管理运营共同体，并记录财团是成员,不与 A111 或已移出的 A094 混同,docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20
+HR032,HR032-04,accept_display_alias_only,三行 crosswalk 到 A088；冻结日文名、英文名和 OPAC,actor crosswalk 不等于自动批准三条关系,docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20
+HR032,HR032-05,accept_member_crosswalk_only,JOCA 冲绳是母法人办事机构；三个 JV 名称分别保留，JOCA 只作成员,办事机构不是独立法人；项目费不得拆分,docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20
+HR032,HR032-06,revise,rows433/571 归同一 WYUA；row434 保留 Team OKIYUA，并记录 WYUA 是成员,同时包含 alias 与 member 两种处理，不能整项只作名称合并,docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20
+HR032,HR032-07,revise,四行归同一持续组织 沖縄県ユネスコ協会；暂按任意团体处理,row545 的 NPO法人类别疑为来源编码错误，保留 raw 值并标注冲突,docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20
+HR032,HR032-08,revise,四行归同一 NPO 法人；row466 仅保留为来源表事实，角色待项目级证据,不写成施工监理承包、付款或已解释的跨部门桥梁,docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md,项目负责人,2026-07-20

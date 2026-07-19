@@ -1,4 +1,4 @@
-place_id,place_name,place_type,region,why_relevant,phase1_priority,notes
+﻿place_id,place_name,place_type,region,why_relevant,phase1_priority,notes
 P001,Okinawa Prefecture,prefecture,Okinawa,Overall project geography,high,Use as broad container only.
 P002,Henoko,site,Nago,Base relocation and direct action core,high,Often paired with Oura Bay.
 P003,Oura Bay,site,Nago,Dugong/coral/biodiversity and international advocacy,high,Environmental frame strongest here.
@@ -19,3 +19,4 @@ P017,Nago,municipality,Northern Okinawa,Henoko host municipality; 1997 referendu
 P018,Ginowan,municipality,Central Okinawa,Futenma base host city; noise litigation; relocation origin,medium,Noise/safety issues.
 P019,Awase,site,Okinawa City,Tidal flat reclamation and environmental litigation,medium,Environmental case.
 P020,Naha,municipality,Southern Okinawa,Prefectural capital; civic organization headquarters,medium,Administrative center.
+P021,Sakishima Islands,region,Okinawa,Regional scale for sources that explicitly name Sakishima as a whole.,high,只用于来源明确指称先岛整体、但不能下沉到与那国／石垣／宫古的观察；不得自动向 P011/P012/P013 扇出。 HR-025 approved 2026-07-19.

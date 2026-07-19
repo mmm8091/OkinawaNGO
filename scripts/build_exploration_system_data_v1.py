@@ -115,6 +115,11 @@ def normalize_actors(
         source_ids, unresolved_source_refs = resolve_source_refs(
             split_refs(row["source_refs"]), source_aliases
         )
+        scope_status = row.get("scope_status", "")
+        hidden = row["review_status"] == "rejected" or scope_status in {
+            "merged_duplicate",
+            "excluded",
+        }
         actors.append({
             "id": row["actor_id"],
             "display_label": row["canonical_name"],
@@ -128,7 +133,9 @@ def normalize_actors(
             "unresolved_source_refs": unresolved_source_refs,
             "evidence_level": row["evidence_level"],
             "review_status": row["review_status"],
-            "display_status": "demo",
+            "scope_status": scope_status,
+            "merged_duplicate_of": row.get("merged_duplicate_of", ""),
+            "display_status": "hidden" if hidden else "demo",
             "interpretation_limit": INTERPRETATION_LIMITS["actor"],
         })
     return sorted(actors, key=lambda row: row["id"])
@@ -337,6 +344,10 @@ def normalize_actor_issue(
     demo: list[dict[str, Any]] = []
     research: list[dict[str, Any]] = []
     for row in rows:
+        if row["review_status"] == "rejected" or row.get("scope_status", "").startswith(
+            "retired"
+        ):
+            continue
         source_ids, unresolved_source_refs = resolve_source_refs(
             split_refs(row["source_ref"]), source_aliases
         )
@@ -370,6 +381,10 @@ def normalize_actor_place(
     demo: list[dict[str, Any]] = []
     research: list[dict[str, Any]] = []
     for row in rows:
+        if row["review_status"] == "rejected" or row.get("scope_status", "").startswith(
+            "retired"
+        ):
+            continue
         source_ids, unresolved_source_refs = resolve_source_refs(
             split_refs(row["source_ref"]), source_aliases
         )

@@ -36,7 +36,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             build_exploration_system_data(ROOT, output_dir)
             actors = json.loads((output_dir / "demo/actors.json").read_text(encoding="utf-8"))
 
-        self.assertEqual(27, sum(len(actor["aliases"]) for actor in actors))
+        self.assertEqual(39, sum(len(actor["aliases"]) for actor in actors))
         self.assertTrue(all({"label", "type", "source_ids"} <= set(alias) for actor in actors for alias in actor["aliases"]))
 
     def test_builds_all_core_collections_and_separates_candidate_episodes(self) -> None:
@@ -110,8 +110,8 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             set(views),
         )
         self.assertEqual("P1", views["overview"]["view_id"])
-        self.assertEqual(20, len(views["overview"]["place_ids"]))
-        self.assertEqual(16, len(views["overview"]["actor_place_relation_ids"]))
+        self.assertEqual(21, len(views["overview"]["place_ids"]))
+        self.assertEqual(18, len(views["overview"]["actor_place_relation_ids"]))
         self.assertEqual(67, len(views["overview"]["strict_place_issue_relation_ids"]))
         self.assertEqual("P2", views["actors"]["view_id"])
         self.assertEqual(122, len(views["actors"]["actor_ids"]))
@@ -139,7 +139,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         self.assertEqual("../demo/map_geometry.geojson", overview["map_geometry"]["path"])
         self.assertEqual(42, overview["map_geometry"]["feature_count"])
 
-    def test_quarantines_actor_place_key_label_conflicts(self) -> None:
+    def test_uses_repaired_ap123_and_hides_retired_place_edges(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             output_dir = Path(temp_dir) / "exploration"
             build_exploration_system_data(ROOT, output_dir)
@@ -148,11 +148,15 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
                 (output_dir / "research/candidates.json").read_text(encoding="utf-8")
             )
 
-        self.assertNotIn("AP123", {row["id"] for row in demo["actor_place"]})
-        ap123 = next(
-            row for row in candidates["relations"]["actor_place"] if row["id"] == "AP123"
-        )
-        self.assertEqual("place_key_label_conflict", ap123["quarantine_reason"])
+        demo_by_id = {row["id"]: row for row in demo["actor_place"]}
+        self.assertEqual("P007", demo_by_id["AP123"]["place_id"])
+        self.assertEqual("Camp Foster", demo_by_id["AP123"]["canonical_place_label"])
+        self.assertEqual("", demo_by_id["AP123"]["quarantine_reason"])
+        all_place_ids = set(demo_by_id) | {
+            row["id"] for row in candidates["relations"]["actor_place"]
+        }
+        self.assertNotIn("AP048", all_place_ids)
+        self.assertNotIn("AP118", all_place_ids)
 
     def test_manifest_and_validation_are_deterministic(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:

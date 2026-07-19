@@ -26,3 +26,15 @@ A113,ちゅら水会,context_limited_alias,S273;S274,"HR-027: valid only in expl
 A114,全港湾沖縄地方本部,short_name,S289,HR-027 accepted branch-qualified short form; do not collapse into the national 全港湾 organization.
 A114,全港湾沖縄,media_short_name,S286,HR-027 accepted media headline form; branch context remains mandatory.
 A115,新婦人沖縄県本部,short_name,S283,HR-027 accepted prefecture-qualified short form. Bare 新婦人 refers to the national organization and is rejected as an unconditional alias.
+A058,沖縄県統一連,short_name,,HR-025 normalized short name; direct URL awaits central source-ID integration.
+A058,安保廃棄沖縄県統一連,short_name,,HR-025 documented newsletter form; direct URL awaits central source-ID integration.
+A059,島ぐるみ会議,short_name,S029,Do not collapse municipal 島ぐるみ会議 units into the prefectural umbrella actor.
+A067,辺野古土砂全協,short_name,S040,Short form for the normalized national liaison council name.
+A068,名護市民投票推進協議会,short_name,S042,1997 referendum-process actor; lifecycle/genealogy remains separately undecided.
+A068,名護市民投票の会,deprecated_working_name,,Legacy project label not supported as the formal name; retained only for provenance/search.
+A070,Veterans for Peace Okinawa,short_name,S048,Legacy concise English form; do not transfer all parent-organization activity.
+A070,VFP-ROCK,acronym,S048,Ryukyu/Okinawa Chapter Kokusai acronym.
+A070,"Veterans for Peace, Ryukyu/Okinawa (VFP ROC)",name_variant,S048,Documented chapter-name variant.
+A070,Chapter 1003 - Ryukyu Okinawa,chapter_listing_variant,S048,Documented chapter-listing form.
+A070,平和を求める元軍人の会・琉球沖縄国際支部,japanese_name,S048,Japanese chapter name confirmed in HR-025.
+A071,沖縄平和市民連絡会,short_name,,Officially documented abbreviation; direct URL awaits central source-ID integration.

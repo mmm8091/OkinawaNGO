@@ -1,242 +1,242 @@
-﻿edge_id,actor_id,issue_id,issue_label,relation_basis,source_ref,evidence_level,review_status,notes
-AI001,A001,I004,dugong,OEJP/MMC dugong advocacy,S006;S007;S008,E4,ai_seeded,Core issue.
-AI002,A001,I012,international_advocacy,Request to U.S. Marine Mammal Commission,S006;S007;S008,E4,ai_seeded,Transnational advocacy route.
-AI003,A001,I003,Henoko,Henoko/Oura Bay focus,S006;S007;S008,E4,ai_seeded,Place issue.
-AI004,A002,I004,dugong,Dugong protection campaign and advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 identity confirmed; do not treat as lawsuit plaintiff.
-AI005,A002,I012,international_advocacy,IUCN and international advocacy context,S007;S058,E4,human_revised,HR-001 confirms international advocacy role via SDCC/IUCN; lawsuit link is personnel overlap not plaintiff status.
-AI006,A003,I004,dugong,2010 WWF signatory list,S003,E3,needs_second_source,Confirm organization details.
-AI007,A003,I005,biodiversity,2010 WWF Henoko habitat statement,S003,E3,needs_second_source,Environmental actor seed.
-AI008,A004,I005,biodiversity,2015 NACSJ emergency statement,S004,E4,ai_seeded,National environmental NGO.
-AI009,A004,I003,Henoko,Henoko emergency statement,S004,E4,ai_seeded,Issue/place link.
-AI010,A005,I004,dugong,2010 WWF statement host,S003,E4,ai_seeded,Statement host.
-AI011,A005,I005,biodiversity,2010 WWF statement host,S003,E4,ai_seeded,Environmental frame.
-AI012,A006,I005,biodiversity,2010 WWF signatory list,S003,E4,ai_seeded,Environmental NGO.
-AI013,A006,I001,anti_base,Henoko base construction opposition statement,S003,E4,ai_seeded,Statement-based.
-AI014,A007,I019,peace,Peace Boat Henoko statement,S005,E4,ai_seeded,Peace movement bridge.
-AI015,A007,I001,anti_base,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement-based.
-AI016,A007,I012,international_advocacy,International peace NGO role,S005,E4,ai_seeded,Bridge actor.
-AI017,A008,I019,peace,No-war/international-cooperation NGO network purpose,S065;S066;S067,E4,human_revised,HR-002 confirms peace/no-war as core purpose.
-AI018,A008,I001,anti_base,Henoko referendum solidarity statement context,S064,E3,human_revised,"HR-002: anti-base relation is statement/solidarity context, not local core activity or stable alliance."
-AI019,A009,I011,legal,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal route.
-AI020,A009,I004,dugong,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong protection.
-AI021,A009,I012,international_advocacy,U.S. legal NGO involvement,S009,E4,ai_seeded,International advocacy actor.
-AI022,A010,I002,anti_military,Ishigaki anti-base civic group named in local news,S016;S017,E4,ai_seeded,Core Sakishima actor.
-AI023,A010,I006,groundwater,Ishigaki construction halt request cites water/ecosystem concerns,S017,E4,ai_seeded,Life-safety/environment frame.
-AI024,A010,I009,local_autonomy,Ishigaki public debate/civic mobilization,S016,E3,ai_seeded,Autonomy frame to verify.
-AI025,A011,I010,referendum,Ishigaki referendum campaign,S018;S019,E4,ai_seeded,Referendum actor.
-AI026,A011,I009,local_autonomy,Resident vote framing,S018;S019,E4,ai_seeded,Local autonomy frame.
-AI027,A011,I002,anti_military,Referendum on JSDF deployment,S018;S019,E4,ai_seeded,Deployment issue.
-AI028,A012,I006,groundwater,Miyako water preservation frame,S020,E3,needs_second_source,Exact organization name needs review.
-AI029,A012,I002,anti_military,Miyako JSDF deployment opposition,S020,E3,needs_second_source,Confirm continuity.
-AI030,A012,I007,life_safety,Water/life-safety frame,S020,E3,needs_second_source,Life safety.
-AI031,A013,I002,anti_military,Miyako anti-missile group,S021,E4,ai_seeded,Core Miyako actor.
-AI032,A013,I006,groundwater,Miyako groundwater/water concern,S021,E3,ai_seeded,Source is party news; still actor seed.
-AI033,A013,I007,life_safety,Missile/base life-safety concern,S021,E3,ai_seeded,Needs local follow-up.
-AI034,A014,I002,anti_military,Yonaguni anti-deployment referendum committee lead,S069;S010;S070,E2,needs_local_retrieval,HR-003: replaces unsupported 与那国改革会議 seed; exact committee name and continuity need local confirmation.
-AI035,A014,I009,local_autonomy,Yonaguni referendum/direct-request and vote-process concerns,S069;S010;S071,E2,needs_local_retrieval,HR-003: local autonomy relation retained as referendum committee lead; needs local/primary confirmation.
-AI036,A015,I002,anti_military,Anti-deployment opinion-ad committee,S015,E2,needs_local_retrieval,HR-003: S015 confirms name but is single party-media source; needs Yaeyama local cross-check.
-AI037,A015,I009,local_autonomy,Public opinion/ad action and referendum solidarity,S015,E2,needs_local_retrieval,HR-003: local-autonomy relation is indirect through referendum/public-opinion action; needs local confirmation.
-AI038,A016,I008,health_risk,Yonaguni health/life-safety concerns around deployment and exercises,S011;S052;S068,E3,human_checked,HR-003: organization/activity cross-supported; founding/representatives still need local retrieval.
-AI039,A016,I002,anti_military,Yonaguni deployment and joint-exercise concerns,S052;S068,E3,human_checked,HR-003: active civic opposition to deployment/exercises confirmed by blog and local news.
-AI040,A017,I018,Taiwan_contingency,Okinawa dialogue project frontline/Taiwan context,S022,E4,ai_seeded,Recent security environment frame.
-AI041,A017,I017,frontline_prevention,Okinawa dialogue anti-war/frontline framing,S022,E4,ai_seeded,Recent frontline-prevention frame.
-AI042,A017,I019,peace,Dialogue/anti-war project,S022,E4,ai_seeded,Peace/anti-war.
-AI043,A018,I017,frontline_prevention,No More Okinawa War public framing,S023;S024,E4,ai_seeded,Recent anti-frontline actor.
-AI044,A018,I018,Taiwan_contingency,Recent civil society coalition after Taiwan contingency remarks,S024,E4,ai_seeded,Current issue.
-AI045,A018,I019,peace,Anti-war framing,S023,E4,ai_seeded,Peace/anti-war.
-AI046,A019,I001,anti_base,Henoko on-site sit-in and maritime action,S049;S008,E4,human_checked,HR-004: official site supports direct action; joint statements are not stable alliance evidence.
-AI047,A019,I003,Henoko,Henoko/Nago anti-heliport and on-site action,S049;S050;S008,E4,human_checked,HR-004: official site and structured secondary source support Henoko core role.
-AI048,A020,I011,legal,JELF legal/environmental channel,S006;S007,E4,ai_seeded,Legal channel.
-AI049,A020,I005,biodiversity,Environmental law/dugong report context,S006;S007,E4,ai_seeded,Environmental law.
-AI050,A020,I004,dugong,JELF/OEJP dugong report context,S006;S007,E4,ai_seeded,Dugong issue.
-AI051,X001,I014,military_family_service,USO Okinawa service role,X001,E3,ai_seeded,Service actor; not movement stance.
-AI052,X001,I016,base_community_welfare,USO Okinawa sponsor/service network,X001,E3,ai_seeded,Service/welfare ecology.
-AI053,X002,I016,base_community_welfare,Donation to USO Okinawa,X002,E4,ai_seeded,Sponsor/donor actor.
-AI054,X003,I016,base_community_welfare,Listed USO sponsor,X003,E3,ai_seeded,Amount/year needs check.
-AI055,X004,I014,military_family_service,AWWA spouse-club umbrella network,S041;S055;S072,E4,human_checked,HR-005 confirms umbrella/member structure; not evidence of specific recipients.
-AI056,X004,I016,base_community_welfare,AWWA grantmaking/welfare network,S041;S055;S077;S078,E3,human_checked,HR-005 confirms general welfare grantmaking; annual named recipient lists still need Form 990/records.
-AI057,X005,I014,military_family_service,NOSCO spouse club / AWWA member relation,S055,E4,human_checked,HR-005 confirms NOSCO identity and AWWA membership; recipient records still need follow-up.
-AI058,X006,I014,military_family_service,KOSC spouse club and Kadena Gift Corner charity role,S075;S076,E4,human_checked,HR-005 confirms KOSC identity and tax record.
-AI059,X007,I014,military_family_service,OESC spouse club/thrift shop and nonprofit record,S053;S054,E4,human_checked,HR-005 confirms OESC 501c3 and named USO donation.
-AI060,X008,I014,military_family_service,Red Cross Okinawa volunteer/service role,X008,E4,ai_seeded,Service node.
-AI061,X009,I014,military_family_service,NMCRS emergency assistance role,X009,E4,ai_seeded,Service node.
-AI062,X010,I015,international_cooperation,MOFA NGO consultant/JICA relation,X010;X011,E4,ai_seeded,Institutional relation.
-AI063,X010,I013,public_diplomacy,International cooperation/development education adjacent,X010;X011,E3,ai_seeded,Use cautiously.
-AI064,X011,I015,international_cooperation,JICA Okinawa institutional role,X011,E4,ai_seeded,Institutional node.
-AI065,X012,I013,public_diplomacy,TOMODACHI public-private partnership,X012,E4,ai_seeded,Okinawa-specific link not yet confirmed.
-AI066,X013,I013,public_diplomacy,Okinawa Youth Council grant opportunity,X013,E3,needs_local_retrieval,Opportunity only; recipient unknown.
-AI067,X014,I013,public_diplomacy,NED watchlist / democracy funding context,X014,E2,watchlist_only,No Okinawa recipient confirmed.
-AI068,X015,I015,international_cooperation,Peace Winds Japan USAID method sample,X015,E4,watchlist_only,No Okinawa issue link confirmed.
-AI069,A021,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.
-AI070,A021,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation; not stable alliance.
-AI071,A022,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.
-AI072,A022,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.
-AI073,A023,I001,anti_base,2015 NACSJ signatory local civic group,S004,E4,ai_seeded,Needs local follow-up.
-AI074,A023,I005,biodiversity,Name/framing links sea/Yanbaru protection,S004,E3,needs_second_source,Infer from signatory context.
-AI075,A024,I001,anti_base,2015 NACSJ signatory,S004,E4,ai_seeded,Henoko mobilization seed.
-AI076,A024,I003,Henoko,Name and statement context,S004,E4,ai_seeded,Place issue.
-AI077,A025,I001,anti_base,2015 NACSJ signatory,S004,E4,ai_seeded,Anti-base executive committee.
-AI078,A025,I003,Henoko,Name and statement context,S004,E4,ai_seeded,Place issue.
-AI079,A026,I019,peace,2015 NACSJ signatory / peace news,S004,E3,needs_second_source,Actor type unclear.
-AI080,A027,I005,biodiversity,2015 NACSJ signatory / public works reform frame,S004,E4,ai_seeded,Environment/public works critique.
-AI081,A027,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.
-AI082,A028,I012,international_advocacy,Japan-U.S. citizen network signatory,S004,E4,ai_seeded,International/cross-border actor.
-AI083,A028,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.
-AI084,A029,I005,biodiversity,Okinawa biodiversity citizen network signatory,S004,E4,ai_seeded,Local biodiversity network.
-AI085,A029,I003,Henoko,Henoko/Oura Bay statement context,S004,E4,ai_seeded,Place issue.
-AI086,A030,I005,biodiversity,2015 NACSJ environmental solidarity signatory,S004,E4,ai_seeded,Non-Okinawa environmental actor.
-AI087,A031,I005,biodiversity,2015 NACSJ environmental solidarity signatory,S004,E4,ai_seeded,Non-Okinawa environmental actor.
-AI088,A032,I012,international_advocacy,Peace Philosophy Centre signatory,S004,E4,ai_seeded,International advocacy node.
-AI089,A032,I019,peace,Peace Philosophy Centre framing,S004,E3,ai_seeded,Confirm via own site if central.
-AI090,A033,I012,international_advocacy,Friends of the Earth U.S. signatory,S004,E4,ai_seeded,U.S. NGO.
-AI091,A033,I005,biodiversity,Environmental NGO signatory,S004,E4,ai_seeded,Signatory seed.
-AI092,A034,I012,international_advocacy,KFEM signatory,S004,E4,ai_seeded,Overseas environmental solidarity.
-AI093,A034,I005,biodiversity,KFEM environmental NGO,S004,E4,ai_seeded,Signatory seed.
-AI094,A035,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI095,A036,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI096,A037,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI097,A038,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI098,A039,I011,legal,Legal rights/natural resources center signatory,S004,E4,ai_seeded,Legal/environmental NGO.
-AI099,A039,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI100,A040,I012,international_advocacy,2015 NACSJ overseas signatory,S004;S089;S090,E4,human_checked,HR-009 identity confirmed; 2015 co-signatory/solidarity node only not stable alliance.
-AI101,A041,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI102,A042,I012,international_advocacy,Pacific Environment signatory,S004,E4,ai_seeded,U.S./Pacific NGO.
-AI103,A042,I005,biodiversity,Environmental NGO signatory,S004,E4,ai_seeded,Signatory seed.
-AI104,A043,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI105,A044,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.
-AI106,A045,I011,legal,Center for Biological Diversity legal/environmental actor,S004,E4,ai_seeded,Legal/environmental NGO.
-AI107,A045,I005,biodiversity,Center for Biological Diversity signatory,S004,E4,ai_seeded,Biodiversity actor.
-AI108,A045,I012,international_advocacy,U.S. environmental NGO signatory,S004,E4,ai_seeded,International actor.
-AI109,A046,I012,international_advocacy,2015 NACSJ overseas signatory,S004;S091;S092,E4,human_checked,HR-009 identity confirmed; 2015 co-signatory/solidarity node only not stable alliance.
-AI110,A046,I005,biodiversity,Environmental NGO signatory,S004;S091;S092,E4,human_checked,HR-009 identity confirmed as Pro Natura / FoE Switzerland; signatory evidence only.
-AI111,A047,I001,anti_base,Core anti-base coordination body,S031,E4,ai_seeded,Central coordination role in Okinawa peace/anti-base movements.
-AI112,A047,I019,peace,Peace movement coordination,S031,E4,ai_seeded,Peace movement center.
-AI113,A047,I002,anti_military,Anti-military deployment coordination,S031,E4,ai_seeded,Broad anti-military frame.
-AI114,A047,I003,Henoko,Henoko opposition coordination,S031,E3,ai_seeded,Verify direct Henoko coordination role.
-AI115,A048,I001,anti_base,Symbolic landowner resistance to military land leases,S038,E4,ai_seeded,Core anti-base frame.
-AI116,A048,I011,legal,Land lease legal resistance,S038,E4,ai_seeded,Legal channel.
-AI117,A048,I019,peace,Anti-war landowner movement,S038,E4,ai_seeded,Peace frame.
-AI118,A048,I009,local_autonomy,Land rights and local autonomy,S038,E3,ai_seeded,Autonomy frame.
-AI119,A049,I007,life_safety,Women's safety and military violence issues,S039,E4,ai_seeded,Gender/safety frame.
-AI120,A049,I001,anti_base,Women's anti-base movement,S039,E4,ai_seeded,Anti-base frame.
-AI121,A049,I002,anti_military,Opposition to military violence,S039,E4,ai_seeded,Anti-military frame.
-AI122,A050,I011,legal,Bar association legal statements on base issues,S037,E4,ai_seeded,Professional legal frame.
-AI123,A050,I009,local_autonomy,Bar association statements on prefectural autonomy,S037,E4,ai_seeded,Autonomy frame.
-AI124,A050,I001,anti_base,President statements opposing Henoko construction,S037,E4,ai_seeded,Formal professional statement.
-AI125,A051,I010,referendum,2019 prefectural referendum initiative,S025,E4,ai_seeded,Core referendum actor.
-AI126,A051,I003,Henoko,Referendum specifically about Henoko base,S025,E4,ai_seeded,Henoko frame.
-AI127,A051,I009,local_autonomy,Local self-determination via referendum,S025,E4,ai_seeded,Autonomy frame.
-AI128,A052,I011,legal,Kadena noise litigation,S026,E4,ai_seeded,Court litigation.
-AI129,A052,I007,life_safety,Noise damage and daily life impact,S026,E4,ai_seeded,Life safety frame.
-AI130,A052,I001,anti_base,Base noise burden legal action,S026,E4,ai_seeded,Anti-base through legal channel.
-AI131,A053,I011,legal,Futenma noise litigation,S027,E4,ai_seeded,Court litigation.
-AI132,A053,I007,life_safety,Noise damage and daily life impact,S027,E4,ai_seeded,Life safety frame.
-AI133,A053,I001,anti_base,Base noise burden legal action,S027,E4,ai_seeded,Anti-base through legal channel.
-AI134,A054,I007,life_safety,Human rights and safety concerns,S033,E3,ai_seeded,Verify current activities.
-AI135,A055,I005,biodiversity,Tidal flat ecosystem protection,S030,E3,ai_seeded,Environmental frame.
-AI136,A055,I011,legal,Environmental litigation against reclamation,S030,E3,ai_seeded,Legal frame.
-AI137,A056,I005,biodiversity,Environmental network activities,S033,E3,needs_second_source,Verify organizational structure.
-AI138,A056,I001,anti_base,Environmental perspective on base issues,S033,E3,needs_second_source,Verify direct connection.
-AI139,A057,I001,anti_base,National newspaper opinion ads on Okinawa base issues,S034,E3,ai_seeded,Public opinion mobilization.
-AI140,A057,I019,peace,Peace framing in opinion campaigns,S034,E3,ai_seeded,Peace frame.
-AI141,A058,I001,anti_base,Labor/civic umbrella anti-base coordination,S031,E3,needs_second_source,Verify structure.
-AI142,A058,I019,peace,Peace/labor movement coordination,S031,E3,needs_second_source,Verify structure.
-AI143,A059,I001,anti_base,All-island anti-Henoko base coordination,S029,E3,ai_seeded,Municipal-level network.
-AI144,A059,I003,Henoko,Henoko opposition coordination,S029,E3,ai_seeded,Henoko focus.
-AI145,A059,I009,local_autonomy,Municipal/grassroots autonomy expression,S029,E3,ai_seeded,Local autonomy frame.
-AI146,A060,I001,anti_base,Takae helipad opposition,S028,E3,ai_seeded,Anti-base/anti-helipad.
-AI147,A060,I005,biodiversity,Yanbaru forest protection concerns,S028,E3,ai_seeded,Environmental frame.
-AI148,A061,I005,biodiversity,Bird conservation and Henoko habitat statements,S003;S004,E4,ai_seeded,National bird conservation NGO.
-AI149,A062,I005,biodiversity,Wetland conservation and Henoko/Oura Bay statements,S003,E4,ai_seeded,Wetland network.
-AI150,A063,I001,anti_base,Kanto-region anti-war landowner solidarity with Okinawa,S038,E3,ai_seeded,Mainland solidarity.
-AI151,A063,I019,peace,Peace movement mainland branch,S038,E3,ai_seeded,Peace solidarity.
-AI152,A064,I001,anti_base,International network against foreign military bases,S033,E3,needs_second_source,Verify Okinawa connection.
-AI153,A064,I012,international_advocacy,International anti-base advocacy,S033,E3,needs_second_source,Verify participation.
-AI154,A065,I002,anti_military,Southwest Islands anti-militarization network,S036,E3,needs_second_source,Verify membership.
-AI155,A065,I017,frontline_prevention,Anti-frontline framing for Sakishima,S036,E3,needs_second_source,Verify continuity.
-AI156,A065,I018,Taiwan_contingency,Security environment concerns,S036,E3,needs_second_source,Verify framing.
-AI157,A066,I011,legal,International law and base policy arguments,S032,E4,ai_seeded,Policy/legal advocacy.
-AI158,A066,I009,local_autonomy,Okinawa autonomy policy alternatives,S032,E4,ai_seeded,Autonomy frame.
-AI159,A066,I001,anti_base,Base policy alternatives research,S032,E4,ai_seeded,Think tank role.
-AI160,A067,I001,anti_base,National council against Henoko landfill soil import,S040,E3,ai_seeded,Cross-prefecture coordination.
-AI161,A067,I003,Henoko,Henoko-specific soil import opposition,S040,E3,ai_seeded,Henoko focus.
-AI162,A067,I005,biodiversity,Environmental concern about soil import sources,S040,E3,ai_seeded,Environmental frame.
-AI163,A068,I010,referendum,1997 Nago city referendum initiative,S042,E3,ai_seeded,Historical referendum actor.
-AI164,A068,I001,anti_base,Base construction referendum opposition,S042,E3,ai_seeded,Anti-base frame.
-AI165,A068,I003,Henoko,Henoko/Nago base referendum,S042,E3,ai_seeded,Henoko/Nago focus.
-AI166,A069,I004,dugong,Dugong EIA monitoring,S047,E3,needs_second_source,Verify organizational structure.
-AI167,A069,I005,biodiversity,Environmental assessment monitoring,S047,E3,needs_second_source,Verify current status.
-AI168,A069,I003,Henoko,Henoko/Oura Bay EIA focus,S047,E3,needs_second_source,Henoko focus.
-AI169,A070,I019,peace,Veterans peace advocacy in Okinawa,S048,E3,needs_second_source,Verify chapter status.
-AI170,A070,I001,anti_base,Veterans anti-base advocacy,S048,E3,needs_second_source,Verify participation.
-AI171,A070,I012,international_advocacy,U.S. veterans international peace advocacy,S048,E3,needs_second_source,Verify activities.
-AI172,A071,I019,peace,Civic peace liaison activities,S031,E3,needs_second_source,Verify structure.
-AI173,A071,I001,anti_base,Anti-base civic coordination,S031,E3,needs_second_source,Verify if distinct from A047.
-AI174,A072,I001,anti_base,Base removal civic network,S031,E3,needs_second_source,Verify if distinct from A071.
-AI175,A072,I019,peace,World peace framing,S031,E3,needs_second_source,Verify structure.
-AI176,A074,I009,local_autonomy,Prefectural government base affairs,S043,E4,ai_seeded,Government context node.
-AI177,A074,I001,anti_base,Administrative base burden management,S043,E4,ai_seeded,Government role.
-AI178,A075,I001,anti_base,Defense bureau base construction role,S047,E4,ai_seeded,Government context node.
-AI179,X016,I014,military_family_service,MOSCO spouse club and AWWA member role,S079;S080;S055,E4,human_checked,HR-005 supplemental: MOSCO identity and tax record confirmed.
-AI180,X017,I014,military_family_service,Army Community Group / AWWA member and gift shop lead,S041;S072;S081,E3,needs_second_source,HR-005 supplemental: identity supported by AWWA/community sources; no independent website/EIN found.
-AI181,A102,I011,legal,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI182,A102,I020,environment,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI183,A102,I021,noise,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI184,A102,I007,life_safety,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI185,A103,I021,noise,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI186,A103,I007,life_safety,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI187,A103,I011,legal,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI188,A103,I001,anti_base,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI189,A104,I021,noise,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI190,A104,I007,life_safety,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI191,A104,I011,legal,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI192,A104,I001,anti_base,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI193,A105,I022,women,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI194,A105,I023,human_rights,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI195,A105,I019,peace,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI196,A105,I003,Henoko,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI197,A106,I003,Henoko,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI198,A106,I020,environment,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI199,A106,I001,anti_base,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI200,A106,I024,solidarity,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.
-AI201,A107,I022,women,Okinawa YWCA regional identity and women-focused mission,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.
-AI202,A107,I023,human_rights,Okinawa YWCA human-rights mission and activities,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.
-AI203,A107,I019,peace,Okinawa YWCA peace mission and activities,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.
-AI204,A108,I017,frontline_prevention,Network purpose explicitly centers preventing Okinawa becoming a battlefield,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI205,A108,I018,Taiwan_contingency,Public framing connects Okinawa frontline risk to regional contingency planning,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI206,A108,I019,peace,Prefectural anti-war and peace mobilization,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI207,A109,I021,noise,Fourth Kadena base-noise injunction litigation counsel role,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI208,A109,I007,life_safety,Fourth Kadena litigation addresses residents' daily noise harm,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI209,A109,I011,legal,Case-specific legal representation in fourth Kadena litigation,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI210,A109,I001,anti_base,Flight-injunction claim concerning Kadena base-noise burden,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI211,A110,I003,Henoko,Sustained Osaka public actions opposing Henoko base construction,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI212,A110,I001,anti_base,Sustained Osaka public actions opposing Henoko base construction,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI213,A110,I024,solidarity,Mainland public solidarity actions concerning Henoko,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI214,A052,I021,noise,Cross-round Kadena base-noise plaintiff-group role,S026;S149;S151;S155,E4,human_checked,HR-011/HR-012 user-reviewed issue coding. Issue association does not imply a stable inter-organizational alliance or funding relation.
-AI215,A053,I021,noise,Cross-round Futenma base-noise plaintiff-group role,S027;S135;S156,E4,human_checked,HR-011/HR-012 user-reviewed issue coding. Issue association does not imply a stable inter-organizational alliance or funding relation.
-AI216,A107,I001,anti_base,Direct Henoko new-base opposition photo-exhibit activity,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.
-AI217,A108,I025,anti_war,Prefecture-wide anti-war network formed to prevent Okinawa becoming a battlefield,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI218,A110,I026,mobilization,Long-running fixed Osaka/Kansai action repertoire,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.
-AI219,A111,I022,women,Prefectural women's-network identity and women-focused public action,S200;S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.
-AI220,A111,I019,peace,"Long-running women-led peace mobilization, including dated 1995 and 2024 actions",S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.
-AI221,A111,I001,anti_base,Dated base-removal and U.S.-military accountability mobilization,S200;S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.
-AI222,A111,I023,human_rights,2024 mobilization framed U.S.-military sexual violence as a rights and accountability issue,S200;S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.
-AI223,A112,I006,groundwater,"Research, monitoring and ordinance advocacy concerning Miyako groundwater",S269;S270;S271,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI224,A112,I008,health_risk,Public risk framing around substances that could affect drinking-water sources,S269;S270,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI225,A112,I007,life_safety,Drinking-water-source protection and monitoring advocacy,S270;S271,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI226,A112,I020,environment,Groundwater conservation research and public-policy advocacy,S158;S204;S270,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI227,A113,I006,groundwater,PFAS sampling and groundwater investigation requests in Ginowan/Futenma,S273;S274;S276;S277,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI228,A113,I008,health_risk,Requests for exposure/health investigation and bounded PFAS risk communication,S273;S276,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI229,A113,I007,life_safety,Resident-led sampling and requests concerning school/community safety,S274;S275;S278,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI230,A113,I020,environment,PFAS contamination monitoring and administrative requests,S273;S274;S277,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI231,A113,I011,legal,Use of petition and pollution-mediation procedures,S273;S274,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI232,A114,I001,anti_base,Dated protest actions opposing Henoko/base-related military use,S286;S289,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI233,A114,I002,anti_military,Port/workplace actions concerning military port use and exercises,S287;S288,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI234,A114,I019,peace,Participation in peace-march and anti-security-law activity,S286;S289,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI235,A114,I007,life_safety,Union's stated port-worker occupational-safety framing,S287;S288,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI236,A114,I026,mobilization,"Union capacity expressed through rally, strike and march repertoires",S286;S288;S289,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI237,A115,I022,women,Prefectural women's membership organization and local-unit activity,S280;S282;S283,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI238,A115,I023,human_rights,Dated requests concerning U.S.-military sexual violence,S281;S282,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI239,A115,I019,peace,Local requests and public action framed through peace and women's rights,S281;S282,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI240,A115,I001,anti_base,Dated Okinawa-headquarters activity concerning Henoko/base burdens,S254;S281;S283,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
-AI241,A115,I010,referendum,2018 Henoko prefectural-referendum signature mobilization,S283,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.
+﻿edge_id,actor_id,issue_id,issue_label,relation_basis,source_ref,evidence_level,review_status,notes,original_actor_id,human_decision,review_task_id,human_reviewer,review_date,reviewed_fields,scope_status,superseded_by_edge_id,decision_source_report,interpretation_limit
+AI001,A001,I004,dugong,OEJP/MMC dugong advocacy,S006;S007;S008,E4,ai_seeded,Core issue.,,,,,,,,,,
+AI002,A001,I012,international_advocacy,Request to U.S. Marine Mammal Commission,S006;S007;S008,E4,ai_seeded,Transnational advocacy route.,,,,,,,,,,
+AI003,A001,I003,Henoko,Henoko/Oura Bay focus,S006;S007;S008,E4,ai_seeded,Place issue.,,,,,,,,,,
+AI004,A002,I004,dugong,Dugong protection campaign and advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 identity confirmed; do not treat as lawsuit plaintiff.,,,,,,,,,,
+AI005,A002,I012,international_advocacy,IUCN and international advocacy context,S007;S058,E4,human_revised,HR-001 confirms international advocacy role via SDCC/IUCN; lawsuit link is personnel overlap not plaintiff status.,,,,,,,,,,
+AI006,A003,I004,dugong,2010 WWF signatory list,S003,E3,needs_second_source,Confirm organization details.,,,,,,,,,,
+AI007,A003,I005,biodiversity,2010 WWF Henoko habitat statement,S003,E3,needs_second_source,Environmental actor seed.,,,,,,,,,,
+AI008,A004,I005,biodiversity,2015 NACSJ emergency statement,S004,E4,ai_seeded,National environmental NGO.,,,,,,,,,,
+AI009,A004,I003,Henoko,Henoko emergency statement,S004,E4,ai_seeded,Issue/place link.,,,,,,,,,,
+AI010,A005,I004,dugong,2010 WWF statement host,S003,E4,ai_seeded,Statement host.,,,,,,,,,,
+AI011,A005,I005,biodiversity,2010 WWF statement host,S003,E4,ai_seeded,Environmental frame.,,,,,,,,,,
+AI012,A006,I005,biodiversity,2010 WWF signatory list,S003,E4,ai_seeded,Environmental NGO.,,,,,,,,,,
+AI013,A006,I001,anti_base,Henoko base construction opposition statement,S003,E4,ai_seeded,Statement-based.,,,,,,,,,,
+AI014,A007,I019,peace,Peace Boat Henoko statement,S005,E4,ai_seeded,Peace movement bridge.,,,,,,,,,,
+AI015,A007,I001,anti_base,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement-based.,,,,,,,,,,
+AI016,A007,I012,international_advocacy,International peace NGO role,S005,E4,ai_seeded,Bridge actor.,,,,,,,,,,
+AI017,A008,I019,peace,No-war/international-cooperation NGO network purpose,S065;S066;S067,E4,human_revised,HR-002 confirms peace/no-war as core purpose.,,,,,,,,,,
+AI018,A008,I001,anti_base,Henoko referendum solidarity statement context,S064,E3,human_revised,"HR-002: anti-base relation is statement/solidarity context, not local core activity or stable alliance.",,,,,,,,,,
+AI019,A009,I011,legal,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal route.,,,,,,,,,,
+AI020,A009,I004,dugong,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong protection.,,,,,,,,,,
+AI021,A009,I012,international_advocacy,U.S. legal NGO involvement,S009,E4,ai_seeded,International advocacy actor.,,,,,,,,,,
+AI022,A010,I002,anti_military,Ishigaki anti-base civic group named in local news,S016;S017,E4,ai_seeded,Core Sakishima actor.,,,,,,,,,,
+AI023,A010,I006,groundwater,Ishigaki construction halt request cites water/ecosystem concerns,S017,E4,ai_seeded,Life-safety/environment frame.,,,,,,,,,,
+AI024,A010,I009,local_autonomy,Ishigaki public debate/civic mobilization,S016,E3,ai_seeded,Autonomy frame to verify.,,,,,,,,,,
+AI025,A011,I010,referendum,Ishigaki referendum campaign,S018;S019,E4,ai_seeded,Referendum actor.,,,,,,,,,,
+AI026,A011,I009,local_autonomy,Resident vote framing,S018;S019,E4,ai_seeded,Local autonomy frame.,,,,,,,,,,
+AI027,A011,I002,anti_military,Referendum on JSDF deployment,S018;S019,E4,ai_seeded,Deployment issue.,,,,,,,,,,
+AI028,A012,I006,groundwater,Miyako water preservation frame,S020,E3,needs_second_source,Exact organization name needs review.,,,,,,,,,,
+AI029,A012,I002,anti_military,Miyako JSDF deployment opposition,S020,E3,needs_second_source,Confirm continuity.,,,,,,,,,,
+AI030,A012,I007,life_safety,Water/life-safety frame,S020,E3,needs_second_source,Life safety.,,,,,,,,,,
+AI031,A013,I002,anti_military,Miyako anti-missile group,S021,E4,ai_seeded,Core Miyako actor.,,,,,,,,,,
+AI032,A013,I006,groundwater,Miyako groundwater/water concern,S021,E3,ai_seeded,Source is party news; still actor seed.,,,,,,,,,,
+AI033,A013,I007,life_safety,Missile/base life-safety concern,S021,E3,ai_seeded,Needs local follow-up.,,,,,,,,,,
+AI034,A014,I002,anti_military,Yonaguni anti-deployment referendum committee lead,S069;S010;S070,E2,needs_local_retrieval,HR-003: replaces unsupported 与那国改革会議 seed; exact committee name and continuity need local confirmation.,,,,,,,,,,
+AI035,A014,I009,local_autonomy,Yonaguni referendum/direct-request and vote-process concerns,S069;S010;S071,E2,needs_local_retrieval,HR-003: local autonomy relation retained as referendum committee lead; needs local/primary confirmation.,,,,,,,,,,
+AI036,A015,I002,anti_military,Anti-deployment opinion-ad committee,S015,E2,needs_local_retrieval,HR-003: S015 confirms name but is single party-media source; needs Yaeyama local cross-check.,,,,,,,,,,
+AI037,A015,I009,local_autonomy,Public opinion/ad action and referendum solidarity,S015,E2,needs_local_retrieval,HR-003: local-autonomy relation is indirect through referendum/public-opinion action; needs local confirmation.,,,,,,,,,,
+AI038,A016,I008,health_risk,Yonaguni health/life-safety concerns around deployment and exercises,S011;S052;S068,E3,human_checked,HR-003: organization/activity cross-supported; founding/representatives still need local retrieval.,,,,,,,,,,
+AI039,A016,I002,anti_military,Yonaguni deployment and joint-exercise concerns,S052;S068,E3,human_checked,HR-003: active civic opposition to deployment/exercises confirmed by blog and local news.,,,,,,,,,,
+AI040,A017,I018,Taiwan_contingency,Okinawa dialogue project frontline/Taiwan context,S022,E4,ai_seeded,Recent security environment frame.,,,,,,,,,,
+AI041,A017,I017,frontline_prevention,Okinawa dialogue anti-war/frontline framing,S022,E4,ai_seeded,Recent frontline-prevention frame.,,,,,,,,,,
+AI042,A017,I019,peace,Dialogue/anti-war project,S022,E4,ai_seeded,Peace/anti-war.,,,,,,,,,,
+AI043,A018,I017,frontline_prevention,No More Okinawa War public framing,S023;S024,E4,ai_seeded,Recent anti-frontline actor.,,,,,,,,,,
+AI044,A018,I018,Taiwan_contingency,Recent civil society coalition after Taiwan contingency remarks,S024,E4,ai_seeded,Current issue.,,,,,,,,,,
+AI045,A018,I019,peace,Anti-war framing,S023,E4,ai_seeded,Peace/anti-war.,,,,,,,,,,
+AI046,A019,I001,anti_base,Henoko on-site sit-in and maritime action,S049;S008,E4,human_checked,HR-004: official site supports direct action; joint statements are not stable alliance evidence.,,,,,,,,,,
+AI047,A019,I003,Henoko,Henoko/Nago anti-heliport and on-site action,S049;S050;S008,E4,human_checked,HR-004: official site and structured secondary source support Henoko core role.,,,,,,,,,,
+AI048,A020,I011,legal,JELF legal/environmental channel,S006;S007,E4,ai_seeded,Legal channel.,,,,,,,,,,
+AI049,A020,I005,biodiversity,Environmental law/dugong report context,S006;S007,E4,ai_seeded,Environmental law.,,,,,,,,,,
+AI050,A020,I004,dugong,JELF/OEJP dugong report context,S006;S007,E4,ai_seeded,Dugong issue.,,,,,,,,,,
+AI051,X001,I014,military_family_service,USO Okinawa service role,X001,E3,ai_seeded,Service actor; not movement stance.,,,,,,,,,,
+AI052,X001,I016,base_community_welfare,USO Okinawa sponsor/service network,X001,E3,ai_seeded,Service/welfare ecology.,,,,,,,,,,
+AI053,X002,I016,base_community_welfare,Donation to USO Okinawa,X002,E4,ai_seeded,Sponsor/donor actor.,,,,,,,,,,
+AI054,X003,I016,base_community_welfare,Listed USO sponsor,X003,E3,ai_seeded,Amount/year needs check.,,,,,,,,,,
+AI055,X004,I014,military_family_service,AWWA spouse-club umbrella network,S041;S055;S072,E4,human_checked,HR-005 confirms umbrella/member structure; not evidence of specific recipients.,,,,,,,,,,
+AI056,X004,I016,base_community_welfare,AWWA grantmaking/welfare network,S041;S055;S077;S078,E3,human_checked,HR-005 confirms general welfare grantmaking; annual named recipient lists still need Form 990/records.,,,,,,,,,,
+AI057,X005,I014,military_family_service,NOSCO spouse club / AWWA member relation,S055,E4,human_checked,HR-005 confirms NOSCO identity and AWWA membership; recipient records still need follow-up.,,,,,,,,,,
+AI058,X006,I014,military_family_service,KOSC spouse club and Kadena Gift Corner charity role,S075;S076,E4,human_checked,HR-005 confirms KOSC identity and tax record.,,,,,,,,,,
+AI059,X007,I014,military_family_service,OESC spouse club/thrift shop and nonprofit record,S053;S054,E4,human_checked,HR-005 confirms OESC 501c3 and named USO donation.,,,,,,,,,,
+AI060,X008,I014,military_family_service,Red Cross Okinawa volunteer/service role,X008,E4,ai_seeded,Service node.,,,,,,,,,,
+AI061,X009,I014,military_family_service,NMCRS emergency assistance role,X009,E4,ai_seeded,Service node.,,,,,,,,,,
+AI062,X010,I015,international_cooperation,MOFA NGO consultant/JICA relation,X010;X011,E4,ai_seeded,Institutional relation.,,,,,,,,,,
+AI063,X010,I013,public_diplomacy,International cooperation/development education adjacent,X010;X011,E3,ai_seeded,Use cautiously.,,,,,,,,,,
+AI064,X011,I015,international_cooperation,JICA Okinawa institutional role,X011,E4,ai_seeded,Institutional node.,,,,,,,,,,
+AI065,X012,I013,public_diplomacy,TOMODACHI public-private partnership,X012,E4,ai_seeded,Okinawa-specific link not yet confirmed.,,,,,,,,,,
+AI066,X013,I013,public_diplomacy,Okinawa Youth Council grant opportunity,X013,E3,needs_local_retrieval,Opportunity only; recipient unknown.,,,,,,,,,,
+AI067,X014,I013,public_diplomacy,NED watchlist / democracy funding context,X014,E2,watchlist_only,No Okinawa recipient confirmed.,,,,,,,,,,
+AI068,X015,I015,international_cooperation,Peace Winds Japan USAID method sample,X015,E4,watchlist_only,No Okinawa issue link confirmed.,,,,,,,,,,
+AI069,A021,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI070,A021,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation; not stable alliance.,,,,,,,,,,
+AI071,A022,I005,biodiversity,2015 NACSJ emergency statement signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI072,A022,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.,,,,,,,,,,
+AI073,A023,I001,anti_base,2015 NACSJ signatory local civic group,S004,E4,ai_seeded,Needs local follow-up.,,,,,,,,,,
+AI074,A023,I005,biodiversity,Name/framing links sea/Yanbaru protection,S004,E3,needs_second_source,Infer from signatory context.,,,,,,,,,,
+AI075,A024,I001,anti_base,2015 NACSJ signatory,S004,E4,ai_seeded,Henoko mobilization seed.,,,,,,,,,,
+AI076,A024,I003,Henoko,Name and statement context,S004,E4,ai_seeded,Place issue.,,,,,,,,,,
+AI077,A025,I001,anti_base,2015 NACSJ signatory,S004,E4,ai_seeded,Anti-base executive committee.,,,,,,,,,,
+AI078,A025,I003,Henoko,Name and statement context,S004,E4,ai_seeded,Place issue.,,,,,,,,,,
+AI079,A026,I019,peace,2015 NACSJ signatory / peace news,S004,E3,needs_second_source,Actor type unclear.,,,,,,,,,,
+AI080,A027,I005,biodiversity,2015 NACSJ signatory / public works reform frame,S004,E4,ai_seeded,Environment/public works critique.,,,,,,,,,,
+AI081,A027,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.,,,,,,,,,,
+AI082,A028,I012,international_advocacy,Japan-U.S. citizen network signatory,S004,E4,ai_seeded,International/cross-border actor.,,,,,,,,,,
+AI083,A028,I001,anti_base,Statement opposes Henoko base construction,S004,E4,ai_seeded,Signatory relation.,,,,,,,,,,
+AI084,A029,I005,biodiversity,Okinawa biodiversity citizen network signatory,S004,E4,ai_seeded,Local biodiversity network.,,,,,,,,,,
+AI085,A029,I003,Henoko,Henoko/Oura Bay statement context,S004,E4,ai_seeded,Place issue.,,,,,,,,,,
+AI086,A030,I005,biodiversity,2015 NACSJ environmental solidarity signatory,S004,E4,ai_seeded,Non-Okinawa environmental actor.,,,,,,,,,,
+AI087,A031,I005,biodiversity,2015 NACSJ environmental solidarity signatory,S004,E4,ai_seeded,Non-Okinawa environmental actor.,,,,,,,,,,
+AI088,A032,I012,international_advocacy,Peace Philosophy Centre signatory,S004,E4,ai_seeded,International advocacy node.,,,,,,,,,,
+AI089,A032,I019,peace,Peace Philosophy Centre framing,S004,E3,ai_seeded,Confirm via own site if central.,,,,,,,,,,
+AI090,A033,I012,international_advocacy,Friends of the Earth U.S. signatory,S004,E4,ai_seeded,U.S. NGO.,,,,,,,,,,
+AI091,A033,I005,biodiversity,Environmental NGO signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI092,A034,I012,international_advocacy,KFEM signatory,S004,E4,ai_seeded,Overseas environmental solidarity.,,,,,,,,,,
+AI093,A034,I005,biodiversity,KFEM environmental NGO,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI094,A035,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI095,A036,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI096,A037,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI097,A038,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI098,A039,I011,legal,Legal rights/natural resources center signatory,S004,E4,ai_seeded,Legal/environmental NGO.,,,,,,,,,,
+AI099,A039,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI100,A040,I012,international_advocacy,2015 NACSJ overseas signatory,S004;S089;S090,E4,human_checked,HR-009 identity confirmed; 2015 co-signatory/solidarity node only not stable alliance.,,,,,,,,,,
+AI101,A041,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI102,A042,I012,international_advocacy,Pacific Environment signatory,S004,E4,ai_seeded,U.S./Pacific NGO.,,,,,,,,,,
+AI103,A042,I005,biodiversity,Environmental NGO signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI104,A043,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI105,A044,I012,international_advocacy,Overseas signatory,S004,E4,ai_seeded,Signatory seed.,,,,,,,,,,
+AI106,A045,I011,legal,Center for Biological Diversity legal/environmental actor,S004,E4,ai_seeded,Legal/environmental NGO.,,,,,,,,,,
+AI107,A045,I005,biodiversity,Center for Biological Diversity signatory,S004,E4,ai_seeded,Biodiversity actor.,,,,,,,,,,
+AI108,A045,I012,international_advocacy,U.S. environmental NGO signatory,S004,E4,ai_seeded,International actor.,,,,,,,,,,
+AI109,A046,I012,international_advocacy,2015 NACSJ overseas signatory,S004;S091;S092,E4,human_checked,HR-009 identity confirmed; 2015 co-signatory/solidarity node only not stable alliance.,,,,,,,,,,
+AI110,A046,I005,biodiversity,Environmental NGO signatory,S004;S091;S092,E4,human_checked,HR-009 identity confirmed as Pro Natura / FoE Switzerland; signatory evidence only.,,,,,,,,,,
+AI111,A047,I001,anti_base,Core anti-base coordination body,S031,E4,ai_seeded,Central coordination role in Okinawa peace/anti-base movements.,,,,,,,,,,
+AI112,A047,I019,peace,Peace movement coordination,S031,E4,ai_seeded,Peace movement center.,,,,,,,,,,
+AI113,A047,I002,anti_military,Anti-military deployment coordination,S031,E4,ai_seeded,Broad anti-military frame.,,,,,,,,,,
+AI114,A047,I003,Henoko,Henoko opposition coordination,S031,E3,ai_seeded,Verify direct Henoko coordination role.,,,,,,,,,,
+AI115,A048,I001,anti_base,Symbolic landowner resistance to military land leases,S038,E4,ai_seeded,Core anti-base frame.,,,,,,,,,,
+AI116,A048,I011,legal,Land lease legal resistance,S038,E4,ai_seeded,Legal channel.,,,,,,,,,,
+AI117,A048,I019,peace,Anti-war landowner movement,S038,E4,ai_seeded,Peace frame.,,,,,,,,,,
+AI118,A048,I009,local_autonomy,Land rights and local autonomy,S038,E3,ai_seeded,Autonomy frame.,,,,,,,,,,
+AI119,A049,I007,life_safety,Women's safety and military violence issues,S039,E4,ai_seeded,Gender/safety frame.,,,,,,,,,,
+AI120,A049,I001,anti_base,Women's anti-base movement,S039,E4,ai_seeded,Anti-base frame.,,,,,,,,,,
+AI121,A049,I002,anti_military,Opposition to military violence,S039,E4,ai_seeded,Anti-military frame.,,,,,,,,,,
+AI122,A050,I011,legal,Bar association legal statements on base issues,S037,E4,ai_seeded,Professional legal frame.,,,,,,,,,,
+AI123,A050,I009,local_autonomy,Bar association statements on prefectural autonomy,S037,E4,ai_seeded,Autonomy frame.,,,,,,,,,,
+AI124,A050,I001,anti_base,President statements opposing Henoko construction,S037,E4,ai_seeded,Formal professional statement.,,,,,,,,,,
+AI125,A051,I010,referendum,2019 prefectural referendum initiative,S025,E4,ai_seeded,Core referendum actor.,,,,,,,,,,
+AI126,A051,I003,Henoko,Referendum specifically about Henoko base,S025,E4,ai_seeded,Henoko frame.,,,,,,,,,,
+AI127,A051,I009,local_autonomy,Local self-determination via referendum,S025,E4,ai_seeded,Autonomy frame.,,,,,,,,,,
+AI128,A052,I011,legal,Kadena noise litigation,S026,E4,ai_seeded,Court litigation.,,,,,,,,,,
+AI129,A052,I007,life_safety,Noise damage and daily life impact,S026,E4,ai_seeded,Life safety frame.,,,,,,,,,,
+AI130,A052,I001,anti_base,Base noise burden legal action,S026,E4,ai_seeded,Anti-base through legal channel.,,,,,,,,,,
+AI131,A053,I011,legal,Futenma noise litigation,S027,E4,ai_seeded,Court litigation.,,,,,,,,,,
+AI132,A053,I007,life_safety,Noise damage and daily life impact,S027,E4,ai_seeded,Life safety frame.,,,,,,,,,,
+AI133,A053,I001,anti_base,Base noise burden legal action,S027,E4,ai_seeded,Anti-base through legal channel.,,,,,,,,,,
+AI134,A054,I007,life_safety,Human rights and safety concerns,S033,E3,ai_seeded,Verify current activities.,,,,,,,,,,
+AI135,A055,I005,biodiversity,Tidal flat ecosystem protection,S030,E3,ai_seeded,Environmental frame.,,,,,,,,,,
+AI136,A055,I011,legal,Environmental litigation against reclamation,S030,E3,ai_seeded,Legal frame.,,,,,,,,,,
+AI137,A056,I005,biodiversity,Environmental network activities,S033,E3,needs_second_source,Verify organizational structure.,,,,,,,,,,
+AI138,A056,I001,anti_base,Environmental perspective on base issues,S033,E3,needs_second_source,Verify direct connection.,,,,,,,,,,
+AI139,A057,I001,anti_base,National newspaper opinion ads on Okinawa base issues,S034,E3,ai_seeded,Public opinion mobilization.,,,,,,,,,,
+AI140,A057,I019,peace,Peace framing in opinion campaigns,S034,E3,ai_seeded,Peace frame.,,,,,,,,,,
+AI141,A058,I001,anti_base,Labor/civic umbrella anti-base coordination,S031,E3,needs_second_source,Verify structure.,,,,,,,,,,
+AI142,A058,I019,peace,Peace/labor movement coordination,S031,E3,needs_second_source,Verify structure.,,,,,,,,,,
+AI143,A059,I001,anti_base,All-island anti-Henoko base coordination,S029,E3,ai_seeded,Municipal-level network.,,,,,,,,,,
+AI144,A059,I003,Henoko,Henoko opposition coordination,S029,E3,ai_seeded,Henoko focus.,,,,,,,,,,
+AI145,A059,I009,local_autonomy,Municipal/grassroots autonomy expression,S029,E3,ai_seeded,Local autonomy frame.,,,,,,,,,,
+AI146,A060,I001,anti_base,Takae helipad opposition,S028,E3,ai_seeded,Anti-base/anti-helipad.,,,,,,,,,,
+AI147,A060,I005,biodiversity,Yanbaru forest protection concerns,S028,E3,ai_seeded,Environmental frame.,,,,,,,,,,
+AI148,A061,I005,biodiversity,Bird conservation and Henoko habitat statements,S003;S004,E4,ai_seeded,National bird conservation NGO.,,,,,,,,,,
+AI149,A062,I005,biodiversity,Wetland conservation and Henoko/Oura Bay statements,S003,E4,ai_seeded,Wetland network.,,,,,,,,,,
+AI150,A063,I001,anti_base,Kanto-region anti-war landowner solidarity with Okinawa,S038,E3,ai_seeded,Mainland solidarity.,,,,,,,,,,
+AI151,A063,I019,peace,Peace movement mainland branch,S038,E3,ai_seeded,Peace solidarity.,,,,,,,,,,
+AI152,A064,I001,anti_base,International network against foreign military bases,S033,E3,needs_second_source,Verify Okinawa connection.,,,,,,,,,,
+AI153,A064,I012,international_advocacy,International anti-base advocacy,S033,E3,needs_second_source,Verify participation.,,,,,,,,,,
+AI154,A065,I002,anti_military,Southwest Islands anti-militarization network,S036,E3,needs_second_source,Verify membership.,,,,,,,,,,
+AI155,A065,I017,frontline_prevention,Anti-frontline framing for Sakishima,S036,E3,needs_second_source,Verify continuity.,,,,,,,,,,
+AI156,A065,I018,Taiwan_contingency,Security environment concerns,S036,E3,needs_second_source,Verify framing.,,,,,,,,,,
+AI157,A066,I011,legal,International law and base policy arguments,S032,E4,ai_seeded,Policy/legal advocacy.,,,,,,,,,,
+AI158,A066,I009,local_autonomy,Okinawa autonomy policy alternatives,S032,E4,ai_seeded,Autonomy frame.,,,,,,,,,,
+AI159,A066,I001,anti_base,Base policy alternatives research,S032,E4,ai_seeded,Think tank role.,,,,,,,,,,
+AI160,A067,I001,anti_base,National council against Henoko landfill soil import,S040,E3,ai_seeded,Cross-prefecture coordination.,,,,,,,,,,
+AI161,A067,I003,Henoko,Henoko-specific soil import opposition,S040,E3,ai_seeded,Henoko focus.,,,,,,,,,,
+AI162,A067,I005,biodiversity,Environmental concern about soil import sources,S040,E3,ai_seeded,Environmental frame.,,,,,,,,,,
+AI163,A068,I010,referendum,1997 Nago city referendum initiative,S042,E3,ai_seeded,Historical referendum actor.,,,,,,,,,,
+AI164,A068,I001,anti_base,Base construction referendum opposition,S042,E3,ai_seeded,Anti-base frame.,,,,,,,,,,
+AI165,A068,I003,Henoko,Henoko/Nago base referendum,S042,E3,ai_seeded,Henoko/Nago focus.,,,,,,,,,,
+AI166,A069,I004,dugong,Dugong EIA monitoring,S047,E3,needs_second_source,Verify organizational structure.,,,,,,,,,,
+AI167,A069,I005,biodiversity,Environmental assessment monitoring,S047,E3,needs_second_source,Verify current status.,,,,,,,,,,
+AI168,A069,I003,Henoko,Henoko/Oura Bay EIA focus,S047,E3,needs_second_source,Henoko focus.,,,,,,,,,,
+AI169,A070,I019,peace,Veterans peace advocacy in Okinawa,S048,E3,needs_second_source,Verify chapter status.,,,,,,,,,,
+AI170,A070,I001,anti_base,Veterans anti-base advocacy,S048,E3,needs_second_source,Verify participation.,,,,,,,,,,
+AI171,A070,I012,international_advocacy,U.S. veterans international peace advocacy,S048,E3,needs_second_source,Verify activities.,,,,,,,,,,
+AI172,A071,I019,peace,Civic peace liaison activities,,E3,needs_second_source,Verify structure. S031 removed because it belongs to A047; direct A071 sources await source-ID integration.,,,,,,,,,,
+AI173,A071,I001,anti_base,Anti-base civic coordination,,E3,needs_second_source,Verify if distinct from A047. S031 removed because it belongs to A047; direct A071 sources await source-ID integration.,,,,,,,,,,
+AI174,A071,I001,anti_base,Base removal civic network,,E3,rejected,Verify if distinct from A071.,A072,reject,HR-025,project_principal_user,2026-07-19,actor_identity;duplicate_crosswalk,retired_duplicate,AI173,docs/human_review_return_HR025_batch05_v1.md,Retired only because A072 is a duplicate actor key; use the retained A071 edge after its separate HR-019 scope decision.
+AI175,A071,I019,peace,World peace framing,,E3,rejected,Verify structure.,A072,reject,HR-025,project_principal_user,2026-07-19,actor_identity;duplicate_crosswalk,retired_duplicate,AI172,docs/human_review_return_HR025_batch05_v1.md,Retired only because A072 is a duplicate actor key; use the retained A071 edge after its separate HR-019 scope decision.
+AI176,A074,I009,local_autonomy,Prefectural government base affairs,S043,E4,ai_seeded,Government context node.,,,,,,,,,,
+AI177,A074,I001,anti_base,Administrative base burden management,S043,E4,ai_seeded,Government role.,,,,,,,,,,
+AI178,A075,I001,anti_base,Defense bureau base construction role,S047,E4,ai_seeded,Government context node.,,,,,,,,,,
+AI179,X016,I014,military_family_service,MOSCO spouse club and AWWA member role,S079;S080;S055,E4,human_checked,HR-005 supplemental: MOSCO identity and tax record confirmed.,,,,,,,,,,
+AI180,X017,I014,military_family_service,Army Community Group / AWWA member and gift shop lead,S041;S072;S081,E3,needs_second_source,HR-005 supplemental: identity supported by AWWA/community sources; no independent website/EIN found.,,,,,,,,,,
+AI181,A102,I011,legal,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI182,A102,I020,environment,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI183,A102,I021,noise,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI184,A102,I007,life_safety,National pollution-litigation legal coordination includes airport/base-noise practice,S121,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI185,A103,I021,noise,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI186,A103,I007,life_safety,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI187,A103,I011,legal,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI188,A103,I001,anti_base,National base-noise plaintiff-group coordination and mutual support,S122;S123,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI189,A104,I021,noise,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI190,A104,I007,life_safety,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI191,A104,I011,legal,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI192,A104,I001,anti_base,Futenma noise-litigation counsel role,S124,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI193,A105,I022,women,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI194,A105,I023,human_rights,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI195,A105,I019,peace,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI196,A105,I003,Henoko,National YWCA women/human-rights/peace mission and 2020 Henoko statement,S125,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI197,A106,I003,Henoko,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI198,A106,I020,environment,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI199,A106,I001,anti_base,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI200,A106,I024,solidarity,Metropolitan-area public action opposing Henoko soil reclamation,S126;S127,E4,human_checked,HR-010 batch 5: issue tag and source basis human-confirmed; does not imply stable inter-organizational alliance.,,,,,,,,,,
+AI201,A107,I022,women,Okinawa YWCA regional identity and women-focused mission,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI202,A107,I023,human_rights,Okinawa YWCA human-rights mission and activities,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI203,A107,I019,peace,Okinawa YWCA peace mission and activities,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI204,A108,I017,frontline_prevention,Network purpose explicitly centers preventing Okinawa becoming a battlefield,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI205,A108,I018,Taiwan_contingency,Public framing connects Okinawa frontline risk to regional contingency planning,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI206,A108,I019,peace,Prefectural anti-war and peace mobilization,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI207,A109,I021,noise,Fourth Kadena base-noise injunction litigation counsel role,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI208,A109,I007,life_safety,Fourth Kadena litigation addresses residents' daily noise harm,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI209,A109,I011,legal,Case-specific legal representation in fourth Kadena litigation,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI210,A109,I001,anti_base,Flight-injunction claim concerning Kadena base-noise burden,S149;S150;S151;S152,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI211,A110,I003,Henoko,Sustained Osaka public actions opposing Henoko base construction,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI212,A110,I001,anti_base,Sustained Osaka public actions opposing Henoko base construction,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI213,A110,I024,solidarity,Mainland public solidarity actions concerning Henoko,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI214,A052,I021,noise,Cross-round Kadena base-noise plaintiff-group role,S026;S149;S151;S155,E4,human_checked,HR-011/HR-012 user-reviewed issue coding. Issue association does not imply a stable inter-organizational alliance or funding relation.,,,,,,,,,,
+AI215,A053,I021,noise,Cross-round Futenma base-noise plaintiff-group role,S027;S135;S156,E4,human_checked,HR-011/HR-012 user-reviewed issue coding. Issue association does not imply a stable inter-organizational alliance or funding relation.,,,,,,,,,,
+AI216,A107,I001,anti_base,Direct Henoko new-base opposition photo-exhibit activity,S144;S295,E3,human_checked,HR-011 main-thread finalization; S295 is YWCA-authored rather than independent reporting and the issue relation does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI217,A108,I025,anti_war,Prefecture-wide anti-war network formed to prevent Okinawa becoming a battlefield,S146;S147;S148,E4,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI218,A110,I026,mobilization,Long-running fixed Osaka/Kansai action repertoire,S153;S154,E3,human_checked,HR-011 main-thread finalization; issue relation is source-bounded and does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI219,A111,I022,women,Prefectural women's-network identity and women-focused public action,S200;S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI220,A111,I019,peace,"Long-running women-led peace mobilization, including dated 1995 and 2024 actions",S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI221,A111,I001,anti_base,Dated base-removal and U.S.-military accountability mobilization,S200;S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI222,A111,I023,human_rights,2024 mobilization framed U.S.-military sexual violence as a rights and accountability issue,S200;S201,E4,human_checked,HR-013 human-approved actor-issue observation; dated mobilization does not imply a stable inter-organizational alliance.,,,,,,,,,,
+AI223,A112,I006,groundwater,"Research, monitoring and ordinance advocacy concerning Miyako groundwater",S269;S270;S271,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI224,A112,I008,health_risk,Public risk framing around substances that could affect drinking-water sources,S269;S270,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI225,A112,I007,life_safety,Drinking-water-source protection and monitoring advocacy,S270;S271,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI226,A112,I020,environment,Groundwater conservation research and public-policy advocacy,S158;S204;S270,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI227,A113,I006,groundwater,PFAS sampling and groundwater investigation requests in Ginowan/Futenma,S273;S274;S276;S277,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI228,A113,I008,health_risk,Requests for exposure/health investigation and bounded PFAS risk communication,S273;S276,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI229,A113,I007,life_safety,Resident-led sampling and requests concerning school/community safety,S274;S275;S278,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI230,A113,I020,environment,PFAS contamination monitoring and administrative requests,S273;S274;S277,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI231,A113,I011,legal,Use of petition and pollution-mediation procedures,S273;S274,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI232,A114,I001,anti_base,Dated protest actions opposing Henoko/base-related military use,S286;S289,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI233,A114,I002,anti_military,Port/workplace actions concerning military port use and exercises,S287;S288,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI234,A114,I019,peace,Participation in peace-march and anti-security-law activity,S286;S289,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI235,A114,I007,life_safety,Union's stated port-worker occupational-safety framing,S287;S288,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI236,A114,I026,mobilization,"Union capacity expressed through rally, strike and march repertoires",S286;S288;S289,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI237,A115,I022,women,Prefectural women's membership organization and local-unit activity,S280;S282;S283,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI238,A115,I023,human_rights,Dated requests concerning U.S.-military sexual violence,S281;S282,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI239,A115,I019,peace,Local requests and public action framed through peace and women's rights,S281;S282,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI240,A115,I001,anti_base,Dated Okinawa-headquarters activity concerning Henoko/base burdens,S254;S281;S283,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,
+AI241,A115,I010,referendum,2018 Henoko prefectural-referendum signature mobilization,S283,E4,ai_seeded,HR-027 accepted the registry issue_tags field; this edge-level formulation remains a candidate and is not publication-approved. Apply the actor notes' no-causality/no-alliance boundary.,,,,,,,,,,

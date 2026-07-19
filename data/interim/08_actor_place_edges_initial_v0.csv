@@ -1,136 +1,136 @@
-﻿edge_id,actor_id,place_id,place_name,relation_basis,source_ref,evidence_level,review_status,notes
-AP001,A001,P002,Henoko,OEJP/MMC Henoko advocacy,S006;S007;S008,E4,ai_seeded,Core place.
-AP002,A001,P003,Oura Bay,OEJP/MMC dugong/Oura Bay advocacy,S006;S007;S008,E4,ai_seeded,Core place.
-AP003,A002,P002,Henoko,Dugong protection campaign and Henoko/Oura Bay advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 confirms advocacy focus; not a lawsuit plaintiff relation.
-AP004,A002,P003,Oura Bay,Dugong habitat and advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 confirms advocacy focus; not a lawsuit plaintiff relation.
-AP005,A003,P001,Okinawa Prefecture,2010 WWF signatory context,S003,E3,needs_second_source,Okinawa network actor.
-AP006,A003,P002,Henoko,2010 WWF Henoko statement,S003,E3,needs_second_source,Place issue.
-AP007,A004,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Statement place.
-AP008,A004,P003,Oura Bay,2015 NACSJ statement,S004,E4,ai_seeded,Statement place.
-AP009,A005,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.
-AP010,A006,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.
-AP011,A007,P002,Henoko,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement place.
-AP012,A008,P001,Okinawa Prefecture,Henoko referendum solidarity statement context,S064,E3,human_revised,"HR-002: Okinawa relation is statement/solidarity context, not site presence."
-AP013,A009,P002,Henoko,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal place.
-AP014,A009,P003,Oura Bay,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong habitat place.
-AP015,A010,P012,Ishigaki,Local news names Ishigaki civic network,S016;S017,E4,ai_seeded,Core Sakishima place.
-AP016,A011,P012,Ishigaki,Ishigaki referendum campaign,S018;S019,E4,ai_seeded,Core Sakishima place.
-AP017,A012,P013,Miyako,Miyako water/deployment local news,S020,E3,needs_second_source,Exact name/continuity needs review.
-AP018,A013,P013,Miyako,Miyako anti-missile group,S021,E4,ai_seeded,Core Sakishima place.
-AP019,A014,P011,Yonaguni,Yonaguni referendum committee lead,S069;S010;S071,E2,needs_local_retrieval,HR-003: A014 replaced with referendum committee; exact name/continuity need local confirmation.
-AP020,A015,P011,Yonaguni,Yonaguni as solidarity target for Yaeyama opinion-ad committee,S015,E2,needs_local_retrieval,HR-003: committee appears Yaeyama/Ishigaki-led; Yonaguni is issue target not necessarily office location.
-AP021,A016,P011,Yonaguni,Yonaguni civic group activity around deployment/exercises/life safety,S052;S068,E3,human_checked,HR-003: organization/activity cross-supported; local details still need retrieval.
-AP022,A017,P001,Okinawa Prefecture,Okinawa dialogue project,S022,E4,ai_seeded,Broad Okinawa actor.
-AP023,A017,P011,Yonaguni,Ryukyu arc/frontline context includes Yonaguni,S022,E3,ai_seeded,Confirm if used centrally.
-AP024,A018,P001,Okinawa Prefecture,No More Okinawa War organization site,S023,E4,ai_seeded,Broad Okinawa actor.
-AP025,A018,P011,Yonaguni,Ryukyu arc/frontline context,S023;S024,E3,ai_seeded,Confirm if used centrally.
-AP026,A019,P002,Henoko,Henoko on-site sit-in and maritime action,S049;S008,E4,human_checked,HR-004: official site supports Henoko site role; 2004 sit-in and maritime action.
-AP027,A020,P002,Henoko,JELF/OEJP legal-environmental channel,S006;S007,E4,ai_seeded,Henoko issue.
-AP028,A020,P003,Oura Bay,JELF/OEJP dugong/Oura Bay context,S006;S007,E4,ai_seeded,Oura Bay issue.
-AP029,X001,P006,Camp Schwab,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence; exact center/program needs check.
-AP030,X001,P005,Kadena,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.
-AP031,X001,P007,Camp Foster,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.
-AP032,X001,P008,Camp Hansen,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.
-AP033,X001,P009,Camp Kinser,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.
-AP034,X001,P010,MCAS Futenma,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.
-AP035,X002,P001,Okinawa Prefecture,Local business donation to USO Okinawa,X002,E4,ai_seeded,Local sponsor.
-AP036,X003,P001,Okinawa Prefecture,USO Okinawa sponsor listing,X003,E3,ai_seeded,Local/base-related sponsor.
-AP037,X004,P001,Okinawa Prefecture,AWWA Okinawa spouse-club umbrella network,S041;S055;S072,E4,human_checked,HR-005 confirms Okinawa base-community umbrella role.
-AP038,X005,P001,Okinawa Prefecture,NOSCO Okinawa spouse club / AWWA member relation,S055,E4,human_checked,HR-005 confirms member club; exact base-site specificity can be refined later.
-AP039,X006,P005,Kadena,KOSC Kadena spouse club and Kadena Gift Corner,S075;S076,E4,human_checked,HR-005 confirms Kadena base-community actor.
-AP040,X007,P001,Okinawa Prefecture,OESC Okinawa thrift shop/nonprofit and AWWA member role,S053;S054;S055,E4,human_checked,HR-005 confirms OESC identity and USO donation.
-AP041,X008,P007,Camp Foster,Red Cross volunteer program / U.S. Naval Hospital Okinawa,X008,E4,ai_seeded,Service place.
-AP042,X009,P007,Camp Foster,NMCRS emergency assistance office,X009,E4,ai_seeded,Service place.
-AP043,X010,P014,JICA Okinawa,ONC/JICA Okinawa relation,X010;X011,E4,ai_seeded,Institutional relation.
-AP044,X010,P001,Okinawa Prefecture,ONC Okinawa NGO actor,X010,E4,ai_seeded,Okinawa international cooperation actor.
-AP045,X011,P014,JICA Okinawa,JICA Okinawa institutional node,X011,E4,ai_seeded,Institutional place.
-AP046,X012,P001,Okinawa Prefecture,TOMODACHI Okinawa relevance possible,X012,E2,needs_second_source,Okinawa-specific link not confirmed.
-AP047,X013,P015,U.S. Consulate General Naha,Okinawa Youth Council grant opportunity,X013,E3,needs_local_retrieval,Recipient unknown.
-AP048,X014,P001,Okinawa Prefecture,NED watchlist only,X014,E2,watchlist_only,No Okinawa recipient confirmed.
-AP049,X015,P001,Okinawa Prefecture,Peace Winds Japan Okinawa link not confirmed,X015,E2,watchlist_only,Keep as method sample only.
-AP050,A021,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.
-AP051,A022,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.
-AP052,A023,P001,Okinawa Prefecture,Local civic group signatory,S004,E4,ai_seeded,Okinawa actor.
-AP053,A023,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.
-AP054,A024,P002,Henoko,Name and 2015 signatory context,S004,E4,ai_seeded,Henoko actor seed.
-AP055,A025,P002,Henoko,Name and 2015 signatory context,S004,E4,ai_seeded,Henoko actor seed.
-AP056,A026,P001,Okinawa Prefecture,2015 signatory context,S004,E3,needs_second_source,Actor type unclear.
-AP057,A027,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.
-AP058,A028,P001,Okinawa Prefecture,Japan-U.S. citizen network for Okinawa,S004,E4,ai_seeded,Okinawa link.
-AP059,A028,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.
-AP060,A029,P001,Okinawa Prefecture,Okinawa biodiversity citizen network,S004,E4,ai_seeded,Okinawa actor.
-AP061,A029,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.
-AP062,A030,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Non-Okinawa solidarity place.
-AP063,A031,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Non-Okinawa solidarity place.
-AP064,A032,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International advocacy place.
-AP065,A033,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP066,A034,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP067,A035,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP068,A036,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP069,A037,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP070,A038,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP071,A039,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP072,A040,P002,Henoko,2015 NACSJ statement signatory,S004;S089;S090,E4,human_checked,HR-009 identity confirmed; relation is signatory/solidarity context only.
-AP073,A041,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP074,A042,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP075,A043,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP076,A044,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP077,A045,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.
-AP078,A046,P002,Henoko,2015 NACSJ statement signatory,S004;S091;S092,E4,human_checked,HR-009 identity confirmed; relation is signatory/solidarity context only.
-AP079,A047,P001,Okinawa Prefecture,Peace Movement Center headquarters,S031,E4,ai_seeded,Broad Okinawa coordination body.
-AP080,A047,P002,Henoko,Henoko opposition coordination,S031,E3,ai_seeded,Verify direct coordination role.
-AP081,A048,P001,Okinawa Prefecture,Anti-war landowner Okinawa base,S038,E4,ai_seeded,Okinawa land-related actor.
-AP082,A049,P001,Okinawa Prefecture,Women's group based in Okinawa,S039,E4,ai_seeded,Okinawa civic actor.
-AP083,A050,P001,Okinawa Prefecture,Bar association jurisdiction,S037,E4,ai_seeded,Professional association.
-AP084,A050,P020,Naha,Bar association office in Naha,S037,E4,ai_seeded,Administrative center.
-AP085,A051,P001,Okinawa Prefecture,Prefectural referendum initiative scope,S025,E4,ai_seeded,Prefecture-wide.
-AP086,A051,P002,Henoko,Referendum about Henoko base construction,S025,E4,ai_seeded,Henoko focus.
-AP087,A052,P005,Kadena,Kadena noise litigation plaintiffs,S026,E4,ai_seeded,Core base site.
-AP088,A052,P018,Ginowan,Adjacent affected area,S026,E3,ai_seeded,Verify plaintiff geography.
-AP089,A053,P004,Futenma,Futenma noise litigation plaintiffs,S027,E4,ai_seeded,Core base site.
-AP090,A053,P018,Ginowan,Ginowan host city,S027,E4,ai_seeded,Host municipality.
-AP091,A054,P001,Okinawa Prefecture,Okinawa human rights organization,S033,E3,ai_seeded,Verify current activities.
-AP092,A055,P019,Awase,Awase tidal flat protection,S030,E3,ai_seeded,Specific site focus.
-AP093,A055,P001,Okinawa Prefecture,Okinawa environmental actor,S030,E3,ai_seeded,Broader context.
-AP094,A056,P001,Okinawa Prefecture,Okinawa environmental network,S033,E3,needs_second_source,Verify structure.
-AP095,A057,P001,Okinawa Prefecture,Opinion ad campaign origin,S034,E3,ai_seeded,Cross-regional reach.
-AP096,A058,P001,Okinawa Prefecture,Labor/civic umbrella organization,S031,E3,needs_second_source,Verify structure.
-AP097,A059,P001,Okinawa Prefecture,All-island conference network,S029,E3,ai_seeded,Municipal-level branches.
-AP098,A059,P002,Henoko,Henoko opposition coordination,S029,E3,ai_seeded,Anti-Henoko base.
-AP099,A060,P016,Takae,Takae helipad opposition,S028,E3,ai_seeded,Core site.
-AP100,A060,P001,Okinawa Prefecture,Northern Okinawa forest protection,S028,E3,ai_seeded,Yanbaru context.
-AP101,A061,P001,Okinawa Prefecture,Bird conservation in Okinawa,S003;S004,E4,ai_seeded,National NGO with Okinawa relevance.
-AP102,A061,P002,Henoko,Henoko habitat statement,S003;S004,E4,ai_seeded,Signatory place.
-AP103,A062,P002,Henoko,Wetland conservation Henoko context,S003,E4,ai_seeded,Signatory place.
-AP104,A063,P001,Okinawa Prefecture,Mainland solidarity with Okinawa,S038,E3,ai_seeded,Cross-regional solidarity.
-AP105,A064,P001,Okinawa Prefecture,International network Okinawa node,S033,E3,needs_second_source,Verify Okinawa connection.
-AP106,A065,P012,Ishigaki,Southwest Islands network Ishigaki node,S036,E3,needs_second_source,Verify membership.
-AP107,A065,P013,Miyako,Southwest Islands network Miyako node,S036,E3,needs_second_source,Verify membership.
-AP108,A065,P011,Yonaguni,Southwest Islands network Yonaguni node,S036,E3,needs_second_source,Verify membership.
-AP109,A066,P001,Okinawa Prefecture,ND policy advocacy re: Okinawa,S032,E4,ai_seeded,Policy focus.
-AP110,A066,P020,Naha,ND activities in Okinawa,S032,E3,ai_seeded,Verify Okinawa office presence.
-AP111,A067,P002,Henoko,Henoko soil import opposition,S040,E3,ai_seeded,Henoko focus.
-AP112,A068,P017,Nago,Nago city referendum initiative,S042,E3,ai_seeded,Nago municipality.
-AP113,A068,P002,Henoko,Henoko base construction referendum,S042,E3,ai_seeded,Henoko focus.
-AP114,A069,P002,Henoko,Dugong/EIA monitoring at Henoko,S047,E3,needs_second_source,Verify structure.
-AP115,A069,P003,Oura Bay,Oura Bay EIA monitoring,S047,E3,needs_second_source,Verify structure.
-AP116,A070,P001,Okinawa Prefecture,Veterans for Peace Okinawa chapter,S048,E3,needs_second_source,Verify chapter status.
-AP117,A071,P001,Okinawa Prefecture,Civic peace liaison in Okinawa,S031,E3,needs_second_source,Verify structure.
-AP118,A072,P001,Okinawa Prefecture,Base removal civic network,S031,E3,needs_second_source,Verify if distinct.
-AP119,A074,P001,Okinawa Prefecture,Prefectural government base affairs,S043,E4,ai_seeded,Government office.
-AP120,A074,P020,Naha,Government office location,S043,E4,ai_seeded,Administrative center.
-AP121,A075,P001,Okinawa Prefecture,Defense bureau jurisdiction,S047,E4,ai_seeded,Government office.
-AP122,A075,P002,Henoko,Henoko base construction managing agency,S047,E4,ai_seeded,Construction site.
-AP123,X016,P006,Camp Foster,MOSCO / Marine Gift Shop Island Treasures context,S079;S080,E4,human_checked,HR-005 supplemental: MOSCO Camp Foster/Okinawa base role confirmed.
-AP124,X017,P001,Okinawa Prefecture,Army Community Group of Okinawa / Army on Okinawa Gift Shop lead,S041;S072;S081,E3,needs_second_source,HR-005 supplemental: Torii Station/base specificity needs independent confirmation.
-AP125,A111,P001,Okinawa Prefecture,Prefecture-wide women's network and prefectural public mobilization,S200;S201,E4,human_checked,HR-013: broad prefectural field only; no municipality-level location is inferred.
-AP126,A107,P001,Okinawa Prefecture,Regional YWCA identity and Okinawa-wide public activity; broad prefectural container only,S144;S295,E3,human_checked,HR-011: broad Okinawa field only; no headquarters municipality-level base stable alliance or on-site Henoko presence is inferred.
-AP127,A108,P001,Okinawa Prefecture,Prefecture-wide anti-war/frontline-prevention network and prefectural public mobilization,S146;S147;S148,E4,human_checked,HR-011: prefectural field only; umbrella composition and event participation do not establish stable alliance ties.
-AP128,A109,P005,Kadena,Case-specific counsel role in the fourth Kadena base-noise litigation,S149;S152,E4,human_checked,HR-011/012: Kadena is the litigation/affected field not an inferred office location; role is limited to the fourth round.
-AP129,A110,P002,Henoko,Henoko base construction as the sustained Osaka solidarity action's advocacy target,S153;S154,E3,human_checked,HR-011: advocacy target only; the documented street action occurred in Osaka so this is not Henoko site presence or Okinawa-local origin.
-AP130,A112,P013,Miyako,Documented organization location and Miyako municipal/groundwater field,S158;S204;S271,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.
-AP131,A113,P018,Ginowan,Documented resident group and municipal-request field,S273;S274;S276;S277,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.
-AP132,A113,P004,Futenma,Issue/action site associated with sampling and base-groundwater requests; not a headquarters claim,S274;S275;S277,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.
-AP133,A114,P020,Naha,Formal regional-headquarters location in Naha; event venues remain in the separate event queue,S284;S285,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.
-AP134,A114,P012,Ishigaki,Documented 2024 port strike/action venue; not an organizational headquarters claim,S287;S288,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.
-AP135,A115,P001,Okinawa Prefecture,Prefectural-headquarters scope and prefecture-wide requests/signature activity,S280;S282;S283,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.
+﻿edge_id,actor_id,place_id,place_name,relation_basis,source_ref,evidence_level,review_status,notes,original_actor_id,human_decision,review_task_id,human_reviewer,review_date,reviewed_fields,scope_status,place_semantic,superseded_by_edge_id,decision_source_report,interpretation_limit
+AP001,A001,P002,Henoko,OEJP/MMC Henoko advocacy,S006;S007;S008,E4,ai_seeded,Core place.,,,,,,,,,,,
+AP002,A001,P003,Oura Bay,OEJP/MMC dugong/Oura Bay advocacy,S006;S007;S008,E4,ai_seeded,Core place.,,,,,,,,,,,
+AP003,A002,P002,Henoko,Dugong protection campaign and Henoko/Oura Bay advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 confirms advocacy focus; not a lawsuit plaintiff relation.,,,,,,,,,,,
+AP004,A002,P003,Oura Bay,Dugong habitat and advocacy context,S007;S057;S058;S059,E4,human_revised,HR-001 confirms advocacy focus; not a lawsuit plaintiff relation.,,,,,,,,,,,
+AP005,A003,P001,Okinawa Prefecture,2010 WWF signatory context,S003,E3,needs_second_source,Okinawa network actor.,,,,,,,,,,,
+AP006,A003,P002,Henoko,2010 WWF Henoko statement,S003,E3,needs_second_source,Place issue.,,,,,,,,,,,
+AP007,A004,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Statement place.,,,,,,,,,,,
+AP008,A004,P003,Oura Bay,2015 NACSJ statement,S004,E4,ai_seeded,Statement place.,,,,,,,,,,,
+AP009,A005,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.,,,,,,,,,,,
+AP010,A006,P002,Henoko,2010 WWF statement,S003,E4,ai_seeded,Statement place.,,,,,,,,,,,
+AP011,A007,P002,Henoko,Peace Boat Henoko statement,S005,E4,ai_seeded,Statement place.,,,,,,,,,,,
+AP012,A008,P001,Okinawa Prefecture,Henoko referendum solidarity statement context,S064,E3,human_revised,"HR-002: Okinawa relation is statement/solidarity context, not site presence.",,,,,,,,,,,
+AP013,A009,P002,Henoko,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Legal place.,,,,,,,,,,,
+AP014,A009,P003,Oura Bay,Earthjustice dugong litigation explainer,S009,E4,ai_seeded,Dugong habitat place.,,,,,,,,,,,
+AP015,A010,P012,Ishigaki,Local news names Ishigaki civic network,S016;S017,E4,ai_seeded,Core Sakishima place.,,,,,,,,,,,
+AP016,A011,P012,Ishigaki,Ishigaki referendum campaign,S018;S019,E4,ai_seeded,Core Sakishima place.,,,,,,,,,,,
+AP017,A012,P013,Miyako,Miyako water/deployment local news,S020,E3,needs_second_source,Exact name/continuity needs review.,,,,,,,,,,,
+AP018,A013,P013,Miyako,Miyako anti-missile group,S021,E4,ai_seeded,Core Sakishima place.,,,,,,,,,,,
+AP019,A014,P011,Yonaguni,Yonaguni referendum committee lead,S069;S010;S071,E2,needs_local_retrieval,HR-003: A014 replaced with referendum committee; exact name/continuity need local confirmation.,,,,,,,,,,,
+AP020,A015,P011,Yonaguni,Yonaguni as solidarity target for Yaeyama opinion-ad committee,S015,E2,needs_local_retrieval,HR-003: committee appears Yaeyama/Ishigaki-led; Yonaguni is issue target not necessarily office location.,,,,,,,,,,,
+AP021,A016,P011,Yonaguni,Yonaguni civic group activity around deployment/exercises/life safety,S052;S068,E3,human_checked,HR-003: organization/activity cross-supported; local details still need retrieval.,,,,,,,,,,,
+AP022,A017,P001,Okinawa Prefecture,Okinawa dialogue project,S022,E4,ai_seeded,Broad Okinawa actor.,,,,,,,,,,,
+AP023,A017,P011,Yonaguni,Ryukyu arc/frontline context includes Yonaguni,S022,E3,ai_seeded,Confirm if used centrally.,,,,,,,,,,,
+AP024,A018,P001,Okinawa Prefecture,No More Okinawa War organization site,S023,E4,ai_seeded,Broad Okinawa actor.,,,,,,,,,,,
+AP025,A018,P011,Yonaguni,Ryukyu arc/frontline context,S023;S024,E3,ai_seeded,Confirm if used centrally.,,,,,,,,,,,
+AP026,A019,P002,Henoko,Henoko on-site sit-in and maritime action,S049;S008,E4,human_checked,HR-004: official site supports Henoko site role; 2004 sit-in and maritime action.,,,,,,,,,,,
+AP027,A020,P002,Henoko,JELF/OEJP legal-environmental channel,S006;S007,E4,ai_seeded,Henoko issue.,,,,,,,,,,,
+AP028,A020,P003,Oura Bay,JELF/OEJP dugong/Oura Bay context,S006;S007,E4,ai_seeded,Oura Bay issue.,,,,,,,,,,,
+AP029,X001,P006,Camp Schwab,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence; exact center/program needs check.,,,,,,,,,,,
+AP030,X001,P005,Kadena,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.,,,,,,,,,,,
+AP031,X001,P007,Camp Foster,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.,,,,,,,,,,,
+AP032,X001,P008,Camp Hansen,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.,,,,,,,,,,,
+AP033,X001,P009,Camp Kinser,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.,,,,,,,,,,,
+AP034,X001,P010,MCAS Futenma,USO Okinawa base/service network,X001,E3,ai_seeded,Service presence.,,,,,,,,,,,
+AP035,X002,P001,Okinawa Prefecture,Local business donation to USO Okinawa,X002,E4,ai_seeded,Local sponsor.,,,,,,,,,,,
+AP036,X003,P001,Okinawa Prefecture,USO Okinawa sponsor listing,X003,E3,ai_seeded,Local/base-related sponsor.,,,,,,,,,,,
+AP037,X004,P001,Okinawa Prefecture,AWWA Okinawa spouse-club umbrella network,S041;S055;S072,E4,human_checked,HR-005 confirms Okinawa base-community umbrella role.,,,,,,,,,,,
+AP038,X005,P001,Okinawa Prefecture,NOSCO Okinawa spouse club / AWWA member relation,S055,E4,human_checked,HR-005 confirms member club; exact base-site specificity can be refined later.,,,,,,,,,,,
+AP039,X006,P005,Kadena,KOSC Kadena spouse club and Kadena Gift Corner,S075;S076,E4,human_checked,HR-005 confirms Kadena base-community actor.,,,,,,,,,,,
+AP040,X007,P001,Okinawa Prefecture,OESC Okinawa thrift shop/nonprofit and AWWA member role,S053;S054;S055,E4,human_checked,HR-005 confirms OESC identity and USO donation.,,,,,,,,,,,
+AP041,X008,P007,Camp Foster,Red Cross volunteer program / U.S. Naval Hospital Okinawa,X008,E4,ai_seeded,Service place.,,,,,,,,,,,
+AP042,X009,P007,Camp Foster,NMCRS emergency assistance office,X009,E4,ai_seeded,Service place.,,,,,,,,,,,
+AP043,X010,P014,JICA Okinawa,ONC/JICA Okinawa relation,X010;X011,E4,ai_seeded,Institutional relation.,,,,,,,,,,,
+AP044,X010,P001,Okinawa Prefecture,ONC Okinawa NGO actor,X010,E4,ai_seeded,Okinawa international cooperation actor.,,,,,,,,,,,
+AP045,X011,P014,JICA Okinawa,JICA Okinawa institutional node,X011,E4,ai_seeded,Institutional place.,,,,,,,,,,,
+AP046,X012,P001,Okinawa Prefecture,TOMODACHI Okinawa relevance possible,X012,E2,needs_second_source,Okinawa-specific link not confirmed.,,,,,,,,,,,
+AP047,X013,P015,U.S. Consulate General Naha,Okinawa Youth Council grant opportunity,X013,E3,needs_local_retrieval,Recipient unknown.,,,,,,,,,,,
+AP048,X014,P001,Okinawa Prefecture,NED watchlist only,X014,E2,rejected,No Okinawa recipient confirmed.,,reject,HR-025,project_principal_user,2026-07-19,relation_existence;place_id;place_semantic,retired_candidate,,,docs/human_review_return_HR024_HR025_batch03_v1.md,"No public evidence supports an Okinawa recipient, project or place relation; this does not assert that no historical relation ever existed."
+AP049,X015,P021,Sakishima Islands,PWJ reports FY2024 expansion of a community disaster-prevention contact network to the Sakishima Islands.,,E4,needs_second_source,Keep as method sample only.,,revise,HR-025,project_principal_user,2026-07-19,place_id;place_name;relation_basis;place_semantic;evidence_level,source_id_integration_pending,site_presence,,docs/human_review_return_HR024_HR025_batch03_v1.md,"The source supports Sakishima as a whole only; do not fan out to Yonaguni, Ishigaki or Miyako, and do not infer headquarters, branch, permanent presence, contract or military stance. The direct annual-report URL still needs a central source ID."
+AP050,A021,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP051,A022,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP052,A023,P001,Okinawa Prefecture,Local civic group signatory,S004,E4,ai_seeded,Okinawa actor.,,,,,,,,,,,
+AP053,A023,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP054,A024,P002,Henoko,Name and 2015 signatory context,S004,E4,ai_seeded,Henoko actor seed.,,,,,,,,,,,
+AP055,A025,P002,Henoko,Name and 2015 signatory context,S004,E4,ai_seeded,Henoko actor seed.,,,,,,,,,,,
+AP056,A026,P001,Okinawa Prefecture,2015 signatory context,S004,E3,needs_second_source,Actor type unclear.,,,,,,,,,,,
+AP057,A027,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP058,A028,P001,Okinawa Prefecture,Japan-U.S. citizen network for Okinawa,S004,E4,ai_seeded,Okinawa link.,,,,,,,,,,,
+AP059,A028,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP060,A029,P001,Okinawa Prefecture,Okinawa biodiversity citizen network,S004,E4,ai_seeded,Okinawa actor.,,,,,,,,,,,
+AP061,A029,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP062,A030,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Non-Okinawa solidarity place.,,,,,,,,,,,
+AP063,A031,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,Non-Okinawa solidarity place.,,,,,,,,,,,
+AP064,A032,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International advocacy place.,,,,,,,,,,,
+AP065,A033,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP066,A034,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP067,A035,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP068,A036,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP069,A037,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP070,A038,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP071,A039,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP072,A040,P002,Henoko,2015 NACSJ statement signatory,S004;S089;S090,E4,human_checked,HR-009 identity confirmed; relation is signatory/solidarity context only.,,,,,,,,,,,
+AP073,A041,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP074,A042,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP075,A043,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP076,A044,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP077,A045,P002,Henoko,2015 NACSJ statement,S004,E4,ai_seeded,International signatory place.,,,,,,,,,,,
+AP078,A046,P002,Henoko,2015 NACSJ statement signatory,S004;S091;S092,E4,human_checked,HR-009 identity confirmed; relation is signatory/solidarity context only.,,,,,,,,,,,
+AP079,A047,P001,Okinawa Prefecture,Peace Movement Center headquarters,S031,E4,ai_seeded,Broad Okinawa coordination body.,,,,,,,,,,,
+AP080,A047,P002,Henoko,Henoko opposition coordination,S031,E3,ai_seeded,Verify direct coordination role.,,,,,,,,,,,
+AP081,A048,P001,Okinawa Prefecture,Anti-war landowner Okinawa base,S038,E4,ai_seeded,Okinawa land-related actor.,,,,,,,,,,,
+AP082,A049,P001,Okinawa Prefecture,Women's group based in Okinawa,S039,E4,ai_seeded,Okinawa civic actor.,,,,,,,,,,,
+AP083,A050,P001,Okinawa Prefecture,Bar association jurisdiction,S037,E4,ai_seeded,Professional association.,,,,,,,,,,,
+AP084,A050,P020,Naha,Bar association office in Naha,S037,E4,ai_seeded,Administrative center.,,,,,,,,,,,
+AP085,A051,P001,Okinawa Prefecture,Prefectural referendum initiative scope,S025,E4,ai_seeded,Prefecture-wide.,,,,,,,,,,,
+AP086,A051,P002,Henoko,Referendum about Henoko base construction,S025,E4,ai_seeded,Henoko focus.,,,,,,,,,,,
+AP087,A052,P005,Kadena,Kadena noise litigation plaintiffs,S026,E4,ai_seeded,Core base site.,,,,,,,,,,,
+AP088,A052,P018,Ginowan,Adjacent affected area,S026,E3,ai_seeded,Verify plaintiff geography.,,,,,,,,,,,
+AP089,A053,P004,Futenma,Futenma noise litigation plaintiffs,S027,E4,ai_seeded,Core base site.,,,,,,,,,,,
+AP090,A053,P018,Ginowan,Ginowan host city,S027,E4,ai_seeded,Host municipality.,,,,,,,,,,,
+AP091,A054,P001,Okinawa Prefecture,Okinawa human rights organization,S033,E3,ai_seeded,Verify current activities.,,,,,,,,,,,
+AP092,A055,P019,Awase,Awase tidal flat protection,S030,E3,ai_seeded,Specific site focus.,,,,,,,,,,,
+AP093,A055,P001,Okinawa Prefecture,Okinawa environmental actor,S030,E3,ai_seeded,Broader context.,,,,,,,,,,,
+AP094,A056,P001,Okinawa Prefecture,Okinawa environmental network,S033,E3,needs_second_source,Verify structure.,,,,,,,,,,,
+AP095,A057,P001,Okinawa Prefecture,Opinion ad campaign origin,S034,E3,ai_seeded,Cross-regional reach.,,,,,,,,,,,
+AP096,A058,P001,Okinawa Prefecture,Labor/civic umbrella organization,S031,E3,needs_second_source,Verify structure.,,,,,,,,,,,
+AP097,A059,P001,Okinawa Prefecture,All-island conference network,S029,E3,ai_seeded,Municipal-level branches.,,,,,,,,,,,
+AP098,A059,P002,Henoko,Henoko opposition coordination,S029,E3,ai_seeded,Anti-Henoko base.,,,,,,,,,,,
+AP099,A060,P016,Takae,Takae helipad opposition,S028,E3,ai_seeded,Core site.,,,,,,,,,,,
+AP100,A060,P001,Okinawa Prefecture,Northern Okinawa forest protection,S028,E3,ai_seeded,Yanbaru context.,,,,,,,,,,,
+AP101,A061,P001,Okinawa Prefecture,Bird conservation in Okinawa,S003;S004,E4,ai_seeded,National NGO with Okinawa relevance.,,,,,,,,,,,
+AP102,A061,P002,Henoko,Henoko habitat statement,S003;S004,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP103,A062,P002,Henoko,Wetland conservation Henoko context,S003,E4,ai_seeded,Signatory place.,,,,,,,,,,,
+AP104,A063,P001,Okinawa Prefecture,Mainland solidarity with Okinawa,S038,E3,ai_seeded,Cross-regional solidarity.,,,,,,,,,,,
+AP105,A064,P001,Okinawa Prefecture,International network Okinawa node,S033,E3,needs_second_source,Verify Okinawa connection.,,,,,,,,,,,
+AP106,A065,P012,Ishigaki,Southwest Islands network Ishigaki node,S036,E3,needs_second_source,Verify membership.,,,,,,,,,,,
+AP107,A065,P013,Miyako,Southwest Islands network Miyako node,S036,E3,needs_second_source,Verify membership.,,,,,,,,,,,
+AP108,A065,P011,Yonaguni,Southwest Islands network Yonaguni node,S036,E3,needs_second_source,Verify membership.,,,,,,,,,,,
+AP109,A066,P001,Okinawa Prefecture,ND policy advocacy re: Okinawa,S032,E4,ai_seeded,Policy focus.,,,,,,,,,,,
+AP110,A066,P020,Naha,ND activities in Okinawa,S032,E3,ai_seeded,Verify Okinawa office presence.,,,,,,,,,,,
+AP111,A067,P002,Henoko,Henoko soil import opposition,S040,E3,ai_seeded,Henoko focus.,,,,,,,,,,,
+AP112,A068,P017,Nago,Nago city referendum initiative,S042,E3,ai_seeded,Nago municipality.,,,,,,,,,,,
+AP113,A068,P002,Henoko,Henoko base construction referendum,S042,E3,ai_seeded,Henoko focus.,,,,,,,,,,,
+AP114,A069,P002,Henoko,Dugong/EIA monitoring at Henoko,S047,E3,needs_second_source,Verify structure.,,,,,,,,,,,
+AP115,A069,P003,Oura Bay,Oura Bay EIA monitoring,S047,E3,needs_second_source,Verify structure.,,,,,,,,,,,
+AP116,A070,P001,Okinawa Prefecture,Veterans for Peace Okinawa chapter,S048,E3,needs_second_source,Verify chapter status.,,,,,,,,,,,
+AP117,A071,P001,Okinawa Prefecture,Civic peace liaison in Okinawa,,E3,human_revised,Verify structure.,,revise,HR-025,project_principal_user,2026-07-19,actor_identity;place_semantic;source_boundary,in_scope,site_presence,,docs/human_review_return_HR025_batch05_v1.md,"Countywide public activity does not imply a precise headquarters, representation of all Okinawa residents, or stable alliance with co-participants."
+AP118,A072,P001,Okinawa Prefecture,Base removal civic network,,E3,rejected,Verify if distinct.,A072,reject,HR-025,project_principal_user,2026-07-19,actor_identity;duplicate_crosswalk;place_semantic,retired_duplicate,,AP117,docs/human_review_return_HR025_batch05_v1.md,A072 is a duplicate tombstone of A071; AP118 must not be counted or drawn.
+AP119,A074,P001,Okinawa Prefecture,Prefectural government base affairs,S043,E4,ai_seeded,Government office.,,,,,,,,,,,
+AP120,A074,P020,Naha,Government office location,S043,E4,ai_seeded,Administrative center.,,,,,,,,,,,
+AP121,A075,P001,Okinawa Prefecture,Defense bureau jurisdiction,S047,E4,ai_seeded,Government office.,,,,,,,,,,,
+AP122,A075,P002,Henoko,Henoko base construction managing agency,S047,E4,ai_seeded,Construction site.,,,,,,,,,,,
+AP123,X016,P007,Camp Foster,MOSCO / Marine Gift Shop Island Treasures context,S079;S080,E4,human_revised,HR-005 supplemental: MOSCO Camp Foster/Okinawa base role confirmed.,,revise,HR-025,project_principal_user,2026-07-19,place_id;place_name;place_semantic;interpretation_boundary,in_scope,site_presence,,docs/human_review_return_HR018_preflight_HR025_AP123_batch02_v1.md,"Bounded scholarship/Marine Gift Shop charity and fundraising venue; not headquarters, MCCS affiliation, political stance or alliance."
+AP124,X017,P001,Okinawa Prefecture,Army Community Group of Okinawa / Army on Okinawa Gift Shop lead,S041;S072;S081,E3,needs_second_source,HR-005 supplemental: Torii Station/base specificity needs independent confirmation.,,,,,,,,,,,
+AP125,A111,P001,Okinawa Prefecture,Prefecture-wide women's network and prefectural public mobilization,S200;S201,E4,human_checked,HR-013: broad prefectural field only; no municipality-level location is inferred.,,,,,,,,,,,
+AP126,A107,P001,Okinawa Prefecture,Regional YWCA identity and Okinawa-wide public activity; broad prefectural container only,S144;S295,E3,human_checked,HR-011: broad Okinawa field only; no headquarters municipality-level base stable alliance or on-site Henoko presence is inferred.,,,,,,,,,,,
+AP127,A108,P001,Okinawa Prefecture,Prefecture-wide anti-war/frontline-prevention network and prefectural public mobilization,S146;S147;S148,E4,human_checked,HR-011: prefectural field only; umbrella composition and event participation do not establish stable alliance ties.,,,,,,,,,,,
+AP128,A109,P005,Kadena,Case-specific counsel role in the fourth Kadena base-noise litigation,S149;S152,E4,human_checked,HR-011/012: Kadena is the litigation/affected field not an inferred office location; role is limited to the fourth round.,,,,,,,,,,,
+AP129,A110,P002,Henoko,Henoko base construction as the sustained Osaka solidarity action's advocacy target,S153;S154,E3,human_checked,HR-011: advocacy target only; the documented street action occurred in Osaka so this is not Henoko site presence or Okinawa-local origin.,,,,,,,,,,,
+AP130,A112,P013,Miyako,Documented organization location and Miyako municipal/groundwater field,S158;S204;S271,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.,,,,,,,,,,,
+AP131,A113,P018,Ginowan,Documented resident group and municipal-request field,S273;S274;S276;S277,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.,,,,,,,,,,,
+AP132,A113,P004,Futenma,Issue/action site associated with sampling and base-groundwater requests; not a headquarters claim,S274;S275;S277,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.,,,,,,,,,,,
+AP133,A114,P020,Naha,Formal regional-headquarters location in Naha; event venues remain in the separate event queue,S284;S285,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.,,,,,,,,,,,
+AP134,A114,P012,Ishigaki,Documented 2024 port strike/action venue; not an organizational headquarters claim,S287;S288,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.,,,,,,,,,,,
+AP135,A115,P001,Okinawa Prefecture,Prefectural-headquarters scope and prefecture-wide requests/signature activity,S280;S282;S283,E4,ai_seeded,HR-027 accepted the primary_places field; this place-edge semantic is a candidate pending dedicated edge review. Venue/issue site is not automatically headquarters or stable presence.,,,,,,,,,,,
