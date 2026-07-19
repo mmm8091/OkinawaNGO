@@ -1,22 +1,32 @@
 ﻿metric,value,definition
-relation_observations,35,unique normalized relations in the current purposive cross-source R10 sample
-mechanism_figure_admin_layer,16,public_to* relations in the current sample's upper administrative layer
-mechanism_figure_lower_layer,19,service/charity/non-funding-boundary relations in the current sample's lower layer
-amount_observations,26,selected monetary observations in the current sample; not additive by default
-function_observations,43,selected service/role/site observations with no independent funding inference
-actual_contract_amounts,3,exact official named-counterparty contracts
+relation_observations,35,unique normalized relations in the current purposive R10 sample
+mechanism_figure_admin_layer,16,pre-HR018 figure-layer count; PNG not redrawn in this merge
+mechanism_figure_lower_layer,19,pre-HR018 figure-layer count; PNG not redrawn in this merge
+amount_observations,28,separate monetary observations; not additive by default
+function_observations,43,service/role/site observations with no independent funding inference
+actual_contract_amounts,5,exact official named-counterparty contract observations
 project_cost_observations,14,context only; not actor payment
 aggregate_amount_observations,2,not allocable to actor/year
-human_checked_or_revised_relations,9,inherits existing human decisions only
-relation_type_aggregate_history,2,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_commission,14,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_designated_role,1,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_donation,1,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_event_collaboration,1,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_grant,2,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_grant_opportunity,1,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_in_kind_donation,3,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_joint_in_kind_contribution,1,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_network_membership,5,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_service_presence,1,within-package relation_type count; sums to the current purposive relation sample only
-relation_type_sponsorship,3,within-package relation_type count; sums to the current purposive relation sample only
+relation_review_status_human_checked,24,current post-HR018 relation status count
+relation_review_status_human_revised,10,current post-HR018 relation status count
+relation_review_status_needs_local_retrieval,1,current post-HR018 relation status count
+amount_review_status_human_checked,21,current post-HR018 amount-observation status count
+amount_review_status_human_revised,6,current post-HR018 amount-observation status count
+amount_review_status_needs_local_retrieval,1,current post-HR018 amount-observation status count
+function_review_status_human_checked,29,current post-HR018 function-observation status count
+function_review_status_human_revised,13,current post-HR018 function-observation status count
+function_review_status_needs_local_retrieval,1,current post-HR018 function-observation status count
+relation_type_aggregate_financial_contribution,1,within-package relation_type count; sums to 35
+relation_type_aggregate_history,1,within-package relation_type count; sums to 35
+relation_type_commission,14,within-package relation_type count; sums to 35
+relation_type_designated_role,1,within-package relation_type count; sums to 35
+relation_type_donation,1,within-package relation_type count; sums to 35
+relation_type_event_collaboration,1,within-package relation_type count; sums to 35
+relation_type_grant,2,within-package relation_type count; sums to 35
+relation_type_grant_opportunity,1,within-package relation_type count; sums to 35
+relation_type_in_kind_acquisition_assistance,1,within-package relation_type count; sums to 35
+relation_type_in_kind_donation,2,within-package relation_type count; sums to 35
+relation_type_joint_in_kind_contribution,1,within-package relation_type count; sums to 35
+relation_type_network_membership,5,within-package relation_type count; sums to 35
+relation_type_service_presence,1,within-package relation_type count; sums to 35
+relation_type_sponsorship,3,within-package relation_type count; sums to 35

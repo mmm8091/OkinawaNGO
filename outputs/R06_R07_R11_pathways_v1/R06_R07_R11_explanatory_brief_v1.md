@@ -1,42 +1,33 @@
 # R6 / R7 / R11 线上解释层 brief v1
 
-日期：2026-07-13
+日期：2026-07-20
+状态：HR-021 八项决定已合并。
 
 ## 共享底盘
 
-- 正式 actor–event–venue–target/entry-mode 事实：**71** 条。
-- `analytical_seed`：**4** 条，未混入事实表。
-- HR-021：**8** 项下游纳入／seed 决策，决定栏均为空；前 7 项依赖 HR-018 完成关系事实复核。
+- 正式 actor–event–venue–target/entry-mode 事实：**80** 条。
+- `analytical_seed`：**4** 条，继续与正式事实分离。
+- HR-021：5 项 `include_after_hr018`、2 项 `revise_scope_after_hr018`、1 项 `retain_analytical_seed`；未决 0。
 
-底盘把 AEV 事件角色、R8 已人审法律角色及 R10 已人审／修订的行政—服务关系放在同一口径下，但不把它们写成同一种网络边。
+HR-018 已审并不自动等于进入路径分析。只有 HR-021 明确放行的九条 R10 关系新增到正式底盘；其余已审关系留在 R10 的本模块事实层。
 
-## R6：不同目标路径
+## R6：行政入口的三种不同事实
 
-R6 比较 6 类入口，而不是复制单一边野古国际化链：
+R6 的行政比较现在同时保留：ONC／JICA 的事件共同参与、JICA→ONC 的有界受托角色、冲绳县→A066 的提案选定合同。三者不能折成“共同合作”或“资金网络”；具体金额仍只在 R10 amount layer。
 
-1. **国际法律**依赖具名 plaintiff、counsel、non-party 与 defendant 边界，产生程序标准和信息记录，但 2020 结果支持 DoD。
-2. **国际机构请求**证明请求及事件参与者进入 MMC 入口；不证明 MMC 回应、政策改变或九个 E2 名称的稳定组织身份。
-3. **国内／海外声援**是公开声明中的事件参与。日本国内署名与海外署名均不能写成持续联盟或地方代表权。
-4. **行政协作**只确认公开活动协作，不自动产生资金方向或基地政治立场。
-5. **公共外交机会**只确认 NOFO；recipient 与 award 均未知。
+## R11：53 条进入观察
 
-## R7：场域／对象的案例序列（非长期转移识别）
+R11 共有 **53** 条：administrative 7, advocacy 30, charity 2, legal 5, public_diplomacy 1, service 8。
 
-三组小倍图覆盖国际法律、MMC 请求和跨国声明。法律案例可按程序时间排序；MMC 与声明案例只能按同一事件中的角色／入口构成排序。所有虚线都表示**展示顺序**，不是因果箭头，也不证明前一场域造成后一场域或带来政策效果。
+- FY2024 外务省委托与 FY2026 年度指定分成两个观察，后者不继承前者金额。
+- USO Okinawa 服务存在只形成一条 service relation；八个 site/function 继续留在 R10 功能层。
+- MBC 是本地 direct sponsor observation；Matson 只作为 USO Indo-Pacific 区域 sponsor perimeter，不写成本地定向资助。
+- 委托、指定、服务和 sponsor tier 都不自动产生政治立场、稳定联盟或因果路径。
 
-## R11：外来 actor 的进入方式
+## analytical seed 边界
 
-R11 矩阵含 44 条由已人审正式事实派生的进入观察：倡议 30、法律 5、行政 1、服务 5、慈善 2、公共外交 1。
+AEV0061–0064 继续作为分析性路径假说。已有的共同要请、调查和事件事实不证明 A019→A003→A004/A005 的有向传递；四条 seed 不进入正式计数、默认事实层或稳定关系网。
 
-- 倡议和法律角色只在特定 statement/request/case 中成立。
-- 行政协作不等于资助方向或政府认同；共同列名不等于稳定联盟。
-- 服务组织、企业 sponsor、军属慈善网络按观察到的服务／赞助／捐赠／成员功能编码，不推断反基地或亲基地立场。
-- 公共外交 opportunity 不得写成 award、recipient 或政治结盟。
+## 图状态
 
-## 合并边界
-
-- `26_actor_event_venue_target_entry_modes_v0.csv` 可作为解释图底盘；它仍是角色／事件／项目观察，不是稳定关系网。
-- `analytical_seeds_v0.csv` 只能用于提出路径假说，不能作为事实边或因果链。
-- R10 关系事实由 HR-018 复核；HR-021 前 7 项只在 HR-018 accept/revise 后决定是否及以何种边界进入 R6/R11，不重复判断关系事实。HR-018 未完成时不得填写 HR-021 决定。
-- HR-021 第 8 项只审 analytical seed 是否具备独立事实边证据。
-- 来源存在不等于结论充分；共同事件、共同签名、服务、慈善、行政和法律角色必须保持分层。
+本轮没有重绘 R6／R7／R11 SVG/HTML；这些图是 pre-HR021 快照。当前事实计数与下游范围以 CSV、本 brief 与 validation note 为准。
