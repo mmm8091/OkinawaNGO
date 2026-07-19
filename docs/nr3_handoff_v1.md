@@ -14,6 +14,63 @@
    0 议题／0 事件）；组织→议题→事件→时间链由 A002 等有事件 actor 证明，见下方验证节。
 3. **跨路由关闭证据抽屉**：路由改变时清空 drawer selection，旧抽屉不再覆盖新页面。
 
+## v3 组织关系层（2026-07-20，按 `nr3_recheck_and_relation_frontend_brief_v1.md` 实现）
+
+**数据（NR-02 构建模块扩展，`scripts/build_exploration_system_data_v1.py`）**：
+类型化集合 `demo/dyadic_relations.json`（14 条 reviewed，两端均解析到 registry actor）、
+`demo/aggregate_observations.json`（F027＋R10R029）、`demo/case_roles.json`（27 行）、
+`demo/administrative_records.json`（6）、`demo/typed_event_participation.json`（4）、
+`demo/relation_leads.json`（恒空）、
+`demo/genealogy_anchors.json`（恒空）；`research/candidates.json` 新增
+`dyadic_relations`（8 条候选）、`administrative_records`（5）、`relation_leads`
+（F012/F013/F034/F035）。F008（rejected duplicate）被排除；构建确定性字节一致；
+中央表零改动。claim 分层：supported 13、supported_bounded 15、candidate 13、lead 2、
+excluded 1。
+
+**呈现（L0＋L1）**：组织面板新增"与其他组织的关系"区（族色芯片、方向箭头、claim 芯片、
+supported_bounded 的已确认／缺口两行、金额语义、来源下钻抽屉）与"其他记录与研究线索"区
+（行政记录／汇总观察标"非组织关系边"、线索标"非资助事实"）；组织页新增"议题生态／组织
+关系"图形状态，关系画布按族着色、箭头表方向、实线已核／虚线候选、族独立开关、边详情卡，
+计数按"已确认 · 有限确认 · 待审"分层，无混合总数。
+
+**控制案例实测**：F021 以 supported＋USD 3,250 直接捐赠进入面板与关系图；F025 以
+supported_bounded 进入（金额为空，缺口显示"AWWA allocation、奖学金 recipient 待年报"）；
+R10R029 只进 X006 面板的汇总观察区（非组织关系边），不上关系图。
+
+截图：`rel_x001_panel.png`、`rel_x004_panel.png`、`rel_graph_demo.png`、`rel_graph_research.png`。
+
+### Post-merge delta（2026-07-20）
+
+- **中央权威字段**：构建器以
+  `15_funding_or_support_edges_sample_v0.csv` 已填的 `claim_status`、
+  `confirmed_scope`、`missing_scope`、`graph_eligibility`、`amount_semantics`、
+  `reviewed_fields` 等为第一优先；HR-033 只补中央空字段，最后才按受控规则派生。被负责人
+  明确复核为空的字段（如 F025 amount）不得被补充包覆盖。
+- **最新数据口径**：registry 保留 122 行历史记录，普通界面只显示 121 active actor；
+  A072 为 merged duplicate、`display_status=hidden`，搜索与普通图均不可见。默认 actor—issue
+  图输入 238 行；AI068 属事件限定且明确排除出默认冲绳叙事，不进入已核或研究关系图。
+  strict place—issue 为 312 条总三元组／305 条 E3+／65 条双人审／100 条正式事件附着。
+- **关系层计数**：43 条中央观察＋R10R029 独立汇总观察＝44 输入；已核层为 14 条组织关系、
+  6 条行政记录、2 条汇总观察、4 条事件参与记录、27 条案件角色；研究层为 8 条候选组织
+  关系、5 条行政候选、4 条研究线索。F036 只显示为事件参与，F011/F040/F041 同样不派生
+  稳定组织关系边。
+- **前端回归**：组织类别筛选同时作用于议题生态图与组织关系图；`RecordRow` 显示
+  amount semantics；女性组织类与 P021 先岛节点有中／日／英标签；案件角色明确标注
+  “非协作边”。
+- **复现与测试**：
+
+```powershell
+python scripts\build_exploration_system_data_v1.py
+python -m unittest tests.test_build_exploration_system_data_v1
+python -m unittest discover -s tests
+cd prototypes\nr3_explorer
+npm run build
+```
+
+不得把行政记录、汇总金额、事件参与或同案角色计入组织关系；不得把
+`supported_bounded` 的金额／期间缺口补成事实；不得让 rejected、duplicate、E0、AI068
+或 A072 回到默认展示。
+
 ## v2 整改清单（对应主线程验收意见）
 
 | 验收意见 | 整改 |

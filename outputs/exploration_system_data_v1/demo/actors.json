@@ -14,12 +14,14 @@
       "international_advocacy"
     ],
     "legal_status": "informal_or_project",
+    "merged_duplicate_of": "",
     "origin_type": "mixed_or_network",
     "primary_places": [
       "Henoko/Oura Bay",
       "international"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S006",
       "S007",
@@ -41,11 +43,13 @@
       "international_advocacy"
     ],
     "legal_status": "任意団体",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Henoko/Oura Bay"
     ],
     "review_status": "human_revised",
+    "scope_status": "",
     "source_ids": [
       "S007",
       "S057",
@@ -68,12 +72,14 @@
       "Henoko"
     ],
     "legal_status": "unclear",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
       "Henoko/Oura Bay"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S003"
     ],
@@ -93,12 +99,14 @@
       "Henoko"
     ],
     "legal_status": "public_interest_foundation_or_association",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -118,12 +126,14 @@
       "biodiversity"
     ],
     "legal_status": "public_interest_foundation",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S003"
     ],
@@ -142,12 +152,14 @@
       "anti_base"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S003"
     ],
@@ -168,12 +180,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "international"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S005"
     ],
@@ -195,12 +209,14 @@
       "international_cooperation"
     ],
     "legal_status": "informal_network（任意ネットワーク・国際協力NGO）",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Okinawa(statement/solidarity context)"
     ],
     "review_status": "human_revised",
+    "scope_status": "",
     "source_ids": [
       "S064",
       "S065",
@@ -223,12 +239,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "United States",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S009"
     ],
@@ -259,11 +277,13 @@
       "life_safety"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Ishigaki"
     ],
     "review_status": "human_revised",
+    "scope_status": "",
     "source_ids": [
       "S016",
       "S017",
@@ -286,11 +306,13 @@
       "anti_military"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Ishigaki"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S018",
       "S019",
@@ -314,11 +336,13 @@
       "life_safety"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Miyako"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S020"
     ],
@@ -339,11 +363,13 @@
       "life_safety"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Miyako"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S021"
     ],
@@ -364,11 +390,13 @@
       "public_opinion"
     ],
     "legal_status": "informal（任意の実行委員会）",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Yonaguni"
     ],
     "review_status": "needs_local_retrieval",
+    "scope_status": "",
     "source_ids": [
       "S010",
       "S069",
@@ -392,6 +420,7 @@
       "solidarity"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Yaeyama",
@@ -399,6 +428,7 @@
       "Yonaguni(solidarity target)"
     ],
     "review_status": "needs_local_retrieval",
+    "scope_status": "",
     "source_ids": [
       "S015"
     ],
@@ -421,11 +451,13 @@
       "frontline_prevention"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Yonaguni"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S011",
       "S052",
@@ -448,12 +480,14 @@
       "frontline_prevention"
     ],
     "legal_status": "informal_or_project",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
       "Ryukyu arc"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S022"
     ],
@@ -473,12 +507,14 @@
       "Taiwan_contingency"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
       "Ryukyu arc"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S023",
       "S024"
@@ -500,12 +536,14 @@
       "referendum"
     ],
     "legal_status": "任意団体",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Henoko",
       "Nago"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S008",
       "S049",
@@ -528,12 +566,14 @@
       "Henoko"
     ],
     "legal_status": "ngo_or_association",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S006",
       "S007"
@@ -554,12 +594,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -580,12 +622,14 @@
       "anti_base"
     ],
     "legal_status": "npo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -605,13 +649,15 @@
       "Henoko"
     ],
     "legal_status": "informal",
-    "origin_type": "okinawa_local",
+    "merged_duplicate_of": "",
+    "origin_type": "japan_domestic",
     "primary_places": [
       "Okinawa",
       "Henoko/Oura Bay",
       "Yanbaru"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -631,6 +677,7 @@
       "mobilization"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Henoko",
@@ -638,6 +685,7 @@
       "Japan"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -657,6 +705,7 @@
       "mobilization"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Henoko",
@@ -664,13 +713,14 @@
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "media_or_advocacy_actor",
+    "actor_class": "citizen_group",
     "aliases": [],
     "display_label": "ピース・ニュース",
     "display_status": "demo",
@@ -683,12 +733,14 @@
       "media"
     ],
     "legal_status": "unclear",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Okinawa"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -708,12 +760,14 @@
       "anti_base"
     ],
     "legal_status": "informal_or_npo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -733,6 +787,7 @@
       "Henoko"
     ],
     "legal_status": "network",
+    "merged_duplicate_of": "",
     "origin_type": "mixed_or_network",
     "primary_places": [
       "Japan",
@@ -740,6 +795,7 @@
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -759,12 +815,14 @@
       "Henoko"
     ],
     "legal_status": "network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -784,12 +842,14 @@
       "solidarity"
     ],
     "legal_status": "citizen_group",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -809,12 +869,14 @@
       "solidarity"
     ],
     "legal_status": "citizen_group",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -834,6 +896,7 @@
       "international_advocacy"
     ],
     "legal_status": "project_or_network",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Canada",
@@ -841,6 +904,7 @@
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -860,12 +924,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "United States",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -884,12 +950,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Korea",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -908,12 +976,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Russia",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -932,12 +1002,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Russia",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -956,12 +1028,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Sri Lanka",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -980,12 +1054,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Malaysia",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -1005,12 +1081,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Philippines",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -1047,12 +1125,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Nepal",
       "Henoko/Oura Bay"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S004",
       "S089",
@@ -1073,12 +1153,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Australia",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -1097,6 +1179,7 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "United States",
@@ -1104,6 +1187,7 @@
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -1122,12 +1206,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Palestine",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -1146,12 +1232,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Norway",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -1171,12 +1259,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "United States",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S004"
     ],
@@ -1222,12 +1312,14 @@
       "biodiversity"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "Switzerland",
       "Henoko/Oura Bay"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S004",
       "S091",
@@ -1251,11 +1343,13 @@
       "local_autonomy"
     ],
     "legal_status": "social_movement_center",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S031"
     ],
@@ -1276,14 +1370,14 @@
       "local_autonomy"
     ],
     "legal_status": "informal_association",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
-    "source_ids": [
-      "S038"
-    ],
+    "scope_status": "",
+    "source_ids": [],
     "unresolved_source_refs": []
   },
   {
@@ -1301,11 +1395,13 @@
       "life_safety"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S039"
     ],
@@ -1326,11 +1422,13 @@
       "local_autonomy"
     ],
     "legal_status": "professional_association",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S037"
     ],
@@ -1351,12 +1449,14 @@
       "anti_base"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
       "Henoko"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S025"
     ],
@@ -1396,12 +1496,14 @@
       "anti_base"
     ],
     "legal_status": "litigation_group",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Kadena",
       "Okinawa"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S026",
       "S149",
@@ -1452,12 +1554,14 @@
       "anti_base"
     ],
     "legal_status": "litigation_group",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Futenma",
       "Ginowan"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S027",
       "S135",
@@ -1479,12 +1583,14 @@
       "anti_base",
       "legal"
     ],
-    "legal_status": "npo_or_association",
+    "legal_status": "association_or_unclear",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S033"
     ],
@@ -1504,12 +1610,14 @@
       "legal"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
       "Awase"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S030"
     ],
@@ -1529,11 +1637,13 @@
       "anti_base"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S033"
     ],
@@ -1554,12 +1664,14 @@
       "public_opinion"
     ],
     "legal_status": "informal",
-    "origin_type": "okinawa_local",
+    "merged_duplicate_of": "",
+    "origin_type": "japan_domestic",
     "primary_places": [
       "Okinawa",
       "Japan"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S034"
     ],
@@ -1567,8 +1679,21 @@
   },
   {
     "actor_class": "citizen_network",
-    "aliases": [],
-    "display_label": "沖縄県統一連（沖縄県統一行動連絡会議）",
+    "aliases": [
+      {
+        "label": "安保廃棄沖縄県統一連",
+        "source_ids": [],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "沖縄県統一連",
+        "source_ids": [],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "安保廃棄・くらしと民主主義を守る沖縄県統一行動連絡会議",
     "display_status": "demo",
     "evidence_level": "E3",
     "id": "A058",
@@ -1579,20 +1704,29 @@
       "anti_military"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "needs_second_source",
-    "source_ids": [
-      "S031"
-    ],
+    "scope_status": "",
+    "source_ids": [],
     "unresolved_source_refs": []
   },
   {
     "actor_class": "citizen_network",
-    "aliases": [],
-    "display_label": "島ぐるみ会議",
+    "aliases": [
+      {
+        "label": "島ぐるみ会議",
+        "source_ids": [
+          "S029"
+        ],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "沖縄「建白書」を実現し未来を拓く島ぐるみ会議",
     "display_status": "demo",
     "evidence_level": "E3",
     "id": "A059",
@@ -1603,11 +1737,13 @@
       "local_autonomy"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S029"
     ],
@@ -1627,6 +1763,7 @@
       "biodiversity"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Takae",
@@ -1634,6 +1771,7 @@
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S028"
     ],
@@ -1652,12 +1790,14 @@
       "biodiversity"
     ],
     "legal_status": "public_interest_foundation",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S003",
       "S004"
@@ -1678,11 +1818,13 @@
       "wetlands"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S003"
     ],
@@ -1703,6 +1845,7 @@
       "solidarity"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Tokyo",
@@ -1710,6 +1853,7 @@
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S038"
     ],
@@ -1729,12 +1873,14 @@
       "peace"
     ],
     "legal_status": "network",
+    "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
       "international",
       "Okinawa"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S033"
     ],
@@ -1755,6 +1901,7 @@
       "Taiwan_contingency"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
@@ -1762,6 +1909,7 @@
       "Ryukyu arc"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S036"
     ],
@@ -1782,12 +1930,14 @@
       "international_advocacy"
     ],
     "legal_status": "npo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S032"
     ],
@@ -1795,8 +1945,17 @@
   },
   {
     "actor_class": "citizen_network",
-    "aliases": [],
-    "display_label": "辺野古土砂搬入反対全国協議会（辺野古土砂全協）",
+    "aliases": [
+      {
+        "label": "辺野古土砂全協",
+        "source_ids": [
+          "S040"
+        ],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "辺野古土砂搬出反対全国連絡協議会",
     "display_status": "demo",
     "evidence_level": "E3",
     "id": "A067",
@@ -1807,6 +1966,7 @@
       "environment"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
@@ -1814,6 +1974,7 @@
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S040"
     ],
@@ -1821,8 +1982,23 @@
   },
   {
     "actor_class": "citizen_group",
-    "aliases": [],
-    "display_label": "名護市民投票の会",
+    "aliases": [
+      {
+        "label": "名護市民投票の会",
+        "source_ids": [],
+        "type": "deprecated_working_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "名護市民投票推進協議会",
+        "source_ids": [
+          "S042"
+        ],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "ヘリポート基地建設の是非を問う名護市民投票推進協議会",
     "display_status": "demo",
     "evidence_level": "E3",
     "id": "A068",
@@ -1834,11 +2010,13 @@
       "local_autonomy"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Nago"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S042"
     ],
@@ -1859,11 +2037,13 @@
       "Henoko"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Henoko/Oura Bay"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S047"
     ],
@@ -1871,8 +2051,49 @@
   },
   {
     "actor_class": "international_advocacy_actor",
-    "aliases": [],
-    "display_label": "Veterans for Peace Okinawa",
+    "aliases": [
+      {
+        "label": "VFP-ROCK",
+        "source_ids": [
+          "S048"
+        ],
+        "type": "acronym",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Chapter 1003 - Ryukyu Okinawa",
+        "source_ids": [
+          "S048"
+        ],
+        "type": "chapter_listing_variant",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "平和を求める元軍人の会・琉球沖縄国際支部",
+        "source_ids": [
+          "S048"
+        ],
+        "type": "japanese_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Veterans for Peace, Ryukyu/Okinawa (VFP ROC)",
+        "source_ids": [
+          "S048"
+        ],
+        "type": "name_variant",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Veterans for Peace Okinawa",
+        "source_ids": [
+          "S048"
+        ],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "Veterans For Peace Ryukyu/Okinawa Chapter Kokusai (VFP-ROCK)",
     "display_status": "demo",
     "evidence_level": "E3",
     "id": "A070",
@@ -1883,12 +2104,14 @@
       "international_advocacy"
     ],
     "legal_status": "chapter",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Okinawa",
       "United States"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S048"
     ],
@@ -1896,8 +2119,15 @@
   },
   {
     "actor_class": "citizen_network",
-    "aliases": [],
-    "display_label": "沖縄平和市民連絡会",
+    "aliases": [
+      {
+        "label": "沖縄平和市民連絡会",
+        "source_ids": [],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "沖縄から基地をなくし世界の平和を求める市民連絡会",
     "display_status": "demo",
     "evidence_level": "E3",
     "id": "A071",
@@ -1908,21 +2138,21 @@
       "anti_military"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "needs_second_source",
-    "source_ids": [
-      "S031"
-    ],
+    "scope_status": "",
+    "source_ids": [],
     "unresolved_source_refs": []
   },
   {
     "actor_class": "citizen_network",
     "aliases": [],
     "display_label": "沖縄から基地をなくし世界の平和を求める市民連絡会",
-    "display_status": "demo",
+    "display_status": "hidden",
     "evidence_level": "E3",
     "id": "A072",
     "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
@@ -1932,14 +2162,14 @@
       "international_advocacy"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "A071",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
-    "review_status": "needs_second_source",
-    "source_ids": [
-      "S031"
-    ],
+    "review_status": "rejected",
+    "scope_status": "merged_duplicate",
+    "source_ids": [],
     "unresolved_source_refs": []
   },
   {
@@ -1955,11 +2185,13 @@
       "public_diplomacy"
     ],
     "legal_status": "npo_or_project",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S033"
     ],
@@ -1979,11 +2211,13 @@
       "local_autonomy"
     ],
     "legal_status": "government_office",
+    "merged_duplicate_of": "",
     "origin_type": "public_institution",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S043"
     ],
@@ -2002,11 +2236,13 @@
       "anti_base"
     ],
     "legal_status": "government_office",
+    "merged_duplicate_of": "",
     "origin_type": "public_institution",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S047"
     ],
@@ -2027,11 +2263,13 @@
       "Henoko"
     ],
     "legal_status": "任意団体（法人格待核实）",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Henoko/Oura Bay"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S060",
       "S061",
@@ -2055,12 +2293,14 @@
       "international_advocacy"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "United States",
       "Henoko/Oura Bay"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S060",
       "S093"
@@ -2081,6 +2321,7 @@
       "international_cooperation"
     ],
     "legal_status": "NPO法人",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Nago",
@@ -2088,6 +2329,7 @@
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S103"
     ],
@@ -2108,18 +2350,20 @@
       "security"
     ],
     "legal_status": "NPO法人",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Naha"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S104"
     ],
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "labor_or_education_union",
+    "actor_class": "labor_union",
     "aliases": [],
     "display_label": "沖縄県教職員組合",
     "display_status": "demo",
@@ -2133,18 +2377,20 @@
       "anti_war"
     ],
     "legal_status": "labor_union",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S105"
     ],
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "labor_or_education_union",
+    "actor_class": "labor_union",
     "aliases": [],
     "display_label": "沖縄県高等学校障害児学校教職員組合",
     "display_status": "demo",
@@ -2158,18 +2404,20 @@
       "anti_base"
     ],
     "legal_status": "labor_union",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S106"
     ],
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "labor_union_federation",
+    "actor_class": "labor_union",
     "aliases": [],
     "display_label": "日本労働組合総連合会沖縄県連合会（連合沖縄）",
     "display_status": "demo",
@@ -2183,11 +2431,13 @@
       "anti_base"
     ],
     "legal_status": "labor_union_federation",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S107",
       "S108"
@@ -2195,7 +2445,7 @@
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "labor_union_federation",
+    "actor_class": "labor_union",
     "aliases": [],
     "display_label": "沖縄県労働組合総連合",
     "display_status": "demo",
@@ -2209,11 +2459,13 @@
       "anti_war"
     ],
     "legal_status": "labor_union_federation",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S109"
     ],
@@ -2234,11 +2486,13 @@
       "Henoko"
     ],
     "legal_status": "labor_union",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S110"
     ],
@@ -2259,11 +2513,13 @@
       "frontline_prevention"
     ],
     "legal_status": "informal_association",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Miyako"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S112",
       "S113"
@@ -2285,11 +2541,13 @@
       "frontline_prevention"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Miyako"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S112"
     ],
@@ -2310,11 +2568,13 @@
       "community"
     ],
     "legal_status": "informal_association",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Miyako"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S114"
     ],
@@ -2335,11 +2595,13 @@
       "community"
     ],
     "legal_status": "NPO法人",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Miyako"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S115"
     ],
@@ -2361,6 +2623,7 @@
       "base_environment"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Kadena",
@@ -2368,6 +2631,7 @@
       "central Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S116",
       "S117"
@@ -2389,11 +2653,13 @@
       "frontline_prevention"
     ],
     "legal_status": "informal_association",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Uruma"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S118",
       "S119"
@@ -2415,6 +2681,7 @@
       "public_education"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
@@ -2423,6 +2690,7 @@
       "Yonaguni"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [
       "S120"
     ],
@@ -2443,12 +2711,14 @@
       "life_safety"
     ],
     "legal_status": "lawyers_network",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Okinawa litigation"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S121"
     ],
@@ -2469,6 +2739,7 @@
       "anti_base"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
@@ -2476,6 +2747,7 @@
       "Futenma"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S122",
       "S123"
@@ -2497,18 +2769,20 @@
       "anti_base"
     ],
     "legal_status": "litigation_team",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Futenma"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S124"
     ],
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "womens_or_human_rights_ngo",
+    "actor_class": "womens_organization",
     "aliases": [],
     "display_label": "日本YWCA",
     "display_status": "demo",
@@ -2522,11 +2796,13 @@
       "Henoko"
     ],
     "legal_status": "public_interest_foundation",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S125"
     ],
@@ -2556,12 +2832,14 @@
       "solidarity"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Tokyo",
       "Henoko"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S126",
       "S127"
@@ -2569,7 +2847,7 @@
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "womens_or_human_rights_ngo",
+    "actor_class": "womens_organization",
     "aliases": [],
     "display_label": "沖縄YWCA",
     "display_status": "demo",
@@ -2583,11 +2861,13 @@
       "anti_base"
     ],
     "legal_status": "association_or_regional_ywca",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S144",
       "S295"
@@ -2609,11 +2889,13 @@
       "peace"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S146",
       "S147",
@@ -2636,12 +2918,14 @@
       "anti_base"
     ],
     "legal_status": "litigation_team",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Kadena",
       "Okinawa"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S149",
       "S150",
@@ -2665,12 +2949,14 @@
       "mobilization"
     ],
     "legal_status": "informal_association",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Osaka",
       "Henoko"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S153",
       "S154"
@@ -2678,7 +2964,7 @@
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "womens_or_community_organization",
+    "actor_class": "womens_organization",
     "aliases": [
       {
         "label": "女団協",
@@ -2709,11 +2995,13 @@
       "human_rights"
     ],
     "legal_status": "informal_network",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S200",
       "S201",
@@ -2739,11 +3027,13 @@
       "environment"
     ],
     "legal_status": "informal_association",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Miyako"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S158",
       "S204",
@@ -2780,12 +3070,14 @@
       "legal"
     ],
     "legal_status": "informal",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Ginowan",
       "Futenma"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S273",
       "S274",
@@ -2830,12 +3122,14 @@
       "mobilization"
     ],
     "legal_status": "labor_union",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Naha",
       "Ishigaki"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S284",
       "S285",
@@ -2847,7 +3141,7 @@
     "unresolved_source_refs": []
   },
   {
-    "actor_class": "womens_or_community_organization",
+    "actor_class": "womens_organization",
     "aliases": [
       {
         "label": "新婦人沖縄県本部",
@@ -2871,11 +3165,13 @@
       "referendum"
     ],
     "legal_status": "informal_association",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S254",
       "S280",
@@ -2898,11 +3194,13 @@
       "base_community_welfare"
     ],
     "legal_status": "not_for_profit",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Okinawa bases"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X001"
@@ -2921,11 +3219,13 @@
       "base_community_welfare"
     ],
     "legal_status": "company",
+    "merged_duplicate_of": "",
     "origin_type": "corporate",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X002"
@@ -2944,11 +3244,13 @@
       "base_community_welfare"
     ],
     "legal_status": "company",
+    "merged_duplicate_of": "",
     "origin_type": "corporate",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X003"
@@ -3004,11 +3306,13 @@
       "base_community_welfare"
     ],
     "legal_status": "registered_nonprofit（EIN 98-0227149 pending Form 990 check）",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Okinawa bases"
     ],
     "review_status": "human_revised",
+    "scope_status": "",
     "source_ids": [
       "S041",
       "S055",
@@ -3032,11 +3336,13 @@
       "charity"
     ],
     "legal_status": "club/private_org",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Okinawa bases"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S055"
     ],
@@ -3056,11 +3362,13 @@
       "scholarship"
     ],
     "legal_status": "registered_nonprofit（EIN 98-0214323）",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Kadena"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S075",
       "S076"
@@ -3081,11 +3389,13 @@
       "base_community_welfare"
     ],
     "legal_status": "501c3（EIN 98-0346507）",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Okinawa bases"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S041",
       "S053",
@@ -3106,12 +3416,14 @@
       "emergency_support"
     ],
     "legal_status": "nonprofit_or_base_office",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Camp Foster",
       "U.S. Naval Hospital Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X008"
@@ -3130,11 +3442,13 @@
       "emergency_support"
     ],
     "legal_status": "nonprofit_or_base_office",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Camp Foster"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X009"
@@ -3154,11 +3468,13 @@
       "public_diplomacy"
     ],
     "legal_status": "npo_or_ngo",
+    "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X010"
@@ -3177,11 +3493,13 @@
       "administrative_collaboration"
     ],
     "legal_status": "public_institution",
+    "merged_duplicate_of": "",
     "origin_type": "public_institution",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X011"
@@ -3200,6 +3518,7 @@
       "youth_exchange"
     ],
     "legal_status": "public_private_partnership",
+    "merged_duplicate_of": "",
     "origin_type": "mixed_or_network",
     "primary_places": [
       "Japan",
@@ -3207,6 +3526,7 @@
       "Okinawa possible"
     ],
     "review_status": "ai_seeded",
+    "scope_status": "",
     "source_ids": [],
     "unresolved_source_refs": [
       "X012"
@@ -3225,11 +3545,13 @@
       "youth_exchange"
     ],
     "legal_status": "grant_program",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Okinawa"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S056",
       "S082",
@@ -3251,11 +3573,13 @@
       "grantmaking"
     ],
     "legal_status": "foundation",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Asia-Pacific"
     ],
-    "review_status": "watchlist_only",
+    "review_status": "human_checked",
+    "scope_status": "watchlist_only",
     "source_ids": [
       "S085",
       "S086"
@@ -3275,12 +3599,14 @@
       "USAID_funding_method_sample"
     ],
     "legal_status": "ngo",
+    "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "international"
     ],
-    "review_status": "watchlist_only",
+    "review_status": "human_checked",
+    "scope_status": "in_scope_limited",
     "source_ids": [
       "S087",
       "S088"
@@ -3335,12 +3661,14 @@
       "base_community_welfare"
     ],
     "legal_status": "501c3/registered_nonprofit（EIN 46-0598583）",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Camp Foster",
       "Okinawa bases"
     ],
     "review_status": "human_checked",
+    "scope_status": "",
     "source_ids": [
       "S041",
       "S055",
@@ -3372,12 +3700,14 @@
       "base_community_welfare"
     ],
     "legal_status": "unclear",
+    "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
       "Okinawa bases",
       "Torii Station?"
     ],
     "review_status": "needs_second_source",
+    "scope_status": "",
     "source_ids": [
       "S041",
       "S072",

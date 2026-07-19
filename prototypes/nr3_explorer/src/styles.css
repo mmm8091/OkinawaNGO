@@ -1969,6 +1969,265 @@ button {
   font-size: 10px;
 }
 
+/* ---------------- L0 relation area ---------------- */
+
+.relation-list {
+  display: grid;
+  gap: 8px;
+}
+
+.relation-row {
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fffdf7;
+}
+
+.relation-row.candidate {
+  border-style: dashed;
+  border-color: #d8c491;
+  background: #fdf9ec;
+}
+
+.relation-row.record {
+  background: #f7f6f1;
+}
+
+.relation-row > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+
+.family-chip {
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: #fdfcf7;
+  font-size: 10px;
+}
+
+.claim-chip {
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-style: normal;
+}
+
+.claim-chip.supported {
+  background: #eaf2ee;
+  border: 1px solid #9cb4b1;
+  color: var(--teal-dark);
+}
+
+.claim-chip.supported_bounded {
+  background: #f7f0dd;
+  border: 1px solid #ddc490;
+  color: #8a6c1e;
+}
+
+.claim-chip.candidate {
+  background: transparent;
+  border: 1px dashed #c9a86a;
+  color: #8a6c1e;
+}
+
+.record-type {
+  color: var(--muted);
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+.relation-dir {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-size: var(--fs-body);
+  line-height: 1.5;
+}
+
+.org-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--teal-dark);
+  cursor: pointer;
+  font-size: var(--fs-body);
+  font-weight: 600;
+  text-align: left;
+}
+
+.org-link:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.org-link:disabled {
+  color: var(--muted);
+  cursor: default;
+}
+
+.relation-type {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: var(--fs-overline);
+}
+
+.scope-lines {
+  margin-top: 8px;
+  display: grid;
+  gap: 4px;
+}
+
+.scope-lines p {
+  margin: 0;
+  color: #4a6066;
+  font-size: var(--fs-overline);
+  line-height: 1.55;
+}
+
+.scope-lines p small,
+.record-scope small {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: #eaf2ee;
+  color: var(--teal-dark);
+  font-size: 9px;
+}
+
+.scope-lines p.missing small,
+.record-scope.missing small {
+  background: #f7f0dd;
+  color: #8a6c1e;
+}
+
+.relation-amount {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink);
+  font-size: var(--fs-overline);
+  font-weight: 600;
+}
+
+.relation-meta {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.relation-meta > span {
+  padding: 2px 6px;
+  border: 1px solid #d4ddda;
+  border-radius: 5px;
+  background: var(--paper-2);
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.relation-row .limit-line,
+.record-scope {
+  margin: 8px 0 0;
+  padding-left: 8px;
+  border-left: 2px solid #7ba2a0;
+  color: #647a7f;
+  font-size: var(--fs-overline);
+  line-height: 1.5;
+}
+
+.record-scope.missing {
+  border-left-color: #ddc490;
+}
+
+/* ---------------- L1 relation canvas ---------------- */
+
+.family-toggles {
+  position: absolute;
+  z-index: 3;
+  top: 16px;
+  left: 84px;
+  max-width: 78%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.family-toggles button {
+  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #cfd9d5;
+  border-radius: 14px;
+  background: rgba(250, 249, 244, 0.92);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: var(--fs-small);
+}
+
+.family-toggles button i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.family-toggles button.off {
+  opacity: 0.45;
+}
+
+.edge-card {
+  position: absolute;
+  z-index: 4;
+  top: 60px;
+  right: 18px;
+  width: 300px;
+  max-width: 76%;
+  padding: 12px 14px;
+  border: 1px solid #cbd9d5;
+  border-radius: 10px;
+  background: rgba(252, 250, 244, 0.98);
+  box-shadow: 0 10px 30px rgba(28, 61, 67, 0.14);
+}
+
+.edge-card > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.edge-card > header strong {
+  font-size: var(--fs-body);
+}
+
+.edge-card > header button {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d2dcd8;
+  border-radius: 6px;
+  background: transparent;
+  color: #607579;
+  cursor: pointer;
+}
+
+.edge-card-dir {
+  margin: 8px 0 0;
+  color: #3f585e;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+
+.relation-note {
+  bottom: 18px;
+}
+
 /* ---------------- source chips as buttons ---------------- */
 
 .source-chips button {

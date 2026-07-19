@@ -84,6 +84,26 @@ export const UI_STRINGS = {
   "compare.add": { zh: "加入比较", ja: "比較に追加", en: "Add to compare" },
   "compare.hint": { zh: "再选一个 episode 进行比较", ja: "もう1件選んで比較", en: "Pick one more episode to compare" },
   "section.events": { zh: "事件记录", ja: "イベント記録", en: "Event records" },
+  "section.relations": { zh: "与其他组织的关系", ja: "他組織との関係", en: "Relations with other organizations" },
+  "section.relationsSub": { zh: "类型化 · 按确认分层", ja: "タイプ別・確認度別", en: "Typed · by confirmation" },
+  "section.otherRecords": { zh: "其他记录与研究线索", ja: "その他の記録と研究リード", en: "Other records & research leads" },
+  "section.otherRecordsSub": { zh: "非组织关系边", ja: "組織関係辺ではない", en: "Not dyadic relations" },
+  "relation.notDyadic": { zh: "非组织关系边", ja: "組織関係辺ではない", en: "Not a dyadic relation" },
+  "relation.isLead": { zh: "线索，非资助事实", ja: "リード・資金事実ではない", en: "Lead, not a funding fact" },
+  "relation.eventRecord": { zh: "事件参与记录", ja: "イベント参加記録", en: "Event participation record" },
+  "relation.caseRole": { zh: "案件角色，非协作边", ja: "事件役割・協力辺ではない", en: "Case role, not a collaboration edge" },
+  "relation.confirmed": { zh: "已确认", ja: "確認済み", en: "Confirmed" },
+  "relation.missing": { zh: "缺口", ja: "欠落", en: "Missing" },
+  "relation.counts": {
+    zh: "已确认 {s} · 有限确认 {b} · 待审 {c} · 线索 {l}",
+    ja: "確認 {s} ・ 限定 {b} ・ 審査中 {c} ・ リード {l}",
+    en: "{s} supported · {b} bounded · {c} pending · {l} leads",
+  },
+  "empty.relations": {
+    zh: "该组织暂无已核组织关系",
+    ja: "この組織の已核関係はありません",
+    en: "No reviewed relations for this actor",
+  },
   "empty.actorEvents": { zh: "默认层暂无事件记录", ja: "既定層にイベント記録なし", en: "No event records in the demo layer" },
 
   // actors page
@@ -101,6 +121,14 @@ export const UI_STRINGS = {
   },
   "actors.emptyTitle": { zh: "没有匹配的复核关联", ja: "一致する審査済み関連がありません", en: "No matching reviewed links" },
   "actors.noMatch": { zh: "无匹配组织", ja: "一致する組織なし", en: "No matching actors" },
+  "actors.mode.ecology": { zh: "议题生态", ja: "課題エコロジー", en: "Issue ecology" },
+  "actors.mode.relation": { zh: "组织关系", ja: "組織関係", en: "Relations" },
+  "actors.relationCanvasAria": { zh: "组织关系图", ja: "組織関係図", en: "Actor relation graph" },
+  "actors.relationNote": {
+    zh: "已确认 {s} · 有限确认 {b} · 待审 {c}（仅两端均为 registry 组织的关系）",
+    ja: "確認 {s} ・ 限定 {b} ・ 審査中 {c}（両端が registry 団体の関係のみ）",
+    en: "{s} supported · {b} bounded · {c} pending (dyadic registry-actor relations only)",
+  },
   "actors.emptyHint": { zh: "调整组织类型、议题或搜索词", ja: "タイプ・課題・検索語を調整", en: "Try another class, issue, or search term" },
   "actors.panelEmptyTitle": { zh: "选择一个组织", ja: "組織を選択", en: "Select an actor" },
   "actors.panelEmptyHint": {

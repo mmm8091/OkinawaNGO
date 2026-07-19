@@ -9,16 +9,24 @@ import { actorClassGroup, actorClassMeta, labelOf } from "../lib/data.js";
 import { tr, useLang } from "../lib/labels.js";
 import { tu } from "../lib/ui_strings.js";
 import { EvidenceMark, PendingBadge, SourceChips } from "./ui.jsx";
+import { RelationArea } from "./RelationArea.jsx";
 
 export function ActorPanel({
   actor,
+  actors,
   issues,
   relations,
   issueFilter,
   onPickIssue,
   onPickYear,
+  onSelectActor,
   layer,
   candidates,
+  dyadicRelations,
+  administrativeRecords,
+  aggregateObservations,
+  typedEventParticipation,
+  caseRoles,
 }) {
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const research = layer === "research" && candidates;
@@ -156,6 +164,18 @@ export function ActorPanel({
           </div>
         </section>
       )}
+      <RelationArea
+        actor={actor}
+        actors={actors}
+        dyadicRelations={dyadicRelations}
+        administrativeRecords={administrativeRecords}
+        aggregateObservations={aggregateObservations}
+        eventParticipation={typedEventParticipation}
+        caseRoles={caseRoles}
+        layer={layer}
+        candidates={candidates}
+        onSelectActor={onSelectActor}
+      />
       <section className="detail-section compact">
         <header>
           <span>{tu("section.places", lang)}</span>

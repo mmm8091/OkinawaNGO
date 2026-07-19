@@ -1147,6 +1147,311 @@ export const LABELS = {
     "zh": "已驳回（归档不匹配）",
     "ja": "却下（アーカイブ不一致）",
     "en": "Rejected (archive mismatch)"
+  },
+  "resources_funding": {
+    "zh": "资源与资助",
+    "ja": "資源・助成",
+    "en": "Resources & funding"
+  },
+  "commission_service": {
+    "zh": "委托与服务",
+    "ja": "委託・サービス",
+    "en": "Commission & service"
+  },
+  "legal_collaboration": {
+    "zh": "法律协作",
+    "ja": "法的協力",
+    "en": "Legal collaboration"
+  },
+  "structural_affiliation": {
+    "zh": "结构隶属",
+    "ja": "構造的所属",
+    "en": "Structural affiliation"
+  },
+  "coordination": {
+    "zh": "协调与共同行动",
+    "ja": "調整・共同行動",
+    "en": "Coordination & co-action"
+  },
+  "supported": {
+    "zh": "已确认",
+    "ja": "確認済み",
+    "en": "Supported"
+  },
+  "supported_bounded": {
+    "zh": "有限确认",
+    "ja": "限定確認",
+    "en": "Supported (bounded)"
+  },
+  "candidate": {
+    "zh": "待审",
+    "ja": "審査中",
+    "en": "Candidate"
+  },
+  "lead": {
+    "zh": "线索",
+    "ja": "リード",
+    "en": "Lead"
+  },
+  "unsupported": {
+    "zh": "不支持",
+    "ja": "支持不可",
+    "en": "Unsupported"
+  },
+  "donation": {
+    "zh": "捐赠",
+    "ja": "寄付",
+    "en": "Donation"
+  },
+  "sponsorship": {
+    "zh": "赞助",
+    "ja": "スポンサー",
+    "en": "Sponsorship"
+  },
+  "grant": {
+    "zh": "资助拨款",
+    "ja": "助成金",
+    "en": "Grant"
+  },
+  "funding_contribution": {
+    "zh": "资金贡献",
+    "ja": "資金拠出",
+    "en": "Funding contribution"
+  },
+  "in_kind_donation": {
+    "zh": "实物捐赠",
+    "ja": "現物寄付",
+    "en": "In-kind donation"
+  },
+  "co_in_kind_donation": {
+    "zh": "联合实物捐赠",
+    "ja": "共同現物寄付",
+    "en": "Co in-kind donation"
+  },
+  "commission": {
+    "zh": "委托",
+    "ja": "委託",
+    "en": "Commission"
+  },
+  "ngo_consultant_commission": {
+    "zh": "NGO 顾问委托",
+    "ja": "NGOコンサル委託",
+    "en": "NGO consultant commission"
+  },
+  "service": {
+    "zh": "服务",
+    "ja": "サービス",
+    "en": "Service"
+  },
+  "site_presence": {
+    "zh": "驻在服务",
+    "ja": "駐在サービス",
+    "en": "Site presence"
+  },
+  "legal_counsel": {
+    "zh": "法律代理",
+    "ja": "法律代理",
+    "en": "Legal counsel"
+  },
+  "legal_support": {
+    "zh": "法律支持",
+    "ja": "法的支援",
+    "en": "Legal support"
+  },
+  "organizational_affiliation": {
+    "zh": "组织隶属",
+    "ja": "組織所属",
+    "en": "Organizational affiliation"
+  },
+  "network_membership": {
+    "zh": "网络成员",
+    "ja": "ネットワーク加盟",
+    "en": "Network membership"
+  },
+  "solidarity_branch": {
+    "zh": "连带分支",
+    "ja": "連帯支部",
+    "en": "Solidarity branch"
+  },
+  "partnership": {
+    "zh": "伙伴关系",
+    "ja": "パートナーシップ",
+    "en": "Partnership"
+  },
+  "partner_action": {
+    "zh": "伙伴行动",
+    "ja": "パートナー行動",
+    "en": "Partner action"
+  },
+  "administrative_collaboration": {
+    "zh": "行政协作",
+    "ja": "行政協力",
+    "en": "Administrative collaboration"
+  },
+  "event_collaboration": {
+    "zh": "活动协作",
+    "ja": "イベント協力",
+    "en": "Event collaboration"
+  },
+  "event_affiliation": {
+    "zh": "活动关联",
+    "ja": "イベント関連",
+    "en": "Event affiliation"
+  },
+  "grant_opportunity": {
+    "zh": "资助机会（线索）",
+    "ja": "助成機会（リード）",
+    "en": "Grant opportunity (lead)"
+  },
+  "co_presence_lead": {
+    "zh": "同场线索",
+    "ja": "同席リード",
+    "en": "Co-presence lead"
+  },
+  "aggregate_financial_contribution": {
+    "zh": "汇总资金贡献",
+    "ja": "総括資金拠出",
+    "en": "Aggregate financial contribution"
+  },
+  "umbrella_coordination_association": {
+    "zh": "伞状协调协会",
+    "ja": "傘下調整協会",
+    "en": "Umbrella coordination association"
+  },
+  "member_club": {
+    "zh": "成员俱乐部",
+    "ja": "加盟クラブ",
+    "en": "Member club"
+  },
+  "donor": {
+    "zh": "捐赠方",
+    "ja": "寄付者",
+    "en": "Donor"
+  },
+  "recipient_service_organization": {
+    "zh": "受赠服务组织",
+    "ja": "受領サービス組織",
+    "en": "Recipient service organization"
+  },
+  "contributing_member_club": {
+    "zh": "出资成员俱乐部",
+    "ja": "拠出加盟クラブ",
+    "en": "Contributing member club"
+  },
+  "donor_reporting_aggregate": {
+    "zh": "汇总申报捐赠方",
+    "ja": "総括報告寄付者",
+    "en": "Donor reporting aggregate"
+  },
+  "composite_recipient_scope": {
+    "zh": "混合接收范围",
+    "ja": "混合受領範囲",
+    "en": "Composite recipient scope"
+  },
+  "direct_charitable_donation": {
+    "zh": "直接慈善捐赠",
+    "ja": "直接慈善寄付",
+    "en": "Direct charitable donation"
+  },
+  "named_contribution_amount_unknown": {
+    "zh": "有向贡献·金额未公开",
+    "ja": "指名拠出・金額未公開",
+    "en": "Named contribution"
+  },
+  "aggregate_mixed_recipient_no_allocation": {
+    "zh": "混合接收方汇总·不作分配",
+    "ja": "混合受領者の総括・配分なし",
+    "en": "Aggregate mixed recipients"
+  },
+  "not_applicable_membership": {
+    "zh": "非资金（成员关系）",
+    "ja": "資金ではない（加盟）",
+    "en": "Not applicable (membership)"
+  },
+  "womens_organization": {
+    "zh": "女性组织",
+    "ja": "女性団体",
+    "en": "Women's organization"
+  },
+  "Sakishima Islands": {
+    "zh": "先岛群岛",
+    "ja": "先島諸島",
+    "en": "Sakishima Islands"
+  },
+  "aggregate_history": {
+    "zh": "历史累计记录",
+    "ja": "歴史的累計記録",
+    "en": "Historical aggregate record"
+  },
+  "in_kind_acquisition_assistance": {
+    "zh": "实物取得协助",
+    "ja": "現物取得支援",
+    "en": "In-kind acquisition assistance"
+  },
+  "joint_in_kind_contribution": {
+    "zh": "共同实物贡献",
+    "ja": "共同現物拠出",
+    "en": "Joint in-kind contribution"
+  },
+  "legal_role": {
+    "zh": "案件角色",
+    "ja": "事件上の役割",
+    "en": "Case role"
+  },
+  "not_funding_relation": {
+    "zh": "非资金关系",
+    "ja": "資金関係ではない",
+    "en": "Not a funding relation"
+  },
+  "approximate_40_year_aggregate_no_recipient_or_year_allocation": {
+    "zh": "约40年累计·不可按年份或受赠方分配",
+    "ja": "約40年の累計・年別／受領者別配分不可",
+    "en": "Approx. 40-year aggregate; no year or recipient allocation"
+  },
+  "in_kind_item_value_not_cash": {
+    "zh": "实物估值·非现金",
+    "ja": "現物評価額・現金ではない",
+    "en": "In-kind item value, not cash"
+  },
+  "in_kind_item_no_amount": {
+    "zh": "实物捐赠·金额未公开",
+    "ja": "現物寄付・金額不明",
+    "en": "In-kind donation, amount undisclosed"
+  },
+  "no_amount_no_quantity_no_share_allocation": {
+    "zh": "无金额／数量／份额分配",
+    "ja": "金額・数量・持分配分なし",
+    "en": "No amount, quantity, or share allocation"
+  },
+  "organization_project_cost_not_payment": {
+    "zh": "组织项目成本·非付款额",
+    "ja": "団体側事業費・支払額ではない",
+    "en": "Organization project cost, not payment"
+  },
+  "whole_program_project_cost_not_actor_payment": {
+    "zh": "项目总成本·非组织付款额",
+    "ja": "事業全体費・団体への支払額ではない",
+    "en": "Whole-program cost, not actor payment"
+  },
+  "multi_year_named_commission_flows_in_R10_amount_table": {
+    "zh": "多年委托金额另见R10表",
+    "ja": "複数年度の委託額はR10表参照",
+    "en": "Multi-year commission amounts remain in R10 table"
+  },
+  "sponsor_tier_and_support_types_no_amount": {
+    "zh": "赞助等级与支持类型·无金额",
+    "ja": "スポンサー区分・支援種別のみ／金額なし",
+    "en": "Sponsor tier and support types; no amount"
+  },
+  "sponsor_tier_no_amount_or_local_allocation": {
+    "zh": "赞助等级·无金额或冲绳分配",
+    "ja": "スポンサー区分のみ／金額・沖縄配分なし",
+    "en": "Sponsor tier; no amount or Okinawa allocation"
+  },
+  "no_amount_no_contributor_share_allocation": {
+    "zh": "无金额／贡献者份额分配",
+    "ja": "金額・拠出者別配分なし",
+    "en": "No amount or contributor-share allocation"
   }
 };
 

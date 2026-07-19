@@ -29,6 +29,7 @@ export const CLASS_TO_GROUP = {
   local_npo: "civic",
   womens_or_human_rights_ngo: "civic",
   womens_or_community_organization: "civic",
+  womens_organization: "civic",
   international_advocacy_actor: "international",
   international_ngo: "international",
   local_international_cooperation_ngo: "international",
@@ -60,6 +61,7 @@ export const PLACE_DISPLAY_REGION = {
   P011: "yaeyama",
   P012: "yaeyama",
   P013: "miyako",
+  P021: "sakishima",
 };
 export const placeDisplayRegion = (place) =>
   PLACE_DISPLAY_REGION[place.id] || "okinawa";
@@ -127,6 +129,11 @@ export function useResearchData() {
 
   useEffect(() => {
     let mounted = true;
+    const tolerantJson = (url, fallback) =>
+      fetch(url)
+        .then((r) => (r.ok ? r.json() : fallback))
+        .then((data) => (Array.isArray(data) ? data : fallback))
+        .catch(() => fallback);
     Promise.all([
       fetch("/demo/actors.json").then((r) => r.json()),
       fetch("/demo/places.json").then((r) => r.json()),
@@ -139,6 +146,12 @@ export function useResearchData() {
       fetch("/views/pathways.json").then((r) => r.json()),
       fetch("/views/evidence_coverage.json").then((r) => r.json()),
       fetch("/manifest.json").then((r) => r.json()),
+      tolerantJson("/demo/dyadic_relations.json", []),
+      tolerantJson("/demo/administrative_records.json", []),
+      tolerantJson("/demo/aggregate_observations.json", []),
+      tolerantJson("/demo/typed_event_participation.json", []),
+      tolerantJson("/demo/case_roles.json", []),
+      tolerantJson("/demo/genealogy_anchors.json", []),
     ])
       .then(
         ([
@@ -153,11 +166,17 @@ export function useResearchData() {
           pathwaysView,
           coverageView,
           manifest,
+          dyadicRelations,
+          administrativeRecords,
+          aggregateObservations,
+          typedEventParticipation,
+          caseRoles,
+          genealogyAnchors,
         ]) => {
           if (mounted) {
             setState({
               status: "ready",
-              actors,
+              actors: actors.filter((actor) => actor.display_status !== "hidden"),
               places,
               issues,
               relations,
@@ -168,6 +187,12 @@ export function useResearchData() {
               pathwaysView,
               coverageView,
               manifest,
+              dyadicRelations,
+              administrativeRecords,
+              aggregateObservations,
+              typedEventParticipation,
+              caseRoles,
+              genealogyAnchors,
             });
           }
         },

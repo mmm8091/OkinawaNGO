@@ -258,5 +258,18 @@
     "region": "Southern Okinawa",
     "review_status": "taxonomy",
     "source_ids": []
+  },
+  {
+    "display_label": "Sakishima Islands",
+    "display_status": "demo",
+    "display_summary": "Regional scale for sources that explicitly name Sakishima as a whole.",
+    "evidence_level": "",
+    "id": "P021",
+    "interpretation_limit": "A place node is a navigation and coding object; its visibility or number of linked records is not activity intensity.",
+    "phase1_priority": "high",
+    "place_type": "region",
+    "region": "Okinawa",
+    "review_status": "taxonomy",
+    "source_ids": []
   }
 ]

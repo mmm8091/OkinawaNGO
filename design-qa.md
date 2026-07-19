@@ -116,5 +116,23 @@ following principal decisions applied:
   fields or the 中/日 switcher labels by design); 演示视图 renamed 已核视图 per principal
   decision; handoff doc separates the A073 search test from the A002 event chain; evidence
   drawer closes on route change. Verified at 1280×900 and 390×844; build + console PASS/0.
+- Iteration 10 (2026-07-20, relation layer): NR-02 builder extended with typed relation
+  collections (historical pre-merge snapshot; counts superseded by iteration 11). L0 panel relation area +
+  other-records/leads area; L1 relation graph state on the Actors page (family colors,
+  direction arrows, reviewed solid/candidate dashed, per-family toggles, edge detail card,
+  layered counts). Control cases verified: F021 supported USD 3,250 direct donation;
+  F025 supported_bounded with empty amount and visible missing scope; R10R029 only in the
+  aggregate records area, never on the graph. Screenshots: `qa/rel_*.png`.
+- Iteration 11 (2026-07-20, post-merge repair): rebuilt from the merged central
+  field-level decisions instead of re-inferring all non-HR033 rows. Current typed split:
+  14 reviewed/8 candidate dyadic relations, 6 reviewed/5 candidate administrative
+  records, 2 aggregate observations, 4 reviewed event-participation records, 4 research
+  leads and 27 case roles; F036 remains event participation. A072 is hidden from ordinary
+  search and display; AI068 and other deactivated actor-issue rows are absent from the
+  default graph (238 active inputs). Relation-class filtering changes the visible family
+  counts; AWWA panel renders bounded amount semantics; NOSCO panel labels F036 as event
+  participation and explicitly rejects alliance inference. `npm run build` and the full
+  Python suite pass; page console has no app-origin warning/error (only unrelated browser
+  extension warnings).
 
 final result: pass (agent-verified with rendered evidence; awaiting principal confirmation)

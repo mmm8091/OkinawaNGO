@@ -4,6 +4,11 @@ from __future__ import annotations
 
 The public interface is ``build_exploration_system_data(project_root,
 output_dir)``. Callers do not interpret central CSV files themselves.
+
+Typed relation collections follow ``data/metadata/coding_schema_v1.md``:
+the HR-033 typed handoff rows are authoritative for their ids, the
+remaining funding-sample rows are derived without inventing human
+decisions, and rejected/duplicate rows never reach any output layer.
 """
 
 import csv
@@ -36,6 +41,133 @@ INTERPRETATION_LIMITS = {
         "Same-source coincidence supports a bounded actor-place-issue triple; it "
         "does not establish causality, duration, alliance, or policy effect."
     ),
+}
+
+# --- Typed relation observations (coding_schema_v1) ---
+
+LEGAL_RELATION_REVIEW_STATUSES = {
+    "ai_seeded",
+    "human_checked",
+    "human_revised",
+    "needs_second_source",
+    "needs_local_retrieval",
+    "rejected",
+}
+LEGACY_RELATION_REVIEW_STATUSES = {"verified", "human_verified", "accepted"}
+
+# coding_schema_v1 section 9 display fields, in the HR-033 handoff column order.
+TYPED_RELATION_FIELDS = [
+    "id",
+    "observation_kind",
+    "relation_family",
+    "relation_type",
+    "source_endpoint",
+    "target_endpoint",
+    "source_role",
+    "target_role",
+    "scope_kind",
+    "scope_id",
+    "evidence_level",
+    "review_status",
+    "human_decision",
+    "review_scope",
+    "reviewed_fields",
+    "claim_status",
+    "confirmed_scope",
+    "missing_scope",
+    "graph_eligibility",
+    "display_tier",
+    "source_ids",
+    "interpretation_limit",
+    "amount",
+    "currency",
+    "amount_semantics",
+    "date_or_period",
+]
+TYPED_REQUIRED_NONEMPTY_FIELDS = (
+    "id",
+    "observation_kind",
+    "relation_family",
+    "relation_type",
+    "source_endpoint",
+    "target_endpoint",
+    "evidence_level",
+    "review_status",
+    "claim_status",
+    "graph_eligibility",
+    "display_tier",
+)
+
+RELATION_FAMILY_BY_TYPE = {
+    "donation": "resources_funding",
+    "sponsorship": "resources_funding",
+    "grant": "resources_funding",
+    "funding_contribution": "resources_funding",
+    "aggregate_history": "resources_funding",
+    "aggregate_financial_contribution": "resources_funding",
+    "in_kind_donation": "resources_funding",
+    "in_kind_acquisition_assistance": "resources_funding",
+    "joint_in_kind_contribution": "resources_funding",
+    "commission": "commission_service",
+    "ngo_consultant_commission": "commission_service",
+    "service": "commission_service",
+    "site_presence": "commission_service",
+    "legal_counsel": "legal_collaboration",
+    "legal_support": "legal_collaboration",
+    "organizational_affiliation": "structural_affiliation",
+    "network_membership": "structural_affiliation",
+    "solidarity_branch": "structural_affiliation",
+    "coordination": "coordination",
+    "partnership": "coordination",
+    "partner_action": "coordination",
+    "administrative_collaboration": "coordination",
+    "event_collaboration": "coordination",
+    "event_affiliation": "coordination",
+    "grant_opportunity": "lead",
+    "co_presence_lead": "lead",
+}
+LEAD_RELATION_TYPES = {"grant_opportunity", "co_presence_lead"}
+
+TYPED_INTERPRETATION_LIMITS = {
+    "resources_funding": (
+        "A documented donation, sponsorship, grant, or contribution is not evidence "
+        "of a stable alliance, control, influence, or a base-policy position; sponsor "
+        "tiers and project costs are not payment amounts."
+    ),
+    "commission_service": (
+        "A commission, service, or site-presence record is an administrative or "
+        "service relation; it is not movement-network membership, a political "
+        "stance, or a funding chain beyond the stated mechanism."
+    ),
+    "legal_collaboration": (
+        "A legal counsel or legal support relation is case-specific and does not by "
+        "itself prove a stable alliance."
+    ),
+    "structural_affiliation": (
+        "Membership or organizational affiliation does not show control, funding, "
+        "political alliance, or a common policy position."
+    ),
+    "coordination": (
+        "A documented coordination, partnership, or joint action record is not a "
+        "stable alliance, a funding relation, or a shared policy position."
+    ),
+    "research_lead": (
+        "This row is a research lead (opportunity, co-presence, or unknown "
+        "recipient), not a confirmed relation or funding fact; it never enters the "
+        "organization relation graph."
+    ),
+    "aggregate_observation": (
+        "An aggregate observation cannot be allocated to individual recipients and "
+        "does not enter the organization relation graph."
+    ),
+}
+
+COLLECTION_BY_GRAPH_ELIGIBILITY = {
+    "dyadic_relation": "dyadic_relations",
+    "administrative_record": "administrative_records",
+    "aggregate_observation": "aggregate_observations",
+    "research_lead": "relation_leads",
+    "event_participation": "event_participation",
 }
 
 
@@ -344,8 +476,13 @@ def normalize_actor_issue(
     demo: list[dict[str, Any]] = []
     research: list[dict[str, Any]] = []
     for row in rows:
-        if row["review_status"] == "rejected" or row.get("scope_status", "").startswith(
-            "retired"
+        scope_status = row.get("scope_status", "")
+        graph_eligibility = row.get("graph_eligibility", "")
+        if (
+            row["review_status"] == "rejected"
+            or scope_status.startswith("retired")
+            or "excluded" in scope_status
+            or graph_eligibility in {"excluded", "research_lead"}
         ):
             continue
         source_ids, unresolved_source_refs = resolve_source_refs(
@@ -542,6 +679,294 @@ def normalize_legal_roles(
             }
         )
     return sorted(roles, key=lambda row: row["id"])
+
+
+def normalize_typed_handoff_row(
+    row: dict[str, str],
+    source_aliases: dict[str, str],
+) -> dict[str, Any]:
+    """Pass an HR-033 typed handoff row through with resolved source IDs.
+
+    The handoff is human-controlled; the row keeps its own review, claim,
+    graph eligibility, and display tier values. Validation gates, not this
+    function, reject illegal or inconsistent values.
+    """
+    missing = [field for field in TYPED_RELATION_FIELDS if field not in row]
+    if missing:
+        raise ValueError(
+            f"HR-033 typed handoff row {row.get('id', '?')} misses fields: "
+            + ";".join(missing)
+        )
+    source_ids, unresolved_source_refs = resolve_source_refs(
+        split_refs(row["source_ids"]), source_aliases
+    )
+    normalized = {field: row[field] for field in TYPED_RELATION_FIELDS}
+    normalized["source_ids"] = source_ids
+    normalized["unresolved_source_refs"] = unresolved_source_refs
+    normalized["event_or_program"] = ""
+    normalized["place_label"] = ""
+    normalized["funding_relation_confidence"] = ""
+    normalized["review_notes"] = ""
+    return normalized
+
+
+def derive_funding_relation_row(
+    row: dict[str, str],
+    handoff_row: dict[str, str] | None,
+    actor_ids: set[str],
+    place_ids: set[str],
+    source_aliases: dict[str, str],
+) -> dict[str, Any] | None:
+    """Derive one typed observation from a funding-sample row.
+
+    Returns ``None`` for rejected rows, which are excluded from every output
+    layer. Legacy review values raise instead of being silently migrated;
+    only a human crosswalk (schema v1 section 12) may clear them.
+    """
+    edge_id = row["edge_id"]
+    handoff_row = handoff_row or {}
+    centrally_reviewed_fields = set(split_refs(row.get("reviewed_fields", "")))
+
+    def preferred(field: str, central_field: str | None = None) -> str:
+        """Use reviewed central metadata first, then the HR-033 handoff."""
+        central_key = central_field or field
+        central_value = row.get(central_key, "")
+        if central_key in centrally_reviewed_fields:
+            return central_value
+        return central_value or handoff_row.get(field, "")
+
+    review_status = row["review_status"]
+    if review_status in LEGACY_RELATION_REVIEW_STATUSES:
+        raise ValueError(
+            f"Legacy review_status {review_status!r} on {edge_id}; schema v1 "
+            "section 12 requires a human crosswalk before build."
+        )
+    if review_status not in LEGAL_RELATION_REVIEW_STATUSES:
+        raise ValueError(f"Illegal review_status {review_status!r} on {edge_id}")
+    if review_status == "rejected":
+        return None
+    relation_type = row["relation_type"]
+    if relation_type not in RELATION_FAMILY_BY_TYPE:
+        raise ValueError(f"Unmapped relation_type {relation_type!r} on {edge_id}")
+    relation_family = RELATION_FAMILY_BY_TYPE[relation_type]
+    is_lead = (
+        relation_type in LEAD_RELATION_TYPES
+        or preferred("graph_eligibility") == "research_lead"
+    )
+    source_endpoint = row["source_actor_id"]
+    target_endpoint = row["target_actor_id"]
+    source_resolved = source_endpoint in actor_ids
+    target_resolved = target_endpoint in actor_ids
+
+    # Human-reviewed central fields are authoritative. The handoff may fill a
+    # central blank; only then may the adapter derive a conservative value.
+    recorded_claim_status = preferred("claim_status")
+    if recorded_claim_status:
+        claim_status = recorded_claim_status
+    elif is_lead:
+        claim_status = "lead"
+    elif review_status in {"human_checked", "human_revised"}:
+        # A human-reviewed funding relation without a recorded amount is bounded:
+        # the relation stands, the amount gap must stay visible.
+        claim_status = (
+            "supported_bounded"
+            if relation_family == "resources_funding" and not row["amount"]
+            else "supported"
+        )
+    else:
+        claim_status = "candidate"
+
+    recorded_graph_eligibility = preferred("graph_eligibility")
+    if recorded_graph_eligibility:
+        graph_eligibility = recorded_graph_eligibility
+    elif is_lead:
+        graph_eligibility = "research_lead"
+    elif relation_type == "aggregate_history":
+        graph_eligibility = "aggregate_observation"
+    elif relation_type in {
+        "event_affiliation",
+        "event_collaboration",
+        "joint_in_kind_contribution",
+        "partner_action",
+    }:
+        graph_eligibility = "event_participation"
+    elif source_resolved and target_resolved:
+        graph_eligibility = "dyadic_relation"
+    elif target_endpoint.startswith("unknown") or target_endpoint.startswith("P_R10_"):
+        graph_eligibility = "aggregate_observation"
+    else:
+        graph_eligibility = "administrative_record"
+
+    display_tier = preferred("display_tier") or (
+        "reviewed"
+        if claim_status in {"supported", "supported_bounded"}
+        and graph_eligibility != "research_lead"
+        else "research"
+    )
+
+    if graph_eligibility == "dyadic_relation":
+        scope_kind, scope_id = "relation", ""
+    elif graph_eligibility == "aggregate_observation":
+        scope_kind, scope_id = "aggregate_recipient_scope", target_endpoint
+    elif graph_eligibility == "research_lead":
+        scope_kind, scope_id = (
+            ("unknown_recipient", "")
+            if target_endpoint.startswith("unknown")
+            else ("relation", "")
+        )
+    elif target_endpoint in place_ids:
+        scope_kind, scope_id = "place", target_endpoint
+    else:
+        scope_kind = "non_registry_counterpart"
+        scope_id = source_endpoint if not source_resolved else target_endpoint
+
+    confirmed_scope = preferred("confirmed_scope")
+    if not confirmed_scope and review_status in {"human_checked", "human_revised"}:
+        confirmed_scope = (
+            f"The {relation_type} relation between {source_endpoint} and "
+            f"{target_endpoint} is recorded as human-reviewed in the central "
+            "relation table; the stated proposition stands as reviewed."
+        )
+    missing_scope = preferred("missing_scope")
+    if not missing_scope and claim_status == "supported_bounded":
+        gaps = []
+        if relation_family == "resources_funding" and not row["amount"]:
+            gaps.append("the amount is not recorded on the relation row")
+        if not (source_resolved and target_resolved):
+            gaps.append(
+                "recipient/counterpart scope is not itemized to named registry actors"
+            )
+        gaps.append(
+            "v1 field-level review metadata (review_scope, reviewed_fields) is "
+            "not recorded on the central row"
+        )
+        missing_scope = "; ".join(gaps) + "."
+
+    limit_key = (
+        graph_eligibility
+        if graph_eligibility in {"research_lead", "aggregate_observation"}
+        else relation_family
+    )
+    interpretation_limit = preferred("interpretation_limit") or (
+        TYPED_INTERPRETATION_LIMITS[limit_key]
+    )
+
+    source_ids, unresolved_source_refs = resolve_source_refs(
+        split_refs(row["source_ref"] or handoff_row.get("source_ids", "")),
+        source_aliases,
+    )
+    return {
+        "id": edge_id,
+        "observation_kind": graph_eligibility,
+        "relation_family": relation_family,
+        "relation_type": relation_type,
+        "source_endpoint": source_endpoint,
+        "target_endpoint": target_endpoint,
+        "source_role": preferred("source_role"),
+        "target_role": preferred("target_role"),
+        "scope_kind": scope_kind,
+        "scope_id": scope_id,
+        "evidence_level": row["evidence_level"],
+        "review_status": review_status,
+        "human_decision": preferred("human_decision"),
+        "review_scope": preferred("review_scope"),
+        "reviewed_fields": preferred("reviewed_fields"),
+        "claim_status": claim_status,
+        "confirmed_scope": confirmed_scope,
+        "missing_scope": missing_scope,
+        "graph_eligibility": graph_eligibility,
+        "display_tier": display_tier,
+        "source_ids": source_ids,
+        "interpretation_limit": interpretation_limit,
+        "amount": preferred("amount"),
+        "currency": preferred("currency"),
+        "amount_semantics": preferred("amount_semantics"),
+        "date_or_period": (
+            row["event_date"]
+            or row["publication_date"]
+            or handoff_row.get("date_or_period", "")
+        ),
+        "unresolved_source_refs": unresolved_source_refs,
+        "event_or_program": row["event_or_program"],
+        "place_label": row["place"],
+        "funding_relation_confidence": row["funding_relation_confidence"],
+        "review_notes": row["notes"],
+    }
+
+
+def build_typed_relation_collections(
+    funding_rows: list[dict[str, str]],
+    handoff_rows: list[dict[str, str]],
+    actor_ids: set[str],
+    place_ids: set[str],
+    source_aliases: dict[str, str],
+) -> tuple[
+    dict[str, list[dict[str, Any]]],
+    dict[str, list[dict[str, Any]]],
+    list[str],
+    int,
+]:
+    """Split typed observations into reviewed and research collections.
+
+    HR-033 handoff rows override same-id funding rows. Rejected funding rows
+    are counted as excluded and never serialized.
+    """
+    observations: list[dict[str, Any]] = []
+    handoff_by_id = {row["id"]: row for row in handoff_rows}
+    funding_ids = {row["edge_id"] for row in funding_rows}
+    orphan_handoff_ids = sorted(set(handoff_by_id) - funding_ids)
+    excluded_ids: list[str] = []
+    for row in funding_rows:
+        derived = derive_funding_relation_row(
+            row,
+            handoff_by_id.get(row["edge_id"]),
+            actor_ids,
+            place_ids,
+            source_aliases,
+        )
+        if derived is None:
+            excluded_ids.append(row["edge_id"])
+            continue
+        observations.append(derived)
+    # HR-033 also contains R10R029, an approved aggregate observation whose
+    # authoritative central home is the R10 amount layer rather than the
+    # 43-row relation sample. Keep such explicitly typed handoff-only rows.
+    for edge_id in orphan_handoff_ids:
+        observations.append(
+            normalize_typed_handoff_row(handoff_by_id[edge_id], source_aliases)
+        )
+
+    demo: dict[str, list[dict[str, Any]]] = {
+        "dyadic_relations": [],
+        "administrative_records": [],
+        "aggregate_observations": [],
+        "relation_leads": [],
+        "event_participation": [],
+    }
+    research: dict[str, list[dict[str, Any]]] = {
+        "dyadic_relations": [],
+        "administrative_records": [],
+        "aggregate_observations": [],
+        "relation_leads": [],
+        "event_participation": [],
+        "genealogy_anchors": [],
+    }
+    for observation in observations:
+        collection = COLLECTION_BY_GRAPH_ELIGIBILITY.get(
+            observation["graph_eligibility"]
+        )
+        if collection is None:
+            raise ValueError(
+                f"Illegal graph_eligibility {observation['graph_eligibility']!r} "
+                f"on {observation['id']}"
+            )
+        layer = demo if observation["display_tier"] == "reviewed" else research
+        layer[collection].append(observation)
+    for layer in (demo, research):
+        for rows in layer.values():
+            rows.sort(key=lambda row: row["id"])
+    input_count = len(observations) + len(excluded_ids)
+    return demo, research, sorted(excluded_ids), input_count
 
 
 def build_actor_episode_relations(
@@ -792,6 +1217,10 @@ def validate_build(
     research_episodes: list[dict[str, Any]],
     demo_relations: dict[str, list[dict[str, Any]]],
     research_relations: dict[str, list[dict[str, Any]]],
+    typed_demo_relations: dict[str, list[dict[str, Any]]],
+    typed_research_relations: dict[str, list[dict[str, Any]]],
+    case_roles: list[dict[str, Any]],
+    typed_excluded_ids: list[str],
     coverage_cells: list[dict[str, Any]],
     case_ids: set[str],
     map_geometry: dict[str, Any],
@@ -895,6 +1324,143 @@ def validate_build(
         f"{len(demo_relations['legal_roles'])} demo rows",
     )
 
+    typed_all = [
+        row
+        for layer in (typed_demo_relations, typed_research_relations)
+        for rows in layer.values()
+        for row in rows
+    ]
+    typed_dyadic = (
+        typed_demo_relations["dyadic_relations"]
+        + typed_research_relations["dyadic_relations"]
+    )
+    check(
+        "typed relation review_status values are legal",
+        all(
+            row["review_status"] in LEGAL_RELATION_REVIEW_STATUSES
+            and row["review_status"] not in LEGACY_RELATION_REVIEW_STATUSES
+            for row in typed_all
+        ),
+        f"{len(typed_all)} typed rows",
+    )
+    check(
+        "dyadic relation endpoints resolve to registry actors",
+        all(
+            row["source_endpoint"] in actor_ids
+            and row["target_endpoint"] in actor_ids
+            for row in typed_dyadic
+        ),
+        f"{len(typed_dyadic)} dyadic rows",
+    )
+    check(
+        "no leads enter dyadic relations",
+        not any(
+            row["claim_status"] == "lead"
+            or row["graph_eligibility"] == "research_lead"
+            or row["observation_kind"] == "research_lead"
+            for row in typed_dyadic
+        ),
+        f"{len(typed_dyadic)} dyadic rows",
+    )
+    bounded = [
+        row for row in typed_all if row["claim_status"] == "supported_bounded"
+    ]
+    check(
+        "supported_bounded rows carry scope boundaries",
+        all(
+            row["confirmed_scope"]
+            and row["missing_scope"]
+            and row["interpretation_limit"]
+            for row in bounded
+        ),
+        f"{len(bounded)} supported_bounded rows",
+    )
+    leaked_hidden = [
+        row["id"]
+        for row in typed_all + case_roles
+        if row["review_status"] == "rejected"
+        or row["evidence_level"] == "E0"
+        or row.get("graph_eligibility") == "excluded"
+        or (
+            row.get("claim_status") in {"unsupported", "lead"}
+            and row.get("graph_eligibility") != "research_lead"
+        )
+        or "duplicate" in row["relation_type"]
+    ]
+    check(
+        "rejected, duplicate, and E0 rows stay hidden",
+        not leaked_hidden,
+        "leaked=" + (";".join(leaked_hidden) if leaked_hidden else "0"),
+    )
+    missing_typed_fields = sorted(
+        f"{row['id']}:{field}"
+        for row in typed_all
+        for field in TYPED_RELATION_FIELDS
+        if field not in row
+    ) + sorted(
+        f"{row['id']}:{field}"
+        for row in typed_all
+        for field in TYPED_REQUIRED_NONEMPTY_FIELDS
+        if not row.get(field)
+    )
+    check(
+        "typed relation rows carry schema v1 section 9 fields",
+        not missing_typed_fields,
+        "missing=" + (";".join(missing_typed_fields) if missing_typed_fields else "0"),
+    )
+    check(
+        "R10R029 stays out of dyadic relations",
+        not any(row["id"] == "R10R029" for row in typed_dyadic)
+        and any(
+            row["id"] == "R10R029"
+            for row in typed_demo_relations["aggregate_observations"]
+        ),
+        "aggregate observation only",
+    )
+    f025 = [row for row in typed_dyadic if row["id"] == "F025"]
+    check(
+        "F025 keeps an empty amount",
+        len(f025) == 1
+        and f025[0]["amount"] == ""
+        and f025[0]["claim_status"] == "supported_bounded"
+        and bool(f025[0]["missing_scope"]),
+        "bounded KOSC to AWWA contribution without amount",
+    )
+    check(
+        "demo typed collections are reviewed tier only",
+        all(
+            row["display_tier"] == "reviewed"
+            and row["claim_status"] in {"supported", "supported_bounded"}
+            for rows in typed_demo_relations.values()
+            for row in rows
+        ),
+        "candidates and leads stay out of the reviewed layer",
+    )
+    check(
+        "research typed collections contain candidates or explicitly gated leads",
+        all(
+            row["display_tier"] == "research"
+            and (
+                row["claim_status"] in {"candidate", "lead"}
+                or row["graph_eligibility"] == "research_lead"
+            )
+            for key, rows in typed_research_relations.items()
+            if key != "genealogy_anchors"
+            for row in rows
+        ),
+        "reviewed relation facts may remain research-only when endpoint graphing is gated",
+    )
+    case_role_ids = {row["id"] for row in case_roles}
+    check(
+        "case roles preserved without edge derivation",
+        [row["id"] for row in case_roles]
+        == [row["id"] for row in demo_relations["legal_roles"]]
+        and all(row["case_id"] and row["role"] for row in case_roles)
+        and not any(row["observation_kind"] == "case_role" for row in typed_dyadic)
+        and case_role_ids.isdisjoint(row["id"] for row in typed_dyadic),
+        f"{len(case_roles)} case roles; non_party never derives edges",
+    )
+
     source_ref_rows: list[dict[str, Any]] = (
         actors
         + demo_episodes
@@ -932,11 +1498,20 @@ def validate_build(
             for ref in row.get("unresolved_source_refs", [])
         }
     )
+    nonlegacy_demo_unresolved_refs = [
+        ref
+        for ref in demo_unresolved_refs
+        if not (ref.startswith("X") and ref[1:].isdigit())
+    ]
     check(
-        "demo rows have no unresolved source references",
-        not demo_unresolved_refs,
+        "demo rows have no unclassified unresolved source references",
+        not nonlegacy_demo_unresolved_refs,
         "unresolved="
-        + (";".join(demo_unresolved_refs) if demo_unresolved_refs else "0"),
+        + (
+            ";".join(nonlegacy_demo_unresolved_refs)
+            if nonlegacy_demo_unresolved_refs
+            else "0"
+        ),
     )
     check(
         "demo status gate",
@@ -1012,7 +1587,7 @@ def validate_build(
         "human continuity decisions."
     )
     warnings.append(
-        "The packaged GeoJSON supports municipality/region rendering, but the 20 place "
+        f"The packaged GeoJSON supports municipality/region rendering, but the {len(places)} place "
         "nodes have no approved point coordinates or municipality crosswalk; NR-03 must "
         "not invent precise site markers."
     )
@@ -1054,6 +1629,12 @@ def validate_build(
             f"{len(research_unresolved_refs)} unresolved legacy research references "
             f"remain isolated from demo: {';'.join(research_unresolved_refs)}."
         )
+    if demo_unresolved_refs:
+        warnings.append(
+            f"{len(demo_unresolved_refs)} legacy X-code references remain explicit "
+            "on human-reviewed demo rows and are not promoted to central source IDs: "
+            f"{';'.join(demo_unresolved_refs)}."
+        )
     quarantined_place_edges = [
         row
         for row in research_relations["actor_place"]
@@ -1066,6 +1647,30 @@ def validate_build(
             + ";".join(row["id"] for row in quarantined_place_edges)
             + "."
         )
+    typed_unresolved_refs = sorted(
+        {
+            ref
+            for row in typed_all
+            for ref in row.get("unresolved_source_refs", [])
+        }
+    )
+    if typed_unresolved_refs:
+        warnings.append(
+            f"{len(typed_unresolved_refs)} legacy typed-relation source "
+            "references are not central source IDs and stay explicit on the "
+            f"rows: {';'.join(typed_unresolved_refs)}."
+        )
+    if typed_excluded_ids:
+        warnings.append(
+            f"{len(typed_excluded_ids)} rejected or duplicate funding rows are "
+            "excluded from every typed relation collection: "
+            + ";".join(typed_excluded_ids)
+            + "."
+        )
+    warnings.append(
+        "genealogy_anchors is intentionally empty until NR-04/NR-05 candidates "
+        "receive human continuity decisions."
+    )
     return {
         "status": "pass" if not errors else "fail",
         "error_count": len(errors),
@@ -1109,10 +1714,9 @@ def render_validation_report(
     return "\n".join(lines)
 
 
-def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[str, Any]:
-    project_root = project_root.resolve()
-    output_dir = output_dir.resolve()
-    inputs = {
+def exploration_input_paths(project_root: Path) -> dict[str, Path]:
+    """Central input files for the build, resolved against ``project_root``."""
+    return {
         "actors": project_root / "data/interim/01_actor_registry_initial_v0.csv",
         "actor_aliases": project_root
         / "data/interim/02_actor_aliases_initial_v0.csv",
@@ -1124,6 +1728,10 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         "actor_place": project_root / "data/interim/08_actor_place_edges_initial_v0.csv",
         "event_participation": project_root / "data/interim/09_actor_event_venue_edges_v0.csv",
         "legal_roles": project_root / "data/interim/18_legal_policy_actor_roles_v0.csv",
+        "funding_relations": project_root
+        / "data/interim/15_funding_or_support_edges_sample_v0.csv",
+        "typed_relation_handoff": project_root
+        / "outputs/hr033_integration_v1/typed_relation_observations_v1.csv",
         "venues": project_root / "data/metadata/venue_taxonomy_v0.csv",
         "episodes": project_root
         / "outputs/translation_episode_comparison_v1/translation_episode_candidates_v1.csv",
@@ -1142,6 +1750,12 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         "map_geometry": project_root
         / "outputs/learning_v1/okinawa_municipal_boundaries_simplified_v1.geojson",
     }
+
+
+def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[str, Any]:
+    project_root = project_root.resolve()
+    output_dir = output_dir.resolve()
+    inputs = exploration_input_paths(project_root)
     missing = [str(path) for path in inputs.values() if not path.exists()]
     if missing:
         raise FileNotFoundError("Missing NR-02 inputs: " + "; ".join(missing))
@@ -1194,6 +1808,17 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     legal_roles = normalize_legal_roles(
         read_csv(inputs["legal_roles"]), source_aliases
     )
+    typed_demo, typed_research, typed_excluded_ids, typed_input_count = (
+        build_typed_relation_collections(
+            read_csv(inputs["funding_relations"]),
+            read_csv(inputs["typed_relation_handoff"]),
+            {row["id"] for row in actors},
+            {row["id"] for row in places},
+            source_aliases,
+        )
+    )
+    # Typed case-role copy: identical rows to relations.json legal_roles.
+    case_roles = [dict(row) for row in legal_roles]
     demo_actor_episode = build_actor_episode_relations(demo_episodes)
     research_actor_episode = build_actor_episode_relations(research_episodes)
     coverage_cells = normalize_coverage_cells(read_csv(inputs["coverage_cells"]))
@@ -1221,6 +1846,12 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         "episodes": research_episodes,
         "outcomes": research_outcomes,
         "relations": research_relations,
+        "dyadic_relations": typed_research["dyadic_relations"],
+        "administrative_records": typed_research["administrative_records"],
+        "aggregate_observations": typed_research["aggregate_observations"],
+        "relation_leads": typed_research["relation_leads"],
+        "event_participation": typed_research["event_participation"],
+        "genealogy_anchors": typed_research["genealogy_anchors"],
     }
 
     write_json(output_dir / "demo/actors.json", actors)
@@ -1235,6 +1866,22 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     )
     write_json(output_dir / "demo/historical_anchors.json", [])
     write_json(output_dir / "demo/relations.json", demo_relations)
+    write_json(output_dir / "demo/dyadic_relations.json", typed_demo["dyadic_relations"])
+    write_json(
+        output_dir / "demo/administrative_records.json",
+        typed_demo["administrative_records"],
+    )
+    write_json(
+        output_dir / "demo/aggregate_observations.json",
+        typed_demo["aggregate_observations"],
+    )
+    write_json(
+        output_dir / "demo/typed_event_participation.json",
+        typed_demo["event_participation"],
+    )
+    write_json(output_dir / "demo/relation_leads.json", typed_demo["relation_leads"])
+    write_json(output_dir / "demo/case_roles.json", case_roles)
+    write_json(output_dir / "demo/genealogy_anchors.json", [])
     write_json(output_dir / "demo/map_geometry.geojson", map_geometry)
     write_json(output_dir / "research/candidates.json", candidates)
     views = build_views(
@@ -1251,6 +1898,15 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     for name, view in views.items():
         write_json(output_dir / f"views/{name}.json", view)
 
+    typed_claim_counts: dict[str, int] = {}
+    for layer in (typed_demo, typed_research):
+        for collection, rows in layer.items():
+            if collection == "genealogy_anchors":
+                continue
+            for row in rows:
+                typed_claim_counts[row["claim_status"]] = (
+                    typed_claim_counts.get(row["claim_status"], 0) + 1
+                )
     counts = {
         "demo": {
             "actors": len(actors),
@@ -1275,6 +1931,22 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
                 key: len(value) for key, value in sorted(research_relations.items())
             },
         },
+        "typed_relations": {
+            "input_observations": typed_input_count,
+            "claim_status_counts": dict(sorted(typed_claim_counts.items())),
+            "demo": {
+                **{
+                    key: len(value)
+                    for key, value in sorted(typed_demo.items())
+                },
+                "case_roles": len(case_roles),
+                "genealogy_anchors": 0,
+            },
+            "research": {
+                key: len(value) for key, value in sorted(typed_research.items())
+            },
+            "excluded": len(typed_excluded_ids),
+        },
     }
     validation = validate_build(
         actors=actors,
@@ -1287,6 +1959,10 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         research_episodes=research_episodes,
         demo_relations=demo_relations,
         research_relations=research_relations,
+        typed_demo_relations=typed_demo,
+        typed_research_relations=typed_research,
+        case_roles=case_roles,
+        typed_excluded_ids=typed_excluded_ids,
         coverage_cells=coverage_cells,
         case_ids={row["case_id"] for row in read_csv(inputs["legal_cases"])},
         map_geometry=map_geometry,
@@ -1312,6 +1988,13 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
             "demo/evidence.json",
             "demo/historical_anchors.json",
             "demo/relations.json",
+            "demo/dyadic_relations.json",
+            "demo/administrative_records.json",
+            "demo/aggregate_observations.json",
+            "demo/typed_event_participation.json",
+            "demo/relation_leads.json",
+            "demo/case_roles.json",
+            "demo/genealogy_anchors.json",
             "demo/map_geometry.geojson",
             "research/candidates.json",
             "views/overview.json",

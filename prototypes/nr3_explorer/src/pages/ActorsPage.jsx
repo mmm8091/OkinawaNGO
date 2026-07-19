@@ -1,10 +1,11 @@
 import { useMemo, useState } from "react";
-import { MagnifyingGlass } from "@phosphor-icons/react";
+import { MagnifyingGlass, Network, ShareNetwork } from "@phosphor-icons/react";
 import { actorClassGroup, labelOf } from "../lib/data.js";
 import { tr, useLang } from "../lib/labels.js";
 import { tu } from "../lib/ui_strings.js";
-import { ChartHelp } from "../components/ui.jsx";
+import { ChartHelp, SegmentedControl } from "../components/ui.jsx";
 import { ActorCanvas } from "../components/ActorCanvas.jsx";
+import { RelationCanvas } from "../components/RelationCanvas.jsx";
 import { ActorPanel } from "../components/ActorPanel.jsx";
 
 const GROUP_ORDER = [
@@ -53,13 +54,18 @@ export function ActorsPage({ data, layer, candidates }) {
     return "all";
   });
   const [search, setSearch] = useState("");
+  const [graphMode, setGraphMode] = useState("ecology");
   const selected = data.actors.find((actor) => actor.id === selectedActor);
   const searchResults = useMemo(() => {
     const term = search.trim().toLowerCase();
     if (!term) return [];
     return data.actors
       .filter((actor) =>
-        [actor.id, actor.display_label, ...(actor.aliases || [])]
+        [
+          actor.id,
+          actor.display_label,
+          ...(actor.aliases || []).map((alias) => alias.label || alias),
+        ]
           .join(" ")
           .toLowerCase()
           .includes(term),
@@ -93,6 +99,15 @@ export function ActorsPage({ data, layer, candidates }) {
             </ChartHelp>
           </h1>
         </div>
+        <SegmentedControl
+          label={tu("actors.mode.ecology", lang)}
+          value={graphMode}
+          onChange={setGraphMode}
+          items={[
+            { id: "ecology", label: tu("actors.mode.ecology", lang), icon: Network },
+            { id: "relation", label: tu("actors.mode.relation", lang), icon: ShareNetwork },
+          ]}
+        />
         <div className="search-box">
           <MagnifyingGlass size={18} />
           <input
@@ -141,55 +156,73 @@ export function ActorsPage({ data, layer, candidates }) {
               ))}
             </select>
           </label>
-          <label>
-            {tu("actors.issueLabel", lang)}
-            <select
-              value={issueFilter}
-              onChange={(event) => setIssueFilter(event.target.value)}
-            >
-              <option value="all">{tu("actors.allIssues", lang)}</option>
-              {data.issues.map((issue) => (
-                <option value={issue.id} key={issue.id}>
-                  {tr(issue.display_label, lang)}
-                </option>
-              ))}
-            </select>
-          </label>
+          {graphMode === "ecology" && (
+            <label>
+              {tu("actors.issueLabel", lang)}
+              <select
+                value={issueFilter}
+                onChange={(event) => setIssueFilter(event.target.value)}
+              >
+                <option value="all">{tu("actors.allIssues", lang)}</option>
+                {data.issues.map((issue) => (
+                  <option value={issue.id} key={issue.id}>
+                    {tr(issue.display_label, lang)}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
         </div>
       </div>
       <div className="overview-grid">
         <section className="visual-stage actor-stage">
-          <div className="actor-legend">
-            {classes
-              .filter((id) => id !== "unknown")
-              .map((id) => (
-                <span key={id}>
-                  <i style={{ background: GROUP_COLORS[id] }} />
-                  {tu(`classGroup.${id}`, lang)}
+          {graphMode === "ecology" && (
+            <div className="actor-legend">
+              {classes
+                .filter((id) => id !== "unknown")
+                .map((id) => (
+                  <span key={id}>
+                    <i style={{ background: GROUP_COLORS[id] }} />
+                    {tu(`classGroup.${id}`, lang)}
+                  </span>
+                ))}
+              {layer === "research" && (
+                <span className="legend-pending">
+                  <i />
+                  {tu("actors.legendPending", lang)}
                 </span>
-              ))}
-            {layer === "research" && (
-              <span className="legend-pending">
-                <i />
-                {tu("actors.legendPending", lang)}
-              </span>
-            )}
-          </div>
-          <ActorCanvas
-            actors={data.actors}
-            issues={data.issues}
-            relations={data.relations}
-            selectedActor={selectedActor}
-            setSelectedActor={setSelectedActor}
-            classFilter={classFilter}
-            issueFilter={issueFilter}
-            search={search}
-            layer={layer}
-            candidates={candidates}
-          />
+              )}
+            </div>
+          )}
+          {graphMode === "ecology" ? (
+            <ActorCanvas
+              actors={data.actors}
+              issues={data.issues}
+              relations={data.relations}
+              selectedActor={selectedActor}
+              setSelectedActor={setSelectedActor}
+              classFilter={classFilter}
+              issueFilter={issueFilter}
+              search={search}
+              layer={layer}
+              candidates={candidates}
+            />
+          ) : (
+            <RelationCanvas
+              actors={data.actors}
+              dyadicRelations={data.dyadicRelations}
+              layer={layer}
+              candidates={candidates}
+              selectedActor={selectedActor}
+              setSelectedActor={setSelectedActor}
+              search={search}
+              classFilter={classFilter}
+            />
+          )}
         </section>
         <ActorPanel
           actor={selected}
+          actors={data.actors}
           issues={data.issues}
           relations={data.relations}
           issueFilter={issueFilter}
@@ -200,8 +233,14 @@ export function ActorsPage({ data, layer, candidates }) {
               window.location.hash = "#/time";
             }
           }}
+          onSelectActor={(id) => setSelectedActor(id)}
           layer={layer}
           candidates={candidates}
+          dyadicRelations={data.dyadicRelations}
+          administrativeRecords={data.administrativeRecords}
+          aggregateObservations={data.aggregateObservations}
+          typedEventParticipation={data.typedEventParticipation}
+          caseRoles={data.caseRoles}
         />
       </div>
     </main>

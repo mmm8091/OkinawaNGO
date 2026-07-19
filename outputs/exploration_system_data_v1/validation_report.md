@@ -5,7 +5,7 @@ Status: **PASS**
 ## Checks
 
 - PASS — unique actor IDs: 122 rows
-- PASS — unique place IDs: 20 rows
+- PASS — unique place IDs: 21 rows
 - PASS — unique issue IDs: 26 rows
 - PASS — unique venue IDs: 16 rows
 - PASS — unique source IDs: 295 rows
@@ -13,15 +13,26 @@ Status: **PASS**
 - PASS — unique demo episode IDs: 9 rows
 - PASS — unique research episode IDs: 4 rows
 - PASS — episode layers disjoint: demo=9 research=4
-- PASS — unique demo relation IDs within relation type: 247 relation rows
-- PASS — actor-issue references: 59 demo rows
-- PASS — actor-place references: 16 demo rows with matching place key/label
-- PASS — strict triple references: 67 demo rows
+- PASS — unique demo relation IDs within relation type: 288 relation rows
+- PASS — actor-issue references: 65 demo rows
+- PASS — actor-place references: 53 demo rows with matching place key/label
+- PASS — strict triple references: 65 demo rows
 - PASS — actor-episode references: 15 demo rows
 - PASS — event participation references: 63 demo rows
 - PASS — legal role references: 27 demo rows
+- PASS — typed relation review_status values are legal: 43 typed rows
+- PASS — dyadic relation endpoints resolve to registry actors: 22 dyadic rows
+- PASS — no leads enter dyadic relations: 22 dyadic rows
+- PASS — supported_bounded rows carry scope boundaries: 15 supported_bounded rows
+- PASS — rejected, duplicate, and E0 rows stay hidden: leaked=0
+- PASS — typed relation rows carry schema v1 section 9 fields: missing=0
+- PASS — R10R029 stays out of dyadic relations: aggregate observation only
+- PASS — F025 keeps an empty amount: bounded KOSC to AWWA contribution without amount
+- PASS — demo typed collections are reviewed tier only: candidates and leads stay out of the reviewed layer
+- PASS — research typed collections contain candidates or explicitly gated leads: reviewed relation facts may remain research-only when endpoint graphing is gated
+- PASS — case roles preserved without edge derivation: 27 case roles; non_party never derives edges
 - PASS — all normalized source IDs resolve: unresolved=0
-- PASS — demo rows have no unresolved source references: unresolved=0
+- PASS — demo rows have no unclassified unresolved source references: unresolved=0
 - PASS — demo status gate: candidate and analytical episode layers excluded
 - PASS — research status isolation: research rows remain explicitly marked
 - PASS — event-only names do not enter actor collection: actors=122
@@ -32,20 +43,23 @@ Status: **PASS**
 
 ## Warnings
 
-- 92 registry actors retain non-human review_status; registry membership is admitted for identity browsing, while their relations remain independently gated.
+- 90 registry actors retain non-human review_status; registry membership is admitted for identity browsing, while their relations remain independently gated.
 - historical_anchors is intentionally empty until NR-04/NR-05 candidates receive human continuity decisions.
-- The packaged GeoJSON supports municipality/region rendering, but the 20 place nodes have no approved point coordinates or municipality crosswalk; NR-03 must not invent precise site markers.
+- The packaged GeoJSON supports municipality/region rendering, but the 21 place nodes have no approved point coordinates or municipality crosswalk; NR-03 must not invent precise site markers.
 - 13 human-checked event participants are preserved only as typed participation records and never enter actors.json.
 - 8 legacy actor identity references are not central source IDs and remain explicit on registry objects: X001;X002;X003;X008;X009;X010;X011;X012.
-- 11 unresolved legacy research references remain isolated from demo: X001;X002;X003;X008;X009;X010;X011;X012;X013;X014;X015.
-- 1 human-reviewed actor-place edge is quarantined for a place key/label conflict: AP123.
+- 9 unresolved legacy research references remain isolated from demo: X001;X002;X003;X008;X009;X010;X011;X012;X013.
+- 5 legacy X-code references remain explicit on human-reviewed demo rows and are not promoted to central source IDs: X001;X002;X003;X010;X012.
+- 6 legacy typed-relation source references are not central source IDs and stay explicit on the rows: X001;X002;X008;X009;X010;X011.
+- 1 rejected or duplicate funding rows are excluded from every typed relation collection: F008.
+- genealogy_anchors is intentionally empty until NR-04/NR-05 candidates receive human continuity decisions.
 
 ## Build counts
 
 ```json
 {
   "demo": {
-    "actor_aliases": 27,
+    "actor_aliases": 39,
     "actors": 122,
     "episodes": 9,
     "evidence_notes": 49,
@@ -53,14 +67,14 @@ Status: **PASS**
     "issues": 26,
     "map_geometry_features": 42,
     "outcomes": 27,
-    "places": 20,
+    "places": 21,
     "relations": {
       "actor_episode": 15,
-      "actor_issue": 59,
-      "actor_place": 16,
+      "actor_issue": 65,
+      "actor_place": 53,
       "event_participation": 63,
       "legal_roles": 27,
-      "strict_place_issue": 67
+      "strict_place_issue": 65
     },
     "sources": 295,
     "venues": 16
@@ -70,10 +84,37 @@ Status: **PASS**
     "outcomes": 12,
     "relations": {
       "actor_episode": 4,
-      "actor_issue": 182,
-      "actor_place": 119,
+      "actor_issue": 173,
+      "actor_place": 77,
       "event_participation": 4,
-      "strict_place_issue": 263
+      "strict_place_issue": 247
+    }
+  },
+  "typed_relations": {
+    "claim_status_counts": {
+      "candidate": 13,
+      "lead": 2,
+      "supported": 13,
+      "supported_bounded": 15
+    },
+    "demo": {
+      "administrative_records": 6,
+      "aggregate_observations": 2,
+      "case_roles": 27,
+      "dyadic_relations": 14,
+      "event_participation": 4,
+      "genealogy_anchors": 0,
+      "relation_leads": 0
+    },
+    "excluded": 1,
+    "input_observations": 44,
+    "research": {
+      "administrative_records": 5,
+      "aggregate_observations": 0,
+      "dyadic_relations": 8,
+      "event_participation": 0,
+      "genealogy_anchors": 0,
+      "relation_leads": 4
     }
   }
 }
