@@ -44,8 +44,8 @@ class MergeHr019ScopeReviewsV1Tests(unittest.TestCase):
         by_id = {row["edge_id"]: row for row in rows}
         reviewed = [row for row in rows if row["scope_review_task_id"]]
 
-        self.assertEqual(241, len(rows))
-        self.assertEqual(76, len(reviewed))
+        self.assertEqual(248, len(rows))
+        self.assertEqual(83, len(reviewed))
         self.assertEqual(
             Counter(
                 {
@@ -53,6 +53,7 @@ class MergeHr019ScopeReviewsV1Tests(unittest.TestCase):
                     "institutional_or_case_role": 14,
                     "event_specific": 8,
                     "remain_unclear": 7,
+                    "case": 7,
                 }
             ),
             Counter(row["scope_kind"] for row in reviewed),

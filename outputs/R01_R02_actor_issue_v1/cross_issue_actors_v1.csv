@@ -18,7 +18,7 @@ X008,American Red Cross Okinawa,base_community_service_actor,基地社区服务�
 A009,Earthjustice,international_advocacy_actor,跨国 NGO／国际倡议,us_origin,ai_seeded,3,I004;I011;I012,0,,0,,0,,3,I004;I011;I012,0,case_or_institutional_bridge,candidate_bridge_needs_review
 X009,Navy-Marine Corps Relief Society Okinawa,base_community_service_actor,基地社区服务／慈善,us_origin,ai_seeded,1,I014,0,,0,,1,I014,0,,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A010,石垣島に軍事基地をつくらせない市民連絡会,citizen_network,冲绳本地公民行动,okinawa_local,human_revised,3,I002;I006;I009,0,,2,I002;I009,1,I006,0,,0,positioning_bridge,candidate_bridge_needs_review
-X010,沖縄NGOセンター,local_international_cooperation_ngo,国际合作／公共外交,okinawa_local,ai_seeded,2,I013;I015,0,,0,,0,,1,I015,1,mixed_candidate_bridge,candidate_bridge_needs_review
+X010,沖縄NGOセンター,local_international_cooperation_ngo,国际合作／公共外交,okinawa_local,ai_seeded,1,I015,0,,0,,0,,1,I015,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A011,石垣市住民投票を求める会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,3,I002;I009;I010,0,,1,I009,0,,2,I002;I010,0,case_or_institutional_bridge,candidate_bridge_needs_review
 X011,JICA沖縄,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,1,I015,0,,0,,0,,1,I015,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A012,宮古島いのちの水を守ろう！,citizen_group,冲绳本地公民行动,okinawa_local,needs_second_source,3,I002;I006;I007,0,,0,,3,I002;I006;I007,0,,0,event_only_bridge,candidate_bridge_needs_review
@@ -26,10 +26,10 @@ X012,TOMODACHI Initiative,public_diplomacy_or_exchange_actor,国际合作／公�
 A013,ミサイル基地いらない宮古島住民連絡会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,3,I002;I006;I007,0,,3,I002;I006;I007,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 X013,U.S. Consulate General Naha Okinawa Youth Council Program,public_diplomacy_grant_program,国际合作／公共外交,us_origin,human_checked,1,I013,0,,0,,0,,1,I013,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A014,住民投票を成功させるための実行委員会,executive_committee,冲绳本地公民行动,okinawa_local,needs_local_retrieval,2,I002;I009,0,,0,,2,I002;I009,0,,0,event_only_bridge,candidate_bridge_needs_review
-X014,NED National Endowment for Democracy,funder_or_intermediary,资助／赞助／公共机构,us_origin,human_checked,1,I013,0,,0,,0,,0,,1,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
+X014,NED National Endowment for Democracy,funder_or_intermediary,资助／赞助／公共机构,us_origin,human_checked,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
 A015,与那国自衛隊配備反対意見広告実行委員会,executive_committee,冲绳本地公民行动,okinawa_local,needs_local_retrieval,2,I002;I009,0,,0,,2,I002;I009,0,,0,event_only_bridge,candidate_bridge_needs_review
-X015,Peace Winds Japan,international_ngo,跨国 NGO／国际倡议,japan_domestic,human_checked,1,I015,0,,0,,1,I015,0,,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
-A016,与那国島の明るい未来を願うイソバの会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,2,I002;I008,1,I002,1,I002,0,,0,,1,mixed_candidate_bridge,candidate_bridge_needs_review
+X015,Peace Winds Japan,international_ngo,跨国 NGO／国际倡议,japan_domestic,human_checked,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
+A016,与那国島の明るい未来を願うイソバの会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,1,I002,1,I002,1,I002,0,,0,,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 X016,Marine Officers' Spouses' Club Okinawa (MOSCO / MOSC),base_spouse_club,基地社区服务／慈善,us_origin,human_checked,1,I014,1,I014,1,I014,0,,0,,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A017,沖縄対話プロジェクト,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,3,I017;I018;I019,0,,3,I017;I018;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 X017,Army Community Group of Okinawa (ACGO),base_spouse_club,基地社区服务／慈善,us_origin,needs_second_source,1,I014,0,,0,,0,,1,I014,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
@@ -63,13 +63,13 @@ A044,Naturvernforbundet / Norwegian Society for the Conservation of Nature,inter
 A045,Center for Biological Diversity,international_ngo,跨国 NGO／国际倡议,us_origin,ai_seeded,3,I005;I011;I012,0,,0,,2,I005;I012,1,I011,0,mixed_candidate_bridge,candidate_bridge_needs_review
 A046,Pro Natura,international_ngo,跨国 NGO／国际倡议,international,human_checked,2,I005;I012,2,I005;I012,0,,2,I005;I012,0,,0,event_only_bridge,human_reviewed_bridge
 A047,沖縄平和運動センター,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,4,I001;I002;I003;I019,0,,4,I001;I002;I003;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
-A048,沖縄一坪反戦地主会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,4,I001;I009;I011;I019,0,,2,I001;I019,0,,0,,2,positioning_bridge,candidate_bridge_needs_review
+A048,沖縄一坪反戦地主会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,2,I001;I019,0,,2,I001;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A049,基地・軍隊を許さない行動する女たちの会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I001;I002;I007,0,,3,I001;I002;I007,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A050,沖縄弁護士会,lawyers_network,法律／制度程序,okinawa_local,ai_seeded,3,I001;I009;I011,0,,0,,3,I001;I009;I011,0,,0,event_only_bridge,candidate_bridge_needs_review
 A051,「辺野古」県民投票の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I003;I009;I010,0,,0,,1,I010,2,I003;I009,0,case_or_institutional_bridge,candidate_bridge_needs_review
 A052,嘉手納基地爆音差止訴訟原告団,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,4,I001;I007;I011;I021,1,I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,candidate_bridge_needs_review
 A053,普天間基地爆音訴訟団,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,4,I001;I007;I011;I021,1,I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,candidate_bridge_needs_review
-A054,沖縄人権協会,local_civic_actor,冲绳本地公民行动,okinawa_local,ai_seeded,1,I007,0,,0,,0,,0,,1,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
+A054,沖縄人権協会,local_civic_actor,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
 A055,泡瀬干潟を守る連絡会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,2,I005;I011,0,,1,I005,0,,1,I011,0,mixed_candidate_bridge,candidate_bridge_needs_review
 A056,沖縄環境ネットワーク,citizen_network,冲绳本地公民行动,okinawa_local,needs_second_source,2,I001;I005,0,,2,I001;I005,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A057,沖縄意見広告運動,citizen_network,冲绳本地公民行动,japan_domestic,ai_seeded,2,I001;I019,0,,1,I019,1,I001,0,,0,mixed_candidate_bridge,candidate_bridge_needs_review
@@ -87,9 +87,8 @@ A068,ヘリポート基地建設の是非を問う名護市民投票推進協議
 A069,沖縄ジュゴン環境アセスメント監視団,citizen_group,冲绳本地公民行动,okinawa_local,needs_second_source,3,I003;I004;I005,0,,3,I003;I004;I005,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A070,Veterans For Peace Ryukyu/Okinawa Chapter Kokusai (VFP-ROCK),international_advocacy_actor,跨国 NGO／国际倡议,us_origin,needs_second_source,3,I001;I012;I019,0,,3,I001;I012;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A071,沖縄から基地をなくし世界の平和を求める市民連絡会,citizen_network,冲绳本地公民行动,okinawa_local,needs_second_source,2,I001;I019,0,,2,I001;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
-A072,沖縄から基地をなくし世界の平和を求める市民連絡会,citizen_network,冲绳本地公民行动,okinawa_local,rejected,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
 A073,琉球沖縄国際支援プログラム,local_international_cooperation_ngo,国际合作／公共外交,okinawa_local,needs_second_source,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A074,沖縄県知事公室基地対策課,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,2,I001;I009,0,,0,,0,,1,I001,1,mixed_candidate_bridge,candidate_bridge_needs_review
+A074,沖縄県知事公室基地対策課,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,1,I001,0,,0,,0,,1,I001,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A075,沖縄防衛局,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,1,I001,0,,0,,0,,1,I001,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A076,ジュゴン保護基金委員会（Save the Dugong Foundation）,local_civic_actor,冲绳本地公民行动,okinawa_local,needs_second_source,3,I003;I004;I011,3,I003;I004;I011,0,,0,,3,I003;I004;I011,0,case_or_institutional_bridge,human_reviewed_bridge
 A086,Turtle Island Restoration Network,international_ngo,跨国 NGO／国际倡议,us_origin,ai_seeded,4,I004;I005;I011;I012,4,I004;I005;I011;I012,0,,0,,4,I004;I005;I011;I012,0,case_or_institutional_bridge,human_reviewed_bridge

@@ -120,6 +120,7 @@ GROUP_COLORS = {
 }
 HUMAN_STATUSES = {"human_checked", "human_revised"}
 EVIDENCE_RANK = {"E0": 0, "E1": 1, "E2": 2, "E3": 3, "E4": 4}
+INACTIVE_ACTOR_SCOPE_STATUSES = {"merged_duplicate", "out_of_scope", "rejected"}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -169,6 +170,42 @@ def configure_fonts() -> None:
 
 def short(value: str, width: int = 24) -> str:
     return value if len(value) <= width else value[: width - 1] + "…"
+
+
+def actor_analysis_gate(actor: dict[str, str]) -> tuple[bool, str]:
+    """Separate registry history from actors eligible for current analysis."""
+
+    review_status = actor.get("review_status", "").strip().lower()
+    scope_status = actor.get("scope_status", "").strip().lower()
+    if scope_status in INACTIVE_ACTOR_SCOPE_STATUSES:
+        return False, f"actor_scope_status_{scope_status}"
+    if scope_status.startswith(("retired_", "deactivated_")) or "excluded" in scope_status:
+        return False, f"actor_scope_status_{scope_status}"
+    if review_status == "rejected":
+        return False, "actor_review_status_rejected"
+    return True, ""
+
+
+def edge_analysis_gate(
+    edge: dict[str, str], active_actor_ids: set[str],
+) -> tuple[bool, str]:
+    """Return whether an actor--issue row belongs in current analytical views."""
+
+    if edge.get("actor_id", "") not in active_actor_ids:
+        return False, "inactive_actor_endpoint"
+    review_status = edge.get("review_status", "").strip().lower()
+    claim_status = edge.get("claim_status", "").strip().lower()
+    graph_eligibility = edge.get("graph_eligibility", "").strip().lower()
+    scope_status = edge.get("scope_status", "").strip().lower()
+    if review_status == "rejected":
+        return False, "edge_review_status_rejected"
+    if claim_status == "unsupported":
+        return False, "edge_claim_status_unsupported"
+    if graph_eligibility == "excluded":
+        return False, "edge_graph_eligibility_excluded"
+    if scope_status.startswith(("retired_", "deactivated_")) or "excluded" in scope_status:
+        return False, f"edge_scope_status_{scope_status}"
+    return True, ""
 
 
 def classify_scope(edge: dict[str, str]) -> tuple[str, str]:
@@ -222,7 +259,9 @@ def classify_scope(edge: dict[str, str]) -> tuple[str, str]:
     return "mixed_or_unclear", "no reliable temporal-scope marker in current edge text"
 
 
-def actor_class_audit(actors: list[dict[str, str]]) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+def actor_class_audit(
+    actors: list[dict[str, str]], active_actor_ids: set[str],
+) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
     audit: list[dict[str, object]] = []
     by_class: dict[str, list[dict[str, str]]] = defaultdict(list)
     for actor in actors:
@@ -230,6 +269,7 @@ def actor_class_audit(actors: list[dict[str, str]]) -> tuple[list[dict[str, obje
         family = CLASS_FAMILY.get(actor["actor_class"], "待人工分类")
         class_status = "schema_term" if actor["actor_class"] in SCHEMA_CLASSES else "out_of_schema_term"
         review_term_status = "schema_term" if actor["review_status"] in SCHEMA_REVIEW else "out_of_schema_term"
+        active, exclusion_reason = actor_analysis_gate(actor)
         audit.append({
             "actor_id": actor["actor_id"], "canonical_name": actor["canonical_name"],
             "actor_class_original": actor["actor_class"],
@@ -240,19 +280,24 @@ def actor_class_audit(actors: list[dict[str, str]]) -> tuple[list[dict[str, obje
             "evidence_level": actor["evidence_level"],
             "review_status_original": actor["review_status"],
             "review_status_term_status": review_term_status,
+            "analysis_inclusion": "active" if active else "excluded_history",
+            "analysis_exclusion_reason": exclusion_reason,
             "human_decision": "",
             "interpretation_limit": "analysis-only mapping; actor registry is unchanged",
         })
 
     mapping: list[dict[str, object]] = []
     for cls in sorted(by_class):
-        items = by_class[cls]
+        history_items = by_class[cls]
+        active_items = [item for item in history_items if item["actor_id"] in active_actor_ids]
         mapping.append({
             "actor_class_original": cls,
-            "actor_count": len(items),
+            "actor_count": len(active_items),
+            "actor_count_history": len(history_items),
             "schema_status": "schema_term" if cls in SCHEMA_CLASSES else "out_of_schema_term",
             "analysis_family_v1": CLASS_FAMILY.get(cls, "待人工分类"),
-            "actor_ids": ";".join(a["actor_id"] for a in items),
+            "actor_ids": ";".join(a["actor_id"] for a in active_items),
+            "actor_ids_history": ";".join(a["actor_id"] for a in history_items),
             "human_taxonomy_decision_required": "no" if cls in SCHEMA_CLASSES else "yes",
             "recommended_rule": (
                 "retain class term and map to analysis family"
@@ -266,7 +311,7 @@ def actor_class_audit(actors: list[dict[str, str]]) -> tuple[list[dict[str, obje
 
 def build_layered_edges(
     edges: list[dict[str, str]], actors_by_id: dict[str, dict[str, str]],
-    issues_by_id: dict[str, dict[str, str]],
+    issues_by_id: dict[str, dict[str, str]], active_actor_ids: set[str],
 ) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
     for edge in edges:
@@ -274,6 +319,7 @@ def build_layered_edges(
         actor = actors_by_id.get(edge["actor_id"], {})
         issue = issues_by_id.get(edge["issue_id"], {})
         human = edge["review_status"] in HUMAN_STATUSES
+        active, exclusion_reason = edge_analysis_gate(edge, active_actor_ids)
         rows.append({
             "edge_id": edge["edge_id"], "actor_id": edge["actor_id"],
             "actor_name": actor.get("canonical_name", ""),
@@ -287,9 +333,16 @@ def build_layered_edges(
             "source_ref": edge["source_ref"],
             "evidence_level": edge["evidence_level"],
             "review_status": edge["review_status"],
-            "review_layer": "human_reviewed" if human else "candidate",
+            "review_layer": (
+                "excluded_history" if not active
+                else "human_reviewed" if human
+                else "candidate"
+            ),
+            "analysis_inclusion": "active" if active else "excluded_history",
+            "analysis_exclusion_reason": exclusion_reason,
             "conclusion_eligibility": (
-                "human_reviewed_E3_E4" if human and EVIDENCE_RANK.get(edge["evidence_level"], 0) >= 3
+                "excluded_historical_record" if not active
+                else "human_reviewed_E3_E4" if human and EVIDENCE_RANK.get(edge["evidence_level"], 0) >= 3
                 else "candidate_or_clue"
             ),
             "notes": edge["notes"],
@@ -539,7 +592,7 @@ def save_ecology_figure(actors: list[dict[str, str]]) -> None:
     ax.invert_yaxis()
     ax.grid(color="#dde4e8", linewidth=0.8)
     ax.set_axisbelow(True)
-    ax.set_title(f"R1｜{len(actors)} 个 actor 的组织生态：功能层 × 来源层", fontsize=18, loc="left", pad=25, fontweight="bold")
+    ax.set_title(f"R1｜{len(actors)} 个有效 actor 的组织生态：功能层 × 来源层", fontsize=18, loc="left", pad=25, fontweight="bold")
     ax.text(0, 1.035, "气泡面积＝actor 数；H＝actor registry 中 human_checked / human_revised 数。",
             transform=ax.transAxes, fontsize=10, color="#52616b")
     ax.text(0, -0.12,
@@ -599,10 +652,10 @@ def save_bipartite_figure(
     ax.invert_yaxis()
     ax.axis("off")
     isolated_count = len(actors) - len({str(edge["actor_id"]) for edge in layered})
-    ax.set_title(f"R2｜完整 actor–issue 二模网络：{len(actors)} actors × {len(issues)} issues × {len(layered)} edges",
+    ax.set_title(f"R2｜当前有效 actor–issue 二模网络：{len(actors)} actors × {len(issues)} issues × {len(layered)} edges",
                  fontsize=20, loc="left", pad=24, fontweight="bold")
     ax.text(0.01, 1.002,
-            f"左：全部 registry actors（含 {isolated_count} 个当前无 actor–issue edge 的孤立节点）；右：全部议题。深线＝已人审，浅线＝候选。",
+            f"左：有效 registry actors（含 {isolated_count} 个当前无有效 actor–issue edge 的孤立节点）；右：全部议题。深线＝已人审，浅线＝候选。",
             transform=ax.transAxes, fontsize=11, color="#52616b")
     scope_handles = [Line2D([0], [0], color=c, lw=3, label=l) for l, c in [
         ("长期定位／持续角色", SCOPE_COLORS["organizational_positioning"]),
@@ -787,7 +840,9 @@ def make_hr019(
 
 
 def make_brief(
-    actors: list[dict[str, str]], issues: list[dict[str, str]], layered: list[dict[str, object]],
+    actor_history: list[dict[str, str]], actors: list[dict[str, str]],
+    issues: list[dict[str, str]], layered_history: list[dict[str, object]],
+    layered: list[dict[str, object]],
     class_mapping: list[dict[str, object]], cross: list[dict[str, object]],
     co: list[dict[str, object]], coverage: list[dict[str, object]], expansion: list[dict[str, object]],
 ) -> None:
@@ -808,6 +863,12 @@ def make_brief(
     thin = [r for r in coverage if r["coverage_flag"] in {"thin", "thin_no_human_review", "no_edge"}]
     thin_text = "、".join(f"{r['issue_label']}({r['actor_count_all']})" for r in thin)
     isolated_text = "、".join(f"{a['actor_id']} {a['canonical_name']}" for a in isolated)
+    excluded_actors = [a for a in actor_history if a["actor_id"] not in {x["actor_id"] for x in actors}]
+    excluded_actor_text = "、".join(
+        f"{a['actor_id']} {a['canonical_name']}（{a.get('scope_status') or a.get('review_status')}）"
+        for a in excluded_actors
+    )
+    excluded_edges = [e for e in layered_history if e["analysis_inclusion"] != "active"]
     top_human = sorted(bridge_human, key=lambda r: (-int(r["issue_count_human_reviewed"]), -int(r["issue_count_all"]), str(r["actor_id"])))[:12]
     top_human_text = "\n".join(
         f"- {r['actor_id']} {r['canonical_name']}：全部 {r['issue_count_all']} 个议题，双侧人审可用 {r['issue_count_human_reviewed']} 个；{r['bridge_classification_v1']}。"
@@ -819,25 +880,25 @@ def make_brief(
 
 ## 验收结论
 
-按《复归后冲绳民间组织 / NGO 分类与议题网络一期研究方案》的原始标准，R1/R2 已从“桥梁组织示例图”推进为可验收的完整 v1 包：R1 有 {len(actors)} 个 actor 的分类审计、标准化分析映射和组织生态图；R2 有 {len(actors)} actors × {len(issues)} issues 的完整二模网络、议题共现图、跨议题 actor 表和证据／时间范围分层。它仍是公开资料驱动的候选网络，不是冲绳组织总体名录，也不是稳定联盟图。
+按《复归后冲绳民间组织 / NGO 分类与议题网络一期研究方案》的原始标准，R1/R2 已从“桥梁组织示例图”推进为可验收的完整 v1 包。历史审计保留 {len(actor_history)} 个 registry rows 与 {len(layered_history)} 条 actor–issue rows；当前图表和统计只使用 {len(actors)} 个有效 actor 与 {len(layered)} 条有效 edge。R1 提供分类审计、标准化分析映射和组织生态图；R2 提供 {len(actors)} active actors × {len(issues)} issues 的二模网络、议题共现图、跨议题 actor 表和证据／时间范围分层。它仍是公开资料驱动的候选网络，不是冲绳组织总体名录，也不是稳定联盟图。
 
 ## Q1：冲绳有哪些相关民间组织？
 
-当前 registry 有 {len(actors)} 个 actor，覆盖冲绳本地公民团体与 NPO、日本国内 NGO、国际倡议组织、法律网络、劳工／教育组织、女性／人权组织、基地社区服务与军属慈善、国际合作／公共外交项目，以及资助／赞助／公共机构节点。这个宽生态符合方案“不预设全部 actor 都是反基地阵营”的边界。
+中央 registry 的历史底稿有 {len(actor_history)} 行，其中 {len(actors)} 个 actor 进入当前分析；{len(excluded_actors)} 行仅保留为历史审计：{excluded_actor_text or '无'}。当前有效层覆盖冲绳本地公民团体与 NPO、日本国内 NGO、国际倡议组织、法律网络、劳工／教育组织、女性／人权组织、基地社区服务与军属慈善、国际合作／公共外交项目，以及资助／赞助／公共机构节点。这个宽生态符合方案“不预设全部 actor 都是反基地阵营”的边界。
 
-但“118”不是完成指标。{len(isolated)} 个 actor 尚无正式 actor–issue edge：{isolated_text}。其中多为最近扩入的宫古、劳工、女性、PFAS 和和平教育组织。它们已有 registry `issue_tags`，但这些标签不能自动当成 edge；必须逐条回到来源建立关系证据。因此，下一轮线上工作的第一优先级是补齐这 {len(isolated)} 个现有 actor 的 edge-level evidence，而不是机械补到 120。
+数量不是完成指标。{len(isolated)} 个有效 actor 尚无当前有效 actor–issue edge：{isolated_text}。它们已有 registry `issue_tags`，但这些标签不能自动当成 edge；必须逐条回到来源建立关系证据。已拒绝、停用或排除的 edge 不计入候选，也不能据此消除孤立状态。
 
 ## Q2 / R1：这些组织如何分类？
 
 R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另建 10 个 `analysis_family_v1` 功能层。这样既能显示组织生态，又不会把法人身份、行动形态和政治立场压成一个标签。
 
-- 当前共有 {len(class_mapping)} 个不同 `actor_class` 值，其中 {len(out_classes)} 个超出 `coding_schema_v0` 的建议词表，涉及 {sum(int(r['actor_count']) for r in out_classes)} 个 actor。它们不是自动错误，而是需要 HR-019 决定“扩充受控词”还是“映射到现有宽类”。
+- 当前有效层共有 {len(class_mapping)} 个不同 `actor_class` 值，其中 {len(out_classes)} 个超出 `coding_schema_v0` 的建议词表，涉及 {sum(int(r['actor_count']) for r in out_classes)} 个有效 actor。`actor_class_controlled_mapping_v1.csv` 同时保留历史计数，避免把墓碑行重新带回生态图。
 - “劳工／教育”“女性／人权／社区”作为独立分析层有解释价值，因为它们回答方案明确提出的组织类型问题；若直接并入 `local_civic_actor`，会丢失组织生态差异。
 - 军属服务、慈善、公共外交和资助节点按实际功能单列，不推断亲基地或反基地立场。
 
 ## R2：哪些组织连接了哪些议题？
 
-当前 actor–issue 表有 {len(layered)} 条 edge，连接 {len(actors_with_edges)} 个 actor 与 {len(issues)} 个议题；另有 {len(isolated)} 个 registry actor 在图中保留为孤立节点。按复核层，{status_counts['human_reviewed']} 条已人审，{status_counts['candidate']} 条仍是候选。按解释范围，{scope_counts['organizational_positioning']} 条暂归为长期组织定位／持续角色，{scope_counts['institutional_or_case_role']} 条为制度／案件角色，{scope_counts['event_specific']} 条为事件性声明／署名／行动，{scope_counts['mixed_or_unclear']} 条仍待判定。
+历史表保留 {len(layered_history)} 条 edge，其中 {len(excluded_edges)} 条因 `rejected`、`unsupported`、`excluded`、`retired_*`、`deactivated_*` 或默认叙事排除状态而不进入当前网络。当前有效层有 {len(layered)} 条 edge，连接 {len(actors_with_edges)} 个 actor 与 {len(issues)} 个议题；另有 {len(isolated)} 个有效 actor 在图中保留为孤立节点。按复核层，{status_counts['human_reviewed']} 条已人审，{status_counts['candidate']} 条仍是候选。按解释范围，{scope_counts['organizational_positioning']} 条暂归为长期组织定位／持续角色，{scope_counts['institutional_or_case_role']} 条为制度／案件角色，{scope_counts['event_specific']} 条为事件性声明／署名／行动，{scope_counts['mixed_or_unclear']} 条仍待判定。
 
 这四层解决了旧 R2 的核心缺口：同一个 actor 同时出现于多个议题，并不自动证明它长期以这些议题为组织定位。`event_specific` 只能写成“公开参与某次声明／署名／行动”；`institutional_or_case_role` 只能写成“在某诉讼、服务或项目中承担公开角色”；只有来源支持使命、持续行动或组织目的时，才暂列 `organizational_positioning`。
 
@@ -857,7 +918,7 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 
 - **数据联接缺口**：{len(isolated)} 个已登记 actor 没有 actor–issue edge。优先补来源摘录和 edge，不从 registry `issue_tags` 自动生成。
 - **薄议题层**：当前 actor 数不超过 3 的议题为：{thin_text or '无'}。薄层中若又没有双侧人审，不能承担核心叙事。
-- **分类词表缺口**：6 个超出 schema 的 actor_class 术语和 2 个 `watchlist_only` 状态需 HR-019 决策。
+- **分类与状态边界**：当前有效 actor 的 schema 外分类术语为 {len(out_classes)} 个；历史状态或范围排除项只保留在审计表，不进入当前生态与网络。HR-019 的既有人工决定原样保留。
 - **时间范围缺口**：{scope_counts['mixed_or_unclear']} 条 edge 仍无法从当前 `relation_basis` 稳妥区分长期／案件／事件；已全部进入 HR-019 scope queue。
 - **历史覆盖缺口**：当前网络明显偏向可在线检索的近年行动、2010/2015/2020 联署和现存官网，不能据此描述 1972 年以来各时期的总体组织结构。
 
@@ -867,8 +928,8 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 
 ## 图件怎么读
 
-1. `fig1_r01_actor_ecology.png`：回答“有哪些组织、如何分类”，同时显示来源层和 actor-level 人审量。
-2. `fig2_r02_full_bipartite_network.png`：方案要求的完整组织—议题二模网络；保留全部 {len(actors)} actors 和 {len(issues)} issues。
+1. `fig1_r01_actor_ecology.png`：回答“当前有哪些有效组织、如何分类”，同时显示来源层和 actor-level 人审量；历史墓碑不进入气泡计数。
+2. `fig2_r02_full_bipartite_network.png`：方案要求的当前组织—议题二模网络；保留全部 {len(actors)} 个有效 actors 和 {len(issues)} 个 issues，排除历史失效边。
 3. `fig3_r02_issue_cooccurrence.png`：显示同一 actor 连接的议题对，并单列双侧人审计数。
 4. `fig4_r02_cross_issue_actors.png`：把 bridge 拆为长期定位、制度／案件、事件性和待判定四种机制。
 """)
@@ -878,40 +939,59 @@ def main() -> None:
     configure_fonts()
     OUT.mkdir(parents=True, exist_ok=True)
     HR.mkdir(parents=True, exist_ok=True)
-    actors = read_csv(REGISTRY)
+    actor_history = read_csv(REGISTRY)
     issues = read_csv(ISSUES)
-    edges = read_csv(EDGES)
-    actors_by_id = {a["actor_id"]: a for a in actors}
+    edge_history = read_csv(EDGES)
+    actors_by_id = {a["actor_id"]: a for a in actor_history}
     issues_by_id = {i["issue_id"]: i for i in issues}
+    active_actor_ids = {
+        actor["actor_id"] for actor in actor_history if actor_analysis_gate(actor)[0]
+    }
+    actors = [
+        actor for actor in actor_history if actor["actor_id"] in active_actor_ids
+    ]
 
-    assert len(actors) == len(actors_by_id), "duplicate actor_id"
+    assert len(actor_history) == len(actors_by_id), "duplicate actor_id"
     assert len(issues) == len(issues_by_id), "duplicate issue_id"
-    assert all(e["actor_id"] in actors_by_id for e in edges), "edge actor missing from registry"
-    assert all(e["issue_id"] in issues_by_id for e in edges), "edge issue missing from taxonomy"
+    assert all(e["actor_id"] in actors_by_id for e in edge_history), "edge actor missing from registry"
+    assert all(e["issue_id"] in issues_by_id for e in edge_history), "edge issue missing from taxonomy"
 
-    class_audit, class_mapping = actor_class_audit(actors)
-    layered = build_layered_edges(edges, actors_by_id, issues_by_id)
+    class_audit, class_mapping = actor_class_audit(actor_history, active_actor_ids)
+    layered_history = build_layered_edges(
+        edge_history, actors_by_id, issues_by_id, active_actor_ids,
+    )
+    layered = [
+        edge for edge in layered_history if edge["analysis_inclusion"] == "active"
+    ]
     cross = build_cross_issue(actors, layered)
     co = build_cooccurrence(layered, issues)
     coverage = build_issue_coverage(issues, layered)
     expansion = build_expansion_candidates(actors_by_id)
 
+    layered_fields = [
+        "edge_id", "actor_id", "actor_name", "actor_class", "analysis_family_v1", "origin_type",
+        "issue_id", "issue_label", "issue_group", "relation_basis_original", "temporal_scope_v1",
+        "temporal_scope_rule", "source_ref", "evidence_level", "review_status", "review_layer",
+        "analysis_inclusion", "analysis_exclusion_reason", "conclusion_eligibility", "notes",
+        "interpretation_limit",
+    ]
     write_csv(
-        DERIVED, layered,
-        ["edge_id", "actor_id", "actor_name", "actor_class", "analysis_family_v1", "origin_type",
-         "issue_id", "issue_label", "issue_group", "relation_basis_original", "temporal_scope_v1",
-         "temporal_scope_rule", "source_ref", "evidence_level", "review_status", "review_layer",
-         "conclusion_eligibility", "notes", "interpretation_limit"],
+        DERIVED, layered_history, layered_fields,
+    )
+    write_csv(
+        OUT / "active_actor_issue_edges_v1.csv", layered, layered_fields,
     )
     write_csv(
         OUT / "actor_class_audit_118_v1.csv", class_audit,
         ["actor_id", "canonical_name", "actor_class_original", "actor_class_term_status",
          "analysis_family_v1", "family_mapping_status", "origin_type", "evidence_level",
-         "review_status_original", "review_status_term_status", "human_decision", "interpretation_limit"],
+         "review_status_original", "review_status_term_status", "analysis_inclusion",
+         "analysis_exclusion_reason", "human_decision", "interpretation_limit"],
     )
     write_csv(
         OUT / "actor_class_controlled_mapping_v1.csv", class_mapping,
-        ["actor_class_original", "actor_count", "schema_status", "analysis_family_v1", "actor_ids",
+        ["actor_class_original", "actor_count", "actor_count_history", "schema_status",
+         "analysis_family_v1", "actor_ids", "actor_ids_history",
          "human_taxonomy_decision_required", "recommended_rule", "review_decision"],
     )
     write_csv(
@@ -946,7 +1026,10 @@ def main() -> None:
         {
             "module": "R1", "plan_output": "组织分类表", "delivery_status": "delivered_v1",
             "deliverable": "actor_class_audit_118_v1.csv; actor_class_controlled_mapping_v1.csv",
-            "acceptance_note": f"{len(actors)} actors audited; analysis mapping is separate from registry; HR-019 decisions remain blank",
+            "acceptance_note": (
+                f"{len(actor_history)} registry-history rows audited; {len(actors)} active actors "
+                "enter current analysis; HR-019 decisions are retained"
+            ),
         },
         {
             "module": "R1", "plan_output": "组织生态图", "delivery_status": "delivered_v1",
@@ -960,8 +1043,11 @@ def main() -> None:
         },
         {
             "module": "R2", "plan_output": "组织—议题网络图", "delivery_status": "delivered_v1",
-            "deliverable": "fig2_r02_full_bipartite_network.png; data/interim/24_r01_r02_actor_issue_layered_v0.csv",
-            "acceptance_note": f"all {len(actors)} actors and all {len(issues)} issues retained; {len(layered)} edges split by review and temporal scope",
+            "deliverable": "fig2_r02_full_bipartite_network.png; active_actor_issue_edges_v1.csv; data/interim/24_r01_r02_actor_issue_layered_v0.csv",
+            "acceptance_note": (
+                f"current graph uses {len(actors)} active actors, all {len(issues)} issues and "
+                f"{len(layered)} active edges; {len(layered_history)} edge-history rows remain auditable"
+            ),
         },
         {
             "module": "R2", "plan_output": "议题共现图", "delivery_status": "delivered_v1",
@@ -983,17 +1069,25 @@ def main() -> None:
     save_bipartite_figure(actors, issues, layered, cross)
     save_cooccurrence_figure(issues, co)
     save_bridge_figure(cross)
-    make_hr019(class_mapping, cross, layered, actors)
-    make_brief(actors, issues, layered, class_mapping, cross, co, coverage, expansion)
+    make_hr019(class_mapping, cross, layered, actor_history)
+    make_brief(
+        actor_history, actors, issues, layered_history, layered,
+        class_mapping, cross, co, coverage, expansion,
+    )
 
+    connected_actor_ids = {str(e["actor_id"]) for e in layered}
     metrics = [
+        {"metric": "registry_actor_history_count", "value": len(actor_history)},
+        {"metric": "excluded_actor_history_count", "value": len(actor_history) - len(actors)},
         {"metric": "registry_actor_count", "value": len(actors)},
         {"metric": "actor_class_distinct_count", "value": len(class_mapping)},
         {"metric": "out_of_schema_actor_class_term_count", "value": sum(r["schema_status"] == "out_of_schema_term" for r in class_mapping)},
         {"metric": "issue_count", "value": len(issues)},
+        {"metric": "actor_issue_edge_history_count", "value": len(layered_history)},
+        {"metric": "excluded_actor_issue_edge_history_count", "value": len(layered_history) - len(layered)},
         {"metric": "actor_issue_edge_count", "value": len(layered)},
-        {"metric": "actors_with_actor_issue_edge", "value": len({str(e["actor_id"]) for e in layered})},
-        {"metric": "actors_without_actor_issue_edge", "value": len(actors) - len({str(e["actor_id"]) for e in layered})},
+        {"metric": "actors_with_actor_issue_edge", "value": len(connected_actor_ids)},
+        {"metric": "actors_without_actor_issue_edge", "value": len(actors) - len(connected_actor_ids)},
         {"metric": "human_reviewed_edge_count", "value": sum(e["review_layer"] == "human_reviewed" for e in layered)},
         {"metric": "candidate_edge_count", "value": sum(e["review_layer"] == "candidate" for e in layered)},
         {"metric": "issue_pair_with_shared_actor_count", "value": len(co)},
@@ -1007,23 +1101,35 @@ def main() -> None:
         {"metric": "active_expansion_candidate_count", "value": 0},
     ]
     write_csv(OUT / "validation_metrics_v1.csv", metrics, ["metric", "value"])
-    write_text(OUT / "README.md", r"""
+    write_text(OUT / "README.md", f"""
 # R01/R02 actor–issue v1
 
 This module package implements the original Phase-1 acceptance outputs for R1
 and R2 without changing the central registry or source log. Run:
 
 ```powershell
-python scripts\make_r01_r02_actor_issue.py
+python scripts/make_r01_r02_actor_issue.py
 ```
 
 Primary reading order: `R01_R02_explanatory_brief_v1.md`, figures 1–4,
 `validation_metrics_v1.csv`, then `HR019/HR019_review_guide_v0.md`.
 
-All edge-based outputs preserve candidate/human-reviewed status. Event
+The central registry and layered edge derivative retain the complete historical
+audit ({len(actor_history)} actor rows; {len(layered_history)} edge rows).
+Current figures, co-occurrence, bridge and coverage outputs use only
+{len(actors)} active actors and {len(layered)} active edges. The legacy filename
+`actor_class_audit_118_v1.csv` is retained for downstream compatibility; its
+rows now carry explicit `analysis_inclusion` and exclusion-reason fields.
+
+Rejected, unsupported, excluded, retired, deactivated and inactive-endpoint
+records are historical audit rows, never candidate network edges. Event
 participation and issue co-occurrence are not treated as stable alliances.
 """)
-    print(f"R1/R2 package built: {len(actors)} actors, {len(issues)} issues, {len(layered)} edges")
+    print(
+        "R1/R2 package built: "
+        f"history={len(actor_history)} actors/{len(layered_history)} edges; "
+        f"active={len(actors)} actors/{len(layered)} edges; {len(issues)} issues"
+    )
 
 
 if __name__ == "__main__":
