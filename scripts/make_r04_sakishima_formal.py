@@ -350,8 +350,9 @@ def render_svg(matrix: list[dict[str, str]], facts: list[dict[str, str]]) -> str
 
 
 def render_entity_svg(rows: list[dict[str, str]], facts: list[dict[str, str]]) -> str:
-    width, height = 1500, 1120
     left, top, cell_w, row_h = 485, 190, 182, 93
+    width = 1500
+    height = max(1120, top + len(rows) * row_h + 190)
     registry_color = "#DCEBE4"
     institution_color = "#F2E2C8"
     provisional_color = "#E4E5E4"
@@ -400,19 +401,32 @@ def render_entity_svg(rows: list[dict[str, str]], facts: list[dict[str, str]]) -
             )
 
     legend_y = top + len(rows) * row_h + 22
+    category_counts = Counter(row["entity_category"] for row in rows)
     legends = [
-        (registry_color, "registry actor：2 个；仅 A014 的 2015 公投事件与 A016 的 2024 停训请求"),
-        (institution_color, "external institution：6 个；当前安全事实明显由制度节点主导"),
-        (provisional_color, "provisional entity：正式表 0 个；相关候选仅保留在人审队列"),
+        (
+            registry_color,
+            f"registry actor：{category_counts['registry_actor']} 个；只表示有界事件／文件中的公开角色",
+        ),
+        (
+            institution_color,
+            f"external institution：{category_counts['external_institution']} 个；制度材料不等于居民同意",
+        ),
+        (
+            provisional_color,
+            f"bounded non-registry entity：{category_counts['provisional_entity']} 个；含一次性委员会、具名个人或匿名事件话语，不进入 actor network",
+        ),
     ]
     for index, (color, label) in enumerate(legends):
         y = legend_y + index * 38
         parts.append(f'<rect x="65" y="{y - 17}" width="25" height="25" rx="5" fill="{color}" stroke="#C5CAC7"/>')
         parts.append(f'<text x="105" y="{y + 2}" class="note">{html.escape(label)}</text>')
     registry_facts = sum(1 for fact in facts if fact["entity_status"] == "existing_actor")
-    institutional_facts = len(facts) - registry_facts
+    institutional_facts = sum(
+        1 for fact in facts if fact["entity_status"] == "external_institution"
+    )
+    bounded_facts = len(facts) - registry_facts - institutional_facts
     parts.append(
-        f'<text x="65" y="{height - 40}" class="sub">事实构成：registry actor {registry_facts}/{len(facts)}；external institution {institutional_facts}/{len(facts)}。制度节点主导是当前线上证据边界，不是民间组织不活跃的结论。</text>'
+        f'<text x="65" y="{height - 40}" class="sub">事实构成：registry actor {registry_facts}/{len(facts)}；external institution {institutional_facts}/{len(facts)}；bounded non-registry {bounded_facts}/{len(facts)}。这是证据归属边界，不是组织活跃度结论。</text>'
     )
     parts.append("</svg>")
     return "".join(parts)

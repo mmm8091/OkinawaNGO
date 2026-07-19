@@ -781,7 +781,7 @@ def validate() -> dict[str, object]:
 def date_for_plot(row: dict[str, str]) -> datetime:
     override = {
         "R9ST010": "2015-02-01",
-        "R9ST027": "2021-01-01",
+        "R9ST027": "2021-04-26",
         "R9ST028": "2021-03-23",
     }
     value = override.get(row["stage_id"]) or row["date_start"] or row["date_end"]
@@ -840,7 +840,7 @@ def make_timeline() -> None:
         "R9ST018": "加入第三选项", "R9ST019": "全41市町村投票", "R9ST020": "知事通知日美",
         "R9ST021": "14,263份有效签名", "R9ST023": "市长案被否决", "R9ST024": "市议员案再否决",
         "R9ST026": "第一链：程序却下", "R9ST029": "住民投票条款删除",
-        "R9ST031": "第二链：高裁判决*", "R9ST032": "最高裁终局*",
+        "R9ST031": "第二链：高裁判决", "R9ST032": "最高裁终局",
     }
 
     def display_date(row: dict[str, str]) -> str:
@@ -862,7 +862,8 @@ def make_timeline() -> None:
             ax.scatter(x, 0, s=95, facecolors="white" if pending else color,
                        edgecolors=color, linewidths=2, zorder=3)
             y = 0.42 if idx % 2 == 0 else -0.46
-            text_value = f"{display_date(row)}\n{labels[row['stage_id']]}"
+            pending_marker = "*" if pending else ""
+            text_value = f"{display_date(row)}\n{labels[row['stage_id']]}{pending_marker}"
             ax.annotate(text_value, (x, 0), xytext=(x, y), textcoords="data",
                         ha="center", va="bottom" if y > 0 else "top", fontsize=8.5,
                         bbox={"boxstyle": "round,pad=0.22", "facecolor": "white", "edgecolor": color, "alpha": 0.96},
@@ -877,7 +878,13 @@ def make_timeline() -> None:
         ax.set_yticks([])
         ax.spines[["left", "right", "top", "bottom"]].set_visible(False)
     fig.suptitle("R9 住民投票、意见广告与诉讼程序时间线", fontsize=17, fontweight="bold")
-    fig.text(0.01, 0.005, "关键节点按程序顺序等距排列，不表示实际时间间隔。实心点＝正式表；空心点/*＝仅在reviewed_all与HR-017中，尚未进入正式表。", fontsize=9)
+    pending_count = sum(row["review_status"] == "needs_human_review" for row in STAGES)
+    fig.text(
+        0.01,
+        0.005,
+        f"关键节点按程序顺序等距排列，不表示实际时间间隔。实心点＝正式表；空心点/*＝reviewed_all 中仍待审（当前 {pending_count} 个阶段）。",
+        fontsize=9,
+    )
     fig.savefig(TIMELINE_PATH, dpi=180, bbox_inches="tight", metadata={"Software": "R09 formal process builder"})
     plt.close(fig)
 
@@ -895,11 +902,38 @@ def make_gate_flow() -> None:
                              facecolor="#E9ECEF", edgecolor="#6C757D", linewidth=1.2)
         ax.add_patch(box)
         ax.text(x, 8.75, title, ha="center", va="center", fontsize=10, fontweight="bold")
+    stage_status = {row["stage_id"]: row["review_status"] for row in STAGES}
+
+    def marked(stage_id: str, label: str) -> str:
+        return label + ("*" if stage_status.get(stage_id) == "needs_human_review" else "")
+
     cases = [
         ("名护", 7.0, "#277DA1", ["推进协议会", "17,539有效签名", "四选项条例", "投票：反对16,639", "市长接受并辞职"]),
-        ("与那国", 5.4, "#43AA8B", ["意见广告/反对运动*", "自治体条例入口", "条例两次修正", "投票：632/445*", "町长解释为推进"]),
+        (
+            "与那国",
+            5.4,
+            "#43AA8B",
+            [
+                marked("R9ST007", "意见广告/反对运动"),
+                "自治体条例入口",
+                "条例两次修正",
+                marked("R9ST012", "投票：632/445"),
+                "町长解释为推进",
+            ],
+        ),
         ("县民投票", 3.8, "#4D908E", ["A051/请求代表", "92,848有效签名", "条例+第三选项", "全41市町村投票", "知事通知日美"]),
-        ("石垣", 2.2, "#9B5DE5", ["A011/请求代表", "14,263有效签名", "市长案否决\n议员案再否决", "两条诉讼链", "程序却下/终局*\n条款删除"]),
+        (
+            "石垣",
+            2.2,
+            "#9B5DE5",
+            [
+                "A011/请求代表",
+                "14,263有效签名",
+                "市长案否决\n议员案再否决",
+                "两条诉讼链",
+                marked("R9ST032", "程序却下/终局") + "\n条款删除",
+            ],
+        ),
     ]
     for case_name, y, color, labels in cases:
         ax.text(-1.4, y, case_name, ha="left", va="center", fontsize=12, fontweight="bold", color=color)
@@ -917,7 +951,13 @@ def make_gate_flow() -> None:
                 arrowprops={"arrowstyle": "-[,widthB=3.8", "color": "#9B5DE5", "lw": 1.4})
     ax.set_title("自治诉求如何被制度门槛转换", fontsize=18, fontweight="bold", pad=16)
     ax.text(-1.4, 9.6, "同为‘住民投票’，制度入口、议会转换、投票效力与司法可诉性决定了不同路径。", fontsize=11)
-    ax.text(-1.4, 0.15, "* 空心/星号事项仅在reviewed_all与HR-017中，未进入正式表：与那国需当地材料；石垣最高裁无一手前用中性措辞。箭头不表示联盟或单向因果。", fontsize=9)
+    pending_count = sum(row["review_status"] == "needs_human_review" for row in STAGES)
+    ax.text(
+        -1.4,
+        0.15,
+        f"* 星号事项仍在 reviewed_all 待审（当前 {pending_count} 个阶段）；无星号的最高裁终局仍须保持中性处分措辞。箭头不表示联盟或单向因果。",
+        fontsize=9,
+    )
     fig.savefig(FLOW_PATH, dpi=180, bbox_inches="tight", metadata={"Software": "R09 formal process builder"})
     plt.close(fig)
 
@@ -926,7 +966,7 @@ ACCEPTED_CASE_TITLES = {
     NAGO: "名护 1997｜直接请求进入投票，结果与其后行政决定分离",
     YONAGUNI: "与那国 2014–2015｜正式层从自治体条例开始，不绘入待审运动节点与票数",
     PREF: "冲绳县 2018–2019｜公民请求经条例设计进入全县投票与对外通知",
-    ISHIGAKI: "石垣 2018–2021｜两次议会否决后进入诉讼，随后公投条款被删除",
+    ISHIGAKI: "石垣 2018–2024｜两次议会否决后分化为两条诉讼链",
 }
 
 ACCEPTED_STAGE_LABELS = {
@@ -953,7 +993,12 @@ ACCEPTED_STAGE_LABELS = {
     "R9ST024": "市议员条例案再否决",
     "R9ST025": "义务付け诉讼提起",
     "R9ST026": "全部程序性却下",
+    "R9ST027": "地位确认等诉讼提起",
+    "R9ST028": "第一链控诉审终结",
     "R9ST029": "公投条款删除",
+    "R9ST030": "第二链地裁全部却下",
+    "R9ST031": "第二链高裁控诉棄却",
+    "R9ST032": "最高裁终结\n败诉确定",
 }
 
 ACCEPTED_STAGE_GATE = {
@@ -963,7 +1008,8 @@ ACCEPTED_STAGE_GATE = {
     "R9ST014": 0, "R9ST015": 0, "R9ST016": 0, "R9ST017": 1,
     "R9ST018": 1, "R9ST019": 2, "R9ST020": 3,
     "R9ST021": 0, "R9ST022": 0, "R9ST023": 1, "R9ST024": 1,
-    "R9ST025": 2, "R9ST026": 3, "R9ST029": 4,
+    "R9ST025": 2, "R9ST026": 3, "R9ST027": 2, "R9ST028": 3,
+    "R9ST029": 4, "R9ST030": 3, "R9ST031": 3, "R9ST032": 3,
 }
 
 ACCEPTED_FLOW_LABELS = {
@@ -979,7 +1025,9 @@ ACCEPTED_FLOW_LABELS = {
     "R9ST021": "14,263有效签名", "R9ST022": "27名请求代表",
     "R9ST023": "市长案否决", "R9ST024": "市议员案再否决",
     "R9ST025": "义务付け诉讼", "R9ST026": "程序性却下",
-    "R9ST029": "公投条款删除",
+    "R9ST027": "地位确认等诉讼", "R9ST028": "第一链控诉审终结",
+    "R9ST029": "公投条款删除", "R9ST030": "第二链地裁却下",
+    "R9ST031": "第二链高裁棄却", "R9ST032": "最高裁终结",
 }
 
 
@@ -988,12 +1036,18 @@ def accepted_figure_inputs() -> tuple[list[dict[str, str]], list[dict[str, str]]
     stages = read_csv_rows(STAGE_PATH)
     roles = read_csv_rows(ROLE_PATH)
     stage_ids = {row["stage_id"] for row in stages}
-    if len(stages) != 24 or any(row["review_status"] != "accepted" for row in stages):
-        raise ValueError("Accepted-only figure input must be the 24-row formal stage table")
-    if len(roles) != 25 or any(row["review_status"] != "accepted" for row in roles):
-        raise ValueError("Accepted-only figure input must be the 25-row formal role table")
-    if stage_ids != set(ACCEPTED_STAGE_LABELS) or stage_ids != set(ACCEPTED_STAGE_GATE):
-        raise ValueError("Accepted-only figure mappings must cover all and only 24 formal stages")
+    if len(stages) not in {24, 29} or any(
+        row["review_status"] != "accepted" for row in stages
+    ):
+        raise ValueError("Accepted-only figure input must be a 24- or 29-row formal stage table")
+    if len(roles) not in {25, 29} or any(
+        row["review_status"] != "accepted" for row in roles
+    ):
+        raise ValueError("Accepted-only figure input must be a 25- or 29-row formal role table")
+    if not stage_ids <= set(ACCEPTED_STAGE_LABELS) or not stage_ids <= set(
+        ACCEPTED_STAGE_GATE
+    ):
+        raise ValueError("Accepted-only figure mappings do not cover the formal stages")
     forbidden = ("needs_human_review", "HR-017", "HR017", "pending")
     for row in [*stages, *roles]:
         joined = " ".join(row.values())
@@ -1023,7 +1077,7 @@ def save_accepted_figure(fig: plt.Figure, png_path: Path, svg_path: Path) -> Non
 def make_accepted_timeline(
     stages: list[dict[str, str]], roles: list[dict[str, str]],
 ) -> None:
-    """Formal report timeline: 24 accepted stages only, with no HR-017 layer."""
+    """Formal report timeline derived only from the current accepted layers."""
     setup_fonts()
     case_order = (NAGO, YONAGUNI, PREF, ISHIGAKI)
     colors = {

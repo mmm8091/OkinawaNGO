@@ -1,16 +1,16 @@
 ﻿place,place_zh,frame_label,frame_label_zh,safe_source_count,corpus_source_ids,measurement_scope
-Miyako,宫古,groundwater_life_safety,地下水／饮用水,2,R4S001;R4S003,QA-safe online source excerpts in this R4 package; not local prevalence.
-Miyako,宫古,local_autonomy_referendum,自治／公投,0,,QA-safe online source excerpts in this R4 package; not local prevalence.
-Miyako,宫古,frontline_taiwan_evacuation,前线／台湾邻近／撤离,2,R4S006;R4S009,QA-safe online source excerpts in this R4 package; not local prevalence.
-Miyako,宫古,life_safety,健康／生活安全,1,R4S006,QA-safe online source excerpts in this R4 package; not local prevalence.
-Miyako,宫古,environment_deployment,环境—部署连接,1,R4S003,QA-safe online source excerpts in this R4 package; not local prevalence.
-Ishigaki,石垣,groundwater_life_safety,地下水／饮用水,0,,QA-safe online source excerpts in this R4 package; not local prevalence.
-Ishigaki,石垣,local_autonomy_referendum,自治／公投,3,R4S010;R4S011;R4S014,QA-safe online source excerpts in this R4 package; not local prevalence.
-Ishigaki,石垣,frontline_taiwan_evacuation,前线／台湾邻近／撤离,2,R4S013;R4S014,QA-safe online source excerpts in this R4 package; not local prevalence.
-Ishigaki,石垣,life_safety,健康／生活安全,2,R4S013;R4S014,QA-safe online source excerpts in this R4 package; not local prevalence.
-Ishigaki,石垣,environment_deployment,环境—部署连接,1,R4S016,QA-safe online source excerpts in this R4 package; not local prevalence.
-Yonaguni,与那国,groundwater_life_safety,地下水／饮用水,0,,QA-safe online source excerpts in this R4 package; not local prevalence.
-Yonaguni,与那国,local_autonomy_referendum,自治／公投,2,R4S017;R4S022,QA-safe online source excerpts in this R4 package; not local prevalence.
-Yonaguni,与那国,frontline_taiwan_evacuation,前线／台湾邻近／撤离,6,R4S017;R4S018;R4S019;R4S020;R4S023;R4S025,QA-safe online source excerpts in this R4 package; not local prevalence.
-Yonaguni,与那国,life_safety,健康／生活安全,2,R4S020;R4S025,QA-safe online source excerpts in this R4 package; not local prevalence.
-Yonaguni,与那国,environment_deployment,环境—部署连接,0,,QA-safe online source excerpts in this R4 package; not local prevalence.
+Miyako,宫古,groundwater_life_safety,地下水／饮用水,3,R4S001;R4S002;R4S003,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Miyako,宫古,local_autonomy_referendum,自治／公投,1,R4S008,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Miyako,宫古,frontline_taiwan_evacuation,前线／台湾邻近／撤离,4,R4S006;R4S007;R4S008;R4S009,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Miyako,宫古,life_safety,健康／生活安全,3,R4S006;R4S007;R4S008,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Miyako,宫古,environment_deployment,环境—部署连接,2,R4S002;R4S003,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Ishigaki,石垣,groundwater_life_safety,地下水／饮用水,0,,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Ishigaki,石垣,local_autonomy_referendum,自治／公投,4,R4S010;R4S011;R4S014;R4S015,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Ishigaki,石垣,frontline_taiwan_evacuation,前线／台湾邻近／撤离,3,R4S013;R4S014;R4S015,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Ishigaki,石垣,life_safety,健康／生活安全,3,R4S013;R4S014;R4S015,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Ishigaki,石垣,environment_deployment,环境—部署连接,1,R4S016,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Yonaguni,与那国,groundwater_life_safety,地下水／饮用水,0,,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Yonaguni,与那国,local_autonomy_referendum,自治／公投,2,R4S017;R4S022,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Yonaguni,与那国,frontline_taiwan_evacuation,前线／台湾邻近／撤离,7,R4S017;R4S018;R4S019;R4S020;R4S023;R4S024;R4S025,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Yonaguni,与那国,life_safety,健康／生活安全,2,R4S020;R4S025,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
+Yonaguni,与那国,environment_deployment,环境—部署连接,0,,Human-reviewed/QA-safe online excerpts in this R4 package; not local prevalence.
