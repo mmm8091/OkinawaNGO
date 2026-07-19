@@ -29,23 +29,23 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 - The project principal targets roughly 50% participation in interpretive work. AI may handle approved mechanical extraction, normalization, QA and figure generation, but must not replace the principal's question selection, evidence reading or conclusion-strength decisions.
 - Before a new broad research wave, provide a compact decision brief: research question, current evidence, competing explanations, expected output and decisions required from the principal.
 - Pause after each major module or strong new interpretation for the principal to continue, revise or stop it. Do not accumulate many modules and hand them over only at the end.
-- Until the first five-hour project re-entry decision sheet is returned, do not start another broad research wave. Read-only clarification and already-approved bounded maintenance remain allowed.
+- The first five-hour project re-entry sheet has a paused/incomplete return. Do not start another broad research wave until it is completed; read-only clarification and already-approved bounded maintenance remain allowed.
 
 ## Current Data Status
 
-Updated: 2026-07-16.
+Updated: 2026-07-20.
 
-- Actor registry: 122 organization-level actors. HR-027 added A112 Miyakojima Groundwater Research Group, A113 Ginowan Chura Water Group, A114 All Japan Dockworkers Union Okinawa Regional Headquarters, and A115 New Japan Women's Association Okinawa Prefectural Headquarters for module-repair reasons. The count now clears the Phase-1 minimum of 120. A094 evidence is retained as history but must not return without a new human decision.
+- Actor registry: 122 historical rows and 121 active actors. A072 is a provenance tombstone merged into A071 and must be hidden from current graphs/search; A112–A115 are the HR-027 module-repair additions. The active count clears the Phase-1 minimum of 120. A094 evidence is historical and must not return without a new human decision.
 - Source log: 295 sources; no `inferred_url` placeholders remain. NW2-H reused S158/S204 and provisionally added 47 `ai_seeded` proposal-derived URLs as S248–S294; S295 is a separately archived HR-011 locator correction and not an independent identity source. Source inclusion does not approve an actor, edge, alliance, funding relation, election role, causal claim or interpretation. S051 is E0 `rejected_archive_mismatch` and must not support A011.
-- Actor-issue candidate/reviewed edges: 241; 105 actors connected, 17 edge-isolated; 59 human-reviewed and 182 candidate rows. The 19 HR-027 additions are candidate edge formulations, not publication-approved claims.
-- Actor-place candidate/reviewed edges: 135; 17 human-reviewed and 118 candidate rows. The six HR-027 rows retain headquarters/site/target distinctions for HR-025.
+- Actor-issue table: 248 historical rows. The current analytical layer has 238 active edges, 65 human-reviewed and 173 candidate; 103 active actors are connected and 18 are isolated. Ten rejected/deactivated/excluded rows remain history-only. AI068 is excluded from the default Okinawa narrative.
+- Actor-place table: 135 historical rows; 130 are active, comprising 53 human-reviewed and 77 candidate rows, while 5 are retired. Headquarters/site/event/target/venue semantics remain distinct.
 - Funding/support/relation sample edges: 43. F042 is A109→A052 fourth-round legal counsel; F043 is A105→A107 organizational affiliation. Both are explicitly non-funding/non-alliance relations.
 - Issue taxonomy: 26 issue categories; HR-011 added anti_war and mobilization after the HR-010 additions.
-- Place registry: 20 place/field nodes.
+- Place registry: 21 place/field nodes, including P021 Sakishima Islands.
 - Evidence notes: 49 formal HR-015 rows; five locator refinements remain explicit.
 - Actor-event-venue: 67 rows; 63 `human_checked`, 4 `analytical_seed`. AEV0065–0067 preserve A111/A108 bounded rally roles and A109's fourth-Kadena litigation role. Nine MMC names are E2 event-only legacy candidates, not actors.
 - Legal/policy procedure: 6 cases and 27 roles are HR-014 `human_checked`/accepted. `data/interim/18_legal_policy_actor_roles_v0.csv` separates registry actors from provisional procedural nodes.
-- Source archive: 266 `archived`, 2 `manual_archived`, 25 `failed`, 2 `skipped_non_url_reference`; S279 was successfully retried. HR-030 holds 22 blank metadata/archive decisions. Failures may be 403/SSL/transient restrictions and do not negate source content. The archive script refuses silent cache-hash drift, supports `--from-id`/`--to-id`, and allows `--reconcile-cache-hashes` only after manual inspection; raw archive artifacts are Git-binary to preserve bytes.
+- Source archive: 273 `archived`, 2 `manual_archived`, 18 `failed`, 2 `skipped_non_url_reference`. HR-030 is complete and merged. Failures may be 403/SSL/transient restrictions and do not negate source content. The archive script refuses silent cache-hash drift, supports `--from-id`/`--to-id`, and allows `--reconcile-cache-hashes` only after manual inspection; raw archive artifacts are Git-binary to preserve bytes.
 
 ## Current Deliverables
 
@@ -57,10 +57,10 @@ Updated: 2026-07-16.
   - Covers R2, R3/R4, R5, R11, and R14.
   - R5 now includes the full 2020 OEJP/MMC 71-group participant extraction.
   - `next_module_investigation_tasks_v0.csv` tracks MT tasks and completion status.
-- Second progress-sync package: `outputs/formal_comm_v0/`
+- Second progress-sync package (last delivered historical client snapshot): `outputs/formal_comm_v0/`
   - `第二次进度同步_v0.md` — the boss-facing deliverable (Feishu doc), concise, matches the first-sync style; covers research-module-menu progress, seven-week schedule check, and four embedded figure screenshots.
   - `第二次进度同步_v0.md` and `fig/*.png` are the historical client snapshot. `index.html`/`fig/*.html` may be regenerated internally, but publish a new version only after new screenshots and human figure/caption QA; do not silently overwrite the delivered snapshot.
-  - This, not `docs/progress_report_v1.md`, is the current boss-facing deliverable.
+  - This, not `docs/progress_report_v1.md`, is the last delivered boss-facing artifact. `outputs/formal_comm_v2/` is the current third-sync preparation package, not a delivered PDF.
 - Phase-1 online-completion package: `outputs/online_completion_v0/`
   - Field-level findings and search logs for T1-A/D/E; S020 resolved; ONC public project costs and JICA contractor role added.
 - Phase-1 visualization supplement: `outputs/phase1_visuals_v1/`
@@ -75,35 +75,39 @@ Updated: 2026-07-16.
   - All four registry decisions are complete and merged as A112–A115. Seventeen event descriptions remain outside central AEV in a human-review candidate queue; no inter-actor relation edge was added. HD-012 separately requests the prior 1990–2022 election-study inputs.
 - Third-sync correction ledger: `docs/third_sync_correction_ledger_v1.md`
   - The second sync remains a historical snapshot. The next client communication must explicitly correct its spatial figure, bridge, internationalization and schedule claims.
+- Exploration system: `outputs/exploration_system_data_v1/`, `prototypes/nr3_explorer/`, and `docs/nr3_handoff_v1.md`
+  - Current reviewed/research views hide A072 and AI068 from default use. The typed relation layer separates 14 reviewed dyadic relations, 8 candidate dyadic relations, administrative records, aggregate observations, event participation and 27 case roles. Builder validation, 60 Python tests and the production frontend build pass.
+- Live human-review ledger: `docs/principal_human_review_remaining_v14.md`
+  - 157 decisions remain: 101 immediately reviewable online (HR-010 batch 6, four lifecycle cases and HR-034), 44 later online (HR-029/031), and 12 local-material items. HR-034 is a blank 50-item legacy-status crosswalk, not an automatic migration.
 - First post-audit candidate packages and controlled merge:
   - `outputs/phase1_foundation_v1/`: 49 evidence notes and the original 64 AEV rows completed HR-015; the central `09` table now has 67 rows after HR-013 and the HR-011 bounded event additions.
   - `outputs/registry_expansion_v1/`: HR-011/012 are merged; A107–A110 are retained, C015 remains deferred, and A052/A053/A010 history/round crosswalks are resolved.
   - `outputs/R08_legal_procedure_v0/`: six cases and 27 roles completed HR-014; third-Kadena counsel remains a provisional procedural collective, not an actor.
-  - `outputs/R04_sakishima_frame_corpus_v0/`: 11 formal safe facts, 19 safe source excerpts, two explanatory SVG/HTML figures and brief; HR-016 holds 12 semantic/locator decisions.
-  - `outputs/R09_referendum_process_v0/`: 24 formal accepted stages, 25 formal accepted roles, four-case timeline and institutional-gate figure; HR-017 holds 18 reviewed-all items outside the formal layer.
-  - `outputs/R10_administrative_collaboration_v0/`: a purposive cross-source sample with 35 relations, 26 amount observations and 43 function observations plus two boundary figures; these are within-package counts, not an official annual/department census. Only 9 relations inherit human review and HR-018 gates the other 26.
+  - `outputs/R04_sakishima_frame_corpus_v0/`: 19 human-reviewed/QA-safe frame facts, 24 safe excerpts, 14 layered entities and two explanatory figures. HR-016's 12 online semantic/locator decisions are complete and merged; eight rejected actor candidates remain history-only, while local-expression gaps remain local tasks.
+  - `outputs/R09_referendum_process_v0/`: 29 formal accepted stages and 29 formal accepted roles, plus the four-case timeline and institutional-gate figure. HR-017 has 9 online decisions complete and 9 local-retrieval items blank.
+  - `outputs/R10_administrative_collaboration_v0/`: a purposive cross-source sample with 35 relations, 28 amount observations and 43 function observations plus two boundary figures; these are within-package counts, not an official annual/department census. The formal layers are 24/10/1 reviewed/revised/local for relations, 21/6/1 for amounts and 29/13/1 for functions. HR-018 online decisions are merged; two original local/internal-record decisions remain deferred.
   - `outputs/R10_completeness_audit_v1/`: verifies the R10 sample boundary against the full 86-page/616-row S002 source universe and the six non-zero S099 program-cost rows. S002 coverage is 10/616; S099's three explicitly public-commissioned rows are represented, without approving relation/payment semantics.
-  - `outputs/R10_official_collaboration_universe_v1/`: complete S002 616-row source universe, official resource-type tables, descriptive statistics and two ready-now figures. Its 365 machine display labels are not actors; HR-032 gates only future canonical/JV/registry crosswalk.
-  - `outputs/R06_R07_R11_pathways_v1/`: 71 formal actor-event-venue-target/entry-mode observations, 4 separate analytical seeds, six R6 pathway families, three R7 case sequences and 44 R11 entry observations. HR-021 has eight blank downstream decisions; its first seven depend on HR-018 and do not re-review relation facts.
-  - `outputs/phase1_source_integration_v1/`: 57 module-source crosswalk rows over 54 unique URLs; 39 new sources were integrated as S160–S198 with `relation_or_claim_approved=no`. HR-022 holds 49 source-metadata/support-boundary decisions with blank decision fields.
-  - `outputs/R01_R02_actor_issue_v1/`: full 122-actor × 26-issue layered network, classification ecology, issue co-occurrence and bridge-mechanism figures. Only 59/241 edges are human-reviewed; HR-019 keeps 9 rule, 30 bridge and 76 scope decisions blank.
-  - `outputs/R05_coaction_v1/`: complete 2010/2015/2020 lists as 169 event-participation observations, 15 strict repeat registry actors and two explanatory figures. HR-020 holds 14 blank identity/alias/segmentation decisions; repeat co-signing is not an alliance.
+  - `outputs/R10_official_collaboration_universe_v1/`: complete S002 616-row source universe, official resource-type tables, descriptive statistics and two ready-now figures. Its 365 machine display labels are not actors; HR-032's 8 canonical/JV/registry crosswalk decisions are complete and merged without creating payment edges.
+  - `outputs/R06_R07_R11_pathways_v1/`: 80 formal actor-event-venue-target/entry-mode observations, 4 separate analytical seeds, six R6 pathway families, three R7 cases/nine stages and 53 R11 entry observations. HR-021's 8 downstream decisions are complete and merged; existing SVG/HTML figures are pre-HR021 snapshots and need regeneration.
+  - `outputs/phase1_source_integration_v1/`: 57 module-source crosswalk rows over 54 unique URLs; 39 new sources were integrated as S160–S198 with `relation_or_claim_approved=no`. HR-022's 49 source-metadata/support-boundary decisions are complete and merged.
+  - `outputs/R01_R02_actor_issue_v1/`: history audit covers 122 registry rows and 248 actor-issue rows; current figures use 121 active actors and 238 active edges (65 reviewed/173 candidate), with 103 connected and 18 isolated. HR-019 is complete and merged; ten invalidated rows remain history-only.
+  - `outputs/R05_coaction_v1/`: complete 2010/2015/2020 lists as 169 event-participation observations: 64 registry rows, 22 human-reviewed event-only identities and 83 other event-only names; alias pending is zero. HR-020 is complete and merged; repeat co-signing is not an alliance.
   - `outputs/coverage_audit_v1/`: six-dimension, 125-cell visibility-bias audit with Q1–Q3/R1–R11 implications. It is mechanical aggregation, so no HR-023 was created.
   - `outputs/R08_legal_procedure_v1/`: 27 accepted role×case rows across six human-checked cases, 54 role-family cells, two comparison figures and a report insert. It preserves 13 registered-actor roles versus 14 provisional nodes and creates no R8-specific HR task; HR-026 is now used by the election-civic candidate layer.
-  - `outputs/edge_activation_v1/`: historical 18-actor/58-edge snapshot plus the current post-HR013 layer: 17 actors, 54 candidate edges and 38 source records. A094 is excluded from current use; HR-010 has 47 blank evidence-addendum rows and HR-024 has 8 blank rows.
+  - `outputs/edge_activation_v1/`: historical 18-actor/58-edge snapshot plus the post-HR013 evidence package. A094 is excluded; HR-024's online rows are merged, while HR-010 still has 47 blank evidence-addendum rows and A073 remains local/online-exhausted.
   - `outputs/registry_expansion_gate_v1/`: machine evidence gate retained as a pre-human audit snapshot. HR-013 overrides it: A111 added; C010/C034 background-only; C029-C033 rejected; C015 remains in HR-011.
   - `outputs/hr013_online_wave_integration_v1/`: human-decision overlay and 70-row source crosswalk; all source rows retain `relation_or_claim_approved=no`.
 - Second post-audit online wave:
-  - `outputs/R03_spatial_dossier_v1/`: 135/135 actor-place edges receive candidate semantics; 47 blank HR-025 decisions; full matrix and separate Yonaguni/Ishigaki/Miyako dossiers. The Sakishima dossier now has 14 rows; AP123 exposes a Camp Schwab/Foster cross-key conflict.
-  - `outputs/R09_election_civic_interface_v1/`: 19 candidate actor-event observations across the 2014/2018/2022 gubernatorial elections and 21 source proposals. All 19 remain in blank HR-026; no vote, turnout, outcome or policy causality is inferred.
+  - `outputs/R03_spatial_dossier_v1/`: 135 historical actor-place rows, of which 130 are active (53 reviewed/77 candidate) and 5 retired. HR-025 is complete; the active Sakishima dossier has 13 rows (Yonaguni 6/Ishigaki 3/Miyako 4), and AP123 is P007 Camp Foster.
+  - `outputs/R09_election_civic_interface_v1/`: 19 human-reviewed actor-event observations across the 2014/2018/2022 gubernatorial elections: 18 confirm occurrence and one is announcement-only. No vote, turnout, outcome or policy causality is inferred.
   - `outputs/registry_value_gate_v2/`: five module-value candidates were gated; four HR-027 rows are now `add` and merged as A112–A115, while 八重山大地会 remains deferred for a continuity gap.
   - `outputs/R05_R07_heterogeneous_repertoire_v1/`: 148 existing formal observations reduce to 39 unique case/event×action×venue units across 15 action families and 9 venue groups. It adds no facts, so HR-028 is zero.
-  - `outputs/schema_alias_freeze_v1/`: regenerated after HR-027 with 483 freeze candidates and 36 blank HR-029 decisions. Central schema remains unchanged and HR-029 should be executed only after publication-critical HR-019/024/025 merges.
-  - `outputs/next_wave_source_proposal_audit_v1/` and `outputs/next_wave_source_integration_v1/`: 50 proposal rows normalize to 49 URLs; two reuse S158/S204 and 47 provisionally enter as S248–S294. All claim approvals remain `no`; HR-030 has 22 blank metadata/archive rows.
+  - `outputs/schema_alias_freeze_v1/`: current post-merge snapshot has 505 freeze candidates and 41 blank HR-029 decisions. It must be regenerated once more after HR-010 batch 6, LCR001–004 and HR-034; central schema remains unfrozen.
+  - `outputs/next_wave_source_proposal_audit_v1/` and `outputs/next_wave_source_integration_v1/`: 50 proposal rows normalize to 49 URLs; two reuse S158/S204 and 47 provisionally enter as S248–S294. All claim approvals remain `no`; HR-030's 22 metadata/archive decisions are complete and merged.
   - `outputs/report_assembly_v1/` and `outputs/report_claim_audit_v1/`: 73 current report resources are classified as ready/freeze/superseded; the assembly plan targets a 32-page report and 20-page PPT. All 27 non-superseded report figures have a figure→data→source-crosswalk→script→human-gate traceability row (14 ready, 13 pending gate). The claim audit covers 78 claims and 32 numeric groups; HR-031 holds three blank interpretive-strength decisions. Plans are not contract artifacts: MA017–MA023 separately track the report DOCX/PDF, paper, PPTX, Sakishima dossier DOCX, public-data bundle, final codebook/lint and missing prior-election-study input.
   - `outputs/report_assembly_v1/`: report assembly blueprint for 36 logical figures, 26 tables and 11 briefs; 14 figures are ready now, 13 require freeze, 9 are superseded. The recommended formal report is 32 pages; this package does not generate DOCX/PDF.
-  - `outputs/human_review_orchestration_v1/`: HR-016–032 dependency graph, 13 recommended batches and a 397-row inventory (389 decisions, of which four HR-027 rows are complete, plus 8 ancillary rows). It organizes review work and never infers human decisions.
-  - `outputs/R03_strict_place_issue_v1/`: 330 same-source actor-place-issue triples; 323 E3/E4 candidates, 67 dual-human-reviewed triples, and 100 with formal event attachment. The retired Cartesian projection is retained only as a sensitivity upper bound.
+  - `outputs/human_review_orchestration_v1/`: historical pre-merge orchestration snapshot; use `docs/principal_human_review_remaining_v14.md` for the live 157-item ledger.
+  - `outputs/R03_strict_place_issue_v1/`: 312 active same-source actor-place-issue triples; 305 are E3/E4, 65 dual-human-reviewed, and 100 have formal event attachment. The retired Cartesian projection is only a sensitivity upper bound.
   - `outputs/R02_actor_issue_robustness_v1/`: reviewed-only and S003/S004/S006 leave-out analysis. S004 materially shapes the international perimeter: ecology-to-international bridges fall 8→4 without it, while A001/A002/A009/A046 survive the combined three-source removal.
   - `outputs/translation_episode_comparison_v1/`: 13 analytical episodes across R8/R9 and four HR-027 event candidates. It separates venue entry/intermediate output from substantive project change; TE10–TE13 are not central event facts yet.
 - Local retrieval task book v1: `docs/local_retrieval_tasks_v1.md`
@@ -130,7 +134,7 @@ Updated: 2026-07-16.
 - Complete the valuable Phase-1 visualizations and a research-report v0 first; use their explicit evidence gaps to generate local tasks.
 - Local assignment starts only after Tier 1 is complete or logged as `online_exhausted`, figures have data/scripts/briefs, and the report draft identifies exact missing fields.
 - The original Phase-1 DOCX is the acceptance contract: 120–180 verifiable actors, all R1–R11 at differentiated depth, five specified core figures, a 25–35 page report, an 8k–12k paper, and a 15–20 page PPT.
-- Registry growth remains module/value-driven. HR-027 raised the registry from 118 to 122 through four explicit module repairs; exceeding the minimum is a consequence, not the reason. Seventeen actors remain issue-edge-isolated, and publication-critical edge review remains HR-019/024/025 work. Do not reinsert legacy A077–A085 or A094 without a new human decision. MMC Tier B enters only as a separate mainland-solidarity layer when analytically justified; Tier C stays event-only.
+- Registry growth remains module/value-driven. HR-027 raised the registry history from 118 to 122; A072's duplicate resolution leaves 121 active actors. The current actor-issue graph has 18 active isolated actors. HR-019/024/025 are merged; HR-010 batch 6 still controls 47 edge-evidence items. Do not reinsert A077–A085, A094 or the A072 tombstone without a new human decision. MMC Tier B enters only as a separate mainland-solidarity layer when analytically justified; Tier C stays event-only.
 - Existing `R14 coverage` outputs are a foundation coverage audit under the final DOCX numbering; final R14 is organizational genealogy and is an expansion module.
 - Authoritative acceptance audit: `docs/phase1_scheme_acceptance_audit_v1.md`. Online/local sequencing remains in `docs/phase1_online_completion_plan_v0.md`; the current sub-agent execution briefs are in `docs/phase1_next_wave_execution_v2.md`.
 - If delivered today, the conservative client verdict remains reject-and-rectify: the 120 minimum and first same-source place-issue layer are repaired, but edge-level human freeze and all final DOCX/PDF, paper, PPTX, Sakishima dossier, public-data bundle and frozen codebook remain incomplete.
@@ -163,6 +167,7 @@ python scripts\make_schema_alias_freeze_v1.py
 python scripts\audit_next_wave_source_proposals_v1.py
 python scripts\integrate_next_wave_sources_v1.py
 python scripts\make_r01_r02_actor_issue.py
+python scripts\make_strict_place_issue_v1.py
 python scripts\make_r05_coaction_v1.py
 python scripts\make_coverage_audit_v1.py
 python scripts\make_phase1_source_merge_proposal.py
@@ -181,6 +186,8 @@ python scripts\make_formal_comm_package.py
 python scripts\make_report_traceability_crosswalk_v1.py
 python scripts\audit_report_claims_v1.py
 python scripts\make_human_review_orchestration_v1.py
+python scripts\make_review_status_crosswalk_v1.py
+python scripts\build_exploration_system_data_v1.py
 python scripts\make_phase1_visuals.py
 python scripts\validate_phase1_data.py
 ```
@@ -191,5 +198,5 @@ After source-log or archive changes, rerun the archive script first, then regene
 
 - The old `docs/progress_report_v1.md` is an internal draft, not a deliverable.
 - Next boss-facing communication should use explanatory outputs, not only statistics.
-- Safe current message: HR-011–015 and HR-027 are integrated; registry is 122. R1–R11 have differentiated online layers, the place-issue replacement now has a 330-row same-source evidence base, and first robustness/translation figures exist. These are research candidates, not final findings: 67 triples are dual-reviewed, HR-019/024/025 and HR-029 remain open, and the final contract artifacts still do not exist.
+- Safe current message: all returned HR-016–033 online decisions are integrated; the registry has 122 history rows/121 active actors. R1–R11 have differentiated online layers, the place-issue replacement has 312 active same-source triples (65 dual-reviewed), and the exploration frontend now separates reviewed, candidate, administrative, aggregate, event and case-role layers. Remaining gates are HR-010/LCR/HR-034, then HR-029/031, plus 12 local-material items; final contract artifacts still do not exist.
 - Keep all claims conservative: "publicly visible event participation", "candidate relation", "source-backed role", or "needs local retrieval" are preferred to over-strong network claims.

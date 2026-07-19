@@ -239,3 +239,20 @@ v2 的六项解释性发现：
 配套新图：`fig1_translation_mechanisms_v2.png`、`fig2_institutional_conversion_v2.png`、`fig3_referendum_gates_v2.png`、`fig4_sakishima_hypothesis_v2.png`、`fig5_official_civic_ecology_v2.png`、`fig6_event_reassembly_v2.png`。
 
 当地任务书同步新增：T2-D 先岛三地民间原始表达对照（P0）、T2-E 公投制度门槛一手材料（P1）、T2-F 1972–2012 组织谱系（P2／仅在保留长期标题时启动）。
+
+## 17. 2026-07-20 当前覆盖层
+
+本节覆盖第 12–16 节中作为“当前状态”使用的旧计数；旧节继续保留为形成过程和沟通快照，不得据此回退中央数据。
+
+- Registry 为 122 条历史记录／121 个有效 actor；A072 是并入 A071 的 tombstone，不进入普通搜索或当前图。
+- Actor–issue 为 248 条历史／238 条有效，当前有效层 65 人审＋173 候选，103 connected＋18 isolated；AI068 排除于默认冲绳叙事。
+- Actor–place 为 135 条历史／130 条有效（53 人审＋77 候选）／5 retired；AP123 已固定为 P007 Camp Foster。
+- 严格地点—议题层已按有效边重生为 312 条，其中 305 条 E3/E4、65 条双边人审、100 条可附正式事件；旧 330／323／67 只属于 7 月 16 日快照。
+- R5 的 169 条参与观察现分为 64 registry rows、22 human-reviewed event-only identities、83 other event-only names；严格重复身份为 15 registry＋6 human-reviewed event-only，重复参与仍不等于联盟。
+- R9 公投正式层为 29 stages／29 roles；选举 19 条均已人审，18 条确认发生、1 条只确认预告。
+- R10 目的性样本为 35 relations／28 amounts／43 functions；与 S002 616-row 官方来源总体保持分层。实际合同金额只有 5 条，project cost 不是付款。
+- Source archive 当前为 273 archived、2 manual、18 failed、2 non-URL；HR-030 已合并。
+- 在 HR-016–033 中，凡已回交的线上决定均已合并；HR-029／031 仍后置空白。当前真实剩余总账为 157：现在可做线上 101、依赖后做线上 44、当地材料 12，见 `docs/principal_human_review_remaining_v14.md`。
+- 探索系统已按当前数据重生并通过 builder、60 项 Python 测试和前端 production build；已核 dyadic、行政、汇总、事件、案件角色与研究线索分层显示。
+
+对外使用时，第二次同步仍是最后已经交付的历史客户快照；`outputs/formal_comm_v2/` 是第三次同步准备稿，最终 PDF 由项目负责人排版。OPI-00 仍暂停／未完成，在其完成前不启动新的广泛研究波次。
