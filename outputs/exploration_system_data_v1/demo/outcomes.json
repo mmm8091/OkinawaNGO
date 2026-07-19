@@ -1,0 +1,452 @@
+[
+  {
+    "display_label": "Section 402 适用与可审查标准、公开记录",
+    "display_status": "demo",
+    "episode_id": "TE01",
+    "evidence_level": "E4",
+    "id": "TE01:intermediate_output",
+    "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S093",
+      "S128",
+      "S129"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "2020 维持 DoD 胜诉；未停止工程",
+    "display_status": "demo",
+    "episode_id": "TE01",
+    "evidence_level": "E4",
+    "id": "TE01:bounded_gain",
+    "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S093",
+      "S128",
+      "S129"
+    ],
+    "status": "no",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "2020 维持 DoD 胜诉；未停止工程",
+    "display_status": "demo",
+    "episode_id": "TE01",
+    "evidence_level": "E4",
+    "id": "TE01:underlying_change",
+    "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S093",
+      "S128",
+      "S129"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "NACSJ 科学批评进入正式行政记录",
+    "display_status": "demo",
+    "episode_id": "TE02",
+    "evidence_level": "E4",
+    "id": "TE02:intermediate_output",
+    "interpretation_limit": "正式提交意见不等于采纳。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S130",
+      "S131",
+      "S132"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "补正 EIA 完成；不证明意见获采纳或工程停止",
+    "display_status": "demo",
+    "episode_id": "TE02",
+    "evidence_level": "E4",
+    "id": "TE02:bounded_gain",
+    "interpretation_limit": "正式提交意见不等于采纳。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S130",
+      "S131",
+      "S132"
+    ],
+    "status": "no",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "补正 EIA 完成；不证明意见获采纳或工程停止",
+    "display_status": "demo",
+    "episode_id": "TE02",
+    "evidence_level": "E4",
+    "id": "TE02:underlying_change",
+    "interpretation_limit": "正式提交意见不等于采纳。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S130",
+      "S131",
+      "S132"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "法院确认部分过去期间噪音损害",
+    "display_status": "demo",
+    "episode_id": "TE03",
+    "evidence_level": "E4",
+    "id": "TE03:intermediate_output",
+    "interpretation_limit": "赔偿不表示噪音停止；原告团不等于所有个体或轮次恒定。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S133",
+      "S134"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "获部分赔偿；差止与未来损害请求被驳回",
+    "display_status": "demo",
+    "episode_id": "TE03",
+    "evidence_level": "E4",
+    "id": "TE03:bounded_gain",
+    "interpretation_limit": "赔偿不表示噪音停止；原告团不等于所有个体或轮次恒定。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S133",
+      "S134"
+    ],
+    "status": "yes",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "获部分赔偿；差止与未来损害请求被驳回",
+    "display_status": "demo",
+    "episode_id": "TE03",
+    "evidence_level": "E4",
+    "id": "TE03:underlying_change",
+    "interpretation_limit": "赔偿不表示噪音停止；原告团不等于所有个体或轮次恒定。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S133",
+      "S134"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "列名原告获指定期间赔偿",
+    "display_status": "demo",
+    "episode_id": "TE04",
+    "evidence_level": "E4",
+    "id": "TE04:intermediate_output",
+    "interpretation_limit": "案件特定 plaintiff group；不跨轮次泛化。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S135",
+      "S136"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "部分原告／期间获赔；无运营禁令",
+    "display_status": "demo",
+    "episode_id": "TE04",
+    "evidence_level": "E4",
+    "id": "TE04:bounded_gain",
+    "interpretation_limit": "案件特定 plaintiff group；不跨轮次泛化。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S135",
+      "S136"
+    ],
+    "status": "yes",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "部分原告／期间获赔；无运营禁令",
+    "display_status": "demo",
+    "episode_id": "TE04",
+    "evidence_level": "E4",
+    "id": "TE04:underlying_change",
+    "interpretation_limit": "案件特定 plaintiff group；不跨轮次泛化。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S135",
+      "S136"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "签名门槛达成；议会两度否决；法院明确可诉性门槛",
+    "display_status": "demo",
+    "episode_id": "TE05",
+    "evidence_level": "E4",
+    "id": "TE05:intermediate_output",
+    "interpretation_limit": "A011 是 requester／运动体，不是具名组织原告。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S137",
+      "S138",
+      "S139",
+      "S188",
+      "S190"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "未举行投票；义务付请求被程序性驳回",
+    "display_status": "demo",
+    "episode_id": "TE05",
+    "evidence_level": "E4",
+    "id": "TE05:bounded_gain",
+    "interpretation_limit": "A011 是 requester／运动体，不是具名组织原告。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S137",
+      "S138",
+      "S139",
+      "S188",
+      "S190"
+    ],
+    "status": "no",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "未举行投票；义务付请求被程序性驳回",
+    "display_status": "demo",
+    "episode_id": "TE05",
+    "evidence_level": "E4",
+    "id": "TE05:underlying_change",
+    "interpretation_limit": "A011 是 requester／运动体，不是具名组织原告。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S137",
+      "S138",
+      "S139",
+      "S188",
+      "S190"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "生态争议转成支出与行政裁量审查",
+    "display_status": "demo",
+    "episode_id": "TE06",
+    "evidence_level": "E4",
+    "id": "TE06:intermediate_output",
+    "interpretation_limit": "两波结果必须分列；A055/A020 是 supporter，不是组织原告。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S140",
+      "S141",
+      "S142",
+      "S143"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "第一波限制支出；第二波居民败诉，结果相反",
+    "display_status": "demo",
+    "episode_id": "TE06",
+    "evidence_level": "E4",
+    "id": "TE06:bounded_gain",
+    "interpretation_limit": "两波结果必须分列；A055/A020 是 supporter，不是组织原告。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S140",
+      "S141",
+      "S142",
+      "S143"
+    ],
+    "status": "mixed",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "第一波限制支出；第二波居民败诉，结果相反",
+    "display_status": "demo",
+    "episode_id": "TE06",
+    "evidence_level": "E4",
+    "id": "TE06:underlying_change",
+    "interpretation_limit": "两波结果必须分列；A055/A020 是 supporter，不是组织原告。",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S140",
+      "S141",
+      "S142",
+      "S143"
+    ],
+    "status": "mixed",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "17,539 有效签名；四选项条例；实际投票",
+    "display_status": "demo",
+    "episode_id": "TE07",
+    "evidence_level": "E4",
+    "id": "TE07:intermediate_output",
+    "interpretation_limit": "咨询型反对多数不是法律否决；A068 规范名仍待人工决定。",
+    "review_status": "accepted_process",
+    "source_ids": [
+      "S042",
+      "S171",
+      "S172",
+      "S192"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "反对多数；三日后市长接受基地并辞职",
+    "display_status": "demo",
+    "episode_id": "TE07",
+    "evidence_level": "E4",
+    "id": "TE07:bounded_gain",
+    "interpretation_limit": "咨询型反对多数不是法律否决；A068 规范名仍待人工决定。",
+    "review_status": "accepted_process",
+    "source_ids": [
+      "S042",
+      "S171",
+      "S172",
+      "S192"
+    ],
+    "status": "yes",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "反对多数；三日后市长接受基地并辞职",
+    "display_status": "demo",
+    "episode_id": "TE07",
+    "evidence_level": "E4",
+    "id": "TE07:underlying_change",
+    "interpretation_limit": "咨询型反对多数不是法律否决；A068 规范名仍待人工决定。",
+    "review_status": "accepted_process",
+    "source_ids": [
+      "S042",
+      "S171",
+      "S172",
+      "S192"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "投票举行；地方报道 632 赞成、445 反对",
+    "display_status": "demo",
+    "episode_id": "TE08",
+    "evidence_level": "E3",
+    "id": "TE08:intermediate_output",
+    "interpretation_limit": "A014/A015 为 E2 组织线索；不能写成投票发起／实施者或长期组织。",
+    "review_status": "accepted_process_with_local_gap",
+    "source_ids": [
+      "S010",
+      "S011",
+      "S015",
+      "S071",
+      "S195"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "町长将结果解释为推进依据；组织级身份仍需当地材料",
+    "display_status": "demo",
+    "episode_id": "TE08",
+    "evidence_level": "E3",
+    "id": "TE08:bounded_gain",
+    "interpretation_limit": "A014/A015 为 E2 组织线索；不能写成投票发起／实施者或长期组织。",
+    "review_status": "accepted_process_with_local_gap",
+    "source_ids": [
+      "S010",
+      "S011",
+      "S015",
+      "S071",
+      "S195"
+    ],
+    "status": "yes",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "町长将结果解释为推进依据；组织级身份仍需当地材料",
+    "display_status": "demo",
+    "episode_id": "TE08",
+    "evidence_level": "E3",
+    "id": "TE08:underlying_change",
+    "interpretation_limit": "A014/A015 为 E2 组织线索；不能写成投票发起／实施者或长期组织。",
+    "review_status": "accepted_process_with_local_gap",
+    "source_ids": [
+      "S010",
+      "S011",
+      "S015",
+      "S071",
+      "S195"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  },
+  {
+    "display_label": "反对 434,273（71.7%）；知事通知日美政府",
+    "display_status": "demo",
+    "episode_id": "TE09",
+    "evidence_level": "E4",
+    "id": "TE09:intermediate_output",
+    "interpretation_limit": "签名者／请求代表不自动等于 A051 成员；投票不直接停止工程。",
+    "review_status": "accepted_process",
+    "source_ids": [
+      "S187",
+      "S188",
+      "S190",
+      "S191",
+      "S197"
+    ],
+    "status": "yes",
+    "tier": "intermediate_output"
+  },
+  {
+    "display_label": "民意转化为条例与通知资源；工程未因此自动停止",
+    "display_status": "demo",
+    "episode_id": "TE09",
+    "evidence_level": "E4",
+    "id": "TE09:bounded_gain",
+    "interpretation_limit": "签名者／请求代表不自动等于 A051 成员；投票不直接停止工程。",
+    "review_status": "accepted_process",
+    "source_ids": [
+      "S187",
+      "S188",
+      "S190",
+      "S191",
+      "S197"
+    ],
+    "status": "yes",
+    "tier": "bounded_gain"
+  },
+  {
+    "display_label": "民意转化为条例与通知资源；工程未因此自动停止",
+    "display_status": "demo",
+    "episode_id": "TE09",
+    "evidence_level": "E4",
+    "id": "TE09:underlying_change",
+    "interpretation_limit": "签名者／请求代表不自动等于 A051 成员；投票不直接停止工程。",
+    "review_status": "accepted_process",
+    "source_ids": [
+      "S187",
+      "S188",
+      "S190",
+      "S191",
+      "S197"
+    ],
+    "status": "no",
+    "tier": "underlying_change"
+  }
+]

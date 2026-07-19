@@ -1,0 +1,249 @@
+[
+  {
+    "display_label": "local_conflict_site",
+    "display_status": "demo",
+    "display_summary": "Physical site where conflict or on-site action is anchored.",
+    "evidence_level": "",
+    "id": "V001",
+    "interpretation_limit": "Site presence must be distinguished from advocacy target.",
+    "phase1_use": [
+      "R3",
+      "R4",
+      "R7"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "field_site"
+  },
+  {
+    "display_label": "public_statement_forum",
+    "display_status": "demo",
+    "display_summary": "Organization-hosted public statement or co-signatory publication venue.",
+    "evidence_level": "",
+    "id": "V002",
+    "interpretation_limit": "Co-signing records one event only.",
+    "phase1_use": [
+      "R5",
+      "R6",
+      "R7"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "civic_public_communication"
+  },
+  {
+    "display_label": "petition_or_request_submission",
+    "display_status": "demo",
+    "display_summary": "Formal request, petition or submission directed to an institution.",
+    "evidence_level": "",
+    "id": "V003",
+    "interpretation_limit": "Use with a named target institution where available.",
+    "phase1_use": [
+      "R5",
+      "R7"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "administrative_advocacy"
+  },
+  {
+    "display_label": "us_federal_advisory_or_scientific_body",
+    "display_status": "demo",
+    "display_summary": "U.S. federal advisory, scientific or expert institution receiving an Okinawa-related request.",
+    "evidence_level": "",
+    "id": "V004",
+    "interpretation_limit": "Venue and target may be the same institution.",
+    "phase1_use": [
+      "R6",
+      "R7"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "international_institution"
+  },
+  {
+    "display_label": "us_federal_court",
+    "display_status": "demo",
+    "display_summary": "U.S. federal judicial venue for litigation.",
+    "evidence_level": "",
+    "id": "V005",
+    "interpretation_limit": "Party, counsel and non-party roles must remain distinct.",
+    "phase1_use": [
+      "R6",
+      "R7",
+      "R8"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "legal_judicial"
+  },
+  {
+    "display_label": "japan_or_local_court",
+    "display_status": "demo",
+    "display_summary": "Japanese national or local judicial venue.",
+    "evidence_level": "",
+    "id": "V006",
+    "interpretation_limit": "Needed for noise and environmental litigation expansion.",
+    "phase1_use": [
+      "R7",
+      "R8"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "legal_judicial"
+  },
+  {
+    "display_label": "prefectural_referendum",
+    "display_status": "demo",
+    "display_summary": "Prefecture-wide referendum process and official vote.",
+    "evidence_level": "",
+    "id": "V007",
+    "interpretation_limit": "Separate initiator, electorate, administration and campaign roles.",
+    "phase1_use": [
+      "R7",
+      "R9"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "electoral_referendum"
+  },
+  {
+    "display_label": "municipal_referendum",
+    "display_status": "demo",
+    "display_summary": "Municipal referendum, direct-request or referendum-ordinance process.",
+    "evidence_level": "",
+    "id": "V008",
+    "interpretation_limit": "A referendum drive and a completed vote are different stages.",
+    "phase1_use": [
+      "R7",
+      "R9"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "electoral_referendum"
+  },
+  {
+    "display_label": "newspaper_or_public_opinion_ad",
+    "display_status": "demo",
+    "display_summary": "Paid or organized opinion-advertising/public-opinion venue.",
+    "evidence_level": "",
+    "id": "V009",
+    "interpretation_limit": "Publication outlet and committee identity still require local confirmation where noted.",
+    "phase1_use": [
+      "R7",
+      "R9"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "media_public_opinion"
+  },
+  {
+    "display_label": "local_government_administration",
+    "display_status": "demo",
+    "display_summary": "Prefectural or municipal administrative venue for commissions, collaboration or requests.",
+    "evidence_level": "",
+    "id": "V010",
+    "interpretation_limit": "Project cost is not automatically a contract payment.",
+    "phase1_use": [
+      "R7",
+      "R10"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "administrative_government"
+  },
+  {
+    "display_label": "national_ministry_or_agency",
+    "display_status": "demo",
+    "display_summary": "Japanese national ministry or agency venue.",
+    "evidence_level": "",
+    "id": "V011",
+    "interpretation_limit": "Designation, commission and funding must be coded separately.",
+    "phase1_use": [
+      "R7",
+      "R10"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "administrative_government"
+  },
+  {
+    "display_label": "environmental_assessment_or_policy_procedure",
+    "display_status": "demo",
+    "display_summary": "Environmental impact, permit or policy procedure outside ordinary litigation.",
+    "evidence_level": "",
+    "id": "V012",
+    "interpretation_limit": "Seed taxonomy only; current actor-event rows do not yet cover this venue.",
+    "phase1_use": [
+      "R4",
+      "R7",
+      "R8"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "legal_administrative_procedure"
+  },
+  {
+    "display_label": "transnational_ngo_advocacy_forum",
+    "display_status": "demo",
+    "display_summary": "Cross-border NGO network or advocacy forum.",
+    "evidence_level": "",
+    "id": "V013",
+    "interpretation_limit": "Network appearance does not prove stable alliance.",
+    "phase1_use": [
+      "R6",
+      "R7",
+      "R11"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "transnational_civic"
+  },
+  {
+    "display_label": "un_or_international_human_rights_mechanism",
+    "display_status": "demo",
+    "display_summary": "UN or comparable international human-rights mechanism.",
+    "evidence_level": "",
+    "id": "V014",
+    "interpretation_limit": "Seed taxonomy only; no current event row mapped.",
+    "phase1_use": [
+      "R6",
+      "R7",
+      "R8"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "international_institution"
+  },
+  {
+    "display_label": "public_policy_meeting_or_forum",
+    "display_status": "demo",
+    "display_summary": "Public meeting, symposium or policy forum where organizations address an audience or institution.",
+    "evidence_level": "",
+    "id": "V015",
+    "interpretation_limit": "Future expansion venue.",
+    "phase1_use": [
+      "R7",
+      "R10",
+      "R11"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "civic_policy_forum"
+  },
+  {
+    "display_label": "service_charity_program_site",
+    "display_status": "demo",
+    "display_summary": "Program or facility venue for service, welfare or charity activity.",
+    "evidence_level": "",
+    "id": "V016",
+    "interpretation_limit": "Observed service function does not imply political alignment.",
+    "phase1_use": [
+      "R7",
+      "R11"
+    ],
+    "review_status": "taxonomy",
+    "source_ids": [],
+    "venue_group": "service_charity"
+  }
+]

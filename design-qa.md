@@ -1,0 +1,120 @@
+# NR-03 Design QA
+
+- source visual truth path: `C:\Users\10857\.codex\generated_images\019f73f3-ca8f-7d51-8fd1-82d5436342e2\call_Up8MiS8BGt83zGMUctd0D2d4.png`
+- implementation URL: `http://localhost:4173/`
+- implementation screenshot paths (current rewrite): `prototypes/nr3_explorer/qa/final2_overview.png`, `final2_actors.png`, `final2_actors_zoomed.png`, `final2_time.png`
+- intended viewport: 1488 × 1024
+- state: Overview default; Actors default reviewed-link state; Time default 2015
+
+## Current status (2026-07-19, iteration 3)
+
+The first implementation was treated by the principal as an intention draft; the frontend was
+then rewritten (component split under `src/lib`, `src/components`, `src/pages`) with the
+following principal decisions applied:
+
+1. 严格证据 map state removed — Overview states are 全域 / 先岛聚焦 only.
+2. Time layer is a dedicated fifth page (`#/time`), not a shared bottom sheet; nothing overlays
+   any canvas.
+3. No evidence-depth marks on the Overview (region labels carry plain region-color dots; the
+   depth legend is gone). Per-relation evidence levels remain in the actor detail panel.
+4. Type scale established as a design rule: 11 / 12 / 13 / 14 / 19 / 22 / 24 px; no UI text
+   below 11px; graph labels render in screen space so zoom never shrinks them.
+5. Actors canvas gained wheel zoom-to-cursor (0.6–3.0), drag pan, buttons, and reset — same
+   interaction family as the map.
+6. Issue/place names stay as taxonomy codes; the planned zh/ja/en mapping is a data-layer
+   (NR-02) deliverable, consumed via `labelOf()` when it ships.
+
+## Verified with rendered evidence + scripted interaction (headless Chrome)
+
+- Overview: 2-state segmented; land click selects the polygon's region (冲绳本岛 ✓); hover
+  tooltip shows municipality (名護市 ✓); wheel zoom 120% ✓; sakishima aggregation ✓; no
+  timeline sheet; no depth legend.
+- Actors: wheel zoom 100%→118% ✓; drag pan ✓; reset 100% ✓; selected-actor pill label;
+  hover name tooltip; empty-canvas deselect; class/issue/search filters; legend and filter
+  counts cover only the 23 reviewed-edge actors.
+- Time: 10 year tabs; 2015 shows 2 event cards; 1997 shows 1; participant chip deep-links to
+  the actor on the Actors page (与那国自衛隊配備反対意見広告実行委員会 ✓); event-only
+  participants counted, never listed; empty historical-anchor boundary stated.
+- Pathways (added after principal go-ahead): 9 episodes in 7 route families; six-stage ladder
+  renders episode fields + per-tier outcomes; TE01 shows 未观察到 on both result stages,
+  TE06 shows 部分/混合 ✓; actor chip deep-links to Actors (泡瀬干潟を守る連絡会 ✓);
+  view-level interpretation limits visible. Screenshots: `qa/final3_pathways*.png`.
+- Console: 0 errors/warnings across all scripted runs.
+- `npm run build` passes.
+
+## Findings fixed in iteration 2 (2026-07-19, earlier same day)
+
+- [P0] Region→place mapping used a regex over `place.region`; P013 Miyako (registry region
+  `Sakishima`) vanished from 宫古群岛 and leaked into 八重山群岛 tags.
+  Fix: explicit presentation-only `PLACE_DISPLAY_REGION` map.
+- [P0] Nearest-centroid map selection could pick the wrong region (本岛 click → 周边岛屿).
+  Fix: point-in-polygon hit testing (identity-transform guard for any devicePixelRatio).
+- [P0] Region labels were fixed-position overlays and detached from geography on zoom.
+  Fix: labels anchored to projected municipality centroids, updated on every draw.
+- [P1] React passive wheel listener caused console errors; no drag pan.
+  Fix: native non-passive wheel + zoom-to-cursor + clamped drag pan.
+- [P1] Actors legend dropped the 7th group; class filter counts covered all 122 actors while
+  the canvas shows 23. Fix: counts computed from reviewed-edge actors.
+- [P1] Selected-actor label collided with issue labels; nodes unlabeled until clicked.
+  Fix: pill label drawn last + hover tooltip + empty-click deselect.
+- [P2] Dead controls (compare toggle, filter icon, inert segmented layers, inert issue rows,
+  inert source button). Fix: honest disable / removal / real wiring incl. cross-page deep links.
+- [P2] favicon 404. Fix: inline SVG icon.
+
+## Open items for the principal
+
+- Time page event cards show action-type codes (`co_signing`, …) and the data's English
+  `interpretation_limit` lines verbatim; these belong to the same future zh/ja/en mapping work.
+- The map's visual salience is still bounded by real archipelago geography (long NE–SW chain);
+  default fit shows all 42 municipalities.
+- The IA document was amended (`docs/exploration_system_information_architecture_v1.md` §12)
+  to record the five-page revision; principal confirmation requested.
+
+## Comparison history
+
+- Iteration 1: dense copy, slow/inaccessible map zoom, false unclassified labels → fixed.
+- Iteration 2: rendered evidence captured; P0 region-mapping/hit-test/label-anchor bugs,
+  P1 passive-wheel/pan/legend-count/label-collision bugs, P2 dead controls fixed.
+- Iteration 3: principal redesign decisions (5th time page, no strict state, no depth marks,
+  type scale, codes-not-English) implemented in a full rewrite; regression green.
+- Iteration 4 (2026-07-19): principal round-3 decisions — copy discipline (no non-permanent
+  text), chart-name titles with "?" help popovers, research view (演示/研究) showing reviewed +
+  pending with dashed/待审 marks on all four pages, time-page period anchors from the DOCX and
+  an honest genealogy gap band. Pathways page added earlier the same day. One real bug found by
+  rendered QA: a legacy `.page-intro span` rule silently overrode the popover's `display:none`
+  (kept it always visible); fixed by deleting the dead rule. Screenshots: `qa/clean_*.png`,
+  `qa/final4_*_research.png`.
+- Iteration 5 (2026-07-19): Evidence page (V4) shipped — 6 dimensions, per-facet bars with
+  count/share/unit/denominator, D5 source-type × archive matrix, implication panel
+  (mechanism / impact / online+local gap actions / affected modules / interpretation limit).
+  All five IA pages are now live; the evidence nav item is enabled. "?" icon redrawn as inline
+  SVG after principal feedback. Screenshots: `qa/final5_*.png`.
+- Iteration 6 (2026-07-19): principal approved the zh/ja/en label mapping
+  (`data/metadata/display_label_mapping_draft_v0.csv`, now 229 codes incl. 73 source types and
+  facet names). Frontend consumes it through a generated `src/lib/labels.js` + topbar 中/日/EN
+  switch (default zh); ChartHelp copy rewritten in positive, instructive phrasing per principal
+  feedback (no stacked negations). Global evidence drawer shipped: any source chip opens the
+  drawer with source title/URL, type, level, review status, publication year, supports,
+  archive status, bias note and interpretation limit; `can_support_claim=false` is flagged.
+  Screenshots: `qa/final6_*.png`, `qa/final7_*.png`.
+- Iteration 7 (2026-07-19): full-UI i18n — fixed interface copy (nav, page titles, metrics,
+  section headers, stage names, status chips, period labels, drawer, loading, help popovers)
+  moved into `src/lib/ui_strings.js` (zh/ja/en), so the 中/日/EN switch now covers both data
+  codes and UI chrome. Brand mark filled to match the "?" affordance. Screenshots:
+  `qa/final8_*.png`.
+- Iteration 8 (2026-07-19, rectification after main-thread acceptance): all ten findings
+  fixed and re-verified — region panel episode entries (map→place→episode→evidence chain),
+  full 122-actor search incl. IDs and aliases (A073 reachable), actor event lists with
+  year deep-links (actor→issue→event→evidence chain), region compare and episode six-stage
+  compare, drawer locator, ≤820px mobile breakpoint (390×844 no horizontal overflow),
+  research-summary wording (已核 9 ＋ 待审 4), English dimension names, aria-hidden removed
+  from interactive map labels, handoff screenshots retaken with forced state reset and
+  md5-distinct pairs, workbench staleness corrected. Handoff updated to `docs/nr3_handoff_v1.md` v2.
+- Iteration 9 (2026-07-20, recheck wrap-up per `nr3_recheck_and_relation_frontend_brief_v1.md`):
+  EN-mode Chinese residuals swept (brand name, nav/lang/layer aria-labels, canvas aria-labels,
+  control titles, map-state aria, evidence title/help, period range — remaining CJK is data
+  fields or the 中/日 switcher labels by design); 演示视图 renamed 已核视图 per principal
+  decision; handoff doc separates the A073 search test from the A002 event chain; evidence
+  drawer closes on route change. Verified at 1280×900 and 390×844; build + console PASS/0.
+
+final result: pass (agent-verified with rendered evidence; awaiting principal confirmation)

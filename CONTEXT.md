@@ -20,7 +20,14 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - **source**: A public record used to support an actor, issue, place, or relationship.
 - **candidate edge**: A provisional relationship recorded for review; not a final analytic claim.
 - **evidence_level**: E0-E4 confidence scheme used to separate confirmed evidence from leads.
-- **human review**: Human judgment over seeded actors, sources, and edges.
+- **human review**: Human judgment over explicitly named facts or fields. It does not automatically approve every field in the same row.
+- **review_status**: Workflow state of a record. It is separate from evidence strength, the human decision, claim strength, and display eligibility.
+- **human_decision**: The principal's accept, revise, defer, or reject decision for a stated review scope.
+- **claim_status**: Whether the current material supports a claim fully, supports it with explicit limits, leaves it as a candidate/lead, or does not support it.
+- **supported_bounded**: A claim whose core relation or observation is accepted while named fields such as amount, period, recipient scope, or endpoint identity remain incomplete and visible.
+- **graph_eligibility**: The semantic form in which a record may be visualized, such as dyadic relation, case role, event participation, aggregate observation, research lead, genealogy anchor, or excluded.
+- **reviewed view**: The default frontend layer containing supported and supported-bounded records. It replaces the user-facing term “demo view.”
+- **research view**: The frontend layer that adds visibly marked candidates and research leads without changing reviewed-layer wording.
 - **event-only participant**: A name supported for participation in a specific event but lacking enough identity/continuity evidence for the actor registry. Event-only names must not be counted as organizations or treated as stable network members.
 - **local material collection**: Collection of local/offline/hard-to-access materials such as library database records, organizational reports, activity booklets, or local archives.
 

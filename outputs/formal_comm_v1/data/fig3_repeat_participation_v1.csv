@@ -1,0 +1,9 @@
+﻿record_type,label,count
+event_participation,EV2010_WWF_67,67
+event_participation,EV2015_NACSJ_31,31
+event_participation,EV2020_OEJP_MMC_71,71
+event_participation_total,three_event_total,169
+repeat_pattern,贯穿三次,3
+repeat_pattern,仅 2010 + 2015,7
+repeat_pattern,仅 2010 + 2020,5
+repeat_pattern,仅 2015 + 2020,0

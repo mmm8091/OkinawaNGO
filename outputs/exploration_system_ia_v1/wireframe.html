@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>已退出冻结交付：探索系统低保真 wireframe v1（NR-01）</title>
+<meta name="artifact-status" content="superseded_exploration">
+<style>
+  :root{
+    --ink:#22333b; --sub:#5a6b72; --line:#c9d6d6; --bg:#f2f6f6; --card:#ffffff;
+    --teal:#2a7f7f; --orange:#d9962e; --blue:#3d6b8f; --rose:#b5486b;
+    --ok-bg:#e3f2ec; --ok-bd:#2f8f5b; --ok-tx:#20603f;
+    --bd-bg:#eef4f8; --bd-bd:#3d6b8f; --bd-tx:#2b4d68;
+    --cand-bg:#fdf6e3; --cand-bd:#c9a227; --cand-tx:#7a611a;
+    --seed-bg:#f0f0f0; --seed-bd:#8a8a8a; --seed-tx:#555;
+    --gap-bg:#faeef2; --gap-bd:#b5486b; --gap-tx:#8a3350;
+  }
+  *{box-sizing:border-box; margin:0;}
+  body{font-family:"Microsoft YaHei","PingFang SC",sans-serif; background:var(--bg); color:var(--ink); font-size:14px;}
+  a{color:var(--teal); cursor:pointer; text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  /* 检查用侧栏（不属于产品界面） */
+  #reviewer{position:fixed; left:0; top:0; bottom:0; width:210px; background:#22333b; color:#c6d2d8; padding:14px; overflow-y:auto; z-index:50;}
+  #reviewer h1{font-size:14px; color:#fff; margin-bottom:4px;}
+  #reviewer .superseded{font-size:11px; line-height:1.5; color:#fff; background:#8a3350; border:1px solid #d9a5b6; padding:8px; margin:8px 0 12px; border-radius:5px;}
+  #reviewer p{font-size:11px; margin-bottom:12px; line-height:1.5;}
+  #reviewer button{display:block; width:100%; text-align:left; background:none; border:1px solid #45565f; color:#c6d2d8; padding:7px 9px; margin-bottom:6px; border-radius:5px; cursor:pointer; font-size:12.5px;}
+  #reviewer button.active{background:var(--teal); border-color:var(--teal); color:#fff;}
+  #stage{margin-left:210px; min-height:100vh; display:flex; flex-direction:column;}
+
+  /* 产品全局顶栏 */
+  #topbar{background:#fff; border-bottom:1px solid var(--line); padding:10px 22px; display:flex; align-items:center; gap:14px; flex-wrap:wrap;}
+  #topbar .logo{font-weight:bold; font-size:15px; cursor:pointer;}
+  #topbar .topnav{display:flex; gap:4px; align-items:center;}
+  #topbar .topnav a{padding:5px 8px; border-radius:12px; color:var(--sub); font-size:12px; white-space:nowrap;}
+  #topbar .topnav a:hover{background:#eef6f6; color:var(--teal); text-decoration:none;}
+  #topbar .search{flex:1; min-width:180px; max-width:420px; border:1px dashed #9aa7b0; border-radius:16px; padding:6px 14px; color:var(--sub); font-size:12.5px;}
+  .layer-switch{display:flex; align-items:center; gap:6px; font-size:12.5px; color:var(--sub);}
+  .layer-switch .knob{width:38px; height:20px; border-radius:10px; background:#cfd8dc; position:relative; cursor:pointer; transition:.15s;}
+  .layer-switch .knob::after{content:""; position:absolute; top:2px; left:2px; width:16px; height:16px; border-radius:50%; background:#fff; transition:.15s;}
+  body.research .layer-switch .knob{background:var(--cand-bd);}
+  body.research .layer-switch .knob::after{left:20px;}
+  #research-banner{display:none; background:var(--cand-bg); border-bottom:1px solid var(--cand-bd); color:var(--cand-tx); padding:6px 22px; font-size:12.5px;}
+  body.research #research-banner{display:block;}
+
+  main{flex:1; padding:20px 26px 80px;}
+  .screen{display:none; max-width:1060px;}
+  .screen.on{display:block;}
+  .crumb{font-size:12px; color:var(--sub); margin-bottom:12px;}
+  .crumb b{color:var(--ink);}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 18px; margin-bottom:14px;}
+  .card h3{font-size:14px; margin-bottom:8px;}
+  .muted{color:var(--sub); font-size:12.5px; line-height:1.6;}
+  .ph{background:#eef1f2; border:1px dashed #b3bfc6; border-radius:6px; color:#7a8a94; display:flex; align-items:center; justify-content:center; font-size:12px; text-align:center; padding:6px;}
+  .grid{display:grid; gap:12px;}
+  .g2{grid-template-columns:1fr 1fr;} .g3{grid-template-columns:1fr 1fr 1fr;} .g4{grid-template-columns:repeat(4,1fr);}
+  @media (max-width:900px){ .g2,.g3,.g4,.hero,.action-row{grid-template-columns:1fr;} #reviewer{position:static; width:auto;} #stage{margin-left:0;} #topbar .topnav{order:3; width:100%; overflow-x:auto;} }
+
+  .badge{display:inline-block; border-radius:10px; padding:1px 9px; font-size:11px; margin-left:6px; vertical-align:1px; white-space:nowrap;}
+  .b-ok{background:var(--ok-bg); border:1px solid var(--ok-bd); color:var(--ok-tx);}
+  .b-bound{background:var(--bd-bg); border:1px solid var(--bd-bd); color:var(--bd-tx);}
+  .b-cand{background:var(--cand-bg); border:1px solid var(--cand-bd); color:var(--cand-tx);}
+  .b-seed{background:var(--seed-bg); border:1px solid var(--seed-bd); color:var(--seed-tx);}
+  .b-gap{background:var(--gap-bg); border:1px solid var(--gap-bd); color:var(--gap-tx);}
+  .research-only{display:none;}
+  body.research .research-only{display:revert;}
+  tr.research-only{display:none;} body.research tr.research-only{display:table-row;}
+
+  .evd{display:inline-block; border:1px solid var(--teal); color:var(--teal); border-radius:4px; font-size:11px; padding:0 6px; cursor:pointer; margin-left:6px;}
+  .limit{border-left:4px solid var(--rose); background:#fdf7f9; padding:10px 14px; font-size:12.5px; color:var(--sub); border-radius:0 6px 6px 0; margin-top:10px;}
+  .limit b{color:var(--rose);}
+  table{width:100%; border-collapse:collapse; font-size:12.5px;}
+  th,td{border:1px solid var(--line); padding:7px 9px; text-align:left; vertical-align:top;}
+  th{background:#f4f8f8; font-weight:600;}
+  .qcard{border:1.5px solid var(--teal); border-radius:8px; padding:14px; background:#fff; cursor:pointer;}
+  .qcard:hover{box-shadow:0 2px 8px rgba(42,127,127,.18);}
+  .qcard .q{font-weight:bold; font-size:14px; margin-bottom:6px;}
+  .qcard .sub{font-size:12px; color:var(--sub); line-height:1.5;}
+  .hero{display:grid; grid-template-columns:minmax(280px,.82fr) minmax(420px,1.45fr); gap:14px; align-items:stretch;}
+  .hero-copy{display:flex; flex-direction:column; justify-content:space-between;}
+  .map-figure{background:#eaf4f5; border:1px solid var(--line); border-radius:8px; overflow:hidden; position:relative;}
+  .map-figure img{display:block; width:100%; height:100%; min-height:330px; object-fit:cover; object-position:center top;}
+  .map-label{position:absolute; left:12px; right:12px; bottom:10px; background:rgba(255,255,255,.94); border:1px solid var(--line); border-radius:6px; padding:8px 10px; font-size:11.5px; color:var(--sub);}
+  .action-row{display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:12px;}
+  .action{border:1px solid var(--line); border-radius:7px; background:#fff; padding:10px; cursor:pointer;}
+  .action:hover{border-color:var(--teal); box-shadow:0 2px 8px rgba(42,127,127,.12);}
+  .action b{display:block; margin-bottom:4px;}
+  .chain{display:flex; gap:0; flex-wrap:wrap; margin:10px 0;}
+  .chain .step{flex:1; min-width:130px; border:1px solid var(--line); background:#fff; padding:9px 10px; font-size:12px; position:relative; margin-right:16px; border-radius:6px; margin-bottom:8px;}
+  .chain .step::after{content:"→"; position:absolute; right:-14px; top:50%; transform:translateY(-50%); color:#9aa7b0;}
+  .chain .step:last-child::after{content:"";}
+  .chain .step .t{font-weight:bold; margin-bottom:4px; font-size:12px;}
+  .chain .step.empty{background:#f7f7f7; color:#8a8a8a; border-style:dashed;}
+
+  details.note{margin:18px 0 30px; border:1px solid #d9b382; border-radius:8px; background:#fdf9f2;}
+  details.note summary{cursor:pointer; padding:10px 14px; font-weight:bold; font-size:13px; color:#7a611a;}
+  details.note .inner{padding:0 16px 14px; font-size:12.5px; color:#5a5142; line-height:1.7;}
+  details.note .inner b{color:#7a611a;}
+
+  /* 证据抽屉 */
+  #drawer{position:fixed; right:-420px; top:0; bottom:0; width:400px; max-width:92vw; background:#fff; border-left:2px solid var(--teal); box-shadow:-4px 0 16px rgba(0,0,0,.12); transition:right .2s; z-index:80; padding:20px; overflow-y:auto;}
+  #drawer.open{right:0;}
+  #drawer h3{font-size:15px; margin-bottom:12px;}
+  #drawer .row{margin-bottom:10px; font-size:12.5px;}
+  #drawer .row b{display:inline-block; width:96px; color:var(--sub); font-weight:normal;}
+  #drawer .close{float:right; cursor:pointer; color:var(--sub); font-size:18px;}
+  .backnote{font-size:11px; color:#9aa7b0; margin-top:6px;}
+</style>
+</head>
+<body>
+
+<nav id="reviewer">
+  <h1>NR-01 旧 wireframe 探索记录</h1>
+  <div class="superseded">已退出冻结交付。当前产品结构为四个主页面、四个可视化引擎、全局时间层与证据抽屉；本文件不得作为 NR-02 页面需求。</div>
+  <p>本侧栏仅供负责人检查用，不属于产品界面。全部内容为结构占位（〔〕），不含新研究事实。</p>
+  <button data-s="s0" class="active">S0 首页（问题页）</button>
+  <button data-s="s1">S1 组织生态·列表</button>
+  <button data-s="s2">S2 actor 详情</button>
+  <button data-s="s3">S3 地点与地方化·地图</button>
+  <button data-s="s4">S4 地点详情</button>
+  <button data-s="s5">S5 比较视图</button>
+  <button data-s="s6">S6 行动与制度路径·列表</button>
+  <button data-s="s7">S7 episode 详情</button>
+  <button data-s="s8">S8 历史演变</button>
+  <button data-s="s9">S9 证据与方法底层</button>
+  <p style="margin-top:14px;">试一试：右上角切换<b style="color:#fff">研究层</b>开关，观察候选内容如何出现；点击任意<b style="color:#fff">证据</b>小标签打开抽屉。</p>
+</nav>
+
+<div id="stage">
+  <div id="topbar">
+    <span class="logo" onclick="show('s0')">冲绳民间组织与议题网络 · 一期探索系统</span>
+    <span class="topnav"><a onclick="show('s3')">地域</a><a onclick="show('s1')">组织</a><a onclick="show('s6')">路径</a><a onclick="show('s8')">历史</a><a onclick="show('s9')">方法</a></span>
+    <span class="search">🔍 搜索组织、地点、议题、事件…（全局常驻）</span>
+    <span class="layer-switch">演示层 <span class="knob" onclick="document.body.classList.toggle('research')"></span> 研究层</span>
+  </div>
+  <div id="research-banner">⚠ 当前显示包含未复核候选内容（黄色徽章）与分析种子（灰色徽章）；这些不是正式研究结论。</div>
+
+  <main>
+
+  <!-- ============ S0 首页 ============ -->
+  <section class="screen on" id="s0">
+    <div class="crumb">首页</div>
+    <div class="hero">
+      <div class="card hero-copy" style="border-color:var(--teal); margin-bottom:0;">
+        <div>
+          <p class="muted">一期探索系统</p>
+          <h3 style="font-size:19px; line-height:1.45; margin-top:6px;">地方损害如何被组织翻译成环保、生活安全、自治、人权、法律与国际倡议，并进入不同制度场域？</h3>
+          <p class="muted" style="margin-top:10px;">先从地域理解问题，再沿组织或制度路径下钻；每条可见事实都能打开证据。</p>
+        </div>
+        <div class="action-row">
+          <div class="action" onclick="show('s3')"><b>按地域看</b><span class="muted">本岛、宫古、八重山</span></div>
+          <div class="action" onclick="show('s1')"><b>按组织看</b><span class="muted">类型、议题与角色</span></div>
+          <div class="action" onclick="show('s6')"><b>按路径看</b><span class="muted">场域、产出与结果</span></div>
+        </div>
+      </div>
+      <div class="map-figure" onclick="show('s3')" title="进入地域地图">
+        <img src="../learning_v1/okinawa_regions_research_map_v1.png" alt="冲绳本岛、宫古群岛与八重山群岛的区域研究导航图">
+        <div class="map-label"><b>V01 区域研究导航图</b>：用于全域定位、地方主问题和材料状态；不是地点—议题证据图。点击进入地域探索。</div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:14px; border-left:4px solid var(--rose);">
+      <b>历史不是附录：</b><span class="muted">1972–2012 的在线材料明显更薄。进入「<a onclick="show('s8')">历史演变</a>」查看已核锚点、证据类型和空白，避免把来源稀疏误读为组织活动较少。</span>
+    </div>
+    <div class="card" style="margin-top:14px; display:flex; align-items:center; gap:16px;">
+      <span style="font-weight:bold;">▶ 5 分钟引导路线</span>
+      <span class="muted">边野古 → 儒艮诉讼 → 与那国对照 → 组织详情 → 历史覆盖（预设路线，逐步高亮）</span>
+      <span class="ph" style="width:90px;">按钮占位</span>
+    </div>
+    <p class="muted" style="margin-top:6px;">本系统展示公开资料可核查样本，不代表冲绳民间组织总体；时间覆盖情况见「历史演变」。</p>
+    <details class="note"><summary>本屏设计注记（检查点 A）</summary><div class="inner">
+      <b>必须出现：</b>主问题、区域研究总览图、按地域／组织／路径三个动作、历史缺口入口、5 分钟引导、样本边界脚注。<br>
+      <b>禁止出现：</b>统计卡片堆砌（122/295/241 等数字）、网络图、地图作为唯一入口、HR/MT 内部编号。<br>
+      <b>请判断：</b>是否同意地图主导但不垄断入口？地图标题用“冲绳不是一座岛”还是更中性的“冲绳区域研究总览”？
+    </div></details>
+  </section>
+
+  <!-- ============ S1 组织列表 ============ -->
+  <section class="screen" id="s1">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <b>组织生态</b></div>
+    <div class="card">
+      <h3>组织生态　<span class="muted">回答 Q1/Q2：有哪些组织、如何分类、谁跨议题连接</span></h3>
+      <div class="grid g4" style="margin-top:8px;">
+        <div class="ph">筛选：功能层（10 层）</div><div class="ph">筛选：地点</div><div class="ph">筛选：议题</div><div class="ph">筛选：复核状态</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>按功能层分组的组织列表（默认视图，非网络图）</h3>
+      <p class="muted">〔功能层名〕—— 议题相关不等于政治立场；服务型组织按观察到的功能编码。</p>
+      <table style="margin-top:8px;">
+        <tr><th style="width:34%;">组织</th><th>功能层</th><th>主要地点</th><th>状态</th></tr>
+        <tr><td><a onclick="show('s2')">〔组织名 A · 示例占位〕</a></td><td>〔本地公民行动〕</td><td>〔边野古〕</td><td><span class="badge b-ok">已人工复核</span></td></tr>
+        <tr><td><a onclick="show('s2')">〔组织名 B · 示例占位〕</a></td><td>〔环保与环境程序〕</td><td>〔那霸／全县〕</td><td><span class="badge b-bound">来源支持·有界</span></td></tr>
+        <tr><td><a onclick="show('s2')">〔组织名 C · 示例占位〕</a></td><td>〔基地社区服务〕</td><td>〔宜野湾〕</td><td><span class="badge b-bound">来源支持·有界</span></td></tr>
+        <tr class="research-only"><td>〔候选扩展名称 · 示例占位〕</td><td>〔待分类〕</td><td>—</td><td><span class="badge b-cand">候选·未复核</span></td></tr>
+      </table>
+      <p class="backnote">外来 actor 层（国际倡议／本土声援／服务／公共外交）单列分组显示，不与本地组织混排计数；event-only 名称不出现在本列表。</p>
+    </div>
+    <div class="card">
+      <h3>议题与桥接视图（Q2 入口）</h3>
+      <div class="grid g3">
+        <div class="ph" style="height:74px;">桥接机制卡：〔组织〕为何连接〔议题A〕与〔议题B〕（人审证据）</div>
+        <div class="ph" style="height:74px;">议题分布小图（非毛线球）</div>
+        <div class="ph" style="height:74px;">附录级完整网络图入口（默认折叠）</div>
+      </div>
+    </div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>搜索＋四类筛选、功能层分组、每行复核状态徽章、外来层分组独立。<br>
+      <b>禁止出现：</b>默认网络图；把 event-only 名称或制度节点计入组织数；"影响力排名"。<br>
+      <b>演示层边界：</b>候选扩展名称仅研究层可见（切开关验证）。
+    </div></details>
+  </section>
+
+  <!-- ============ S2 actor 详情 ============ -->
+  <section class="screen" id="s2">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <a onclick="show('s1')">组织生态</a> › <b>〔组织名 A〕</b></div>
+    <div class="card">
+      <h3>〔组织正式名称 · 示例占位〕 <span class="badge b-ok">已人工复核</span></h3>
+      <p class="muted">别名：〔日文名〕〔英文名〕〔旧称（标注 alias 类型）〕　|　功能层：〔本地公民行动〕　|　来源属性：〔冲绳本地〕　|　法律身份：〔任意団体／未确认〕</p>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>议题　<span class="muted">人审边在前</span></h3>
+        <p>〔议题 1〕<span class="badge b-ok">已人工复核</span><span class="evd" onclick="openDrawer()">证据</span></p>
+        <p>〔议题 2〕<span class="badge b-ok">已人工复核</span><span class="evd" onclick="openDrawer()">证据</span></p>
+        <p class="research-only">〔议题 3〕<span class="badge b-cand">候选·未复核</span><span class="evd" onclick="openDrawer()">证据</span></p>
+        <p class="backnote research-only">研究层：候选议题边不构成正式结论。</p>
+      </div>
+      <div class="card">
+        <h3>地点关系　<span class="muted">语义分列</span></h3>
+        <p>总部：〔地点〕<span class="evd" onclick="openDrawer()">证据</span></p>
+        <p>活动现场：〔地点〕<span class="badge b-bound">来源支持·有界</span><span class="evd" onclick="openDrawer()">证据</span></p>
+        <p class="research-only">倡议对象：〔地点〕<span class="badge b-cand">候选·未复核</span></p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>参与的事件 / episode</h3>
+      <table>
+        <tr><th>事件</th><th>角色</th><th>场域</th><th>状态</th></tr>
+        <tr><td><a onclick="show('s7')">〔事件名 · 示例占位〕</a></td><td>〔请求参与者〕</td><td>〔行政窗口〕</td><td><span class="badge b-ok">已人工复核</span> <span class="evd" onclick="openDrawer()">证据</span></td></tr>
+      </table>
+      <div class="ph" style="margin-top:10px; height:40px;">折叠区：同事件出现的未入册名称（event-only，明确标注"不是登记组织"）</div>
+    </div>
+    <div class="limit"><b>本页不能说明什么：</b>议题数量不代表组织影响力；共同参加事件不代表组织间存在稳定联盟；未显示资助关系是因为缺乏官方记录级证据，而非确认不存在。</div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>规范名＋别名类型、功能层、复核徽章、议题分层、地点语义分列、事件角色、每条事实的证据入口、固定"解释边界"块。<br>
+      <b>禁止出现：</b>中心性/度数指标、"联盟"字样、无官方记录的资助表述、票数或政策因果。
+    </div></details>
+  </section>
+
+  <!-- ============ S3 地图入口 ============ -->
+  <section class="screen" id="s3">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <b>地点与地方化</b></div>
+    <div class="card">
+      <h3>地点与地方化　<span class="muted">回答 Q3：同一基地／部署问题为何在不同地方形成不同表达</span></h3>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>V01 区域研究导航图</h3>
+        <div class="map-figure" style="margin-top:8px;">
+          <img src="../learning_v1/okinawa_regions_research_map_v1.png" alt="区域研究导航图视觉参考">
+          <div class="map-label">沿用“全域定位＋局部放大＋材料状态”语法；前端实现时地点可点击。图中文字仍是研究导航，不是 V03 地点—议题证据。</div>
+        </div>
+        <p class="backnote">地图标记为地点近似位置，不表示设施边界；标记颜色＝材料状态三态（线上证据较深／已有证据仍需地方材料／地方一手材料是关键缺口）。</p>
+      </div>
+      <div class="card">
+        <h3>地点列表（与地图并列，地图不是唯一入口）</h3>
+        <table>
+          <tr><th>地点</th><th>地方问题主框架</th><th>材料状态</th></tr>
+          <tr><td><a onclick="show('s4')">边野古／大浦湾</a></td><td>〔海洋生态 → 环评/诉讼/国际倡议〕</td><td><span class="badge b-ok">线上证据较深</span></td></tr>
+          <tr><td><a onclick="show('s4')">嘉手纳／普天间</a></td><td>〔噪音损害 → 认定与赔偿〕</td><td><span class="badge b-ok">线上证据较深</span></td></tr>
+          <tr><td><a onclick="show('s4')">与那国</a></td><td>〔前线化·自治·公投·台湾邻近·生命安全〕</td><td><span class="badge b-gap">地方一手材料是关键缺口</span></td></tr>
+          <tr><td><a onclick="show('s4')">〔更多地点…〕</a></td><td>—</td><td>—</td></tr>
+        </table>
+        <div class="ph" style="margin-top:10px; height:36px; cursor:pointer;" onclick="show('s5')">按钮：选两个地点进入比较视图 → S5</div>
+      </div>
+    </div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>三分幅真实地理、材料状态三态图例、地图与列表并列、比较入口。<br>
+      <b>禁止出现：</b>把材料密度画成组织活动强度；与那国被强行环保化的框架文案。
+    </div></details>
+  </section>
+
+  <!-- ============ S4 地点详情 ============ -->
+  <section class="screen" id="s4">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <a onclick="show('s3')">地点与地方化</a> › <b>〔地点名：边野古／大浦湾（示例）〕</b></div>
+    <div class="card">
+      <h3>〔地点名〕 <span class="badge b-ok">线上证据较深</span></h3>
+      <p class="muted">地方问题主框架（R4 正式安全层）：〔海洋生态／儒艮保护如何把建设争议接入环境程序、法律与国际倡议〕<span class="evd" onclick="openDrawer()">证据</span></p>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>在场组织（空间语义分组）</h3>
+        <p class="muted" style="margin-bottom:6px;">总部在此</p>
+        <p><a onclick="show('s2')">〔组织名〕</a><span class="badge b-ok">已人工复核</span></p>
+        <p class="muted" style="margin:8px 0 6px;">活动现场／事件参与</p>
+        <p><a onclick="show('s2')">〔组织名〕</a><span class="badge b-ok">已人工复核</span><span class="evd" onclick="openDrawer()">证据</span></p>
+        <p class="research-only"><a onclick="show('s2')">〔组织名〕</a><span class="badge b-cand">候选·未复核</span></p>
+        <p class="muted" style="margin:8px 0 6px;">倡议对象（组织不在场，地点是其诉求对象）</p>
+        <p><a onclick="show('s2')">〔组织名〕</a><span class="badge b-bound">来源支持·有界</span></p>
+      </div>
+      <div class="card">
+        <h3>V02 地点转译剖面</h3>
+        <div class="chain">
+          <div class="step"><div class="t">地方问题</div>〔物质损害／争议对象〕</div>
+          <div class="step"><div class="t">组织表述</div>〔被翻译成何种主张〕</div>
+          <div class="step"><div class="t">制度场域</div>〔法院／议会／EIA／国际〕</div>
+          <div class="step"><div class="t">可见结果</div>〔记录／赔偿／驳回／未改变〕</div>
+        </div>
+        <h3 style="margin-top:10px;">V03 严格地点—议题证据矩阵 <span class="muted">默认＝双边人审同源层</span></h3>
+        <p>〔议题〕×〔事件/文书〕<span class="badge b-ok">已人工复核</span><span class="evd" onclick="openDrawer()">证据</span></p>
+        <p>〔议题〕×〔事件/文书〕<span class="badge b-ok">已人工复核</span><span class="evd" onclick="openDrawer()">证据</span></p>
+        <p class="research-only">〔议题〕×〔事件/文书〕<span class="badge b-cand">候选·未复核</span></p>
+        <p class="backnote">只显示同一来源／同一事件中共同出现的地点—议题事实；不使用任何笛卡尔投影密度。</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>该地的制度路径（episode）</h3>
+      <table>
+        <tr><th>episode</th><th>场域</th><th>产出层级</th><th>状态</th></tr>
+        <tr><td><a onclick="show('s7')">〔episode 名 · 示例占位〕</a></td><td>〔法院／EIA〕</td><td>〔中间产出／有限结果〕</td><td><span class="badge b-ok">已人工复核</span></td></tr>
+      </table>
+    </div>
+    <div class="limit"><b>本页不能说明什么：</b>组织在场记录多不等于该地组织活动强度高（材料可见性偏差）；框架分布反映限定语料，不代表居民态度总体。</div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>地方问题主框架、在场组织按 总部/现场/对象 分组、同源三元层、episode 列表、材料状态、比较入口、解释边界。<br>
+      <b>禁止出现：</b>宽投影地点×议题密度；"组织密度高／低"表述。与那国页固定使用 前线化/自治/公投/台湾邻近/生命安全 框架。
+    </div></details>
+  </section>
+
+  <!-- ============ S5 比较视图 ============ -->
+  <section class="screen" id="s5">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <a onclick="show('s3')">地点与地方化</a> › <b>比较：〔边野古〕 vs 〔与那国〕（示例）</b></div>
+    <div class="card">
+      <h3>两地同字段对照（不是两段散文并排）</h3>
+      <table>
+        <tr><th style="width:18%;">字段</th><th>〔边野古／大浦湾〕</th><th>〔与那国〕</th></tr>
+        <tr><td>物质争议对象</td><td>〔新建工程·海洋生态〕<span class="evd" onclick="openDrawer()">证据</span></td><td>〔新部署·前线化〕<span class="evd" onclick="openDrawer()">证据</span></td></tr>
+        <tr><td>地方问题框架</td><td>〔生态／儒艮／环评〕</td><td>〔自治·公投·台湾邻近·生命安全〕</td></tr>
+        <tr><td>环保框架</td><td>〔主框架〕</td><td style="color:#8a8a8a;">限定语料中未证实（≠当地无环境关切）</td></tr>
+        <tr><td>主要制度场域</td><td>〔EIA·诉讼·国际机构〕</td><td>〔公投·议会·行政〕</td></tr>
+        <tr><td>可观察产出</td><td>〔程序审查·记录〕</td><td>〔签名·条例议程〕</td></tr>
+        <tr><td>底层政策改变</td><td style="color:#8a8a8a;">无记录</td><td style="color:#8a8a8a;">无记录</td></tr>
+        <tr><td>材料状态</td><td><span class="badge b-ok">线上证据较深</span></td><td><span class="badge b-gap">地方一手材料是关键缺口</span></td></tr>
+      </table>
+      <p class="backnote">空位与"未证实"显式显示；两地差异部分源于来源制度差异，字段"材料状态"提示这一点。</p>
+    </div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>统一字段行、空值显式化、材料状态行（防止把可见性差异读成实质差异）、每格证据入口。<br>
+      <b>禁止出现：</b>自由文本两栏并排；跨地点"成功率"比较。<br>
+      <b>请判断：</b>这一比较是否真正减少阅读？默认对照组合选哪两个？
+    </div></details>
+  </section>
+
+  <!-- ============ S6 episode 列表 ============ -->
+  <section class="screen" id="s6">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <b>行动与制度路径</b></div>
+    <div class="card">
+      <h3>行动与制度路径　<span class="muted">诉求如何通过联署、诉讼、公投、行政、国际倡议进入制度</span></h3>
+      <div class="grid g3" style="margin-top:8px;">
+        <div class="ph">筛选：地方问题（生态/噪音/自治/水源…）</div><div class="ph">筛选：场域（法院/EIA/公投/议会/国际…）</div><div class="ph">筛选：结果层（记录/有限结果/底层改变）</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>已核 episode（演示层）</h3>
+      <table>
+        <tr><th>episode</th><th>地点</th><th>场域序列</th><th>产出层级</th><th>状态</th></tr>
+        <tr><td><a onclick="show('s7')">〔法律程序案 · 示例〕</a></td><td>〔边野古〕</td><td>〔现场→法院→国际〕</td><td>〔中间产出〕</td><td><span class="badge b-ok">已人工复核</span></td></tr>
+        <tr><td><a onclick="show('s7')">〔噪音诉讼案 · 示例〕</a></td><td>〔嘉手纳/普天间〕</td><td>〔法院〕</td><td>〔有限结果（赔偿）〕</td><td><span class="badge b-ok">已人工复核</span></td></tr>
+        <tr><td><a onclick="show('s7')">〔住民投票案 · 示例〕</a></td><td>〔石垣〕</td><td>〔签名→议会→司法〕</td><td>〔中间产出〕</td><td><span class="badge b-ok">已人工复核</span></td></tr>
+        <tr class="research-only"><td>〔事件候选 · 示例〕</td><td>—</td><td>—</td><td>—</td><td><span class="badge b-cand">候选·未复核</span></td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>换一种看法 <span class="muted">辅助图按阅读任务出现，不按 R 模块分栏</span></h3>
+      <div class="grid g3">
+        <div class="action"><b>比较行动与场域</b><span class="muted">V12 repertoire×venue；说明行动异质性。</span></div>
+        <div class="action"><b>查看重复参与</b><span class="muted">V13 三次名单骨架；共同出现≠联盟。</span></div>
+        <div class="action"><b>查看外部进入方式</b><span class="muted">V15 倡议／法律／服务／慈善分面。</span></div>
+      </div>
+    </div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>已核 episode 为主列表；按地方问题／场域／结果筛选；辅助图按阅读动作命名而非按模块命名。<br>
+      <b>禁止出现：</b>选举接口内容（19 条全部待审，仅研究层）；跨案成功率。<br>
+      <b>请判断：</b>三种筛选是否符合你实际比较案例的方式？辅助图是否继续折叠？
+    </div></details>
+  </section>
+
+  <!-- ============ S7 episode 详情 ============ -->
+  <section class="screen" id="s7">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <a onclick="show('s6')">行动与制度路径</a> › <b>〔episode 名（示例）〕</b></div>
+    <div class="card">
+      <h3>〔episode 名 · 示例占位〕 <span class="badge b-ok">已人工复核</span></h3>
+      <p class="muted">地点：<a onclick="show('s4')">〔地点〕</a>　|　时间：〔事件日期区间（事件日，非来源发布日）〕</p>
+      <div class="chain">
+        <div class="step"><div class="t">① 地方问题</div>〔物质损害／争议对象〕<span class="evd" onclick="openDrawer()">证据</span></div>
+        <div class="step"><div class="t">② 组织翻译</div>〔谁把它重编码为何种主张〕<span class="evd" onclick="openDrawer()">证据</span></div>
+        <div class="step"><div class="t">③ 制度场域</div>〔法院／EIA／公投／国际机构〕</div>
+        <div class="step"><div class="t">④ 中间产出</div>〔受理·记录·审查·回应〕<span class="evd" onclick="openDrawer()">证据</span></div>
+        <div class="step"><div class="t">⑤ 有限结果</div>〔赔偿·认定·资料公开〕</div>
+        <div class="step empty"><div class="t">⑥ 底层改变</div>无记录（如实显示）</div>
+      </div>
+      <p class="backnote">链条顺序＝时间／程序顺序，不表示因果；进入制度场域不等于诉求成功。</p>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>参与者与角色（registry actor 与程序节点分列）</h3>
+        <table>
+          <tr><th>参与者</th><th>角色</th><th>类型</th></tr>
+          <tr><td><a onclick="show('s2')">〔组织名〕</a></td><td>〔原告〕</td><td>登记组织 <span class="evd" onclick="openDrawer()">证据</span></td></tr>
+          <tr><td>〔律师团名〕</td><td>〔代理〕</td><td>程序性集合（非登记组织）</td></tr>
+          <tr><td>〔支援名称〕</td><td>〔非当事支援〕</td><td>event-only 名称</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3>程序时间线</h3>
+        <div class="ph" style="height:120px;">法律案按程序时间排序；非法律案按正式记录顺序。每个节点带日期语义标记（事件日）。</div>
+      </div>
+    </div>
+    <div class="limit"><b>本页不能说明什么：</b>原告／请求者／支援者是案件特定角色，不构成跨案稳定关系；程序产出不是政策改变；本 episode 不能推广为"同类案件都如此"。</div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>六段链条（空位如实显示，尤其"底层改变"多数为无）、角色分列（登记组织/程序节点/event-only）、程序时间线、非因果边界句。<br>
+      <b>禁止出现：</b>成功率、"导致政策改变"、把请求写成机构回应。
+    </div></details>
+  </section>
+
+  <!-- ============ S8 历史演变 ============ -->
+  <section class="screen" id="s8">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <b>历史演变</b></div>
+    <div class="card">
+      <h3>四个时期：锚点、覆盖与缺口　<span class="muted">一期口径＝背景锚点层，不承诺完整谱系</span></h3>
+      <div class="grid g4" style="margin-top:10px;">
+        <div class="card" style="margin:0; border-color:var(--rose);">
+          <h3>1972–1997</h3>
+          <div class="ph" style="height:24px;">覆盖条：极薄</div>
+          <p class="muted" style="margin-top:6px;">已核锚点：〔极少〕</p>
+          <p><span class="badge b-gap">当地材料缺口</span></p>
+          <p class="muted research-only" style="margin-top:6px;">NR-04 候选锚点 <span class="badge b-cand">候选</span></p>
+        </div>
+        <div class="card" style="margin:0;">
+          <h3>1998–2012</h3>
+          <div class="ph" style="height:24px;">覆盖条：薄</div>
+          <p class="muted" style="margin-top:6px;">已核锚点：〔法人化分界／关键诉讼〕</p>
+          <p class="muted research-only" style="margin-top:6px;">NR-05 候选锚点 <span class="badge b-cand">候选</span></p>
+        </div>
+        <div class="card" style="margin:0;">
+          <h3>2013–2019</h3>
+          <div class="ph" style="height:24px;">覆盖条：较厚</div>
+          <p class="muted" style="margin-top:6px;">已核锚点：〔县民投票／诉讼轮次〕</p>
+        </div>
+        <div class="card" style="margin:0;">
+          <h3>2020–现在</h3>
+          <div class="ph" style="height:24px;">覆盖条：最厚</div>
+          <p class="muted" style="margin-top:6px;">已核锚点：〔国际倡议／先岛安全化〕</p>
+        </div>
+      </div>
+      <p class="backnote" style="margin-top:10px;">覆盖条显示的是「来源年份分布」，不是组织活动强度；早期空白是资料可见性问题，本系统把它作为研究信息显示，而不是画一条虚假的连续时间线。</p>
+    </div>
+    <div class="card">
+      <h3>锚点详情（点击时期内锚点后展开）</h3>
+      <p>〔锚点：某组织 formed／renamed（示例占位）〕　历史证据类别：<span class="badge b-bound">后来组织回顾</span>　<span class="evd" onclick="openDrawer()">证据</span></p>
+      <p class="muted">当时名称：〔〕　→　现名：〔〕　|　同名≠同一实体：连续性判断须项目负责人决定，未决定时显示为「未确认」。</p>
+    </div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>四时期并列、覆盖条＋"来源年份≠活动强度"说明、显式缺口卡、历史证据五类徽章（同期一手/回顾/二手/线索/缺口）、连续性未决状态。<br>
+      <b>禁止出现：</b>未经负责人决定的连续性连线；用当前网络反推长期增长；"完整演变"表述。<br>
+      <b>请判断：</b>历史演变作为一级入口（而非藏进方法页）是否接受？
+    </div></details>
+  </section>
+
+  <!-- ============ S9 方法底层 ============ -->
+  <section class="screen" id="s9">
+    <div class="crumb"><a onclick="show('s0')">首页</a> › <b>证据与方法</b></div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>样本能看见什么（覆盖阅读说明）</h3>
+        <div class="ph" style="height:100px;">六维覆盖审计摘要图占位（时间/地点/功能/议题/归档/复核）</div>
+        <p class="muted" style="margin-top:8px;">阅读全站前的三句话：样本不是总体；来源发布年≠事件年；归档失败≠证据不存在。</p>
+      </div>
+      <div class="card">
+        <h3>证据等级与状态徽章说明</h3>
+        <p><span class="badge b-ok">已人工复核</span> <span class="badge b-bound">来源支持·有界</span> <span class="badge b-cand">候选·未复核</span> <span class="badge b-seed">分析种子</span> <span class="badge b-gap">需当地材料</span></p>
+        <p class="muted" style="margin-top:8px;">E0–E4 证据等级白话说明；演示层／研究层开关的含义。</p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>数据与下载 / 版本记录</h3>
+      <div class="ph" style="height:44px;">部署与公开数据发布须负责人另行批准（检查点 C）；本地演示阶段此区显示"暂未开放"。</div>
+    </div>
+    <details class="note"><summary>本屏设计注记</summary><div class="inner">
+      <b>必须出现：</b>覆盖阅读说明、徽章图例、E0–E4 白话说明、下载区的"暂未开放"状态。<br>
+      <b>禁止出现：</b>内部 HR 队列、任务编号、来源归档目录直接暴露。
+    </div></details>
+  </section>
+
+  </main>
+</div>
+
+<!-- 证据抽屉 -->
+<aside id="drawer">
+  <span class="close" onclick="closeDrawer()">✕</span>
+  <h3>证据抽屉（全局组件）</h3>
+  <div class="row"><b>主张</b>〔本条证据支持的具体主张 · 示例占位〕</div>
+  <div class="row"><b>来源</b>〔来源名称／类型（source_id 仅在此显示）〕</div>
+  <div class="row"><b>来源发布日</b>〔YYYY-MM-DD〕</div>
+  <div class="row"><b>事件发生日</b>〔YYYY-MM-DD ／ 未确认（不以发布日顶替）〕</div>
+  <div class="row"><b>定位 locator</b>〔页码／段落／条目〕</div>
+  <div class="row"><b>证据等级</b>〔E3 基本确认〕 <span class="muted">（悬停显示等级含义）</span></div>
+  <div class="row"><b>人审状态</b><span class="badge b-ok" style="margin-left:0;">已人工复核</span></div>
+  <div class="row"><b>归档状态</b>〔已归档 ／ 归档失败（≠证据不存在）〕</div>
+  <div class="row"><b>解释边界</b>〔本证据不能支持什么 · 原文边界句〕</div>
+  <p class="backnote">抽屉在任何屏幕可用；≤3 次点击从首页到达。</p>
+</aside>
+
+<script>
+  function show(id){
+    document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));
+    document.getElementById(id).classList.add('on');
+    document.querySelectorAll('#reviewer button').forEach(b=>b.classList.toggle('active', b.dataset.s===id));
+    closeDrawer();
+    window.scrollTo(0,0);
+  }
+  document.querySelectorAll('#reviewer button').forEach(b=>b.addEventListener('click',()=>show(b.dataset.s)));
+  function openDrawer(){ document.getElementById('drawer').classList.add('open'); }
+  function closeDrawer(){ document.getElementById('drawer').classList.remove('open'); }
+</script>
+</body>
+</html>

@@ -10,6 +10,17 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
+# JavaScript / frontend build cache
+**/node_modules/
+**/.npm-cache/
+**/.vite/
+**/dist/
+*.log
+
+# Codex-local previews and temporary investigation artifacts
+.codex/
+tmp/
+
 # Office temp files
 ~$*
 *.tmp
@@ -23,4 +34,3 @@ local_materials/
 data/raw/
 data/external/
 source_materials/
-

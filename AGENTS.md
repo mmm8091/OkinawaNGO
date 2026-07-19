@@ -24,6 +24,13 @@ All agents should treat this file as the shared operating guide. Tool-specific f
 - Human review, local retrieval, and human decision tasks belong in task books and logs, not scattered notes.
 - Sensitive relationships require human review; do not do AI writing as AI review.
 
+## Collaboration Cadence
+
+- The project principal targets roughly 50% participation in interpretive work. AI may handle approved mechanical extraction, normalization, QA and figure generation, but must not replace the principal's question selection, evidence reading or conclusion-strength decisions.
+- Before a new broad research wave, provide a compact decision brief: research question, current evidence, competing explanations, expected output and decisions required from the principal.
+- Pause after each major module or strong new interpretation for the principal to continue, revise or stop it. Do not accumulate many modules and hand them over only at the end.
+- Until the first five-hour project re-entry decision sheet is returned, do not start another broad research wave. Read-only clarification and already-approved bounded maintenance remain allowed.
+
 ## Current Data Status
 
 Updated: 2026-07-16.

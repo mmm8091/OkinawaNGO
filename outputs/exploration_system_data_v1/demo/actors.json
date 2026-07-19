@@ -1,0 +1,3388 @@
+[
+  {
+    "actor_class": "international_advocacy_actor",
+    "aliases": [],
+    "display_label": "Okinawa Environmental Justice Project",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A001",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "dugong",
+      "Henoko",
+      "international_advocacy"
+    ],
+    "legal_status": "informal_or_project",
+    "origin_type": "mixed_or_network",
+    "primary_places": [
+      "Henoko/Oura Bay",
+      "international"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S006",
+      "S007",
+      "S008"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_advocacy_actor",
+    "aliases": [],
+    "display_label": "ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A002",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "dugong",
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "任意団体",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "human_revised",
+    "source_ids": [
+      "S007",
+      "S057",
+      "S058",
+      "S059"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_civic_actor",
+    "aliases": [],
+    "display_label": "ジュゴンネットワーク沖縄",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A003",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "dugong",
+      "environment",
+      "Henoko"
+    ],
+    "legal_status": "unclear",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S003"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "日本自然保護協会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A004",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "biodiversity",
+      "Henoko"
+    ],
+    "legal_status": "public_interest_foundation_or_association",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "WWFジャパン",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A005",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "dugong",
+      "biodiversity"
+    ],
+    "legal_status": "public_interest_foundation",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S003"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "グリーンピース・ジャパン",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A006",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "anti_base"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S003"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "ピースボート",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A007",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_base",
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "international"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S005"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "NGO非戦ネット",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A008",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_war",
+      "anti_base",
+      "referendum",
+      "international_cooperation"
+    ],
+    "legal_status": "informal_network（任意ネットワーク・国際協力NGO）",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Okinawa(statement/solidarity context)"
+    ],
+    "review_status": "human_revised",
+    "source_ids": [
+      "S064",
+      "S065",
+      "S066",
+      "S067"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_advocacy_actor",
+    "aliases": [],
+    "display_label": "Earthjustice",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A009",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "legal",
+      "dugong",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "United States",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S009"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [
+      {
+        "label": "石垣島への自衛隊配備を止める住民の会",
+        "source_ids": [
+          "S157"
+        ],
+        "type": "predecessor_of",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "石垣島に軍事基地をつくらせない市民連絡会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A010",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_military",
+      "referendum",
+      "environment",
+      "groundwater",
+      "life_safety"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Ishigaki"
+    ],
+    "review_status": "human_revised",
+    "source_ids": [
+      "S016",
+      "S017",
+      "S157",
+      "S159"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "石垣市住民投票を求める会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A011",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "referendum",
+      "local_autonomy",
+      "anti_military"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Ishigaki"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S018",
+      "S019",
+      "S137",
+      "S138"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "宮古島いのちの水を守ろう！",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A012",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "groundwater",
+      "environment",
+      "anti_military",
+      "life_safety"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Miyako"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S020"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "ミサイル基地いらない宮古島住民連絡会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A013",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_military",
+      "missile",
+      "groundwater",
+      "life_safety"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Miyako"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S021"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "executive_committee",
+    "aliases": [],
+    "display_label": "住民投票を成功させるための実行委員会",
+    "display_status": "demo",
+    "evidence_level": "E2",
+    "id": "A014",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "referendum",
+      "local_autonomy",
+      "anti_military",
+      "public_opinion"
+    ],
+    "legal_status": "informal（任意の実行委員会）",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Yonaguni"
+    ],
+    "review_status": "needs_local_retrieval",
+    "source_ids": [
+      "S010",
+      "S069",
+      "S070",
+      "S071"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "executive_committee",
+    "aliases": [],
+    "display_label": "与那国自衛隊配備反対意見広告実行委員会",
+    "display_status": "demo",
+    "evidence_level": "E2",
+    "id": "A015",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_military",
+      "public_opinion",
+      "referendum",
+      "solidarity"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Yaeyama",
+      "Ishigaki",
+      "Yonaguni(solidarity target)"
+    ],
+    "review_status": "needs_local_retrieval",
+    "source_ids": [
+      "S015"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "与那国島の明るい未来を願うイソバの会",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A016",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_military",
+      "health_risk",
+      "life_safety",
+      "ammunition",
+      "transparency",
+      "frontline_prevention"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Yonaguni"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S011",
+      "S052",
+      "S068"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄対話プロジェクト",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A017",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "dialogue",
+      "anti_war",
+      "Taiwan_contingency",
+      "frontline_prevention"
+    ],
+    "legal_status": "informal_or_project",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Ryukyu arc"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S022"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "ノーモア沖縄戦 命どぅ宝の会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A018",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_war",
+      "frontline_prevention",
+      "Taiwan_contingency"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Ryukyu arc"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S023",
+      "S024"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "ヘリ基地反対協議会（海上ヘリ基地建設反対・平和と名護市政民主化を求める協議会）",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A019",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "Henoko",
+      "direct_action",
+      "referendum"
+    ],
+    "legal_status": "任意団体",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Henoko",
+      "Nago"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S008",
+      "S049",
+      "S050"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "lawyers_network",
+    "aliases": [],
+    "display_label": "日本環境法律家連盟（JELF）",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A020",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environmental_law",
+      "legal",
+      "dugong",
+      "Henoko"
+    ],
+    "legal_status": "ngo_or_association",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S006",
+      "S007"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "国際環境NGO FoE Japan",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A021",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "anti_base",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "NPO法人 ラムサール・ネットワーク日本",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A022",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "biodiversity",
+      "wetlands",
+      "anti_base"
+    ],
+    "legal_status": "npo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_civic_actor",
+    "aliases": [],
+    "display_label": "美ら海にもやんばるにも基地はいらない市民の会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A023",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "environment",
+      "Henoko"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Henoko/Oura Bay",
+      "Yanbaru"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "辺野古リレー",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A024",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "Henoko",
+      "mobilization"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Henoko",
+      "Okinawa",
+      "Japan"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "executive_committee",
+    "aliases": [],
+    "display_label": "辺野古への基地建設を許さない実行委員会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A025",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "Henoko",
+      "mobilization"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Henoko",
+      "Nago",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "media_or_advocacy_actor",
+    "aliases": [],
+    "display_label": "ピース・ニュース",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A026",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_base",
+      "media"
+    ],
+    "legal_status": "unclear",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Okinawa"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "公共事業改革市民会議",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A027",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "public_works",
+      "environment",
+      "anti_base"
+    ],
+    "legal_status": "informal_or_npo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_advocacy_actor",
+    "aliases": [],
+    "display_label": "沖縄のための日米市民ネットワーク（JUCON）",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A028",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "international_advocacy",
+      "Henoko"
+    ],
+    "legal_status": "network",
+    "origin_type": "mixed_or_network",
+    "primary_places": [
+      "Japan",
+      "United States",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄・生物多様性市民ネットワーク",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A029",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "biodiversity",
+      "environment",
+      "Henoko"
+    ],
+    "legal_status": "network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "市川三番瀬を守る会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A030",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "wetlands",
+      "solidarity"
+    ],
+    "legal_status": "citizen_group",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "三番瀬のラムサール条約登録を実現する会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A031",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "wetlands",
+      "solidarity"
+    ],
+    "legal_status": "citizen_group",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_advocacy_actor",
+    "aliases": [],
+    "display_label": "Peace Philosophy Centre",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A032",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_base",
+      "international_advocacy"
+    ],
+    "legal_status": "project_or_network",
+    "origin_type": "international",
+    "primary_places": [
+      "Canada",
+      "Japan",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Friends of the Earth U.S.",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A033",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "anti_base",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "United States",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Korea Federation for Environmental Movements (KFEM)",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A034",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Korea",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Russian Social Ecological Union",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A035",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Russia",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Friends of the Siberian Forests",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A036",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Russia",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Centre for Environmental Justice",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A037",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Sri Lanka",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Sahabat Alam Malaysia",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A038",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Malaysia",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "The Legal Rights and Natural Resources Center-Kasama sa Kalikasan",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A039",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "legal",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Philippines",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [
+      {
+        "label": "Friends of the Earth Nepal",
+        "source_ids": [
+          "S090"
+        ],
+        "type": "network_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Pro Public",
+        "source_ids": [
+          "S004",
+          "S089"
+        ],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "Forum for Protection of Public Interest (Pro Public)",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A040",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Nepal",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S004",
+      "S089",
+      "S090"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Friends of the Earth Brisbane",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A041",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Australia",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Pacific Environment",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A042",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "United States",
+      "Pacific",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "PENGON-FoE Palestine",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A043",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Palestine",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Naturvernforbundet / Norwegian Society for the Conservation of Nature",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A044",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Norway",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Center for Biological Diversity",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A045",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "biodiversity",
+      "legal",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "United States",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [
+      {
+        "label": "Swiss League for the Protection of Nature",
+        "source_ids": [
+          "S091"
+        ],
+        "type": "former_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Friends of the Earth Switzerland",
+        "source_ids": [
+          "S091",
+          "S092"
+        ],
+        "type": "network_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Pro Natura / FoE Switzerland",
+        "source_ids": [
+          "S004"
+        ],
+        "type": "signatory_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "Pro Natura",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A046",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "international_advocacy",
+      "biodiversity"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "international",
+    "primary_places": [
+      "Switzerland",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S004",
+      "S091",
+      "S092"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄平和運動センター",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A047",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "peace",
+      "anti_military",
+      "Henoko",
+      "local_autonomy"
+    ],
+    "legal_status": "social_movement_center",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S031"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "沖縄一坪反戦地主会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A048",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "legal",
+      "peace",
+      "local_autonomy"
+    ],
+    "legal_status": "informal_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S038"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "基地・軍隊を許さない行動する女たちの会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A049",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "human_rights",
+      "anti_base",
+      "anti_military",
+      "life_safety"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S039"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "lawyers_network",
+    "aliases": [],
+    "display_label": "沖縄弁護士会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A050",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "legal",
+      "human_rights",
+      "anti_base",
+      "local_autonomy"
+    ],
+    "legal_status": "professional_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S037"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "「辺野古」県民投票の会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A051",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "referendum",
+      "Henoko",
+      "local_autonomy",
+      "anti_base"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Henoko"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S025"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [
+      {
+        "label": "嘉手納爆音訴訟原告団",
+        "source_ids": [
+          "S026"
+        ],
+        "type": "former_canonical",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "第4次嘉手納基地爆音差止訴訟原告団",
+        "source_ids": [
+          "S149",
+          "S151",
+          "S155"
+        ],
+        "type": "round_of",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "嘉手納基地爆音差止訴訟原告団",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A052",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "legal",
+      "life_safety",
+      "noise",
+      "anti_base"
+    ],
+    "legal_status": "litigation_group",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Kadena",
+      "Okinawa"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S026",
+      "S149",
+      "S151",
+      "S155"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [
+      {
+        "label": "普天間基地爆音訴訟原告団",
+        "source_ids": [
+          "S135",
+          "S136"
+        ],
+        "type": "descriptive_variant",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "普天間爆音訴訟団",
+        "source_ids": [
+          "S027"
+        ],
+        "type": "former_canonical",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "普天間基地第2次爆音訴訟原告団",
+        "source_ids": [
+          "S135",
+          "S156"
+        ],
+        "type": "round_of",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "普天間基地爆音訴訟団",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A053",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "legal",
+      "life_safety",
+      "noise",
+      "anti_base"
+    ],
+    "legal_status": "litigation_group",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Futenma",
+      "Ginowan"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S027",
+      "S135",
+      "S136",
+      "S156"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_civic_actor",
+    "aliases": [],
+    "display_label": "沖縄人権協会",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A054",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "human_rights",
+      "anti_base",
+      "legal"
+    ],
+    "legal_status": "npo_or_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S033"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "泡瀬干潟を守る連絡会",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A055",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "biodiversity",
+      "legal"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Awase"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S030"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄環境ネットワーク",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A056",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "biodiversity",
+      "anti_base"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S033"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄意見広告運動",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A057",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "peace",
+      "Henoko",
+      "public_opinion"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Japan"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S034"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄県統一連（沖縄県統一行動連絡会議）",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A058",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "peace",
+      "anti_military"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S031"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "島ぐるみ会議",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A059",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "Henoko",
+      "local_autonomy"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S029"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "高江のヘリパッドいらない住民の会",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A060",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "environment",
+      "biodiversity"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Takae",
+      "Yanbaru",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S028"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "日本野鳥の会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A061",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "biodiversity"
+    ],
+    "legal_status": "public_interest_foundation",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S003",
+      "S004"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "日本湿地ネットワーク（JAWAN）",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A062",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "biodiversity",
+      "wetlands"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S003"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "一坪反戦地主会関東ブロック",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A063",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "peace",
+      "legal",
+      "solidarity"
+    ],
+    "legal_status": "informal",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Tokyo",
+      "Kanto",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S038"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_advocacy_actor",
+    "aliases": [],
+    "display_label": "外国軍事基地撤去国際ネットワーク（No Bases Network）",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A064",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "international_advocacy",
+      "peace"
+    ],
+    "legal_status": "network",
+    "origin_type": "international",
+    "primary_places": [
+      "international",
+      "Okinawa"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S033"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "南西諸島ピースネット",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A065",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_military",
+      "peace",
+      "frontline_prevention",
+      "Taiwan_contingency"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Sakishima",
+      "Ryukyu arc"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S036"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "domestic_japan_ngo",
+    "aliases": [],
+    "display_label": "新外交イニシアティブ（ND）",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A066",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "legal",
+      "local_autonomy",
+      "anti_base",
+      "international_advocacy"
+    ],
+    "legal_status": "npo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S032"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "辺野古土砂搬入反対全国協議会（辺野古土砂全協）",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A067",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "Henoko",
+      "environment"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Henoko",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S040"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "名護市民投票の会",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A068",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "referendum",
+      "Henoko",
+      "anti_base",
+      "local_autonomy"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Nago"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S042"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "沖縄ジュゴン環境アセスメント監視団",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A069",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "dugong",
+      "environment",
+      "legal",
+      "Henoko"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S047"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_advocacy_actor",
+    "aliases": [],
+    "display_label": "Veterans for Peace Okinawa",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A070",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_base",
+      "international_advocacy"
+    ],
+    "legal_status": "chapter",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Okinawa",
+      "United States"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S048"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄平和市民連絡会",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A071",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_base",
+      "anti_military"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S031"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄から基地をなくし世界の平和を求める市民連絡会",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A072",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "peace",
+      "international_advocacy"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S031"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_international_cooperation_ngo",
+    "aliases": [],
+    "display_label": "琉球沖縄国際支援プログラム",
+    "display_status": "demo",
+    "evidence_level": "E2",
+    "id": "A073",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "international_cooperation",
+      "public_diplomacy"
+    ],
+    "legal_status": "npo_or_project",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S033"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "public_institution_partner",
+    "aliases": [],
+    "display_label": "沖縄県知事公室基地対策課",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A074",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "administrative_collaboration",
+      "anti_base",
+      "local_autonomy"
+    ],
+    "legal_status": "government_office",
+    "origin_type": "public_institution",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S043"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "public_institution_partner",
+    "aliases": [],
+    "display_label": "沖縄防衛局",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A075",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "administrative_collaboration",
+      "anti_base"
+    ],
+    "legal_status": "government_office",
+    "origin_type": "public_institution",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S047"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_civic_actor",
+    "aliases": [],
+    "display_label": "ジュゴン保護基金委員会（Save the Dugong Foundation）",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A076",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "dugong",
+      "environment",
+      "legal",
+      "Henoko"
+    ],
+    "legal_status": "任意団体（法人格待核实）",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S060",
+      "S061",
+      "S062",
+      "S063"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Turtle Island Restoration Network",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A086",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "biodiversity",
+      "dugong",
+      "legal",
+      "international_advocacy"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "United States",
+      "Henoko/Oura Bay"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S060",
+      "S093"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_npo",
+    "aliases": [],
+    "display_label": "NPO法人世界版「平和の礎」を提案する会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A087",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_war",
+      "international_cooperation"
+    ],
+    "legal_status": "NPO法人",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Nago",
+      "Ginowan",
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S103"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_npo",
+    "aliases": [],
+    "display_label": "特定非営利活動法人沖縄平和協力センター",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A088",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "human_security",
+      "international_cooperation",
+      "security"
+    ],
+    "legal_status": "NPO法人",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Naha"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S104"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "labor_or_education_union",
+    "aliases": [],
+    "display_label": "沖縄県教職員組合",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A089",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "peace_education",
+      "labor",
+      "anti_war"
+    ],
+    "legal_status": "labor_union",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S105"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "labor_or_education_union",
+    "aliases": [],
+    "display_label": "沖縄県高等学校障害児学校教職員組合",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A090",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "peace_education",
+      "labor",
+      "anti_base"
+    ],
+    "legal_status": "labor_union",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S106"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "labor_union_federation",
+    "aliases": [],
+    "display_label": "日本労働組合総連合会沖縄県連合会（連合沖縄）",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A091",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "labor",
+      "human_rights",
+      "life_safety",
+      "anti_base"
+    ],
+    "legal_status": "labor_union_federation",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S107",
+      "S108"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "labor_union_federation",
+    "aliases": [],
+    "display_label": "沖縄県労働組合総連合",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A092",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "labor",
+      "peace",
+      "anti_base",
+      "anti_war"
+    ],
+    "legal_status": "labor_union_federation",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S109"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "labor_union",
+    "aliases": [],
+    "display_label": "全日本自治団体労働組合沖縄県本部",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A093",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "labor",
+      "peace",
+      "anti_base",
+      "Henoko"
+    ],
+    "legal_status": "labor_union",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S110"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "止めよう「自衛隊配備」宮古郡民の会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A095",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_military",
+      "life_safety",
+      "local_autonomy",
+      "frontline_prevention"
+    ],
+    "legal_status": "informal_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Miyako"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S112",
+      "S113"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "宮古平和運動連絡協議会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A096",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "peace",
+      "anti_military",
+      "local_autonomy",
+      "frontline_prevention"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Miyako"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S112"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_civic_actor",
+    "aliases": [],
+    "display_label": "宮古島環境クラブ",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A097",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "groundwater",
+      "environmental_education",
+      "community"
+    ],
+    "legal_status": "informal_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Miyako"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S114"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "local_npo",
+    "aliases": [],
+    "display_label": "特定非営利活動法人宮古島海の環境ネットワーク",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A098",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "environment",
+      "marine_environment",
+      "environmental_education",
+      "community"
+    ],
+    "legal_status": "NPO法人",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Miyako"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S115"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A099",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "PFAS",
+      "groundwater",
+      "health_risk",
+      "life_safety",
+      "base_environment"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Kadena",
+      "Chatan",
+      "central Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S116",
+      "S117"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "ミサイル配備から命を守るうるま市民の会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A100",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "missile",
+      "life_safety",
+      "anti_military",
+      "frontline_prevention"
+    ],
+    "legal_status": "informal_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Uruma"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S118",
+      "S119"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄・琉球弧の声を届ける会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A101",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "frontline_prevention",
+      "peace",
+      "anti_military",
+      "public_education"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa",
+      "Miyako",
+      "Ishigaki",
+      "Yonaguni"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [
+      "S120"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "lawyers_network",
+    "aliases": [],
+    "display_label": "全国公害弁護団連絡会議",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A102",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "legal",
+      "environment",
+      "noise",
+      "life_safety"
+    ],
+    "legal_status": "lawyers_network",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Okinawa litigation"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S121"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "全国基地爆音訴訟原告団連絡会議",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A103",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "noise",
+      "life_safety",
+      "legal",
+      "anti_base"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "Kadena",
+      "Futenma"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S122",
+      "S123"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "lawyers_network",
+    "aliases": [],
+    "display_label": "普天間基地爆音訴訟弁護団",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A104",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "noise",
+      "life_safety",
+      "legal",
+      "anti_base"
+    ],
+    "legal_status": "litigation_team",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Futenma"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S124"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "womens_or_human_rights_ngo",
+    "aliases": [],
+    "display_label": "日本YWCA",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A105",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "women",
+      "human_rights",
+      "peace",
+      "Henoko"
+    ],
+    "legal_status": "public_interest_foundation",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S125"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [
+      {
+        "label": "辺野古の海を土砂で埋めるな！首都圏キャンペーン",
+        "source_ids": [
+          "S126"
+        ],
+        "type": "possible_canonical_variant",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "辺野古の海を土砂で埋めるな！首都圏連絡会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A106",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "Henoko",
+      "environment",
+      "anti_base",
+      "solidarity"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Tokyo",
+      "Henoko"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S126",
+      "S127"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "womens_or_human_rights_ngo",
+    "aliases": [],
+    "display_label": "沖縄YWCA",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A107",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "women",
+      "human_rights",
+      "peace",
+      "anti_base"
+    ],
+    "legal_status": "association_or_regional_ywca",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S144",
+      "S295"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_network",
+    "aliases": [],
+    "display_label": "沖縄を再び戦場にさせない県民の会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A108",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_war",
+      "frontline_prevention",
+      "Taiwan_contingency",
+      "peace"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S146",
+      "S147",
+      "S148"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "lawyers_network",
+    "aliases": [],
+    "display_label": "第4次嘉手納基地爆音差止訴訟弁護団",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A109",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "noise",
+      "life_safety",
+      "legal",
+      "anti_base"
+    ],
+    "legal_status": "litigation_team",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Kadena",
+      "Okinawa"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S149",
+      "S150",
+      "S151",
+      "S152"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "辺野古に基地を絶対つくらせない大阪行動",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "A110",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "Henoko",
+      "anti_base",
+      "solidarity",
+      "mobilization"
+    ],
+    "legal_status": "informal_association",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Osaka",
+      "Henoko"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S153",
+      "S154"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "womens_or_community_organization",
+    "aliases": [
+      {
+        "label": "女団協",
+        "source_ids": [
+          "S208"
+        ],
+        "type": "acronym",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "県婦人団体連絡協議会",
+        "source_ids": [
+          "S201"
+        ],
+        "type": "former_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "沖縄県女性団体連絡協議会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A111",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "women",
+      "peace",
+      "anti_base",
+      "human_rights"
+    ],
+    "legal_status": "informal_network",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S200",
+      "S201",
+      "S206",
+      "S207",
+      "S208",
+      "S209"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [],
+    "display_label": "宮古島地下水研究会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A112",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "groundwater",
+      "health_risk",
+      "life_safety",
+      "environment"
+    ],
+    "legal_status": "informal_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Miyako"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S158",
+      "S204",
+      "S269",
+      "S270",
+      "S271",
+      "S272"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "citizen_group",
+    "aliases": [
+      {
+        "label": "ちゅら水会",
+        "source_ids": [
+          "S273",
+          "S274"
+        ],
+        "type": "context_limited_alias",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "宜野湾ちゅら水会",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A113",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "groundwater",
+      "health_risk",
+      "life_safety",
+      "environment",
+      "legal"
+    ],
+    "legal_status": "informal",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Ginowan",
+      "Futenma"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S273",
+      "S274",
+      "S275",
+      "S276",
+      "S277",
+      "S278",
+      "S279"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "labor_union",
+    "aliases": [
+      {
+        "label": "全港湾沖縄",
+        "source_ids": [
+          "S286"
+        ],
+        "type": "media_short_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "全港湾沖縄地方本部",
+        "source_ids": [
+          "S289"
+        ],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "全日本港湾労働組合沖縄地方本部",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A114",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "anti_base",
+      "anti_military",
+      "peace",
+      "life_safety",
+      "mobilization"
+    ],
+    "legal_status": "labor_union",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Naha",
+      "Ishigaki"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S284",
+      "S285",
+      "S286",
+      "S287",
+      "S288",
+      "S289"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "womens_or_community_organization",
+    "aliases": [
+      {
+        "label": "新婦人沖縄県本部",
+        "source_ids": [
+          "S283"
+        ],
+        "type": "short_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "新日本婦人の会沖縄県本部",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "A115",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "women",
+      "human_rights",
+      "peace",
+      "anti_base",
+      "referendum"
+    ],
+    "legal_status": "informal_association",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S254",
+      "S280",
+      "S281",
+      "S282",
+      "S283"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "base_community_service_actor",
+    "aliases": [],
+    "display_label": "USO Okinawa",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "X001",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "base_community_welfare"
+    ],
+    "legal_status": "not_for_profit",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Okinawa bases"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X001"
+    ]
+  },
+  {
+    "actor_class": "local_business_sponsor",
+    "aliases": [],
+    "display_label": "Phoenix Corporation / Phoenix Park Hotel",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X002",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "corporate_sponsorship",
+      "base_community_welfare"
+    ],
+    "legal_status": "company",
+    "origin_type": "corporate",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X002"
+    ]
+  },
+  {
+    "actor_class": "corporate_sponsor",
+    "aliases": [],
+    "display_label": "American Engineering Corporation AEC",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "X003",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "corporate_sponsorship",
+      "base_community_welfare"
+    ],
+    "legal_status": "company",
+    "origin_type": "corporate",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X003"
+    ]
+  },
+  {
+    "actor_class": "base_spouse_charity_network",
+    "aliases": [
+      {
+        "label": "American Women's Welfare Association",
+        "source_ids": [
+          "S041",
+          "S072",
+          "S078"
+        ],
+        "type": "former_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "米国福祉事業協会",
+        "source_ids": [
+          "S073"
+        ],
+        "type": "japanese_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Ryukyu American Welfare Council",
+        "source_ids": [
+          "S041",
+          "S055"
+        ],
+        "type": "original_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "American Welfare and Works Association",
+        "source_ids": [
+          "S074"
+        ],
+        "type": "variant",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "American Welfare & Works Association (AWWA / 米国福祉事業協会)",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X004",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "charity",
+      "base_community_welfare"
+    ],
+    "legal_status": "registered_nonprofit（EIN 98-0227149 pending Form 990 check）",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Okinawa bases"
+    ],
+    "review_status": "human_revised",
+    "source_ids": [
+      "S041",
+      "S055",
+      "S072",
+      "S073",
+      "S074",
+      "S078"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "base_spouse_club",
+    "aliases": [],
+    "display_label": "Naval Officers' Spouses' Club of Okinawa NOSCO",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X005",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "charity"
+    ],
+    "legal_status": "club/private_org",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Okinawa bases"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S055"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "base_spouse_club",
+    "aliases": [],
+    "display_label": "Kadena Officers' Spouses' Club KOSC",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X006",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "charity",
+      "scholarship"
+    ],
+    "legal_status": "registered_nonprofit（EIN 98-0214323）",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Kadena"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S075",
+      "S076"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "base_spouse_club",
+    "aliases": [],
+    "display_label": "Okinawa Enlisted Spouses' Club (OESC)",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X007",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "charity",
+      "base_community_welfare"
+    ],
+    "legal_status": "501c3（EIN 98-0346507）",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Okinawa bases"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S041",
+      "S053",
+      "S054"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "base_community_service_actor",
+    "aliases": [],
+    "display_label": "American Red Cross Okinawa",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X008",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "emergency_support"
+    ],
+    "legal_status": "nonprofit_or_base_office",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Camp Foster",
+      "U.S. Naval Hospital Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X008"
+    ]
+  },
+  {
+    "actor_class": "base_community_service_actor",
+    "aliases": [],
+    "display_label": "Navy-Marine Corps Relief Society Okinawa",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X009",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "emergency_support"
+    ],
+    "legal_status": "nonprofit_or_base_office",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Camp Foster"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X009"
+    ]
+  },
+  {
+    "actor_class": "local_international_cooperation_ngo",
+    "aliases": [],
+    "display_label": "沖縄NGOセンター",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X010",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "international_cooperation",
+      "administrative_collaboration",
+      "public_diplomacy"
+    ],
+    "legal_status": "npo_or_ngo",
+    "origin_type": "okinawa_local",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X010"
+    ]
+  },
+  {
+    "actor_class": "public_institution_partner",
+    "aliases": [],
+    "display_label": "JICA沖縄",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X011",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "international_cooperation",
+      "administrative_collaboration"
+    ],
+    "legal_status": "public_institution",
+    "origin_type": "public_institution",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X011"
+    ]
+  },
+  {
+    "actor_class": "public_diplomacy_or_exchange_actor",
+    "aliases": [],
+    "display_label": "TOMODACHI Initiative",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X012",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "public_diplomacy",
+      "youth_exchange"
+    ],
+    "legal_status": "public_private_partnership",
+    "origin_type": "mixed_or_network",
+    "primary_places": [
+      "Japan",
+      "United States",
+      "Okinawa possible"
+    ],
+    "review_status": "ai_seeded",
+    "source_ids": [],
+    "unresolved_source_refs": [
+      "X012"
+    ]
+  },
+  {
+    "actor_class": "public_diplomacy_grant_program",
+    "aliases": [],
+    "display_label": "U.S. Consulate General Naha Okinawa Youth Council Program",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X013",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "public_diplomacy",
+      "youth_exchange"
+    ],
+    "legal_status": "grant_program",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Okinawa"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S056",
+      "S082",
+      "S083",
+      "S084"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "funder_or_intermediary",
+    "aliases": [],
+    "display_label": "NED National Endowment for Democracy",
+    "display_status": "demo",
+    "evidence_level": "E2",
+    "id": "X014",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "democracy_funding",
+      "grantmaking"
+    ],
+    "legal_status": "foundation",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Asia-Pacific"
+    ],
+    "review_status": "watchlist_only",
+    "source_ids": [
+      "S085",
+      "S086"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "international_ngo",
+    "aliases": [],
+    "display_label": "Peace Winds Japan",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X015",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "international_cooperation",
+      "USAID_funding_method_sample"
+    ],
+    "legal_status": "ngo",
+    "origin_type": "japan_domestic",
+    "primary_places": [
+      "Japan",
+      "international"
+    ],
+    "review_status": "watchlist_only",
+    "source_ids": [
+      "S087",
+      "S088"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "base_spouse_club",
+    "aliases": [
+      {
+        "label": "MOSC",
+        "source_ids": [
+          "S055"
+        ],
+        "type": "acronym",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "MOSCO",
+        "source_ids": [
+          "S079"
+        ],
+        "type": "acronym",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Marine Officers' Spouses' Club Okinawa",
+        "source_ids": [
+          "S079",
+          "S080"
+        ],
+        "type": "canonical_variant",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "Marine Officers Spouses Club Okinawa",
+        "source_ids": [
+          "S080"
+        ],
+        "type": "tax_name",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "Marine Officers' Spouses' Club Okinawa (MOSCO / MOSC)",
+    "display_status": "demo",
+    "evidence_level": "E4",
+    "id": "X016",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "charity",
+      "base_community_welfare"
+    ],
+    "legal_status": "501c3/registered_nonprofit（EIN 46-0598583）",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Camp Foster",
+      "Okinawa bases"
+    ],
+    "review_status": "human_checked",
+    "source_ids": [
+      "S041",
+      "S055",
+      "S079",
+      "S080"
+    ],
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_class": "base_spouse_club",
+    "aliases": [
+      {
+        "label": "ACGO",
+        "source_ids": [
+          "S081"
+        ],
+        "type": "acronym",
+        "unresolved_source_refs": []
+      }
+    ],
+    "display_label": "Army Community Group of Okinawa (ACGO)",
+    "display_status": "demo",
+    "evidence_level": "E3",
+    "id": "X017",
+    "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
+    "issue_tags": [
+      "military_family_service",
+      "charity",
+      "base_community_welfare"
+    ],
+    "legal_status": "unclear",
+    "origin_type": "us_origin",
+    "primary_places": [
+      "Okinawa bases",
+      "Torii Station?"
+    ],
+    "review_status": "needs_second_source",
+    "source_ids": [
+      "S041",
+      "S072",
+      "S081"
+    ],
+    "unresolved_source_refs": []
+  }
+]

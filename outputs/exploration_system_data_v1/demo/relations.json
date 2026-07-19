@@ -1,0 +1,5022 @@
+{
+  "actor_episode": [
+    {
+      "actor_id": "A009",
+      "display_status": "demo",
+      "episode_id": "TE01",
+      "evidence_level": "E4",
+      "id": "TE01:A009",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S093",
+        "S128",
+        "S129"
+      ]
+    },
+    {
+      "actor_id": "A020",
+      "display_status": "demo",
+      "episode_id": "TE01",
+      "evidence_level": "E4",
+      "id": "TE01:A020",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S093",
+        "S128",
+        "S129"
+      ]
+    },
+    {
+      "actor_id": "A045",
+      "display_status": "demo",
+      "episode_id": "TE01",
+      "evidence_level": "E4",
+      "id": "TE01:A045",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S093",
+        "S128",
+        "S129"
+      ]
+    },
+    {
+      "actor_id": "A076",
+      "display_status": "demo",
+      "episode_id": "TE01",
+      "evidence_level": "E4",
+      "id": "TE01:A076",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S093",
+        "S128",
+        "S129"
+      ]
+    },
+    {
+      "actor_id": "A086",
+      "display_status": "demo",
+      "episode_id": "TE01",
+      "evidence_level": "E4",
+      "id": "TE01:A086",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S093",
+        "S128",
+        "S129"
+      ]
+    },
+    {
+      "actor_id": "A004",
+      "display_status": "demo",
+      "episode_id": "TE02",
+      "evidence_level": "E4",
+      "id": "TE02:A004",
+      "interpretation_limit": "正式提交意见不等于采纳。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S130",
+        "S131",
+        "S132"
+      ]
+    },
+    {
+      "actor_id": "A052",
+      "display_status": "demo",
+      "episode_id": "TE03",
+      "evidence_level": "E4",
+      "id": "TE03:A052",
+      "interpretation_limit": "赔偿不表示噪音停止；原告团不等于所有个体或轮次恒定。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S133",
+        "S134"
+      ]
+    },
+    {
+      "actor_id": "A053",
+      "display_status": "demo",
+      "episode_id": "TE04",
+      "evidence_level": "E4",
+      "id": "TE04:A053",
+      "interpretation_limit": "案件特定 plaintiff group；不跨轮次泛化。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S135",
+        "S136"
+      ]
+    },
+    {
+      "actor_id": "A011",
+      "display_status": "demo",
+      "episode_id": "TE05",
+      "evidence_level": "E4",
+      "id": "TE05:A011",
+      "interpretation_limit": "A011 是 requester／运动体，不是具名组织原告。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S137",
+        "S138",
+        "S139",
+        "S188",
+        "S190"
+      ]
+    },
+    {
+      "actor_id": "A020",
+      "display_status": "demo",
+      "episode_id": "TE06",
+      "evidence_level": "E4",
+      "id": "TE06:A020",
+      "interpretation_limit": "两波结果必须分列；A055/A020 是 supporter，不是组织原告。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S140",
+        "S141",
+        "S142",
+        "S143"
+      ]
+    },
+    {
+      "actor_id": "A055",
+      "display_status": "demo",
+      "episode_id": "TE06",
+      "evidence_level": "E4",
+      "id": "TE06:A055",
+      "interpretation_limit": "两波结果必须分列；A055/A020 是 supporter，不是组织原告。",
+      "relation_type": "actor_episode",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S140",
+        "S141",
+        "S142",
+        "S143"
+      ]
+    },
+    {
+      "actor_id": "A068",
+      "display_status": "demo",
+      "episode_id": "TE07",
+      "evidence_level": "E4",
+      "id": "TE07:A068",
+      "interpretation_limit": "咨询型反对多数不是法律否决；A068 规范名仍待人工决定。",
+      "relation_type": "actor_episode",
+      "review_status": "accepted_process",
+      "source_ids": [
+        "S042",
+        "S171",
+        "S172",
+        "S192"
+      ]
+    },
+    {
+      "actor_id": "A014",
+      "display_status": "demo",
+      "episode_id": "TE08",
+      "evidence_level": "E3",
+      "id": "TE08:A014",
+      "interpretation_limit": "A014/A015 为 E2 组织线索；不能写成投票发起／实施者或长期组织。",
+      "relation_type": "actor_episode",
+      "review_status": "accepted_process_with_local_gap",
+      "source_ids": [
+        "S010",
+        "S011",
+        "S015",
+        "S071",
+        "S195"
+      ]
+    },
+    {
+      "actor_id": "A015",
+      "display_status": "demo",
+      "episode_id": "TE08",
+      "evidence_level": "E3",
+      "id": "TE08:A015",
+      "interpretation_limit": "A014/A015 为 E2 组织线索；不能写成投票发起／实施者或长期组织。",
+      "relation_type": "actor_episode",
+      "review_status": "accepted_process_with_local_gap",
+      "source_ids": [
+        "S010",
+        "S011",
+        "S015",
+        "S071",
+        "S195"
+      ]
+    },
+    {
+      "actor_id": "A051",
+      "display_status": "demo",
+      "episode_id": "TE09",
+      "evidence_level": "E4",
+      "id": "TE09:A051",
+      "interpretation_limit": "签名者／请求代表不自动等于 A051 成员；投票不直接停止工程。",
+      "relation_type": "actor_episode",
+      "review_status": "accepted_process",
+      "source_ids": [
+        "S187",
+        "S188",
+        "S190",
+        "S191",
+        "S197"
+      ]
+    }
+  ],
+  "actor_issue": [
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI004",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I004",
+      "relation_basis": "Dugong protection campaign and advocacy context",
+      "relation_type": "actor_issue",
+      "review_status": "human_revised",
+      "source_ids": [
+        "S007",
+        "S057",
+        "S058",
+        "S059"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI005",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I012",
+      "relation_basis": "IUCN and international advocacy context",
+      "relation_type": "actor_issue",
+      "review_status": "human_revised",
+      "source_ids": [
+        "S007",
+        "S058"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A008",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI017",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I019",
+      "relation_basis": "No-war/international-cooperation NGO network purpose",
+      "relation_type": "actor_issue",
+      "review_status": "human_revised",
+      "source_ids": [
+        "S065",
+        "S066",
+        "S067"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A008",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI018",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Henoko referendum solidarity statement context",
+      "relation_type": "actor_issue",
+      "review_status": "human_revised",
+      "source_ids": [
+        "S064"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A016",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI038",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I008",
+      "relation_basis": "Yonaguni health/life-safety concerns around deployment and exercises",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S011",
+        "S052",
+        "S068"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A016",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI039",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I002",
+      "relation_basis": "Yonaguni deployment and joint-exercise concerns",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S052",
+        "S068"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI046",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Henoko on-site sit-in and maritime action",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S008",
+        "S049"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI047",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I003",
+      "relation_basis": "Henoko/Nago anti-heliport and on-site action",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S008",
+        "S049",
+        "S050"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI055",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I014",
+      "relation_basis": "AWWA spouse-club umbrella network",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S041",
+        "S055",
+        "S072"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI056",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I016",
+      "relation_basis": "AWWA grantmaking/welfare network",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S041",
+        "S055",
+        "S077",
+        "S078"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X005",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI057",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I014",
+      "relation_basis": "NOSCO spouse club / AWWA member relation",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S055"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X006",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI058",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I014",
+      "relation_basis": "KOSC spouse club and Kadena Gift Corner charity role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S075",
+        "S076"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X007",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI059",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I014",
+      "relation_basis": "OESC spouse club/thrift shop and nonprofit record",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S053",
+        "S054"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A040",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI100",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I012",
+      "relation_basis": "2015 NACSJ overseas signatory",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S004",
+        "S089",
+        "S090"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI109",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I012",
+      "relation_basis": "2015 NACSJ overseas signatory",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S004",
+        "S091",
+        "S092"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI110",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I005",
+      "relation_basis": "Environmental NGO signatory",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S004",
+        "S091",
+        "S092"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X016",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI179",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I014",
+      "relation_basis": "MOSCO spouse club and AWWA member role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S055",
+        "S079",
+        "S080"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A102",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI181",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I011",
+      "relation_basis": "National pollution-litigation legal coordination includes airport/base-noise practice",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S121"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A102",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI182",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I020",
+      "relation_basis": "National pollution-litigation legal coordination includes airport/base-noise practice",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S121"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A102",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI183",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I021",
+      "relation_basis": "National pollution-litigation legal coordination includes airport/base-noise practice",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S121"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A102",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI184",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I007",
+      "relation_basis": "National pollution-litigation legal coordination includes airport/base-noise practice",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S121"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A103",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI185",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I021",
+      "relation_basis": "National base-noise plaintiff-group coordination and mutual support",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S122",
+        "S123"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A103",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI186",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I007",
+      "relation_basis": "National base-noise plaintiff-group coordination and mutual support",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S122",
+        "S123"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A103",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI187",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I011",
+      "relation_basis": "National base-noise plaintiff-group coordination and mutual support",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S122",
+        "S123"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A103",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI188",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "National base-noise plaintiff-group coordination and mutual support",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S122",
+        "S123"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A104",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI189",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I021",
+      "relation_basis": "Futenma noise-litigation counsel role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S124"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A104",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI190",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I007",
+      "relation_basis": "Futenma noise-litigation counsel role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S124"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A104",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI191",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I011",
+      "relation_basis": "Futenma noise-litigation counsel role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S124"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A104",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI192",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Futenma noise-litigation counsel role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S124"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A105",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI193",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I022",
+      "relation_basis": "National YWCA women/human-rights/peace mission and 2020 Henoko statement",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S125"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A105",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI194",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I023",
+      "relation_basis": "National YWCA women/human-rights/peace mission and 2020 Henoko statement",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S125"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A105",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI195",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I019",
+      "relation_basis": "National YWCA women/human-rights/peace mission and 2020 Henoko statement",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S125"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A105",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI196",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I003",
+      "relation_basis": "National YWCA women/human-rights/peace mission and 2020 Henoko statement",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S125"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A106",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI197",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I003",
+      "relation_basis": "Metropolitan-area public action opposing Henoko soil reclamation",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S126",
+        "S127"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A106",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI198",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I020",
+      "relation_basis": "Metropolitan-area public action opposing Henoko soil reclamation",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S126",
+        "S127"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A106",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI199",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Metropolitan-area public action opposing Henoko soil reclamation",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S126",
+        "S127"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A106",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI200",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I024",
+      "relation_basis": "Metropolitan-area public action opposing Henoko soil reclamation",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S126",
+        "S127"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A107",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI201",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I022",
+      "relation_basis": "Okinawa YWCA regional identity and women-focused mission",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S144",
+        "S295"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A107",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI202",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I023",
+      "relation_basis": "Okinawa YWCA human-rights mission and activities",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S144",
+        "S295"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A107",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI203",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I019",
+      "relation_basis": "Okinawa YWCA peace mission and activities",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S144",
+        "S295"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI204",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I017",
+      "relation_basis": "Network purpose explicitly centers preventing Okinawa becoming a battlefield",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S146",
+        "S147",
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI205",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I018",
+      "relation_basis": "Public framing connects Okinawa frontline risk to regional contingency planning",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S146",
+        "S147",
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI206",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I019",
+      "relation_basis": "Prefectural anti-war and peace mobilization",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S146",
+        "S147",
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI207",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I021",
+      "relation_basis": "Fourth Kadena base-noise injunction litigation counsel role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S149",
+        "S150",
+        "S151",
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI208",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I007",
+      "relation_basis": "Fourth Kadena litigation addresses residents' daily noise harm",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S149",
+        "S150",
+        "S151",
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI209",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I011",
+      "relation_basis": "Case-specific legal representation in fourth Kadena litigation",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S149",
+        "S150",
+        "S151",
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI210",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Flight-injunction claim concerning Kadena base-noise burden",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S149",
+        "S150",
+        "S151",
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI211",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I003",
+      "relation_basis": "Sustained Osaka public actions opposing Henoko base construction",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S153",
+        "S154"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI212",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Sustained Osaka public actions opposing Henoko base construction",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S153",
+        "S154"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI213",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I024",
+      "relation_basis": "Mainland public solidarity actions concerning Henoko",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S153",
+        "S154"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A052",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI214",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I021",
+      "relation_basis": "Cross-round Kadena base-noise plaintiff-group role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S026",
+        "S149",
+        "S151",
+        "S155"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A053",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI215",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I021",
+      "relation_basis": "Cross-round Futenma base-noise plaintiff-group role",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S027",
+        "S135",
+        "S156"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A107",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI216",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Direct Henoko new-base opposition photo-exhibit activity",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S144",
+        "S295"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI217",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I025",
+      "relation_basis": "Prefecture-wide anti-war network formed to prevent Okinawa becoming a battlefield",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S146",
+        "S147",
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AI218",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I026",
+      "relation_basis": "Long-running fixed Osaka/Kansai action repertoire",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S153",
+        "S154"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A111",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI219",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I022",
+      "relation_basis": "Prefectural women's-network identity and women-focused public action",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S200",
+        "S201"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A111",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI220",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I019",
+      "relation_basis": "Long-running women-led peace mobilization, including dated 1995 and 2024 actions",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S201"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A111",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI221",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "relation_basis": "Dated base-removal and U.S.-military accountability mobilization",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S200",
+        "S201"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A111",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AI222",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I023",
+      "relation_basis": "2024 mobilization framed U.S.-military sexual violence as a rights and accountability issue",
+      "relation_type": "actor_issue",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S200",
+        "S201"
+      ],
+      "unresolved_source_refs": []
+    }
+  ],
+  "actor_place": [
+    {
+      "actor_id": "A002",
+      "canonical_place_label": "Henoko",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP003",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P002",
+      "place_label": "Henoko",
+      "quarantine_reason": "",
+      "relation_basis": "Dugong protection campaign and Henoko/Oura Bay advocacy context",
+      "relation_type": "actor_place",
+      "review_status": "human_revised",
+      "source_ids": [
+        "S007",
+        "S057",
+        "S058",
+        "S059"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "canonical_place_label": "Oura Bay",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP004",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P003",
+      "place_label": "Oura Bay",
+      "quarantine_reason": "",
+      "relation_basis": "Dugong habitat and advocacy context",
+      "relation_type": "actor_place",
+      "review_status": "human_revised",
+      "source_ids": [
+        "S007",
+        "S057",
+        "S058",
+        "S059"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A008",
+      "canonical_place_label": "Okinawa Prefecture",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AP012",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P001",
+      "place_label": "Okinawa Prefecture",
+      "quarantine_reason": "",
+      "relation_basis": "Henoko referendum solidarity statement context",
+      "relation_type": "actor_place",
+      "review_status": "human_revised",
+      "source_ids": [
+        "S064"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A016",
+      "canonical_place_label": "Yonaguni",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AP021",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P011",
+      "place_label": "Yonaguni",
+      "quarantine_reason": "",
+      "relation_basis": "Yonaguni civic group activity around deployment/exercises/life safety",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S052",
+        "S068"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "canonical_place_label": "Henoko",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP026",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P002",
+      "place_label": "Henoko",
+      "quarantine_reason": "",
+      "relation_basis": "Henoko on-site sit-in and maritime action",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S008",
+        "S049"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "canonical_place_label": "Okinawa Prefecture",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP037",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P001",
+      "place_label": "Okinawa Prefecture",
+      "quarantine_reason": "",
+      "relation_basis": "AWWA Okinawa spouse-club umbrella network",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S041",
+        "S055",
+        "S072"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X005",
+      "canonical_place_label": "Okinawa Prefecture",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP038",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P001",
+      "place_label": "Okinawa Prefecture",
+      "quarantine_reason": "",
+      "relation_basis": "NOSCO Okinawa spouse club / AWWA member relation",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S055"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X006",
+      "canonical_place_label": "Kadena",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP039",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P005",
+      "place_label": "Kadena",
+      "quarantine_reason": "",
+      "relation_basis": "KOSC Kadena spouse club and Kadena Gift Corner",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S075",
+        "S076"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X007",
+      "canonical_place_label": "Okinawa Prefecture",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP040",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P001",
+      "place_label": "Okinawa Prefecture",
+      "quarantine_reason": "",
+      "relation_basis": "OESC Okinawa thrift shop/nonprofit and AWWA member role",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S053",
+        "S054",
+        "S055"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A040",
+      "canonical_place_label": "Henoko",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP072",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P002",
+      "place_label": "Henoko",
+      "quarantine_reason": "",
+      "relation_basis": "2015 NACSJ statement signatory",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S004",
+        "S089",
+        "S090"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "canonical_place_label": "Henoko",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP078",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P002",
+      "place_label": "Henoko",
+      "quarantine_reason": "",
+      "relation_basis": "2015 NACSJ statement signatory",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S004",
+        "S091",
+        "S092"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A111",
+      "canonical_place_label": "Okinawa Prefecture",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP125",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P001",
+      "place_label": "Okinawa Prefecture",
+      "quarantine_reason": "",
+      "relation_basis": "Prefecture-wide women's network and prefectural public mobilization",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S200",
+        "S201"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A107",
+      "canonical_place_label": "Okinawa Prefecture",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AP126",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P001",
+      "place_label": "Okinawa Prefecture",
+      "quarantine_reason": "",
+      "relation_basis": "Regional YWCA identity and Okinawa-wide public activity; broad prefectural container only",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S144",
+        "S295"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "canonical_place_label": "Okinawa Prefecture",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP127",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P001",
+      "place_label": "Okinawa Prefecture",
+      "quarantine_reason": "",
+      "relation_basis": "Prefecture-wide anti-war/frontline-prevention network and prefectural public mobilization",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S146",
+        "S147",
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "canonical_place_label": "Kadena",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "id": "AP128",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P005",
+      "place_label": "Kadena",
+      "quarantine_reason": "",
+      "relation_basis": "Case-specific counsel role in the fourth Kadena base-noise litigation",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S149",
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "canonical_place_label": "Henoko",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "id": "AP129",
+      "interpretation_limit": "A documented place association is not organizational density, activity frequency, headquarters, or local support unless the relation basis says so.",
+      "place_id": "P002",
+      "place_label": "Henoko",
+      "quarantine_reason": "",
+      "relation_basis": "Henoko base construction as the sustained Osaka solidarity action's advocacy target",
+      "relation_type": "actor_place",
+      "review_status": "human_checked",
+      "source_ids": [
+        "S153",
+        "S154"
+      ],
+      "unresolved_source_refs": []
+    }
+  ],
+  "event_participation": [
+    {
+      "action_type": "co_signing",
+      "actor_id": "A003",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2010",
+      "event_id": "EV2010_WWF_67",
+      "event_label": "WWF Japan 67-group Henoko / dugong statement",
+      "evidence_level": "E3",
+      "id": "AEV0001",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "ジュゴンネットワーク沖縄",
+      "pathway_stage": "domestic_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S003"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A005",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2010",
+      "event_id": "EV2010_WWF_67",
+      "event_label": "WWF Japan 67-group Henoko / dugong statement",
+      "evidence_level": "E4",
+      "id": "AEV0002",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "WWFジャパン",
+      "pathway_stage": "domestic_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S003"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A006",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2010",
+      "event_id": "EV2010_WWF_67",
+      "event_label": "WWF Japan 67-group Henoko / dugong statement",
+      "evidence_level": "E4",
+      "id": "AEV0003",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "グリーンピース・ジャパン",
+      "pathway_stage": "domestic_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S003"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A061",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2010",
+      "event_id": "EV2010_WWF_67",
+      "event_label": "WWF Japan 67-group Henoko / dugong statement",
+      "evidence_level": "E4",
+      "id": "AEV0004",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "日本野鳥の会",
+      "pathway_stage": "domestic_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S003"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A062",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2010",
+      "event_id": "EV2010_WWF_67",
+      "event_label": "WWF Japan 67-group Henoko / dugong statement",
+      "evidence_level": "E4",
+      "id": "AEV0005",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "日本湿地ネットワーク（JAWAN）",
+      "pathway_stage": "domestic_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S003"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A004",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0006",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "日本自然保護協会",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A021",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0007",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "国際環境NGO FoE Japan",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A022",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0008",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "NPO法人 ラムサール・ネットワーク日本",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A023",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0009",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "美ら海にもやんばるにも基地はいらない市民の会",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A024",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0010",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "辺野古リレー",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A025",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0011",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "辺野古への基地建設を許さない実行委員会",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A026",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0012",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "ピース・ニュース",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A027",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0013",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "公共事業改革市民会議",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A028",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0014",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "沖縄のための日米市民ネットワーク（JUCON）",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A029",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0015",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "沖縄・生物多様性市民ネットワーク",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A030",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0016",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "市川三番瀬を守る会",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A031",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0017",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "三番瀬のラムサール条約登録を実現する会",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A032",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0018",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Peace Philosophy Centre",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A033",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0019",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Friends of the Earth U.S.",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A034",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0020",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Korea Federation for Environmental Movements (KFEM)",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A035",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0021",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Russian Social Ecological Union",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A036",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0022",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Friends of the Siberian Forests",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A037",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0023",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Centre for Environmental Justice",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A038",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0024",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Sahabat Alam Malaysia",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A039",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0025",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "The Legal Rights and Natural Resources Center-Kasama sa Kalikasan",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A040",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0026",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Forum for Protection of Public Interest (Pro Public)",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A041",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0027",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Friends of the Earth Brisbane",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A042",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0028",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Pacific Environment",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A043",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0029",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "PENGON-FoE Palestine",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A044",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0030",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Naturvernforbundet / Norwegian Society for the Conservation of Nature",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A045",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0031",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Center for Biological Diversity",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A046",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0032",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Pro Natura",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "co_signing",
+      "actor_id": "A061",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_NACSJ_31",
+      "event_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "evidence_level": "E4",
+      "id": "AEV0033",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "日本野鳥の会",
+      "pathway_stage": "transnational_environmental_statement",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S004"
+      ],
+      "target_id_or_name": "Henoko base construction plan",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V002"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "A001",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E4",
+      "id": "AEV0034",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "Okinawa Environmental Justice Project",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "A020",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E4",
+      "id": "AEV0035",
+      "interpretation_limit": "co-signing is one-off event participation, not stable alliance",
+      "is_registry_actor": true,
+      "participant_label": "日本環境法律家連盟（JELF）",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0036",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "Diving Team Rainbow",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0037",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "Dugong no Sato",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0038",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "Okinawa Reefcheck and Research Group",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0039",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "Okumagawa Basin Protection Foundation",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0040",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "Protect Northernmost Dugong Team Zan",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0041",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "East Asian Community Institute Ryukyu Okinawa Center",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0042",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "Henoko Blue",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0043",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "Nago Democracy",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "request_letter",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "unverified_event_participant",
+      "event_date": "2020",
+      "event_id": "EV2020_OEJP_MMC_71",
+      "event_label": "OEJP / MMC civil-society request and report",
+      "evidence_level": "E2",
+      "id": "AEV0044",
+      "interpretation_limit": "E2 signatory-only evidence: one-off public participation only; do not infer organizational continuity, a stable alliance, or a definite conclusion.",
+      "is_registry_actor": false,
+      "participant_label": "No Heliport Base Association of 10 Districts North of Futamai",
+      "pathway_stage": "international_institution_request",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "co_signer_or_participant",
+      "source_ids": [
+        "S006"
+      ],
+      "target_id_or_name": "U.S. Marine Mammal Commission",
+      "target_type": "institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V004"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A045",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0045",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": true,
+      "participant_label": "Center for Biological Diversity",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "named_plaintiff",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A086",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0046",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": true,
+      "participant_label": "Turtle Island Restoration Network",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "named_plaintiff",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A020",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0047",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": true,
+      "participant_label": "日本環境法律家連盟（JELF）",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "named_plaintiff",
+      "source_ids": [
+        "S061"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A076",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0048",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": true,
+      "participant_label": "ジュゴン保護基金委員会（Save the Dugong Foundation）",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "named_plaintiff",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A009",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0049",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": true,
+      "participant_label": "Earthjustice",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "legal_counsel",
+      "source_ids": [
+        "S009"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "referendum",
+      "actor_id": "A051",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2019",
+      "event_id": "EV2019_PREF_REFERENDUM",
+      "event_label": "2019 Henoko prefectural referendum",
+      "evidence_level": "E4",
+      "id": "AEV0050",
+      "interpretation_limit": "Human-checked referendum-initiator role for this specific process only; do not infer a stable alliance or wider political causation.",
+      "is_registry_actor": true,
+      "participant_label": "「辺野古」県民投票の会",
+      "pathway_stage": "prefectural_autonomy_process",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "referendum_initiator",
+      "source_ids": [
+        "S025"
+      ],
+      "target_id_or_name": "Henoko reclamation and base-construction question",
+      "target_type": "referendum_question",
+      "unresolved_source_refs": [],
+      "venue_id": "V007"
+    },
+    {
+      "action_type": "referendum",
+      "actor_id": "A068",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "1997",
+      "event_id": "EV1997_NAGO_REFERENDUM",
+      "event_label": "1997 Nago city referendum",
+      "evidence_level": "E3",
+      "id": "AEV0051",
+      "interpretation_limit": "Human-checked referendum-initiator role for this specific process only; do not infer a stable alliance or wider political causation.",
+      "is_registry_actor": true,
+      "participant_label": "名護市民投票の会",
+      "pathway_stage": "municipal_autonomy_process",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "referendum_initiator",
+      "source_ids": [
+        "S042"
+      ],
+      "target_id_or_name": "Nago base-relocation referendum question",
+      "target_type": "referendum_question",
+      "unresolved_source_refs": [],
+      "venue_id": "V008"
+    },
+    {
+      "action_type": "referendum",
+      "actor_id": "A011",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2019",
+      "event_id": "EV_ISHIGAKI_REFERENDUM",
+      "event_label": "Ishigaki referendum drive (2018-2019)",
+      "evidence_level": "E4",
+      "id": "AEV0052",
+      "interpretation_limit": "Human-checked referendum-initiator role for this specific process only; do not infer a stable alliance or wider political causation.",
+      "is_registry_actor": true,
+      "participant_label": "石垣市住民投票を求める会",
+      "pathway_stage": "municipal_autonomy_process",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "referendum_initiator",
+      "source_ids": [
+        "S018"
+      ],
+      "target_id_or_name": "Ishigaki referendum ordinance and JSDF-deployment question",
+      "target_type": "municipal_process",
+      "unresolved_source_refs": [],
+      "venue_id": "V008"
+    },
+    {
+      "action_type": "referendum",
+      "actor_id": "A014",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2015",
+      "event_id": "EV2015_YONAGUNI_REFERENDUM",
+      "event_label": "2015 Yonaguni SDF-deployment referendum",
+      "evidence_level": "E2",
+      "id": "AEV0053",
+      "interpretation_limit": "E2 event-context evidence only: organization identity and continuity remain unresolved pending local retrieval; do not use as a definite conclusion.",
+      "is_registry_actor": true,
+      "participant_label": "住民投票を成功させるための実行委員会",
+      "pathway_stage": "municipal_autonomy_process",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "referendum_committee",
+      "source_ids": [
+        "S069"
+      ],
+      "target_id_or_name": "Yonaguni JSDF-deployment question",
+      "target_type": "referendum_question",
+      "unresolved_source_refs": [],
+      "venue_id": "V008"
+    },
+    {
+      "action_type": "opinion_ad",
+      "actor_id": "A015",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2012",
+      "event_id": "EV2012_YONAGUNI_OPINION_AD",
+      "event_label": "2012 Yonaguni anti-deployment opinion ad",
+      "evidence_level": "E2",
+      "id": "AEV0054",
+      "interpretation_limit": "E2 event-context evidence only: organization identity and continuity remain unresolved pending local retrieval; do not use as a definite conclusion.",
+      "is_registry_actor": true,
+      "participant_label": "与那国自衛隊配備反対意見広告実行委員会",
+      "pathway_stage": "public_opinion_mobilization",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "opinion_ad_committee",
+      "source_ids": [
+        "S015"
+      ],
+      "target_id_or_name": "Public opinion on Yonaguni JSDF deployment",
+      "target_type": "public_opinion",
+      "unresolved_source_refs": [],
+      "venue_id": "V009"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "individual",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0055",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": false,
+      "participant_label": "Anna Shimabukuro",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "named_plaintiff_individual",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "individual",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0056",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": false,
+      "participant_label": "東恩納琢磨（Takuma Higashionna）",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "named_plaintiff_individual",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "individual",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0057",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": false,
+      "participant_label": "真喜志好一（Yoshikazu Makishi）",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "named_plaintiff_individual",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "",
+      "display_status": "demo",
+      "entity_type": "institution",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E4",
+      "id": "AEV0058",
+      "interpretation_limit": "Human-checked case role only; keep named plaintiff, individual, counsel, defendant, and non-party roles distinct.",
+      "is_registry_actor": false,
+      "participant_label": "U.S. Department of Defense",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "defendant",
+      "source_ids": [
+        "S093"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A002",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E3",
+      "id": "AEV0059",
+      "interpretation_limit": "Human-checked non-party organization role: person-level participation must not be transferred to an organization; not an alliance finding.",
+      "is_registry_actor": true,
+      "participant_label": "ジュゴン保護キャンペーンセンター（SDCC）",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "not_plaintiff_advocacy",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A019",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2003",
+      "event_id": "EV2003_DUGONG_LAWSUIT",
+      "event_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "evidence_level": "E3",
+      "id": "AEV0060",
+      "interpretation_limit": "Human-checked non-party organization role: person-level participation must not be transferred to an organization; not an alliance finding.",
+      "is_registry_actor": true,
+      "participant_label": "ヘリ基地反対協議会",
+      "pathway_stage": "transnational_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "not_plaintiff_onsite_movement",
+      "source_ids": [
+        "S060"
+      ],
+      "target_id_or_name": "U.S. Department of Defense",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V005"
+    },
+    {
+      "action_type": "public_rally",
+      "actor_id": "A111",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2024",
+      "event_id": "EV2024_WOMEN_ANTI_VIOLENCE_RALLY",
+      "event_label": "2024 prefectural rally against U.S. military sexual violence",
+      "evidence_level": "E4",
+      "id": "AEV0065",
+      "interpretation_limit": "Event-level organizing only; co-participation does not establish stable alliance ties.",
+      "is_registry_actor": true,
+      "participant_label": "沖縄県女性団体連絡協議会",
+      "pathway_stage": "women_human_rights_public_mobilization",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "organizer_or_convener",
+      "source_ids": [
+        "S200"
+      ],
+      "target_id_or_name": "Japan and U.S. governments / prevention and accountability policy",
+      "target_type": "government_accountability",
+      "unresolved_source_refs": [],
+      "venue_id": "V015"
+    },
+    {
+      "action_type": "public_rally",
+      "actor_id": "A108",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2023",
+      "event_id": "EV2023_PREFECTURAL_PEACE_RALLY",
+      "event_label": "2023 Okinawa prefectural peace mass rally",
+      "evidence_level": "E4",
+      "id": "AEV0066",
+      "interpretation_limit": "Event-level organizing only; attendance or co-participation does not establish membership a stable alliance or policy effect.",
+      "is_registry_actor": true,
+      "participant_label": "沖縄を再び戦場にさせない県民の会",
+      "pathway_stage": "prefectural_anti_war_public_mobilization",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "organizer_or_convener",
+      "source_ids": [
+        "S147"
+      ],
+      "target_id_or_name": "Japanese government's Southwest shift and military/base buildup in Okinawa",
+      "target_type": "policy_project",
+      "unresolved_source_refs": [],
+      "venue_id": "V015"
+    },
+    {
+      "action_type": "litigation",
+      "actor_id": "A109",
+      "display_status": "demo",
+      "entity_type": "registry_actor",
+      "event_date": "2022",
+      "event_id": "EV2022_KADENA_4TH_NOISE_LAWSUIT",
+      "event_label": "Fourth Kadena Base Noise Injunction Lawsuit filing",
+      "evidence_level": "E3",
+      "id": "AEV0067",
+      "interpretation_limit": "Fourth-round case role only; do not infer a complete lawyer roster representation in earlier rounds funding or a stable alliance.",
+      "is_registry_actor": true,
+      "participant_label": "第4次嘉手納基地爆音差止訴訟弁護団",
+      "pathway_stage": "domestic_noise_litigation",
+      "relation_type": "event_participation",
+      "review_status": "human_checked",
+      "role": "legal_counsel",
+      "source_ids": [
+        "S152"
+      ],
+      "target_id_or_name": "Government of Japan",
+      "target_type": "defendant_institution",
+      "unresolved_source_refs": [],
+      "venue_id": "V006"
+    }
+  ],
+  "legal_roles": [
+    {
+      "actor_id": "A045",
+      "case_id": "R8C01",
+      "display_label": "Center for Biological Diversity",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E4",
+      "id": "R8R001",
+      "interpretation_limit": "Party role is case-specific and does not by itself prove a stable alliance.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S128",
+        "S129"
+      ],
+      "target_or_recipient": "U.S. Department of Defense",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A086",
+      "case_id": "R8C01",
+      "display_label": "Turtle Island Restoration Network",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E4",
+      "id": "R8R002",
+      "interpretation_limit": "Party role is case-specific.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S128"
+      ],
+      "target_or_recipient": "U.S. Department of Defense",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A020",
+      "case_id": "R8C01",
+      "display_label": "日本環境法律家連盟（JELF）",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E4",
+      "id": "R8R003",
+      "interpretation_limit": "HR-014: A020 is a named plaintiff in this Dugong case, not counsel. This case-specific plaintiff role does not transfer to Awase or other litigation.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S062",
+        "S128"
+      ],
+      "target_or_recipient": "U.S. Department of Defense",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A076",
+      "case_id": "R8C01",
+      "display_label": "ジュゴン保護基金委員会（Save the Dugong Foundation）",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E4",
+      "id": "R8R004",
+      "interpretation_limit": "Distinct from A002 SDCC.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S062",
+        "S128"
+      ],
+      "target_or_recipient": "U.S. Department of Defense",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A009",
+      "case_id": "R8C01",
+      "display_label": "Earthjustice",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E4",
+      "id": "R8R005",
+      "interpretation_limit": "HR-014: Earthjustice is counsel in this case and is not a named plaintiff.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "counsel",
+      "role_family": "counsel",
+      "side": "claimant",
+      "source_ids": [
+        "S062"
+      ],
+      "target_or_recipient": "U.S. Department of Defense",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "case_id": "R8C01",
+      "display_label": "ジュゴン保護キャンペーンセンター（SDCC）",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E4",
+      "id": "R8R006",
+      "interpretation_limit": "HR-014: A002 remains a non-party here. The negative role prevents a false plaintiff label and does not deny advocacy outside the case.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "non_party",
+      "role_family": "non_party",
+      "side": "support_context",
+      "source_ids": [
+        "S062",
+        "S128"
+      ],
+      "target_or_recipient": "U.S. Department of Defense",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "case_id": "R8C01",
+      "display_label": "ヘリ基地反対協議会",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E3",
+      "id": "R8R007",
+      "interpretation_limit": "HR-014: A019 remains a non-party. An associated individual's personal role must not be transferred to the organization.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "non_party",
+      "role_family": "non_party",
+      "side": "support_context",
+      "source_ids": [
+        "S093",
+        "S128"
+      ],
+      "target_or_recipient": "U.S. Department of Defense",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A004",
+      "case_id": "R8C02",
+      "display_label": "日本自然保護協会（NACSJ）",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E4",
+      "id": "R8R008",
+      "interpretation_limit": "Formal comments prove procedural use not acceptance by the proponent.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "commenter",
+      "role_family": "commenter",
+      "side": "commenting_organization",
+      "source_ids": [
+        "S131",
+        "S132"
+      ],
+      "target_or_recipient": "Okinawa Defense Bureau; national and prefectural officials",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C02",
+      "display_label": "Okinawa Defense Bureau",
+      "display_status": "demo",
+      "entity_kind": "public_institution",
+      "evidence_level": "E4",
+      "id": "R8R009",
+      "interpretation_limit": "Government proponent is a procedural node not a civic actor.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E001",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "procedure_proponent",
+      "role_family": "proponent",
+      "side": "respondent_or_proponent",
+      "source_ids": [
+        "S130"
+      ],
+      "target_or_recipient": "Public; Okinawa Prefecture",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C02",
+      "display_label": "Governor of Okinawa",
+      "display_status": "demo",
+      "entity_kind": "public_institution",
+      "evidence_level": "E4",
+      "id": "R8R010",
+      "interpretation_limit": "Receipt/review role is not evidence that the governor adopted the NGO's conclusions.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E002",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "comment_recipient_and_review_authority",
+      "role_family": "institutional_recipient",
+      "side": "institutional_recipient",
+      "source_ids": [
+        "S130",
+        "S131"
+      ],
+      "target_or_recipient": "Okinawa Defense Bureau",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C03",
+      "display_label": "Kadena-area resident plaintiffs",
+      "display_status": "demo",
+      "entity_kind": "procedural_collective",
+      "evidence_level": "E4",
+      "id": "R8R011",
+      "interpretation_limit": "Individual plaintiffs are represented as a collective procedural role; no person registry is created.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E003",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S133"
+      ],
+      "target_or_recipient": "Government of Japan",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A052",
+      "case_id": "R8C03",
+      "display_label": "嘉手納爆音訴訟原告団",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E3",
+      "id": "R8R012",
+      "interpretation_limit": "HR-014: A052 is accepted as the case-specific plaintiff-group crosswalk. Do not infer that every named resident was a formal member or that participant identity is constant across rounds.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff_group",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S134"
+      ],
+      "target_or_recipient": "Government of Japan",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C03",
+      "display_label": "Third Kadena litigation counsel group",
+      "display_status": "demo",
+      "entity_kind": "procedural_collective",
+      "evidence_level": "E3",
+      "id": "R8R013",
+      "interpretation_limit": "HR-014: counsel role accepted as a Third Kadena procedural collective. No actor-registry entry or complete individual-lawyer roster is created.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E004",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "counsel",
+      "role_family": "counsel",
+      "side": "claimant",
+      "source_ids": [
+        "S134"
+      ],
+      "target_or_recipient": "Government of Japan",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C03",
+      "display_label": "Government of Japan",
+      "display_status": "demo",
+      "entity_kind": "public_institution",
+      "evidence_level": "E4",
+      "id": "R8R014",
+      "interpretation_limit": "Does not imply operational control over every aircraft movement for injunction purposes.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E005",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "defendant",
+      "role_family": "defendant",
+      "side": "respondent",
+      "source_ids": [
+        "S133"
+      ],
+      "target_or_recipient": "Kadena resident plaintiffs",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C04",
+      "display_label": "Futenma-area resident plaintiffs",
+      "display_status": "demo",
+      "entity_kind": "procedural_collective",
+      "evidence_level": "E4",
+      "id": "R8R015",
+      "interpretation_limit": "Individual plaintiffs are not separately entered into the actor registry.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E006",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S135"
+      ],
+      "target_or_recipient": "Government of Japan",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A053",
+      "case_id": "R8C04",
+      "display_label": "普天間爆音訴訟団",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E3",
+      "id": "R8R016",
+      "interpretation_limit": "HR-014: A053 is accepted as the case-specific Futenma plaintiff-group crosswalk. The joined actions and other rounds do not imply identical individual membership.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff_group",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S136"
+      ],
+      "target_or_recipient": "Government of Japan",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C04",
+      "display_label": "沖縄合同法律事務所",
+      "display_status": "demo",
+      "entity_kind": "external_organization",
+      "evidence_level": "E4",
+      "id": "R8R017",
+      "interpretation_limit": "HR-014: the office's counsel-secretariat role is accepted; it does not make the office the sole counsel or a plaintiff.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E007",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "counsel_secretariat",
+      "role_family": "counsel",
+      "side": "claimant",
+      "source_ids": [
+        "S136"
+      ],
+      "target_or_recipient": "Government of Japan",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C04",
+      "display_label": "Government of Japan",
+      "display_status": "demo",
+      "entity_kind": "public_institution",
+      "evidence_level": "E4",
+      "id": "R8R018",
+      "interpretation_limit": "Case outcome concerns damages and does not establish an operational injunction.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E005",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "defendant",
+      "role_family": "defendant",
+      "side": "respondent",
+      "source_ids": [
+        "S135"
+      ],
+      "target_or_recipient": "Futenma resident plaintiffs",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C05",
+      "display_label": "Ishigaki resident representatives and signatories",
+      "display_status": "demo",
+      "entity_kind": "procedural_collective",
+      "evidence_level": "E4",
+      "id": "R8R019",
+      "interpretation_limit": "Do not infer organizational plaintiff status from individual participation.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E008",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S137"
+      ],
+      "target_or_recipient": "Ishigaki City",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A011",
+      "case_id": "R8C05",
+      "display_label": "石垣市住民投票を求める会",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E3",
+      "id": "R8R020",
+      "interpretation_limit": "HR-014: A011 is accepted as requester/campaign body and is explicitly not a named organizational plaintiff without a pleading.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "requester",
+      "role_family": "requester",
+      "side": "civic_campaign",
+      "source_ids": [
+        "S138",
+        "S139"
+      ],
+      "target_or_recipient": "Mayor of Ishigaki; Ishigaki City Council",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C05",
+      "display_label": "大井琢",
+      "display_status": "demo",
+      "entity_kind": "person",
+      "evidence_level": "E4",
+      "id": "R8R021",
+      "interpretation_limit": "HR-014: counsel role is limited to the related later status-confirmation phase and is not automatically transferred to every claim in the 2020 mandatory-order judgment.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E009",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "counsel",
+      "role_family": "counsel",
+      "side": "claimant",
+      "source_ids": [
+        "S139"
+      ],
+      "target_or_recipient": "Ishigaki City",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C05",
+      "display_label": "Ishigaki City and Mayor",
+      "display_status": "demo",
+      "entity_kind": "public_institution_set",
+      "evidence_level": "E4",
+      "id": "R8R022",
+      "interpretation_limit": "Council rejection and mayoral implementation duty are distinct institutional steps.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E010",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "defendant_and_target",
+      "role_family": "defendant",
+      "side": "respondent",
+      "source_ids": [
+        "S137"
+      ],
+      "target_or_recipient": "Ishigaki residents",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C06",
+      "display_label": "Awase resident plaintiffs",
+      "display_status": "demo",
+      "entity_kind": "procedural_collective",
+      "evidence_level": "E4",
+      "id": "R8R023",
+      "interpretation_limit": "First- and second-wave plaintiff populations require separate person-level records if later needed.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E011",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "plaintiff",
+      "role_family": "plaintiff",
+      "side": "claimant",
+      "source_ids": [
+        "S140",
+        "S142"
+      ],
+      "target_or_recipient": "Governor of Okinawa; Mayor of Okinawa City",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C06",
+      "display_label": "Awase litigation counsel group",
+      "display_status": "demo",
+      "entity_kind": "procedural_collective",
+      "evidence_level": "E4",
+      "id": "R8R024",
+      "interpretation_limit": "The statement does not provide a full attorney roster.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E012",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "counsel",
+      "role_family": "counsel",
+      "side": "claimant",
+      "source_ids": [
+        "S142"
+      ],
+      "target_or_recipient": "Governor of Okinawa; Mayor of Okinawa City",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A055",
+      "case_id": "R8C06",
+      "display_label": "泡瀬干潟を守る連絡会",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E3",
+      "id": "R8R025",
+      "interpretation_limit": "HR-014: A055 is a case-specific supporter, not an organizational plaintiff or counsel.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "supporter",
+      "role_family": "supporter",
+      "side": "movement_support",
+      "source_ids": [
+        "S142"
+      ],
+      "target_or_recipient": "Awase resident litigation",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A020",
+      "case_id": "R8C06",
+      "display_label": "日本環境法律家連盟（JELF）",
+      "display_status": "demo",
+      "entity_kind": "registered_actor",
+      "evidence_level": "E3",
+      "id": "R8R026",
+      "interpretation_limit": "HR-014: A020 is a supporter/formal-material host in Awase, not plaintiff or counsel. Its Dugong-case plaintiff role must not be generalized across cases.",
+      "is_registry_actor": true,
+      "provisional_entity_id": "",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "supporter",
+      "role_family": "supporter",
+      "side": "legal_network",
+      "source_ids": [
+        "S142"
+      ],
+      "target_or_recipient": "Awase resident litigation",
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "",
+      "case_id": "R8C06",
+      "display_label": "Governor of Okinawa; Mayor of Okinawa City",
+      "display_status": "demo",
+      "entity_kind": "public_institution_set",
+      "evidence_level": "E4",
+      "id": "R8R027",
+      "interpretation_limit": "Institutional defendants are not civic actors.",
+      "is_registry_actor": false,
+      "provisional_entity_id": "P8E013",
+      "relation_type": "legal_role",
+      "review_status": "human_checked",
+      "role": "defendant_officials_and_targets",
+      "role_family": "defendant",
+      "side": "respondent",
+      "source_ids": [
+        "S140",
+        "S143"
+      ],
+      "target_or_recipient": "Awase resident plaintiffs",
+      "unresolved_source_refs": []
+    }
+  ],
+  "strict_place_issue": [
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0019",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S007"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0020",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S057"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0021",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S058"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0022",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S059"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0023",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S007"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0024",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S058"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0025",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P003",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S007"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0026",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P003",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S057"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0027",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P003",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S058"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0028",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I004",
+      "place_id": "P003",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S059"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0029",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P003",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S007"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A002",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0030",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P003",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S058"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A008",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0045",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S064"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A016",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0075",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I008",
+      "place_id": "P011",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S052"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A016",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0076",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I008",
+      "place_id": "P011",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S068"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A016",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0077",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I002",
+      "place_id": "P011",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S052"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A016",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0078",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I002",
+      "place_id": "P011",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S068"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0087",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S008"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0088",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S049"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0089",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I003",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S008"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A019",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0090",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I003",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S049"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [
+        "R10R024",
+        "R10R025",
+        "R10R026",
+        "R10R027"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0103",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S041"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [
+        "R10R024",
+        "R10R025",
+        "R10R026",
+        "R10R027"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0104",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S055"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [
+        "R10R024",
+        "R10R025"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0105",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S072"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [
+        "R10R024",
+        "R10R025",
+        "R10R026",
+        "R10R027"
+      ],
+      "evidence_level": "E3",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0106",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I016",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S041"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [
+        "R10R024",
+        "R10R025",
+        "R10R026",
+        "R10R027"
+      ],
+      "evidence_level": "E3",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0107",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I016",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S055"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X005",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0108",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S055"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X006",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0109",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S075"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X006",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0110",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S076"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X007",
+      "display_status": "demo",
+      "event_dates": [
+        "2025"
+      ],
+      "event_ids": [
+        "R10R022"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0111",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S053"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X007",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0112",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S054"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A040",
+      "display_status": "demo",
+      "event_dates": [
+        "2015"
+      ],
+      "event_ids": [
+        "EV2015_NACSJ_31"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0148",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S004"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A040",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0149",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S089"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A040",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0150",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S090"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "event_dates": [
+        "2015"
+      ],
+      "event_ids": [
+        "EV2015_NACSJ_31"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0159",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S004"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0160",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S091"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F6",
+      "frame_label": "国际路径",
+      "id": "SPI0161",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I012",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S092"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "event_dates": [
+        "2015"
+      ],
+      "event_ids": [
+        "EV2015_NACSJ_31"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0162",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I005",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S004"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0163",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I005",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S091"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A046",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0164",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I005",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S092"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X016",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0272",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P006",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S079"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X016",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0273",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P006",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S080"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A111",
+      "display_status": "demo",
+      "event_dates": [
+        "2024"
+      ],
+      "event_ids": [
+        "EV2024_WOMEN_ANTI_VIOLENCE_RALLY"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0277",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S200"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A111",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0278",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S201"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A107",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0279",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S144"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A107",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0280",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S295"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0281",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I017",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S146"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [
+        "2023"
+      ],
+      "event_ids": [
+        "EV2023_PREFECTURAL_PEACE_RALLY"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0282",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I017",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S147"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0283",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I017",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0284",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I018",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S146"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [
+        "2023"
+      ],
+      "event_ids": [
+        "EV2023_PREFECTURAL_PEACE_RALLY"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0285",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I018",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S147"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0286",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I018",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0287",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I025",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S146"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [
+        "2023"
+      ],
+      "event_ids": [
+        "EV2023_PREFECTURAL_PEACE_RALLY"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0288",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I025",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S147"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0289",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I025",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0290",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I021",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S149"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0291",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I021",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0292",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I007",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S149"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0293",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I007",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F5",
+      "frame_label": "法律／程序",
+      "id": "SPI0294",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I011",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S149"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F5",
+      "frame_label": "法律／程序",
+      "id": "SPI0295",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I011",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0296",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S149"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A109",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0297",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P005",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S152"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0298",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I003",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S153"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0299",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I003",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S154"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0300",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S153"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0301",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S154"
+      ],
+      "unresolved_source_refs": []
+    }
+  ]
+}

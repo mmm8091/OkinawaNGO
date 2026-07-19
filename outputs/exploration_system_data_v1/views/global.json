@@ -1,0 +1,184 @@
+{
+  "cross_page_state": {
+    "display_layer_default": "demo",
+    "keys": [
+      "actor_ids",
+      "place_ids",
+      "issue_ids",
+      "episode_ids",
+      "time_range",
+      "display_layer"
+    ]
+  },
+  "evidence_drawer": {
+    "max_click_depth": 3,
+    "required_fields": [
+      "source_id",
+      "source_publication_date",
+      "event_date",
+      "locator",
+      "evidence_level",
+      "review_status",
+      "archive_status",
+      "interpretation_limit"
+    ]
+  },
+  "time_layer": {
+    "coverage_periods": [
+      {
+        "category": "1972-1997",
+        "count": 4,
+        "denominator": 295,
+        "dimension_id": "D1",
+        "dimension_label": "时间",
+        "facet": "source_year_period",
+        "inclusion_rule": "Source year binned to the Phase-1 plan periods.",
+        "interpretation_limit": "Source counts measure documentary visibility, not organization activity. Describes the working sample only; no population denominator or overall-distribution estimate.",
+        "share_pct": 1.4,
+        "subcategory": "",
+        "unit": "source-log records"
+      },
+      {
+        "category": "1998-2012",
+        "count": 21,
+        "denominator": 295,
+        "dimension_id": "D1",
+        "dimension_label": "时间",
+        "facet": "source_year_period",
+        "inclusion_rule": "Source year binned to the Phase-1 plan periods.",
+        "interpretation_limit": "Source counts measure documentary visibility, not organization activity. Describes the working sample only; no population denominator or overall-distribution estimate.",
+        "share_pct": 7.1,
+        "subcategory": "",
+        "unit": "source-log records"
+      },
+      {
+        "category": "2013-2019",
+        "count": 82,
+        "denominator": 295,
+        "dimension_id": "D1",
+        "dimension_label": "时间",
+        "facet": "source_year_period",
+        "inclusion_rule": "Source year binned to the Phase-1 plan periods.",
+        "interpretation_limit": "Source counts measure documentary visibility, not organization activity. Describes the working sample only; no population denominator or overall-distribution estimate.",
+        "share_pct": 27.8,
+        "subcategory": "",
+        "unit": "source-log records"
+      },
+      {
+        "category": "2020-current",
+        "count": 185,
+        "denominator": 295,
+        "dimension_id": "D1",
+        "dimension_label": "时间",
+        "facet": "source_year_period",
+        "inclusion_rule": "Source year binned to the Phase-1 plan periods.",
+        "interpretation_limit": "Source counts measure documentary visibility, not organization activity. Describes the working sample only; no population denominator or overall-distribution estimate.",
+        "share_pct": 62.7,
+        "subcategory": "",
+        "unit": "source-log records"
+      },
+      {
+        "category": "unknown/undated",
+        "count": 3,
+        "denominator": 295,
+        "dimension_id": "D1",
+        "dimension_label": "时间",
+        "facet": "source_year_period",
+        "inclusion_rule": "Source year binned to the Phase-1 plan periods.",
+        "interpretation_limit": "Source counts measure documentary visibility, not organization activity. Describes the working sample only; no population denominator or overall-distribution estimate.",
+        "share_pct": 1.0,
+        "subcategory": "",
+        "unit": "source-log records"
+      }
+    ],
+    "event_anchors": [
+      {
+        "anchor_type": "event",
+        "display_label": "1997 Nago city referendum",
+        "event_date": "1997",
+        "id": "EV1997_NAGO_REFERENDUM",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+        "event_date": "2003",
+        "id": "EV2003_DUGONG_LAWSUIT",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "WWF Japan 67-group Henoko / dugong statement",
+        "event_date": "2010",
+        "id": "EV2010_WWF_67",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "2012 Yonaguni anti-deployment opinion ad",
+        "event_date": "2012",
+        "id": "EV2012_YONAGUNI_OPINION_AD",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+        "event_date": "2015",
+        "id": "EV2015_NACSJ_31",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "2015 Yonaguni SDF-deployment referendum",
+        "event_date": "2015",
+        "id": "EV2015_YONAGUNI_REFERENDUM",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "2019 Henoko prefectural referendum",
+        "event_date": "2019",
+        "id": "EV2019_PREF_REFERENDUM",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "OEJP / MMC civil-society request and report",
+        "event_date": "2020",
+        "id": "EV2020_OEJP_MMC_71",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "Fourth Kadena Base Noise Injunction Lawsuit filing",
+        "event_date": "2022",
+        "id": "EV2022_KADENA_4TH_NOISE_LAWSUIT",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "2023 Okinawa prefectural peace mass rally",
+        "event_date": "2023",
+        "id": "EV2023_PREFECTURAL_PEACE_RALLY",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "2024 prefectural rally against U.S. military sexual violence",
+        "event_date": "2024",
+        "id": "EV2024_WOMEN_ANTI_VIOLENCE_RALLY",
+        "review_status": "human_checked"
+      },
+      {
+        "anchor_type": "event",
+        "display_label": "Ishigaki referendum drive (2018-2019)",
+        "event_date": "2019",
+        "id": "EV_ISHIGAKI_REFERENDUM",
+        "review_status": "human_checked"
+      }
+    ],
+    "historical_anchor_ids": [],
+    "interpretation_limit": "The empty historical-anchor collection is explicit. Event and source dates must not be used to fabricate organizational continuity."
+  },
+  "view_id": "G1+G2"
+}

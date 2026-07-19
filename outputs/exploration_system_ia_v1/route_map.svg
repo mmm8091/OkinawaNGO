@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="1000" viewBox="0 0 1360 1000" font-family="Microsoft YaHei, PingFang SC, Hiragino Sans GB, sans-serif">
+  <metadata>artifact_status=superseded_exploration; current_authority=docs/exploration_system_information_architecture_v1.md</metadata>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5a66"/>
+    </marker>
+    <marker id="arrowlite" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9aa7b0"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1360" height="1000" fill="#f7fafa"/>
+  <text x="80" y="42" font-size="24" font-weight="bold" fill="#8a3350">已退出冻结交付：旧入口与用户路径总图（NR-01 v1）</text>
+  <text x="80" y="66" font-size="13" fill="#5a6b72">仅保留为六页面族探索记录；当前结构为四个主页面、四个可视化引擎、全局时间层与证据抽屉。</text>
+
+  <!-- 首页 -->
+  <rect x="80" y="84" width="1200" height="96" rx="8" fill="#ffffff" stroke="#2a7f7f" stroke-width="2"/>
+  <text x="100" y="110" font-size="16" font-weight="bold" fill="#1f3a3d">首页＝主问题＋V01 区域研究导航图＋三种探索动作（地图不是地点—议题证据图）</text>
+  <rect x="100" y="122" width="270" height="44" rx="6" fill="#eef6f6" stroke="#2a7f7f"/>
+  <text x="112" y="140" font-size="12.5" fill="#1f3a3d">按组织看</text>
+  <text x="112" y="157" font-size="11" fill="#5a6b72">→ 类型、议题、地点与角色</text>
+  <rect x="390" y="122" width="270" height="44" rx="6" fill="#eef6f6" stroke="#2a7f7f"/>
+  <text x="402" y="140" font-size="12.5" fill="#1f3a3d">按制度路径看</text>
+  <text x="402" y="157" font-size="11" fill="#5a6b72">→ 问题、场域、产出与结果</text>
+  <rect x="680" y="122" width="270" height="44" rx="6" fill="#fdf3e7" stroke="#d9962e"/>
+  <text x="692" y="140" font-size="12.5" fill="#1f3a3d">按地域看（推荐默认）</text>
+  <text x="692" y="157" font-size="11" fill="#5a6b72">→ 全域定位、局部放大、地方问题</text>
+  <rect x="970" y="122" width="290" height="44" rx="6" fill="#faeef2" stroke="#b5486b"/>
+  <text x="982" y="140" font-size="12.5" fill="#1f3a3d">历史演变与资料缺口</text>
+  <text x="982" y="157" font-size="11" fill="#5a6b72">→ 锚点、覆盖、连续性未决</text>
+
+  <!-- click-1 arrows -->
+  <line x1="235" y1="180" x2="235" y2="216" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="525" y1="180" x2="845" y2="216" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="815" y1="180" x2="535" y2="216" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1115" y1="180" x2="1115" y2="216" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <circle cx="253" cy="198" r="10" fill="#2a7f7f"/><text x="253" y="202.5" font-size="11" fill="#fff" text-anchor="middle">1</text>
+  <circle cx="833" cy="198" r="10" fill="#2a7f7f"/><text x="833" y="202.5" font-size="11" fill="#fff" text-anchor="middle">1</text>
+  <circle cx="1133" cy="198" r="10" fill="#2a7f7f"/><text x="1133" y="202.5" font-size="11" fill="#fff" text-anchor="middle">1</text>
+
+  <!-- ============ 入口1 组织生态 ============ -->
+  <rect x="80" y="218" width="290" height="40" rx="6" fill="#2a7f7f"/>
+  <text x="225" y="243" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">入口 1　组织生态（R1/R2/R11）</text>
+  <rect x="80" y="270" width="290" height="72" rx="6" fill="#fff" stroke="#8fb8b8"/>
+  <text x="94" y="292" font-size="13" font-weight="bold" fill="#1f3a3d">组织列表（默认视图）</text>
+  <text x="94" y="310" font-size="11.5" fill="#5a6b72">搜索/筛选 122 个 actor·按功能层分组</text>
+  <text x="94" y="326" font-size="11.5" fill="#5a6b72">分类生态视图·外来 actor 层（R11）</text>
+  <rect x="80" y="374" width="290" height="96" rx="6" fill="#fff" stroke="#2a7f7f" stroke-width="1.8"/>
+  <text x="94" y="396" font-size="13" font-weight="bold" fill="#1f3a3d">actor 详情</text>
+  <text x="94" y="414" font-size="11.5" fill="#5a6b72">身份/别名/功能层 ＋ 人审徽章</text>
+  <text x="94" y="430" font-size="11.5" fill="#5a6b72">议题边（人审在前·候选仅研究层）</text>
+  <text x="94" y="446" font-size="11.5" fill="#5a6b72">地点关系·参与 episode·解释边界块</text>
+  <rect x="80" y="502" width="290" height="58" rx="6" fill="#fff" stroke="#8fb8b8" stroke-dasharray="5 3"/>
+  <text x="94" y="524" font-size="12.5" font-weight="bold" fill="#1f3a3d">议题与桥接视图</text>
+  <text x="94" y="541" font-size="11" fill="#5a6b72">机制卡片·非毛线球；全网图仅附录级</text>
+  <line x1="225" y1="342" x2="225" y2="370" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <circle cx="243" cy="356" r="10" fill="#2a7f7f"/><text x="243" y="360.5" font-size="11" fill="#fff" text-anchor="middle">2</text>
+  <line x1="225" y1="470" x2="225" y2="498" stroke="#9aa7b0" stroke-width="1.4" marker-end="url(#arrowlite)"/>
+
+  <!-- ============ 入口2 地点与地方化 ============ -->
+  <rect x="390" y="218" width="290" height="40" rx="6" fill="#d9962e"/>
+  <text x="535" y="243" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">入口 2　地点与地方化（R3/R4）</text>
+  <rect x="390" y="270" width="290" height="72" rx="6" fill="#fff" stroke="#e0b878"/>
+  <text x="404" y="292" font-size="13" font-weight="bold" fill="#1f3a3d">真实地理地图 ＋ 地点列表（并列）</text>
+  <text x="404" y="310" font-size="11.5" fill="#5a6b72">本岛/宫古/八重山三分幅·20 地点节点</text>
+  <text x="404" y="326" font-size="11.5" fill="#5a6b72">材料状态三态图例（沿用研究地图）</text>
+  <rect x="390" y="374" width="290" height="96" rx="6" fill="#fff" stroke="#d9962e" stroke-width="1.8"/>
+  <text x="404" y="396" font-size="13" font-weight="bold" fill="#1f3a3d">地点详情</text>
+  <text x="404" y="414" font-size="11.5" fill="#5a6b72">地方问题框架（R4）·在场组织（语义分组）</text>
+  <text x="404" y="430" font-size="11.5" fill="#5a6b72">同源地点—议题事实（演示层＝双人审）</text>
+  <text x="404" y="446" font-size="11.5" fill="#5a6b72">该地 episode 列表·缺口标记</text>
+  <rect x="390" y="502" width="290" height="58" rx="6" fill="#fff" stroke="#e0b878" stroke-dasharray="5 3"/>
+  <text x="404" y="524" font-size="12.5" font-weight="bold" fill="#1f3a3d">比较视图（两地点/两 episode）</text>
+  <text x="404" y="541" font-size="11" fill="#5a6b72">同字段对照·空位显式"未证实/无记录"</text>
+  <line x1="535" y1="342" x2="535" y2="370" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <circle cx="553" cy="356" r="10" fill="#d9962e"/><text x="553" y="360.5" font-size="11" fill="#fff" text-anchor="middle">2</text>
+  <line x1="535" y1="470" x2="535" y2="498" stroke="#9aa7b0" stroke-width="1.4" marker-end="url(#arrowlite)"/>
+
+  <!-- ============ 入口3 行动与制度路径 ============ -->
+  <rect x="700" y="218" width="290" height="40" rx="6" fill="#3d6b8f"/>
+  <text x="845" y="243" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">入口 3　行动与制度路径（R5–R11）</text>
+  <rect x="700" y="270" width="290" height="72" rx="6" fill="#fff" stroke="#9ab4c8"/>
+  <text x="714" y="292" font-size="13" font-weight="bold" fill="#1f3a3d">episode 列表（按场域族分组）</text>
+  <text x="714" y="310" font-size="11.5" fill="#5a6b72">演示层＝已核案件 episode（R8 六案最强）</text>
+  <text x="714" y="326" font-size="11.5" fill="#5a6b72">公投门槛链（R9A）·共同行动（R5/R7）</text>
+  <rect x="700" y="374" width="290" height="96" rx="6" fill="#fff" stroke="#3d6b8f" stroke-width="1.8"/>
+  <text x="714" y="396" font-size="13" font-weight="bold" fill="#1f3a3d">episode 详情：六段转译链条</text>
+  <text x="714" y="414" font-size="11.5" fill="#5a6b72">地方问题→组织翻译→场域→中间产出</text>
+  <text x="714" y="430" font-size="11.5" fill="#5a6b72">→有限结果→底层改变（空位如实显示）</text>
+  <text x="714" y="446" font-size="11.5" fill="#5a6b72">参与者角色表·程序时间线·非因果边界句</text>
+  <rect x="700" y="502" width="290" height="58" rx="6" fill="#fff" stroke="#9ab4c8" stroke-dasharray="5 3"/>
+  <text x="714" y="524" font-size="12.5" font-weight="bold" fill="#1f3a3d">背景视图：R6 国际路径·R10 行政协作</text>
+  <text x="714" y="541" font-size="11" fill="#5a6b72">请求≠回应·标签≠组织·不称资金网络</text>
+  <line x1="845" y1="342" x2="845" y2="370" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <circle cx="863" cy="356" r="10" fill="#3d6b8f"/><text x="863" y="360.5" font-size="11" fill="#fff" text-anchor="middle">2</text>
+  <line x1="845" y1="470" x2="845" y2="498" stroke="#9aa7b0" stroke-width="1.4" marker-end="url(#arrowlite)"/>
+
+  <!-- ============ 入口4 历史演变 ============ -->
+  <rect x="1010" y="218" width="290" height="40" rx="6" fill="#b5486b"/>
+  <text x="1155" y="243" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">入口 4　历史演变（R14/纵向）</text>
+  <rect x="1010" y="270" width="290" height="72" rx="6" fill="#fff" stroke="#d49ab0"/>
+  <text x="1024" y="292" font-size="13" font-weight="bold" fill="#1f3a3d">四时期总览（默认视图）</text>
+  <text x="1024" y="310" font-size="11.5" fill="#5a6b72">1972–1997 / 1998–2012 / 2013–2019 / 2020–</text>
+  <text x="1024" y="326" font-size="11.5" fill="#5a6b72">每期：锚点＋来源覆盖条＋显式缺口卡</text>
+  <rect x="1010" y="374" width="290" height="96" rx="6" fill="#fff" stroke="#b5486b" stroke-width="1.8"/>
+  <text x="1024" y="396" font-size="13" font-weight="bold" fill="#1f3a3d">时期页 / 锚点详情</text>
+  <text x="1024" y="414" font-size="11.5" fill="#5a6b72">锚点类型（formed/renamed/split…）</text>
+  <text x="1024" y="430" font-size="11.5" fill="#5a6b72">历史证据类别徽章·当时名/现名对照</text>
+  <text x="1024" y="446" font-size="11.5" fill="#5a6b72">同名≠同一实体提示·连续性须负责人决定</text>
+  <rect x="1010" y="502" width="290" height="58" rx="6" fill="#fff" stroke="#d49ab0" stroke-dasharray="5 3"/>
+  <text x="1024" y="524" font-size="12.5" font-weight="bold" fill="#1f3a3d">NR-04/05 历史候选（仅研究层）</text>
+  <text x="1024" y="541" font-size="11" fill="#5a6b72">负责人检查点 C 决定前不进演示层</text>
+  <line x1="1155" y1="342" x2="1155" y2="370" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <circle cx="1173" cy="356" r="10" fill="#b5486b"/><text x="1173" y="360.5" font-size="11" fill="#fff" text-anchor="middle">2</text>
+  <line x1="1155" y1="470" x2="1155" y2="498" stroke="#9aa7b0" stroke-width="1.4" marker-end="url(#arrowlite)"/>
+
+  <!-- 跨入口漫游 -->
+  <line x1="370" y1="422" x2="390" y2="422" stroke="#7a8a94" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrowlite)" marker-start="url(#arrowlite)"/>
+  <line x1="680" y1="422" x2="700" y2="422" stroke="#7a8a94" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrowlite)" marker-start="url(#arrowlite)"/>
+  <line x1="990" y1="422" x2="1010" y2="422" stroke="#7a8a94" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrowlite)" marker-start="url(#arrowlite)"/>
+  <text x="680" y="486" font-size="11.5" fill="#7a8a94" text-anchor="middle">详情页互链：actor ↔ place ↔ episode ↔ 锚点（面包屑常驻，任意入口可横向漫游）</text>
+
+  <!-- 证据底层 -->
+  <line x1="225" y1="560" x2="225" y2="606" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="535" y1="560" x2="535" y2="606" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="845" y1="560" x2="845" y2="606" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1155" y1="560" x2="1155" y2="606" stroke="#4a5a66" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <circle cx="243" cy="584" r="10" fill="#4a5a66"/><text x="243" y="588.5" font-size="11" fill="#fff" text-anchor="middle">3</text>
+  <circle cx="553" cy="584" r="10" fill="#4a5a66"/><text x="553" y="588.5" font-size="11" fill="#fff" text-anchor="middle">3</text>
+  <circle cx="863" cy="584" r="10" fill="#4a5a66"/><text x="863" y="588.5" font-size="11" fill="#fff" text-anchor="middle">3</text>
+  <circle cx="1173" cy="584" r="10" fill="#4a5a66"/><text x="1173" y="588.5" font-size="11" fill="#fff" text-anchor="middle">3</text>
+
+  <rect x="80" y="610" width="1200" height="74" rx="8" fill="#22333b"/>
+  <text x="100" y="638" font-size="15" font-weight="bold" fill="#fff">证据与方法底层（跨切层）　证据抽屉：来源 · 发布日 vs 事件日 · locator · E0–E4 · 人审状态 · 解释边界</text>
+  <text x="100" y="662" font-size="12" fill="#c6d2d8">方法页："样本能看见什么"（六维覆盖审计）· 编码与证据等级说明 · 数据与下载（部署获批后启用）· source_id 只在抽屉内显示</text>
+
+  <!-- 图例 -->
+  <rect x="80" y="712" width="590" height="256" rx="8" fill="#ffffff" stroke="#c9d6d6"/>
+  <text x="100" y="740" font-size="14" font-weight="bold" fill="#1f3a3d">确定性分层（决定能否进演示层）</text>
+  <rect x="100" y="754" width="96" height="24" rx="12" fill="#e3f2ec" stroke="#2f8f5b"/><text x="148" y="770" font-size="11.5" fill="#20603f" text-anchor="middle">已人工复核</text>
+  <text x="206" y="770" font-size="11.5" fill="#5a6b72">accepted / human_checked　→ 演示层 ✓</text>
+  <rect x="100" y="786" width="130" height="24" rx="12" fill="#eef4f8" stroke="#3d6b8f"/><text x="165" y="802" font-size="11.5" fill="#2b4d68" text-anchor="middle">来源支持·有界表述</text>
+  <text x="240" y="802" font-size="11.5" fill="#5a6b72">source_backed_bounded　→ 演示层 ✓（带边界句）</text>
+  <rect x="100" y="818" width="96" height="24" rx="12" fill="#fdf6e3" stroke="#c9a227"/><text x="148" y="834" font-size="11.5" fill="#7a611a" text-anchor="middle">候选·未复核</text>
+  <text x="206" y="834" font-size="11.5" fill="#5a6b72">candidate　→ 仅研究层，带黄色徽章</text>
+  <rect x="100" y="850" width="96" height="24" rx="12" fill="#f0f0f0" stroke="#8a8a8a"/><text x="148" y="866" font-size="11.5" fill="#555" text-anchor="middle">分析种子</text>
+  <text x="206" y="866" font-size="11.5" fill="#5a6b72">analytical_seed　→ 仅研究层，灰色徽章</text>
+  <rect x="100" y="882" width="96" height="24" rx="12" fill="#faeef2" stroke="#b5486b"/><text x="148" y="898" font-size="11.5" fill="#8a3350" text-anchor="middle">需当地材料</text>
+  <text x="206" y="898" font-size="11.5" fill="#5a6b72">local_retrieval_gap　→ 演示层作缺口卡显示，不作为事实</text>
+  <text x="100" y="936" font-size="12" fill="#5a6b72">研究层开关（全局单一·默认关）：开启后候选/种子/待审项可见且必带徽章，页顶常驻提示。</text>
+  <text x="100" y="956" font-size="12" fill="#5a6b72">研究层不改写演示层文案，只增加带标记的内容。</text>
+
+  <rect x="690" y="712" width="590" height="256" rx="8" fill="#ffffff" stroke="#c9d6d6"/>
+  <text x="710" y="740" font-size="14" font-weight="bold" fill="#1f3a3d">历史证据类别（历史性主张必带）</text>
+  <text x="710" y="766" font-size="12" fill="#5a6b72">同期一手 ／ 后来组织回顾 ／ 二手重建 ／ 线索 ／ 当地材料缺口</text>
+  <text x="710" y="800" font-size="14" font-weight="bold" fill="#1f3a3d">全局硬规则</text>
+  <text x="710" y="826" font-size="12" fill="#5a6b72">· 共同出现≠稳定联盟；度数≠影响力；请求≠回应；进入≠成功</text>
+  <text x="710" y="848" font-size="12" fill="#5a6b72">· 来源发布年 ≠ 事件年；材料可见性 ≠ 组织活动强度</text>
+  <text x="710" y="870" font-size="12" fill="#5a6b72">· event-only 名称与 X 制度节点不冒充 registry actor</text>
+  <text x="710" y="892" font-size="12" fill="#5a6b72">· 无 E3/E4 官方记录不显示资助关系；不出现"资金网络"表述</text>
+  <text x="710" y="914" font-size="12" fill="#5a6b72">· 界面文案不出现 HR-xxx / MT-xxx / 裸露 source_id</text>
+  <text x="710" y="936" font-size="12" fill="#5a6b72">· 地图不是唯一入口；网络图不是默认首页；首屏无统计卡片</text>
+</svg>

@@ -1,0 +1,7 @@
+﻿scenario_id,scenario_label,candidate_actor_count
+FULL,全量 E3/E4,8
+NO_S003,移除 2010 名单,8
+NO_S004,移除 2015 名单,4
+NO_S006,移除 2020 名单,8
+NO_BIG3,移除三组名单,4
+REVIEWED,仅人工复核,2

@@ -1,0 +1,216 @@
+{
+  "actor_place_relation_ids": [
+    "AP003",
+    "AP004",
+    "AP012",
+    "AP021",
+    "AP026",
+    "AP037",
+    "AP038",
+    "AP039",
+    "AP040",
+    "AP072",
+    "AP078",
+    "AP125",
+    "AP126",
+    "AP127",
+    "AP128",
+    "AP129"
+  ],
+  "interpretation_limits": [
+    "The map is a navigation and evidence view, not an estimate of organizational density.",
+    "Only human-reviewed same-source triples appear in strict evidence mode."
+  ],
+  "issue_ids": [
+    "I001",
+    "I002",
+    "I003",
+    "I004",
+    "I005",
+    "I006",
+    "I007",
+    "I008",
+    "I009",
+    "I010",
+    "I011",
+    "I012",
+    "I013",
+    "I014",
+    "I015",
+    "I016",
+    "I017",
+    "I018",
+    "I019",
+    "I020",
+    "I021",
+    "I022",
+    "I023",
+    "I024",
+    "I025",
+    "I026"
+  ],
+  "map_geometry": {
+    "feature_count": 42,
+    "path": "../demo/map_geometry.geojson",
+    "region_codes": [
+      "miyako",
+      "okinawa",
+      "other",
+      "yaeyama"
+    ],
+    "type": "FeatureCollection"
+  },
+  "place_ids": [
+    "P001",
+    "P002",
+    "P003",
+    "P004",
+    "P005",
+    "P006",
+    "P007",
+    "P008",
+    "P009",
+    "P010",
+    "P011",
+    "P012",
+    "P013",
+    "P014",
+    "P015",
+    "P016",
+    "P017",
+    "P018",
+    "P019",
+    "P020"
+  ],
+  "question": "哪里正在发生什么？",
+  "regions": {
+    "Central Okinawa": [
+      "P007",
+      "P018"
+    ],
+    "Central/Northern Okinawa": [
+      "P008"
+    ],
+    "Ginowan": [
+      "P004",
+      "P010"
+    ],
+    "Kadena/Chatan/Okinawa City": [
+      "P005"
+    ],
+    "Nago": [
+      "P002",
+      "P003"
+    ],
+    "Nago/Henoko": [
+      "P006"
+    ],
+    "Naha": [
+      "P015"
+    ],
+    "Northern Okinawa": [
+      "P017"
+    ],
+    "Northern Okinawa / Yanbaru": [
+      "P016"
+    ],
+    "Okinawa": [
+      "P001"
+    ],
+    "Okinawa City": [
+      "P019"
+    ],
+    "Sakishima": [
+      "P011",
+      "P012",
+      "P013"
+    ],
+    "Southern Okinawa": [
+      "P020"
+    ],
+    "Urasoe": [
+      "P009"
+    ],
+    "Urasoe/Okinawa": [
+      "P014"
+    ]
+  },
+  "route": "/",
+  "strict_place_issue_relation_ids": [
+    "SPI0019",
+    "SPI0020",
+    "SPI0021",
+    "SPI0022",
+    "SPI0023",
+    "SPI0024",
+    "SPI0025",
+    "SPI0026",
+    "SPI0027",
+    "SPI0028",
+    "SPI0029",
+    "SPI0030",
+    "SPI0045",
+    "SPI0075",
+    "SPI0076",
+    "SPI0077",
+    "SPI0078",
+    "SPI0087",
+    "SPI0088",
+    "SPI0089",
+    "SPI0090",
+    "SPI0103",
+    "SPI0104",
+    "SPI0105",
+    "SPI0106",
+    "SPI0107",
+    "SPI0108",
+    "SPI0109",
+    "SPI0110",
+    "SPI0111",
+    "SPI0112",
+    "SPI0148",
+    "SPI0149",
+    "SPI0150",
+    "SPI0159",
+    "SPI0160",
+    "SPI0161",
+    "SPI0162",
+    "SPI0163",
+    "SPI0164",
+    "SPI0272",
+    "SPI0273",
+    "SPI0277",
+    "SPI0278",
+    "SPI0279",
+    "SPI0280",
+    "SPI0281",
+    "SPI0282",
+    "SPI0283",
+    "SPI0284",
+    "SPI0285",
+    "SPI0286",
+    "SPI0287",
+    "SPI0288",
+    "SPI0289",
+    "SPI0290",
+    "SPI0291",
+    "SPI0292",
+    "SPI0293",
+    "SPI0294",
+    "SPI0295",
+    "SPI0296",
+    "SPI0297",
+    "SPI0298",
+    "SPI0299",
+    "SPI0300",
+    "SPI0301"
+  ],
+  "view_id": "P1",
+  "visual_engine": "V1 全域地点—议题研究地图",
+  "visual_states": [
+    "all_regions",
+    "strict_evidence",
+    "sakishima_focus",
+    "compare"
+  ]
+}

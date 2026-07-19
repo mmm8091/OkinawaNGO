@@ -1,0 +1,8 @@
+﻿event,source_list_rows,confirmed_registry_rows,target_or_venue,action
+2010 WWF 声明,67,16,日本政府,共同声明
+2015 NACSJ／Peace Boat 声明,31,31,日本国内＋跨国 NGO,共同声明
+2020 OEJP／MMC 请求,71,16,美国海洋哺乳动物委员会,请求信／公民社会报告
+2010↔2015,,10,两事件重叠,
+2010↔2020,,8,两事件重叠,
+2015↔2020,,3,两事件重叠,
+贯穿三次,,3,重复骨架,
