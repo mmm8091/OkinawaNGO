@@ -135,7 +135,7 @@ AMBIGUOUS_EDGE_IDS = set(
 PLACE_ORDER = [
     "P001", "P020", "P017", "P002", "P003", "P006", "P016", "P019",
     "P004", "P010", "P018", "P005", "P007", "P008", "P009", "P011",
-    "P012", "P013", "P014", "P015",
+    "P012", "P013", "P021", "P014", "P015",
 ]
 
 PLACE_LABELS = {
@@ -157,6 +157,7 @@ PLACE_LABELS = {
     "P011": "与那国",
     "P012": "石垣",
     "P013": "宫古",
+    "P021": "先岛整体",
     "P014": "JICA Okinawa",
     "P015": "美国总领馆",
 }
@@ -238,6 +239,10 @@ def semantic_basis(semantic: str) -> str:
 
 
 def interpretation_limit(edge: dict[str, str], semantic: str, place_match: bool) -> str:
+    reviewed_boundary = edge.get("interpretation_limit", "").strip()
+    if edge.get("place_review_status") in HUMAN_EDGE_STATUSES and reviewed_boundary:
+        return reviewed_boundary
+
     base = {
         "headquarters": "候选仅表示总部／办公室位置；不外推组织在全地理范围的活动或政治代表性。",
         "site_presence": "候选仅表示公开活动、服务或网络节点在场；不等于总部、法定登记地、稳定联盟或政治立场。",
@@ -259,7 +264,7 @@ def interpretation_limit(edge: dict[str, str], semantic: str, place_match: bool)
         "AP088": "相邻受影响地区与原告团组织据点不能相互替代。",
         "AP105": "‘Okinawa node’ 仍需第二来源，不能先写成正式分支。",
         "AP110": "在冲绳开展活动不等于在那霸设办公室。",
-        "AP123": "输入存在键值冲突：P006 在 place registry 是 Camp Schwab，但本行 place_name 写 Camp Foster；不得静默选择其一。",
+        "AP123": "HR-025 已将地点键修订为 P007 Camp Foster；只保留经审定的服务／慈善场域边界。",
         "AP124": "Torii Station／基地特定性仍需独立来源。",
         "AP125": "HR-013 只支持全县性活动场域；不得推定具体市町总部或据点。",
         "AP126": "HR-011 只支持沖縄YWCA的全县活动场域；不得推定具体总部、边野古现场在场或稳定联盟。",
@@ -284,11 +289,50 @@ def build_semantic_rows(
             raise ValueError(f"unknown actor in {edge['edge_id']}: {edge['actor_id']}")
         if not place:
             raise ValueError(f"unknown place in {edge['edge_id']}: {edge['place_id']}")
-        semantic = semantic_for_edge(edge["edge_id"])
+        machine_semantic = semantic_for_edge(edge["edge_id"])
+        place_reviewed = edge.get("place_review_status") in HUMAN_EDGE_STATUSES
+        retired = (
+            edge.get("place_human_decision") == "reject"
+            or edge.get("graph_eligibility") == "excluded"
+            or edge["review_status"] == "rejected"
+        )
+        reviewed_semantic = edge.get("place_semantic", "").strip()
+        if place_reviewed and reviewed_semantic:
+            if reviewed_semantic not in VALID_SEMANTICS:
+                raise ValueError(
+                    f"invalid reviewed place_semantic in {edge['edge_id']}: {reviewed_semantic}"
+                )
+            semantic = reviewed_semantic
+        else:
+            semantic = machine_semantic
         place_match = edge["place_name"] == place["place_name"]
-        needs_review = semantic == "unclear" or edge["edge_id"] in AMBIGUOUS_EDGE_IDS or not place_match
-        edge_human = edge["review_status"] in HUMAN_EDGE_STATUSES
+        needs_review = (
+            not place_reviewed
+            and not retired
+            and (
+                semantic == "unclear"
+                or edge["edge_id"] in AMBIGUOUS_EDGE_IDS
+                or not place_match
+            )
+        )
+        edge_human = edge["review_status"] in HUMAN_EDGE_STATUSES and not retired
         dossier = DOSSIER_PLACES.get(edge["place_id"], ("", ""))[0]
+        if retired:
+            freeze_status = "retired_by_human_review"
+            semantic_status = edge.get("place_review_status", "human_checked")
+            confidence = "excluded"
+        elif place_reviewed:
+            freeze_status = "human_frozen"
+            semantic_status = edge["place_review_status"]
+            confidence = "human_confirmed"
+        elif needs_review:
+            freeze_status = "needs_human_semantic_review"
+            semantic_status = "ai_seeded_candidate"
+            confidence = "low" if semantic == "unclear" or not place_match else "medium"
+        else:
+            freeze_status = "mechanically_classified_candidate"
+            semantic_status = "ai_seeded_candidate"
+            confidence = "high"
         rows.append({
             "edge_id": edge["edge_id"],
             "actor_id": edge["actor_id"],
@@ -306,13 +350,19 @@ def build_semantic_rows(
             "semantic_candidate_v1": semantic,
             "semantic_candidate_zh": SEMANTIC_CN[semantic],
             "semantic_classification_basis": semantic_basis(semantic),
-            "semantic_confidence": "low" if semantic == "unclear" or not place_match else "medium" if needs_review else "high",
-            "semantic_freeze_status": "needs_human_semantic_review" if needs_review else "mechanically_classified_candidate",
-            "semantic_review_status": "ai_seeded_candidate",
+            "semantic_confidence": confidence,
+            "semantic_freeze_status": freeze_status,
+            "semantic_review_status": semantic_status,
             "source_ref_original": edge["source_ref"],
             "evidence_level_original": edge["evidence_level"],
             "edge_review_status_original": edge["review_status"],
-            "edge_review_layer": "human_reviewed_edge" if edge_human else "candidate_edge",
+            "edge_review_layer": "excluded_edge" if retired else "human_reviewed_edge" if edge_human else "candidate_edge",
+            "analysis_inclusion": "excluded" if retired else "active",
+            "claim_status": edge.get("claim_status", ""),
+            "graph_eligibility": edge.get("graph_eligibility", ""),
+            "approved_formulation": edge.get("approved_formulation", ""),
+            "confirmed_scope": edge.get("confirmed_scope", ""),
+            "missing_scope": edge.get("missing_scope", ""),
             "dossier_place": dossier,
             "interpretation_limit": interpretation_limit(edge, semantic, place_match),
             "notes_original": edge["notes"],
@@ -334,6 +384,7 @@ def build_summary(rows: list[dict[str, object]]) -> list[dict[str, object]]:
             "edge_count": len(items),
             "human_reviewed_edge_count": sum(r["edge_review_layer"] == "human_reviewed_edge" for r in items),
             "candidate_edge_count": sum(r["edge_review_layer"] == "candidate_edge" for r in items),
+            "human_frozen_semantic_count": sum(r["semantic_freeze_status"] == "human_frozen" for r in items),
             "E4_count": sum(r["evidence_level_original"] == "E4" for r in items),
             "E3_count": sum(r["evidence_level_original"] == "E3" for r in items),
             "E2_count": sum(r["evidence_level_original"] == "E2" for r in items),
@@ -389,6 +440,9 @@ def preserve_hr025_human_fields(
         return seed_rows
 
     existing_rows = read_csv(existing_path)
+    if existing_rows and all(row.get("decision", "").strip() for row in existing_rows):
+        return [dict(row) for row in existing_rows]
+
     existing_by_object: dict[str, dict[str, str]] = {}
     for row in existing_rows:
         object_id = row.get("object_id", "").strip()
@@ -655,7 +709,7 @@ def plot_full_matrix(rows: list[dict[str, object]]) -> None:
     fig.suptitle(f"R3 全量组织 × 地点空间关系（{len(rows)} 条候选／人审边）", x=0.12, y=0.995, ha="left", fontsize=22, fontweight="bold")
     fig.text(
         0.12, 0.982,
-        "每个点对应中央 actor–place 表的一条边；实心＝底层边已人审，空心＝候选边；颜色＝空间语义候选，大小＝E2/E3/E4。语义候选本身尚未人审。",
+        "每个点对应一条当前有效 actor–place 边；实心＝底层边已人审，空心＝候选边；颜色＝空间语义，大小＝E2/E3/E4。42 条语义已经 HR-025 冻结，其余仍为机器候选。",
         ha="left", va="top", fontsize=10.5, color="#4D5955",
     )
     fig.text(
@@ -671,8 +725,11 @@ def plot_full_matrix(rows: list[dict[str, object]]) -> None:
     layer_handles = [
         Line2D([0], [0], marker="o", color="none", markerfacecolor="#456E68", markeredgecolor="#1F2D29", markersize=8, label="底层边已人审"),
         Line2D([0], [0], marker="o", color="none", markerfacecolor="white", markeredgecolor="#456E68", markeredgewidth=1.7, markersize=8, label="底层候选边"),
-        Line2D([0], [0], marker="D", color="none", markerfacecolor="white", markeredgecolor="#C62027", markeredgewidth=1.8, markersize=8, label="地点键冲突"),
     ]
+    if any(row["place_name_integrity"] != "match" for row in rows):
+        layer_handles.append(
+            Line2D([0], [0], marker="D", color="none", markerfacecolor="white", markeredgecolor="#C62027", markeredgewidth=1.8, markersize=8, label="地点键冲突")
+        )
     first = ax.legend(handles=semantic_handles, loc="upper left", bbox_to_anchor=(0, 1.013), ncol=3, frameon=False, fontsize=8.5)
     ax.add_artist(first)
     ax.legend(handles=layer_handles, loc="upper right", bbox_to_anchor=(1, 1.013), ncol=3, frameon=False, fontsize=8.5)
@@ -783,16 +840,20 @@ def render_brief(
     crosswalk: list[dict[str, object]],
     hr025: list[dict[str, object]],
 ) -> str:
-    semantics = Counter(str(r["semantic_candidate_v1"]) for r in rows)
-    places = Counter(str(r["place_id"]) for r in rows)
-    human = sum(r["edge_review_layer"] == "human_reviewed_edge" for r in rows)
-    mismatch = [r for r in rows if r["place_name_integrity"] != "match"]
+    active_rows = [r for r in rows if r["analysis_inclusion"] == "active"]
+    semantics = Counter(str(r["semantic_candidate_v1"]) for r in active_rows)
+    places = Counter(str(r["place_id"]) for r in active_rows)
+    human = sum(r["edge_review_layer"] == "human_reviewed_edge" for r in active_rows)
+    candidate = sum(r["edge_review_layer"] == "candidate_edge" for r in active_rows)
+    semantic_human = sum(r["semantic_freeze_status"] == "human_frozen" for r in active_rows)
+    retired = len(rows) - len(active_rows)
+    mismatch = [r for r in active_rows if r["place_name_integrity"] != "match"]
     dossier_by: dict[str, list[dict[str, object]]] = defaultdict(list)
     for row in dossier:
         dossier_by[str(row["place"])].append(row)
     main_sources = sum(r["reference_kind"] == "main_source_id" for r in crosswalk)
     legacy_refs = sum(r["reference_kind"] == "legacy_actor_or_placeholder_ref" for r in crosswalk)
-    broad_share = (places["P001"] + places["P002"]) / len(rows)
+    broad_share = (places["P001"] + places["P002"]) / len(active_rows)
     filled_hr025 = sum(
         any(str(row[field]).strip() for field in HR025_HUMAN_FIELDS)
         for row in hr025
@@ -805,15 +866,21 @@ def render_brief(
             for r in items
         )
 
+    mismatch_text = (
+        f"仍有 {len(mismatch)} 条地点键冲突，必须进入新的空间人工闸门。"
+        if mismatch
+        else "当前地点键冲突为 0；HR-025 已将 AP123 从 P006 修订为 P007 Camp Foster，并保留原键用于审计。"
+    )
+
     return f"""# R3 空间语义与先岛 dossier v1
 
-日期：2026-07-13
+日期：2026-07-20
 
-口径：{len(rows)} 条中央 actor–place 边的**候选空间语义层**。本包不修改基础中央表，只重生派生 interim32；语义候选不等于人审结论。
+口径：中央 actor–place 表保留 {len(rows)} 条历史行，其中 {len(active_rows)} 条当前有效、{retired} 条经人审剔除／合并；本包只重生派生 interim32，不修改中央表。空间语义中的人工冻结与机器候选分层保留。
 
 ## 直接回答
 
-当前空间表不能直接读成“组织在哪里有据点”。{len(rows)} 条边中：
+当前空间表不能直接读成“组织在哪里有据点”。{len(active_rows)} 条有效边中：
 
 - 倡议／争议对象 **{semantics['advocacy_target']}** 条；
 - 持续活动／服务在场 **{semantics['site_presence']}** 条；
@@ -822,15 +889,15 @@ def render_brief(
 - 总部／办公室 **{semantics['headquarters']}** 条；
 - 当前语义未明 **{semantics['unclear']}** 条。
 
-底层边只有 **{human}/{len(rows)}** 条为 `human_checked`／`human_revised`，其余 **{len(rows)-human}** 条仍是候选或补证状态。空间语义本身全部是机器候选；其中 **{len(hr025)}** 条因目标／在场／总部／制度场域难以机械区分而进入 HR-025。当前 **{filled_hr025}** 条已有人工字段；生成器按稳定 `object_id` 保留这些字段，不把它们改回空值。
+底层有效边有 **{human}/{len(active_rows)}** 条为 `human_checked`／`human_revised`，其余 **{candidate}** 条仍是候选或补证状态。空间语义已有 **{semantic_human}** 条由 HR-025 冻结，剩余有效行保持机器候选；HR-025 的 {len(hr025)} 条历史任务均保留人工字段，不因重生被清空。
 
 ## 最重要的解释增量
 
 1. **边野古可见度主要是“目标”，不是“据点”。** P002 有 {places['P002']} 条关系，其中大量来自 2010／2015 声明、法律说明与本土／国际声援。把这些点画成同一种“组织在场”会把事件性倡议误写成地方组织密度。
 2. **P001 是宽泛容器。** 冲绳全县有 {places['P001']} 条关系，混合了组织活动范围、项目语境、赞助／服务网络、行政辖区和弱连接，不能视为 40 个县级总部。
-3. **空间表存在明显的可见度偏置。** P001 与 P002 合计 {places['P001'] + places['P002']}/{len(rows)}（{broad_share:.1%}）。这描述当前公开资料和编码方式，不代表现实组织密度。
+3. **空间表存在明显的可见度偏置。** P001 与 P002 合计 {places['P001'] + places['P002']}/{len(active_rows)}（{broad_share:.1%}）。这描述当前公开资料和编码方式，不代表现实组织密度。
 4. **服务／行政空间与政治倡议空间必须分层。** USO／军属服务的基地中心、JICA／领馆等制度场域，只说明服务或行政渠道；不自动带出反基地／亲基地立场、资助关系或联盟。
-5. **有一处地点键冲突不能静默修复。** {mismatch[0]['edge_id']} 的 place_id={mismatch[0]['place_id']} 在 place registry 对应 `{mismatch[0]['place_name_registry']}`，但边表写 `{mismatch[0]['place_name_original']}`。本包用红色菱形标记并送 HR-025。
+5. **地点键的修订必须可追溯。** {mismatch_text}
 
 ## 与那国 dossier
 
@@ -896,20 +963,31 @@ def validate(
     require(len(coded_ids) == expected_edge_count and len(set(coded_ids)) == expected_edge_count, "manual semantic coding is not exhaustive/disjoint")
     require(set(coded_ids) == set(input_ids), "semantic coding IDs differ from current edge table")
     require({str(row["semantic_candidate_v1"]) for row in rows}.issubset(VALID_SEMANTICS), "invalid semantic value")
-    require(sum(int(row["edge_count"]) for row in summary) == expected_edge_count, f"summary does not sum to {expected_edge_count}")
-    require(sum(row["edge_review_layer"] == "human_reviewed_edge" for row in rows) == 17, "expected 17 human-reviewed underlying edges")
-    require(sum(row["edge_review_layer"] == "candidate_edge" for row in rows) == 118, "expected 118 candidate underlying edges")
+    active_rows = [row for row in rows if row["analysis_inclusion"] == "active"]
+    retired_rows = [row for row in rows if row["analysis_inclusion"] == "excluded"]
+    require(sum(int(row["edge_count"]) for row in summary) == len(active_rows), "summary does not sum to active edges")
+    require(len(active_rows) == 130, f"expected 130 active edges, found {len(active_rows)}")
+    require(len(retired_rows) == 5, f"expected five retired edges, found {len(retired_rows)}")
+    require(sum(row["edge_review_layer"] == "human_reviewed_edge" for row in active_rows) == 53, "expected 53 human-reviewed active edges")
+    require(sum(row["edge_review_layer"] == "candidate_edge" for row in active_rows) == 77, "expected 77 candidate active edges")
 
     mismatch = [row for row in rows if row["place_name_integrity"] != "match"]
-    require(len(mismatch) == 1 and mismatch[0]["edge_id"] == "AP123", "place ID/name mismatch audit changed")
-    require(any(row["object_id"] == "AP123" for row in hr025), "AP123 must be routed to HR025")
+    require(not mismatch, "current actor-place table must have no place ID/name mismatch")
+    ap123 = next(row for row in rows if row["edge_id"] == "AP123")
+    require(ap123["place_id"] == "P007" and ap123["semantic_candidate_v1"] == "site_presence", "AP123 HR-025 repair was not retained")
 
     expected_hr = {
         str(row["edge_id"])
         for row in rows
         if row["semantic_freeze_status"] == "needs_human_semantic_review"
     }
-    require({row["object_id"] for row in hr025} == expected_hr, "HR025 does not exactly match unresolved semantic rows")
+    hr_ids = {row["object_id"] for row in hr025}
+    reviewed_ids = {
+        edge["edge_id"] for edge in edges if edge.get("place_review_status") in HUMAN_EDGE_STATUSES
+    }
+    require(hr_ids == reviewed_ids, "completed HR025 ledger does not match central reviewed rows")
+    require(not expected_hr, "all current HR025 semantic decisions should be resolved")
+    require(all(row["decision"] for row in hr025), "completed HR025 ledger contains blank decisions")
     require(
         all(
             not row["final_semantic"] or row["final_semantic"] in VALID_SEMANTICS
@@ -918,18 +996,26 @@ def validate(
         "HR025 contains an invalid preserved final_semantic",
     )
 
-    expected_dossier_ids = {row["edge_id"] for row in edges if row["place_id"] in DOSSIER_PLACES}
-    require(len(expected_dossier_ids) == 14, f"expected 14 Sakishima actor-place rows, found {len(expected_dossier_ids)}")
+    expected_dossier_ids = {
+        str(row["edge_id"])
+        for row in active_rows
+        if str(row["place_id"]) in DOSSIER_PLACES
+    }
+    require(len(expected_dossier_ids) == 13, f"expected 13 active Sakishima actor-place rows, found {len(expected_dossier_ids)}")
     require({str(row["edge_id"]) for row in dossier} == expected_dossier_ids, "dossier edge coverage failed")
     require(len([row for row in dossier if row["place"] == "Yonaguni"]) == 6, "Yonaguni dossier must have six rows")
-    require(len([row for row in dossier if row["place"] == "Ishigaki"]) == 4, "Ishigaki dossier must have four rows")
+    require(len([row for row in dossier if row["place"] == "Ishigaki"]) == 3, "Ishigaki dossier must have three active rows")
     require(len([row for row in dossier if row["place"] == "Miyako"]) == 4, "Miyako dossier must have four rows")
     require(all("不将其强行环境化" in str(row["place_guardrail"]) for row in dossier if row["place"] == "Yonaguni"), "Yonaguni framing guardrail missing")
 
     edge_crosswalk = [row for row in crosswalk if row["usage_scope"] == "actor_place_edge"]
     expected_ref_count = sum(len(split_refs(row["source_ref"])) for row in edges)
-    require(len(edge_crosswalk) == expected_ref_count == 186, "actor-place source crosswalk must expand all 186 refs")
-    require({row["usage_object_id"] for row in edge_crosswalk} == set(input_ids), "source crosswalk misses an edge")
+    require(len(edge_crosswalk) == expected_ref_count, "actor-place source crosswalk must expand every current ref")
+    expected_ids_with_refs = {row["edge_id"] for row in edges if split_refs(row["source_ref"])}
+    require(
+        {row["usage_object_id"] for row in edge_crosswalk} == expected_ids_with_refs,
+        "source crosswalk misses an edge that has a nonblank source reference",
+    )
     require(all(row["interpretation_limit"] for row in crosswalk), "source crosswalk lacks interpretation boundary")
 
 
@@ -952,9 +1038,10 @@ def main() -> None:
     archive_by_id = {row["source_id"]: row for row in archive}
 
     rows = build_semantic_rows(edges, actors_by_id, places_by_id)
-    summary = build_summary(rows)
+    active_rows = [row for row in rows if row["analysis_inclusion"] == "active"]
+    summary = build_summary(active_rows)
     hr025 = preserve_hr025_human_fields(build_hr025(rows), HR025)
-    dossier = build_dossier(rows)
+    dossier = build_dossier(active_rows)
     crosswalk = build_source_crosswalk(rows, sources_by_id, archive_by_id, actors_by_id)
     validate(edges, rows, summary, dossier, crosswalk, hr025)
 
@@ -969,8 +1056,8 @@ def main() -> None:
     write_csv(SOURCE_CROSSWALK, crosswalk, crosswalk_fields)
     write_csv(HR025, hr025, hr025_fields)
 
-    plot_full_matrix(rows)
-    plot_composition(rows, summary)
+    plot_full_matrix(active_rows)
+    plot_composition(active_rows, summary)
     plot_dossiers(dossier)
     for svg in [FIG1_SVG, FIG2_SVG, FIG3_SVG]:
         normalize_generated_svg(svg)
@@ -990,11 +1077,11 @@ def main() -> None:
 
 Generated by `python scripts/make_r03_spatial_dossier_v1.py`.
 
-    - {len(rows)}/{len(rows)} actor-place edges receive one candidate semantic.
-    - {sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in rows)} underlying edges are human-reviewed; {sum(row['edge_review_layer'] == 'candidate_edge' for row in rows)} remain candidate/status-limited.
-- {len(hr025)} unresolved semantic decisions are routed to HR-025; {filled_hr025} rows currently contain preserved human fields.
-- Sakishima dossier coverage: Yonaguni 6, Ishigaki 3, Miyako 3 actor-place rows.
-    - The source crosswalk has {len(crosswalk)} rows, including all {sum(row['usage_scope'] == 'actor_place_edge' for row in crosswalk)} expanded refs from the actor-place table.
+- {len(rows)}/{len(rows)} historical actor-place rows retain one auditable semantic; {len(active_rows)} are active and {len(rows)-len(active_rows)} are retired/excluded.
+- {sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in active_rows)} active underlying edges are human-reviewed; {sum(row['edge_review_layer'] == 'candidate_edge' for row in active_rows)} remain candidate/status-limited.
+- HR-025 is complete: {len(hr025)} historical decisions are retained and {filled_hr025} rows contain preserved human fields.
+- Sakishima active dossier coverage: Yonaguni 6, Ishigaki 3, Miyako 4 actor-place rows; AP106 is retained only as a rejected historical row.
+- The source crosswalk has {len(crosswalk)} rows, including all {sum(row['usage_scope'] == 'actor_place_edge' for row in crosswalk)} expanded refs from the actor-place table.
 
 No base registry, source, place, event, or relation table is changed; the
 derived interim32 table is regenerated. Candidate semantics and shared places
@@ -1027,13 +1114,13 @@ stance, funding, or causal effects.
         VALIDATION,
         f"""# R3 spatial dossier validation v1
 
-- Central actor-place input: {len(rows)} unique edges.
-- Derived semantics: {len(rows)} unique rows; six allowed candidate values; no default or missing classification.
-- Underlying review layer: {sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in rows)} human-reviewed / {sum(row['edge_review_layer'] == 'candidate_edge' for row in rows)} candidate or evidence-gap rows.
-- HR-025: {len(hr025)} semantic items; {filled_hr025} rows contain preserved human fields and reruns retain them by stable `object_id`.
-- Sakishima: 14/14 rows (Yonaguni 6 / Ishigaki 4 / Miyako 4).
+- Central actor-place input: {len(rows)} unique historical edges; {len(active_rows)} active / {len(rows)-len(active_rows)} retired.
+- Derived semantics: {len(rows)} unique rows; six allowed values; human-frozen and machine-candidate semantics remain distinct.
+- Active review layer: {sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in active_rows)} human-reviewed / {sum(row['edge_review_layer'] == 'candidate_edge' for row in active_rows)} candidate or evidence-gap rows.
+- HR-025: complete; {len(hr025)} historical items and {filled_hr025} preserved human rows.
+- Sakishima: 13 active rows (Yonaguni 6 / Ishigaki 3 / Miyako 4); one rejected Ishigaki row remains in the 135-row audit layer only.
 - Source crosswalk: {len(crosswalk)} rows; actor-place refs expanded {sum(row['usage_scope'] == 'actor_place_edge' for row in crosswalk)}.
-- Place-key integrity: one explicit mismatch, AP123, retained for human review.
+- Place-key integrity: zero mismatches; AP123 is P007 Camp Foster and retains its original key in the central audit fields.
 - SVG XML parse and trailing-whitespace check: pass for 3/3 figures. PNG size check: pass for 3/3 figures.
 - Yonaguni guardrail: frontline/Taiwan proximity, autonomy/referendum and life-safety retained; no forced environmental framing.
 
@@ -1049,9 +1136,9 @@ table was modified; derived interim32 was regenerated.
         raise ValueError("artifact hash failure")
     print(
         f"R3 spatial dossier OK: {len(rows)} semantics; "
-        f"{sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in rows)} human/"
-        f"{sum(row['edge_review_layer'] == 'candidate_edge' for row in rows)} candidate edges; "
-        f"{len(hr025)} HR025 items; 14 Sakishima rows; {len(crosswalk)} source crosswalk rows."
+        f"{sum(row['edge_review_layer'] == 'human_reviewed_edge' for row in active_rows)} human/"
+        f"{sum(row['edge_review_layer'] == 'candidate_edge' for row in active_rows)} candidate active edges; "
+        f"{len(hr025)} completed HR025 items; 13 active Sakishima rows; {len(crosswalk)} source crosswalk rows."
     )
 
 

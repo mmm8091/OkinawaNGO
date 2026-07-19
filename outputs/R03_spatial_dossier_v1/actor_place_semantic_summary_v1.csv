@@ -1,7 +1,7 @@
-﻿semantic_candidate_v1,semantic_candidate_zh,edge_count,human_reviewed_edge_count,candidate_edge_count,E4_count,E3_count,E2_count,needs_human_semantic_review_count,interpretation_limit
-advocacy_target,倡议／争议对象,61,7,54,49,11,1,1,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
-site_presence,持续活动／服务在场,40,10,30,20,20,0,25,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
-institutional_venue,制度／机构场域,6,0,6,5,1,0,0,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
-event_site,事件／程序场域,6,0,6,3,2,1,3,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
-headquarters,总部／办公室,5,0,5,5,0,0,1,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
-unclear,语义未明,17,0,17,3,11,3,17,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
+﻿semantic_candidate_v1,semantic_candidate_zh,edge_count,human_reviewed_edge_count,candidate_edge_count,human_frozen_semantic_count,E4_count,E3_count,E2_count,needs_human_semantic_review_count,interpretation_limit
+advocacy_target,倡议／争议对象,67,14,53,7,50,16,1,0,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
+site_presence,持续活动／服务在场,42,31,11,27,21,20,1,0,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
+institutional_venue,制度／机构场域,6,0,6,0,5,1,0,0,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
+event_site,事件／程序场域,7,4,3,4,3,3,1,0,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
+headquarters,总部／办公室,8,4,4,4,7,1,0,0,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
+unclear,语义未明,0,0,0,0,0,0,0,0,"Counts describe coded actor--place rows in the current public-source sample, not real-world organizational density."
