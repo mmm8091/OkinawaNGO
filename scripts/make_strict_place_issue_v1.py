@@ -86,6 +86,7 @@ def active_edge(row: dict[str, str]) -> bool:
         or row.get("graph_eligibility") == "excluded"
         or status.startswith("retired_")
         or status.startswith("deactivated_")
+        or "excluded" in status
     )
 
 

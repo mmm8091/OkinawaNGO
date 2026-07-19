@@ -2,7 +2,7 @@
 
 This package replaces the interpretive use of the retired actor-level Cartesian projection.
 
-- The input gate retains `248` actor–issue and `135` actor–place history rows, but excludes rejected/deactivated records; `239` and `130` active rows enter the strict join.
+- The input gate retains `248` actor–issue and `135` actor–place history rows, but excludes rejected/deactivated records; `238` and `130` active rows enter the strict join.
 - `312` document-level same-source triples were found.
 - `305` are E3/E4 strict candidates.
 - `65` have both underlying edges human-reviewed.

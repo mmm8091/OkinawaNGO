@@ -21,6 +21,7 @@ class StrictPlaceIssueGateTests(unittest.TestCase):
             {"graph_eligibility": "excluded"},
             {"scope_status": "retired_duplicate"},
             {"scope_status": "deactivated_until_direct_evidence"},
+            {"scope_status": "event_specific_excluded_from_default_okinawa_narrative"},
         ):
             self.assertFalse(MODULE.active_edge(row))
 

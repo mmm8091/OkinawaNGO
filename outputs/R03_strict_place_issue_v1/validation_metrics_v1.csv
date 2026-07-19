@@ -1,6 +1,6 @@
 ﻿metric,value,note
 actor_issue_history_rows,248,includes retained rejected/deactivated audit rows
-actor_issue_active_rows,239,used by this strict layer
+actor_issue_active_rows,238,used by this strict layer
 actor_place_history_rows,135,includes retained rejected audit rows
 actor_place_active_rows,130,used by this strict layer
 all_same_source_triples,312,all evidence levels
