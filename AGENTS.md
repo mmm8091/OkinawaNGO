@@ -149,18 +149,16 @@ python scripts\archive_sources.py --from-id 197 --to-id 198 --retry-failed
 python scripts\archive_sources.py --from-id 213 --to-id 213 --retry-failed
 python scripts\archive_sources.py --reconcile-cache-hashes
 python scripts\normalize_actor_issue_tags.py
-python scripts\make_r04_sakishima_formal.py
-python scripts\make_r04_hr016_packet.py
-python scripts\make_r09_referendum_process.py
-python scripts\make_r10_admin_collaboration.py
-python scripts\make_r10_official_collaboration_universe_v1.py
+python scripts\merge_hr016_hr017_modules_v1.py
+python scripts\merge_hr020_hr026_v1.py
+python scripts\merge_hr018_hr021.py
+python scripts\merge_hr018_main_relation_sample_v1.py
+python scripts\merge_hr032_partner_crosswalk_v1.py
 python scripts\render_r06_r07_r11_current.py
 python scripts\make_r08_legal_procedure_v1.py
-python scripts\make_edge_activation_v1.py
 python scripts\validate_registry_expansion_gate_v1.py
 python scripts\integrate_hr013_online_wave.py
 python scripts\make_r03_spatial_dossier_v1.py
-python scripts\make_r09_election_civic_interface_v1.py
 python scripts\make_registry_value_gate_v2.py
 python scripts\make_r05_r07_heterogeneous_repertoire_v1.py
 python scripts\make_schema_alias_freeze_v1.py
@@ -168,7 +166,6 @@ python scripts\audit_next_wave_source_proposals_v1.py
 python scripts\integrate_next_wave_sources_v1.py
 python scripts\make_r01_r02_actor_issue.py
 python scripts\make_strict_place_issue_v1.py
-python scripts\make_r05_coaction_v1.py
 python scripts\make_coverage_audit_v1.py
 python scripts\make_phase1_source_merge_proposal.py
 python scripts\integrate_phase1_module_sources.py
@@ -187,13 +184,16 @@ python scripts\make_report_traceability_crosswalk_v1.py
 python scripts\make_human_review_orchestration_v1.py
 python scripts\make_review_status_crosswalk_v1.py
 python scripts\build_exploration_system_data_v1.py
-python scripts\make_phase1_visuals.py
 python scripts\validate_phase1_data.py
 ```
 
 After source-log or archive changes, rerun the archive script first, then regenerate explanatory and module packages.
 
-Do not run `scripts/make_r06_r07_r11_pathways.py` against the current merged layer; use the render-only command above. Do not rerun `scripts/audit_report_claims_v1.py` until HR-031 and its hard-coded historical counts have been updated.
+The `merge_*` commands above are post-review reconstruction commands. Run them only while the corresponding completed human-return files remain present, and run `render_r06_r07_r11_current.py` after `merge_hr018_hr021.py`.
+
+The following are pre-human-review or historical builders and must not be run against the current merged layer: `make_r04_sakishima_formal.py`, `make_r04_hr016_packet.py`, `make_r05_coaction_v1.py`, `make_r09_referendum_process.py`, `make_r09_election_civic_interface_v1.py`, `make_r10_admin_collaboration.py`, `make_r10_official_collaboration_universe_v1.py`, `make_edge_activation_v1.py`, `make_phase1_visuals.py`, and `make_r06_r07_r11_pathways.py`. They can overwrite completed HR fields, restore candidate/pre-HR facts, or regenerate semantically retired figures. Preserve their existing outputs as provenance snapshots; use the post-review merge commands and current renderers above.
+
+Do not rerun `scripts/audit_report_claims_v1.py` until HR-031 and its hard-coded historical counts have been updated. `scripts/make_third_progress_sync_v2.py` also requires a current-layer R5 fix before rerun and must not partially overwrite the present third-sync preparation package.
 
 ## Communication Guidance
 

@@ -1174,7 +1174,7 @@ AEV0061–0064 继续作为分析性路径假说。已有的共同要请、调�
 
 ## 图状态
 
-本轮没有重绘 R6／R7／R11 SVG/HTML；这些图是 pre-HR021 快照。当前事实计数与下游范围以 CSV、本 brief 与 validation note 为准。
+R6／R7／R11 的三张 SVG 与三张 HTML 由独立的 `scripts/render_r06_r07_r11_current.py` 从当前 6／9／{len(r11)} 行模块 CSV 重绘。本合并脚本不写这六个图件；每次合并后必须再次运行该 renderer，且不得把旧 pre-HR021 图当作当前输出。
 """
 
 
@@ -1198,7 +1198,10 @@ HR-018 human review is necessary but not sufficient for pathway admission.  The
 formal shared table adds only the nine relations explicitly approved by HR-021.
 R11 carries no amount field and does not duplicate, sum, or reinterpret R10
 amount observations.  AEV0061–0064 remain analytical seeds outside facts and
-counts.  Existing SVG/HTML figures were not redrawn and are pre-HR021 snapshots.
+counts.  The six SVG/HTML assets are rendered separately from the current
+6/9/{len(r11)}-row module CSVs by `scripts/render_r06_r07_r11_current.py`.
+This merge does not write those figures, so the renderer must be rerun after
+every merge; pre-HR021 assets are never valid current outputs.
 """
 
 

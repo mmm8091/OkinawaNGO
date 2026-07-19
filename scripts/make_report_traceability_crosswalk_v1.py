@@ -37,13 +37,13 @@ ROUTES = [
     },
     {
         "prefix": "outputs/R04_sakishima_frame_corpus_v0/",
-        "script": "scripts/make_r04_sakishima_formal.py",
+        "script": "scripts/merge_hr016_hr017_modules_v1.py",
         "data": "data/interim/19_sakishima_frame_corpus_v0.csv;outputs/R04_sakishima_frame_corpus_v0/entity_frame_safe_matrix_v0.csv",
         "sources": "outputs/R04_sakishima_frame_corpus_v0/online_evidence_safe_sources_v0.csv",
     },
     {
         "prefix": "outputs/R05_coaction_v1/",
-        "script": "scripts/make_r05_coaction_v1.py",
+        "script": "scripts/merge_hr020_hr026_v1.py",
         "data": "data/interim/25_coaction_event_participation_v0.csv",
         "sources": "data/interim/25_coaction_event_participation_v0.csv",
     },
@@ -67,13 +67,19 @@ ROUTES = [
     },
     {
         "prefix": "outputs/R09_referendum_process_v0/",
-        "script": "scripts/make_r09_referendum_process.py",
+        "script": "scripts/merge_hr016_hr017_modules_v1.py",
         "data": "data/interim/20_referendum_process_stages_v0.csv;outputs/R09_referendum_process_v0/actor_process_roles_v0.csv",
         "sources": "outputs/R09_referendum_process_v0/source_register_v0.csv;outputs/R09_referendum_process_v0/source_table_v0.csv",
     },
     {
+        "prefix": "outputs/R09_election_civic_interface_v1/fig_r09_noncausal_mechanism_v1.png",
+        "script": "scripts/render_r09_election_mechanism_current.py",
+        "data": "data/interim/33_r09_election_civic_events_v1.csv",
+        "sources": "outputs/R09_election_civic_interface_v1/source_proposals_v1.csv;outputs/next_wave_source_integration_v1/proposal_to_source_crosswalk_v1.csv",
+    },
+    {
         "prefix": "outputs/R09_election_civic_interface_v1/",
-        "script": "scripts/make_r09_election_civic_interface_v1.py",
+        "script": "scripts/merge_hr020_hr026_v1.py",
         "data": "data/interim/33_r09_election_civic_events_v1.csv",
         "sources": "outputs/R09_election_civic_interface_v1/source_proposals_v1.csv;outputs/next_wave_source_integration_v1/proposal_to_source_crosswalk_v1.csv",
     },
@@ -209,7 +215,11 @@ def main() -> None:
             "human_gate": figure["hr_gate"],
             "freeze_action": figure["freeze_action"],
             "all_paths_exist": "yes" if not missing else "no",
-            "traceability_status": "complete_pending_gate" if figure["hr_gate"] != "none" else "complete_ready",
+            "traceability_status": (
+                "complete_pending_gate"
+                if figure["formal_use_status"] == "freeze_required"
+                else "complete_ready"
+            ),
         })
 
     if errors:
@@ -241,13 +251,13 @@ def main() -> None:
 
 - 纳入非 superseded 正文图：**{len(rows)}**
 - 路径完整：**{sum(row['all_paths_exist'] == 'yes' for row in rows)}/{len(rows)}**
-- 当前可用且无人工 gate：**{status['complete_ready']}**
-- 追溯完整、仍待人工 gate／冻结重生：**{status['complete_pending_gate']}**
+- 当前可用：**{status['complete_ready']}**
+- 追溯完整、仍待人工 gate 或技术冻结／重生：**{status['complete_pending_gate']}**
 - 中央 source log：**{len(central_ids)}** 条
 - Claim 链完整：**{sum(bool(row['report_claim_ids']) for row in rows)}/{len(rows)}**
 - Evidence-note 直接引用图：**{sum(row['evidence_note_trace'] == 'linked' for row in rows)}**；其余图以正式关系／角色／聚合表为事实层
 
-每行均指向图件、报告 claim、evidence-note 或正式关系／角色表、locator/source crosswalk、生成脚本、当前事实层、人工 gate 与冻结动作。`complete_pending_gate` 只表示追溯链完整，不表示图中候选事实已经获批；残余页码／案号精修继续由 MA013 控制。
+每行均指向图件、报告 claim、evidence-note 或正式关系／角色表、locator/source crosswalk、生成脚本、当前事实层、人工 gate 与冻结动作。`complete_pending_gate` 包含尚待人工 gate 和“人审已完成但仍须按现行层重绘／冻结”的技术缺口；它只表示追溯链完整，不表示图中候选事实已经获批。残余页码／案号精修继续由 MA013 控制。
 """
     (OUT / "figure_traceability_validation_v1.md").write_text(report, encoding="utf-8")
     print(f"figures={len(rows)} ready={status['complete_ready']} pending_gate={status['complete_pending_gate']}")
