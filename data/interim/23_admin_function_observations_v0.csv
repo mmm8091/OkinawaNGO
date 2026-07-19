@@ -35,7 +35,7 @@ R10FN033,R10R025,,X004,AWWA,umbrella_coordination,连接 KOSC 等军属配偶俱
 R10FN034,R10R026,,X004,AWWA,umbrella_coordination,连接 OESC 等军属配偶俱乐部,成员俱乐部,冲绳美军基地社区,membership; no funding inference,no,no,S041;S055,membership pages,E4,human_revised,
 R10FN035,R10R027,,X004,AWWA,umbrella_coordination,连接 MOSCO 等军属配偶俱乐部,成员俱乐部,Camp Foster/冲绳,membership; no funding inference,no,no,S041;S055;S079,membership pages,E4,human_revised,
 R10FN036,R10R028,,X004,AWWA,umbrella_coordination,Army Community Group 成员线索,成员俱乐部,冲绳美军基地社区,membership; identity pending,no,no,S041;S072;S081,community sources,E3,needs_second_source,
-R10FN037,R10R029,,X006,KOSC,aggregate_charity_reporting,报告 scholarships 与 AWWA 合计捐赠,混合 recipient 范围,Kadena/冲绳,aggregate; no allocation,no,no,S075,KOSC charity page,E4,needs_local_retrieval,
+R10FN037,R10R029,,X006,KOSC,aggregate_charity_reporting,报告 scholarships 与 AWWA 合计捐赠,混合 recipient 范围,Kadena/冲绳,aggregate; no allocation,no,no,S075,KOSC charity page,E4,human_revised,"这是 scholarships 与 AWWA 的混合 recipient 汇总披露，不是 AWWA 或任一 recipient 获得 102,000 美元的记录，也不上组织关系图。"
 R10FN038,R10R030,,X004,AWWA,aggregate_charity_reporting,长期支持冲绳福利设施的累计口径,未逐一列名福利设施,冲绳,aggregate; no annual allocation,no,no,S078,long-term aggregate report,E3,needs_local_retrieval,
 R10FN039,R10R031,2015,X004,AWWA,local_welfare_in_kind_support,向读谷残障成人设施捐赠无障碍车辆,残障成人与设施使用者,读谷,named in-kind donation,no,no,S094,DVIDS 2015-12-02,E3,needs_second_source,
 R10FN040,R10R032,2012,X004,AWWA,local_welfare_in_kind_support,向宇流麻社会福利机构捐赠无障碍车辆,老年人与福利服务使用者,宇流麻,named in-kind donation,no,no,S072,DVIDS 40-year article,E3,needs_second_source,

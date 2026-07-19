@@ -1,0 +1,7 @@
+﻿metric,value,note
+hr033_rows,6,all legacy verified rows decided
+accepted,4,F006 F007 F022 F023
+revised,2,F021 F025
+dyadic_relations,6,all registry-resolved; not alliances
+aggregate_observations,1,R10R029; USD 102000 mixed recipient; not a graph edge
+legacy_verified_remaining,0,within HR-033 scope
