@@ -9,8 +9,8 @@ This package is a freeze-candidate audit. It does not modify or approve the cent
 - `../../data/interim/36_schema_alias_freeze_candidates_v1.csv` — unified object/field freeze candidates.
 - `actor_field_audit_v1.csv` and `actor_value_mapping_v1.csv` — current registry N actors × 3 fields and aggregate mappings; actor count is dynamic.
 - `alias_audit_v1.csv` / `alias_boundary_audit_v1.csv` — identity lookup versus nonidentity lineage rules.
-- `place_hierarchy_alias_audit_v1.csv` / `place_crosskey_conflicts_v1.csv` — 20-node hierarchy proposals and AP123 mismatch.
-- `venue_taxonomy_audit_v1.csv` / `venue_reference_conflicts_v1.csv` — 16 taxonomy rows and nine orphan references.
+- `place_hierarchy_alias_audit_v1.csv` / `place_crosskey_conflicts_v1.csv` — dynamic place hierarchy proposals and any remaining cross-key mismatch.
+- `venue_taxonomy_audit_v1.csv` / `venue_reference_conflicts_v1.csv` — 16 taxonomy rows and all current orphan references.
 - `relation_action_value_mapping_v1.csv` — complete observed value inventory and controlled mappings.
 - `lint_rules_v1.csv` / `impact_counts_v1.csv` — executable rules and impact summary.
 - `HR029_schema_alias_freeze_review_v0.csv` — stable review items; regeneration preserves all human and added final/status fields by `review_item_id`.
@@ -18,4 +18,4 @@ This package is a freeze-candidate audit. It does not modify or approve the cent
 
 ## Hard boundary
 
-Similar names never trigger an automatic entity merge. A predecessor label, case-round label, national/local brand relationship or spatial-name overlap remains explicitly typed and bounded. HR-027 must be decided/merged before regenerating schema/HR-029; AP123 remains `defer_to_HR025` and is never silently corrected here.
+Similar names never trigger an automatic entity merge. A predecessor label, case-round label, national/local brand relationship or spatial-name overlap remains explicitly typed and bounded. HR-027/019/024/025/032 are already merged; this regenerated package still makes no HR-029 decisions. AP123 and P021 remain frozen from HR-025 and are not reopened here.

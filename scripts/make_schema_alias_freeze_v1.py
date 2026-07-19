@@ -64,6 +64,13 @@ HR_FIELDS = [
 ]
 HUMAN_FIELDS = ("decision", "human_reviewer", "review_date", "review_note")
 
+PLACE_CONFLICT_FIELDS = [
+    "candidate_id", "edge_id", "actor_id", "current_place_id",
+    "current_place_name", "registry_name_for_current_id",
+    "proposed_resolution", "requires_human_review", "hr_item_id",
+    "source_ref", "notes",
+]
+
 
 IDENTITY_ONLY_CLASS_ACTORS = {
     "A087", "A088", "A089", "A090", "A091", "A092", "A093",
@@ -95,6 +102,7 @@ ACTOR_CLASS_MAP = {
     "public_diplomacy_grant_program": ("public_diplomacy_grant_program", "freeze_as_is", False),
     "public_diplomacy_or_exchange_actor": ("public_diplomacy_or_exchange_actor", "freeze_as_is", False),
     "public_institution_partner": ("public_institution_partner", "freeze_as_is", False),
+    "womens_organization": ("womens_organization", "freeze_as_is", False),
     "womens_or_community_organization": ("womens_network", "human_review", True),
     "womens_or_human_rights_ngo": ("womens_human_rights_ngo", "mechanical_normalize", False),
 }
@@ -154,6 +162,7 @@ LEGAL_STATUS_MAP = {
     "任意団体（法人格待核实）": ("informal_association_pending_legal_check", "freeze_as_unresolved", False),
     "lawyers_network": ("legal_form_unresolved_professional_network", "freeze_as_unresolved", False),
     "association_or_regional_ywca": ("regional_association_or_chapter", "freeze_as_unresolved", False),
+    "association_or_unclear": ("legal_form_unresolved_association", "freeze_as_unresolved", False),
 }
 
 
@@ -161,12 +170,15 @@ ALIAS_TYPE_MAP = {
     "acronym": ("acronym", "freeze_as_is", False),
     "canonical_variant": ("orthographic_variant", "mechanical_normalize", False),
     "context_limited_alias": ("context_limited_alias", "human_review", True),
+    "chapter_listing_variant": ("chapter_listing_variant", "freeze_from_human_anchor", False),
+    "deprecated_working_name": ("deprecated_search_label", "freeze_from_human_anchor", False),
     "descriptive_variant": ("descriptive_variant", "freeze_as_is", False),
     "former_canonical": ("former_registry_canonical", "mechanical_normalize", False),
     "former_name": ("former_name", "freeze_as_is", False),
     "japanese_name": ("language_name", "mechanical_normalize", False),
     "media_short_name": ("media_short_name", "freeze_from_human_anchor", False),
     "network_name": ("network_name", "freeze_from_human_anchor", False),
+    "name_variant": ("documented_name_variant", "freeze_from_human_anchor", False),
     "original_name": ("former_name", "mechanical_normalize", False),
     "possible_canonical_variant": ("unresolved_canonical_variant", "human_review", True),
     "predecessor_of": ("predecessor_name_nonidentity", "human_review", True),
@@ -199,12 +211,26 @@ PLACE_PLAN = {
     "P018": ("Ginowan", "municipality", "P001", "Ginowan;Ginowan City;宜野湾市", False, "Municipality under Okinawa Prefecture."),
     "P019": ("Awase", "site", "P001", "Awase;泡瀬;泡瀬干潟", False, "Conflict site; Okinawa City is not a current parent node."),
     "P020": ("Naha", "municipality", "P001", "Naha;Naha City;那覇市", False, "Municipality and prefectural capital."),
+    "P021": (
+        "Sakishima Islands", "region", "P001",
+        "Sakishima Islands;先島諸島;先島", False,
+        "HR-025-approved regional node for sources explicitly naming Sakishima as a whole; never fan out to P011/P012/P013.",
+    ),
 }
 
 
 ORPHAN_VENUE_PLAN = {
+    "OBS_R10R001": ("V011_or_V015", True, "A JICA commissioned program may be coded by the commissioning agency or by a bounded policy-program forum; relation review did not settle venue semantics."),
+    "OBS_R10R004": ("V010", True, "Okinawa City public-facility commission is a local-government administrative channel, subject to human venue confirmation."),
+    "OBS_R10R005": ("V010", True, "Okinawa Prefecture multicultural-policy commission is a local-government administrative channel, subject to human venue confirmation."),
+    "OBS_R10R006": ("V011", True, "MOFA NGO consultation commission is a national-ministry administrative channel, subject to human venue confirmation."),
+    "OBS_R10R007": ("V011", True, "MOFA annual designation is a national-ministry administrative channel, subject to human venue confirmation."),
+    "OBS_R10R008": ("V010", True, "The Okinawa Prefecture proposal-selected symposium contract is a local-government administrative channel, not government endorsement."),
     "OBS_R10R017": ("V015", True, "International-cooperation event may fit public_policy_meeting_or_forum, but event versus administrative venue needs a human choice."),
+    "OBS_R10R018": ("V016", False, "USO Okinawa service presence is observed at a service/charity program site."),
     "OBS_R10R019": ("V016", False, "USO service sponsorship is observed at a service/charity program venue."),
+    "OBS_R10R020": ("V016", False, "A direct USO Okinawa sponsor tier is observed in the service/charity program layer."),
+    "OBS_R10R021": ("V016_or_no_applicable_venue", True, "A regional USO Indo-Pacific sponsor perimeter is not necessarily an Okinawa program-site occurrence."),
     "OBS_R10R022": ("V016", False, "Donation to USO is observed in the service/charity program field."),
     "OBS_R10R023": ("V016", False, "USO kitchen grant is a service/charity program-site observation."),
     "OBS_R10R024": ("no_applicable_venue_or_V016", True, "Umbrella membership is a relation, not necessarily a venue occurrence."),
@@ -217,8 +243,8 @@ ORPHAN_VENUE_PLAN = {
 
 RELATION_TYPE_MAP = {
     "administrative_collaboration": ("administrative_collaboration", "freeze_as_is", False),
+    "aggregate_financial_contribution": ("aggregate_financial_contribution", "freeze_from_human_anchor", False),
     "aggregate_history": ("aggregate_financial_history_observation", "human_review", True),
-    "co_in_kind_donation": ("joint_in_kind_contribution", "mechanical_normalize", False),
     "co_presence_lead": ("co_presence_observation", "human_review", True),
     "commission": ("commission", "freeze_as_is", False),
     "coordination": ("coordination", "freeze_as_is", False),
@@ -230,6 +256,7 @@ RELATION_TYPE_MAP = {
     "funding_contribution": ("aggregate_financial_contribution", "human_review", True),
     "grant": ("grant", "freeze_as_is", False),
     "grant_opportunity": ("grant_opportunity", "freeze_as_is", False),
+    "in_kind_acquisition_assistance": ("in_kind_acquisition_assistance", "freeze_from_human_anchor", False),
     "in_kind_donation": ("in_kind_donation", "freeze_as_is", False),
     "joint_in_kind_contribution": ("joint_in_kind_contribution", "freeze_as_is", False),
     "legal_counsel": ("legal_counsel", "freeze_as_is", False),
@@ -774,6 +801,8 @@ def collect_value_inventory(column: str) -> tuple[dict[str, Counter[str]], dict[
             continue
         for row in rows:
             value = row[column]
+            if not value:
+                continue
             counts[value][path.name] += 1
             key = record_key(row)
             if key and len(examples[value]) < 6:
@@ -908,7 +937,22 @@ def make_lint_rules(
 
     invalid_actor_ids = [value for value in actor_ids if not re.fullmatch(r"[AX]\d{3}", value)]
     duplicate_actor_ids = [value for value, count in Counter(actor_ids).items() if count > 1]
-    canonical_collisions = {key: ids for key, ids in canonical_norms.items() if len(ids) > 1}
+    actor_by_id = {row["actor_id"]: row for row in actors}
+    canonical_collisions = {}
+    for key, ids in canonical_norms.items():
+        if len(ids) <= 1:
+            continue
+        roots = [actor_id for actor_id in ids if not actor_by_id[actor_id].get("merged_duplicate_of")]
+        sanctioned = (
+            len(roots) == 1
+            and all(
+                actor_id == roots[0]
+                or actor_by_id[actor_id].get("merged_duplicate_of") == roots[0]
+                for actor_id in ids
+            )
+        )
+        if not sanctioned:
+            canonical_collisions[key] = ids
     invalid_place_ids = [row["place_id"] for row in places if not re.fullmatch(r"P\d{3}", row["place_id"])]
     duplicate_place_ids = [value for value, count in Counter(row["place_id"] for row in places).items() if count > 1]
     orphan_examples = ";".join(row["observation_id"] for row in venue_conflicts)
@@ -925,7 +969,7 @@ def make_lint_rules(
         rule("L010", "alias", "error", "national/local brand treated as one actor", "Keep A105/A107 distinct; relation is affiliation", 0, "A105/A107 guarded", "automatic_guard", "Parent actions do not transfer to local chapter."),
         rule("L011", "alias", "error", "retired A094 or 沖女連 reinserted via A111 alias", "Keep A111 distinct; new human decision required for any re-entry", 0, "A111/retired A094 guarded", "automatic_guard", "Do not number-fill the registry."),
         rule("L012", "place", "error", "invalid or duplicate place_id", "Unique P### identifier", len(invalid_place_ids) + len(duplicate_place_ids), ";".join(invalid_place_ids + duplicate_place_ids), "automatic", "Place IDs do not establish jurisdiction."),
-        rule("L013", "actor_place", "error", "place_id/place_name cross-key mismatch", "Defer source-backed spatial meaning to HR-025", len(place_conflicts), ";".join(row["edge_id"] for row in place_conflicts), "defer_to_HR025", "Schema freeze must not silently choose P007 or duplicate the decision in HR-029."),
+        rule("L013", "actor_place", "error", "place_id/place_name cross-key mismatch", "All keys must match the place registry; route future mismatches to a dedicated human spatial gate", len(place_conflicts), ";".join(row["edge_id"] for row in place_conflicts), "human_gate_if_detected", "Never silently repair a spatial key from a similar label."),
         rule("L014", "place", "warning", "island/municipality/locality/installation level ambiguous", "Human hierarchy and alias decision", 5, "P004;P005;P011;P012;P013", "human", "Never merge spatial levels by similar names."),
         rule("L015", "venue", "error", "venue_id absent from 16-row taxonomy", "Resolve row-specific FK or explicitly allow no venue", len(venue_conflicts), orphan_examples, "mixed", "Membership, service sites and program channels need different treatment."),
         rule("L016", "venue", "warning", "defined venue has zero current references", "Keep as reserved category unless human removes it", sum(1 for row in venues if row["venue_id"] not in {r["venue_id"] for r in read_csv(AEV_FILE)} | {r["venue_id"] for r in read_csv(PATHWAY_FILE)}), "", "automatic", "Zero use is not evidence that the venue type is invalid."),
@@ -980,9 +1024,12 @@ def make_impacts(
             note="Counted as normalized collision groups, not alias rows.",
         ),
         metric("place", "place_nodes_audited", len(places), str(len({row['place_type'] for row in places})), str(len({PLACE_PLAN[row['place_id']][1] for row in places}))),
-        metric("place", "actor_place_crosskey_mismatches", len(place_conflicts), note="AP123 is deferred to the authoritative HR-025 gate; no P007 correction is proposed here."),
+        metric("place", "actor_place_crosskey_mismatches", len(place_conflicts), note="Zero after HR-025 fixed AP123 to P007 Camp Foster; future mismatches require a new spatial gate."),
         metric("venue", "venue_taxonomy_rows", len(venues), str(len({row['venue_group'] for row in venues})), str(len({row['venue_group'] for row in venues}))),
-        metric("venue", "orphan_placeholder_references", len(venue_conflicts), note="All are R10_VENUE; six need human choice and three have V016 mechanical candidates."),
+        metric(
+            "venue", "orphan_placeholder_references", len(venue_conflicts),
+            note=f"All are R10_VENUE; {sum(row['requires_human_review'] == 'yes' for row in venue_conflicts)} need HR-029 and the remainder have bounded mechanical candidates.",
+        ),
         metric("relation", "relation_rows_inventoried", sum(int(row["affected_row_count"]) for row in relation_rows), str(len(relation_rows)), str(len({row['proposed_controlled_value'] for row in relation_rows}))),
         metric("action", "action_rows_inventoried", sum(int(row["affected_row_count"]) for row in action_rows), str(len(action_rows)), str(len({row['proposed_controlled_value'] for row in action_rows}))),
         metric("package", "unified_freeze_candidate_rows", len(candidates)),
@@ -1047,7 +1094,7 @@ def render_readiness(candidates: list[dict[str, str]]) -> None:
     ax.legend(ncol=3, frameon=False, loc="lower right")
     fig.tight_layout()
     fig.savefig(FIG_READINESS_PNG, dpi=180, bbox_inches="tight", metadata={"Software": "NW2-E schema freeze builder"})
-    fig.savefig(FIG_READINESS_SVG, bbox_inches="tight", metadata={"Date": "2026-07-13"})
+    fig.savefig(FIG_READINESS_SVG, bbox_inches="tight", metadata={"Date": "2026-07-20"})
     normalize_svg_trailing_whitespace(FIG_READINESS_SVG)
     plt.close(fig)
 
@@ -1092,7 +1139,7 @@ def render_vocabulary(
     ax.legend(frameon=False, loc="lower right")
     fig.tight_layout()
     fig.savefig(FIG_VOCAB_PNG, dpi=180, bbox_inches="tight", metadata={"Software": "NW2-E schema freeze builder"})
-    fig.savefig(FIG_VOCAB_SVG, bbox_inches="tight", metadata={"Date": "2026-07-13"})
+    fig.savefig(FIG_VOCAB_SVG, bbox_inches="tight", metadata={"Date": "2026-07-20"})
     normalize_svg_trailing_whitespace(FIG_VOCAB_SVG)
     plt.close(fig)
 
@@ -1118,24 +1165,39 @@ def make_brief(
     }
     filled_hr = sum(any(row.get(field, "") for field in human_fields) for row in hr_rows)
     pending_hr = len(hr_rows) - filled_hr
+    human_actor_assignments = sum(
+        row["requires_human_review"] == "yes" for row in actor_rows
+    )
+    alias_type_count = len({row["alias_type"] for row in aliases})
+    if place_conflicts:
+        place_conflict_text = (
+            f"{len(actor_place_edges)} 条 actor–place 边仍发现 **{len(place_conflicts)} 个交叉键冲突**。"
+            "这些冲突不得在 schema 冻结中静默修补，必须进入新的空间人工闸门。"
+        )
+    else:
+        place_conflict_text = (
+            f"{len(actor_place_edges)} 条 actor–place 边目前有 **0 个交叉键冲突**。"
+            "HR-025 已将 AP123 固定为 P007 Camp Foster，并批准只在来源明确指称先岛整体时使用 P021；"
+            "本包不重复开启这些决定。"
+        )
     return dedent(f"""
     # Schema／alias／空间字段冻结审计 brief v1
 
-    日期：2026-07-13
+    日期：2026-07-20
 
     状态：**冻结前候选包；没有修改中央 schema、registry、alias、place、venue 或关系表。**
 
     ## 1. 结论先行
 
-    当前 registry 的 {len(actors)} 个 actor，其 `actor_class`、`legal_status_guess`、`origin_type` 共 **{len(actor_rows)} 个字段单元（N×3）**已逐项覆盖。HR-027 若新增／移除 actor，必须先完成受控合并再重生本包，新增 actor 会自动进入三字段审计。当前共有 **{len(candidates)} 条统一候选**，其中 **{len(hr_rows)} 条进入 HR-029**；人工字段按稳定 review item ID 保留，当前已填写 {filled_hr} 条、待处理 {pending_hr} 条。
+    当前 registry 的 {len(actors)} 个 actor，其 `actor_class`、`legal_status_guess`、`origin_type` 共 **{len(actor_rows)} 个字段单元（N×3）**已逐项覆盖。HR-027 与后续身份修订已经受控合并，重生后的每个 actor 均自动进入三字段审计。当前共有 **{len(candidates)} 条统一候选**，其中 **{len(hr_rows)} 条进入 HR-029**；人工字段按稳定 review item ID 保留，当前已填写 {filled_hr} 条、待处理 {pending_hr} 条。
 
-    `origin_type` 的 7 个值已闭合，可原样冻结。`actor_class` 从 {class_current} 个表面值收敛为 {class_proposed} 个建议值；A087–A093、A095–A101仍只是身份级合并，14 个 actor 的 class assignment 继续人工决定。`legal_status_guess` 从 {legal_current} 种表面写法收敛到 {legal_proposed} 个受控值；无法确认法人格者明确落到 `*_unresolved`，而不是猜成 NPO、基金会或正式网络。
+    `origin_type` 的 7 个值已闭合，可原样冻结。`actor_class` 从 {class_current} 个表面值收敛为 {class_proposed} 个建议值；仍有 {human_actor_assignments} 个 actor 字段 assignment 需要人工决定。`legal_status_guess` 从 {legal_current} 种表面写法收敛到 {legal_proposed} 个受控值；无法确认法人格者明确落到 `*_unresolved`，而不是猜成 NPO、基金会或正式网络。
 
     ![冻结准备度](fig_schema_freeze_readiness_v1.png)
 
     ## 2. Alias：查找等价不等于实体等价
 
-    现有 {len(aliases)} 条 alias、15 种 alias_type 全部入审计。没有发现跨 actor 的规范化 alias 冲突；有 1 组同一 actor 的标点差异（X016 的 spouses' / spouses），因税务记录与组织写法来源不同可保留。
+    现有 {len(aliases)} 条 alias、{alias_type_count} 种 alias_type 全部入审计。没有发现跨 actor 的规范化 alias 冲突；同一 actor 的来源敏感写法仍按各自来源保留。
 
     三类名称必须和普通 alias 分开：
 
@@ -1145,13 +1207,13 @@ def make_brief(
 
     A106 的「首都圏連絡会／首都圏キャンペーン」canonical 选择仍需 HR-029。A111 的「女団協」不得转成已剔除 A094 所关联的「沖女連」，也不得借 alias 把 A094 重新放回 registry。
 
-    ## 3. Place 与 venue：一处跨键冲突，九处不能一键替换
+    ## 3. Place 与 venue：空间跨键已修复，venue 占位需分型处理
 
     {len(places)} 个 place 都获得 parent 与查询 alias 候选。P004 Futenma 与 P010 MCAS Futenma必须分别代表议题／地域层与实体基地层；P005 Kadena 需明确是 Kadena Air Base；P011–P013 的与那国、石垣、宫古必须区分町／市与岛屿／区域写法。这五项进入 HR-029。
 
-    {len(actor_place_edges)} 条 actor–place 边发现 **{len(place_conflicts)} 个交叉键冲突**：AP123 的 `place_id=P006` 指向 Camp Schwab，而 `place_name=Camp Foster`。本包将其显式标为 `defer_to_HR025`／needs-human；HR-025 是唯一权威语义闸门，schema 包不另建 HR-029，也不静默建议 P007。
+    {place_conflict_text}
 
-    16 项 venue taxonomy 的 ID 与 label/group 本身无重复；但 event/pathway 表有 **{len(venue_conflicts)} 条 `R10_VENUE` 占位引用**。其中 USO 的三条服务／捐赠观察可机械候选为 V016；伞状 membership 未必需要 venue，JICA活动与公共外交 opportunity 也不是同一种场域，所以 {venue_human} 条进入 HR-029。V015 已实际使用 1 次，其“future expansion”旧 note 已过时，但本包不改 note。
+    16 项 venue taxonomy 的 ID 与 label/group 本身无重复；但 event/pathway 表有 **{len(venue_conflicts)} 条 `R10_VENUE` 占位引用**。其中明确的 USO 服务／捐赠观察可机械候选为 V016；伞状 membership、区域赞助、行政委托、JICA活动与公共外交 opportunity 并非同一种场域，所以 {venue_human} 条进入 HR-029。V015 已实际使用，其“future expansion”旧 note 已过时，但本包不改 note。
 
     ## 4. Relation / action 受控值
 
@@ -1175,11 +1237,11 @@ def make_brief(
 
     ## 6. 后续顺序
 
-    1. 先完成 HR-027 的 registry 价值判断与受控合并；
-    2. 重生本 schema 包，确认合并后的每个 actor 都进入 N×3 字段审计；
-    3. 完成 `HR029_schema_alias_freeze_review_v0.csv`，再由主线程受控合并 class assignment、alias lineage、place/venue 与 relation 语义；
-    4. AP123 仅由 HR-025 决定；处理 `R10_VENUE` 后运行全库 FK/lint；
-    5. 再生成五类核心图、研究报告、论文和 PPT。
+    1. HR-027、HR-019、HR-024、HR-025 与 HR-032 已完成受控合并，本包是其后的最终重生输入；
+    2. 负责人完成 `HR029_schema_alias_freeze_review_v0.csv`；
+    3. 主线程再受控合并 class assignment、alias lineage、place/venue 与 relation/action 语义；
+    4. 处理 `R10_VENUE` 后运行全库 FK/lint，再冻结正式 codebook；
+    5. 最后处理 HR-031 的解释强度决定，并生成报告、论文和 PPT。
 
     复现命令：`python scripts/make_schema_alias_freeze_v1.py`。
     """).strip() + "\n"
@@ -1198,8 +1260,8 @@ def make_readme() -> str:
     - `../../data/interim/36_schema_alias_freeze_candidates_v1.csv` — unified object/field freeze candidates.
     - `actor_field_audit_v1.csv` and `actor_value_mapping_v1.csv` — current registry N actors × 3 fields and aggregate mappings; actor count is dynamic.
     - `alias_audit_v1.csv` / `alias_boundary_audit_v1.csv` — identity lookup versus nonidentity lineage rules.
-    - `place_hierarchy_alias_audit_v1.csv` / `place_crosskey_conflicts_v1.csv` — 20-node hierarchy proposals and AP123 mismatch.
-    - `venue_taxonomy_audit_v1.csv` / `venue_reference_conflicts_v1.csv` — 16 taxonomy rows and nine orphan references.
+    - `place_hierarchy_alias_audit_v1.csv` / `place_crosskey_conflicts_v1.csv` — dynamic place hierarchy proposals and any remaining cross-key mismatch.
+    - `venue_taxonomy_audit_v1.csv` / `venue_reference_conflicts_v1.csv` — 16 taxonomy rows and all current orphan references.
     - `relation_action_value_mapping_v1.csv` — complete observed value inventory and controlled mappings.
     - `lint_rules_v1.csv` / `impact_counts_v1.csv` — executable rules and impact summary.
     - `HR029_schema_alias_freeze_review_v0.csv` — stable review items; regeneration preserves all human and added final/status fields by `review_item_id`.
@@ -1207,7 +1269,7 @@ def make_readme() -> str:
 
     ## Hard boundary
 
-    Similar names never trigger an automatic entity merge. A predecessor label, case-round label, national/local brand relationship or spatial-name overlap remains explicitly typed and bounded. HR-027 must be decided/merged before regenerating schema/HR-029; AP123 remains `defer_to_HR025` and is never silently corrected here.
+    Similar names never trigger an automatic entity merge. A predecessor label, case-round label, national/local brand relationship or spatial-name overlap remains explicitly typed and bounded. HR-027/019/024/025/032 are already merged; this regenerated package still makes no HR-029 decisions. AP123 and P021 remain frozen from HR-025 and are not reopened here.
     """).strip() + "\n"
 
 
@@ -1229,24 +1291,24 @@ def validate(
         for field in ("actor_class", "legal_status_guess", "origin_type")
     }
     assert {(row["actor_id"], row["field_name"]) for row in actor_rows} == expected_actor_cells
-    assert len(aliases) == 27 and len(alias_rows) == 27
-    assert len(places) == 20 and len(place_rows) == 20
-    assert len(actor_place_edges) == 135
-    assert len(place_conflicts) == 1
-    assert place_conflicts[0]["edge_id"] == "AP123"
-    assert place_conflicts[0]["proposed_resolution"] == "defer_to_HR025"
-    assert place_conflicts[0]["requires_human_review"] == "yes"
-    assert place_conflicts[0]["hr_item_id"] == "HR-025"
+    assert aliases and len(alias_rows) == len(aliases)
+    assert places and len(place_rows) == len(places)
+    assert len({row["edge_id"] for row in actor_place_edges}) == len(actor_place_edges)
+    assert {row["place_id"] for row in actor_place_edges} <= {row["place_id"] for row in places}
+    assert not place_conflicts
     assert len(venues) == 16 and len(venue_rows) == 16
-    assert len(venue_conflicts) == 9
+    known_venue_ids = {row["venue_id"] for row in venues}
+    expected_venue_conflicts = [
+        row for row in read_csv(PATHWAY_FILE) if row["venue_id"] not in known_venue_ids
+    ]
+    assert len(venue_conflicts) == len(expected_venue_conflicts)
     assert {row["current_venue_id"] for row in venue_conflicts} == {"R10_VENUE"}
-    assert sum(row["requires_human_review"] == "yes" for row in venue_conflicts) == 6
+    assert all(row["observation_id"] in ORPHAN_VENUE_PLAN for row in venue_conflicts)
+    assert any(row["requires_human_review"] == "yes" for row in venue_conflicts)
     relation_rows = [row for row in relation_action_rows if row["field_name"] == "relation_type"]
     action_rows = [row for row in relation_action_rows if row["field_name"] == "action_type"]
-    assert len(relation_rows) == 28
-    assert sum(int(row["affected_row_count"]) for row in relation_rows) == 78
-    assert len(action_rows) == 14
-    assert sum(int(row["affected_row_count"]) for row in action_rows) == 255
+    assert relation_rows and all(int(row["affected_row_count"]) > 0 for row in relation_rows)
+    assert action_rows and all(int(row["affected_row_count"]) > 0 for row in action_rows)
     assert len({row["candidate_id"] for row in candidates}) == len(candidates)
     assert all(row["proposed_value"] for row in candidates)
     assert all(row["machine_status"] in {"freeze_candidate", "needs_human_review", "defer_to_HR025"} for row in candidates)
@@ -1265,8 +1327,19 @@ def validate(
     ) == len(hr_rows)
     assert not any(row["object_id"] == "AP123" for row in hr_rows)
     assert not any("auto_merge" in row["candidate_disposition"] for row in candidates)
-    canonical_norms = Counter(normalized_name(row["canonical_name"]) for row in actors)
-    assert max(canonical_norms.values()) == 1
+    canonical_groups: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in actors:
+        canonical_groups[normalized_name(row["canonical_name"])].append(row)
+    for rows in canonical_groups.values():
+        if len(rows) <= 1:
+            continue
+        roots = [row for row in rows if not row.get("merged_duplicate_of")]
+        assert len(roots) == 1
+        assert all(
+            row["actor_id"] == roots[0]["actor_id"]
+            or row.get("merged_duplicate_of") == roots[0]["actor_id"]
+            for row in rows
+        )
     alias_actor_norms: dict[str, set[str]] = defaultdict(set)
     for row in aliases:
         alias_actor_norms[normalized_name(row["alias"])].add(row["actor_id"])
@@ -1291,12 +1364,12 @@ def validation_text(
     return dedent(f"""
     # Schema / alias freeze validation v1
 
-    Generated: 2026-07-13
+    Generated: 2026-07-20
 
     - Actor registry: {len(actors)} actors; {len(actor_rows)} actor-field cells covered exactly as dynamic N×3.
     - Aliases: {len(aliases)} rows; zero normalized cross-actor collisions; one documented same-actor punctuation collision.
-    - Places: {len(places)} nodes and {len(actor_place_edges)} actor–place edges; AP123 captured as `defer_to_HR025` / needs-human, with no HR-029 duplicate and no silent P007 proposal.
-    - Venues: {len(venues)} taxonomy rows; {len(venue_conflicts)} orphan `R10_VENUE` references captured; six require HR-029.
+    - Places: {len(places)} nodes and {len(actor_place_edges)} actor–place edges; zero cross-key mismatches after HR-025 fixed AP123 to P007 Camp Foster and approved P021 for explicit Sakishima-wide evidence.
+    - Venues: {len(venues)} taxonomy rows; {len(venue_conflicts)} orphan `R10_VENUE` references captured; {sum(row['requires_human_review'] == 'yes' for row in venue_conflicts)} require HR-029.
     - Relation types: {len(relation_rows)} values over {sum(int(row['affected_row_count']) for row in relation_rows)} rows; full mapping coverage.
     - Action types: {len(action_rows)} values over {sum(int(row['affected_row_count']) for row in action_rows)} rows; full mapping coverage.
     - Unified candidates: {len(candidates)} unique rows; every row has a proposed value and explicit interpretation boundary.
@@ -1304,7 +1377,7 @@ def validation_text(
     - Stable ID mapping: the `(domain, object_id, field_name)` review item retains its prior `review_item_id`; new items allocate unused suffixes.
     - HR preservation: {preservation['preserved_nonblank_rows']} populated rows restored from the pre-existing file; {preservation['extra_human_fields']} extra human columns retained.
     - Temporary-copy sentinel test (`TEST_HUMAN_DECISION` plus final/status fields): passed; real HR table was not modified by the test.
-    - Workflow guard: HR-027 merge precedes schema regeneration; all post-merge actors must appear in N×3 audit cells.
+    - Workflow guard: HR-027/019/024/025/032 decisions are merged before this regeneration; all post-merge actors appear in N×3 audit cells.
     - Synthetic post-HR027 actor coverage test: passed; the added actor receives actor_class, legal_status_guess and origin_type audit rows.
     - No automatic entity-merge disposition exists; predecessor, case-round and national/local brand boundaries are explicit.
     - Two figures generated in PNG/SVG; SVG line-tail whitespace normalized after save; deterministic non-figure digest: `{digest}`.
@@ -1367,7 +1440,10 @@ def main() -> None:
     write_csv(ALIAS_AUDIT_FILE, alias_rows, list(alias_rows[0]))
     write_csv(ALIAS_BOUNDARY_FILE, alias_boundaries, list(alias_boundaries[0]))
     write_csv(PLACE_AUDIT_FILE, place_rows, list(place_rows[0]))
-    write_csv(PLACE_CONFLICT_FILE, place_conflicts, list(place_conflicts[0]))
+    write_csv(
+        PLACE_CONFLICT_FILE, place_conflicts,
+        list(place_conflicts[0]) if place_conflicts else PLACE_CONFLICT_FIELDS,
+    )
     write_csv(VENUE_AUDIT_FILE, venue_rows, list(venue_rows[0]))
     write_csv(VENUE_CONFLICT_FILE, venue_conflicts, list(venue_conflicts[0]))
     write_csv(REL_ACTION_FILE, relation_action_rows, list(relation_action_rows[0]))
