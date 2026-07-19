@@ -2,124 +2,116 @@
 
 日期：2026-07-20  
 对象：项目负责人  
-范围：只列线上可完成、必须由人作判断的任务；不列当地检索、AI 机械任务和已完成任务。
+范围：只列线上可完成、必须由人作判断的任务；不列当地检索和 AI 机械任务。
 
-当前计数详表：`docs/principal_human_review_remaining_v13.md`。
+当前计数详表：`docs/principal_human_review_remaining_v14.md`。
 
 ## 1. 一句话状态
 
-当前尚有 **39 个线上人工决定**。
+当前尚有 **145 个线上人工决定**：
 
-其中：
+- **101 个现在可以分批进行**：HR-010 批 6 的 47 项、LCR001–004 的 4 项、HR-034 的 50 项；
+- **41 个要在上述决定合并并重生后进行**：HR-029 schema／alias freeze；
+- **3 个最后进行**：HR-031 报告解释强度；
+- 另有 **12 个当地／新一手材料项**，不在本线上任务单内。
 
-- **0 个决定可独立进入当前线上队列**；
-- **39 个决定现在不应执行**：HR-029 重生后 36 个、HR-031 最终措辞 3 个；
-- **12 个当地／线上耗尽项不在本任务单内**；
-- HR-018 来源前置、HR-018 线上关系、HR-019、HR-021、HR-024、HR-025、HR-026、HR-027、HR-030、HR-033 已完成负责人判断；
-- HR-017 在线部分已完成 9/9，当地资料 9 项继续跳过；
-- HR-032 已完成 8/8；
-- HR-022 已完成 49/49；
-- HR-023、HR-028 没有人工作业。
+HR-016 至 HR-033 中已有负责人回交的线上决定均已合并；HR-017 local 9、HR-018 local 2、HR-024 A073 1 继续保持空白。
 
-权威逐行队列仍是各 HR CSV。本文件只负责告诉负责人“现在先做什么”，不复制或预填决定。
-
-## 2. 两个负责人检查点
+## 2. 广泛研究的独立检查点
 
 ### OPI-00 · 项目重新进入决策单
 
-状态：**未见回交记录；新一轮广泛研究的前置条件。**
+状态：**已有暂停／未完成回交记录，仍未满足。**
 
-入口：
+入口：`lessons/0001-project-reentry-5-hour.html`
+回交：`docs/principal_checkpoint_return_OPI00_v1.md`
 
-`lessons/0001-project-reentry-5-hour.html`
+这不阻断以下 101 项有界人工复核和已经批准的机械维护，但继续阻断 NR-04／NR-05 或其他大范围研究波次。
 
-需要交回：
+## 3. 现在可以做：101 项
 
-1. 项目五句话；
-2. 最强三条发现；
-3. 最可疑两条解释；
-4. 一个新问题；
-5. 报告主轴；
-6. 论文主轴；
-7. 当地任务第一优先；
-8. 暂时不做什么。
+### 第一组 · HR-010 批 6：actor–issue 边级证据（47）
 
-在这份决策单回交以前，不启动 NR-04／NR-05 或其他大范围研究波次。
+权威队列：
 
-### OPI-01 · NR-03 前端检查点 B
+`outputs/edge_activation_v1/post_hr013_HR010_batch6_edge_evidence_addendum_v1.csv`
 
-状态：**负责人已确认不再单独执行，不列入剩余任务。**
-
-## 3. 当前线上人审队列
-
-### 第一组 · 来源与发布边界（已完成）
-
-继续清理 metadata、locator 和来源支持范围，不批准事实关系。
-
-HR-022 的 49 项已全部完成人工确认，最后一批回交记录：
-
-`docs/human_review_return_HR022_metadata_batch33_v1.md`
-
-边界：来源入表或归档成功不批准 actor、关系、金额、选举角色或解释。
-
-### 第二组 · legacy 敏感关系状态（已完成）
-
-HR-033 六项已于 Batch 30 全部确认，回交记录：
-
-`docs/human_review_return_HR033_legacy_relation_status_batch30_v1.md`
+对象为 A087–A093、A095–A101 的 47 条补证。逐条决定证据是否足以支持该组织—议题边及其范围，不从 registry `issue_tags` 自动生边。
 
 边界：
 
-- `verified` 不自动等于 `human_checked`；
-- membership 不写成 funding；
-- aggregate 总额不拆给单一 recipient；
-- 先分别确认方向、端点类型、已核字段、缺失字段和 graph eligibility。
+- 法人宗旨不等于所有项目都已实际实施；
+- 分支机构材料不能无条件外推到全县组织；
+- 某次声明／行动只支持事件级角色，不自动支持长期组织定位；
+- 接受 issue edge 不批准组织间联盟、资金或因果关系。
 
-### 第三组 · 模块语义与别名预冻结（已完成）
+### 第二组 · LCR001–004：生命周期个案（4）
 
-HR-032 的 **8 个线上决定**已于 Batch 37 全部确认：
+权威队列：
 
-`docs/human_review_return_HR032_partner_crosswalk_batch37_v1.md`
+`outputs/actor_lifecycle_v1/actor_lifecycle_review_queue_v0.csv`
 
-边界：不把事件名、source label 或 JV 成员字符串自动变成 registry actor；不把共同署名写成联盟；不把 JV 项目费拆成成员付款。
+受控规则已经确认，但四个具体个案仍为空白。分别判断解散、改组、休止或持续性未确认。
 
-## 4. 条件满足后再做
+边界：线上未见近期活动不等于解散；身份、谱系和活动连续性必须分开。
 
-### OPI-L01 · HR-029 schema／alias 最终冻结
+### 第三组 · HR-034：非法 `review_status` 交叉表（50）
 
-- 当前包：36 个决定。
-- 当前状态：**不要执行。**
-- 条件：HR-010、HR-018～020、HR-024／025、HR-032／033 等已确认决定统一合并，AP123 已按 HR-025 解决，并由主线程重生 HR-029。
-- HR-032 已完成；重生时必须吸收 Batch 37 的 canonical／composite crosswalk，不能继续使用确认前旧候选。
+权威队列：
 
-### OPI-L02 · HR-031 报告解释强度
+`outputs/review_status_crosswalk_v1/HR034_review_status_crosswalk_v1.csv`
 
-- 数量：3 个。
-- 当前状态：**最后做。**
-- 条件：事实、来源和 schema 已足够冻结，可以锁定最终报告／论文措辞。
-- 边界：HR-031 只决定解释强度，不批准事实、角色、边、资金或因果。
+构成：
 
-## 5. 明确不在本轮线上任务里
+- 中央 source log 逐行判断 45 项；
+- actor–issue AI068 逐行判断 1 项；
+- R4、R9、异质行动和 lifecycle 的表级字段政策 4 项。
 
-- 12 个当地／线上耗尽项：HR-017 local 9、HR-018 local 2、HR-024 A073 1。
-- HR-023、HR-028：机械任务，零人工决定。
-- HR-027：已经完成并合并。
-- HR-016、HR-017 在线部分、HR-018 线上关系、HR-019、HR-020、HR-021、HR-024 在线部分、HR-025、HR-026、HR-030：已完成负责人判断，等待主线程统一合并／重生。
-- NR-04／NR-05：不是当前可直接启动的人审；须先完成 OPI-00 重新进入决策单。
-- 当地 T2-D／E／F：不属于“线上人工任务”。
+边界：
 
-## 6. 推荐实际执行节奏
+- `verified`、`human_verified`、`accepted`、`qa_safe_online`、`watchlist_only` 不能按字符串自动映射为 `human_checked`；
+- source 状态迁移不批准 actor、edge、金额或解释；
+- AI067 已被 HR-019 拒绝；AI068 也不得借状态迁移重新进入默认冲绳关系图；
+- 表级政策不等于把受影响的 10／29／49／4 行批量判成人工通过。
 
-不要按 56 行一次性处理。通常每次只发 **8–12 行、60–90 分钟** 的复核包。
+## 4. 上述 101 项完成后再做
 
-后续建议：
+### HR-029 · schema／alias 最终冻结（41）
 
-1. 主线程合并已确认的 HR-019／020／024／025／032／033 等决定，修复 AP123 并重生 HR-029；
-2. 复核重生后的 HR-029；
-3. 最后处理 HR-031。
+当前重生快照：
 
-主编排依据：
+`outputs/schema_alias_freeze_v1/HR029_schema_alias_freeze_review_v0.csv`
 
-- `outputs/human_review_orchestration_v1/README.md`
-- `outputs/human_review_orchestration_v1/recommended_batches_v1.csv`
-- `outputs/human_review_orchestration_v1/task_inventory_v1.csv`
+状态：**暂不执行。** 当前包有 505 个统一候选和 41 个空白决定，但 HR-010、生命周期和 HR-034 会改变最终冻结输入。先合并这三组，再重生一次 HR-029。
+
+### HR-031 · 报告解释强度（3）
+
+权威队列：
+
+`outputs/report_claim_audit_v1/HR031_report_claim_review_v0.csv`
+
+状态：**最后做。** 它只决定报告／论文的解释强度，不批准新的事实、角色、边、金额或因果。
+
+## 5. 不在本轮线上任务里
+
+- HR-017 local：9；
+- HR-018 local：2；
+- HR-024 A073：1，`online_exhausted`／E0；
+- HR-023、HR-028：机械任务，零人工决定；
+- NR-04／NR-05：须先完成 OPI-00；
+- 当地 T2-D／E／F：属于当地检索任务，不属于线上人工复核。
+
+## 6. 推荐执行节奏
+
+每次只处理 **8–12 项、60–90 分钟**，不要把不同证据语义混成一个大批次。
+
+建议顺序：
+
+1. HR-010 批 6，先完成组织—议题事实；
+2. LCR001–004，单独处理生命周期；
+3. HR-034，先逐行来源，再处理表级字段政策；
+4. 主线程机械合并并最终重生 HR-029；
+5. 分批完成 HR-029 的 41 项；
+6. 最后完成 HR-031 的 3 项。
+
+所有决定都写回权威 CSV，并保留 reviewer、date、note 和限定范围；AI 不代填。
