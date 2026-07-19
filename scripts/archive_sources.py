@@ -23,6 +23,11 @@ USER_AGENT = (
     "Mozilla/5.0 (compatible; OkinawaNGOResearchBot/0.1; "
     "+https://github.com/mmm8091/OkinawaNGO)"
 )
+BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/138.0.0.0 Safari/537.36"
+)
 
 
 def read_sources() -> list[dict[str, str]]:
@@ -81,14 +86,26 @@ def validate_body(url: str, body: bytes, content_type: str) -> str | None:
     return None
 
 
+def request_headers(url: str) -> dict[str, str]:
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "text/html,application/pdf,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "ja,en-US;q=0.8,en;q=0.6,zh-CN;q=0.5",
+    }
+    parsed = urlparse(url)
+    if (
+        parsed.netloc.lower() == "researchmap.jp"
+        and parsed.path.endswith("/attachment_file.pdf")
+    ):
+        headers["User-Agent"] = BROWSER_USER_AGENT
+        headers["Referer"] = url.rsplit("/", 1)[0]
+    return headers
+
+
 def fetch(url: str) -> tuple[bytes, dict[str, str]]:
     request = Request(
         iri_to_uri(url),
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/pdf,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "ja,en-US;q=0.8,en;q=0.6,zh-CN;q=0.5",
-        },
+        headers=request_headers(url),
     )
     with urlopen(request, timeout=TIMEOUT_SECONDS) as response:
         body = response.read()
