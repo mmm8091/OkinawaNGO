@@ -178,7 +178,7 @@ final result: pass (agent-verified with rendered evidence; awaiting principal co
   A real mobile overflow was found in the topbar and Actors header controls; the ≤820px
   grid, segmented controls, search and filters now shrink or wrap, leaving all five pages at
   375px document width in the 390px viewport. App console: 0 warning / 0 error. Time-page
-  genealogy remains an explicit open defect: four reviewed LC records exist centrally, but
+  genealogy remains an explicit open defect: five reviewed central LC records exist, but
   `genealogy_anchors` still exports 0.
 
 - Iteration 14c (2026-07-20): issue nodes in the ecology canvas are clickable — hover shows
