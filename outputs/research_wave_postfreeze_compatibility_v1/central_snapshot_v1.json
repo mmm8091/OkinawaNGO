@@ -1,0 +1,52 @@
+{
+  "actor_issue": {
+    "active_edges": 283,
+    "candidate_edges": 158,
+    "connected_actors": 116,
+    "e3plus_candidate_actors": 76,
+    "e3plus_candidate_edges": 154,
+    "e3plus_connected_actors": 114,
+    "e3plus_edges": 271,
+    "e3plus_reviewed_actors": 47,
+    "e3plus_reviewed_edges": 117,
+    "evidence_level_counts": {
+      "E2": 12,
+      "E3": 67,
+      "E4": 204
+    },
+    "history_rows": 294,
+    "isolated_current_actors": 5,
+    "review_status_counts": {
+      "ai_seeded": 128,
+      "human_checked": 113,
+      "human_revised": 12,
+      "needs_local_retrieval": 5,
+      "needs_second_source": 25
+    },
+    "reviewed_edges": 125
+  },
+  "actor_registry": {
+    "current_actors": 121,
+    "history_rows": 122
+  },
+  "as_of_date": "2026-07-20",
+  "interpretation_limit": "Mechanical state of the frozen project coding layer; counts are not population estimates, alliance measures, activity strength, or causal findings.",
+  "layer": {
+    "central_writeback": "no",
+    "claim_status": "candidate_analysis",
+    "frontend_eligibility": "not_frontend_ready",
+    "research_status": "research_only",
+    "review_status": "ai_seeded"
+  },
+  "other_current_objects": {
+    "accepted_registered_actor_case_roles": 13,
+    "human_checked_registered_actor_event_rows": 50,
+    "source_rows": 295
+  },
+  "strict_place_issue": {
+    "active_same_source_triples": 305,
+    "dual_human_reviewed_triples": 71,
+    "e3plus_triples": 298,
+    "event_attached_triples": 97
+  }
+}

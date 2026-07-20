@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1060" viewBox="0 0 1800 1060" role="img" aria-labelledby="title desc">
+<title id="title">1998–2012 载体—制度场域—材料留存时间图</title>
+<desc id="desc">上方面板是独立数量轴的全县认证NPO背景；下方面板按载体、制度场域、留存材料三条泳道展示选择性历史锚点，颜色表示来源关系。</desc>
+<style>
+text{font-family:'Noto Sans CJK SC','Microsoft YaHei','Yu Gothic',sans-serif}.panel{fill:#fbfcfd;stroke:#cbd5dc;stroke-width:1.2}.grid{stroke:#dce3e8;stroke-width:1}.axis{stroke:#77858f;stroke-width:1.2}.lane{stroke:#b8c4cb;stroke-width:1.1}.connector{stroke:#a6b0b7;stroke-width:1.2;fill:none}.node{stroke-width:1.4}
+</style>
+<rect width="1800" height="1060" fill="#f4f6f7"/>
+<text x="80.0" y="48.0" text-anchor="start" font-size="25" font-weight="700" fill="#24313a"><tspan x="80.0" dy="0">NR-05｜1998–2012 载体—制度场域—材料留存</tspan></text>
+<text x="80.0" y="78.0" text-anchor="start" font-size="13" font-weight="500" fill="#56636c"><tspan x="80.0" dy="0">研究候选图：宏观认证 NPO 数量与下方组织／事件锚点分面、分母和纵轴；不可相除或合并</tspan></text>
+<rect class="panel" x="70" y="105" width="1660" height="245" rx="12"/>
+<text x="92.0" y="137.0" text-anchor="start" font-size="17" font-weight="700" fill="#24313a"><tspan x="92.0" dy="0">A. 全县认证 NPO 法人数量背景（独立数量轴）</tspan></text>
+<text x="92.0" y="161.0" text-anchor="start" font-size="12" font-weight="500" fill="#56636c"><tspan x="92.0" dy="0">所有领域的累计认证数；不是本项目 actor 数，也不表示活动、寿命或基地议题</tspan></text>
+<line class="grid" x1="220.0" y1="320.0" x2="1670.0" y2="320.0"/>
+<text x="204.0" y="324.0" text-anchor="end" font-size="10" font-weight="500" fill="#66747d"><tspan x="204.0" dy="0">0</tspan></text>
+<line class="grid" x1="220.0" y1="252.5" x2="1670.0" y2="252.5"/>
+<text x="204.0" y="256.5" text-anchor="end" font-size="10" font-weight="500" fill="#66747d"><tspan x="204.0" dy="0">275</tspan></text>
+<line class="grid" x1="220.0" y1="185.0" x2="1670.0" y2="185.0"/>
+<text x="204.0" y="189.0" text-anchor="end" font-size="10" font-weight="500" fill="#66747d"><tspan x="204.0" dy="0">550</tspan></text>
+<line x1="318.3" y1="320" x2="318.3" y2="318.5" stroke="#2e7d69" stroke-width="16" opacity="0.22"/>
+<circle cx="318.3" cy="318.5" r="6.5" fill="#e9f5f1" stroke="#2e7d69" stroke-width="2"/>
+<text x="318.3" y="305.5" text-anchor="middle" font-size="12" font-weight="700" fill="#2e7d69"><tspan x="318.3" dy="0">6</tspan></text>
+<text x="318.3" y="340.0" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5962"><tspan x="318.3" dy="0">1999</tspan></text>
+<line x1="809.8" y1="320" x2="809.8" y2="280.0" stroke="#2e7d69" stroke-width="16" opacity="0.22"/>
+<circle cx="809.8" cy="280.0" r="6.5" fill="#e9f5f1" stroke="#2e7d69" stroke-width="2"/>
+<text x="809.8" y="267.0" text-anchor="middle" font-size="12" font-weight="700" fill="#2e7d69"><tspan x="809.8" dy="0">163</tspan></text>
+<text x="809.8" y="340.0" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5962"><tspan x="809.8" dy="0">2004</tspan></text>
+<line x1="1596.3" y1="320" x2="1596.3" y2="185.0" stroke="#2563a6" stroke-width="16" opacity="0.22"/>
+<circle cx="1596.3" cy="185.0" r="6.5" fill="#eaf3fb" stroke="#2563a6" stroke-width="2"/>
+<text x="1596.3" y="172.0" text-anchor="middle" font-size="12" font-weight="700" fill="#2563a6"><tspan x="1596.3" dy="0">550</tspan></text>
+<text x="1596.3" y="340.0" text-anchor="middle" font-size="11" font-weight="500" fill="#4b5962"><tspan x="1596.3" dy="0">2012</tspan></text>
+<polyline points="318.3,318.5 809.8,280.0 1596.3,185.0" fill="none" stroke="#607784" stroke-width="1.6"/>
+<text x="1275.0" y="206.0" text-anchor="start" font-size="11" font-weight="500" fill="#53616a"><tspan x="1275.0" dy="0">1999–2004：RIETI 二手汇编</tspan><tspan x="1275.0" dy="15">2012：冲绳县同期官方</tspan></text>
+<text x="1275.0" y="250.0" text-anchor="start" font-size="11" font-weight="700" fill="#8a4e20"><tspan x="1275.0" dy="0">独立 count axis</tspan><tspan x="1275.0" dy="15">禁止与下方面板节点数相除</tspan></text>
+<rect class="panel" x="70" y="375" width="1660" height="610" rx="12"/>
+<text x="92.0" y="410.0" text-anchor="start" font-size="17" font-weight="700" fill="#24313a"><tspan x="92.0" dy="0">B. 选择性历史锚点：谁承载 → 进入何种场域 → 留下什么材料</tspan></text>
+<text x="92.0" y="434.0" text-anchor="start" font-size="12" font-weight="500" fill="#56636c"><tspan x="92.0" dy="0">节点是机制例证，不是全量事件计数；竖线只连接同一锚点内部的载体、场域与记录</tspan></text>
+<line class="lane" x1="220.0" y1="550" x2="1670.0" y2="550"/>
+<text x="92.0" y="554.0" text-anchor="start" font-size="13" font-weight="700" fill="#24313a"><tspan x="92.0" dy="0">载体／组织形式</tspan></text>
+<line class="lane" x1="220.0" y1="700" x2="1670.0" y2="700"/>
+<text x="92.0" y="704.0" text-anchor="start" font-size="13" font-weight="700" fill="#24313a"><tspan x="92.0" dy="0">制度场域</tspan></text>
+<line class="lane" x1="220.0" y1="850" x2="1670.0" y2="850"/>
+<text x="92.0" y="854.0" text-anchor="start" font-size="13" font-weight="700" fill="#24313a"><tspan x="92.0" dy="0">留存材料</tspan></text>
+<line class="grid" x1="220.0" y1="455" x2="220.0" y2="940" opacity="0.65"/>
+<text x="220.0" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="220.0" dy="0">1998</tspan></text>
+<line class="grid" x1="318.3" y1="455" x2="318.3" y2="940" opacity="0.65"/>
+<text x="318.3" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="318.3" dy="0">1999</tspan></text>
+<line class="grid" x1="416.6" y1="455" x2="416.6" y2="940" opacity="0.65"/>
+<text x="416.6" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="416.6" dy="0">2000</tspan></text>
+<line class="grid" x1="514.9" y1="455" x2="514.9" y2="940" opacity="0.65"/>
+<text x="514.9" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="514.9" dy="0">2001</tspan></text>
+<line class="grid" x1="613.2" y1="455" x2="613.2" y2="940" opacity="0.65"/>
+<text x="613.2" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="613.2" dy="0">2002</tspan></text>
+<line class="grid" x1="711.5" y1="455" x2="711.5" y2="940" opacity="0.65"/>
+<text x="711.5" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="711.5" dy="0">2003</tspan></text>
+<line class="grid" x1="809.8" y1="455" x2="809.8" y2="940" opacity="0.65"/>
+<text x="809.8" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="809.8" dy="0">2004</tspan></text>
+<line class="grid" x1="908.1" y1="455" x2="908.1" y2="940" opacity="0.65"/>
+<text x="908.1" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="908.1" dy="0">2005</tspan></text>
+<line class="grid" x1="1006.4" y1="455" x2="1006.4" y2="940" opacity="0.65"/>
+<text x="1006.4" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="1006.4" dy="0">2006</tspan></text>
+<line class="grid" x1="1104.7" y1="455" x2="1104.7" y2="940" opacity="0.65"/>
+<text x="1104.7" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="1104.7" dy="0">2007</tspan></text>
+<line class="grid" x1="1203.1" y1="455" x2="1203.1" y2="940" opacity="0.65"/>
+<text x="1203.1" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="1203.1" dy="0">2008</tspan></text>
+<line class="grid" x1="1301.4" y1="455" x2="1301.4" y2="940" opacity="0.65"/>
+<text x="1301.4" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="1301.4" dy="0">2009</tspan></text>
+<line class="grid" x1="1399.7" y1="455" x2="1399.7" y2="940" opacity="0.65"/>
+<text x="1399.7" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="1399.7" dy="0">2010</tspan></text>
+<line class="grid" x1="1498.0" y1="455" x2="1498.0" y2="940" opacity="0.65"/>
+<text x="1498.0" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="1498.0" dy="0">2011</tspan></text>
+<line class="grid" x1="1596.3" y1="455" x2="1596.3" y2="940" opacity="0.65"/>
+<text x="1596.3" y="962.0" text-anchor="middle" font-size="10" font-weight="500" fill="#65727b"><tspan x="1596.3" dy="0">2012</tspan></text>
+<path class="connector" d="M 220.0 574.0 L 220.0 676.0 L 220.0 826.0"/>
+<rect class="node" x="173.0" y="526.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="173.0" y="676.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="173.0" y="826.0" width="94" height="48" rx="8" fill="#e9f5f1" stroke="#2e7d69"/>
+<text x="220.0" y="543.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="220.0" dy="0">课程田野</tspan><tspan x="220.0" dy="13">（非 actor）</tspan></text>
+<text x="220.0" y="693.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="220.0" dy="0">无指定</tspan><tspan x="220.0" dy="13">制度场域</tspan></text>
+<text x="220.0" y="843.0" text-anchor="middle" font-size="10" font-weight="600" fill="#2e7d69"><tspan x="220.0" dy="0">琉大论文</tspan><tspan x="220.0" dy="13">1998</tspan></text>
+<text x="220.0" y="516.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="220.0" dy="0">H98_001</tspan></text>
+<text x="220.0" y="890.0" text-anchor="middle" font-size="9" font-weight="600" fill="#2e7d69"><tspan x="220.0" dy="0">二手</tspan></text>
+<path class="connector" d="M 318.3 574.0 L 1337.7 676.0 L 1337.7 826.0"/>
+<rect class="node" x="271.3" y="526.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="1290.7" y="676.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="1290.7" y="826.0" width="94" height="48" rx="8" fill="#fbefe5" stroke="#b9682a"/>
+<text x="318.3" y="543.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="318.3" dy="0">ONC 前身</tspan><tspan x="318.3" dy="13">1999-06</tspan></text>
+<text x="1337.7" y="693.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1337.7" dy="0">NPO 认证</tspan><tspan x="1337.7" dy="13">2009-05-14</tspan></text>
+<text x="1337.7" y="843.0" text-anchor="middle" font-size="10" font-weight="600" fill="#b9682a"><tspan x="1337.7" dy="0">官网＋访谈</tspan><tspan x="1337.7" dy="13">＋官方名册</tspan></text>
+<text x="318.3" y="516.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="318.3" dy="0">H98_003</tspan></text>
+<text x="1337.7" y="890.0" text-anchor="middle" font-size="9" font-weight="600" fill="#b9682a"><tspan x="1337.7" dy="0">追溯</tspan></text>
+<path class="connector" d="M 613.2 574.0 L 613.2 676.0 L 613.2 826.0"/>
+<rect class="node" x="566.2" y="526.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="566.2" y="676.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="566.2" y="826.0" width="94" height="48" rx="8" fill="#fbefe5" stroke="#b9682a"/>
+<text x="613.2" y="543.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="613.2" dy="0">A053／住民</tspan><tspan x="613.2" dy="13">第一轮</tspan></text>
+<text x="613.2" y="693.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="613.2" dy="0">那霸地裁</tspan><tspan x="613.2" dy="13">2002–03</tspan></text>
+<text x="613.2" y="843.0" text-anchor="middle" font-size="10" font-weight="600" fill="#b9682a"><tspan x="613.2" dy="0">团体沿革</tspan><tspan x="613.2" dy="13">＋法院判决</tspan></text>
+<text x="613.2" y="516.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="613.2" dy="0">H98_004</tspan></text>
+<text x="613.2" y="890.0" text-anchor="middle" font-size="9" font-weight="600" fill="#b9682a"><tspan x="613.2" dy="0">追溯</tspan></text>
+<path class="connector" d="M 783.3 532.0 L 783.3 634.0 L 783.3 784.0"/>
+<rect class="node" x="736.3" y="484.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="736.3" y="634.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="736.3" y="784.0" width="94" height="48" rx="8" fill="#eaf3fb" stroke="#2563a6"/>
+<text x="783.3" y="501.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="783.3" dy="0">具名原告</tspan><tspan x="783.3" dy="13">＋律师</tspan></text>
+<text x="783.3" y="651.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="783.3" dy="0">美国联邦法院</tspan><tspan x="783.3" dy="13">2003-09-25</tspan></text>
+<text x="783.3" y="801.0" text-anchor="middle" font-size="10" font-weight="600" fill="#2563a6"><tspan x="783.3" dy="0">同日起诉状</tspan><tspan x="783.3" dy="13">＋发布</tspan></text>
+<text x="783.3" y="474.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="783.3" dy="0">H98_005</tspan></text>
+<text x="783.3" y="848.0" text-anchor="middle" font-size="9" font-weight="600" fill="#2563a6"><tspan x="783.3" dy="0">同期</tspan></text>
+<path class="connector" d="M 822.6 616.0 L 822.6 718.0 L 822.6 868.0"/>
+<rect class="node" x="775.6" y="568.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="775.6" y="718.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="775.6" y="868.0" width="94" height="48" rx="8" fill="#fbefe5" stroke="#b9682a"/>
+<text x="822.6" y="585.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="822.6" dy="0">913 名个人</tspan><tspan x="822.6" dy="13">非 actor</tspan></text>
+<text x="822.6" y="735.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="822.6" dy="0">公害调停</tspan><tspan x="822.6" dy="13">管辖排除</tspan></text>
+<text x="822.6" y="885.0" text-anchor="middle" font-size="10" font-weight="600" fill="#b9682a"><tspan x="822.6" dy="0">官方终结</tspan><tspan x="822.6" dy="13">事件记录</tspan></text>
+<text x="822.6" y="558.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="822.6" dy="0">H98_006</tspan></text>
+<text x="822.6" y="932.0" text-anchor="middle" font-size="9" font-weight="600" fill="#b9682a"><tspan x="822.6" dy="0">追溯</tspan></text>
+<path class="connector" d="M 853.1 574.0 L 853.1 676.0 L 853.1 826.0"/>
+<rect class="node" x="806.1" y="526.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="806.1" y="676.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="806.1" y="826.0" width="94" height="48" rx="8" fill="#eaf3fb" stroke="#2563a6"/>
+<text x="853.1" y="543.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="853.1" dy="0">A004</tspan><tspan x="853.1" dy="13">NACS-J</tspan></text>
+<text x="853.1" y="693.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="853.1" dy="0">环境评价</tspan><tspan x="853.1" dy="13">意见程序</tspan></text>
+<text x="853.1" y="843.0" text-anchor="middle" font-size="10" font-weight="600" fill="#2563a6"><tspan x="853.1" dy="0">正式意见</tspan><tspan x="853.1" dy="13">2004-06-10</tspan></text>
+<text x="853.1" y="516.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="853.1" dy="0">H98_008</tspan></text>
+<text x="853.1" y="890.0" text-anchor="middle" font-size="9" font-weight="600" fill="#2563a6"><tspan x="853.1" dy="0">同期</tspan></text>
+<path class="connector" d="M 945.5 616.0 L 945.5 718.0 L 945.5 868.0"/>
+<rect class="node" x="898.5" y="568.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="898.5" y="718.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="898.5" y="868.0" width="94" height="48" rx="8" fill="#fbefe5" stroke="#b9682a"/>
+<text x="945.5" y="585.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="945.5" dy="0">个人住民原告</tspan><tspan x="945.5" dy="13">A055仅支援</tspan></text>
+<text x="945.5" y="735.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="945.5" dy="0">那霸地裁</tspan><tspan x="945.5" dy="13">泡濑公金</tspan></text>
+<text x="945.5" y="885.0" text-anchor="middle" font-size="10" font-weight="600" fill="#b9682a"><tspan x="945.5" dy="0">法院判决</tspan><tspan x="945.5" dy="13">＋近时报导</tspan></text>
+<text x="945.5" y="558.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="945.5" dy="0">H98_009</tspan></text>
+<text x="945.5" y="932.0" text-anchor="middle" font-size="9" font-weight="600" fill="#b9682a"><tspan x="945.5" dy="0">追溯</tspan></text>
+<path class="connector" d="M 1214.8 574.0 L 1214.8 676.0 L 1214.8 826.0"/>
+<rect class="node" x="1167.8" y="526.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="1167.8" y="676.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="1167.8" y="826.0" width="94" height="48" rx="8" fill="#eaf3fb" stroke="#2563a6"/>
+<text x="1214.8" y="543.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1214.8" dy="0">A115</tspan><tspan x="1214.8" dy="13">冲绳县本部</tspan></text>
+<text x="1214.8" y="693.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1214.8" dy="0">冲绳县</tspan><tspan x="1214.8" dy="13">请求</tspan></text>
+<text x="1214.8" y="843.0" text-anchor="middle" font-size="10" font-weight="600" fill="#2563a6"><tspan x="1214.8" dy="0">行政日志</tspan><tspan x="1214.8" dy="13">2008-02-14</tspan></text>
+<text x="1214.8" y="516.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="1214.8" dy="0">H98_010</tspan></text>
+<text x="1214.8" y="890.0" text-anchor="middle" font-size="9" font-weight="600" fill="#2563a6"><tspan x="1214.8" dy="0">同期</tspan></text>
+<path class="connector" d="M 1436.0 532.0 L 1436.0 634.0 L 1436.0 784.0"/>
+<rect class="node" x="1389.0" y="484.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="1389.0" y="634.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="1389.0" y="784.0" width="94" height="48" rx="8" fill="#eaf3fb" stroke="#2563a6"/>
+<text x="1436.0" y="501.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1436.0" dy="0">A005＋名单</tspan><tspan x="1436.0" dy="13">事件参与</tspan></text>
+<text x="1436.0" y="651.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1436.0" dy="0">中央省厅</tspan><tspan x="1436.0" dy="13">共同声明</tspan></text>
+<text x="1436.0" y="801.0" text-anchor="middle" font-size="10" font-weight="600" fill="#2563a6"><tspan x="1436.0" dy="0">WWF 同日</tspan><tspan x="1436.0" dy="13">67 团体名单</tspan></text>
+<text x="1436.0" y="474.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="1436.0" dy="0">H98_011</tspan></text>
+<text x="1436.0" y="848.0" text-anchor="middle" font-size="9" font-weight="600" fill="#2563a6"><tspan x="1436.0" dy="0">同期</tspan></text>
+<path class="connector" d="M 1529.4 616.0 L 1529.4 718.0 L 1529.4 868.0"/>
+<rect class="node" x="1482.4" y="568.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="1482.4" y="718.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="1482.4" y="868.0" width="94" height="48" rx="8" fill="#fbefe5" stroke="#b9682a"/>
+<text x="1529.4" y="585.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1529.4" dy="0">A052</tspan><tspan x="1529.4" dy="13">第三轮</tspan></text>
+<text x="1529.4" y="735.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1529.4" dy="0">那霸地裁</tspan><tspan x="1529.4" dy="13">冲绳支部</tspan></text>
+<text x="1529.4" y="885.0" text-anchor="middle" font-size="10" font-weight="600" fill="#b9682a"><tspan x="1529.4" dy="0">原告团</tspan><tspan x="1529.4" dy="13">现行沿革</tspan></text>
+<text x="1529.4" y="558.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="1529.4" dy="0">H98_012</tspan></text>
+<text x="1529.4" y="932.0" text-anchor="middle" font-size="9" font-weight="600" fill="#b9682a"><tspan x="1529.4" dy="0">追溯</tspan></text>
+<path class="connector" d="M 1544.2 532.0 L 1544.2 634.0 L 1544.2 784.0"/>
+<rect class="node" x="1497.2" y="484.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="1497.2" y="634.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="1497.2" y="784.0" width="94" height="48" rx="8" fill="#e9f5f1" stroke="#2e7d69"/>
+<text x="1544.2" y="501.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1544.2" dy="0">A096</tspan><tspan x="1544.2" dy="13">集会载体</tspan></text>
+<text x="1544.2" y="651.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1544.2" dy="0">公开集会</tspan><tspan x="1544.2" dy="13">下地岛</tspan></text>
+<text x="1544.2" y="801.0" text-anchor="middle" font-size="10" font-weight="600" fill="#2e7d69"><tspan x="1544.2" dy="0">宫古每日</tspan><tspan x="1544.2" dy="13">近时报导</tspan></text>
+<text x="1544.2" y="474.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="1544.2" dy="0">H98_013</tspan></text>
+<text x="1544.2" y="848.0" text-anchor="middle" font-size="9" font-weight="600" fill="#2e7d69"><tspan x="1544.2" dy="0">二手</tspan></text>
+<path class="connector" d="M 1596.3 574.0 L 1596.3 676.0 L 1596.3 826.0"/>
+<rect class="node" x="1549.3" y="526.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="1549.3" y="676.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="1549.3" y="826.0" width="94" height="48" rx="8" fill="#fbefe5" stroke="#b9682a"/>
+<text x="1596.3" y="543.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1596.3" dy="0">A053</tspan><tspan x="1596.3" dy="13">第二轮标签</tspan></text>
+<text x="1596.3" y="693.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1596.3" dy="0">并行案件</tspan><tspan x="1596.3" dy="13">2012–13</tspan></text>
+<text x="1596.3" y="843.0" text-anchor="middle" font-size="10" font-weight="600" fill="#b9682a"><tspan x="1596.3" dy="0">团体沿革</tspan><tspan x="1596.3" dy="13">＋法院判决</tspan></text>
+<text x="1596.3" y="516.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="1596.3" dy="0">H98_014</tspan></text>
+<text x="1596.3" y="890.0" text-anchor="middle" font-size="9" font-weight="600" fill="#b9682a"><tspan x="1596.3" dy="0">追溯</tspan></text>
+<path class="connector" d="M 1660.2 616.0 L 1660.2 718.0 L 1660.2 868.0"/>
+<rect class="node" x="1613.2" y="568.0" width="94" height="48" rx="8" fill="#f2efe8" stroke="#8c806d"/>
+<rect class="node" x="1613.2" y="718.0" width="94" height="48" rx="8" fill="#eeeaf5" stroke="#76658f"/>
+<rect class="node" x="1613.2" y="868.0" width="94" height="48" rx="8" fill="#f1f3f5" stroke="#6b7280"/>
+<text x="1660.2" y="585.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1660.2" dy="0">A015</tspan><tspan x="1660.2" dy="13">一次性实委会?</tspan></text>
+<text x="1660.2" y="735.0" text-anchor="middle" font-size="10" font-weight="600" fill="#24313a"><tspan x="1660.2" dy="0">意见广告</tspan><tspan x="1660.2" dy="13">记者会</tspan></text>
+<text x="1660.2" y="885.0" text-anchor="middle" font-size="10" font-weight="600" fill="#6b7280"><tspan x="1660.2" dy="0">政党媒体</tspan><tspan x="1660.2" dy="13">单一线索</tspan></text>
+<text x="1660.2" y="558.0" text-anchor="middle" font-size="9" font-weight="700" fill="#59666f"><tspan x="1660.2" dy="0">H98_015</tspan></text>
+<text x="1660.2" y="932.0" text-anchor="middle" font-size="9" font-weight="600" fill="#6b7280"><tspan x="1660.2" dy="0">线索</tspan></text>
+<text x="720.0" y="1018.0" text-anchor="end" font-size="11" font-weight="700" fill="#24313a"><tspan x="720.0" dy="0">材料来源关系：</tspan></text>
+<rect x="840" y="1002" width="18" height="18" rx="4" fill="#eaf3fb" stroke="#2563a6" stroke-width="1.5"/>
+<text x="867.0" y="1016.0" text-anchor="start" font-size="10" font-weight="500" fill="#45535c"><tspan x="867.0" dy="0">同期一手</tspan></text>
+<rect x="1065" y="1002" width="18" height="18" rx="4" fill="#fbefe5" stroke="#b9682a" stroke-width="1.5"/>
+<text x="1092.0" y="1016.0" text-anchor="start" font-size="10" font-weight="500" fill="#45535c"><tspan x="1092.0" dy="0">后来回顾／正式追溯</tspan></text>
+<rect x="1290" y="1002" width="18" height="18" rx="4" fill="#e9f5f1" stroke="#2e7d69" stroke-width="1.5"/>
+<text x="1317.0" y="1016.0" text-anchor="start" font-size="10" font-weight="500" fill="#45535c"><tspan x="1317.0" dy="0">二手重建</tspan></text>
+<rect x="1515" y="1002" width="18" height="18" rx="4" fill="#f1f3f5" stroke="#6b7280" stroke-width="1.5"/>
+<text x="1542.0" y="1016.0" text-anchor="start" font-size="10" font-weight="500" fill="#45535c"><tspan x="1542.0" dy="0">线索</tspan></text>
+<text x="70.0" y="1041.0" text-anchor="start" font-size="11" font-weight="600" fill="#8a4e20"><tspan x="70.0" dy="0">全部为 research_only 候选；竖线不是组织间关系边，来源可见性不是社会影响力。</tspan></text>
+</svg>

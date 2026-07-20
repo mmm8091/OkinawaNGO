@@ -1,0 +1,91 @@
+{
+  "accountability_active_issue_edge_count": 231,
+  "accountability_anchor_issue_ids": [
+    "I001",
+    "I002",
+    "I003",
+    "I004",
+    "I006",
+    "I007",
+    "I008",
+    "I010",
+    "I017",
+    "I018",
+    "I021",
+    "I025"
+  ],
+  "accountability_candidate_only_anchor_actor_count": 42,
+  "accountability_comparison_actor_count": 77,
+  "accountability_human_reviewed_anchor_actor_count": 35,
+  "accountability_issue_source_id_count": 125,
+  "accountability_non_source_ref_count": 0,
+  "accountability_unique_place_count": 12,
+  "active_registry_actors": 121,
+  "actor_set_overlap_count": 0,
+  "as_of_date": "2026-07-20",
+  "base_production_causal_status": "hypothesis_only",
+  "candidate_dyadic_relation_count": 8,
+  "case_role_count": 27,
+  "complete_recipient_network_status": "not_measured_incomplete_records",
+  "cross_ecology_dyadic_observed_count": 0,
+  "cross_ecology_event_observed_count": 0,
+  "dyadic_relation_categories": {
+    "accountability_internal": 11,
+    "outside_two_group_comparison": 1,
+    "service_ecology_internal": 10
+  },
+  "frontend_eligibility": "excluded_research_only",
+  "package_claim_status": "candidate_analysis",
+  "package_scope": "research_only",
+  "public_person_overlap_status": "not_measured_no_person_role_table",
+  "publication_status": "not_publication_ready_requires_human_review",
+  "r10_cross_ecology_observed_count": 0,
+  "r10_identity_crosswalked_service_core_row_count": 0,
+  "r10_official_source_universe_row_count": 616,
+  "r10_purposive_relation_count": 35,
+  "r10_relation_categories": {
+    "accountability_to_other_interface": 1,
+    "outside_two_group_comparison": 18,
+    "service_ecology_internal": 8,
+    "service_to_other_interface": 8
+  },
+  "registry_history_rows": 122,
+  "reviewed_dyadic_relation_count": 14,
+  "service_active_issue_edge_count": 11,
+  "service_active_issue_ids": [
+    "I014",
+    "I016"
+  ],
+  "service_anchor_issue_edge_count": 0,
+  "service_candidate_issue_edge_count": 5,
+  "service_core_actor_count": 9,
+  "service_core_actor_ids": [
+    "X001",
+    "X004",
+    "X005",
+    "X006",
+    "X007",
+    "X008",
+    "X009",
+    "X016",
+    "X017"
+  ],
+  "service_core_case_role_count": 0,
+  "service_human_reviewed_issue_edge_count": 6,
+  "service_issue_source_id_count": 12,
+  "service_non_source_ref_count": 3,
+  "service_non_source_refs": [
+    "X001",
+    "X008",
+    "X009"
+  ],
+  "service_unique_place_count": 7,
+  "shared_issue_source_id_count": 0,
+  "shared_issue_source_ids": [],
+  "shared_place_node_count": 2,
+  "shared_place_node_ids": [
+    "P001",
+    "P005"
+  ],
+  "typed_event_observation_count": 4
+}

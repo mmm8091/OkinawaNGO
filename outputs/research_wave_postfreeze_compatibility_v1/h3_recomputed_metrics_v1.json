@@ -1,0 +1,53 @@
+{
+  "as_of_date": "2026-07-20",
+  "h3v1_source_governance_blocker_count": 3,
+  "h3v1_source_governance_content_equal": true,
+  "h3v2_a010_central_gate": "still_human_pending_no_central_lifecycle_row",
+  "h3v2_a010_lifecycle_row_count": 0,
+  "h3v2_crosswalk_actor_id_count": 14,
+  "h3v2_missing_current_crosswalk_actor_ids": [],
+  "h3v2_source_corpus_compatibility": "invariant_source_level_rows; refresh protected input hashes and validate registry crosswalks in a versioned generator",
+  "hard_boundary": "No vocabulary-growth, diffusion-direction, independent-adoption, or stable-alliance upgrade is made by this compatibility audit.",
+  "layer": {
+    "central_writeback": "no",
+    "claim_status": "candidate_analysis",
+    "frontend_eligibility": "not_frontend_ready",
+    "research_status": "research_only",
+    "review_status": "ai_seeded"
+  },
+  "target_issue_actor_ids": {
+    "Taiwan_contingency": [
+      "A017",
+      "A018",
+      "A065",
+      "A100",
+      "A101",
+      "A108"
+    ],
+    "anti_war": [
+      "A087",
+      "A089",
+      "A092",
+      "A101",
+      "A108"
+    ],
+    "frontline_prevention": [
+      "A017",
+      "A018",
+      "A065",
+      "A100",
+      "A101",
+      "A108"
+    ]
+  },
+  "target_issue_counts": {
+    "Taiwan_contingency": 6,
+    "anti_war": 5,
+    "frontline_prevention": 6
+  },
+  "target_issue_human_reviewed_counts": {
+    "Taiwan_contingency": 3,
+    "anti_war": 5,
+    "frontline_prevention": 3
+  }
+}
