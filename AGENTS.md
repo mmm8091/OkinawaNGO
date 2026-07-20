@@ -155,6 +155,7 @@ python scripts\merge_hr018_hr021.py
 python scripts\merge_hr018_main_relation_sample_v1.py
 python scripts\merge_hr032_partner_crosswalk_v1.py
 python scripts\render_r10_current.py
+python scripts\render_r10_official_universe_current.py
 python scripts\render_r06_r07_r11_current.py
 python scripts\make_r08_legal_procedure_v1.py
 python scripts\validate_registry_expansion_gate_v1.py

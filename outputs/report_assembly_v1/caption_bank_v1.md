@@ -22,7 +22,7 @@
 
 **正式图注：** 图以冲绳县 FY2024《NPO 等との協働実績調査》全部 616 条来源行为总体，按 19 个官方事业分野和 10 种协作机制计数。它显示公开行政协作表首先是一套覆盖福利、医疗、教育、儿童、文化旅游等公共服务的制度生态，而不是基地争议组织或运动资源的专门名录。格内数字是来源记录数，不是组织数、合同数或拨款次数；C4 同时包括补助、助成与物的支援，不等于现金 grant；“事业费”字段也不自动等于向合作方支付的金额。
 
-**来源注建议：** S002 全部 86 页／616 行；`official_collaboration_source_universe_v1.csv` 与 `issue_mechanism_matrix_v1.csv`。纯来源总体机械聚合，`ready_now / no HR gate`。
+**来源注建议：** S002 全部 86 页／616 行；`official_collaboration_source_universe_v1.csv` 与 `issue_mechanism_matrix_v1.csv`。当前 SVG／HTML 由 `render_r10_official_universe_current.py` 只读规范表机械重绘，`ready_now / no HR gate`；旧 PNG 只保留为历史产物。
 
 ### F036｜FY2024 官方协作来源总体：部门—机制与 partner source-label 结构（建议第 24 页辅图或附录）
 
@@ -30,7 +30,7 @@
 
 **正式图注：** 图上半部按部门与官方机制汇总 616 条来源行，下半部仅按原表合作方名称单元的机器排版标签展示高频记录。它用于说明公开行政协作横跨多个部门，并提示哪些来源标签值得进一步核实身份。365 个 machine display labels 不是 365 个组织；同名重复不表示法人身份已合并，共同企业体也未拆成成员。HR-032 的 8 项 canonical／JV／registry crosswalk 已完成，但只批准名称映射，不生成 actor、付款或关系边，因此当前 source-label 图无需重生；未来若扩展法人 alias、拆分 JV 或连接 registry，仍须另开相应事实门禁。
 
-**来源注建议：** S002 616 行、`department_mechanism_matrix_v1.csv` 与 `partner_display_alias_summary_v1.csv`；当前图不使用 actor-level crosswalk。
+**来源注建议：** S002 616 行、`department_mechanism_matrix_v1.csv` 与 `partner_display_alias_summary_v1.csv`；当前 SVG／HTML 由 `render_r10_official_universe_current.py` 只读规范表机械重绘，不使用 actor-level crosswalk；旧 PNG 只保留为历史产物。
 
 ### F016｜先岛三地框架比较（建议正文图 8，第 14 页）
 

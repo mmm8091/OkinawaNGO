@@ -47,7 +47,7 @@
 | 先岛三地如何形成不同问题框架 | `outputs/R04_sakishima_frame_corpus_v0/fig_r4_three_place_frames_v0.svg`、`fig_r4_entity_frame_matrix_v0.svg` | 11 条安全事实与 19 条安全来源的限定语料；不代表居民态度总体 |
 | 公投诉求如何经过制度门槛 | `outputs/R09_referendum_process_v0/referendum_process_timeline_accepted_v1.png`、`institutional_gate_flow_accepted_v1.png` | 只含 24 个 accepted stages 与 25 个 accepted roles；程序顺序不是因果，HR-017 只控制扩展层 |
 | 六类争议如何进入法律／程序渠道 | `outputs/R08_legal_procedure_v1/fig_r08_procedure_outputs_v1.svg`、`fig_r08_role_boundary_matrix_v1.svg` | 六案与 27 个已审角色；横向顺序不是因果或胜败排行 |
-| FY2024 行政协作来源总体如何分布 | `outputs/R10_official_collaboration_universe_v1/fig_r10_s002_issue_mechanism_matrix_v1.png`、`fig_r10_s002_partner_department_resource_structure_v1.png` | S002 全部 616 条来源行的分野／部门／机制与 raw-label 结构；来源行≠组织／合同／拨款，机器标签≠actor |
+| FY2024 行政协作来源总体如何分布 | `outputs/R10_official_collaboration_universe_v1/fig_r10_s002_issue_mechanism_matrix_current.svg`、`fig_r10_s002_partner_department_resource_structure_current.svg` | S002 全部 616 条来源行的分野／部门／机制与 raw-label 结构；当前图由只读规范表的安全 renderer 生成；来源行≠组织／合同／拨款，机器标签≠actor |
 | 行政协作、金额和服务如何区分 | `outputs/R10_administrative_collaboration_v0/fig_r10_mechanism_ecology.png`、`fig_r10_amount_evidence_boundary.png` | 机制／证据边界，不是运动资金网络 |
 | 当前样本缺在哪里 | `outputs/coverage_audit_v1/fig_coverage_bias_core_v1.svg` | 六维公开资料可见性偏差；没有总体分母，不估计真实覆盖率 |
 

@@ -1,6 +1,8 @@
 # R10 official collaboration source universe v1
 
-This is the authoritative, rerunnable FY2024 S002 source-universe layer for R10.
+This is the authoritative FY2024 S002 source-universe layer for R10. The
+formal CSVs are the current inputs; do not rerun the historical PDF
+extraction/builder against the merged project layer.
 
 ## Formal source tables
 
@@ -16,14 +18,19 @@ This is the authoritative, rerunnable FY2024 S002 source-universe layer for R10.
 
 ## Figures and report roles
 
-- `fig_r10_s002_issue_mechanism_matrix_v1.png`: pure 616-row aggregation, `ready_now / no HR gate`; recommended main-text figure.
-- `fig_r10_s002_partner_department_resource_structure_v1.png`: current raw-label aggregation uses the disclosed fixed threshold `source_row_count >= 5` (17 labels) and is ready now; HR032 applies only if future writing turns a label into a canonical actor, splits JV members, or creates a registry crosswalk. Recommended supporting/main appendix figure.
-- `figure_registry_v1.csv`: exact fact layer, gate, suggested report role, and conservative caption for both figures.
+- `fig_r10_s002_issue_mechanism_matrix_current.svg/.html`: current pure 616-row aggregation, `ready_now / no HR gate`; recommended main-text figure.
+- `fig_r10_s002_partner_department_resource_structure_current.svg/.html`: current raw-label aggregation using the disclosed fixed threshold `source_row_count >= 5` (17 labels); recommended supporting/main appendix figure.
+- The two `*_v1.png` files and `validation_report_v1.md` are preserved historical extraction/render artifacts. They are not overwritten by the current renderer.
+- `figure_registry_v1.csv`: historical package-level fact layer, gate and caption registry. Formal-report asset routing is current in `outputs/report_assembly_v1/figure_manifest_v1.csv`.
 
 ## Interpretation and human review
 
 - `R10_official_collaboration_universe_brief_v1.md`: answers the R10 basic question while separating source universe, purposive sample, and HR018 relation layer.
-- `HR032_partner_alias_crosswalk_review_v1.csv` and `HR032_review_guide_v1.md`: eight high-value ambiguities only; all human decision fields are blank.
-- `validation_report_v1.md`: source SHA, extraction parity, row/code, aggregation, gate, and cleanliness checks.
+- `HR032_partner_alias_crosswalk_review_v1.csv` and `HR032_crosswalk_merge_summary_v1.csv`: all eight crosswalk decisions are complete; they do not create actor, payment or relation edges and do not alter the raw-label source-universe figures.
+- `validation_report_v1.md`: historical source SHA, extraction parity and legacy-PNG checks. Current table parity and render boundaries are tested in `tests/test_render_r10_official_universe_current.py`.
 
-No output in this package is an actor registry, approved relation edge, award table, payment table, alliance, or political-stance classification. Run with `python scripts/make_r10_official_collaboration_universe_v1.py`.
+No output in this package is an actor registry, approved relation edge, award
+table, payment table, alliance, or political-stance classification. Safely
+redraw only the current F035/F036 assets with:
+
+`python scripts/render_r10_official_universe_current.py`

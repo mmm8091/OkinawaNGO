@@ -91,7 +91,7 @@ ROUTES = [
     },
     {
         "prefix": "outputs/R10_official_collaboration_universe_v1/",
-        "script": "scripts/make_r10_official_collaboration_universe_v1.py",
+        "script": "scripts/render_r10_official_universe_current.py",
         "data": "outputs/R10_official_collaboration_universe_v1/official_collaboration_source_universe_v1.csv;outputs/R10_official_collaboration_universe_v1/issue_mechanism_matrix_v1.csv;outputs/R10_official_collaboration_universe_v1/department_mechanism_matrix_v1.csv;outputs/R10_official_collaboration_universe_v1/partner_display_alias_summary_v1.csv",
         "sources": "outputs/R10_official_collaboration_universe_v1/official_collaboration_source_universe_v1.csv",
     },
