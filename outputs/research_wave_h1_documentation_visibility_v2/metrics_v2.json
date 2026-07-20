@@ -1,0 +1,38 @@
+{
+  "as_of_date": "2026-07-20",
+  "research_status": "research_only",
+  "frontend_eligibility": "not_frontend_ready",
+  "inputs": {
+    "data\\interim\\01_actor_registry_initial_v0.csv": "03653fe12665abc754ef09d9d30e76c6e53dd495eaceba0fef4bc5ce5540b0a3",
+    "data\\interim\\05_source_log_initial_v0.csv": "ea5c34a2785cfede7f8eedc0420c56968c17fdca112b38d168ec5df5a87ee3a4",
+    "data\\interim\\24_r01_r02_actor_issue_layered_v0.csv": "61302c3bfbd42df53a3679c1dc41fe4247376598d8ab7220839cc326e30b8cbe",
+    "outputs\\R03_strict_place_issue_v1\\same_source_actor_place_issue_triples_v1.csv": "a13bb162cd1f855c9a3db38f7875cb59081d4cbd989c9325d9d6592510d8c7ec",
+    "data\\interim\\09_actor_event_venue_edges_v0.csv": "c28d5098bbd4f1ea894fc53f5cd65decd19668a7ff0718987eac9101f3effdd9",
+    "data\\interim\\18_legal_policy_actor_roles_v0.csv": "b319e01e57d0d00e1e6a47d1af4ac28562aa90d893e5a24b9382ab825d842b0d",
+    "outputs\\actor_lifecycle_v1\\actor_lifecycle_v0.csv": "a7ed03fd64c2004f9219fa2470d71e9baff713db58e27c29945ace5610ca1125",
+    "outputs\\R01_R02_actor_issue_v1\\actor_class_controlled_mapping_v1.csv": "33a50314e5a0517ca177441fa09b76362ed6ef4701e610a67278da02c9871092",
+    "source_docs\\source_archive\\source_archive_manifest.csv": "1e57f7e7df749b5ed0714994dc4176b69e7ad51c993c058198c4fd9bdf180d78",
+    "outputs\\exploration_system_data_v1\\demo\\dyadic_relations.json": "3db5bfa3065ab6c3a36123e4005e06479fabe59d2016b447f82cf2c64e9fb024"
+  },
+  "counts": {
+    "current_actors": 121,
+    "sources": 295,
+    "active_actor_issue_edges": 238,
+    "e3plus_actor_issue_edges": 234,
+    "strict_triples": 312,
+    "human_checked_registered_actor_event_rows": 50,
+    "accepted_registered_actor_case_roles": 13,
+    "reviewed_typed_dyadic_relations": 14,
+    "method_literature_interfaces": 2,
+    "matched_pair_rows": 34,
+    "negative_case_rows": 20
+  },
+  "headline_associations": {
+    "linked_sources_vs_actor_issue_degree": 0.331,
+    "linked_sources_vs_actor_issue_betweenness": 0.215,
+    "linked_sources_vs_event_degree": 0.057,
+    "linked_sources_vs_typed_dyadic_degree": 0.425,
+    "linked_sources_vs_case_degree": 0.466
+  },
+  "hard_boundary": "Observed documentation and encoded evidence-layer visibility only; no causal documentation effect, social-network influence, activity strength, alliance, staff capacity, language capacity, or organizational lifespan."
+}
