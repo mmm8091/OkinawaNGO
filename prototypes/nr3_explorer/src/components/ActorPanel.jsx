@@ -80,10 +80,9 @@ export function ActorPanel({
         <EvidenceMark level={actor.evidence_level} />
         <div>
           <h2>{labelOf(actor)}</h2>
-          <p>
-            {actor.id} · {actor.legal_status}
-          </p>
+          {actor.legal_status && <p>{actor.legal_status}</p>}
           <div className="actor-meta">
+            <span>{actor.id}</span>
             <span>{actor.evidence_level}</span>
             <span>{tr(actor.review_status, lang)}</span>
             {actor.scope_status && (

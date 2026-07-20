@@ -6,7 +6,7 @@
   "source": {
     "path": "outputs/coverage_audit_v1/coverage_bias_implications_v1.csv",
     "rows": ["D1", "D2", "D3", "D4", "D5", "D6"],
-    "english_fidelity": "Each English value is verbatim from its mapped source CSV field. interpretation_limit maps to the source field interpretation_boundary."
+    "english_fidelity": "Each English value remains verbatim from its mapped source CSV field. Chinese and Japanese display translations remove internal question/module codes without changing the bounded meaning. interpretation_limit maps to the source field interpretation_boundary."
   },
   "lookup_contract": {
     "record_key": "dimension_id",
@@ -47,8 +47,8 @@
           "en": "Current official and organization pages survive and are searchable; early informal groups and renamed organizations leave thinner web traces."
         },
         "impact_on_q1_q3": {
-          "zh": "Q1/Q2 容易成为偏向当下的名录／分类；关于组织生态的纵向主张最为薄弱。",
-          "ja": "Q1/Q2 は現在に偏った目録・分類になりやすく、組織生態に関する長期的な主張が最も弱くなる。",
+          "zh": "名录和分类容易偏向当下；关于组织生态的纵向判断最为薄弱。",
+          "ja": "名簿と分類は現在に偏りやすく、組織生態に関する長期的な判断が最も弱くなる。",
           "en": "Q1/Q2 become a present-biased inventory/classification; longitudinal claims about organizational ecology are weakest."
         },
         "interpretation_limit": {
@@ -82,8 +82,8 @@
           "en": "Henoko produces durable litigation, statement and NGO records; broad prefecture coding absorbs records without a more precise location."
         },
         "impact_on_q1_q3": {
-          "zh": "Q3 以及边野古、普天间、嘉手纳、与那国、石垣和宫古之间的比较并不对称。",
-          "ja": "Q3 と、辺野古、普天間、嘉手納、与那国、石垣、宮古の比較は対称的ではない。",
+          "zh": "边野古、普天间、嘉手纳、与那国、石垣和宫古之间的比较并不对称。",
+          "ja": "辺野古、普天間、嘉手納、与那国、石垣、宮古の比較は対称的ではない。",
           "en": "Q3 and comparisons among Henoko, Futenma, Kadena, Yonaguni, Ishigaki and Miyako are not symmetric."
         },
         "interpretation_limit": {
@@ -117,8 +117,8 @@
           "en": "Named, incorporated or networked actors are easier to identify than short-lived committees, informal neighborhood groups and legacy names."
         },
         "impact_on_q1_q3": {
-          "zh": "Q1/Q2 及 R1 可能高估持续性强／网络化的组织形式；R10/R11 层为有意抽样，不能视为完整部门。",
-          "ja": "Q1/Q2 とR1は、持続的・ネットワーク化された形態を過大に示す可能性がある。R10/R11層は意図的に抽出されたものであり、完全なセクターとして扱えない。",
+          "zh": "当前名录可能高估持续性强、网络化的组织形式；行政协作与国际化样本是有意抽样，不能视为完整部门。",
+          "ja": "現在の名簿は持続的・ネットワーク化された形態を過大に示す可能性がある。行政協働と国際化の標本は意図的抽出であり、完全なセクターではない。",
           "en": "Q1/Q2 and R1 may overstate durable/networked forms; R10/R11 layers are deliberately sampled and cannot be treated as complete sectors."
         },
         "interpretation_limit": {
@@ -152,8 +152,8 @@
           "en": "Project search paths and high-documentation controversies yield more explicit issue labels than diffuse welfare, labor, gender and health work."
         },
         "impact_on_q1_q3": {
-          "zh": "Q2 的桥接 actor 主张和 Q3 的议题关联比较，可能偏向已被明确表述的基地／环境／国际框架。",
-          "ja": "Q2 のブリッジ actor に関する主張とQ3の議題連関比較は、すでに明示されている基地・環境・国際的フレーミングを優先しうる。",
+          "zh": "关于桥接组织和议题关联的比较，可能偏向已被明确表述的基地、环境与国际框架。",
+          "ja": "橋渡し組織と議題連関の比較は、明示されている基地・環境・国際的フレーミングを優先しうる。",
           "en": "Q2 bridge-actor claims and Q3 issue-linkage comparisons may privilege already explicit base/environment/international framing."
         },
         "interpretation_limit": {
@@ -222,8 +222,8 @@
           "en": "Official/primary records can raise evidence level before actor identity, role boundaries or analytical interpretation receive human review."
         },
         "impact_on_q1_q3": {
-          "zh": "Q1 的描述性存在判断强于 Q2 的分类和 Q3 的关联解释；关系密集型模块须采用最严格边界。",
-          "ja": "Q1の記述的な存在確認はQ2の分類やQ3の連関解釈より強く、関係を多く含むモジュールには最も厳格な境界が必要である。",
+          "zh": "对组织存在的描述强于对组织分类和关系的解释；关系密集的分析必须采用最严格边界。",
+          "ja": "組織の存在に関する記述は、分類や関係の解釈より強い。関係を多く含む分析には最も厳格な境界が必要である。",
           "en": "Q1 descriptive existence is stronger than Q2 classification and Q3 linkage interpretation; relation-heavy modules require the strictest boundary."
         },
         "interpretation_limit": {

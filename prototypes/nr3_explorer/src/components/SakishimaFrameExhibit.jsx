@@ -56,6 +56,7 @@ const COPY = {
     observationUnit: "条正式观察",
     excerptUnit: "条安全摘录",
     scopeNote: "已核 {a} 观察 · {b} 摘录；研究视图追加 {c} 观察 · {d} 摘录。",
+    howRead: "如何阅读",
   },
   ja: {
     title: "先島三地域：公開資料に現れる問題フレーム",
@@ -93,6 +94,7 @@ const COPY = {
     observationUnit: "件の正式観察",
     excerptUnit: "件の安全抜粋",
     scopeNote: "已核 {a} 観察 · {b} 抜粋、研究表示で +{c} 観察 · +{d} 抜粋。",
+    howRead: "読み方",
   },
   en: {
     title: "Three Sakishima localities: frames in public records",
@@ -130,6 +132,7 @@ const COPY = {
     observationUnit: "formal observations",
     excerptUnit: "safe excerpts",
     scopeNote: "Reviewed: {a} observations · {b} excerpts. Research adds {c} observations · {d} excerpts.",
+    howRead: "How to read",
   },
 };
 
@@ -201,6 +204,7 @@ function ObservationCard({ row, copy, lang, frameById, onOpenActor }) {
   return (
     <RecordCard
       id={row.observation_id}
+      showId={false}
       title={
         <>
           <SubjectName subject={row.subject} copy={copy} onOpenActor={onOpenActor} />{" "}
@@ -244,6 +248,7 @@ function ExcerptCard({ row, copy, lang, frameById }) {
   return (
     <RecordCard
       id={row.corpus_source_id}
+      showId={false}
       title={row.title}
       badges={
         <>
@@ -453,7 +458,6 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
   return (
     <section className="sf-exhibit">
       <ExhibitHeader
-        kicker={exhibit.catalog_id}
         title={localized(exhibit.display?.title, activeLang, copy.title)}
         subtitle={localized(exhibit.display?.subtitle, activeLang, copy.subtitle)}
         metrics={[
@@ -463,11 +467,13 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
       />
 
       <BoundaryNote
+        title={copy.howRead}
         fullText={
           includeResearch && exhibit.display?.interpretation_limit
             ? localized(exhibit.display.interpretation_limit, activeLang)
             : null
         }
+        helpOnly
       >
         {fill(copy.scopeNote, {
           a: reviewedObservations.length,

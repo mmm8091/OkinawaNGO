@@ -588,16 +588,16 @@ def build_r10_official_universe_exhibit(project_root: Path | str) -> dict[str, A
         "status": "method_ready_bounded",
         "display": {
             "title": {
-                "zh": "冲绳县 FY2024 NPO 等协作记录总体",
-                "ja": "沖縄県 FY2024 NPO等との協働実績・全記録",
-                "en": "Okinawa FY2024 official NPO collaboration record universe",
+                "zh": "县政府日常协作：616 条记录",
+                "ja": "県の日常的な協働：616件の記録",
+                "en": "Everyday Prefectural Collaboration: 616 Records",
             },
             "subtitle": {
-                "zh": "616 条官方来源记录的部门、事業分野与协作机制结构",
-                "ja": "公式資料616行における部局・事業分野・協働形態の構成",
+                "zh": "查看这些协作集中在哪些部门、事業分野与协作机制。",
+                "ja": "協働がどの部局・事業分野・協働形態に集中しているかを見ます。",
                 "en": (
-                    "Department, official function and collaboration-mechanism "
-                    "structure across 616 source rows"
+                    "Explore which departments, official functions and collaboration "
+                    "mechanisms account for these records."
                 ),
             },
             "interpretation_limit": {

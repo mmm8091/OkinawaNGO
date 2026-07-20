@@ -313,6 +313,11 @@ export const LABELS = {
     "ja": "共同署名",
     "en": "Co-signing"
   },
+  "joint_statement_participation": {
+    "zh": "共同声明参与",
+    "ja": "共同声明への参加",
+    "en": "Joint-statement participation"
+  },
   "litigation": {
     "zh": "诉讼",
     "ja": "訴訟",
@@ -337,6 +342,71 @@ export const LABELS = {
     "zh": "请求书",
     "ja": "要請書",
     "en": "Request letter"
+  },
+  "request_submission_participation": {
+    "zh": "请求提交参与",
+    "ja": "要請提出への参加",
+    "en": "Request-submission participation"
+  },
+  "Ishigaki referendum drive (2018-2019)": {
+    "zh": "石垣住民投票运动（2018–2019）",
+    "ja": "石垣住民投票運動（2018–2019）",
+    "en": "Ishigaki referendum drive (2018–2019)"
+  },
+  "1997 Nago city referendum": {
+    "zh": "1997年名护市民投票",
+    "ja": "1997年名護市民投票",
+    "en": "1997 Nago city referendum"
+  },
+  "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)": {
+    "zh": "冲绳儒艮诉讼（美国联邦法院）",
+    "ja": "沖縄ジュゴン訴訟（米連邦裁判所）",
+    "en": "Okinawa Dugong litigation in U.S. federal court"
+  },
+  "WWF Japan 67-group Henoko / dugong statement": {
+    "zh": "2010年 WWF Japan 67团体边野古／儒艮声明",
+    "ja": "2010年 WWFジャパン67団体 辺野古・ジュゴン声明",
+    "en": "2010 WWF Japan 67-group Henoko / dugong statement"
+  },
+  "2012 Yonaguni anti-deployment opinion ad": {
+    "zh": "2012年与那国反部署意见广告",
+    "ja": "2012年与那国 配備反対意見広告",
+    "en": "2012 Yonaguni anti-deployment opinion ad"
+  },
+  "NACSJ / Peace Boat 31-NGO emergency Henoko statement": {
+    "zh": "2015年 NACSJ／和平船 31团体边野古紧急声明",
+    "ja": "2015年 NACSJ／ピースボート31団体 辺野古緊急声明",
+    "en": "2015 NACSJ / Peace Boat 31-NGO emergency Henoko statement"
+  },
+  "2015 Yonaguni SDF-deployment referendum": {
+    "zh": "2015年与那国自卫队部署住民投票",
+    "ja": "2015年与那国 自衛隊配備住民投票",
+    "en": "2015 Yonaguni SDF-deployment referendum"
+  },
+  "2019 Henoko prefectural referendum": {
+    "zh": "2019年边野古县民投票",
+    "ja": "2019年辺野古県民投票",
+    "en": "2019 Henoko prefectural referendum"
+  },
+  "OEJP / MMC civil-society request and report": {
+    "zh": "2020年 OEJP／MMC 公民社会请求与报告",
+    "ja": "2020年 OEJP／MMC 市民社会要請・報告",
+    "en": "2020 OEJP / MMC civil-society request and report"
+  },
+  "Fourth Kadena Base Noise Injunction Lawsuit filing": {
+    "zh": "第4次嘉手纳基地爆音禁止诉讼提诉",
+    "ja": "第4次嘉手納基地爆音差止訴訟の提訴",
+    "en": "Fourth Kadena Base Noise Injunction Lawsuit filing"
+  },
+  "2023 Okinawa prefectural peace mass rally": {
+    "zh": "2023年冲绳县民和平大集会",
+    "ja": "2023年沖縄県民平和大集会",
+    "en": "2023 Okinawa prefectural peace mass rally"
+  },
+  "2024 prefectural rally against U.S. military sexual violence": {
+    "zh": "2024年反驻冲美军性暴力县民大会",
+    "ja": "2024年在沖米軍性暴力に抗議する県民大会",
+    "en": "2024 prefectural rally against U.S. military sexual violence"
   },
   "administrative_EIA": {
     "zh": "行政环评程序",
@@ -1452,6 +1522,41 @@ export const LABELS = {
     "zh": "无金额／贡献者份额分配",
     "ja": "金額・拠出者別配分なし",
     "en": "No amount or contributor-share allocation"
+  },
+  "source-log records": {
+    "zh": "来源记录",
+    "ja": "資料記録",
+    "en": "source records"
+  },
+  "actor_registry": {
+    "zh": "组织名录",
+    "ja": "組織名簿",
+    "en": "actor registry"
+  },
+  "registry actors": {
+    "zh": "名录组织",
+    "ja": "名簿上の組織",
+    "en": "registry actors"
+  },
+  "unique registry actors": {
+    "zh": "不重复组织",
+    "ja": "重複なしの組織",
+    "en": "unique registry actors"
+  },
+  "actor_issue_observations": {
+    "zh": "组织—议题记录",
+    "ja": "組織―課題記録",
+    "en": "actor–issue records"
+  },
+  "distinct actor-place observations": {
+    "zh": "不重复组织—地点记录",
+    "ja": "重複なしの組織―地点記録",
+    "en": "distinct actor–place records"
+  },
+  "2020-current": {
+    "zh": "2020–现在",
+    "ja": "2020–現在",
+    "en": "2020–present"
   },
   "in_scope_limited": {
     "zh": "范围内受限",

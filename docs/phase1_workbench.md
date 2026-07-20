@@ -247,3 +247,4 @@
 13. 前端 actor–issue 已按 `141/142/283` 正式重生，build `4913ff70fa40dfcb`；13 个 episode 的7项内容均有中／日／英显示字段（273格、0回退），TE10–TE13 仍留研究层。26项 adapter、2项前端语言测试与 production build 通过，路径页三语及控制台经浏览器复验。
 14. 研究发布架构已完成 core-surface 复验整改：26项 catalog 分为8个完整对象、4个有限事实表面、5个无公开adapter模块、5个需继续研究、4个永久退役。公开 profile 按文件／JSON pointer 投影，不再发布混合 `relations.json`／`candidates.json` 或未消费旧 views；channel、snapshot、object envelope、Git/source receipt 均有硬校验。下一步先部署当前 `dist/`，再从9个仍缺完整adapter的模块中优先做R8法律与R9公投。
 15. 2026-07-21 修复开发服务器的旧 release 锁定：生产构建和每一代开发服务器都绑定单一不可变快照；开发模式监听活动 `client_preview` channel，指针推进后整体重启。回归测试覆盖同代不混包、channel 切换触发单次重启、缺失路径 JSON 404 和 manifest hash 篡改，`localhost:4173` 原始“数据读取失败”复现已转绿。
+16. 2026-07-21 完成前端公开展示层降噪：默认页不再暴露 build／模块码与内部字段冻结流程，子视图独立命名，方法边界收进共用帮助组件或展开层；时间事件改为紧凑行并补齐事件与动作三语。已核／研究视图共用组织详情骨架，仅数据范围不同；桌面逐路由与移动端基础可用性、控制台零错误为交付门槛。

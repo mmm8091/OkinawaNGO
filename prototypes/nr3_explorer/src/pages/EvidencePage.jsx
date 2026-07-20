@@ -31,8 +31,8 @@ export function EvidencePage({ data }) {
 
   return (
     <main className="workspace evidence-workspace">
-      <div className="workspace-top">
-        <div className="page-intro">
+      <div className={`workspace-top ${viewMode === "official" ? "subview-top" : ""}`}>
+        {viewMode === "coverage" && <div className="page-intro">
           <h1>
             {tu("evidence.title", lang)}
             <ChartHelp title={tu("evidence.title", lang)}>
@@ -40,7 +40,7 @@ export function EvidencePage({ data }) {
               <p>{tu("help.evidence.p2", lang)}</p>
             </ChartHelp>
           </h1>
-        </div>
+        </div>}
         {officialExhibit && (
           <SegmentedControl
             label={tu("evidence.viewAria", lang)}
@@ -60,14 +60,14 @@ export function EvidencePage({ data }) {
             ]}
           />
         )}
-        <div className="page-summary">
+        {viewMode === "coverage" && <div className="page-summary">
           <Books size={18} />
           {viewMode === "official"
             ? tu("evidence.officialSummary", lang)
             : tu("evidence.summary", lang)
                 .replace("{c}", cells.length)
                 .replace("{d}", dimensions.length)}
-        </div>
+        </div>}
       </div>
       {viewMode === "official" && officialExhibit ? (
         <div className="published-exhibit-scroll">
@@ -88,7 +88,7 @@ export function EvidencePage({ data }) {
             >
               <strong>{tu(`dim.${item.id}`, lang)}</strong>
               <small>
-                {item.id} · {item.cells.length}
+                {item.cells.length}
                 {tu("evidence.cellUnit", lang)}
               </small>
             </button>
@@ -106,7 +106,7 @@ export function EvidencePage({ data }) {
                 <header>
                   <span>{tr(facet, lang)}</span>
                   <small>
-                    {unit}
+                    {tr(unit, lang)}
                     {denominator
                       ? ` · ${tu("evidence.denominator", lang).replace("{n}", denominator)}`
                       : ""}
@@ -139,13 +139,16 @@ export function EvidencePage({ data }) {
             <>
               <div className="detail-eyebrow">
                 <WarningCircle size={13} />
-                {dimension.implication.dimension_id} · {tu(`dim.${dimension.id}`, lang)}
+                {tu("evidence.dimension", lang)}
               </div>
               <div className="detail-heading">
                 <div>
                   <h2>{tu(`dim.${dimension.id}`, lang)}</h2>
                   <p>{localizedFieldOf(dimension.implication, "observed_skew", lang)}</p>
                 </div>
+                <ChartHelp title={tu("evidence.boundary", lang)}>
+                  <p>{localizedFieldOf(dimension.implication, "interpretation_limit", lang)}</p>
+                </ChartHelp>
               </div>
               <section className="detail-section">
                 <header>
@@ -157,47 +160,12 @@ export function EvidencePage({ data }) {
               </section>
               <section className="detail-section">
                 <header>
-                  <span>{tu("evidence.impact", lang)}</span>
+                  <span>{tu("evidence.meaning", lang)}</span>
                 </header>
                 <p className="coverage-text">
                   {localizedFieldOf(dimension.implication, "impact_on_q1_q3", lang)}
                 </p>
               </section>
-              <section className="detail-section">
-                <header>
-                  <span>{tu("evidence.online", lang)}</span>
-                </header>
-                <p className="coverage-text">
-                  {localizedFieldOf(dimension.implication, "online_gap_action", lang)}
-                </p>
-              </section>
-              <section className="detail-section">
-                <header>
-                  <span>{tu("evidence.local", lang)}</span>
-                </header>
-                <p className="coverage-text">
-                  {localizedFieldOf(dimension.implication, "local_gap_action", lang)}
-                </p>
-              </section>
-              <section className="detail-section compact">
-                <header>
-                  <span>{tu("evidence.modules", lang)}</span>
-                </header>
-                <div className="place-tags">
-                  {dimension.implication.affected_modules.map((module) => (
-                    <span key={module}>
-                      <MapPin size={13} />
-                      {module}
-                    </span>
-                  ))}
-                </div>
-              </section>
-              <div className="interpretation-note">
-                <WarningCircle size={18} />
-                <p>
-                  {localizedFieldOf(dimension.implication, "interpretation_limit", lang)}
-                </p>
-              </div>
             </>
           ) : (
             <div className="empty-note">{tu("evidence.noImplication", lang)}</div>

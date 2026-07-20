@@ -159,8 +159,8 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
 
   return (
     <main className="workspace time-workspace">
-      <div className="workspace-top">
-        <div className="page-intro">
+      <div className={`workspace-top ${viewMode === "repeat" ? "subview-top" : ""}`}>
+        {viewMode === "timeline" && <div className="page-intro">
           <h1>
             {tu("time.title", lang)}
             <ChartHelp title={tu("time.title", lang)}>
@@ -168,7 +168,7 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
               <p>{tu("help.time.p2", lang)}</p>
             </ChartHelp>
           </h1>
-        </div>
+        </div>}
         {repeatExhibit && (
           <SegmentedControl
             label={tu("time.viewAria", lang)}
@@ -188,7 +188,7 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
             ]}
           />
         )}
-        <div className="page-summary">
+        {viewMode === "timeline" && <div className="page-summary">
           <ClockCounterClockwise size={18} />
           {tu("time.summary", lang)
             .replace("{e}", events.length)
@@ -196,7 +196,7 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
             .replace("{a}", registryRowCount)}
           {research &&
             tu("time.pendingSuffix", lang).replace("{p}", pendingRows.length)}
-        </div>
+        </div>}
       </div>
       {viewMode === "repeat" && repeatExhibit ? (
         <div className="published-exhibit-scroll">
@@ -300,47 +300,53 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
             const registryRows = event.rows.filter((row) => row.is_registry_actor);
             const eventOnlyCount = event.rows.length - registryRows.length;
             return (
-              <article className="event-card" key={event.id}>
-                <header>
-                  <h3>{event.label}</h3>
-                  <p>{event.date}</p>
-                </header>
-                <div className="action-chips">
-                  {[...event.actions].map((action) => (
-                    <span key={action}>{tr(action, lang)}</span>
-                  ))}
+              <details className="event-card" key={event.id}>
+                <summary>
+                  <span>
+                    <small>{event.date}</small>
+                    <strong>{tr(event.label, lang)}</strong>
+                  </span>
+                  <span className="event-card-meta">
+                    {[...event.actions].slice(0, 1).map((action) => (
+                      <em key={action}>{tr(action, lang)}</em>
+                    ))}
+                    <b>
+                      {tu("time.participantCount", lang).replace(
+                        "{n}",
+                        String(event.rows.length),
+                      )}
+                    </b>
+                  </span>
+                </summary>
+                <div className="event-card-detail">
+                  {!!registryRows.length && (
+                    <div className="participant-chips">
+                      {registryRows.map((row) => {
+                        const actor = actorById.get(row.actor_id);
+                        return (
+                          <button
+                            key={row.id}
+                            type="button"
+                            title={actor ? labelOf(actor) : row.actor_id}
+                            onClick={() => actor && onOpenActor(actor.id)}
+                            disabled={!actor}
+                          >
+                            {row.participant_label || row.actor_id}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                  {eventOnlyCount > 0 && (
+                    <p className="muted-line">
+                      {tu("time.eventOnly", lang).replace("{n}", eventOnlyCount)}
+                    </p>
+                  )}
+                  {event.limits.size > 0 && (
+                    <p className="limit-line">{[...event.limits][0]}</p>
+                  )}
                 </div>
-                {!!registryRows.length && (
-                  <div className="participant-chips">
-                    {registryRows.map((row) => {
-                      const actor = actorById.get(row.actor_id);
-                      return (
-                        <button
-                          key={row.id}
-                          type="button"
-                          title={
-                            actor
-                              ? tu("overview.pickIssue", lang) + ` · ${labelOf(actor)}`
-                              : row.actor_id
-                          }
-                          onClick={() => actor && onOpenActor(actor.id)}
-                          disabled={!actor}
-                        >
-                          {row.participant_label || row.actor_id}
-                        </button>
-                      );
-                    })}
-                  </div>
-                )}
-                {eventOnlyCount > 0 && (
-                  <p className="muted-line">
-                    {tu("time.eventOnly", lang).replace("{n}", eventOnlyCount)}
-                  </p>
-                )}
-                {event.limits.size > 0 && (
-                  <p className="limit-line">{[...event.limits][0]}</p>
-                )}
-              </article>
+              </details>
             );
           })}
         </div>

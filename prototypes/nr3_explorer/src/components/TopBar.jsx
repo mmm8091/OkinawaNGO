@@ -55,15 +55,6 @@ export function TopBar({
         })}
       </nav>
       <div className="topbar-right">
-        {version && (
-          <span className="version-stamp" title={version.buildId}>
-            {tu("version.stamp", activeLang)
-              .replace("{d}", version.asOf)
-              .replace("{b}", version.buildId.slice(0, 8))
-              .replace("{v}", version.visible)
-              .replace("{p}", version.provenance)}
-          </span>
-        )}
         <div
           className="layer-switch lang-switch"
           role="group"

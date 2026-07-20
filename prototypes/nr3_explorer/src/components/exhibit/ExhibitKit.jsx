@@ -1,4 +1,5 @@
-import { Question, Quotes, WarningCircle } from "@phosphor-icons/react";
+import { Quotes, WarningCircle } from "@phosphor-icons/react";
+import { ChartHelp } from "../ui.jsx";
 import "./exhibit.css";
 
 // Shared exhibit kit: one anatomy for all published research exhibits.
@@ -31,7 +32,17 @@ export function ExhibitHeader({ kicker, title, subtitle, metrics = [] }) {
 
 // One visible line by default. The full interpretation/boundary text (payload)
 // is reachable through the "?" popover, never printed as a paragraph.
-export function BoundaryNote({ title, children, fullText }) {
+export function BoundaryNote({ title, children, fullText, helpOnly = false }) {
+  if (helpOnly) {
+    return (
+      <aside className="xh-boundary xh-boundary-help-only">
+        <ChartHelp title={title || "边界说明"} align="right">
+          <p>{fullText || children}</p>
+        </ChartHelp>
+        {title && <span>{title}</span>}
+      </aside>
+    );
+  }
   return (
     <aside className="xh-boundary">
       <WarningCircle size={15} aria-hidden="true" />
@@ -40,10 +51,9 @@ export function BoundaryNote({ title, children, fullText }) {
         {children}
       </p>
       {fullText && (
-        <span className="xh-boundary-help" tabIndex={0} aria-label={title || "边界说明"}>
-          <Question size={13} weight="fill" />
-          <span className="xh-boundary-pop">{fullText}</span>
-        </span>
+        <ChartHelp title={title || "边界说明"} align="right">
+          <p>{fullText}</p>
+        </ChartHelp>
       )}
     </aside>
   );
@@ -86,11 +96,11 @@ export function Unavailable({ text }) {
   );
 }
 
-export function RecordCard({ id, title, badges = [], children }) {
+export function RecordCard({ id, title, badges = [], children, showId = true }) {
   return (
     <details className="xh-record">
       <summary>
-        <span className="xh-record-id">{id}</span>
+        {showId && <span className="xh-record-id">{id}</span>}
         <span className="xh-record-title">{title}</span>
         {badges.length > 0 && <span className="xh-record-badges">{badges}</span>}
       </summary>

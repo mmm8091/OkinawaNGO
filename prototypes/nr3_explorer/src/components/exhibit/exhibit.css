@@ -87,40 +87,20 @@
   margin: 0;
 }
 
-.xh-boundary-help {
-  position: relative;
-  flex: 0 0 auto;
-  display: inline-grid;
-  place-items: center;
+.xh-boundary-help-only {
+  width: fit-content;
+  margin: 8px 0 12px auto;
+  padding: 0;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  color: var(--faint);
+  font-size: var(--fs-overline);
+}
+
+.xh-boundary-help-only .chart-help {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  background: var(--teal-dark);
-  color: #f4f2ea;
-  cursor: help;
-}
-
-.xh-boundary-pop {
-  display: none;
-  position: absolute;
-  right: -6px;
-  top: calc(100% + 8px);
-  z-index: 40;
-  width: 380px;
-  max-width: 76vw;
-  padding: 11px 13px;
-  border: 1px solid #ccd8d5;
-  border-radius: 10px;
-  background: rgba(252, 250, 244, 0.99);
-  box-shadow: 0 10px 30px rgba(28, 61, 67, 0.14);
-  color: #4a6066;
-  font-size: var(--fs-small);
-  line-height: 1.65;
-}
-
-.xh-boundary-help:hover .xh-boundary-pop,
-.xh-boundary-help:focus-within .xh-boundary-pop {
-  display: block;
 }
 
 .xh-tier {

@@ -593,24 +593,21 @@ def build_r5_repeat_participation_exhibit(
         "title": "R5 三次公开名单与严格重复参与",
         "display": {
             "title": {
-                "zh": "重复参与，不是组织联盟",
-                "ja": "反復参加であり、組織間同盟ではない",
-                "en": "Repeated participation, not an alliance",
+                "zh": "谁在不同公开行动中重复出现？",
+                "ja": "複数の公開行動に繰り返し現れるのは誰か",
+                "en": "Who Reappears Across Public Actions?",
             },
             "subtitle": {
                 "zh": (
-                    "三张完整公开名单按“事件 × 名称／严格身份”逐行统计。"
-                    "只有 registry ID 或经人工确认的 event-only identity 才能跨事件匹配。"
+                    "比较 2010、2015 与 2020 年三份完整公开名单，观察跨事件重复参与的组织与身份。"
                 ),
                 "ja": (
-                    "3つの完全な公開名簿を「イベント × 名称／厳格な同一性」で"
-                    "行単位に集計。イベント間照合は registry ID または人審済み"
-                    " event-only identity に限ります。"
+                    "2010・2015・2020年の3つの完全な公開名簿を比較し、イベントを越えて"
+                    "繰り返し参加した団体とidentityを確認します。"
                 ),
                 "en": (
-                    "Three complete public lists are counted row by row as "
-                    "event × name/strict identity. Cross-event matching is "
-                    "limited to registry IDs and human-reviewed event-only identities."
+                    "Compare three complete public lists from 2010, 2015 and 2020 to see "
+                    "which organizations and identities recur across events."
                 ),
             },
             "interpretation_limit": {

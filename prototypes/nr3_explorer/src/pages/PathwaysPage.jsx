@@ -266,16 +266,19 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
         <aside className="detail-panel path-panel">
           <div className="detail-eyebrow">
             <GitBranch size={13} />
-            {tr(episode.route_family, lang)} · {episode.module}
+            {tr(episode.route_family, lang)}
             {isPending && <PendingBadge>{tu("common.pending", lang)}</PendingBadge>}
           </div>
           <div className="detail-heading">
             <div>
               <h2>{labelOf(episode, lang)}</h2>
-              <p>
-                {episode.id} · {tr(episode.review_status, lang)} · {episode.evidence_level}
-              </p>
+              {research && <p>{tr(episode.review_status, lang)} · {episode.evidence_level}</p>}
             </div>
+            {localizedFieldOf(episode, "interpretation_limit", lang) && (
+              <ChartHelp title={tu("path.boundary", lang)}>
+                <p>{localizedFieldOf(episode, "interpretation_limit", lang)}</p>
+              </ChartHelp>
+            )}
           </div>
           {!!episode.place_labels?.length && (
             <section className="detail-section compact">
@@ -318,13 +321,13 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
               })}
             </div>
           </section>
-          <section className="detail-section compact">
-            <header>
+          <details className="detail-section research-records">
+            <summary>
               <span>{tu("path.sources", lang)}</span>
               <small>
                 {tu("path.countUnit", lang).replace("{n}", episode.source_ids.length)}
               </small>
-            </header>
+            </summary>
             <SourceChips ids={episode.source_ids} />
             {!!episode.unresolved_source_refs?.length && (
               <div className="source-chips">
@@ -336,8 +339,8 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
                 </em>
               </div>
             )}
-          </section>
-          {!!episode.case_ids?.length && (
+          </details>
+          {research && !!episode.case_ids?.length && (
             <section className="detail-section compact">
               <header>
                 <span>{tu("path.cases", lang)}</span>
@@ -349,12 +352,6 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
                 ))}
               </div>
             </section>
-          )}
-          {localizedFieldOf(episode, "interpretation_limit", lang) && (
-            <div className="interpretation-note">
-              <GitBranch size={18} />
-              <p>{localizedFieldOf(episode, "interpretation_limit", lang)}</p>
-            </div>
           )}
           <button
             className="compare-button"

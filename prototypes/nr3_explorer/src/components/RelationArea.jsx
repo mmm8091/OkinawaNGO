@@ -222,7 +222,7 @@ export function RelationArea({
           )}
         </div>
       </section>
-      {(demoAdmin.length > 0 ||
+      {research && (demoAdmin.length > 0 ||
         candAdmin.length > 0 ||
         demoAgg.length > 0 ||
         candAgg.length > 0 ||
@@ -230,12 +230,12 @@ export function RelationArea({
         candEventRecords.length > 0 ||
         actorCaseRoles.length > 0 ||
         leads.length > 0) && (
-        <section className="detail-section">
-          <header>
+        <details className="detail-section research-records">
+          <summary>
             <span>{tu("section.otherRecords", lang)}</span>
             <small>{tu("section.otherRecordsSub", lang)}</small>
-          </header>
-          <div className="relation-list">
+          </summary>
+          <div className="relation-list research-record-list">
             {[...demoAdmin, ...candAdmin, ...demoAgg, ...candAgg].map((row) => (
               <RecordRow
                 key={row.id}
@@ -269,7 +269,7 @@ export function RelationArea({
               />
             ))}
           </div>
-        </section>
+        </details>
       )}
     </>
   );

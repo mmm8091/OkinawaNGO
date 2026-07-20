@@ -211,3 +211,23 @@ final result: pass (agent-verified with rendered evidence; awaiting principal co
   time axis no longer orphan-wrap. Commits 0e89ef0e (shared kit + layer-state fix) and
   b10fadeb (v2 redesign); dist rebuilt, release.json source_commit == HEAD,
   source_dirty == false, validation pass. Screenshots: `qa/v2_*.png`.
+
+- Iteration 17 (2026-07-21, principal screenshot review fixes): full interpretation text
+  moved behind a "?" popover (one visible boundary line — the inline expander and footer
+  methodology lines are gone); time page axis/genealogy/pending bands made flex-shrink:0 so
+  the year selector is never covered and no inner horizontal scrollbars remain; R5 event
+  cards normalized to the type scale (no oversized numbers), redundant hints removed; OCE
+  hardcoded metric fallbacks replaced by data-or-"—" (real values 616/86/15/76.1%/3.1% now
+  provably from payload). Commit 18c1bf7; dist rebuilt, release.json aligned. Screenshots:
+  `qa/fix_*.png`.
+
+- Iteration 18 (2026-07-21, public-presentation taste pass): removed the visible build stamp,
+  made each selected subview own its title, replaced defensive blocks with compact help,
+  compressed time-event records into expandable rows, and kept research queues out of the
+  reviewed actor panel. Reviewed and research actor panels now share the same visual anatomy:
+  both retain evidence marks, actor metadata and issue-status chips; only the research layer
+  adds pending records. Exhibit boundary help now reuses the site-wide `ChartHelp` component
+  instead of maintaining a second question-mark control. R5 and R10 exhibits now lead with a question or
+  finding; time-event labels/actions are trilingual. Browser route QA caught and repaired a
+  MapPin runtime regression on Evidence; all five routes are required to render with zero
+  console errors.

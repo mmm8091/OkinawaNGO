@@ -5,8 +5,8 @@ import "./OfficialCollaborationExhibit.css";
 
 const COPY = {
   zh: {
-    eyebrow: "官方来源总体 · 描述性统计",
-    fallbackTitle: "冲绳县 FY2024 NPO 等协作记录总体",
+    eyebrow: "冲绳县 FY2024 · 官方记录",
+    fallbackTitle: "县政府日常协作：616 条记录",
     sourceRows: "官方记录行",
     pdfPages: "原表页数",
     departments: "部门来源标签",
@@ -32,7 +32,7 @@ const COPY = {
     originalPages: "PDF 页",
     exactTrace: "完整压缩引用",
     noCells: "该汇总项没有可显示的非零交叉单元。",
-    boundaryTitle: "读取边界",
+    boundaryTitle: "如何阅读",
     boundary: "单位始终是官方表中的记录行；协作机制不等于付款，重复出现不等于组织关系。",
     mechanismBoundary: "官方协作形态，不代表现金支付",
     functionBoundary: "官方事業分野，不代表组织自身宗旨或立场",
@@ -41,8 +41,8 @@ const COPY = {
     rowsNotActors: "616 条记录，不是 616 个组织",
   },
   ja: {
-    eyebrow: "公式資料の全行 · 記述統計",
-    fallbackTitle: "沖縄県 FY2024 NPO等との協働実績・全記録",
+    eyebrow: "沖縄県 FY2024 · 公式記録",
+    fallbackTitle: "県の日常的な協働：616件の記録",
     sourceRows: "公式資料の行",
     pdfPages: "原資料の頁数",
     departments: "部局の資料表記",
@@ -77,8 +77,8 @@ const COPY = {
     rowsNotActors: "616行であり、616団体ではありません",
   },
   en: {
-    eyebrow: "Complete official source · descriptive statistics",
-    fallbackTitle: "Okinawa FY2024 official NPO collaboration record universe",
+    eyebrow: "Okinawa FY2024 · official records",
+    fallbackTitle: "Everyday Prefectural Collaboration: 616 Records",
     sourceRows: "Official source rows",
     pdfPages: "Pages in source",
     departments: "Department labels",
@@ -282,16 +282,16 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
         subtitle={localized(exhibit.display?.subtitle, activeLang)}
         metrics={[
           { value: denominator.value ? formatNumber.format(denominator.value) : "—", label: copy.sourceRows, note: copy.rowsNotActors },
-          { value: denominator.pdf_pages ? formatNumber.format(denominator.pdf_pages) : "—", label: copy.pdfPages, note: denominator.source_row_range },
-          { value: exhibit.drilldown?.dimensions?.departments ? formatNumber.format(exhibit.drilldown.dimensions.departments) : "—", label: copy.departments, note: copy.sourceLabel },
           { value: withUnit(metricValue(exhibit, "M12"), "%"), label: copy.mechanismShare, note: withUnit(metricValue(exhibit, "M11"), copy.countSuffix) },
           { value: withUnit(metricValue(exhibit, "M14"), "%"), label: copy.adjacentShare, note: withUnit(metricValue(exhibit, "M13"), copy.countSuffix) },
         ]}
       />
 
-      <BoundaryNote title={copy.boundaryTitle}>
-        {localized(exhibit.display?.interpretation_limit, activeLang, copy.boundary)}
-      </BoundaryNote>
+      <BoundaryNote
+        title={copy.boundaryTitle}
+        fullText={localized(exhibit.display?.interpretation_limit, activeLang, copy.boundary)}
+        helpOnly
+      />
 
       <div className="oce-mode-tabs" role="tablist" aria-label={copy.modesLabel}>
         {MODES.map((item) => (
