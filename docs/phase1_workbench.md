@@ -192,7 +192,7 @@
 - R10 已对 S002 全部 86 页／616 行建立来源总体；365 个机器标签不是 actor。HR-032 的 8 项 canonical／JV／registry crosswalk 已合并，未把复合体成员展开成付款或稳定关系。
 - 正式报告装配盘点 73 个现有资源并形成 32 页报告／20 页 PPT 蓝图；27 张非 superseded 正文图已有完整图—数据—来源—脚本—冻结动作追溯链，当前 22 ready／5 pending freeze。F008/F030/F032 已按合并层重绘；剩余五图均受 HR-029 最终冻结控制，F031 已重绘但未冻结词表。78 条报告主张的 32 组数字全部匹配，缺失 source／formal path 为 0；三项解释强度进入 HR-031。正式 DOCX/PDF、论文、PPT、先岛 dossier DOCX、public data 和冻结 codebook 仍是待生产合同成品，不能把蓝图计为完成。
 - 第三次同步已重写为 findings-led v2：`outputs/formal_comm_v2/第三次进度同步_v2.md` 与 6 张机制图，主线为“地方损害如何被组织翻译进不同制度语法，以及制度如何把诉求转换为有限结果”；新增 R5“小型重复骨架＋事件性变动外围”解释。图 6 已由 current-only renderer 重绘：2020 registry 行为 17，15 个重复 registry actor 与 6 个重复 human-reviewed event-only identity 分层呈现。v1 的 4 张方法／稳健性图退到附录。两版均不生成 PDF，由项目负责人自行排版。
-- 2026-07-17 起切换为共同研究节奏：项目负责人在解释性工作中的目标参与度约 50%。首轮使用 `lessons/0001-project-reentry-5-hour.html` 重新掌握合同、证据和主轴；决策单回收前不启动新的大范围研究波次。AI继续承担已批准的机械整理、QA和制图，新的问题选择、强解释和模块取舍逐项设置负责人检查点。
+- 2026-07-17 起切换为共同研究节奏：项目负责人在解释性工作中的目标参与度约 50%。首轮项目回归表仍为暂停记录；2026-07-20 负责人另行明确授权启动一轮“边研究边选题”的全面探索。该授权仅覆盖不改中央事实层／现有前端契约的 H1–H3 独立研究包，新的强解释和模块取舍仍逐项设置负责人检查点。
 
 ## 任务索引
 
@@ -203,7 +203,7 @@
 
 当前人工复核状态：HR-001–033 中凡已回交的决定均已合并；HR-029／031 仍后置空白。HR-033 将 6 条 legacy relation 分层；F025 不挂 102,000 美元，该金额只在 R10R029 汇总观察。HR-010 批 6、LCR001–004 和 HR-034 为现在可做的人审；C015 维持 `needs_second_source`。
 
-当前人工任务总账见 `docs/principal_human_review_remaining_v14.md`；OPI-00 已有暂停／未完成记录，仍阻断新的广泛研究波次。
+当前人工任务总账见 `docs/principal_human_review_remaining_v14.md`；OPI-00 仍是暂停／未完成的学习记录，但不再阻断负责人于 2026-07-20 明确批准的 H1 文档可见性、H2 两套功能生态、H3 前线化／战争记忆三个有界研究包。它仍阻断未经另行批准的中央表扩张或结论升级。
 
 当前当地补查优先级：P0 为 T2-D 先岛三地民间组织原始表达对照，P1 为 T2-E 公投制度门槛一手材料；T2-A/B 的组织身份与报刊时间线同馆顺带完成。T2-G 已把 9 个 HR-017 公投尾项、2 个 HR-018 暂缓财务项和 A073 身份核查逐项映射为正式 closure 清单。T2-F 1972–2012 谱系仅在保留“复归后”长期主张时启动；AWWA recipient 年表不阻断机制主线。
 
@@ -234,6 +234,7 @@
 5. 负责人已批准证据状态与前端展示规则：界面“演示视图”改为“已核视图”；已核层允许 `supported_bounded`，但必须显示已核／缺失字段；研究层增加 candidate／lead。权威规则为 `data/metadata/coding_schema_v1.md`。
 6. 关系架构 v1 已批准：43 行是异质观察，其中 27 行两端为 registry actor、16 行含 place／program／unknown recipient 等非 actor 端点；R8 27 行保持 case-role，不得生成“同案协作边”。实现依据为 `docs/actor_relation_architecture_v1.md`。
 7. HR-033 已完成并合并：标准化的 6 条 dyadic relations＋1 条 aggregate observation 在 `outputs/hr033_integration_v1/`；前端不得把 membership 当 funding，也不得把 R10R029 的 102,000 美元附到 F025。
-8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。中央关系记录 F036 只作事件记录，R10R029 只作汇总观察。manifest 明确区分 122 条 registry provenance 与 121 个当前可见 actor，组织视图排除 A072。18 个 builder tests、当前全套 91 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
+8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。中央关系记录 F036 只作事件记录，R10R029 只作汇总观察。manifest 明确区分 122 条 registry provenance 与 121 个当前可见 actor，组织视图排除 A072。18 个 builder tests、当前全套 114 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
 9. NR-04／NR-05 分别做两个时期的有界线上补缺；结果先进入候选和人工队列。NR-06 统一完成 claim/evidence QA、历史集成决定和已核／研究双层验收。
 10. 既有 HR／报告 gate 保持有效；只有当其直接阻断前端默认 claim 时才按优先级处理，不恢复全面铺开。
+11. 2026-07-20 选题波次第一轮已完成并经交叉审计收紧：H1 只支持 E3/E4 actor–issue 可见层的来源依赖，三源效应约 84% 由 S004 单源驱动，source／actor 删除不是匹配反事实；H2 得到 9 个服务侧 registry 子集与 65 个问责侧候选（18 人审锚点／47 候选锚点），限定小样本中未编码直接跨组组织关系，人物与完整 recipient 均未测；H3 建立 12 条观察、6 条事件级载体和 17 条参与候选，只支持接触／承载路径，传播方向、独立采用、词汇增长与持续共同动员均未确认。三包均 `not_frontend_ready`；统一 JSON 只是模块目录索引，状态 `module_index_ready_observation_exports_gated`。负责人证据阅读关见 `outputs/research_wave_topic_selection_v1/principal_checkpoint_v1.md`。

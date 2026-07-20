@@ -1,0 +1,6 @@
+﻿negative_id,case_type,selection_rule,purpose,required_evidence,status,data_layer,claim_status,central_writeback
+H3N001,same_period_no_frontline_language,2021–2024 同期基地／环境行动，但主办文本未采用目标词典。,排除所有近期材料都会出现该语言的年代效应。,完整活动呼吁／决议原文；不能用搜索无结果判定缺席。,planned,research_only,planned_candidate,no
+H3N002,listed_endorser_no_independent_adoption,S246 等名单中的赞同团体，后续自有文本没有可核独立采用。,区分事件性赞同与真正的跨组织扩散。,赞同事件前后各一份组织自有文本。,planned,research_only,planned_candidate,no
+H3N003,official_frame_without_civic_carrier,R4 中只见政府／议会的国民保护、避难或台湾有事文本。,检验词汇增长是否由官方规划资料可见性而非民间共同语言造成。,同地同期官方文本与民间组织文本配对。,planned,research_only,planned_candidate,no
+H3N004,new_actor_composition_only,仅新成立组织使用目标语言，既有环保／和平组织没有改用。,区分新组织进入造成的构成变化与既有组织语言扩散。,同一既有组织跨期文本面板和首次采用日期。,planned,research_only,planned_candidate,no
+H3N005,single_organizer_repeat,多个事件重复的只有 A018/A108 等少数组织者，外围组织不重复。,检验共同动员是否只是组织者核心的事件重组。,至少两个事件的完整组织角色表和规范化 identity crosswalk。,planned,research_only,planned_candidate,no

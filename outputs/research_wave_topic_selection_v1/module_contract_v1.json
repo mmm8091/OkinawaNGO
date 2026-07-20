@@ -1,0 +1,74 @@
+{
+  "schema_version": "research_wave_module_directory_contract_v1",
+  "scope": "additive_research_only",
+  "current_index_capability": "module_metadata_and_asset_directory_only",
+  "row_level_observation_export_status": "not_approved_separate_contract_required",
+  "central_tables_mutated": false,
+  "current_frontend_contract_mutated": false,
+  "allowed_frontend_eligibility": [
+    "research_only",
+    "not_frontend_ready"
+  ],
+  "allowed_claim_status": [
+    "candidate",
+    "lead",
+    "analytic_pattern_bounded"
+  ],
+  "required_module_index_fields": [
+    "module_id",
+    "hypothesis_id",
+    "claim_status",
+    "review_status",
+    "frontend_eligibility",
+    "integration_status",
+    "row_contract_status",
+    "summary",
+    "interpretation_limits",
+    "assets"
+  ],
+  "required_fields_for_any_future_row_level_export": [
+    "observation_id",
+    "hypothesis_id",
+    "observation_kind",
+    "claim_status",
+    "review_status",
+    "source_ids",
+    "interpretation_limit",
+    "frontend_eligibility"
+  ],
+  "recommended_observation_fields": [
+    "actor_ids",
+    "place_ids",
+    "issue_ids",
+    "event_date",
+    "source_publication_date",
+    "evidence_level",
+    "competing_explanation",
+    "human_gate"
+  ],
+  "review_status_policy": {
+    "generated_analysis": "ai_seeded",
+    "human_acceptance_required_for_upgrade": true,
+    "absence_of_record_means_absence_in_data_only": true
+  },
+  "frontend_gate_policy": {
+    "current_modules": "not_frontend_ready",
+    "module_index_is_not_a_row_contract": true,
+    "principal_claim_wording_approval_required": true,
+    "module_specific_human_and_source_gates_required": true,
+    "separate_row_level_export_and_validation_required": true
+  },
+  "prohibitions": [
+    "do_not_create_stable_alliance_from_co_participation",
+    "do_not_treat_missing_person_or_relation_record_as_real_world_nonexistence",
+    "do_not_treat_issue_degree_as_influence",
+    "do_not_treat_schema_tag_growth_as_language_growth",
+    "do_not_assign_base_policy_stance_to_service_organizations_without_evidence",
+    "do_not_enter_reviewed_frontend_without_separate_human_decision"
+  ],
+  "package_ids": [
+    "H1_DOCUMENTATION_VISIBILITY_V1",
+    "H2_TWO_ECOLOGIES_V1",
+    "H3_FRONTLINE_MEMORY_V1"
+  ]
+}

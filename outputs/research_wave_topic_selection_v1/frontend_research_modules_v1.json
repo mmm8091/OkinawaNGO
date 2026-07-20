@@ -1,0 +1,148 @@
+{
+  "adapter_kind": "module_directory_index_not_row_level_observation_contract",
+  "allowed_surface": "future_explicit_research_module_after_separate_approval",
+  "as_of_date": "2026-07-20",
+  "central_tables_mutated": false,
+  "current_frontend_contract_mutated": false,
+  "data_scope": "additive_research_only",
+  "integration_status": "module_index_ready_observation_exports_gated",
+  "modules": [
+    {
+      "assets": [
+        "outputs/research_wave_h1_documentation_visibility_v1/brief_v1.md",
+        "outputs/research_wave_h1_documentation_visibility_v1/sensitivity_scenarios_v1.csv",
+        "outputs/research_wave_h1_documentation_visibility_v1/actor_issue_edge_source_incidence_v1.csv",
+        "outputs/research_wave_h1_documentation_visibility_v1/scenario_removed_edges_v1.csv",
+        "outputs/research_wave_h1_documentation_visibility_v1/leave_one_source_out_v1.csv",
+        "outputs/research_wave_h1_documentation_visibility_v1/paired_deletion_comparison_v1.csv",
+        "outputs/research_wave_h1_documentation_visibility_v1/source_host_mapping_proposals_v1.csv",
+        "outputs/research_wave_h1_documentation_visibility_v1/further_research_queue_v1.csv"
+      ],
+      "claim_status": "candidate",
+      "contains_local_retrieval_component_count": 1,
+      "data_layer": "research_only",
+      "frontend_eligibility": "not_frontend_ready",
+      "hypothesis_id": "H1",
+      "integration_status": "indexed_not_integrated",
+      "interpretation_limits": [
+        "source deletion is an evidence-layer sensitivity test, not a social intervention",
+        "S004 dominates the current effect; three sources do not establish a repeated documentation-capacity mechanism",
+        "source deletion and actor deletion are unmatched units, not a counterfactual",
+        "source-host mappings remain proposal_not_human_reviewed",
+        "registry source_refs are not a complete actor×source incidence universe",
+        "issue degree is not influence, activity strength, or organizational lifespan"
+      ],
+      "module_id": "H1_DOCUMENTATION_VISIBILITY_V1",
+      "open_followup_task_count": 6,
+      "open_human_or_principal_gate_count": 4,
+      "primary_metrics": {
+        "actor_drop_big3_edges": 227,
+        "actor_drop_big3_observed_actors": 98,
+        "baseline_e3plus_edges": 234,
+        "baseline_e3plus_observed_actors": 101,
+        "s004_lost_observed_actor_count": 25,
+        "s004_removed_edge_count": 41,
+        "source_drop_big3_edges": 185,
+        "source_drop_big3_observed_actors": 71,
+        "source_ref_degree_spearman": 0.284
+      },
+      "review_status": "ai_seeded",
+      "row_contract_status": "heterogeneous_drilldowns_not_normalized",
+      "summary": "移除 S003/S004/S006 的独占证据支持后，E3/E4 可见层由 234 条边／101 个有边 actor 降至 185／71；其中约 84% 的边与 actor 损失由 S004 单源造成。这只支持来源集中／可见层依赖；source 删除与 actor 删除不是匹配反事实，也不证明真实社会网络中心性。",
+      "title": "少数高承载名单对 actor–issue 可见层的来源依赖"
+    },
+    {
+      "assets": [
+        "outputs/research_wave_h2_two_ecologies_v1/H2_two_ecologies_brief_v1.md",
+        "outputs/research_wave_h2_two_ecologies_v1/service_core_actors_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/accountability_comparison_actors_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/dyadic_relation_ecology_audit_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/case_role_ecology_audit_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/typed_event_ecology_audit_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/r10_interface_audit_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/place_overlap_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/coverage_gaps_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/human_review_queue_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/further_search_queue_v1.csv",
+        "outputs/research_wave_h2_two_ecologies_v1/metrics_v1.json"
+      ],
+      "claim_status": "candidate",
+      "contains_local_or_internal_component_count": 4,
+      "data_layer": "research_only",
+      "frontend_eligibility": "not_frontend_ready",
+      "hypothesis_id": "H2",
+      "integration_status": "indexed_not_integrated",
+      "interpretation_limits": [
+        "zero encoded cross relations means absence in current inputs only",
+        "not_measured_no_person_role_table",
+        "not_measured_incomplete_records",
+        "same place does not prove contact; P001 is a prefecture-wide broad node",
+        "service function does not establish a pro-base or anti-base stance",
+        "base production remains hypothesis_only rather than a causal finding"
+      ],
+      "module_id": "H2_TWO_ECOLOGIES_V1",
+      "open_human_gate_count": 7,
+      "open_search_task_count": 9,
+      "primary_metrics": {
+        "accountability_candidate_only_anchor_actor_count": 47,
+        "accountability_comparison_actor_count": 65,
+        "accountability_human_reviewed_anchor_actor_count": 18,
+        "candidate_dyadic_relation_count": 8,
+        "cross_ecology_dyadic_observed_count": 0,
+        "cross_ecology_event_observed_count": 0,
+        "reviewed_dyadic_relation_count": 14,
+        "service_core_actor_count": 9,
+        "specific_shared_place_node_ids": [
+          "P005"
+        ]
+      },
+      "review_status": "ai_seeded",
+      "row_contract_status": "heterogeneous_audit_rows_not_normalized",
+      "summary": "按当前 registry 规则得到 9 个服务侧比较 actor；按候选锚点规则得到 65 个问责侧候选 actor，其中 18 个至少有一条人审锚点边、47 个仅有候选锚点。14+8 条 dyadic、4 条 typed-event 与35 条 R10 目的性记录中尚未编码直接跨组组织关系；27 条案件角色中没有服务侧 actor。人物未测，recipient 不完整。",
+      "title": "基地周边两套功能生态及其未测接口"
+    },
+    {
+      "assets": [
+        "outputs/research_wave_h3_frontline_memory_v1/brief_v1.md",
+        "outputs/research_wave_h3_frontline_memory_v1/source_observations_v1.csv",
+        "outputs/research_wave_h3_frontline_memory_v1/diffusion_carrier_candidates_v1.csv",
+        "outputs/research_wave_h3_frontline_memory_v1/event_participant_candidates_v1.csv",
+        "outputs/research_wave_h3_frontline_memory_v1/hypothesis_layers_v1.csv",
+        "outputs/research_wave_h3_frontline_memory_v1/human_review_queue_v1.csv",
+        "outputs/research_wave_h3_frontline_memory_v1/local_retrieval_queue_v1.csv",
+        "outputs/research_wave_h3_frontline_memory_v1/source_governance_v1.csv"
+      ],
+      "claim_status": "candidate",
+      "data_layer": "research_only",
+      "frontend_eligibility": "not_frontend_ready",
+      "hypothesis_id": "H3",
+      "integration_status": "indexed_not_integrated",
+      "interpretation_limits": [
+        "schema tag growth is not evidence of social vocabulary growth",
+        "event participation or endorsement is not a stable alliance",
+        "contact, speaking, endorsement, and organizing are not interchangeable with independent frame adoption",
+        "carrier endpoints do not establish diffusion direction",
+        "a common language is not the same as a common organization",
+        "Japan-wide war-memory sensitivity is outside the present evidence"
+      ],
+      "module_id": "H3_FRONTLINE_MEMORY_V1",
+      "open_human_gate_count": 9,
+      "open_local_retrieval_task_count": 4,
+      "primary_metrics": {
+        "diffusion_carrier_count": 6,
+        "diffusion_status": "candidate_carrier_mechanisms_direction_unconfirmed",
+        "event_participant_count": 17,
+        "mobilization_status": "episodic_convergence_not_durable_mobilization",
+        "source_governance_blocker_count": 3,
+        "source_observation_count": 12,
+        "vocabulary_growth_status": "not_testable_with_current_unbalanced_corpus"
+      },
+      "review_status": "ai_seeded",
+      "row_contract_status": "h3_rows_normalized_but_human_and_source_governance_gated",
+      "summary": "现有档案形成 12 条具定位观察与若干事件级接触／载体路径候选；传播方向、目标组织独立采用及持续共同动员均未确认。由于年代和文体不平衡，词汇增长仍不可检验。",
+      "title": "前线化／战争记忆能否成为跨议题共同语言"
+    }
+  ],
+  "required_gate_before_integration": "principal selects a module, approves bounded claim wording, closes module-specific human/source gates, and approves a separate row-level frontend export",
+  "schema_version": "research_wave_module_index_v1"
+}

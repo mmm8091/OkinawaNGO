@@ -1,0 +1,113 @@
+{
+  "package_id": "research_wave_h3_frontline_memory_v1",
+  "as_of_date": "2026-07-20",
+  "data_layer": "research_only",
+  "claim_status": "candidate",
+  "review_status": "ai_seeded",
+  "frontend_eligibility": "not_frontend_ready",
+  "central_writeback": false,
+  "local_source_inputs": [
+    {
+      "source_id": "S022",
+      "archive_status": "archived",
+      "h3_use_status": "candidate_source_metadata_correction_needed"
+    },
+    {
+      "source_id": "S023",
+      "archive_status": "archived",
+      "h3_use_status": "candidate_archived_input"
+    },
+    {
+      "source_id": "S036",
+      "archive_status": "archived",
+      "h3_use_status": "candidate_source_metadata_correction_needed"
+    },
+    {
+      "source_id": "S119",
+      "archive_status": "failed",
+      "h3_use_status": "candidate_local_residual_archive_reconciliation_required"
+    },
+    {
+      "source_id": "S148",
+      "archive_status": "archived",
+      "h3_use_status": "candidate_archived_input"
+    },
+    {
+      "source_id": "S246",
+      "archive_status": "archived",
+      "h3_use_status": "candidate_archived_input"
+    }
+  ],
+  "source_governance_blocker_count": 3,
+  "row_contract_status": "h3_rows_normalized_but_human_and_source_governance_gated",
+  "central_current_inputs": [
+    "data/interim/01_actor_registry_initial_v0.csv",
+    "data/interim/09_actor_event_venue_edges_v0.csv",
+    "data/interim/24_r01_r02_actor_issue_layered_v0.csv"
+  ],
+  "source_governance_inputs": [
+    "data/interim/05_source_log_initial_v0.csv",
+    "source_docs/source_archive/source_archive_manifest.csv"
+  ],
+  "current_actor_issue_counts": {
+    "frontline_prevention": 4,
+    "Taiwan_contingency": 4,
+    "anti_war": 1
+  },
+  "current_actor_issue_actor_ids": {
+    "frontline_prevention": [
+      "A017",
+      "A018",
+      "A065",
+      "A108"
+    ],
+    "Taiwan_contingency": [
+      "A017",
+      "A018",
+      "A065",
+      "A108"
+    ],
+    "anti_war": [
+      "A108"
+    ]
+  },
+  "current_human_reviewed_edge_counts": {
+    "frontline_prevention": 1,
+    "Taiwan_contingency": 1,
+    "anti_war": 1
+  },
+  "central_target_aev_rows": 1,
+  "package_counts": {
+    "source_observations": 12,
+    "diffusion_carriers": 6,
+    "event_participants": 17,
+    "controls_planned": 6,
+    "negative_cases_planned": 5,
+    "human_review_items": 9,
+    "local_retrieval_items": 4
+  },
+  "method_boundaries": [
+    "Schema tag growth is not evidence of social vocabulary growth.",
+    "Event co-participation or endorsement is not a stable alliance.",
+    "Event contact or endorsement is not independent frame adoption.",
+    "Carrier endpoints do not establish a diffusion direction.",
+    "A common language is not the same as a common organization.",
+    "Official evacuation discourse is separated from civic adoption.",
+    "Japan-wide war-memory sensitivity is outside the present evidence."
+  ],
+  "outputs": [
+    "README.md",
+    "brief_v1.md",
+    "control_corpus_plan_v1.csv",
+    "diffusion_carrier_candidates_v1.csv",
+    "event_participant_candidates_v1.csv",
+    "evidence_graph_v1.json",
+    "human_review_queue_v1.csv",
+    "hypothesis_layers_v1.csv",
+    "local_retrieval_queue_v1.csv",
+    "manifest.json",
+    "negative_case_plan_v1.csv",
+    "source_governance_v1.csv",
+    "source_observations_v1.csv"
+  ]
+}

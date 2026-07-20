@@ -1,0 +1,10 @@
+﻿review_id,review_scope,candidate_ids,question,decision,status,data_layer,central_writeback
+HR-H3-001,S036 event roster and date,H3O001;H3O002;H3D001,是否接受 2017 政府交涉为四团体的事件级共同参与，并保留 A065 2016–2018 时间边界？,,open_human,research_only,no
+HR-H3-002,A018 formation chronology and frame,H3O003;H3O004,报道中的 2021 成组与 2022 发足集会应如何分期；两条 frame 是否均为组织定位？,,open_human,research_only,no
+HR-H3-003,A018 to A100 carrier,H3O007;H3O008;H3D002,是否接受成立集会讲演／到场为事件级话语载体；不得建稳定联盟边？,,open_human,research_only,no
+HR-H3-004,A018/Gushiken to A108 carrier,H3O009;H3O010;H3D003;H3D004,是否接受组织推动和具名战争记忆载体两种不同关系；是否需要 person crosswalk？,,open_human,research_only,no
+HR-H3-005,S246 endorser crosswalk,H3O011;H3O012;H3D005;H3P005-H3P017,逐项确认 13 个赞同名称的 identity 与事件角色；赞同是否仅限该场活动？,,open_human,research_only,no
+HR-H3-006,H3a corpus denominator,H3a;H3C001-H3C006,确定时期、文体与组织面板；不得以 schema 标签数量代替文本频率。,,open_human,research_only,no
+HR-H3-007,H3c repeat threshold,H3c;H3N005,确认共同动员的最低门槛：至少两事件、三议题家族、重复 registry actor 和明确角色。,,open_human,research_only,no
+HR-H3-008,source governance and attribution,S022;S036;S119;H3O001-H3O012,复核 S119 failed-manifest／残留 raw 的归档状态，修正 S022/S036/S119 source-log 日期或标题，并逐条确认 context actor、陈述主语和 target 不被混用。,,open_human,research_only,no
+HR-H3-009,direct prior art and novelty boundary,LIT19;LIT20;LIT21;LIT22;H3a;H3b;H3c,通读冲绳对话项目、A108 成立／大会、石垣“不让岛成为战场”运动回顾与前泊博盛 2024；判断新意是否只能落在结构化组织—事件比较、载体／独立采用区分和负案例设计，不得把战争记忆与前线化的连接本身写成首次发现。,,open_human,research_only,no

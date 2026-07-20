@@ -1,0 +1,357 @@
+{
+  "package_id": "research_wave_h3_frontline_memory_v1",
+  "data_layer": "research_only",
+  "claim_status": "candidate",
+  "graph_semantics": "Event-bounded contact, context, carrier and participation candidates. Link source/target fields are layout endpoints, not confirmed diffusion directions or stable alliance edges.",
+  "nodes": [
+    {
+      "id": "A002",
+      "label": "ジュゴン保護キャンペーンセンター（Save the Dugong Campaign Center）",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A017",
+      "label": "沖縄対話プロジェクト",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A018",
+      "label": "ノーモア沖縄戦 命どぅ宝の会",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A019",
+      "label": "ヘリ基地反対協議会（海上ヘリ基地建設反対・平和と名護市政民主化を求める協議会）",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A049",
+      "label": "基地・軍隊を許さない行動する女たちの会",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A055",
+      "label": "泡瀬干潟を守る連絡会",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A056",
+      "label": "沖縄環境ネットワーク",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A065",
+      "label": "南西諸島ピースネット",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A099",
+      "label": "有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A100",
+      "label": "ミサイル配備から命を守るうるま市民の会",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A101",
+      "label": "沖縄・琉球弧の声を届ける会",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "A108",
+      "label": "沖縄を再び戦場にさせない県民の会",
+      "node_type": "registry_actor"
+    },
+    {
+      "id": "EVENT_ONLY::NPO 法人奥間川流域保護基金",
+      "label": "NPO 法人奥間川流域保護基金",
+      "node_type": "provisional_event_entity"
+    },
+    {
+      "id": "EVENT_ONLY::てぃだぬふぁ島の子の平和な未来をつくる会",
+      "label": "てぃだぬふぁ島の子の平和な未来をつくる会",
+      "node_type": "event_only_entity"
+    },
+    {
+      "id": "EVENT_ONLY::八重山大地会",
+      "label": "八重山大地会",
+      "node_type": "deferred_candidate_entity"
+    },
+    {
+      "id": "EVENT_ONLY::嘉手納ピースアクション",
+      "label": "嘉手納ピースアクション",
+      "node_type": "provisional_event_entity"
+    },
+    {
+      "id": "EVENT_ONLY::宮古島市民会議",
+      "label": "宮古島市民会議",
+      "node_type": "provisional_event_entity"
+    },
+    {
+      "id": "EVENT_ONLY::日本ジャーナリスト会議",
+      "label": "日本ジャーナリスト会議",
+      "node_type": "provisional_event_entity"
+    },
+    {
+      "id": "EVENT_ONLY::日本ジャーナリスト会議沖縄",
+      "label": "日本ジャーナリスト会議沖縄",
+      "node_type": "provisional_event_entity"
+    },
+    {
+      "id": "EVENT_ONLY::沖縄平和市民連絡会",
+      "label": "沖縄平和市民連絡会",
+      "node_type": "provisional_event_entity"
+    },
+    {
+      "id": "H3EV2017_CROSS_ISLAND_GOV_NEGOTIATION",
+      "label": "四团体政府交涉",
+      "node_type": "event"
+    },
+    {
+      "id": "H3EV2022_2023_OKINAWA_DIALOGUE",
+      "label": "跨政治立场对话项目",
+      "node_type": "event"
+    },
+    {
+      "id": "H3EV2023_A101_LECTURE_1",
+      "label": "第一回连续讲座及其赞同团体",
+      "node_type": "event"
+    },
+    {
+      "id": "PROV_GUSHIKEN_TAKAMATSU",
+      "label": "具志堅隆松／ガマフヤー",
+      "node_type": "carrier"
+    }
+  ],
+  "carrier_links": [
+    {
+      "id": "H3D001",
+      "source": "A065",
+      "target": "H3EV2017_CROSS_ISLAND_GOV_NEGOTIATION",
+      "carrier_type": "cross_island_coaction",
+      "diffusion_stage": "event_contact_only",
+      "direction_status": "not_a_directional_diffusion_observation",
+      "source_id": "S036",
+      "claim_status": "candidate",
+      "directional_diffusion_claim": false,
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3D002",
+      "source": "A018",
+      "target": "A100",
+      "carrier_type": "formation_event_speaker_and_participant",
+      "diffusion_stage": "speaker_contact_direction_unconfirmed",
+      "direction_status": "unconfirmed",
+      "source_id": "S119",
+      "claim_status": "candidate",
+      "directional_diffusion_claim": false,
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3D003",
+      "source": "A018",
+      "target": "A108",
+      "carrier_type": "organizing_center",
+      "diffusion_stage": "formation_carrier_candidate",
+      "direction_status": "candidate_A018_to_A108_not_yet_human_reviewed",
+      "source_id": "S148",
+      "claim_status": "candidate",
+      "directional_diffusion_claim": false,
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3D004",
+      "source": "PROV_GUSHIKEN_TAKAMATSU",
+      "target": "A108",
+      "carrier_type": "war_memory_carrier_cochair",
+      "diffusion_stage": "within_target_event_frame_articulation",
+      "direction_status": "person_to_event_context_not_org_diffusion",
+      "source_id": "S148",
+      "claim_status": "candidate",
+      "directional_diffusion_claim": false,
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3D005",
+      "source": "A101",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "carrier_type": "cross_issue_endorsement_event",
+      "diffusion_stage": "event_endorsement_only",
+      "direction_status": "no_independent_adoption_observed",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "directional_diffusion_claim": false,
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3D006",
+      "source": "A017",
+      "target": "H3EV2022_2023_OKINAWA_DIALOGUE",
+      "carrier_type": "programmatic_cross_position_invitation",
+      "diffusion_stage": "host_program_goal_only",
+      "direction_status": "no_participant_adoption_observed",
+      "source_id": "S022",
+      "claim_status": "candidate",
+      "directional_diffusion_claim": false,
+      "stable_alliance_claim": false
+    }
+  ],
+  "event_participation_links": [
+    {
+      "id": "H3P001",
+      "source": "EVENT_ONLY::宮古島市民会議",
+      "target": "H3EV2017_CROSS_ISLAND_GOV_NEGOTIATION",
+      "role": "named co-participant",
+      "source_id": "S036",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P002",
+      "source": "A065",
+      "target": "H3EV2017_CROSS_ISLAND_GOV_NEGOTIATION",
+      "role": "named co-participant",
+      "source_id": "S036",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P003",
+      "source": "EVENT_ONLY::八重山大地会",
+      "target": "H3EV2017_CROSS_ISLAND_GOV_NEGOTIATION",
+      "role": "named co-participant",
+      "source_id": "S036",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P004",
+      "source": "EVENT_ONLY::てぃだぬふぁ島の子の平和な未来をつくる会",
+      "target": "H3EV2017_CROSS_ISLAND_GOV_NEGOTIATION",
+      "role": "named co-participant",
+      "source_id": "S036",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P005",
+      "source": "A055",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P006",
+      "source": "A056",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P007",
+      "source": "EVENT_ONLY::沖縄平和市民連絡会",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P008",
+      "source": "EVENT_ONLY::嘉手納ピースアクション",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P009",
+      "source": "A049",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P010",
+      "source": "A002",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P011",
+      "source": "EVENT_ONLY::日本ジャーナリスト会議",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P012",
+      "source": "EVENT_ONLY::日本ジャーナリスト会議沖縄",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P013",
+      "source": "A018",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P014",
+      "source": "A019",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P015",
+      "source": "A100",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P016",
+      "source": "A099",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    },
+    {
+      "id": "H3P017",
+      "source": "EVENT_ONLY::NPO 法人奥間川流域保護基金",
+      "target": "H3EV2023_A101_LECTURE_1",
+      "role": "listed endorser",
+      "source_id": "S246",
+      "claim_status": "candidate",
+      "stable_alliance_claim": false
+    }
+  ]
+}

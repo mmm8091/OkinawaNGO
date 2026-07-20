@@ -1,0 +1,194 @@
+{
+  "as_of_date": "2026-07-20",
+  "frontend_eligibility": "excluded_research_only",
+  "inputs": [
+    {
+      "path": "data/interim/01_actor_registry_initial_v0.csv",
+      "row_count_or_list_items": 122,
+      "sha256": "03653fe12665abc754ef09d9d30e76c6e53dd495eaceba0fef4bc5ce5540b0a3"
+    },
+    {
+      "path": "data/interim/24_r01_r02_actor_issue_layered_v0.csv",
+      "row_count_or_list_items": 248,
+      "sha256": "61302c3bfbd42df53a3679c1dc41fe4247376598d8ab7220839cc326e30b8cbe"
+    },
+    {
+      "path": "data/interim/32_actor_place_semantic_candidates_v1.csv",
+      "row_count_or_list_items": 135,
+      "sha256": "b655f8bc9f37107c9b73acdece9fbe22afdcb4539c1ea734fec2c8976eb99126"
+    },
+    {
+      "path": "data/interim/04_place_registry_v0.csv",
+      "row_count_or_list_items": 21,
+      "sha256": "8b0461be00e7711aceec2d409c2f7c7408a75bf455f34c1859cc0af2651a2719"
+    },
+    {
+      "path": "data/interim/05_source_log_initial_v0.csv",
+      "row_count_or_list_items": 295,
+      "sha256": "ea5c34a2785cfede7f8eedc0420c56968c17fdca112b38d168ec5df5a87ee3a4"
+    },
+    {
+      "path": "outputs/exploration_system_data_v1/demo/dyadic_relations.json",
+      "row_count_or_list_items": 14,
+      "sha256": "3db5bfa3065ab6c3a36123e4005e06479fabe59d2016b447f82cf2c64e9fb024"
+    },
+    {
+      "path": "outputs/exploration_system_data_v1/research/candidates.json",
+      "row_count_or_list_items": 33,
+      "sha256": "0e0de29773971a69731eefe9c9ce3eaf0b63c208883522d6e86f27461f63f43b"
+    },
+    {
+      "path": "outputs/exploration_system_data_v1/demo/case_roles.json",
+      "row_count_or_list_items": 27,
+      "sha256": "c63bdaac81c24ecdc39ac4dcd70a58338c895944c4f1b5d8bddadf34f154d4e8"
+    },
+    {
+      "path": "outputs/exploration_system_data_v1/demo/typed_event_participation.json",
+      "row_count_or_list_items": 4,
+      "sha256": "94588532f0a026278d70baf52c947011553e773bebaa7b6224f5afa45f8e082e"
+    },
+    {
+      "path": "data/interim/21_admin_collaboration_relations_v0.csv",
+      "row_count_or_list_items": 35,
+      "sha256": "9d699866a7ac91fb5c88ea6574187ca65d305482235862f2acf374bf6d1a16f6"
+    },
+    {
+      "path": "outputs/R10_official_collaboration_universe_v1/official_collaboration_source_universe_v1.csv",
+      "row_count_or_list_items": 616,
+      "sha256": "9b37521f73ab644c6df13e564b10e4fb67167c259feeeb166a90c19d0dfaf9e8"
+    },
+    {
+      "path": "outputs/R10_official_collaboration_universe_v1/partner_identity_crosswalk_human_v1.csv",
+      "row_count_or_list_items": 48,
+      "sha256": "175524a9dbde3d2a7af7acf34bcaf840ed8e718aa634c8b0a745f3427586d4e3"
+    }
+  ],
+  "method": {
+    "accountability_comparison": "active civic actors with at least one active edge in the declared specific accountability anchor issue set; non-civic and service classes excluded",
+    "people": "not measured; no systematic person-actor-time input",
+    "recipients": "incomplete; named examples are not a universe",
+    "relations": "read-only recoding of current reviewed/candidate typed dyadic, case role, typed event, and R10 observations",
+    "service_core": "active registry + declared service classes + us_origin; exact nine IDs asserted"
+  },
+  "metrics": {
+    "accountability_active_issue_edge_count": 189,
+    "accountability_anchor_issue_ids": [
+      "I001",
+      "I002",
+      "I003",
+      "I004",
+      "I006",
+      "I007",
+      "I008",
+      "I010",
+      "I017",
+      "I018",
+      "I021",
+      "I025"
+    ],
+    "accountability_candidate_only_anchor_actor_count": 47,
+    "accountability_comparison_actor_count": 65,
+    "accountability_human_reviewed_anchor_actor_count": 18,
+    "accountability_issue_source_id_count": 96,
+    "accountability_non_source_ref_count": 0,
+    "accountability_unique_place_count": 12,
+    "active_registry_actors": 121,
+    "actor_set_overlap_count": 0,
+    "as_of_date": "2026-07-20",
+    "base_production_causal_status": "hypothesis_only",
+    "candidate_dyadic_relation_count": 8,
+    "case_role_count": 27,
+    "complete_recipient_network_status": "not_measured_incomplete_records",
+    "cross_ecology_dyadic_observed_count": 0,
+    "cross_ecology_event_observed_count": 0,
+    "dyadic_relation_categories": {
+      "accountability_internal": 11,
+      "outside_two_group_comparison": 1,
+      "service_ecology_internal": 10
+    },
+    "frontend_eligibility": "excluded_research_only",
+    "package_claim_status": "candidate_analysis",
+    "package_scope": "research_only",
+    "public_person_overlap_status": "not_measured_no_person_role_table",
+    "publication_status": "not_publication_ready_requires_human_review",
+    "r10_cross_ecology_observed_count": 0,
+    "r10_identity_crosswalked_service_core_row_count": 0,
+    "r10_official_source_universe_row_count": 616,
+    "r10_purposive_relation_count": 35,
+    "r10_relation_categories": {
+      "accountability_to_other_interface": 1,
+      "outside_two_group_comparison": 18,
+      "service_ecology_internal": 8,
+      "service_to_other_interface": 8
+    },
+    "registry_history_rows": 122,
+    "reviewed_dyadic_relation_count": 14,
+    "service_active_issue_edge_count": 11,
+    "service_active_issue_ids": [
+      "I014",
+      "I016"
+    ],
+    "service_anchor_issue_edge_count": 0,
+    "service_candidate_issue_edge_count": 5,
+    "service_core_actor_count": 9,
+    "service_core_actor_ids": [
+      "X001",
+      "X004",
+      "X005",
+      "X006",
+      "X007",
+      "X008",
+      "X009",
+      "X016",
+      "X017"
+    ],
+    "service_core_case_role_count": 0,
+    "service_human_reviewed_issue_edge_count": 6,
+    "service_issue_source_id_count": 12,
+    "service_non_source_ref_count": 3,
+    "service_non_source_refs": [
+      "X001",
+      "X008",
+      "X009"
+    ],
+    "service_unique_place_count": 7,
+    "shared_issue_source_id_count": 0,
+    "shared_issue_source_ids": [],
+    "shared_place_node_count": 2,
+    "shared_place_node_ids": [
+      "P001",
+      "P005"
+    ],
+    "typed_event_observation_count": 4
+  },
+  "non_inference_boundaries": [
+    "candidate relations are not final findings",
+    "zero encoded cross relations do not prove no shared people",
+    "same place does not prove contact or alliance",
+    "service function does not establish political stance",
+    "recipient aggregates are not named annual relations",
+    "coexistence does not establish causal production"
+  ],
+  "outputs": [
+    "H2_two_ecologies_brief_v1.md",
+    "README.md",
+    "accountability_comparison_actors_v1.csv",
+    "case_role_ecology_audit_v1.csv",
+    "coverage_gaps_v1.csv",
+    "dyadic_relation_ecology_audit_v1.csv",
+    "further_search_queue_v1.csv",
+    "human_review_queue_v1.csv",
+    "issue_ecology_profile_v1.csv",
+    "manifest.json",
+    "metrics_v1.json",
+    "place_overlap_v1.csv",
+    "r10_interface_audit_v1.csv",
+    "service_core_actors_v1.csv",
+    "source_overlap_v1.csv",
+    "typed_event_ecology_audit_v1.csv"
+  ],
+  "package_claim_status": "candidate_analysis",
+  "package_id": "research_wave_h2_two_ecologies_v1",
+  "package_scope": "research_only",
+  "publication_status": "not_publication_ready_requires_human_review"
+}

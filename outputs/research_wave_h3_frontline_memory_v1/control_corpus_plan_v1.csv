@@ -1,0 +1,7 @@
+﻿control_id,period,candidate_source_or_event,document_genre,comparison_role,test,status,data_layer,claim_status,central_writeback
+H3C001,2010,EV2010_WWF_67 / S003,joint statement,早期生态／边野古共同声明,用相同词典检查战争记忆、前线化、台湾有事是否出现及处于何种文本位置。,planned_not_collected,research_only,planned_candidate,no
+H3C002,2015,EV2015_NACSJ_31 / S004,joint statement,生态—国际倡议名单对照,区分环保共同声明与后来的前线化共同语言；缺词不预设为负结果。,planned_not_collected,research_only,planned_candidate,no
+H3C003,2020,EV2020_MMC_71 / S006,request letter,近期但仍以边野古／生态为主的事件对照,控制年代后检验议题对象而非年份是否解释词汇差异。,planned_not_collected,research_only,planned_candidate,no
+H3C004,2011–2015,A095/A096 宫古反部署陈情与集会,petition and event call,先岛部署早期地方语言,检验生活、水源和反部署是否早于台湾有事／再战场化主框架。,planned_local_or_archival,research_only,planned_candidate,no
+H3C005,1995–2010,女性／和平／劳工组织的基地声明样本,statement or rally resolution,长期和平语言基线,区分长期 peace/anti-war 词汇与近期 Taiwan/frontline 组合。,planned_local_or_archival,research_only,planned_candidate,no
+H3C006,2021–2024,同组织不同事件配对,formation statement vs later action,组织内采用／保持／退出,检验既有组织是否独立延续该语言，而不只在赞同名单中出现一次。,planned_online,research_only,planned_candidate,no
