@@ -186,3 +186,19 @@ final result: pass (agent-verified with rendered evidence; awaiting principal co
   select and panel issue rows), second click resets. Hit testing now picks the nearer of
   actor vs issue node, so issue nodes stay clickable inside dense actor clusters. Verified
   full focus/reset cycle (儒艮保护 I004 → all).
+
+- Iteration 15 (2026-07-21, exhibit refactor): three published exhibits rebuilt on a shared
+  kit (`src/components/exhibit/`): ExhibitHeader, BoundaryNote, TierBadge, ExhibitTabs,
+  RecordCard, MetaGrid, LimitLine, Unavailable — replacing ~2,000 lines of duplicated
+  per-exhibit CSS with one anatomy. Sakishima frame exhibit: compact observation/excerpt
+  cards with expandable meta+sources+limits, place tabs, frame filter, data-driven scope
+  note. Repeat participation: three event cards with tier stacks and one merged boundary
+  line. Official collaboration: header metric cards, boundary line, mode tabs, summary
+  rows with bars, and collapsed compact trace references. Lifecycle anchors on the Time
+  page became compact expandable cards. Relation graph: coordination family now defaults
+  on in research view. Fixed a state-destroying gate where switching layers unmounted the
+  whole page (research overlay now merges asynchronously; overlay failure shows a
+  non-blocking banner instead). Verified: 7/7 npm tests, build PASS with release stamp,
+  sakishima demo/research (8→15 records) without remount, OCE 15 rows + collapsed traces,
+  lifecycle 5 cards, repeat 3 cards, EN pass, 390px no overflow. Screenshots:
+  `qa/refactor_*.png`.

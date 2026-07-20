@@ -181,6 +181,16 @@ export const UI_STRINGS = {
   },
   "build.reload": { zh: "重新加载", ja: "再読み込み", en: "Reload" },
   "build.dismiss": { zh: "稍后", ja: "あとで", en: "Later" },
+  "build.researchError": {
+    zh: "研究层数据加载失败；已核内容不受影响。",
+    ja: "研究レイヤーの読み込みに失敗しました。已核表示への影響はありません。",
+    en: "The research layer failed to load; reviewed content is unaffected.",
+  },
+  "build.researchRetry": {
+    zh: "回到已核（可再切回重试）",
+    ja: "已核に戻る（再試行できます）",
+    en: "Back to Reviewed (retry anytime)",
+  },
   "actors.relationNote": {
     zh: "已确认 {s} · 有限确认 {b} · 待审 {c}（仅两端均为 registry 组织的关系）",
     ja: "確認 {s} ・ 限定 {b} ・ 審査中 {c}（両端が registry 団体の関係のみ）",

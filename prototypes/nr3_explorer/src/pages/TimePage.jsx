@@ -33,69 +33,71 @@ function LifecycleAnchorCard({ anchor, actorById, onOpenActor, lang }) {
   );
 
   return (
-    <article className={`genealogy-card ${anchor.anchor_type}`}>
-      <header>
+    <details className={`genealogy-card ${anchor.anchor_type}`}>
+      <summary>
         <span className="genealogy-date">{anchor.event_date || "—"}</span>
-        <span className={`claim-chip ${anchor.claim_status}`}>
-          {tr(anchor.claim_status, lang)}
+        <span className="genealogy-route">
+          <button
+            type="button"
+            disabled={!actor}
+            onClick={(event) => {
+              event.preventDefault();
+              if (actor) onOpenActor(actor.id);
+            }}
+          >
+            {actor ? labelOf(actor) : anchor.display_label || anchor.actor_id}
+          </button>
+          {successor && (
+            <>
+              <span aria-hidden="true">→</span>
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.preventDefault();
+                  onOpenActor(successor.id);
+                }}
+              >
+                {labelOf(successor)}
+              </button>
+            </>
+          )}
         </span>
-      </header>
-      <div className="genealogy-route">
-        <button
-          type="button"
-          disabled={!actor}
-          onClick={() => actor && onOpenActor(actor.id)}
-        >
-          {actor ? labelOf(actor) : anchor.display_label || anchor.actor_id}
-        </button>
-        {successor && (
-          <>
-            <span aria-hidden="true">→</span>
-            <button type="button" onClick={() => onOpenActor(successor.id)}>
-              {labelOf(successor)}
-            </button>
-          </>
+        <span className="genealogy-type-line">
+          <span className="genealogy-type">{tu(`lifecycle.${anchor.anchor_type}`, lang)}</span>
+          <span className={`claim-chip ${anchor.claim_status}`}>
+            {tr(anchor.claim_status, lang)}
+          </span>
+        </span>
+      </summary>
+      <div className="genealogy-detail">
+        {confirmedScope && (
+          <p className="genealogy-confirmed">
+            <small>{tu("relation.confirmed", lang)}</small>
+            {confirmedScope}
+          </p>
+        )}
+        {missingScope && (
+          <p className="genealogy-missing">
+            <small>{tu("relation.missing", lang)}</small>
+            {missingScope}
+          </p>
+        )}
+        {interpretationLimit && (
+          <p className="genealogy-limit">{interpretationLimit}</p>
+        )}
+        {(sourceIds.length > 0 || sourceUrls.length > 0) && (
+          <div className="genealogy-sources">
+            <span>{tu("lifecycle.sources", lang)}</span>
+            {sourceIds.length > 0 && <SourceChips ids={sourceIds} />}
+            {sourceUrls.map((url, index) => (
+              <a href={url} target="_blank" rel="noreferrer" key={url} title={url}>
+                {tu("lifecycle.directSource", lang).replace("{n}", String(index + 1))}
+              </a>
+            ))}
+          </div>
         )}
       </div>
-      <strong className="genealogy-status">
-        {tu(`lifecycle.${anchor.anchor_type}`, lang)}
-      </strong>
-      {confirmedScope && (
-        <p className="genealogy-confirmed">
-          <small>{tu("relation.confirmed", lang)}</small>
-          {confirmedScope}
-        </p>
-      )}
-      {missingScope && (
-        <p className="genealogy-missing">
-          <small>{tu("relation.missing", lang)}</small>
-          {missingScope}
-        </p>
-      )}
-      {interpretationLimit && (
-        <p className="genealogy-limit">{interpretationLimit}</p>
-      )}
-      {(sourceIds.length > 0 || sourceUrls.length > 0) && (
-        <div className="genealogy-sources">
-          <span>{tu("lifecycle.sources", lang)}</span>
-          {sourceIds.length > 0 && <SourceChips ids={sourceIds} />}
-          {sourceUrls.map((url, index) => (
-            <a
-              href={url}
-              target="_blank"
-              rel="noreferrer"
-              key={url}
-              title={url}
-            >
-              {tu("lifecycle.directSource", lang).replace(
-                "{n}",
-                String(index + 1),
-              )}
-            </a>
-          ))}
-        </div>
-      )}
-    </article>
+    </details>
   );
 }
 

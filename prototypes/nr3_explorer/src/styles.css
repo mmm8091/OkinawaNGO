@@ -1682,24 +1682,32 @@ button {
   border-top-color: #8a6c98;
 }
 
-.genealogy-card > header {
-  display: flex;
+.genealogy-card > summary {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3px 10px;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.genealogy-card > summary::-webkit-details-marker {
+  display: none;
 }
 
 .genealogy-date {
   color: var(--muted);
   font-size: var(--fs-overline);
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .genealogy-route {
-  margin-top: 8px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 5px;
+  min-width: 0;
   color: var(--faint);
 }
 
@@ -1723,11 +1731,23 @@ button {
   cursor: default;
 }
 
-.genealogy-status {
-  display: block;
-  margin-top: 5px;
+.genealogy-type-line {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.genealogy-type {
   color: var(--ink);
   font-size: var(--fs-body);
+  font-weight: 600;
+}
+
+.genealogy-detail {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e6ebe7;
 }
 
 .genealogy-confirmed,

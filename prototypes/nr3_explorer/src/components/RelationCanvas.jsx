@@ -45,10 +45,16 @@ export function RelationCanvas({
   const dragRef = useRef(null);
   const [hoverEdge, setHoverEdge] = useState(null);
   const [pinnedEdge, setPinnedEdge] = useState(null);
-  const [hiddenFamilies, setHiddenFamilies] = useState(new Set(["coordination"]));
+  const [hiddenFamilies, setHiddenFamilies] = useState(
+    () => new Set(layer === "research" ? [] : ["coordination"]),
+  );
   const [view, setView] = useState({ k: 1, x: 0, y: 0 });
   const lang = useLang();
   const research = layer === "research" && candidates;
+
+  useEffect(() => {
+    setHiddenFamilies(new Set(layer === "research" ? [] : ["coordination"]));
+  }, [layer]);
 
   const actorById = useMemo(() => new Map(actors.map((a) => [a.id, a])), [actors]);
 

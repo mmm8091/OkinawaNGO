@@ -65,10 +65,8 @@ export function App() {
     layer === "research" && candidatesState.status === "ready"
       ? candidatesState.candidates
       : null;
-  const researchLayerPending =
-    layer === "research" &&
-    researchAvailable &&
-    candidatesState.status !== "ready";
+  const researchOverlayError =
+    layer === "research" && candidatesState.status === "error";
 
   const currentBuildId = data.status === "ready" ? data.manifest.build_id : null;
   const newerBuild = useBuildWatch(currentBuildId);
@@ -120,7 +118,7 @@ export function App() {
             version={version}
             researchAvailable={researchAvailable}
           />
-          {data.status === "ready" && !researchLayerPending ? (
+          {data.status === "ready" ? (
             route === "actors" ? (
               <ActorsPage data={data} {...pageProps} />
             ) : route === "time" ? (
@@ -137,12 +135,7 @@ export function App() {
               />
             )
           ) : (
-            <LoadingState
-              error={
-                data.status === "error" ||
-                (researchLayerPending && candidatesState.status === "error")
-              }
-            />
+            <LoadingState error={data.status === "error"} />
           )}
           {drawer.open && (
             <EvidenceDrawer
@@ -167,6 +160,14 @@ export function App() {
                 onClick={() => setBannerDismissed(true)}
               >
                 {tu("build.dismiss", lang)}
+              </button>
+            </div>
+          )}
+          {researchOverlayError && (
+            <div className="build-banner" role="alert">
+              <span>{tu("build.researchError", lang)}</span>
+              <button type="button" onClick={() => setLayer("demo")}>
+                {tu("build.researchRetry", lang)}
               </button>
             </div>
           )}

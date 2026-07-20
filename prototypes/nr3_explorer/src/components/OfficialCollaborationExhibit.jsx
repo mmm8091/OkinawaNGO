@@ -1,4 +1,6 @@
 import { useEffect, useId, useMemo, useState } from "react";
+import { BoundaryNote, ExhibitHeader, Unavailable } from "./exhibit/ExhibitKit.jsx";
+import "./exhibit/exhibit.css";
 import "./OfficialCollaborationExhibit.css";
 
 const COPY = {
@@ -31,8 +33,7 @@ const COPY = {
     exactTrace: "完整压缩引用",
     noCells: "该汇总项没有可显示的非零交叉单元。",
     boundaryTitle: "读取边界",
-    boundary:
-      "这里的单位始终是官方表中的记录行。协作机制不等于付款，重复出现不等于组织关系，机器排版标签不作为组织展示。",
+    boundary: "单位始终是官方表中的记录行；协作机制不等于付款，重复出现不等于组织关系。",
     mechanismBoundary: "官方协作形态，不代表现金支付",
     functionBoundary: "官方事業分野，不代表组织自身宗旨或立场",
     departmentBoundary: "官方表中的部门可见度，不代表资源依赖",
@@ -68,8 +69,7 @@ const COPY = {
     exactTrace: "全件の圧縮参照",
     noCells: "表示できる非ゼロの交差セルはありません。",
     boundaryTitle: "解釈上の境界",
-    boundary:
-      "単位は常に公式表の記録行です。協働形態は支払いを意味せず、反復掲載は組織関係を意味しません。機械整形した名称を組織として表示しません。",
+    boundary: "単位は常に公式表の記録行です。協働形態は支払いを意味せず、反復掲載は組織関係を意味しません。",
     mechanismBoundary: "公式の協働形態であり、現金支払いを示しません",
     functionBoundary: "公式の事業分野であり、団体自身の目的や立場を示しません",
     departmentBoundary: "公式表での部局別可視性であり、資源依存を示しません",
@@ -96,8 +96,7 @@ const COPY = {
     resourceTypes: "mechanisms",
     departmentsMeta: "departments",
     details: "Non-zero cross-cells",
-    detailsHint:
-      "Select a summary row to inspect its intersections with other official categories.",
+    detailsHint: "Select a summary row to inspect its intersections with other official categories.",
     byResource: "By mechanism",
     byDepartment: "By department",
     byFunction: "By official function",
@@ -106,13 +105,10 @@ const COPY = {
     exactTrace: "complete compact references",
     noCells: "No non-zero cross-cell is available for this item.",
     boundaryTitle: "Interpretation boundary",
-    boundary:
-      "The unit is always an official table row. A mechanism is not a payment, repeated appearance is not an organizational relation, and machine-formatted labels are not presented as organizations.",
+    boundary: "The unit is always an official table row; a mechanism is not a payment and repeated appearance is not an organizational relation.",
     mechanismBoundary: "Official collaboration form, not evidence of cash payment",
-    functionBoundary:
-      "Official function category, not an organization's own purpose or position",
-    departmentBoundary:
-      "Visibility under a source department, not evidence of resource dependence",
+    functionBoundary: "Official function category, not an organization's own purpose or position",
+    departmentBoundary: "Visibility under a source department, not evidence of resource dependence",
     unavailable: "Exhibit data has not been loaded.",
     rowsNotActors: "616 records, not 616 organizations",
   },
@@ -124,74 +120,34 @@ const MODES = [
   { id: "resource_types", copy: "modeResource" },
 ];
 
-function normalizedLang(lang) {
-  return Object.hasOwn(COPY, lang) ? lang : "zh";
-}
-
-function localized(value, lang, fallback = "") {
-  if (value && typeof value === "object") {
-    return value[lang] || value.zh || value.ja || value.en || fallback;
-  }
-  return value || fallback;
-}
-
-function numberFormatter(lang) {
-  const locale = lang === "ja" ? "ja-JP" : lang === "en" ? "en-US" : "zh-CN";
-  return new Intl.NumberFormat(locale);
-}
+const normalizedLang = (lang) => (COPY[lang] ? lang : "zh");
+const localized = (value, lang, fallback = "") =>
+  value?.[lang] || value?.zh || value?.ja || value?.en || fallback;
+const formatOf = (lang) =>
+  new Intl.NumberFormat(lang === "ja" ? "ja-JP" : lang === "en" ? "en-US" : "zh-CN");
 
 function rowKey(row, mode) {
-  if (mode === "departments") return row.label;
-  return row.code;
+  return mode === "departments" ? row.label : row.code;
 }
-
 function rowLabel(row, mode) {
-  if (mode === "departments") return row.label;
-  return row.label || row.code;
+  return mode === "departments" ? row.label : row.label || row.code;
 }
-
 function metricValue(exhibit, id, fallback) {
   return exhibit?.headline_metrics?.find((metric) => metric.id === id)?.value ?? fallback;
 }
 
 function SummaryMeta({ row, mode, copy }) {
-  if (mode === "departments") {
-    return (
-      <>
-        <span>
-          {row.office_source_label_count} {copy.offices}
-        </span>
-        <span>
-          {row.function_count} {copy.functions}
-        </span>
-        <span>
-          {row.resource_type_count} {copy.resourceTypes}
-        </span>
-      </>
-    );
-  }
-  if (mode === "functions") {
-    return (
-      <>
-        <span>
-          {row.department_count} {copy.departmentsMeta}
-        </span>
-        <span>
-          {row.resource_type_count} {copy.resourceTypes}
-        </span>
-      </>
-    );
-  }
-  return (
-    <>
-      <span>
-        {row.department_count} {copy.departmentsMeta}
-      </span>
-      <span>
-        {row.function_count} {copy.functions}
-      </span>
-    </>
-  );
+  const items =
+    mode === "departments"
+      ? [
+          `${row.office_source_label_count} ${copy.offices}`,
+          `${row.function_count} ${copy.functions}`,
+          `${row.resource_type_count} ${copy.resourceTypes}`,
+        ]
+      : mode === "functions"
+        ? [`${row.department_count} ${copy.departmentsMeta}`, `${row.resource_type_count} ${copy.resourceTypes}`]
+        : [`${row.department_count} ${copy.departmentsMeta}`, `${row.function_count} ${copy.functions}`];
+  return <span className="oce-row-meta">{items.join(" · ")}</span>;
 }
 
 function TraceCell({ cell, copy }) {
@@ -199,7 +155,7 @@ function TraceCell({ cell, copy }) {
   const pageRefs = cell.source_row_refs?.pdf_pages_compact || "—";
   return (
     <article className="oce-trace-cell">
-      <div className="oce-trace-cell-top">
+      <div className="oce-trace-top">
         <div>
           <strong>{cell.dimension_label}</strong>
           <small>{cell.resource_type_label}</small>
@@ -212,21 +168,23 @@ function TraceCell({ cell, copy }) {
       <div className="oce-cell-share">
         <span style={{ "--oce-cell-share": `${cell.share_of_denominator_percent}%` }} />
       </div>
-      <dl className="oce-ref-grid">
-        <div>
-          <dt>{copy.originalRows}</dt>
-          <dd>
-            <code title={rowRefs}>{rowRefs}</code>
-          </dd>
-        </div>
-        <div>
-          <dt>{copy.originalPages}</dt>
-          <dd>
-            <code title={pageRefs}>{pageRefs}</code>
-          </dd>
-        </div>
-      </dl>
-      <p>{copy.exactTrace}</p>
+      <details className="oce-trace-refs">
+        <summary>{copy.exactTrace}</summary>
+        <dl>
+          <div>
+            <dt>{copy.originalRows}</dt>
+            <dd>
+              <code>{rowRefs}</code>
+            </dd>
+          </div>
+          <div>
+            <dt>{copy.originalPages}</dt>
+            <dd>
+              <code>{pageRefs}</code>
+            </dd>
+          </div>
+        </dl>
+      </details>
     </article>
   );
 }
@@ -244,11 +202,7 @@ function DetailGroup({ title, cells, totalCount, copy }) {
       </header>
       <div className="oce-cell-list">
         {cells.map((cell) => (
-          <TraceCell
-            cell={cell}
-            copy={copy}
-            key={`${cell.dimension_code_or_label}-${cell.resource_type_code}`}
-          />
+          <TraceCell cell={cell} copy={copy} key={`${cell.dimension_code_or_label}-${cell.resource_type_code}`} />
         ))}
       </div>
     </section>
@@ -259,7 +213,7 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
   const activeLang = normalizedLang(lang);
   const copy = COPY[activeLang];
   const titleId = useId();
-  const formatNumber = useMemo(() => numberFormatter(activeLang), [activeLang]);
+  const formatNumber = useMemo(() => formatOf(activeLang), [activeLang]);
   const [mode, setMode] = useState("departments");
   const rows = exhibit?.summaries?.[mode] || [];
   const [selectedKey, setSelectedKey] = useState("");
@@ -268,13 +222,9 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
     setSelectedKey(rows.length ? String(rowKey(rows[0], mode)) : "");
   }, [exhibit, mode, rows.length]);
 
-  const selected = rows.find(
-    (row) => String(rowKey(row, mode)) === selectedKey,
-  );
-  const departmentCells =
-    exhibit?.drilldown?.department_by_resource_type_nonzero_cells || [];
-  const functionCells =
-    exhibit?.drilldown?.function_by_resource_type_nonzero_cells || [];
+  const selected = rows.find((row) => String(rowKey(row, mode)) === selectedKey);
+  const departmentCells = exhibit?.drilldown?.department_by_resource_type_nonzero_cells || [];
+  const functionCells = exhibit?.drilldown?.function_by_resource_type_nonzero_cells || [];
 
   const detailGroups = useMemo(() => {
     if (!selected) return [];
@@ -283,9 +233,7 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
         {
           id: "resource",
           title: copy.byResource,
-          cells: departmentCells.filter(
-            (cell) => cell.dimension_code_or_label === selected.label,
-          ),
+          cells: departmentCells.filter((cell) => cell.dimension_code_or_label === selected.label),
         },
       ];
     }
@@ -294,9 +242,7 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
         {
           id: "resource",
           title: copy.byResource,
-          cells: functionCells.filter(
-            (cell) => cell.dimension_code_or_label === selected.code,
-          ),
+          cells: functionCells.filter((cell) => cell.dimension_code_or_label === selected.code),
         },
       ];
     }
@@ -304,27 +250,17 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
       {
         id: "department",
         title: copy.byDepartment,
-        cells: departmentCells.filter(
-          (cell) => cell.resource_type_code === selected.code,
-        ),
+        cells: departmentCells.filter((cell) => cell.resource_type_code === selected.code),
       },
       {
         id: "function",
         title: copy.byFunction,
-        cells: functionCells.filter(
-          (cell) => cell.resource_type_code === selected.code,
-        ),
+        cells: functionCells.filter((cell) => cell.resource_type_code === selected.code),
       },
     ];
   }, [copy, departmentCells, functionCells, mode, selected]);
 
-  if (!exhibit) {
-    return (
-      <section className="official-collaboration-exhibit oce-unavailable">
-        <p>{copy.unavailable}</p>
-      </section>
-    );
-  }
+  if (!exhibit) return <Unavailable text={copy.unavailable} />;
 
   const denominator = exhibit.denominator || {};
   const maximum = Math.max(...rows.map((row) => row.source_row_count || 0), 1);
@@ -336,73 +272,23 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
         : copy.mechanismBoundary;
 
   return (
-    <section
-      className="official-collaboration-exhibit"
-      aria-labelledby={titleId}
-    >
-      <header className="oce-header">
-        <div>
-          <p className="oce-eyebrow">{copy.eyebrow}</p>
-          <h2 id={titleId}>
-            {localized(exhibit.display?.title, activeLang, copy.fallbackTitle)}
-          </h2>
-          <p className="oce-subtitle">
-            {localized(exhibit.display?.subtitle, activeLang)}
-          </p>
-        </div>
-        <span className="oce-source-chip">
-          {denominator.source_id || "S002"} · FY{denominator.fiscal_year || 2024}
-        </span>
-      </header>
+    <section className="oce-exhibit" aria-labelledby={titleId}>
+      <ExhibitHeader
+        kicker={copy.eyebrow}
+        title={localized(exhibit.display?.title, activeLang, copy.fallbackTitle)}
+        subtitle={localized(exhibit.display?.subtitle, activeLang)}
+        metrics={[
+          { value: formatNumber.format(denominator.value || 616), label: copy.sourceRows, note: copy.rowsNotActors },
+          { value: formatNumber.format(denominator.pdf_pages || 86), label: copy.pdfPages, note: denominator.source_row_range },
+          { value: formatNumber.format(exhibit.drilldown?.dimensions?.departments || 15), label: copy.departments, note: copy.sourceLabel },
+          { value: `${metricValue(exhibit, "M12", 76.1)}%`, label: copy.mechanismShare, note: `${formatNumber.format(metricValue(exhibit, "M11", 469))}${copy.countSuffix}` },
+          { value: `${metricValue(exhibit, "M14", 3.1)}%`, label: copy.adjacentShare, note: `${formatNumber.format(metricValue(exhibit, "M13", 19))}${copy.countSuffix}` },
+        ]}
+      />
 
-      <div className="oce-metrics" aria-label={copy.eyebrow}>
-        <article className="oce-metric oce-metric-primary">
-          <strong>{formatNumber.format(denominator.value || 616)}</strong>
-          <span>{copy.sourceRows}</span>
-          <small>{copy.rowsNotActors}</small>
-        </article>
-        <article className="oce-metric">
-          <strong>{formatNumber.format(denominator.pdf_pages || 86)}</strong>
-          <span>{copy.pdfPages}</span>
-          <small>{denominator.source_row_range}</small>
-        </article>
-        <article className="oce-metric">
-          <strong>
-            {formatNumber.format(
-              exhibit.drilldown?.dimensions?.departments || 15,
-            )}
-          </strong>
-          <span>{copy.departments}</span>
-          <small>{copy.sourceLabel}</small>
-        </article>
-        <article className="oce-metric oce-metric-accent">
-          <strong>{metricValue(exhibit, "M12", 76.1)}%</strong>
-          <span>{copy.mechanismShare}</span>
-          <small>
-            {formatNumber.format(metricValue(exhibit, "M11", 469))}
-            {copy.countSuffix}
-          </small>
-        </article>
-        <article className="oce-metric oce-metric-accent">
-          <strong>{metricValue(exhibit, "M14", 3.1)}%</strong>
-          <span>{copy.adjacentShare}</span>
-          <small>
-            {formatNumber.format(metricValue(exhibit, "M13", 19))}
-            {copy.countSuffix}
-          </small>
-        </article>
-      </div>
-
-      <aside className="oce-boundary">
-        <strong>{copy.boundaryTitle}</strong>
-        <p>
-          {localized(
-            exhibit.display?.interpretation_limit,
-            activeLang,
-            copy.boundary,
-          )}
-        </p>
-      </aside>
+      <BoundaryNote title={copy.boundaryTitle}>
+        {localized(exhibit.display?.interpretation_limit, activeLang, copy.boundary)}
+      </BoundaryNote>
 
       <div className="oce-mode-tabs" role="tablist" aria-label={copy.modesLabel}>
         {MODES.map((item) => (
@@ -438,14 +324,10 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
                 <span className="oce-summary-bar" style={{ "--oce-bar": `${width}%` }} />
                 <span className="oce-summary-main">
                   <span className="oce-summary-title">
-                    {mode !== "departments" && (
-                      <em>{mode === "functions" ? row.code : `C${row.code}`}</em>
-                    )}
+                    {mode !== "departments" && <em>{mode === "functions" ? row.code : `C${row.code}`}</em>}
                     <strong>{rowLabel(row, mode)}</strong>
                   </span>
-                  <span className="oce-summary-meta">
-                    <SummaryMeta row={row} mode={mode} copy={copy} />
-                  </span>
+                  <SummaryMeta row={row} mode={mode} copy={copy} />
                 </span>
                 <span className="oce-summary-value">
                   <strong>{formatNumber.format(row.source_row_count)}</strong>

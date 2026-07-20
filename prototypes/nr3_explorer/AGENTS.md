@@ -20,3 +20,10 @@ Session progress, QA evidence and iteration history do NOT belong here: QA goes 
 - Interaction: both canvases support wheel zoom-to-cursor, drag pan, buttons, and reset. Map selection is point-in-polygon; region labels are anchored to projected geography and track zoom/pan; actor-class groups/colors, regions, place-display-region mappings and time periods come from `core/presentation/rules.json`, never from parallel React constants or regexes.
 - Safety: node size ≠ influence; counts ≠ alliance; co-signing/shared events ≠ alliance; no evidence-depth color coding on the overview map; event years are not organizational continuity.
 - QA: `npm run build` plus headless-Chrome screenshots at 1488 × 1024 into `prototypes/nr3_explorer/qa/` before claiming any visual pass; log results in the repo-root `design-qa.md`. Never leave unscoped element selectors (e.g. `.page-intro span`) — they silently override component rules.
+
+## Exhibit Kit (2026-07-21)
+
+- All published research exhibits use the shared kit in `src/components/exhibit/` (`ExhibitKit.jsx` + `exhibit.css`): ExhibitHeader, BoundaryNote, TierBadge, ExhibitTabs, RecordCard, MetaGrid, LimitLine, Unavailable. New exhibits compose these; do not fork per-exhibit card anatomy.
+- Exhibit chrome copy is short; every data value, status label, denominator and interpretation_limit text renders from the payload. Never translate or paraphrase research content in components.
+- Layer switching must never unmount pages: the reviewed core renders as soon as loaded; research candidates merge in asynchronously. A research-overlay failure shows a non-blocking banner, never a full-page loading state.
+- The relation graph keeps the coordination family visible by default in research view, hidden by default in reviewed view.

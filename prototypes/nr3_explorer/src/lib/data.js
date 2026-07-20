@@ -133,7 +133,10 @@ export function useResearchCandidates(enabled) {
   const [state, setState] = useState({ status: "idle", candidates: null });
 
   useEffect(() => {
-    if (!enabled) return undefined;
+    if (!enabled) {
+      setState({ status: "idle", candidates: null });
+      return undefined;
+    }
     let mounted = true;
     setState((current) =>
       current.status === "idle" ? { status: "loading", candidates: null } : current,
