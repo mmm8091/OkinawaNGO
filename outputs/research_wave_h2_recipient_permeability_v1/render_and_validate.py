@@ -77,15 +77,15 @@ def render_selective_permeability() -> None:
         box(355, 475, 330, 170, "③ 照护 → 权利", ["个案累积 → 调查／命名", "1979 提言 → 权利／政策", "后期公开基地责任主张"], "#f7eaf3", "#aa5d91"),
         box(755, 105, 555, 145, "本地福利／教育／障碍者组织", ["公开 recipient 可见；部分也在 S002 行政协作中出现", "recipient ≠ 盟友；S002 项目成本 ≠ 付款"], "#ffffff", "#99a5b7"),
         box(755, 290, 555, 145, "社会接触接口", ["冲绳人与美国人可共同参与福利活动", "成员比例、持续性和人员共享仍未完整测量"], "#ffffff", "#99a5b7"),
-        box(755, 475, 555, 170, "权利／政策／基地问责接口", ["国際福祉相談所是历史反例", "当前 MTS／AWWA／OIWC 与 18 个问责锚点", "有界检索仍未找到可归属直接组织关系"], "#ffffff", "#99a5b7"),
+        box(755, 475, 555, 170, "权利／政策／基地问责接口", ["ISSO 是福利转向问责的历史候选", "18 个非随机问责锚点的有限 AI 查询", "未记录可归属直接组织关系"], "#ffffff", "#99a5b7"),
         arrow(290, 240, 355, 178, "#52627a"),
         arrow(290, 260, 355, 360, "#52627a"),
         arrow(290, 290, 355, 555, "#52627a"),
         arrow(685, 178, 755, 178, "#52627a"),
         arrow(685, 360, 755, 360, "#52627a"),
         arrow(685, 560, 755, 560, "#52627a"),
-        svg_text(48, 715, "可说：不同跨界形式的制度化条件不同。", 22, 700, "#25334a"),
-        svg_text(48, 750, "不可说：两套生态完全隔绝、没有共享人员，或受赠关系代表政治立场。", 20, 400, "#9a3546"),
+        svg_text(48, 715, "可说：历史材料削弱“长期始终完全封闭”的外推。", 22, 700, "#25334a"),
+        svg_text(48, 750, "不可说：当代组织／人员已被对称测量，或两套生态完全隔绝。", 20, 400, "#9a3546"),
     ]
     write_text("fig_h2_selective_permeability_v1.svg", svg_shell(1360, 790, "\n".join(body), "H2 selective permeability"))
 
@@ -101,14 +101,14 @@ def render_overlap(summary: list[dict[str, str]]) -> None:
         "none": "#dce2ea",
     }
     body = [
-        svg_text(48, 55, "公开受赠名单与 FY2024 S002：重叠稀疏且口径不等", 32, 700),
-        svg_text(48, 87, "每条是不同披露 cohort；长度按公开 research labels 计，不代表组织规模或捐赠强度", 18, 400, "#5b687c"),
+        svg_text(48, 55, "跨期清单 crosswalk：少数名称候选共同可见", 32, 700),
+        svg_text(48, 87, "受赠名单与 FY2024 S002 时期／单位不同；不估计转化概率或通透门槛", 18, 400, "#5b687c"),
     ]
     cohort_labels = {
         "H2OV001": "AWWA 前期公开受赠候选",
         "H2OV002": "OIWC 2015–24 公开受赠名册",
         "H2OV003": "MTS 近期网页标签",
-        "H2OV004": "MTS FY2021–24 Schedule I 列名对象",
+        "H2OV004": "MTS FY2021–24 第三方 IRS 展示对象",
     }
     y = 150
     for row in summary:
@@ -158,7 +158,7 @@ def render_overlap(summary: list[dict[str, str]]) -> None:
         body.append(f'<rect x="{x}" y="{legend_y}" width="22" height="22" fill="{colors[key]}"/>')
         body.append(svg_text(x + 31, legend_y + 18, label, 17))
         x += 255
-    body.append(svg_text(48, 670, "名称 crosswalk 只证明同一对象可能在两类来源中可见；不生成三方关系、付款或联盟。", 18, 700, "#8e3b4b"))
+    body.append(svg_text(48, 670, "只记录候选名称共同可见；不推断转化概率、通透门槛、付款、关系或联盟。", 18, 700, "#8e3b4b"))
     write_text("fig_h2_recipient_admin_overlap_v1.svg", svg_shell(width, height, "\n".join(body), "H2 recipient and S002 overlap"))
 
 
@@ -174,10 +174,10 @@ def render_timeline() -> None:
     top = [
         ("1953", "OIWC\n自称成立"),
         ("1971", "福利理事会\n九俱乐部"),
-        ("1972", "AWWA\n六组中介"),
+        ("1972", "2000官方回溯\nAWWA六组"),
         ("1992–99", "AWWA\n年度汇总"),
         ("2015–24", "OIWC\n受赠名册"),
-        ("2021–24", "MTS→AWWA\n连续申报"),
+        ("2021–24", "第三方IRS展示\n待核原表"),
         ("2024", "Lions\n例外绕行"),
     ]
     bottom = [
@@ -225,7 +225,7 @@ def validate() -> str:
         "recipient_s002_crosswalk_v1.csv": 11,
         "recipient_s002_overlap_summary_v1.csv": 4,
         "source_disclosure_audit_v1.csv": 8,
-        "accountability_symmetric_search_v2.csv": 18,
+        "accountability_limited_co_mention_search_v2.csv": 18,
         "historical_interface_timeline_v1.csv": 17,
         "historical_interface_observations_v1.csv": 11,
         "literature_positioning_v1.csv": 5,
@@ -251,6 +251,11 @@ def validate() -> str:
     assert sums["kubasaki_high_school_ptso"] == 38051
     assert sum(row["observation_semantics"] == "named_grant_row" for row in mts) == 11
     assert sum(row["observation_semantics"] == "unitemized_grant_bucket" for row in mts) == 2
+    assert all(
+        row["source_basis"] == "third_party_IRS_derived_display_original_filing_not_checked"
+        and row["review_status"] == "ai_seeded"
+        for row in mts
+    )
 
     oiwc = rows_by_file["oiwc_public_recipient_roster_v1.csv"]
     assert len({row["recipient_research_key"] for row in oiwc}) == 70
@@ -274,10 +279,30 @@ def validate() -> str:
         )
         assert component_sum == total, f"{row['cohort_id']}: overlap components do not sum"
 
-    search = rows_by_file["accountability_symmetric_search_v2.csv"]
+    search = rows_by_file["accountability_limited_co_mention_search_v2.csv"]
     assert len({row["actor_id"] for row in search}) == 18
-    assert all(row["direct_org_interface_result"] == "searched_corpus_not_found_attributable_direct_organization_interface" for row in search)
-    assert all(row["person_overlap_status"] == "not_measured_person_rosters_incomplete" for row in search)
+    assert all(
+        row["direct_org_interface_result"]
+        == "limited_ai_log_no_attributable_direct_organization_relation_recorded"
+        for row in search
+    )
+    assert all(
+        row["query_family"] == "limited_exact_actor_x_service_name_web_co_mention_v1"
+        and row["query_execution_status"] == "completed_no_results_returned"
+        and row["returned_result_count"] == "0"
+        and row["returned_result_urls"] == ""
+        and row["anchor_selection"] == "nonrandom_accountability_anchor"
+        for row in search
+    )
+    for row in search:
+        for required_name in (
+            "American Welfare and Works Association",
+            "American Women's Welfare Association",
+            "米国福祉事業協会",
+            "米国婦人福祉協会",
+        ):
+            assert required_name in row["exact_query_string"]
+        assert row["person_overlap_status"] == "not_symmetrically_measured_person_rosters_incomplete"
 
     crosswalk = rows_by_file["recipient_s002_crosswalk_v1.csv"]
     guarded = [row for row in crosswalk if row["existing_review_overlap"]]
@@ -292,6 +317,7 @@ def validate() -> str:
         "not_frontend_ready",
         "fig_h2_selective_permeability_v1.svg",
         "principal_checkpoint_v1.md",
+        "limited_co_mention_search_method_v1.md",
     ):
         assert required in readme
 
@@ -329,12 +355,12 @@ Generated by `python outputs/research_wave_h2_recipient_permeability_v1/render_a
 
 ## Numerical checks
 
-- MTS Schedule I transcription: 13 rows; 11 named rows and 2 unitemized buckets.
-- Four AWWA filing-year rows sum to **151,672 USD**.
+- MTS third-party IRS-derived display transcription: 13 ai-seeded rows; 11 named rows and 2 unitemized buckets; original filing pages are not yet checked.
+- Four displayed AWWA filing-year rows sum to **151,672 USD**, pending original-filing review.
 - Four Kubasaki-label filing-year rows sum to **38,051 USD**; identity remains unresolved.
 - OIWC roster: 86 raw rows and 70 research keys across seven displayed cycles.
 - OIWC 2023–2024 mismatch retained: 13 public names versus application-guide count 18.
-- Symmetric search: 18 unique accountability anchors; direct organization interface result is bounded-not-found for all 18.
+- Limited co-mention search: 18 nonrandom accountability anchors; exact queries and zero-result execution records are retained. This is not a symmetric or closure test.
 - S002 overlap summaries add exactly to each disclosure-cohort denominator.
 
 ## Boundary checks
@@ -343,6 +369,8 @@ Generated by `python outputs/research_wave_h2_recipient_permeability_v1/render_a
 - No historical node receives an actor ID; existing actor IDs appear only as the 18 search anchors.
 - H2WI003 is guarded as the single F029/HR018-24 overlap and creates no duplicate task.
 - Unitemized grants, S002 project costs, composite partner cells and event co-presence are not converted to dyadic funding/alliance edges.
+- Cross-period recipient/S002 name visibility is not interpreted as a transition probability or permeability threshold.
+- The 1972 AWWA six-group label is explicitly a 2000 official retrospective, not a frozen cross-period count.
 - Three SVGs are research-hypothesis figures and are not frontend contracts.
 
 ## SHA-256

@@ -13,17 +13,19 @@
 
 ## 当前最重要的修正
 
-“两套 NGO 完全隔绝”不成立为历史命题，也不是本包的结论。
+现有历史材料削弱了把当代公开接口缺失外推为“长期始终完全封闭”的说法，但没有完成
+当代组织或人员交叉的双侧对称测量。
 
 - 当前 MTS／AWWA／OIWC 材料显示，服务侧资源持续进入本地福利、儿童、障碍者和教育组织；
 - OIWC 是公开可见的混合成员接口，不是单纯的军属组织；
-- 国際福祉相談所（ISSO／ISAO／国際福祉相談所）是明确的历史反例：它从基地衍生的
+- 国際福祉相談所（ISSO／ISAO／国際福祉相談所）是一个历史候选案例：它从基地衍生的
   婚姻、离婚、养育、无国籍儿童等个案出发，形成调查、提言、法改正要求和公开的基地
-  责任批评；
-- 对 18 个基地问责锚点进行新一轮日英对称检索，仍未找到其与 MTS／OIWC／AWWA 的
-  可归属直接组织关系。这个结果只描述有界公开语料，不证明没有人员接触或非公开关系。
+  责任批评；它削弱“福利工作天然不政治化”的历史外推，不代表当前服务组织采取同样
+  立场；
+- 现有 AI 日志在 18 个非随机问责锚点的一组有限组织名共现查询中，没有记录到其与
+  MTS／OIWC／AWWA 的可归属直接组织关系。它不是对称或闭合检验，也没有测量共享人员。
 
-因此更值得检验的候选命题是“选择性通透”：
+因此更值得检验、而不是已经证实的候选命题是“选择性通透”：
 
 1. 资源可经申请、筛选和中介进入低冲突的福利／教育领域；
 2. 混合成员社交组织可形成长期接触；
@@ -39,12 +41,13 @@
 5. `mts_recent_recipient_labels_v1.csv`
 6. `oiwc_public_recipient_roster_v1.csv`
 7. `recipient_s002_crosswalk_v1.csv`
-8. `accountability_symmetric_search_v2.csv`
-9. `source_disclosure_audit_v1.csv`
-10. `literature_positioning_v1.csv`
-11. `human_review_leads_v1.csv`
-12. `principal_checkpoint_v1.md`
-13. `validation_report_v1.md`
+8. `limited_co_mention_search_method_v1.md`
+9. `accountability_limited_co_mention_search_v2.csv`
+10. `source_disclosure_audit_v1.csv`
+11. `literature_positioning_v1.csv`
+12. `human_review_leads_v1.csv`
+13. `principal_checkpoint_v1.md`
+14. `validation_report_v1.md`
 
 ## 图件
 
@@ -62,7 +65,10 @@
 - 不把 recipient、成员、同场活动、一次捐赠和长期关系互相替换；
 - 不把服务组织写成亲基地或反基地；
 - 不把 S002 的项目成本写成付款；
+- 不把跨期 OIWC／recipient 名称与 FY2024 S002 的少数 crosswalk 写成转化概率、因果路径
+  或通透门槛；
+- MTS Schedule I 行来自第三方 IRS-derived display，原始申报页尚未逐页核对，全部保持
+  `ai_seeded`；
 - 不把馆方“推动 1985 年国籍法修改”的回顾直接升级为已完成因果识别；
 - 不把负检索写成不存在关系；
 - 不重复创建 H2WI003；它与既有 F029／HR018-24 是同一受赠事实的研究侧重述。
-

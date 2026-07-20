@@ -6,8 +6,8 @@
   </marker>
 </defs>
 <rect width="1360" height="710" fill="#f5f7fb"/>
-<text x="48" y="55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172033" text-anchor="start">公开受赠名单与 FY2024 S002：重叠稀疏且口径不等</text>
-<text x="48" y="87" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#5b687c" text-anchor="start">每条是不同披露 cohort；长度按公开 research labels 计，不代表组织规模或捐赠强度</text>
+<text x="48" y="55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172033" text-anchor="start">跨期清单 crosswalk：少数名称候选共同可见</text>
+<text x="48" y="87" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#5b687c" text-anchor="start">受赠名单与 FY2024 S002 时期／单位不同；不估计转化概率或通透门槛</text>
 <text x="48" y="150" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#172033" text-anchor="start">AWWA 前期公开受赠候选</text>
 <rect x="470.0" y="125" width="10.9" height="30" fill="#2c8c69"/>
 <rect x="480.9" y="125" width="10.9" height="30" fill="#cc704f"/>
@@ -28,7 +28,7 @@
 <rect x="470" y="355" width="358.3" height="30" fill="none" stroke="#7a8798" stroke-width="1.5"/>
 <text x="1260" y="380" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#344057" text-anchor="end">n=33</text>
 <text x="470" y="408" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#5b687c" text-anchor="start">直接名称族 0 · 联合体成员 0 · 身份范围候选 1 · 其余 32</text>
-<text x="48" y="495" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#172033" text-anchor="start">MTS FY2021–24 Schedule I 列名对象</text>
+<text x="48" y="495" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="700" fill="#172033" text-anchor="start">MTS FY2021–24 第三方 IRS 展示对象</text>
 <rect x="470.0" y="470" width="54.3" height="30" fill="#dce2ea"/>
 <rect x="470" y="470" width="54.3" height="30" fill="none" stroke="#7a8798" stroke-width="1.5"/>
 <text x="1260" y="495" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#344057" text-anchor="end">n=5</text>
@@ -41,5 +41,5 @@
 <text x="589" y="628" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#172033" text-anchor="start">身份范围待核</text>
 <rect x="813" y="610" width="22" height="22" fill="#dce2ea"/>
 <text x="844" y="628" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#172033" text-anchor="start">无匹配／未列</text>
-<text x="48" y="670" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8e3b4b" text-anchor="start">名称 crosswalk 只证明同一对象可能在两类来源中可见；不生成三方关系、付款或联盟。</text>
+<text x="48" y="670" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8e3b4b" text-anchor="start">只记录候选名称共同可见；不推断转化概率、通透门槛、付款、关系或联盟。</text>
 </svg>
