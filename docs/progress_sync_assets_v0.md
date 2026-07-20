@@ -257,7 +257,7 @@ v2 的六项解释性发现：
 - Source archive 当前为 273 archived、2 manual、18 failed、2 non-URL；HR-030 已合并。
 - R6/R7/R11 的六个 SVG/HTML 已按当前 80 条正式观察／53 条 R11 进入观察重绘；A066 县基地政策合同与 USO/service 分列，4 条 analytical seed 不进事实图。
 - 六维 coverage 已按 121 个有效 actor、283 条有效 actor–issue、130 条有效 actor–place 和 295 条来源重生；中央历史边界为 122／294／135。当前 120 个 category cells 是生成结果，不是固定契约。
-- HR-035 Batch 1、HR-010 batch 6、LCR001–004、HR-034、HR-029／031 均已确认并合并。当前正式剩余总账只剩12条当地／新一手材料任务，见 `docs/principal_human_review_remaining_v17.md`。
+- HR-035 Batch 1、HR-010 batch 6、LCR001–004、HR-034、HR-029／031 均已确认并合并。HR-035 Batch 2 已正式派发 18 条事实＋5 条身份决定；另有12条当地／新一手材料任务。当前总账见 `docs/principal_human_review_remaining_v18.md`。
 - HR-029 数据冻结门已清除，HR-031 三项均采用保守 B；原5张 `freeze_required` 图仍须按冻结词表重绘／QA 后才能改为 ready。蓝图仍不等于正式 DOCX/PDF、论文或 PPT。
 - 探索系统已按冻结后的 relation/place/actor–issue 词表正式重生，当前为125人审／158候选；
   22项 adapter、5项 R10 renderer 和7项 R1/R2 gate 测试通过。五页已在1280×900与390×844

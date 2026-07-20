@@ -21,7 +21,7 @@
 - R12 媒体可见度、R13 人物—组织互锁、R14 组织谱系属于扩展模块，不阻塞标准一期；当前 coverage audit 是基础建设成果，不是方案 R14。
 - 一期不以“文件存在”验收。每个模块必须同时有数据证据、解释性回答、可读成果和明确边界。
 
-本轮已完成核心 CSV 语法修复、registry issue-tag 规范化及在线人审回填。HR-010 批6（47）→ LCR001–004（4）→ HR-034（50）→ 重生并执行 HR-029（41）→ HR-031（3）的依赖顺序已经闭合；HR-035 Batch 1 的15条事实决定也已合并。正式未闭合人审只剩12条当地／新一手材料项。
+本轮已完成核心 CSV 语法修复、registry issue-tag 规范化及在线人审回填。HR-010 批6（47）→ LCR001–004（4）→ HR-034（50）→ 重生并执行 HR-029（41）→ HR-031（3）的依赖顺序已经闭合；HR-035 Batch 1 的15条事实决定也已合并。HR-035 Batch 2 已正式派发18条事实＋5条身份决定；另有12条当地／新一手材料项，当前正式未闭合共35项。
 
 ## 2. 模块的统一验收单位
 
@@ -230,7 +230,7 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 ### P0 数据可用性
 
 - 已修 11 行 CSV quoting，issue-tag 分隔空白已清零；下一轮集中冻结 schema、重复／近义标签、legal status 受控词、alias 和跨表 lint。
-- evidence notes、venue/target、case/procedure、R4 framing、R9 referendum/election 与 R10 行政协作规范表已建立；正式线上人工任务已经合并，剩余事实门禁仅为当地／新一手材料12项，不以新文本替代人审。
+- evidence notes、venue/target、case/procedure、R4 framing、R9 referendum/election 与 R10 行政协作规范表已建立；此前线上批次均已合并，当前 HR-035 Batch 2 有23项线上决定待回交，另有12项当地／新一手材料门禁；不以新文本替代人审。
 - OPI-00 五小时项目回归表仍是暂停／未完成状态；完成前不启动新的广泛研究波次，只继续已批准维护、人审合并、可视化修正与当地任务准备。
 
 ### P1 样本与模块补料
@@ -298,7 +298,7 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 25. `outputs/translation_episode_comparison_v1/`：13 条转译 episode 把公开诉求、场域进入、中间产出、有限救济和底层改变分栏；TE10–TE13 仍属 HR-027 事件候选。
 26. `outputs/exploration_system_data_v1/` 与 `prototypes/nr3_explorer/`：把当前数据做成可探索前端；默认隐藏 A072／AI068，并将已核 dyadic、行政、汇总、事件、案件角色与研究线索分层呈现。
 27. `outputs/review_status_crosswalk_v1/`：HR-034 的50项交叉表已由负责人确认并合并；旧状态没有凭字符串批量升级为 human review。
-28. `docs/principal_human_review_remaining_v17.md`：当前正式剩余门禁为12个当地／新一手材料项；HR-018 两项已有 defer 决定并等待新材料。
+28. `docs/principal_human_review_remaining_v18.md`：当前正式剩余门禁为 HR-035 Batch 2 的23项线上决定＋12个当地／新一手材料项；HR-018 两项已有 defer 决定并等待新材料。
 
 主要解释增量是：
 
@@ -311,4 +311,4 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 - R1/R2 显示数量下限已修复，首要矛盾转为5个有效 actor 缺少有效边、158/283条当前议题边仍为候选；R5 则把少数跨事件重复身份与大量一次性事件名称分开。
 - 六维审计 v1 已按冻结后有效层重生为121 actors／283 actor-issue／130 actor-place／295 sources；中央122／294／135历史行只作审计边界。这些是检索可见性偏差，不是组织真实密度。
 
-R1/R2、strict place–issue 和 coverage 已按冻结后中央数据重生；探索前端因现有未提交界面改动尚未安全重生。所有正式线上人工任务已闭合，12项当地材料任务保持独立。下一步是冻结后五图／前端重生、最终 codebook/lint 和正式 DOCX/PDF、论文、PPT 装配。未审候选、事件级名称和 analytical seed 不写入确定性关系结论。
+R1/R2、strict place–issue 和 coverage 已按冻结后中央数据重生；探索前端也已重生并通过浏览器复验。HR-035 Batch 2 的23项线上决定已经派发，12项当地材料任务保持独立。下一步是回收 Batch 2、修复 L2 谱系导出、完成冻结后五图与最终 codebook/lint，再装配正式 DOCX/PDF、论文和 PPT。未审候选、事件级名称和 analytical seed 不写入确定性关系结论。

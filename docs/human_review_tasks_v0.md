@@ -16,10 +16,10 @@
 
 2026-07-20：负责人已经回交的 HR-016–033 线上决定均已合并。HR-027 的 A112–A115 保留；AP123 已修复为 P007 Camp Foster；HR-033 的 dyadic relation 与 aggregate observation 已分层。随后 HR-035 Batch 1、HR-010 batch 6、LCR001–004、HR-034、HR-029 和 HR-031 也已全部确认并完成受控合并。
 
-当前线上正式人工任务已经清零；只剩 HR-017 九项、HR-018 两项和 HR-024/A073 一项当地／新一手材料任务。完整总账见：
+HR-035 Batch 2 已正式派发：18 条 actor–issue 事实与 5 条组织身份配套判断，共 23 项立即可做的线上决定。另有 HR-017 九项、HR-018 两项和 HR-024/A073 一项当地／新一手材料任务。当前正式未闭合共 35 项。完整总账见：
 
-- `docs/principal_online_human_tasks_v1.md`
-- `docs/principal_human_review_remaining_v17.md`
+- `docs/human_review_task_HR035_batch02_v1.md`
+- `docs/principal_human_review_remaining_v18.md`
 
 HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
@@ -755,6 +755,23 @@ R1/R2、strict place–issue 与 coverage 包均已受控合并／重生。本�
 - `accept/revise/defer/reject` 只影响该事实边，不能新增组织关系、联盟、资金或因果；
 - 若既有 HR-019 scope 也需修改，必须另标 `scope_revision_required`，不得静默覆盖。
 
+### HR-035 Batch 2 — formally dispatched
+
+状态（2026-07-20）：正式派发 18 条 E4、scope 已人审但事实仍为 `ai_seeded` 的
+actor–issue 边；另为 A007、A017、A018、A049、A066 各设一条组织身份配套判断。共
+23 项决定，所有决定栏保持空白。
+
+复核包：
+
+- `docs/human_review_task_HR035_batch02_v1.md`
+- `outputs/actor_issue_claim_freeze_v1/HR035_actor_issue_fact_review_batch02_v1.csv`
+- `outputs/actor_issue_claim_freeze_v1/HR035_actor_identity_companion_batch02_v1.csv`
+- `outputs/actor_issue_claim_freeze_v1/HR035_source_bundle_batch02_v1.csv`
+
+身份与事实必须分别判断。身份 defer／reject 时，相应事实边即使接受，也不得自动进入默认
+已核图。当前 E4 标签不能覆盖直接来源等级不足：AI044、AI119、AI121、AI232、AI234
+已在任务表中显式标出来源上限警告，AI016 标出单次声明不足以证明长期定位。
+
 ## 7. 人工复核节奏（本轮已完成）
 
 以下是本轮已执行的历史顺序，不再表示当前待办：
@@ -767,8 +784,8 @@ R1/R2、strict place–issue 与 coverage 包均已受控合并／重生。本�
 4. 重生并执行 HR-029 的41项 schema／alias freeze；
 5. HR-031 的3条解释强度。
 
-当前只保留12条当地／新一手材料项；HR-035 后续事实债务尚未形成正式 Batch 2，不计入
-当前开放任务。
+当前开放任务为 HR-035 Batch 2 的 23 项线上决定，加 12 条当地／新一手材料项；合计
+35 项。Batch 2 回交前不改中央表，不为缩小前端两层差距而自动升级。
 
 ## 8. 不合格复核示例
 
