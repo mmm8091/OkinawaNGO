@@ -7,7 +7,6 @@ import {
 import {
   BoundaryNote,
   ExhibitHeader,
-  LimitLine,
   Unavailable,
 } from "./exhibit/ExhibitKit.jsx";
 import "./exhibit/exhibit.css";
@@ -326,9 +325,11 @@ export function RepeatParticipationExhibit({ exhibit, lang = "zh", onOpenActor }
         ]}
       />
 
-      <BoundaryNote title={copy.boundaryTitle}>
-        {text(exhibit.display?.interpretation_limit, locale, copy.boundary)}{" "}
-        {fill(copy.unmatched, { n: unmatched })}
+      <BoundaryNote
+        title={copy.boundaryTitle}
+        fullText={`${text(exhibit.display?.interpretation_limit, locale, copy.boundary)} ${fill(copy.unmatched, { n: unmatched })} ${copy.purposeSample} ${copy.identityBoundary}`}
+      >
+        {copy.boundary}
       </BoundaryNote>
 
       <div className="r5-events">
@@ -359,7 +360,6 @@ export function RepeatParticipationExhibit({ exhibit, lang = "zh", onOpenActor }
           <summary>
             <span>
               <strong>{copy.overlapList}</strong>
-              <small>{copy.overlapHint}</small>
             </span>
             <CaretDown size={16} />
           </summary>
@@ -370,11 +370,6 @@ export function RepeatParticipationExhibit({ exhibit, lang = "zh", onOpenActor }
           </div>
         </details>
       </div>
-
-      <LimitLine
-        label={copy.methodology}
-        text={`${copy.purposeSample} ${copy.identityBoundary}`}
-      />
     </section>
   );
 }

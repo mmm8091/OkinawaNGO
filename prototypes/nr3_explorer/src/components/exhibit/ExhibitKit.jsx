@@ -1,4 +1,4 @@
-import { Quotes, WarningCircle } from "@phosphor-icons/react";
+import { Question, Quotes, WarningCircle } from "@phosphor-icons/react";
 import "./exhibit.css";
 
 // Shared exhibit kit: one anatomy for all published research exhibits.
@@ -29,7 +29,9 @@ export function ExhibitHeader({ kicker, title, subtitle, metrics = [] }) {
   );
 }
 
-export function BoundaryNote({ title, children }) {
+// One visible line by default. The full interpretation/boundary text (payload)
+// is reachable through the "?" popover, never printed as a paragraph.
+export function BoundaryNote({ title, children, fullText }) {
   return (
     <aside className="xh-boundary">
       <WarningCircle size={15} aria-hidden="true" />
@@ -37,6 +39,12 @@ export function BoundaryNote({ title, children }) {
         {title && <b>{title} </b>}
         {children}
       </p>
+      {fullText && (
+        <span className="xh-boundary-help" tabIndex={0} aria-label={title || "边界说明"}>
+          <Question size={13} weight="fill" />
+          <span className="xh-boundary-pop">{fullText}</span>
+        </span>
+      )}
     </aside>
   );
 }

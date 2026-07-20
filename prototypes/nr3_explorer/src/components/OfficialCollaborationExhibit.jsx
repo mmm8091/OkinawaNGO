@@ -132,9 +132,12 @@ function rowKey(row, mode) {
 function rowLabel(row, mode) {
   return mode === "departments" ? row.label : row.label || row.code;
 }
-function metricValue(exhibit, id, fallback) {
-  return exhibit?.headline_metrics?.find((metric) => metric.id === id)?.value ?? fallback;
+function metricValue(exhibit, id) {
+  const value = exhibit?.headline_metrics?.find((metric) => metric.id === id)?.value;
+  return value === undefined || value === null || value === "" ? "—" : value;
 }
+
+const withUnit = (value, unit) => (value === "—" ? "—" : `${value}${unit}`);
 
 function SummaryMeta({ row, mode, copy }) {
   const items =
@@ -278,11 +281,11 @@ export function OfficialCollaborationExhibit({ exhibit, lang = "zh" }) {
         title={localized(exhibit.display?.title, activeLang, copy.fallbackTitle)}
         subtitle={localized(exhibit.display?.subtitle, activeLang)}
         metrics={[
-          { value: formatNumber.format(denominator.value || 616), label: copy.sourceRows, note: copy.rowsNotActors },
-          { value: formatNumber.format(denominator.pdf_pages || 86), label: copy.pdfPages, note: denominator.source_row_range },
-          { value: formatNumber.format(exhibit.drilldown?.dimensions?.departments || 15), label: copy.departments, note: copy.sourceLabel },
-          { value: `${metricValue(exhibit, "M12", 76.1)}%`, label: copy.mechanismShare, note: `${formatNumber.format(metricValue(exhibit, "M11", 469))}${copy.countSuffix}` },
-          { value: `${metricValue(exhibit, "M14", 3.1)}%`, label: copy.adjacentShare, note: `${formatNumber.format(metricValue(exhibit, "M13", 19))}${copy.countSuffix}` },
+          { value: denominator.value ? formatNumber.format(denominator.value) : "—", label: copy.sourceRows, note: copy.rowsNotActors },
+          { value: denominator.pdf_pages ? formatNumber.format(denominator.pdf_pages) : "—", label: copy.pdfPages, note: denominator.source_row_range },
+          { value: exhibit.drilldown?.dimensions?.departments ? formatNumber.format(exhibit.drilldown.dimensions.departments) : "—", label: copy.departments, note: copy.sourceLabel },
+          { value: withUnit(metricValue(exhibit, "M12"), "%"), label: copy.mechanismShare, note: withUnit(metricValue(exhibit, "M11"), copy.countSuffix) },
+          { value: withUnit(metricValue(exhibit, "M14"), "%"), label: copy.adjacentShare, note: withUnit(metricValue(exhibit, "M13"), copy.countSuffix) },
         ]}
       />
 

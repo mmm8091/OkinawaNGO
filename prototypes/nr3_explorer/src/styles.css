@@ -1563,6 +1563,7 @@ button {
 /* ---------------- time periods & genealogy ---------------- */
 
 .time-axis {
+  flex: 0 0 auto;
   display: flex;
   gap: 30px;
   padding: 20px 32px 14px;
@@ -1613,6 +1614,7 @@ button {
 }
 
 .genealogy-band {
+  flex: 0 0 auto;
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
   align-items: start;
@@ -1666,21 +1668,19 @@ button {
 .genealogy-list {
   min-width: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  overflow-x: auto;
-  padding: 1px 1px 8px;
-  scroll-snap-type: x proximity;
+  padding: 1px 1px 4px;
 }
 
 .genealogy-card {
-  width: 330px;
-  flex: 0 0 330px;
+  flex: 1 1 290px;
+  max-width: 360px;
   padding: 11px 12px;
   border: 1px solid #d2dbd8;
   border-top: 3px solid var(--teal);
   border-radius: 10px;
   background: #fffdf7;
-  scroll-snap-align: start;
 }
 
 .genealogy-card.last_observed_activity {
@@ -1821,6 +1821,7 @@ button {
 }
 
 .pending-strip {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   gap: 16px;

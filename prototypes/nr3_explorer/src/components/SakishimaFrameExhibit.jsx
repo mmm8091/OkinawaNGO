@@ -462,7 +462,13 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
         ]}
       />
 
-      <BoundaryNote>
+      <BoundaryNote
+        fullText={
+          includeResearch && exhibit.display?.interpretation_limit
+            ? localized(exhibit.display.interpretation_limit, activeLang)
+            : null
+        }
+      >
         {fill(copy.scopeNote, {
           a: reviewedObservations.length,
           b: reviewedExcerpts.length,
@@ -471,12 +477,6 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
         })}
         {" · "}
         {copy.methodFallback}
-        {includeResearch && exhibit.display?.interpretation_limit && (
-          <details className="sf-full-limit">
-            <summary>{copy.fullLimit}</summary>
-            <p>{localized(exhibit.display.interpretation_limit, activeLang)}</p>
-          </details>
-        )}
       </BoundaryNote>
 
       <div className="sf-filter-band">

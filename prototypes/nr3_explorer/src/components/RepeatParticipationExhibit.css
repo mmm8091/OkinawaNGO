@@ -41,7 +41,8 @@
 
 .r5-event-card > header > strong {
   font-family: "Noto Serif SC", serif;
-  font-size: 26px;
+  font-size: 17px;
+  color: var(--teal-dark);
 }
 
 .r5-event-card h3 {

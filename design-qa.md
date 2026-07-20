@@ -202,3 +202,12 @@ final result: pass (agent-verified with rendered evidence; awaiting principal co
   sakishima demo/research (8→15 records) without remount, OCE 15 rows + collapsed traces,
   lifecycle 5 cards, repeat 3 cards, EN pass, 390px no overflow. Screenshots:
   `qa/refactor_*.png`.
+
+- Iteration 16 (2026-07-21, sakishima v2 redesign after principal critique): the frame
+  corpus moved from a text list with cryptic dual numbers to stacked obs/exc frame bars
+  (click-to-filter); observation and excerpt columns merged into one record list with
+  type tabs (all/observations/excerpts) and type badges; the long research boundary
+  collapsed to one line plus an expander; scope note is data-driven; period labels on the
+  time axis no longer orphan-wrap. Commits 0e89ef0e (shared kit + layer-state fix) and
+  b10fadeb (v2 redesign); dist rebuilt, release.json source_commit == HEAD,
+  source_dirty == false, validation pass. Screenshots: `qa/v2_*.png`.
