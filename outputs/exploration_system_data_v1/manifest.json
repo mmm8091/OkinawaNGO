@@ -1,11 +1,16 @@
 {
   "artifact": "exploration_system_data_v1",
-  "as_of_date": "2026-07-18",
+  "as_of_date": "2026-07-20",
   "build_id": "dc204fa82fa44509",
   "counts": {
+    "actor_registry": {
+      "current_visible": 121,
+      "hidden_provenance_rows": 1,
+      "provenance_rows": 122
+    },
     "demo": {
       "actor_aliases": 39,
-      "actors": 122,
+      "actors": 121,
       "episodes": 9,
       "evidence_notes": 49,
       "historical_anchors": 0,
@@ -106,8 +111,8 @@
     "demo/typed_event_participation.json": "94588532f0a026278d70baf52c947011553e773bebaa7b6224f5afa45f8e082e",
     "demo/venues.json": "785f877b1ad26850f542fd82d6ebf47d92dd76d3b46c61f5d13ec40642bb32e9",
     "research/candidates.json": "0e0de29773971a69731eefe9c9ce3eaf0b63c208883522d6e86f27461f63f43b",
-    "validation_report.md": "233516ac2ff5bea495c6f48956b5921276b201256af3a41fa7f1d153adffc9e7",
-    "views/actors.json": "0ee0f005753e5a9b04ec3e71203ade3f55e4079a0bf36a532b82b47da069d69f",
+    "validation_report.md": "4e8c16ea2526395efd7527da4e6b8bf2c6510ad81794f768bcba96ad03317464",
+    "views/actors.json": "5442700197b452ea3ed860ec14aab356dfd7160f30f880a66135a75e2fd92eef",
     "views/evidence_coverage.json": "ca58947ed190232c38ba32ade9777875984e15b50ce9c2e3984a7abd7784cd37",
     "views/global.json": "b5aefdd8bab9d3d5542ff3280cd3626ca983f9351ebd671d959719bd75b05150",
     "views/overview.json": "ee619271ac0f32312add91a42cd4f5c62117bb70382c89d694c3fad88fc1463f",

@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any
 
 
+ARTIFACT_AS_OF_DATE = "2026-07-20"
 DEMO_RELATION_STATUSES = {"human_checked", "human_revised"}
 DEMO_EPISODE_STATUSES = {
     "human_checked",
@@ -1042,6 +1043,9 @@ def build_views(
     coverage_implications: list[dict[str, Any]],
     map_geometry: dict[str, Any],
 ) -> dict[str, dict[str, Any]]:
+    current_actor_ids = [
+        row["id"] for row in actors if row["display_status"] != "hidden"
+    ]
     regions: dict[str, list[str]] = {}
     for place in places:
         regions.setdefault(place["region"] or "unassigned", []).append(place["id"])
@@ -1100,7 +1104,7 @@ def build_views(
             "question": "谁在参与，以什么功能参与？",
             "visual_engine": "V2 组织—议题生态图",
             "visual_states": ["ecology", "issue_links", "focus", "compare"],
-            "actor_ids": [row["id"] for row in actors],
+            "actor_ids": current_actor_ids,
             "issue_ids": [row["id"] for row in issues],
             "actor_issue_relation_ids": [
                 row["id"] for row in relations["actor_issue"]
@@ -1907,9 +1911,17 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
                 typed_claim_counts[row["claim_status"]] = (
                     typed_claim_counts.get(row["claim_status"], 0) + 1
                 )
+    visible_actor_count = sum(
+        row["display_status"] != "hidden" for row in actors
+    )
     counts = {
+        "actor_registry": {
+            "provenance_rows": len(actors),
+            "current_visible": visible_actor_count,
+            "hidden_provenance_rows": len(actors) - visible_actor_count,
+        },
         "demo": {
-            "actors": len(actors),
+            "actors": visible_actor_count,
             "actor_aliases": sum(len(row["aliases"]) for row in actors),
             "places": len(places),
             "issues": len(issues),
@@ -2015,7 +2027,7 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     manifest = {
         "artifact": "exploration_system_data_v1",
         "schema_version": "1.0.0",
-        "as_of_date": "2026-07-18",
+        "as_of_date": ARTIFACT_AS_OF_DATE,
         "build_id": build_id,
         "deterministic": True,
         "source_of_truth": "central research tables; derived outputs never write back",

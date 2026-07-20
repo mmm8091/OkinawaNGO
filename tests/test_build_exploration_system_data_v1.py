@@ -60,6 +60,31 @@ def funding_relations_path(root: Path) -> Path:
 
 
 class BuildExplorationSystemDataV1Tests(unittest.TestCase):
+    def test_actor_view_and_manifest_distinguish_current_actors_from_provenance(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_dir = Path(temp_dir) / "exploration"
+            manifest = build_exploration_system_data(ROOT, output_dir)
+            actors = json.loads(
+                (output_dir / "demo" / "actors.json").read_text(encoding="utf-8")
+            )
+            actor_view = json.loads(
+                (output_dir / "views" / "actors.json").read_text(encoding="utf-8")
+            )
+
+        self.assertEqual("2026-07-20", manifest["as_of_date"])
+        self.assertEqual(122, len(actors))
+        self.assertEqual(121, len(actor_view["actor_ids"]))
+        self.assertNotIn("A072", actor_view["actor_ids"])
+        self.assertEqual(
+            {
+                "provenance_rows": 122,
+                "current_visible": 121,
+                "hidden_provenance_rows": 1,
+            },
+            manifest["counts"]["actor_registry"],
+        )
+        self.assertEqual(121, manifest["counts"]["demo"]["actors"])
+
     def test_builds_registry_actors_without_changing_the_central_table(self) -> None:
         central = ROOT / "data" / "interim" / "01_actor_registry_initial_v0.csv"
         before = sha256(central)
@@ -70,7 +95,8 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             actors = json.loads((output_dir / "demo" / "actors.json").read_text(encoding="utf-8"))
 
         self.assertEqual(122, len(actors))
-        self.assertEqual(122, report["counts"]["demo"]["actors"])
+        self.assertEqual(121, report["counts"]["demo"]["actors"])
+        self.assertEqual(122, report["counts"]["actor_registry"]["provenance_rows"])
         a072 = next(row for row in actors if row["id"] == "A072")
         self.assertEqual("hidden", a072["display_status"])
         self.assertEqual("A071", a072["merged_duplicate_of"])
@@ -179,7 +205,8 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         self.assertEqual(53, len(views["overview"]["actor_place_relation_ids"]))
         self.assertEqual(65, len(views["overview"]["strict_place_issue_relation_ids"]))
         self.assertEqual("P2", views["actors"]["view_id"])
-        self.assertEqual(122, len(views["actors"]["actor_ids"]))
+        self.assertEqual(121, len(views["actors"]["actor_ids"]))
+        self.assertNotIn("A072", views["actors"]["actor_ids"])
         self.assertEqual(65, len(views["actors"]["actor_issue_relation_ids"]))
         self.assertEqual("P3", views["pathways"]["view_id"])
         self.assertEqual(9, len(views["pathways"]["episode_ids"]))
@@ -266,6 +293,10 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             first_manifest = json.loads((first / "manifest.json").read_text(encoding="utf-8"))
             second_manifest = json.loads((second / "manifest.json").read_text(encoding="utf-8"))
             validation = (first / "validation_report.md").read_text(encoding="utf-8")
+            actual_output_hashes = {
+                relative: sha256(first / relative)
+                for relative in first_manifest["output_hashes"]
+            }
 
         self.assertEqual(first_manifest, second_manifest)
         self.assertEqual("pass", first_manifest["validation"]["status"])
@@ -276,6 +307,15 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             first_manifest["output_hashes"],
             second_manifest["output_hashes"],
         )
+        self.assertEqual(21, len(first_manifest["input_hashes"]))
+        self.assertEqual(
+            {
+                key: sha256(path)
+                for key, path in sorted(exploration_input_paths(ROOT).items())
+            },
+            first_manifest["input_hashes"],
+        )
+        self.assertEqual(actual_output_hashes, first_manifest["output_hashes"])
 
     def test_typed_relation_collections_match_control_cases(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:

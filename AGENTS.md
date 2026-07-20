@@ -76,7 +76,7 @@ Updated: 2026-07-20.
 - Third-sync correction ledger: `docs/third_sync_correction_ledger_v1.md`
   - The second sync remains a historical snapshot. The next client communication must explicitly correct its spatial figure, bridge, internationalization and schedule claims.
 - Exploration system: `outputs/exploration_system_data_v1/`, `prototypes/nr3_explorer/`, and `docs/nr3_handoff_v1.md`
-  - Current reviewed/research views hide A072 and AI068 from default use. The typed relation layer separates 14 reviewed dyadic relations, 8 candidate dyadic relations, administrative records, aggregate observations, event participation and 27 case roles. Builder validation, 90 Python tests and the production frontend build pass.
+  - Current reviewed/research views hide A072 and AI068 from default use. The data manifest distinguishes 122 registry provenance rows from 121 current visible actors, and the actor view excludes A072. The typed relation layer separates 14 reviewed dyadic relations, 8 candidate dyadic relations, administrative records, aggregate observations, event participation and 27 case roles. Builder validation, 91 Python tests and the production frontend build pass.
 - Live human-review ledger: `docs/principal_human_review_remaining_v14.md`
   - 157 review items remain unclosed: 155 decision fields are blank, while two HR-018 items already have `deferred_local_or_internal_record` decisions and await new material. The ledger contains 101 immediately reviewable online items (HR-010 batch 6, four lifecycle cases and HR-034), 44 later online items (HR-029/031), and 12 local-material items. HR-034 is a blank 50-item legacy-status crosswalk, not an automatic migration.
 - First post-audit candidate packages and controlled merge:

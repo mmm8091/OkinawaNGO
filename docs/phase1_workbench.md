@@ -234,6 +234,6 @@
 5. 负责人已批准证据状态与前端展示规则：界面“演示视图”改为“已核视图”；已核层允许 `supported_bounded`，但必须显示已核／缺失字段；研究层增加 candidate／lead。权威规则为 `data/metadata/coding_schema_v1.md`。
 6. 关系架构 v1 已批准：43 行是异质观察，其中 27 行两端为 registry actor、16 行含 place／program／unknown recipient 等非 actor 端点；R8 27 行保持 case-role，不得生成“同案协作边”。实现依据为 `docs/actor_relation_architecture_v1.md`。
 7. HR-033 已完成并合并：标准化的 6 条 dyadic relations＋1 条 aggregate observation 在 `outputs/hr033_integration_v1/`；前端不得把 membership 当 funding，也不得把 R10R029 的 102,000 美元附到 F025。
-8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。中央关系记录 F036 只作事件记录，R10R029 只作汇总观察。17 个 builder tests、当前全套 90 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
+8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。中央关系记录 F036 只作事件记录，R10R029 只作汇总观察。manifest 明确区分 122 条 registry provenance 与 121 个当前可见 actor，组织视图排除 A072。18 个 builder tests、当前全套 91 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
 9. NR-04／NR-05 分别做两个时期的有界线上补缺；结果先进入候选和人工队列。NR-06 统一完成 claim/evidence QA、历史集成决定和已核／研究双层验收。
 10. 既有 HR／报告 gate 保持有效；只有当其直接阻断前端默认 claim 时才按优先级处理，不恢复全面铺开。

@@ -58,9 +58,14 @@ Status: **PASS**
 
 ```json
 {
+  "actor_registry": {
+    "current_visible": 121,
+    "hidden_provenance_rows": 1,
+    "provenance_rows": 122
+  },
   "demo": {
     "actor_aliases": 39,
-    "actors": 122,
+    "actors": 121,
     "episodes": 9,
     "evidence_notes": 49,
     "historical_anchors": 0,
