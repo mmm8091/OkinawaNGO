@@ -20,6 +20,8 @@
   “more than 90” 与显示表计数分别保留。
 - Marine Thrift Shop 自有页面明确记载独立董事会、grant 申请、AWWA member/contributor
   表述及具名 recipient 示例；均保持候选关系语义。
+- AWWA 成员结构存在五个配偶组织与七个 member organizations 两种公开口径；本包保留冲突，
+  不冻结成员总数，也不自动把商店／子实体 actor 化。
 - 人物角色来自组织官网、政府／军方公开报道或 IRS filing 的公开接口；年度与事件日期没有
   被改写为完整任期。
 

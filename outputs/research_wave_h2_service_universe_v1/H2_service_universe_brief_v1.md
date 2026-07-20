@@ -83,7 +83,9 @@ MCIPAC/MCCS 的现行 Private Organizations 页面标注更新于 2026-07-07，�
 `formation_mechanism_candidates_v1.csv` 将当前可检验机制拆开：
 
 - AWWA 的 1952 前身可能是冲绳女性与美国女性共同参与的福利组织，1972 年后才重组为以
-  军属配偶俱乐部为中心的联合体；该谱系仍需档案二源。
+  军属配偶俱乐部为中心的联合体；该谱系仍需档案二源。既有 member 页面使用五个配偶组织
+  口径，USO 2020 年报道中的 AWWA 引述却使用七个 member organizations 口径，可能涉及
+  俱乐部、商店／子实体或结构变动，当前不得冻结固定成员数。
 - OESC 在 2008 年从 Kadena enlisted-spouse club 扩为全岛、跨军种组织，公开叙事指向
   驻外生活中的归属、互助和福利缺口。
 - service／accountability 的零接口可能来自真实任务边界，也可能来自英语军事服务资料与
@@ -110,6 +112,7 @@ H2 服务侧不能再只画成“九个组织”。更稳妥的层级是：
 - 取得 Kadena、Navy、Army 当前 private-organization 完整名录；本轮官方网页检索未发现公开 roster。
 - 对四个 `add` 建立身份二源、成立年、负责人／董事、年度活动和 recipient 记录。
 - 对 Marine Gift Shop—MOSCO、Marine Thrift Shop—AWWA、Pantry—MTS 做组织结构与事件关系人审。
+- 查明 AWWA “五个配偶组织／七个 member organizations”差异的年份、成员单位和统计口径。
 - 对 Helping Japan International 补 IRS／Form 990、官网或持续活动记录。
 - 对 10 组人物 crosswalk 逐项人审，并以相同方法建立问责侧公开人物—组织—时间表。
 - 将完整 AWWA／KOSC／NOSCO／OESC／MOSCO recipient 表与 121 个有效 actor、S002 616 行
