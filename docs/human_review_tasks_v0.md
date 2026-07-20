@@ -44,7 +44,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 - A014/A015 仍需地方报纸、意见广告实物或议会资料交叉确认。
 - A016 仍需成立年月、代表人、法律身份。
-- A019 / A076 的 2003 年 dugong 诉讼 plaintiff 映射仍待核实。
+- A076 为 Dugong 案组织原告、A019 为 `non_party`，已由 HR-014／015 按案件 caption 锁定，不再开放复核；不得把个人原告身份转嫁给 A019。
 - AWWA 网络仍需 charity recipient / Schedule I / 活动手册补证。
 - X013 长期观察 Grants.gov / USASpending / 领馆公告是否出现 award 或 recipient。
 - X014 NED 跨年度排除需要另查，本轮只覆盖 FY2024 亚洲清单。
@@ -516,7 +516,7 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - 决定 6 个 schema 外 `actor_class` 术语是扩充受控词还是映射既有宽类；不得把组织法律身份、行动形态和政治立场压成同一字段。
 - 对跨议题 actor 区分长期组织定位、案件／制度角色和事件性参加；共同署名或多议题出现不构成稳定联盟或长期经纪地位。
 - 对 65 条范围不清 edge 只审 `organizational_positioning`／`institutional_or_case_role`／`event_specific`／`remain_unclear`，不得把 actor–issue edge 改写为 actor–actor 关系。
-- 17 个 edge-isolated actor 应先补边级证据；扩样 gate 已由 HR-013 人工决定覆盖，不能为越过 120 下限而恢复已拒或仅背景对象。
+- 本任务建立时有 17 个 edge-isolated actor；当前有效层为 18 个。应先补边级证据；扩样 gate 已由 HR-013 人工决定覆盖，不能为越过 120 下限而恢复已拒或仅背景对象。
 
 ### HR-020 R5 名称、别名与名单切分复核 — completed / merged
 
