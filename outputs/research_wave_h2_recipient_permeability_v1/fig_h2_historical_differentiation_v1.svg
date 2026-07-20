@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="770" viewBox="0 0 1360 770">
+<title>H2 historical differentiation candidate</title>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0,0 L12,6 L0,12 z" fill="#52627a"/>
+  </marker>
+</defs>
+<rect width="1360" height="770" fill="#f5f7fb"/>
+<text x="48" y="55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172033" text-anchor="start">历史分化候选：接触、慈善与照护—权利并非同一路径</text>
+<text x="48" y="87" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#5b687c" text-anchor="start">事件顺序图；横向间距不按年份比例。虚线框为需原始材料确认的机制</text>
+<text x="48" y="145" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="700" fill="#315c9a" text-anchor="start">资源／接触轨</text>
+<text x="48" y="420" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="700" fill="#8d4978" text-anchor="start">照护／权利轨</text>
+<line x1="165" y1="245" x2="1280" y2="245" stroke="#6687c5" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="165" y1="520" x2="1280" y2="520" stroke="#aa5d91" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="185" cy="245" r="10" fill="#315c9a"/>
+<text x="185" y="190" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#315c9a" text-anchor="middle">1953</text>
+<text x="185" y="215" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">OIWC</text>
+<text x="185" y="237" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">自称成立</text>
+<circle cx="360" cy="245" r="10" fill="#315c9a"/>
+<text x="360" y="190" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#315c9a" text-anchor="middle">1971</text>
+<text x="360" y="215" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">福利理事会</text>
+<text x="360" y="237" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">九俱乐部</text>
+<circle cx="535" cy="245" r="10" fill="#315c9a"/>
+<text x="535" y="190" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#315c9a" text-anchor="middle">1972</text>
+<text x="535" y="215" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">AWWA</text>
+<text x="535" y="237" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">六组中介</text>
+<circle cx="710" cy="245" r="10" fill="#315c9a"/>
+<text x="710" y="190" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#315c9a" text-anchor="middle">1992–99</text>
+<text x="710" y="215" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">AWWA</text>
+<text x="710" y="237" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">年度汇总</text>
+<circle cx="885" cy="245" r="10" fill="#315c9a"/>
+<text x="885" y="190" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#315c9a" text-anchor="middle">2015–24</text>
+<text x="885" y="215" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">OIWC</text>
+<text x="885" y="237" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">受赠名册</text>
+<circle cx="1060" cy="245" r="10" fill="#315c9a"/>
+<text x="1060" y="190" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#315c9a" text-anchor="middle">2021–24</text>
+<text x="1060" y="215" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">MTS→AWWA</text>
+<text x="1060" y="237" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">连续申报</text>
+<circle cx="1235" cy="245" r="10" fill="#315c9a"/>
+<text x="1235" y="190" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#315c9a" text-anchor="middle">2024</text>
+<text x="1235" y="215" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">Lions</text>
+<text x="1235" y="237" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">例外绕行</text>
+<circle cx="185" cy="520" r="10" fill="#8d4978"/>
+<text x="185" y="575" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8d4978" text-anchor="middle">1958</text>
+<text x="185" y="600" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">ISS Okinawa</text>
+<text x="185" y="622" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">成立</text>
+<circle cx="360" cy="520" r="10" fill="#8d4978"/>
+<text x="360" y="575" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8d4978" text-anchor="middle">1972</text>
+<text x="360" y="600" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">本地化／</text>
+<text x="360" y="622" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">支持替换</text>
+<rect x="288" y="548" width="144" height="85" rx="10" fill="none" stroke="#aa5d91" stroke-width="2" stroke-dasharray="7 6"/>
+<circle cx="535" cy="520" r="10" fill="#8d4978"/>
+<text x="535" y="575" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8d4978" text-anchor="middle">1979</text>
+<text x="535" y="600" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">个案→</text>
+<text x="535" y="622" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">正式提言</text>
+<circle cx="710" cy="520" r="10" fill="#8d4978"/>
+<text x="710" y="575" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8d4978" text-anchor="middle">1985</text>
+<text x="710" y="600" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">国籍法修改</text>
+<text x="710" y="622" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">多因结果</text>
+<circle cx="885" cy="520" r="10" fill="#8d4978"/>
+<text x="885" y="575" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8d4978" text-anchor="middle">1997</text>
+<text x="885" y="600" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">公开基地</text>
+<text x="885" y="622" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">责任主张</text>
+<circle cx="1060" cy="520" r="10" fill="#8d4978"/>
+<text x="1060" y="575" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8d4978" text-anchor="middle">1998</text>
+<text x="1060" y="600" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">咨询所闭所</text>
+<circle cx="1235" cy="520" r="10" fill="#8d4978"/>
+<text x="1235" y="575" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8d4978" text-anchor="middle">1999</text>
+<text x="1235" y="600" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">Amer-Asian</text>
+<text x="1235" y="622" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#344057" text-anchor="middle">School 线索</text>
+<rect x="1163" y="548" width="144" height="85" rx="10" fill="none" stroke="#aa5d91" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="48" y="690" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="700" fill="#25334a" text-anchor="start">候选解释：复归带来的不是简单断裂，而可能是军属慈善中介与本地专业福利／权利工作的制度分化。</text>
+<text x="48" y="725" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#9a3546" text-anchor="start">禁止：把相邻节点连成同一组织谱系；把 1999 学校线索当作咨询所延续。</text>
+</svg>

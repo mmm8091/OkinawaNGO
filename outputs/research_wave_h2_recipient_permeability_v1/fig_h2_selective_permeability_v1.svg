@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="790" viewBox="0 0 1360 790">
+<title>H2 selective permeability</title>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0,0 L12,6 L0,12 z" fill="#52627a"/>
+  </marker>
+</defs>
+<rect width="1360" height="790" fill="#f5f7fb"/>
+<text x="48" y="55" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172033" text-anchor="start">H2：基地社区—冲绳社会的三种选择性接口</text>
+<text x="48" y="87" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#5b687c" text-anchor="start">研究假设图；箭头表示可观察过程，不是中央关系边</text>
+<rect x="45" y="170" width="245" height="190" rx="16" fill="#e8efff" stroke="#6687c5" stroke-width="2.5"/>
+<text x="65" y="204" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">基地社区资源</text>
+<text x="65" y="236" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">军属社群</text>
+<text x="65" y="263" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">慈善商店／俱乐部</text>
+<text x="65" y="290" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">军事单位与公共事务</text>
+<rect x="355" y="105" width="330" height="145" rx="16" fill="#fff3d6" stroke="#d59a23" stroke-width="2.5"/>
+<text x="375" y="139" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">① 申请／筛选</text>
+<text x="375" y="171" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">MTS 董事会、AWWA 中介</text>
+<text x="375" y="198" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">OIWC 申请与实物配置</text>
+<rect x="355" y="290" width="330" height="145" rx="16" fill="#e9f7f0" stroke="#4d9b77" stroke-width="2.5"/>
+<text x="375" y="324" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">② 混合成员／接触</text>
+<text x="375" y="356" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">OIWC 与复归前 welfare council</text>
+<text x="375" y="383" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">长期接触 ≠ 政治联盟</text>
+<rect x="355" y="475" width="330" height="170" rx="16" fill="#f7eaf3" stroke="#aa5d91" stroke-width="2.5"/>
+<text x="375" y="509" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">③ 照护 → 权利</text>
+<text x="375" y="541" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">个案累积 → 调查／命名</text>
+<text x="375" y="568" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">1979 提言 → 权利／政策</text>
+<text x="375" y="595" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">后期公开基地责任主张</text>
+<rect x="755" y="105" width="555" height="145" rx="16" fill="#ffffff" stroke="#99a5b7" stroke-width="2.5"/>
+<text x="775" y="139" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">本地福利／教育／障碍者组织</text>
+<text x="775" y="171" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">公开 recipient 可见；部分也在 S002 行政协作中出现</text>
+<text x="775" y="198" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">recipient ≠ 盟友；S002 项目成本 ≠ 付款</text>
+<rect x="755" y="290" width="555" height="145" rx="16" fill="#ffffff" stroke="#99a5b7" stroke-width="2.5"/>
+<text x="775" y="324" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">社会接触接口</text>
+<text x="775" y="356" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">冲绳人与美国人可共同参与福利活动</text>
+<text x="775" y="383" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">成员比例、持续性和人员共享仍未完整测量</text>
+<rect x="755" y="475" width="555" height="170" rx="16" fill="#ffffff" stroke="#99a5b7" stroke-width="2.5"/>
+<text x="775" y="509" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#172033" text-anchor="start">权利／政策／基地问责接口</text>
+<text x="775" y="541" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">国際福祉相談所是历史反例</text>
+<text x="775" y="568" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">当前 MTS／AWWA／OIWC 与 18 个问责锚点</text>
+<text x="775" y="595" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#344057" text-anchor="start">有界检索仍未找到可归属直接组织关系</text>
+<line x1="290" y1="240" x2="355" y2="178" stroke="#52627a" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="290" y1="260" x2="355" y2="360" stroke="#52627a" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="290" y1="290" x2="355" y2="555" stroke="#52627a" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="685" y1="178" x2="755" y2="178" stroke="#52627a" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="685" y1="360" x2="755" y2="360" stroke="#52627a" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="685" y1="560" x2="755" y2="560" stroke="#52627a" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="48" y="715" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="700" fill="#25334a" text-anchor="start">可说：不同跨界形式的制度化条件不同。</text>
+<text x="48" y="750" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#9a3546" text-anchor="start">不可说：两套生态完全隔绝、没有共享人员，或受赠关系代表政治立场。</text>
+</svg>
