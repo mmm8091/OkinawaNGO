@@ -1,0 +1,5 @@
+decision_id,decision_domain,question,recommended_default,minimum_reading,downstream_effect,principal_decision,principal_note,review_status,package_scope,frontend_eligibility,central_writeback
+PDV2-01,H3 paper question,"是否将H3改题为：共同文件如何把地方设施构造成分布式战争准备对象？",approve_as_candidate_not_finding,"H3结成提案；2026请愿；frontline_memory_brief_v2.md","决定是否执行H3HR01–05事实门与H3HR10学术定位阅读；未复核不进中央或前端",,,needs_human_decision,research_only,not_frontend_ready,no
+PDV2-02,H2 historical comparison,"是否把H2选择性通透作为第二论文候选并核三条谱系？",approve_three_bounded_genealogies,"mechanism_competing_explanations_brief_v1.md；H2PHL001–003","决定是否查AWWA／OIWC／国際福祉相談所的原始治理与档案材料",,,needs_human_decision,research_only,not_frontend_ready,no
+PDV2-03,H1 method scope,"H1在方法附录停止，还是补不超过36个actor的capacity crosswalk？",stop_at_method_appendix_unless_principal_needs_separate_paper,"method_brief_v2.md；三张H1图","决定是否投入人工capacity字段；不批准则停止扩检",,,needs_human_decision,research_only,not_frontend_ready,no
+PDV2-04,integration gate,"三个研究包是否继续保持中央表与前端隔离？",keep_isolated_until_targeted_human_review,"本判断包第2–4节；各包human review queue","决定未来是否另建行级frontend export；当前不授权任何写回",,,needs_human_decision,research_only,not_frontend_ready,no
