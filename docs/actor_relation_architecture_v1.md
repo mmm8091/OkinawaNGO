@@ -1,7 +1,7 @@
 # 组织关系与证据状态呈现架构 v1
 
 日期：2026-07-20  
-状态：负责人批准，可作为前端实现依据  
+状态：负责人批准；L0／L1 已实现，L2 等待历史锚点
 替代：`docs/actor_relation_architecture_v0.md`  
 状态规则：`data/metadata/coding_schema_v1.md`
 
@@ -29,18 +29,33 @@ HR-033 合并后的状态：
 
 | 状态 | 数量 |
 |---|---:|
-| human_checked | 15 |
-| human_revised | 2 |
-| ai_seeded | 20 |
-| needs_second_source | 4 |
-| needs_local_retrieval | 1 |
-| rejected／duplicate | 1 |
+| human_checked | 18 |
+| human_revised | 8 |
+| ai_seeded | 12 |
+| needs_second_source | 2 |
+| needs_local_retrieval | 2 |
+| rejected | 1 |
 
-六条 legacy `verified` 已全部由 HR-033 决定，旧值清零。这里的 17 条只是
-`human_checked + human_revised` 的行数上限，仍不能直接写成“17 条已核组织关系”：
-最终展示数量必须继续经过 endpoint、claim 和 graph eligibility gate。HR-033 本批明确产生
-6 条可进入该 gate 的 dyadic relations，另有 1 条 composite-recipient aggregate
-observation，不上组织关系图。
+六条 legacy `verified` 已全部由 HR-033 决定，旧值清零。这里的 26 条
+`human_checked + human_revised` 只是中央行状态计数，不能直接写成“26 条已核组织关系”：
+最终展示数量继续经过 endpoint、claim 和 graph eligibility gate。
+
+当前构建读取 43 条中央观察，并另纳入 R10R029 一条独立汇总观察，共 44 条输入。gate 后
+的集合为：
+
+| 展示层 | 类型 | 数量 |
+|---|---|---:|
+| 已核 | dyadic relation | 14 |
+| 已核 | administrative record | 6 |
+| 已核 | aggregate observation | 2 |
+| 已核 | typed event participation | 4 |
+| 已核 | case role | 27 |
+| 研究 | candidate dyadic relation | 8 |
+| 研究 | administrative candidate | 5 |
+| 研究 | relation lead | 4 |
+
+行政记录、汇总观察、事件参与和 case role 均不得计作组织—组织关系；44 条输入也不得与
+27 条独立的 R8 case-role 行相加后称为“关系边”。
 
 R8 的 27 行是 case-role 记录，不是 27 条同案协作边：
 
@@ -201,7 +216,8 @@ parent—member、national—regional 等关系存成无向事实。
 
 ## 9. R10 与谱系 gate
 
-- R10 的 365 个机器标签维持 HR-032 gate，不 actor 化；
+- HR-032 的 8 条 canonical／JV／registry crosswalk 已完成；R10 的 365 个机器展示标签
+  仍不 actor 化，也不生成 payment edge；
 - AWWA recipient 完整年表等待 Form 990／内部年报；
 - NR-04／05 的历史候选未经人审不进入谱系已核层；
 - 没有官方 grant、award、contract、财报或组织报告，不新增已核资金关系。
@@ -209,8 +225,8 @@ parent—member、national—regional 等关系存成无向事实。
 ## 10. 实现顺序
 
 1. ~~完成 HR-033 和 schema legacy crosswalk~~（2026-07-20 已完成）；
-2. NR-02 构建模块生成类型化关系集合与派生状态；
-3. 实现 L0 两区面板；
-4. 实现 L1 分层关系图；
+2. ~~NR-02 构建模块生成类型化关系集合与派生状态~~（已完成；44 条输入通过 gate）；
+3. ~~实现 L0 两区面板~~（已完成）；
+4. ~~实现 L1 分层关系图~~（已完成）；
 5. NR-04／05 人审锚点到达后实现 L2；
 6. NR-06 做 claim／evidence／交互验收。

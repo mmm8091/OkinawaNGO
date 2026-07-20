@@ -178,7 +178,7 @@
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
 - 旧编号模块包 v0：含 R2、R3/R4、R5、跨国路径和 coverage 等现有 brief；最终方案中跨国路径属于 R6，coverage 属基础建设，不能用旧 R11/R14 编号判定验收。
 - 第一版进度稿仍是内部历史草稿；第三次 findings-led v2 与探索前端已经形成，下一次沟通应从当前系统和冻结后图件取材。
-- 在 HR-016–033 中，凡已回交的线上决定均已合并；HR-023／028 为零项任务，HR-029／031 仍后置空白。当前剩余总账为：HR-010 批 6 共 47、LCR 4、HR-034 50、后置 HR-029 41、最终 HR-031 3、当地材料 12。
+- 在 HR-016–033 中，凡已回交的线上决定均已合并；HR-023／028 为零项任务，HR-029／031 仍后置空白。当前总账为 157 个未闭合复核项：HR-010 批 6 共 47、LCR 4、HR-034 50、后置 HR-029 41、最终 HR-031 3、当地材料 12；其中 155 个决定栏为空，HR-018 的 2 项已有 defer 决定、等待新材料后闭合。
 - 信息源备份机制已跑通：manifest 为 273 archived、2 manual_archived、18 failed、2 non-URL；失败条目不等于证据不存在。
 - 六维 coverage audit v1 已按当前有效层重生：121 actors／238 actor-issue／130 actor-place／295 sources，中央历史边界为 122／248／135；2020+ 来源 170/295，1972–1997 仅 4，Henoko 与全县宽泛节点合计 82/130。当前生成有 120 个 category cells，但 cell 数不是稳定契约；统计只描述公开资料样本可见性，不创建 HR-023。
 - post-HR013 edge activation 的 17 actor／54 edge 是历史审计包，不是当前网络总量；HR-024 线上决定已合并，A073 为 `online_exhausted`／当地项，HR-010 补证 47 项仍待人工。
@@ -205,7 +205,7 @@
 
 当前人工任务总账见 `docs/principal_human_review_remaining_v14.md`；OPI-00 已有暂停／未完成记录，仍阻断新的广泛研究波次。
 
-当前当地补查优先级：P0 为 T2-D 先岛三地民间组织原始表达对照，P1 为 T2-E 公投制度门槛一手材料；T2-A/B 的组织身份与报刊时间线同馆顺带完成。T2-F 1972–2012 谱系仅在保留“复归后”长期主张时启动；AWWA recipient 年表不阻断机制主线。
+当前当地补查优先级：P0 为 T2-D 先岛三地民间组织原始表达对照，P1 为 T2-E 公投制度门槛一手材料；T2-A/B 的组织身份与报刊时间线同馆顺带完成。T2-G 已把 9 个 HR-017 公投尾项、2 个 HR-018 暂缓财务项和 A073 身份核查逐项映射为正式 closure 清单。T2-F 1972–2012 谱系仅在保留“复归后”长期主张时启动；AWWA recipient 年表不阻断机制主线。
 
 2026-07-18 下一轮改为 session 化的“降熵”工程：NR-01 研究信息架构、NR-02 前端数据契约、NR-03 可点击最小演示、NR-04 1972–1997 线上补缺、NR-05 1998–2012 线上补缺、NR-06 证据集成与演示验收。总任务书为 `docs/next_round_exploration_system_sessions_v1.md`。不再无目标加 actor/source/图；NR-04/05 结果未经人工决定不得进入前端默认层。
 
@@ -234,6 +234,6 @@
 5. 负责人已批准证据状态与前端展示规则：界面“演示视图”改为“已核视图”；已核层允许 `supported_bounded`，但必须显示已核／缺失字段；研究层增加 candidate／lead。权威规则为 `data/metadata/coding_schema_v1.md`。
 6. 关系架构 v1 已批准：43 行是异质观察，其中 27 行两端为 registry actor、16 行含 place／program／unknown recipient 等非 actor 端点；R8 27 行保持 case-role，不得生成“同案协作边”。实现依据为 `docs/actor_relation_architecture_v1.md`。
 7. HR-033 已完成并合并：标准化的 6 条 dyadic relations＋1 条 aggregate observation 在 `outputs/hr033_integration_v1/`；前端不得把 membership 当 funding，也不得把 R10R029 的 102,000 美元附到 F025。
-8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。F036 只作事件记录，R10R029 只作汇总观察。17 个 builder tests、当前全套 75 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
+8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。F036 只作事件记录，R10R029 只作汇总观察。17 个 builder tests、当前全套 79 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
 9. NR-04／NR-05 分别做两个时期的有界线上补缺；结果先进入候选和人工队列。NR-06 统一完成 claim/evidence QA、历史集成决定和已核／研究双层验收。
 10. 既有 HR／报告 gate 保持有效；只有当其直接阻断前端默认 claim 时才按优先级处理，不恢复全面铺开。

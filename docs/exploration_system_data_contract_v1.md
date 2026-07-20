@@ -57,6 +57,13 @@ outputs/exploration_system_data_v1/
     evidence.json
     historical_anchors.json
     relations.json
+    dyadic_relations.json
+    case_roles.json
+    typed_event_participation.json
+    administrative_records.json
+    aggregate_observations.json
+    relation_leads.json
+    genealogy_anchors.json
     map_geometry.geojson
   research/
     candidates.json
@@ -95,9 +102,10 @@ outputs/exploration_system_data_v1/
 
 来源：中央 actor registry。
 
-当前 122 个 registry actor 及 27 条 alias 全部进入 `demo/actors.json`，用于身份浏览和
-别名搜索。这里的准入是
-“已进入当前中央 registry”，不等于每个分类字段和关系都已经人审。
+中央 registry 的 122 条 provenance 行及 39 条 alias 全部进入 `demo/actors.json`，但
+A072 是已并入 A071 的 duplicate tombstone，`display_status=hidden`；普通界面、搜索和
+网络只显示其余 121 个 active actor。这里的准入是“保留在中央 registry／provenance”，
+不等于每个分类字段和关系都已经人审。
 
 因此：
 
@@ -112,7 +120,8 @@ outputs/exploration_system_data_v1/
 进入 `display_summary`，不由前端另写地区文章。
 
 总览地图几何来自既有简化 municipal GeoJSON，共 42 个 Polygon/MultiPolygon feature，
-随构建复制为 `demo/map_geometry.geojson` 并进入输入/输出哈希。当前 place registry 没有
+随构建复制为 `demo/map_geometry.geojson` 并进入输入/输出哈希。当前 place registry 有
+21 个 place／field 节点，但没有
 逐地点经纬度或已核 municipality crosswalk，因此 NR-03 只能先做区域级地图选择，不得
 自行猜测基地、湾区或组织的精确点位。
 
@@ -158,28 +167,27 @@ S051 因 archive/domain mismatch 不能支持任何可见 claim。
 
 | 关系 | demo gate | 当前数 |
 |---|---|---:|
-| `actor_issue` | `human_checked` / `human_revised` | 59 |
-| `actor_place` | 人审且 place key/label 一致 | 16 |
-| `strict_place_issue` | `human_reviewed_same_source` | 67 |
+| `actor_issue` | `human_checked` / `human_revised` | 65 |
+| `actor_place` | 人审且 place key/label 一致 | 53 |
+| `strict_place_issue` | `human_reviewed_same_source` | 65 |
 | `actor_episode` | 由 9 个 demo episode 派生 | 15 |
 | `event_participation` | `human_checked` | 63 |
 | `legal_roles` | 六案 27 条人审角色 | 27 |
 
-已知 AP123 同时写 `place_id=P006` 与 `place_name=Camp Foster`，而 P006 的中央名称是
-Camp Schwab。构建模块不修中央表，自动将 AP123 隔离到 research 层并写
-`quarantine_reason=place_key_label_conflict`。因此默认 actor-place 为 16 条，不机械使用
-“17 条人审”计数。
+AP123 的旧快照曾出现 `place_id=P006`／`place_name=Camp Foster` 冲突并被隔离；HR-025
+已把它修订为 P007 Camp Foster。当前构建使用 53 条已核 actor—place 边，旧的 16／17 条
+计数只属于 pre-HR-025 历史快照。
 
 `research/candidates.json` 当前隔离：
 
-- 182 条 actor–issue；
-- 119 条 actor–place（118 个原候选＋AP123 隔离项）；
-- 263 条 strict same-source 候选；
+- 173 条 actor–issue；
+- 77 条 actor–place；
+- 247 条 strict same-source 候选；
 - 4 条 analytical event participation；
 - 4 个候选 episode 及其 4 条 actor–episode、12 个 outcome。
 
-8 个 registry actor 仍带非中央 `Xxxx` 身份引用；research 关系层合计出现 11 个此类旧
-引用。它们保留为 `unresolved_source_refs`，但不会伪装成中央 `source_ids` 或进入 demo
+8 个 registry actor 仍带非中央 `Xxxx` 身份引用；research 关系层当前涉及 9 个不同旧
+代码。它们保留为 `unresolved_source_refs`，但不会伪装成中央 `source_ids` 或进入 demo
 关系的证据链。
 
 ## 7. event-only 与 provisional 节点
@@ -202,11 +210,11 @@ Camp Schwab。构建模块不修中央表，自动将 AP123 隔离到 research �
 
 提供：
 
-- 20 个 place ID 与 region 分组；
+- 21 个 place ID 与 region 分组；
 - 42 个 municipality polygon 的正式前端几何文件；
 - 26 个 issue ID；
-- 16 条无键名冲突的 demo actor–place；
-- 67 条双人审同源 strict place–issue；
+- 53 条无键名冲突的 demo actor–place；
+- 65 条双人审同源 strict place–issue；
 - `all_regions / strict_evidence / sakishima_focus / compare` 四种状态。
 
 全域状态可做导航，但只有 strict evidence 状态允许画正式地点—议题关联。
@@ -215,8 +223,8 @@ Camp Schwab。构建模块不修中央表，自动将 AP123 隔离到 research �
 
 提供：
 
-- 122 个 registry actor；
-- 59 条 demo actor–issue；
+- 122 条 registry provenance，其中 A072 隐藏、121 个 actor 可见；
+- 65 条 demo actor–issue；
 - 15 条 demo actor–episode；
 - actor class、origin、legal status、place、issue 与 review status 筛选字段。
 
@@ -302,10 +310,11 @@ NR-03 不允许：
 - 为具体地区、组织、episode 另建手写内容文章；
 - 对空 historical-anchor 进行自动补写。
 
-## 12. 已批准但尚未实现的关系状态扩展（2026-07-20）
+## 12. 已实现的关系状态扩展（2026-07-20）
 
-本节记录下一版构建契约的已批准输入，不表示当前
-`outputs/exploration_system_data_v1/` 已经完成这些改动。
+本节原为下一版构建契约。HR-033 合并、NR-02 构建扩展和 L0／L1 前端现已实现；当前
+`outputs/exploration_system_data_v1/` 已生成并验证以下类型化集合。L2 谱系仍因
+`genealogy_anchors=0` 等待 NR-04／NR-05 人工连续性决定。
 
 - 用户界面的 `demo` 改称“已核视图”；内部目录名可为兼容暂时保留；
 - evidence level、review status、human decision、claim status、graph eligibility 和
@@ -316,11 +325,25 @@ NR-03 不允许：
 - 关系输出拆为 `dyadic_relations`、`case_roles`、`event_participation`、
   `administrative_records`、`aggregate_observations`、`relation_leads` 和
   `genealogy_anchors`；
-- 六条 legacy `verified` 关系等待 HR-033，不得自动进入已核层；
+- 六条 legacy `verified` 关系已由 HR-033 逐条决定，中央旧值已清零；不得按旧
+  `verified` 字符串自动进入已核层；
 - 前端继续只消费构建结果，不自行根据中央 `review_status` 计算展示资格。
 
-下一版实现与验证依据：
+当前输入与验证依据：
 
 - `data/metadata/coding_schema_v1.md`
 - `docs/actor_relation_architecture_v1.md`
 - `docs/nr3_recheck_and_relation_frontend_brief_v1.md`
+
+当前关系构建计数：
+
+- 44 条输入观察＝43 条中央关系／支持记录＋R10R029 独立汇总观察；
+- 已核层：14 条 dyadic relation、6 条 administrative record、2 条 aggregate
+  observation、4 条 typed event participation、27 条 case role；
+- 研究层：8 条 candidate dyadic relation、5 条 administrative candidate、4 条
+  relation lead；
+- 中央 43 条状态：`human_checked` 18、`human_revised` 8、`ai_seeded` 12、
+  `needs_second_source` 2、`needs_local_retrieval` 2、`rejected` 1。
+
+中央状态计数与前端集合计数不可相加或互相替代；后者还经过 endpoint、claim 和 graph
+eligibility gate。

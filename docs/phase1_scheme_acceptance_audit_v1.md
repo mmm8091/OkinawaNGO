@@ -294,7 +294,7 @@ R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留 135 �
 25. `outputs/translation_episode_comparison_v1/`：13 条转译 episode 把公开诉求、场域进入、中间产出、有限救济和底层改变分栏；TE10–TE13 仍属 HR-027 事件候选。
 26. `outputs/exploration_system_data_v1/` 与 `prototypes/nr3_explorer/`：把当前数据做成可探索前端；默认隐藏 A072／AI068，并将已核 dyadic、行政、汇总、事件、案件角色与研究线索分层呈现。
 27. `outputs/review_status_crosswalk_v1/`：建立 HR-034 的 50 项空白交叉表，覆盖 45 条 source-log legacy status、1 条 actor–issue status 和 4 条表级政策；它是人工任务，不是自动迁移。
-28. `docs/principal_human_review_remaining_v14.md`：将真实剩余门禁核为 157 项，即现在可做线上 101、依赖后做线上 44、当地材料 12。
+28. `docs/principal_human_review_remaining_v14.md`：将真实剩余门禁核为 157 个未闭合复核项，即现在可做线上 101、依赖后做线上 44、当地材料 12；其中 155 个决定栏为空，HR-018 的 2 项已决定暂缓并等待新材料，不得把 157 全部写成空白决定。
 
 主要解释增量是：
 
