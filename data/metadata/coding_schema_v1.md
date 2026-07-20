@@ -242,3 +242,32 @@ HR-033 已于 2026-07-20 完成并合并：
 - `supported_bounded` 缺少 `missing_scope` 或 `interpretation_limit`；
 - `rejected`／E0 进入已核或研究可见层；
 - 前端自行根据 `review_status` 重算展示资格。
+
+## 14. actor–issue 的三重门禁与 legacy 过渡
+
+actor–issue 记录必须区分：
+
+1. **事实门**：现有来源是否足以支持确切 actor—issue 映射；
+2. **范围门**：该映射只可解释为长期定位、案件／制度角色，还是事件标签；
+3. **字段冻结门**：`reviewed_fields`、`claim_status`、`confirmed_scope` 等 v1 字段是否完整。
+
+HR-019 的 `scope_review_status` 只通过范围门，绝不自动通过事实门。`scope_claim_status` 也只
+说明批准了有界解释范围，不能替代主记录的 `claim_status`。
+
+构建端可派生以下展示辅助字段；它们不写回中央表：
+
+- `fact_gate_status`
+- `scope_gate_status`
+- `schema_freeze_status`
+
+现有旧批次中，部分 `human_checked`／`human_revised` actor–issue 行尚缺 v1 字段。完成
+HR-035 等人工 crosswalk 前，可以为保持历史交付兼容而暂时留在已核层，但必须显示
+`legacy_field_freeze_pending`／“人工接受·字段待冻结”，不得静默补成 `supported`。全部旧行
+迁移完成后，应撤销这项兼容规则，严格按第 8 节的 `claim_status` 准入。
+
+前端不得把：
+
+- “范围已审”写成“事实已核”；
+- “人工接受·字段待冻结”写成“字段完整”；
+- `needs_second_source`／`needs_local_retrieval` 隐藏成普通候选；
+- registry `issue_tags` 直接投影成 actor–issue 边。

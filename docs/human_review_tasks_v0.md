@@ -727,17 +727,38 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 - R4、R9、异质行动和 lifecycle 四项只决定字段语义与迁移规则，不能把所影响的行批量推定为人审通过。
 - lifecycle 工作流状态应与 `review_status` 分栏；不改写仍为空白的 LCR001–004 个案决定。
 
+### HR-035 actor–issue 事实与字段冻结 — Batch 1 pending
+
+状态（2026-07-20）：新建任务，当前只正式派发 15 条案件／公投／程序边。它们已经由
+HR-019 审过 `scope_kind` 与解释边界，但事实边仍为 `ai_seeded`；本任务只决定现有来源是否
+足以支持确切 actor—issue 映射，不重做 bridge 或 scope。
+
+复核包：
+
+- `docs/human_review_task_HR035_actor_issue_claim_freeze_v1.md`
+- `outputs/actor_issue_claim_freeze_v1/HR035_actor_issue_fact_review_batch01_v1.csv`
+- `outputs/actor_issue_claim_freeze_v1/HR035_source_bundle_batch01_v1.csv`
+
+人工重点：
+
+- 原告、律师、requester、supporter、proponent 与争议 target 必须分开；
+- AI106 须修正仅凭 S004 支撑法律角色的问题；
+- AI178 不得把沖縄防衛局作为争议对象误写成具有 `anti_base` 政治立场；
+- `accept/revise/defer/reject` 只影响该事实边，不能新增组织关系、联盟、资金或因果；
+- 若既有 HR-019 scope 也需修改，必须另标 `scope_revision_required`，不得静默覆盖。
+
 ## 7. 人工复核节奏
 
 建议每轮 60-90 分钟，先处理 8-12 个高风险条目。
 
 优先级：
 
-1. HR-010 批 6 的 47 条 actor–issue 边级证据。
-2. LCR001–004 的 4 条生命周期个案。
-3. HR-034 的 50 条 legacy status crosswalk／表级政策。
-4. 合并上述决定后最终重生并分批执行 HR-029 的 41 项 schema／alias freeze。
-5. 最后处理 HR-031 的 3 条解释强度；当地 12 项等待一手材料。
+1. HR-035 Batch 1 的 15 条案件／公投／程序事实边。
+2. HR-010 批 6 的 47 条 actor–issue 边级证据。
+3. LCR001–004 的 4 条生命周期个案。
+4. HR-034 的 50 条 legacy status crosswalk／表级政策。
+5. 决定 HR-035 后续批次，再最终重生并分批执行 HR-029 的 41 项 schema／alias freeze。
+6. 最后处理 HR-031 的 3 条解释强度；当地 12 项等待一手材料。
 
 ## 8. 不合格复核示例
 
