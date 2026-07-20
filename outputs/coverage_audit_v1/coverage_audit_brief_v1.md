@@ -4,7 +4,7 @@
 
 ## 结论先行
 
-当前默认统计层为 **121 个有效 actor、238 条有效 actor–issue 边、130 条有效 actor–place 边与 295 条 source log**。中央表同时保留 **122／248／135** 条 actor／actor–issue／actor–place 历史记录，供 tombstone、rejected 与 excluded 记录的来源审计；这些历史行不进入本轮 category cells 和图中分布。
+当前默认统计层为 **121 个有效 actor、283 条有效 actor–issue 边、130 条有效 actor–place 边与 295 条 source log**。中央表同时保留 **122／294／135** 条 actor／actor–issue／actor–place 历史记录，供 tombstone、rejected 与 excluded 记录的来源审计；这些历史行不进入本轮 category cells 和图中分布。
 
 这仍是公开资料驱动的工作样本，不是冲绳民间组织或资料总体的概率样本，也没有可用于估计覆盖率的总体分母。因此，本审计解释的是“哪些对象在当前检索路径下更可见”，不估计总体分布。
 
@@ -18,7 +18,7 @@
 ## 统计层与输出契约
 
 - actor：排除并入 A071 的 A072 tombstone；其余 121 个 actor 进入当前层。
-- actor–issue：只纳入 `analysis_inclusion=active` 的 238 条边。
+- actor–issue：只纳入 `analysis_inclusion=active` 的 283 条边。
 - actor–place：只纳入 `graph_eligibility!=excluded` 的 130 条边。
 - coverage 输出稳定的是 **D1–D6 六个维度及字段语义**，不是 category-cell 的固定行数。精确分类或 workflow 状态变化时，cell 数可随之变化。
 

@@ -3,13 +3,13 @@
 
 ## 验收结论
 
-按《复归后冲绳民间组织 / NGO 分类与议题网络一期研究方案》的原始标准，R1/R2 已从“桥梁组织示例图”推进为可验收的完整 v1 包。历史审计保留 122 个 registry rows 与 248 条 actor–issue rows；当前图表和统计只使用 121 个有效 actor 与 238 条有效 edge。R1 提供分类审计、标准化分析映射和组织生态图；R2 提供 121 active actors × 26 issues 的二模网络、议题共现图、跨议题 actor 表和证据／时间范围分层。它仍是公开资料驱动的候选网络，不是冲绳组织总体名录，也不是稳定联盟图。
+按《复归后冲绳民间组织 / NGO 分类与议题网络一期研究方案》的原始标准，R1/R2 已从“桥梁组织示例图”推进为可验收的完整 v1 包。历史审计保留 122 个 registry rows 与 294 条 actor–issue rows；当前图表和统计只使用 121 个有效 actor 与 283 条有效 edge。R1 提供分类审计、标准化分析映射和组织生态图；R2 提供 121 active actors × 26 issues 的二模网络、议题共现图、跨议题 actor 表和证据／时间范围分层。它仍是公开资料驱动的候选网络，不是冲绳组织总体名录，也不是稳定联盟图。
 
 ## Q1：冲绳有哪些相关民间组织？
 
 中央 registry 的历史底稿有 122 行，其中 121 个 actor 进入当前分析；1 行仅保留为历史审计：A072 沖縄から基地をなくし世界の平和を求める市民連絡会（merged_duplicate）。当前有效层覆盖冲绳本地公民团体与 NPO、日本国内 NGO、国际倡议组织、法律网络、劳工／教育组织、女性／人权组织、基地社区服务与军属慈善、国际合作／公共外交项目，以及资助／赞助／公共机构节点。这个宽生态符合方案“不预设全部 actor 都是反基地阵营”的边界。
 
-数量不是完成指标。18 个有效 actor 尚无当前有效 actor–issue edge：X014 NED National Endowment for Democracy、X015 Peace Winds Japan、A054 沖縄人権協会、A073 琉球沖縄国際支援プログラム、A087 NPO法人世界版「平和の礎」を提案する会、A088 特定非営利活動法人沖縄平和協力センター、A089 沖縄県教職員組合、A090 沖縄県高等学校障害児学校教職員組合、A091 日本労働組合総連合会沖縄県連合会（連合沖縄）、A092 沖縄県労働組合総連合、A093 全日本自治団体労働組合沖縄県本部、A095 止めよう「自衛隊配備」宮古郡民の会、A096 宮古平和運動連絡協議会、A097 宮古島環境クラブ、A098 特定非営利活動法人宮古島海の環境ネットワーク、A099 有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会、A100 ミサイル配備から命を守るうるま市民の会、A101 沖縄・琉球弧の声を届ける会。它们已有 registry `issue_tags`，但这些标签不能自动当成 edge；必须逐条回到来源建立关系证据。已拒绝、停用或排除的 edge 不计入候选，也不能据此消除孤立状态。
+数量不是完成指标。5 个有效 actor 尚无当前有效 actor–issue edge：X014 NED National Endowment for Democracy、X015 Peace Winds Japan、A054 沖縄人権協会、A073 琉球沖縄国際支援プログラム、A075 沖縄防衛局。它们已有 registry `issue_tags`，但这些标签不能自动当成 edge；必须逐条回到来源建立关系证据。已拒绝、停用或排除的 edge 不计入候选，也不能据此消除孤立状态。
 
 ## Q2 / R1：这些组织如何分类？
 
@@ -21,44 +21,44 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 
 ## R2：哪些组织连接了哪些议题？
 
-历史表保留 248 条 edge，其中 10 条因 `rejected`、`unsupported`、`excluded`、`retired_*`、`deactivated_*` 或默认叙事排除状态而不进入当前网络。当前有效层有 238 条 edge，连接 103 个 actor 与 26 个议题；另有 18 个有效 actor 在图中保留为孤立节点。按复核层，65 条已人审，173 条仍是候选。按解释范围，90 条暂归为长期组织定位／持续角色，61 条为制度／案件角色，87 条为事件性声明／署名／行动，0 条仍待判定。
+历史表保留 294 条 edge，其中 11 条因 `rejected`、`unsupported`、`excluded`、`retired_*`、`deactivated_*` 或默认叙事排除状态而不进入当前网络。当前有效层有 283 条 edge，连接 116 个 actor 与 26 个议题；另有 5 个有效 actor 在图中保留为孤立节点。按复核层，125 条已人审，158 条仍是候选。按解释范围，124 条暂归为长期组织定位／持续角色，62 条为制度／案件角色，97 条为事件性声明／署名／行动，0 条仍待判定。
 
 这四层解决了旧 R2 的核心缺口：同一个 actor 同时出现于多个议题，并不自动证明它长期以这些议题为组织定位。`event_specific` 只能写成“公开参与某次声明／署名／行动”；`institutional_or_case_role` 只能写成“在某诉讼、服务或项目中承担公开角色”；只有来源支持使命、持续行动或组织目的时，才暂列 `organizational_positioning`。
 
-当前共有 74 个 actor 在 edge 表中连接至少两个议题，但只有 17 个 actor 至少有两个议题在 edge 两侧均已人审，29 个可暂归为长期定位型 bridge。正文优先使用双侧人审者：
+当前共有 88 个 actor 在 edge 表中连接至少两个议题，但只有 36 个 actor 至少有两个议题在 edge 两侧均已人审，39 个可暂归为长期定位型 bridge。正文优先使用双侧人审者：
 
+- A101 沖縄・琉球弧の声を届ける会：全部 7 个议题，双侧人审可用 7 个；positioning_bridge。
+- A091 日本労働組合総連合会沖縄県連合会（連合沖縄）：全部 5 个议题，双侧人审可用 5 个；positioning_bridge。
+- A100 ミサイル配備から命を守るうるま市民の会：全部 5 个议题，双侧人审可用 5 个；positioning_bridge。
 - A086 Turtle Island Restoration Network：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
+- A095 止めよう「自衛隊配備」宮古郡民の会：全部 4 个议题，双侧人审可用 4 个；mixed_candidate_bridge。
+- A099 有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
 - A102 全国公害弁護団連絡会議：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
 - A103 全国基地爆音訴訟原告団連絡会議：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
 - A104 普天間基地爆音訴訟弁護団：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
 - A105 日本YWCA：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
 - A106 辺野古の海を土砂で埋めるな！首都圏連絡会：全部 4 个议题，双侧人审可用 4 个；event_only_bridge。
 - A107 沖縄YWCA：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
-- A108 沖縄を再び戦場にさせない県民の会：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
-- A109 第4次嘉手納基地爆音差止訴訟弁護団：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
-- A110 辺野古に基地を絶対つくらせない大阪行動：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
-- A111 沖縄県女性団体連絡協議会：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
-- A076 ジュゴン保護基金委員会（Save the Dugong Foundation）：全部 3 个议题，双侧人审可用 3 个；case_or_institutional_bridge。
 
 ## 议题转化的当前证据
 
 共现最高的议题对如下。它们说明“同一 actor 的议题组合”，不表示 actor 之间结盟：
 
-- `anti_base × peace`：13 个共享 actor，其中 3 个在两侧均已人审，7 个在两侧均有长期定位标记。
-- `anti_base × Henoko`：9 个共享 actor，其中 3 个在两侧均已人审，3 个在两侧均有长期定位标记。
+- `anti_base × peace`：16 个共享 actor，其中 6 个在两侧均已人审，9 个在两侧均有长期定位标记。
+- `anti_base × Henoko`：10 个共享 actor，其中 4 个在两侧均已人审，4 个在两侧均有长期定位标记。
 - `anti_base × biodiversity`：8 个共享 actor，其中 0 个在两侧均已人审，3 个在两侧均有长期定位标记。
-- `anti_base × life_safety`：7 个共享 actor，其中 3 个在两侧均已人审，2 个在两侧均有长期定位标记。
+- `anti_base × life_safety`：8 个共享 actor，其中 4 个在两侧均已人审，2 个在两侧均有长期定位标记。
 - `anti_base × legal`：7 个共享 actor，其中 3 个在两侧均已人审，1 个在两侧均有长期定位标记。
 - `life_safety × legal`：7 个共享 actor，其中 4 个在两侧均已人审，0 个在两侧均有长期定位标记。
+- `anti_military × life_safety`：6 个共享 actor，其中 2 个在两侧均已人审，3 个在两侧均有长期定位标记。
 - `biodiversity × international_advocacy`：6 个共享 actor，其中 2 个在两侧均已人审，0 个在两侧均有长期定位标记。
-- `life_safety × noise`：6 个共享 actor，其中 4 个在两侧均已人审，0 个在两侧均有长期定位标记。
 
 目前最稳妥的总体解释是：反基地议题不是孤立存在，而是经由三种不同机制被转译。第一，环保／生物多样性与边野古、大浦湾等地点议题结合；第二，噪声、生活安全与法律程序通过原告团和律师网络结合；第三，和平、人权、地方自治与国际倡议通过声明、网络使命或制度渠道结合。三种机制的证据形态不同，不能合并成一个“联盟强度”指标。
 
 ## 明显缺口与继续补材料的标准
 
-- **数据联接缺口**：18 个已登记 actor 没有 actor–issue edge。优先补来源摘录和 edge，不从 registry `issue_tags` 自动生成。
-- **薄议题层**：当前 actor 数不超过 3 的议题为：health_risk(2)、public_diplomacy(2)、international_cooperation(2)、solidarity(2)、anti_war(1)、mobilization(2)。薄层中若又没有双侧人审，不能承担核心叙事。
+- **数据联接缺口**：5 个已登记 actor 没有 actor–issue edge。优先补来源摘录和 edge，不从 registry `issue_tags` 自动生成。
+- **薄议题层**：当前 actor 数不超过 3 的议题为：health_risk(3)、public_diplomacy(2)、solidarity(2)。薄层中若又没有双侧人审，不能承担核心叙事。
 - **分类与状态边界**：当前有效 actor 的 schema 外分类术语为 0 个；历史状态或范围排除项只保留在审计表，不进入当前生态与网络。HR-019 的既有人工决定原样保留。
 - **时间范围缺口**：0 条 edge 仍无法从当前 `relation_basis` 稳妥区分长期／案件／事件；已全部进入 HR-019 scope queue。
 - **历史覆盖缺口**：当前网络明显偏向可在线检索的近年行动、2010/2015/2020 联署和现存官网，不能据此描述 1972 年以来各时期的总体组织结构。

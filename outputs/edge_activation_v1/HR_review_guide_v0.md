@@ -1,5 +1,9 @@
 # HR-024 与 HR-010 batch 6 复核说明
 
+当前状态（2026-07-20）：HR-024 线上项与 HR-010 batch 6 已完成并合并。HR-010 的47项中
+46项接受并生成 AI249–AI294，HR010-B6-019 暂缓且没有生成中央 edge；A073 仍为1项当地
+材料任务。以下保留为历史复核说明，不能重新作为空白任务表使用。
+
 ## HR-024（8项）
 
 - HR024-001：A073 身份与 registry 去留；线上未找到可核实体，不能从 issue_tags 反推 edge。
@@ -9,10 +13,11 @@
 ## HR-010 edge-evidence addendum / batch 6
 
 - `HR010_batch6_edge_evidence_addendum_v0.csv` 是 HR-013 前 51 项取证快照；其中 A094 的 4 项已被 HR-013 排除，不再送审。
-- 当前请使用 `post_hr013_HR010_batch6_edge_evidence_addendum_v1.csv`（47项）。A087–A093、A095–A101 属于原 HR-010 未完成范围；本表只是新补的 edge-level evidence，不另建 HR-024。
+- 权威回交表为 `post_hr013_HR010_batch6_edge_evidence_addendum_v1.csv`（47项）。A087–A093、
+  A095–A101 属于原 HR-010 范围；本表只是 edge-level evidence，不另建 HR-024。
 - 为保持取证谱系，post-HR013 表保留原 task ID，A094 对应 ID 空缺不重排。
-- `decision/reviewer/review_date/review_note` 全部故意留空。
-- 可用决定建议词：`accept` / `revise_scope` / `defer` / `reject`。这只是填写词表，不是预填结论。
+- `decision/reviewer/review_date/review_note` 已按负责人确认回填；不得再次清空或让历史 builder
+  覆盖。
 
 ## 复核顺序
 

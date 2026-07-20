@@ -12,9 +12,9 @@ Primary reading order: `R01_R02_explanatory_brief_v1.md`, figures 1–4,
 `validation_metrics_v1.csv`, then `HR019/HR019_review_guide_v0.md`.
 
 The central registry and layered edge derivative retain the complete historical
-audit (122 actor rows; 248 edge rows).
+audit (122 actor rows; 294 edge rows).
 Current figures, co-occurrence, bridge and coverage outputs use only
-121 active actors and 238 active edges. The legacy filename
+121 active actors and 283 active edges. The legacy filename
 `actor_class_audit_118_v1.csv` is retained for downstream compatibility; its
 rows now carry explicit `analysis_inclusion` and exclusion-reason fields.
 

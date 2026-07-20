@@ -1,0 +1,8 @@
+﻿metric,value,status,boundary
+actor_field_cells_changed,0,applied,"Schema normalization does not approve candidate facts, funding, alliance or causality."
+alias_rows_changed,0,applied,"Schema normalization does not approve candidate facts, funding, alliance or causality."
+place_actor_place_labels_changed,0,applied,"Schema normalization does not approve candidate facts, funding, alliance or causality."
+place_registry_fields_changed,0,applied,"Schema normalization does not approve candidate facts, funding, alliance or causality."
+venue_controlled_venue,12,applied,"Schema normalization does not approve candidate facts, funding, alliance or causality."
+venue_no_applicable_venue,6,applied,"Schema normalization does not approve candidate facts, funding, alliance or causality."
+vocabulary_files,0,applied,"Schema normalization does not approve candidate facts, funding, alliance or causality."

@@ -1,11 +1,11 @@
 # HR-034 review_status crosswalk v1
 
 日期：2026-07-20  
-状态：**空白人工任务包；未作任何决定；未修改中央表**
+状态：**50项已由负责人确认并完成中央受控迁移**
 
 ## 交付
 
-- `HR034_review_status_crosswalk_v1.csv`：50 个任务。
+- `HR034_review_status_crosswalk_v1.csv`：50 个已确认任务。
   - 45 个中央 source-log 逐行任务；
   - 1 个中央 actor–issue 逐行任务（当前实际为 AI068；AI067 已是 `rejected`）；
   - 4 个表级政策任务。
@@ -30,10 +30,13 @@
 ## 强制边界
 
 - 所有 `decision`、`revised_review_status`、`human_reviewer`、`review_date`、
-  `review_note` 均为空。
+  `review_note` 均已填写；reviewer 为 `project_principal_user`。
 - 来源状态迁移不批准 actor、edge、资金关系或解释性结论。
 - AI067 已被 HR-019 拒绝；本包只处理当前仍为 `watchlist_only` 的 AI068，
   且不据此恢复冲绳连接。
 - table policy 只决定字段语义与迁移规则；不能把 10/29/49 行批量推定为人审通过。
-- lifecycle 的“待身份修复/待连续性核查”应与 `review_status` 分栏；线上未见活动
-  不等于解散，既有 LCR001–LCR004 空白决定不受本包影响。
+- lifecycle 的工作流状态已与 `review_status` 分栏；线上未见活动不等于解散。
+  LCR001–LCR004 已由独立生命周期决定合并。
+
+`make_review_status_crosswalk_v1.py` 现为 pre-review provenance builder，不得在当前迁移后中央层
+重新运行。

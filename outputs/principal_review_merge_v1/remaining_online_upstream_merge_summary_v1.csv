@@ -1,0 +1,20 @@
+﻿stage,metric,value,boundary
+formalize,HR029_schema_alias_freeze_review_v0.csv,41,principal-confirmed
+formalize,HR031_report_claim_review_v0.csv,3,principal-confirmed
+formalize,HR034_review_status_crosswalk_v1.csv,50,principal-confirmed
+formalize,actor_lifecycle_review_queue_v0.csv,4,principal-confirmed
+formalize,post_hr013_HR010_batch6_edge_evidence_addendum_v1.csv,47,principal-confirmed
+HR035,accept,6,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR035,reject,1,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR035,revise,8,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR010,added,0,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR010,deferred,1,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR010,updated,46,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+lifecycle,continuity_unverified,2,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+lifecycle,dissolved,3,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+lifecycle,reorganized,1,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR034,actor_issue_rows,1,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR034,heterogeneous_rows,49,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR034,r4_rows,10,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR034,r9_rows,29,"No alliance, funding, causality or continuity inference beyond reviewed scope."
+HR034,source_rows,45,"No alliance, funding, causality or continuity inference beyond reviewed scope."

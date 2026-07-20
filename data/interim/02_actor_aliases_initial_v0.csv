@@ -1,28 +1,28 @@
 ﻿actor_id,alias,alias_type,source_ref,notes
 X004,American Women's Welfare Association,former_name,S041;S072;S078,Old/common English name used in earlier sources.
-X004,Ryukyu American Welfare Council,original_name,S041;S055,Original 1952 name.
-X004,米国福祉事業協会,japanese_name,S073,Japanese name used by current official social media.
-X004,American Welfare and Works Association,variant,S074,Cause IQ capitalization variant.
-X016,Marine Officers' Spouses' Club Okinawa,canonical_variant,S079;S080,Full punctuation variant.
-X016,Marine Officers Spouses Club Okinawa,tax_name,S080,Tax-record spelling without apostrophe.
+X004,Ryukyu American Welfare Council,former_name,S041;S055,Original 1952 name.
+X004,米国福祉事業協会,language_name,S073,Japanese name used by current official social media.
+X004,American Welfare and Works Association,orthographic_variant,S074,Cause IQ capitalization variant.
+X016,Marine Officers' Spouses' Club Okinawa,orthographic_variant,S079;S080,Full punctuation variant.
+X016,Marine Officers Spouses Club Okinawa,registered_name_variant,S080,Tax-record spelling without apostrophe.
 X016,MOSC,acronym,S055,Member club acronym used in AWWA context.
 X016,MOSCO,acronym,S079,Current self-used acronym.
 X017,ACGO,acronym,S081,Army Community Group of Okinawa acronym from gift shop/community context.
 A040,Pro Public,short_name,S004;S089,Name used in 2015 NACSJ signatory list and official site.
 A040,Friends of the Earth Nepal,network_name,S090,FoE International member name.
-A046,Pro Natura / FoE Switzerland,signatory_name,S004,Name used in 2015 NACSJ signatory list.
+A046,Pro Natura / FoE Switzerland,event_list_name,S004,Name used in 2015 NACSJ signatory list.
 A046,Friends of the Earth Switzerland,network_name,S091;S092,FoE/IUCN membership alias.
 A046,Swiss League for the Protection of Nature,former_name,S091,Historical name noted in organization identity sources.
-A106,辺野古の海を土砂で埋めるな！首都圏キャンペーン,possible_canonical_variant,S126,HR-010 batch 5: source-preferred name; final canonical choice remains a targeted human check.
-A052,嘉手納爆音訴訟原告団,former_canonical,S026,HR-012: previous registry canonical name; retained for lookup after canonical-name normalization.
-A052,第4次嘉手納基地爆音差止訴訟原告団,round_of,S149;S151;S155,HR-012: fourth-round case designation of A052; no separate actor created and cross-round membership is not assumed identical.
-A053,普天間爆音訴訟団,former_canonical,S027,HR-012: previous registry canonical name; retained for lookup after canonical-name normalization.
-A053,普天間基地第2次爆音訴訟原告団,round_of,S135;S156,HR-012: second-round case designation of A053; no separate actor created and cross-round membership is not assumed identical.
-A010,石垣島への自衛隊配備を止める住民の会,predecessor_of,S157,"HR-012: predecessor formed 2015-08-20; A010 emerged as a wider coalition in 2016-09. This is lineage metadata, not a claim that both names denote an identical organization."
+A106,辺野古の海を土砂で埋めるな！首都圏キャンペーン,documented_name_variant,S126,HR-010 batch 5: source-preferred name; final canonical choice remains a targeted human check. HR-029 principal-confirmed alias semantics; no entity merge or cross-round role transfer.
+A052,嘉手納爆音訴訟原告団,former_registry_canonical,S026,HR-012: previous registry canonical name; retained for lookup after canonical-name normalization.
+A052,第4次嘉手納基地爆音差止訴訟原告団,case_round_label_nonidentity,S149;S151;S155,HR-012: fourth-round case designation of A052; no separate actor created and cross-round membership is not assumed identical. HR-029 principal-confirmed alias semantics; no entity merge or cross-round role transfer.
+A053,普天間爆音訴訟団,former_registry_canonical,S027,HR-012: previous registry canonical name; retained for lookup after canonical-name normalization.
+A053,普天間基地第2次爆音訴訟原告団,case_round_label_nonidentity,S135;S156,HR-012: second-round case designation of A053; no separate actor created and cross-round membership is not assumed identical. HR-029 principal-confirmed alias semantics; no entity merge or cross-round role transfer.
+A010,石垣島への自衛隊配備を止める住民の会,predecessor_name_nonidentity,S157,"HR-012: predecessor formed 2015-08-20; A010 emerged as a wider coalition in 2016-09. This is lineage metadata, not a claim that both names denote an identical organization. HR-029 principal-confirmed alias semantics; no entity merge or cross-round role transfer."
 A053,普天間基地爆音訴訟原告団,descriptive_variant,S135;S136,HR-012: descriptive plaintiff-group variant; canonical follows the official site name 普天間基地爆音訴訟団.
 A111,県婦人団体連絡協議会,former_name,S201,HR-013: historical name used in the 1995 base-removal mobilization context.
 A111,女団協,acronym,S208,"HR-013: documented abbreviation. Do not transfer 沖女連, which is associated with former A094."
-A113,ちゅら水会,context_limited_alias,S273;S274,"HR-027: valid only in explicit Ginowan context; 名護ちゅら水会 is a separate near-name, so display/search must retain the Ginowan qualifier."
+A113,ちゅら水会,context_limited_alias,S273;S274,"HR-027: valid only in explicit Ginowan context; 名護ちゅら水会 is a separate near-name, so display/search must retain the Ginowan qualifier. HR-029 principal-confirmed alias semantics; no entity merge or cross-round role transfer."
 A114,全港湾沖縄地方本部,short_name,S289,HR-027 accepted branch-qualified short form; do not collapse into the national 全港湾 organization.
 A114,全港湾沖縄,media_short_name,S286,HR-027 accepted media headline form; branch context remains mandatory.
 A115,新婦人沖縄県本部,short_name,S283,HR-027 accepted prefecture-qualified short form. Bare 新婦人 refers to the national organization and is rejected as an unconditional alias.
@@ -31,10 +31,10 @@ A058,安保廃棄沖縄県統一連,short_name,,HR-025 documented newsletter for
 A059,島ぐるみ会議,short_name,S029,Do not collapse municipal 島ぐるみ会議 units into the prefectural umbrella actor.
 A067,辺野古土砂全協,short_name,S040,Short form for the normalized national liaison council name.
 A068,名護市民投票推進協議会,short_name,S042,1997 referendum-process actor; lifecycle/genealogy remains separately undecided.
-A068,名護市民投票の会,deprecated_working_name,,Legacy project label not supported as the formal name; retained only for provenance/search.
+A068,名護市民投票の会,deprecated_search_label,,Legacy project label not supported as the formal name; retained only for provenance/search.
 A070,Veterans for Peace Okinawa,short_name,S048,Legacy concise English form; do not transfer all parent-organization activity.
 A070,VFP-ROCK,acronym,S048,Ryukyu/Okinawa Chapter Kokusai acronym.
-A070,"Veterans for Peace, Ryukyu/Okinawa (VFP ROC)",name_variant,S048,Documented chapter-name variant.
+A070,"Veterans for Peace, Ryukyu/Okinawa (VFP ROC)",documented_name_variant,S048,Documented chapter-name variant.
 A070,Chapter 1003 - Ryukyu Okinawa,chapter_listing_variant,S048,Documented chapter-listing form.
-A070,平和を求める元軍人の会・琉球沖縄国際支部,japanese_name,S048,Japanese chapter name confirmed in HR-025.
+A070,平和を求める元軍人の会・琉球沖縄国際支部,language_name,S048,Japanese chapter name confirmed in HR-025.
 A071,沖縄平和市民連絡会,short_name,,Officially documented abbreviation; direct URL awaits central source-ID integration.

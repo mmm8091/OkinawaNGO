@@ -1,7 +1,7 @@
 ﻿module,plan_output,delivery_status,deliverable,acceptance_note
 R1,组织分类表,delivered_v1,actor_class_audit_118_v1.csv; actor_class_controlled_mapping_v1.csv,122 registry-history rows audited; 121 active actors enter current analysis; HR-019 decisions are retained
 R1,组织生态图,delivered_v1,fig1_r01_actor_ecology.png,"10 functional layers by origin; human-review counts shown; sample ecology, not population proportions"
-R1,重点组织清单,delivered_with_scope,cross_issue_actors_v1.csv,priority list is mechanism-aware; 17 actors currently have at least two human-reviewed issues
-R2,组织—议题网络图,delivered_v1,fig2_r02_full_bipartite_network.png; active_actor_issue_edges_v1.csv; data/interim/24_r01_r02_actor_issue_layered_v0.csv,"current graph uses 121 active actors, all 26 issues and 238 active edges; 248 edge-history rows remain auditable"
-R2,议题共现图,delivered_v1,fig3_r02_issue_cooccurrence.png; issue_cooccurrence_v1.csv,all 77 observed issue pairs; human-reviewed and positioning counts remain separate
-R2,跨议题组织名单,delivered_v1,cross_issue_actors_v1.csv; fig4_r02_cross_issue_actors.png,"74 actors span at least two issues, but only 17 have at least two human-reviewed issue links"
+R1,重点组织清单,delivered_with_scope,cross_issue_actors_v1.csv,priority list is mechanism-aware; 36 actors currently have at least two human-reviewed issues
+R2,组织—议题网络图,delivered_v1,fig2_r02_full_bipartite_network.png; active_actor_issue_edges_v1.csv; data/interim/24_r01_r02_actor_issue_layered_v0.csv,"current graph uses 121 active actors, all 26 issues and 283 active edges; 294 edge-history rows remain auditable"
+R2,议题共现图,delivered_v1,fig3_r02_issue_cooccurrence.png; issue_cooccurrence_v1.csv,all 105 observed issue pairs; human-reviewed and positioning counts remain separate
+R2,跨议题组织名单,delivered_v1,cross_issue_actors_v1.csv; fig4_r02_cross_issue_actors.png,"88 actors span at least two issues, but only 36 have at least two human-reviewed issue links"

@@ -105,6 +105,7 @@ RELATION_FAMILY_BY_TYPE = {
     "grant": "resources_funding",
     "funding_contribution": "resources_funding",
     "aggregate_history": "resources_funding",
+    "aggregate_financial_history_observation": "resources_funding",
     "aggregate_financial_contribution": "resources_funding",
     "in_kind_donation": "resources_funding",
     "in_kind_acquisition_assistance": "resources_funding",
@@ -126,8 +127,13 @@ RELATION_FAMILY_BY_TYPE = {
     "event_affiliation": "coordination",
     "grant_opportunity": "lead",
     "co_presence_lead": "lead",
+    "co_presence_observation": "lead",
 }
-LEAD_RELATION_TYPES = {"grant_opportunity", "co_presence_lead"}
+LEAD_RELATION_TYPES = {
+    "grant_opportunity",
+    "co_presence_lead",
+    "co_presence_observation",
+}
 
 TYPED_INTERPRETATION_LIMITS = {
     "resources_funding": (
@@ -470,6 +476,72 @@ def build_outcomes(episodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return outcomes
 
 
+# --- Actor-issue three-gate state derivation (frontend_actor_issue_state_handoff_v1) ---
+
+ACTOR_ISSUE_DISPLAY_STATES = {
+    "frozen_bounded",
+    "accepted_unfrozen",
+    "scope_reviewed_fact_pending",
+    "fact_pending",
+}
+ACTOR_ISSUE_ACCEPTED_DISPLAY_STATES = {"frozen_bounded", "accepted_unfrozen"}
+ACTOR_ISSUE_PASSTHROUGH_FIELDS = (
+    "claim_status",
+    "review_scope",
+    "reviewed_fields",
+    "scope_kind",
+    "scope_claim_status",
+    "scope_approved_formulation",
+    "scope_boundary",
+    "confirmed_scope",
+    "missing_scope",
+    "approved_formulation",
+)
+
+
+def derive_actor_issue_gate_states(row: dict[str, str]) -> dict[str, str]:
+    """Derive the three independent actor-issue gates and the display state.
+
+    The gates never substitute for each other: a scope review does not accept
+    the fact edge, and a legacy accepted edge is never auto-filled to
+    ``supported`` (frontend_actor_issue_state_handoff_v1, schema v1 section 1).
+    """
+    review_status = row["review_status"]
+    if review_status in {"human_checked", "human_revised"}:
+        fact_gate = "human_accepted"
+    elif review_status == "needs_second_source":
+        fact_gate = "needs_second_source"
+    elif review_status == "needs_local_retrieval":
+        fact_gate = "needs_local_retrieval"
+    else:
+        fact_gate = "fact_pending"
+    scope_gate = (
+        "scope_reviewed"
+        if row.get("scope_review_status") == "human_checked"
+        else "scope_pending"
+    )
+    if row.get("claim_status") == "supported_bounded":
+        schema_freeze = "field_frozen"
+    elif fact_gate == "human_accepted":
+        schema_freeze = "legacy_field_freeze_pending"
+    else:
+        schema_freeze = ""
+    if fact_gate == "human_accepted" and schema_freeze == "field_frozen":
+        display_state = "frozen_bounded"
+    elif fact_gate == "human_accepted":
+        display_state = "accepted_unfrozen"
+    elif scope_gate == "scope_reviewed":
+        display_state = "scope_reviewed_fact_pending"
+    else:
+        display_state = "fact_pending"
+    return {
+        "fact_gate_status": fact_gate,
+        "scope_gate_status": scope_gate,
+        "schema_freeze_status": schema_freeze,
+        "display_state": display_state,
+    }
+
+
 def normalize_actor_issue(
     rows: list[dict[str, str]],
     source_aliases: dict[str, str],
@@ -504,6 +576,9 @@ def normalize_actor_issue(
             ),
             "interpretation_limit": INTERPRETATION_LIMITS["actor_issue"],
         }
+        normalized.update(derive_actor_issue_gate_states(row))
+        for field in ACTOR_ISSUE_PASSTHROUGH_FIELDS:
+            normalized[field] = row.get(field, "")
         (demo if normalized["display_status"] == "demo" else research).append(normalized)
     return (
         sorted(demo, key=lambda row: row["id"]),
@@ -782,7 +857,10 @@ def derive_funding_relation_row(
         graph_eligibility = recorded_graph_eligibility
     elif is_lead:
         graph_eligibility = "research_lead"
-    elif relation_type == "aggregate_history":
+    elif relation_type in {
+        "aggregate_history",
+        "aggregate_financial_history_observation",
+    }:
         graph_eligibility = "aggregate_observation"
     elif relation_type in {
         "event_affiliation",
@@ -1279,6 +1357,66 @@ def validate_build(
             for row in demo_relations["actor_issue"]
         ),
         f"{len(demo_relations['actor_issue'])} demo rows",
+    )
+    actor_issue_rows = (
+        demo_relations["actor_issue"] + research_relations["actor_issue"]
+    )
+    illegal_display_states = sorted(
+        row["id"]
+        for row in actor_issue_rows
+        if row.get("display_state") not in ACTOR_ISSUE_DISPLAY_STATES
+    )
+    check(
+        "actor-issue display_state values are legal",
+        not illegal_display_states,
+        "illegal="
+        + (";".join(illegal_display_states) if illegal_display_states else "0"),
+    )
+    frozen_without_missing_scope = sorted(
+        row["id"]
+        for row in actor_issue_rows
+        if row.get("display_state") == "frozen_bounded"
+        and not row.get("missing_scope")
+    )
+    check(
+        "frozen_bounded actor-issue rows carry missing_scope",
+        not frozen_without_missing_scope,
+        "missing="
+        + (
+            ";".join(frozen_without_missing_scope)
+            if frozen_without_missing_scope
+            else "0"
+        ),
+    )
+    demo_fact_pending = sorted(
+        row["id"]
+        for row in demo_relations["actor_issue"]
+        if row.get("display_state") not in ACTOR_ISSUE_ACCEPTED_DISPLAY_STATES
+    )
+    check(
+        "no fact-pending rows enter the demo actor-issue layer",
+        not demo_fact_pending,
+        "pending=" + (";".join(demo_fact_pending) if demo_fact_pending else "0"),
+    )
+    display_state_counts: dict[str, int] = {}
+    for row in actor_issue_rows:
+        state = row.get("display_state", "")
+        display_state_counts[state] = display_state_counts.get(state, 0) + 1
+    check(
+        "actor-issue display_state counts cover every edge",
+        all(
+            row.get("display_state") in ACTOR_ISSUE_ACCEPTED_DISPLAY_STATES
+            for row in demo_relations["actor_issue"]
+        )
+        and all(
+            row.get("display_state")
+            in {"scope_reviewed_fact_pending", "fact_pending"}
+            for row in research_relations["actor_issue"]
+        ),
+        " ".join(
+            f"{state}={display_state_counts[state]}"
+            for state in sorted(display_state_counts)
+        ),
     )
     check(
         "actor-place references",
@@ -1914,6 +2052,16 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     visible_actor_count = sum(
         row["display_status"] != "hidden" for row in actors
     )
+    actor_issue_display_counts: dict[str, int] = {}
+    for row in demo_actor_issue + research_actor_issue:
+        state = row["display_state"]
+        actor_issue_display_counts[state] = (
+            actor_issue_display_counts.get(state, 0) + 1
+        )
+    research_fact_gate_counts: dict[str, int] = {}
+    for row in research_actor_issue:
+        gate = row["fact_gate_status"]
+        research_fact_gate_counts[gate] = research_fact_gate_counts.get(gate, 0) + 1
     counts = {
         "actor_registry": {
             "provenance_rows": len(actors),
@@ -1942,6 +2090,13 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
             "relations": {
                 key: len(value) for key, value in sorted(research_relations.items())
             },
+        },
+        "actor_issue_states": {
+            "valid_edges": len(demo_actor_issue) + len(research_actor_issue),
+            "display_state_counts": dict(sorted(actor_issue_display_counts.items())),
+            "research_fact_gate_counts": dict(
+                sorted(research_fact_gate_counts.items())
+            ),
         },
         "typed_relations": {
             "input_observations": typed_input_count,

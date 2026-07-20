@@ -15,4 +15,4 @@ relation,relation_rows_inventoried,78,29,26,
 action,action_rows_inventoried,255,14,12,
 package,unified_freeze_candidate_rows,505,,,
 package,HR029_review_items,41,,,Stable IDs; human/final/status fields are preserved on regeneration.
-package,HR029_filled_review_items,0,,,Rows with at least one human-owned value.
+package,HR029_filled_review_items,41,,,Rows with at least one human-owned value.

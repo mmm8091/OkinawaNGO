@@ -88,13 +88,13 @@ class ActiveHistoryGateTests(unittest.TestCase):
         connected = {row["actor_id"] for row in self.layered}
         self.assertEqual(122, len(self.actor_history))
         self.assertEqual(121, len(self.active_actor_ids))
-        self.assertEqual(248, len(self.layered_history))
-        self.assertEqual(238, len(self.layered))
-        self.assertEqual(103, len(connected))
-        self.assertEqual(18, len(self.active_actor_ids - connected))
-        self.assertEqual({"human_reviewed": 65, "candidate": 173}, dict(review))
+        self.assertEqual(294, len(self.layered_history))
+        self.assertEqual(283, len(self.layered))
+        self.assertEqual(116, len(connected))
+        self.assertEqual(5, len(self.active_actor_ids - connected))
+        self.assertEqual({"human_reviewed": 125, "candidate": 158}, dict(review))
         self.assertEqual(
-            10,
+            11,
             sum(row["analysis_inclusion"] == "excluded_history" for row in self.layered_history),
         )
         self.assertFalse(
@@ -107,9 +107,14 @@ class ActiveHistoryGateTests(unittest.TestCase):
 
     def test_ai068_is_not_a_candidate_network_edge(self):
         row = next(row for row in self.layered_history if row["edge_id"] == "AI068")
+        central = next(row for row in self.edge_history if row["edge_id"] == "AI068")
         self.assertEqual("excluded_history", row["analysis_inclusion"])
         self.assertEqual("excluded_history", row["review_layer"])
-        self.assertIn("excluded_from_default_okinawa_narrative", row["analysis_exclusion_reason"])
+        self.assertEqual("edge_graph_eligibility_excluded", row["analysis_exclusion_reason"])
+        self.assertIn(
+            "excluded_from_default_okinawa_narrative",
+            central["scope_status"],
+        )
 
 
 class CompletedHumanReviewLedgerTests(unittest.TestCase):

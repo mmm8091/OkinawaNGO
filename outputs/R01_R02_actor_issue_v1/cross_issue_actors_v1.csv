@@ -15,11 +15,11 @@ A007,ピースボート,domestic_japan_ngo,日本国内 NGO／声援,japan_domes
 X007,Okinawa Enlisted Spouses' Club (OESC),base_spouse_club,基地社区服务／慈善,us_origin,human_checked,1,I014,1,I014,0,,0,,1,I014,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A008,NGO非戦ネット,citizen_network,冲绳本地公民行动,japan_domestic,human_revised,2,I001;I019,2,I001;I019,1,I019,1,I001,0,,0,mixed_candidate_bridge,human_reviewed_bridge
 X008,American Red Cross Okinawa,base_community_service_actor,基地社区服务／慈善,us_origin,ai_seeded,1,I014,0,,0,,0,,1,I014,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
-A009,Earthjustice,international_advocacy_actor,跨国 NGO／国际倡议,us_origin,ai_seeded,3,I004;I011;I012,0,,0,,0,,3,I004;I011;I012,0,case_or_institutional_bridge,candidate_bridge_needs_review
+A009,Earthjustice,international_advocacy_actor,跨国 NGO／国际倡议,us_origin,ai_seeded,3,I004;I011;I012,1,I012,0,,0,,3,I004;I011;I012,0,case_or_institutional_bridge,candidate_bridge_needs_review
 X009,Navy-Marine Corps Relief Society Okinawa,base_community_service_actor,基地社区服务／慈善,us_origin,ai_seeded,1,I014,0,,0,,1,I014,0,,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A010,石垣島に軍事基地をつくらせない市民連絡会,citizen_network,冲绳本地公民行动,okinawa_local,human_revised,3,I002;I006;I009,0,,2,I002;I009,1,I006,0,,0,positioning_bridge,candidate_bridge_needs_review
 X010,沖縄NGOセンター,local_international_cooperation_ngo,国际合作／公共外交,okinawa_local,ai_seeded,1,I015,0,,0,,0,,1,I015,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
-A011,石垣市住民投票を求める会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,3,I002;I009;I010,0,,1,I009,0,,2,I002;I010,0,case_or_institutional_bridge,candidate_bridge_needs_review
+A011,石垣市住民投票を求める会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,3,I002;I009;I010,2,I002;I010,1,I009,0,,2,I002;I010,0,case_or_institutional_bridge,human_reviewed_bridge
 X011,JICA沖縄,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,1,I015,0,,0,,0,,1,I015,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A012,宮古島いのちの水を守ろう！,citizen_group,冲绳本地公民行动,okinawa_local,needs_second_source,3,I002;I006;I007,0,,0,,3,I002;I006;I007,0,,0,event_only_bridge,candidate_bridge_needs_review
 X012,TOMODACHI Initiative,public_diplomacy_or_exchange_actor,国际合作／公共外交,mixed_or_network,ai_seeded,1,I013,0,,0,,0,,1,I013,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
@@ -35,7 +35,7 @@ A017,沖縄対話プロジェクト,citizen_network,冲绳本地公民行动,oki
 X017,Army Community Group of Okinawa (ACGO),base_spouse_club,基地社区服务／慈善,us_origin,needs_second_source,1,I014,0,,0,,0,,1,I014,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A018,ノーモア沖縄戦 命どぅ宝の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I017;I018;I019,0,,3,I017;I018;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A019,ヘリ基地反対協議会（海上ヘリ基地建設反対・平和と名護市政民主化を求める協議会）,citizen_network,冲绳本地公民行动,okinawa_local,human_checked,2,I001;I003,2,I001;I003,1,I003,1,I001,0,,0,mixed_candidate_bridge,human_reviewed_bridge
-A020,日本環境法律家連盟（JELF）,lawyers_network,法律／制度程序,japan_domestic,ai_seeded,3,I004;I005;I011,0,,0,,1,I005,2,I004;I011,0,case_or_institutional_bridge,candidate_bridge_needs_review
+A020,日本環境法律家連盟（JELF）,lawyers_network,法律／制度程序,japan_domestic,ai_seeded,3,I004;I005;I011,3,I004;I005;I011,0,,1,I005,2,I004;I011,0,case_or_institutional_bridge,human_reviewed_bridge
 A021,国際環境NGO FoE Japan,domestic_japan_ngo,日本国内 NGO／声援,japan_domestic,ai_seeded,2,I001;I005,0,,0,,2,I001;I005,0,,0,event_only_bridge,candidate_bridge_needs_review
 A022,NPO法人 ラムサール・ネットワーク日本,domestic_japan_ngo,日本国内 NGO／声援,japan_domestic,ai_seeded,2,I001;I005,0,,0,,2,I001;I005,0,,0,event_only_bridge,candidate_bridge_needs_review
 A023,美ら海にもやんばるにも基地はいらない市民の会,local_civic_actor,冲绳本地公民行动,japan_domestic,ai_seeded,2,I001;I005,0,,0,,2,I001;I005,0,,0,event_only_bridge,candidate_bridge_needs_review
@@ -60,15 +60,15 @@ A041,Friends of the Earth Brisbane,international_ngo,跨国 NGO／国际倡议,i
 A042,Pacific Environment,international_ngo,跨国 NGO／国际倡议,us_origin,ai_seeded,2,I005;I012,0,,0,,2,I005;I012,0,,0,event_only_bridge,candidate_bridge_needs_review
 A043,PENGON-FoE Palestine,international_ngo,跨国 NGO／国际倡议,international,ai_seeded,1,I012,0,,0,,1,I012,0,,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
 A044,Naturvernforbundet / Norwegian Society for the Conservation of Nature,international_ngo,跨国 NGO／国际倡议,international,ai_seeded,1,I012,0,,0,,1,I012,0,,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
-A045,Center for Biological Diversity,international_ngo,跨国 NGO／国际倡议,us_origin,ai_seeded,3,I005;I011;I012,0,,0,,2,I005;I012,1,I011,0,mixed_candidate_bridge,candidate_bridge_needs_review
+A045,Center for Biological Diversity,international_ngo,跨国 NGO／国际倡议,us_origin,ai_seeded,3,I005;I011;I012,1,I011,0,,2,I005;I012,1,I011,0,mixed_candidate_bridge,candidate_bridge_needs_review
 A046,Pro Natura,international_ngo,跨国 NGO／国际倡议,international,human_checked,2,I005;I012,2,I005;I012,0,,2,I005;I012,0,,0,event_only_bridge,human_reviewed_bridge
 A047,沖縄平和運動センター,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,4,I001;I002;I003;I019,0,,4,I001;I002;I003;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A048,沖縄一坪反戦地主会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,2,I001;I019,0,,2,I001;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A049,基地・軍隊を許さない行動する女たちの会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I001;I002;I007,0,,3,I001;I002;I007,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A050,沖縄弁護士会,lawyers_network,法律／制度程序,okinawa_local,ai_seeded,3,I001;I009;I011,0,,0,,3,I001;I009;I011,0,,0,event_only_bridge,candidate_bridge_needs_review
-A051,「辺野古」県民投票の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I003;I009;I010,0,,0,,1,I010,2,I003;I009,0,case_or_institutional_bridge,candidate_bridge_needs_review
-A052,嘉手納基地爆音差止訴訟原告団,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,4,I001;I007;I011;I021,1,I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,candidate_bridge_needs_review
-A053,普天間基地爆音訴訟団,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,4,I001;I007;I011;I021,1,I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,candidate_bridge_needs_review
+A051,「辺野古」県民投票の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I003;I009;I010,2,I003;I009,0,,1,I010,2,I003;I009,0,case_or_institutional_bridge,human_reviewed_bridge
+A052,嘉手納基地爆音差止訴訟原告団,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,4,I001;I007;I011;I021,2,I007;I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,human_reviewed_bridge
+A053,普天間基地爆音訴訟団,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,4,I001;I007;I011;I021,2,I007;I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,human_reviewed_bridge
 A054,沖縄人権協会,local_civic_actor,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
 A055,泡瀬干潟を守る連絡会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,2,I005;I011,0,,1,I005,0,,1,I011,0,mixed_candidate_bridge,candidate_bridge_needs_review
 A056,沖縄環境ネットワーク,citizen_network,冲绳本地公民行动,okinawa_local,needs_second_source,2,I001;I005,0,,2,I001;I005,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
@@ -83,29 +83,29 @@ A064,外国軍事基地撤去国際ネットワーク（No Bases Network）,inte
 A065,南西諸島ピースネット,citizen_network,冲绳本地公民行动,okinawa_local,needs_second_source,3,I002;I017;I018,0,,3,I002;I017;I018,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A066,新外交イニシアティブ（ND）,domestic_japan_ngo,日本国内 NGO／声援,japan_domestic,ai_seeded,3,I001;I009;I011,0,,3,I001;I009;I011,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A067,辺野古土砂搬出反対全国連絡協議会,citizen_network,冲绳本地公民行动,japan_domestic,ai_seeded,3,I001;I003;I005,0,,3,I001;I003;I005,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
-A068,ヘリポート基地建設の是非を問う名護市民投票推進協議会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I001;I003;I010,0,,1,I003,1,I010,1,I001,0,mixed_candidate_bridge,candidate_bridge_needs_review
+A068,ヘリポート基地建設の是非を問う名護市民投票推進協議会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,3,I001;I003;I010,1,I001,1,I003,1,I010,1,I001,0,mixed_candidate_bridge,candidate_bridge_needs_review
 A069,沖縄ジュゴン環境アセスメント監視団,citizen_group,冲绳本地公民行动,okinawa_local,needs_second_source,3,I003;I004;I005,0,,3,I003;I004;I005,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A070,Veterans For Peace Ryukyu/Okinawa Chapter Kokusai (VFP-ROCK),international_advocacy_actor,跨国 NGO／国际倡议,us_origin,needs_second_source,3,I001;I012;I019,0,,3,I001;I012;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A071,沖縄から基地をなくし世界の平和を求める市民連絡会,citizen_network,冲绳本地公民行动,okinawa_local,needs_second_source,2,I001;I019,0,,2,I001;I019,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
 A073,琉球沖縄国際支援プログラム,local_international_cooperation_ngo,国际合作／公共外交,okinawa_local,needs_second_source,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
 A074,沖縄県知事公室基地対策課,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,1,I001,0,,0,,0,,1,I001,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
-A075,沖縄防衛局,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,1,I001,0,,0,,0,,1,I001,0,single_issue_in_edge_table,not_a_bridge_in_current_edge_table
+A075,沖縄防衛局,public_institution_partner,资助／赞助／公共机构,public_institution,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
 A076,ジュゴン保護基金委員会（Save the Dugong Foundation）,local_civic_actor,冲绳本地公民行动,okinawa_local,needs_second_source,3,I003;I004;I011,3,I003;I004;I011,0,,0,,3,I003;I004;I011,0,case_or_institutional_bridge,human_reviewed_bridge
 A086,Turtle Island Restoration Network,international_ngo,跨国 NGO／国际倡议,us_origin,ai_seeded,4,I004;I005;I011;I012,4,I004;I005;I011;I012,0,,0,,4,I004;I005;I011;I012,0,case_or_institutional_bridge,human_reviewed_bridge
-A087,NPO法人世界版「平和の礎」を提案する会,local_npo,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A088,特定非営利活動法人沖縄平和協力センター,local_npo,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A089,沖縄県教職員組合,labor_union,劳工／教育组织,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A090,沖縄県高等学校障害児学校教職員組合,labor_union,劳工／教育组织,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A091,日本労働組合総連合会沖縄県連合会（連合沖縄）,labor_union,劳工／教育组织,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A092,沖縄県労働組合総連合,labor_union,劳工／教育组织,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A093,全日本自治団体労働組合沖縄県本部,labor_union,劳工／教育组织,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A095,止めよう「自衛隊配備」宮古郡民の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A096,宮古平和運動連絡協議会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A097,宮古島環境クラブ,local_civic_actor,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A098,特定非営利活動法人宮古島海の環境ネットワーク,local_npo,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A099,有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A100,ミサイル配備から命を守るうるま市民の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
-A101,沖縄・琉球弧の声を届ける会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,0,,0,,0,,0,,0,,0,no_actor_issue_edge,not_a_bridge_in_current_edge_table
+A087,NPO法人世界版「平和の礎」を提案する会,local_npo,冲绳本地公民行动,okinawa_local,ai_seeded,3,I015;I019;I025,3,I015;I019;I025,3,I015;I019;I025,0,,0,,0,positioning_bridge,human_reviewed_bridge
+A088,特定非営利活動法人沖縄平和協力センター,local_npo,冲绳本地公民行动,okinawa_local,ai_seeded,2,I015;I019,2,I015;I019,1,I019,0,,1,I015,0,mixed_candidate_bridge,human_reviewed_bridge
+A089,沖縄県教職員組合,labor_union,劳工／教育组织,okinawa_local,ai_seeded,2,I019;I025,2,I019;I025,2,I019;I025,0,,0,,0,positioning_bridge,human_reviewed_bridge
+A090,沖縄県高等学校障害児学校教職員組合,labor_union,劳工／教育组织,okinawa_local,ai_seeded,2,I001;I019,2,I001;I019,1,I019,1,I001,0,,0,mixed_candidate_bridge,human_reviewed_bridge
+A091,日本労働組合総連合会沖縄県連合会（連合沖縄）,labor_union,劳工／教育组织,okinawa_local,ai_seeded,5,I001;I003;I007;I019;I023,5,I001;I003;I007;I019;I023,3,I001;I003;I019,2,I007;I023,0,,0,positioning_bridge,human_reviewed_bridge
+A092,沖縄県労働組合総連合,labor_union,劳工／教育组织,okinawa_local,ai_seeded,3,I001;I019;I025,3,I001;I019;I025,3,I001;I019;I025,0,,0,,0,positioning_bridge,human_reviewed_bridge
+A093,全日本自治団体労働組合沖縄県本部,labor_union,劳工／教育组织,okinawa_local,ai_seeded,2,I003;I019,2,I003;I019,2,I003;I019,0,,0,,0,positioning_bridge,human_reviewed_bridge
+A095,止めよう「自衛隊配備」宮古郡民の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,4,I002;I006;I007;I026,4,I002;I006;I007;I026,1,I002,3,I006;I007;I026,0,,0,mixed_candidate_bridge,human_reviewed_bridge
+A096,宮古平和運動連絡協議会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,2,I002;I019,2,I002;I019,0,,1,I019,1,I002,0,mixed_candidate_bridge,human_reviewed_bridge
+A097,宮古島環境クラブ,local_civic_actor,冲绳本地公民行动,okinawa_local,ai_seeded,3,I005;I006;I020,3,I005;I006;I020,3,I005;I006;I020,0,,0,,0,positioning_bridge,human_reviewed_bridge
+A098,特定非営利活動法人宮古島海の環境ネットワーク,local_npo,冲绳本地公民行动,okinawa_local,ai_seeded,2,I005;I020,2,I005;I020,2,I005;I020,0,,0,,0,positioning_bridge,human_reviewed_bridge
+A099,有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,4,I006;I007;I008;I020,4,I006;I007;I008;I020,4,I006;I007;I008;I020,0,,0,,0,positioning_bridge,human_reviewed_bridge
+A100,ミサイル配備から命を守るうるま市民の会,citizen_group,冲绳本地公民行动,okinawa_local,ai_seeded,5,I002;I007;I017;I018;I026,5,I002;I007;I017;I018;I026,3,I002;I017;I026,2,I007;I018,0,,0,positioning_bridge,human_reviewed_bridge
+A101,沖縄・琉球弧の声を届ける会,citizen_network,冲绳本地公民行动,okinawa_local,ai_seeded,7,I002;I012;I017;I018;I020;I023;I025,7,I002;I012;I017;I018;I020;I023;I025,6,I002;I012;I017;I018;I023;I025,1,I020,0,,0,positioning_bridge,human_reviewed_bridge
 A102,全国公害弁護団連絡会議,lawyers_network,法律／制度程序,japan_domestic,human_checked,4,I007;I011;I020;I021,4,I007;I011;I020;I021,0,,0,,4,I007;I011;I020;I021,0,case_or_institutional_bridge,human_reviewed_bridge
 A103,全国基地爆音訴訟原告団連絡会議,citizen_network,冲绳本地公民行动,japan_domestic,human_checked,4,I001;I007;I011;I021,4,I001;I007;I011;I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,human_reviewed_bridge
 A104,普天間基地爆音訴訟弁護団,lawyers_network,法律／制度程序,okinawa_local,human_checked,4,I001;I007;I011;I021,4,I001;I007;I011;I021,0,,0,,4,I001;I007;I011;I021,0,case_or_institutional_bridge,human_reviewed_bridge
@@ -117,6 +117,6 @@ A109,第4次嘉手納基地爆音差止訴訟弁護団,lawyers_network,法律／
 A110,辺野古に基地を絶対つくらせない大阪行動,citizen_group,冲绳本地公民行动,japan_domestic,human_checked,4,I001;I003;I024;I026,4,I001;I003;I024;I026,2,I024;I026,2,I001;I003,0,,0,positioning_bridge,human_reviewed_bridge
 A111,沖縄県女性団体連絡協議会,womens_organization,女性／人权／社区,okinawa_local,human_checked,4,I001;I019;I022;I023,4,I001;I019;I022;I023,2,I019;I023,2,I001;I022,0,,0,positioning_bridge,human_reviewed_bridge
 A112,宮古島地下水研究会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,4,I006;I007;I008;I020,0,,4,I006;I007;I008;I020,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
-A113,宜野湾ちゅら水会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,5,I006;I007;I008;I011;I020,0,,0,,4,I006;I007;I008;I020,1,I011,0,mixed_candidate_bridge,candidate_bridge_needs_review
+A113,宜野湾ちゅら水会,citizen_group,冲绳本地公民行动,okinawa_local,human_checked,5,I006;I007;I008;I011;I020,1,I011,0,,4,I006;I007;I008;I020,1,I011,0,mixed_candidate_bridge,candidate_bridge_needs_review
 A114,全日本港湾労働組合沖縄地方本部,labor_union,劳工／教育组织,okinawa_local,human_checked,5,I001;I002;I007;I019;I026,0,,5,I001;I002;I007;I019;I026,0,,0,,0,positioning_bridge,candidate_bridge_needs_review
-A115,新日本婦人の会沖縄県本部,womens_organization,女性／人权／社区,okinawa_local,human_checked,5,I001;I010;I019;I022;I023,0,,2,I001;I022,2,I019;I023,1,I010,0,positioning_bridge,candidate_bridge_needs_review
+A115,新日本婦人の会沖縄県本部,womens_organization,女性／人权／社区,okinawa_local,human_checked,5,I001;I010;I019;I022;I023,1,I010,2,I001;I022,2,I019;I023,1,I010,0,positioning_bridge,candidate_bridge_needs_review

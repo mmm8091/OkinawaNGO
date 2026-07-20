@@ -2,11 +2,15 @@
 
 日期：2026-07-20
 
-状态：**冻结前候选包；没有修改中央 schema、registry、alias、place、venue 或关系表。**
+状态：**最终依赖重生快照；41条决定已由负责人确认，中央冻结已通过受控 merge 另行完成。**
+
+合并后记录见 `hr029_confirmed_freeze_manifest_v1.csv` 和
+`hr029_central_merge_summary_v1.csv`。本 brief 下文保留“合并前候选”语态作为审计谱系；
+不得据此误写为 HR-029 仍待决定。
 
 ## 1. 结论先行
 
-当前 registry 的 122 个 actor，其 `actor_class`、`legal_status_guess`、`origin_type` 共 **366 个字段单元（N×3）**已逐项覆盖。HR-027 与后续身份修订已经受控合并，重生后的每个 actor 均自动进入三字段审计。当前共有 **505 条统一候选**，其中 **41 条进入 HR-029**；人工字段按稳定 review item ID 保留，当前已填写 0 条、待处理 41 条。
+当前 registry 的 122 个 actor，其 `actor_class`、`legal_status_guess`、`origin_type` 共 **366 个字段单元（N×3）**已逐项覆盖。HR-027 与后续身份修订已经受控合并，重生后的每个 actor 均自动进入三字段审计。当前共有 **505 条统一候选**，其中 **41 条进入 HR-029**；人工字段按稳定 review item ID 保留，当前已填写 41 条、待处理 0 条。
 
 `origin_type` 的 7 个值已闭合，可原样冻结。`actor_class` 从 21 个表面值收敛为 21 个建议值；仍有 14 个 actor 字段 assignment 需要人工决定。`legal_status_guess` 从 44 种表面写法收敛到 34 个受控值；无法确认法人格者明确落到 `*_unresolved`，而不是猜成 NPO、基金会或正式网络。
 

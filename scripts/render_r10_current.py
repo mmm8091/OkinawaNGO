@@ -132,6 +132,7 @@ def classify_mechanism(row: dict[str, str]) -> str:
     mapping = {
         "commission": "行政委托／指定",
         "designated_role": "行政委托／指定",
+        "institutional_designation": "行政委托／指定",
         "grant": "补助／grant 关系",
         "sponsorship": "企业赞助",
         "donation": "直接捐赠",
@@ -143,6 +144,7 @@ def classify_mechanism(row: dict[str, str]) -> str:
         "event_collaboration": "活动协作",
         "aggregate_financial_contribution": "汇总观察",
         "aggregate_history": "汇总观察",
+        "aggregate_financial_history_observation": "汇总观察",
         "grant_opportunity": "NOFO／机会",
     }
     try:

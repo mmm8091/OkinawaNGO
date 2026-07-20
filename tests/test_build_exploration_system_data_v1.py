@@ -6,8 +6,11 @@ import json
 import shutil
 import tempfile
 import unittest
+from collections import Counter
 from pathlib import Path
+from unittest import mock
 
+import scripts.build_exploration_system_data_v1 as builder
 from scripts.build_exploration_system_data_v1 import (
     TYPED_RELATION_FIELDS,
     build_exploration_system_data,
@@ -56,6 +59,10 @@ def typed_handoff_path(root: Path) -> Path:
 
 def funding_relations_path(root: Path) -> Path:
     return root / "data/interim/15_funding_or_support_edges_sample_v0.csv"
+
+
+def actor_issue_path(root: Path) -> Path:
+    return root / "data/interim/07_actor_issue_edges_initial_v0.csv"
 
 
 
@@ -182,7 +189,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         active_ids = {row["id"] for row in relations["actor_issue"]} | {
             row["id"] for row in candidates["relations"]["actor_issue"]
         }
-        self.assertEqual(238, len(active_ids))
+        self.assertEqual(283, len(active_ids))
         self.assertNotIn("AI068", active_ids)
         self.assertNotIn("AI116", active_ids)
         self.assertNotIn("AI038", active_ids)
@@ -203,11 +210,11 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         self.assertEqual("P1", views["overview"]["view_id"])
         self.assertEqual(21, len(views["overview"]["place_ids"]))
         self.assertEqual(53, len(views["overview"]["actor_place_relation_ids"]))
-        self.assertEqual(65, len(views["overview"]["strict_place_issue_relation_ids"]))
+        self.assertEqual(71, len(views["overview"]["strict_place_issue_relation_ids"]))
         self.assertEqual("P2", views["actors"]["view_id"])
         self.assertEqual(121, len(views["actors"]["actor_ids"]))
         self.assertNotIn("A072", views["actors"]["actor_ids"])
-        self.assertEqual(65, len(views["actors"]["actor_issue_relation_ids"]))
+        self.assertEqual(125, len(views["actors"]["actor_issue_relation_ids"]))
         self.assertEqual("P3", views["pathways"]["view_id"])
         self.assertEqual(9, len(views["pathways"]["episode_ids"]))
         self.assertEqual("P4", views["evidence_coverage"]["view_id"])
@@ -239,7 +246,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             },
         )
         self.assertEqual(
-            {238},
+            {283},
             {
                 row["denominator"]
                 for row in coverage_cells
@@ -545,6 +552,155 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             self.assertEqual("supported_bounded", f025["claim_status"])
             self.assertEqual("dyadic_relation", f025["graph_eligibility"])
             self.assertEqual("", f025["amount"])
+
+    def test_actor_issue_display_states_match_handoff_counts(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_dir = Path(temp_dir) / "exploration"
+            manifest = build_exploration_system_data(ROOT, output_dir)
+            demo = json.loads(
+                (output_dir / "demo/relations.json").read_text(encoding="utf-8")
+            )
+            candidates = json.loads(
+                (output_dir / "research/candidates.json").read_text(encoding="utf-8")
+            )
+
+        demo_ai = demo["actor_issue"]
+        research_ai = candidates["relations"]["actor_issue"]
+        self.assertEqual(125, len(demo_ai))
+        self.assertEqual(158, len(research_ai))
+        all_rows = demo_ai + research_ai
+        display_counts = Counter(row["display_state"] for row in all_rows)
+        self.assertEqual(
+            {
+                "frozen_bounded": 67,
+                "accepted_unfrozen": 58,
+                "scope_reviewed_fact_pending": 44,
+                "fact_pending": 114,
+            },
+            dict(display_counts),
+        )
+        fact_counts = Counter(row["fact_gate_status"] for row in research_ai)
+        self.assertEqual(25, fact_counts["needs_second_source"])
+        self.assertEqual(5, fact_counts["needs_local_retrieval"])
+        self.assertEqual(128, fact_counts["fact_pending"])
+
+        states_block = manifest["counts"]["actor_issue_states"]
+        self.assertEqual(283, states_block["valid_edges"])
+        self.assertEqual(dict(display_counts), states_block["display_state_counts"])
+        self.assertEqual(
+            dict(fact_counts), states_block["research_fact_gate_counts"]
+        )
+
+        # The reviewed fact layer holds only accepted states.
+        self.assertEqual(
+            {"frozen_bounded", "accepted_unfrozen"},
+            {row["display_state"] for row in demo_ai},
+        )
+        # Scope-reviewed but fact-pending rows never enter the reviewed fact layer.
+        self.assertTrue(
+            all(
+                row["scope_gate_status"] == "scope_reviewed"
+                for row in research_ai
+                if row["display_state"] == "scope_reviewed_fact_pending"
+            )
+        )
+        # All currently accepted-and-bounded central rows carry the frozen field set.
+        frozen = [row for row in demo_ai if row["display_state"] == "frozen_bounded"]
+        with (ROOT / "data/interim/07_actor_issue_edges_initial_v0.csv").open(
+            encoding="utf-8-sig", newline=""
+        ) as handle:
+            expected_frozen = {
+                row["edge_id"]
+                for row in csv.DictReader(handle)
+                if row["review_status"] in {"human_checked", "human_revised"}
+                and row["claim_status"] == "supported_bounded"
+                and row["graph_eligibility"] != "excluded"
+                and not any(
+                    token in row["scope_status"]
+                    for token in ("excluded", "retired", "deactivated")
+                )
+            }
+        self.assertEqual(
+            expected_frozen,
+            {row["id"] for row in frozen},
+        )
+        for row in frozen:
+            self.assertEqual("supported_bounded", row["claim_status"])
+            self.assertEqual("field_frozen", row["schema_freeze_status"])
+            self.assertTrue(row["missing_scope"])
+        # Legacy accepted rows stay unfrozen and are never auto-filled to supported.
+        legacy = [row for row in demo_ai if row["display_state"] == "accepted_unfrozen"]
+        self.assertTrue(
+            all(
+                row["schema_freeze_status"] == "legacy_field_freeze_pending"
+                for row in legacy
+            )
+        )
+        self.assertNotIn("supported", {row["claim_status"] for row in all_rows})
+        # Pass-through and derived fields exist on every actor-issue row.
+        for row in all_rows:
+            for field in (
+                "claim_status",
+                "review_scope",
+                "reviewed_fields",
+                "scope_kind",
+                "scope_claim_status",
+                "scope_approved_formulation",
+                "scope_boundary",
+                "confirmed_scope",
+                "missing_scope",
+                "approved_formulation",
+                "fact_gate_status",
+                "scope_gate_status",
+                "schema_freeze_status",
+                "display_state",
+            ):
+                self.assertIn(field, row)
+        # A073 generates no edge.
+        self.assertNotIn("A073", {row["actor_id"] for row in all_rows})
+
+    def test_gate_actor_issue_frozen_rows_require_missing_scope(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = copy_inputs_to_workspace(Path(temp_dir))
+            rewrite_csv_row(actor_issue_path(root), "AI242", missing_scope="")
+            with self.assertRaisesRegex(ValueError, "missing_scope"):
+                build_exploration_system_data(root, Path(temp_dir) / "out")
+
+    def test_gate_actor_issue_display_state_must_be_legal(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with mock.patch.object(
+                builder,
+                "derive_actor_issue_gate_states",
+                side_effect=lambda row: {
+                    "fact_gate_status": "fact_pending",
+                    "scope_gate_status": "scope_pending",
+                    "schema_freeze_status": "",
+                    "display_state": "",
+                },
+            ):
+                with self.assertRaisesRegex(
+                    ValueError, "display_state values are legal"
+                ):
+                    build_exploration_system_data(ROOT, Path(temp_dir) / "out")
+
+    def test_gate_actor_issue_demo_layer_rejects_fact_pending(self) -> None:
+        original = builder.derive_actor_issue_gate_states
+
+        def pending_for_accepted(row: dict) -> dict:
+            states = original(row)
+            if states["fact_gate_status"] == "human_accepted":
+                states["display_state"] = "fact_pending"
+            return states
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            with mock.patch.object(
+                builder,
+                "derive_actor_issue_gate_states",
+                side_effect=pending_for_accepted,
+            ):
+                with self.assertRaisesRegex(ValueError, "fact-pending"):
+                    build_exploration_system_data(ROOT, Path(temp_dir) / "out")
+
 
 
 if __name__ == "__main__":

@@ -85,7 +85,7 @@
 - [x] 抽取 2020 OEJP / MMC 71 团体完整 participant list，并生成 actor registry extension candidates。
 - [x] 生成第二次进度同步稿 formal_comm_v0：对齐第一次文风的简洁 MD（`第二次进度同步_v0.md`），含研究模块菜单进度、七周工期对照、四张截图主图；图源由脚本生成。
 - [x] 重写当地材料任务书 v1：分 Tier 1 线上可完成 / Tier 2 需当地协作两层（沟通稿中只保留一句概括）。
-- [x] 完成原方案指定图的线上 v1：完整组织—议题网络、先岛三地专题图、组织—地点补图和六维覆盖偏差图；人审冻结与最终排版仍未完成。
+- [x] 完成原方案指定图的线上 v1：完整组织—议题网络、先岛三地专题图、组织—地点补图和六维覆盖偏差图；人审冻结已完成，冻结后五图重绘／QA 与最终排版仍未完成。
 - [x] 完成 W1 线上材料 pass、一期补图包和研究报告 v0 草稿；不等于一期线上收口或最终验收。
 - [x] 按原始 DOCX 完成基础建设、R1–R11、五图及最终交付验收审计。
 - [x] 完成 R4／R9／R10 候选包交叉 QA，并从 corrected/reviewed 层生成正式数据、解释性 brief 与图；HR-016 线上项已清零，HR-017／018 线上决定已合并，只保留当地材料 9＋2 项。
@@ -159,7 +159,7 @@
 
 - actor registry：122 条历史记录／121 个有效 actor。A072 是并入 A071 的重复组织 tombstone，不进入当前图或普通搜索；A112–A115 是模块修复型新增 actor。有效数仍达到方案 120 下限；A094 不得自动回流。
 - funding/support/relation edge 样本：43 条；F042 为 A109→A052 第4次嘉手纳法律代理，F043 为 A105→A107 全国／地域 YWCA 组织隶属，均明确 `not_funding_relation`。
-- actor_issue_edges：中央表 248 条历史记录；当前有效网络 238 条（65 人审／173 候选），连接 103 个有效 actor，18 个孤立。10 条 rejected／deactivated／excluded 边只保留审计历史；AI068 不进默认冲绳叙事。
+- actor_issue_edges：中央表 294 条历史记录；当前有效网络 283 条（125 人审／158 候选），连接 116 个有效 actor，5 个孤立。11 条 rejected／deactivated／excluded 边只保留审计历史；AI068 和 AI178 不进默认冲绳叙事。
 - R1/R2 分层：HR-019 已完整合并，当前图、共现、bridge 和 coverage 均只读有效层；稳健性分析仍显示删除 S004 后生态→国际桥由 8 降至 4，去三源后 A001/A002/A009/A046 仍在。
 - actor_place_edges：135 条历史记录；130 条有效（53 人审／77 候选），5 条 retired。总部、现场、活动场域、倡议对象和制度场域保持分开。
 - actor alias：39 条；A010 前身、A052/A053 诉讼轮次及正式名已按 HR-012 处理。
@@ -180,19 +180,19 @@
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
 - 旧编号模块包 v0：含 R2、R3/R4、R5、跨国路径和 coverage 等现有 brief；最终方案中跨国路径属于 R6，coverage 属基础建设，不能用旧 R11/R14 编号判定验收。
 - 第一版进度稿仍是内部历史草稿；第三次 findings-led v2 与探索前端已经形成，下一次沟通应从当前系统和冻结后图件取材。
-- 在 HR-016–033 中，凡已回交的线上决定均已合并；HR-023／028 为零项任务，HR-029／031 仍后置空白。新增 HR-035 Batch 1 后，当前正式总账为 172 个未闭合复核项：原 v14 的 157 项＋15 条案件／公投／程序 actor–issue 事实边；其中 170 个决定栏为空，HR-018 的 2 项已有 defer 决定、等待新材料后闭合。详见 `docs/principal_human_review_remaining_v15.md`。
+- HR-035 Batch 1、HR-010 batch 6、LCR001–004、HR-034、HR-029 和 HR-031 已于 2026-07-20 全部由负责人确认并完成受控合并；HR-023／028 为零项任务。当前正式未闭合总账只剩 12 项当地／新一手材料任务，其中 HR-018 的 2 项已有 defer 决定、等待新材料后闭合。详见 `docs/principal_human_review_remaining_v17.md`。
 - 信息源备份机制已跑通：manifest 为 273 archived、2 manual_archived、18 failed、2 non-URL；失败条目不等于证据不存在。
-- 六维 coverage audit v1 已按当前有效层重生：121 actors／238 actor-issue／130 actor-place／295 sources，中央历史边界为 122／248／135；2020+ 来源 170/295，1972–1997 仅 4，Henoko 与全县宽泛节点合计 82/130。当前生成有 120 个 category cells，但 cell 数不是稳定契约；统计只描述公开资料样本可见性，不创建 HR-023。
-- post-HR013 edge activation 的 17 actor／54 edge 是历史审计包，不是当前网络总量；HR-024 线上决定已合并，A073 为 `online_exhausted`／当地项，HR-010 补证 47 项仍待人工。
+- 六维 coverage audit v1 已按冻结后有效层重生：121 actors／283 actor-issue／130 actor-place／295 sources，中央历史边界为 122／294／135。当前生成有 120 个 category cells，但 cell 数不是稳定契约；统计只描述公开资料样本可见性，不创建 HR-023。
+- post-HR013 edge activation 的 17 actor／54 edge 是历史审计包，不是当前网络总量；HR-024 线上决定已合并，A073 为 `online_exhausted`／当地项。HR-010 batch 6 已接受46条并新增 AI249–AI294，HR010-B6-019 保持 defer。
 - R3 空间语义已完成 HR-025：135 条历史／130 条有效，当前先岛 dossier 13 条（与那国6／石垣3／宫古4）；AP106 仅作 rejected history，AP123 已固定为 P007 Camp Foster。
 - R9 选举层 19/19 已人审：18 条确认公开参与发生，1 条仅确认活动预告；不得写票数、胜负或政策因果。
 - HR-027 已完成 4/4 `add` 并回填，中央 AEV 未新增；17 个事件仅进入 `outputs/hr027_integration_v1/event_candidates_v1.csv`，关系边新增 0。八重山大地会维持 defer。
 - R5/R7 异质行动把 148 条正式观察去重为 39 个行动单元、15 类行动、9 类场域；无新事实，HR-028=0。
-- Schema/alias 冻结审计现为 505 个候选、41 项 HR-029；须先完成 HR-010／LCR／HR-034 再最终重生。HR-030 已完成并合并。
-- 地点×议题正式替代层已建立：312 条有效同源三元事实，305 条为 E3/E4，65 条两边均经人审，100 条可附着正式事件观察。旧宽投影只作方法上界。
+- Schema/alias 冻结审计已在 HR-010／LCR／HR-034 后最终重生为 505 个候选、41 项 HR-029，并完成中央冻结。P004 Futenma 议题／地域层与 P010 MCAS Futenma 实体基地层保持分离；18个 `R10_VENUE` 占位已全部处置。
+- 地点×议题正式替代层已按冻结后中央边重生：305 条有效同源三元事实，298 条为 E3/E4，71 条两边均经人审，97 条可附着正式事件观察。旧宽投影只作方法上界。
 - 转译机制比较已形成 13 个 episode（R8/R9 已核案件 9 个＋HR-027 事件候选 4 个）：所有入选 episode 均产生可观察中间产出，但底层项目／政策按诉求明确改变为 0，泡濑仅为跨波次 mixed；这是“已进入场域的案例”比较，不是总体成功率或因果估计。
 - R10 已对 S002 全部 86 页／616 行建立来源总体；365 个机器标签不是 actor。HR-032 的 8 项 canonical／JV／registry crosswalk 已合并，未把复合体成员展开成付款或稳定关系。
-- 正式报告装配盘点 73 个现有资源并形成 32 页报告／20 页 PPT 蓝图；27 张非 superseded 正文图已有完整图—数据—来源—脚本—冻结动作追溯链，当前 22 ready／5 pending freeze。F008/F030/F032 已按合并层重绘；剩余五图均受 HR-029 最终冻结控制，F031 已重绘但未冻结词表。78 条报告主张的 32 组数字全部匹配，缺失 source／formal path 为 0；三项解释强度进入 HR-031。正式 DOCX/PDF、论文、PPT、先岛 dossier DOCX、public data 和冻结 codebook 仍是待生产合同成品，不能把蓝图计为完成。
+- 正式报告装配盘点 73 个现有资源并形成 32 页报告／20 页 PPT 蓝图；HR-029 数据冻结门已清除，但原五张 freeze-required 图仍须按冻结词表重绘／QA 后才能改为 ready。HR-031 三项均选择 B，报告相关段落已降为样本分析框架、公开材料地点差异和并列国际化入口。正式 DOCX/PDF、论文、PPT、先岛 dossier DOCX、public data 和最终 codebook/lint 仍是待生产合同成品，不能把蓝图计为完成。
 - 第三次同步已重写为 findings-led v2：`outputs/formal_comm_v2/第三次进度同步_v2.md` 与 6 张机制图，主线为“地方损害如何被组织翻译进不同制度语法，以及制度如何把诉求转换为有限结果”；新增 R5“小型重复骨架＋事件性变动外围”解释。图 6 已由 current-only renderer 重绘：2020 registry 行为 17，15 个重复 registry actor 与 6 个重复 human-reviewed event-only identity 分层呈现。v1 的 4 张方法／稳健性图退到附录。两版均不生成 PDF，由项目负责人自行排版。
 - 2026-07-17 起切换为共同研究节奏：项目负责人在解释性工作中的目标参与度约 50%。首轮项目回归表仍为暂停记录；2026-07-20 负责人另行明确授权启动一轮“边研究边选题”的全面探索。该授权仅覆盖不改中央事实层／现有前端契约的 H1–H3 独立研究包，新的强解释和模块取舍仍逐项设置负责人检查点。
 
@@ -203,9 +203,9 @@
 - 人类决策任务书：`docs/human_decision_tasks_v0.md`
 - 进度沟通稿：`docs/progress_report_v1.md`
 
-当前人工复核状态：HR-001–033 中凡已回交的决定均已合并；HR-029／031 仍后置空白。HR-033 将 6 条 legacy relation 分层；F025 不挂 102,000 美元，该金额只在 R10R029 汇总观察。HR-035 Batch 1、HR-010 批 6、LCR001–004 和 HR-034 为现在可做的人审；C015 维持 `needs_second_source`。
+当前人工复核状态：所有正式线上任务均已回交并合并；当前只剩 12 项当地／新一手材料任务。HR-033 将 6 条 legacy relation 分层；HR-029 又把 F025 的 relation type 冻结为 `donation`，但仍不挂 102,000 美元，该金额只在 R10R029 汇总观察。C015 维持 `needs_second_source`。
 
-当前人工任务总账见 `docs/principal_human_review_remaining_v15.md`；OPI-00 仍是暂停／未完成的学习记录，但不再阻断负责人于 2026-07-20 明确批准的 H1 文档可见性、H2 两套功能生态、H3 前线化／战争记忆三个有界研究包。它仍阻断未经另行批准的中央表扩张或结论升级。
+当前人工任务总账见 `docs/principal_human_review_remaining_v17.md`；OPI-00 仍是暂停／未完成的学习记录，但不再阻断负责人于 2026-07-20 明确批准的 H1 文档可见性、H2 两套功能生态、H3 前线化／战争记忆三个有界研究包。它仍阻断未经另行批准的中央表扩张或结论升级。
 
 当前当地补查优先级：P0 为 T2-D 先岛三地民间组织原始表达对照，P1 为 T2-E 公投制度门槛一手材料；T2-A/B 的组织身份与报刊时间线同馆顺带完成。T2-G 已把 9 个 HR-017 公投尾项、2 个 HR-018 暂缓财务项和 A073 身份核查逐项映射为正式 closure 清单。T2-F 1972–2012 谱系仅在保留“复归后”长期主张时启动；AWWA recipient 年表不阻断机制主线。
 
@@ -230,15 +230,15 @@
 ## 下一步
 
 1. NR-01 检查点 A 的产品方向已由负责人确认并重写：前端是后端研究数据的自动化可视化客户端；固定四个主页面（总览／组织／路径／证据）、四个主可视化引擎、全局时间层与证据抽屉。`docs/exploration_system_information_architecture_v1.md`、module crosswalk 和 view/visual inventory 是 NR-02 输入；旧 `wireframe.html`／`route_map.svg` 仅为 superseded exploration，不得反推页面。
-2. NR-02 数据契约已按合并后中央表重生：122 条 actor 历史／121 条普通界面可见、39 aliases、21 places；已核视图为 65 actor-issue／53 actor-place／65 strict triples，研究 actor-issue 为 173、研究 actor-place 为 77；另有 9 episodes、63 event participation、27 legal roles。validation PASS／0 errors。
+2. NR-02 的上次数据契约仍是冻结前快照；中央层现为 122 条 actor 历史／121 条普通界面可见、294 条 actor-issue 历史／283 条有效（125人审／158候选）。R1/R2、strict place–issue 和 coverage 已重生；探索前端需在不覆盖当前未提交界面改动的前提下另行重生。
 3. NR-03 已完成可点击演示并经负责人三轮迭代：总览／组织／时间／路径四页上线（2026-07-19 负责人把时间层改为第五主页面、否决严格证据地图状态与总览证据深浅标记，IA 修订记录见 `docs/exploration_system_information_architecture_v1.md` §12）；演示／研究双视图已接入 `research/candidates.json`（虚线＋待审标记），字号规范、图名＋问号说明、文案纪律（非永久不入界面）已冻结进 `prototypes/nr3_explorer/AGENTS.md`；QA 截图证据在 `prototypes/nr3_explorer/qa/`，过程记录在根目录 `design-qa.md`。随后证据页（V4）、中／日／EN 三语（229 码映射＋全 UI 文案）与证据抽屉完成，负责人确认检查点 B 不再单独进行；正式换手件为 `docs/nr3_handoff_v1.md`（截图在 `docs/nr3_handoff_assets/`）。
 4. NR-03 v2 的三项非阻断整改已完成：固定 UI/aria 三语化、A073 与 A002 验证职责分开、跨路由关闭证据抽屉。正式换手见 `docs/nr3_handoff_v1.md`。
 5. 负责人已批准证据状态与前端展示规则：界面“演示视图”改为“已核视图”；已核层允许 `supported_bounded`，但必须显示已核／缺失字段；研究层增加 candidate／lead。权威规则为 `data/metadata/coding_schema_v1.md`。
 6. 关系架构 v1 已批准：43 行是异质观察，其中 27 行两端为 registry actor、16 行含 place／program／unknown recipient 等非 actor 端点；R8 27 行保持 case-role，不得生成“同案协作边”。实现依据为 `docs/actor_relation_architecture_v1.md`。
 7. HR-033 已完成并合并：标准化的 6 条 dyadic relations＋1 条 aggregate observation 在 `outputs/hr033_integration_v1/`；前端不得把 membership 当 funding，也不得把 R10R029 的 102,000 美元附到 F025。
-8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。中央关系记录 F036 只作事件记录，R10R029 只作汇总观察。manifest 明确区分 122 条 registry provenance 与 121 个当前可见 actor，组织视图排除 A072。18 个 builder tests、当前全套 114 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
+8. 类型化关系与 L0/L1 前端已有冻结前成品：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。中央关系记录 F036 只作事件记录，R10R029 只作汇总观察。HR-029 后 adapter 已在临时目录成功构建当前125 reviewed／158 research actor–issue 层，22项 adapter tests、5项 R10 renderer tests 和7项 R1/R2 current-gate tests 通过；全仓124项历史套件仍有19 failures／5 errors，集中在冻结前计数、H1/H2/H3快照、pre-human HR-034 builder 与旧报告 SHA。不得为通过旧断言回退中央数据；正式前端重生须先保留当前未提交界面改动。L2 谱系仍须按四项生命周期决定重生。
 9. NR-04／NR-05 分别做两个时期的有界线上补缺；结果先进入候选和人工队列。NR-06 统一完成 claim/evidence QA、历史集成决定和已核／研究双层验收。
 10. 既有 HR／报告 gate 保持有效；只有当其直接阻断前端默认 claim 时才按优先级处理，不恢复全面铺开。
 11. 2026-07-20 选题波次第一轮已完成并经交叉审计收紧：H1 只支持 E3/E4 actor–issue 可见层的来源依赖，三源效应约 84% 由 S004 单源驱动，source／actor 删除不是匹配反事实；H2 得到 9 个服务侧 registry 子集与 65 个问责侧候选（18 人审锚点／47 候选锚点），限定小样本中未编码直接跨组组织关系，人物与完整 recipient 均未测；H3 建立 12 条观察、6 条事件级载体和 17 条参与候选，只支持接触／承载路径，传播方向、独立采用、词汇增长与持续共同动员均未确认。三包均 `not_frontend_ready`；统一 JSON 只是模块目录索引，状态 `module_index_ready_observation_exports_gated`。负责人证据阅读关见 `outputs/research_wave_topic_selection_v1/principal_checkpoint_v1.md`。
 12. H2 当前线上 P0 已形成 `outputs/research_wave_h2_service_universe_v1/`：完整保存 MCIPAC 页面显示的 82 个 PO（81 active／1 inactive，但目录跨 Okinawa／Fuji／Iwakuni且不是 NGO census），提出 4 个高价值服务侧 actor 候选、2 个结构 defer，整理 55 条公开人物—职务—时间观察、10 组人物 crosswalk、9/9 服务侧立场检索、18/18 问责侧反向接口检索和 6 条一般福利接口候选。当前候选修正为“服务／慈善可进入一般福利—行政 NPO，但在有界公开语料中尚未观察到与基地问责倡议的直接组织接口”；人物共享、完整 recipient、历史机制和所有新增身份／关系仍待人审，中央表与前端均未改。
-13. 前端 actor–issue 状态已厘清：当前 `65/173/238` 并非漏同步；应拆为 7 条字段冻结、58 条旧人审字段待冻结、59 条范围已审但事实待审、114 条事实待审。交代见 `docs/frontend_actor_issue_state_handoff_v1.md`；HR-035 首批 15 条已经正式派发。
+13. 前端 actor–issue 状态在冻结后变为 `125/158/283`。HR-035 Batch 1 已合并，HR-010 新增46条人审边；剩余候选边不因 schema freeze 自动升级。旧 `docs/frontend_actor_issue_state_handoff_v1.md` 是冻结前交代，前端下次重生时必须以当前中央字段重新核账。

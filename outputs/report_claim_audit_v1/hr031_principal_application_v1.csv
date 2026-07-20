@@ -1,0 +1,4 @@
+﻿review_item_id,claim_ids,decision,application,human_reviewer,review_date,decision_source_report
+HR-031-01,RCA007;RCA022;RCA072,B,Use current-public-sample analytical-framework wording; do not state a generalized stage finding.,project_principal_user,2026-07-20,docs/human_review_return_remaining_online_145_v1.md
+HR-031-02,RCA008;RCA073,B,Say public materials present place differences; do not claim statistically significant place dependence.,project_principal_user,2026-07-20,docs/human_review_return_remaining_online_145_v1.md
+HR-031-03,RCA044,B,Present parallel observable entries/roles; remove continuous-conversion causal-chain wording.,project_principal_user,2026-07-20,docs/human_review_return_remaining_online_145_v1.md

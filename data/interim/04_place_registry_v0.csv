@@ -1,22 +1,22 @@
-﻿place_id,place_name,place_type,region,why_relevant,phase1_priority,notes
-P001,Okinawa Prefecture,prefecture,Okinawa,Overall project geography,high,Use as broad container only.
-P002,Henoko,site,Nago,Base relocation and direct action core,high,Often paired with Oura Bay.
-P003,Oura Bay,site,Nago,Dugong/coral/biodiversity and international advocacy,high,Environmental frame strongest here.
-P004,Futenma,base_site,Ginowan,Relocation origin and safety/noise issue,medium,Important context.
-P005,Kadena,base_site,Kadena/Chatan/Okinawa City,Major U.S. air base and base burden context,medium,Also relevant to USO/sponsor/service network.
-P006,Camp Schwab,base_site,Nago/Henoko,Henoko construction site and USO presence,high,Bridge base politics/service network.
-P007,Camp Foster,base_site,Central Okinawa,U.S. base service network and Red Cross/NMCRS context,medium,Service ecology.
-P008,Camp Hansen,base_site,Central/Northern Okinawa,U.S. base service network and training area,medium,Service ecology.
-P009,Camp Kinser,base_site,Urasoe,U.S. base service network and logistics,medium,Service ecology.
-P010,MCAS Futenma,base_site,Ginowan,U.S. Marine air station and service network,medium,Distinguish from Futenma issue area when needed.
-P011,Yonaguni,municipality,Sakishima,Coastal surveillance unit; referendum; Taiwan proximity; high frontline relevance,high,Do not over-environmentalize.
-P012,Ishigaki,municipality,Sakishima,Missile/base deployment; groundwater; referendum movement,high,Life safety/environment/autonomy.
-P013,Miyako,municipality,Sakishima,Missile deployment; groundwater/water-source frame,high,Life safety/environment.
-P014,JICA Okinawa,institutional_site,Urasoe/Okinawa,International cooperation and ONC/JICA linkage,sample,Institutional ecology.
-P015,U.S. Consulate General Naha,institutional_site,Naha,Public diplomacy and grant/exchange programs,sample,Recipient chain needs check.
-P016,Takae,site,Northern Okinawa / Yanbaru,Northern Training Area helipad construction; Yanbaru forest protection,high,Helipad opposition and biodiversity.
-P017,Nago,municipality,Northern Okinawa,Henoko host municipality; 1997 referendum; Nago city politics,high,Municipal governance and referendum context.
-P018,Ginowan,municipality,Central Okinawa,Futenma base host city; noise litigation; relocation origin,medium,Noise/safety issues.
-P019,Awase,site,Okinawa City,Tidal flat reclamation and environmental litigation,medium,Environmental case.
-P020,Naha,municipality,Southern Okinawa,Prefectural capital; civic organization headquarters,medium,Administrative center.
-P021,Sakishima Islands,region,Okinawa,Regional scale for sources that explicitly name Sakishima as a whole.,high,只用于来源明确指称先岛整体、但不能下沉到与那国／石垣／宫古的观察；不得自动向 P011/P012/P013 扇出。 HR-025 approved 2026-07-19.
+﻿place_id,place_name,place_type,region,why_relevant,phase1_priority,notes,parent_place_id,aliases
+P001,Okinawa Prefecture,prefecture,Okinawa,Overall project geography,high,Use as broad container only.,,Okinawa Prefecture;Okinawa;沖縄県
+P002,Henoko,site,Nago,Base relocation and direct action core,high,Often paired with Oura Bay.,P017,Henoko;辺野古
+P003,Oura Bay,site,Nago,Dugong/coral/biodiversity and international advocacy,high,Environmental frame strongest here.,P017,Oura Bay;Ōura Bay;大浦湾
+P004,Futenma,site,Ginowan,Relocation origin and safety/noise issue,medium,Important context.,P018,Futenma;普天間
+P005,Kadena Air Base,base_site,Kadena/Chatan/Okinawa City,Major U.S. air base and base burden context,medium,Also relevant to USO/sponsor/service network.,P001,Kadena;Kadena Air Base;嘉手納基地
+P006,Camp Schwab,base_site,Nago/Henoko,Henoko construction site and USO presence,high,Bridge base politics/service network.,P017,Camp Schwab;キャンプ・シュワブ
+P007,Camp Foster,base_site,Central Okinawa,U.S. base service network and Red Cross/NMCRS context,medium,Service ecology.,P001,Camp Foster;キャンプ・フォスター
+P008,Camp Hansen,base_site,Central/Northern Okinawa,U.S. base service network and training area,medium,Service ecology.,P001,Camp Hansen;キャンプ・ハンセン
+P009,Camp Kinser,base_site,Urasoe,U.S. base service network and logistics,medium,Service ecology.,P001,Camp Kinser;キャンプ・キンザー
+P010,MCAS Futenma,base_site,Ginowan,U.S. Marine air station and service network,medium,Distinguish from Futenma issue area when needed.,P018,MCAS Futenma;Marine Corps Air Station Futenma;普天間飛行場
+P011,Yonaguni Town,municipality,Sakishima,Coastal surveillance unit; referendum; Taiwan proximity; high frontline relevance,high,Do not over-environmentalize.,P001,Yonaguni;Yonaguni Town;与那国町
+P012,Ishigaki City,municipality,Sakishima,Missile/base deployment; groundwater; referendum movement,high,Life safety/environment/autonomy.,P001,Ishigaki;Ishigaki City;石垣市
+P013,Miyakojima City,municipality,Sakishima,Missile deployment; groundwater/water-source frame,high,Life safety/environment.,P001,Miyako;Miyakojima City;宮古島市
+P014,JICA Okinawa,institutional_site,Urasoe/Okinawa,International cooperation and ONC/JICA linkage,sample,Institutional ecology.,P001,JICA Okinawa;JICA Okinawa Center;JICA沖縄;沖縄国際センター
+P015,U.S. Consulate General Naha,institutional_site,Naha,Public diplomacy and grant/exchange programs,sample,Recipient chain needs check.,P020,U.S. Consulate General Naha;在沖米国総領事館
+P016,Takae,site,Northern Okinawa / Yanbaru,Northern Training Area helipad construction; Yanbaru forest protection,high,Helipad opposition and biodiversity.,P001,Takae;高江
+P017,Nago,municipality,Northern Okinawa,Henoko host municipality; 1997 referendum; Nago city politics,high,Municipal governance and referendum context.,P001,Nago;Nago City;名護市
+P018,Ginowan,municipality,Central Okinawa,Futenma base host city; noise litigation; relocation origin,medium,Noise/safety issues.,P001,Ginowan;Ginowan City;宜野湾市
+P019,Awase,site,Okinawa City,Tidal flat reclamation and environmental litigation,medium,Environmental case.,P001,Awase;泡瀬;泡瀬干潟
+P020,Naha,municipality,Southern Okinawa,Prefectural capital; civic organization headquarters,medium,Administrative center.,P001,Naha;Naha City;那覇市
+P021,Sakishima Islands,region,Okinawa,Regional scale for sources that explicitly name Sakishima as a whole.,high,只用于来源明确指称先岛整体、但不能下沉到与那国／石垣／宫古的观察；不得自动向 P011/P012/P013 扇出。 HR-025 approved 2026-07-19.,P001,Sakishima Islands;先島諸島;先島
