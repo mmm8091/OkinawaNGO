@@ -612,17 +612,16 @@ def build_r5_repeat_participation_exhibit(
             },
             "interpretation_limit": {
                 "zh": (
-                    "共同署名或重复出现只能说明公开参与；不能据此推定成员关系、"
-                    "稳定联盟、持续协调、资金或影响力。"
+                    "每一行对应一个公开事件中的一个名称；跨事件重复只在名录 ID 或人工确认身份一致时匹配。"
+                    "这组数据适合观察重复参与骨架，成员、协调、资金与影响关系请转到相应证据层核对。"
                 ),
                 "ja": (
-                    "共同署名や反復出現が示すのは公開参加のみで、加盟、安定した同盟、"
-                    "継続的調整、資金、影響力は推定できません。"
+                    "各行は一つの公開イベントに現れた一名称です。イベント間の反復は、レジストリ ID または"
+                    "人手確認で同一性が確定した場合に照合します。加盟、調整、資金、影響は各証拠レイヤーで確認できます。"
                 ),
                 "en": (
-                    "Co-signing or repeated appearance shows public participation "
-                    "only. It does not establish membership, a stable alliance, "
-                    "continuing coordination, funding, or influence."
+                    "Each row is one name in one public event. Cross-event repeats are matched through a registry ID or human-confirmed identity. "
+                    "Use this layer to inspect repeat-participation structure, and consult the relevant evidence layers for membership, coordination, funding and influence."
                 ),
             },
         },

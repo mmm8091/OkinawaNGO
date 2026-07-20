@@ -230,4 +230,7 @@ final result: pass (agent-verified with rendered evidence; awaiting principal co
   instead of maintaining a second question-mark control. R5 and R10 exhibits now lead with a question or
   finding; time-event labels/actions are trilingual. Browser route QA caught and repaired a
   MapPin runtime regression on Evidence; all five routes are required to render with zero
-  console errors.
+  console errors. A final copy pass rewrote defensive “not / does not mean” disclaimers as
+  reading instructions: each surface now states its unit, the comparison it supports and the
+  evidence layer to open for adjacent questions. Frozen English audit text remains verbatim
+  where the publication validator requires exact source equality.

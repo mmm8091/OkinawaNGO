@@ -1429,7 +1429,7 @@ export const LABELS = {
     "en": "Named contribution"
   },
   "aggregate_mixed_recipient_no_allocation": {
-    "zh": "混合接收方汇总·不作分配",
+    "zh": "混合接收方汇总",
     "ja": "混合受領者の総括・配分なし",
     "en": "Aggregate mixed recipients"
   },

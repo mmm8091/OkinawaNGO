@@ -52,8 +52,8 @@
           "en": "Q1/Q2 become a present-biased inventory/classification; longitudinal claims about organizational ecology are weakest."
         },
         "interpretation_limit": {
-          "zh": "不得将来源年份的集中度解读为组织或动员的增长。",
-          "ja": "資料年次の集中を、組織数または動員の増加と解釈してはならない。",
+          "zh": "来源年份分布用于判断材料覆盖的时间偏向；组织或动员变化需结合独立的逐年事件数据。",
+          "ja": "資料年次の分布は資料カバレッジの時期的偏りを読むために用い、団体数や動員の変化は独立した年次イベントデータで確認します。",
           "en": "Do not read source-year concentration as growth in organizations or mobilization."
         },
         "online_gap_action": {
@@ -87,8 +87,8 @@
           "en": "Q3 and comparisons among Henoko, Futenma, Kadena, Yonaguni, Ishigaki and Miyako are not symmetric."
         },
         "interpretation_limit": {
-          "zh": "地点计数是观察到的 actor-place 配对，而不是事件频率、地方支持度或组织密度。",
-          "ja": "地点数は観察された actor-place の組合せであり、イベント頻度、地域の支持、組織密度を示すものではない。",
+          "zh": "地点计数采用已观察到的 actor-place 配对；事件频率、地方支持度与组织密度应分别使用相应数据衡量。",
+          "ja": "地点数は観察された actor-place の組合せです。イベント頻度、地域の支持、組織密度は、それぞれ対応するデータで測定します。",
           "en": "Place counts are observed actor-place pairs, not event frequency, local support or organizational density."
         },
         "online_gap_action": {
@@ -117,13 +117,13 @@
           "en": "Named, incorporated or networked actors are easier to identify than short-lived committees, informal neighborhood groups and legacy names."
         },
         "impact_on_q1_q3": {
-          "zh": "当前名录可能高估持续性强、网络化的组织形式；行政协作与国际化样本是有意抽样，不能视为完整部门。",
-          "ja": "現在の名簿は持続的・ネットワーク化された形態を過大に示す可能性がある。行政協働と国際化の標本は意図的抽出であり、完全なセクターではない。",
+          "zh": "当前名录对持续性强、网络化的组织形式覆盖更完整；行政协作与国际化模块采用目的性样本，适合案例比较。",
+          "ja": "現在の名簿は持続的・ネットワーク化された形態をより厚くカバーしています。行政協働と国際化のモジュールは目的抽出で、事例比較に適しています。",
           "en": "Q1/Q2 and R1 may overstate durable/networked forms; R10/R11 layers are deliberately sampled and cannot be treated as complete sectors."
         },
         "interpretation_limit": {
-          "zh": "这121个 actor 是按价值取向构建的工作名录，不是普查，也不是功能总体分布。",
-          "ja": "121の actor は価値駆動型の作業用レジストリであり、センサスでも機能別母集団分布でもない。",
+          "zh": "这121个 actor 构成按一期问题筛选的工作名录，适合结构探索与个案定位；总体功能分布需另行普查。",
+          "ja": "121の actor は第1期の問いに沿って選定した作業用レジストリで、構造探索と事例定位に適しています。機能別の母集団分布には別途センサスが必要です。",
           "en": "The 121 actors are a value-driven working registry, not a census or a functional population distribution."
         },
         "online_gap_action": {

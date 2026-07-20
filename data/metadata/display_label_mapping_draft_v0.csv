@@ -11,8 +11,8 @@ issue,local_autonomy,地方自治,地方自治,Local autonomy,
 issue,referendum,住民投票,住民投票,Referendum,
 issue,legal,法律程序,法的手続き,Legal procedure,
 issue,international_advocacy,国际倡议,国際アドボカシー,International advocacy,
-issue,public_diplomacy,公共外交,パブリック・ディプロマシー,Public diplomacy,公共外交不等于资助关系
-issue,military_family_service,军属服务,軍人家族サービス,Military family service,服务军属按功能编码不代表政治立场
+issue,public_diplomacy,公共外交,パブリック・ディプロマシー,Public diplomacy,公共外交按项目功能编码；拨款关系由正式记录确认
+issue,military_family_service,军属服务,軍人家族サービス,Military family service,军属服务按所见功能编码；政治立场由组织声明确认
 issue,international_cooperation,国际合作,国際協力,International cooperation,
 issue,base_community_welfare,基地社区福利,基地コミュニティ福祉,Base community welfare,
 issue,frontline_prevention,反前线化,最前線化反対,Frontline prevention,措辞敏感：或作"防止前线化"
@@ -116,15 +116,15 @@ actor_class,lawyers_network,律师网络,法律家ネットワーク,Lawyers net
 actor_class,labor_or_education_union,劳动／教育工会,労働・教育組合,Labor/education union,
 actor_class,labor_union_federation,工会联合会,労働組合連合,Labor union federation,
 actor_class,labor_union,工会,労働組合,Labor union,
-actor_class,base_community_service_actor,基地社区服务行动者,基地コミュニティ・サービス,Base community service actor,按功能编码不代表政治立场
-actor_class,base_spouse_charity_network,军属配偶慈善网络,軍属配偶者チャリティ,Base spouse charity network,按功能编码不代表政治立场
-actor_class,base_spouse_club,军属配偶俱乐部,軍属配偶者クラブ,Base spouse club,按功能编码不代表政治立场
+actor_class,base_community_service_actor,基地社区服务行动者,基地コミュニティ・サービス,Base community service actor,按所见服务功能编码；政治立场由组织声明确认
+actor_class,base_spouse_charity_network,军属配偶慈善网络,軍属配偶者チャリティ,Base spouse charity network,按所见慈善功能编码；政治立场由组织声明确认
+actor_class,base_spouse_club,军属配偶俱乐部,軍属配偶者クラブ,Base spouse club,按所见俱乐部功能编码；政治立场由组织声明确认
 actor_class,public_institution_partner,公共机构伙伴,公共機関パートナー,Public institution partner,
 actor_class,public_diplomacy_or_exchange_actor,公共外交／交流行动者,公共外交・交流アクター,Public diplomacy/exchange actor,
-actor_class,public_diplomacy_grant_program,公共外交资助项目,公共外交グラント事業,Public diplomacy grant program,资助项目不等于已拨款关系
+actor_class,public_diplomacy_grant_program,公共外交资助项目,公共外交グラント事業,Public diplomacy grant program,本项标示资助项目；拨款关系由正式 award 记录确认
 actor_class,local_business_sponsor,本地企业赞助方,地元企業スポンサー,Local business sponsor,
 actor_class,corporate_sponsor,企业赞助方,企業スポンサー,Corporate sponsor,
-actor_class,funder_or_intermediary,资助方／中介,資金提供者・仲介,Funder/intermediary,资助方不等于已拨款关系
+actor_class,funder_or_intermediary,资助方／中介,資金提供者・仲介,Funder/intermediary,本项标示资助或中介角色；具体拨款关系由正式记录确认
 issue_group,base_politics,基地政治,基地政治,Base politics,
 issue_group,security_politics,安全政治,安全保障政治,Security politics,
 issue_group,environment,环境,環境,Environment,
@@ -293,7 +293,7 @@ relation_role,donor_reporting_aggregate,汇总申报捐赠方,総括報告寄付
 relation_role,composite_recipient_scope,混合接收范围,混合受領範囲,Composite recipient scope,
 amount_semantics,direct_charitable_donation,直接慈善捐赠,直接慈善寄付,Direct charitable donation,
 amount_semantics,named_contribution_amount_unknown,有向贡献·金额未公开,指名拠出・金額未公開,Named contribution, amount undisclosed,
-amount_semantics,aggregate_mixed_recipient_no_allocation,混合接收方汇总·不作分配,混合受領者の総括・配分なし,Aggregate mixed recipients, no allocation,
+amount_semantics,aggregate_mixed_recipient_no_allocation,混合接收方汇总,混合受領者の総括,Aggregate mixed recipients,
 amount_semantics,not_applicable_membership,非资金（成员关系）,資金ではない（加盟）,Not applicable (membership),
 actor_class,womens_organization,女性组织,女性団体,Women's organization,
 place,Sakishima Islands,先岛群岛,先島諸島,Sakishima Islands,

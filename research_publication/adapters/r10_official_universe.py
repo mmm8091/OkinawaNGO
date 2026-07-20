@@ -602,17 +602,16 @@ def build_r10_official_universe_exhibit(project_root: Path | str) -> dict[str, A
             },
             "interpretation_limit": {
                 "zh": (
-                    "这里的单位始终是官方表中的记录行。协作机制不等于付款，"
-                    "重复出现不等于组织关系，机器排版标签不作为组织展示。"
+                    "每一条记录对应官方表中的一次协作记载。请按部门、事業分野或协作机制比较记录分布；"
+                    "付款与组织关系可进入具体记录核对，组织展示采用已完成身份核对的名录。"
                 ),
                 "ja": (
-                    "単位は常に公式表の記録行です。協働形態は支払いを意味せず、"
-                    "反復掲載は組織関係を意味しません。機械整形した名称を団体として表示しません。"
+                    "各行は公式表に記載された一件の協働記録です。部局、事業分野、協働形態ごとに分布を比較し、"
+                    "支払いと団体関係は個別記録で確認できます。団体表示には同一性を確認したレジストリを用います。"
                 ),
                 "en": (
-                    "The unit is always an official table row. A mechanism is "
-                    "not a payment, repeated appearance is not an organizational "
-                    "relation, and machine-formatted labels are not presented as organizations."
+                    "Each row is one collaboration record in the official table. Compare distributions by department, function or mechanism, "
+                    "then inspect individual records for payments and organizational relationships; actor displays use identity-checked registry entries."
                 ),
             },
         },

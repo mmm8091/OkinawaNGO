@@ -102,11 +102,11 @@ export const UI_STRINGS = {
   "section.relations": { zh: "与其他组织的关系", ja: "他組織との関係", en: "Relations with other organizations" },
   "section.relationsSub": { zh: "类型化 · 按确认分层", ja: "タイプ別・確認度別", en: "Typed · by confirmation" },
   "section.otherRecords": { zh: "其他记录与研究线索", ja: "その他の記録と研究リード", en: "Other records & research leads" },
-  "section.otherRecordsSub": { zh: "非组织关系边", ja: "組織関係辺ではない", en: "Not dyadic relations" },
-  "relation.notDyadic": { zh: "非组织关系边", ja: "組織関係辺ではない", en: "Not a dyadic relation" },
-  "relation.isLead": { zh: "线索，非资助事实", ja: "リード・資金事実ではない", en: "Lead, not a funding fact" },
+  "section.otherRecordsSub": { zh: "按原始记录类型分列", ja: "原記録の種別ごとに表示", en: "Grouped by source record type" },
+  "relation.notDyadic": { zh: "独立记录", ja: "独立記録", en: "Standalone record" },
+  "relation.isLead": { zh: "资助线索", ja: "資金手がかり", en: "Funding lead" },
   "relation.eventRecord": { zh: "事件参与记录", ja: "イベント参加記録", en: "Event participation record" },
-  "relation.caseRole": { zh: "案件角色，非协作边", ja: "事件役割・協力辺ではない", en: "Case role, not a collaboration edge" },
+  "relation.caseRole": { zh: "案件参与角色", ja: "事件参加役割", en: "Case participation role" },
   "relation.confirmed": { zh: "已确认", ja: "確認済み", en: "Confirmed" },
   "relation.missing": { zh: "缺口", ja: "欠落", en: "Missing" },
   "relation.counts": {
@@ -159,16 +159,16 @@ export const UI_STRINGS = {
     en: "Edges are colored by relation family (resources & funding, structural affiliation, legal collaboration, coordination). Arrows show direction, solid = reviewed, dashed = pending; each family toggles independently. Click an edge for type, claim state, gaps and sources; click an actor for details.",
   },
   "help.relation.p2": {
-    zh: "这张图只画两端均为 registry 组织的关系；行政记录、汇总观察、案件角色和事件参与不上图，它们在组织面板的对应区显示。",
-    ja: "両端が registry 団体の関係のみを描きます。行政記録・総括観察・事件役割・イベント参加は図に含めず、組織パネルの各区に表示されます。",
-    en: "Only relations with both endpoints in the registry appear here; administrative records, aggregate observations, case roles and event participation live in the actor panel instead.",
+    zh: "关系图展示两端均已进入 registry 的组织关系；行政记录、汇总观察、案件角色和事件参与可在组织面板的对应区查看。",
+    ja: "両端が registry に登録された団体関係を表示します。行政記録・総括観察・事件役割・イベント参加は組織パネルの各区で確認できます。",
+    en: "This graph shows organizational relations whose endpoints are both in the registry; inspect administrative records, aggregate observations, case roles and event participation in the actor panel.",
   },
   "actors.relationCanvasAria": { zh: "组织关系图", ja: "組織関係図", en: "Actor relation graph" },
   "actors.graphCount": { zh: "当前图中组织（{n}/{t}）", ja: "図の組織（{n}/{t}）", en: "Actors in graph ({n}/{t})" },
   "actors.edgeless": {
-    zh: "；{n} 个无边组织只可搜索",
-    ja: "・辺なし {n} 団体は検索のみ",
-    en: "; {n} edgeless actors searchable only",
+    zh: "；{n} 个组织可通过搜索查看",
+    ja: "・{n} 団体は検索から表示",
+    en: "; {n} actors available through search",
   },
   "version.stamp": {
     zh: "数据 {d} · build {b} · {v} 组织（{p} 谱系）",
@@ -193,9 +193,9 @@ export const UI_STRINGS = {
     en: "Back to Reviewed (retry anytime)",
   },
   "actors.relationNote": {
-    zh: "已确认 {s} · 有限确认 {b} · 待审 {c}（仅两端均为 registry 组织的关系）",
-    ja: "確認 {s} ・ 限定 {b} ・ 審査中 {c}（両端が registry 団体の関係のみ）",
-    en: "{s} supported · {b} bounded · {c} pending (dyadic registry-actor relations only)",
+    zh: "已确认 {s} · 有限确认 {b} · 待审 {c}（registry 组织间关系）",
+    ja: "確認 {s} ・ 限定 {b} ・ 審査中 {c}（registry 団体間の関係）",
+    en: "{s} supported · {b} bounded · {c} pending (relations between registry actors)",
   },
   "actors.emptyHint": { zh: "调整组织类型、议题或搜索词", ja: "タイプ・課題・検索語を調整", en: "Try another class, issue, or search term" },
   "actors.panelEmptyTitle": { zh: "选择一个组织", ja: "組織を選択", en: "Select an actor" },
@@ -281,14 +281,14 @@ export const UI_STRINGS = {
   "time.pendingHeader": { zh: "待审候选", ja: "審査中の候補", en: "Pending candidates" },
   "time.pendingSub": { zh: "分析种子 · 年份未定", ja: "分析シード・年未定", en: "Analytical seeds · year undecided" },
   "time.eventOnly": {
-    zh: "另含 {n} 个事件级参与者（非 registry 组织，不计入组织页）",
-    ja: "イベント限定の参加者が他に {n} 名（registry 団体ではなく、組織ページには計上しません）",
-    en: "Plus {n} event-only participants (not registry actors; not counted as organizations)",
+    zh: "另含 {n} 个事件级参与者，统一在事件样本中呈现",
+    ja: "イベント単位の参加者 {n} 名をイベント・サンプル内に表示",
+    en: "Plus {n} event-scoped participants presented within the event sample",
   },
   "period.p1.focus": {
-    zh: "历史背景与组织源流线索（非重点）",
-    ja: "歴史背景と組織源流の手がかり（非重点）",
-    en: "Historical background & organizational lineage (non-focus)",
+    zh: "历史背景与组织源流线索",
+    ja: "歴史背景と組織源流の手がかり",
+    en: "Historical background and organizational lineage",
   },
   "period.p2.focus": {
     zh: "NPO 法人化后较易公开追踪的组织资料",
@@ -372,7 +372,7 @@ export const UI_STRINGS = {
   "drawer.supports": { zh: "支持内容", ja: "支持内容", en: "Supports" },
   "drawer.archive": { zh: "归档状态", ja: "保存状態", en: "Archive status" },
   "drawer.archiveFailed": {
-    zh: "（可重试，不等于证据不存在）",
+    zh: "（可重试；来源状态将在此更新）",
     ja: "（再試行可・証拠がないとは限りません）",
     en: " (retryable; failure ≠ absence of evidence)",
   },
@@ -395,9 +395,9 @@ export const UI_STRINGS = {
 
   // help popovers
   "help.overview.p1": {
-    zh: "地图按 42 个市町村行政区划绘制，颜色只用来区分四个区域。点击陆地选中一个区域，滚轮缩放、拖拽平移。",
-    ja: "42の市町村行政区画で描かれた地図です。色は4つの区域を区別するためだけに使います。陸地をクリックして区域を選択、ホイールでズーム、ドラッグでパン。",
-    en: "The map shows 42 municipal boundaries; color only separates the four island groups. Click land to select a region; scroll to zoom, drag to pan.",
+    zh: "地图按 42 个市町村行政区划绘制，颜色区分四个区域。点击陆地选中一个区域，滚轮缩放、拖拽平移。",
+    ja: "42の市町村行政区画で描かれた地図です。色で4つの区域を区別します。陸地をクリックして区域を選択、ホイールでズーム、ドラッグでパン。",
+    en: "The map shows 42 municipal boundaries, with color distinguishing four island groups. Click land to select a region; scroll to zoom and drag to pan.",
   },
   "help.overview.p2": {
     zh: "右侧面板列出该区域已人工复核的同源地点—议题三元组；切到研究视图会追加待审候选计数。",
@@ -405,9 +405,9 @@ export const UI_STRINGS = {
     en: "The right panel lists human-reviewed same-source place–issue triples for the region; the research view adds pending candidate counts.",
   },
   "help.actors.p1": {
-    zh: "已核视图画的是已人工接受的组织—议题事实边；组织身份的可搜索范围是全部 registry 组织，与边是否已核无关。研究视图追加虚线边和虚线圈节点（事实待审，其中部分已完成范围复核）。节点向自己的议题聚拢，大小和位置只是布局结果。",
-    ja: "已核ビューは受理済みの組織—課題の事実辺のみを描きます。検索できる組織の範囲は全 registry 団体で、辺の審査状態とは無関係です。研究ビューでは破線の辺と破線円のノード（事実未審・うち一部は範囲審査済み）が加わります。ノードは自分の課題に寄り集まり、大きさと位置はレイアウト上の結果にすぎません。",
-    en: "The reviewed view draws only human-accepted actor–issue fact edges; every registry actor stays searchable regardless of edge review. The research view adds dashed edges and dashed-ring nodes (fact-pending, some already scope-reviewed). Nodes cluster toward their issues; size and position are layout artifacts.",
+    zh: "已核视图展示人工接受的组织—议题事实边，并保留全部 registry 组织供搜索。研究视图追加事实待审的虚线边与虚线圈节点，其中部分已完成范围复核。节点按关联议题自动聚拢，大小与位置用于整理画面。",
+    ja: "已核ビューは人手で受理した組織—課題の事実辺を表示し、全 registry 団体を検索できます。研究ビューでは事実審査中の破線辺と破線円ノードが加わり、一部は範囲審査済みです。ノードは関連課題に沿って自動配置され、大きさと位置は画面整理に用います。",
+    en: "The reviewed view shows human-accepted actor–issue fact edges and keeps every registry actor searchable. The research view adds dashed fact-pending edges and ringed nodes, some already scope-reviewed. Nodes arrange around related issues, with size and position used to organize the canvas.",
   },
   "help.actors.p2": {
     zh: "点击组织节点查看详情，点击空白处取消选择；点击议题节点聚焦该议题，再点一次恢复全部；滚轮缩放、拖拽平移。",
@@ -420,9 +420,9 @@ export const UI_STRINGS = {
     en: "Each year records “what an organization did that year”. Click a year for its events; click a participant to open the actor page.",
   },
   "help.time.p2": {
-    zh: "四个时段来自一期方案并由数据层提供。谱系区只显示已人工复核的生命周期锚点；“最后观察到活动”只是公开材料的时间下限，不能解读为组织解散。",
-    ja: "4期間はフェーズ1計画に由来し、データ層から提供されます。系譜欄は人審済みのライフサイクル・アンカーだけを表示します。「最後に確認された活動」は公開資料上の下限であり、組織解散を意味しません。",
-    en: "The four periods come from the Phase-1 plan and are supplied by the data layer. Genealogy shows only human-reviewed lifecycle anchors; “last observed activity” is a lower bound in public records, not evidence of dissolution.",
+    zh: "四个时段来自一期方案并由数据层提供。谱系区显示已人工复核的生命周期锚点；“最后观察到活动”标示公开材料所见的最近时间，正式解散另以独立锚点记录。",
+    ja: "4期間はフェーズ1計画に由来し、データ層から提供されます。系譜欄は人審済みのライフサイクル・アンカーを表示します。「最後に確認された活動」は公開資料で確認できる最新時点を示し、正式な解散は独立したアンカーで記録します。",
+    en: "The four periods come from the Phase-1 plan and are supplied by the data layer. Genealogy shows human-reviewed lifecycle anchors; “last observed activity” marks the latest public record, while formal dissolution is recorded as a separate anchor.",
   },
   "help.pathways.p1": {
     zh: "按六个阶段读一个案件：地方问题、转译框架、场域进入、中间产出、有限结果、底层改变。状态芯片直接来自数据：“未观察到”指材料中没有该结果的记录。",
@@ -435,9 +435,9 @@ export const UI_STRINGS = {
     en: "Pick a case by route family on the left; the research view adds pending cases.",
   },
   "help.evidence.p1": {
-    zh: "每个单元统计工作样本中某类材料的数量，反映的是文献可见度。各单元有自己的计数单位与分母，只在同一张小图内比较。来源年份、事件年份、主张时期是三种不同的时间。",
-    ja: "各セルは作業サンプル内の資料量を数え、文献の可視性を表します。セルごとに単位と分母があり、同じ小図の中だけで比較してください。ソース年・イベント年・主張期間は別々の時間です。",
-    en: "Each cell counts material in the working sample — documentary visibility. Every cell has its own unit and denominator; compare only within one mini-chart. Source year, event year, and claim period are different clocks.",
+    zh: "每个单元统计工作样本中某类材料的数量，用于观察文献可见度。各单元采用自己的计数单位与分母，比较范围限定在同一张小图。来源年份、事件年份、主张时期是三种不同的时间。",
+    ja: "各セルは作業サンプル内の資料量を数え、文献の可視性を表します。セルごとに単位と分母があり、比較範囲は同じ小図の中です。ソース年・イベント年・主張期間は別々の時間です。",
+    en: "Each cell counts material in the working sample to show documentary visibility. Every cell has its own unit and denominator, so the comparison scope is one mini-chart. Source year, event year and claim period are different clocks.",
   },
   "help.evidence.p2": {
     zh: "右侧面板给出该维度的机制解释与缺口行动（线上／当地），均来自覆盖审计数据。",
