@@ -77,7 +77,30 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 def is_active_actor(row: dict[str, str]) -> bool:
     """Exclude provenance-only merged duplicates from current statistics."""
 
-    return not row.get("merged_duplicate_of") and row.get("scope_status") != "merged_duplicate"
+    return (
+        row.get("actor_id") != "A072"
+        and not row.get("merged_duplicate_of")
+        and row.get("scope_status") != "merged_duplicate"
+    )
+
+
+def select_current_layers(
+    actor_history: list[dict[str, str]],
+    issue_history: list[dict[str, str]],
+    place_history: list[dict[str, str]],
+) -> tuple[list[dict[str, str]], list[dict[str, str]], list[dict[str, str]]]:
+    """Apply the three current-layer gates used throughout this audit."""
+
+    actors = [row for row in actor_history if is_active_actor(row)]
+    issues = [
+        row for row in issue_history
+        if row.get("analysis_inclusion") == "active"
+    ]
+    places = [
+        row for row in place_history
+        if row.get("graph_eligibility") != "excluded"
+    ]
+    return actors, issues, places
 
 
 def write_csv(path: Path, fields: list[str], rows: list[dict[str, str]]) -> None:
@@ -581,9 +604,11 @@ def main() -> None:
 
     if not actor_history or not sources or not issue_history or not place_history:
         raise ValueError("coverage audit inputs must be non-empty")
-    actors = [row for row in actor_history if is_active_actor(row)]
-    issues = [row for row in issue_history if row["analysis_inclusion"] == "active"]
-    places = [row for row in place_history if row["graph_eligibility"] != "excluded"]
+    actors, issues, places = select_current_layers(
+        actor_history,
+        issue_history,
+        place_history,
+    )
     history_counts = {
         "actors": len(actor_history),
         "issues": len(issue_history),
