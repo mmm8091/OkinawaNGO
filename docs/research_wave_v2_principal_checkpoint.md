@@ -1,7 +1,9 @@
 # 一期研究深化波次 v2：负责人判断点
 
-日期：2026-07-20  
-状态：`principal_interpretive_decision_required`  
+日期：2026-07-20
+
+状态：`principal_interpretive_decision_required`
+
 范围：三个独立 `research_only` 研究包；未写回中央表，未接入前端，未替代人工复核。
 
 ## 1. 这轮不是把原假设做得更漂亮

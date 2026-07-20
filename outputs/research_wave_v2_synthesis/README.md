@@ -1,6 +1,7 @@
 # Research wave v2 synthesis
 
-日期：2026-07-20  
+日期：2026-07-20
+
 状态：`research_only / principal_interpretive_decision_required / not_frontend_ready`
 
 本目录不是第四个经验模块，而是 H1／H2／H3 三个独立研究包的负责人判断索引。
