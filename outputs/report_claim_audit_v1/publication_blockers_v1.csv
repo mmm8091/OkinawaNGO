@@ -1,2 +1,1 @@
 ﻿blocker_id,claim_id,report_locator,claim_text,blocking_dependency,required_action,release_condition
-RCB001,RCA063,L162;P073,The E3/E4 relation figure is explicitly labelled an evidence-threshold candidate graph and requires regeneration after HR-018.,contains HR-018-pending rows,The current PNG remains excluded from final factual use until it is regenerated after HR-018.,Relevant existing human gate is accepted/revised and the report wording is updated.

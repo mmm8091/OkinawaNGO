@@ -11,4 +11,4 @@ Reproducible paragraph/claim audit of `docs/phase1_research_report_v0.md`.
 - Claim/formal-table validation: `claim_formal_table_crosswalk_v1.csv`
 - Red-line scan: `red_line_scan_v1.csv`
 
-Run from the repository root with `python scripts/audit_report_claims_v1.py`. The script does not modify the report or central research tables.
+The original full audit builder is a historical pre-freeze builder and must not be rerun against the current merged layer. RCA063's post-HR018 release is reproducible with `python scripts/reconcile_rca063_post_hr018.py`; this targeted script does not modify the report or research fact tables.

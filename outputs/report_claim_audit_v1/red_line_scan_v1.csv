@@ -4,7 +4,7 @@ RCR002,candidate_layer,actor–issue / actor–place,pass,A052/A053 now explicit
 RCR003,funding_award,NOFO / project cost,pass,NOFO and project-cost non-payment boundaries are correctly stated.
 RCR004,sensitive_admin,ONC commission/designated role,pass,The report labels the relations HR-018-pending and does not publish them as accepted facts.
 RCR005,sensitive_recipient,AWWA recipient relations,pass,The report labels all three as ai-seeded candidates pending HR-018.
-RCR006,sensitive_visual,strict E3/E4 relation figure,block,Evidence threshold was incorrectly allowed to stand in for human relation acceptance.
+RCR006,sensitive_visual,strict E3/E4 relation figure,pass,"The current render requires reviewed/revised supported or bounded records and separates 7 dyadic relations from administrative, event and panel-only observations."
 RCR007,service_stance,USO/AEC/AWWA political stance,pass,Report explicitly prohibits political-stance inference from observed function.
 RCR008,causality,referendum/election/pathway arrows,pass,"Report disclaims turnout, result, policy-effect and arrow causality."
 RCR009,role_transfer,case-specific legal roles,pass,Plaintiff/counsel/requester/non-party distinctions are preserved.

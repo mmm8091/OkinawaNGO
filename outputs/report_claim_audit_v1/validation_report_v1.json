@@ -3,15 +3,15 @@
   "claim_count": 78,
   "publish_status": {
     "safe": 71,
-    "revise": 6,
-    "block": 1
+    "revise": 7,
+    "block": 0
   },
   "numeric_checks": 32,
   "numeric_mismatches": 0,
   "missing_source_ids": 0,
   "missing_formal_paths": 0,
   "mechanical_fix_count": 0,
-  "publication_blocker_count": 1,
+  "publication_blocker_count": 0,
   "hr031_count": 3,
   "all_hr_decision_fields_blank": true
 }
