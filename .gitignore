@@ -26,6 +26,7 @@ outputs/publication_channels_v1/
 # Codex-local previews and temporary investigation artifacts
 .codex/
 tmp/
+prototypes/nr3_explorer/qa/2026-*-taste-*.jpg
 
 # Office temp files
 ~$*
