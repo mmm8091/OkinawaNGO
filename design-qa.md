@@ -180,3 +180,9 @@ final result: pass (agent-verified with rendered evidence; awaiting principal co
   375px document width in the 390px viewport. App console: 0 warning / 0 error. Time-page
   genealogy remains an explicit open defect: four reviewed LC records exist centrally, but
   `genealogy_anchors` still exports 0.
+
+- Iteration 14c (2026-07-20): issue nodes in the ecology canvas are clickable — hover shows
+  issue name + edge count, click focuses that issue (same selection state as the toolbar
+  select and panel issue rows), second click resets. Hit testing now picks the nearer of
+  actor vs issue node, so issue nodes stay clickable inside dense actor clusters. Verified
+  full focus/reset cycle (儒艮保护 I004 → all).
