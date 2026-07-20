@@ -30,6 +30,18 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - **research view**: The frontend layer that adds visibly marked candidates and research leads without changing reviewed-layer wording.
 - **event-only participant**: A name supported for participation in a specific event but lacking enough identity/continuity evidence for the actor registry. Event-only names must not be counted as organizations or treated as stable network members.
 - **local material collection**: Collection of local/offline/hard-to-access materials such as library database records, organizational reports, activity booklets, or local archives.
+- **central fact**: A source-traceable record admitted to the project's authoritative fact layer under the current coding and review rules. It is not automatically an interpretation or general finding.
+- **research observation**: A reviewable phenomenon recorded within a named material and selection boundary. It may remain module-specific or provisional and does not become a central fact merely because it is useful.
+- **analytic result**: A reproducible comparison, count, sequence, projection, or sensitivity result derived from stated observations, units, denominators, selection rules, and a method version.
+- **research claim**: A bounded interpretive statement supported by one or more analytic results and carrying its strength, competing explanations, and prohibited extrapolations.
+- **research module**: A question-centered body of observations, evidence, method, results, claims, exhibits, and known gaps. A module's completion and display eligibility are separate judgments.
+- **exhibit**: A figure, table, map, timeline, or interactive view used to explain or inspect a research result or claim. Its visual availability does not give it independent evidentiary status.
+- **method_status**: Whether an observation, result, or exhibit was produced by a method adequate for its stated use. It is separate from evidence strength, review workflow, claim strength, and frontend implementation.
+- **publication snapshot**: An immutable, self-consistent projection of approved research objects for a named audience and research state. It is a publication boundary, not a new source of facts.
+- **release profile**: A controlled rule set determining which research objects, fields, and interpretation levels belong in a publication snapshot for a named audience.
+- **core publication surface**: An exact file or JSON-pointer projection from the internal exploration builder that has an explicit profile, catalog owner or architecture role, frontend consumer and interpretation limit. A builder manifest proves provenance; the core-surface registry grants publication eligibility.
+- **partial bounded surface**: A method-safe fact or navigation subset already visible in the frontend while its full research module still lacks the required adapter, comparison, source drilldown or method card. It must not be reported as a completed integrated module.
+- **retired artifact**: A prior figure, table, dataset, or view withdrawn from current evidentiary or explanatory use after a method, data, or scope correction. It remains available only for provenance and audit unless a new review explicitly restores it.
 
 ## Main Cautions
 

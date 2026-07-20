@@ -1,0 +1,130 @@
+{
+  "event_anchors": [
+    {
+      "anchor_type": "event",
+      "display_label": "1997 Nago city referendum",
+      "event_date": "1997",
+      "id": "EV1997_NAGO_REFERENDUM",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "Okinawa Dugong v. Rumsfeld NHPA lawsuit (C 03-4350 MHP)",
+      "event_date": "2003",
+      "id": "EV2003_DUGONG_LAWSUIT",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "WWF Japan 67-group Henoko / dugong statement",
+      "event_date": "2010",
+      "id": "EV2010_WWF_67",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "2012 Yonaguni anti-deployment opinion ad",
+      "event_date": "2012",
+      "id": "EV2012_YONAGUNI_OPINION_AD",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "NACSJ / Peace Boat 31-NGO emergency Henoko statement",
+      "event_date": "2015",
+      "id": "EV2015_NACSJ_31",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "2015 Yonaguni SDF-deployment referendum",
+      "event_date": "2015",
+      "id": "EV2015_YONAGUNI_REFERENDUM",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "2019 Henoko prefectural referendum",
+      "event_date": "2019",
+      "id": "EV2019_PREF_REFERENDUM",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "OEJP / MMC civil-society request and report",
+      "event_date": "2020",
+      "id": "EV2020_OEJP_MMC_71",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "Fourth Kadena Base Noise Injunction Lawsuit filing",
+      "event_date": "2022",
+      "id": "EV2022_KADENA_4TH_NOISE_LAWSUIT",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "2023 Okinawa prefectural peace mass rally",
+      "event_date": "2023",
+      "id": "EV2023_PREFECTURAL_PEACE_RALLY",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "2024 prefectural rally against U.S. military sexual violence",
+      "event_date": "2024",
+      "id": "EV2024_WOMEN_ANTI_VIOLENCE_RALLY",
+      "review_status": "human_checked"
+    },
+    {
+      "anchor_type": "event",
+      "display_label": "Ishigaki referendum drive (2018-2019)",
+      "event_date": "2019",
+      "id": "EV_ISHIGAKI_REFERENDUM",
+      "review_status": "human_checked"
+    }
+  ],
+  "historical_anchor_ids": [
+    "LC002",
+    "LC005",
+    "LC001",
+    "LC004",
+    "LC003"
+  ],
+  "interpretation_limits": [
+    "A lifecycle anchor records only the reviewed status and date shown.",
+    "Last-observed activity is not proof of present continuity or dissolution.",
+    "Event years do not establish organizational formation or lifespan."
+  ],
+  "periods": [
+    {
+      "from": 1972,
+      "id": "p1",
+      "range": "1972–1997",
+      "to": 1997
+    },
+    {
+      "from": 1998,
+      "id": "p2",
+      "range": "1998–2012",
+      "to": 2012
+    },
+    {
+      "from": 2013,
+      "id": "p3",
+      "range": "2013–2019",
+      "to": 2019
+    },
+    {
+      "from": 2020,
+      "id": "p4",
+      "range": "2020–present",
+      "to": 2099
+    }
+  ],
+  "question": "组织与事件在时间上如何出现、转变或停止？",
+  "route": "/time",
+  "view_id": "P5",
+  "visual_engine": "V5 事件时间轴与有界组织谱系"
+}

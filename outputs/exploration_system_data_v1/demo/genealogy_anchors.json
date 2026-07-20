@@ -1,1 +1,139 @@
-[]
+[
+  {
+    "actor_id": "A068",
+    "anchor_type": "reorganized",
+    "claim_status": "supported_bounded",
+    "confirmed_scope": "reorganized lifecycle observation for A068 at 1997-10-18",
+    "direct_source_urls": [
+      "https://lovehenoko.org/%E3%82%8F%E3%81%9F%E3%81%97%E3%81%9F%E3%81%A1%E3%81%AE%E7%AB%8B%E5%A0%B4/"
+    ],
+    "display_label": "ヘリポート基地建設の是非を問う名護市民投票推進協議会",
+    "display_status": "demo",
+    "display_tier": "reviewed",
+    "event_date": "1997-10-18",
+    "evidence_level": "E4",
+    "graph_eligibility": "genealogy_anchor",
+    "id": "LC002",
+    "interpretation_limit": "A reorganization/successor anchor records a bounded lineage transition, not identity, merger, or uninterrupted organizational continuity.",
+    "last_observed_activity_date": "1997-12-21",
+    "lifecycle_status": "reorganized",
+    "missing_scope": "Exact dissolution date and uninterrupted identity with the successor are not established.",
+    "review_status": "human_revised",
+    "source_ids": [
+      "S042",
+      "S192"
+    ],
+    "status_basis": "successor_formation_reorganization_boundary",
+    "status_date": "1997-10-18",
+    "successor_actor_id": "A019",
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_id": "A069",
+    "anchor_type": "last_observed_activity",
+    "claim_status": "supported_bounded",
+    "confirmed_scope": "continuity_unverified lifecycle observation for A069 at 2015-06-22",
+    "direct_source_urls": [
+      "https://img03.ti-da.net/usr/h/e/n/henoko/2015-02-12%E8%BE%BA%E9%87%8E%E5%8F%A4%E5%9F%BA%E5%9C%B0%E5%BB%BA%E8%A8%AD%E3%81%AB%E4%BF%82%E3%82%8B%E5%9F%8B%E7%AB%8B%E5%9C%9F%E7%A0%82%E3%81%AE%E6%8E%A1%E5%8F%96%E5%80%99%E8%A3%9C%E5%9C%B0%E3%81%AE%E4%B8%AD%E6%AD%A2%E3%82%92%E6%B1%82%E3%82%81%E3%82%8B%E8%A6%81%E8%AB%8B%E6%9B%B8.pdf",
+      "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/017/050/45kaihouh28.pdf"
+    ],
+    "display_label": "沖縄ジュゴン環境アセスメント監視団",
+    "display_status": "demo",
+    "display_tier": "reviewed",
+    "event_date": "2015-06-22",
+    "evidence_level": "E4",
+    "graph_eligibility": "genealogy_anchor",
+    "id": "LC005",
+    "interpretation_limit": "The last observed activity date is a lower bound only; absence of later public records is not evidence of dissolution or inactivity.",
+    "last_observed_activity_date": "2015-06-22",
+    "lifecycle_status": "continuity_unverified",
+    "missing_scope": "Current continuity, later activity, and any dissolution date remain unverified.",
+    "review_status": "human_revised",
+    "source_ids": [],
+    "status_basis": "last_observed_activity_only",
+    "status_date": "",
+    "successor_actor_id": "",
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_id": "A051",
+    "anchor_type": "dissolved",
+    "claim_status": "supported",
+    "confirmed_scope": "dissolved lifecycle observation for A051 at 2019-03-26",
+    "direct_source_urls": [
+      "https://ryukyushimpo.jp/tag/%E7%9C%8C%E6%B0%91%E6%8A%95%E7%A5%A8%E3%81%AE%E4%BC%9A"
+    ],
+    "display_label": "「辺野古」県民投票の会",
+    "display_status": "demo",
+    "display_tier": "reviewed",
+    "event_date": "2019-03-26",
+    "evidence_level": "E3",
+    "graph_eligibility": "genealogy_anchor",
+    "id": "LC001",
+    "interpretation_limit": "Dissolution applies only to the named organization and date shown; later activity by former participants must not be attributed back to it.",
+    "last_observed_activity_date": "2019-03-26",
+    "lifecycle_status": "dissolved",
+    "missing_scope": "",
+    "review_status": "human_checked",
+    "source_ids": [],
+    "status_basis": "organization_resolution_report",
+    "status_date": "2019-03-26",
+    "successor_actor_id": "",
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_id": "A065",
+    "anchor_type": "last_observed_activity",
+    "claim_status": "supported_bounded",
+    "confirmed_scope": "continuity_unverified lifecycle observation for A065 at 2023-06-01",
+    "direct_source_urls": [
+      "https://peacenet-nansei-islands.jimdofree.com/",
+      "https://www.okinawatimes.co.jp/articles/-/1162100"
+    ],
+    "display_label": "南西諸島ピースネット",
+    "display_status": "demo",
+    "display_tier": "reviewed",
+    "event_date": "2023-06-01",
+    "evidence_level": "E2",
+    "graph_eligibility": "genealogy_anchor",
+    "id": "LC004",
+    "interpretation_limit": "The last observed activity date is a lower bound only; absence of later public records is not evidence of dissolution or inactivity.",
+    "last_observed_activity_date": "2023-06-01",
+    "lifecycle_status": "continuity_unverified",
+    "missing_scope": "Current continuity, later activity, and any dissolution date remain unverified.",
+    "review_status": "human_revised",
+    "source_ids": [
+      "S036"
+    ],
+    "status_basis": "last_observed_activity_only",
+    "status_date": "",
+    "successor_actor_id": "",
+    "unresolved_source_refs": []
+  },
+  {
+    "actor_id": "A011",
+    "anchor_type": "dissolved",
+    "claim_status": "supported",
+    "confirmed_scope": "dissolved lifecycle observation for A011 at 2024-11-27",
+    "direct_source_urls": [],
+    "display_label": "石垣市住民投票を求める会",
+    "display_status": "demo",
+    "display_tier": "reviewed",
+    "event_date": "2024-11-27",
+    "evidence_level": "E2",
+    "graph_eligibility": "genealogy_anchor",
+    "id": "LC003",
+    "interpretation_limit": "Dissolution applies only to the named organization and date shown; later activity by former participants must not be attributed back to it.",
+    "last_observed_activity_date": "2024-11-27",
+    "lifecycle_status": "dissolved",
+    "missing_scope": "",
+    "review_status": "human_checked",
+    "source_ids": [
+      "S182"
+    ],
+    "status_basis": "dissolution_meeting_report",
+    "status_date": "2024-11-27",
+    "successor_actor_id": "",
+    "unresolved_source_refs": []
+  }
+]

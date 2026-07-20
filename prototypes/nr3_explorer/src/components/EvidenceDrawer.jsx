@@ -25,7 +25,14 @@ export function EvidenceDrawer({ state, sourceIds, onClose }) {
         </button>
       </header>
       <div className="drawer-body">
-        {!ready && <p className="drawer-note">{tu("drawer.loading", lang)}</p>}
+        {state.status === "loading" && (
+          <p className="drawer-note">{tu("drawer.loading", lang)}</p>
+        )}
+        {state.status === "error" && (
+          <p className="drawer-note drawer-error" role="alert">
+            {tu("drawer.error", lang)}
+          </p>
+        )}
         {ready &&
           rows.map((source) => (
             <article className="source-card" key={source.id}>

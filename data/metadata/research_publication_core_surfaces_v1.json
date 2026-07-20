@@ -1,0 +1,490 @@
+{
+  "schema_version": "research_publication_core_surfaces_v1",
+  "status_vocabulary": [
+    "architecture_required",
+    "module_integrated",
+    "partial_bounded",
+    "internal_only"
+  ],
+  "surfaces": [
+    {
+      "surface_id": "CORE-ACTORS",
+      "source_path": "demo/actors.json",
+      "output_path": "core/entities/actors.json",
+      "json_pointer": "",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-001"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors", "overview", "time", "pathways"],
+      "interpretation_limit": "Registry inclusion and search visibility do not measure organizational influence, representativeness, activity or continuity."
+    },
+    {
+      "surface_id": "CORE-PLACES",
+      "source_path": "demo/places.json",
+      "output_path": "core/entities/places.json",
+      "json_pointer": "",
+      "surface_status": "architecture_required",
+      "owner_pub_ids": [],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["overview", "actors"],
+      "interpretation_limit": "Place nodes are controlled display entities; headquarters, event venue, target and site remain distinct semantics."
+    },
+    {
+      "surface_id": "CORE-ISSUES",
+      "source_path": "demo/issues.json",
+      "output_path": "core/entities/issues.json",
+      "json_pointer": "",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-001"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors", "overview"],
+      "interpretation_limit": "Issue categories are coding vocabulary, not prevalence estimates or actor positions beyond the supporting record."
+    },
+    {
+      "surface_id": "CORE-MAP-GEOMETRY",
+      "source_path": "demo/map_geometry.geojson",
+      "output_path": "core/map/geometry.geojson",
+      "json_pointer": "",
+      "surface_status": "architecture_required",
+      "owner_pub_ids": [],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["overview"],
+      "interpretation_limit": "Geometry supports orientation only and does not encode issue intensity, organizational strength or causal exposure."
+    },
+    {
+      "surface_id": "CORE-PRESENTATION",
+      "source_path": "views/presentation.json",
+      "output_path": "core/presentation/rules.json",
+      "json_pointer": "",
+      "surface_status": "architecture_required",
+      "owner_pub_ids": [],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["all"],
+      "interpretation_limit": "Presentation rules control display semantics and do not create research facts."
+    },
+    {
+      "surface_id": "CORE-EVIDENCE",
+      "source_path": "demo/evidence.json",
+      "output_path": "core/evidence/sources.json",
+      "json_pointer": "",
+      "surface_status": "architecture_required",
+      "owner_pub_ids": [],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["evidence_drawer"],
+      "interpretation_limit": "A source record or successful archive does not by itself approve an actor, relation, causal claim or interpretation."
+    },
+    {
+      "surface_id": "ARC001-LIFECYCLE",
+      "source_path": "demo/genealogy_anchors.json",
+      "output_path": "core/lifecycle/anchors.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-001"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["time"],
+      "interpretation_limit": "Last-observed activity is not dissolution; reorganization does not establish simple renaming, merger or actor identity."
+    },
+    {
+      "surface_id": "MR001-ACTOR-ISSUE",
+      "source_path": "demo/relations.json",
+      "output_path": "core/relations/actor_issue.json",
+      "json_pointer": "/actor_issue",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-001"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Actor–issue degree is documentary visibility in this working sample, not influence, alliance or activity intensity."
+    },
+    {
+      "surface_id": "MR003-ACTOR-PLACE",
+      "source_path": "demo/relations.json",
+      "output_path": "core/relations/actor_place.json",
+      "json_pointer": "/actor_place",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-003"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["overview", "actors"],
+      "interpretation_limit": "A coded place role does not by itself establish continuous local presence, headquarters or representativeness."
+    },
+    {
+      "surface_id": "MR003-STRICT-PLACE-ISSUE",
+      "source_path": "demo/relations.json",
+      "output_path": "core/relations/strict_place_issue.json",
+      "json_pointer": "/strict_place_issue",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-003"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["overview"],
+      "interpretation_limit": "Same-source triples repair the Cartesian error but still do not prove causality, duration, local consensus or alliance."
+    },
+    {
+      "surface_id": "ARC003-EVENT-PARTICIPATION",
+      "source_path": "demo/relations.json",
+      "output_path": "core/events/participation.json",
+      "json_pointer": "/event_participation",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-003"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors", "time"],
+      "interpretation_limit": "Co-signing, attendance, requests and litigation roles are event-specific and do not create stable actor–actor relations."
+    },
+    {
+      "surface_id": "MR008-LEGAL-ROLES",
+      "source_path": "demo/relations.json",
+      "output_path": "core/legal/roles.json",
+      "json_pointer": "/legal_roles",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-008"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["pathways"],
+      "interpretation_limit": "Legal roles are case-specific; organization, person, counsel, requester, supporter and non-party roles must remain distinct."
+    },
+    {
+      "surface_id": "MR014-ACTOR-EPISODE",
+      "source_path": "demo/relations.json",
+      "output_path": "core/episodes/actor_links.json",
+      "json_pointer": "/actor_episode",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-014"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["pathways"],
+      "interpretation_limit": "An actor–episode link records a bounded public role and does not establish leadership, causality or durable coalition."
+    },
+    {
+      "surface_id": "MR014-EPISODES",
+      "source_path": "demo/episodes.json",
+      "output_path": "core/episodes/episodes.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-014"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["overview", "pathways"],
+      "interpretation_limit": "Selected episodes are an analytical comparison set, not a population denominator or a success-rate sample."
+    },
+    {
+      "surface_id": "MR014-OUTCOMES",
+      "source_path": "demo/outcomes.json",
+      "output_path": "core/episodes/outcomes.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-014"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["pathways"],
+      "interpretation_limit": "Venue entry, intermediate output, bounded gain and underlying project change remain separate outcome tiers."
+    },
+    {
+      "surface_id": "MR014-PATHWAYS",
+      "source_path": "views/pathways.json",
+      "output_path": "core/episodes/pathways.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-014"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["pathways"],
+      "interpretation_limit": "Displayed sequence is not causality, and institutional entry is not success."
+    },
+    {
+      "surface_id": "MR013-COVERAGE",
+      "source_path": "views/evidence_coverage.json",
+      "output_path": "core/coverage/audit.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-013"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["evidence"],
+      "interpretation_limit": "Coverage dimensions describe the working sample and retrieval system; there is no population denominator."
+    },
+    {
+      "surface_id": "ARC002-DYADIC",
+      "source_path": "demo/dyadic_relations.json",
+      "output_path": "core/typed_relations/dyadic.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Funding, affiliation, legal counsel and coordination retain distinct relation families and evidence gates."
+    },
+    {
+      "surface_id": "ARC002-ADMINISTRATIVE",
+      "source_path": "demo/administrative_records.json",
+      "output_path": "core/typed_relations/administrative.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Administrative, service and support records are not automatically funding edges or political alignment."
+    },
+    {
+      "surface_id": "ARC002-AGGREGATE",
+      "source_path": "demo/aggregate_observations.json",
+      "output_path": "core/typed_relations/aggregate.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "profile_row_filters": {
+        "reviewed": {
+          "field": "review_status",
+          "include": ["human_checked", "human_revised"]
+        }
+      },
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Aggregate observations are not dyadic organization relations; deferred local records are absent from the reviewed profile."
+    },
+    {
+      "surface_id": "ARC002-TYPED-EVENT",
+      "source_path": "demo/typed_event_participation.json",
+      "output_path": "core/typed_relations/event_participation.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Typed event participation remains an event observation and does not generate a stable organization relation."
+    },
+    {
+      "surface_id": "ARC002-CASE-ROLES",
+      "source_path": "demo/case_roles.json",
+      "output_path": "core/typed_relations/case_roles.json",
+      "json_pointer": "",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002", "PUB-MR-008"],
+      "release_profiles": ["reviewed", "client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Case roles are not general actor relations and must preserve registered actor versus provisional procedural node."
+    },
+    {
+      "surface_id": "MR001-CANDIDATE-ACTOR-ISSUE",
+      "source_path": "research/candidates.json",
+      "output_path": "research/actor_issue.json",
+      "json_pointer": "/relations/actor_issue",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-001"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Candidate actor–issue rows are visibly separated and cannot be used as reviewed findings."
+    },
+    {
+      "surface_id": "MR003-CANDIDATE-ACTOR-PLACE",
+      "source_path": "research/candidates.json",
+      "output_path": "research/actor_place.json",
+      "json_pointer": "/relations/actor_place",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-003"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["overview", "actors"],
+      "interpretation_limit": "Candidate place rows are not reviewed location facts."
+    },
+    {
+      "surface_id": "MR003-CANDIDATE-STRICT",
+      "source_path": "research/candidates.json",
+      "output_path": "research/strict_place_issue.json",
+      "json_pointer": "/relations/strict_place_issue",
+      "surface_status": "partial_bounded",
+      "owner_pub_ids": ["PUB-MR-003"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["overview"],
+      "interpretation_limit": "Candidate strict triples remain research-layer observations even when they satisfy the same-source construction."
+    },
+    {
+      "surface_id": "ARC003-CANDIDATE-EVENT",
+      "source_path": "research/candidates.json",
+      "output_path": "research/event_participation.json",
+      "json_pointer": "/relations/event_participation",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-003"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["time"],
+      "interpretation_limit": "Analytical-seed event rows remain visibly candidate and cannot be counted as central event facts."
+    },
+    {
+      "surface_id": "MR014-CANDIDATE-ACTOR-EPISODE",
+      "source_path": "research/candidates.json",
+      "output_path": "research/actor_episode.json",
+      "json_pointer": "/relations/actor_episode",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-014"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["pathways"],
+      "interpretation_limit": "TE10–TE13 actor links remain research-only."
+    },
+    {
+      "surface_id": "MR014-CANDIDATE-EPISODES",
+      "source_path": "research/candidates.json",
+      "output_path": "research/episodes.json",
+      "json_pointer": "/episodes",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-014"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["overview", "pathways"],
+      "interpretation_limit": "TE10–TE13 are research-only event candidates and remain absent from reviewed releases."
+    },
+    {
+      "surface_id": "MR014-CANDIDATE-OUTCOMES",
+      "source_path": "research/candidates.json",
+      "output_path": "research/outcomes.json",
+      "json_pointer": "/outcomes",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-MR-014"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["pathways"],
+      "interpretation_limit": "Candidate outcome tiers cannot be merged into reviewed episode counts."
+    },
+    {
+      "surface_id": "ARC002-CANDIDATE-DYADIC",
+      "source_path": "research/candidates.json",
+      "output_path": "research/dyadic_relations.json",
+      "json_pointer": "/dyadic_relations",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Candidate dyadic relations are dashed research-layer records and not confirmed relations."
+    },
+    {
+      "surface_id": "ARC002-CANDIDATE-ADMIN",
+      "source_path": "research/candidates.json",
+      "output_path": "research/administrative_records.json",
+      "json_pointer": "/administrative_records",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Candidate administrative records retain their evidence and review gaps."
+    },
+    {
+      "surface_id": "ARC002-CANDIDATE-AGGREGATE",
+      "source_path": "research/candidates.json",
+      "output_path": "research/aggregate_observations.json",
+      "json_pointer": "/aggregate_observations",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "An empty candidate array is a compiler-defined zero for this release, not a statement about reality."
+    },
+    {
+      "surface_id": "ARC002-CANDIDATE-TYPED-EVENT",
+      "source_path": "research/candidates.json",
+      "output_path": "research/typed_event_participation.json",
+      "json_pointer": "/event_participation",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Candidate typed-event rows remain non-dyadic event observations."
+    },
+    {
+      "surface_id": "ARC002-CANDIDATE-LEADS",
+      "source_path": "research/candidates.json",
+      "output_path": "research/relation_leads.json",
+      "json_pointer": "/relation_leads",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-002"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": ["actors"],
+      "interpretation_limit": "Leads are explicitly non-facts and never enter the relation graph."
+    },
+    {
+      "surface_id": "ARC002-CANDIDATE-GENEALOGY",
+      "source_path": "research/candidates.json",
+      "output_path": "research/genealogy_anchors.json",
+      "json_pointer": "/genealogy_anchors",
+      "surface_status": "module_integrated",
+      "owner_pub_ids": ["PUB-ARC-001"],
+      "release_profiles": ["client_preview", "internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "The current compiler-defined zero does not authorize future candidate lifecycle anchors."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-VENUES",
+      "source_path": "demo/venues.json",
+      "output_path": "internal/core/venues.json",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Internal controlled vocabulary only."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-HISTORICAL-DUPLICATE",
+      "source_path": "demo/historical_anchors.json",
+      "output_path": "internal/core/historical_anchors_legacy.json",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Legacy duplicate retained only for provenance; the public lifecycle surface uses PUB-ARC-001."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-EMPTY-LEADS",
+      "source_path": "demo/relation_leads.json",
+      "output_path": "internal/core/relation_leads_reviewed_zero.json",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Internal zero-control payload."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-ACTORS-VIEW",
+      "source_path": "views/actors.json",
+      "output_path": "internal/core/views/actors.json",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Unused legacy view projection."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-GLOBAL-VIEW",
+      "source_path": "views/global.json",
+      "output_path": "internal/core/views/global.json",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Unused legacy aggregate view; not a public publication surface."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-OVERVIEW-VIEW",
+      "source_path": "views/overview.json",
+      "output_path": "internal/core/views/overview.json",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Unused legacy overview view."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-TIME-VIEW",
+      "source_path": "views/time.json",
+      "output_path": "internal/core/views/time.json",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Unused legacy time view; public time periods come from presentation rules."
+    },
+    {
+      "surface_id": "CORE-INTERNAL-VALIDATION",
+      "source_path": "validation_report.md",
+      "output_path": "internal/core_validation_report.md",
+      "json_pointer": "",
+      "surface_status": "internal_only",
+      "owner_pub_ids": [],
+      "release_profiles": ["internal"],
+      "frontend_consumers": [],
+      "interpretation_limit": "Internal builder validation report."
+    }
+  ]
+}

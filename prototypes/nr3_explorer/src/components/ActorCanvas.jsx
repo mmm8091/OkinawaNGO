@@ -21,6 +21,7 @@ export function ActorCanvas({
   layer,
   candidates,
   scopeNote,
+  presentation,
 }) {
   const canvasRef = useRef(null);
   const wrapperRef = useRef(null);
@@ -40,7 +41,10 @@ export function ActorCanvas({
       if (classFilter !== "all") {
         edges = edges.filter(
           (edge) =>
-            actorClassGroup(actorById.get(edge.actor_id)?.actor_class) === classFilter,
+            actorClassGroup(
+              actorById.get(edge.actor_id)?.actor_class,
+              presentation,
+            ) === classFilter,
         );
       }
       if (issueFilter !== "all") {
@@ -94,7 +98,17 @@ export function ActorCanvas({
       issueById,
       pendingOnlyActors,
     };
-  }, [actors, candidates, classFilter, issueFilter, issues, layer, relations.actor_issue, search]);
+  }, [
+    actors,
+    candidates,
+    classFilter,
+    issueFilter,
+    issues,
+    layer,
+    presentation,
+    relations.actor_issue,
+    search,
+  ]);
 
   const draw = useCallback(() => {
     const canvas = canvasRef.current;
@@ -201,7 +215,7 @@ export function ActorCanvas({
 
     actorNodes.forEach((node) => {
       const selected = selectedActor === node.id;
-      const meta = actorClassMeta(node.actor.actor_class);
+      const meta = actorClassMeta(node.actor.actor_class, presentation);
       if (selected) {
         context.beginPath();
         context.arc(node.x, node.y, 9.5, 0, Math.PI * 2);
@@ -274,7 +288,7 @@ export function ActorCanvas({
       context.fillText(label, px + 12, py + pillHeight / 2 + 0.5);
       context.textBaseline = "alphabetic";
     }
-  }, [graph, issueFilter, lang, selectedActor, view]);
+  }, [graph, issueFilter, lang, presentation, selectedActor, view]);
 
   useEffect(() => {
     draw();

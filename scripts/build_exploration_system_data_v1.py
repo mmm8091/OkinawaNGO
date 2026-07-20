@@ -50,6 +50,22 @@ EPISODE_DISPLAY_COLUMNS = {
     *EPISODE_DISPLAY_LANGUAGES,
     "review_note",
 }
+COVERAGE_IMPLICATION_FIELDS = (
+    "observed_skew",
+    "visibility_mechanism",
+    "impact_on_q1_q3",
+    "interpretation_limit",
+    "online_gap_action",
+    "local_gap_action",
+)
+COVERAGE_IMPLICATION_SOURCE_FIELDS = {
+    "observed_skew": "observed_skew",
+    "visibility_mechanism": "visibility_mechanism",
+    "impact_on_q1_q3": "impact_on_q1_q3",
+    "interpretation_limit": "interpretation_boundary",
+    "online_gap_action": "online_gap_action",
+    "local_gap_action": "local_gap_action",
+}
 INTERPRETATION_LIMITS = {
     "actor": (
         "Registry membership does not imply political stance, influence, alliance, "
@@ -200,6 +216,71 @@ COLLECTION_BY_GRAPH_ELIGIBILITY = {
     "aggregate_observation": "aggregate_observations",
     "research_lead": "relation_leads",
     "event_participation": "event_participation",
+}
+
+LIFECYCLE_REVIEW_STATUSES = {"human_checked", "human_revised"}
+LIFECYCLE_INTERPRETATION_LIMITS = {
+    "dissolved": (
+        "Dissolution applies only to the named organization and date shown; later "
+        "activity by former participants must not be attributed back to it."
+    ),
+    "reorganized": (
+        "A reorganization/successor anchor records a bounded lineage transition, "
+        "not identity, merger, or uninterrupted organizational continuity."
+    ),
+    "continuity_unverified": (
+        "The last observed activity date is a lower bound only; absence of later "
+        "public records is not evidence of dissolution or inactivity."
+    ),
+}
+LIFECYCLE_LOCALIZED_TEXT = {
+    "dissolved": {
+        "confirmed_scope": {
+            "zh": "该组织于 {date} 解散。",
+            "ja": "当該団体は {date} に解散。",
+            "en": "The organization dissolved on {date}.",
+        },
+        "missing_scope": {"zh": "", "ja": "", "en": ""},
+        "interpretation_limit": {
+            "zh": "解散只适用于该具名组织和所示日期；原参与者此后的行动不能回填给该组织。",
+            "ja": "解散は表示された団体と日付に限る。元参加者の後日の活動を当該団体へ遡及帰属させない。",
+            "en": LIFECYCLE_INTERPRETATION_LIMITS["dissolved"],
+        },
+    },
+    "reorganized": {
+        "confirmed_scope": {
+            "zh": "{date} 出现向后继载体过渡的重组边界。",
+            "ja": "{date} に後継組織への再編境界を記録。",
+            "en": "A transition to a successor vehicle is recorded at {date}.",
+        },
+        "missing_scope": {
+            "zh": "精确解散日，以及前身与后继是否具有不间断的同一身份，仍未确认。",
+            "ja": "正確な解散日と、前身・後継間の切れ目のない同一性は未確認。",
+            "en": "Exact dissolution date and uninterrupted identity with the successor are not established.",
+        },
+        "interpretation_limit": {
+            "zh": "重组／后继锚点只记录有界的谱系过渡，不表示两个组织同一、合并或连续性不间断。",
+            "ja": "再編・後継アンカーは限定的な系譜移行を示すだけで、同一性、合併、連続性を意味しない。",
+            "en": LIFECYCLE_INTERPRETATION_LIMITS["reorganized"],
+        },
+    },
+    "continuity_unverified": {
+        "confirmed_scope": {
+            "zh": "公开材料至少可将该组织的活动追踪至 {date}。",
+            "ja": "公開資料では当該団体の活動を少なくとも {date} まで追跡できる。",
+            "en": "Public records trace the organization at least through {date}.",
+        },
+        "missing_scope": {
+            "zh": "此后的持续性、当前状态及任何解散日期仍未确认。",
+            "ja": "その後の継続性、現在の状態、解散日は未確認。",
+            "en": "Current continuity, later activity, and any dissolution date remain unverified.",
+        },
+        "interpretation_limit": {
+            "zh": "最后观察日只是活动可见性的下限；没有更晚公开记录，不等于组织已解散或停止活动。",
+            "ja": "最終確認日は活動可視性の下限にすぎず、その後の公開記録がないことは解散や活動停止の証拠ではない。",
+            "en": LIFECYCLE_INTERPRETATION_LIMITS["continuity_unverified"],
+        },
+    },
 }
 
 
@@ -367,6 +448,200 @@ def normalize_venues(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
         for row in rows
     ]
     return sorted(venues, key=lambda row: row["id"])
+
+
+def normalize_presentation_rules(
+    raw: dict[str, Any],
+    actors: list[dict[str, Any]],
+    places: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """Validate versioned presentation mappings consumed by the frontend.
+
+    Research classification and place-display mappings live in data, not React.
+    This function rejects duplicate or orphaned mappings before they can affect
+    the public view.
+    """
+
+    groups = raw.get("actor_class_groups", [])
+    regions = raw.get("regions", [])
+    periods = raw.get("time_periods", [])
+    group_ids = [row.get("id", "") for row in groups]
+    region_ids = [row.get("id", "") for row in regions]
+    if not group_ids or len(group_ids) != len(set(group_ids)):
+        raise ValueError("Presentation actor_class_groups require unique IDs")
+    if "unknown" not in group_ids:
+        raise ValueError("Presentation actor_class_groups require an unknown fallback")
+    if not region_ids or len(region_ids) != len(set(region_ids)):
+        raise ValueError("Presentation regions require unique IDs")
+
+    actor_class_to_group: dict[str, str] = {}
+    for group in groups:
+        if not group.get("color"):
+            raise ValueError(f"Presentation group {group['id']} lacks color")
+        for actor_class in group.get("actor_classes", []):
+            if actor_class in actor_class_to_group:
+                raise ValueError(
+                    f"Actor class {actor_class} appears in multiple presentation groups"
+                )
+            actor_class_to_group[actor_class] = group["id"]
+
+    active_actor_classes = {
+        row["actor_class"]
+        for row in actors
+        if row["display_status"] != "hidden" and row["actor_class"]
+    }
+    unmapped_actor_classes = sorted(active_actor_classes - set(actor_class_to_group))
+    if unmapped_actor_classes:
+        raise ValueError(
+            "Presentation rules do not map current actor classes: "
+            + ";".join(unmapped_actor_classes)
+        )
+
+    place_ids = {row["id"] for row in places}
+    place_display_regions = raw.get("place_display_regions", {})
+    orphan_place_ids = sorted(set(place_display_regions) - place_ids)
+    invalid_display_regions = sorted(
+        {
+            region
+            for region in place_display_regions.values()
+            if region not in set(region_ids)
+        }
+    )
+    if orphan_place_ids or invalid_display_regions:
+        raise ValueError(
+            "Invalid presentation place mappings: orphan_places="
+            + ";".join(orphan_place_ids)
+            + " invalid_regions="
+            + ";".join(invalid_display_regions)
+        )
+    default_region = raw.get("default_place_display_region", "")
+    if default_region not in set(region_ids):
+        raise ValueError("Presentation default_place_display_region is invalid")
+
+    period_ids = [row.get("id", "") for row in periods]
+    if not period_ids or len(period_ids) != len(set(period_ids)):
+        raise ValueError("Presentation time_periods require unique IDs")
+    ordered_periods = sorted(periods, key=lambda row: int(row["from"]))
+    for index, period in enumerate(ordered_periods):
+        if int(period["from"]) > int(period["to"]):
+            raise ValueError(f"Presentation period {period['id']} has reversed dates")
+        if index and int(ordered_periods[index - 1]["to"]) >= int(period["from"]):
+            raise ValueError("Presentation time_periods overlap")
+
+    return {
+        "schema_version": raw.get("schema_version", ""),
+        "actor_class_groups": sorted(groups, key=lambda row: row["id"]),
+        "actor_class_to_group": dict(sorted(actor_class_to_group.items())),
+        "regions": sorted(regions, key=lambda row: row["id"]),
+        "default_place_display_region": default_region,
+        "place_display_regions": dict(sorted(place_display_regions.items())),
+        "time_periods": ordered_periods,
+    }
+
+
+def normalize_genealogy_anchors(
+    rows: list[dict[str, str]],
+    actor_ids: set[str],
+    source_aliases: dict[str, str],
+) -> list[dict[str, Any]]:
+    """Export only principal-reviewed, central-registry lifecycle anchors."""
+
+    anchors: list[dict[str, Any]] = []
+    for row in rows:
+        if (
+            row.get("registry_scope") != "central_registry"
+            or row.get("lifecycle_workflow_status") != "resolved"
+            or row.get("review_status") not in LIFECYCLE_REVIEW_STATUSES
+        ):
+            continue
+        actor_id = row.get("actor_id", "")
+        successor_actor_id = row.get("successor_actor_id", "")
+        if actor_id not in actor_ids:
+            raise ValueError(f"Lifecycle row {row['lifecycle_record_id']} has orphan actor")
+        if successor_actor_id and successor_actor_id not in actor_ids:
+            raise ValueError(
+                f"Lifecycle row {row['lifecycle_record_id']} has orphan successor"
+            )
+
+        source_ids, unresolved_refs = resolve_source_refs(
+            split_refs(row.get("source_refs", "")), source_aliases
+        )
+        direct_source_urls = sorted(
+            ref for ref in unresolved_refs if ref.startswith(("http://", "https://"))
+        )
+        unresolved_source_refs = sorted(
+            ref for ref in unresolved_refs if ref not in direct_source_urls
+        )
+        status = row.get("lifecycle_status", "")
+        event_date = (
+            row.get("status_date", "")
+            or row.get("last_observed_activity_date", "")
+        )
+        if not event_date:
+            raise ValueError(
+                f"Lifecycle row {row['lifecycle_record_id']} lacks a bounded date"
+            )
+        bounded = status in {"reorganized", "continuity_unverified"}
+        missing_scope = ""
+        if status == "reorganized":
+            missing_scope = (
+                "Exact dissolution date and uninterrupted identity with the successor "
+                "are not established."
+            )
+        elif status == "continuity_unverified":
+            missing_scope = (
+                "Current continuity, later activity, and any dissolution date remain "
+                "unverified."
+            )
+        localized = LIFECYCLE_LOCALIZED_TEXT.get(status, {})
+        localized_fields = {
+            f"{field}_{language}": template.format(date=event_date)
+            for field in (
+                "confirmed_scope",
+                "missing_scope",
+                "interpretation_limit",
+            )
+            for language, template in localized.get(field, {}).items()
+        }
+        anchors.append(
+            {
+                "id": row["lifecycle_record_id"],
+                "actor_id": actor_id,
+                "display_label": row["canonical_name"],
+                "lifecycle_status": status,
+                "anchor_type": (
+                    "last_observed_activity"
+                    if status == "continuity_unverified"
+                    else status
+                ),
+                "event_date": event_date,
+                "status_date": row.get("status_date", ""),
+                "last_observed_activity_date": row.get(
+                    "last_observed_activity_date", ""
+                ),
+                "successor_actor_id": successor_actor_id,
+                "status_basis": row.get("status_basis", ""),
+                "evidence_level": row.get("evidence_level", ""),
+                "review_status": row.get("review_status", ""),
+                "claim_status": "supported_bounded" if bounded else "supported",
+                "confirmed_scope": (
+                    f"{status} lifecycle observation for {actor_id} at {event_date}"
+                ),
+                "missing_scope": missing_scope,
+                "graph_eligibility": "genealogy_anchor",
+                "display_tier": "reviewed",
+                "display_status": "demo",
+                "source_ids": source_ids,
+                "direct_source_urls": direct_source_urls,
+                "unresolved_source_refs": unresolved_source_refs,
+                "interpretation_limit": LIFECYCLE_INTERPRETATION_LIMITS.get(
+                    status,
+                    "This lifecycle anchor is bounded to the reviewed status and date.",
+                ),
+                **localized_fields,
+            }
+        )
+    return sorted(anchors, key=lambda row: (row["event_date"], row["id"]))
 
 
 def normalize_sources(
@@ -1235,9 +1510,12 @@ def normalize_coverage_cells(rows: list[dict[str, str]]) -> list[dict[str, Any]]
 
 def normalize_coverage_implications(
     rows: list[dict[str, str]],
+    display_overrides: dict[str, dict[str, dict[str, str]]],
 ) -> list[dict[str, Any]]:
-    return [
-        {
+    normalized: list[dict[str, Any]] = []
+    for row in rows:
+        dimension_id = row["dimension_id"]
+        item = {
             "dimension_id": row["dimension_id"],
             "dimension_label": row["dimension_label"],
             "observed_skew": row["observed_skew"],
@@ -1248,8 +1526,100 @@ def normalize_coverage_implications(
             "online_gap_action": row["online_gap_action"],
             "local_gap_action": row["local_gap_action"],
         }
-        for row in rows
+        for field in COVERAGE_IMPLICATION_FIELDS:
+            item.update(
+                {
+                    f"{field}_{language}": display_overrides[dimension_id][field][
+                        language
+                    ]
+                    for language in EPISODE_DISPLAY_LANGUAGES
+                }
+            )
+        normalized.append(item)
+    return normalized
+
+
+def validate_coverage_implication_display_overrides(
+    implication_rows: list[dict[str, str]],
+    raw: dict[str, Any],
+) -> dict[str, dict[str, dict[str, str]]]:
+    """Validate the research-semantic locale layer for coverage implications.
+
+    The canonical source table remains unchanged and its English text must be
+    reproduced byte-for-byte in the display metadata.  Chinese and Japanese
+    renderings therefore cannot silently rewrite the audited research object,
+    and React never has to invent or translate research meaning.
+    """
+
+    if raw.get("schema_version") != "1.0.0":
+        raise ValueError("Coverage display metadata has an unsupported schema")
+    if raw.get("source", {}).get("path") != (
+        "outputs/coverage_audit_v1/coverage_bias_implications_v1.csv"
+    ):
+        raise ValueError("Coverage display metadata points to the wrong source table")
+    if raw.get("languages") != list(EPISODE_DISPLAY_LANGUAGES):
+        raise ValueError("Coverage display metadata must declare zh/ja/en in order")
+    dimensions = raw.get("dimensions")
+    if not isinstance(dimensions, list):
+        raise ValueError("Coverage display metadata requires a dimensions array")
+
+    source_ids = [row["dimension_id"] for row in implication_rows]
+    if len(source_ids) != len(set(source_ids)):
+        raise ValueError("Coverage implication source contains duplicate dimensions")
+    actual_ids = [
+        row.get("dimension_id", "") for row in dimensions if isinstance(row, dict)
     ]
+    if len(actual_ids) != len(dimensions) or len(actual_ids) != len(set(actual_ids)):
+        raise ValueError("Coverage display dimensions must be unique objects")
+    missing = sorted(set(source_ids) - set(actual_ids))
+    unexpected = sorted(set(actual_ids) - set(source_ids))
+    if missing or unexpected:
+        raise ValueError(
+            "Coverage display metadata must cover the exact dimension set: "
+            f"missing={';'.join(missing)} unexpected={';'.join(unexpected)}"
+        )
+
+    source_by_id = {row["dimension_id"]: row for row in implication_rows}
+    overrides: dict[str, dict[str, dict[str, str]]] = {}
+    for dimension in dimensions:
+        dimension_id = dimension["dimension_id"]
+        fields = dimension.get("fields")
+        if not isinstance(fields, dict) or set(fields) != set(
+            COVERAGE_IMPLICATION_FIELDS
+        ):
+            raise ValueError(
+                f"Coverage display {dimension_id} must contain the exact field grid"
+            )
+        overrides[dimension_id] = {}
+        for field in COVERAGE_IMPLICATION_FIELDS:
+            translations = fields[field]
+            if not isinstance(translations, dict) or set(translations) != set(
+                EPISODE_DISPLAY_LANGUAGES
+            ):
+                raise ValueError(
+                    f"Coverage display {dimension_id}:{field} requires zh/ja/en"
+                )
+            if any(
+                not isinstance(translations[language], str)
+                or not translations[language].strip()
+                for language in EPISODE_DISPLAY_LANGUAGES
+            ):
+                raise ValueError(
+                    f"Coverage display {dimension_id}:{field} has a blank translation"
+                )
+            source_text = source_by_id[dimension_id][
+                COVERAGE_IMPLICATION_SOURCE_FIELDS[field]
+            ]
+            if translations["en"] != source_text:
+                raise ValueError(
+                    "Coverage display English must equal the audited source text for "
+                    f"{dimension_id}:{field}"
+                )
+            overrides[dimension_id][field] = {
+                language: translations[language]
+                for language in EPISODE_DISPLAY_LANGUAGES
+            }
+    return overrides
 
 
 def build_views(
@@ -1262,6 +1632,8 @@ def build_views(
     coverage_cells: list[dict[str, Any]],
     coverage_implications: list[dict[str, Any]],
     map_geometry: dict[str, Any],
+    genealogy_anchors: list[dict[str, Any]],
+    presentation: dict[str, Any],
 ) -> dict[str, dict[str, Any]]:
     current_actor_ids = [
         row["id"] for row in actors if row["display_status"] != "hidden"
@@ -1291,7 +1663,7 @@ def build_views(
             "route": "/",
             "question": "哪里正在发生什么？",
             "visual_engine": "V1 全域地点—议题研究地图",
-            "visual_states": ["all_regions", "strict_evidence", "sakishima_focus", "compare"],
+            "visual_states": ["all_regions", "sakishima_focus", "compare"],
             "map_geometry": {
                 "path": "../demo/map_geometry.geojson",
                 "type": map_geometry.get("type", ""),
@@ -1315,7 +1687,8 @@ def build_views(
             ],
             "interpretation_limits": [
                 "The map is a navigation and evidence view, not an estimate of organizational density.",
-                "Only human-reviewed same-source triples appear in strict evidence mode.",
+                "Human-reviewed same-source triples appear in the region detail panel; "
+                "they are not a separate map-density layer.",
             ],
         },
         "actors": {
@@ -1388,17 +1761,33 @@ def build_views(
                 "Source publication date, event date, claim period, and actor active period are distinct.",
             ],
         },
+        "time": {
+            "view_id": "P5",
+            "route": "/time",
+            "question": "组织与事件在时间上如何出现、转变或停止？",
+            "visual_engine": "V5 事件时间轴与有界组织谱系",
+            "periods": presentation["time_periods"],
+            "historical_anchor_ids": [row["id"] for row in genealogy_anchors],
+            "event_anchors": [
+                event_anchors[key] for key in sorted(event_anchors)
+            ],
+            "interpretation_limits": [
+                "A lifecycle anchor records only the reviewed status and date shown.",
+                "Last-observed activity is not proof of present continuity or dissolution.",
+                "Event years do not establish organizational formation or lifespan.",
+            ],
+        },
         "global": {
             "view_id": "G1+G2",
             "time_layer": {
-                "historical_anchor_ids": [],
+                "historical_anchor_ids": [row["id"] for row in genealogy_anchors],
                 "event_anchors": [
                     event_anchors[key] for key in sorted(event_anchors)
                 ],
                 "coverage_periods": coverage_periods,
                 "interpretation_limit": (
-                    "The empty historical-anchor collection is explicit. Event and "
-                    "source dates must not be used to fabricate organizational continuity."
+                    "Lifecycle anchors are bounded reviewed observations. Event and source "
+                    "dates must not be used to fabricate organizational continuity."
                 ),
             },
             "evidence_drawer": {
@@ -1425,6 +1814,7 @@ def build_views(
                 ],
                 "display_layer_default": "demo",
             },
+            "presentation_path": "presentation.json",
         },
     }
 
@@ -1448,6 +1838,8 @@ def validate_build(
     coverage_cells: list[dict[str, Any]],
     case_ids: set[str],
     map_geometry: dict[str, Any],
+    genealogy_anchors: list[dict[str, Any]],
+    presentation: dict[str, Any],
 ) -> dict[str, Any]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -1474,10 +1866,43 @@ def validate_build(
     research_episode_ids = unique_ids(
         "unique research episode IDs", research_episodes
     )
+    genealogy_anchor_ids = unique_ids(
+        "unique genealogy anchor IDs", genealogy_anchors
+    )
     check(
         "episode layers disjoint",
         demo_episode_ids.isdisjoint(research_episode_ids),
         f"demo={len(demo_episode_ids)} research={len(research_episode_ids)}",
+    )
+    check(
+        "genealogy anchors are reviewed and actor-bounded",
+        bool(genealogy_anchor_ids)
+        and all(
+            row["actor_id"] in actor_ids
+            and (
+                not row["successor_actor_id"]
+                or row["successor_actor_id"] in actor_ids
+            )
+            and row["review_status"] in LIFECYCLE_REVIEW_STATUSES
+            and row["claim_status"] in {"supported", "supported_bounded"}
+            and row["graph_eligibility"] == "genealogy_anchor"
+            and row["event_date"]
+            for row in genealogy_anchors
+        ),
+        f"{len(genealogy_anchors)} reviewed lifecycle rows",
+    )
+    check(
+        "bounded genealogy anchors carry explicit gaps",
+        all(
+            row["claim_status"] != "supported_bounded"
+            or (
+                row["confirmed_scope"]
+                and row["missing_scope"]
+                and row["interpretation_limit"]
+            )
+            for row in genealogy_anchors
+        ),
+        "supported_bounded lifecycle rows have confirmed and missing scope",
     )
     all_episodes = demo_episodes + research_episodes
     episode_display_gaps = sorted(
@@ -1772,6 +2197,7 @@ def validate_build(
         actors
         + demo_episodes
         + research_episodes
+        + genealogy_anchors
         + evidence_notes
         + [
             row
@@ -1880,6 +2306,27 @@ def validate_build(
         ),
         f"features={len(map_geometry.get('features', []))}",
     )
+    presentation_regions = {row["id"] for row in presentation["regions"]}
+    presentation_groups = {row["id"] for row in presentation["actor_class_groups"]}
+    check(
+        "presentation mappings cover current research objects",
+        all(
+            row["actor_class"] in presentation["actor_class_to_group"]
+            for row in actors
+            if row["display_status"] != "hidden"
+        )
+        and presentation["default_place_display_region"] in presentation_regions
+        and all(
+            region in presentation_regions
+            for region in presentation["place_display_regions"].values()
+        )
+        and "unknown" in presentation_groups,
+        (
+            f"actor_classes={len(presentation['actor_class_to_group'])} "
+            f"regions={len(presentation_regions)} "
+            f"periods={len(presentation['time_periods'])}"
+        ),
+    )
 
     non_human_actor_status = sum(
         row["review_status"] not in DEMO_RELATION_STATUSES for row in actors
@@ -1890,8 +2337,8 @@ def validate_build(
         "remain independently gated."
     )
     warnings.append(
-        "historical_anchors is intentionally empty until NR-04/NR-05 candidates receive "
-        "human continuity decisions."
+        f"{len(genealogy_anchors)} principal-reviewed lifecycle anchors are exported. "
+        "They are bounded observations, not a complete post-1972 genealogy."
     )
     warnings.append(
         f"The packaged GeoJSON supports municipality/region rendering, but the {len(places)} place "
@@ -1974,10 +2421,6 @@ def validate_build(
             + ";".join(typed_excluded_ids)
             + "."
         )
-    warnings.append(
-        "genealogy_anchors is intentionally empty until NR-04/NR-05 candidates "
-        "receive human continuity decisions."
-    )
     return {
         "status": "pass" if not errors else "fail",
         "error_count": len(errors),
@@ -2052,12 +2495,18 @@ def exploration_input_paths(project_root: Path) -> dict[str, Path]:
         / "data/interim/27_coverage_audit_cells_v1.csv",
         "coverage_implications": project_root
         / "outputs/coverage_audit_v1/coverage_bias_implications_v1.csv",
+        "coverage_implication_display": project_root
+        / "data/metadata/coverage_implication_display_trilingual_v1.json",
         "archive_manifest": project_root
         / "source_docs/source_archive/source_archive_manifest.csv",
         "legal_cases": project_root
         / "data/interim/17_legal_policy_procedure_cases_v0.csv",
         "map_geometry": project_root
         / "outputs/learning_v1/okinawa_municipal_boundaries_simplified_v1.geojson",
+        "actor_lifecycle": project_root
+        / "outputs/actor_lifecycle_v1/actor_lifecycle_v0.csv",
+        "presentation_rules": project_root
+        / "data/metadata/frontend_presentation_rules_v1.json",
     }
 
 
@@ -2091,6 +2540,14 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     places = normalize_places(read_csv(inputs["places"]))
     issues = normalize_issues(read_csv(inputs["issues"]))
     venues = normalize_venues(read_csv(inputs["venues"]))
+    presentation = normalize_presentation_rules(
+        read_json(inputs["presentation_rules"]), actors, places
+    )
+    genealogy_anchors = normalize_genealogy_anchors(
+        read_csv(inputs["actor_lifecycle"]),
+        {row["id"] for row in actors},
+        source_aliases,
+    )
     sources = normalize_sources(
         source_rows, read_csv(inputs["archive_manifest"])
     )
@@ -2138,8 +2595,16 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     demo_actor_episode = build_actor_episode_relations(demo_episodes)
     research_actor_episode = build_actor_episode_relations(research_episodes)
     coverage_cells = normalize_coverage_cells(read_csv(inputs["coverage_cells"]))
+    coverage_implication_rows = read_csv(inputs["coverage_implications"])
+    coverage_implication_display = (
+        validate_coverage_implication_display_overrides(
+            coverage_implication_rows,
+            read_json(inputs["coverage_implication_display"]),
+        )
+    )
     coverage_implications = normalize_coverage_implications(
-        read_csv(inputs["coverage_implications"])
+        coverage_implication_rows,
+        coverage_implication_display,
     )
     map_geometry = read_json(inputs["map_geometry"])
 
@@ -2180,7 +2645,7 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         output_dir / "demo/evidence.json",
         {"sources": sources, "notes": evidence_notes},
     )
-    write_json(output_dir / "demo/historical_anchors.json", [])
+    write_json(output_dir / "demo/historical_anchors.json", genealogy_anchors)
     write_json(output_dir / "demo/relations.json", demo_relations)
     write_json(output_dir / "demo/dyadic_relations.json", typed_demo["dyadic_relations"])
     write_json(
@@ -2197,8 +2662,9 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     )
     write_json(output_dir / "demo/relation_leads.json", typed_demo["relation_leads"])
     write_json(output_dir / "demo/case_roles.json", case_roles)
-    write_json(output_dir / "demo/genealogy_anchors.json", [])
+    write_json(output_dir / "demo/genealogy_anchors.json", genealogy_anchors)
     write_json(output_dir / "demo/map_geometry.geojson", map_geometry)
+    write_json(output_dir / "views/presentation.json", presentation)
     write_json(output_dir / "research/candidates.json", candidates)
     views = build_views(
         actors,
@@ -2210,6 +2676,8 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         coverage_cells,
         coverage_implications,
         map_geometry,
+        genealogy_anchors,
+        presentation,
     )
     for name, view in views.items():
         write_json(output_dir / f"views/{name}.json", view)
@@ -2252,7 +2720,7 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
             "outcomes": len(demo_outcomes),
             "sources": len(sources),
             "evidence_notes": len(evidence_notes),
-            "historical_anchors": 0,
+            "historical_anchors": len(genealogy_anchors),
             "map_geometry_features": len(map_geometry.get("features", [])),
             "relations": {
                 key: len(value) for key, value in sorted(demo_relations.items())
@@ -2278,6 +2746,16 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
                 for row in demo_episodes + research_episodes
             ),
         },
+        "coverage_implication_display": {
+            "dimensions": len(coverage_implications),
+            "fields_per_dimension": len(COVERAGE_IMPLICATION_FIELDS),
+            "approved_translation_cells": (
+                len(coverage_implications)
+                * len(COVERAGE_IMPLICATION_FIELDS)
+                * len(EPISODE_DISPLAY_LANGUAGES)
+            ),
+            "source_text_fallbacks": 0,
+        },
         "actor_issue_states": {
             "valid_edges": len(demo_actor_issue) + len(research_actor_issue),
             "display_state_counts": dict(sorted(actor_issue_display_counts.items())),
@@ -2294,7 +2772,7 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
                     for key, value in sorted(typed_demo.items())
                 },
                 "case_roles": len(case_roles),
-                "genealogy_anchors": 0,
+                "genealogy_anchors": len(genealogy_anchors),
             },
             "research": {
                 key: len(value) for key, value in sorted(typed_research.items())
@@ -2320,6 +2798,8 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         coverage_cells=coverage_cells,
         case_ids={row["case_id"] for row in read_csv(inputs["legal_cases"])},
         map_geometry=map_geometry,
+        genealogy_anchors=genealogy_anchors,
+        presentation=presentation,
     )
     validation_report = output_dir / "validation_report.md"
     validation_report.write_text(
@@ -2355,7 +2835,9 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
             "views/actors.json",
             "views/pathways.json",
             "views/evidence_coverage.json",
+            "views/time.json",
             "views/global.json",
+            "views/presentation.json",
             "validation_report.md",
         ]
     )
@@ -2368,7 +2850,7 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     build_id = hashlib.sha256(fingerprint_payload).hexdigest()[:16]
     manifest = {
         "artifact": "exploration_system_data_v1",
-        "schema_version": "1.1.0",
+        "schema_version": "1.2.0",
         "as_of_date": ARTIFACT_AS_OF_DATE,
         "build_id": build_id,
         "deterministic": True,

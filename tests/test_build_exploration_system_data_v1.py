@@ -69,6 +69,10 @@ def episode_display_path(root: Path) -> Path:
     return root / "data/metadata/episode_display_trilingual_v1.csv"
 
 
+def coverage_display_path(root: Path) -> Path:
+    return root / "data/metadata/coverage_implication_display_trilingual_v1.json"
+
+
 def rewrite_episode_display_row(
     path: Path,
     episode_id: str,
@@ -199,7 +203,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             {"analytic_candidate_event_pending"},
             {row["review_status"] for row in candidates["episodes"]},
         )
-        self.assertEqual("1.1.0", manifest["schema_version"])
+        self.assertEqual("1.2.0", manifest["schema_version"])
         self.assertEqual(
             {
                 "episodes": 13,
@@ -337,7 +341,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         self.assertNotIn("AI116", active_ids)
         self.assertNotIn("AI038", active_ids)
 
-    def test_builds_four_page_view_models_and_global_layers(self) -> None:
+    def test_builds_page_view_models_and_global_layers(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             output_dir = Path(temp_dir) / "exploration"
             build_exploration_system_data(ROOT, output_dir)
@@ -347,7 +351,15 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             }
 
         self.assertEqual(
-            {"overview", "actors", "pathways", "evidence_coverage", "global"},
+            {
+                "overview",
+                "actors",
+                "pathways",
+                "evidence_coverage",
+                "time",
+                "global",
+                "presentation",
+            },
             set(views),
         )
         self.assertEqual("P1", views["overview"]["view_id"])
@@ -397,6 +409,12 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             },
         )
         self.assertEqual("G1+G2", views["global"]["view_id"])
+        self.assertEqual("P5", views["time"]["view_id"])
+        self.assertEqual(5, len(views["time"]["historical_anchor_ids"]))
+        self.assertEqual(
+            {"p1", "p2", "p3", "p4"},
+            {row["id"] for row in views["presentation"]["time_periods"]},
+        )
 
     def test_packages_map_geometry_for_the_overview_view(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -457,7 +475,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             first_manifest["output_hashes"],
             second_manifest["output_hashes"],
         )
-        self.assertEqual(22, len(first_manifest["input_hashes"]))
+        self.assertEqual(25, len(first_manifest["input_hashes"]))
         self.assertEqual(
             {
                 key: sha256(path)
@@ -466,6 +484,52 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             first_manifest["input_hashes"],
         )
         self.assertEqual(actual_output_hashes, first_manifest["output_hashes"])
+
+    def test_coverage_implications_use_validated_research_semantic_locales(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_dir = Path(temp_dir) / "exploration"
+            manifest = build_exploration_system_data(ROOT, output_dir)
+            view = json.loads(
+                (output_dir / "views/evidence_coverage.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+
+        self.assertEqual(
+            {
+                "dimensions": 6,
+                "fields_per_dimension": 6,
+                "approved_translation_cells": 108,
+                "source_text_fallbacks": 0,
+            },
+            manifest["counts"]["coverage_implication_display"],
+        )
+        self.assertEqual(6, len(view["implications"]))
+        for item in view["implications"]:
+            for field in builder.COVERAGE_IMPLICATION_FIELDS:
+                self.assertEqual(item[field], item[f"{field}_en"])
+                self.assertTrue(item[f"{field}_zh"])
+                self.assertTrue(item[f"{field}_ja"])
+
+    def test_coverage_display_rejects_rewritten_audited_english(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = copy_inputs_to_workspace(Path(temp_dir))
+            path = coverage_display_path(root)
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            payload["dimensions"][0]["fields"]["observed_skew"]["en"] = "rewritten"
+            path.write_text(
+                json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(
+                ValueError,
+                "English must equal the audited source text",
+            ):
+                build_exploration_system_data(
+                    root,
+                    Path(temp_dir) / "exploration",
+                )
 
     def test_typed_relation_collections_match_control_cases(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -522,7 +586,28 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             {row["id"] for row in demo["administrative_records"]},
         )
         self.assertEqual([], demo["relation_leads"])
-        self.assertEqual([], demo["genealogy_anchors"])
+        self.assertEqual(
+            {"LC001", "LC002", "LC003", "LC004", "LC005"},
+            {row["id"] for row in demo["genealogy_anchors"]},
+        )
+        lifecycle_by_id = {row["id"]: row for row in demo["genealogy_anchors"]}
+        self.assertEqual("dissolved", lifecycle_by_id["LC001"]["anchor_type"])
+        self.assertEqual("reorganized", lifecycle_by_id["LC002"]["anchor_type"])
+        self.assertEqual("A019", lifecycle_by_id["LC002"]["successor_actor_id"])
+        self.assertEqual(
+            "last_observed_activity",
+            lifecycle_by_id["LC004"]["anchor_type"],
+        )
+        self.assertEqual(
+            "last_observed_activity",
+            lifecycle_by_id["LC005"]["anchor_type"],
+        )
+        self.assertIn("not evidence of dissolution", lifecycle_by_id["LC004"]["interpretation_limit"])
+        self.assertIn("not evidence of dissolution", lifecycle_by_id["LC005"]["interpretation_limit"])
+        self.assertIn("至少", lifecycle_by_id["LC004"]["confirmed_scope_zh"])
+        self.assertIn("下限", lifecycle_by_id["LC004"]["interpretation_limit_zh"])
+        self.assertIn("再編", lifecycle_by_id["LC002"]["interpretation_limit_ja"])
+        self.assertIn("dissolved", lifecycle_by_id["LC001"]["confirmed_scope_en"])
         self.assertEqual(
             {"F011", "F036", "F040", "F041"},
             {row["id"] for row in demo["typed_event_participation"]},
@@ -539,7 +624,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         typed_rows = [
             row
             for name, rows in demo.items()
-            if name != "case_roles"
+            if name not in {"case_roles", "genealogy_anchors"}
             for row in rows
         ]
         self.assertNotIn("F008", {row["id"] for row in typed_rows})
@@ -564,6 +649,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         self.assertEqual(2, typed_counts["demo"]["aggregate_observations"])
         self.assertEqual(4, typed_counts["demo"]["event_participation"])
         self.assertEqual(27, typed_counts["demo"]["case_roles"])
+        self.assertEqual(5, typed_counts["demo"]["genealogy_anchors"])
 
     def test_typed_relation_research_layer_and_source_refs(self) -> None:
         central = ROOT / "data" / "interim" / "15_funding_or_support_edges_sample_v0.csv"

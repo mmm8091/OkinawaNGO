@@ -4,8 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "data": "python ../../scripts/build_publication_snapshot_v1.py --profile client_preview",
+    "predev": "npm run data",
     "dev": "vite",
+    "prebuild": "npm run data",
     "build": "vite build",
+    "postbuild": "python ../../scripts/stamp_frontend_release_v1.py",
     "test": "node --test tests/*.test.js",
     "preview": "vite preview"
   },

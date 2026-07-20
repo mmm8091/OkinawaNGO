@@ -12,7 +12,10 @@ Status: **PASS**
 - PASS — unique evidence IDs: 49 rows
 - PASS — unique demo episode IDs: 9 rows
 - PASS — unique research episode IDs: 4 rows
+- PASS — unique genealogy anchor IDs: 5 rows
 - PASS — episode layers disjoint: demo=9 research=4
+- PASS — genealogy anchors are reviewed and actor-bounded: 5 reviewed lifecycle rows
+- PASS — bounded genealogy anchors carry explicit gaps: supported_bounded lifecycle rows have confirmed and missing scope
 - PASS — episode display overlay is complete and translation-only: episodes=13 fields=7 languages=3 gaps=0 rewrites=0
 - PASS — unique demo relation IDs within relation type: 380 relation rows
 - PASS — actor-issue references: 141 demo rows
@@ -45,11 +48,12 @@ Status: **PASS**
 - PASS — archive manifest coverage: sources=295
 - PASS — coverage dimensions complete: cells=120
 - PASS — map geometry packaged: features=42
+- PASS — presentation mappings cover current research objects: actor_classes=26 regions=6 periods=4
 
 ## Warnings
 
 - 85 registry actors retain non-human review_status; registry membership is admitted for identity browsing, while their relations remain independently gated.
-- historical_anchors is intentionally empty until NR-04/NR-05 candidates receive human continuity decisions.
+- 5 principal-reviewed lifecycle anchors are exported. They are bounded observations, not a complete post-1972 genealogy.
 - The packaged GeoJSON supports municipality/region rendering, but the 21 place nodes have no approved point coordinates or municipality crosswalk; NR-03 must not invent precise site markers.
 - 13 human-checked event participants are preserved only as typed participation records and never enter actors.json.
 - 8 legacy actor identity references are not central source IDs and remain explicit on registry objects: X001;X002;X003;X008;X009;X010;X011;X012.
@@ -57,7 +61,6 @@ Status: **PASS**
 - 5 legacy X-code references remain explicit on human-reviewed demo rows and are not promoted to central source IDs: X001;X002;X003;X010;X012.
 - 6 legacy typed-relation source references are not central source IDs and stay explicit on the rows: X001;X002;X008;X009;X010;X011.
 - 1 rejected or duplicate funding rows are excluded from every typed relation collection: F008.
-- genealogy_anchors is intentionally empty until NR-04/NR-05 candidates receive human continuity decisions.
 
 ## Build counts
 
@@ -87,7 +90,7 @@ Status: **PASS**
     "actors": 121,
     "episodes": 9,
     "evidence_notes": 49,
-    "historical_anchors": 0,
+    "historical_anchors": 5,
     "issues": 26,
     "map_geometry_features": 42,
     "outcomes": 27,
@@ -133,7 +136,7 @@ Status: **PASS**
       "case_roles": 27,
       "dyadic_relations": 14,
       "event_participation": 4,
-      "genealogy_anchors": 0,
+      "genealogy_anchors": 5,
       "relation_leads": 0
     },
     "excluded": 1,

@@ -115,6 +115,9 @@
 - `data/metadata/coding_schema_v1.md`
 - `docs/nr3_recheck_and_relation_frontend_brief_v1.md`
 - `docs/actor_relation_architecture_v1.md`
+- `docs/research_publication_architecture_v1.md`
+- `docs/research_publication_asset_audit_v1.md`
+- `data/metadata/research_publication_catalog_v1.json`
 - `docs/human_review_task_HR033_legacy_relation_status_v1.md`
 - `docs/human_review_task_HR035_actor_issue_claim_freeze_v1.md`
 - `docs/frontend_actor_issue_state_handoff_v1.md`
@@ -236,10 +239,10 @@
 5. 负责人已批准证据状态与前端展示规则：界面“演示视图”改为“已核视图”；已核层允许 `supported_bounded`，但必须显示已核／缺失字段；研究层增加 candidate／lead。权威规则为 `data/metadata/coding_schema_v1.md`。
 6. 关系架构 v1 已批准：43 行是异质观察，其中 27 行两端为 registry actor、16 行含 place／program／unknown recipient 等非 actor 端点；R8 27 行保持 case-role，不得生成“同案协作边”。实现依据为 `docs/actor_relation_architecture_v1.md`。
 7. HR-033 已完成并合并：标准化的 6 条 dyadic relations＋1 条 aggregate observation 在 `outputs/hr033_integration_v1/`；前端不得把 membership 当 funding，也不得把 R10R029 的 102,000 美元附到 F025。
-8. 类型化关系与 L0/L1 前端已按冻结后数据重生：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。中央关系记录 F036 只作事件记录，R10R029 只作汇总观察。22项 adapter tests、5项 R10 renderer tests 和7项 R1/R2 current-gate tests 通过；五页在1280×900与390×844浏览器复验通过、控制台零错误。全仓124项历史套件仍有19 failures／5 errors，集中在冻结前计数、H1/H2/H3快照、pre-human HR-034 builder 与旧报告 SHA。不得为通过旧断言回退中央数据。中央已有5条可导出 lifecycle 记录（4条为本轮新决定），但 L2 adapter 仍导出0锚点，须作为前端结构缺口修复。
+8. 类型化关系与 L0/L1 前端已按冻结后数据重生：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。L2 已接入 LC001–LC005 五条已核生命周期锚点；LC004/005 只显示最后观察下界。前端分类、地区和时间语义已迁回数据契约，缺文件不再静默为空。
 9. NR-04／NR-05 分别做两个时期的有界线上补缺；结果先进入候选和人工队列。NR-06 统一完成 claim/evidence QA、历史集成决定和已核／研究双层验收。
 10. 既有 HR／报告 gate 保持有效；只有当其直接阻断前端默认 claim 时才按优先级处理，不恢复全面铺开。
 11. 2026-07-20 选题波次第一轮已完成并经交叉审计收紧：H1 只支持 E3/E4 actor–issue 可见层的来源依赖，三源效应约 84% 由 S004 单源驱动，source／actor 删除不是匹配反事实；H2 得到 9 个服务侧 registry 子集与 65 个问责侧候选（18 人审锚点／47 候选锚点），限定小样本中未编码直接跨组组织关系，人物与完整 recipient 均未测；H3 建立 12 条观察、6 条事件级载体和 17 条参与候选，只支持接触／承载路径，传播方向、独立采用、词汇增长与持续共同动员均未确认。三包均 `not_frontend_ready`；统一 JSON 只是模块目录索引，状态 `module_index_ready_observation_exports_gated`。负责人证据阅读关见 `outputs/research_wave_topic_selection_v1/principal_checkpoint_v1.md`。
 12. H2 当前线上 P0 已形成 `outputs/research_wave_h2_service_universe_v1/`：完整保存 MCIPAC 页面显示的 82 个 PO（81 active／1 inactive，但目录跨 Okinawa／Fuji／Iwakuni且不是 NGO census），提出 4 个高价值服务侧 actor 候选、2 个结构 defer，整理 55 条公开人物—职务—时间观察、10 组人物 crosswalk、9/9 服务侧立场检索、18/18 问责侧反向接口检索和 6 条一般福利接口候选。当前候选修正为“服务／慈善可进入一般福利—行政 NPO，但在有界公开语料中尚未观察到与基地问责倡议的直接组织接口”；人物共享、完整 recipient、历史机制和所有新增身份／关系仍待人审，中央表与前端均未改。
 13. 前端 actor–issue 已按 `141/142/283` 正式重生，build `4913ff70fa40dfcb`；13 个 episode 的7项内容均有中／日／英显示字段（273格、0回退），TE10–TE13 仍留研究层。26项 adapter、2项前端语言测试与 production build 通过，路径页三语及控制台经浏览器复验。
-14. 冻结后线上补强按 `docs/post_freeze_online_enrichment_plan_v1.md` 执行。先修 LC001–LC005 的 L2 导出与5张冻结图，再做 NR-05、转译负案例；H2/H3 的资料工作可由两个 session 并行，负责人解释检查点分别进行。HR-035 Batch 2 回传见 `docs/human_review_return_HR035_batch02_v1.md`；AI157、AI158 转为后续在线补源线索。
+14. 研究发布架构已完成 core-surface 复验整改：26项 catalog 分为8个完整对象、4个有限事实表面、5个无公开adapter模块、5个需继续研究、4个永久退役。公开 profile 按文件／JSON pointer 投影，不再发布混合 `relations.json`／`candidates.json` 或未消费旧 views；channel、snapshot、object envelope、Git/source receipt 均有硬校验。下一步先部署当前 `dist/`，再从9个仍缺完整adapter的模块中优先做R8法律与R9公投。

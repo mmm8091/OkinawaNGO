@@ -1,32 +1,112 @@
 import { useMemo, useState } from "react";
-import { ClockCounterClockwise } from "@phosphor-icons/react";
-import { labelOf } from "../lib/data.js";
+import { ClockCounterClockwise, Repeat } from "@phosphor-icons/react";
+import { labelOf, localizedFieldOf } from "../lib/data.js";
 import { tr, useLang } from "../lib/labels.js";
 import { tu } from "../lib/ui_strings.js";
-import { ChartHelp, PendingBadge } from "../components/ui.jsx";
+import {
+  ChartHelp,
+  PendingBadge,
+  SegmentedControl,
+  SourceChips,
+} from "../components/ui.jsx";
+import { RepeatParticipationExhibit } from "../components/RepeatParticipationExhibit.jsx";
 
 const yearOf = (value) => String(value || "").match(/\d{4}/)?.[0] || null;
 
-// Period anchors from the original Phase-1 plan (DOCX §3.2): plan-defined
-// scopes, not data claims.
-const PERIODS = [
-  { id: "p1", from: 1972, to: 1997, range: "1972–1997" },
-  { id: "p2", from: 1998, to: 2012, range: "1998–2012" },
-  { id: "p3", from: 2013, to: 2019, range: "2013–2019" },
-  { id: "p4", from: 2020, to: 2099, range: "2020–现在" },
-];
-
-const periodOf = (year) =>
-  PERIODS.find((period) => {
+const periodOf = (year, periods) =>
+  periods.find((period) => {
     const value = Number(year);
     return value >= period.from && value <= period.to;
-  }) || PERIODS[0];
+  }) || periods[0];
+
+function LifecycleAnchorCard({ anchor, actorById, onOpenActor, lang }) {
+  const actor = actorById.get(anchor.actor_id);
+  const successor = actorById.get(anchor.successor_actor_id);
+  const sourceUrls = anchor.direct_source_urls || [];
+  const sourceIds = anchor.source_ids || [];
+  const confirmedScope = localizedFieldOf(anchor, "confirmed_scope", lang);
+  const missingScope = localizedFieldOf(anchor, "missing_scope", lang);
+  const interpretationLimit = localizedFieldOf(
+    anchor,
+    "interpretation_limit",
+    lang,
+  );
+
+  return (
+    <article className={`genealogy-card ${anchor.anchor_type}`}>
+      <header>
+        <span className="genealogy-date">{anchor.event_date || "—"}</span>
+        <span className={`claim-chip ${anchor.claim_status}`}>
+          {tr(anchor.claim_status, lang)}
+        </span>
+      </header>
+      <div className="genealogy-route">
+        <button
+          type="button"
+          disabled={!actor}
+          onClick={() => actor && onOpenActor(actor.id)}
+        >
+          {actor ? labelOf(actor) : anchor.display_label || anchor.actor_id}
+        </button>
+        {successor && (
+          <>
+            <span aria-hidden="true">→</span>
+            <button type="button" onClick={() => onOpenActor(successor.id)}>
+              {labelOf(successor)}
+            </button>
+          </>
+        )}
+      </div>
+      <strong className="genealogy-status">
+        {tu(`lifecycle.${anchor.anchor_type}`, lang)}
+      </strong>
+      {confirmedScope && (
+        <p className="genealogy-confirmed">
+          <small>{tu("relation.confirmed", lang)}</small>
+          {confirmedScope}
+        </p>
+      )}
+      {missingScope && (
+        <p className="genealogy-missing">
+          <small>{tu("relation.missing", lang)}</small>
+          {missingScope}
+        </p>
+      )}
+      {interpretationLimit && (
+        <p className="genealogy-limit">{interpretationLimit}</p>
+      )}
+      {(sourceIds.length > 0 || sourceUrls.length > 0) && (
+        <div className="genealogy-sources">
+          <span>{tu("lifecycle.sources", lang)}</span>
+          {sourceIds.length > 0 && <SourceChips ids={sourceIds} />}
+          {sourceUrls.map((url, index) => (
+            <a
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              key={url}
+              title={url}
+            >
+              {tu("lifecycle.directSource", lang).replace(
+                "{n}",
+                String(index + 1),
+              )}
+            </a>
+          ))}
+        </div>
+      )}
+    </article>
+  );
+}
 
 export function TimePage({ data, onOpenActor, layer, candidates }) {
   const rows = data.relations.event_participation;
   const research = layer === "research" && candidates;
   const pendingRows = research ? candidates.relations.event_participation : [];
   const lang = useLang();
+  const repeatExhibit = data.exhibits?.["PUB-MR-005"];
+  const [viewMode, setViewMode] = useState("timeline");
+  const periods = data.presentation.time_periods;
   const actorById = useMemo(
     () => new Map(data.actors.map((actor) => [actor.id, actor])),
     [data.actors],
@@ -73,7 +153,7 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
   const maxCount = Math.max(...years.map(([, count]) => count), 1);
   const yearEvents = events.filter((event) => event.year === year);
   const registryRowCount = rows.filter((row) => row.is_registry_actor).length;
-  const anchorCount = data.historicalAnchors.length;
+  const anchors = data.genealogyAnchors;
 
   return (
     <main className="workspace time-workspace">
@@ -87,6 +167,25 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
             </ChartHelp>
           </h1>
         </div>
+        {repeatExhibit && (
+          <SegmentedControl
+            label={tu("time.viewAria", lang)}
+            value={viewMode}
+            onChange={setViewMode}
+            items={[
+              {
+                id: "timeline",
+                label: tu("time.viewTimeline", lang),
+                icon: ClockCounterClockwise,
+              },
+              {
+                id: "repeat",
+                label: tu("time.viewRepeat", lang),
+                icon: Repeat,
+              },
+            ]}
+          />
+        )}
         <div className="page-summary">
           <ClockCounterClockwise size={18} />
           {tu("time.summary", lang)
@@ -97,10 +196,21 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
             tu("time.pendingSuffix", lang).replace("{p}", pendingRows.length)}
         </div>
       </div>
-      <div className="time-body">
+      {viewMode === "repeat" && repeatExhibit ? (
+        <div className="published-exhibit-scroll">
+          <RepeatParticipationExhibit
+            exhibit={repeatExhibit}
+            lang={lang}
+            onOpenActor={onOpenActor}
+          />
+        </div>
+      ) : (
+        <div className="time-body">
         <div className="time-axis">
-          {PERIODS.map((period) => {
-            const periodYears = years.filter(([value]) => periodOf(value) === period);
+          {periods.map((period) => {
+            const periodYears = years.filter(
+              ([value]) => periodOf(value, periods) === period,
+            );
             return (
               <section className="period-block" key={period.id}>
                 <header>
@@ -141,9 +251,26 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
         <section className="genealogy-band">
           <header>
             <span>{tu("time.genealogy", lang)}</span>
-            <small>{tu("time.genealogySub", lang)}</small>
+            <small>
+              {tu("time.genealogyCount", lang).replace(
+                "{n}",
+                String(anchors.length),
+              )}
+            </small>
           </header>
-          {anchorCount ? null : (
+          {anchors.length > 0 ? (
+            <div className="genealogy-list">
+              {anchors.map((anchor) => (
+                <LifecycleAnchorCard
+                  anchor={anchor}
+                  actorById={actorById}
+                  onOpenActor={onOpenActor}
+                  lang={lang}
+                  key={anchor.id}
+                />
+              ))}
+            </div>
+          ) : (
             <div className="genealogy-gap">
               <strong>{tu("time.gapTitle", lang)}</strong>
               <p>{tu("time.gapText", lang)}</p>
@@ -215,7 +342,8 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
             );
           })}
         </div>
-      </div>
+        </div>
+      )}
     </main>
   );
 }

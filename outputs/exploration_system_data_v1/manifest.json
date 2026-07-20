@@ -1,7 +1,7 @@
 {
   "artifact": "exploration_system_data_v1",
   "as_of_date": "2026-07-20",
-  "build_id": "4913ff70fa40dfcb",
+  "build_id": "8f8b243cea8b5e62",
   "counts": {
     "actor_issue_states": {
       "display_state_counts": {
@@ -27,7 +27,7 @@
       "actors": 121,
       "episodes": 9,
       "evidence_notes": 49,
-      "historical_anchors": 0,
+      "historical_anchors": 5,
       "issues": 26,
       "map_geometry_features": 42,
       "outcomes": 27,
@@ -73,7 +73,7 @@
         "case_roles": 27,
         "dyadic_relations": 14,
         "event_participation": 4,
-        "genealogy_anchors": 0,
+        "genealogy_anchors": 5,
         "relation_leads": 0
       },
       "excluded": 1,
@@ -92,6 +92,7 @@
   "input_hashes": {
     "actor_aliases": "e1e8160d33aa975d6374ba38f8490e182b832a96b7bbed285cd94d29b522b52d",
     "actor_issue": "12f54b8b9bb16597814446ab69bfab2eca4ee72619cf62733744378a0f90a10c",
+    "actor_lifecycle": "5ea3762ca3deb67fcb74e1e7abfe18f7c891c49c29df87decbf7b79bbe6c36bf",
     "actor_place": "dc933a89896fffd336a26a9a5d198bb98490dbb2ac9a84610242de714721e082",
     "actors": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4",
     "archive_manifest": "1e57f7e7df749b5ed0714994dc4176b69e7ad51c993c058198c4fd9bdf180d78",
@@ -107,6 +108,7 @@
     "legal_roles": "b319e01e57d0d00e1e6a47d1af4ac28562aa90d893e5a24b9382ab825d842b0d",
     "map_geometry": "943b2bb21015d941038c94ccc411f95e6cd5c415441f7741537f71af0eb102da",
     "places": "1dfd9df377a824689fdc9e3ad74362ad3a7c67b59d8f6f1ab6523f91af624e0f",
+    "presentation_rules": "58cadfce61854f857a0c90b0e310fdf13a6ef5796f9b9c9e681c5652e623cf5b",
     "source_crosswalk": "4bd059205fbf0c07efae7ccdee2deb3fbd1cf1d692a4405955b92402b18dadb1",
     "sources": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902",
     "strict_triples": "ed643de877e09c552a67320609e22900b55f4f679b12da7faf33dadfb379a3e4",
@@ -121,8 +123,8 @@
     "demo/dyadic_relations.json": "cbc23a402698bb7e993f1c1a512bcecd8f51a4f3bdd33fdca0281c1baa147b44",
     "demo/episodes.json": "e5e9fcb3cf764ba77e50518dcb5a5df6de903cd20b881bf4757a4c624de3c62c",
     "demo/evidence.json": "7513c5de77763103e72657fb01ef2800dc89be8d1d61fa4200c14a1e413e660e",
-    "demo/genealogy_anchors.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-    "demo/historical_anchors.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "demo/genealogy_anchors.json": "6a4bdc7adc5363a68cf3fbc0343623c541b88ba0b86a8f86691b6493e1c58b55",
+    "demo/historical_anchors.json": "6a4bdc7adc5363a68cf3fbc0343623c541b88ba0b86a8f86691b6493e1c58b55",
     "demo/issues.json": "654b5da4a2e68739ef4afd72919f8480d7393dacf796b5e820e6446debaafcb4",
     "demo/map_geometry.geojson": "281304814daf0b9960156a16026a0f55228963dff9d306b73017691bbe07d265",
     "demo/outcomes.json": "9824c7f4fa16bd5e0c17bbb38a1f51d5486a71b4d7226e4eddc5a2396c8032f2",
@@ -132,18 +134,20 @@
     "demo/typed_event_participation.json": "94588532f0a026278d70baf52c947011553e773bebaa7b6224f5afa45f8e082e",
     "demo/venues.json": "785f877b1ad26850f542fd82d6ebf47d92dd76d3b46c61f5d13ec40642bb32e9",
     "research/candidates.json": "7ec7f87aa97767a4debc91e2da6e9257f716ba39667039367b37d87ebc7cf2cb",
-    "validation_report.md": "69a073be003d5ce5f3dc304c839463428e23aae016b3e7e156e8e2f9fcf4280a",
+    "validation_report.md": "d990f43c014ae8db8f3f970593baea99d604ad267823dfaf2bda0597c9c3e295",
     "views/actors.json": "f4861dbc56474774357b8a91f8c2a143e880cdafb47f2bedba57e45249d9e4a8",
     "views/evidence_coverage.json": "627f910c13bb06a7a8a9e89434c8f498351bcfba3a71ee1ab7f3b46e6d189b4d",
-    "views/global.json": "b5aefdd8bab9d3d5542ff3280cd3626ca983f9351ebd671d959719bd75b05150",
-    "views/overview.json": "f51bd190de01d0c4476192747f0a9ae393ac6a18d6b383f8d53b6e8c51ecf99c",
-    "views/pathways.json": "4e719db64017f0023068428024f57f510c8834824ab6691a0a848eed09513358"
+    "views/global.json": "f57bca9decb96e6a02d1b733b20f01fde83094a5b238e6a9dad5592000057ab7",
+    "views/overview.json": "a6827412eab490e4062138b46f505c8c9c68fdfbb6963299a1eda2ebbb576c6c",
+    "views/pathways.json": "4e719db64017f0023068428024f57f510c8834824ab6691a0a848eed09513358",
+    "views/presentation.json": "3f1073c2b40f7a7ebe3cfd02becb0c28dcdffd3fcf77334cb0f914e199d2eaed",
+    "views/time.json": "8d35b3d9419031cd59cd9814e474b05c6e22e231667435c3d684d46307c3b9d0"
   },
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "source_of_truth": "central research tables; derived outputs never write back",
   "validation": {
     "error_count": 0,
     "status": "pass",
-    "warning_count": 10
+    "warning_count": 9
   }
 }

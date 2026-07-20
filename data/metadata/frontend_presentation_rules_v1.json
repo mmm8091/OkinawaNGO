@@ -1,0 +1,137 @@
+{
+  "schema_version": "frontend_presentation_rules_v1",
+  "actor_class_groups": [
+    {
+      "id": "civic",
+      "color": "#2b7f80",
+      "actor_classes": [
+        "local_civic_actor",
+        "domestic_japan_ngo",
+        "citizen_network",
+        "citizen_group",
+        "executive_committee",
+        "local_npo",
+        "womens_or_human_rights_ngo",
+        "womens_or_community_organization",
+        "womens_organization"
+      ]
+    },
+    {
+      "id": "international",
+      "color": "#bd547c",
+      "actor_classes": [
+        "international_advocacy_actor",
+        "international_ngo",
+        "local_international_cooperation_ngo",
+        "media_or_advocacy_actor"
+      ]
+    },
+    {
+      "id": "legal",
+      "color": "#55756b",
+      "actor_classes": [
+        "lawyers_network"
+      ]
+    },
+    {
+      "id": "labor",
+      "color": "#8a6c98",
+      "actor_classes": [
+        "labor_or_education_union",
+        "labor_union_federation",
+        "labor_union"
+      ]
+    },
+    {
+      "id": "service",
+      "color": "#6b7fa3",
+      "actor_classes": [
+        "base_community_service_actor",
+        "base_spouse_charity_network",
+        "base_spouse_club"
+      ]
+    },
+    {
+      "id": "public",
+      "color": "#8d6c57",
+      "actor_classes": [
+        "public_institution_partner",
+        "public_diplomacy_or_exchange_actor",
+        "public_diplomacy_grant_program"
+      ]
+    },
+    {
+      "id": "resource",
+      "color": "#dc9a35",
+      "actor_classes": [
+        "local_business_sponsor",
+        "corporate_sponsor",
+        "funder_or_intermediary"
+      ]
+    },
+    {
+      "id": "unknown",
+      "color": "#9aa6a8",
+      "actor_classes": []
+    }
+  ],
+  "regions": [
+    {
+      "id": "all",
+      "color": "#2b7f80"
+    },
+    {
+      "id": "okinawa",
+      "color": "#2b7f80"
+    },
+    {
+      "id": "miyako",
+      "color": "#dc9a35"
+    },
+    {
+      "id": "yaeyama",
+      "color": "#bd547c"
+    },
+    {
+      "id": "other",
+      "color": "#9baeb3"
+    },
+    {
+      "id": "sakishima",
+      "color": "#c9854e"
+    }
+  ],
+  "default_place_display_region": "okinawa",
+  "place_display_regions": {
+    "P011": "yaeyama",
+    "P012": "yaeyama",
+    "P013": "miyako",
+    "P021": "sakishima"
+  },
+  "time_periods": [
+    {
+      "id": "p1",
+      "from": 1972,
+      "to": 1997,
+      "range": "1972–1997"
+    },
+    {
+      "id": "p2",
+      "from": 1998,
+      "to": 2012,
+      "range": "1998–2012"
+    },
+    {
+      "id": "p3",
+      "from": 2013,
+      "to": 2019,
+      "range": "2013–2019"
+    },
+    {
+      "id": "p4",
+      "from": 2020,
+      "to": 2099,
+      "range": "2020–present"
+    }
+  ]
+}

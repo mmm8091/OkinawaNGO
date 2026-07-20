@@ -27,6 +27,7 @@ export function ActorPanel({
   aggregateObservations,
   typedEventParticipation,
   caseRoles,
+  presentation,
 }) {
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const research = layer === "research" && candidates;
@@ -52,7 +53,7 @@ export function ActorPanel({
     ? candidates.relations.actor_place.filter((edge) => edge.actor_id === actor?.id)
     : [];
   const issueById = new Map(issues.map((issue) => [issue.id, issue]));
-  const groupId = actorClassGroup(actor?.actor_class);
+  const groupId = actorClassGroup(actor?.actor_class, presentation);
 
   if (!actor) {
     return (
@@ -69,7 +70,9 @@ export function ActorPanel({
       <div className="detail-eyebrow">
         <span
           className="region-swatch"
-          style={{ background: actorClassMeta(actor.actor_class).color }}
+          style={{
+            background: actorClassMeta(actor.actor_class, presentation).color,
+          }}
         />
         {tu(`classGroup.${groupId}`, lang)}
       </div>

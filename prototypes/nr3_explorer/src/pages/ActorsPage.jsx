@@ -8,28 +8,6 @@ import { ActorCanvas } from "../components/ActorCanvas.jsx";
 import { RelationCanvas } from "../components/RelationCanvas.jsx";
 import { ActorPanel } from "../components/ActorPanel.jsx";
 
-const GROUP_ORDER = [
-  "civic",
-  "international",
-  "legal",
-  "labor",
-  "service",
-  "public",
-  "resource",
-  "unknown",
-];
-
-const GROUP_COLORS = {
-  civic: "#2b7f80",
-  international: "#bd547c",
-  legal: "#55756b",
-  labor: "#8a6c98",
-  service: "#6b7fa3",
-  public: "#8d6c57",
-  resource: "#dc9a35",
-  unknown: "#9aa6a8",
-};
-
 export function ActorsPage({ data, layer, candidates }) {
   const lang = useLang();
   const firstReviewedActor =
@@ -85,11 +63,13 @@ export function ActorsPage({ data, layer, candidates }) {
   }, [data.relations.actor_issue, candidates, layer]);
   const classCounts = activeActors.reduce((counts, actor) => {
     if (!scopedActorIds.has(actor.id)) return counts;
-    const group = actorClassGroup(actor.actor_class);
+    const group = actorClassGroup(actor.actor_class, data.presentation);
     counts[group] = (counts[group] || 0) + 1;
     return counts;
   }, {});
-  const classes = GROUP_ORDER.filter((group) => classCounts[group]);
+  const classes = data.presentation.actor_class_groups
+    .map((group) => group.id)
+    .filter((group) => classCounts[group]);
   const edgelessNote =
     layer === "research" && activeActors.length > scopedActorIds.size
       ? tu("actors.edgeless", lang).replace(
@@ -163,7 +143,14 @@ export function ActorsPage({ data, layer, candidates }) {
                       )}
                     </strong>
                     <small>
-                      {actor.id} · {tu(`classGroup.${actorClassGroup(actor.actor_class)}`, lang)}
+                      {actor.id} ·{" "}
+                      {tu(
+                        `classGroup.${actorClassGroup(
+                          actor.actor_class,
+                          data.presentation,
+                        )}`,
+                        lang,
+                      )}
                     </small>
                   </button>
                 ))}
@@ -219,7 +206,13 @@ export function ActorsPage({ data, layer, candidates }) {
                 .filter((id) => id !== "unknown")
                 .map((id) => (
                   <span key={id}>
-                    <i style={{ background: GROUP_COLORS[id] }} />
+                    <i
+                      style={{
+                        background: data.presentation.actor_class_groups.find(
+                          (group) => group.id === id,
+                        )?.color,
+                      }}
+                    />
                     {tu(`classGroup.${id}`, lang)}
                   </span>
                 ))}
@@ -245,6 +238,7 @@ export function ActorsPage({ data, layer, candidates }) {
               layer={layer}
               candidates={candidates}
               scopeNote={edgelessNote}
+              presentation={data.presentation}
             />
           ) : (
             <RelationCanvas
@@ -256,6 +250,7 @@ export function ActorsPage({ data, layer, candidates }) {
               setSelectedActor={setSelectedActor}
               search={search}
               classFilter={classFilter}
+              presentation={data.presentation}
             />
           )}
         </section>
@@ -280,6 +275,7 @@ export function ActorsPage({ data, layer, candidates }) {
           aggregateObservations={data.aggregateObservations}
           typedEventParticipation={data.typedEventParticipation}
           caseRoles={data.caseRoles}
+          presentation={data.presentation}
         />
       </div>
     </main>

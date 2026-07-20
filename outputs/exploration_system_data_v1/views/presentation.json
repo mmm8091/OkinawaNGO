@@ -1,0 +1,165 @@
+{
+  "actor_class_groups": [
+    {
+      "actor_classes": [
+        "local_civic_actor",
+        "domestic_japan_ngo",
+        "citizen_network",
+        "citizen_group",
+        "executive_committee",
+        "local_npo",
+        "womens_or_human_rights_ngo",
+        "womens_or_community_organization",
+        "womens_organization"
+      ],
+      "color": "#2b7f80",
+      "id": "civic"
+    },
+    {
+      "actor_classes": [
+        "international_advocacy_actor",
+        "international_ngo",
+        "local_international_cooperation_ngo",
+        "media_or_advocacy_actor"
+      ],
+      "color": "#bd547c",
+      "id": "international"
+    },
+    {
+      "actor_classes": [
+        "labor_or_education_union",
+        "labor_union_federation",
+        "labor_union"
+      ],
+      "color": "#8a6c98",
+      "id": "labor"
+    },
+    {
+      "actor_classes": [
+        "lawyers_network"
+      ],
+      "color": "#55756b",
+      "id": "legal"
+    },
+    {
+      "actor_classes": [
+        "public_institution_partner",
+        "public_diplomacy_or_exchange_actor",
+        "public_diplomacy_grant_program"
+      ],
+      "color": "#8d6c57",
+      "id": "public"
+    },
+    {
+      "actor_classes": [
+        "local_business_sponsor",
+        "corporate_sponsor",
+        "funder_or_intermediary"
+      ],
+      "color": "#dc9a35",
+      "id": "resource"
+    },
+    {
+      "actor_classes": [
+        "base_community_service_actor",
+        "base_spouse_charity_network",
+        "base_spouse_club"
+      ],
+      "color": "#6b7fa3",
+      "id": "service"
+    },
+    {
+      "actor_classes": [],
+      "color": "#9aa6a8",
+      "id": "unknown"
+    }
+  ],
+  "actor_class_to_group": {
+    "base_community_service_actor": "service",
+    "base_spouse_charity_network": "service",
+    "base_spouse_club": "service",
+    "citizen_group": "civic",
+    "citizen_network": "civic",
+    "corporate_sponsor": "resource",
+    "domestic_japan_ngo": "civic",
+    "executive_committee": "civic",
+    "funder_or_intermediary": "resource",
+    "international_advocacy_actor": "international",
+    "international_ngo": "international",
+    "labor_or_education_union": "labor",
+    "labor_union": "labor",
+    "labor_union_federation": "labor",
+    "lawyers_network": "legal",
+    "local_business_sponsor": "resource",
+    "local_civic_actor": "civic",
+    "local_international_cooperation_ngo": "international",
+    "local_npo": "civic",
+    "media_or_advocacy_actor": "international",
+    "public_diplomacy_grant_program": "public",
+    "public_diplomacy_or_exchange_actor": "public",
+    "public_institution_partner": "public",
+    "womens_or_community_organization": "civic",
+    "womens_or_human_rights_ngo": "civic",
+    "womens_organization": "civic"
+  },
+  "default_place_display_region": "okinawa",
+  "place_display_regions": {
+    "P011": "yaeyama",
+    "P012": "yaeyama",
+    "P013": "miyako",
+    "P021": "sakishima"
+  },
+  "regions": [
+    {
+      "color": "#2b7f80",
+      "id": "all"
+    },
+    {
+      "color": "#dc9a35",
+      "id": "miyako"
+    },
+    {
+      "color": "#2b7f80",
+      "id": "okinawa"
+    },
+    {
+      "color": "#9baeb3",
+      "id": "other"
+    },
+    {
+      "color": "#c9854e",
+      "id": "sakishima"
+    },
+    {
+      "color": "#bd547c",
+      "id": "yaeyama"
+    }
+  ],
+  "schema_version": "frontend_presentation_rules_v1",
+  "time_periods": [
+    {
+      "from": 1972,
+      "id": "p1",
+      "range": "1972–1997",
+      "to": 1997
+    },
+    {
+      "from": 1998,
+      "id": "p2",
+      "range": "1998–2012",
+      "to": 2012
+    },
+    {
+      "from": 2013,
+      "id": "p3",
+      "range": "2013–2019",
+      "to": 2019
+    },
+    {
+      "from": 2020,
+      "id": "p4",
+      "range": "2020–present",
+      "to": 2099
+    }
+  ]
+}

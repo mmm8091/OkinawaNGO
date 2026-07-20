@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0.0",
+  "languages": ["zh", "ja", "en"],
+  "title": "Coverage-bias implication display text (trilingual)",
+  "purpose": "Display overlay for the six coverage-bias implications in outputs/coverage_audit_v1/coverage_bias_implications_v1.csv. It adds translations only and does not alter the underlying audit observations or boundaries.",
+  "source": {
+    "path": "outputs/coverage_audit_v1/coverage_bias_implications_v1.csv",
+    "rows": ["D1", "D2", "D3", "D4", "D5", "D6"],
+    "english_fidelity": "Each English value is verbatim from its mapped source CSV field. interpretation_limit maps to the source field interpretation_boundary."
+  },
+  "lookup_contract": {
+    "record_key": "dimension_id",
+    "field_keys": [
+      "observed_skew",
+      "visibility_mechanism",
+      "impact_on_q1_q3",
+      "interpretation_limit",
+      "online_gap_action",
+      "local_gap_action"
+    ],
+    "language_keys": ["zh", "ja", "en"],
+    "lookup_steps": [
+      "Find the dimensions array item whose dimension_id equals the requested dimension_id.",
+      "Read item.fields[field_key][language_key]."
+    ]
+  },
+  "field_definitions": {
+    "observed_skew": "Observed coverage imbalance stated in the source audit.",
+    "visibility_mechanism": "Conservative account of the documented visibility mechanism.",
+    "impact_on_q1_q3": "Bounded consequence for the project questions or modules, retaining the source wording.",
+    "interpretation_limit": "Interpretive prohibition or limit; mapped from source field interpretation_boundary.",
+    "online_gap_action": "Bounded online follow-up action for the documented gap.",
+    "local_gap_action": "Bounded local-material follow-up action for the documented gap."
+  },
+  "dimensions": [
+    {
+      "dimension_id": "D1",
+      "fields": {
+        "observed_skew": {
+          "zh": "2020年至今为 170/295（57.6%）；1972–1997年为 4/295（1.4%）。",
+          "ja": "2020年以降は 170/295（57.6%）、1972～1997年は 4/295（1.4%）。",
+          "en": "2020-current 170/295 (57.6%); 1972-1997 4/295 (1.4%)."
+        },
+        "visibility_mechanism": {
+          "zh": "当前的官方和组织网页较易留存且可检索；早期非正式团体及更名组织留下的网络痕迹较薄。",
+          "ja": "現在の公的・団体ページは残存し検索可能である一方、初期の非公式団体や名称変更した組織はウェブ上の痕跡がより乏しい。",
+          "en": "Current official and organization pages survive and are searchable; early informal groups and renamed organizations leave thinner web traces."
+        },
+        "impact_on_q1_q3": {
+          "zh": "Q1/Q2 容易成为偏向当下的名录／分类；关于组织生态的纵向主张最为薄弱。",
+          "ja": "Q1/Q2 は現在に偏った目録・分類になりやすく、組織生態に関する長期的な主張が最も弱くなる。",
+          "en": "Q1/Q2 become a present-biased inventory/classification; longitudinal claims about organizational ecology are weakest."
+        },
+        "interpretation_limit": {
+          "zh": "不得将来源年份的集中度解读为组织或动员的增长。",
+          "ja": "資料年次の集中を、組織数または動員の増加と解釈してはならない。",
+          "en": "Do not read source-year concentration as growth in organizations or mobilization."
+        },
+        "online_gap_action": {
+          "zh": "按旧称检索网络档案、组织沿革、法院／法律数据库及已数字化报刊索引。",
+          "ja": "旧称を用いてウェブアーカイブ、団体沿革、裁判・法令データベース、デジタル化された新聞索引を検索する。",
+          "en": "Search web archives, historical organization histories, court/legal databases and digitized newspaper indexes by former names."
+        },
+        "local_gap_action": {
+          "zh": "调取1972–2012年的互联网出现前通讯、地方报刊馆藏、传单和组织档案。",
+          "ja": "1972～2012年について、ウェブ以前の会報、地方紙の所蔵、チラシ、団体資料を収集する。",
+          "en": "Retrieve pre-web newsletters, local newspaper holdings, flyers and organization files for 1972-2012."
+        }
+      }
+    },
+    {
+      "dimension_id": "D2",
+      "fields": {
+        "observed_skew": {
+          "zh": "边野古 45 加上冲绳县 37，共为 82/130 条 actor-place 观察。",
+          "ja": "辺野古 45件と沖縄県 37件を合わせると、actor-place 観察は 82/130件となる。",
+          "en": "Henoko 45 plus Okinawa Prefecture 37 = 82/130 actor-place observations."
+        },
+        "visibility_mechanism": {
+          "zh": "边野古持续产生诉讼、声明和 NGO 记录；宽泛的“冲绳县”编码吸收了缺少更精确地点的记录。",
+          "ja": "辺野古では訴訟、声明、NGO記録が継続的に生じる一方、より正確な地点を欠く記録は広域の「沖縄県」コードに吸収される。",
+          "en": "Henoko produces durable litigation, statement and NGO records; broad prefecture coding absorbs records without a more precise location."
+        },
+        "impact_on_q1_q3": {
+          "zh": "Q3 以及边野古、普天间、嘉手纳、与那国、石垣和宫古之间的比较并不对称。",
+          "ja": "Q3 と、辺野古、普天間、嘉手納、与那国、石垣、宮古の比較は対称的ではない。",
+          "en": "Q3 and comparisons among Henoko, Futenma, Kadena, Yonaguni, Ishigaki and Miyako are not symmetric."
+        },
+        "interpretation_limit": {
+          "zh": "地点计数是观察到的 actor-place 配对，而不是事件频率、地方支持度或组织密度。",
+          "ja": "地点数は観察された actor-place の組合せであり、イベント頻度、地域の支持、組織密度を示すものではない。",
+          "en": "Place counts are observed actor-place pairs, not event frequency, local support or organizational density."
+        },
+        "online_gap_action": {
+          "zh": "深化边野古以外的市町村会议记录、地方官方记录，以及地点特定的组织／活动检索。",
+          "ja": "辺野古以外について、市町村議事録、地方公的記録、地点別の団体・イベント検索を深める。",
+          "en": "Deepen municipal minutes, local official records and place-specific organization/event searches outside Henoko."
+        },
+        "local_gap_action": {
+          "zh": "优先调取先岛及基地邻接地区的地方报刊档案、议会记录、公投材料和实体公告。",
+          "ja": "先島および基地隣接地域の地方紙アーカイブ、議会記録、住民投票資料、紙媒体の告知を優先する。",
+          "en": "Prioritize Sakishima and base-adjacent local newspaper archives, council records, referendum materials and physical notices."
+        }
+      }
+    },
+    {
+      "dimension_id": "D3",
+      "fields": {
+        "observed_skew": {
+          "zh": "冲绳本地 actor 为 57/121（47.1%）；名录可见性集中于市民网络／团体及网络可见的国内／国际 NGO。",
+          "ja": "沖縄地元の actor は 57/121（47.1%）であり、レジストリ上の可視性は市民ネットワーク・団体とウェブで可視的な国内・国際NGOに集中している。",
+          "en": "Okinawa-local actors are 57/121 (47.1%); registry visibility is concentrated in citizen networks/groups and web-visible domestic/international NGOs."
+        },
+        "visibility_mechanism": {
+          "zh": "具名、法人化或网络化的 actor 比短期委员会、非正式邻里团体和旧称更容易识别。",
+          "ja": "名称が明示され、法人化またはネットワーク化された actor は、短命の委員会、非公式の近隣団体、旧称より識別しやすい。",
+          "en": "Named, incorporated or networked actors are easier to identify than short-lived committees, informal neighborhood groups and legacy names."
+        },
+        "impact_on_q1_q3": {
+          "zh": "Q1/Q2 及 R1 可能高估持续性强／网络化的组织形式；R10/R11 层为有意抽样，不能视为完整部门。",
+          "ja": "Q1/Q2 とR1は、持続的・ネットワーク化された形態を過大に示す可能性がある。R10/R11層は意図的に抽出されたものであり、完全なセクターとして扱えない。",
+          "en": "Q1/Q2 and R1 may overstate durable/networked forms; R10/R11 layers are deliberately sampled and cannot be treated as complete sectors."
+        },
+        "interpretation_limit": {
+          "zh": "这121个 actor 是按价值取向构建的工作名录，不是普查，也不是功能总体分布。",
+          "ja": "121の actor は価値駆動型の作業用レジストリであり、センサスでも機能別母集団分布でもない。",
+          "en": "The 121 actors are a value-driven working registry, not a census or a functional population distribution."
+        },
+        "online_gap_action": {
+          "zh": "为低可见功能形态核查别名、失效网站、名录、会员页面和活动名单。",
+          "ja": "可視性の低い機能形態について、別名、閉鎖済みサイト、ディレクトリ、会員ページ、イベント一覧を照合する。",
+          "en": "Resolve aliases, defunct sites, directories, membership pages and event lists for under-visible functional forms."
+        },
+        "local_gap_action": {
+          "zh": "通过地方馆藏核验临时委员会、邻里团体、旧称、延续性和代表人。",
+          "ja": "地方所蔵資料を通じて、臨時委員会、近隣団体、旧称、継続性、代表者を確認する。",
+          "en": "Verify temporary committees, neighborhood groups, former names, continuity and representatives through local holdings."
+        }
+      }
+    },
+    {
+      "dimension_id": "D4",
+      "fields": {
+        "observed_skew": {
+          "zh": "基地政治、环境和跨国议题团体的 actor 覆盖最广；集体行动、外部网络及若干生活安全子议题较薄弱。",
+          "ja": "基地政治、環境、国際的課題の団体は actor のカバレッジが最も広く、集団行動、外部ネットワーク、いくつかの生活安全サブトピックはより薄い。",
+          "en": "Base politics, environment and transnational issue groups have the broadest actor coverage; collective action, external-network and several life-safety subtopics are thinner."
+        },
+        "visibility_mechanism": {
+          "zh": "项目的检索路径和高文献化争议，比弥散的福利、劳动、性别与健康工作更容易产出明确的议题标签。",
+          "ja": "プロジェクトの検索経路と記録の厚い争点は、分散した福祉、労働、ジェンダー、健康の活動よりも明示的な議題ラベルを生みやすい。",
+          "en": "Project search paths and high-documentation controversies yield more explicit issue labels than diffuse welfare, labor, gender and health work."
+        },
+        "impact_on_q1_q3": {
+          "zh": "Q2 的桥接 actor 主张和 Q3 的议题关联比较，可能偏向已被明确表述的基地／环境／国际框架。",
+          "ja": "Q2 のブリッジ actor に関する主張とQ3の議題連関比較は、すでに明示されている基地・環境・国際的フレーミングを優先しうる。",
+          "en": "Q2 bridge-actor claims and Q3 issue-linkage comparisons may privilege already explicit base/environment/international framing."
+        },
+        "interpretation_limit": {
+          "zh": "议题标签计数表示有文献支持的关联，而非议题重要性、投入程度或公众支持。",
+          "ja": "議題タグの数は記録された関連を示すものであり、議題の重要性、投入量、または公的支持を示すものではない。",
+          "en": "Issue-tag counts indicate documented association, not issue salience, effort or public support."
+        },
+        "online_gap_action": {
+          "zh": "定向检索劳动、女性／人权、健康、地下水、噪声、福利和地方自治组织的记录。",
+          "ja": "労働、女性・人権、健康、地下水、騒音、福祉、地方自治に関わる団体記録を対象に検索する。",
+          "en": "Target labor, women/human-rights, health, groundwater, noise, welfare and local-autonomy organization records."
+        },
+        "local_gap_action": {
+          "zh": "当组织的议题表述未被在线索引时，使用地方通讯、议题运动材料和报刊数据库。",
+          "ja": "組織の議題フレーミングがオンラインで索引化されていない場合、地方の会報、イシュー・キャンペーン資料、新聞データベースを用いる。",
+          "en": "Use local newsletters, issue campaigns and newspaper databases where organizational issue framing is not indexed online."
+        }
+      }
+    },
+    {
+      "dimension_id": "D5",
+      "fields": {
+        "observed_skew": {
+          "zh": "295条记录中，275条已归档／人工归档，18条抓取失败。组织网站和地方新闻是占比最大的精确来源类型。",
+          "ja": "295件の記録のうち275件はアーカイブ済み／手動アーカイブ済みであり、18件は取得に失敗している。団体サイトと地方ニュースが最も大きい正確なソース種別である。",
+          "en": "275/295 records are archived/manual archived; 18/295 are failed captures. Organization sites and local news are the largest exact source types."
+        },
+        "visibility_mechanism": {
+          "zh": "样本偏向可发现的网页和官方／公共记录；短暂页面及未被索引的地方材料处于不利地位。",
+          "ja": "サンプルは発見可能なウェブページと公的・公共記録に偏り、一時的なページや索引化されていない地方資料は不利になる。",
+          "en": "The sample favors discoverable web pages and official/public records; transient pages and non-indexed local materials are disadvantaged."
+        },
+        "impact_on_q1_q3": {
+          "zh": "三个问题均承受留存、制度记录和网络检索偏差；事件／关系模块尤其敏感。",
+          "ja": "三つの問いはいずれも、保存、制度的記録、ウェブ検索のバイアスを受け、イベント・関係モジュールは特に敏感である。",
+          "en": "All three questions inherit survival, institutional-record and web-search bias; event/relationship modules are especially sensitive."
+        },
+        "interpretation_limit": {
+          "zh": "归档失败不表示证据不存在；归档成功也不表示该来源证明每一项编码主张。",
+          "ja": "アーカイブ取得の失敗は証拠の不存在を意味せず、アーカイブ成功も、その資料がすべてのコード化された主張を証明することを意味しない。",
+          "en": "Failed archive does not mean evidence is absent; successful archive does not mean the source proves every coded claim."
+        },
+        "online_gap_action": {
+          "zh": "重试失败抓取，使用替代官方 URL／PDF 和人工快照，并另行审查内容是否充分。",
+          "ja": "取得失敗を再試行し、代替の公式URL／PDFと手動スナップショットを用い、内容の十分性を別途確認する。",
+          "en": "Retry failed captures, use alternate official URLs/PDFs and manual snapshots, and inspect content sufficiency separately."
+        },
+        "local_gap_action": {
+          "zh": "仅在合理的线上路径已耗尽，或来源从未在线公开时，调取纸本或数据库副本。",
+          "ja": "合理的なオンライン経路を尽くした場合、または資料がオンラインで公開されたことがない場合に限り、印刷物またはデータベースのコピーを取得する。",
+          "en": "Retrieve print or database copies only where reasonable online routes are exhausted or the source was never public online."
+        }
+      }
+    },
+    {
+      "dimension_id": "D6",
+      "fields": {
+        "observed_skew": {
+          "zh": "多数 actor 和 actor-issue 行为 E4，但其中许多仍为 ai_seeded；因此来源等级与人工复核状态并不一致。",
+          "ja": "多くの actor および actor-issue 行はE4である一方、その多くはなお ai_seeded であり、資料等級と人によるレビュー状況は一致しない。",
+          "en": "Most actor and actor-issue rows are E4, while many remain ai_seeded; source grade and human-review status therefore diverge."
+        },
+        "visibility_mechanism": {
+          "zh": "官方／一手记录可在 actor 身份、角色边界或分析解释接受人工复核前提高证据等级。",
+          "ja": "公的・一次資料は、actor の同定、役割境界、分析的解釈が人によるレビューを受ける前に、証拠水準を引き上げうる。",
+          "en": "Official/primary records can raise evidence level before actor identity, role boundaries or analytical interpretation receive human review."
+        },
+        "impact_on_q1_q3": {
+          "zh": "Q1 的描述性存在判断强于 Q2 的分类和 Q3 的关联解释；关系密集型模块须采用最严格边界。",
+          "ja": "Q1の記述的な存在確認はQ2の分類やQ3の連関解釈より強く、関係を多く含むモジュールには最も厳格な境界が必要である。",
+          "en": "Q1 descriptive existence is stronger than Q2 classification and Q3 linkage interpretation; relation-heavy modules require the strictest boundary."
+        },
+        "interpretation_limit": {
+          "zh": "E4 不等同于人工接受、稳定联盟、资金、因果或政治立场。",
+          "ja": "E4は、人による受容、安定的な同盟、資金、因果関係、政治的立場と同義ではない。",
+          "en": "E4 is not synonymous with human acceptance, stable alliance, funding, causality or political stance."
+        },
+        "online_gap_action": {
+          "zh": "完成既有复核队列及来源／主张交叉核对；保持候选层与分析种子层分离。",
+          "ja": "既存のレビュー待ち行列と資料・主張のクロスチェックを完了し、候補層と分析シード層を分離したままにする。",
+          "en": "Complete existing review queues and source/claim cross-checks; keep candidate and analytical-seed layers separate."
+        },
+        "local_gap_action": {
+          "zh": "仅将线上复核后仍存在的身份、延续性、代表人和原文材料缺口留给地方核验。",
+          "ja": "オンラインレビュー後も残る、同定、継続性、代表者、原文資料の欠落について、地方での確認を充てる。",
+          "en": "Reserve local verification for identity, continuity, representative and source-text gaps that remain after online review."
+        }
+      }
+    }
+  ]
+}

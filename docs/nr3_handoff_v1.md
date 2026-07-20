@@ -1,9 +1,43 @@
-# NR-03 换手文档 v3.4：可点击前端演示（HR-035 Batch 2 后复验版）
+# NR-03 换手文档 v5：core surface 门禁整改版
 
-日期：2026-07-20（v1/v2/v3.3 为历史整改记录；v3.4 为 HR-035 Batch 2 合并后的当前构建）
+日期：2026-07-20（v1–v4 为历史整改记录；v5 为当前架构）
 任务编号：NR-03
-完成状态：L0/L1、Batch 2 数据刷新与 episode 三语完成；L2 谱系仍有明确导出缺口
+完成状态：五页探索站、关系层、episode 三语、五条谱系、8个 publication objects 与 core surface 门禁完成
 上位依据：`docs/next_round_exploration_system_sessions_v1.md`、`docs/exploration_system_information_architecture_v1.md`（含 §12 修订）、`docs/exploration_system_data_contract_v1.md`
+
+## v5 · 方法门禁整改结论
+
+- 内部 NR-02 adapter 已升至 schema `1.2.0`：121 个可见 actor、141 条已核／142 条研究
+  actor–issue 边；LC001–LC005 五条人审生命周期记录进入时间页。LC004／LC005 只显示
+  “最后观察到活动”，不写解散；LC006 范围外控制被排除。
+- actor class 分组／颜色、region、place→display region 和四个时间分期全部迁入
+  `core/presentation/rules.json`。React 不再维护平行研究语义；必需 JSON 缺失会加载失败，不再
+  静默替换为空数组。
+- 新增唯一发布 seam：`research_publication` 按 `reviewed`／`client_preview`／`internal`
+  profile 编译物理隔离、不可变 release。公开 profile 删除本机 archive path/hash 与内部
+  复核备注；验证通过后才原子切换 channel。
+- `research_publication_core_surfaces_v1.json` 逐文件／逐 JSON pointer 决定所有 core 输出。
+  公开站不再复制混合 `demo/relations.json` 或 `research/candidates.json`，未消费旧 views
+  也不公开。reviewed profile 物理排除 research、R4 QA-safe 层与 F027。
+- Vite 在构建前核对 channel profile、release ID、public flag 和 manifest hash；
+  `dist/release.json` 绑定 publication/site release、前端树、base path、Git commit 与 dirty 状态。
+- catalog 当前 26 项：8个完整对象、4个有限 core surfaces、5个尚无公开 adapter、5个需继续
+  研究、4个永久退役。完整对象为 ARC001/002/003、MR004/005/012/013/014。
+- 甲方可见的新增／升格内容包括：五条生命周期、R4 9人审＋10研究观察／5人审＋19研究摘录、
+  R5 169条名单观察／21重复身份、R10 616行官方总体、六维覆盖审计和13个六阶段 episode。
+
+当前复现：
+
+```powershell
+python scripts\build_publication_snapshot_v1.py --profile client_preview
+python scripts\build_publication_snapshot_v1.py --profile client_preview --verify-only
+cd prototypes\nr3_explorer
+npm test
+npm run build
+```
+
+权威说明：`docs/research_publication_architecture_v1.md`、`docs/research_publication_asset_audit_v1.md`、
+`docs/research_publication_rectification_handoff_v1.md`。
 
 ## v3.4 · HR-035 Batch 2 与 episode 三语正式重生
 
@@ -160,8 +194,8 @@ npm run build
 - 组织（V2）：141 条已核 actor—issue 边为默认层；普通界面搜索 121 个可见 actor（中央
   provenance 仍保留 122 行，A072 隐藏；搜索含别名与 ID）；类型／议题筛选；节点详情
   （议题、地点、事件记录、身份来源）；画布缩放平移。
-- 时间（第五页）：一期方案四个时段节点、12 个已核事件按年组织、参与者跳组织页；当前
-  仍显示 0 个谱系锚点，等待 LC001–LC005 的前端有界导出。
+- 时间（第五页，历史 v2 状态）：一期方案四个时段节点、12 个已核事件按年组织、参与者跳组织页；
+  当时尚为0个谱系锚点；当前 v5 已导出 LC001–LC005 五条。
 - 路径（V3）：9 个已核 episode 六阶段阶梯，状态直读数据；episode 六阶段对比；参与组织、来源、关联案件。
 - 证据（V4）：六维度 120 个当前生成单元，facet 条形与来源类型×归档矩阵，机制解释面板；
   单元数是生成结果，不是稳定契约。
@@ -203,7 +237,8 @@ npm run dev -- --port 4173   # http://localhost:4173/
 npm run build
 ```
 
-数据来自 `outputs/exploration_system_data_v1/`；更新数据须重跑 `python scripts\build_exploration_system_data_v1.py`。
+前端数据来自活动 `client_preview` publication channel；`npm run dev`／`npm run build`
+会自动重建并验证。`outputs/exploration_system_data_v1/` 只是内部 adapter，不得直接部署。
 
 ## 页面截图
 
@@ -259,8 +294,7 @@ npm run build
 
 - episode 三语映射已完成语义审查并纳入 NR-02 构建输入及 input hash；其他非 episode
   数据字段的翻译仍按各自数据层任务处理。
-- 组织谱系仍为 0 前端锚点；但 LC001–LC005 已具备人审记录。下一步是有界导出这五项，
-  而不是重新检索或重新人审。NR-04／NR-05 的新增历史候选仍不得直接进入已核层。
+- LC001–LC005 已完成有界导出；NR-04／NR-05 的新增历史候选仍不得直接进入已核层。
 - 部分来源 supports／bias_note／interpretation_limit 仍为数据层原文字段；episode 的
   7 类内容已全部由正式三语 overlay 提供。
 - 画布节点本身不可键盘聚焦（canvas 技术限制）；键盘与读屏路径由搜索下拉、区域按钮和各页 DOM 面板提供。
@@ -288,7 +322,8 @@ npm run build
 
 ## 建议下一 session
 
-- 先把 LC001–LC005 导出为 L2 有界谱系记录并复验，再启动 NR-04／NR-05 的新增历史补缺。
+- 仍有9个方法模块缺完整 adapter：其中 MR001/003/008/011 已有有限 core surface，MR002/006/007/009/010
+  尚无公开模块表面；按解释价值逐项推进，不得批量搬图。
 - episode 三语任务已经完成，不再重开；后续如扩展 episode，必须同步扩展 13×7 精确网格门禁。
 - 完成上节“组织身份状态≠关系已核”的面板提示与 X014 watchlist 标签。
 - 5 分钟演示路径文档可在 NR-06 验收前补齐。

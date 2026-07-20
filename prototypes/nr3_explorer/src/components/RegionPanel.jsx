@@ -7,7 +7,7 @@ import {
   WarningCircle,
   X,
 } from "@phosphor-icons/react";
-import { labelOf, REGION_META, placeDisplayRegion } from "../lib/data.js";
+import { labelOf, placeDisplayRegion, regionMeta } from "../lib/data.js";
 import { tr, useLang } from "../lib/labels.js";
 import { tu } from "../lib/ui_strings.js";
 import { PendingBadge } from "./ui.jsx";
@@ -20,16 +20,21 @@ function useRegionStats({
   actorPlaces,
   candidates,
   research,
+  presentation,
 }) {
   return useMemo(() => {
     const regionPlaces = (() => {
       if (region === "all") return places;
       if (region === "sakishima") {
         return places.filter((place) =>
-          ["miyako", "yaeyama"].includes(placeDisplayRegion(place)),
+          ["miyako", "yaeyama"].includes(
+            placeDisplayRegion(place, presentation),
+          ),
         );
       }
-      return places.filter((place) => placeDisplayRegion(place) === region);
+      return places.filter(
+        (place) => placeDisplayRegion(place, presentation) === region,
+      );
     })();
     const placeIds = new Set(regionPlaces.map((place) => place.id));
     const placeLabels = new Set(regionPlaces.map((place) => place.display_label));
@@ -84,7 +89,16 @@ function useRegionStats({
       topIssues,
       topPendingIssues,
     };
-  }, [actorPlaces, candidates, issues, places, region, research, strictRelations]);
+  }, [
+    actorPlaces,
+    candidates,
+    issues,
+    places,
+    presentation,
+    region,
+    research,
+    strictRelations,
+  ]);
 }
 
 function RegionEpisodes({ stats, episodes, candidates, research, onPickEpisode, lang }) {
@@ -138,7 +152,14 @@ function RegionEpisodes({ stats, episodes, candidates, research, onPickEpisode, 
   );
 }
 
-function RegionColumn({ region, stats, lang, onPickIssue, compact }) {
+function RegionColumn({
+  region,
+  stats,
+  lang,
+  onPickIssue,
+  compact,
+  presentation,
+}) {
   return (
     <div className="compare-col">
       <h3>
@@ -148,7 +169,7 @@ function RegionColumn({ region, stats, lang, onPickIssue, compact }) {
             background:
               region === "sakishima"
                 ? "linear-gradient(90deg,#dc9a35,#bd547c)"
-                : REGION_META[region]?.color,
+                : regionMeta(region, presentation).color,
           }}
         />
         {tu(`region.${region}`, lang)}
@@ -232,6 +253,7 @@ export function RegionPanel({
   onPickEpisode,
   layer,
   candidates,
+  presentation,
 }) {
   const research = layer === "research" && candidates;
   const lang = useLang();
@@ -244,6 +266,7 @@ export function RegionPanel({
     actorPlaces,
     candidates,
     research,
+    presentation,
   };
   const stats = useRegionStats({ region, ...shared });
   const compareStats = useRegionStats({
@@ -274,6 +297,7 @@ export function RegionPanel({
             lang={lang}
             onPickIssue={onPickIssue}
             compact
+            presentation={presentation}
           />
           <RegionColumn
             region={compareWith}
@@ -281,6 +305,7 @@ export function RegionPanel({
             lang={lang}
             onPickIssue={onPickIssue}
             compact
+            presentation={presentation}
           />
         </div>
       </aside>
@@ -296,7 +321,7 @@ export function RegionPanel({
             background:
               region === "sakishima"
                 ? "linear-gradient(90deg,#dc9a35,#bd547c)"
-                : REGION_META[region]?.color,
+                : regionMeta(region, presentation).color,
           }}
         />
         {tu("overview.eyebrow", lang)}

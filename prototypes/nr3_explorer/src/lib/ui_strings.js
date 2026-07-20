@@ -27,13 +27,27 @@ export const UI_STRINGS = {
   "map.aria": { zh: "冲绳行政区研究地图", ja: "沖縄市町村研究マップ", en: "Okinawa municipal research map" },
   "actors.canvasAria": { zh: "组织议题生态图", ja: "組織・課題エコロジー図", en: "Actor–issue ecology canvas" },
   "map.stateAria": { zh: "地图状态", ja: "地図ステート", en: "Map state" },
+  "overview.viewAria": { zh: "总览研究模块", ja: "総覧の研究モジュール", en: "Overview research module" },
+  "overview.viewMap": { zh: "实际地图", ja: "実地図", en: "Map" },
+  "overview.viewFrames": { zh: "先岛框架语料", ja: "先島フレーム資料", en: "Sakishima frames" },
 
   // chart titles
-  "overview.title": { zh: "全域地点—议题研究地图", ja: "全域の地点・課題研究マップ", en: "Place–Issue Research Map" },
+  "overview.title": { zh: "全域研究地图与区域框架", ja: "全域研究マップと地域フレーム", en: "Research Map & Local Frames" },
   "actors.title": { zh: "组织—议题生态图", ja: "組織・課題エコロジー図", en: "Actor–Issue Ecology" },
   "time.title": { zh: "事件与谱系时间图", ja: "イベントと系譜の時間図", en: "Events & Genealogy Timeline" },
   "pathways.title": { zh: "问题—行动—场域—产出路径图", ja: "課題—行動—場域—成果の経路図", en: "Issue–Action–Venue–Outcome Pathways" },
   "evidence.title": { zh: "证据覆盖与偏差图", ja: "証拠カバレッジと偏り図", en: "Evidence Coverage & Bias" },
+  "time.viewAria": { zh: "时间页研究模块", ja: "時間ページの研究モジュール", en: "Time-page research module" },
+  "time.viewTimeline": { zh: "事件与谱系", ja: "イベントと系譜", en: "Events & genealogy" },
+  "time.viewRepeat": { zh: "重复参与样本", ja: "反復参加サンプル", en: "Repeat-participation sample" },
+  "evidence.viewAria": { zh: "证据页研究模块", ja: "証拠ページの研究モジュール", en: "Evidence-page research module" },
+  "evidence.viewCoverage": { zh: "可见性审计", ja: "可視性監査", en: "Visibility audit" },
+  "evidence.viewOfficial": { zh: "官方协作总体", ja: "公式協働の全体", en: "Official collaboration universe" },
+  "evidence.officialSummary": {
+    zh: "616 条官方记录 · 86 页完整总体",
+    ja: "公式記録616行・全86頁",
+    en: "616 official rows · complete 86-page universe",
+  },
 
   // map states
   "map.all": { zh: "全域", ja: "全域", en: "All islands" },
@@ -215,6 +229,36 @@ export const UI_STRINGS = {
     ja: "形成・改名・分裂・合併・連続性",
     en: "Formation · rename · split · merger · continuity",
   },
+  "time.genealogyCount": {
+    zh: "{n} 条人工复核锚点",
+    ja: "人審済みアンカー {n} 件",
+    en: "{n} human-reviewed anchors",
+  },
+  "lifecycle.dissolved": {
+    zh: "组织解散",
+    ja: "組織解散",
+    en: "Organization dissolved",
+  },
+  "lifecycle.reorganized": {
+    zh: "重组／后继关系",
+    ja: "再編・後継関係",
+    en: "Reorganization / succession",
+  },
+  "lifecycle.last_observed_activity": {
+    zh: "最后观察到的活动",
+    ja: "最後に確認された活動",
+    en: "Last observed activity",
+  },
+  "lifecycle.sources": {
+    zh: "来源",
+    ja: "出所",
+    en: "Sources",
+  },
+  "lifecycle.directSource": {
+    zh: "原始链接 {n}",
+    ja: "原資料リンク {n}",
+    en: "Direct source {n}",
+  },
   "time.gapTitle": { zh: "谱系锚点 0 条", ja: "系譜アンカー 0 件", en: "0 genealogy anchors" },
   "time.periodEmpty": { zh: "暂无已核事件", ja: "審査済みイベントなし", en: "No reviewed events" },
   "time.gapText": {
@@ -308,6 +352,7 @@ export const UI_STRINGS = {
   // drawer
   "drawer.title": { zh: "证据来源", ja: "証拠ソース", en: "Evidence sources" },
   "drawer.loading": { zh: "正在读取证据层…", ja: "証拠レイヤーを読み込み中…", en: "Loading evidence layer…" },
+  "drawer.error": { zh: "证据层读取失败，请刷新页面后重试。", ja: "証拠レイヤーを読み込めませんでした。ページを再読み込みしてください。", en: "The evidence layer could not be loaded. Refresh the page and try again." },
   "drawer.year": { zh: "来源年份", ja: "ソース年", en: "Source year" },
   "drawer.supports": { zh: "支持内容", ja: "支持内容", en: "Supports" },
   "drawer.archive": { zh: "归档状态", ja: "保存状態", en: "Archive status" },
@@ -360,9 +405,9 @@ export const UI_STRINGS = {
     en: "Each year records “what an organization did that year”. Click a year for its events; click a participant to open the actor page.",
   },
   "help.time.p2": {
-    zh: "四个时段节点来自一期方案的采集策略。组织谱系（形成、改名、分裂、合并）尚未进入数据层，当前显示为缺口，补齐后在这里展开。",
-    ja: "4つの期間はフェーズ1計画の収集方針に由来します。組織系譜（形成・改名・分裂・合併）はまだデータ層に入っておらず、現在はギャップ表示です。補完後にここへ展開します。",
-    en: "The four periods come from the Phase-1 collection plan. Organizational genealogy (formation, renames, splits, mergers) is not in the data layer yet and shows as an explicit gap; it will appear here when filled.",
+    zh: "四个时段来自一期方案并由数据层提供。谱系区只显示已人工复核的生命周期锚点；“最后观察到活动”只是公开材料的时间下限，不能解读为组织解散。",
+    ja: "4期間はフェーズ1計画に由来し、データ層から提供されます。系譜欄は人審済みのライフサイクル・アンカーだけを表示します。「最後に確認された活動」は公開資料上の下限であり、組織解散を意味しません。",
+    en: "The four periods come from the Phase-1 plan and are supplied by the data layer. Genealogy shows only human-reviewed lifecycle anchors; “last observed activity” is a lower bound in public records, not evidence of dissolution.",
   },
   "help.pathways.p1": {
     zh: "按六个阶段读一个案件：地方问题、转译框架、场域进入、中间产出、有限结果、底层改变。状态芯片直接来自数据：“未观察到”指材料中没有该结果的记录。",

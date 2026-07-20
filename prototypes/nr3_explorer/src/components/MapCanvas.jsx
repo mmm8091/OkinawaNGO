@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { geoMercator, geoPath } from "d3-geo";
 import { House, Minus, Plus } from "@phosphor-icons/react";
-import { REGION_META } from "../lib/data.js";
+import { regionMeta } from "../lib/data.js";
 import { useLang } from "../lib/labels.js";
 import { tu } from "../lib/ui_strings.js";
 
@@ -17,6 +17,7 @@ const clampZoom = (value) => Math.max(1, Math.min(2.6, value));
 
 export function MapCanvas({
   geometry,
+  presentation,
   selectedRegion,
   setSelectedRegion,
   zoom,
@@ -92,7 +93,7 @@ export function MapCanvas({
       path(feature);
       context.fillStyle = dimmed
         ? "#dfe5e2"
-        : REGION_META[region]?.color || "#9baeb3";
+        : regionMeta(region, presentation).color;
       context.globalAlpha = dimmed ? 0.55 : 0.92;
       context.fill();
       context.globalAlpha = 1;
@@ -125,7 +126,9 @@ export function MapCanvas({
         context.fill();
         context.beginPath();
         context.arc(centroid[0], centroid[1], radius / zoom, 0, Math.PI * 2);
-        context.fillStyle = dimmed ? "#b3bfbd" : REGION_META[region].color;
+        context.fillStyle = dimmed
+          ? "#b3bfbd"
+          : regionMeta(region, presentation).color;
         context.fill();
         context.strokeStyle = "#ffffff";
         context.lineWidth = 1.5 / zoom;
@@ -150,7 +153,7 @@ export function MapCanvas({
       el.style.display = mapState === "sakishima" ? "none" : "";
       el.classList.toggle("dim", mapState !== "all" && regionDimmed(region));
     });
-  }, [geometry, mapState, pan, regionDimmed, zoom]);
+  }, [geometry, mapState, pan, presentation, regionDimmed, zoom]);
 
   useEffect(() => {
     draw();
@@ -277,7 +280,7 @@ export function MapCanvas({
           >
             <i
               className="region-dot"
-              style={{ background: REGION_META[region].color }}
+              style={{ background: regionMeta(region, presentation).color }}
             />
             {tu(`region.${region}`, lang)}
           </button>

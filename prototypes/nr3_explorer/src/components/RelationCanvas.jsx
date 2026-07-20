@@ -36,6 +36,7 @@ export function RelationCanvas({
   setSelectedActor,
   search,
   classFilter,
+  presentation,
 }) {
   const canvasRef = useRef(null);
   const wrapperRef = useRef(null);
@@ -66,7 +67,11 @@ export function RelationCanvas({
     if (classFilter !== "all") {
       list = list.filter((row) =>
         [row.source_endpoint, row.target_endpoint].some(
-          (id) => actorClassGroup(actorById.get(id)?.actor_class) === classFilter,
+          (id) =>
+            actorClassGroup(
+              actorById.get(id)?.actor_class,
+              presentation,
+            ) === classFilter,
         ),
       );
     }
@@ -87,7 +92,15 @@ export function RelationCanvas({
       );
     }
     return list;
-  }, [actorById, candidates, classFilter, dyadicRelations, research, search]);
+  }, [
+    actorById,
+    candidates,
+    classFilter,
+    dyadicRelations,
+    presentation,
+    research,
+    search,
+  ]);
 
   const families = useMemo(() => {
     const counts = new Map();

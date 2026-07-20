@@ -1,0 +1,1100 @@
+{
+  "schema_version": "1.1.0",
+  "catalog_id": "research_publication_catalog_v1",
+  "data_date": "2026-07-20",
+  "status_vocabulary": {
+    "category": [
+      "architecture_gap_now",
+      "method_ready_integrated",
+      "method_ready_adapter_needed",
+      "method_research_required",
+      "retired_prohibited"
+    ],
+    "method_status": [
+      "method_ready",
+      "method_ready_bounded",
+      "method_gate_required",
+      "retired_method"
+    ],
+    "claim_status": [
+      "descriptive_ready",
+      "bounded_comparison_ready",
+      "candidate_hypothesis",
+      "prohibited"
+    ],
+    "frontend_status": [
+      "integrated",
+      "architecture_gap",
+      "adapter_needed",
+      "adapter_needed_partial_existing",
+      "withheld_method_gate",
+      "retired_prohibited"
+    ]
+  },
+  "entries": [
+    {
+      "id": "PUB-ARC-001",
+      "title": "组织生命周期与谱系锚点",
+      "category": "architecture_gap_now",
+      "research_question": "复归后组织如何解散、重组、延续不明并形成后继载体？",
+      "analysis_unit": "一条经人审的 actor×lifecycle event；重组边界不等于两个 actor 合并",
+      "selection_boundary": "只纳入 central_registry、resolved 且 human_checked/human_revised 的 LC001–LC005；LC006 为范围外控制，不进入展示",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "human_reviewed",
+      "frontend_status": "integrated",
+      "publication_object_path": "views/core_surfaces/PUB-ARC-001.json",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "time",
+        "actor_detail"
+      ],
+      "allowed_wording": "可写某组织在特定日期解散、发生重组边界，或公开活动至少可追踪至某日；continuity_unverified 只能表示公开连续性未闭合。",
+      "interpretation_limit": "最后可见日期不是解散日；重组不是简单改名或 actor 合并；不得把后继组织活动回填给前身。",
+      "assets": [
+        {
+          "path": "outputs/actor_lifecycle_v1/actor_lifecycle_v0.csv",
+          "role": "reviewed_fact_table"
+        },
+        {
+          "path": "outputs/actor_lifecycle_v1/actor_lifecycle_review_queue_v0.csv",
+          "role": "provenance_review_queue"
+        }
+      ],
+      "next_gate": "已编译为带证据下钻和缺口字段的 genealogy anchors；每次发布继续验证 LC006 被排除。"
+    },
+    {
+      "id": "PUB-ARC-002",
+      "title": "类型化组织关系与非关系记录分层",
+      "category": "architecture_gap_now",
+      "research_question": "资助、隶属、法律协作、行政记录、事件参与、案件角色和线索如何在展示中保持不同语义？",
+      "analysis_unit": "一条经过类型化、证据门禁和端点检查的关系或非关系观察；不同族不合并计数",
+      "selection_boundary": "只发布 NR-02 构建器明确分流的 dyadic、administrative、aggregate、typed-event、case-role 与 lead 层；reviewed profile 排除 F027 等未完成人审/当地门禁记录",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "mixed_human_reviewed_and_explicit_candidate_layers",
+      "frontend_status": "integrated",
+      "publication_object_path": "views/core_surfaces/PUB-ARC-002.json",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "actors",
+        "relations",
+        "evidence"
+      ],
+      "allowed_wording": "可按关系族、claim status 和复核层展示当前正式记录，并把 aggregate、event、case role 和 lead 明确标为非 dyadic 关系。",
+      "interpretation_limit": "机会不是拨款，project cost 不是付款，共同事件不是联盟，案件角色不是一般组织关系，服务功能不表示政治立场。",
+      "assets": [
+        {
+          "path": "docs/actor_relation_architecture_v1.md",
+          "role": "typed_relation_contract"
+        },
+        {
+          "path": "outputs/exploration_system_data_v1/demo/dyadic_relations.json",
+          "role": "reviewed_dyadic_projection"
+        },
+        {
+          "path": "outputs/exploration_system_data_v1/demo/case_roles.json",
+          "role": "case_role_projection"
+        }
+      ],
+      "next_gate": "每次发布按 core surface registry 重投影；新增关系族或记录类型必须先改 schema、registry 和验证测试，不能由 React 自行解释。"
+    },
+    {
+      "id": "PUB-ARC-003",
+      "title": "经核公开事件参与事实层",
+      "category": "architecture_gap_now",
+      "research_question": "组织在具体公开事件中的可核角色如何展示，同时避免把共同出现改写成稳定关系？",
+      "analysis_unit": "一条 actor/event-only entity×event×action_type 观察；分析种子与中央事实物理分层",
+      "selection_boundary": "中央 AEV 的 human_checked/revised 事件事实进入 reviewed；analytical_seed 只在 client_preview 研究层且显式标记",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "human_reviewed_with_separate_analytical_seed_layer",
+      "frontend_status": "integrated",
+      "publication_object_path": "views/core_surfaces/PUB-ARC-003.json",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "actors",
+        "time",
+        "evidence"
+      ],
+      "allowed_wording": "可写某 actor 或 event-only identity 在某一具名事件中以特定 action_type 公开参与。",
+      "interpretation_limit": "共同署名、请愿、诉讼或集会参与不建立联盟、成员关系、领导、资金或持续协调；事件列表不是行动总体。",
+      "assets": [
+        {
+          "path": "data/interim/09_actor_event_venue_edges_v0.csv",
+          "role": "central_event_fact_table"
+        },
+        {
+          "path": "outputs/exploration_system_data_v1/demo/relations.json",
+          "role": "reviewed_event_projection"
+        }
+      ],
+      "next_gate": "新增事件观察必须先进入中央 AEV 或显式 analytical_seed 层；前端不得从同场记录生成 actor–actor 边。"
+    },
+    {
+      "id": "PUB-MR-001",
+      "title": "R1/R2 当前组织生态、二模网络与跨议题机制",
+      "category": "method_ready_adapter_needed",
+      "research_question": "当前公开样本中有哪些组织功能类型、议题连接和跨议题载体？",
+      "analysis_unit": "active actor、actor×issue 边及同一 actor 的议题组合；不是 actor×actor 联盟",
+      "selection_boundary": "121 active actors、283 active actor–issue edges；141 reviewed 与 142 candidate 必须分层，11 条历史无效边只作审计",
+      "method_status": "method_ready_bounded",
+      "claim_status": "bounded_comparison_ready",
+      "review_status": "mixed_reviewed_candidate",
+      "frontend_status": "adapter_needed_partial_existing",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "overview",
+        "actors",
+        "issues"
+      ],
+      "allowed_wording": "可描述工作样本的功能生态、议题覆盖和跨议题 actor 类型，并明确已核与研究层差异。",
+      "interpretation_limit": "样本不是总体比例；节点度数不是影响力；同一 actor 连接多个议题不表示组织间联盟；候选边不能写成已核事实。",
+      "assets": [
+        {
+          "path": "outputs/R01_R02_actor_issue_v1/validation_metrics_v1.csv",
+          "role": "current_counts"
+        },
+        {
+          "path": "outputs/R01_R02_actor_issue_v1/fig1_r01_actor_ecology.png",
+          "role": "current_figure"
+        },
+        {
+          "path": "outputs/R01_R02_actor_issue_v1/fig2_r02_full_bipartite_network.png",
+          "role": "current_figure"
+        },
+        {
+          "path": "outputs/R01_R02_actor_issue_v1/fig3_r02_issue_cooccurrence.png",
+          "role": "current_figure"
+        },
+        {
+          "path": "outputs/R01_R02_actor_issue_v1/fig4_r02_cross_issue_actors.png",
+          "role": "current_figure"
+        },
+        {
+          "path": "outputs/R01_R02_actor_issue_v1/R01_R02_explanatory_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "制作行级 adapter，默认展示 reviewed 子层、允许切换 candidate；图表计数必须从 283 当前边重算并通过 post-freeze caption QA。"
+    },
+    {
+      "id": "PUB-MR-002",
+      "title": "R2 来源依赖与审核层稳健性",
+      "category": "method_ready_adapter_needed",
+      "research_question": "跨议题与国际外围的可见结构在移除关键来源或只看人审边时是否保留？",
+      "analysis_unit": "来源删除情景或审核层情景下的 actor–issue 图统计；来源删除与 actor 删除不混为同一单位",
+      "selection_boundary": "只对明确列入的 S003/S004/S006 支持删除与 reviewed-only 情景比较；不外推为现实网络消失",
+      "method_status": "method_ready_bounded",
+      "claim_status": "bounded_comparison_ready",
+      "review_status": "mechanical_on_review_layered_inputs",
+      "frontend_status": "adapter_needed",
+      "release_profiles": [
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "evidence",
+        "issues"
+      ],
+      "allowed_wording": "可写 S004 对当前国际外围编码可见性影响较大，同时一个更小核心在组合删除后仍保留。",
+      "interpretation_limit": "这是资料支持与审核完整性的敏感性，不是组织影响力、现实关系强度或来源造成网络结构的因果证明。",
+      "assets": [
+        {
+          "path": "outputs/R02_actor_issue_robustness_v1/scenario_metrics_v1.csv",
+          "role": "scenario_table"
+        },
+        {
+          "path": "outputs/R02_actor_issue_robustness_v1/ecology_international_bridge_survival_v1.csv",
+          "role": "bounded_result_table"
+        },
+        {
+          "path": "outputs/R02_actor_issue_robustness_v1/fig_actor_issue_robustness_v1.png",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R02_actor_issue_robustness_v1/README.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "adapter 必须同时呈现删除对象、分母、reviewed/candidate 构成与解释边界，不得只展示一个稳健性百分比。"
+    },
+    {
+      "id": "PUB-MR-003",
+      "title": "R3 同源地点—议题严格层",
+      "category": "method_ready_adapter_needed",
+      "research_question": "哪些地点—议题连接能由同一来源中的同一 actor 同时支持？",
+      "analysis_unit": "same-source actor×place×issue triple；formal event attachment 是额外限定",
+      "selection_boundary": "306 active same-source triples；299 E3/E4；81 条双边均经人审；97 条可同 actor/source 挂接正式事件",
+      "method_status": "method_ready_bounded",
+      "claim_status": "bounded_comparison_ready",
+      "review_status": "mixed_reviewed_candidate",
+      "frontend_status": "adapter_needed_partial_existing",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "map",
+        "evidence"
+      ],
+      "allowed_wording": "可描述同一文件内可追溯的地点—议题可见连接，并分别展示 E3/E4 与双人审子层。",
+      "interpretation_limit": "同源仍不证明因果、持续在场、代表性或联盟；宽投影仅是敏感性上界，不是替代发现。",
+      "assets": [
+        {
+          "path": "outputs/R03_strict_place_issue_v1/same_source_actor_place_issue_triples_v1.csv",
+          "role": "row_level_fact_derivative"
+        },
+        {
+          "path": "outputs/R03_strict_place_issue_v1/place_issue_strict_sensitivity_matrix_v1.csv",
+          "role": "sensitivity_matrix"
+        },
+        {
+          "path": "outputs/R03_strict_place_issue_v1/fig_strict_place_issue_sensitivity_v1.png",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R03_strict_place_issue_v1/README.md",
+          "role": "method_brief"
+        }
+      ],
+      "next_gate": "前端以 strict triple 为查询主键，支持回到 actor、source 与 event；默认不得渲染宽投影面板为发现。"
+    },
+    {
+      "id": "PUB-MR-004",
+      "title": "R4 先岛三地地方化框架语料",
+      "category": "method_ready_integrated",
+      "research_question": "宫古、石垣、与那国的部署争议在限定线上材料中如何被不同主体表述？",
+      "analysis_unit": "一条有 speaker/entity、place、frame、locator 的来源摘录；个人、行政、匿名发言与组织严格分层",
+      "selection_boundary": "19 条正式 frame observations（9条 human-reviewed、10条 QA-safe research layer）与24条安全摘录（5条 human-reviewed、19条 QA-safe research layer）；两层必须分开显示",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "mixed_human_reviewed_and_qa_safe_online",
+      "frontend_status": "integrated",
+      "publication_object_path": "exhibits/PUB-MR-004.json",
+      "release_profiles": [
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "map",
+        "pathways",
+        "evidence"
+      ],
+      "allowed_wording": "可写限定语料中宫古较多出现水与撤离，石垣较多出现自治与前线化，与那国以前线、撤离和台湾邻近为主。",
+      "interpretation_limit": "计数是线上语料可见度，不是组织数、居民态度或现实动员强度；行政答复与个人发言不得转嫁给组织或地区总体。",
+      "assets": [
+        {
+          "path": "outputs/R04_sakishima_frame_corpus_v0/corrected_actor_frame_event_dispositions_v0.csv",
+          "role": "reviewed_observations"
+        },
+        {
+          "path": "outputs/R04_sakishima_frame_corpus_v0/corrected_source_excerpt_dispositions_v0.csv",
+          "role": "reviewed_excerpts"
+        },
+        {
+          "path": "outputs/R04_sakishima_frame_corpus_v0/fig_r4_three_place_frames_v0.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R04_sakishima_frame_corpus_v0/fig_r4_entity_frame_matrix_v0.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R04_sakishima_frame_corpus_v0/R04_online_evidence_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "已建立 observation/excerpt 双层 adapter；发布时继续验证 entity_kind、地点分母和来源 locator 随对象同行，当地表达缺口不由图表补齐。"
+    },
+    {
+      "id": "PUB-MR-005",
+      "title": "R5 三次公开名单与重复参与",
+      "category": "method_ready_integrated",
+      "research_question": "公开行动中哪些已识别 actor 或 event-only identity 重复出现？",
+      "analysis_unit": "组织名称×具体名单事件的参与观察；重复参与是事件级而非稳定关系边",
+      "selection_boundary": "2010/2015/2020 三份目的性完整名单，169 source-list observations；21 个严格重复身份",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "human_reviewed_identity_segmentation",
+      "frontend_status": "integrated",
+      "publication_object_path": "exhibits/PUB-MR-005.json",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "pathways",
+        "actors"
+      ],
+      "allowed_wording": "可写少数名称在三次公开名单中重复参与，event-only 名称继续与 registry actor 分开。",
+      "interpretation_limit": "共同署名和重复出现不等于稳定联盟、成员资格、资金、领导或持续协调；三事件不是行动总体。",
+      "assets": [
+        {
+          "path": "outputs/R05_coaction_v1/actor_event_bipartite_edges_v0.csv",
+          "role": "event_participation_table"
+        },
+        {
+          "path": "outputs/R05_coaction_v1/repeat_participation_bridges_v0.csv",
+          "role": "repeat_identity_table"
+        },
+        {
+          "path": "outputs/R05_coaction_v1/fig_r05_event_bipartite_v0.png",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R05_coaction_v1/fig_r05_repeat_bridges_v0.png",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R05_coaction_v1/README.md",
+          "role": "method_brief"
+        }
+      ],
+      "next_gate": "已以 event/名单参与对象进入发布层；每次发布继续验证不生成 actor–actor 边，event-only identity 与 registry actor 保持视觉区分。"
+    },
+    {
+      "id": "PUB-MR-006",
+      "title": "R5/R7 异质行动 repertory",
+      "category": "method_ready_adapter_needed",
+      "research_question": "不同案例通过哪些行动类型进入哪些制度或公共场域？",
+      "analysis_unit": "去重后的 case/event×action×venue 单元及有界阶段序列",
+      "selection_boundary": "148 条既有正式观察机械约化为 39 个唯一单元、15 类行动和 9 类场域；不新增事实",
+      "method_status": "method_ready_bounded",
+      "claim_status": "bounded_comparison_ready",
+      "review_status": "derived_from_reviewed_formal_inputs",
+      "frontend_status": "adapter_needed",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "pathways",
+        "time"
+      ],
+      "allowed_wording": "可比较不同案例记录中使用过的行动—场域组合和序列异质性。",
+      "interpretation_limit": "单元数不是现实行动频率；相邻阶段不是因果；服务、诉讼、声明和署名不能被压成同一种关系语法。",
+      "assets": [
+        {
+          "path": "outputs/R05_R07_heterogeneous_repertoire_v1/repertoire_event_action_venue_units_v1.csv",
+          "role": "comparison_units"
+        },
+        {
+          "path": "outputs/R05_R07_heterogeneous_repertoire_v1/cross_case_sequence_v1.csv",
+          "role": "bounded_sequences"
+        },
+        {
+          "path": "outputs/R05_R07_heterogeneous_repertoire_v1/fig1_repertoire_action_venue_matrix_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R05_R07_heterogeneous_repertoire_v1/fig2_cross_case_venue_small_multiples_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R05_R07_heterogeneous_repertoire_v1/R05_R07_heterogeneous_repertoire_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "提供按 case/action/venue 过滤的 row-level adapter，并在每个计数旁显示去重单位和选择范围。"
+    },
+    {
+      "id": "PUB-MR-007",
+      "title": "R6/R7/R11 诉求入口、场域迁移与外部进入",
+      "category": "method_ready_adapter_needed",
+      "research_question": "诉求通过何种入口到达法律、行政、公共与外部场域，外来主体以何种方式进入冲绳议题？",
+      "analysis_unit": "formal actor/event/venue/target/entry-mode observation；analytical seed 与事实分表",
+      "selection_boundary": "80 formal observations、6 类 R6 路径、3 案9阶段、53 条 R11 entry observations；4 条 analytical seeds 不进入事实计数",
+      "method_status": "method_ready_bounded",
+      "claim_status": "bounded_comparison_ready",
+      "review_status": "human_reviewed_formal_plus_separate_analytical_seed",
+      "frontend_status": "adapter_needed",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "pathways",
+        "relations"
+      ],
+      "allowed_wording": "可描述公开材料中可核的入口类型、场域序列和外部参与方式。",
+      "interpretation_limit": "入口不等于回应或政策变化；署名不等于国际联盟；NOFO 不等于 award；不同 entry mode 不构成同一政治阵营。",
+      "assets": [
+        {
+          "path": "outputs/R06_R07_R11_pathways_v1/r06_pathway_comparison_v0.csv",
+          "role": "pathway_comparison"
+        },
+        {
+          "path": "outputs/R06_R07_R11_pathways_v1/r07_venue_shift_stages_v0.csv",
+          "role": "stage_table"
+        },
+        {
+          "path": "outputs/R06_R07_R11_pathways_v1/r11_external_entry_matrix_v0.csv",
+          "role": "entry_observations"
+        },
+        {
+          "path": "outputs/R06_R07_R11_pathways_v1/fig_r06_target_pathways_v0.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R06_R07_R11_pathways_v1/fig_r11_external_entry_matrix_v0.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R06_R07_R11_pathways_v1/R06_R07_R11_explanatory_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "前端 adapter 只消费 formal tables；analytical_seeds 单独标识且不得进入默认计数或关系图。"
+    },
+    {
+      "id": "PUB-MR-008",
+      "title": "R8 六案法律程序、角色与结果边界",
+      "category": "method_ready_adapter_needed",
+      "research_question": "民间诉求进入不同法律程序后留下何种程序产出，组织、个人、律师和政府分别扮演什么角色？",
+      "analysis_unit": "case×role observation 与 case-level channel/result comparison",
+      "selection_boundary": "6 个 human_checked 案件、27 个 human_checked 角色；13 个 registry actor roles 与 14 个 provisional procedural nodes 分层",
+      "method_status": "method_ready",
+      "claim_status": "descriptive_ready",
+      "review_status": "human_reviewed",
+      "frontend_status": "adapter_needed_partial_existing",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "pathways",
+        "relations",
+        "evidence"
+      ],
+      "allowed_wording": "可逐案比较程序通道、中间产出、角色边界与有限结果。",
+      "interpretation_limit": "结果必须逐案表述；角色案件特定；横向排列不是因果链、成功率或胜败排行；组织 requester/supporter 不得改写为个人 plaintiff。",
+      "assets": [
+        {
+          "path": "outputs/R08_legal_procedure_v1/case_channel_result_comparison_v1.csv",
+          "role": "case_comparison"
+        },
+        {
+          "path": "outputs/R08_legal_procedure_v1/case_role_family_counts_v1.csv",
+          "role": "role_boundary_table"
+        },
+        {
+          "path": "outputs/R08_legal_procedure_v1/fig_r08_procedure_outputs_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R08_legal_procedure_v1/fig_r08_role_boundary_matrix_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R08_legal_procedure_v1/R08_legal_procedure_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "建立 case 与 role 两级 adapter；每条 role 保留 registry/provisional 类型和案号，零格不得解释为现实绝对不存在。"
+    },
+    {
+      "id": "PUB-MR-009",
+      "title": "R9 四案公投与制度门槛",
+      "category": "method_ready_adapter_needed",
+      "research_question": "签名、条例、投票与诉讼如何经过不同制度门槛被放行、改写或阻断？",
+      "analysis_unit": "case×process stage 与 case×role；箭头只表示程序顺序",
+      "selection_boundary": "29 个正式程序阶段与 29 个正式角色；当地待审阶段/角色不进入正式层",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "human_reviewed_online_layer_with_local_gaps",
+      "frontend_status": "adapter_needed",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "pathways",
+        "time"
+      ],
+      "allowed_wording": "可写公投程序将公众动员依次转成资格、条例设计、投票或司法门槛，并展示各案不同停点。",
+      "interpretation_limit": "程序顺序不识别动员对结果的因果；咨询性投票与行政约束需逐案区分；A011 requester 不等于自然人 plaintiff。",
+      "assets": [
+        {
+          "path": "outputs/R09_referendum_process_v0/process_stages_reviewed_all_v0.csv",
+          "role": "reviewed_stage_table"
+        },
+        {
+          "path": "outputs/R09_referendum_process_v0/actor_process_roles_reviewed_all_v0.csv",
+          "role": "reviewed_role_table"
+        },
+        {
+          "path": "outputs/R09_referendum_process_v0/referendum_process_timeline_accepted_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R09_referendum_process_v0/institutional_gate_flow_accepted_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R09_referendum_process_v0/R09_process_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "adapter 只读取 accepted/reviewed formal rows，并把 9 项 local gap 显示为资料缺口而不是空值或负事实。"
+    },
+    {
+      "id": "PUB-MR-010",
+      "title": "R9 选举—民间组织公共接口",
+      "category": "method_ready_adapter_needed",
+      "research_question": "民间组织在2014、2018、2022知事选举窗口中以哪些公开方式介入？",
+      "analysis_unit": "actor×election event×public intervention mode observation",
+      "selection_boundary": "19 条 human-reviewed actor-event roles；18 条确认发生，1 条 announcement-only",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "human_reviewed",
+      "frontend_status": "adapter_needed",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "time",
+        "pathways"
+      ],
+      "allowed_wording": "可描述限定线上材料中的公开介入模式，并区分已发生与仅宣布。",
+      "interpretation_limit": "不识别票数、投票率、说服、胜负因果、政策吸收、成员关系或稳定联盟。",
+      "assets": [
+        {
+          "path": "outputs/R09_election_civic_interface_v1/three_election_windows_v1.csv",
+          "role": "reviewed_observations"
+        },
+        {
+          "path": "outputs/R09_election_civic_interface_v1/intervention_mode_counts_v1.csv",
+          "role": "bounded_counts"
+        },
+        {
+          "path": "outputs/R09_election_civic_interface_v1/fig_r09_intervention_modes_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R09_election_civic_interface_v1/fig_r09_noncausal_mechanism_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R09_election_civic_interface_v1/R09_election_civic_interface_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "adapter 必须保留 held/announcement-only 状态；页面文案明确这是 public interface 而非 electoral effect。"
+    },
+    {
+      "id": "PUB-MR-011",
+      "title": "R10 行政协作、委托、服务与金额证据边界",
+      "category": "method_ready_adapter_needed",
+      "research_question": "行政委托、公益服务、慈善支持和公开事业费在现有样本中如何分层，哪些记录可以谈金额？",
+      "analysis_unit": "一条 formal relation/function/amount observation；不同机制不合并为资金边",
+      "selection_boundary": "目的性样本的 reviewed/revised formal layers；local/internal-record 行继续留作缺口，NOFO 和 project cost 不转写为 award/payment",
+      "method_status": "method_ready_bounded",
+      "claim_status": "descriptive_ready",
+      "review_status": "mixed_human_reviewed_revised_with_local_gap",
+      "frontend_status": "adapter_needed_partial_existing",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "relations",
+        "evidence"
+      ],
+      "allowed_wording": "可按证据支持分别展示委托、服务、慈善、非资金关系与金额类型。",
+      "interpretation_limit": "project cost 不是付款；机会不是获奖；币种不可相加；不得命名为运动资金网或从服务功能推断政治立场。",
+      "assets": [
+        {
+          "path": "outputs/R10_administrative_collaboration_v0/annual_relations_v0.csv",
+          "role": "formal_relation_sample"
+        },
+        {
+          "path": "outputs/R10_administrative_collaboration_v0/mechanism_matrix_v0.csv",
+          "role": "mechanism_summary"
+        },
+        {
+          "path": "outputs/R10_administrative_collaboration_v0/fig_r10_mechanism_ecology.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R10_administrative_collaboration_v0/fig_r10_amount_evidence_boundary.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/R10_administrative_collaboration_v0/R10_explanatory_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "adapter 按 mechanism family、amount semantics、review status 分层；只将满足官方记录门槛的 dyadic relation 放入关系图。"
+    },
+    {
+      "id": "PUB-MR-012",
+      "title": "R10 县政府616条协作记录的官方来源总体",
+      "category": "method_ready_integrated",
+      "research_question": "县政府2024年度公开协作记录在部门、议题和官方机制上如何分布？",
+      "analysis_unit": "S002 PDF 的一条官方来源行及其机械聚合；source label 不是 actor identity",
+      "selection_boundary": "完整86页、616行、15部门、19议题代码、10官方机制；365个 machine display labels 不 actorize",
+      "method_status": "method_ready",
+      "claim_status": "descriptive_ready",
+      "review_status": "mechanical_authoritative_source_universe",
+      "frontend_status": "integrated",
+      "publication_object_path": "exhibits/PUB-MR-012.json",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "overview",
+        "relations",
+        "evidence"
+      ],
+      "allowed_wording": "可描述官方616行来源总体的机制和部门构成，例如1–4类机制行占比与和平/人权/国际合作相邻领域占比。",
+      "interpretation_limit": "来源行数不是组织数、合同数或拨款数；machine label 不是 actor；不生成身份、支付、联盟或政治立场。",
+      "assets": [
+        {
+          "path": "outputs/R10_official_collaboration_universe_v1/official_collaboration_source_universe_v1.csv",
+          "role": "authoritative_source_universe"
+        },
+        {
+          "path": "outputs/R10_official_collaboration_universe_v1/descriptive_statistics_v1.csv",
+          "role": "bounded_statistics"
+        },
+        {
+          "path": "outputs/R10_official_collaboration_universe_v1/fig_r10_s002_issue_mechanism_matrix_current.svg",
+          "role": "current_figure"
+        },
+        {
+          "path": "outputs/R10_official_collaboration_universe_v1/fig_r10_s002_partner_department_resource_structure_current.svg",
+          "role": "current_figure"
+        },
+        {
+          "path": "outputs/R10_official_collaboration_universe_v1/R10_official_collaboration_universe_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "已建立 official-row 专用 adapter；每次发布继续验证365个机器标签、合作方名称和金额字段不会进入组织搜索或关系图。"
+    },
+    {
+      "id": "PUB-MR-013",
+      "title": "六维覆盖与可见性偏差审计",
+      "category": "method_ready_integrated",
+      "research_question": "当前公开资料工作样本在哪些时期、地点、组织功能、议题、来源与复核层上更可见？",
+      "analysis_unit": "当前有效层的六维机械聚合与明确历史审计边界",
+      "selection_boundary": "121 active actors、283 active actor–issue、130 active actor–place、295 sources；无总体分母",
+      "method_status": "method_ready",
+      "claim_status": "descriptive_ready",
+      "review_status": "mechanical_no_new_human_gate",
+      "frontend_status": "integrated",
+      "publication_object_path": "views/core_surfaces/PUB-MR-013.json",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "overview",
+        "evidence"
+      ],
+      "allowed_wording": "可说明当前检索与存档路径更容易看见哪些对象，并把偏差作为其他图表的读图前提。",
+      "interpretation_limit": "不估计总体覆盖率；source 数不等于活跃度；archived 不等于结论充分，archive failed 也不等于证据不存在。",
+      "assets": [
+        {
+          "path": "outputs/coverage_audit_v1/coverage_bias_implications_v1.csv",
+          "role": "six_dimension_audit"
+        },
+        {
+          "path": "outputs/coverage_audit_v1/fig_coverage_bias_core_v1.svg",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/coverage_audit_v1/coverage_audit_brief_v1.md",
+          "role": "interpretation_brief"
+        }
+      ],
+      "next_gate": "已接入六维交互审计与三语 implication；下一步把受影响维度链接到各模块方法卡，不改变本展品的总体分母边界。"
+    },
+    {
+      "id": "PUB-MR-014",
+      "title": "13个制度转译 episode 的阶段比较",
+      "category": "method_ready_integrated",
+      "research_question": "公开诉求如何进入制度场域、留下中间产出，并与实体工程变化区分？",
+      "analysis_unit": "analytical episode×stage；场域进入、中间产出和 substantive project change 分栏",
+      "selection_boundary": "13 episodes；TE10–TE13 是 HR-027 research-only event candidates，不能混入 reviewed 默认层",
+      "method_status": "method_ready_bounded",
+      "claim_status": "bounded_comparison_ready",
+      "review_status": "mixed_central_reviewed_and_research_candidates",
+      "frontend_status": "integrated",
+      "publication_object_path": "views/core_surfaces/PUB-MR-014.json",
+      "release_profiles": [
+        "reviewed",
+        "client_preview",
+        "internal"
+      ],
+      "target_views": [
+        "pathways",
+        "time"
+      ],
+      "allowed_wording": "可比较不同 episode 是否进入场域、留下何种中间产出，以及是否观察到项目本身变化。",
+      "interpretation_limit": "13案按已有可观察入口与产出选取，不是所有诉求的分母；TE10–TE13 保持 research-only；不能计算成功率或归因。",
+      "assets": [
+        {
+          "path": "outputs/translation_episode_comparison_v1/translation_episode_candidates_v1.csv",
+          "role": "episode_table"
+        },
+        {
+          "path": "outputs/translation_episode_comparison_v1/stage_status_summary_v1.csv",
+          "role": "stage_summary"
+        },
+        {
+          "path": "outputs/translation_episode_comparison_v1/fig_translation_ladder_v1.png",
+          "role": "figure"
+        },
+        {
+          "path": "outputs/translation_episode_comparison_v1/README.md",
+          "role": "method_brief"
+        }
+      ],
+      "next_gate": "已形成六阶段卡片与双案比较，reviewed 物理排除 TE10–TE13；下一步补负案例时必须使用同一 entry/processing/relief/implementation 口径。"
+    },
+    {
+      "id": "PUB-RR-001",
+      "title": "H1 资料留存与观测网络可见性",
+      "category": "method_research_required",
+      "research_question": "观测到的 actor–issue 可见度有多少与资料留存、索引与组织能力痕迹重合？",
+      "analysis_unit": "actor-level documentation proxies、graph objects 与分层关联估计；不同图对象不可互换",
+      "selection_boundary": "121 current actors；9个 legacy source token 未解析；reviewed/candidate、registry-only/outcome-excluded 分层",
+      "method_status": "method_gate_required",
+      "claim_status": "candidate_hypothesis",
+      "review_status": "ai_seeded_principal_decision_required",
+      "frontend_status": "withheld_method_gate",
+      "release_profiles": [
+        "internal"
+      ],
+      "target_views": [
+        "evidence"
+      ],
+      "allowed_wording": "内部可写现有指标显示资料可见性与编码结果关系不稳定，并存在 dense-low 与 thin-high 反例。",
+      "interpretation_limit": "不能写中心性就是信息留存能力；相关不是因果；英文标题不等于英文能力，host 不等于自有官网，source-year span 不等于寿命。",
+      "assets": [
+        {
+          "path": "outputs/research_wave_h1_documentation_visibility_v2/actor_documentation_visibility_v2.csv",
+          "role": "research_observations"
+        },
+        {
+          "path": "outputs/research_wave_h1_documentation_visibility_v2/association_estimates_v2.csv",
+          "role": "candidate_analysis"
+        },
+        {
+          "path": "outputs/research_wave_h1_documentation_visibility_v2/negative_case_audit_v2.csv",
+          "role": "negative_cases"
+        },
+        {
+          "path": "outputs/research_wave_h1_documentation_visibility_v2/principal_checkpoint_v2.md",
+          "role": "principal_gate"
+        }
+      ],
+      "next_gate": "负责人读8个反例并决定命题强度；补9个 source crosswalk 与最多36 actor 的官网/人员/语言 capacity crosswalk 后重估。"
+    },
+    {
+      "id": "PUB-RR-002",
+      "title": "H2 基地周边两套功能生态",
+      "category": "method_research_required",
+      "research_question": "限制/问责型与驻军生活照护/慈善型组织生态是否形成可观测接口或制度边界？",
+      "analysis_unit": "按预注册规则选择的两组 actor 及 typed dyadic、case-role、event、R10 interface；person 与 recipient 尚未测量",
+      "selection_boundary": "9个 service-core registry subset 与 post-freeze 77个 accountability comparison actors；不是两类组织总体",
+      "method_status": "method_gate_required",
+      "claim_status": "candidate_hypothesis",
+      "review_status": "ai_seeded_principal_and_measurement_gate_required",
+      "frontend_status": "withheld_method_gate",
+      "release_profiles": [
+        "internal"
+      ],
+      "target_views": [
+        "relations",
+        "overview"
+      ],
+      "allowed_wording": "内部可写在限定 typed-relation、案件、事件与R10输入中尚未编码出直接跨组组织关系，同时人物和 recipient 网络未测或不完整。",
+      "interpretation_limit": "不得写没有共享人员、两个社会彼此隔绝或服务组织亲基地/非政治；零记录首先可能是资料渠道、抽样与分类效应。",
+      "assets": [
+        {
+          "path": "outputs/research_wave_h2_two_ecologies_v1/service_core_actors_v1.csv",
+          "role": "bounded_group_definition"
+        },
+        {
+          "path": "outputs/research_wave_postfreeze_compatibility_v1/h2_accountability_actor_delta_v1.csv",
+          "role": "postfreeze_group_update"
+        },
+        {
+          "path": "outputs/research_wave_h2_two_ecologies_v1/dyadic_relation_ecology_audit_v1.csv",
+          "role": "candidate_analysis"
+        },
+        {
+          "path": "outputs/research_wave_h2_two_ecologies_v1/coverage_gaps_v1.csv",
+          "role": "measurement_gaps"
+        },
+        {
+          "path": "outputs/research_wave_h2_two_ecologies_v1/H2_two_ecologies_brief_v1.md",
+          "role": "research_brief"
+        }
+      ],
+      "next_gate": "先建立 person–actor–time 与 recipient 年表的对称测量或明确不可得边界，再由负责人判断是否保留“两套生态”作为论文命题。"
+    },
+    {
+      "id": "PUB-RR-003",
+      "title": "H3 前线化、战争记忆与跨地区共同语言",
+      "category": "method_research_required",
+      "research_question": "反战、防止前线化、台湾有事与战争记忆是否形成跨地区共同文件、共同对象或独立扩散？",
+      "analysis_unit": "分层文本 observation、共同文件、事件 roster、speaker attribution 与 network formation event",
+      "selection_boundary": "共同文件层与各组织独立采用严格区分；35/38名册、2025/2026事件与A010更名冲突均未中央写回",
+      "method_status": "method_gate_required",
+      "claim_status": "candidate_hypothesis",
+      "review_status": "ai_seeded_principal_human_gate_required",
+      "frontend_status": "withheld_method_gate",
+      "release_profiles": [
+        "internal"
+      ],
+      "target_views": [
+        "time",
+        "pathways",
+        "map"
+      ],
+      "allowed_wording": "内部可写已观察到共同文件把生产、运输、部署、演习和避难并置为分布式对象，并有跨区域行动载体的公开记录。",
+      "interpretation_limit": "不能写词汇增长、单向扩散、全日本共同语言、稳定联盟或各列名组织独立采用；共同文本不自动归给所有参加团体。",
+      "assets": [
+        {
+          "path": "outputs/research_wave_h3_frontline_memory_v2/comparable_corpus_v2.csv",
+          "role": "research_corpus"
+        },
+        {
+          "path": "outputs/research_wave_h3_frontline_memory_v2/frame_object_observations_v2.csv",
+          "role": "candidate_analysis"
+        },
+        {
+          "path": "outputs/research_wave_h3_frontline_memory_v2/network_formation_events_v2.csv",
+          "role": "candidate_timeline"
+        },
+        {
+          "path": "outputs/research_wave_h3_frontline_memory_v2/human_review_queue_v2.csv",
+          "role": "human_gate"
+        },
+        {
+          "path": "outputs/research_wave_h3_frontline_memory_v2/principal_checkpoint_v2.md",
+          "role": "principal_gate"
+        }
+      ],
+      "next_gate": "负责人完成指定文本阅读，裁决A010更名冲突、2025网络是否入registry和2026事件是否入中央层；通过前不得进前端。"
+    },
+    {
+      "id": "PUB-RR-004",
+      "title": "NR-05 1998–2012制度化与组织载体史候选",
+      "category": "method_research_required",
+      "research_question": "NPO制度化扩展与基地问责行动的组织载体形式在1998–2012年如何并存和变化？",
+      "analysis_unit": "有日期的 formed/renamed/incorporated/dissolved/lawsuit-round/event-committee 锚点与匹配比较",
+      "selection_boundary": "现阶段是文献定位与候选命题；没有同期总体分母，既有研究已经提供非正式/事件型载体的反例",
+      "method_status": "method_gate_required",
+      "claim_status": "candidate_hypothesis",
+      "review_status": "research_only_literature_positioned",
+      "frontend_status": "withheld_method_gate",
+      "release_profiles": [
+        "internal"
+      ],
+      "target_views": [
+        "time"
+      ],
+      "allowed_wording": "内部可写本项目可能在有日期的组织载体史、事件型载体与谱系锚点上形成增量。",
+      "interpretation_limit": "不能把NPO法、议题多元化、环保/女性进入运动或组织频繁改名当作新发现；不能断言基地问责天然非正式、一般公益天然法人化。",
+      "assets": [
+        {
+          "path": "outputs/nr05_literature_positioning_v1/source_crosswalk.csv",
+          "role": "literature_crosswalk"
+        },
+        {
+          "path": "outputs/nr05_literature_positioning_v1/brief_v1.md",
+          "role": "redteam_brief"
+        },
+        {
+          "path": "outputs/nr05_literature_positioning_v1/validation.md",
+          "role": "validation"
+        }
+      ],
+      "next_gate": "围绕有限数量组织做同期匹配的生命周期锚点收集，并由负责人确认比较分母与创新命题；不得直接用现有registry分布替代。"
+    },
+    {
+      "id": "PUB-RR-005",
+      "title": "制度转译负案例候选",
+      "category": "method_research_required",
+      "research_question": "未进入、被资格排除、被拒或回应追踪中断的诉求会如何改变对制度让步上限的理解？",
+      "analysis_unit": "candidate negative episode×entry/processing/relief/implementation gate",
+      "selection_boundary": "5个定向找到且仍有公开记录的候选负例；不是所有失败诉求或成功率分母",
+      "method_status": "method_gate_required",
+      "claim_status": "candidate_hypothesis",
+      "review_status": "ai_seeded_human_review_blank",
+      "frontend_status": "withheld_method_gate",
+      "release_profiles": [
+        "internal"
+      ],
+      "target_views": [
+        "pathways"
+      ],
+      "allowed_wording": "内部可写候选负例提示制度上限至少可拆为 entry、processing、relief 与 implementation gates。",
+      "interpretation_limit": "未找到公开回应只能写限定检索未找到；不採択、却下、棄却和回应未闭合不是同一失败变量；所有候选尚未人审。",
+      "assets": [
+        {
+          "path": "outputs/translation_negative_cases_v1/negative_case_candidates_v1.csv",
+          "role": "candidate_cases"
+        },
+        {
+          "path": "outputs/translation_negative_cases_v1/comparison_table_v1.csv",
+          "role": "bounded_comparison"
+        },
+        {
+          "path": "outputs/translation_negative_cases_v1/human_review_queue_v1.csv",
+          "role": "human_gate"
+        },
+        {
+          "path": "outputs/translation_negative_cases_v1/brief_v1.md",
+          "role": "research_brief"
+        }
+      ],
+      "next_gate": "把5项负责人判断正式纳入HR总账并逐案核对程序语义；通过后才可与13个正向episode做同口径比较。"
+    },
+    {
+      "id": "PUB-RET-001",
+      "title": "旧地点×议题笛卡尔宽投影",
+      "category": "retired_prohibited",
+      "research_question": "历史图试图比较地点与议题，但没有要求两者来自同一材料。",
+      "analysis_unit": "已否决的 actor-level Cartesian projection",
+      "selection_boundary": "仅作为方法错误与修正的 provenance；不得用于发现、报告或前端",
+      "method_status": "retired_method",
+      "claim_status": "prohibited",
+      "review_status": "method_audit_rejected",
+      "frontend_status": "retired_prohibited",
+      "release_profiles": [],
+      "target_views": [],
+      "allowed_wording": "只可在方法审计中说明旧算法已退役，并由同源三元事实层替代。",
+      "interpretation_limit": "不得以任何标题、缩略图、缓存或历史同步包将其重新发布为地点—议题发现。",
+      "assets": [
+        {
+          "path": "outputs/explanatory_v0/fig_place_issue_matrix_explanatory.png",
+          "role": "retired_provenance"
+        },
+        {
+          "path": "outputs/explanatory_v0/place_issue_matrix.csv",
+          "role": "retired_provenance"
+        }
+      ],
+      "next_gate": "永久拒绝发布；替代入口为 PUB-MR-003。"
+    },
+    {
+      "id": "PUB-RET-002",
+      "title": "旧 actor–issue bridge network",
+      "category": "retired_prohibited",
+      "research_question": "历史图按度数突出所谓bridge actor。",
+      "analysis_unit": "候选 actor–issue 边上的度数筛选",
+      "selection_boundary": "仅保留 provenance；旧图没有充分区分长期定位、案件角色与事件型连接",
+      "method_status": "retired_method",
+      "claim_status": "prohibited",
+      "review_status": "superseded",
+      "frontend_status": "retired_prohibited",
+      "release_profiles": [],
+      "target_views": [],
+      "allowed_wording": "只可说明旧bridge图已被当前跨议题机制分层与来源稳健性审计替代。",
+      "interpretation_limit": "不得用度数称中心组织、骨干、影响力或稳定联盟。",
+      "assets": [
+        {
+          "path": "outputs/explanatory_v0/fig_actor_issue_bridge_network.png",
+          "role": "retired_provenance"
+        },
+        {
+          "path": "outputs/explanatory_v0/actor_issue_bridge_nodes.csv",
+          "role": "retired_provenance"
+        }
+      ],
+      "next_gate": "永久拒绝发布；替代入口为 PUB-MR-001 与 PUB-MR-002。"
+    },
+    {
+      "id": "PUB-RET-003",
+      "title": "旧边野古国际化单一路径图",
+      "category": "retired_prohibited",
+      "research_question": "历史图把边野古/大浦湾材料组织成单一路径。",
+      "analysis_unit": "E3/E4路径示意与事件级署名的混合图",
+      "selection_boundary": "仅保留 provenance；新版路径与法律角色表优先",
+      "method_status": "retired_method",
+      "claim_status": "prohibited",
+      "review_status": "superseded",
+      "frontend_status": "retired_prohibited",
+      "release_profiles": [],
+      "target_views": [],
+      "allowed_wording": "只可说明旧单一路径图已被分路径、分角色、分场域的当前模块替代。",
+      "interpretation_limit": "不得把箭头解释为资金、指挥、稳定联盟、必然回应或国际化因果链。",
+      "assets": [
+        {
+          "path": "outputs/explanatory_v0/fig_henoko_internationalization_pathway.png",
+          "role": "retired_provenance"
+        }
+      ],
+      "next_gate": "永久拒绝发布；替代入口为 PUB-MR-007 与 PUB-MR-008。"
+    },
+    {
+      "id": "PUB-RET-004",
+      "title": "其他已被当前模块替代的旧图",
+      "category": "retired_prohibited",
+      "research_question": "历史进度图曾展示旧名单映射、旧证据缺口、旧功能生态与未分语义的地点矩阵。",
+      "analysis_unit": "不同旧快照的混合图，不形成统一事实层",
+      "selection_boundary": "只保留历史同步与方法 provenance；不得自动打包进新发布目录",
+      "method_status": "retired_method",
+      "claim_status": "prohibited",
+      "review_status": "superseded",
+      "frontend_status": "retired_prohibited",
+      "release_profiles": [],
+      "target_views": [],
+      "allowed_wording": "只可在版本沿革中说明已由当前 R1、R3、R5 与 coverage 模块替代。",
+      "interpretation_limit": "不得因文件仍存在而重新用于当前计数、截图、同步稿或前端。",
+      "assets": [
+        {
+          "path": "outputs/explanatory_v0/fig_coaction_sample_composition.png",
+          "role": "retired_provenance"
+        },
+        {
+          "path": "outputs/explanatory_v0/fig_evidence_gap_map.png",
+          "role": "retired_provenance"
+        },
+        {
+          "path": "outputs/phase1_visuals_v1/fig1_functional_ecology.png",
+          "role": "retired_provenance"
+        },
+        {
+          "path": "outputs/phase1_visuals_v1/fig2_actor_place_matrix.png",
+          "role": "retired_provenance"
+        }
+      ],
+      "next_gate": "发布编译器默认排除；分别用 PUB-MR-001、PUB-MR-003、PUB-MR-005、PUB-MR-013 替代。"
+    }
+  ]
+}

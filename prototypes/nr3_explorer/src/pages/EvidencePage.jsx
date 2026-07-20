@@ -1,8 +1,10 @@
 import { useMemo, useState } from "react";
 import { Books, MapPin, WarningCircle } from "@phosphor-icons/react";
 import { tr, useLang } from "../lib/labels.js";
+import { localizedFieldOf } from "../lib/data.js";
 import { tu } from "../lib/ui_strings.js";
-import { ChartHelp } from "../components/ui.jsx";
+import { ChartHelp, SegmentedControl } from "../components/ui.jsx";
+import { OfficialCollaborationExhibit } from "../components/OfficialCollaborationExhibit.jsx";
 
 const ARCHIVE_ORDER = ["archived", "manual_archived", "failed", "skipped_non_url_reference"];
 
@@ -11,6 +13,8 @@ export function EvidencePage({ data }) {
   const cells = view?.cells || [];
   const implications = view?.implications || [];
   const lang = useLang();
+  const officialExhibit = data.exhibits?.["PUB-MR-012"];
+  const [viewMode, setViewMode] = useState("coverage");
 
   const dimensions = useMemo(() => {
     const order = view?.dimensions || [];
@@ -37,14 +41,43 @@ export function EvidencePage({ data }) {
             </ChartHelp>
           </h1>
         </div>
+        {officialExhibit && (
+          <SegmentedControl
+            label={tu("evidence.viewAria", lang)}
+            value={viewMode}
+            onChange={setViewMode}
+            items={[
+              {
+                id: "coverage",
+                label: tu("evidence.viewCoverage", lang),
+                icon: Books,
+              },
+              {
+                id: "official",
+                label: tu("evidence.viewOfficial", lang),
+                icon: MapPin,
+              },
+            ]}
+          />
+        )}
         <div className="page-summary">
           <Books size={18} />
-          {tu("evidence.summary", lang)
-            .replace("{c}", cells.length)
-            .replace("{d}", dimensions.length)}
+          {viewMode === "official"
+            ? tu("evidence.officialSummary", lang)
+            : tu("evidence.summary", lang)
+                .replace("{c}", cells.length)
+                .replace("{d}", dimensions.length)}
         </div>
       </div>
-      <div className="evidence-grid">
+      {viewMode === "official" && officialExhibit ? (
+        <div className="published-exhibit-scroll">
+          <OfficialCollaborationExhibit
+            exhibit={officialExhibit}
+            lang={lang}
+          />
+        </div>
+      ) : (
+        <div className="evidence-grid">
         <aside className="episode-rail">
           {dimensions.map((item) => (
             <button
@@ -111,32 +144,40 @@ export function EvidencePage({ data }) {
               <div className="detail-heading">
                 <div>
                   <h2>{tu(`dim.${dimension.id}`, lang)}</h2>
-                  <p>{dimension.implication.observed_skew}</p>
+                  <p>{localizedFieldOf(dimension.implication, "observed_skew", lang)}</p>
                 </div>
               </div>
               <section className="detail-section">
                 <header>
                   <span>{tu("evidence.mechanism", lang)}</span>
                 </header>
-                <p className="coverage-text">{dimension.implication.visibility_mechanism}</p>
+                <p className="coverage-text">
+                  {localizedFieldOf(dimension.implication, "visibility_mechanism", lang)}
+                </p>
               </section>
               <section className="detail-section">
                 <header>
                   <span>{tu("evidence.impact", lang)}</span>
                 </header>
-                <p className="coverage-text">{dimension.implication.impact_on_q1_q3}</p>
+                <p className="coverage-text">
+                  {localizedFieldOf(dimension.implication, "impact_on_q1_q3", lang)}
+                </p>
               </section>
               <section className="detail-section">
                 <header>
                   <span>{tu("evidence.online", lang)}</span>
                 </header>
-                <p className="coverage-text">{dimension.implication.online_gap_action}</p>
+                <p className="coverage-text">
+                  {localizedFieldOf(dimension.implication, "online_gap_action", lang)}
+                </p>
               </section>
               <section className="detail-section">
                 <header>
                   <span>{tu("evidence.local", lang)}</span>
                 </header>
-                <p className="coverage-text">{dimension.implication.local_gap_action}</p>
+                <p className="coverage-text">
+                  {localizedFieldOf(dimension.implication, "local_gap_action", lang)}
+                </p>
               </section>
               <section className="detail-section compact">
                 <header>
@@ -153,14 +194,17 @@ export function EvidencePage({ data }) {
               </section>
               <div className="interpretation-note">
                 <WarningCircle size={18} />
-                <p>{dimension.implication.interpretation_limit}</p>
+                <p>
+                  {localizedFieldOf(dimension.implication, "interpretation_limit", lang)}
+                </p>
               </div>
             </>
           ) : (
             <div className="empty-note">{tu("evidence.noImplication", lang)}</div>
           )}
         </aside>
-      </div>
+        </div>
+      )}
     </main>
   );
 }

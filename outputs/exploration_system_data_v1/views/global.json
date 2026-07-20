@@ -23,6 +23,7 @@
       "interpretation_limit"
     ]
   },
+  "presentation_path": "presentation.json",
   "time_layer": {
     "coverage_periods": [
       {
@@ -177,8 +178,14 @@
         "review_status": "human_checked"
       }
     ],
-    "historical_anchor_ids": [],
-    "interpretation_limit": "The empty historical-anchor collection is explicit. Event and source dates must not be used to fabricate organizational continuity."
+    "historical_anchor_ids": [
+      "LC002",
+      "LC005",
+      "LC001",
+      "LC004",
+      "LC003"
+    ],
+    "interpretation_limit": "Lifecycle anchors are bounded reviewed observations. Event and source dates must not be used to fabricate organizational continuity."
   },
   "view_id": "G1+G2"
 }

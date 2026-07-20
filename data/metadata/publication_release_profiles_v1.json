@@ -1,0 +1,46 @@
+{
+  "schema_version": "publication_release_profiles_v1",
+  "default_profile": "client_preview",
+  "profiles": {
+    "reviewed": {
+      "description": "Public reviewed-only package. Candidate and lead payloads are physically absent.",
+      "public": true,
+      "include_research_candidates": false,
+      "include_internal_audit": false,
+      "catalog_release_profile": "reviewed",
+      "strip_fields": [
+        "archive_path",
+        "archive_sha256",
+        "review_note",
+        "review_notes",
+        "human_decision_note",
+        "internal_note",
+        "local_path"
+      ]
+    },
+    "client_preview": {
+      "description": "Public client exploration package. Reviewed facts and explicitly labelled research candidates are included; internal queues and machine-local locators are absent.",
+      "public": true,
+      "include_research_candidates": true,
+      "include_internal_audit": false,
+      "catalog_release_profile": "client_preview",
+      "strip_fields": [
+        "archive_path",
+        "archive_sha256",
+        "review_note",
+        "review_notes",
+        "human_decision_note",
+        "internal_note",
+        "local_path"
+      ]
+    },
+    "internal": {
+      "description": "Local research package with the complete compiled adapter and publication audit metadata.",
+      "public": false,
+      "include_research_candidates": true,
+      "include_internal_audit": true,
+      "catalog_release_profile": "internal",
+      "strip_fields": []
+    }
+  }
+}

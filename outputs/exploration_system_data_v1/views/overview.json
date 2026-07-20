@@ -56,7 +56,7 @@
   ],
   "interpretation_limits": [
     "The map is a navigation and evidence view, not an estimate of organizational density.",
-    "Only human-reviewed same-source triples appear in strict evidence mode."
+    "Human-reviewed same-source triples appear in the region detail panel; they are not a separate map-density layer."
   ],
   "issue_ids": [
     "I001",
@@ -262,7 +262,6 @@
   "visual_engine": "V1 全域地点—议题研究地图",
   "visual_states": [
     "all_regions",
-    "strict_evidence",
     "sakishima_focus",
     "compare"
   ]

@@ -17,6 +17,12 @@ __pycache__/
 **/dist/
 *.log
 
+# Obsolete mutable publication target; releases now live in immutable profile stores.
+outputs/publication_snapshot_v1/
+# Reproducible local release store and active-channel pointer.
+outputs/publication_releases_v1/
+outputs/publication_channels_v1/
+
 # Codex-local previews and temporary investigation artifacts
 .codex/
 tmp/

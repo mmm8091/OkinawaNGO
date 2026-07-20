@@ -2,71 +2,132 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 export { labelOf, localizedFieldOf } from "./display_text.js";
 
-export const REGION_META = {
-  all: { label: "全部区域", short: "全域", color: "#2b7f80" },
-  okinawa: { label: "冲绳本岛", short: "本岛", color: "#2b7f80" },
-  miyako: { label: "宫古群岛", short: "宫古", color: "#dc9a35" },
-  yaeyama: { label: "八重山群岛", short: "八重山", color: "#bd547c" },
-  other: { label: "周边岛屿", short: "周边", color: "#9baeb3" },
-  sakishima: { label: "先岛群岛（宫古 · 八重山）", short: "先岛", color: "#c9854e" },
+const publicUrl = (path) =>
+  `${import.meta.env.BASE_URL}${String(path).replace(/^\/+/, "")}`;
+
+const requiredJson = (path) =>
+  fetch(publicUrl(path)).then((response) => {
+    if (!response.ok) {
+      throw new Error(`Required release file unavailable: ${path} (${response.status})`);
+    }
+    return response.json();
+  });
+
+const publicationObjects = () =>
+  requiredJson("views/exhibits.json").then((index) => {
+    const entries = Array.isArray(index?.entries) ? index.entries : [];
+    const exhibitEntries = entries.filter(
+      (entry) => entry.payload_kind === "exhibit",
+    );
+    return Promise.all(
+      exhibitEntries.map((entry) =>
+        requiredJson(entry.path).then((payload) => [entry.catalog_id, payload]),
+      ),
+    ).then((rows) => ({
+      index,
+      exhibits: Object.fromEntries(rows),
+    }));
+  });
+
+const reviewedRelations = () =>
+  Promise.all([
+    requiredJson("core/relations/actor_issue.json"),
+    requiredJson("core/relations/actor_place.json"),
+    requiredJson("core/events/participation.json"),
+    requiredJson("core/legal/roles.json"),
+    requiredJson("core/relations/strict_place_issue.json"),
+    requiredJson("core/episodes/actor_links.json"),
+  ]).then(
+    ([
+      actorIssue,
+      actorPlace,
+      eventParticipation,
+      legalRoles,
+      strictPlaceIssue,
+      actorEpisode,
+    ]) => ({
+      actor_issue: actorIssue,
+      actor_place: actorPlace,
+      event_participation: eventParticipation,
+      legal_roles: legalRoles,
+      strict_place_issue: strictPlaceIssue,
+      actor_episode: actorEpisode,
+    }),
+  );
+
+const researchCandidateObjects = () =>
+  Promise.all([
+    requiredJson("research/actor_issue.json"),
+    requiredJson("research/actor_place.json"),
+    requiredJson("research/event_participation.json"),
+    requiredJson("research/strict_place_issue.json"),
+    requiredJson("research/actor_episode.json"),
+    requiredJson("research/episodes.json"),
+    requiredJson("research/outcomes.json"),
+    requiredJson("research/dyadic_relations.json"),
+    requiredJson("research/administrative_records.json"),
+    requiredJson("research/aggregate_observations.json"),
+    requiredJson("research/typed_event_participation.json"),
+    requiredJson("research/relation_leads.json"),
+    requiredJson("research/genealogy_anchors.json"),
+  ]).then(
+    ([
+      actorIssue,
+      actorPlace,
+      eventParticipation,
+      strictPlaceIssue,
+      actorEpisode,
+      episodes,
+      outcomes,
+      dyadicRelations,
+      administrativeRecords,
+      aggregateObservations,
+      typedEventParticipation,
+      relationLeads,
+      genealogyAnchors,
+    ]) => ({
+      relations: {
+        actor_issue: actorIssue,
+        actor_place: actorPlace,
+        event_participation: eventParticipation,
+        strict_place_issue: strictPlaceIssue,
+        actor_episode: actorEpisode,
+      },
+      episodes,
+      outcomes,
+      dyadic_relations: dyadicRelations,
+      administrative_records: administrativeRecords,
+      aggregate_observations: aggregateObservations,
+      event_participation: typedEventParticipation,
+      relation_leads: relationLeads,
+      genealogy_anchors: genealogyAnchors,
+    }),
+  );
+
+export const actorClassGroup = (actorClass, presentation) =>
+  presentation?.actor_class_to_group?.[actorClass] || "unknown";
+
+export const actorClassMeta = (actorClass, presentation) => {
+  const groupId = actorClassGroup(actorClass, presentation);
+  return (
+    presentation?.actor_class_groups?.find((group) => group.id === groupId) ||
+    presentation?.actor_class_groups?.find((group) => group.id === "unknown") || {
+      id: "unknown",
+      color: "#9aa6a8",
+    }
+  );
 };
 
-export const CLASS_GROUPS = {
-  civic: { label: "公民与地方组织", color: "#2b7f80" },
-  international: { label: "国际与倡议组织", color: "#bd547c" },
-  legal: { label: "法律与专业组织", color: "#55756b" },
-  labor: { label: "劳动与教育组织", color: "#8a6c98" },
-  service: { label: "服务与福利组织", color: "#6b7fa3" },
-  public: { label: "公共与交流机构", color: "#8d6c57" },
-  resource: { label: "企业与资源支持", color: "#dc9a35" },
-  unknown: { label: "尚未归组", color: "#9aa6a8" },
-};
+export const regionMeta = (region, presentation) =>
+  presentation?.regions?.find((item) => item.id === region) || {
+    id: region,
+    color: "#9baeb3",
+  };
 
-export const CLASS_TO_GROUP = {
-  local_civic_actor: "civic",
-  domestic_japan_ngo: "civic",
-  citizen_network: "civic",
-  citizen_group: "civic",
-  executive_committee: "civic",
-  local_npo: "civic",
-  womens_or_human_rights_ngo: "civic",
-  womens_or_community_organization: "civic",
-  womens_organization: "civic",
-  international_advocacy_actor: "international",
-  international_ngo: "international",
-  local_international_cooperation_ngo: "international",
-  media_or_advocacy_actor: "international",
-  lawyers_network: "legal",
-  labor_or_education_union: "labor",
-  labor_union_federation: "labor",
-  labor_union: "labor",
-  base_community_service_actor: "service",
-  base_spouse_charity_network: "service",
-  base_spouse_club: "service",
-  public_institution_partner: "public",
-  public_diplomacy_or_exchange_actor: "public",
-  public_diplomacy_grant_program: "public",
-  local_business_sponsor: "resource",
-  corporate_sponsor: "resource",
-  funder_or_intermediary: "resource",
-};
-
-export const actorClassGroup = (actorClass) =>
-  CLASS_TO_GROUP[actorClass] || "unknown";
-export const actorClassMeta = (actorClass) =>
-  CLASS_GROUPS[actorClassGroup(actorClass)];
-
-// Presentation-only mapping from registry place to the four display regions.
-// The central place registry keeps Miyako under "Sakishima"; the presentation
-// layer separates Miyako from Yaeyama. Central data unchanged.
-export const PLACE_DISPLAY_REGION = {
-  P011: "yaeyama",
-  P012: "yaeyama",
-  P013: "miyako",
-  P021: "sakishima",
-};
-export const placeDisplayRegion = (place) =>
-  PLACE_DISPLAY_REGION[place.id] || "okinawa";
+export const placeDisplayRegion = (place, presentation) =>
+  presentation?.place_display_regions?.[place.id] ||
+  presentation?.default_place_display_region ||
+  "okinawa";
 
 export function useResearchCandidates(enabled) {
   const [state, setState] = useState({ status: "idle", candidates: null });
@@ -77,8 +138,7 @@ export function useResearchCandidates(enabled) {
     setState((current) =>
       current.status === "idle" ? { status: "loading", candidates: null } : current,
     );
-    fetch("/research/candidates.json")
-      .then((r) => r.json())
+    researchCandidateObjects()
       .then((candidates) => {
         if (mounted) setState({ status: "ready", candidates });
       })
@@ -102,8 +162,7 @@ export function useEvidenceData(enabled) {
     setState((current) =>
       current.status === "idle" ? { status: "loading", evidence: null } : current,
     );
-    fetch("/demo/evidence.json")
-      .then((r) => r.json())
+    requiredJson("core/evidence/sources.json")
       .then((evidence) => {
         if (mounted) setState({ status: "ready", evidence });
       })
@@ -130,8 +189,11 @@ export function useBuildWatch(currentBuildId) {
     if (!currentBuildId) return undefined;
     let cancelled = false;
     const check = () =>
-      fetch("/manifest.json", { cache: "no-store" })
-        .then((r) => r.json())
+      fetch(publicUrl("manifest.json"), { cache: "no-store" })
+        .then((r) => {
+          if (!r.ok) throw new Error(`Release manifest unavailable (${r.status})`);
+          return r.json();
+        })
         .then((manifest) => {
           if (!cancelled && manifest.build_id && manifest.build_id !== currentBuildId) {
             setNewerBuild(manifest.build_id);
@@ -156,29 +218,26 @@ export function useResearchData() {
 
   useEffect(() => {
     let mounted = true;
-    const tolerantJson = (url, fallback) =>
-      fetch(url)
-        .then((r) => (r.ok ? r.json() : fallback))
-        .then((data) => (Array.isArray(data) ? data : fallback))
-        .catch(() => fallback);
     Promise.all([
-      fetch("/demo/actors.json").then((r) => r.json()),
-      fetch("/demo/places.json").then((r) => r.json()),
-      fetch("/demo/issues.json").then((r) => r.json()),
-      fetch("/demo/relations.json").then((r) => r.json()),
-      fetch("/demo/historical_anchors.json").then((r) => r.json()),
-      fetch("/demo/map_geometry.geojson").then((r) => r.json()),
-      fetch("/demo/episodes.json").then((r) => r.json()),
-      fetch("/demo/outcomes.json").then((r) => r.json()),
-      fetch("/views/pathways.json").then((r) => r.json()),
-      fetch("/views/evidence_coverage.json").then((r) => r.json()),
-      fetch("/manifest.json").then((r) => r.json()),
-      tolerantJson("/demo/dyadic_relations.json", []),
-      tolerantJson("/demo/administrative_records.json", []),
-      tolerantJson("/demo/aggregate_observations.json", []),
-      tolerantJson("/demo/typed_event_participation.json", []),
-      tolerantJson("/demo/case_roles.json", []),
-      tolerantJson("/demo/genealogy_anchors.json", []),
+      requiredJson("core/entities/actors.json"),
+      requiredJson("core/entities/places.json"),
+      requiredJson("core/entities/issues.json"),
+      reviewedRelations(),
+      requiredJson("core/map/geometry.geojson"),
+      requiredJson("core/episodes/episodes.json"),
+      requiredJson("core/episodes/outcomes.json"),
+      requiredJson("core/episodes/pathways.json"),
+      requiredJson("core/coverage/audit.json"),
+      requiredJson("core/presentation/rules.json"),
+      requiredJson("views/core_surfaces.json"),
+      publicationObjects(),
+      requiredJson("manifest.json"),
+      requiredJson("core/typed_relations/dyadic.json"),
+      requiredJson("core/typed_relations/administrative.json"),
+      requiredJson("core/typed_relations/aggregate.json"),
+      requiredJson("core/typed_relations/event_participation.json"),
+      requiredJson("core/typed_relations/case_roles.json"),
+      requiredJson("core/lifecycle/anchors.json"),
     ])
       .then(
         ([
@@ -186,12 +245,14 @@ export function useResearchData() {
           places,
           issues,
           relations,
-          historicalAnchors,
           geometry,
           episodes,
           outcomes,
           pathwaysView,
           coverageView,
+          presentation,
+          coreSurfaces,
+          publication,
           manifest,
           dyadicRelations,
           administrativeRecords,
@@ -207,12 +268,15 @@ export function useResearchData() {
               places,
               issues,
               relations,
-              historicalAnchors,
               geometry,
               episodes,
               outcomes,
               pathwaysView,
               coverageView,
+              presentation,
+              coreSurfaces,
+              publicationObjectIndex: publication.index,
+              exhibits: publication.exhibits,
               manifest,
               dyadicRelations,
               administrativeRecords,

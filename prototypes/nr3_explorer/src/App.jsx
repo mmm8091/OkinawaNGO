@@ -54,12 +54,21 @@ export function App() {
   const [lang, setLang] = useState("zh");
   const [drawer, setDrawer] = useState({ open: false, sourceIds: [] });
   const [bannerDismissed, setBannerDismissed] = useState(false);
-  const candidatesState = useResearchCandidates(layer === "research");
+  const researchAvailable =
+    data.status === "ready" &&
+    data.manifest.capabilities?.research_candidates === true;
+  const candidatesState = useResearchCandidates(
+    researchAvailable && layer === "research",
+  );
   const evidenceState = useEvidenceData(drawer.open);
   const candidates =
     layer === "research" && candidatesState.status === "ready"
       ? candidatesState.candidates
       : null;
+  const researchLayerPending =
+    layer === "research" &&
+    researchAvailable &&
+    candidatesState.status !== "ready";
 
   const currentBuildId = data.status === "ready" ? data.manifest.build_id : null;
   const newerBuild = useBuildWatch(currentBuildId);
@@ -79,6 +88,12 @@ export function App() {
       current.open ? { open: false, sourceIds: [] } : current,
     );
   }, [route]);
+
+  useEffect(() => {
+    if (data.status === "ready" && !researchAvailable && layer === "research") {
+      setLayer("demo");
+    }
+  }, [data.status, layer, researchAvailable]);
 
   const version =
     data.status === "ready"
@@ -103,8 +118,9 @@ export function App() {
             lang={lang}
             onLangChange={setLang}
             version={version}
+            researchAvailable={researchAvailable}
           />
-          {data.status === "ready" ? (
+          {data.status === "ready" && !researchLayerPending ? (
             route === "actors" ? (
               <ActorsPage data={data} {...pageProps} />
             ) : route === "time" ? (
@@ -114,10 +130,19 @@ export function App() {
             ) : route === "evidence" ? (
               <EvidencePage data={data} {...pageProps} />
             ) : (
-              <OverviewPage data={data} {...pageProps} />
+              <OverviewPage
+                data={data}
+                onOpenActor={openActor}
+                {...pageProps}
+              />
             )
           ) : (
-            <LoadingState error={data.status === "error"} />
+            <LoadingState
+              error={
+                data.status === "error" ||
+                (researchLayerPending && candidatesState.status === "error")
+              }
+            />
           )}
           {drawer.open && (
             <EvidenceDrawer

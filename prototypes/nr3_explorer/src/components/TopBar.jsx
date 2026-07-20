@@ -17,7 +17,15 @@ const MAIN_NAV = [
   { id: "evidence", key: "nav.evidence", icon: Books, href: "#/evidence" },
 ];
 
-export function TopBar({ route, layer, onLayerChange, lang, onLangChange, version }) {
+export function TopBar({
+  route,
+  layer,
+  onLayerChange,
+  lang,
+  onLangChange,
+  version,
+  researchAvailable,
+}) {
   const contextLang = useLang();
   const activeLang = lang || contextLang;
   return (
@@ -85,13 +93,15 @@ export function TopBar({ route, layer, onLayerChange, lang, onLangChange, versio
           >
             {tu("layer.demo", activeLang)}
           </button>
-          <button
-            className={layer === "research" ? "active" : ""}
-            onClick={() => onLayerChange("research")}
-            type="button"
-          >
-            {tu("layer.research", activeLang)}
-          </button>
+          {researchAvailable && (
+            <button
+              className={layer === "research" ? "active" : ""}
+              onClick={() => onLayerChange("research")}
+              type="button"
+            >
+              {tu("layer.research", activeLang)}
+            </button>
+          )}
         </div>
       </div>
     </header>
