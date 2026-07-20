@@ -1,113 +1,171 @@
-/* Sakishima frame exhibit layout (uses shared exhibit.css anatomy) */
+/* Sakishima frame exhibit v2 layout */
 
-.sf-body {
+.sf-filter-band {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 18px;
+  gap: 12px;
 }
 
-.sf-frame-panel > header {
-  margin-bottom: 8px;
-}
-
-.sf-frame-panel > header span {
-  font-size: var(--fs-body);
-  font-weight: 600;
-}
-
-.sf-frame-panel > header small {
-  display: block;
-  margin-top: 2px;
-  color: var(--faint);
-  font-size: 10px;
-  line-height: 1.5;
-}
-
-.sf-frame-list {
+.sf-frame-bars {
   display: grid;
   gap: 4px;
 }
 
-.sf-frame-list button {
-  padding: 8px 10px;
-  display: flex;
+.sf-frame-bar {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  gap: 10px;
+  padding: 6px 10px;
   border: 1px solid transparent;
-  border-left: 2px solid transparent;
   border-radius: 8px;
   background: transparent;
   cursor: pointer;
   text-align: left;
-  font-size: var(--fs-small);
 }
 
-.sf-frame-list button:hover {
+.sf-frame-bar:hover {
   background: #f2f5f1;
 }
 
-.sf-frame-list button.active {
+.sf-frame-bar.active {
   border-color: #cbd9d5;
-  border-left-color: var(--teal-dark);
   background: #fffdf7;
 }
 
-.sf-frame-list b {
-  display: flex;
-  gap: 4px;
+.sf-frame-bar-label {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.sf-frame-list i {
-  min-width: 20px;
-  padding: 1px 5px;
-  border-radius: 5px;
+.sf-frame-bar-track {
+  height: 12px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
   background: #e6ebe7;
+}
+
+.sf-frame-bar-track .obs {
+  height: 100%;
+  background: #5e9795;
+}
+
+.sf-frame-bar-track .exc {
+  height: 100%;
+  background: #dc9a35;
+}
+
+.sf-frame-bar-track .obs:last-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.sf-frame-bar-count {
+  min-width: 44px;
   color: var(--muted);
-  font-size: 10px;
-  font-style: normal;
-  text-align: center;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  text-align: right;
 }
 
-.sf-frame-list button.active i {
-  background: #dce8e4;
-  color: var(--teal-dark);
-}
-
-.sf-frame-panel > footer {
-  margin-top: 8px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 24px;
-  padding-right: 8px;
-  color: var(--faint);
-  font-size: 9px;
-}
-
-.sf-records {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  align-content: start;
-}
-
-.sf-record-column > header {
-  margin-bottom: 8px;
+.sf-frame-bars-legend {
+  margin: 2px 0 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 14px;
+  color: var(--faint);
+  font-size: 10px;
+}
+
+.sf-frame-bars-legend span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sf-frame-bars-legend i {
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+}
+
+.sf-frame-bars-legend i.obs {
+  background: #5e9795;
+}
+
+.sf-frame-bars-legend i.exc {
+  background: #dc9a35;
+}
+
+.sf-frame-bars-legend em {
+  margin-left: auto;
+  font-style: normal;
+}
+
+.sf-type-tabs {
+  margin-top: 14px;
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.sf-type-tabs button {
+  padding: 7px 12px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #60747a;
+  cursor: pointer;
   font-size: var(--fs-body);
+}
+
+.sf-type-tabs button.active {
+  border-bottom-color: var(--teal-dark);
+  color: var(--ink);
   font-weight: 600;
 }
 
-.sf-record-column > header span {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.sf-record-list {
+  margin-top: 12px;
+  display: grid;
+  gap: 8px;
+  max-width: 980px;
 }
 
-.sf-record-column > header strong {
+.sf-type {
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.sf-type.obs {
+  background: #eaf2ee;
   color: var(--teal-dark);
+}
+
+.sf-type.exc {
+  background: #f7f0dd;
+  color: #8a6c1e;
+}
+
+.sf-full-limit {
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.sf-full-limit summary {
+  color: var(--teal-dark);
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.sf-full-limit p {
+  margin: 6px 0 0;
+  max-width: 720px;
 }
 
 .sf-entity {
@@ -215,12 +273,7 @@
 }
 
 @media (max-width: 820px) {
-  .sf-body,
-  .sf-records {
-    grid-template-columns: 1fr;
-  }
-
-  .sf-frame-list {
-    grid-template-columns: 1fr 1fr;
+  .sf-frame-bar {
+    grid-template-columns: 110px 1fr auto;
   }
 }

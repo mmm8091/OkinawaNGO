@@ -299,9 +299,9 @@ export const UI_STRINGS = {
     en: "Henoko, prefectural referendum, environmental advocacy, litigation & prefecture-wide politicization",
   },
   "period.p4.focus": {
-    zh: "国际倡议、环境正义、先岛与那国安全化、生活安全与跨国连接",
-    ja: "国際アドボカシー・環境正義・先島（与那国）の安保化・生活安全と越境接続",
-    en: "International advocacy, environmental justice, Sakishima/Yonaguni securitization, life safety & transnational ties",
+    zh: "国际倡议、环境正义、先岛安全化与生活安全",
+    ja: "国際アドボカシー・環境正義・先島の安保化と生活安全",
+    en: "International advocacy, environmental justice, Sakishima securitization & life safety",
   },
   "period.p4.range": { zh: "2020–现在", ja: "2020–現在", en: "2020–present" },
 

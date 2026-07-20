@@ -22,18 +22,15 @@ import "./SakishimaFrameExhibit.css";
 const COPY = {
   zh: {
     title: "先岛三地：公开材料中的问题框架",
-    subtitle: "在宫古、石垣、与那国之间切换，下钻逐条观察与原始摘录。",
+    subtitle: "宫古、石垣、与那国各自在公开材料中主张什么问题。",
     unavailable: "R4 展品数据未载入。",
     methodFallback: "计数只表示限定线上语料的可见度。",
+    fullLimit: "查看完整边界",
     placeTabs: "选择比较地点",
-    frames: "框架可见计数",
     allFrames: "全部框架",
-    observationsShort: "观察",
-    excerptsShort: "摘录",
     observations: "正式观察",
     excerpts: "安全摘录",
-    selectedPlace: "当前地点",
-    selectedFrame: "当前框架",
+    allTypes: "全部",
     event: "事件／文件",
     relationBasis: "记录依据",
     review: "复核状态",
@@ -53,7 +50,7 @@ const COPY = {
     anonymousEvent: "匿名事件话语",
     provisionalCollective: "一次性／待核集体",
     actorHint: "打开组织页",
-    unitNote: "同一材料可含多个框架；两列分母不能相加。",
+    unitNote: "同一材料可含多个框架；两种计数不能相加。",
     reviewedRow: "人工复核",
     researchRow: "QA-safe",
     observationUnit: "条正式观察",
@@ -62,18 +59,15 @@ const COPY = {
   },
   ja: {
     title: "先島三地域：公開資料に現れる問題フレーム",
-    subtitle: "宮古・石垣・与那国を切り替え、観察行と原文抜粋を確認できます。",
+    subtitle: "宮古・石垣・与那国それぞれが公開資料で何を主張しているか。",
     unavailable: "R4 展示データを読み込めません。",
     methodFallback: "件数は限定オンライン資料での可視性です。",
+    fullLimit: "完全な境界を表示",
     placeTabs: "比較地域を選択",
-    frames: "フレーム可視件数",
     allFrames: "全フレーム",
-    observationsShort: "観察",
-    excerptsShort: "抜粋",
     observations: "正式観察",
     excerpts: "安全抜粋",
-    selectedPlace: "選択地域",
-    selectedFrame: "選択フレーム",
+    allTypes: "すべて",
     event: "出来事／文書",
     relationBasis: "記録根拠",
     review: "レビュー状態",
@@ -93,7 +87,7 @@ const COPY = {
     anonymousEvent: "匿名のイベント発話",
     provisionalCollective: "単発・要確認の集団",
     actorHint: "団体ページを開く",
-    unitNote: "同じ資料に複数フレームがあり得ます。分母は加算できません。",
+    unitNote: "同じ資料に複数フレームがあり得ます。二つの計数は加算できません。",
     reviewedRow: "人手レビュー済み",
     researchRow: "QA-safe",
     observationUnit: "件の正式観察",
@@ -102,18 +96,15 @@ const COPY = {
   },
   en: {
     title: "Three Sakishima localities: frames in public records",
-    subtitle: "Switch between Miyako, Ishigaki and Yonaguni, then drill into each observation and excerpt.",
+    subtitle: "What Miyako, Ishigaki and Yonaguni each raise in public records.",
     unavailable: "The R4 exhibit payload is unavailable.",
     methodFallback: "Counts describe visibility in a bounded online corpus only.",
+    fullLimit: "Show full boundary",
     placeTabs: "Choose a comparison place",
-    frames: "Frame visibility counts",
     allFrames: "All frames",
-    observationsShort: "obs.",
-    excerptsShort: "exc.",
     observations: "Formal observations",
     excerpts: "Safe excerpts",
-    selectedPlace: "Selected place",
-    selectedFrame: "Selected frame",
+    allTypes: "All",
     event: "Event / document",
     relationBasis: "Recorded basis",
     review: "Review status",
@@ -133,7 +124,7 @@ const COPY = {
     anonymousEvent: "Anonymous event utterance",
     provisionalCollective: "One-off / provisional collective",
     actorHint: "Open actor page",
-    unitNote: "One record may carry multiple frames; denominators cannot be added.",
+    unitNote: "One record may carry multiple frames; the two counts cannot be added.",
     reviewedRow: "Human reviewed",
     researchRow: "QA-safe",
     observationUnit: "formal observations",
@@ -218,6 +209,7 @@ function ObservationCard({ row, copy, lang, frameById, onOpenActor }) {
       }
       badges={
         <>
+          <span className="sf-type obs">{copy.observations}</span>
           <span className="sf-frame">
             {labelOf(frameById.get(row.frame.label), lang, row.frame.label)}
           </span>
@@ -255,6 +247,7 @@ function ExcerptCard({ row, copy, lang, frameById }) {
       title={row.title}
       badges={
         <>
+          <span className="sf-type exc">{copy.excerpts}</span>
           <span className="sf-frame">
             {row.frame_labels.map((frame) => labelOf(frameById.get(frame), lang, frame)).join(" · ")}
           </span>
@@ -310,6 +303,59 @@ function buildAggregate(place, observations, excerpts) {
   return { obs: placeObs.length, exc: placeExc.length, obsFrames, excFrames };
 }
 
+function FrameBars({ rows, frameById, lang, selected, onSelect, copy }) {
+  const max = Math.max(...rows.map((row) => row.observation_count + row.safe_excerpt_count), 1);
+  return (
+    <div className="sf-frame-bars" role="group" aria-label={copy.allFrames}>
+      <button
+        type="button"
+        className={`sf-frame-bar all ${selected === "all" ? "active" : ""}`}
+        onClick={() => onSelect("all")}
+      >
+        <span className="sf-frame-bar-label">{copy.allFrames}</span>
+        <span className="sf-frame-bar-track">
+          <i className="obs" style={{ width: "100%" }} />
+        </span>
+        <span className="sf-frame-bar-count">
+          {rows.reduce((sum, row) => sum + row.observation_count, 0)}·
+          {rows.reduce((sum, row) => sum + row.safe_excerpt_count, 0)}
+        </span>
+      </button>
+      {rows.map((row) => {
+        const total = row.observation_count + row.safe_excerpt_count;
+        return (
+          <button
+            type="button"
+            key={row.frame_label}
+            className={`sf-frame-bar ${selected === row.frame_label ? "active" : ""}`}
+            onClick={() => onSelect(selected === row.frame_label ? "all" : row.frame_label)}
+          >
+            <span className="sf-frame-bar-label">
+              {labelOf(frameById.get(row.frame_label), lang, row.frame_label)}
+            </span>
+            <span className="sf-frame-bar-track">
+              <i className="obs" style={{ width: `${(row.observation_count / max) * 100}%` }} />
+              <i className="exc" style={{ width: `${(row.safe_excerpt_count / max) * 100}%` }} />
+            </span>
+            <span className="sf-frame-bar-count">
+              {row.observation_count}·{row.safe_excerpt_count}
+            </span>
+          </button>
+        );
+      })}
+      <p className="sf-frame-bars-legend">
+        <span>
+          <i className="obs" /> {copy.observations}
+        </span>
+        <span>
+          <i className="exc" /> {copy.excerpts}
+        </span>
+        <em>{copy.unitNote}</em>
+      </p>
+    </div>
+  );
+}
+
 export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer = "demo" }) {
   const activeLang = normalizeLang(lang);
   const copy = COPY[activeLang];
@@ -354,6 +400,7 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
 
   const [selectedPlace, setSelectedPlace] = useState(comparisonPlaces[0]);
   const [selectedFrame, setSelectedFrame] = useState("all");
+  const [typeFilter, setTypeFilter] = useState("all");
 
   useEffect(() => {
     if (!comparisonPlaces.includes(selectedPlace)) setSelectedPlace(comparisonPlaces[0]);
@@ -382,12 +429,6 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
 
   const selectedFrameRow = frameRows.find((row) => row.frame_label === selectedFrame);
 
-  useEffect(() => {
-    if (selectedFrame !== "all" && !frameRows.some((row) => row.frame_label === selectedFrame)) {
-      setSelectedFrame("all");
-    }
-  }, [frameRows, selectedFrame]);
-
   const visibleObservations = useMemo(() => {
     const placeRows = eligibleObservations.filter((row) => row.place === selectedPlace);
     if (!selectedFrameRow) return placeRows;
@@ -404,6 +445,11 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
 
   if (!exhibit || !aggregate) return <Unavailable text={copy.unavailable} />;
 
+  const listItems = [
+    ...visibleObservations.map((row) => ({ kind: "obs", row })),
+    ...visibleExcerpts.map((row) => ({ kind: "exc", row })),
+  ].filter((item) => typeFilter === "all" || item.kind === typeFilter);
+
   return (
     <section className="sf-exhibit">
       <ExhibitHeader
@@ -417,104 +463,87 @@ export function SakishimaFrameExhibit({ exhibit, lang = "zh", onOpenActor, layer
       />
 
       <BoundaryNote>
-        {includeResearch
-          ? localized(exhibit.display?.interpretation_limit, activeLang, copy.methodFallback)
-          : fill(copy.scopeNote, {
-              a: reviewedObservations.length,
-              b: reviewedExcerpts.length,
-              c: (exhibit.observations || []).length - reviewedObservations.length,
-              d: (exhibit.excerpts || []).length - reviewedExcerpts.length,
-            })}
+        {fill(copy.scopeNote, {
+          a: reviewedObservations.length,
+          b: reviewedExcerpts.length,
+          c: (exhibit.observations || []).length - reviewedObservations.length,
+          d: (exhibit.excerpts || []).length - reviewedExcerpts.length,
+        })}
+        {" · "}
+        {copy.methodFallback}
+        {includeResearch && exhibit.display?.interpretation_limit && (
+          <details className="sf-full-limit">
+            <summary>{copy.fullLimit}</summary>
+            <p>{localized(exhibit.display.interpretation_limit, activeLang)}</p>
+          </details>
+        )}
       </BoundaryNote>
 
-      <ExhibitTabs
-        ariaLabel={copy.placeTabs}
-        value={selectedPlace}
-        onChange={setSelectedPlace}
-        items={comparisonPlaces.map((place) => {
-          const agg = aggregateByPlace.get(place);
-          return {
-            id: place,
-            label: labelOf(placeById.get(place), activeLang, place),
-            note: `${agg?.obs || 0} ${copy.observationsShort} · ${agg?.exc || 0} ${copy.excerptsShort}`,
-          };
-        })}
-      />
+      <div className="sf-filter-band">
+        <ExhibitTabs
+          ariaLabel={copy.placeTabs}
+          value={selectedPlace}
+          onChange={setSelectedPlace}
+          items={comparisonPlaces.map((place) => {
+            const agg = aggregateByPlace.get(place);
+            return {
+              id: place,
+              label: labelOf(placeById.get(place), activeLang, place),
+              note: `${agg?.obs || 0} ${copy.observations} · ${agg?.exc || 0} ${copy.excerpts}`,
+            };
+          })}
+        />
+        <FrameBars
+          rows={frameRows}
+          frameById={frameById}
+          lang={activeLang}
+          selected={selectedFrame}
+          onSelect={setSelectedFrame}
+          copy={copy}
+        />
+      </div>
 
-      <div className="sf-body">
-        <aside className="sf-frame-panel">
-          <header>
-            <span>{copy.frames}</span>
-            <small>{copy.unitNote}</small>
-          </header>
-          <div className="sf-frame-list">
-            <button
-              type="button"
-              className={selectedFrame === "all" ? "active" : ""}
-              onClick={() => setSelectedFrame("all")}
-            >
-              <span>{copy.allFrames}</span>
-              <b>
-                <i>{aggregate.obs}</i>
-                <i>{aggregate.exc}</i>
-              </b>
-            </button>
-            {frameRows.map((row) => (
-              <button
-                type="button"
-                className={selectedFrame === row.frame_label ? "active" : ""}
-                onClick={() => setSelectedFrame(row.frame_label)}
-                key={row.frame_label}
-              >
-                <span>{labelOf(frameById.get(row.frame_label), activeLang, row.frame_label)}</span>
-                <b>
-                  <i>{row.observation_count}</i>
-                  <i>{row.safe_excerpt_count}</i>
-                </b>
-              </button>
-            ))}
-          </div>
-          <footer>
-            <span>{copy.observationsShort}</span>
-            <span>{copy.excerptsShort}</span>
-          </footer>
-        </aside>
+      <div className="sf-type-tabs" role="tablist" aria-label={copy.allTypes}>
+        {[
+          { id: "all", label: `${copy.allTypes} ${visibleObservations.length + visibleExcerpts.length}` },
+          { id: "obs", label: `${copy.observations} ${visibleObservations.length}` },
+          { id: "exc", label: `${copy.excerpts} ${visibleExcerpts.length}` },
+        ].map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            role="tab"
+            aria-selected={typeFilter === item.id}
+            className={typeFilter === item.id ? "active" : ""}
+            onClick={() => setTypeFilter(item.id)}
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
 
-        <div className="sf-records">
-          <section className="sf-record-column">
-            <header>
-              <span>
-                <FileText size={15} aria-hidden="true" />
-                {copy.observations}
-              </span>
-              <strong>{visibleObservations.length}</strong>
-            </header>
-            {visibleObservations.map((row) => (
-              <ObservationCard
-                row={row}
-                copy={copy}
-                lang={activeLang}
-                frameById={frameById}
-                onOpenActor={onOpenActor}
-                key={row.observation_id}
-              />
-            ))}
-            {!visibleObservations.length && <p className="sf-empty">{copy.noRows}</p>}
-          </section>
-          <section className="sf-record-column">
-            <header>
-              <span>
-                <Quotes size={15} aria-hidden="true" />
-                {copy.excerpts}
-              </span>
-              <strong>{visibleExcerpts.length}</strong>
-            </header>
-            {visibleExcerpts.map((row) => (
-              <ExcerptCard row={row} copy={copy} lang={activeLang} frameById={frameById} key={row.corpus_source_id} />
-            ))}
-            {!visibleExcerpts.length && <p className="sf-empty">{copy.noRows}</p>}
-          </section>
-        </div>
+      <div className="sf-record-list">
+        {listItems.map((item) =>
+          item.kind === "obs" ? (
+            <ObservationCard
+              row={item.row}
+              copy={copy}
+              lang={activeLang}
+              frameById={frameById}
+              onOpenActor={onOpenActor}
+              key={`obs-${item.row.observation_id}`}
+            />
+          ) : (
+            <ExcerptCard
+              row={item.row}
+              copy={copy}
+              lang={activeLang}
+              frameById={frameById}
+              key={`exc-${item.row.corpus_source_id}`}
+            />
+          ),
+        )}
+        {!listItems.length && <p className="sf-empty">{copy.noRows}</p>}
       </div>
     </section>
   );

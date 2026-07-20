@@ -1570,6 +1570,15 @@ button {
   overflow-x: auto;
 }
 
+.period-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.period-block:last-child {
+  flex: 1.7;
+}
+
 .period-block > header {
   margin-bottom: 9px;
 }
