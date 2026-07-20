@@ -4,11 +4,13 @@
   "status": "research_only_not_frontend_ready",
   "central_writeback": "no",
   "counts": {
-    "sources": 34,
+    "sources": 35,
     "corpus": 28,
-    "network_members": 35,
-    "petition_signatories": 35,
+    "network_participating_groups": 35,
+    "petition_endorsing_groups": 35,
     "petition_registry_crosswalks": 14,
+    "request_sections": 3,
+    "speaker_attributions": 3,
     "hypotheses": 7,
     "academic_links": 12,
     "human_review_items": 11,
@@ -35,126 +37,139 @@
   "files": [
     {
       "path": "academic_connection_v2.csv",
-      "sha256": "a34cb7759714d3ee7bf8dc46ac541ec22196ee0567f95098bcdb68a1bcc11750",
-      "bytes": 5007
+      "sha256": "0ae516a690daffbe773ae9a463be645eda7dcd93d7f077ca86ca32f42183a70a",
+      "bytes": 5080
     },
     {
       "path": "comparable_corpus_v2.csv",
-      "sha256": "f709c657ecffa329a1e1cfa0cc23264b7292b16c41eb86a4cb29a7a1c4d9530b",
-      "bytes": 9561
+      "sha256": "5b855f2e881f7d299638a81650fd9ff6748fe097ab1f00941e24d51a8013bf9e",
+      "bytes": 10190
+    },
+    {
+      "path": "event_endorser_issue_family_candidates_v2.csv",
+      "sha256": "d98b4b0b5cc50d6aefd44dbae2993f6802ed49876717b1d7ce9ef0b1920e955e",
+      "bytes": 3490
     },
     {
       "path": "event_roster_overlap_v2.csv",
-      "sha256": "7368c902e70f07a4122816f3a0195be8c991de245df8dee2274a393b77938eb2",
-      "bytes": 1846
+      "sha256": "6252917f43a5c1bfce45509beba739ba91c6c873288956d5ca0f9ec62b64d02c",
+      "bytes": 2260
+    },
+    {
+      "path": "event_speaker_attributions_v2.csv",
+      "sha256": "4d943deea681d12324936e26d26dd9ac70425d25a6a7b6170ef7a6db6a995550",
+      "bytes": 1211
     },
     {
       "path": "fig1_carrier_and_object_timeline_v2.svg",
-      "sha256": "842d48127e1167d0e52f9b734bcabfe7f215d195bd6301d2aeac2fed044a193f",
-      "bytes": 10967
+      "sha256": "019acc33e0f16782a017bfa8886b0277a136ca0e45f1a80064182a872f73c843",
+      "bytes": 11052
     },
     {
       "path": "fig2_roster_overlap_v2.svg",
-      "sha256": "e0b4292792cc27c1af0d6a47e4edde63df1a68eb0cb86621c637184bc4a8e0df",
-      "bytes": 4766
+      "sha256": "7e0e65269d72050d9e97ecc87e1c9b7b1c331a7f61a5ccaac0b557f747b62044",
+      "bytes": 5173
     },
     {
       "path": "fig3_common_frame_vs_common_object_v2.svg",
-      "sha256": "40b04c72b1a2d0826b1fd77579a9a6662db635f0eebc51527354fef1992fded9",
-      "bytes": 5628
-    },
-    {
-      "path": "four_island_issue_family_coverage_v2.csv",
-      "sha256": "ec27dd4555970596cf7246c0b55243b25badde671835eab0f25880977dfe9268",
-      "bytes": 1998
-    },
-    {
-      "path": "four_island_petition_entities_v2.csv",
-      "sha256": "3d055a0bc37e62de6a8f38aaf69d42141c2f8aa9acd2c2fd33696918e7cabd18",
-      "bytes": 13191
+      "sha256": "c9776934e3f34db9298e6951daf186971c1fbd1cbaaf3e582d3cc67adc944e06",
+      "bytes": 5650
     },
     {
       "path": "frame_object_observations_v2.csv",
-      "sha256": "44534001e45a90ad8a2c8277b945ae1e8c60c4102a8343832dadef01cb66ed94",
-      "bytes": 1785
+      "sha256": "8a318dd714cc6d860b1c87684187d4188694d1d858e4653c99c77663e5001e55",
+      "bytes": 2616
     },
     {
       "path": "frontline_memory_brief_v2.md",
-      "sha256": "33d8bf1bcf54e49bc97ff6eb5d136063599993e878ab24be8516ca5165ad6791",
-      "bytes": 5755
+      "sha256": "c9ad97c9d21465626c5d06d8dca5285206bf52a729172967a421eab93fd07534",
+      "bytes": 7198
     },
     {
       "path": "human_review_queue_v2.csv",
-      "sha256": "1366f06ed479519e57e58070413d3a3c893db00dca2f28cf4bbf404d64f18b70",
-      "bytes": 3072
+      "sha256": "144d0f15d6a0ae31cd0f310116aaf274fc22b918c8d88433d8479d18338e720b",
+      "bytes": 3927
     },
     {
       "path": "hypothesis_tests_v2.csv",
-      "sha256": "d69f6176742ede808e2fcf092d602bcc6f13127cde5e9d4bfa083aa82e68e8d2",
-      "bytes": 3703
+      "sha256": "7dd268e214d529be281c2024497d1110f90cacfbdc201b96f4e98de12748623c",
+      "bytes": 4549
     },
     {
       "path": "independent_adoption_panel_v2.csv",
-      "sha256": "9a2b00a2ca0c2991f14a93dff511a96207dface9b417820a9ce60fb8d9ae8fe1",
-      "bytes": 4472
+      "sha256": "9dd6ee2df0f3ed98ecfcfd9c68e52593b72c8ba8d5a45ee027604d070447a48f",
+      "bytes": 5717
+    },
+    {
+      "path": "ishigaki_name_lifecycle_candidate_v2.csv",
+      "sha256": "50585720d408f1079a1a86166eb8990b4b53d7bdb70e25a8bce3a77a648bdcba",
+      "bytes": 3739
     },
     {
       "path": "local_retrieval_queue_v2.csv",
-      "sha256": "c342bf17f18e16162f11488b5665545c61e467f9d90797c23988e7ceca5b7ed3",
-      "bytes": 1482
+      "sha256": "732550b2b6f9bf28dbc1a172456cc95a2eec4184184e7052900af960005a33e8",
+      "bytes": 1659
     },
     {
       "path": "negative_controls_v2.csv",
-      "sha256": "ea209c523f1c19ac0dea88eaacbdcc0dadcbbecc348fd00f1f5ec55069bb1969",
-      "bytes": 2715
+      "sha256": "4cc5d073019fc2fe7af83b73c8baf5e3f601a9d606ac286f37df2fb2bc9a8cc5",
+      "bytes": 2880
     },
     {
       "path": "network_formation_events_v2.csv",
-      "sha256": "2e90d763017365d4bfe2d542938e387c14914f1633854e9fe7b2385a863985be",
-      "bytes": 2556
+      "sha256": "f3f8f27f0060e5a1b14ebf9d44b82503dcd9cf8913732f7e8dfa09b4fee46600",
+      "bytes": 2829
     },
     {
-      "path": "network_membership_candidates_v2.csv",
-      "sha256": "8f2b6584c9575cf1f599008b6213cea66cfb7f10f67537f7e94faf0b1396e23a",
-      "bytes": 10429
+      "path": "network_participating_group_candidates_v2.csv",
+      "sha256": "5ae4c7badb8829ea0d28934974c8dcbb555274183373f5324e733d46120e8a43",
+      "bytes": 16500
     },
     {
       "path": "principal_checkpoint_v2.md",
-      "sha256": "579b22e0e48fcc9aa9352d379dda239f395b1cf10133a1daa48b4bc018aeeb23",
-      "bytes": 1814
+      "sha256": "2d91ffdce8ea3a4669d4433efe48c79729902666cd7963cb06ca40277a353821",
+      "bytes": 2323
     },
     {
       "path": "README.md",
-      "sha256": "5284dde1aa9acc00d9f7914afdf7a4f5f1001a492ba9c9bad73d45c4f58c99f4",
-      "bytes": 4159
-    },
-    {
-      "path": "scale_shift_case_A010_v2.csv",
-      "sha256": "578a9c94a225354d05487dea1959b3e746f017fbed2059fa6fb3914d03b51963",
-      "bytes": 2266
+      "sha256": "2d9428258cee7223a81bc80d40759c5315e3d6fcaf5a02d2154d8f2e99c79af5",
+      "bytes": 5268
     },
     {
       "path": "search_log_v2.csv",
-      "sha256": "4619dbbf21d8987b0b9a9fc241b2c15bc89c946c97fc5b07754243a864129a1c",
-      "bytes": 3510
+      "sha256": "01dabd1d6025126e95368fcc5405e2f4e394967eecf8057daeae528053a7a249",
+      "bytes": 3982
     },
     {
       "path": "source_log_v2.csv",
-      "sha256": "c94af732bb9bdfcab2ba2a993ab05a5eaed290ce6b5353604a9feec5436853da",
-      "bytes": 16422
+      "sha256": "f16fcfc94cea75a0d81f9b774091b73803b61cf74cdf45cc07947aafef2ead95",
+      "bytes": 19088
+    },
+    {
+      "path": "three_island_request_four_place_event_entities_v2.csv",
+      "sha256": "141eb1e6dfb07071189eb8da3a025098b6cfe0036d65a7404884ded3364e636c",
+      "bytes": 21863
+    },
+    {
+      "path": "three_island_request_sections_v2.csv",
+      "sha256": "fa9ac0e46eb26f8c52584336241c16cbd63d7d9b287e2ff42575606f55fcd255",
+      "bytes": 1692
     },
     {
       "path": "validation_report_v2.md",
-      "sha256": "5cffa0c0693948a11cb42c4c97ccb658d5f578466e106982412f8a5c16813e17",
-      "bytes": 583
+      "sha256": "b25e04ddff79b3fc204ee509bdd986ec564a68bf0712fb9e40d624e6d8e12ee9",
+      "bytes": 1377
     }
   ],
   "hard_boundaries": [
     "No vocabulary-growth claim from schema tags or three unmatched controls.",
     "No diffusion direction without same-organization before/after texts and transmission evidence.",
-    "Formal membership does not create dyadic alliances among members.",
-    "The 2026 petition is an event hyperedge; signatory and local-request roles remain separate.",
-    "A010 lifecycle and scale-shift interpretation require human review before central writeback.",
-    "35-to-38 is not a growth estimate without comparable dated rosters."
+    "The 2025 source lists participating/constituent groups as-of one date; it proves neither legal membership, retention, governance execution nor dyadic alliances.",
+    "The 2026 material separates 2026-05-07 submission/action from 2026-05-16 publication, three island-specific request sections from a four-place speaking/action hyperedge, and attributed 'first' language from fact.",
+    "The three request-section headings identify neither drafters nor representative organizations; A016, A010 and A013 do not inherit section authorship.",
+    "H3V2S019 remains speaker-specific: A013 receives battlefield/dialogue attribution only, while evacuation/life-safety remarks stay with two other speakers.",
+    "The 2025 declaration and 2026 petition construct a common object at document level; participating-group adoption and before/after organizational change are unproven.",
+    "News sources report an exact A010 rename, but central canonical/alias/lifecycle remains human-pending because of the HR-012 conflict; no installation-caused scale-shift inference is available.",
+    "35-to-38 is not a growth or retention estimate without comparable dated lists."
   ]
 }

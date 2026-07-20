@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1260" height="720" viewBox="0 0 1260 720">
 <rect width="100%" height="100%" fill="#fbfaf7"/>
-<text x="48" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#17202a" text-anchor="start">三份不同性质名单的重复骨架</text>
-<text x="48" y="78" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#566573" text-anchor="start">主办／赞同／成员／请愿签署是不同角色；重叠只证明公开重复出现。</text>
+<text x="48" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#17202a" text-anchor="start">三份不同角色名单的重复公开出现</text>
+<text x="48" y="78" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#566573" text-anchor="start">主办／赞同／参加或构成团体／请愿赞同是不同角色；重叠只证明列名重复。</text>
 <rect x="65" y="120" width="340" height="110" rx="14" fill="#4e79a7" opacity="0.14" stroke="#4e79a7" stroke-width="2"/>
 <text x="87" y="158" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#4e79a7" text-anchor="start">2023 A101活动</text>
 <text x="87" y="204" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#17202a" text-anchor="start">14 个列名主体</text>
 <rect x="455" y="120" width="340" height="110" rx="14" fill="#8b5ea7" opacity="0.14" stroke="#8b5ea7" stroke-width="2"/>
-<text x="477" y="158" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8b5ea7" text-anchor="start">2025 正式成员</text>
+<text x="477" y="158" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#8b5ea7" text-anchor="start">2025 参加／构成团体（截至5/6）</text>
 <text x="477" y="204" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#17202a" text-anchor="start">35 个列名主体</text>
 <rect x="845" y="120" width="340" height="110" rx="14" fill="#2d8f75" opacity="0.14" stroke="#2d8f75" stroke-width="2"/>
-<text x="867" y="158" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#2d8f75" text-anchor="start">2026 四岛请愿</text>
+<text x="867" y="158" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#2d8f75" text-anchor="start">2026 请愿赞同团体</text>
 <text x="867" y="204" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#17202a" text-anchor="start">35 个列名主体</text>
 <text x="230" y="323" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#17202a" text-anchor="end">2023∩2025</text>
 <rect x="250" y="300" width="560" height="34" rx="6" fill="#e8ecef"/>
@@ -21,15 +21,16 @@
 <rect x="250" y="388" width="560" height="34" rx="6" fill="#d08c3f"/>
 <text x="830" y="412" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#17202a" text-anchor="start">7</text>
 <text x="250" y="450" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#566573" text-anchor="start">A018 · A100 · A101 · A056 · A099 · 沖縄平和市民連絡会 · 嘉手納ピースアクション</text>
-<text x="230" y="499" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#17202a" text-anchor="end">2025∩2026</text>
+<text x="230" y="499" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#17202a" text-anchor="end">2025∩2026 名称归一化候选</text>
 <rect x="250" y="476" width="560" height="34" rx="6" fill="#e8ecef"/>
 <rect x="250" y="476" width="400" height="34" rx="6" fill="#d08c3f"/>
 <text x="830" y="500" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#17202a" text-anchor="start">5</text>
-<text x="250" y="538" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#566573" text-anchor="start">A016 · A010(新名) · A018 · A100 · A101</text>
+<text x="250" y="538" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#566573" text-anchor="start">精确registry 3：A018 · A100 · A101；条件性2：A016(alias) · 新名称↔A010(lifecycle)</text>
 <text x="230" y="587" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="700" fill="#17202a" text-anchor="end">三期重复</text>
 <rect x="250" y="564" width="560" height="34" rx="6" fill="#e8ecef"/>
 <rect x="250" y="564" width="240" height="34" rx="6" fill="#d08c3f"/>
 <text x="830" y="588" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#17202a" text-anchor="start">3</text>
 <text x="250" y="626" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#566573" text-anchor="start">A018 · A100 · A101</text>
-<text x="48" y="676" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700" fill="#21618c" text-anchor="start">宫古A013：2024使用共同框架，未列入2025的35成员名册，但进入2026共同请愿。</text>
+<text x="48" y="654" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700" fill="#21618c" text-anchor="start">宫古A013：2024框架仅为媒体归因；未列入截至2025-05-06的35团体表，2026列为赞同团体。</text>
+<text x="48" y="684" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="700" fill="#922b21" text-anchor="start">5/7是提交／行动日，5/16是发布日；四地发言／行动超边不等于三岛地方请求段，也不等于联盟。</text>
 </svg>

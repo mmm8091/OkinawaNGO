@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2200" height="930" viewBox="0 0 2200 930">
 <rect width="100%" height="100%" fill="#fbfaf7"/>
-<text x="50" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#17202a" text-anchor="start">从地方框架到正式跨区域载体：证据序列（不是扩散方向图）</text>
+<text x="50" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#17202a" text-anchor="start">从地方材料到正式跨区域行动载体：证据序列（不是扩散方向图）</text>
 <text x="50" y="78" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#566573" text-anchor="start">每条只表示可核文本／事件；组织方所称“契机”保留为自我叙述，事件共现不等于联盟。</text>
 <text x="50" y="103" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="400" fill="#7b7d7d" text-anchor="start">横向按事件顺序等距排列，日期写在卡片内；间距不表示实际时间长度。</text>
 <line x1="310" y1="245" x2="2140" y2="245" stroke="#d5d8dc" stroke-width="2"/>
@@ -8,7 +8,7 @@
 <line x1="310" y1="410" x2="2140" y2="410" stroke="#d5d8dc" stroke-width="2"/>
 <text x="285" y="415" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="600" fill="#17202a" text-anchor="end">跨地接触（名册不全）</text>
 <line x1="310" y1="575" x2="2140" y2="575" stroke="#d5d8dc" stroke-width="2"/>
-<text x="285" y="580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="600" fill="#17202a" text-anchor="end">正式载体／制度行动</text>
+<text x="285" y="580" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="600" fill="#17202a" text-anchor="end">正式行动载体／重复行动</text>
 <line x1="310" y1="740" x2="2140" y2="740" stroke="#d5d8dc" stroke-width="2"/>
 <text x="285" y="745" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="600" fill="#17202a" text-anchor="end">共同事件超边</text>
 <line x1="330" y1="128" x2="2115" y2="128" stroke="#aeb6bf" stroke-width="1.5"/>
@@ -43,8 +43,8 @@
 <line x1="1030" y1="245" x2="1030" y2="229" stroke="#537895" stroke-width="1.5"/>
 <rect x="953" y="153" width="154" height="76" rx="8" fill="#ffffff" stroke="#537895" stroke-width="1.5"/>
 <text x="1030" y="175" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="600" fill="#17202a" text-anchor="middle">2024</text>
-<text x="1030" y="193" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">宫古：战场化／对话</text>
-<text x="1030" y="211" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">但非2025名册成员</text>
+<text x="1030" y="193" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">宫古媒体归因：</text>
+<text x="1030" y="211" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">战场化／对话</text>
 <circle cx="1200" cy="410" r="7" fill="#d08c3f" stroke="#ffffff" stroke-width="2"/>
 <line x1="1200" y1="410" x2="1200" y2="430" stroke="#d08c3f" stroke-width="1.5"/>
 <rect x="1123" y="430" width="154" height="76" rx="8" fill="#ffffff" stroke="#d08c3f" stroke-width="1.5"/>
@@ -55,14 +55,14 @@
 <line x1="1370" y1="575" x2="1370" y2="559" stroke="#8b5ea7" stroke-width="1.5"/>
 <rect x="1293" y="483" width="154" height="76" rx="8" fill="#ffffff" stroke="#8b5ea7" stroke-width="1.5"/>
 <text x="1370" y="505" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="600" fill="#17202a" text-anchor="middle">2025.2</text>
-<text x="1370" y="523" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">网络成立</text>
-<text x="1370" y="541" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">治理结构＋宣言</text>
+<text x="1370" y="523" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">行动载体成立</text>
+<text x="1370" y="541" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">治理方案＋宣言</text>
 <circle cx="1540" cy="575" r="7" fill="#8b5ea7" stroke="#ffffff" stroke-width="2"/>
 <line x1="1540" y1="575" x2="1540" y2="595" stroke="#8b5ea7" stroke-width="1.5"/>
 <rect x="1463" y="595" width="154" height="76" rx="8" fill="#ffffff" stroke="#8b5ea7" stroke-width="1.5"/>
 <text x="1540" y="617" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="600" fill="#17202a" text-anchor="middle">2025.5</text>
-<text x="1540" y="635" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">35个构成团体</text>
-<text x="1540" y="653" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">正式名册</text>
+<text x="1540" y="635" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">35参加／构成团体</text>
+<text x="1540" y="653" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">截至5月6日</text>
 <circle cx="1710" cy="575" r="7" fill="#8b5ea7" stroke="#ffffff" stroke-width="2"/>
 <line x1="1710" y1="575" x2="1710" y2="541" stroke="#8b5ea7" stroke-width="1.5"/>
 <rect x="1633" y="483" width="154" height="58" rx="8" fill="#ffffff" stroke="#8b5ea7" stroke-width="1.5"/>
@@ -77,8 +77,8 @@
 <line x1="2050" y1="740" x2="2050" y2="724" stroke="#2d8f75" stroke-width="1.5"/>
 <rect x="1973" y="648" width="154" height="76" rx="8" fill="#ffffff" stroke="#2d8f75" stroke-width="1.5"/>
 <text x="2050" y="670" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="600" fill="#17202a" text-anchor="middle">2026.5</text>
-<text x="2050" y="688" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">四岛共同请愿</text>
-<text x="2050" y="706" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">35赞同团体</text>
-<text x="50" y="875" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700" fill="#21618c" text-anchor="start">可支持：正式载体形成、共同对象扩展、重复制度行动。</text>
-<text x="50" y="903" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700" fill="#922b21" text-anchor="start">不可支持：词汇总体增长、从冲绳向本土的单向扩散、所有成员独立采用、稳定联盟。</text>
+<text x="2050" y="688" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">5/7提交·四地行动</text>
+<text x="2050" y="706" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="12" font-weight="400" fill="#17202a" text-anchor="middle">5/16发布·三岛请求</text>
+<text x="50" y="875" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700" fill="#21618c" text-anchor="start">可支持：行动载体至少持续到2026初；2025宣言与2026请愿在共同文件层并置分布式对象。</text>
+<text x="50" y="903" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700" fill="#922b21" text-anchor="start">不可支持：治理全部执行、参加团体留存／独立采用、组织前后对象变化、单向扩散或稳定联盟。</text>
 </svg>
