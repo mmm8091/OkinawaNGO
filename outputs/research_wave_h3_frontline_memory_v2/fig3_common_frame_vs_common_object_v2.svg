@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="720" viewBox="0 0 1320 720">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="48" y="48" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#17202a" text-anchor="start">共同语言不等于共同对象：2025–2026出现的“尺度转换”候选</text>
+<text x="48" y="82" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="14" font-weight="400" fill="#566573" text-anchor="start">战争记忆是压缩／正当化语言之一；新意更可能在于把分散节点看成同一套跨地域战争准备。</text>
+<rect x="75" y="125" width="520" height="140" rx="16" fill="#f4ecf7" stroke="#8b5ea7" stroke-width="2"/>
+<text x="105" y="164" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#6c3483" text-anchor="start">COMMON FRAME 共同框架</text>
+<text x="105" y="200" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#17202a" text-anchor="start">冲绳战记忆 · 防止再次成为战场 · 生命／人权／环境</text>
+<text x="105" y="232" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#17202a" text-anchor="start">外交／对话 · 加害者与受害者责任</text>
+<rect x="725" y="125" width="520" height="140" rx="16" fill="#e8f6f3" stroke="#2d8f75" stroke-width="2"/>
+<text x="755" y="164" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" fill="#1e8449" text-anchor="start">COMMON OBJECT 共同对象</text>
+<text x="755" y="200" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#17202a" text-anchor="start">生产／储存／运输／部署／演习／避难</text>
+<text x="755" y="232" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" fill="#17202a" text-anchor="start">跨岛、跨九州、跨日本的分布式政策体系</text>
+<path d="M595 195 C650 195 670 195 725 195" stroke="#d08c3f" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#d08c3f"/></marker></defs>
+<line x1="130" y1="420" x2="330" y2="350" stroke="#aeb6bf" stroke-width="3"/>
+<line x1="330" y1="350" x2="520" y2="420" stroke="#aeb6bf" stroke-width="3"/>
+<line x1="520" y1="420" x2="710" y2="350" stroke="#aeb6bf" stroke-width="3"/>
+<line x1="710" y1="350" x2="900" y2="420" stroke="#aeb6bf" stroke-width="3"/>
+<line x1="900" y1="420" x2="1090" y2="350" stroke="#aeb6bf" stroke-width="3"/>
+<circle cx="130" cy="420" r="58" fill="#ffffff" stroke="#537895" stroke-width="3"/>
+<text x="130" y="416" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">基地</text>
+<text x="130" y="435" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">驻屯地</text>
+<circle cx="330" cy="350" r="58" fill="#ffffff" stroke="#537895" stroke-width="3"/>
+<text x="330" y="346" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">长射程导弹</text>
+<circle cx="520" cy="420" r="58" fill="#ffffff" stroke="#537895" stroke-width="3"/>
+<text x="520" y="416" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">弹药库</text>
+<text x="520" y="435" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">储存</text>
+<circle cx="710" cy="350" r="58" fill="#ffffff" stroke="#537895" stroke-width="3"/>
+<text x="710" y="346" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">港·机场·道路</text>
+<circle cx="900" cy="420" r="58" fill="#ffffff" stroke="#537895" stroke-width="3"/>
+<text x="900" y="416" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">运输</text>
+<text x="900" y="435" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">演习</text>
+<circle cx="1090" cy="350" r="58" fill="#ffffff" stroke="#537895" stroke-width="3"/>
+<text x="1090" y="346" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">避难</text>
+<text x="1090" y="365" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="13" font-weight="700" fill="#17202a" text-anchor="middle">疏开</text>
+<rect x="75" y="520" width="1170" height="120" rx="12" fill="#ffffff" stroke="#d5d8dc"/>
+<text x="100" y="555" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="700" fill="#17202a" text-anchor="start">可检验的因果问题</text>
+<text x="100" y="586" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="400" fill="#17202a" text-anchor="start">单点阻止失败后，组织是否把行动对象上移为分布式体系？还是全国政策变化、改名与少数骨干迁移造成的表象？</text>
+<text x="100" y="616" font-family="Arial, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="400" fill="#17202a" text-anchor="start">A010 是纵向个案；宫古是“共框架但未进入2025正式名册”的边界；2026四岛请愿是事件级超边。</text>
+</svg>

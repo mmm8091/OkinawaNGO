@@ -1,0 +1,15 @@
+﻿search_id,search_date,target,query,result_summary,stop_or_gap_status,data_layer,claim_status,review_status,frontend_eligibility,central_writeback
+SL01,2026-07-20,formal cross-regional carrier,戦争止めよう 沖縄 西日本 ネットワーク 結成 参加団体,"official site, declaration, governance PDF and dated 35-member roster found",closed_for_v2,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL02,2026-07-20,repeat formal action,沖縄 西日本 ネットワーク 政府交渉 2025 2026,2025 first action and 2026 second action found in two external reports,closed_for_v2,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL03,2026-07-20,A010 lifecycle,石垣島 市民連絡会 名称変更 平和と自然,2023 name-change article and 2024 old/new name plus member-turnover report found,human_review_required,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL04,2026-07-20,A010 scale shift,石垣 長射程 九州 沖縄西日本 連帯 声明,2025 cross-regional solidarity statement and 2026 local action found,closed_for_v2,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL05,2026-07-20,Miyako boundary,宮古島 戦場 話し合い ミサイル基地 2024,2024 attributed frame and official institutional participation found,own_full_text_still_missing,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL06,2026-07-20,four-island hyperedge,沖縄 最前線 戦争準備 請願 与那国 石垣 宮古,"full petition, 35 signatories and external event report found",human_role_crosswalk_required,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL07,2026-07-20,national memory baseline,site:ywca.or.jp 沖縄 戦場 基地 声明,2016 Japan YWCA statement found,closed_for_v2,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL08,2026-07-20,national anti-nuclear bridge,site:antiatom.org 台湾有事 南西諸島 戦場,2021 conference speaker text found,speaker_not_whole_organization,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL09,2026-07-20,West Japan independent adoption,大分 敷戸 ミサイル 弾薬庫 市民の会 声明,organization site and 2023 complete statement found,closed_for_v2,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL10,2026-07-20,direct academic case,site:ndlsearch.ndl.go.jp 沖縄を再び戦場にさせない県民の会,Higa 2023 article metadata found; no online full text,local_or_NDL_copy_required,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL11,2026-07-20,academic carrier analogue,site:jstage.jst.go.jp 沖縄 市民運動 ネットワーク 公害,Ono 2016 and historical cross-regional literature found,principal_reading_required,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL12,2026-07-20,official counter-frame,site:jstage.jst.go.jp 沖縄 南西 国民保護,Nakabayashi 2024 civil-protection article found,principal_reading_required,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL13,2026-07-20,member own-text panel,沖西ネット member names + 声明/要請/公式,"strict own/full pre-network text found for A101, A010 and Oita; several members remain roster-only",bounded_stop_missing_not_negative,research_only,search_log,ai_seeded,not_frontend_ready,no
+SL14,2026-07-20,older complete-text controls,local archive exact-term scan S003/S004/S006,target-term non-hits recorded for three complete environmental documents,genre_bounded_only,research_only,search_log,ai_seeded,not_frontend_ready,no

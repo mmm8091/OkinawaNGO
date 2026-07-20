@@ -1,0 +1,160 @@
+{
+  "package": "research_wave_h3_frontline_memory_v2",
+  "built_on": "2026-07-20",
+  "status": "research_only_not_frontend_ready",
+  "central_writeback": "no",
+  "counts": {
+    "sources": 34,
+    "corpus": 28,
+    "network_members": 35,
+    "petition_signatories": 35,
+    "petition_registry_crosswalks": 14,
+    "hypotheses": 7,
+    "academic_links": 12,
+    "human_review_items": 11,
+    "local_retrieval_items": 5
+  },
+  "protected_inputs": [
+    {
+      "path": "data/interim/01_actor_registry_initial_v0.csv",
+      "sha256": "03653fe12665abc754ef09d9d30e76c6e53dd495eaceba0fef4bc5ce5540b0a3"
+    },
+    {
+      "path": "data/interim/05_source_log_initial_v0.csv",
+      "sha256": "ea5c34a2785cfede7f8eedc0420c56968c17fdca112b38d168ec5df5a87ee3a4"
+    },
+    {
+      "path": "outputs/research_wave_h3_frontline_memory_v1/event_participant_candidates_v1.csv",
+      "sha256": "5a1d04dab32e5d475923d91ff61ab8cf42428e7ce6f61df40925033885db2350"
+    },
+    {
+      "path": "outputs/research_wave_h3_frontline_memory_v1/source_observations_v1.csv",
+      "sha256": "b2e68474fde50e4de79c7389b11c58f48b6f1c7798a8d2a496f1a0c98a13106f"
+    }
+  ],
+  "files": [
+    {
+      "path": "academic_connection_v2.csv",
+      "sha256": "a34cb7759714d3ee7bf8dc46ac541ec22196ee0567f95098bcdb68a1bcc11750",
+      "bytes": 5007
+    },
+    {
+      "path": "comparable_corpus_v2.csv",
+      "sha256": "f709c657ecffa329a1e1cfa0cc23264b7292b16c41eb86a4cb29a7a1c4d9530b",
+      "bytes": 9561
+    },
+    {
+      "path": "event_roster_overlap_v2.csv",
+      "sha256": "7368c902e70f07a4122816f3a0195be8c991de245df8dee2274a393b77938eb2",
+      "bytes": 1846
+    },
+    {
+      "path": "fig1_carrier_and_object_timeline_v2.svg",
+      "sha256": "5d99d88c37bb7fde8e309c1dc736d31cd1cb3e3ebb47b7e7394fd61424673826",
+      "bytes": 12622
+    },
+    {
+      "path": "fig2_roster_overlap_v2.svg",
+      "sha256": "e0b4292792cc27c1af0d6a47e4edde63df1a68eb0cb86621c637184bc4a8e0df",
+      "bytes": 4766
+    },
+    {
+      "path": "fig3_common_frame_vs_common_object_v2.svg",
+      "sha256": "40b04c72b1a2d0826b1fd77579a9a6662db635f0eebc51527354fef1992fded9",
+      "bytes": 5628
+    },
+    {
+      "path": "four_island_issue_family_coverage_v2.csv",
+      "sha256": "ec27dd4555970596cf7246c0b55243b25badde671835eab0f25880977dfe9268",
+      "bytes": 1998
+    },
+    {
+      "path": "four_island_petition_entities_v2.csv",
+      "sha256": "3d055a0bc37e62de6a8f38aaf69d42141c2f8aa9acd2c2fd33696918e7cabd18",
+      "bytes": 13191
+    },
+    {
+      "path": "frame_object_observations_v2.csv",
+      "sha256": "44534001e45a90ad8a2c8277b945ae1e8c60c4102a8343832dadef01cb66ed94",
+      "bytes": 1785
+    },
+    {
+      "path": "frontline_memory_brief_v2.md",
+      "sha256": "33d8bf1bcf54e49bc97ff6eb5d136063599993e878ab24be8516ca5165ad6791",
+      "bytes": 5755
+    },
+    {
+      "path": "human_review_queue_v2.csv",
+      "sha256": "1366f06ed479519e57e58070413d3a3c893db00dca2f28cf4bbf404d64f18b70",
+      "bytes": 3072
+    },
+    {
+      "path": "hypothesis_tests_v2.csv",
+      "sha256": "d69f6176742ede808e2fcf092d602bcc6f13127cde5e9d4bfa083aa82e68e8d2",
+      "bytes": 3703
+    },
+    {
+      "path": "independent_adoption_panel_v2.csv",
+      "sha256": "9a2b00a2ca0c2991f14a93dff511a96207dface9b417820a9ce60fb8d9ae8fe1",
+      "bytes": 4472
+    },
+    {
+      "path": "local_retrieval_queue_v2.csv",
+      "sha256": "c342bf17f18e16162f11488b5665545c61e467f9d90797c23988e7ceca5b7ed3",
+      "bytes": 1482
+    },
+    {
+      "path": "negative_controls_v2.csv",
+      "sha256": "ea209c523f1c19ac0dea88eaacbdcc0dadcbbecc348fd00f1f5ec55069bb1969",
+      "bytes": 2715
+    },
+    {
+      "path": "network_formation_events_v2.csv",
+      "sha256": "2e90d763017365d4bfe2d542938e387c14914f1633854e9fe7b2385a863985be",
+      "bytes": 2556
+    },
+    {
+      "path": "network_membership_candidates_v2.csv",
+      "sha256": "8f2b6584c9575cf1f599008b6213cea66cfb7f10f67537f7e94faf0b1396e23a",
+      "bytes": 10429
+    },
+    {
+      "path": "principal_checkpoint_v2.md",
+      "sha256": "579b22e0e48fcc9aa9352d379dda239f395b1cf10133a1daa48b4bc018aeeb23",
+      "bytes": 1814
+    },
+    {
+      "path": "README.md",
+      "sha256": "5284dde1aa9acc00d9f7914afdf7a4f5f1001a492ba9c9bad73d45c4f58c99f4",
+      "bytes": 4159
+    },
+    {
+      "path": "scale_shift_case_A010_v2.csv",
+      "sha256": "578a9c94a225354d05487dea1959b3e746f017fbed2059fa6fb3914d03b51963",
+      "bytes": 2266
+    },
+    {
+      "path": "search_log_v2.csv",
+      "sha256": "4619dbbf21d8987b0b9a9fc241b2c15bc89c946c97fc5b07754243a864129a1c",
+      "bytes": 3510
+    },
+    {
+      "path": "source_log_v2.csv",
+      "sha256": "c94af732bb9bdfcab2ba2a993ab05a5eaed290ce6b5353604a9feec5436853da",
+      "bytes": 16422
+    },
+    {
+      "path": "validation_report_v2.md",
+      "sha256": "5cffa0c0693948a11cb42c4c97ccb658d5f578466e106982412f8a5c16813e17",
+      "bytes": 583
+    }
+  ],
+  "hard_boundaries": [
+    "No vocabulary-growth claim from schema tags or three unmatched controls.",
+    "No diffusion direction without same-organization before/after texts and transmission evidence.",
+    "Formal membership does not create dyadic alliances among members.",
+    "The 2026 petition is an event hyperedge; signatory and local-request roles remain separate.",
+    "A010 lifecycle and scale-shift interpretation require human review before central writeback.",
+    "35-to-38 is not a growth estimate without comparable dated rosters."
+  ]
+}
