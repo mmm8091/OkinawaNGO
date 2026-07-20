@@ -157,6 +157,11 @@ profile 默认 channel 已按 profile 派生。编译先进入 staging，验证�
 `--verify-only` 不只验 snapshot，还核对 channel 的 profile、release ID、snapshot 路径和
 manifest SHA-256。Vite 构建时再次验证活动 `client_preview` channel，不能直接相信指针。
 
+生产构建把一个已经验证的不可变 release 复制进 `dist/`。每一代开发服务器同样固定绑定
+一个 release，避免 React 的并行请求跨两个快照混取记录；它监听活动 channel，指针推进后
+整体重启并重新验证。开发 middleware 只服务这一代 manifest allowlist 中的文件；未知或
+越界请求明确返回 JSON 4xx，不回落为 SPA HTML。
+
 ## 8. 失败行为
 
 | 失败 | 行为 |

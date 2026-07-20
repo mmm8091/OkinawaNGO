@@ -146,6 +146,7 @@ reviewed profile 只有 TE01–09；client preview 的研究视图追加 TE10–
 - profile 默认 channel 已按 profile 派生；
 - `--verify-only` 同时验 channel 与 snapshot；
 - Vite 构建时核对 channel profile、release ID、public flag 和 manifest hash；
+- Vite 每一代开发服务器固定一个 release；channel 推进后整体重启并绑定新快照；
 - snapshot 多出任何未校验文件会失败；
 - adapter 和 core publication object 都必须带统一 envelope；
 - 必需 JSON 缺失或 research 分片读取失败会显示全页发布错误；
