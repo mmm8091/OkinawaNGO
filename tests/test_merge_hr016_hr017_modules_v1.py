@@ -148,6 +148,15 @@ class MergeHR016HR017ModulesV1Tests(unittest.TestCase):
         stages = read_rows(
             self.root / "outputs/R09_referendum_process_v0/process_stages_reviewed_all_v0.csv"
         )
+        self.assertEqual(33, len(stages))
+        self.assertEqual(
+            29,
+            sum(row["review_status"] == "accepted" for row in stages),
+        )
+        self.assertEqual(
+            4,
+            sum(row["review_status"] == "needs_human_review" for row in stages),
+        )
         by_id = {row["stage_id"]: row for row in stages}
         self.assertEqual("2021-04-26", by_id["R9ST027"]["date_start"])
         self.assertEqual("day", by_id["R9ST027"]["date_precision"])
@@ -160,6 +169,15 @@ class MergeHR016HR017ModulesV1Tests(unittest.TestCase):
         roles = read_rows(
             self.root
             / "outputs/R09_referendum_process_v0/actor_process_roles_reviewed_all_v0.csv"
+        )
+        self.assertEqual(34, len(roles))
+        self.assertEqual(
+            29,
+            sum(row["review_status"] == "accepted" for row in roles),
+        )
+        self.assertEqual(
+            5,
+            sum(row["review_status"] == "needs_human_review" for row in roles),
         )
         role_by_id = {row["role_id"]: row for row in roles}
         self.assertEqual("A068", role_by_id["R9R001"]["actor_id"])
