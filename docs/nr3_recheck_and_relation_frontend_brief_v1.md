@@ -58,6 +58,13 @@ NR-03 主体功能验收通过，保留三项非阻断性收尾整改。关系�
 
 内部 `demo/` 目录可暂时保留兼容，但界面不得继续显示“演示视图”。
 
+实现澄清（2026-07-20）：上述“已核视图”是关系／主张层 gate，不是 actor registry
+整体的人审标签。121 个普通界面可见 actor 中仅 32 个身份行为
+`human_checked`／`human_revised`；另外 89 个仍为 `ai_seeded`、二源不足或待当地材料。
+组织卡必须独立显示 actor 的 `review_status`、`evidence_level`、`scope_status`。X014
+作为 `watchlist_only` 可按“不完全证据也可展示”的已批准规则保留在检索／研究语境，
+但必须带 watchlist 标签，且不得因可搜索而成为默认网络关系节点。
+
 ## 3. 新状态模型
 
 权威规则：`data/metadata/coding_schema_v1.md`。
