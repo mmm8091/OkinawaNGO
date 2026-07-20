@@ -96,6 +96,8 @@ class H1DocumentationVisibilityV2Test(unittest.TestCase):
         svg = (OUT / "fig_graph_objects_v2.svg").read_text(encoding="utf-8")
         self.assertIn("outcome-excluded ρ = -0.138", svg)
         self.assertIn("全层 238；图内 228", svg)
+        self.assertIn('transform="translate(37,350.0) rotate(-90)"', svg)
+        self.assertIn('transform="translate(37,895.0) rotate(-90)"', svg)
         self.assertIn(
             "construction diagnostic",
             (OUT / "method_brief_v2.md").read_text(encoding="utf-8"),

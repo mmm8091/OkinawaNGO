@@ -2350,7 +2350,8 @@ def render_graph_objects(
             f"剔除本层 support 后的 S 来源数</text>"
         )
         body.append(
-            f'<text transform="translate({x0 - 70},{y0 + plot_h / 2}) '
+            f'<text transform="translate('
+            f'{x0 - (58 if x0 < 500 else 70)},{y0 + plot_h / 2}) '
             f'rotate(-90)" class="axis-label" text-anchor="middle">'
             f"{escape(y_label)}</text>"
         )
