@@ -669,6 +669,7 @@ def build_actor_rows(
         for row in edges
         if row["review_status"] in HUMAN_EDGE_STATUSES
     }
+    candidate_pairs = issue_pairs - reviewed_pairs
     issue_degree, issue_between = bipartite_actor_metrics(
         issue_pairs, actor_prefix="actor", object_prefix="issue"
     )
@@ -677,6 +678,9 @@ def build_actor_rows(
     )
     reviewed_degree, reviewed_between = bipartite_actor_metrics(
         reviewed_pairs, actor_prefix="actor", object_prefix="issue"
+    )
+    candidate_degree, candidate_between = bipartite_actor_metrics(
+        candidate_pairs, actor_prefix="actor", object_prefix="issue"
     )
     event_pairs = {
         (row["actor_or_counterpart_id"], row["event_id"])
@@ -753,11 +757,19 @@ def build_actor_rows(
         )
         span = max(years) - min(years) if len(years) >= 2 else 0
         source_count = len(linked_ids)
+        registry_count = len(by_basis[actor_id]["registry"])
         doc_stratum = (
             "dense_4plus"
             if source_count >= 4
             else "moderate_2to3"
             if source_count >= 2
+            else "thin_0to1"
+        )
+        registry_doc_stratum = (
+            "dense_4plus"
+            if registry_count >= 4
+            else "moderate_2to3"
+            if registry_count >= 2
             else "thin_0to1"
         )
         actor_triples = triple_by_actor[actor_id]
@@ -796,7 +808,14 @@ def build_actor_rows(
             "linked_source_ids": ";".join(sorted(linked_ids)),
             "unresolved_reference_count": len(unresolved[actor_id]),
             "unresolved_reference_tokens": ";".join(sorted(unresolved[actor_id])),
-            "registry_source_count": len(by_basis[actor_id]["registry"]),
+            "source_crosswalk_status": (
+                "unresolved_legacy_token"
+                if unresolved[actor_id]
+                else "resolved_s_sources"
+                if linked_ids
+                else "no_linked_s_source_no_legacy_token"
+            ),
+            "registry_source_count": registry_count,
             "actor_issue_support_source_count": len(
                 by_basis[actor_id]["actor_issue"]
             ),
@@ -810,6 +829,18 @@ def build_actor_rows(
             ),
             "non_issue_linked_source_count": len(
                 linked_ids - issue_support[actor_id]
+            ),
+            "non_strict_triple_linked_source_count": len(
+                linked_ids - by_basis[actor_id]["strict_triple"]
+            ),
+            "non_event_linked_source_count": len(
+                linked_ids - by_basis[actor_id]["event"]
+            ),
+            "non_case_role_linked_source_count": len(
+                linked_ids - by_basis[actor_id]["case_role"]
+            ),
+            "non_typed_dyadic_linked_source_count": len(
+                linked_ids - by_basis[actor_id]["typed_dyadic"]
             ),
             "non_big3_linked_source_count": len(linked_ids - BIG3),
             "source_channel_count": len(channels),
@@ -852,9 +883,11 @@ def build_actor_rows(
             ),
             "documentation_trace_feature_count_0to7": feature_count,
             "documentation_trace_stratum": doc_stratum,
+            "registry_trace_stratum": registry_doc_stratum,
             "active_actor_issue_degree": issue_degree[actor_id],
             "e3plus_actor_issue_degree": e3_degree[actor_id],
             "reviewed_actor_issue_degree": reviewed_degree[actor_id],
+            "candidate_actor_issue_degree": candidate_degree[actor_id],
             "active_actor_issue_betweenness": round(
                 issue_between.get(actor_id, 0.0), 8
             ),
@@ -863,6 +896,9 @@ def build_actor_rows(
             ),
             "reviewed_actor_issue_betweenness": round(
                 reviewed_between.get(actor_id, 0.0), 8
+            ),
+            "candidate_actor_issue_betweenness": round(
+                candidate_between.get(actor_id, 0.0), 8
             ),
             "active_issue_frame_count": len(
                 {issue_frame(edge["issue_label"]) for edge in actor_issue_edges}
@@ -931,6 +967,7 @@ def association_row(
     y_field: str,
     seed: int,
     limit: str,
+    diagnostic_role: str,
 ) -> dict[str, object]:
     values_x = [float(row[x_field]) for row in rows]
     values_y = [float(row[y_field]) for row in rows]
@@ -953,6 +990,7 @@ def association_row(
         "same_graph_object_rule": (
             "the y measure belongs only to the named graph/observation object"
         ),
+        "diagnostic_role": diagnostic_role,
         **PACKAGE_META,
         "interpretation_limit": limit,
     }
@@ -962,6 +1000,11 @@ def build_associations(
     actor_rows: list[dict[str, object]],
 ) -> list[dict[str, object]]:
     all_rows = actor_rows
+    resolved_rows = [
+        row
+        for row in actor_rows
+        if int(row["unresolved_reference_count"]) == 0
+    ]
     connected = [
         row for row in actor_rows if int(row["active_actor_issue_degree"]) > 0
     ]
@@ -984,6 +1027,7 @@ def build_associations(
             all_rows,
             "linked_source_count",
             "active_actor_issue_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A002",
@@ -992,6 +1036,7 @@ def build_associations(
             all_rows,
             "linked_source_count",
             "active_actor_issue_betweenness",
+            "construction_diagnostic",
         ),
         (
             "H1A003",
@@ -1000,6 +1045,7 @@ def build_associations(
             connected,
             "linked_source_count",
             "active_actor_issue_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A004",
@@ -1008,6 +1054,7 @@ def build_associations(
             local,
             "linked_source_count",
             "active_actor_issue_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A005",
@@ -1016,6 +1063,7 @@ def build_associations(
             no_case,
             "linked_source_count",
             "active_actor_issue_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A006",
@@ -1024,6 +1072,7 @@ def build_associations(
             no_s004_only,
             "linked_source_count",
             "active_actor_issue_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A007",
@@ -1032,14 +1081,16 @@ def build_associations(
             all_rows,
             "non_big3_linked_source_count",
             "active_actor_issue_degree",
+            "source_composition_sensitivity",
         ),
         (
             "H1A008",
             "actor_issue_bipartite",
             "all_current_actors",
-            all_rows,
+            resolved_rows,
             "non_issue_linked_source_count",
             "active_actor_issue_degree",
+            "primary_outcome_excluded_proxy",
         ),
         (
             "H1A009",
@@ -1048,6 +1099,7 @@ def build_associations(
             all_rows,
             "source_channel_count",
             "active_actor_issue_degree",
+            "source_composition_sensitivity",
         ),
         (
             "H1A010",
@@ -1056,6 +1108,7 @@ def build_associations(
             all_rows,
             "linked_source_count",
             "strict_unique_place_issue_pair_count",
+            "construction_diagnostic",
         ),
         (
             "H1A011",
@@ -1064,6 +1117,7 @@ def build_associations(
             all_rows,
             "linked_source_count",
             "human_checked_event_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A012",
@@ -1072,6 +1126,7 @@ def build_associations(
             all_rows,
             "linked_source_count",
             "reviewed_typed_dyadic_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A013",
@@ -1080,6 +1135,7 @@ def build_associations(
             all_rows,
             "linked_source_count",
             "accepted_case_degree",
+            "construction_diagnostic",
         ),
         (
             "H1A014",
@@ -1088,6 +1144,7 @@ def build_associations(
             all_rows,
             "organization_hosted_trace_binary",
             "active_actor_issue_degree",
+            "unvalidated_proxy_diagnostic",
         ),
         (
             "H1A015",
@@ -1096,6 +1153,124 @@ def build_associations(
             all_rows,
             "english_title_trace_binary",
             "active_actor_issue_degree",
+            "unvalidated_proxy_diagnostic",
+        ),
+        (
+            "H1A016",
+            "actor_issue_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "registry_source_count",
+            "active_actor_issue_degree",
+            "primary_registry_proxy",
+        ),
+        (
+            "H1A017",
+            "actor_issue_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_issue_linked_source_count",
+            "active_actor_issue_degree",
+            "primary_outcome_excluded_proxy",
+        ),
+        (
+            "H1A018",
+            "actor_issue_reviewed_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "registry_source_count",
+            "reviewed_actor_issue_degree",
+            "primary_registry_proxy",
+        ),
+        (
+            "H1A019",
+            "actor_issue_reviewed_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_issue_linked_source_count",
+            "reviewed_actor_issue_degree",
+            "primary_outcome_excluded_proxy",
+        ),
+        (
+            "H1A020",
+            "actor_issue_candidate_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "registry_source_count",
+            "candidate_actor_issue_degree",
+            "primary_registry_proxy",
+        ),
+        (
+            "H1A021",
+            "actor_issue_candidate_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_issue_linked_source_count",
+            "candidate_actor_issue_degree",
+            "primary_outcome_excluded_proxy",
+        ),
+        (
+            "H1A022",
+            "strict_same_source_triples",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_strict_triple_linked_source_count",
+            "strict_unique_place_issue_pair_count",
+            "primary_outcome_excluded_proxy",
+        ),
+        (
+            "H1A023",
+            "event_hyperedge_incidence",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_event_linked_source_count",
+            "human_checked_event_degree",
+            "primary_outcome_excluded_proxy",
+        ),
+        (
+            "H1A024",
+            "reviewed_typed_dyadic",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_typed_dyadic_linked_source_count",
+            "reviewed_typed_dyadic_degree",
+            "primary_outcome_excluded_proxy",
+        ),
+        (
+            "H1A025",
+            "accepted_case_role_incidence",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_case_role_linked_source_count",
+            "accepted_case_degree",
+            "primary_outcome_excluded_proxy",
+        ),
+        (
+            "H1A026",
+            "actor_issue_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "linked_source_count",
+            "active_actor_issue_degree",
+            "construction_diagnostic",
+        ),
+        (
+            "H1A027",
+            "actor_issue_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "registry_source_count",
+            "active_actor_issue_betweenness",
+            "primary_registry_proxy",
+        ),
+        (
+            "H1A028",
+            "actor_issue_bipartite",
+            "resolved_reference_actors_only",
+            resolved_rows,
+            "non_issue_linked_source_count",
+            "active_actor_issue_betweenness",
+            "primary_outcome_excluded_proxy",
         ),
     ]
     prepared: list[dict[str, object]] = []
@@ -1113,6 +1288,7 @@ def build_associations(
         rows,
         x_field,
         y_field,
+        diagnostic_role,
     ) in enumerate(specifications):
         prepared.append(
             association_row(
@@ -1128,6 +1304,7 @@ def build_associations(
                     "encoded object. Shared source construction, venue-generated "
                     "records, selection and coding rules preclude causal reading."
                 ),
+                diagnostic_role=diagnostic_role,
             )
         )
     return prepared
@@ -1149,7 +1326,7 @@ def build_stratified_associations(
             item[0],
         ),
     ):
-        if len(members) < 5:
+        if len(members) < 10:
             continue
         for outcome in (
             "active_actor_issue_degree",
@@ -1173,7 +1350,10 @@ def build_stratified_associations(
                     "x_measure": "linked_source_count",
                     "y_measure": outcome,
                     "spearman_rho": "" if rho is None else round(rho, 3),
-                    "minimum_n_rule": "n>=5; small strata are descriptive",
+                    "minimum_n_rule": (
+                        "n>=10 display floor; strata remain descriptive and "
+                        "are not comparable causal samples"
+                    ),
                     **PACKAGE_META,
                     "interpretation_limit": (
                         "Within-family descriptive association in the actor--"
@@ -1183,6 +1363,134 @@ def build_stratified_associations(
                 }
             )
             index += 1
+    return rows
+
+
+def build_review_layer_sensitivity(
+    actor_rows: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    """Keep reviewed and candidate actor-issue layers visibly separate."""
+
+    resolved_rows = [
+        row
+        for row in actor_rows
+        if int(row["unresolved_reference_count"]) == 0
+    ]
+    subsets = [
+        ("all_current_actors", actor_rows),
+        ("resolved_reference_actors_only", resolved_rows),
+    ]
+    proxies = [
+        (
+            "linked_source_count",
+            "construction_diagnostic",
+            "includes sources used by the actor-issue outcome",
+        ),
+        (
+            "registry_source_count",
+            "primary_registry_proxy",
+            "identity-layer S-source refs only",
+        ),
+        (
+            "non_issue_linked_source_count",
+            "primary_outcome_excluded_proxy",
+            "all linked S-sources minus actor-issue support sources",
+        ),
+    ]
+    layers = [
+        (
+            "active_238",
+            "active_actor_issue_degree",
+            "65 reviewed + 173 candidate edges",
+        ),
+        (
+            "reviewed_65",
+            "reviewed_actor_issue_degree",
+            "61 human_checked + 4 human_revised edges",
+        ),
+        (
+            "candidate_173",
+            "candidate_actor_issue_degree",
+            "143 ai_seeded + 25 needs_second_source + "
+            "5 needs_local_retrieval edges",
+        ),
+    ]
+    rows: list[dict[str, object]] = []
+    index = 1
+    for subset_label, members in subsets:
+        for layer_label, outcome, layer_boundary in layers:
+            for proxy, proxy_role, proxy_boundary in proxies:
+                rho = spearman(
+                    [float(row[proxy]) for row in members],
+                    [float(row[outcome]) for row in members],
+                )
+                rows.append(
+                    {
+                        "review_sensitivity_id": f"H1R{index:03d}",
+                        "subset": subset_label,
+                        "actor_count": len(members),
+                        "actor_issue_layer": layer_label,
+                        "edge_count_in_subset": sum(
+                            int(row[outcome]) for row in members
+                        ),
+                        "x_measure": proxy,
+                        "y_measure": outcome,
+                        "spearman_rho": (
+                            "" if rho is None else round(rho, 3)
+                        ),
+                        "diagnostic_role": proxy_role,
+                        "layer_review_boundary": layer_boundary,
+                        "proxy_boundary": proxy_boundary,
+                        "crosswalk_boundary": (
+                            "9 unresolved legacy-token actors retained"
+                            if subset_label == "all_current_actors"
+                            else "9 unresolved legacy-token actors excluded"
+                        ),
+                        **PACKAGE_META,
+                        "interpretation_limit": (
+                            "Review-layer sensitivity of the encoded actor--"
+                            "issue object only; neither proxy measures staff "
+                            "capacity, and review selection is endogenous."
+                        ),
+                    }
+                )
+                index += 1
+    return rows
+
+
+def build_unresolved_reference_audit(
+    actor_rows: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    rows: list[dict[str, object]] = []
+    for row in actor_rows:
+        if int(row["unresolved_reference_count"]) == 0:
+            continue
+        rows.append(
+            {
+                "actor_id": row["actor_id"],
+                "actor_name": row["actor_name"],
+                "unresolved_reference_tokens": row[
+                    "unresolved_reference_tokens"
+                ],
+                "linked_s_source_count": row["linked_source_count"],
+                "linked_s_source_ids": row["linked_source_ids"],
+                "active_actor_issue_degree": row[
+                    "active_actor_issue_degree"
+                ],
+                "resolution_decision": (
+                    "exclude_from_primary_source-proxy sensitivity"
+                ),
+                "non_resolution_reason": (
+                    "legacy X-token is an actor/module identifier, not a "
+                    "source_id; no one-to-one S-source crosswalk is asserted"
+                ),
+                **PACKAGE_META,
+                "interpretation_limit": (
+                    "An unresolved token is a source-crosswalk gap, not "
+                    "evidence that the actor has no documentation."
+                ),
+            }
+        )
     return rows
 
 
@@ -1204,13 +1512,18 @@ def build_matched_pairs(
     pair_rows: list[dict[str, object]] = []
     summary_rows: list[dict[str, object]] = []
     pair_index = 1
+    resolved_rows = [
+        row
+        for row in actor_rows
+        if int(row["unresolved_reference_count"]) == 0
+    ]
     for universe_label, universe in (
-        ("all_current_actors", actor_rows),
+        ("resolved_reference_actors", resolved_rows),
         (
-            "actor_issue_connected_only",
+            "resolved_actor_issue_connected_only",
             [
                 row
-                for row in actor_rows
+                for row in resolved_rows
                 if int(row["active_actor_issue_degree"]) > 0
             ],
         ),
@@ -1232,17 +1545,17 @@ def build_matched_pairs(
                 [
                     row
                     for row in members
-                    if row["documentation_trace_stratum"] == "dense_4plus"
+                    if row["registry_trace_stratum"] == "dense_4plus"
                 ],
                 key=lambda row: (
-                    -int(row["linked_source_count"]),
+                    -int(row["registry_source_count"]),
                     str(row["actor_id"]),
                 ),
             )
             thin = [
                 row
                 for row in members
-                if row["documentation_trace_stratum"] == "thin_0to1"
+                if row["registry_trace_stratum"] == "thin_0to1"
             ]
             unused = {str(row["actor_id"]) for row in thin}
             for dense_row in dense:
@@ -1277,11 +1590,18 @@ def build_matched_pairs(
                     "dense_actor_id": dense_row["actor_id"],
                     "dense_actor_name": dense_row["actor_name"],
                     "dense_linked_source_count": dense_row["linked_source_count"],
+                    "dense_registry_source_count": dense_row[
+                        "registry_source_count"
+                    ],
                     "thin_actor_id": thin_row["actor_id"],
                     "thin_actor_name": thin_row["actor_name"],
                     "thin_linked_source_count": thin_row["linked_source_count"],
+                    "thin_registry_source_count": thin_row[
+                        "registry_source_count"
+                    ],
                     "match_selection_rule": (
-                        "exact analysis_family + origin_bucket + legal-formality "
+                        "dense/thin defined by registry_source_count only; exact "
+                        "analysis_family + origin_bucket + legal-formality "
                         "bucket; then closest registry evidence level and review "
                         "status; deterministic actor_id tie-break; no replacement"
                     ),
@@ -1312,9 +1632,10 @@ def build_matched_pairs(
                     ),
                     **PACKAGE_META,
                     "interpretation_limit": (
-                        "Coarsened descriptive pairing, not a matched causal "
-                        "design: age, staff, actual activity, issue salience, "
-                        "place and source-generation mechanisms remain unmeasured."
+                        "Resolved-reference, registry-proxy pairing only; not a "
+                        "matched causal design: age, staff, actual activity, "
+                        "issue salience, place and source-generation mechanisms "
+                        "remain unmeasured."
                     ),
                 }
                 pair_rows.append(pair_row)
@@ -1367,26 +1688,33 @@ def percentile_rank(values: list[float], value: float) -> float:
 def build_negative_cases(
     actor_rows: list[dict[str, object]],
 ) -> list[dict[str, object]]:
-    source_values = [float(row["linked_source_count"]) for row in actor_rows]
+    resolved_rows = [
+        row
+        for row in actor_rows
+        if int(row["unresolved_reference_count"]) == 0
+    ]
+    source_values = [
+        float(row["registry_source_count"]) for row in resolved_rows
+    ]
     degree_values = [
-        float(row["active_actor_issue_degree"]) for row in actor_rows
+        float(row["active_actor_issue_degree"]) for row in resolved_rows
     ]
     between_values = [
-        float(row["active_actor_issue_betweenness"]) for row in actor_rows
+        float(row["active_actor_issue_betweenness"]) for row in resolved_rows
     ]
     candidates: list[dict[str, object]] = []
-    for row in actor_rows:
-        source_count = int(row["linked_source_count"])
+    for row in resolved_rows:
+        source_count = int(row["registry_source_count"])
         degree = int(row["active_actor_issue_degree"])
         between = float(row["active_actor_issue_betweenness"])
         contrast = ""
         if source_count >= 4 and degree <= 2:
-            contrast = "dense_documentation_trace_low_actor_issue_degree"
+            contrast = "dense_registry_trace_low_actor_issue_degree"
         elif source_count <= 1 and (
             degree >= 3
             or percentile_rank(between_values, between) >= 0.85
         ):
-            contrast = "thin_documentation_trace_high_actor_issue_visibility"
+            contrast = "thin_registry_trace_high_actor_issue_visibility"
         if not contrast:
             continue
         candidates.append(
@@ -1397,8 +1725,9 @@ def build_negative_cases(
                 "actor_id": row["actor_id"],
                 "actor_name": row["actor_name"],
                 "analysis_family": row["analysis_family"],
-                "linked_source_count": source_count,
-                "linked_source_percentile": round(
+                "linked_source_count": row["linked_source_count"],
+                "registry_source_count": source_count,
+                "registry_source_percentile": round(
                     percentile_rank(source_values, source_count), 3
                 ),
                 "active_actor_issue_degree": degree,
@@ -1415,8 +1744,8 @@ def build_negative_cases(
                 "english_title_trace": row["english_title_trace"],
                 "contrast_use": (
                     "counterexample to a simple monotonic claim that more "
-                    "documentation traces automatically produce greater "
-                    "actor--issue visibility"
+                    "registry-layer source traces automatically produce "
+                    "greater actor--issue visibility"
                 ),
                 **PACKAGE_META,
                 "interpretation_limit": (
@@ -1430,7 +1759,7 @@ def build_negative_cases(
         key=lambda row: (
             row["contrast_type"],
             -abs(
-                float(row["linked_source_percentile"])
+                float(row["registry_source_percentile"])
                 - float(row["degree_percentile"])
             ),
             row["actor_id"],
@@ -1593,9 +1922,13 @@ def build_sensitivity(
         )
 
     actor_by_source = sorted(
-        actor_rows,
+        [
+            row
+            for row in actor_rows
+            if int(row["unresolved_reference_count"]) == 0
+        ],
         key=lambda row: (
-            -int(row["linked_source_count"]),
+            -int(row["registry_source_count"]),
             str(row["actor_id"]),
         ),
     )
@@ -1607,9 +1940,13 @@ def build_sensitivity(
         ),
     )
     actor_by_thin = sorted(
-        actor_rows,
+        [
+            row
+            for row in actor_rows
+            if int(row["unresolved_reference_count"]) == 0
+        ],
         key=lambda row: (
-            int(row["linked_source_count"]),
+            int(row["registry_source_count"]),
             str(row["actor_id"]),
         ),
     )
@@ -1617,7 +1954,7 @@ def build_sensitivity(
         ("ACT_BASE", "active-edge baseline", set(), "baseline"),
         (
             "ACT_TOP10_DOC",
-            "remove 10 actors with most linked sources",
+            "remove 10 actors with most registry S-sources",
             {str(row["actor_id"]) for row in actor_by_source[:10]},
             "10 actor nodes",
         ),
@@ -1629,7 +1966,7 @@ def build_sensitivity(
         ),
         (
             "ACT_BOTTOM10_DOC",
-            "remove 10 actors with fewest linked sources",
+            "remove 10 resolved actors with fewest registry S-sources",
             {str(row["actor_id"]) for row in actor_by_thin[:10]},
             "10 actor nodes",
         ),
@@ -1711,9 +2048,19 @@ def graph_object_summary(
                     "all_current_actors",
                 )
             ],
+            "source_association_role": "construction_diagnostic",
+            "outcome_excluded_spearman": rho_lookup[
+                (
+                    "actor_issue_bipartite",
+                    "non_issue_linked_source_count",
+                    "active_actor_issue_degree",
+                    "resolved_reference_actors_only",
+                )
+            ],
             "object_semantics": (
-                "actor×issue evidence visibility; degree counts coded issue "
-                "categories, not organizational relationships"
+                "238 actor×issue evidence rows (65 reviewed + 173 candidate); "
+                "degree counts coded issue categories, not organizational "
+                "relationships"
             ),
             "projection_status": "no actor projection used",
         },
@@ -1734,6 +2081,15 @@ def graph_object_summary(
                     "linked_source_count",
                     "strict_unique_place_issue_pair_count",
                     "all_current_actors",
+                )
+            ],
+            "source_association_role": "construction_diagnostic",
+            "outcome_excluded_spearman": rho_lookup[
+                (
+                    "strict_same_source_triples",
+                    "non_strict_triple_linked_source_count",
+                    "strict_unique_place_issue_pair_count",
+                    "resolved_reference_actors_only",
                 )
             ],
             "object_semantics": (
@@ -1759,6 +2115,15 @@ def graph_object_summary(
                     "linked_source_count",
                     "human_checked_event_degree",
                     "all_current_actors",
+                )
+            ],
+            "source_association_role": "construction_diagnostic",
+            "outcome_excluded_spearman": rho_lookup[
+                (
+                    "event_hyperedge_incidence",
+                    "non_event_linked_source_count",
+                    "human_checked_event_degree",
+                    "resolved_reference_actors_only",
                 )
             ],
             "object_semantics": (
@@ -1788,6 +2153,15 @@ def graph_object_summary(
                     "all_current_actors",
                 )
             ],
+            "source_association_role": "construction_diagnostic",
+            "outcome_excluded_spearman": rho_lookup[
+                (
+                    "reviewed_typed_dyadic",
+                    "non_typed_dyadic_linked_source_count",
+                    "reviewed_typed_dyadic_degree",
+                    "resolved_reference_actors_only",
+                )
+            ],
             "object_semantics": (
                 "14 reviewed typed organization relations; relation families "
                 "retain their semantics and are not alliances by default"
@@ -1813,6 +2187,15 @@ def graph_object_summary(
                     "all_current_actors",
                 )
             ],
+            "source_association_role": "construction_diagnostic",
+            "outcome_excluded_spearman": rho_lookup[
+                (
+                    "accepted_case_role_incidence",
+                    "non_case_role_linked_source_count",
+                    "accepted_case_degree",
+                    "resolved_reference_actors_only",
+                )
+            ],
             "object_semantics": (
                 "accepted actor×case role incidence; role is case-specific and "
                 "does not establish a durable organization tie"
@@ -1827,11 +2210,13 @@ def graph_object_summary(
 
 
 def bubble_counts(
-    actor_rows: list[dict[str, object]], y_field: str
+    actor_rows: list[dict[str, object]],
+    x_field: str,
+    y_field: str,
 ) -> Counter[tuple[int, int]]:
     return Counter(
         (
-            int(row["linked_source_count"]),
+            int(row[x_field]),
             int(float(row[y_field])),
         )
         for row in actor_rows
@@ -1854,84 +2239,60 @@ def render_graph_objects(
     actor_rows: list[dict[str, object]],
     associations: list[dict[str, object]],
 ) -> str:
-    rho = {
-        (
-            str(row["graph_object"]),
-            str(row["x_measure"]),
-            str(row["y_measure"]),
-            str(row["subset"]),
-        ): row["spearman_rho"]
+    resolved_rows = [
+        row
+        for row in actor_rows
+        if int(row["unresolved_reference_count"]) == 0
+    ]
+    rho_by_id = {
+        str(row["analysis_id"]): row["spearman_rho"]
         for row in associations
     }
     panels = [
         (
             "A",
-            "actor × issue 二模图",
+            "actor × issue（全层 238；图内 228）",
+            "non_issue_linked_source_count",
             "active_actor_issue_degree",
             "编码议题度数",
-            rho[
-                (
-                    "actor_issue_bipartite",
-                    "linked_source_count",
-                    "active_actor_issue_degree",
-                    "all_current_actors",
-                )
-            ],
+            rho_by_id["H1A017"],
         ),
         (
             "B",
             "event hyperedge incidence",
+            "non_event_linked_source_count",
             "human_checked_event_degree",
             "参与的已核事件数",
-            rho[
-                (
-                    "event_hyperedge_incidence",
-                    "linked_source_count",
-                    "human_checked_event_degree",
-                    "all_current_actors",
-                )
-            ],
+            rho_by_id["H1A023"],
         ),
         (
             "C",
             "typed dyadic 关系图",
+            "non_typed_dyadic_linked_source_count",
             "reviewed_typed_dyadic_degree",
             "已核类型化关系度数",
-            rho[
-                (
-                    "reviewed_typed_dyadic",
-                    "linked_source_count",
-                    "reviewed_typed_dyadic_degree",
-                    "all_current_actors",
-                )
-            ],
+            rho_by_id["H1A024"],
         ),
         (
             "D",
             "case-role incidence",
+            "non_case_role_linked_source_count",
             "accepted_case_degree",
             "进入的已核案件数",
-            rho[
-                (
-                    "accepted_case_role_incidence",
-                    "linked_source_count",
-                    "accepted_case_degree",
-                    "all_current_actors",
-                )
-            ],
+            rho_by_id["H1A025"],
         ),
     ]
     # Keep additional bottom clearance because some CJK fonts render a little
     # below their nominal SVG text box at the second-row x-axis labels.
-    width, height = 1600, 1140
+    width, height = 1600, 1190
     plot_w, plot_h = 620, 350
-    origins = [(95, 175), (870, 175), (95, 650), (870, 650)]
+    origins = [(95, 175), (870, 175), (95, 720), (870, 720)]
     body: list[str] = []
-    max_x = max(int(row["linked_source_count"]) for row in actor_rows)
-    for (letter, title, y_field, y_label, value_rho), (x0, y0) in zip(
+    for (letter, title, x_field, y_field, y_label, value_rho), (x0, y0) in zip(
         panels, origins
     ):
-        counts = bubble_counts(actor_rows, y_field)
+        counts = bubble_counts(resolved_rows, x_field, y_field)
+        max_x = max((point[0] for point in counts), default=1)
         max_y = max((point[1] for point in counts), default=1)
         body.append(
             f'<text x="{x0}" y="{y0 - 62}" class="panel-title">'
@@ -1939,7 +2300,7 @@ def render_graph_objects(
         )
         body.append(
             f'<text x="{x0}" y="{y0 - 34}" class="panel-note">'
-            f"Spearman ρ = {value_rho} · n = {len(actor_rows)}</text>"
+            f"outcome-excluded ρ = {value_rho} · n = {len(resolved_rows)}</text>"
         )
         body.append(
             f'<line x1="{x0}" y1="{y0 + plot_h}" x2="{x0 + plot_w}" '
@@ -1966,7 +2327,7 @@ def render_graph_objects(
                 f'y2="{y:.1f}" class="grid"/>'
             )
             body.append(
-                f'<text x="{x0 - 14}" y="{y + 5:.1f}" class="tick" '
+                f'<text x="{x0 - 45}" y="{y + 5:.1f}" class="tick" '
                 f'text-anchor="end">{tick}</text>'
             )
         for (source_count, degree), count in sorted(counts.items()):
@@ -1975,7 +2336,7 @@ def render_graph_objects(
             radius = 4 + math.sqrt(count) * 4.2
             body.append(
                 f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius:.1f}" '
-                f'class="bubble"><title>linked sources {source_count}; '
+                f'class="bubble"><title>outcome-excluded S sources {source_count}; '
                 f'{escape(y_label)} {degree}; actors {count}</title></circle>'
             )
             if count >= 5:
@@ -1985,16 +2346,17 @@ def render_graph_objects(
                 )
         body.append(
             f'<text x="{x0 + plot_w / 2}" y="{y0 + plot_h + 55}" '
-            f'class="axis-label" text-anchor="middle">关联来源数（观测痕迹）</text>'
+            f'class="axis-label" text-anchor="middle">'
+            f"剔除本层 support 后的 S 来源数</text>"
         )
         body.append(
-            f'<text transform="translate({x0 - 55},{y0 + plot_h / 2}) '
+            f'<text transform="translate({x0 - 70},{y0 + plot_h / 2}) '
             f'rotate(-90)" class="axis-label" text-anchor="middle">'
             f"{escape(y_label)}</text>"
         )
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-<title id="title">文档痕迹与四种不同观测对象</title>
-<desc id="desc">Four bubble plots keep actor-issue degree, human-checked event incidence, reviewed typed dyadic relation degree, and accepted case incidence separate. Bubble size is the number of actors at each coordinate.</desc>
+<title id="title">结果自身证据剔除后的来源代理与四种观测对象</title>
+<desc id="desc">Four bubble plots use object-specific outcome-excluded source proxies, exclude nine unresolved legacy-token actors, and keep actor-issue, event, reviewed dyadic relation, and accepted case incidence separate.</desc>
 <rect width="{width}" height="{height}" fill="#f4f1e9"/>
 <style>
 text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#17312b}}
@@ -2005,84 +2367,140 @@ text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#17
 .bubble{{fill:#2f7d68;fill-opacity:.58;stroke:#1f5d4d;stroke-width:1}}
 .bubble-label{{font-size:11px;fill:#fff;font-weight:700}}
 </style>
-<text x="55" y="48" class="title">“中心性”不是一个对象：四层必须分开</text>
-<text x="55" y="78" class="subtitle">横轴相同，纵轴分别来自不同图／观察层；共同署名没有被投影为稳定组织关系。圆面积表示同一坐标上的 actor 数。</text>
+<text x="55" y="48" class="title">剔除结果自身证据后，四层仍必须分开</text>
+<text x="55" y="78" class="subtitle">各横轴均排除本层 support sources；9 个 legacy-token 未解析 actor 不进入。共同署名和同案角色不投影为组织关系。</text>
 {''.join(body)}
 </svg>"""
 
 
-def render_strata(
-    stratified: list[dict[str, object]],
+def render_review_sensitivity(
+    review_rows: list[dict[str, object]],
 ) -> str:
-    labels: list[str] = []
-    by_label: dict[str, dict[str, float]] = defaultdict(dict)
-    counts: dict[str, int] = {}
-    for row in stratified:
-        label = str(row["stratum_label"])
-        if label not in labels:
-            labels.append(label)
-        counts[label] = int(row["actor_count"])
-        if row["spearman_rho"] != "":
-            by_label[label][str(row["y_measure"])] = float(
-                row["spearman_rho"]
-            )
-    width = 1500
-    x0, plot_w = 580, 830
-    y0, row_h = 145, 66
-    height = y0 + len(labels) * row_h + 90
+    """Show that review selection changes the observed association."""
+
+    width, height = 1600, 850
+    x0, plot_w = 500, 970
+    panel_y = {
+        "all_current_actors": 190,
+        "resolved_reference_actors_only": 505,
+    }
+    layer_order = ["active_238", "reviewed_65", "candidate_173"]
+    global_layer_count = {
+        "active_238": 238,
+        "reviewed_65": 65,
+        "candidate_173": 173,
+    }
+    layer_short_label = {
+        "active_238": "active",
+        "reviewed_65": "reviewed-only",
+        "candidate_173": "candidate-only",
+    }
+    proxy_style = {
+        "linked_source_count": ("●", "construction", "#9b5a42"),
+        "registry_source_count": ("■", "registry-only", "#24745f"),
+        "non_issue_linked_source_count": (
+            "◆",
+            "outcome-excluded",
+            "#446da8",
+        ),
+    }
+    lookup = {
+        (
+            str(row["subset"]),
+            str(row["actor_issue_layer"]),
+            str(row["x_measure"]),
+        ): row
+        for row in review_rows
+    }
     body: list[str] = []
-    for tick in (-1, -0.5, 0, 0.5, 1):
-        x = x0 + (tick + 1) / 2 * plot_w
+    for tick in (-0.4, -0.2, 0, 0.2, 0.4, 0.6):
+        x = x0 + (tick + 0.4) / 1.0 * plot_w
         body.append(
-            f'<line x1="{x:.1f}" y1="{y0 - 30}" x2="{x:.1f}" '
-            f'y2="{height - 70}" class="grid"/>'
+            f'<line x1="{x:.1f}" y1="135" x2="{x:.1f}" '
+            f'y2="760" class="grid"/>'
         )
         body.append(
-            f'<text x="{x:.1f}" y="{y0 - 42}" class="tick" '
-            f'text-anchor="middle">{tick:g}</text>'
+            f'<text x="{x:.1f}" y="122" class="tick" '
+            f'text-anchor="middle">{tick:.1f}</text>'
         )
-    for index, label in enumerate(labels):
-        y = y0 + index * row_h
+    for subset, y_start in panel_y.items():
+        subset_n = int(
+            next(
+                row["actor_count"]
+                for row in review_rows
+                if row["subset"] == subset
+            )
+        )
+        panel_title = (
+            f"A. 全部 current actors（n={subset_n}；含 9 个未解析）"
+            if subset == "all_current_actors"
+            else f"B. 排除 legacy-token 未解析 actors（n={subset_n}）"
+        )
         body.append(
-            f'<text x="45" y="{y + 5}" class="label">{escape(label)}</text>'
+            f'<text x="45" y="{y_start - 55}" class="panel-title">'
+            f"{escape(panel_title)}</text>"
         )
-        body.append(
-            f'<text x="525" y="{y + 5}" class="n" text-anchor="end">'
-            f"n={counts[label]}</text>"
-        )
-        for measure, css, symbol, y_offset in (
-            ("active_actor_issue_degree", "degree", "●", -7),
-            ("active_actor_issue_betweenness", "between", "◆", 9),
-        ):
-            if measure not in by_label[label]:
-                continue
-            value = by_label[label][measure]
-            x = x0 + (value + 1) / 2 * plot_w
-            body.append(
-                f'<text x="{x:.1f}" y="{y + 7 + y_offset}" class="{css}" '
-                f'text-anchor="middle">{symbol}</text>'
+        for layer_index, layer in enumerate(layer_order):
+            y = y_start + layer_index * 72
+            edge_count = int(
+                lookup[(subset, layer, "linked_source_count")][
+                    "edge_count_in_subset"
+                ]
+            )
+            layer_text = (
+                f"active：{edge_count}（已核 65＋候选 173）"
+                if subset == "all_current_actors" and layer == "active_238"
+                else f"{layer_short_label[layer]}：{edge_count}"
+                if subset == "all_current_actors"
+                else f"{layer_short_label[layer]}：{edge_count}"
+                f"（全层 {global_layer_count[layer]}）"
             )
             body.append(
-                f'<text x="{x + 15:.1f}" y="{y + 5 + y_offset}" class="value">'
-                f"{value:.2f}</text>"
+                f'<text x="45" y="{y + 5}" class="label">'
+                f"{escape(layer_text)}</text>"
             )
+            for proxy_index, (proxy, (symbol, _, color)) in enumerate(
+                proxy_style.items()
+            ):
+                row = lookup[(subset, layer, proxy)]
+                value = float(row["spearman_rho"])
+                x = x0 + (value + 0.4) / 1.0 * plot_w
+                y_offset = (proxy_index - 1) * 17
+                body.append(
+                    f'<text x="{x:.1f}" y="{y + 6 + y_offset}" '
+                    f'font-size="21" style="fill:{color}" text-anchor="middle">'
+                    f"{symbol}</text>"
+                )
+                body.append(
+                    f'<text x="{x + 15:.1f}" y="{y + 4 + y_offset}" '
+                    f'class="value">{value:.2f}</text>'
+                )
+    legend_parts: list[str] = []
+    legend_x = 720
+    for index, (_, (symbol, label, color)) in enumerate(proxy_style.items()):
+        x = legend_x + index * 235
+        legend_parts.append(
+            f'<text x="{x}" y="806" font-size="20" style="fill:{color}">'
+            f"{symbol}</text><text x=\"{x + 25}\" y=\"804\" "
+            f'class="legend">{escape(label)}</text>'
+        )
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-<title id="title">Actor-issue associations by analysis family</title>
-<desc id="desc">Spearman correlations between linked source count and actor-issue degree or actor-issue betweenness, shown overall and within analysis families of at least five actors.</desc>
+<title id="title">Actor-issue review-layer and source-proxy sensitivity</title>
+<desc id="desc">Spearman correlations are separated for 238 active, 65 reviewed, and 173 candidate actor-issue edges, and for construction, registry-only, and outcome-excluded source proxies. A second panel excludes nine unresolved legacy-token actors.</desc>
 <rect width="{width}" height="{height}" fill="#f4f1e9"/>
 <style>
 text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#17312b}}
 .title{{font-size:29px;font-weight:700}}.subtitle{{font-size:14px;fill:#5d6c66}}
-.grid{{stroke:#d3cec3;stroke-width:1}}.tick{{font-size:12px;fill:#66736f}}
-.label{{font-size:15px}}.n{{font-size:12px;fill:#66736f}}.degree{{font-size:22px;fill:#24745f}}
-.between{{font-size:22px;fill:#ad6f2c}}.value{{font-size:12px;fill:#4d5b56}}
-.legend{{font-size:14px;font-weight:700}}
+.panel-title{{font-size:20px;font-weight:700}}.grid{{stroke:#d3cec3;stroke-width:1}}
+.tick{{font-size:12px;fill:#66736f}}.label{{font-size:15px}}
+.value{{font-size:12px;fill:#4d5b56}}.legend{{font-size:14px;font-weight:700}}
+.warning{{font-size:13px;fill:#6a4822;font-weight:700}}
 </style>
-<text x="45" y="45" class="title">Actor×issue 层：来源痕迹的相关方向并不稳定</text>
-<text x="45" y="73" class="subtitle">同一图对象内分层；仅显示 n≥5。小样本相关不作显著性或因果判断。</text>
-<text x="1040" y="72" class="legend" fill="#24745f">● 议题度数</text>
-<text x="1190" y="72" class="legend" fill="#ad6f2c">◆ 二模 betweenness</text>
+<text x="45" y="45" class="title">审核状态和来源代理会共同改变相关结果</text>
+<text x="45" y="73" class="subtitle">红色总 linked-source 含结果自身证据，只是 construction diagnostic；绿色 registry-only 与蓝色 outcome-excluded 才是主要敏感性。</text>
+<text x="45" y="98" class="warning">所有值只描述编码层；reviewed-only 也受人工复核选择影响，不能当作更接近“真实中心性”。</text>
 {''.join(body)}
+{''.join(legend_parts)}
 </svg>"""
 
 
@@ -2096,9 +2514,9 @@ def render_sensitivity(
         "SRC_NO_LEGAL": "移除法律／程序来源的支持",
         "SRC_NO_OFFICIAL": "移除官方／行政来源的支持",
         "SRC_NO_MEDIA": "移除媒体来源的支持",
-        "ACT_TOP10_DOC": "移除关联来源最多的 10 个 actor",
+        "ACT_TOP10_DOC": "移除 registry S 来源最多的 10 个 actor",
         "ACT_TOP10_DEGREE": "移除议题度数最高的 10 个 actor",
-        "ACT_BOTTOM10_DOC": "移除关联来源最少的 10 个 actor",
+        "ACT_BOTTOM10_DOC": "移除 registry S 来源最少的 10 个 actor",
     }
     source_rows = [
         row
@@ -2114,7 +2532,12 @@ def render_sensitivity(
     ]
     width, height = 1600, 780
     panels = [
-        (source_rows, 65, "A. 删除 source support（E3/E4）", "source"),
+        (
+            source_rows,
+            65,
+            "A. 删除 source support（E3/E4；channel=heuristic）",
+            "source",
+        ),
         (actor_rows, 835, "B. 删除 actor nodes（active）", "actor"),
     ]
     body: list[str] = []
@@ -2175,7 +2598,7 @@ text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#17
 .warning{{font-size:14px;fill:#6a4822;font-weight:700}}
 </style>
 <text x="55" y="48" class="title">同一 actor×issue 图，不同删除单位必须拆开读</text>
-<text x="55" y="78" class="subtitle">左：删来源只移除“支持被耗尽”的 E3/E4 边。右：删 actor 会移除节点及全部 incident edges。两栏不能当作匹配反事实。</text>
+<text x="55" y="78" class="subtitle">左：按 source_type heuristic 删来源，只移除“支持被耗尽”的 E3/E4 编码边。右：删 actor 节点。两栏不能当作匹配反事实。</text>
 {''.join(body)}
 <rect x="55" y="690" width="1490" height="42" rx="8" fill="#eadfc9"/>
 <text x="75" y="717" class="warning">边保留率只描述当前编码层；不表示现实组织、活动或社会关系按同比例消失。</text>
@@ -2187,6 +2610,7 @@ def fmt_rho(
     graph: str,
     outcome: str,
     subset: str = "all_current_actors",
+    x_measure: str = "linked_source_count",
 ) -> float:
     row = next(
         row
@@ -2194,6 +2618,7 @@ def fmt_rho(
         if row["graph_object"] == graph
         and row["y_measure"] == outcome
         and row["subset"] == subset
+        and row["x_measure"] == x_measure
     )
     return float(row["spearman_rho"])
 
@@ -2201,45 +2626,88 @@ def fmt_rho(
 def render_method_brief(
     actor_rows: list[dict[str, object]],
     associations: list[dict[str, object]],
+    review_sensitivity: list[dict[str, object]],
     matched_summary: list[dict[str, object]],
     sensitivity: list[dict[str, object]],
     negative_cases: list[dict[str, object]],
     graph_summary: list[dict[str, object]],
+    unresolved_rows: list[dict[str, object]],
 ) -> str:
-    issue_rho = fmt_rho(
-        associations, "actor_issue_bipartite", "active_actor_issue_degree"
+    association_by_id = {
+        str(row["analysis_id"]): row for row in associations
+    }
+    construction_issue_rho = float(
+        association_by_id["H1A001"]["spearman_rho"]
     )
-    between_rho = fmt_rho(
-        associations,
-        "actor_issue_bipartite",
-        "active_actor_issue_betweenness",
+    construction_between_rho = float(
+        association_by_id["H1A002"]["spearman_rho"]
     )
-    event_rho = fmt_rho(
-        associations, "event_hyperedge_incidence", "human_checked_event_degree"
+    resolved_construction_rho = float(
+        association_by_id["H1A026"]["spearman_rho"]
     )
-    dyadic_rho = fmt_rho(
-        associations, "reviewed_typed_dyadic", "reviewed_typed_dyadic_degree"
+    registry_issue_rho = float(
+        association_by_id["H1A016"]["spearman_rho"]
     )
-    case_rho = fmt_rho(
-        associations, "accepted_case_role_incidence", "accepted_case_degree"
+    excluded_issue_rho = float(
+        association_by_id["H1A017"]["spearman_rho"]
     )
-    org_rho = fmt_rho(
-        associations, "actor_issue_bipartite", "active_actor_issue_degree"
+    registry_between_rho = float(
+        association_by_id["H1A027"]["spearman_rho"]
+    )
+    excluded_between_rho = float(
+        association_by_id["H1A028"]["spearman_rho"]
     )
     org_row = next(row for row in associations if row["analysis_id"] == "H1A014")
     english_row = next(
         row for row in associations if row["analysis_id"] == "H1A015"
     )
+    review_lookup = {
+        (
+            str(row["subset"]),
+            str(row["actor_issue_layer"]),
+            str(row["x_measure"]),
+        ): row
+        for row in review_sensitivity
+    }
+    resolved_subset = "resolved_reference_actors_only"
+    reviewed_registry = float(
+        review_lookup[
+            (resolved_subset, "reviewed_65", "registry_source_count")
+        ]["spearman_rho"]
+    )
+    reviewed_excluded = float(
+        review_lookup[
+            (
+                resolved_subset,
+                "reviewed_65",
+                "non_issue_linked_source_count",
+            )
+        ]["spearman_rho"]
+    )
+    candidate_registry = float(
+        review_lookup[
+            (resolved_subset, "candidate_173", "registry_source_count")
+        ]["spearman_rho"]
+    )
+    candidate_excluded = float(
+        review_lookup[
+            (
+                resolved_subset,
+                "candidate_173",
+                "non_issue_linked_source_count",
+            )
+        ]["spearman_rho"]
+    )
     matched_all = next(
         row
         for row in matched_summary
-        if row["match_universe"] == "all_current_actors"
+        if row["match_universe"] == "resolved_reference_actors"
         and row["outcome_measure"] == "active_actor_issue_degree"
     )
     matched_connected = next(
         row
         for row in matched_summary
-        if row["match_universe"] == "actor_issue_connected_only"
+        if row["match_universe"] == "resolved_actor_issue_connected_only"
         and row["outcome_measure"] == "active_actor_issue_degree"
     )
     src_s004 = next(
@@ -2258,29 +2726,34 @@ def render_method_brief(
         row
         for row in negative_cases
         if row["contrast_type"]
-        == "thin_documentation_trace_high_actor_issue_visibility"
+        == "thin_registry_trace_high_actor_issue_visibility"
     ][:4]
     dense_low = [
         row
         for row in negative_cases
         if row["contrast_type"]
-        == "dense_documentation_trace_low_actor_issue_degree"
+        == "dense_registry_trace_low_actor_issue_degree"
     ][:4]
     graph_lines = "\n".join(
         f"- `{row['graph_object']}`：{row['input_observation_count']} 条输入观察；"
         f"{row['incident_registry_actor_count']} 个可见 registry actor；"
-        f"{row['object_semantics']}"
+        f"{row['object_semantics']}；总来源相关={row['source_breadth_spearman']}"
+        f"（construction diagnostic），outcome-excluded="
+        f"{row['outcome_excluded_spearman']}"
         for row in graph_summary
     )
     thin_names = "、".join(
-        f"{row['actor_id']}（{row['linked_source_count']}源／"
+        f"{row['actor_id']}（registry {row['registry_source_count']}源／"
         f"{row['active_actor_issue_degree']}议题）"
         for row in thin_high
     )
     dense_names = "、".join(
-        f"{row['actor_id']}（{row['linked_source_count']}源／"
+        f"{row['actor_id']}（registry {row['registry_source_count']}源／"
         f"{row['active_actor_issue_degree']}议题）"
         for row in dense_low
+    )
+    unresolved_zero = sum(
+        int(row["linked_s_source_count"]) == 0 for row in unresolved_rows
     )
     return f"""# H1 v2：资料留存与“观测中心性”到底重合多少
 
@@ -2290,39 +2763,36 @@ def render_method_brief(
 
 ## 结论先行
 
-当前材料支持一个比原命题更窄、也更有方法价值的判断：
+当前材料不能确认、也不能否定“资料留存能力制造了网络中心”这个命题。它能确认的是：**来源、编码和审核过程共同塑造了当前可见层；不同 proxy 给出的方向并不一致。**
 
-> 少数高承载名单会显著改变 actor×issue 可见层的大小；但组织层面的资料痕迹与 actor×issue 中心性只呈弱到中等的正相关，而且该关系在功能分层中方向不稳定。现有数据不支持“中心性主要是官网、英文能力或律师团队制造的资料幻象”。
+总 `linked_source_count` 与 active actor×issue 度数的 ρ={construction_issue_rho:.3f}、与 betweenness 的 ρ={construction_between_rho:.3f}。但横轴把 actor×issue 本身的支持来源也算进去，所以这里只是 **construction diagnostic**，不能当作“资料能力→中心性”的检验。排除 9 个 legacy-token 来源未解析 actor 后，总来源相关为 {resolved_construction_rho:.3f}；改用 registry 身份层来源，度数相关为 {registry_issue_rho:.3f}；再剔除 actor×issue 自身 support sources，相关变为 {excluded_issue_rho:.3f}。betweenness 对应为 {registry_between_rho:.3f} 与 {excluded_between_rho:.3f}。
 
-在 121 个当前 actor 上，关联来源数与 actor×issue 度数的 Spearman ρ={issue_rho:.3f}，与该二模图 betweenness 的 ρ={between_rho:.3f}。这说明两者有重叠，但远非一一对应。organization-hosted trace 与议题度数的 ρ={float(org_row['spearman_rho']):.3f}；英文标题痕迹与议题度数的 ρ={float(english_row['spearman_rho']):.3f}。后两项尤其不能支持“有官网／英文材料就会成为中心”的强说法；它们还只是 host/title 代理，不是 actor 自有官网或语言能力。
+审核状态同样改变结果。在来源 crosswalk 可用的 actor 中，reviewed-only 65 边的 registry／outcome-excluded 相关为 {reviewed_registry:.3f}/{reviewed_excluded:.3f}，candidate-only 173 边则为 {candidate_registry:.3f}/{candidate_excluded:.3f}。reviewed-only 不是“更真实”的随机样本，而是当前人审顺序的产物。图 2 因此把 238 active、65 reviewed 和 173 candidate 明确拆开。
 
 ## 五种对象，不能再统称 network centrality
 
 {graph_lines}
 
-图 1 只把相同的 documentation-trace 横轴放在四种对象旁边；纵轴没有合并。event 仍以 hyperedge incidence 表示，不做共同署名 actor 投影。case-role 也不投影为同案协作。
+图 1 对每种对象先剔除该对象自身的 support sources，并排除 9 个来源 crosswalk 未解析 actor；各纵轴仍不合并。event 保持 hyperedge incidence，不做共同署名投影；case-role 也不投影成同案协作。
 
-## 组织层比较
+## 来源 crosswalk 缺口
 
-- actor×issue：来源数—度数 ρ={issue_rho:.3f}；来源数—betweenness ρ={between_rho:.3f}。
-- event incidence：来源数—已核事件数 ρ={event_rho:.3f}；当前事件层高度受三份名单及案件记录的抽样边界影响。
-- typed dyadic：来源数—已核类型化关系度数 ρ={dyadic_rho:.3f}；这里只有 14 条目的性关系样本，不能概括冲绳组织关系总体。
-- case-role：来源数—进入案件数 ρ={case_rho:.3f}。这很可能同时反映“法律场域真实产生更多正式文书”和“有程序角色的 actor 更容易被编码”，不是文档能力的独立效应。
+共有 {len(unresolved_rows)} 个 actor 保留 `X...` legacy token，不能自动映射成某条 `S...` source；其中 {unresolved_zero} 个因此显示为 0 条已解析 S-source。它们在 `unresolved_reference_audit_v2.csv` 单列，并从主要 proxy sensitivity 与配对中排除。**0 条已解析来源不等于现实中没有材料。**
 
-精确分层匹配把 `dense_4plus` 与 `thin_0to1` actor 按 analysis family、local/nonlocal、法人／非正式猜测桶配对，再尽量匹配 registry evidence/review 状态。全 registry 得到 {matched_all['pair_count']} 对，dense actor 平均多 {float(matched_all['mean_dense_minus_thin']):.2f} 条 actor×issue 边（{matched_all['dense_higher_pair_count']} 对较高／{matched_all['tie_pair_count']} 对相同／{matched_all['dense_lower_pair_count']} 对较低）；只看已有 issue edge 的 actor 后为 {matched_connected['pair_count']} 对、平均差 {float(matched_connected['mean_dense_minus_thin']):.2f}（{matched_connected['dense_higher_pair_count']}/{matched_connected['tie_pair_count']}/{matched_connected['dense_lower_pair_count']}）。差距收缩说明 registry 中尚未连边的 actor 会放大表面关联。该匹配没有控制组织年代、规模、实际活动量、议题显著性和地点，仍不是因果设计。
+以 registry 身份层来源定义 dense/thin，并排除上述 9 个 actor 后，粗分层匹配得到 {matched_all['pair_count']} 对；dense actor 平均多 {float(matched_all['mean_dense_minus_thin']):.2f} 条 active actor×issue 边（{matched_all['dense_higher_pair_count']} 高／{matched_all['tie_pair_count']} 同／{matched_all['dense_lower_pair_count']} 低）。在已有 issue edge 的子集中为 {matched_connected['pair_count']} 对、平均差 {float(matched_connected['mean_dense_minus_thin']):.2f}。该配对仍未控制年代、规模、真实活动量、议题显著性和地点，只是人工抽读队列，不是因果设计。
 
 ## 来源集中与 actor capacity 是两件不同的事
 
-S004 单源删除会耗尽 {int(src_s004['baseline_edge_count']) - int(src_s004['edge_count'])} 条 E3/E4 actor×issue 边，并使 {int(src_s004['baseline_observed_actor_count']) - int(src_s004['observed_actor_count'])} 个 actor 失去该层全部边；删除 S003/S004/S006 合计耗尽 {int(src_big3['baseline_edge_count']) - int(src_big3['edge_count'])} 条边、{int(src_big3['baseline_observed_actor_count']) - int(src_big3['observed_actor_count'])} 个 actor。这仍是最强的、可复算的资料偏差证据，但它证明的是**研究设计对几份列表的依赖**。
+S004 的证据支持若被移除，当前 234 条 E3/E4 编码边中有 {int(src_s004['baseline_edge_count']) - int(src_s004['edge_count'])} 条会失去全部已列支持，{int(src_s004['baseline_observed_actor_count']) - int(src_s004['observed_actor_count'])} 个 actor 会失去该层全部边；S003/S004/S006 合计对应 {int(src_big3['baseline_edge_count']) - int(src_big3['edge_count'])} 条边、{int(src_big3['baseline_observed_actor_count']) - int(src_big3['observed_actor_count'])} 个 actor。这个结果描述的是**当前编码层对几份名单的依赖**，不是现实网络在删网页后消失。
 
-删除“关联来源数最多的 10 个 actor”会去掉 {int(act_doc['baseline_edge_count']) - int(act_doc['edge_count'])} 条 active actor×issue 边；删除“actor×issue 度数最高的 10 个 actor”会去掉 {int(act_degree['baseline_edge_count']) - int(act_degree['edge_count'])} 条。两个 actor 集合并不相同。更重要的是，source-support deletion 与 actor-node deletion 的干预单位不同，图 3 分栏显示，不能写成匹配反事实。
+删除 registry S-source 最多的 10 个 actor 会去掉 {int(act_doc['baseline_edge_count']) - int(act_doc['edge_count'])} 条 active 编码边；删除 actor×issue 度数最高的 10 个 actor 会去掉 {int(act_degree['baseline_edge_count']) - int(act_degree['edge_count'])} 条。两个 actor 集合并不相同；source-support deletion 与 actor-node deletion 也不是匹配反事实。来源 channel 的删除使用 `source_type` heuristic，图 3 已明确标注。
 
-## 反例使强命题不能成立
+## 反例使简单单调命题不能成立
 
-- 资料薄但 actor×issue 可见度高：{thin_names}。
-- 资料密但 actor×issue 度数不高：{dense_names}。
+- registry 身份来源薄但 actor×issue 可见度高：{thin_names}。
+- registry 身份来源密但 actor×issue 度数不高：{dense_names}。
 
-这些反例不说明资料留存不重要；它们说明“更多资料痕迹 → 必然更中心”的单调机制不成立。比如有的组织只由一份资料支持，却在同一编码行上被赋予 3–4 个议题；也有服务／国际组织有较丰富的正式或英文材料，但一期问题只给它们 1–2 个功能议题。**议题编码规则和研究问题本身也在塑造度数。**
+这些反例只否定简单单调机制；不能说明资料留存不重要。organization-hosted trace 与议题度数的 construction-level ρ={float(org_row['spearman_rho']):.3f}，英文标题痕迹为 {float(english_row['spearman_rho']):.3f}，但前者不是 actor 自有官网，后者不是组织英文能力。**议题编码规则、研究范围和审核顺序都在塑造度数。**
 
 ## competing explanations
 
@@ -2330,7 +2800,8 @@ S004 单源删除会耗尽 {int(src_s004['baseline_edge_count']) - int(src_s004[
 2. **播种来源内生性**：S004 等名单同时帮助发现 actor 并支持 issue 编码，来源数和网络度数共享建构过程。
 3. **真实协调与留痕可能共存**：秘书处、律师或 Web team 既可能真实协调，也可能保存记录；不能把可见度全部扣成偏差。H3 若出现“秘书处＋Web team”同组织并存，只能作为下一轮机制例交叉核查，不能在本包中当作已证解释。
 4. **范围和分类效应**：服务组织、公共机构、国际 NGO 与地方实行委员会被赋予的 issue taxonomy 宽度不同。
-5. **时间右删失**：linked source 的年份跨度不是 lifespan；当前 lifecycle 表只覆盖极少数 actor。
+5. **审核选择效应**：65 条 reviewed edge 集中于最近优先复核的 actor，不是从 238 条 active edge 随机抽样。
+6. **时间右删失**：linked source 的年份跨度不是 lifespan；当前 lifecycle 表只覆盖极少数 actor。
 
 ## 方法文献接口
 
@@ -2342,6 +2813,9 @@ S004 单源删除会耗尽 {int(src_s004['baseline_edge_count']) - int(src_s004[
 ## 目前不能说什么
 
 - 不能说“网络中心性主要是信息留存能力”；
+- 不能用总 linked-source 的 ρ={construction_issue_rho:.3f} 支持或反驳 H1，因为横轴含纵轴的证据；
+- 不能把 reviewed-only 相关当作更接近真实网络；
+- 不能把 legacy X-token 解析失败写成组织没有来源；
 - 不能说删掉网页、律师或英文材料，现实组织网络就会断裂；
 - 不能把 organization-hosted 来源说成 actor 自有官网；
 - 不能把英文标题说成组织具有英文 staff capacity；
@@ -2351,7 +2825,7 @@ S004 单源删除会耗尽 {int(src_s004['baseline_edge_count']) - int(src_s004[
 
 ## 可继续验证的最小下一步
 
-若负责人希望把 H1 从“方法附录”升级为论文命题，下一轮不应再扩大 actor 数，而应对本包的 18 组 matched pairs 做人工字段冻结：actor 自有官网／非自有 host、日英双语原文、专职 staff、律师／秘书处支援、成立—终止日期、至少两个相同时间窗的外部报道。只有这些字段被人工读过，documentation capacity 才能从 proxy 变成可以讨论的解释变量。
+若负责人希望把 H1 从方法附录升级为论文命题，下一轮不应再扩大 actor 数，而应先补 {len(unresolved_rows)} 个 legacy-token crosswalk，再从 registry-proxy 匹配中人工冻结不超过 36 个 actor：自有官网／第三方 host、日英双语原文、staff／律师／秘书处／Web team、成立—终止日期、固定时间窗外部报道。只有这些字段被人工读过，documentation capacity 才能从 proxy 变成解释变量。
 """
 
 
@@ -2424,18 +2898,32 @@ def method_literature_rows() -> list[dict[str, object]]:
 def render_principal_checkpoint(
     negative_cases: list[dict[str, object]],
     matched_pairs: list[dict[str, object]],
+    unresolved_rows: list[dict[str, object]],
 ) -> str:
-    priority_negative = negative_cases[:8]
+    dense = [
+        row
+        for row in negative_cases
+        if row["contrast_type"]
+        == "dense_registry_trace_low_actor_issue_degree"
+    ][:4]
+    thin = [
+        row
+        for row in negative_cases
+        if row["contrast_type"]
+        == "thin_registry_trace_high_actor_issue_visibility"
+    ][:4]
+    priority_negative = dense + thin
     negative_lines = "\n".join(
         f"- {row['actor_id']} {row['actor_name']}：{row['contrast_type']}；"
-        f"{row['linked_source_count']} 个 linked sources，"
+        f"registry {row['registry_source_count']} 源／"
+        f"全部 linked {row['linked_source_count']} 源，"
         f"{row['active_actor_issue_degree']} 个 issue edges。"
         for row in priority_negative
     )
     all_pairs = [
         row
         for row in matched_pairs
-        if row["match_universe"] == "all_current_actors"
+        if row["match_universe"] == "resolved_reference_actors"
     ]
     pair_lines = "\n".join(
         f"- {row['dense_actor_id']} ↔ {row['thin_actor_id']}（{row['exact_match_key']}）"
@@ -2449,13 +2937,17 @@ def render_principal_checkpoint(
 
 {negative_lines}
 
-请逐个判断：是 source linkage 漏编、issue 标签过宽／过窄、组织范围不同，还是确有“资料密度与观测中心性不一致”。
+四个 dense-low 与四个 thin-high 已平衡抽取。请逐个判断：是 issue 标签过宽／过窄、组织范围不同，还是确有“registry 来源痕迹与编码可见度不一致”。
+
+## 先处理的来源 crosswalk
+
+`unresolved_reference_audit_v2.csv` 有 {len(unresolved_rows)} 个 legacy-token actor。它们未进入主要 proxy sensitivity 或 matched pairs；不要把 0 个已解析 S-source 写成“没有材料”。
 
 ## 建议抽读的 matched pairs
 
 {pair_lines}
 
-完整 {len(all_pairs)} 对见 `matched_actor_pairs_v2.csv`。匹配只是缩小功能／来源差异，不是因果设计。
+完整 {len(all_pairs)} 对见 `matched_actor_pairs_v2.csv`。dense/thin 只按 registry_source_count 定义；匹配只是缩小功能／来源差异，不是因果设计。
 
 ## 需要负责人拍板
 
@@ -2464,9 +2956,10 @@ def render_principal_checkpoint(
    - 可选：独立方法短文候选；
    - 暂不建议：主论文的实质性中心命题。
 2. 是否接受当前最强措辞：
-   - “少数高承载名单显著塑造 actor×issue 可见层”；
-   - “组织层 documentation traces 与 actor×issue visibility 只有弱到中等重合，且分层方向不稳定”。
+   - “移除 S004 的证据支持，会使当前 234 条 E3/E4 编码边中的 41 条失去全部已列支持”；
+   - “总来源相关是 construction diagnostic；registry-only 与 outcome-excluded proxy、reviewed 与 candidate 层给出不同结果，现阶段不能确认 H1”。
 3. 是否批准一轮 **36 actor 以内** 的人工 capacity crosswalk：
+   - 先补 {len(unresolved_rows)} 个 legacy X-token 的 source crosswalk；
    - 自有官网／第三方 host；
    - 日英双语原文，而非标题；
    - staff／律师／秘书处／Web team；
@@ -2497,9 +2990,11 @@ python -m unittest tests.test_make_h1_documentation_visibility_v2
 - `actor_documentation_visibility_v2.csv`：121 个 current actor 的资料痕迹和五类分开测量的可见度。
 - `source_feature_audit_v2.csv`：295 sources 的机械 channel／title-language／archive 分类。
 - `graph_object_summary_v2.csv`：actor×issue、strict triple、event hyperedge、typed dyadic、case-role 的对象边界。
-- `association_estimates_v2.csv`：总体／限定子集的描述性 Spearman。
-- `stratified_associations_v2.csv`：同一 actor×issue 图对象内的 analysis-family 分层。
-- `matched_actor_pairs_v2.csv`、`matched_pair_summary_v2.csv`：dense vs thin 的有界匹配。
+- `association_estimates_v2.csv`：construction diagnostic 与 registry／outcome-excluded proxy 分栏。
+- `review_layer_sensitivity_v2.csv`：238 active、65 reviewed、173 candidate 的审核层敏感性。
+- `stratified_associations_v2.csv`：同一 actor×issue 图对象内、仅 n≥10 的 analysis-family 描述。
+- `unresolved_reference_audit_v2.csv`：9 个 legacy X-token 来源 crosswalk 缺口。
+- `matched_actor_pairs_v2.csv`、`matched_pair_summary_v2.csv`：以 registry 来源定义 dense/thin 的有界匹配。
 - `negative_case_audit_v2.csv`：反驳简单单调机制的对照案例。
 - `source_dependency_v2.csv`、`sensitivity_scenarios_v2.csv`：来源支持删除与 actor 节点删除，严格分栏。
 - `method_literature_v2.csv`：两项方法文献接口及不可转移边界。
@@ -2508,7 +3003,7 @@ python -m unittest tests.test_make_h1_documentation_visibility_v2
 
 ## 固定边界
 
-全包为 `research_only / candidate / ai_seeded / not_frontend_ready`。organization-hosted trace 不等于 actor 自有官网；英文标题不等于组织英文能力；source-year span 不等于 lifespan；共同事件和同案角色不投影成稳定组织关系。
+全包为 `research_only / candidate / ai_seeded / not_frontend_ready`。总 linked-source 相关只作 construction diagnostic；主要敏感性使用 registry-only／outcome-excluded proxy，并排除 9 个未解析 legacy-token actor。65 条 reviewed edge 与 173 条 candidate edge 不合并解释。organization-hosted trace 不等于 actor 自有官网；英文标题不等于组织英文能力；source-year span 不等于 lifespan；共同事件和同案角色不投影成稳定组织关系。
 """
 
 
@@ -2523,8 +3018,16 @@ def validate(
     source_features: list[dict[str, object]],
     actor_rows: list[dict[str, object]],
     associations: list[dict[str, object]],
+    stratified: list[dict[str, object]],
+    review_sensitivity: list[dict[str, object]],
     matched_pairs: list[dict[str, object]],
+    matched_summary: list[dict[str, object]],
+    negative_cases: list[dict[str, object]],
+    source_dependency: list[dict[str, object]],
     sensitivity: list[dict[str, object]],
+    graph_summary: list[dict[str, object]],
+    literature_rows: list[dict[str, object]],
+    unresolved_rows: list[dict[str, object]],
 ) -> list[str]:
     checks: list[str] = []
     if len(actors) != 121:
@@ -2533,6 +3036,16 @@ def validate(
     if len(edges) != 238:
         raise ValueError(f"expected 238 active actor-issue edges, got {len(edges)}")
     checks.append("active actor-issue gate = 238")
+    reviewed_edge_count = sum(
+        edge["review_status"] in HUMAN_EDGE_STATUSES for edge in edges
+    )
+    candidate_edge_count = len(edges) - reviewed_edge_count
+    if (reviewed_edge_count, candidate_edge_count) != (65, 173):
+        raise ValueError(
+            "actor-issue review split changed: "
+            f"{reviewed_edge_count} reviewed/{candidate_edge_count} candidate"
+        )
+    checks.append("actor-issue review split = 65 reviewed / 173 candidate")
     if len(triples) != 312:
         raise ValueError(f"expected 312 strict triples, got {len(triples)}")
     checks.append("strict same-source triple gate = 312")
@@ -2558,7 +3071,7 @@ def validate(
     ):
         raise ValueError("non-reviewed/non-dyadic relation leaked into H1 v2")
     checks.append("typed dyadic object = 14 reviewed rows")
-    if len(source_features) != len(sources) != 295:
+    if len(source_features) != 295 or len(sources) != 295:
         raise ValueError("source feature audit does not cover 295 source rows")
     checks.append("source feature audit = 295/295")
     if len(actor_rows) != 121 or len({row["actor_id"] for row in actor_rows}) != 121:
@@ -2568,8 +3081,16 @@ def validate(
         ("source_features", source_features),
         ("actor_rows", actor_rows),
         ("associations", associations),
+        ("stratified", stratified),
+        ("review_sensitivity", review_sensitivity),
         ("matched_pairs", matched_pairs),
+        ("matched_summary", matched_summary),
+        ("negative_cases", negative_cases),
+        ("source_dependency", source_dependency),
         ("sensitivity", sensitivity),
+        ("graph_summary", graph_summary),
+        ("literature_rows", literature_rows),
+        ("unresolved_rows", unresolved_rows),
     ):
         if any(
             row.get("research_status") != "research_only"
@@ -2578,6 +3099,50 @@ def validate(
         ):
             raise ValueError(f"research gate failed in {collection_name}")
     checks.append("research_only/not_frontend_ready gate holds across outputs")
+    if len(unresolved_rows) != 9:
+        raise ValueError(
+            f"expected 9 unresolved legacy-token actors, got {len(unresolved_rows)}"
+        )
+    unresolved_zero = sum(
+        int(row["linked_s_source_count"]) == 0 for row in unresolved_rows
+    )
+    if unresolved_zero != 6:
+        raise ValueError(
+            f"expected 6 zero-linked unresolved actors, got {unresolved_zero}"
+        )
+    checks.append(
+        "legacy-token source crosswalk = 9 unresolved; 6 have zero parsed S-sources"
+    )
+    by_id = {row["analysis_id"]: row for row in associations}
+    if by_id["H1A001"]["diagnostic_role"] != "construction_diagnostic":
+        raise ValueError("total linked-source association not demoted")
+    for analysis_id in ("H1A016", "H1A017", "H1A023", "H1A024", "H1A025"):
+        if (
+            by_id[analysis_id]["subset"]
+            != "resolved_reference_actors_only"
+        ):
+            raise ValueError(f"{analysis_id} leaked unresolved actors")
+    checks.append(
+        "total linked-source association demoted; registry/outcome-excluded "
+        "proxies exclude unresolved actors"
+    )
+    all_review_rows = [
+        row
+        for row in review_sensitivity
+        if row["subset"] == "all_current_actors"
+    ]
+    if {
+        row["actor_issue_layer"] for row in all_review_rows
+    } != {"active_238", "reviewed_65", "candidate_173"}:
+        raise ValueError("review-layer sensitivity incomplete")
+    checks.append("review-layer sensitivity separates active/reviewed/candidate")
+    if any(
+        row["stratum_type"] == "analysis_family"
+        and int(row["actor_count"]) < 10
+        for row in stratified
+    ):
+        raise ValueError("small-n analysis-family row leaked into display table")
+    checks.append("analysis-family descriptive table uses n>=10 floor")
     s004 = next(row for row in sensitivity if row["scenario_id"] == "SRC_NO_S004")
     if int(s004["baseline_edge_count"]) - int(s004["edge_count"]) != 41:
         raise ValueError("S004 sensitivity no longer removes 41 E3/E4 edges")
@@ -2587,9 +3152,10 @@ def validate(
         raise ValueError("association IDs are not unique")
     checks.append(f"association specifications = {len(associations)} unique rows")
     if not any(
-        row["match_universe"] == "all_current_actors" for row in matched_pairs
+        row["match_universe"] == "resolved_reference_actors"
+        for row in matched_pairs
     ):
-        raise ValueError("matched comparison missing all-current universe")
+        raise ValueError("matched comparison missing resolved-reference universe")
     checks.append(
         f"matched pair rows = {len(matched_pairs)} across two explicit universes"
     )
@@ -2640,6 +3206,7 @@ ACTOR_FIELDS = [
     "linked_source_ids",
     "unresolved_reference_count",
     "unresolved_reference_tokens",
+    "source_crosswalk_status",
     "registry_source_count",
     "actor_issue_support_source_count",
     "strict_triple_source_count",
@@ -2647,6 +3214,10 @@ ACTOR_FIELDS = [
     "case_role_source_count",
     "typed_dyadic_source_count",
     "non_issue_linked_source_count",
+    "non_strict_triple_linked_source_count",
+    "non_event_linked_source_count",
+    "non_case_role_linked_source_count",
+    "non_typed_dyadic_linked_source_count",
     "non_big3_linked_source_count",
     "source_channel_count",
     "source_channels",
@@ -2670,12 +3241,15 @@ ACTOR_FIELDS = [
     "lifespan_status",
     "documentation_trace_feature_count_0to7",
     "documentation_trace_stratum",
+    "registry_trace_stratum",
     "active_actor_issue_degree",
     "e3plus_actor_issue_degree",
     "reviewed_actor_issue_degree",
+    "candidate_actor_issue_degree",
     "active_actor_issue_betweenness",
     "e3plus_actor_issue_betweenness",
     "reviewed_actor_issue_betweenness",
+    "candidate_actor_issue_betweenness",
     "active_issue_frame_count",
     "s004_only_actor_issue_edge_count",
     "strict_triple_row_count",
@@ -2759,6 +3333,8 @@ def main() -> None:
     )
     associations = build_associations(actor_rows)
     stratified = build_stratified_associations(actor_rows)
+    review_sensitivity = build_review_layer_sensitivity(actor_rows)
+    unresolved_rows = build_unresolved_reference_audit(actor_rows)
     matched_pairs, matched_summary = build_matched_pairs(actor_rows)
     negative_cases = build_negative_cases(actor_rows)
     source_dependency = build_source_dependency(edges, sources)
@@ -2784,8 +3360,16 @@ def main() -> None:
         source_features,
         actor_rows,
         associations,
+        stratified,
+        review_sensitivity,
         matched_pairs,
+        matched_summary,
+        negative_cases,
+        source_dependency,
         sensitivity,
+        graph_summary,
+        literature_rows,
+        unresolved_rows,
     )
 
     OUT.mkdir(parents=True, exist_ok=True)
@@ -2806,6 +3390,7 @@ def main() -> None:
             "descriptive_bootstrap_high",
             "bootstrap_note",
             "same_graph_object_rule",
+            "diagnostic_role",
             "research_status",
             "display_tier",
             "claim_status",
@@ -2836,6 +3421,50 @@ def main() -> None:
         ],
     )
     write_csv(
+        OUT / "review_layer_sensitivity_v2.csv",
+        review_sensitivity,
+        [
+            "review_sensitivity_id",
+            "subset",
+            "actor_count",
+            "actor_issue_layer",
+            "edge_count_in_subset",
+            "x_measure",
+            "y_measure",
+            "spearman_rho",
+            "diagnostic_role",
+            "layer_review_boundary",
+            "proxy_boundary",
+            "crosswalk_boundary",
+            "research_status",
+            "display_tier",
+            "claim_status",
+            "review_status",
+            "frontend_eligibility",
+            "interpretation_limit",
+        ],
+    )
+    write_csv(
+        OUT / "unresolved_reference_audit_v2.csv",
+        unresolved_rows,
+        [
+            "actor_id",
+            "actor_name",
+            "unresolved_reference_tokens",
+            "linked_s_source_count",
+            "linked_s_source_ids",
+            "active_actor_issue_degree",
+            "resolution_decision",
+            "non_resolution_reason",
+            "research_status",
+            "display_tier",
+            "claim_status",
+            "review_status",
+            "frontend_eligibility",
+            "interpretation_limit",
+        ],
+    )
+    write_csv(
         OUT / "matched_actor_pairs_v2.csv",
         matched_pairs,
         [
@@ -2845,9 +3474,11 @@ def main() -> None:
             "dense_actor_id",
             "dense_actor_name",
             "dense_linked_source_count",
+            "dense_registry_source_count",
             "thin_actor_id",
             "thin_actor_name",
             "thin_linked_source_count",
+            "thin_registry_source_count",
             "match_selection_rule",
             "active_actor_issue_degree_difference_dense_minus_thin",
             "active_actor_issue_betweenness_difference_dense_minus_thin",
@@ -2896,7 +3527,8 @@ def main() -> None:
             "actor_name",
             "analysis_family",
             "linked_source_count",
-            "linked_source_percentile",
+            "registry_source_count",
+            "registry_source_percentile",
             "active_actor_issue_degree",
             "degree_percentile",
             "active_actor_issue_betweenness",
@@ -2975,6 +3607,8 @@ def main() -> None:
             "counterpart_or_object_count",
             "primary_actor_measure",
             "source_breadth_spearman",
+            "source_association_role",
+            "outcome_excluded_spearman",
             "object_semantics",
             "projection_status",
             "research_status",
@@ -3007,11 +3641,15 @@ def main() -> None:
     )
 
     fig1 = render_graph_objects(actor_rows, associations)
-    fig2 = render_strata(stratified)
+    fig2 = render_review_sensitivity(review_sensitivity)
     fig3 = render_sensitivity(sensitivity)
     for stem, title, svg in (
         ("fig_graph_objects_v2", "Documentation traces and graph objects", fig1),
-        ("fig_actor_issue_strata_v2", "Actor-issue stratified associations", fig2),
+        (
+            "fig_actor_issue_strata_v2",
+            "Actor-issue review and proxy sensitivity",
+            fig2,
+        ),
         ("fig_actor_issue_sensitivity_v2", "Actor-issue sensitivity", fig3),
     ):
         (OUT / f"{stem}.svg").write_text(svg, encoding="utf-8")
@@ -3024,15 +3662,21 @@ def main() -> None:
         render_method_brief(
             actor_rows,
             associations,
+            review_sensitivity,
             matched_summary,
             sensitivity,
             negative_cases,
             graph_summary,
+            unresolved_rows,
         ),
         encoding="utf-8",
     )
     (OUT / "principal_checkpoint_v2.md").write_text(
-        render_principal_checkpoint(negative_cases, matched_pairs),
+        render_principal_checkpoint(
+            negative_cases,
+            matched_pairs,
+            unresolved_rows,
+        ),
         encoding="utf-8",
     )
 
@@ -3059,6 +3703,14 @@ def main() -> None:
             "current_actors": len(actors),
             "sources": len(sources),
             "active_actor_issue_edges": len(edges),
+            "reviewed_actor_issue_edges": sum(
+                edge["review_status"] in HUMAN_EDGE_STATUSES
+                for edge in edges
+            ),
+            "candidate_actor_issue_edges": sum(
+                edge["review_status"] not in HUMAN_EDGE_STATUSES
+                for edge in edges
+            ),
             "e3plus_actor_issue_edges": sum(
                 edge["evidence_level"] in E3PLUS for edge in edges
             ),
@@ -3069,32 +3721,86 @@ def main() -> None:
             "method_literature_interfaces": len(literature_rows),
             "matched_pair_rows": len(matched_pairs),
             "negative_case_rows": len(negative_cases),
+            "unresolved_reference_actors": len(unresolved_rows),
+            "unresolved_zero_linked_s_source_actors": sum(
+                int(row["linked_s_source_count"]) == 0
+                for row in unresolved_rows
+            ),
         },
-        "headline_associations": {
-            "linked_sources_vs_actor_issue_degree": fmt_rho(
+        "construction_diagnostics": {
+            "total_linked_sources_vs_actor_issue_degree": fmt_rho(
                 associations,
                 "actor_issue_bipartite",
                 "active_actor_issue_degree",
             ),
-            "linked_sources_vs_actor_issue_betweenness": fmt_rho(
+            "total_linked_sources_vs_actor_issue_betweenness": fmt_rho(
                 associations,
                 "actor_issue_bipartite",
                 "active_actor_issue_betweenness",
             ),
-            "linked_sources_vs_event_degree": fmt_rho(
+            "total_linked_sources_vs_event_degree": fmt_rho(
                 associations,
                 "event_hyperedge_incidence",
                 "human_checked_event_degree",
             ),
-            "linked_sources_vs_typed_dyadic_degree": fmt_rho(
+            "total_linked_sources_vs_typed_dyadic_degree": fmt_rho(
                 associations,
                 "reviewed_typed_dyadic",
                 "reviewed_typed_dyadic_degree",
             ),
-            "linked_sources_vs_case_degree": fmt_rho(
+            "total_linked_sources_vs_case_degree": fmt_rho(
                 associations,
                 "accepted_case_role_incidence",
                 "accepted_case_degree",
+            ),
+            "boundary": (
+                "x includes sources used by each encoded outcome; construction "
+                "diagnostic only"
+            ),
+        },
+        "primary_proxy_sensitivity": {
+            "resolved_actor_count": len(actors) - len(unresolved_rows),
+            "registry_sources_vs_active_actor_issue_degree": fmt_rho(
+                associations,
+                "actor_issue_bipartite",
+                "active_actor_issue_degree",
+                "resolved_reference_actors_only",
+                "registry_source_count",
+            ),
+            "outcome_excluded_sources_vs_active_actor_issue_degree": fmt_rho(
+                associations,
+                "actor_issue_bipartite",
+                "active_actor_issue_degree",
+                "resolved_reference_actors_only",
+                "non_issue_linked_source_count",
+            ),
+            "registry_sources_vs_reviewed_actor_issue_degree": fmt_rho(
+                associations,
+                "actor_issue_reviewed_bipartite",
+                "reviewed_actor_issue_degree",
+                "resolved_reference_actors_only",
+                "registry_source_count",
+            ),
+            "outcome_excluded_sources_vs_reviewed_actor_issue_degree": fmt_rho(
+                associations,
+                "actor_issue_reviewed_bipartite",
+                "reviewed_actor_issue_degree",
+                "resolved_reference_actors_only",
+                "non_issue_linked_source_count",
+            ),
+            "registry_sources_vs_candidate_actor_issue_degree": fmt_rho(
+                associations,
+                "actor_issue_candidate_bipartite",
+                "candidate_actor_issue_degree",
+                "resolved_reference_actors_only",
+                "registry_source_count",
+            ),
+            "outcome_excluded_sources_vs_candidate_actor_issue_degree": fmt_rho(
+                associations,
+                "actor_issue_candidate_bipartite",
+                "candidate_actor_issue_degree",
+                "resolved_reference_actors_only",
+                "non_issue_linked_source_count",
             ),
         },
         "hard_boundary": INTERPRETATION_LIMIT,

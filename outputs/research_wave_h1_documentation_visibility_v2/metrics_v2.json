@@ -18,21 +18,35 @@
     "current_actors": 121,
     "sources": 295,
     "active_actor_issue_edges": 238,
+    "reviewed_actor_issue_edges": 65,
+    "candidate_actor_issue_edges": 173,
     "e3plus_actor_issue_edges": 234,
     "strict_triples": 312,
     "human_checked_registered_actor_event_rows": 50,
     "accepted_registered_actor_case_roles": 13,
     "reviewed_typed_dyadic_relations": 14,
     "method_literature_interfaces": 2,
-    "matched_pair_rows": 34,
-    "negative_case_rows": 20
+    "matched_pair_rows": 22,
+    "negative_case_rows": 15,
+    "unresolved_reference_actors": 9,
+    "unresolved_zero_linked_s_source_actors": 6
   },
-  "headline_associations": {
-    "linked_sources_vs_actor_issue_degree": 0.331,
-    "linked_sources_vs_actor_issue_betweenness": 0.215,
-    "linked_sources_vs_event_degree": 0.057,
-    "linked_sources_vs_typed_dyadic_degree": 0.425,
-    "linked_sources_vs_case_degree": 0.466
+  "construction_diagnostics": {
+    "total_linked_sources_vs_actor_issue_degree": 0.331,
+    "total_linked_sources_vs_actor_issue_betweenness": 0.215,
+    "total_linked_sources_vs_event_degree": 0.057,
+    "total_linked_sources_vs_typed_dyadic_degree": 0.425,
+    "total_linked_sources_vs_case_degree": 0.466,
+    "boundary": "x includes sources used by each encoded outcome; construction diagnostic only"
+  },
+  "primary_proxy_sensitivity": {
+    "resolved_actor_count": 112,
+    "registry_sources_vs_active_actor_issue_degree": 0.257,
+    "outcome_excluded_sources_vs_active_actor_issue_degree": -0.138,
+    "registry_sources_vs_reviewed_actor_issue_degree": 0.525,
+    "outcome_excluded_sources_vs_reviewed_actor_issue_degree": 0.282,
+    "registry_sources_vs_candidate_actor_issue_degree": -0.169,
+    "outcome_excluded_sources_vs_candidate_actor_issue_degree": -0.33
   },
   "hard_boundary": "Observed documentation and encoded evidence-layer visibility only; no causal documentation effect, social-network influence, activity strength, alliance, staff capacity, language capacity, or organizational lifespan."
 }

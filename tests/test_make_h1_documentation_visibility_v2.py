@@ -32,11 +32,15 @@ class H1DocumentationVisibilityV2Test(unittest.TestCase):
         self.assertEqual(counts["current_actors"], 121)
         self.assertEqual(counts["sources"], 295)
         self.assertEqual(counts["active_actor_issue_edges"], 238)
+        self.assertEqual(counts["reviewed_actor_issue_edges"], 65)
+        self.assertEqual(counts["candidate_actor_issue_edges"], 173)
         self.assertEqual(counts["e3plus_actor_issue_edges"], 234)
         self.assertEqual(counts["strict_triples"], 312)
         self.assertEqual(counts["human_checked_registered_actor_event_rows"], 50)
         self.assertEqual(counts["accepted_registered_actor_case_roles"], 13)
         self.assertEqual(counts["reviewed_typed_dyadic_relations"], 14)
+        self.assertEqual(counts["unresolved_reference_actors"], 9)
+        self.assertEqual(counts["unresolved_zero_linked_s_source_actors"], 6)
 
     def test_research_gate_and_actor_uniqueness(self) -> None:
         actors = read_csv(OUT / "actor_documentation_visibility_v2.csv")
@@ -71,18 +75,84 @@ class H1DocumentationVisibilityV2Test(unittest.TestCase):
         self.assertIn("projection prohibited", event["projection_status"])
         self.assertIn("no co-party", case["projection_status"])
 
-    def test_headline_associations_and_figure_lookup(self) -> None:
+    def test_construction_diagnostic_and_primary_proxies(self) -> None:
         rows = read_csv(OUT / "association_estimates_v2.csv")
         degree = next(row for row in rows if row["analysis_id"] == "H1A001")
         between = next(row for row in rows if row["analysis_id"] == "H1A002")
+        registry = next(row for row in rows if row["analysis_id"] == "H1A016")
+        excluded = next(row for row in rows if row["analysis_id"] == "H1A017")
         self.assertEqual(degree["spearman_rho"], "0.331")
         self.assertEqual(between["spearman_rho"], "0.215")
+        self.assertEqual(degree["diagnostic_role"], "construction_diagnostic")
+        self.assertEqual(registry["spearman_rho"], "0.257")
+        self.assertEqual(registry["diagnostic_role"], "primary_registry_proxy")
+        self.assertEqual(excluded["spearman_rho"], "-0.138")
+        self.assertEqual(
+            excluded["diagnostic_role"], "primary_outcome_excluded_proxy"
+        )
+        self.assertEqual(
+            registry["subset"], "resolved_reference_actors_only"
+        )
         svg = (OUT / "fig_graph_objects_v2.svg").read_text(encoding="utf-8")
-        self.assertIn("Spearman ρ = 0.331", svg)
+        self.assertIn("outcome-excluded ρ = -0.138", svg)
+        self.assertIn("全层 238；图内 228", svg)
         self.assertIn(
-            "ρ=0.215",
+            "construction diagnostic",
             (OUT / "method_brief_v2.md").read_text(encoding="utf-8"),
         )
+
+    def test_review_layers_and_unresolved_crosswalk_are_explicit(self) -> None:
+        rows = read_csv(OUT / "review_layer_sensitivity_v2.csv")
+        all_rows = [
+            row for row in rows if row["subset"] == "all_current_actors"
+        ]
+        resolved = [
+            row
+            for row in rows
+            if row["subset"] == "resolved_reference_actors_only"
+        ]
+        self.assertEqual(len(all_rows), 9)
+        self.assertEqual(len(resolved), 9)
+        self.assertEqual(
+            {row["actor_issue_layer"] for row in all_rows},
+            {"active_238", "reviewed_65", "candidate_173"},
+        )
+        self.assertEqual(
+            next(
+                row
+                for row in resolved
+                if row["actor_issue_layer"] == "reviewed_65"
+                and row["x_measure"] == "registry_source_count"
+            )["spearman_rho"],
+            "0.525",
+        )
+        self.assertEqual(
+            next(
+                row
+                for row in resolved
+                if row["actor_issue_layer"] == "candidate_173"
+                and row["x_measure"] == "registry_source_count"
+            )["spearman_rho"],
+            "-0.169",
+        )
+        unresolved = read_csv(OUT / "unresolved_reference_audit_v2.csv")
+        self.assertEqual(len(unresolved), 9)
+        self.assertEqual(
+            sum(int(row["linked_s_source_count"]) == 0 for row in unresolved),
+            6,
+        )
+        self.assertTrue(
+            all(
+                row["resolution_decision"]
+                == "exclude_from_primary_source-proxy sensitivity"
+                for row in unresolved
+            )
+        )
+        svg = (OUT / "fig_actor_issue_strata_v2.svg").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("已核 65＋候选 173", svg)
+        self.assertIn("全层 173", svg)
 
     def test_s004_and_deletion_units(self) -> None:
         rows = read_csv(OUT / "sensitivity_scenarios_v2.csv")
@@ -119,26 +189,33 @@ class H1DocumentationVisibilityV2Test(unittest.TestCase):
                 [
                     row
                     for row in pairs
-                    if row["match_universe"] == "all_current_actors"
+                    if row["match_universe"] == "resolved_reference_actors"
                 ]
             ),
-            18,
+            12,
         )
         connected = next(
             row
             for row in summaries
-            if row["match_universe"] == "actor_issue_connected_only"
+            if row["match_universe"]
+            == "resolved_actor_issue_connected_only"
             and row["outcome_measure"] == "active_actor_issue_degree"
         )
-        self.assertEqual(connected["pair_count"], "16")
-        self.assertEqual(connected["mean_dense_minus_thin"], "0.6875")
+        self.assertEqual(connected["pair_count"], "10")
+        self.assertEqual(connected["mean_dense_minus_thin"], "0.7")
         contrast_types = {row["contrast_type"] for row in negatives}
         self.assertEqual(
             contrast_types,
             {
-                "dense_documentation_trace_low_actor_issue_degree",
-                "thin_documentation_trace_high_actor_issue_visibility",
+                "dense_registry_trace_low_actor_issue_degree",
+                "thin_registry_trace_high_actor_issue_visibility",
             },
+        )
+        self.assertTrue(
+            all(
+                "registry_source_count" in row["match_selection_rule"]
+                for row in pairs
+            )
         )
 
     def test_method_literature_has_non_transfer_boundaries(self) -> None:
@@ -168,6 +245,22 @@ class H1DocumentationVisibilityV2Test(unittest.TestCase):
             "validation_report_v2.md",
         ):
             self.assertGreater((OUT / name).stat().st_size, 500)
+
+    def test_every_row_level_output_keeps_research_gate(self) -> None:
+        for path in OUT.glob("*.csv"):
+            rows = read_csv(path)
+            self.assertTrue(rows, path.name)
+            self.assertTrue(
+                all(row.get("research_status") == "research_only" for row in rows),
+                path.name,
+            )
+            self.assertTrue(
+                all(
+                    row.get("frontend_eligibility") == "not_frontend_ready"
+                    for row in rows
+                ),
+                path.name,
+            )
 
 
 if __name__ == "__main__":
