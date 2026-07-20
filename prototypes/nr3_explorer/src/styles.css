@@ -113,8 +113,21 @@ button {
 .brand strong {
   display: block;
   font-family: "Noto Serif SC", serif;
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.version-stamp {
+  color: var(--faint);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1150px) {
+  .version-stamp {
+    display: none;
+  }
 }
 
 .brand small,
@@ -2278,12 +2291,6 @@ button {
 }
 
 /* ---------------- version & build watch ---------------- */
-
-.version-stamp {
-  color: var(--faint);
-  font-size: 10px;
-  white-space: nowrap;
-}
 
 .build-banner {
   position: fixed;

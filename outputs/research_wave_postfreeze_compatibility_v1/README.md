@@ -8,9 +8,9 @@
 ## 当前机械基线
 
 - Registry：122 历史／121 current。
-- Actor–issue：283 active＝125 reviewed＋158 candidate；116 connected＋5 isolated。
-- E3/E4：271 边／114 actor；其中 reviewed 117 边／47 actor，candidate 154／76。
-- Strict triple：305 总数／298 E3/E4／71 dual-reviewed／97 event-attached。
+- Actor–issue：283 active＝141 reviewed＋142 candidate；116 connected＋5 isolated。
+- E3/E4：271 边／114 actor；其中 reviewed 133 边／54 actor，candidate 138／76。
+- Strict triple：306 总数／299 E3/E4／81 dual-reviewed／97 event-attached。
 
 ## H1
 
@@ -31,8 +31,8 @@ S003/S004/S006 合计删除 48 条，S004 占
 
 服务侧 registry 子集仍为 9 个 actor。问责侧按同一锚点规则由
 65 扩至 77 个，其中
-35 个有 reviewed anchor，
-42 个仅有 candidate anchor。
+41 个有 reviewed anchor，
+36 个仅有 candidate anchor。
 当前有界 typed-dyadic／event／R10 输入中的直接跨组组织关系仍为
 0/
 0/

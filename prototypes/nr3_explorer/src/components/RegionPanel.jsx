@@ -7,7 +7,7 @@ import {
   WarningCircle,
   X,
 } from "@phosphor-icons/react";
-import { REGION_META, placeDisplayRegion } from "../lib/data.js";
+import { labelOf, REGION_META, placeDisplayRegion } from "../lib/data.js";
 import { tr, useLang } from "../lib/labels.js";
 import { tu } from "../lib/ui_strings.js";
 import { PendingBadge } from "./ui.jsx";
@@ -112,7 +112,7 @@ function RegionEpisodes({ stats, episodes, candidates, research, onPickEpisode, 
             onClick={() => onPickEpisode(episode.id)}
           >
             <span>
-              <strong>{episode.display_label}</strong>
+              <strong>{labelOf(episode, lang)}</strong>
             </span>
             <GitBranch size={14} />
             <CaretRight size={15} />
@@ -127,7 +127,7 @@ function RegionEpisodes({ stats, episodes, candidates, research, onPickEpisode, 
             onClick={() => onPickEpisode(episode.id)}
           >
             <span>
-              <strong>{episode.display_label}</strong>
+              <strong>{labelOf(episode, lang)}</strong>
             </span>
             <PendingBadge>{tu("common.pending", lang)}</PendingBadge>
             <CaretRight size={15} />

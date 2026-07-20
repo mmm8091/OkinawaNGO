@@ -6,7 +6,7 @@
       "episode_id": "TE01",
       "evidence_level": "E4",
       "id": "TE01:A009",
-      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按各案 caption／当事人表核定。",
       "relation_type": "actor_episode",
       "review_status": "human_checked",
       "source_ids": [
@@ -21,7 +21,7 @@
       "episode_id": "TE01",
       "evidence_level": "E4",
       "id": "TE01:A020",
-      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按各案 caption／当事人表核定。",
       "relation_type": "actor_episode",
       "review_status": "human_checked",
       "source_ids": [
@@ -36,7 +36,7 @@
       "episode_id": "TE01",
       "evidence_level": "E4",
       "id": "TE01:A045",
-      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按各案 caption／当事人表核定。",
       "relation_type": "actor_episode",
       "review_status": "human_checked",
       "source_ids": [
@@ -51,7 +51,7 @@
       "episode_id": "TE01",
       "evidence_level": "E4",
       "id": "TE01:A076",
-      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按各案 caption／当事人表核定。",
       "relation_type": "actor_episode",
       "review_status": "human_checked",
       "source_ids": [
@@ -66,7 +66,7 @@
       "episode_id": "TE01",
       "evidence_level": "E4",
       "id": "TE01:A086",
-      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+      "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按各案 caption／当事人表核定。",
       "relation_type": "actor_episode",
       "review_status": "human_checked",
       "source_ids": [
@@ -173,7 +173,7 @@
       "episode_id": "TE07",
       "evidence_level": "E4",
       "id": "TE07:A068",
-      "interpretation_limit": "咨询型反对多数不是法律否决；A068 规范名仍待人工决定。",
+      "interpretation_limit": "咨询型反对多数不是法律否决；A068 已人审正名，并记录为 1997 年发展性改组至 A019；这不等于两者为同一 actor，也不证明 A068 此后持续。",
       "relation_type": "actor_episode",
       "review_status": "accepted_process",
       "source_ids": [
@@ -295,6 +295,35 @@
       "source_ids": [
         "S007",
         "S058"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A007",
+      "approved_formulation": "ピースボート—international_advocacy 仅表示其在 2015 年 3 月 25 日作为国内外 31 个 NGO 紧急共同声明的赞同团体之一，参与边野古议题的跨组织公开倡议。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S005 是ピースボート官方页面，直接确认其作为赞同团体参与该次边野古紧急共同声明。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI016",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I012",
+      "missing_scope": "当前材料不确认长期 Okinawa project、持续对美传播或其他年份的国际倡议定位。",
+      "relation_basis": "ピースボート—international_advocacy 仅表示其在 2015 年 3 月 25 日作为国内外 31 个 NGO 紧急共同声明的赞同团体之一，参与边野古议题的跨组织公开倡议。",
+      "relation_type": "actor_issue",
+      "review_scope": "event_specific",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "ピースボート—international_advocacy 仅表示其在 2015 年 3 月 25 日作为国内外 31 个 NGO 紧急共同声明的赞同团体之一，参与边野古议题的跨组织公开倡议。",
+      "scope_boundary": "一次共同声明参与不生成稳定联盟、成员关系或全部时期定位，也不证明声明造成政策效果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_pending",
+      "scope_kind": "event_specific",
+      "source_ids": [
+        "S005"
       ],
       "unresolved_source_refs": []
     },
@@ -475,6 +504,93 @@
       "source_ids": [
         "S052",
         "S068"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A017",
+      "approved_formulation": "沖縄対話プロジェクト—Taiwan_contingency 表示其官方设立宗旨把防止“台湾有事／南西諸岛有事”和避免冲绳再次成为战场作为对话项目的核心问题框架。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S022 官方页面直接说明项目目的、发起背景、2022–2023 对话计划及台湾、冲绳前线化风险框架。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI040",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I018",
+      "missing_scope": "不确认项目代表全部冲绳市民，也不确认对话已改变政府政策、地区安全环境或冲突风险。",
+      "relation_basis": "沖縄対話プロジェクト—Taiwan_contingency 表示其官方设立宗旨把防止“台湾有事／南西諸岛有事”和避免冲绳再次成为战场作为对话项目的核心问题框架。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_checked",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "台湾有事是其持续对话／前线化预防框架的一部分",
+      "scope_boundary": "A017 沖縄対話プロジェクト—Taiwan_contingency；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S022"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A017",
+      "approved_formulation": "沖縄対話プロジェクト—peace 表示其以跨越政治立场的市民对话、防止战争及推动和平国际社会为公开项目目的。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S022 官方页面明确写明战争与对话中断的关系、跨境市民对话计划及防止沖縄再成战场的项目目的。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI042",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I019",
+      "missing_scope": "不确认活动已产生和平政策效果、化解国家间冲突或形成稳定跨国组织联盟。",
+      "relation_basis": "沖縄対話プロジェクト—peace 表示其以跨越政治立场的市民对话、防止战争及推动和平国际社会为公开项目目的。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_checked",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "和平／冲突预防是组织目的；不表示活动已产生和平政策效果",
+      "scope_boundary": "A017—peace；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S022"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A018",
+      "approved_formulation": "ノーモア沖縄戦 命どぅ宝の会—Taiwan_contingency 表示该会在 2021 年成立及 2022 年发足集会语境中，公开反对以“台湾有事”为前提使南西诸岛成为攻击据点。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S023 点名该会并直接转述其成立目的、共同代表和反对台湾有事想定下南西诸岛攻击据点化的公开主张。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI044",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I018",
+      "missing_scope": "不确认 S023 所述成立期之后全部年份的持续活动，也没有组织自有官网材料闭合长期连续性。",
+      "relation_basis": "ノーモア沖縄戦 命どぅ宝の会—Taiwan_contingency 表示该会在 2021 年成立及 2022 年发足集会语境中，公开反对以“台湾有事”为前提使南西诸岛成为攻击据点。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "组织成立以来的持续框架；S024 错位，须改用 S023＋组织官网",
+      "scope_boundary": "A018 ノーモア沖縄戦 命どぅ宝の会—Taiwan_contingency；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S023"
       ],
       "unresolved_source_refs": []
     },
@@ -908,6 +1024,64 @@
       "unresolved_source_refs": []
     },
     {
+      "actor_id": "A049",
+      "approved_formulation": "基地・軍隊を許さない行動する女たちの会—life_safety 仅表示其从女性人权、军事性暴力与身体／日常生活安全角度提出基地和军队问题。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S039 的学术个案研究把该会的成立、性暴力问题与安全保障的性别化批判直接连接。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "fact_gate_status": "human_accepted",
+      "id": "AI119",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I007",
+      "missing_scope": "不支持一般化“治安”标签，不确认所有时期、所有行动或全部成员对每项生活安全议题立场一致。",
+      "relation_basis": "基地・軍隊を許さない行動する女たちの会—life_safety 仅表示其从女性人权、军事性暴力与身体／日常生活安全角度提出基地和军队问题。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "女性人权、军事性暴力与日常安全是持续组织框架，不是一般化“治安”标签",
+      "scope_boundary": "A049 行动する女たちの会—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S039"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A049",
+      "approved_formulation": "基地・軍隊を許さない行動する女たちの会—anti_military 表示该会把反对基地、军队及其结构性／性别化暴力作为可观察的组织定位。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S039 的题名、成立史与个案分析直接围绕该会对基地、军队和军事性暴力的反对。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "fact_gate_status": "human_accepted",
+      "id": "AI121",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I002",
+      "missing_scope": "不确认每次行动、所有成员或全部时期对所有军事政策持完全相同立场。",
+      "relation_basis": "基地・軍隊を許さない行動する女たちの会—anti_military 表示该会把反对基地、军队及其结构性／性别化暴力作为可观察的组织定位。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "反对军事结构性暴力是持续定位；不代表每次行动或所有成员观点完全相同",
+      "scope_boundary": "A049—anti_military；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S039"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
       "actor_id": "A051",
       "approved_formulation": "「辺野古」県民投票の会—Henoko 仅表示该会在 2018–2019 年推动以边野古填海／基地建设为问题对象的县民投票。",
       "claim_status": "supported_bounded",
@@ -1022,6 +1196,35 @@
       "scope_kind": "institutional_or_case_role",
       "source_ids": [
         "S027"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A066",
+      "approved_formulation": "新外交イニシアティブ（ND）—anti_base 仅表示其官方站点持续承载沖縄／米军基地政策研究，并公开提出“不建设边野古新基地”的具体政策替代主张。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S032 官方首页把米军基地列为研究领域，并展示“辺野古問題をどう解決するか―新基地をつくらせないための提言”等组织政策输出。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI159",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "missing_scope": "不确认 ND 反对全部基地、全部安全合作或所有时期的每项基地政策。",
+      "relation_basis": "新外交イニシアティブ（ND）—anti_base 仅表示其官方站点持续承载沖縄／米军基地政策研究，并公开提出“不建设边野古新基地”的具体政策替代主张。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "由持续边野古／基地政策替代研究支持；须按具体政策主张表述",
+      "scope_boundary": "A066 ND—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S032"
       ],
       "unresolved_source_refs": []
     },
@@ -2349,6 +2552,98 @@
       "unresolved_source_refs": []
     },
     {
+      "actor_id": "A112",
+      "approved_formulation": "宮古島地下水研究会—groundwater 表示该会持续从事宫古岛地下水研究、监测、水源保护区域与条例／行政倡议。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S269、S270 为研究会公开材料，S271 为宫古岛市对研究会见解的正式回答，共同闭合研究、风险表达和行政倡议。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI223",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I006",
+      "missing_scope": "不确认研究会提出的所有污染风险已经发生，也不确认污染源、健康因果或政府采纳全部提案。",
+      "relation_basis": "宮古島地下水研究会—groundwater 表示该会持续从事宫古岛地下水研究、监测、水源保护区域与条例／行政倡议。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_checked",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "组织名称、设立目的、研究、监测、条例倡议和持续事业计划直接支持",
+      "scope_boundary": "A112—groundwater；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S269",
+        "S270",
+        "S271"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A112",
+      "approved_formulation": "宮古島地下水研究会—life_safety 表示其把地下水作为饮用水源与“命之水”进行保护，并将水源安全纳入组织倡议。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S270 的水道水源保护提案与 S271 的市政府正式回应直接显示饮用水源保护和行政沟通。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI225",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I007",
+      "missing_scope": "不确认已发生具体健康损害、疾病因果或研究会风险判断已获行政机关实体认可。",
+      "relation_basis": "宮古島地下水研究会—life_safety 表示其把地下水作为饮用水源与“命之水”进行保护，并将水源安全纳入组织倡议。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_checked",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "持续把地下水作为饮用水源和“命之水”保护；不证明健康损害",
+      "scope_boundary": "A112—life_safety；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S270",
+        "S271"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A112",
+      "approved_formulation": "宮古島地下水研究会—environment 表示其持续开展地下水保全、井泉／水源调查、污染预防及与珊瑚礁生态相连的环境倡议。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S158 的团体概要、S204 的持续活动索引和 S270 的水源保护提案共同支持环境研究／倡议功能。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI226",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I020",
+      "missing_scope": "不确认所有污染主张、生态影响或设施排水因果已经由独立监测或行政机关证实。",
+      "relation_basis": "宮古島地下水研究会—environment 表示其持续开展地下水保全、井泉／水源调查、污染预防及与珊瑚礁生态相连的环境倡议。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_checked",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "地下水保全、井泉调查、污染预防及珊瑚礁关切属于持续环境功能",
+      "scope_boundary": "A112—environment；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S158",
+        "S204",
+        "S270"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
       "actor_id": "A113",
       "approved_formulation": "宜野湾ちゅら水会—legal 当前可冻结到 2022 年 PFAS 血液检查请愿、委员会参考人陈述及相关市议会程序。",
       "claim_status": "supported_bounded",
@@ -2375,6 +2670,189 @@
       "source_ids": [
         "S273",
         "S274"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A114",
+      "approved_formulation": "全日本港湾労働組合沖縄地方本部—anti_base 表示该地方本部在 2015 年抗议集会中明确反对边野古新基地，并在 2025 年地方分支报告中记录基地议题现场学习与和平行进参与。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S286 直接点名沖縄地方本部并记录反对边野古新基地；S289 是地方分支 2025 年和平行进与基地问题学习报告。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "fact_gate_status": "human_accepted",
+      "id": "AI232",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "missing_scope": "不支持原表所称 2015–2026 连续行动，也不确认其反对沖縄所有基地或全国本部实施相同行动。",
+      "relation_basis": "全日本港湾労働組合沖縄地方本部—anti_base 表示该地方本部在 2015 年抗议集会中明确反对边野古新基地，并在 2025 年地方分支报告中记录基地议题现场学习与和平行进参与。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "2015–2026分支级行动反复连接边野古、基地负担和“基地ない沖縄”",
+      "scope_boundary": "A114—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S286",
+        "S289"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A114",
+      "approved_formulation": "全日本港湾労働組合沖縄地方本部—anti_military 仅表示其在 2024 年反对美国海军军舰使用石垣／那霸民用港，并以罢工等方式介入该次港湾军事利用争议。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S287 官方决议记录地方本部对军舰寄港及民用港军事利用的反对和罢工方针；S288 国会记录确认 2024 年石垣罢工及官方转述理由。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI233",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I002",
+      "missing_scope": "不确认该地方本部对所有军队、全部日美演习或所有时期持一般性 anti_military 定位。",
+      "relation_basis": "全日本港湾労働組合沖縄地方本部—anti_military 仅表示其在 2024 年反对美国海军军舰使用石垣／那霸民用港，并以罢工等方式介入该次港湾军事利用争议。",
+      "relation_type": "actor_issue",
+      "review_scope": "event_specific",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "全日本港湾労働組合沖縄地方本部—anti_military 仅表示其在 2024 年反对美国海军军舰使用石垣／那霸民用港，并以罢工等方式介入该次港湾军事利用争议。",
+      "scope_boundary": "严格限定 2024 年民用港军事利用／军舰寄港事件；不裁定罢工合法性、效果或更广泛政治立场。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_pending",
+      "scope_kind": "event_specific",
+      "source_ids": [
+        "S287",
+        "S288"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A114",
+      "approved_formulation": "全日本港湾労働組合沖縄地方本部—peace 表示其在 2015 年反安保法案／新基地抗议及 2025 年 5·15 和平行进中有具名参与。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S286 闭合 2015 年地方本部抗议行动，S289 闭合 2025 年地方分支和平行进参与与基地问题学习。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E3",
+      "fact_gate_status": "human_accepted",
+      "id": "AI234",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I019",
+      "missing_scope": "不支持“2024–2026 连续和平行进”，也不确认其在两个有证年份之外的持续频率或全部分支活动。",
+      "relation_basis": "全日本港湾労働組合沖縄地方本部—peace 表示其在 2015 年反安保法案／新基地抗议及 2025 年 5·15 和平行进中有具名参与。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "2015行动及2024–2026连续和平行进支持持续和平活动",
+      "scope_boundary": "A114—peace；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S286",
+        "S289"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A114",
+      "approved_formulation": "全日本港湾労働組合沖縄地方本部—mobilization 表示现有材料记录其在 2015、2024、2025 年分别采用抗议集会、港湾罢工和和平行进等行动方式。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S286、S288、S289 分别闭合抗议集会、石垣港罢工及 5·15 和平行进等有日期行动。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI236",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I026",
+      "missing_scope": "不确认完整行动清单、年度连续性、动员规模准确性、组织能力强弱或行动效果。",
+      "relation_basis": "全日本港湾労働組合沖縄地方本部—mobilization 表示现有材料记录其在 2015、2024、2025 年分别采用抗议集会、港湾罢工和和平行进等行动方式。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_revised",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "集会、罢工、港湾抗议和年度行进构成重复组织 repertoire",
+      "scope_boundary": "A114—mobilization；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S286",
+        "S288",
+        "S289"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A115",
+      "approved_formulation": "新日本婦人の会沖縄県本部—women 表示其作为全国女性会员组织的新日本婦人の会之沖縄县本部，以女性会员和县本部—支部—班结构开展地方活动。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S280 官方组织介绍确认女性组织及都道府县本部结构；S282、S283 独立点名沖縄県本部的地方行动。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI237",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I022",
+      "missing_scope": "不确认全部沖縄女性由该会代表，也不把中央本部每项声明或其他县本部行动转移给 A115。",
+      "relation_basis": "新日本婦人の会沖縄県本部—women 表示其作为全国女性会员组织的新日本婦人の会之沖縄县本部，以女性会员和县本部—支部—班结构开展地方活动。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_checked",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "女性会员组织及县本部—支部—班结构的核心组织属性",
+      "scope_boundary": "A115—women；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S280",
+        "S282",
+        "S283"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A115",
+      "approved_formulation": "新日本婦人の会沖縄県本部—anti_base 表示其在 2014 年由县本部会员开展反对边野古新基地行动，并在 2018 年由沖縄県本部启动边野古县民投票条例签名动员。",
+      "claim_status": "supported_bounded",
+      "confirmed_scope": "S254 中央本部官方谈话明确归因沖縄県本部会员的反新基地行动；S283 精确点名沖縄県本部的边野古县民投票签名行动。",
+      "display_state": "frozen_bounded",
+      "display_status": "demo",
+      "evidence_level": "E4",
+      "fact_gate_status": "human_accepted",
+      "id": "AI240",
+      "interpretation_limit": "A documented issue association is not a measure of effort, influence, public support, or alliance.",
+      "issue_id": "I001",
+      "missing_scope": "不确认全国本部的全部反基地行动属于 A115，也不支持 2014、2018 以外所有时期或所有基地的一般立场。",
+      "relation_basis": "新日本婦人の会沖縄県本部—anti_base 表示其在 2014 年由县本部会员开展反对边野古新基地行动，并在 2018 年由沖縄県本部启动边野古县民投票条例签名动员。",
+      "relation_type": "actor_issue",
+      "review_scope": "organizational_positioning",
+      "review_status": "human_checked",
+      "reviewed_fields": "relation_existence;actor_identity;issue_mapping;source_ref;evidence_level;interpretation_boundary",
+      "schema_freeze_status": "field_frozen",
+      "scope_approved_formulation": "县本部多期具名行动支持；不得由全国中央声明或共同署名单独承担",
+      "scope_boundary": "A115—anti_base；按已批时间／案件／事件边界解释；共同出现不生成联盟，风险主张不升级为已证因果。",
+      "scope_claim_status": "supported_bounded",
+      "scope_gate_status": "scope_reviewed",
+      "scope_kind": "organizational_positioning",
+      "source_ids": [
+        "S254",
+        "S281",
+        "S283"
       ],
       "unresolved_source_refs": []
     },
@@ -7433,21 +7911,40 @@
       "unresolved_source_refs": []
     },
     {
-      "actor_id": "A019",
+      "actor_id": "A017",
       "display_status": "demo",
       "event_dates": [],
       "event_ids": [],
       "evidence_level": "E4",
-      "frame_id": "F1",
-      "frame_label": "基地／反军事",
-      "id": "SPI0085",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0077",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I001",
-      "place_id": "P002",
+      "issue_id": "I018",
+      "place_id": "P001",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S008"
+        "S022"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A018",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0082",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I018",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S023"
       ],
       "unresolved_source_refs": []
     },
@@ -7466,7 +7963,7 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S049"
+        "S008"
       ],
       "unresolved_source_refs": []
     },
@@ -7480,12 +7977,12 @@
       "frame_label": "基地／反军事",
       "id": "SPI0087",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I003",
+      "issue_id": "I001",
       "place_id": "P002",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S008"
+        "S049"
       ],
       "unresolved_source_refs": []
     },
@@ -7504,31 +8001,26 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S049"
+        "S008"
       ],
       "unresolved_source_refs": []
     },
     {
-      "actor_id": "X004",
+      "actor_id": "A019",
       "display_status": "demo",
       "event_dates": [],
-      "event_ids": [
-        "R10R024",
-        "R10R025",
-        "R10R026",
-        "R10R027"
-      ],
+      "event_ids": [],
       "evidence_level": "E4",
-      "frame_id": "F3",
-      "frame_label": "生命／健康",
-      "id": "SPI0097",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0089",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I014",
-      "place_id": "P001",
+      "issue_id": "I003",
+      "place_id": "P002",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S041"
+        "S049"
       ],
       "unresolved_source_refs": []
     },
@@ -7552,6 +8044,30 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
+        "S041"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "X004",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [
+        "R10R024",
+        "R10R025",
+        "R10R026",
+        "R10R027"
+      ],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0099",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I014",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
         "S055"
       ],
       "unresolved_source_refs": []
@@ -7567,7 +8083,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0099",
+      "id": "SPI0100",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P001",
@@ -7591,7 +8107,7 @@
       "evidence_level": "E3",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0100",
+      "id": "SPI0101",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I016",
       "place_id": "P001",
@@ -7615,7 +8131,7 @@
       "evidence_level": "E3",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0101",
+      "id": "SPI0102",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I016",
       "place_id": "P001",
@@ -7634,7 +8150,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0102",
+      "id": "SPI0103",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P001",
@@ -7653,7 +8169,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0103",
+      "id": "SPI0104",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P005",
@@ -7672,7 +8188,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0104",
+      "id": "SPI0105",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P005",
@@ -7695,7 +8211,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0105",
+      "id": "SPI0106",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P001",
@@ -7714,7 +8230,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0106",
+      "id": "SPI0107",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P001",
@@ -7737,7 +8253,7 @@
       "evidence_level": "E4",
       "frame_id": "F6",
       "frame_label": "国际路径",
-      "id": "SPI0142",
+      "id": "SPI0143",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I012",
       "place_id": "P002",
@@ -7756,7 +8272,7 @@
       "evidence_level": "E4",
       "frame_id": "F6",
       "frame_label": "国际路径",
-      "id": "SPI0143",
+      "id": "SPI0144",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I012",
       "place_id": "P002",
@@ -7775,7 +8291,7 @@
       "evidence_level": "E4",
       "frame_id": "F6",
       "frame_label": "国际路径",
-      "id": "SPI0144",
+      "id": "SPI0145",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I012",
       "place_id": "P002",
@@ -7798,7 +8314,7 @@
       "evidence_level": "E4",
       "frame_id": "F6",
       "frame_label": "国际路径",
-      "id": "SPI0152",
+      "id": "SPI0153",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I012",
       "place_id": "P002",
@@ -7817,7 +8333,7 @@
       "evidence_level": "E4",
       "frame_id": "F6",
       "frame_label": "国际路径",
-      "id": "SPI0153",
+      "id": "SPI0154",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I012",
       "place_id": "P002",
@@ -7836,7 +8352,7 @@
       "evidence_level": "E4",
       "frame_id": "F6",
       "frame_label": "国际路径",
-      "id": "SPI0154",
+      "id": "SPI0155",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I012",
       "place_id": "P002",
@@ -7859,7 +8375,7 @@
       "evidence_level": "E4",
       "frame_id": "F2",
       "frame_label": "生态／环境",
-      "id": "SPI0155",
+      "id": "SPI0156",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I005",
       "place_id": "P002",
@@ -7878,7 +8394,7 @@
       "evidence_level": "E4",
       "frame_id": "F2",
       "frame_label": "生态／环境",
-      "id": "SPI0156",
+      "id": "SPI0157",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I005",
       "place_id": "P002",
@@ -7897,7 +8413,7 @@
       "evidence_level": "E4",
       "frame_id": "F2",
       "frame_label": "生态／环境",
-      "id": "SPI0157",
+      "id": "SPI0158",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I005",
       "place_id": "P002",
@@ -7920,7 +8436,7 @@
       "evidence_level": "E4",
       "frame_id": "F1",
       "frame_label": "基地／反军事",
-      "id": "SPI0175",
+      "id": "SPI0176",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I003",
       "place_id": "P001",
@@ -7943,7 +8459,7 @@
       "evidence_level": "E4",
       "frame_id": "F4",
       "frame_label": "自治／公投",
-      "id": "SPI0176",
+      "id": "SPI0177",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I009",
       "place_id": "P001",
@@ -7955,6 +8471,25 @@
       "unresolved_source_refs": []
     },
     {
+      "actor_id": "A066",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0228",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P020",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S032"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
       "actor_id": "X016",
       "display_status": "demo",
       "event_dates": [],
@@ -7962,7 +8497,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0247",
+      "id": "SPI0248",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P007",
@@ -7981,7 +8516,7 @@
       "evidence_level": "E4",
       "frame_id": "F3",
       "frame_label": "生命／健康",
-      "id": "SPI0248",
+      "id": "SPI0249",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I014",
       "place_id": "P007",
@@ -8004,7 +8539,7 @@
       "evidence_level": "E4",
       "frame_id": "F1",
       "frame_label": "基地／反军事",
-      "id": "SPI0252",
+      "id": "SPI0253",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I001",
       "place_id": "P001",
@@ -8023,7 +8558,7 @@
       "evidence_level": "E4",
       "frame_id": "F1",
       "frame_label": "基地／反军事",
-      "id": "SPI0253",
+      "id": "SPI0254",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I001",
       "place_id": "P001",
@@ -8042,7 +8577,7 @@
       "evidence_level": "E3",
       "frame_id": "F1",
       "frame_label": "基地／反军事",
-      "id": "SPI0254",
+      "id": "SPI0255",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I001",
       "place_id": "P001",
@@ -8061,7 +8596,7 @@
       "evidence_level": "E3",
       "frame_id": "F1",
       "frame_label": "基地／反军事",
-      "id": "SPI0255",
+      "id": "SPI0256",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I001",
       "place_id": "P001",
@@ -8080,7 +8615,7 @@
       "evidence_level": "E4",
       "frame_id": "F7",
       "frame_label": "前线／台海",
-      "id": "SPI0256",
+      "id": "SPI0257",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I017",
       "place_id": "P001",
@@ -8103,25 +8638,6 @@
       "evidence_level": "E4",
       "frame_id": "F7",
       "frame_label": "前线／台海",
-      "id": "SPI0257",
-      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I017",
-      "place_id": "P001",
-      "relation_type": "strict_actor_place_issue",
-      "review_status": "human_reviewed_same_source",
-      "source_ids": [
-        "S147"
-      ],
-      "unresolved_source_refs": []
-    },
-    {
-      "actor_id": "A108",
-      "display_status": "demo",
-      "event_dates": [],
-      "event_ids": [],
-      "evidence_level": "E4",
-      "frame_id": "F7",
-      "frame_label": "前线／台海",
       "id": "SPI0258",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I017",
@@ -8129,7 +8645,7 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S148"
+        "S147"
       ],
       "unresolved_source_refs": []
     },
@@ -8143,6 +8659,25 @@
       "frame_label": "前线／台海",
       "id": "SPI0259",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I017",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0260",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I018",
       "place_id": "P001",
       "relation_type": "strict_actor_place_issue",
@@ -8164,25 +8699,6 @@
       "evidence_level": "E4",
       "frame_id": "F7",
       "frame_label": "前线／台海",
-      "id": "SPI0260",
-      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I018",
-      "place_id": "P001",
-      "relation_type": "strict_actor_place_issue",
-      "review_status": "human_reviewed_same_source",
-      "source_ids": [
-        "S147"
-      ],
-      "unresolved_source_refs": []
-    },
-    {
-      "actor_id": "A108",
-      "display_status": "demo",
-      "event_dates": [],
-      "event_ids": [],
-      "evidence_level": "E4",
-      "frame_id": "F7",
-      "frame_label": "前线／台海",
       "id": "SPI0261",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I018",
@@ -8190,7 +8706,7 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S148"
+        "S147"
       ],
       "unresolved_source_refs": []
     },
@@ -8204,6 +8720,25 @@
       "frame_label": "前线／台海",
       "id": "SPI0262",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I018",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S148"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A108",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F7",
+      "frame_label": "前线／台海",
+      "id": "SPI0263",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I025",
       "place_id": "P001",
       "relation_type": "strict_actor_place_issue",
@@ -8225,7 +8760,7 @@
       "evidence_level": "E4",
       "frame_id": "F7",
       "frame_label": "前线／台海",
-      "id": "SPI0263",
+      "id": "SPI0264",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I025",
       "place_id": "P001",
@@ -8244,7 +8779,7 @@
       "evidence_level": "E4",
       "frame_id": "F7",
       "frame_label": "前线／台海",
-      "id": "SPI0264",
+      "id": "SPI0265",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I025",
       "place_id": "P001",
@@ -8252,25 +8787,6 @@
       "review_status": "human_reviewed_same_source",
       "source_ids": [
         "S148"
-      ],
-      "unresolved_source_refs": []
-    },
-    {
-      "actor_id": "A109",
-      "display_status": "demo",
-      "event_dates": [],
-      "event_ids": [],
-      "evidence_level": "E4",
-      "frame_id": "F3",
-      "frame_label": "生命／健康",
-      "id": "SPI0265",
-      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I021",
-      "place_id": "P005",
-      "relation_type": "strict_actor_place_issue",
-      "review_status": "human_reviewed_same_source",
-      "source_ids": [
-        "S149"
       ],
       "unresolved_source_refs": []
     },
@@ -8289,7 +8805,7 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S152"
+        "S149"
       ],
       "unresolved_source_refs": []
     },
@@ -8303,12 +8819,12 @@
       "frame_label": "生命／健康",
       "id": "SPI0267",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I007",
+      "issue_id": "I021",
       "place_id": "P005",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S149"
+        "S152"
       ],
       "unresolved_source_refs": []
     },
@@ -8327,7 +8843,7 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S152"
+        "S149"
       ],
       "unresolved_source_refs": []
     },
@@ -8337,16 +8853,16 @@
       "event_dates": [],
       "event_ids": [],
       "evidence_level": "E4",
-      "frame_id": "F5",
-      "frame_label": "法律／程序",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
       "id": "SPI0269",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I011",
+      "issue_id": "I007",
       "place_id": "P005",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S149"
+        "S152"
       ],
       "unresolved_source_refs": []
     },
@@ -8365,7 +8881,7 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S152"
+        "S149"
       ],
       "unresolved_source_refs": []
     },
@@ -8375,16 +8891,16 @@
       "event_dates": [],
       "event_ids": [],
       "evidence_level": "E4",
-      "frame_id": "F1",
-      "frame_label": "基地／反军事",
+      "frame_id": "F5",
+      "frame_label": "法律／程序",
       "id": "SPI0271",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I001",
+      "issue_id": "I011",
       "place_id": "P005",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S149"
+        "S152"
       ],
       "unresolved_source_refs": []
     },
@@ -8403,26 +8919,26 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S152"
+        "S149"
       ],
       "unresolved_source_refs": []
     },
     {
-      "actor_id": "A110",
+      "actor_id": "A109",
       "display_status": "demo",
       "event_dates": [],
       "event_ids": [],
-      "evidence_level": "E3",
+      "evidence_level": "E4",
       "frame_id": "F1",
       "frame_label": "基地／反军事",
       "id": "SPI0273",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I003",
-      "place_id": "P002",
+      "issue_id": "I001",
+      "place_id": "P005",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S153"
+        "S152"
       ],
       "unresolved_source_refs": []
     },
@@ -8441,7 +8957,7 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S154"
+        "S153"
       ],
       "unresolved_source_refs": []
     },
@@ -8455,12 +8971,12 @@
       "frame_label": "基地／反军事",
       "id": "SPI0275",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I001",
+      "issue_id": "I003",
       "place_id": "P002",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S153"
+        "S154"
       ],
       "unresolved_source_refs": []
     },
@@ -8479,26 +8995,102 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
+        "S153"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A110",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E3",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0277",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P002",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
         "S154"
       ],
       "unresolved_source_refs": []
     },
     {
-      "actor_id": "A113",
+      "actor_id": "A112",
       "display_status": "demo",
       "event_dates": [],
       "event_ids": [],
       "evidence_level": "E4",
-      "frame_id": "F5",
-      "frame_label": "法律／程序",
-      "id": "SPI0291",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0278",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
-      "issue_id": "I011",
-      "place_id": "P018",
+      "issue_id": "I006",
+      "place_id": "P013",
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
-        "S273"
+        "S271"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A112",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F3",
+      "frame_label": "生命／健康",
+      "id": "SPI0279",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I007",
+      "place_id": "P013",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S271"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A112",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0280",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I020",
+      "place_id": "P013",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S158"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A112",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F2",
+      "frame_label": "生态／环境",
+      "id": "SPI0281",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I020",
+      "place_id": "P013",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S204"
       ],
       "unresolved_source_refs": []
     },
@@ -8517,6 +9109,25 @@
       "relation_type": "strict_actor_place_issue",
       "review_status": "human_reviewed_same_source",
       "source_ids": [
+        "S273"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A113",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F5",
+      "frame_label": "法律／程序",
+      "id": "SPI0293",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I011",
+      "place_id": "P018",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
         "S274"
       ],
       "unresolved_source_refs": []
@@ -8529,7 +9140,7 @@
       "evidence_level": "E4",
       "frame_id": "F5",
       "frame_label": "法律／程序",
-      "id": "SPI0299",
+      "id": "SPI0300",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I011",
       "place_id": "P004",
@@ -8541,6 +9152,63 @@
       "unresolved_source_refs": []
     },
     {
+      "actor_id": "A114",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0301",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I002",
+      "place_id": "P012",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S287"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A114",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0302",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I002",
+      "place_id": "P012",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S288"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
+      "actor_id": "A115",
+      "display_status": "demo",
+      "event_dates": [],
+      "event_ids": [],
+      "evidence_level": "E4",
+      "frame_id": "F1",
+      "frame_label": "基地／反军事",
+      "id": "SPI0305",
+      "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
+      "issue_id": "I001",
+      "place_id": "P001",
+      "relation_type": "strict_actor_place_issue",
+      "review_status": "human_reviewed_same_source",
+      "source_ids": [
+        "S283"
+      ],
+      "unresolved_source_refs": []
+    },
+    {
       "actor_id": "A115",
       "display_status": "demo",
       "event_dates": [],
@@ -8548,7 +9216,7 @@
       "evidence_level": "E3",
       "frame_id": "F4",
       "frame_label": "自治／公投",
-      "id": "SPI0305",
+      "id": "SPI0306",
       "interpretation_limit": "Same-source coincidence supports a bounded actor-place-issue evidence triple; it does not by itself establish causality, duration, alliance, or substantive policy effect.",
       "issue_id": "I010",
       "place_id": "P001",

@@ -9,28 +9,28 @@
   },
   "current_counts": {
     "active_actor_issue_edges": 283,
-    "candidate_actor_issue_edges": 158,
+    "candidate_actor_issue_edges": 142,
     "current_actors": 121,
     "e3plus_actor_issue_actors": 114,
     "e3plus_actor_issue_edges": 271,
-    "reviewed_actor_issue_edges": 125,
+    "reviewed_actor_issue_edges": 141,
     "sources": 295,
-    "strict_triples": 305
+    "strict_triples": 306
   },
   "e3plus_review_split": {
     "candidate_actors": 76,
-    "candidate_edges": 154,
-    "reviewed_actors": 47,
-    "reviewed_edges": 117
+    "candidate_edges": 138,
+    "reviewed_actors": 54,
+    "reviewed_edges": 133
   },
   "hard_boundary": "Recomputed encoded visibility only.  No causal documentation effect, real social-network centrality, staff capacity, alliance, activity strength, or lifespan inference.",
   "input_hashes": {
-    "data/interim/01_actor_registry_initial_v0.csv": "e42f53e82a4e6897bdb7d387039bfb6c04ae98c0a10bfd83756ca56dbefe9af6",
+    "data/interim/01_actor_registry_initial_v0.csv": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4",
     "data/interim/05_source_log_initial_v0.csv": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902",
     "data/interim/09_actor_event_venue_edges_v0.csv": "9e0ed9d80fda91b35f9303c31b78ce7024111ab1c4b255bd4f366af51a6c5dc8",
     "data/interim/18_legal_policy_actor_roles_v0.csv": "b319e01e57d0d00e1e6a47d1af4ac28562aa90d893e5a24b9382ab825d842b0d",
-    "data/interim/24_r01_r02_actor_issue_layered_v0.csv": "6ce1ad8be34ac0bf3ce121a454c458ac93f569146d570cc9b680d97cf0f37394",
-    "outputs/R03_strict_place_issue_v1/same_source_actor_place_issue_triples_v1.csv": "cd6e36eeeac46fa71b668f5659caeb62f6b34788d92819694ea107f8ac20ab15",
+    "data/interim/24_r01_r02_actor_issue_layered_v0.csv": "df1d42ebbde5450bba832886a4b25cf9e1124a726130b60823d830f49ae1a336",
+    "outputs/R03_strict_place_issue_v1/same_source_actor_place_issue_triples_v1.csv": "ed643de877e09c552a67320609e22900b55f4f679b12da7faf33dadfb379a3e4",
     "outputs/actor_lifecycle_v1/actor_lifecycle_v0.csv": "5ea3762ca3deb67fcb74e1e7abfe18f7c891c49c29df87decbf7b79bbe6c36bf"
   },
   "layer": {
@@ -80,7 +80,7 @@
     "H1A016": {
       "actor_count": 112,
       "graph_object": "actor_issue_bipartite",
-      "spearman_rho": 0.287,
+      "spearman_rho": 0.279,
       "subset": "resolved_reference_actors_only",
       "x_measure": "registry_source_count",
       "y_measure": "active_actor_issue_degree"

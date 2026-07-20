@@ -65,6 +65,33 @@ def actor_issue_path(root: Path) -> Path:
     return root / "data/interim/07_actor_issue_edges_initial_v0.csv"
 
 
+def episode_display_path(root: Path) -> Path:
+    return root / "data/metadata/episode_display_trilingual_v1.csv"
+
+
+def rewrite_episode_display_row(
+    path: Path,
+    episode_id: str,
+    field: str,
+    **changes: str,
+) -> None:
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        fields = list(reader.fieldnames or [])
+        rows = list(reader)
+    matched = False
+    for row in rows:
+        if row.get("episode_id") == episode_id and row.get("field") == field:
+            row.update(changes)
+            matched = True
+    if not matched:
+        raise AssertionError(f"row {episode_id}:{field} not found in {path}")
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 
 class BuildExplorationSystemDataV1Tests(unittest.TestCase):
     def test_actor_view_and_manifest_distinguish_current_actors_from_provenance(self) -> None:
@@ -148,6 +175,122 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             {episode["review_status"] for episode in episodes},
         )
 
+    def test_episode_display_overlay_localizes_every_field_without_mutating_facts(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_dir = Path(temp_dir) / "exploration"
+            manifest = build_exploration_system_data(ROOT, output_dir)
+            episodes = json.loads(
+                (output_dir / "demo/episodes.json").read_text(encoding="utf-8")
+            )
+            candidates = json.loads(
+                (output_dir / "research/candidates.json").read_text(encoding="utf-8")
+            )
+            outcomes = json.loads(
+                (output_dir / "demo/outcomes.json").read_text(encoding="utf-8")
+            )
+
+        all_episodes = episodes + candidates["episodes"]
+        self.assertEqual(13, len(all_episodes))
+        self.assertEqual(
+            {"TE10", "TE11", "TE12", "TE13"},
+            {row["id"] for row in candidates["episodes"]},
+        )
+        self.assertEqual(
+            {"analytic_candidate_event_pending"},
+            {row["review_status"] for row in candidates["episodes"]},
+        )
+        self.assertEqual("1.1.0", manifest["schema_version"])
+        self.assertEqual(
+            {
+                "episodes": 13,
+                "fields_per_episode": 7,
+                "approved_translation_cells": 273,
+                "source_text_fallbacks": 0,
+            },
+            manifest["counts"]["episode_display"],
+        )
+        te01 = next(row for row in all_episodes if row["id"] == "TE01")
+        self.assertEqual("儒艮海外诉讼", te01["display_label"])
+        self.assertEqual("儒艮海外诉讼", te01["display_label_zh"])
+        self.assertEqual("ジュゴン米国訴訟", te01["display_label_ja"])
+        self.assertEqual(
+            "Okinawa dugong litigation in U.S. federal court",
+            te01["display_label_en"],
+        )
+        for episode in all_episodes:
+            for field in builder.EPISODE_DISPLAY_FIELDS:
+                self.assertEqual(episode[field], episode[f"{field}_zh"])
+                self.assertTrue(episode[f"{field}_ja"])
+                self.assertTrue(episode[f"{field}_en"])
+        te01_outcome = next(
+            row
+            for row in outcomes
+            if row["id"] == "TE01:intermediate_output"
+        )
+        self.assertEqual(
+            "Section 402 applicability, reviewable standards, public record",
+            te01_outcome["display_label_en"],
+        )
+
+    def test_episode_display_overlay_rejects_missing_approved_language(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = copy_inputs_to_workspace(Path(temp_dir))
+            rewrite_episode_display_row(
+                episode_display_path(root),
+                "TE01",
+                "display_label",
+                ja="",
+            )
+            with self.assertRaisesRegex(ValueError, "non-empty zh/ja/en"):
+                build_exploration_system_data(root, Path(temp_dir) / "out")
+
+    def test_episode_display_overlay_rejects_semantic_rewrites_and_duplicate_keys(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = copy_inputs_to_workspace(Path(temp_dir))
+            path = episode_display_path(root)
+            rewrite_episode_display_row(
+                path,
+                "TE01",
+                "display_label",
+                zh="不是中央原文",
+            )
+            with self.assertRaisesRegex(ValueError, "must equal the source text"):
+                build_exploration_system_data(root, Path(temp_dir) / "out")
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = copy_inputs_to_workspace(Path(temp_dir))
+            path = episode_display_path(root)
+            with path.open(encoding="utf-8-sig", newline="") as handle:
+                reader = csv.DictReader(handle)
+                fields = list(reader.fieldnames or [])
+                rows = list(reader)
+            rows.append(dict(rows[0]))
+            with path.open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=fields)
+                writer.writeheader()
+                writer.writerows(rows)
+            with self.assertRaisesRegex(ValueError, "duplicate keys"):
+                build_exploration_system_data(root, Path(temp_dir) / "out")
+
+    def test_episode_display_overlay_rejects_missing_or_unknown_pairs(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = copy_inputs_to_workspace(Path(temp_dir))
+            path = episode_display_path(root)
+            with path.open(encoding="utf-8-sig", newline="") as handle:
+                reader = csv.DictReader(handle)
+                fields = list(reader.fieldnames or [])
+                rows = list(reader)
+            rows[0]["episode_id"] = "TE99"
+            with path.open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=fields)
+                writer.writeheader()
+                writer.writerows(rows)
+            with self.assertRaisesRegex(
+                ValueError,
+                "exact episode/field grid.*missing=.*unexpected=",
+            ):
+                build_exploration_system_data(root, Path(temp_dir) / "out")
+
     def test_demo_relations_are_review_gated_and_source_refs_resolve(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
             output_dir = Path(temp_dir) / "exploration"
@@ -210,11 +353,11 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
         self.assertEqual("P1", views["overview"]["view_id"])
         self.assertEqual(21, len(views["overview"]["place_ids"]))
         self.assertEqual(53, len(views["overview"]["actor_place_relation_ids"]))
-        self.assertEqual(71, len(views["overview"]["strict_place_issue_relation_ids"]))
+        self.assertEqual(81, len(views["overview"]["strict_place_issue_relation_ids"]))
         self.assertEqual("P2", views["actors"]["view_id"])
         self.assertEqual(121, len(views["actors"]["actor_ids"]))
         self.assertNotIn("A072", views["actors"]["actor_ids"])
-        self.assertEqual(125, len(views["actors"]["actor_issue_relation_ids"]))
+        self.assertEqual(141, len(views["actors"]["actor_issue_relation_ids"]))
         self.assertEqual("P3", views["pathways"]["view_id"])
         self.assertEqual(9, len(views["pathways"]["episode_ids"]))
         self.assertEqual("P4", views["evidence_coverage"]["view_id"])
@@ -314,7 +457,7 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
             first_manifest["output_hashes"],
             second_manifest["output_hashes"],
         )
-        self.assertEqual(21, len(first_manifest["input_hashes"]))
+        self.assertEqual(22, len(first_manifest["input_hashes"]))
         self.assertEqual(
             {
                 key: sha256(path)
@@ -566,23 +709,23 @@ class BuildExplorationSystemDataV1Tests(unittest.TestCase):
 
         demo_ai = demo["actor_issue"]
         research_ai = candidates["relations"]["actor_issue"]
-        self.assertEqual(125, len(demo_ai))
-        self.assertEqual(158, len(research_ai))
+        self.assertEqual(141, len(demo_ai))
+        self.assertEqual(142, len(research_ai))
         all_rows = demo_ai + research_ai
         display_counts = Counter(row["display_state"] for row in all_rows)
         self.assertEqual(
             {
-                "frozen_bounded": 67,
+                "frozen_bounded": 83,
                 "accepted_unfrozen": 58,
-                "scope_reviewed_fact_pending": 44,
+                "scope_reviewed_fact_pending": 28,
                 "fact_pending": 114,
             },
             dict(display_counts),
         )
         fact_counts = Counter(row["fact_gate_status"] for row in research_ai)
-        self.assertEqual(25, fact_counts["needs_second_source"])
+        self.assertEqual(27, fact_counts["needs_second_source"])
         self.assertEqual(5, fact_counts["needs_local_retrieval"])
-        self.assertEqual(128, fact_counts["fact_pending"])
+        self.assertEqual(110, fact_counts["fact_pending"])
 
         states_block = manifest["counts"]["actor_issue_states"]
         self.assertEqual(283, states_block["valid_edges"])

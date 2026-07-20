@@ -1,19 +1,19 @@
 {
   "artifact": "exploration_system_data_v1",
   "as_of_date": "2026-07-20",
-  "build_id": "5ed5528a649de4d1",
+  "build_id": "4913ff70fa40dfcb",
   "counts": {
     "actor_issue_states": {
       "display_state_counts": {
         "accepted_unfrozen": 58,
         "fact_pending": 114,
-        "frozen_bounded": 67,
-        "scope_reviewed_fact_pending": 44
+        "frozen_bounded": 83,
+        "scope_reviewed_fact_pending": 28
       },
       "research_fact_gate_counts": {
-        "fact_pending": 128,
+        "fact_pending": 110,
         "needs_local_retrieval": 5,
-        "needs_second_source": 25
+        "needs_second_source": 27
       },
       "valid_edges": 283
     },
@@ -34,24 +34,30 @@
       "places": 21,
       "relations": {
         "actor_episode": 15,
-        "actor_issue": 125,
+        "actor_issue": 141,
         "actor_place": 53,
         "event_participation": 63,
         "legal_roles": 27,
-        "strict_place_issue": 71
+        "strict_place_issue": 81
       },
       "sources": 295,
       "venues": 16
+    },
+    "episode_display": {
+      "approved_translation_cells": 273,
+      "episodes": 13,
+      "fields_per_episode": 7,
+      "source_text_fallbacks": 0
     },
     "research": {
       "episodes": 4,
       "outcomes": 12,
       "relations": {
         "actor_episode": 4,
-        "actor_issue": 158,
+        "actor_issue": 142,
         "actor_place": 77,
         "event_participation": 4,
-        "strict_place_issue": 234
+        "strict_place_issue": 225
       }
     },
     "typed_relations": {
@@ -85,13 +91,14 @@
   "deterministic": true,
   "input_hashes": {
     "actor_aliases": "e1e8160d33aa975d6374ba38f8490e182b832a96b7bbed285cd94d29b522b52d",
-    "actor_issue": "b9eade4e031292437aa3b753f361b21ee9036e9deaf8a5bc55b2aea6b2f266ac",
+    "actor_issue": "12f54b8b9bb16597814446ab69bfab2eca4ee72619cf62733744378a0f90a10c",
     "actor_place": "dc933a89896fffd336a26a9a5d198bb98490dbb2ac9a84610242de714721e082",
-    "actors": "e42f53e82a4e6897bdb7d387039bfb6c04ae98c0a10bfd83756ca56dbefe9af6",
+    "actors": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4",
     "archive_manifest": "1e57f7e7df749b5ed0714994dc4176b69e7ad51c993c058198c4fd9bdf180d78",
-    "coverage_cells": "31c13a232b83bd67e72d5281400b6d794b7b79b0e4c718438fcec4aa51c5ca31",
+    "coverage_cells": "a78b92ea9dc37ba9ce7d73e65b8018727b19204675fe61b5b1b94b54bdd109ad",
     "coverage_implications": "93564245fad8978438b4f5c8e0b63509e842580982c56972cf7c915e2be8368a",
-    "episodes": "caa4135d7aa9c388f504d61e3c30c505aade512c9c589250f20daa217b99ca82",
+    "episode_display_translations": "0086516aec5dc43a0900fe67531b6ddad8ade5ce98ffc83e430be265c96e33a3",
+    "episodes": "08933804af35c08d89a47d2b5d2a8c734c0f90fffe1d4ba1bf5d6100e1eb938b",
     "event_participation": "9e0ed9d80fda91b35f9303c31b78ce7024111ab1c4b255bd4f366af51a6c5dc8",
     "evidence_notes": "e43d35a804aec5fb0d749b2d3b822f55256d022f3f9d1a62fe91cda4627f6c0e",
     "funding_relations": "3b11795150e7630ccf4cdab371ac135fab019c260609ee1272df518638f3ef23",
@@ -102,37 +109,37 @@
     "places": "1dfd9df377a824689fdc9e3ad74362ad3a7c67b59d8f6f1ab6523f91af624e0f",
     "source_crosswalk": "4bd059205fbf0c07efae7ccdee2deb3fbd1cf1d692a4405955b92402b18dadb1",
     "sources": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902",
-    "strict_triples": "cd6e36eeeac46fa71b668f5659caeb62f6b34788d92819694ea107f8ac20ab15",
+    "strict_triples": "ed643de877e09c552a67320609e22900b55f4f679b12da7faf33dadfb379a3e4",
     "typed_relation_handoff": "bd9ff7a0a01e02e5b8944245a32b8f5a7a6432ccd01a7b63eb8912de43f590c6",
     "venues": "373f666659acbbbcb1105bcef3496a982329eef99fae8b13572939296b45f048"
   },
   "output_hashes": {
-    "demo/actors.json": "3f3c331c6231337fe2a71781acff4b50c06b94713ffedb087667d879071e6df1",
+    "demo/actors.json": "c35d6b0570572a0e498d803ddde81d3c87a1df8f430171e2d5a0cb53c607ac03",
     "demo/administrative_records.json": "595440838d32c1cc53cd521ca546c7c90658438fd5eb91bc4a5b53e38355c0de",
     "demo/aggregate_observations.json": "33b5530706fda60df0d422ce956620e267901dd55d578c836394c6f9ae3db6fa",
     "demo/case_roles.json": "c63bdaac81c24ecdc39ac4dcd70a58338c895944c4f1b5d8bddadf34f154d4e8",
     "demo/dyadic_relations.json": "cbc23a402698bb7e993f1c1a512bcecd8f51a4f3bdd33fdca0281c1baa147b44",
-    "demo/episodes.json": "131f6dfb139305006941916fe3823cf051c1ad08923f8ceaf530093450e066b0",
+    "demo/episodes.json": "e5e9fcb3cf764ba77e50518dcb5a5df6de903cd20b881bf4757a4c624de3c62c",
     "demo/evidence.json": "7513c5de77763103e72657fb01ef2800dc89be8d1d61fa4200c14a1e413e660e",
     "demo/genealogy_anchors.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "demo/historical_anchors.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "demo/issues.json": "654b5da4a2e68739ef4afd72919f8480d7393dacf796b5e820e6446debaafcb4",
     "demo/map_geometry.geojson": "281304814daf0b9960156a16026a0f55228963dff9d306b73017691bbe07d265",
-    "demo/outcomes.json": "6abbb1b2545d70903641d9487fa43d5f290d39f1deebfbca21487ea3fd9d3a6f",
+    "demo/outcomes.json": "9824c7f4fa16bd5e0c17bbb38a1f51d5486a71b4d7226e4eddc5a2396c8032f2",
     "demo/places.json": "d0226a2f27c400afb6b7d8d1a69ee7a2c0e4af83dc4acc83006693f3dc1ef99f",
     "demo/relation_leads.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-    "demo/relations.json": "65f67a4ba9065368553faf9c4c9cff5553712eef635f4cae376cdd53f7841ef8",
+    "demo/relations.json": "c7e6a94e933e4a84dc53dd74298288cbfff2633ed96f0da2b5f28374a255a956",
     "demo/typed_event_participation.json": "94588532f0a026278d70baf52c947011553e773bebaa7b6224f5afa45f8e082e",
     "demo/venues.json": "785f877b1ad26850f542fd82d6ebf47d92dd76d3b46c61f5d13ec40642bb32e9",
-    "research/candidates.json": "74dc78a90e24ba1145ef2a20cf06ecaaeb9f3e3191032d78919c2dc1a5f493a1",
-    "validation_report.md": "a760c2a730c6ffb66593c194382eb2cd2927715ba56b6730bf9888bdeb849c17",
-    "views/actors.json": "cdd2e1c7ec040f8050f411864af408d6cd829380ded66b9eda3fe04418e6839b",
-    "views/evidence_coverage.json": "3e8673f771b66714e1b12430c837e4924f32604e4027228eeb17e6d0057b58cf",
+    "research/candidates.json": "7ec7f87aa97767a4debc91e2da6e9257f716ba39667039367b37d87ebc7cf2cb",
+    "validation_report.md": "69a073be003d5ce5f3dc304c839463428e23aae016b3e7e156e8e2f9fcf4280a",
+    "views/actors.json": "f4861dbc56474774357b8a91f8c2a143e880cdafb47f2bedba57e45249d9e4a8",
+    "views/evidence_coverage.json": "627f910c13bb06a7a8a9e89434c8f498351bcfba3a71ee1ab7f3b46e6d189b4d",
     "views/global.json": "b5aefdd8bab9d3d5542ff3280cd3626ca983f9351ebd671d959719bd75b05150",
-    "views/overview.json": "ad838d9b1d4268c36ed7ca9607ff475d0d677975dcb22b7997002b8ddb5e7640",
+    "views/overview.json": "f51bd190de01d0c4476192747f0a9ae393ac6a18d6b383f8d53b6e8c51ecf99c",
     "views/pathways.json": "4e719db64017f0023068428024f57f510c8834824ab6691a0a848eed09513358"
   },
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "source_of_truth": "central research tables; derived outputs never write back",
   "validation": {
     "error_count": 0,

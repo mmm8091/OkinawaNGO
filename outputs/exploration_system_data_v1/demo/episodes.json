@@ -11,14 +11,27 @@
       "R8C01"
     ],
     "display_label": "儒艮海外诉讼",
+    "display_label_en": "Okinawa dugong litigation in U.S. federal court",
+    "display_label_ja": "ジュゴン米国訴訟",
+    "display_label_zh": "儒艮海外诉讼",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE01",
-    "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按案号。",
+    "interpretation_limit": "程序标准与信息生产不等于工程被阻止；原告身份严格按各案 caption／当事人表核定。",
+    "interpretation_limit_en": "Procedural standards and information production did not stop construction; plaintiff status is limited to the parties named in each case caption.",
+    "interpretation_limit_ja": "手続基準と情報生成は工事阻止を意味しない。原告としての地位は各事件の当事者表示に基づいて限定する。",
+    "interpretation_limit_zh": "程序标准与信息生产不等于工程被阻止；原告身份严格按各案 caption／当事人表核定。",
     "local_problem": "基地建设与儒艮影响",
+    "local_problem_en": "Base construction and its impact on the dugong",
+    "local_problem_ja": "基地建設とジュゴンへの影響",
+    "local_problem_zh": "基地建设与儒艮影响",
     "module": "R8",
     "module_source_refs": [],
     "observable_output": "Section 402 适用与可审查标准、公开记录",
+    "observable_output_en": "Section 402 applicability, reviewable standards, public record",
+    "observable_output_ja": "セクション402の適用と審査可能な基準、公開記録",
+    "observable_output_zh": "Section 402 适用与可审查标准、公开记录",
     "place_labels": [
       "Henoko",
       "Oura Bay"
@@ -38,9 +51,18 @@
       "venue_entry": "yes"
     },
     "substantive_result": "2020 维持 DoD 胜诉；未停止工程",
+    "substantive_result_en": "DoD's win upheld in 2020; construction not halted",
+    "substantive_result_ja": "2020年にDoD勝訴を維持；工事は停止されず",
+    "substantive_result_zh": "2020 维持 DoD 胜诉；未停止工程",
     "translation_frame": "文化财程序义务／NHPA §402",
+    "translation_frame_en": "Cultural property procedural obligations / NHPA §402",
+    "translation_frame_ja": "文化財の手続き義務／NHPA §402",
+    "translation_frame_zh": "文化财程序义务／NHPA §402",
     "unresolved_source_refs": [],
-    "venue_label": "美国联邦法院／APA review"
+    "venue_label": "美国联邦法院／APA review",
+    "venue_label_en": "U.S. federal court / APA review",
+    "venue_label_ja": "米連邦裁判所／APA審査",
+    "venue_label_zh": "美国联邦法院／APA review"
   },
   {
     "actor_ids": [
@@ -50,14 +72,27 @@
       "R8C02"
     ],
     "display_label": "边野古 EIA 意见",
+    "display_label_en": "Henoko EIA opinions",
+    "display_label_ja": "辺野古EIA意見",
+    "display_label_zh": "边野古 EIA 意见",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE02",
     "interpretation_limit": "正式提交意见不等于采纳。",
+    "interpretation_limit_en": "Formal submission of opinions does not mean they were adopted.",
+    "interpretation_limit_ja": "正式な意見提出は採用を意味しない。",
+    "interpretation_limit_zh": "正式提交意见不等于采纳。",
     "local_problem": "基地建设与生态影响",
+    "local_problem_en": "Base construction and ecological impact",
+    "local_problem_ja": "基地建設と生態への影響",
+    "local_problem_zh": "基地建设与生态影响",
     "module": "R8",
     "module_source_refs": [],
     "observable_output": "NACSJ 科学批评进入正式行政记录",
+    "observable_output_en": "NACSJ's scientific critique entered the formal administrative record",
+    "observable_output_ja": "NACSJの科学的批判が正式な行政記録に入った",
+    "observable_output_zh": "NACSJ 科学批评进入正式行政记录",
     "place_labels": [
       "Henoko",
       "Oura Bay"
@@ -77,9 +112,18 @@
       "venue_entry": "yes"
     },
     "substantive_result": "补正 EIA 完成；不证明意见获采纳或工程停止",
+    "substantive_result_en": "Supplementary EIA completed; adoption of the opinions or a construction halt not demonstrated",
+    "substantive_result_ja": "補正EIAは完成；意見の採用や工事停止は証明されない",
+    "substantive_result_zh": "补正 EIA 完成；不证明意见获采纳或工程停止",
     "translation_frame": "调查、预测与减缓充分性",
+    "translation_frame_en": "Adequacy of surveys, forecasts and mitigation",
+    "translation_frame_ja": "調査・予測・緩和の十分性",
+    "translation_frame_zh": "调查、预测与减缓充分性",
     "unresolved_source_refs": [],
-    "venue_label": "日本 EIA 方法书／补正评价书程序"
+    "venue_label": "日本 EIA 方法书／补正评价书程序",
+    "venue_label_en": "Japan's EIA scoping document / supplementary assessment procedure",
+    "venue_label_ja": "日本のEIA方法書／補正評価書の手続き",
+    "venue_label_zh": "日本 EIA 方法书／补正评价书程序"
   },
   {
     "actor_ids": [
@@ -89,14 +133,27 @@
       "R8C03"
     ],
     "display_label": "嘉手纳第三次噪音诉讼",
+    "display_label_en": "Third Kadena noise lawsuit",
+    "display_label_ja": "嘉手納第三次騒音訴訟",
+    "display_label_zh": "嘉手纳第三次噪音诉讼",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE03",
     "interpretation_limit": "赔偿不表示噪音停止；原告团不等于所有个体或轮次恒定。",
+    "interpretation_limit_en": "Damages do not mean the noise stopped; the plaintiff group is not identical with every individual or every round.",
+    "interpretation_limit_ja": "賠償は騒音の停止を意味しない；原告団は全個人・全ラウンドを代表しない。",
+    "interpretation_limit_zh": "赔偿不表示噪音停止；原告团不等于所有个体或轮次恒定。",
     "local_problem": "航空器噪音与日常负担",
+    "local_problem_en": "Aircraft noise and daily-life burden",
+    "local_problem_ja": "航空機騒音と日常の負担",
+    "local_problem_zh": "航空器噪音与日常负担",
     "module": "R8",
     "module_source_refs": [],
     "observable_output": "法院确认部分过去期间噪音损害",
+    "observable_output_en": "Court recognized noise harm for part of the past period",
+    "observable_output_ja": "裁判所が一部の過去の期間の騒音被害を認定",
+    "observable_output_zh": "法院确认部分过去期间噪音损害",
     "place_labels": [
       "Kadena",
       "Chatan",
@@ -116,9 +173,18 @@
       "venue_entry": "yes"
     },
     "substantive_result": "获部分赔偿；差止与未来损害请求被驳回",
+    "substantive_result_en": "Partial damages awarded; injunction and future-damage claims dismissed",
+    "substantive_result_ja": "一部賠償を獲得；差止と将来の損害請求は棄却",
+    "substantive_result_zh": "获部分赔偿；差止与未来损害请求被驳回",
     "translation_frame": "人格／生活损害与差止",
+    "translation_frame_en": "Infringement of personal rights, harm to daily life, and injunctive relief",
+    "translation_frame_ja": "人格権・生活上の損害と差止",
+    "translation_frame_zh": "人格／生活损害与差止",
     "unresolved_source_refs": [],
-    "venue_label": "日本民事差止／损害赔偿诉讼"
+    "venue_label": "日本民事差止／损害赔偿诉讼",
+    "venue_label_en": "Japanese civil injunction / damages lawsuit",
+    "venue_label_ja": "日本の民事差止・損害賠償訴訟",
+    "venue_label_zh": "日本民事差止／损害赔偿诉讼"
   },
   {
     "actor_ids": [
@@ -128,14 +194,27 @@
       "R8C04"
     ],
     "display_label": "普天间周边噪音诉讼",
+    "display_label_en": "Futenma-area noise lawsuit",
+    "display_label_ja": "普天間周辺騒音訴訟",
+    "display_label_zh": "普天间周边噪音诉讼",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE04",
     "interpretation_limit": "案件特定 plaintiff group；不跨轮次泛化。",
+    "interpretation_limit_en": "The case is specific to its plaintiff group; do not generalize across rounds.",
+    "interpretation_limit_ja": "事件は特定の原告団に限定；ラウンドを超えた一般化はしない。",
+    "interpretation_limit_zh": "案件特定 plaintiff group；不跨轮次泛化。",
     "local_problem": "噪音与睡眠／健康负担",
+    "local_problem_en": "Noise and sleep/health burden",
+    "local_problem_ja": "騒音と睡眠・健康の負担",
+    "local_problem_zh": "噪音与睡眠／健康负担",
     "module": "R8",
     "module_source_refs": [],
     "observable_output": "列名原告获指定期间赔偿",
+    "observable_output_en": "Named plaintiffs awarded damages for the designated period",
+    "observable_output_ja": "列名原告が指定期間の賠償を獲得",
+    "observable_output_zh": "列名原告获指定期间赔偿",
     "place_labels": [
       "Futenma",
       "Ginowan"
@@ -154,9 +233,18 @@
       "venue_entry": "yes"
     },
     "substantive_result": "部分原告／期间获赔；无运营禁令",
+    "substantive_result_en": "Damages for some plaintiffs/periods; no operational injunction",
+    "substantive_result_ja": "一部原告・期間で賠償；運航の禁止なし",
+    "substantive_result_zh": "部分原告／期间获赔；无运营禁令",
     "translation_frame": "特定期间损害",
+    "translation_frame_en": "Harm for a specified period",
+    "translation_frame_ja": "特定期間の損害",
+    "translation_frame_zh": "特定期间损害",
     "unresolved_source_refs": [],
-    "venue_label": "日本损害赔偿诉讼"
+    "venue_label": "日本损害赔偿诉讼",
+    "venue_label_en": "Japanese damages lawsuit",
+    "venue_label_ja": "日本の損害賠償訴訟",
+    "venue_label_zh": "日本损害赔偿诉讼"
   },
   {
     "actor_ids": [
@@ -167,17 +255,30 @@
       "R9C_ISHIGAKI_2018_2024"
     ],
     "display_label": "石垣部署公投诉讼",
+    "display_label_en": "Ishigaki deployment referendum lawsuit",
+    "display_label_ja": "石垣配備・住民投票訴訟",
+    "display_label_zh": "石垣部署公投诉讼",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE05",
     "interpretation_limit": "A011 是 requester／运动体，不是具名组织原告。",
+    "interpretation_limit_en": "A011 is a requester/campaign body, not a named organizational plaintiff.",
+    "interpretation_limit_ja": "A011は請求者・運動体であり、指名の組織原告ではない。",
+    "interpretation_limit_zh": "A011 是 requester／运动体，不是具名组织原告。",
     "local_problem": "陆自部署与居民决定权",
+    "local_problem_en": "SDF deployment and residents' decision-making rights",
+    "local_problem_ja": "陸自配備と住民の決定権",
+    "local_problem_zh": "陆自部署与居民决定权",
     "module": "R8/R9",
     "module_source_refs": [
       "R9S010",
       "R9S011"
     ],
-    "observable_output": "签名门槛达成；议会两度否决；法院明确可诉性门槛",
+    "observable_output": "签名门槛达成；议会两度否决；法院认定举行公投不属于义务付诉讼对象",
+    "observable_output_en": "Signature threshold met; the assembly rejected the proposal twice; the court held that holding the referendum was not an administrative disposition subject to a mandatory-order action.",
+    "observable_output_ja": "署名要件を充足；議会は二度否決；裁判所は住民投票の実施が義務付け訴訟の対象となる行政処分ではないと判断",
+    "observable_output_zh": "签名门槛达成；议会两度否决；法院认定举行公投不属于义务付诉讼对象",
     "place_labels": [
       "Ishigaki"
     ],
@@ -198,9 +299,18 @@
       "venue_entry": "yes"
     },
     "substantive_result": "未举行投票；义务付请求被程序性驳回",
+    "substantive_result_en": "No vote held; mandatory-order claim dismissed on procedural grounds",
+    "substantive_result_ja": "投票は実施されず；義務付け請求は手続き上却下",
+    "substantive_result_zh": "未举行投票；义务付请求被程序性驳回",
     "translation_frame": "公投实施义务／地方自治",
+    "translation_frame_en": "Obligation to hold a referendum / local autonomy",
+    "translation_frame_ja": "住民投票実施義務／地方自治",
+    "translation_frame_zh": "公投实施义务／地方自治",
     "unresolved_source_refs": [],
-    "venue_label": "条例直接请求、议会与义务付诉讼"
+    "venue_label": "条例直接请求、议会与义务付诉讼",
+    "venue_label_en": "Direct ordinance request, assembly, and mandatory-order litigation",
+    "venue_label_ja": "条例の直接請求、議会と義務付け訴訟",
+    "venue_label_zh": "条例直接请求、议会与义务付诉讼"
   },
   {
     "actor_ids": [
@@ -211,14 +321,27 @@
       "R8C06"
     ],
     "display_label": "泡濑公金诉讼",
+    "display_label_en": "Awase public-funds lawsuit",
+    "display_label_ja": "泡瀬公金訴訟",
+    "display_label_zh": "泡濑公金诉讼",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE06",
     "interpretation_limit": "两波结果必须分列；A055/A020 是 supporter，不是组织原告。",
+    "interpretation_limit_en": "The two waves' outcomes must be reported separately; A055/A020 are supporters, not organizational plaintiffs.",
+    "interpretation_limit_ja": "二つの波の結果は分けて記す；A055/A020はサポーターであり、組織原告ではない。",
+    "interpretation_limit_zh": "两波结果必须分列；A055/A020 是 supporter，不是组织原告。",
     "local_problem": "填海生态、经济与灾害风险",
+    "local_problem_en": "Reclamation-related ecological, economic and disaster risks",
+    "local_problem_ja": "埋立による生態・経済・災害リスク",
+    "local_problem_zh": "填海生态、经济与灾害风险",
     "module": "R8",
     "module_source_refs": [],
     "observable_output": "生态争议转成支出与行政裁量审查",
+    "observable_output_en": "The ecological dispute was reframed as review of spending and administrative discretion",
+    "observable_output_ja": "生態の争点が支出と行政裁量の審査に転換",
+    "observable_output_zh": "生态争议转成支出与行政裁量审查",
     "place_labels": [
       "Awase",
       "Okinawa City"
@@ -238,10 +361,19 @@
       "underlying_change": "mixed",
       "venue_entry": "yes"
     },
-    "substantive_result": "第一波限制支出；第二波居民败诉，结果相反",
+    "substantive_result": "第一波限制未来支出；第二波居民败诉，结果相反",
+    "substantive_result_en": "First wave restricted future spending; second wave ruled against residents — opposite outcomes",
+    "substantive_result_ja": "第一波は将来の支出を制限；第二波は住民敗訴で結果が逆転",
+    "substantive_result_zh": "第一波限制未来支出；第二波居民败诉，结果相反",
     "translation_frame": "公共支出合法性／合理性",
+    "translation_frame_en": "Legality and propriety of public spending",
+    "translation_frame_ja": "公共支出の適法性・合理性",
+    "translation_frame_zh": "公共支出合法性／合理性",
     "unresolved_source_refs": [],
-    "venue_label": "住民监查与公金支出差止诉讼"
+    "venue_label": "住民监查请求与公金支出差止诉讼",
+    "venue_label_en": "Residents’ audit request and litigation to enjoin public spending",
+    "venue_label_ja": "住民監査請求と公金支出差止訴訟",
+    "venue_label_zh": "住民监查请求与公金支出差止诉讼"
   },
   {
     "actor_ids": [
@@ -251,11 +383,21 @@
       "R9C_NAGO_1997"
     ],
     "display_label": "名护 1997 公投",
+    "display_label_en": "Nago 1997 referendum",
+    "display_label_ja": "名護1997住民投票",
+    "display_label_zh": "名护 1997 公投",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE07",
-    "interpretation_limit": "咨询型反对多数不是法律否决；A068 规范名仍待人工决定。",
+    "interpretation_limit": "咨询型反对多数不是法律否决；A068 已人审正名，并记录为 1997 年发展性改组至 A019；这不等于两者为同一 actor，也不证明 A068 此后持续。",
+    "interpretation_limit_en": "A consultative majority against was not a legal veto. A068’s canonical name is human-reviewed and its 1997 developmental reorganization into A019 is recorded, but the two are not treated as one actor and no later continuity of A068 is inferred.",
+    "interpretation_limit_ja": "諮問型の反対多数は法的拒否ではない。A068 の正式名称は人手審査済みで、1997年にA019へ発展的に再編されたと記録するが、両者を同一アクターとはせず、A068のその後の継続も推定しない。",
+    "interpretation_limit_zh": "咨询型反对多数不是法律否决；A068 已人审正名，并记录为 1997 年发展性改组至 A019；这不等于两者为同一 actor，也不证明 A068 此后持续。",
     "local_problem": "海上直升机场／基地建设",
+    "local_problem_en": "Offshore heliport / base construction",
+    "local_problem_ja": "海上ヘリポート／基地建設",
+    "local_problem_zh": "海上直升机场／基地建设",
     "module": "R9",
     "module_source_refs": [
       "R9S001",
@@ -264,6 +406,9 @@
       "R9S022"
     ],
     "observable_output": "17,539 有效签名；四选项条例；实际投票",
+    "observable_output_en": "17,539 valid signatures; four-option ordinance; vote actually held",
+    "observable_output_ja": "有効署名17,539；四択条例；実際に投票実施",
+    "observable_output_zh": "17,539 有效签名；四选项条例；实际投票",
     "place_labels": [
       "Nago"
     ],
@@ -283,9 +428,18 @@
       "venue_entry": "yes"
     },
     "substantive_result": "反对多数；三日后市长接受基地并辞职",
+    "substantive_result_en": "Majority opposed; the mayor accepted the base and resigned three days later",
+    "substantive_result_ja": "反対が多数；三日後に市長は基地受け入れを表明し辞職",
+    "substantive_result_zh": "反对多数；三日后市长接受基地并辞职",
     "translation_frame": "地方自治法第74条直接请求",
+    "translation_frame_en": "Direct request under Article 74 of the Local Autonomy Act",
+    "translation_frame_ja": "地方自治法第74条の直接請求",
+    "translation_frame_zh": "地方自治法第74条直接请求",
     "unresolved_source_refs": [],
-    "venue_label": "签名、议会条例与咨询型住民投票"
+    "venue_label": "签名、议会条例与咨询型住民投票",
+    "venue_label_en": "Signatures, assembly ordinance, and consultative referendum",
+    "venue_label_ja": "署名、議会条例と諮問型住民投票",
+    "venue_label_zh": "签名、议会条例与咨询型住民投票"
   },
   {
     "actor_ids": [
@@ -296,11 +450,21 @@
       "R9C_YONAGUNI_2015"
     ],
     "display_label": "与那国 2015 公投",
+    "display_label_en": "Yonaguni 2015 referendum",
+    "display_label_ja": "与那国2015住民投票",
+    "display_label_zh": "与那国 2015 公投",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E3",
     "id": "TE08",
     "interpretation_limit": "A014/A015 为 E2 组织线索；不能写成投票发起／实施者或长期组织。",
+    "interpretation_limit_en": "A014/A015 are E2 organizational leads; they cannot be written as the vote's initiators/implementers or as long-standing organizations.",
+    "interpretation_limit_ja": "A014/A015はE2の組織手がかり；投票の発起・実施者や長期組織とは書けない。",
+    "interpretation_limit_zh": "A014/A015 为 E2 组织线索；不能写成投票发起／实施者或长期组织。",
     "local_problem": "陆自部署、前线化与岛内决定",
+    "local_problem_en": "SDF deployment, conversion into a frontline, and island-level self-determination",
+    "local_problem_ja": "陸自配備・最前線化と島内の自己決定",
+    "local_problem_zh": "陆自部署、前线化与岛内决定",
     "module": "R9",
     "module_source_refs": [
       "R9S005",
@@ -310,6 +474,9 @@
       "R9S034"
     ],
     "observable_output": "投票举行；地方报道 632 赞成、445 反对",
+    "observable_output_en": "Vote held; local reports 632 for, 445 against",
+    "observable_output_ja": "投票実施；地方報道で賛成632、反対445",
+    "observable_output_zh": "投票举行；地方报道 632 赞成、445 反对",
     "place_labels": [
       "Yonaguni"
     ],
@@ -330,9 +497,18 @@
       "venue_entry": "yes"
     },
     "substantive_result": "町长将结果解释为推进依据；组织级身份仍需当地材料",
+    "substantive_result_en": "The mayor read the result as grounds to proceed; organizational identity still requires local materials",
+    "substantive_result_ja": "町長は結果を推進の根拠と解釈；組織の身分はなお現地資料が必要",
+    "substantive_result_zh": "町长将结果解释为推进依据；组织级身份仍需当地材料",
     "translation_frame": "自治体个别条例与公众动员",
+    "translation_frame_en": "Municipality-specific ordinance and public mobilization",
+    "translation_frame_ja": "自治体個別条例と公衆動員",
+    "translation_frame_zh": "自治体个别条例与公众动员",
     "unresolved_source_refs": [],
-    "venue_label": "町条例、选管投票与行政解释"
+    "venue_label": "町条例、选管投票与行政解释",
+    "venue_label_en": "Town ordinance, election-administered vote, and administrative interpretation",
+    "venue_label_ja": "町条例、選管投票と行政の解釈",
+    "venue_label_zh": "町条例、选管投票与行政解释"
   },
   {
     "actor_ids": [
@@ -342,11 +518,21 @@
       "R9C_PREF_2019"
     ],
     "display_label": "2019 边野古县民投票",
+    "display_label_en": "2019 Henoko prefectural referendum",
+    "display_label_ja": "2019辺野古県民投票",
+    "display_label_zh": "2019 边野古县民投票",
     "display_status": "demo",
+    "display_translation_fallbacks": [],
     "evidence_level": "E4",
     "id": "TE09",
     "interpretation_limit": "签名者／请求代表不自动等于 A051 成员；投票不直接停止工程。",
+    "interpretation_limit_en": "Signers and request representatives are not automatically A051 members; the vote did not directly stop construction.",
+    "interpretation_limit_ja": "署名者・請求代表は自動的にA051の構成員ではない；投票は工事を直接停止しない。",
+    "interpretation_limit_zh": "签名者／请求代表不自动等于 A051 成员；投票不直接停止工程。",
     "local_problem": "边野古填海与县民意",
+    "local_problem_en": "Henoko reclamation and Okinawa residents’ preferences",
+    "local_problem_ja": "辺野古の埋立と県民の意思",
+    "local_problem_zh": "边野古填海与县民意",
     "module": "R9",
     "module_source_refs": [
       "R9S009",
@@ -356,6 +542,9 @@
       "R9S013"
     ],
     "observable_output": "反对 434,273（71.7%）；知事通知日美政府",
+    "observable_output_en": "434,273 (71.7%) against; governor notified the Japanese and U.S. governments",
+    "observable_output_ja": "反対434,273（71.7%）；知事が日米政府に通知",
+    "observable_output_zh": "反对 434,273（71.7%）；知事通知日美政府",
     "place_labels": [
       "Okinawa Prefecture"
     ],
@@ -376,8 +565,17 @@
       "venue_entry": "yes"
     },
     "substantive_result": "民意转化为条例与通知资源；工程未因此自动停止",
+    "substantive_result_en": "Public will converted into ordinance and notification resources; construction did not automatically stop as a result",
+    "substantive_result_ja": "民意は条例と通知の資源に転換；工事はそれにより自動停止せず",
+    "substantive_result_zh": "民意转化为条例与通知资源；工程未因此自动停止",
     "translation_frame": "全县直接请求／条例化",
+    "translation_frame_en": "Prefecture-wide direct request / ordinance enactment",
+    "translation_frame_ja": "全県の直接請求／条例化",
+    "translation_frame_zh": "全县直接请求／条例化",
     "unresolved_source_refs": [],
-    "venue_label": "92,848 有效签名、县议会条例、全41市町村投票"
+    "venue_label": "92,848 有效签名、县议会条例、全41市町村投票",
+    "venue_label_en": "92,848 valid signatures, prefectural assembly ordinance, votes in all 41 municipalities",
+    "venue_label_ja": "有効署名92,848、県議会条例、全41市町村の投票",
+    "venue_label_zh": "92,848 有效签名、县议会条例、全41市町村投票"
   }
 ]

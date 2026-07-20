@@ -5,9 +5,9 @@
 ## 完成
 
 - 中央基线锁定为 actor–issue 283 active／
-  125 reviewed／
-  158 candidate；
-  strict triples 305。
+  141 reviewed／
+  142 candidate；
+  strict triples 306。
 - 兼容判定 17 项：
   `invariant=7`、
   `recompute_required=7`、

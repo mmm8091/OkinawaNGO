@@ -3,10 +3,10 @@ actor_issue_history_rows,294,includes retained rejected/deactivated audit rows
 actor_issue_active_rows,283,used by this strict layer
 actor_place_history_rows,135,includes retained rejected audit rows
 actor_place_active_rows,130,used by this strict layer
-all_same_source_triples,305,all evidence levels
-e3plus_same_source_triples,298,strict candidate layer
-human_reviewed_same_source_triples,71,both underlying edges human-reviewed
+all_same_source_triples,306,all evidence levels
+e3plus_same_source_triples,299,strict candidate layer
+human_reviewed_same_source_triples,81,both underlying edges human-reviewed
 strict_triples_with_formal_event_attachment,97,same actor/source found in formal AEV-derived observation table
 wide_nonzero_cells,42,retired upper-bound method
 strict_e3plus_nonzero_cells,40,source-constrained
-reviewed_nonzero_cells,15,source-constrained and dual reviewed
+reviewed_nonzero_cells,19,source-constrained and dual reviewed

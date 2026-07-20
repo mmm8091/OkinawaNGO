@@ -16,10 +16,14 @@
 
 2026-07-20：负责人已经回交的 HR-016–033 线上决定均已合并。HR-027 的 A112–A115 保留；AP123 已修复为 P007 Camp Foster；HR-033 的 dyadic relation 与 aggregate observation 已分层。随后 HR-035 Batch 1、HR-010 batch 6、LCR001–004、HR-034、HR-029 和 HR-031 也已全部确认并完成受控合并。
 
-HR-035 Batch 2 已正式派发：18 条 actor–issue 事实与 5 条组织身份配套判断，共 23 项立即可做的线上决定。另有 HR-017 九项、HR-018 两项和 HR-024/A073 一项当地／新一手材料任务。当前正式未闭合共 35 项。完整总账见：
+HR-035 Batch 2 的 18 条 actor–issue 事实与 5 条组织身份配套判断已由负责人全部确认，并由
+专用脚本完成中央受控合并与下游重生。当前没有已派发且决定栏为空的线上人工任务；另有
+HR-017 九项、HR-018 两项和 HR-024/A073 一项当地／新一手材料任务。当前正式未闭合人工
+决定共 12 项。完整总账见：
 
 - `docs/human_review_task_HR035_batch02_v1.md`
-- `docs/principal_human_review_remaining_v18.md`
+- `docs/human_review_return_HR035_batch02_v1.md`
+- `docs/principal_human_review_remaining_v19.md`
 
 HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
@@ -503,9 +507,9 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-019 R1/R2 分类词、桥梁机制与议题边范围复核 — completed / merged
 
-当前状态（2026-07-20）：HR-019、HR-035 Batch 1 和 HR-010 batch 6 已完成并合并。历史层为
-122 actor rows／294 edge rows；当前图使用121个有效 actor 和283条有效 edge（125人审／
-158候选，116 connected／5 isolated）。以下保留原任务说明作为审计轨迹。
+当前状态（2026-07-20）：HR-019、HR-035 Batch 1／2 和 HR-010 batch 6 已完成并合并。历史层为
+122 actor rows／294 edge rows；当前图使用121个有效 actor 和283条有效 edge（141人审／
+142候选，116 connected／5 isolated）。以下保留原任务说明作为审计轨迹。
 
 复核包：
 
@@ -718,7 +722,10 @@ HR-001 至 HR-009 已完成首轮人工复核。详细合并包见：
 
 ### HR-034 legacy `review_status` 交叉复核 — completed / merged
 
-状态（2026-07-20）：中央表和派生模块仍混有 `verified`、`human_verified`、`watchlist_only`、`qa_safe_online`、`accepted` 及 lifecycle 工作流状态。已建立 50 个空白人工任务，不作自动字符串迁移。
+状态（2026-07-20）：50 项决定已全部确认并受控合并，其中 49 项 revise、1 项 reject。
+旧 `verified`、`human_verified`、`watchlist_only`、`qa_safe_online`、`accepted` 与
+lifecycle 工作流状态已按逐行决定或独立字段政策迁移；S051 保持 rejected，AI068 保持
+`ai_seeded` 并排除于默认冲绳叙事。没有用字符串相似性批量升级人审状态。
 
 复核包：
 
@@ -755,11 +762,12 @@ R1/R2、strict place–issue 与 coverage 包均已受控合并／重生。本�
 - `accept/revise/defer/reject` 只影响该事实边，不能新增组织关系、联盟、资金或因果；
 - 若既有 HR-019 scope 也需修改，必须另标 `scope_revision_required`，不得静默覆盖。
 
-### HR-035 Batch 2 — formally dispatched
+### HR-035 Batch 2 — completed / merged
 
-状态（2026-07-20）：正式派发 18 条 E4、scope 已人审但事实仍为 `ai_seeded` 的
-actor–issue 边；另为 A007、A017、A018、A049、A066 各设一条组织身份配套判断。共
-23 项决定，所有决定栏保持空白。
+状态（2026-07-20）：18 条 actor–issue 与 5 条组织身份配套判断共 23 项均已由负责人确认，
+并由 `scripts/merge_hr035_batch02_v1.py` 完成中央受控合并。16 条 accept／revise 事实进入
+人审层；AI157、AI158 保持 `needs_second_source` 候选。当前 actor–issue 为 294 条历史行、
+283 条有效边，其中 141 条人审、142 条候选。
 
 复核包：
 
@@ -784,8 +792,9 @@ actor–issue 边；另为 A007、A017、A018、A049、A066 各设一条组织�
 4. 重生并执行 HR-029 的41项 schema／alias freeze；
 5. HR-031 的3条解释强度。
 
-当前开放任务为 HR-035 Batch 2 的 23 项线上决定，加 12 条当地／新一手材料项；合计
-35 项。Batch 2 回交前不改中央表，不为缩小前端两层差距而自动升级。
+当前线上空白人工决定为 0；开放任务只剩 12 条当地／新一手材料项。AI157、AI158 是已经
+作出 `defer_second_source` 决定的补源线索，不计为空白人审项，也未为缩小前端两层差距而
+自动升级。
 
 ## 8. 不合格复核示例
 

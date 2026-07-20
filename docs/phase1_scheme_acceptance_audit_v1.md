@@ -21,7 +21,7 @@
 - R12 媒体可见度、R13 人物—组织互锁、R14 组织谱系属于扩展模块，不阻塞标准一期；当前 coverage audit 是基础建设成果，不是方案 R14。
 - 一期不以“文件存在”验收。每个模块必须同时有数据证据、解释性回答、可读成果和明确边界。
 
-本轮已完成核心 CSV 语法修复、registry issue-tag 规范化及在线人审回填。HR-010 批6（47）→ LCR001–004（4）→ HR-034（50）→ 重生并执行 HR-029（41）→ HR-031（3）的依赖顺序已经闭合；HR-035 Batch 1 的15条事实决定也已合并。HR-035 Batch 2 已正式派发18条事实＋5条身份决定；另有12条当地／新一手材料项，当前正式未闭合共35项。
+本轮已完成核心 CSV 语法修复、registry issue-tag 规范化及在线人审回填。HR-010 批6（47）→ LCR001–004（4）→ HR-034（50）→ 重生并执行 HR-029（41）→ HR-031（3）的依赖顺序已经闭合；HR-035 Batch 1 的15条与 Batch 2 的23条决定也已合并。当前线上空白人工决定为0；另有12条当地／新一手材料项，当前正式未闭合共12项。
 
 ## 2. 模块的统一验收单位
 
@@ -63,7 +63,7 @@ HR-027 已把“候选价值”转成四项可审计准入，并明确没有组�
 - 基地社区服务与军属慈善；
 - 公共外交、项目和资助/赞助节点。
 
-R1/R2 v1 明确分开历史审计与当前网络：历史为122 actor rows／294 edge rows；当前二模图使用121个有效 actors、26 issues 与283条有效 edge，其中125条已人审、158条仍为候选，116个 actor 有边、5个为孤立节点。HR-035 Batch 1 和 HR-010 batch 6 已合并，11条 rejected／deactivated／excluded edge 只保留历史。旧稳健性分析的数值须按新边层另行重跑，不能继续直接引用冻结前结果。
+R1/R2 v1 明确分开历史审计与当前网络：历史为122 actor rows／294 edge rows；当前二模图使用121个有效 actors、26 issues 与283条有效 edge，其中141条已人审、142条仍为候选，116个 actor 有边、5个为孤立节点。HR-035 Batch 1／2 和 HR-010 batch 6 已合并，11条 rejected／deactivated／excluded edge 只保留历史。稳健性分析已按当前边层重生；旧快照不得继续引用。
 
 R1 另形成10个分析功能层；当前有效层有21个 `actor_class` 值，schema 外术语为0。HR-010
 边级补证、HR-034 状态迁移、多语 alias 与 HR-029 最终冻结均已完成；完整网络、议题共现、
@@ -78,7 +78,7 @@ R1 另形成10个分析功能层；当前有效层有21个 `actor_class` 值，s
 - 石垣/宫古：部署争议与住民投票、地下水、生活安全和地方自治交叉。
 - 与那国：应按前线/安全环境、地方自治、公投、台湾邻近和生命安全解释，不能强行环保化。
 
-R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留135条历史地点边，其中130条有效（53人审／77候选）、5条 retired。有效先岛 dossier 为与那国6／石垣3／宫古4；AP123 已固定为 P007 Camp Foster。地点×议题替代层按新 actor–issue 层重生为305条有效同源三元事实，其中298条 E3/E4、71条双边人审、97条可附着正式事件观察。
+R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留135条历史地点边，其中130条有效（53人审／77候选）、5条 retired。有效先岛 dossier 为与那国6／石垣3／宫古4；AP123 已固定为 P007 Camp Foster。地点×议题替代层按新 actor–issue 层重生为306条有效同源三元事实，其中299条 E3/E4、81条双边人审、97条可附着正式事件观察。
 
 ## 4. 基础建设验收状态
 
@@ -90,7 +90,7 @@ R4 已补出三地安全语料对照图和 entity–frame 图；R3 保留135条�
 | Place registry | 21 项 | 含 P021 Sakishima Islands；HR-029 已冻结 alias、父子层级及 place/venue 分工 | 最终 codebook/lint 和前端重生 |
 | Source log | 295 条；273 archived、2 manual、18 failed、2 non-URL | HR-022／030／034 已合并；来源入表仍不批准候选关系／解释 | 失败不撤号、不等于证据不存在 |
 | Evidence notes | 49 条正式表，全部 HR-015 处理 | 核心敏感条目有 claim、locator、等级和解释边界；仍有 5 个 locator 待精修 | 补完五个 locator，并扩到最终正文／图的全部关键主张 |
-| Actor–issue | 294 历史／283 有效；116 actor 已连接、5 孤立；有效层125人审／158候选 | HR-019、HR-035 Batch 1、HR-010 已合并；11条失效边仅历史保留 | 其余候选边仍不得自动升级 |
+| Actor–issue | 294 历史／283 有效；116 actor 已连接、5 孤立；有效层141人审／142候选 | HR-019、HR-035 Batch 1／2、HR-010 已合并；11条失效边仅历史保留 | 其余候选边仍不得自动升级 |
 | Actor–place | 135 历史／130 有效／5 retired | 有效层 53 人审／77 候选；HR-025 已合并；AP123=P007 | 当前 v1 已重生；按冻结词表统一图注与正式版式 |
 | Actor–venue sample | 16 类 venue + 67 条 AEV；63 human_checked、4 analytical_seed | R5/R7 已把既有正式事实汇成 148 条观察、39 个去重单元、15 类行动和 9 类场域 | HR-029 已处置18条 `R10_VENUE` 引用：12条受控 venue／6条不适用；按冻结值重生图 |
 | Joint-action sample | 67 条 AEV；三次名单 169 条事件参与；异质行动 39 个去重单元 | HR-020 已合并：64 registry rows、22 human-reviewed event-only identities、83 other names、0 alias pending；共同出现仍非稳定联盟 | schema/alias 已冻结；待统一图注与正式版式；HR-028 为 0 |
@@ -113,17 +113,17 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 
 ### R2 组织—议题网络 — 强部分完成
 
-当前成果：历史层保留294条 edge；当前二模网络以121个有效 actors × 26 issues × 283条有效 edge 构成，116个 actor 连入议题层、5个为孤立节点，125条 edge 已人审、158条为候选。冻结前来源删除分析仍只作为历史敏感性结果，须按新边层重算后再引用。
+当前成果：历史层保留294条 edge；当前二模网络以121个有效 actors × 26 issues × 283条有效 edge 构成，116个 actor 连入议题层、5个为孤立节点，141条 edge 已人审、142条为候选。来源删除与研究波兼容性分析已按当前层重生；旧快照只保留为历史。
 
-关键不足：HR-010 batch 6 已完成，但158条有效 edge 仍为候选，5个有效 actor 没有有效 edge。完整图仍是候选／人审混合网络，不是稳定联盟图，也不能把节点度数写成影响力。
+关键不足：HR-010 batch 6 与 HR-035 Batch 2 已完成，但142条有效 edge 仍为候选，5个有效 actor 没有有效 edge。完整图仍是候选／人审混合网络，不是稳定联盟图，也不能把节点度数写成影响力。
 
 验收成果应为：完整分层二模网络、议题共现图、跨议题组织名单，以及 2–3 个有证据链的桥接机制解释。
 
 ### R3 地点与空间分布（含与那国/先岛）— 强部分完成
 
-当前成果：R3 v1 保留135条历史地点边，当前有效层为130条（53人审／77候选），另有5条 retired；三地 dossier 分列与那国6、石垣3、宫古4。旧宽投影继续退役，严格层已按新边层建立305条有效同源三元事实。
+当前成果：R3 v1 保留135条历史地点边，当前有效层为130条（53人审／77候选），另有5条 retired；三地 dossier 分列与那国6、石垣3、宫古4。旧宽投影继续退役，严格层已按新边层建立306条有效同源三元事实。
 
-关键不足：HR-025 已合并且 AP123=P007；现有同源层有298条 E3/E4、71条双边人审，仍须收紧为 `actor × place × issue × event/document × date × source` 可发表层。三地 dossier 已完成线上层，但与那国 A014/A015 等组织身份仍需当地材料。
+关键不足：HR-025 已合并且 AP123=P007；现有同源层有299条 E3/E4、81条双边人审，仍须收紧为 `actor × place × issue × event/document × date × source` 可发表层。三地 dossier 已完成线上层，但与那国 A014/A015 等组织身份仍需当地材料。
 
 验收成果应为：地点—议题图、组织—地点图、先岛比较专题图及 dossier。
 
@@ -195,13 +195,13 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 
 | 方案指定图 | 当前状态 | 验收判断 |
 |---|---|---|
-| 组织—议题网络 | 历史层122 actors／294 edges；当前图为121 actors × 26 issues × 283 edges | 线上 v1 已重生；125条 edge 人审、158条候选，仍是候选／人审混合网络 |
-| 地点—议题图 | 旧矩阵已退役；严格 v1 有305条同源三元事实 | 替代层含298条 E3/E4、71条双边人审、97条同 actor/source 正式事件附着；最终发表版仍须补 event/document/date 粒度 |
+| 组织—议题网络 | 历史层122 actors／294 edges；当前图为121 actors × 26 issues × 283 edges | 线上 v1 已重生；141条 edge 人审、142条候选，仍是候选／人审混合网络 |
+| 地点—议题图 | 旧矩阵已退役；严格 v1 有306条同源三元事实 | 替代层含299条 E3/E4、81条双边人审、97条同 actor/source 正式事件附着；最终发表版仍须补 event/document/date 粒度 |
 | 国际倡议/法律程序路径 | 边野古主图＋R6 六类目标路径＋R7 三案例小倍图＋R8 六案程序/角色比较图 | 强半成品；已补六案渠道、角色和程序产出比较，仍需 HR 后冻结及正式报告统一排版 |
 | 与那国/先岛专题图 | 三地框架图＋entity–frame 图＋13 行有效 actor–place dossier 卡片 | 线上解释层已形成；与那国 6、石垣 3、宫古 4 条组织—地点观察与框架／程序上下文分层，HR-016／025 已合并，仍待当地组织身份材料后冻结 |
 | 覆盖偏差图 | 已有六维 coverage audit v1 核心图 | 线上 v1 已形成；同时覆盖时间、地点、功能／来源、议题、归档和复核，明确无总体分母、source 数≠活跃度、failed≠证据不存在 |
 
-新增的功能生态、组织—地点和严格 support/service 图补充了方案指定图；五类核心图都已有线上 v1 或证据替代层。HR-010／034／029 数据门已关闭；当前缺口转为按冻结词表重绘五张图、补严地点事实粒度、统一图注与正式报告排版。
+新增的功能生态、组织—地点和严格 support/service 图补充了方案指定图；五类核心图都已有线上 v1 或证据替代层。HR-010／034／035／029 数据门已关闭；当前缺口转为按冻结词表重绘五张图、补严地点事实粒度、统一图注与正式报告排版。
 
 ## 7. 最终交付验收
 
@@ -230,7 +230,7 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 ### P0 数据可用性
 
 - 已修 11 行 CSV quoting，issue-tag 分隔空白已清零；下一轮集中冻结 schema、重复／近义标签、legal status 受控词、alias 和跨表 lint。
-- evidence notes、venue/target、case/procedure、R4 framing、R9 referendum/election 与 R10 行政协作规范表已建立；此前线上批次均已合并，当前 HR-035 Batch 2 有23项线上决定待回交，另有12项当地／新一手材料门禁；不以新文本替代人审。
+- evidence notes、venue/target、case/procedure、R4 framing、R9 referendum/election 与 R10 行政协作规范表已建立；HR-035 Batch 2 的23项线上决定已合并，当前线上空白人工决定为0，另有12项当地／新一手材料门禁；不以新文本替代人审。
 - OPI-00 五小时项目回归表仍是暂停／未完成状态；完成前不启动新的广泛研究波次，只继续已批准维护、人审合并、可视化修正与当地任务准备。
 
 ### P1 样本与模块补料
@@ -269,7 +269,7 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 
 ## 11. 第一批缺口实作回收（尚未等同主表验收）
 
-方案审计后已完成二十八个可审计数据、模块、交互或控制包：
+方案审计后已完成二十九个可审计数据、模块、交互或控制包：
 
 1. `outputs/phase1_foundation_v1/`：49 条 evidence note 与其轮次的 64 条 actor–event–venue 形成 HR-015 基础层；中央 `09` 表当前为 67 条，其中 63 条 AEV `human_checked`、4 条为 `analytical_seed`。旧 A077–A085 已撤出 registry，作为九个 event-only legacy candidate 保留。
 2. `outputs/registry_expansion_v1/`：HR-011 新增 A107–A110；HR-012 完成 A052/A053 诉讼轮次与 A010 前身 crosswalk；C015 继续 defer。HR-013 已加入 A111、移出 A094，并将 C010/C034 定为背景节点、C029–C033 定为 out_of_scope；A087–A093、A095–A101 的 HR-010 batch 6 已完成46 accept／1 defer。
@@ -279,7 +279,7 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 6. `outputs/R10_administrative_collaboration_v0/`：目的性案例样本的 35／28／43 三层规范表、两张图与 brief 已形成；关系层为 24 `human_checked`／10 `human_revised`／1 `needs_local_retrieval`，金额层为 21／6／1，功能层为 29／13／1。HR-018 的 24 项线上决定已合并，原队列 2 项当地／内部材料决定保持 deferred。`outputs/R10_completeness_audit_v1/` 又以 S002 616 行和 S099 六条非零项目成本行锁定“样本内完整、外部总体不完整”的表述边界。
 7. `outputs/phase1_source_integration_v1/`：57 条模块来源记录映射为 54 个 URL；39 条新来源 S160–S198 已以 `ai_seeded` 入表并完成 37 archived／2 failed，HR-022 已完成并合并；所有 crosswalk 行均为 `relation_or_claim_approved=no`。
 8. `outputs/R06_R07_R11_pathways_v1/`：HR-021 合并后共用正式层为 80 条，另有 4 条独立 seed；R6 六类路径、R7 三案／九阶段和 R11 53 条进入观察已形成，现有 SVG/HTML 仍需按当前表重画。
-9. `outputs/R01_R02_actor_issue_v1/`：历史审计保留122 actors／294 edges，当前图使用121 actors／283 edges（125人审／158候选，116 connected／5 isolated）；HR-010 batch 6 已完成，11条失效边仅留历史。
+9. `outputs/R01_R02_actor_issue_v1/`：历史审计保留122 actors／294 edges，当前图使用121 actors／283 edges（141人审／142候选，116 connected／5 isolated）；HR-010 batch 6 与 HR-035 Batch 2 已完成，11条失效边仅留历史。
 10. `outputs/R05_coaction_v1/`：2010／2015／2020 三名单共 169 条参与观察、21 个严格重复身份（15 registry＋6 人审 event-only）和两张解释图已形成；HR-020 已合并且 alias pending 为 0。
 11. `outputs/coverage_audit_v1/`：六维当前有效层覆盖审计及 Q1–Q3／R1–R11 影响表已形成；本次有 120 个动态 category cells，固定契约是 D1–D6 的字段语义而非行数；其内容为机械统计，不创建 HR-023。
 12. `outputs/R08_legal_procedure_v1/`：六案、27 个 accepted role、两张比较图和报告插入段已形成；13 个 registered role 与 14 个 provisional node 分层，无 HR-026。
@@ -293,12 +293,13 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 20. `outputs/next_wave_source_proposal_audit_v1/` 与 `outputs/next_wave_source_integration_v1/`：50 个提案行去重为 49 个 URL，复用 S158/S204，另以 provisional、`ai_seeded` 口径加入 S248-S294；47/47 已归档，HR-030 的 22 项 metadata／archive 决定已合并，来源入表仍不批准候选事实。
 21. `outputs/report_assembly_v1/` 与 `outputs/report_claim_audit_v1/`：73个现有资源已按 ready／freeze／superseded 分类，形成32页正式报告与20页PPT装配蓝图。HR-029 数据门和 HR-031 三项解释决定已关闭；五张原 freeze-required 图仍须按冻结词表重绘／QA。报告相关“转译／地点差异／国际化”段落已按 B 改写。蓝图不等于合同成品；正式报告、论文、PPT、先岛 dossier DOCX、public data 与最终 codebook/lint 仍由 MA017–MA023 控制。
 22. `outputs/R10_official_collaboration_universe_v1/`：S002 全部 616 条来源行、19 个事业分野、10 种机制、15 个部门及 partner source-label 结构已形成权威来源总体、描述统计和两张 `ready_now` 图；HR-032 的 8 项 crosswalk 已合并，不生成付款或 actor relation。
-23. `outputs/R03_strict_place_issue_v1/`：305条有效同源三元事实已形成；298条 E3/E4、71条双边人审、97条可附正式事件，旧 actor 层笛卡尔投影只作方法上界。
+23. `outputs/R03_strict_place_issue_v1/`：306条有效同源三元事实已形成；299条 E3/E4、81条双边人审、97条可附正式事件，旧 actor 层笛卡尔投影只作方法上界。
 24. `outputs/R02_actor_issue_robustness_v1/`：完成 reviewed-only 与 S003/S004/S006 leave-out；S004 对国际外围有实质影响，四个核心 actor 在去三源后仍存活。
 25. `outputs/translation_episode_comparison_v1/`：13 条转译 episode 把公开诉求、场域进入、中间产出、有限救济和底层改变分栏；TE10–TE13 仍属 HR-027 事件候选。
 26. `outputs/exploration_system_data_v1/` 与 `prototypes/nr3_explorer/`：把当前数据做成可探索前端；默认隐藏 A072／AI068，并将已核 dyadic、行政、汇总、事件、案件角色与研究线索分层呈现。
 27. `outputs/review_status_crosswalk_v1/`：HR-034 的50项交叉表已由负责人确认并合并；旧状态没有凭字符串批量升级为 human review。
-28. `docs/principal_human_review_remaining_v18.md`：当前正式剩余门禁为 HR-035 Batch 2 的23项线上决定＋12个当地／新一手材料项；HR-018 两项已有 defer 决定并等待新材料。
+28. `outputs/hr035_batch02_integration_v1/`：23项 HR-035 Batch 2 决定已由专用幂等合并器写入中央层；16条事实升级为人审，AI157／AI158 保持待二源候选，并已重生 R1/R2、strict、coverage 与探索系统。
+29. `docs/principal_human_review_remaining_v19.md`：当前线上空白人工决定为0；正式剩余门禁只有12个当地／新一手材料项，HR-018 两项已有 defer 决定并等待新材料。
 
 主要解释增量是：
 
@@ -308,7 +309,7 @@ HR-010 边级事实和四项生命周期也已决定；但其余候选边、部�
 - R4 把“先岛都属于环保反部署”的笼统说法拆成地下水生活条件、自治程序、台湾邻近／撤离等地点差异，并暴露制度材料主导的证据偏置。
 - R9 把住民投票拆成动员、资格、条例、实施／司法和结果再解释的门槛链；R10 则把行政合同、project cost、慈善、服务和非资金关系拆成不同证据语法。
 - 来源整合把在线发现、主编号、归档和人审边界连接起来，但不把来源可得性误写为关系已确认。
-- R1/R2 显示数量下限已修复，首要矛盾转为5个有效 actor 缺少有效边、158/283条当前议题边仍为候选；R5 则把少数跨事件重复身份与大量一次性事件名称分开。
+- R1/R2 显示数量下限已修复，首要矛盾转为5个有效 actor 缺少有效边、142/283条当前议题边仍为候选；R5 则把少数跨事件重复身份与大量一次性事件名称分开。
 - 六维审计 v1 已按冻结后有效层重生为121 actors／283 actor-issue／130 actor-place／295 sources；中央122／294／135历史行只作审计边界。这些是检索可见性偏差，不是组织真实密度。
 
-R1/R2、strict place–issue 和 coverage 已按冻结后中央数据重生；探索前端也已重生并通过浏览器复验。HR-035 Batch 2 的23项线上决定已经派发，12项当地材料任务保持独立。下一步是回收 Batch 2、修复 L2 谱系导出、完成冻结后五图与最终 codebook/lint，再装配正式 DOCX/PDF、论文和 PPT。未审候选、事件级名称和 analytical seed 不写入确定性关系结论。
+R1/R2、strict place–issue 和 coverage 已按 HR-035 Batch 2 后中央数据重生；探索前端也已重生并通过浏览器复验。当前线上空白人工决定为0，12项当地材料任务保持独立。下一步是修复 L2 谱系导出、完成冻结后五图与最终 codebook/lint，再装配正式 DOCX/PDF、论文和 PPT。未审候选、事件级名称和 analytical seed 不写入确定性关系结论。

@@ -952,7 +952,7 @@ def compatibility_overlay(
             "review_layer_split",
             "reviewed versus candidate actor-issue edges",
             "65 reviewed / 173 candidate",
-            "125 reviewed / 158 candidate",
+            "141 reviewed / 142 candidate",
             "recompute_required",
             "high",
             "The human-review selection layer changed materially.",
@@ -995,7 +995,7 @@ def compatibility_overlay(
             "strict_triple_graph_object",
             "same-source actor-place-issue triples",
             "312 rows",
-            "305 rows; 298 E3/E4; 71 dual-reviewed; 97 event-attached",
+            "306 rows; 299 E3/E4; 81 dual-reviewed; 97 event-attached",
             "recompute_required",
             "medium",
             "The graph-object denominator and input hash changed.",
@@ -1793,15 +1793,15 @@ def validate(
     expected_ai = {
         "history_rows": 294,
         "active_edges": 283,
-        "reviewed_edges": 125,
-        "candidate_edges": 158,
+        "reviewed_edges": 141,
+        "candidate_edges": 142,
         "connected_actors": 116,
         "isolated_current_actors": 5,
         "e3plus_edges": 271,
         "e3plus_connected_actors": 114,
-        "e3plus_reviewed_edges": 117,
-        "e3plus_reviewed_actors": 47,
-        "e3plus_candidate_edges": 154,
+        "e3plus_reviewed_edges": 133,
+        "e3plus_reviewed_actors": 54,
+        "e3plus_candidate_edges": 138,
         "e3plus_candidate_actors": 76,
     }
     for key, value in expected_ai.items():
@@ -1810,19 +1810,19 @@ def validate(
                 f"actor-issue gate {key}: expected {value}, got {ai[key]}"
             )
     checks.append(
-        "actor-issue = 294 history / 283 active / 125 reviewed / 158 candidate"
+        "actor-issue = 294 history / 283 active / 141 reviewed / 142 candidate"
     )
     expected_strict = {
-        "active_same_source_triples": 305,
-        "e3plus_triples": 298,
-        "dual_human_reviewed_triples": 71,
+        "active_same_source_triples": 306,
+        "e3plus_triples": 299,
+        "dual_human_reviewed_triples": 81,
         "event_attached_triples": 97,
     }
     if snapshot["strict_place_issue"] != expected_strict:
         raise ValueError(
             f"strict triple gate drifted: {snapshot['strict_place_issue']}"
         )
-    checks.append("strict triples = 305 / 298 E3+ / 71 dual / 97 event")
+    checks.append("strict triples = 306 / 299 E3+ / 81 dual / 97 event")
 
     s004 = h1["metrics"]["s004_support_deletion"]
     expected_s004 = {
@@ -1846,8 +1846,8 @@ def validate(
     for key, value in {
         "service_core_actor_count": 9,
         "accountability_comparison_actor_count": 77,
-        "accountability_human_reviewed_anchor_actor_count": 35,
-        "accountability_candidate_only_anchor_actor_count": 42,
+        "accountability_human_reviewed_anchor_actor_count": 41,
+        "accountability_candidate_only_anchor_actor_count": 36,
         "accountability_active_issue_edge_count": 231,
         "cross_ecology_dyadic_observed_count": 0,
         "cross_ecology_event_observed_count": 0,
@@ -1855,7 +1855,7 @@ def validate(
     }.items():
         if h2m[key] != value:
             raise ValueError(f"H2 gate {key}: {h2m[key]} != {value}")
-    checks.append("H2 comparison = 9 service / 77 accountability / 35+42")
+    checks.append("H2 comparison = 9 service / 77 accountability / 41+36")
     h3m = h3["metrics"]
     if h3m["target_issue_counts"] != {
         "frontline_prevention": 6,
@@ -1865,7 +1865,7 @@ def validate(
         raise ValueError("H3 target issue count gate drifted")
     if h3m["target_issue_human_reviewed_counts"] != {
         "frontline_prevention": 3,
-        "Taiwan_contingency": 3,
+        "Taiwan_contingency": 5,
         "anti_war": 5,
     }:
         raise ValueError("H3 reviewed target issue gate drifted")
@@ -1875,7 +1875,7 @@ def validate(
         "still_human_pending_no_central_lifecycle_row"
     ):
         raise ValueError("H3 A010 lifecycle gate changed")
-    checks.append("H3 target tags = 6/6/5; reviewed = 3/3/5")
+    checks.append("H3 target tags = 6/6/5; reviewed = 3/5/5")
     allowed = {"invariant", "recompute_required", "not_comparable"}
     if {row["compatibility_status"] for row in overlay} - allowed:
         raise ValueError("unknown compatibility status")

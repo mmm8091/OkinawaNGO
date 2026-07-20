@@ -25,6 +25,31 @@ DEMO_EPISODE_STATUSES = {
     "accepted_process",
     "accepted_process_with_local_gap",
 }
+EPISODE_DISPLAY_FIELDS = (
+    "display_label",
+    "local_problem",
+    "translation_frame",
+    "venue_label",
+    "observable_output",
+    "substantive_result",
+    "interpretation_limit",
+)
+EPISODE_DISPLAY_LANGUAGES = ("zh", "ja", "en")
+EPISODE_SOURCE_FIELDS = {
+    "display_label": "short_label",
+    "local_problem": "local_problem",
+    "translation_frame": "translation_frame",
+    "venue_label": "venue",
+    "observable_output": "observable_output",
+    "substantive_result": "substantive_result",
+    "interpretation_limit": "interpretation_limit",
+}
+EPISODE_DISPLAY_COLUMNS = {
+    "episode_id",
+    "field",
+    *EPISODE_DISPLAY_LANGUAGES,
+    "review_note",
+}
 INTERPRETATION_LIMITS = {
     "actor": (
         "Registry membership does not imply political stance, influence, alliance, "
@@ -401,9 +426,103 @@ def normalize_evidence_notes(rows: list[dict[str, str]]) -> list[dict[str, Any]]
     return sorted(notes, key=lambda row: row["id"])
 
 
+def validate_episode_display_overrides(
+    episode_rows: list[dict[str, str]],
+    display_rows: list[dict[str, str]],
+) -> dict[tuple[str, str], dict[str, str]]:
+    """Validate the translation-only episode display overlay.
+
+    The Chinese display string is required to equal the central episode source
+    field byte-for-byte.  This prevents presentation copy from silently
+    rewriting a fact.  All three languages are required and non-empty; the
+    normalizer keeps a defensive source-text fallback for older in-memory data.
+    """
+    episode_ids = [row["episode_id"] for row in episode_rows]
+    if len(episode_ids) != len(set(episode_ids)):
+        raise ValueError("Episode source contains duplicate episode IDs")
+    expected_keys = {
+        (episode_id, field)
+        for episode_id in episode_ids
+        for field in EPISODE_DISPLAY_FIELDS
+    }
+    malformed_rows = [
+        index
+        for index, row in enumerate(display_rows, start=2)
+        if set(row) != EPISODE_DISPLAY_COLUMNS or None in row
+    ]
+    if malformed_rows:
+        raise ValueError(
+            "Episode display overlay has malformed columns or unquoted commas "
+            f"on rows: {','.join(map(str, malformed_rows))}"
+        )
+    keys = [(row["episode_id"], row["field"]) for row in display_rows]
+    duplicate_keys = sorted(
+        {
+            key
+            for key in keys
+            if keys.count(key) > 1
+        }
+    )
+    if duplicate_keys:
+        raise ValueError(
+            "Episode display overlay has duplicate keys: "
+            + ";".join(f"{episode_id}:{field}" for episode_id, field in duplicate_keys)
+        )
+    actual_keys = set(keys)
+    missing = sorted(expected_keys - actual_keys)
+    unexpected = sorted(actual_keys - expected_keys)
+    if missing or unexpected:
+        detail = []
+        if missing:
+            detail.append(
+                "missing="
+                + ";".join(f"{episode_id}:{field}" for episode_id, field in missing)
+            )
+        if unexpected:
+            detail.append(
+                "unexpected="
+                + ";".join(
+                    f"{episode_id}:{field}" for episode_id, field in unexpected
+                )
+            )
+        raise ValueError(
+            "Episode display overlay must cover the exact episode/field grid: "
+            + " ".join(detail)
+        )
+    blank_translations = sorted(
+        f"{row['episode_id']}:{row['field']}:{language}"
+        for row in display_rows
+        for language in EPISODE_DISPLAY_LANGUAGES
+        if not row[language].strip()
+    )
+    if blank_translations:
+        raise ValueError(
+            "Episode display overlay requires non-empty zh/ja/en translations: "
+            + ";".join(blank_translations)
+        )
+    source_by_id = {row["episode_id"]: row for row in episode_rows}
+    overrides: dict[tuple[str, str], dict[str, str]] = {}
+    for row in display_rows:
+        key = (row["episode_id"], row["field"])
+        source_text = source_by_id[row["episode_id"]][
+            EPISODE_SOURCE_FIELDS[row["field"]]
+        ]
+        if row["zh"] != source_text:
+            raise ValueError(
+                "Episode display zh must equal the source text for "
+                f"{row['episode_id']}:{row['field']}"
+            )
+        overrides[key] = {
+            language: row[language]
+            for language in EPISODE_DISPLAY_LANGUAGES
+        }
+    return overrides
+
+
 def normalize_episodes(
     rows: list[dict[str, str]],
     source_aliases: dict[str, str],
+    display_overrides: dict[tuple[str, str], dict[str, str]],
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     demo: list[dict[str, Any]] = []
     research: list[dict[str, Any]] = []
@@ -444,6 +563,17 @@ def normalize_episodes(
             ),
             "interpretation_limit": row["interpretation_limit"],
         }
+        translation_fallbacks = []
+        for field in EPISODE_DISPLAY_FIELDS:
+            source_text = normalized[field]
+            translations = display_overrides[(row["episode_id"], field)]
+            for language in EPISODE_DISPLAY_LANGUAGES:
+                translated = translations[language]
+                if not translated:
+                    translated = source_text
+                    translation_fallbacks.append(f"{field}:{language}")
+                normalized[f"{field}_{language}"] = translated
+        normalized["display_translation_fallbacks"] = translation_fallbacks
         (demo if normalized["display_status"] == "demo" else research).append(normalized)
     return (
         sorted(demo, key=lambda row: row["id"]),
@@ -466,11 +596,23 @@ def build_outcomes(episodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "tier": tier,
                     "status": episode["stage_status"][tier],
                     "display_label": episode[text_key],
+                    **{
+                        f"display_label_{language}": episode[
+                            f"{text_key}_{language}"
+                        ]
+                        for language in EPISODE_DISPLAY_LANGUAGES
+                    },
                     "source_ids": episode["source_ids"],
                     "evidence_level": episode["evidence_level"],
                     "review_status": episode["review_status"],
                     "display_status": episode["display_status"],
                     "interpretation_limit": episode["interpretation_limit"],
+                    **{
+                        f"interpretation_limit_{language}": episode[
+                            f"interpretation_limit_{language}"
+                        ]
+                        for language in EPISODE_DISPLAY_LANGUAGES
+                    },
                 }
             )
     return outcomes
@@ -1337,6 +1479,29 @@ def validate_build(
         demo_episode_ids.isdisjoint(research_episode_ids),
         f"demo={len(demo_episode_ids)} research={len(research_episode_ids)}",
     )
+    all_episodes = demo_episodes + research_episodes
+    episode_display_gaps = sorted(
+        f"{row['id']}:{field}:{language}"
+        for row in all_episodes
+        for field in EPISODE_DISPLAY_FIELDS
+        for language in EPISODE_DISPLAY_LANGUAGES
+        if not row.get(f"{field}_{language}")
+    )
+    episode_display_rewrites = sorted(
+        f"{row['id']}:{field}"
+        for row in all_episodes
+        for field in EPISODE_DISPLAY_FIELDS
+        if row.get(f"{field}_zh") != row.get(field)
+    )
+    check(
+        "episode display overlay is complete and translation-only",
+        not episode_display_gaps and not episode_display_rewrites,
+        (
+            f"episodes={len(all_episodes)} fields={len(EPISODE_DISPLAY_FIELDS)} "
+            f"languages={len(EPISODE_DISPLAY_LANGUAGES)} "
+            f"gaps={len(episode_display_gaps)} rewrites={len(episode_display_rewrites)}"
+        ),
+    )
 
     relation_ids: list[str] = []
     for rows in demo_relations.values():
@@ -1877,6 +2042,8 @@ def exploration_input_paths(project_root: Path) -> dict[str, Path]:
         "venues": project_root / "data/metadata/venue_taxonomy_v0.csv",
         "episodes": project_root
         / "outputs/translation_episode_comparison_v1/translation_episode_candidates_v1.csv",
+        "episode_display_translations": project_root
+        / "data/metadata/episode_display_trilingual_v1.csv",
         "strict_triples": project_root
         / "outputs/R03_strict_place_issue_v1/same_source_actor_place_issue_triples_v1.csv",
         "source_crosswalk": project_root
@@ -1928,8 +2095,15 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
         source_rows, read_csv(inputs["archive_manifest"])
     )
     evidence_notes = normalize_evidence_notes(read_csv(inputs["evidence_notes"]))
+    episode_rows = read_csv(inputs["episodes"])
+    episode_display_overrides = validate_episode_display_overrides(
+        episode_rows,
+        read_csv(inputs["episode_display_translations"]),
+    )
     demo_episodes, research_episodes = normalize_episodes(
-        read_csv(inputs["episodes"]), source_aliases
+        episode_rows,
+        source_aliases,
+        episode_display_overrides,
     )
     demo_outcomes = build_outcomes(demo_episodes)
     research_outcomes = build_outcomes(research_episodes)
@@ -2091,6 +2265,19 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
                 key: len(value) for key, value in sorted(research_relations.items())
             },
         },
+        "episode_display": {
+            "episodes": len(demo_episodes) + len(research_episodes),
+            "fields_per_episode": len(EPISODE_DISPLAY_FIELDS),
+            "approved_translation_cells": (
+                (len(demo_episodes) + len(research_episodes))
+                * len(EPISODE_DISPLAY_FIELDS)
+                * len(EPISODE_DISPLAY_LANGUAGES)
+            ),
+            "source_text_fallbacks": sum(
+                len(row["display_translation_fallbacks"])
+                for row in demo_episodes + research_episodes
+            ),
+        },
         "actor_issue_states": {
             "valid_edges": len(demo_actor_issue) + len(research_actor_issue),
             "display_state_counts": dict(sorted(actor_issue_display_counts.items())),
@@ -2181,7 +2368,7 @@ def build_exploration_system_data(project_root: Path, output_dir: Path) -> dict[
     build_id = hashlib.sha256(fingerprint_payload).hexdigest()[:16]
     manifest = {
         "artifact": "exploration_system_data_v1",
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "as_of_date": ARTIFACT_AS_OF_DATE,
         "build_id": build_id,
         "deterministic": True,

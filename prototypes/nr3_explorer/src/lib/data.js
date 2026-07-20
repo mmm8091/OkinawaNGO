@@ -1,5 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
+export { labelOf, localizedFieldOf } from "./display_text.js";
+
 export const REGION_META = {
   all: { label: "全部区域", short: "全域", color: "#2b7f80" },
   okinawa: { label: "冲绳本岛", short: "本岛", color: "#2b7f80" },
@@ -65,11 +67,6 @@ export const PLACE_DISPLAY_REGION = {
 };
 export const placeDisplayRegion = (place) =>
   PLACE_DISPLAY_REGION[place.id] || "okinawa";
-
-// A zh/ja/en label mapping is planned for a later NR-02 build. Until those
-// fields exist, taxonomy codes are shown as-is and never translated here.
-export const labelOf = (obj) =>
-  obj?.display_label_zh || obj?.display_label || "";
 
 export function useResearchCandidates(enabled) {
   const [state, setState] = useState({ status: "idle", candidates: null });

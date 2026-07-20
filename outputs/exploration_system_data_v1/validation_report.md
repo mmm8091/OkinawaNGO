@@ -13,14 +13,15 @@ Status: **PASS**
 - PASS — unique demo episode IDs: 9 rows
 - PASS — unique research episode IDs: 4 rows
 - PASS — episode layers disjoint: demo=9 research=4
-- PASS — unique demo relation IDs within relation type: 354 relation rows
-- PASS — actor-issue references: 125 demo rows
+- PASS — episode display overlay is complete and translation-only: episodes=13 fields=7 languages=3 gaps=0 rewrites=0
+- PASS — unique demo relation IDs within relation type: 380 relation rows
+- PASS — actor-issue references: 141 demo rows
 - PASS — actor-issue display_state values are legal: illegal=0
 - PASS — frozen_bounded actor-issue rows carry missing_scope: missing=0
 - PASS — no fact-pending rows enter the demo actor-issue layer: pending=0
-- PASS — actor-issue display_state counts cover every edge: accepted_unfrozen=58 fact_pending=114 frozen_bounded=67 scope_reviewed_fact_pending=44
+- PASS — actor-issue display_state counts cover every edge: accepted_unfrozen=58 fact_pending=114 frozen_bounded=83 scope_reviewed_fact_pending=28
 - PASS — actor-place references: 53 demo rows with matching place key/label
-- PASS — strict triple references: 71 demo rows
+- PASS — strict triple references: 81 demo rows
 - PASS — actor-episode references: 15 demo rows
 - PASS — event participation references: 63 demo rows
 - PASS — legal role references: 27 demo rows
@@ -47,7 +48,7 @@ Status: **PASS**
 
 ## Warnings
 
-- 90 registry actors retain non-human review_status; registry membership is admitted for identity browsing, while their relations remain independently gated.
+- 85 registry actors retain non-human review_status; registry membership is admitted for identity browsing, while their relations remain independently gated.
 - historical_anchors is intentionally empty until NR-04/NR-05 candidates receive human continuity decisions.
 - The packaged GeoJSON supports municipality/region rendering, but the 21 place nodes have no approved point coordinates or municipality crosswalk; NR-03 must not invent precise site markers.
 - 13 human-checked event participants are preserved only as typed participation records and never enter actors.json.
@@ -66,13 +67,13 @@ Status: **PASS**
     "display_state_counts": {
       "accepted_unfrozen": 58,
       "fact_pending": 114,
-      "frozen_bounded": 67,
-      "scope_reviewed_fact_pending": 44
+      "frozen_bounded": 83,
+      "scope_reviewed_fact_pending": 28
     },
     "research_fact_gate_counts": {
-      "fact_pending": 128,
+      "fact_pending": 110,
       "needs_local_retrieval": 5,
-      "needs_second_source": 25
+      "needs_second_source": 27
     },
     "valid_edges": 283
   },
@@ -93,24 +94,30 @@ Status: **PASS**
     "places": 21,
     "relations": {
       "actor_episode": 15,
-      "actor_issue": 125,
+      "actor_issue": 141,
       "actor_place": 53,
       "event_participation": 63,
       "legal_roles": 27,
-      "strict_place_issue": 71
+      "strict_place_issue": 81
     },
     "sources": 295,
     "venues": 16
+  },
+  "episode_display": {
+    "approved_translation_cells": 273,
+    "episodes": 13,
+    "fields_per_episode": 7,
+    "source_text_fallbacks": 0
   },
   "research": {
     "episodes": 4,
     "outcomes": 12,
     "relations": {
       "actor_episode": 4,
-      "actor_issue": 158,
+      "actor_issue": 142,
       "actor_place": 77,
       "event_participation": 4,
-      "strict_place_issue": 234
+      "strict_place_issue": 225
     }
   },
   "typed_relations": {

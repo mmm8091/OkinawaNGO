@@ -10,11 +10,11 @@ excluded_actor_issue_edge_history_count,11
 actor_issue_edge_count,283
 actors_with_actor_issue_edge,116
 actors_without_actor_issue_edge,5
-human_reviewed_edge_count,125
-candidate_edge_count,158
+human_reviewed_edge_count,141
+candidate_edge_count,142
 issue_pair_with_shared_actor_count,105
 cross_issue_actor_count,88
-double_human_reviewed_cross_issue_actor_count,36
+double_human_reviewed_cross_issue_actor_count,41
 expansion_disposition_audit_row_count,9
 expansion_already_added_count,1
 expansion_background_only_count,2

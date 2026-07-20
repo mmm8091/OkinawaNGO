@@ -179,14 +179,14 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "nongovernmental_nonprofit",
+    "legal_status": "nonprofit_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "international"
     ],
-    "review_status": "ai_seeded",
+    "review_status": "human_revised",
     "scope_status": "",
     "source_ids": [
       "S005"
@@ -486,7 +486,7 @@
       "Okinawa",
       "Ryukyu arc"
     ],
-    "review_status": "ai_seeded",
+    "review_status": "human_checked",
     "scope_status": "",
     "source_ids": [
       "S022"
@@ -506,18 +506,17 @@
       "frontline_prevention",
       "Taiwan_contingency"
     ],
-    "legal_status": "informal_association",
+    "legal_status": "legal_form_unresolved_citizen_group",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa",
       "Ryukyu arc"
     ],
-    "review_status": "ai_seeded",
+    "review_status": "human_revised",
     "scope_status": "",
     "source_ids": [
-      "S023",
-      "S024"
+      "S023"
     ],
     "unresolved_source_refs": []
   },
@@ -1385,7 +1384,7 @@
     "aliases": [],
     "display_label": "基地・軍隊を許さない行動する女たちの会",
     "display_status": "demo",
-    "evidence_level": "E4",
+    "evidence_level": "E3",
     "id": "A049",
     "interpretation_limit": "Registry membership does not imply political stance, influence, alliance, or approval of every attached relation.",
     "issue_tags": [
@@ -1394,13 +1393,13 @@
       "anti_military",
       "life_safety"
     ],
-    "legal_status": "informal_association",
+    "legal_status": "legal_form_unresolved_citizen_group",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
       "Okinawa"
     ],
-    "review_status": "ai_seeded",
+    "review_status": "human_revised",
     "scope_status": "",
     "source_ids": [
       "S039"
@@ -1929,14 +1928,14 @@
       "anti_base",
       "international_advocacy"
     ],
-    "legal_status": "specified_nonprofit_corporation",
+    "legal_status": "nonprofit_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
       "Japan",
       "Okinawa"
     ],
-    "review_status": "ai_seeded",
+    "review_status": "human_revised",
     "scope_status": "",
     "source_ids": [
       "S032"

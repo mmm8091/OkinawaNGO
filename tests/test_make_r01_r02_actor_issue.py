@@ -92,7 +92,7 @@ class ActiveHistoryGateTests(unittest.TestCase):
         self.assertEqual(283, len(self.layered))
         self.assertEqual(116, len(connected))
         self.assertEqual(5, len(self.active_actor_ids - connected))
-        self.assertEqual({"human_reviewed": 125, "candidate": 158}, dict(review))
+        self.assertEqual({"human_reviewed": 141, "candidate": 142}, dict(review))
         self.assertEqual(
             11,
             sum(row["analysis_inclusion"] == "excluded_history" for row in self.layered_history),

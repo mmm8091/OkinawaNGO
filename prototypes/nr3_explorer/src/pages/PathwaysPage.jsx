@@ -7,7 +7,7 @@ import {
   GitBranch,
   MapPin,
 } from "@phosphor-icons/react";
-import { labelOf } from "../lib/data.js";
+import { labelOf, localizedFieldOf } from "../lib/data.js";
 import { tr, useLang } from "../lib/labels.js";
 import { tu } from "../lib/ui_strings.js";
 import { ChartHelp, PendingBadge, SourceChips } from "../components/ui.jsx";
@@ -102,31 +102,37 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
   const isPending = episode.display_status === "research";
 
   const stageContentFor = (ep) => ({
-    local_problem: { text: ep.local_problem, status: null },
+    local_problem: {
+      text: localizedFieldOf(ep, "local_problem", lang),
+      status: null,
+    },
     translation_frame: {
-      text: ep.translation_frame,
+      text: localizedFieldOf(ep, "translation_frame", lang),
       status: ep.stage_status?.public_claim,
     },
     venue_entry: {
-      text: ep.venue_label,
+      text: localizedFieldOf(ep, "venue_label", lang),
       status: ep.stage_status?.venue_entry,
     },
     intermediate_output: {
-      text:
-        outcomesByEpisode.get(ep.id)?.get("intermediate_output")?.display_label ||
-        ep.observable_output,
+      text: outcomesByEpisode.get(ep.id)?.get("intermediate_output")
+        ? labelOf(
+            outcomesByEpisode.get(ep.id).get("intermediate_output"),
+            lang,
+          )
+        : localizedFieldOf(ep, "observable_output", lang),
       status: ep.stage_status?.intermediate_output,
     },
     bounded_gain: {
-      text:
-        outcomesByEpisode.get(ep.id)?.get("bounded_gain")?.display_label ||
-        ep.substantive_result,
+      text: outcomesByEpisode.get(ep.id)?.get("bounded_gain")
+        ? labelOf(outcomesByEpisode.get(ep.id).get("bounded_gain"), lang)
+        : localizedFieldOf(ep, "substantive_result", lang),
       status: ep.stage_status?.bounded_gain,
     },
     underlying_change: {
-      text:
-        outcomesByEpisode.get(ep.id)?.get("underlying_change")?.display_label ||
-        ep.substantive_result,
+      text: outcomesByEpisode.get(ep.id)?.get("underlying_change")
+        ? labelOf(outcomesByEpisode.get(ep.id).get("underlying_change"), lang)
+        : localizedFieldOf(ep, "substantive_result", lang),
       status: ep.stage_status?.underlying_change,
     },
   });
@@ -186,7 +192,7 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
                   type="button"
                 >
                   <strong>
-                    {item.display_label}
+                    {labelOf(item, lang)}
                     {item.display_status === "research" && (
                       <PendingBadge>{tu("common.pending", lang)}</PendingBadge>
                     )}
@@ -203,7 +209,7 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
               <ArrowsLeftRight size={16} />
               <strong>{tu("compare.title", lang)}</strong>
               <span>
-                {compareEpisodes.map((item) => item.display_label).join(" ↔ ")}
+                {compareEpisodes.map((item) => labelOf(item, lang)).join(" ↔ ")}
               </span>
               {compareIds.length < 2 && (
                 <span className="hint">{tu("compare.hint", lang)}</span>
@@ -216,8 +222,8 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
           {compareEpisodes.length === 2 ? (
             <div className="stage-compare">
               <span className="sc-head" />
-              <span className="sc-head">{compareEpisodes[0].display_label}</span>
-              <span className="sc-head">{compareEpisodes[1].display_label}</span>
+              <span className="sc-head">{labelOf(compareEpisodes[0], lang)}</span>
+              <span className="sc-head">{labelOf(compareEpisodes[1], lang)}</span>
               {stageOrder.map((stageKey) => {
                 const contentA = stageContentFor(compareEpisodes[0])[stageKey];
                 const contentB = stageContentFor(compareEpisodes[1])[stageKey];
@@ -265,7 +271,7 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
           </div>
           <div className="detail-heading">
             <div>
-              <h2>{episode.display_label}</h2>
+              <h2>{labelOf(episode, lang)}</h2>
               <p>
                 {episode.id} · {tr(episode.review_status, lang)} · {episode.evidence_level}
               </p>
@@ -281,7 +287,7 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
                 {episode.place_labels.map((label) => (
                   <span key={label}>
                     <MapPin size={13} />
-                    {label}
+                    {tr(label, lang)}
                   </span>
                 ))}
               </div>
@@ -302,10 +308,10 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
                     key={actorId}
                     type="button"
                     disabled={!actor}
-                    title={actor ? labelOf(actor) : actorId}
+                    title={actor ? labelOf(actor, lang) : actorId}
                     onClick={() => actor && onOpenActor(actorId)}
                   >
-                    {actor ? labelOf(actor) : actorId}
+                    {actor ? labelOf(actor, lang) : actorId}
                     {actor && <CaretRight size={13} />}
                   </button>
                 );
@@ -344,10 +350,10 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
               </div>
             </section>
           )}
-          {episode.interpretation_limit && (
+          {localizedFieldOf(episode, "interpretation_limit", lang) && (
             <div className="interpretation-note">
               <GitBranch size={18} />
-              <p>{episode.interpretation_limit}</p>
+              <p>{localizedFieldOf(episode, "interpretation_limit", lang)}</p>
             </div>
           )}
           <button

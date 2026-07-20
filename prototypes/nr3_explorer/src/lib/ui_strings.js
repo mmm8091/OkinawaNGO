@@ -19,7 +19,7 @@ export const UI_STRINGS = {
   "topbar.home": { zh: "回到总览", ja: "総覧へ戻る", en: "Back to overview" },
   "topbar.mainNav": { zh: "主页面", ja: "メインページ", en: "Main pages" },
   "topbar.langAria": { zh: "语言", ja: "言語", en: "Language" },
-  "brand.name": { zh: "冲绳研究总图", ja: "沖縄研究総図", en: "Okinawa Research Atlas" },
+  "brand.name": { zh: "冲绳研究总图", ja: "沖縄研究総図", en: "Okinawa Atlas" },
   "controls.aria": { zh: "画布控制", ja: "キャンバス操作", en: "Canvas controls" },
   "controls.reset": { zh: "复位视图", ja: "ビューをリセット", en: "Reset view" },
   "controls.zoomIn": { zh: "放大", ja: "拡大", en: "Zoom in" },
@@ -157,8 +157,8 @@ export const UI_STRINGS = {
   },
   "version.stamp": {
     zh: "数据 {d} · build {b} · {v} 组织（{p} 谱系）",
-    ja: "データ {d} · build {b} · {v} 団体（{p} 記録）",
-    en: "Data {d} · build {b} · {v} actors ({p} provenance)",
+    ja: "{d} · {b} · {v}/{p} 団体",
+    en: "{d} · {b} · {v}/{p} actors",
   },
   "build.updated": {
     zh: "后端数据已更新（build {o} → {n}）",
@@ -383,6 +383,11 @@ export const UI_STRINGS = {
     zh: "右侧面板给出该维度的机制解释与缺口行动（线上／当地），均来自覆盖审计数据。",
     ja: "右パネルはその次元のメカニズム説明とギャップ対応（オンライン／現地）で、いずれもカバレッジ監査データに基づきます。",
     en: "The right panel gives the dimension's mechanism and gap actions (online/local), all from the coverage-audit data.",
+  },
+  "chartHelp.aria": {
+    zh: "{title}：读法说明",
+    ja: "{title}：読み方",
+    en: "How to read: {title}",
   },
 };
 

@@ -1,5 +1,7 @@
 import { Circle, CircleHalf } from "@phosphor-icons/react";
 import { useEvidence } from "../lib/data.js";
+import { useLang } from "../lib/labels.js";
+import { tu } from "../lib/ui_strings.js";
 
 export function SegmentedControl({ value, onChange, items, label }) {
   return (
@@ -35,8 +37,10 @@ export function EvidenceMark({ level = "E4", size = "md" }) {
 // "?" affordance next to each chart title: how-to-read and interpretation
 // boundaries live here, not as persistent on-canvas copy.
 export function ChartHelp({ title, children }) {
+  const lang = useLang();
+  const ariaLabel = tu("chartHelp.aria", lang).replace("{title}", title);
   return (
-    <span className="chart-help" tabIndex={0} aria-label={`${title}：读法说明`}>
+    <span className="chart-help" tabIndex={0} aria-label={ariaLabel}>
       <svg viewBox="0 0 22 22" width="22" height="22" aria-hidden="true">
         <circle cx="11" cy="11" r="10.5" fill="currentColor" />
         <text

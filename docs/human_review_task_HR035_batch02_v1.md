@@ -1,7 +1,7 @@
 # HR-035 Batch 2：E4 actor–issue 事实与组织身份配套复核
 
 日期：2026-07-20
-状态：**正式派发，等待项目负责人填写**
+状态：**项目负责人已于 2026-07-20 完成并确认全部 23 项；中央受控合并已完成**
 
 ## 本批规模
 
@@ -30,7 +30,9 @@
 4. 自动验证：
    `outputs/actor_issue_claim_freeze_v1/validation_report_batch02_v1.md`
 
-所有决定栏均为空。逐来源表中的20个中央来源均有本地归档；S051 不在本批。
+派发时所有决定栏均为空；现已全部填写，正式结果见
+`docs/human_review_return_HR035_batch02_v1.md`。逐来源表中的20个中央来源均有本地归档；
+S051 不在本批。
 
 ## 第一部分 · 18 条 actor–issue 事实
 
@@ -160,8 +162,9 @@ review_note:
 - 身份接受与议题边接受是两个决定；
 - 本批不新增组织关系、资金边、人物节点、地点边、事件边或因果结论。
 
-## 主线程合并条件
+## 主线程合并条件（已满足）
 
-只有23项均有明确决定、reviewer、date 和实际 reviewed fields 后，主线程才生成 Batch 2
-回交报告并受控合并。合并后再重生 R1/R2、strict place–issue、coverage 和探索系统；
-不得为让前端两层接近而跳过 identity gate。
+23 项均已有明确决定、reviewer、date 和实际 reviewed fields。主线程已通过
+`scripts/merge_hr035_batch02_v1.py` 受控合并，并重生 R1/R2、strict place–issue、coverage
+和探索系统；identity gate 未被跳过。验证见
+`outputs/hr035_batch02_integration_v1/validation_report_v1.md`。

@@ -51,22 +51,22 @@ class PostFreezeCompatibilityTests(unittest.TestCase):
         actor_issue = snapshot["actor_issue"]
         self.assertEqual(actor_issue["history_rows"], 294)
         self.assertEqual(actor_issue["active_edges"], 283)
-        self.assertEqual(actor_issue["reviewed_edges"], 125)
-        self.assertEqual(actor_issue["candidate_edges"], 158)
+        self.assertEqual(actor_issue["reviewed_edges"], 141)
+        self.assertEqual(actor_issue["candidate_edges"], 142)
         self.assertEqual(actor_issue["connected_actors"], 116)
         self.assertEqual(actor_issue["isolated_current_actors"], 5)
         self.assertEqual(actor_issue["e3plus_edges"], 271)
         self.assertEqual(actor_issue["e3plus_connected_actors"], 114)
-        self.assertEqual(actor_issue["e3plus_reviewed_edges"], 117)
-        self.assertEqual(actor_issue["e3plus_reviewed_actors"], 47)
-        self.assertEqual(actor_issue["e3plus_candidate_edges"], 154)
+        self.assertEqual(actor_issue["e3plus_reviewed_edges"], 133)
+        self.assertEqual(actor_issue["e3plus_reviewed_actors"], 54)
+        self.assertEqual(actor_issue["e3plus_candidate_edges"], 138)
         self.assertEqual(actor_issue["e3plus_candidate_actors"], 76)
         self.assertEqual(
             snapshot["strict_place_issue"],
             {
-                "active_same_source_triples": 305,
-                "e3plus_triples": 298,
-                "dual_human_reviewed_triples": 71,
+                "active_same_source_triples": 306,
+                "e3plus_triples": 299,
+                "dual_human_reviewed_triples": 81,
                 "event_attached_triples": 97,
             },
         )
@@ -104,7 +104,7 @@ class PostFreezeCompatibilityTests(unittest.TestCase):
                 for row in review_rows
                 if row["subset"] == "all_current_actors"
             },
-            {"active_283", "reviewed_125", "candidate_158"},
+            {"active_283", "reviewed_141", "candidate_142"},
         )
 
     def test_h2_current_group_and_bounded_zero_are_separate(self) -> None:
@@ -117,11 +117,11 @@ class PostFreezeCompatibilityTests(unittest.TestCase):
         self.assertEqual(metrics["accountability_comparison_actor_count"], 77)
         self.assertEqual(
             metrics["accountability_human_reviewed_anchor_actor_count"],
-            35,
+            41,
         )
         self.assertEqual(
             metrics["accountability_candidate_only_anchor_actor_count"],
-            42,
+            36,
         )
         self.assertEqual(metrics["accountability_active_issue_edge_count"], 231)
         self.assertEqual(metrics["cross_ecology_dyadic_observed_count"], 0)
@@ -170,7 +170,7 @@ class PostFreezeCompatibilityTests(unittest.TestCase):
             metrics["target_issue_human_reviewed_counts"],
             {
                 "frontline_prevention": 3,
-                "Taiwan_contingency": 3,
+                "Taiwan_contingency": 5,
                 "anti_war": 5,
             },
         )

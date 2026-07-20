@@ -245,11 +245,11 @@ v2 的六项解释性发现：
 本节覆盖第 12–16 节中作为“当前状态”使用的旧计数；旧节继续保留为形成过程和沟通快照，不得据此回退中央数据。
 
 - Registry 为 122 条历史记录／121 个有效 actor；A072 是并入 A071 的 tombstone，不进入普通搜索或当前图。
-- Actor–issue 为294条历史／283条有效，当前有效层125人审＋158候选，116 connected＋5
+- Actor–issue 为294条历史／283条有效，当前有效层141人审＋142候选，116 connected＋5
   isolated；AI068与被 HR-035 否决的 AI178 排除于默认冲绳叙事。
 - Actor–place 为 135 条历史／130 条有效（53 人审＋77 候选）／5 retired；AP123 已固定为 P007 Camp Foster。
-- 严格地点—议题层已按有效边重生为305条，其中298条 E3/E4、71条双边人审、97条可附
-  正式事件；旧330／323／67与312／305／65只属于早期快照。
+- 严格地点—议题层已按有效边重生为306条，其中299条 E3/E4、81条双边人审、97条可附
+  正式事件；旧330／323／67、312／305／65与305／298／71只属于早期快照。
 - R5 的 169 条参与观察现分为 64 registry rows、22 human-reviewed event-only identities、83 other event-only names；严格重复身份为 15 registry＋6 human-reviewed event-only，重复参与仍不等于联盟。
 - R9 公投正式层为 29 stages／29 roles；选举 19 条均已人审，18 条确认发生、1 条只确认预告。
 - R10 目的性样本为 35 relations／28 amounts／43 functions；与 S002 616-row 官方来源总体保持分层。实际合同金额只有 5 条，project cost 不是付款。
@@ -257,10 +257,11 @@ v2 的六项解释性发现：
 - Source archive 当前为 273 archived、2 manual、18 failed、2 non-URL；HR-030 已合并。
 - R6/R7/R11 的六个 SVG/HTML 已按当前 80 条正式观察／53 条 R11 进入观察重绘；A066 县基地政策合同与 USO/service 分列，4 条 analytical seed 不进事实图。
 - 六维 coverage 已按 121 个有效 actor、283 条有效 actor–issue、130 条有效 actor–place 和 295 条来源重生；中央历史边界为 122／294／135。当前 120 个 category cells 是生成结果，不是固定契约。
-- HR-035 Batch 1、HR-010 batch 6、LCR001–004、HR-034、HR-029／031 均已确认并合并。HR-035 Batch 2 已正式派发 18 条事实＋5 条身份决定；另有12条当地／新一手材料任务。当前总账见 `docs/principal_human_review_remaining_v18.md`。
+- HR-035 Batch 1／2、HR-010 batch 6、LCR001–004、HR-034、HR-029／031 均已确认并合并。当前线上空白人工决定为0；另有12条当地／新一手材料任务。当前总账见 `docs/principal_human_review_remaining_v19.md`。
 - HR-029 数据冻结门已清除，HR-031 三项均采用保守 B；原5张 `freeze_required` 图仍须按冻结词表重绘／QA 后才能改为 ready。蓝图仍不等于正式 DOCX/PDF、论文或 PPT。
-- 探索系统已按冻结后的 relation/place/actor–issue 词表正式重生，当前为125人审／158候选；
-  22项 adapter、5项 R10 renderer 和7项 R1/R2 gate 测试通过。五页已在1280×900与390×844
+- 探索系统已按冻结后的 relation/place/actor–issue 词表正式重生，当前为141人审／142候选；
+  13个 episode 的7类内容已形成中／日／英273格正式 overlay，TE10–TE13 保持研究层。
+  26项 adapter、2项前端语言、5项 R10 renderer 和7项 R1/R2 gate 测试通过。五页已在1280×900与390×844
   复验，控制台零错误。中央已有5条可导出 lifecycle 记录，但时间页仍因 adapter 未导出而显示0个谱系锚点；
   这是下一轮结构缺口。全仓历史测试仍含冻结前快照断言，不能宣称全绿。
 

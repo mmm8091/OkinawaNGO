@@ -21,15 +21,16 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 
 ## R2：哪些组织连接了哪些议题？
 
-历史表保留 294 条 edge，其中 11 条因 `rejected`、`unsupported`、`excluded`、`retired_*`、`deactivated_*` 或默认叙事排除状态而不进入当前网络。当前有效层有 283 条 edge，连接 116 个 actor 与 26 个议题；另有 5 个有效 actor 在图中保留为孤立节点。按复核层，125 条已人审，158 条仍是候选。按解释范围，124 条暂归为长期组织定位／持续角色，62 条为制度／案件角色，97 条为事件性声明／署名／行动，0 条仍待判定。
+历史表保留 294 条 edge，其中 11 条因 `rejected`、`unsupported`、`excluded`、`retired_*`、`deactivated_*` 或默认叙事排除状态而不进入当前网络。当前有效层有 283 条 edge，连接 116 个 actor 与 26 个议题；另有 5 个有效 actor 在图中保留为孤立节点。按复核层，141 条已人审，142 条仍是候选。按解释范围，122 条暂归为长期组织定位／持续角色，62 条为制度／案件角色，99 条为事件性声明／署名／行动，0 条仍待判定。
 
 这四层解决了旧 R2 的核心缺口：同一个 actor 同时出现于多个议题，并不自动证明它长期以这些议题为组织定位。`event_specific` 只能写成“公开参与某次声明／署名／行动”；`institutional_or_case_role` 只能写成“在某诉讼、服务或项目中承担公开角色”；只有来源支持使命、持续行动或组织目的时，才暂列 `organizational_positioning`。
 
-当前共有 88 个 actor 在 edge 表中连接至少两个议题，但只有 36 个 actor 至少有两个议题在 edge 两侧均已人审，39 个可暂归为长期定位型 bridge。正文优先使用双侧人审者：
+当前共有 88 个 actor 在 edge 表中连接至少两个议题，但只有 41 个 actor 至少有两个议题在 edge 两侧均已人审，39 个可暂归为长期定位型 bridge。正文优先使用双侧人审者：
 
 - A101 沖縄・琉球弧の声を届ける会：全部 7 个议题，双侧人审可用 7 个；positioning_bridge。
 - A091 日本労働組合総連合会沖縄県連合会（連合沖縄）：全部 5 个议题，双侧人审可用 5 个；positioning_bridge。
 - A100 ミサイル配備から命を守るうるま市民の会：全部 5 个议题，双侧人审可用 5 个；positioning_bridge。
+- A114 全日本港湾労働組合沖縄地方本部：全部 5 个议题，双侧人审可用 4 个；positioning_bridge。
 - A086 Turtle Island Restoration Network：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
 - A095 止めよう「自衛隊配備」宮古郡民の会：全部 4 个议题，双侧人审可用 4 个；mixed_candidate_bridge。
 - A099 有機フッ素化合物（PFAS）汚染から市民の生命を守る連絡会：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
@@ -38,19 +39,18 @@ R1 采用“两层分类”：registry 保留具体 `actor_class`，生态图另
 - A104 普天間基地爆音訴訟弁護団：全部 4 个议题，双侧人审可用 4 个；case_or_institutional_bridge。
 - A105 日本YWCA：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
 - A106 辺野古の海を土砂で埋めるな！首都圏連絡会：全部 4 个议题，双侧人审可用 4 个；event_only_bridge。
-- A107 沖縄YWCA：全部 4 个议题，双侧人审可用 4 个；positioning_bridge。
 
 ## 议题转化的当前证据
 
 共现最高的议题对如下。它们说明“同一 actor 的议题组合”，不表示 actor 之间结盟：
 
-- `anti_base × peace`：16 个共享 actor，其中 6 个在两侧均已人审，9 个在两侧均有长期定位标记。
+- `anti_base × peace`：16 个共享 actor，其中 7 个在两侧均已人审，9 个在两侧均有长期定位标记。
 - `anti_base × Henoko`：10 个共享 actor，其中 4 个在两侧均已人审，4 个在两侧均有长期定位标记。
 - `anti_base × biodiversity`：8 个共享 actor，其中 0 个在两侧均已人审，3 个在两侧均有长期定位标记。
 - `anti_base × life_safety`：8 个共享 actor，其中 4 个在两侧均已人审，2 个在两侧均有长期定位标记。
 - `anti_base × legal`：7 个共享 actor，其中 3 个在两侧均已人审，1 个在两侧均有长期定位标记。
 - `life_safety × legal`：7 个共享 actor，其中 4 个在两侧均已人审，0 个在两侧均有长期定位标记。
-- `anti_military × life_safety`：6 个共享 actor，其中 2 个在两侧均已人审，3 个在两侧均有长期定位标记。
+- `anti_military × life_safety`：6 个共享 actor，其中 3 个在两侧均已人审，2 个在两侧均有长期定位标记。
 - `biodiversity × international_advocacy`：6 个共享 actor，其中 2 个在两侧均已人审，0 个在两侧均有长期定位标记。
 
 目前最稳妥的总体解释是：反基地议题不是孤立存在，而是经由三种不同机制被转译。第一，环保／生物多样性与边野古、大浦湾等地点议题结合；第二，噪声、生活安全与法律程序通过原告团和律师网络结合；第三，和平、人权、地方自治与国际倡议通过声明、网络使命或制度渠道结合。三种机制的证据形态不同，不能合并成一个“联盟强度”指标。
