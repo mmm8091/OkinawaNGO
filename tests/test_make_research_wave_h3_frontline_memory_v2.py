@@ -177,6 +177,13 @@ class H3FrontlineMemoryV2Tests(unittest.TestCase):
             self.assertTrue(root.tag.endswith("svg"), figure.name)
             self.assertGreater(figure.stat().st_size, 1000)
 
+        timeline = (self.output / "fig1_carrier_and_object_timeline_v2.svg").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn('width="2200"', timeline)
+        self.assertIn("横向按事件顺序等距排列", timeline)
+        self.assertIn("不是扩散方向图", timeline)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1024,12 +1024,12 @@ def svg_text(x: int, y: int, text: str, *, size: int = 14, weight: int = 400, fi
 
 
 def render_timeline(path: Path) -> None:
-    width, height = 1380, 760
+    width, height = 2200, 930
     lane_y = {
-        "local": 190,
-        "contact": 330,
-        "formal": 470,
-        "joint": 610,
+        "local": 245,
+        "contact": 410,
+        "formal": 575,
+        "joint": 740,
     }
     events = [
         (2017.16, "local", "2017\n先岛四团体\n政府交涉", "#537895"),
@@ -1045,45 +1045,45 @@ def render_timeline(path: Path) -> None:
         (2026.35, "joint", "2026.5\n四岛共同请愿\n35赞同团体", "#2d8f75"),
     ]
 
-    def x_for(year: float) -> int:
-        return 155 + int((year - 2017) / (2026.5 - 2017) * 1145)
-
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#fbfaf7"/>',
         svg_text(50, 48, "从地方框架到正式跨区域载体：证据序列（不是扩散方向图）", size=25, weight=700),
         svg_text(50, 78, "每条只表示可核文本／事件；组织方所称“契机”保留为自我叙述，事件共现不等于联盟。", size=14, fill="#566573"),
+        svg_text(50, 103, "横向按事件顺序等距排列，日期写在卡片内；间距不表示实际时间长度。", size=13, fill="#7b7d7d"),
     ]
     labels = {
-        "local": "地方组织独立框架／行动",
-        "contact": "跨地接触（名册不完整）",
-        "formal": "正式载体／重复制度行动",
+        "local": "地方独立框架／行动",
+        "contact": "跨地接触（名册不全）",
+        "formal": "正式载体／制度行动",
         "joint": "共同事件超边",
     }
     for lane, y in lane_y.items():
-        parts.append(f'<line x1="155" y1="{y}" x2="1300" y2="{y}" stroke="#d5d8dc" stroke-width="2"/>')
-        parts.append(svg_text(145, y + 5, labels[lane], size=14, weight=600, anchor="end"))
-    for year in range(2017, 2027):
-        x = x_for(float(year))
-        parts.append(f'<line x1="{x}" y1="120" x2="{x}" y2="660" stroke="#eceff1" stroke-width="1"/>')
-        parts.append(svg_text(x, 112, str(year), size=13, fill="#566573", anchor="middle"))
+        parts.append(f'<line x1="310" y1="{y}" x2="2140" y2="{y}" stroke="#d5d8dc" stroke-width="2"/>')
+        parts.append(svg_text(285, y + 5, labels[lane], size=14, weight=600, anchor="end"))
+    parts.append('<line x1="330" y1="128" x2="2115" y2="128" stroke="#aeb6bf" stroke-width="1.5"/>')
+    parts.append('<path d="M2115 128 L2102 121 L2102 135 Z" fill="#aeb6bf"/>')
+    parts.append(svg_text(330, 120, "2017", size=13, fill="#566573", anchor="middle"))
+    parts.append(svg_text(2115, 120, "2026", size=13, fill="#566573", anchor="middle"))
     for idx, (year, lane, label, color) in enumerate(events):
-        x = x_for(year)
+        # Equal spacing keeps the dense 2023–2025 sequence legible. The date
+        # stays in each card; horizontal distance is ordinal, not duration.
+        x = 350 + idx * 170
         y = lane_y[lane]
         above = idx % 2 == 0
-        box_y = y - 82 if above else y + 18
+        box_y = y - 92 if above else y + 20
         lines = label.split("\n")
         box_h = 22 + len(lines) * 18
         parts.append(f'<circle cx="{x}" cy="{y}" r="7" fill="{color}" stroke="#ffffff" stroke-width="2"/>')
         stem_to = box_y + box_h if above else box_y
         parts.append(f'<line x1="{x}" y1="{y}" x2="{x}" y2="{stem_to}" stroke="{color}" stroke-width="1.5"/>')
-        parts.append(f'<rect x="{x - 72}" y="{box_y}" width="144" height="{box_h}" rx="8" fill="#ffffff" stroke="{color}" stroke-width="1.5"/>')
+        parts.append(f'<rect x="{x - 77}" y="{box_y}" width="154" height="{box_h}" rx="8" fill="#ffffff" stroke="{color}" stroke-width="1.5"/>')
         for line_idx, line in enumerate(lines):
             parts.append(svg_text(x, box_y + 22 + line_idx * 18, line, size=12, weight=600 if line_idx == 0 else 400, anchor="middle"))
     parts.extend(
         [
-            svg_text(50, 706, "可支持：正式载体形成、共同对象扩展、重复制度行动。", size=15, weight=700, fill="#21618c"),
-            svg_text(50, 734, "不可支持：词汇总体增长、从冲绳向本土的单向扩散、所有成员独立采用、稳定联盟。", size=15, weight=700, fill="#922b21"),
+            svg_text(50, 875, "可支持：正式载体形成、共同对象扩展、重复制度行动。", size=15, weight=700, fill="#21618c"),
+            svg_text(50, 903, "不可支持：词汇总体增长、从冲绳向本土的单向扩散、所有成员独立采用、稳定联盟。", size=15, weight=700, fill="#922b21"),
             "</svg>",
         ]
     )
