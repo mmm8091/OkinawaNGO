@@ -1,8 +1,8 @@
-# NR-03 换手文档 v2：可点击前端演示（整改后复验版）
+# NR-03 换手文档 v3.3：可点击前端演示（冻结后复验版）
 
-日期：2026-07-19（v1 同日；v2 为整改后复验提交；v2.1 为 2026-07-20 收尾整改）
+日期：2026-07-20（v1/v2 为历史整改记录；v3.3 为 145 项线上决定合并后的当前构建）
 任务编号：NR-03
-完成状态：整改完成，提交复验（v1 经主线程验收判"整改后复验"，十条意见全部成立并已修复；v2.1 完成复验三项收尾）
+完成状态：L0/L1 与冻结后数据刷新完成；五页桌面／移动复验通过；L2 谱系仍有明确导出缺口
 上位依据：`docs/next_round_exploration_system_sessions_v1.md`、`docs/exploration_system_information_architecture_v1.md`（含 §12 修订）、`docs/exploration_system_data_contract_v1.md`
 
 ## v2.1 收尾整改（对应复验三项）
@@ -17,7 +17,8 @@
 ## v3 组织关系层（2026-07-20，按 `nr3_recheck_and_relation_frontend_brief_v1.md` 实现）
 
 **数据（NR-02 构建模块扩展，`scripts/build_exploration_system_data_v1.py`）**：
-类型化集合 `demo/dyadic_relations.json`（14 条 reviewed，两端均解析到 registry actor）、
+类型化集合 `demo/dyadic_relations.json`（14 条 reviewed＝10 supported＋4 supported_bounded，
+两端均解析到 registry actor）、
 `demo/aggregate_observations.json`（F027＋R10R029）、`demo/case_roles.json`（27 行）、
 `demo/administrative_records.json`（6）、`demo/typed_event_participation.json`（4）、
 `demo/relation_leads.json`（恒空）、
@@ -39,7 +40,47 @@ R10R029 只进 X006 面板的汇总观察区（非组织关系边），不上关
 
 截图：`rel_x001_panel.png`、`rel_x004_panel.png`、`rel_graph_demo.png`、`rel_graph_research.png`。
 
-### Post-merge delta（2026-07-20）
+### v3.1 数据版本可见性返工（冻结前历史快照）
+- 顶栏新增版本戳：`as_of_date · build_id（短）· 121 组织（122 谱系）`，取自 manifest。
+- 组织页类型筛选从"全部类型（N）"改为"当前图中组织（25/121）"；研究视图显示 103/121，
+  画布注记追加"18 个无边组织只可搜索"。
+- 组织卡显示 evidence_level、review_status、scope_status 状态芯片；X014 明示
+  watchlist_only（搜索下拉与面板均标"仅观察名单"）；A072（merged_duplicate）从搜索与
+  普通图隐藏。
+- build ID 变更检测：每 20 秒及窗口聚焦时核对 manifest，发现新 build 弹横幅提示重新加载。
+- 换手计数统一为当前口径：14 条已核关系＝10 supported＋4 supported_bounded；行政记录
+  已核 6＋候选 5；另有 aggregate 2、event 4、lead 4、case role 27，不混入组织关系数。
+
+### v3.2 actor–issue 三门状态（冻结前历史快照）
+
+- 构建端派生 `fact_gate_status`／`scope_gate_status`／`schema_freeze_status` 与直接可消费的
+  `display_state`，并透传 claim_status、review_scope、reviewed_fields、scope_kind 等 10 个
+  中央字段；四态计数精确为 **7（字段已冻结·有限确认）／58（人工接受·字段待冻结）／
+  59（范围已审·事实待审）／114（事实待审）**，研究层 fact gate 为 143＋25 待二源＋5 待当地。
+- 前端只消费 `display_state` 不重算：议题边行显示四态芯片与待二源／待当地叠加；画布注记
+  为"已核 65（7 条字段已冻结）／研究 人工接受 65＋事实待审 173（其中 59 条已完成范围
+  复核）"；待审区不再笼统称"未人审"；帮助文案明确"已核＝当前显示的事实边，不是组织身份"。
+- HR-019／024／025 均已完成，不重开；HR-035 批次合并后计数随 manifest 自动更新。
+- 构建 22/22 测试通过，validation PASS，页面回归零控制台错误。
+
+### v3.3 · 145 项线上决定合并后的正式重生与浏览器复验
+
+- 当前 build 为 `5ed5528a649de4d1`，前端数据已经从正式中央层重生，不再是临时构建。
+- 283 条有效 actor–issue 边分为 **125 人审／158 候选**；四态为
+  **67 `frozen_bounded`／58 `accepted_unfrozen`／44
+  `scope_reviewed_fact_pending`／114 `fact_pending`**。研究事实门为 128 普通待审、
+  25 待二源、5 待当地材料。
+- 已核图连接 47/121 个可见 actor；研究图连接 116/121，另有 5 个无议题边 actor
+  仍可检索。组织身份状态与关系状态继续分开显示。
+- strict place–issue 为 **305** 条同源三元事实，其中 71 双边人审、234 候选、
+  298 条 E3/E4、97 条有正式事件附着。
+- 390×844 下逐页实测总览／组织／时间／路径／证据，五页文档宽度均为 375px，
+  无横向溢出；1280×900 桌面端无溢出；页面控制台 0 error / 0 warning。
+- 四项中央生命周期决定已人审并合并，但 adapter 仍输出
+  `genealogy_anchors=0`。因此时间页的“谱系锚点 0 条”是当前真实的**导出缺口**，
+  不是“没有生命周期材料”；L2 必须先把 LC001–LC004 映射成有界锚点后再验收。
+
+### Post-freeze delta（2026-07-20）
 
 - **中央权威字段**：构建器以
   `15_funding_or_support_edges_sample_v0.csv` 已填的 `claim_status`、
@@ -49,9 +90,9 @@ R10R029 只进 X006 面板的汇总观察区（非组织关系边），不上关
   明确复核为空的字段（如 F025 amount）不得被补充包覆盖。
 - **最新数据口径**：registry 保留 122 行历史记录，普通界面只显示 121 active actor；
   A072 为 merged duplicate、`display_status=hidden`，搜索与普通图均不可见。默认 actor—issue
-  图为 65 条已核边＋173 条候选边；actor—place 为 53 条已核边＋77 条候选边。AI068 属
+  图为 125 条已核边＋158 条候选边；actor—place 为 53 条已核边＋77 条候选边。AI068 属
   事件限定且明确排除出默认冲绳叙事，不进入已核或研究关系图。strict place—issue 为
-  312 条总三元组（65 条双人审＋247 条候选；其中 305 条为 E3+，100 条有正式事件附着）。
+  305 条总三元组（71 条双人审＋234 条候选；其中 298 条为 E3/E4，97 条有正式事件附着）。
 - **关系层计数**：43 条中央观察＋R10R029 独立汇总观察＝44 输入；已核层为 14 条组织关系、
   6 条行政记录、2 条汇总观察、4 条事件参与记录、27 条案件角色；研究层为 8 条候选组织
   关系、5 条行政候选、4 条研究线索。F036 只显示为事件参与，F011/F040/F041 同样不派生
@@ -99,14 +140,15 @@ npm run build
 
 - 五个页面全部上线：总览 `#/`、组织 `#/actors`、时间 `#/time`、路径 `#/pathways`、证据 `#/evidence`。
 - 总览（V1）：42 市町村 GeoJSON、点选陆地选区、滚轮缩放（以光标为中心）、拖拽平移、区域标签随地理锚定；全域／先岛聚焦两状态；面板含指标、议题入口（跳组织页）、相关 episode（跳路径页）、地点标签；地区对比模式。
-- 组织（V2）：65 条已核 actor—issue 边为默认层；普通界面搜索 121 个可见 actor（中央
+- 组织（V2）：125 条已核 actor—issue 边为默认层；普通界面搜索 121 个可见 actor（中央
   provenance 仍保留 122 行，A072 隐藏；搜索含别名与 ID）；类型／议题筛选；节点详情
   （议题、地点、事件记录、身份来源）；画布缩放平移。
-- 时间（第五页）：一期方案四个时段节点、12 个已核事件按年组织、参与者跳组织页、组织谱系诚实缺口（0 锚点）。
+- 时间（第五页）：一期方案四个时段节点、12 个已核事件按年组织、参与者跳组织页；当前
+  仍显示 0 个谱系锚点，等待 LC001–LC004 的前端有界导出。
 - 路径（V3）：9 个已核 episode 六阶段阶梯，状态直读数据；episode 六阶段对比；参与组织、来源、关联案件。
 - 证据（V4）：六维度 120 个当前生成单元，facet 条形与来源类型×归档矩阵，机制解释面板；
   单元数是生成结果，不是稳定契约。
-- 研究视图：已核／研究全局开关，173 条候选议题边（虚线）＋247 条候选 strict
+- 研究视图：已核／研究全局开关，158 条候选议题边（虚线）＋234 条候选 strict
   place—issue 三元组＋77 条候选地点边＋4 个候选 episode＋4 条分析种子，全部带待审标记；
   措辞经专项修正。
 - 三语：数据代码经 `data/metadata/display_label_mapping_draft_v0.csv`（229 码，负责人审定）生成的 `labels.js`；UI 文案在 `ui_strings.js`；中／日／EN 切换默认 zh，数据与界面文案均整页切换。
@@ -132,7 +174,7 @@ npm run build
   证明组织→议题→事件记录→时间页 2003 链通过。
 - 比较：地区双列（全部区域 vs 八重山群岛）与 episode 六阶段对比（儒艮海外诉讼 vs 嘉手纳第三次噪音诉讼，12 格）实测通过。
 - 研究措辞："已核 9 ＋ 待审 4"；英文证据页维度名全部英文；抽屉含 locator。
-- 390×844：无横向溢出、无页面错误；1280+ 桌面布局不变。
+- 390×844：五页文档宽度均为 375px，无横向溢出、无页面错误；1280×900 桌面布局不变。
 - 截图证据：本文件下方 12 张，demo/research 成对文件 md5 均已校验不同。
 
 ## 运行／复现命令
@@ -199,7 +241,8 @@ npm run build
 ## 未决人工判断
 
 - 三语映射敏感措辞按负责人审定稿落地；映射表建议随 NR-02 下次重建纳入构建输入以获得哈希保护。
-- 组织谱系仍为 0 锚点；NR-04／NR-05 结果未经负责人决定不得进入该层。
+- 组织谱系仍为 0 前端锚点；但 LC001–LC004 已经负责人决定。下一步是有界导出这四项，
+  而不是重新检索或重新人审。NR-04／NR-05 的新增历史候选仍不得直接进入已核层。
 - 事件名、部分来源 supports／bias_note／interpretation_limit 为数据层英文字段，按原样显示；是否翻译属数据层决定。
 - 画布节点本身不可键盘聚焦（canvas 技术限制）；键盘与读屏路径由搜索下拉、区域按钮和各页 DOM 面板提供。
 - 部署未授权。
@@ -216,7 +259,7 @@ npm run build
 
 ## 不得被主线程误读为
 
-- 已核层≠全量数据：普通界面有 121 个可见 actor，但已核议题网络只使用 65 条已核边；
+- 已核层≠全量数据：普通界面有 121 个可见 actor，但已核议题网络只使用 125 条已核边；
   它是“可公开辩护”的关系子集，不能用 actor provenance 行数替代关系 gate。
 - 研究视图的虚线与待审项是候选，不是事实；共同联署与同场参与不是稳定联盟。
 - 时间页时段节点是一期方案的采集策略，不是数据断言；事件年份不代表组织成立或持续。
@@ -226,7 +269,7 @@ npm run build
 
 ## 建议下一 session
 
-- 主线程复验通过后派 NR-04／NR-05（两个历史时段线上补缺）。
+- 先把 LC001–LC004 导出为 L2 有界谱系锚点并复验，再启动 NR-04／NR-05 的新增历史补缺。
 - 把 `display_label_mapping_draft_v0.csv` 纳入 NR-02 构建输入并重跑。
 - 完成上节“组织身份状态≠关系已核”的面板提示与 X014 watchlist 标签。
 - 5 分钟演示路径文档可在 NR-06 验收前补齐。

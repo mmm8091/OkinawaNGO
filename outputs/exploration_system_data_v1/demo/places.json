@@ -46,13 +46,13 @@
     "id": "P004",
     "interpretation_limit": "A place node is a navigation and coding object; its visibility or number of linked records is not activity intensity.",
     "phase1_priority": "medium",
-    "place_type": "base_site",
+    "place_type": "site",
     "region": "Ginowan",
     "review_status": "taxonomy",
     "source_ids": []
   },
   {
-    "display_label": "Kadena",
+    "display_label": "Kadena Air Base",
     "display_status": "demo",
     "display_summary": "Major U.S. air base and base burden context",
     "evidence_level": "",
@@ -130,7 +130,7 @@
     "source_ids": []
   },
   {
-    "display_label": "Yonaguni",
+    "display_label": "Yonaguni Town",
     "display_status": "demo",
     "display_summary": "Coastal surveillance unit; referendum; Taiwan proximity; high frontline relevance",
     "evidence_level": "",
@@ -143,7 +143,7 @@
     "source_ids": []
   },
   {
-    "display_label": "Ishigaki",
+    "display_label": "Ishigaki City",
     "display_status": "demo",
     "display_summary": "Missile/base deployment; groundwater; referendum movement",
     "evidence_level": "",
@@ -156,7 +156,7 @@
     "source_ids": []
   },
   {
-    "display_label": "Miyako",
+    "display_label": "Miyakojima City",
     "display_status": "demo",
     "display_summary": "Missile deployment; groundwater/water-source frame",
     "evidence_level": "",

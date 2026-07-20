@@ -1411,27 +1411,27 @@ export const LABELS = {
   "in_kind_item_value_not_cash": {
     "zh": "实物估值·非现金",
     "ja": "現物評価額・現金ではない",
-    "en": "In-kind item value, not cash"
+    "en": "In-kind item value"
   },
   "in_kind_item_no_amount": {
     "zh": "实物捐赠·金额未公开",
     "ja": "現物寄付・金額不明",
-    "en": "In-kind donation, amount undisclosed"
+    "en": "In-kind donation"
   },
   "no_amount_no_quantity_no_share_allocation": {
     "zh": "无金额／数量／份额分配",
     "ja": "金額・数量・持分配分なし",
-    "en": "No amount, quantity, or share allocation"
+    "en": "No amount"
   },
   "organization_project_cost_not_payment": {
     "zh": "组织项目成本·非付款额",
     "ja": "団体側事業費・支払額ではない",
-    "en": "Organization project cost, not payment"
+    "en": "Organization project cost"
   },
   "whole_program_project_cost_not_actor_payment": {
     "zh": "项目总成本·非组织付款额",
     "ja": "事業全体費・団体への支払額ではない",
-    "en": "Whole-program cost, not actor payment"
+    "en": "Whole-program cost"
   },
   "multi_year_named_commission_flows_in_R10_amount_table": {
     "zh": "多年委托金额另见R10表",
@@ -1452,6 +1452,36 @@ export const LABELS = {
     "zh": "无金额／贡献者份额分配",
     "ja": "金額・拠出者別配分なし",
     "en": "No amount or contributor-share allocation"
+  },
+  "in_scope_limited": {
+    "zh": "范围内受限",
+    "ja": "範囲限定",
+    "en": "In-scope limited"
+  },
+  "merged_duplicate": {
+    "zh": "重复合并（已并入他行）",
+    "ja": "重複統合（他行に統合）",
+    "en": "Merged duplicate"
+  },
+  "frozen_bounded": {
+    "zh": "字段已冻结·有限确认",
+    "ja": "字段凍結・限定確認",
+    "en": "Fields frozen · bounded"
+  },
+  "accepted_unfrozen": {
+    "zh": "人工接受·字段待冻结",
+    "ja": "受理済み・字段未凍結",
+    "en": "Accepted · fields pending freeze"
+  },
+  "scope_reviewed_fact_pending": {
+    "zh": "范围已审·事实待审",
+    "ja": "範囲審査済み・事実未審",
+    "en": "Scope reviewed · fact pending"
+  },
+  "fact_pending": {
+    "zh": "事实待审",
+    "ja": "事実未審",
+    "en": "Fact pending"
   }
 };
 

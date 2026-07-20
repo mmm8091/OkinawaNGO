@@ -113,8 +113,22 @@ export const UI_STRINGS = {
   "actors.allClasses": { zh: "全部类型", ja: "すべてのタイプ", en: "All classes" },
   "actors.allIssues": { zh: "全部议题", ja: "すべての課題", en: "All issues" },
   "actors.legendPending": { zh: "待审候选", ja: "審査中の候補", en: "Pending candidates" },
-  "actors.noteDemo": { zh: "已核视图 · {n} 条已审关联", ja: "已核 · 審査済み {n} 件", en: "Reviewed · {n} reviewed links" },
+  "actors.noteDemo": {
+    zh: "已核视图 · {n} 条人工接受关联（{f} 条字段已冻结）",
+    ja: "已核 · 受理 {n} 件（うち {f} 件は字段凍結）",
+    en: "Reviewed · {n} accepted links ({f} field-frozen)",
+  },
   "actors.noteResearch": {
+    zh: "研究视图 · 人工接受 {d} ＋ 事实待审 {p}（其中 {s} 条已完成范围复核）",
+    ja: "研究 · 受理 {d} ＋ 事実未審 {p}（うち {s} 件は範囲審査済み）",
+    en: "Research · {d} accepted + {p} fact-pending ({s} of them scope-reviewed)",
+  },
+  "actors.noteDemoLegacy": {
+    zh: "已核视图 · {n} 条已审关联",
+    ja: "已核 · 審査済み {n} 件",
+    en: "Reviewed · {n} reviewed links",
+  },
+  "actors.noteResearchLegacy": {
     zh: "研究视图 · 已审 {d} + 待审 {p}",
     ja: "研究 · 審査済み {d} + 審査中 {p}",
     en: "Research · {d} reviewed + {p} pending",
@@ -123,7 +137,36 @@ export const UI_STRINGS = {
   "actors.noMatch": { zh: "无匹配组织", ja: "一致する組織なし", en: "No matching actors" },
   "actors.mode.ecology": { zh: "议题生态", ja: "課題エコロジー", en: "Issue ecology" },
   "actors.mode.relation": { zh: "组织关系", ja: "組織関係", en: "Relations" },
+  "actors.title.relation": { zh: "组织关系图", ja: "組織関係図", en: "Actor Relations" },
+  "help.relation.p1": {
+    zh: "按关系家族着色（资源与资助、结构隶属、法律协作、协调与共同行动），箭头表方向，实线为已核、虚线为待审；每族可独立开关。点击边看关系类型、确认状态、缺口与来源；点击组织看详情。",
+    ja: "関係ファミリーごとに色分け（資源・助成、構造的所属、法的協力、調整・共同行動）。矢印は方向、実線は已核、破線は審査中。各族は個別に切替可能。辺をクリックで関係タイプ・確認状態・缺口・出所、組織をクリックで詳細を表示します。",
+    en: "Edges are colored by relation family (resources & funding, structural affiliation, legal collaboration, coordination). Arrows show direction, solid = reviewed, dashed = pending; each family toggles independently. Click an edge for type, claim state, gaps and sources; click an actor for details.",
+  },
+  "help.relation.p2": {
+    zh: "这张图只画两端均为 registry 组织的关系；行政记录、汇总观察、案件角色和事件参与不上图，它们在组织面板的对应区显示。",
+    ja: "両端が registry 団体の関係のみを描きます。行政記録・総括観察・事件役割・イベント参加は図に含めず、組織パネルの各区に表示されます。",
+    en: "Only relations with both endpoints in the registry appear here; administrative records, aggregate observations, case roles and event participation live in the actor panel instead.",
+  },
   "actors.relationCanvasAria": { zh: "组织关系图", ja: "組織関係図", en: "Actor relation graph" },
+  "actors.graphCount": { zh: "当前图中组织（{n}/{t}）", ja: "図の組織（{n}/{t}）", en: "Actors in graph ({n}/{t})" },
+  "actors.edgeless": {
+    zh: "；{n} 个无边组织只可搜索",
+    ja: "・辺なし {n} 団体は検索のみ",
+    en: "; {n} edgeless actors searchable only",
+  },
+  "version.stamp": {
+    zh: "数据 {d} · build {b} · {v} 组织（{p} 谱系）",
+    ja: "データ {d} · build {b} · {v} 団体（{p} 記録）",
+    en: "Data {d} · build {b} · {v} actors ({p} provenance)",
+  },
+  "build.updated": {
+    zh: "后端数据已更新（build {o} → {n}）",
+    ja: "データが更新されました（build {o} → {n}）",
+    en: "Data updated (build {o} → {n})",
+  },
+  "build.reload": { zh: "重新加载", ja: "再読み込み", en: "Reload" },
+  "build.dismiss": { zh: "稍后", ja: "あとで", en: "Later" },
   "actors.relationNote": {
     zh: "已确认 {s} · 有限确认 {b} · 待审 {c}（仅两端均为 registry 组织的关系）",
     ja: "確認 {s} ・ 限定 {b} ・ 審査中 {c}（両端が registry 団体の関係のみ）",
@@ -141,7 +184,7 @@ export const UI_STRINGS = {
   "section.issues": { zh: "议题关联", ja: "課題との関連", en: "Issue links" },
   "section.issuesReviewed": { zh: "人工复核层", ja: "人審レイヤー", en: "Human-reviewed" },
   "section.pendingIssues": { zh: "待审议题关联", ja: "審査中の課題関連", en: "Pending issue links" },
-  "section.pendingSub": { zh: "研究视图 · 未人审", ja: "研究・未人審", en: "Research · unreviewed" },
+  "section.pendingSub": { zh: "研究视图 · 事实待审", ja: "研究・事実未審", en: "Research · fact pending" },
   "section.places": { zh: "公开材料中的地点", ja: "公開資料上の地点", en: "Places in public records" },
   "empty.actorIssues": {
     zh: "该组织在默认层暂无已审议题关联",
@@ -302,14 +345,14 @@ export const UI_STRINGS = {
     en: "The right panel lists human-reviewed same-source place–issue triples for the region; the research view adds pending candidate counts.",
   },
   "help.actors.p1": {
-    zh: "已核视图画的是已人工复核的组织—议题关联；研究视图追加虚线边和虚线圈节点，即待审候选。节点向自己的议题聚拢，大小和位置只是布局结果。",
-    ja: "已核ビューは人審済みの組織—課題関連のみを描きます。研究ビューでは破線の辺と破線円のノード（審査中の候補）が加わります。ノードは自分の課題に寄り集まり、大きさと位置はレイアウト上の結果にすぎません。",
-    en: "The reviewed view draws only human-reviewed actor–issue links; the research view adds dashed edges and dashed-ring nodes (pending candidates). Nodes cluster toward their issues; size and position are layout artifacts.",
+    zh: "已核视图画的是已人工接受的组织—议题事实边；组织身份的可搜索范围是全部 registry 组织，与边是否已核无关。研究视图追加虚线边和虚线圈节点（事实待审，其中部分已完成范围复核）。节点向自己的议题聚拢，大小和位置只是布局结果。",
+    ja: "已核ビューは受理済みの組織—課題の事実辺のみを描きます。検索できる組織の範囲は全 registry 団体で、辺の審査状態とは無関係です。研究ビューでは破線の辺と破線円のノード（事実未審・うち一部は範囲審査済み）が加わります。ノードは自分の課題に寄り集まり、大きさと位置はレイアウト上の結果にすぎません。",
+    en: "The reviewed view draws only human-accepted actor–issue fact edges; every registry actor stays searchable regardless of edge review. The research view adds dashed edges and dashed-ring nodes (fact-pending, some already scope-reviewed). Nodes cluster toward their issues; size and position are layout artifacts.",
   },
   "help.actors.p2": {
-    zh: "点击节点查看组织详情，点击空白处取消选择；滚轮缩放、拖拽平移。",
-    ja: "ノードをクリックで組織の詳細、空白をクリックで選択解除。ホイールでズーム、ドラッグでパン。",
-    en: "Click a node for details; click empty space to deselect. Scroll to zoom, drag to pan.",
+    zh: "点击组织节点查看详情，点击空白处取消选择；点击议题节点聚焦该议题，再点一次恢复全部；滚轮缩放、拖拽平移。",
+    ja: "組織ノードをクリックで詳細、空白で選択解除。課題ノードをクリックでその課題にフォーカス、もう一度で全体に戻る。ホイールでズーム、ドラッグでパン。",
+    en: "Click an actor for details, empty space to deselect. Click an issue to focus it; click again to reset. Scroll to zoom, drag to pan.",
   },
   "help.time.p1": {
     zh: "年份记录的是“某组织在某年做过某事”。点击年份查看当年事件，点击事件中的参与者跳转组织页。",

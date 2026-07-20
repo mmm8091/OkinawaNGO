@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Compass, WarningCircle } from "@phosphor-icons/react";
 import {
   EvidenceContext,
+  useBuildWatch,
   useEvidenceData,
   useResearchCandidates,
   useResearchData,
@@ -52,12 +53,16 @@ export function App() {
   const [layer, setLayer] = useState("demo");
   const [lang, setLang] = useState("zh");
   const [drawer, setDrawer] = useState({ open: false, sourceIds: [] });
+  const [bannerDismissed, setBannerDismissed] = useState(false);
   const candidatesState = useResearchCandidates(layer === "research");
   const evidenceState = useEvidenceData(drawer.open);
   const candidates =
     layer === "research" && candidatesState.status === "ready"
       ? candidatesState.candidates
       : null;
+
+  const currentBuildId = data.status === "ready" ? data.manifest.build_id : null;
+  const newerBuild = useBuildWatch(currentBuildId);
 
   const openActor = (actorId) => {
     sessionStorage.setItem("nr3.actor", actorId);
@@ -75,6 +80,16 @@ export function App() {
     );
   }, [route]);
 
+  const version =
+    data.status === "ready"
+      ? {
+          asOf: data.manifest.as_of_date,
+          buildId: data.manifest.build_id,
+          visible: data.manifest.counts.actor_registry.current_visible,
+          provenance: data.manifest.counts.actor_registry.provenance_rows,
+        }
+      : null;
+
   const pageProps = { layer, candidates };
 
   return (
@@ -87,6 +102,7 @@ export function App() {
             onLayerChange={setLayer}
             lang={lang}
             onLangChange={setLang}
+            version={version}
           />
           {data.status === "ready" ? (
             route === "actors" ? (
@@ -109,6 +125,25 @@ export function App() {
               sourceIds={drawer.sourceIds}
               onClose={() => setDrawer({ open: false, sourceIds: [] })}
             />
+          )}
+          {newerBuild && !bannerDismissed && (
+            <div className="build-banner" role="status">
+              <span>
+                {tu("build.updated", lang)
+                  .replace("{o}", currentBuildId.slice(0, 8))
+                  .replace("{n}", newerBuild.slice(0, 8))}
+              </span>
+              <button type="button" onClick={() => window.location.reload()}>
+                {tu("build.reload", lang)}
+              </button>
+              <button
+                type="button"
+                className="dismiss"
+                onClick={() => setBannerDismissed(true)}
+              >
+                {tu("build.dismiss", lang)}
+              </button>
+            </div>
           )}
         </div>
       </EvidenceContext.Provider>

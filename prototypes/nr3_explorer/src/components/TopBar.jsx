@@ -17,7 +17,7 @@ const MAIN_NAV = [
   { id: "evidence", key: "nav.evidence", icon: Books, href: "#/evidence" },
 ];
 
-export function TopBar({ route, layer, onLayerChange, lang, onLangChange }) {
+export function TopBar({ route, layer, onLayerChange, lang, onLangChange, version }) {
   const contextLang = useLang();
   const activeLang = lang || contextLang;
   return (
@@ -47,6 +47,15 @@ export function TopBar({ route, layer, onLayerChange, lang, onLangChange }) {
         })}
       </nav>
       <div className="topbar-right">
+        {version && (
+          <span className="version-stamp" title={version.buildId}>
+            {tu("version.stamp", activeLang)
+              .replace("{d}", version.asOf)
+              .replace("{b}", version.buildId.slice(0, 8))
+              .replace("{v}", version.visible)
+              .replace("{p}", version.provenance)}
+          </span>
+        )}
         <div
           className="layer-switch lang-switch"
           role="group"

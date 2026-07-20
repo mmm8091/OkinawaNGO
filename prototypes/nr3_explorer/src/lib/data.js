@@ -124,6 +124,36 @@ export function useEvidenceData(enabled) {
 export const EvidenceContext = createContext({ openEvidence: () => {} });
 export const useEvidence = () => useContext(EvidenceContext);
 
+// Watches the NR-02 package build id and reports when the backend data has
+// been rebuilt since this client loaded it.
+export function useBuildWatch(currentBuildId) {
+  const [newerBuild, setNewerBuild] = useState(null);
+
+  useEffect(() => {
+    if (!currentBuildId) return undefined;
+    let cancelled = false;
+    const check = () =>
+      fetch("/manifest.json", { cache: "no-store" })
+        .then((r) => r.json())
+        .then((manifest) => {
+          if (!cancelled && manifest.build_id && manifest.build_id !== currentBuildId) {
+            setNewerBuild(manifest.build_id);
+          }
+        })
+        .catch(() => {});
+    const interval = setInterval(check, 20000);
+    const onFocus = () => check();
+    window.addEventListener("focus", onFocus);
+    return () => {
+      cancelled = true;
+      clearInterval(interval);
+      window.removeEventListener("focus", onFocus);
+    };
+  }, [currentBuildId]);
+
+  return newerBuild;
+}
+
 export function useResearchData() {
   const [state, setState] = useState({ status: "loading" });
 

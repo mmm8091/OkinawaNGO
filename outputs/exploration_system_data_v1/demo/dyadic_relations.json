@@ -274,7 +274,7 @@
     "observation_kind": "dyadic_relation",
     "place_label": "Kadena; Okinawa",
     "relation_family": "resources_funding",
-    "relation_type": "funding_contribution",
+    "relation_type": "donation",
     "review_notes": "HR-005: KOSC charity page reports $102000 to scholarships and AWWA; split amount/recipient details need annual records.",
     "review_scope": "endpoint_identity;relation_existence;direction;amount;time_period;interpretation_boundary",
     "review_status": "human_revised",

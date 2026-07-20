@@ -156,7 +156,7 @@ export function PathwaysPage({ data, onOpenActor, layer, candidates }) {
             </ChartHelp>
           </h1>
         </div>
-        <div className="path-summary">
+        <div className="page-summary">
           <GitBranch size={18} />
           {research
             ? tu("path.summaryResearch", lang)

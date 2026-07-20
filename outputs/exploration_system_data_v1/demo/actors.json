@@ -13,7 +13,7 @@
       "Henoko",
       "international_advocacy"
     ],
-    "legal_status": "informal_or_project",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "mixed_or_network",
     "primary_places": [
@@ -42,7 +42,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "任意団体",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -71,7 +71,7 @@
       "environment",
       "Henoko"
     ],
-    "legal_status": "unclear",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -98,7 +98,7 @@
       "biodiversity",
       "Henoko"
     ],
-    "legal_status": "public_interest_foundation_or_association",
+    "legal_status": "public_interest_incorporated_body_unspecified",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -125,7 +125,7 @@
       "dugong",
       "biodiversity"
     ],
-    "legal_status": "public_interest_foundation",
+    "legal_status": "public_interest_incorporated_foundation",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -151,7 +151,7 @@
       "environment",
       "anti_base"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -179,7 +179,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -208,7 +208,7 @@
       "referendum",
       "international_cooperation"
     ],
-    "legal_status": "informal_network（任意ネットワーク・国際協力NGO）",
+    "legal_status": "informal_network",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -238,7 +238,7 @@
       "dugong",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -260,7 +260,7 @@
         "source_ids": [
           "S157"
         ],
-        "type": "predecessor_of",
+        "type": "predecessor_name_nonidentity",
         "unresolved_source_refs": []
       }
     ],
@@ -276,7 +276,7 @@
       "groundwater",
       "life_safety"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -305,7 +305,7 @@
       "local_autonomy",
       "anti_military"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -335,7 +335,7 @@
       "anti_military",
       "life_safety"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -362,7 +362,7 @@
       "groundwater",
       "life_safety"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -389,7 +389,7 @@
       "anti_military",
       "public_opinion"
     ],
-    "legal_status": "informal（任意の実行委員会）",
+    "legal_status": "informal_executive_committee",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -419,7 +419,7 @@
       "referendum",
       "solidarity"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -450,7 +450,7 @@
       "transparency",
       "frontline_prevention"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -479,7 +479,7 @@
       "Taiwan_contingency",
       "frontline_prevention"
     ],
-    "legal_status": "informal_or_project",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -506,7 +506,7 @@
       "frontline_prevention",
       "Taiwan_contingency"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -535,7 +535,7 @@
       "direct_action",
       "referendum"
     ],
-    "legal_status": "任意団体",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -565,7 +565,7 @@
       "dugong",
       "Henoko"
     ],
-    "legal_status": "ngo_or_association",
+    "legal_status": "nonprofit_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -593,7 +593,7 @@
       "anti_base",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -621,7 +621,7 @@
       "wetlands",
       "anti_base"
     ],
-    "legal_status": "npo",
+    "legal_status": "specified_nonprofit_corporation",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -648,7 +648,7 @@
       "environment",
       "Henoko"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -676,7 +676,7 @@
       "Henoko",
       "mobilization"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -704,7 +704,7 @@
       "Henoko",
       "mobilization"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -732,7 +732,7 @@
       "anti_base",
       "media"
     ],
-    "legal_status": "unclear",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -759,7 +759,7 @@
       "environment",
       "anti_base"
     ],
-    "legal_status": "informal_or_npo",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -786,7 +786,7 @@
       "international_advocacy",
       "Henoko"
     ],
-    "legal_status": "network",
+    "legal_status": "legal_form_unresolved_network",
     "merged_duplicate_of": "",
     "origin_type": "mixed_or_network",
     "primary_places": [
@@ -814,7 +814,7 @@
       "environment",
       "Henoko"
     ],
-    "legal_status": "network",
+    "legal_status": "legal_form_unresolved_network",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -841,7 +841,7 @@
       "wetlands",
       "solidarity"
     ],
-    "legal_status": "citizen_group",
+    "legal_status": "legal_form_unresolved_citizen_group",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -868,7 +868,7 @@
       "wetlands",
       "solidarity"
     ],
-    "legal_status": "citizen_group",
+    "legal_status": "legal_form_unresolved_citizen_group",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -895,7 +895,7 @@
       "anti_base",
       "international_advocacy"
     ],
-    "legal_status": "project_or_network",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -923,7 +923,7 @@
       "anti_base",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -949,7 +949,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -975,7 +975,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1001,7 +1001,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1027,7 +1027,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1053,7 +1053,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1080,7 +1080,7 @@
       "legal",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1124,7 +1124,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1152,7 +1152,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1178,7 +1178,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -1205,7 +1205,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1231,7 +1231,7 @@
       "environment",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1258,7 +1258,7 @@
       "legal",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -1276,6 +1276,14 @@
     "actor_class": "international_ngo",
     "aliases": [
       {
+        "label": "Pro Natura / FoE Switzerland",
+        "source_ids": [
+          "S004"
+        ],
+        "type": "event_list_name",
+        "unresolved_source_refs": []
+      },
+      {
         "label": "Swiss League for the Protection of Nature",
         "source_ids": [
           "S091"
@@ -1291,14 +1299,6 @@
         ],
         "type": "network_name",
         "unresolved_source_refs": []
-      },
-      {
-        "label": "Pro Natura / FoE Switzerland",
-        "source_ids": [
-          "S004"
-        ],
-        "type": "signatory_name",
-        "unresolved_source_refs": []
       }
     ],
     "display_label": "Pro Natura",
@@ -1311,7 +1311,7 @@
       "international_advocacy",
       "biodiversity"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1342,7 +1342,7 @@
       "Henoko",
       "local_autonomy"
     ],
-    "legal_status": "social_movement_center",
+    "legal_status": "legal_form_unresolved_social_movement_center",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -1394,7 +1394,7 @@
       "anti_military",
       "life_safety"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -1448,7 +1448,7 @@
       "local_autonomy",
       "anti_base"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -1466,21 +1466,21 @@
     "actor_class": "citizen_group",
     "aliases": [
       {
-        "label": "嘉手納爆音訴訟原告団",
-        "source_ids": [
-          "S026"
-        ],
-        "type": "former_canonical",
-        "unresolved_source_refs": []
-      },
-      {
         "label": "第4次嘉手納基地爆音差止訴訟原告団",
         "source_ids": [
           "S149",
           "S151",
           "S155"
         ],
-        "type": "round_of",
+        "type": "case_round_label_nonidentity",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "嘉手納爆音訴訟原告団",
+        "source_ids": [
+          "S026"
+        ],
+        "type": "former_registry_canonical",
         "unresolved_source_refs": []
       }
     ],
@@ -1516,6 +1516,15 @@
     "actor_class": "citizen_group",
     "aliases": [
       {
+        "label": "普天間基地第2次爆音訴訟原告団",
+        "source_ids": [
+          "S135",
+          "S156"
+        ],
+        "type": "case_round_label_nonidentity",
+        "unresolved_source_refs": []
+      },
+      {
         "label": "普天間基地爆音訴訟原告団",
         "source_ids": [
           "S135",
@@ -1529,16 +1538,7 @@
         "source_ids": [
           "S027"
         ],
-        "type": "former_canonical",
-        "unresolved_source_refs": []
-      },
-      {
-        "label": "普天間基地第2次爆音訴訟原告団",
-        "source_ids": [
-          "S135",
-          "S156"
-        ],
-        "type": "round_of",
+        "type": "former_registry_canonical",
         "unresolved_source_refs": []
       }
     ],
@@ -1583,7 +1583,7 @@
       "anti_base",
       "legal"
     ],
-    "legal_status": "association_or_unclear",
+    "legal_status": "legal_form_unresolved_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -1609,7 +1609,7 @@
       "biodiversity",
       "legal"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -1663,7 +1663,7 @@
       "Henoko",
       "public_opinion"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -1762,7 +1762,7 @@
       "environment",
       "biodiversity"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -1789,7 +1789,7 @@
       "environment",
       "biodiversity"
     ],
-    "legal_status": "public_interest_foundation",
+    "legal_status": "public_interest_incorporated_foundation",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -1817,7 +1817,7 @@
       "biodiversity",
       "wetlands"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -1844,7 +1844,7 @@
       "legal",
       "solidarity"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -1872,7 +1872,7 @@
       "international_advocacy",
       "peace"
     ],
-    "legal_status": "network",
+    "legal_status": "legal_form_unresolved_network",
     "merged_duplicate_of": "",
     "origin_type": "international",
     "primary_places": [
@@ -1929,7 +1929,7 @@
       "anti_base",
       "international_advocacy"
     ],
-    "legal_status": "npo",
+    "legal_status": "specified_nonprofit_corporation",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -1986,7 +1986,7 @@
       {
         "label": "名護市民投票の会",
         "source_ids": [],
-        "type": "deprecated_working_name",
+        "type": "deprecated_search_label",
         "unresolved_source_refs": []
       },
       {
@@ -2009,7 +2009,7 @@
       "anti_base",
       "local_autonomy"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2036,7 +2036,7 @@
       "legal",
       "Henoko"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2069,19 +2069,19 @@
         "unresolved_source_refs": []
       },
       {
-        "label": "平和を求める元軍人の会・琉球沖縄国際支部",
-        "source_ids": [
-          "S048"
-        ],
-        "type": "japanese_name",
-        "unresolved_source_refs": []
-      },
-      {
         "label": "Veterans for Peace, Ryukyu/Okinawa (VFP ROC)",
         "source_ids": [
           "S048"
         ],
-        "type": "name_variant",
+        "type": "documented_name_variant",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "平和を求める元軍人の会・琉球沖縄国際支部",
+        "source_ids": [
+          "S048"
+        ],
+        "type": "language_name",
         "unresolved_source_refs": []
       },
       {
@@ -2103,7 +2103,7 @@
       "anti_base",
       "international_advocacy"
     ],
-    "legal_status": "chapter",
+    "legal_status": "organizational_chapter",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -2137,7 +2137,7 @@
       "anti_base",
       "anti_military"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2161,7 +2161,7 @@
       "peace",
       "international_advocacy"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "A071",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2184,7 +2184,7 @@
       "international_cooperation",
       "public_diplomacy"
     ],
-    "legal_status": "npo_or_project",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2262,7 +2262,7 @@
       "legal",
       "Henoko"
     ],
-    "legal_status": "任意団体（法人格待核实）",
+    "legal_status": "informal_association_pending_legal_check",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2292,7 +2292,7 @@
       "legal",
       "international_advocacy"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -2320,7 +2320,7 @@
       "anti_war",
       "international_cooperation"
     ],
-    "legal_status": "NPO法人",
+    "legal_status": "specified_nonprofit_corporation",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2349,7 +2349,7 @@
       "international_cooperation",
       "security"
     ],
-    "legal_status": "NPO法人",
+    "legal_status": "specified_nonprofit_corporation",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2594,7 +2594,7 @@
       "environmental_education",
       "community"
     ],
-    "legal_status": "NPO法人",
+    "legal_status": "specified_nonprofit_corporation",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -2710,7 +2710,7 @@
       "noise",
       "life_safety"
     ],
-    "legal_status": "lawyers_network",
+    "legal_status": "legal_form_unresolved_professional_network",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -2795,7 +2795,7 @@
       "peace",
       "Henoko"
     ],
-    "legal_status": "public_interest_foundation",
+    "legal_status": "public_interest_incorporated_foundation",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -2816,7 +2816,7 @@
         "source_ids": [
           "S126"
         ],
-        "type": "possible_canonical_variant",
+        "type": "documented_name_variant",
         "unresolved_source_refs": []
       }
     ],
@@ -2860,7 +2860,7 @@
       "peace",
       "anti_base"
     ],
-    "legal_status": "association_or_regional_ywca",
+    "legal_status": "regional_association_or_chapter",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -3069,7 +3069,7 @@
       "environment",
       "legal"
     ],
-    "legal_status": "informal",
+    "legal_status": "informal_association",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -3193,7 +3193,7 @@
       "military_family_service",
       "base_community_welfare"
     ],
-    "legal_status": "not_for_profit",
+    "legal_status": "not_for_profit_organization",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3218,7 +3218,7 @@
       "corporate_sponsorship",
       "base_community_welfare"
     ],
-    "legal_status": "company",
+    "legal_status": "for_profit_company",
     "merged_duplicate_of": "",
     "origin_type": "corporate",
     "primary_places": [
@@ -3243,7 +3243,7 @@
       "corporate_sponsorship",
       "base_community_welfare"
     ],
-    "legal_status": "company",
+    "legal_status": "for_profit_company",
     "merged_duplicate_of": "",
     "origin_type": "corporate",
     "primary_places": [
@@ -3270,20 +3270,20 @@
         "unresolved_source_refs": []
       },
       {
-        "label": "米国福祉事業協会",
-        "source_ids": [
-          "S073"
-        ],
-        "type": "japanese_name",
-        "unresolved_source_refs": []
-      },
-      {
         "label": "Ryukyu American Welfare Council",
         "source_ids": [
           "S041",
           "S055"
         ],
-        "type": "original_name",
+        "type": "former_name",
+        "unresolved_source_refs": []
+      },
+      {
+        "label": "米国福祉事業協会",
+        "source_ids": [
+          "S073"
+        ],
+        "type": "language_name",
         "unresolved_source_refs": []
       },
       {
@@ -3291,7 +3291,7 @@
         "source_ids": [
           "S074"
         ],
-        "type": "variant",
+        "type": "orthographic_variant",
         "unresolved_source_refs": []
       }
     ],
@@ -3305,7 +3305,7 @@
       "charity",
       "base_community_welfare"
     ],
-    "legal_status": "registered_nonprofit（EIN 98-0227149 pending Form 990 check）",
+    "legal_status": "registered_nonprofit_pending_document_check",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3335,7 +3335,7 @@
       "military_family_service",
       "charity"
     ],
-    "legal_status": "club/private_org",
+    "legal_status": "private_membership_organization_status_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3361,7 +3361,7 @@
       "charity",
       "scholarship"
     ],
-    "legal_status": "registered_nonprofit（EIN 98-0214323）",
+    "legal_status": "registered_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3388,7 +3388,7 @@
       "charity",
       "base_community_welfare"
     ],
-    "legal_status": "501c3（EIN 98-0346507）",
+    "legal_status": "us_501c3_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3415,7 +3415,7 @@
       "military_family_service",
       "emergency_support"
     ],
-    "legal_status": "nonprofit_or_base_office",
+    "legal_status": "nonprofit_or_branch_office_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3441,7 +3441,7 @@
       "military_family_service",
       "emergency_support"
     ],
-    "legal_status": "nonprofit_or_base_office",
+    "legal_status": "nonprofit_or_branch_office_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3467,7 +3467,7 @@
       "administrative_collaboration",
       "public_diplomacy"
     ],
-    "legal_status": "npo_or_ngo",
+    "legal_status": "nonprofit_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "okinawa_local",
     "primary_places": [
@@ -3572,7 +3572,7 @@
       "democracy_funding",
       "grantmaking"
     ],
-    "legal_status": "foundation",
+    "legal_status": "foundation_status_unspecified",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3598,7 +3598,7 @@
       "international_cooperation",
       "USAID_funding_method_sample"
     ],
-    "legal_status": "ngo",
+    "legal_status": "nongovernmental_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "japan_domestic",
     "primary_places": [
@@ -3638,7 +3638,7 @@
           "S079",
           "S080"
         ],
-        "type": "canonical_variant",
+        "type": "orthographic_variant",
         "unresolved_source_refs": []
       },
       {
@@ -3646,7 +3646,7 @@
         "source_ids": [
           "S080"
         ],
-        "type": "tax_name",
+        "type": "registered_name_variant",
         "unresolved_source_refs": []
       }
     ],
@@ -3660,7 +3660,7 @@
       "charity",
       "base_community_welfare"
     ],
-    "legal_status": "501c3/registered_nonprofit（EIN 46-0598583）",
+    "legal_status": "us_501c3_nonprofit",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [
@@ -3699,7 +3699,7 @@
       "charity",
       "base_community_welfare"
     ],
-    "legal_status": "unclear",
+    "legal_status": "legal_form_unresolved",
     "merged_duplicate_of": "",
     "origin_type": "us_origin",
     "primary_places": [

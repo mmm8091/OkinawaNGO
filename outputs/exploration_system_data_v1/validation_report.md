@@ -13,10 +13,14 @@ Status: **PASS**
 - PASS — unique demo episode IDs: 9 rows
 - PASS — unique research episode IDs: 4 rows
 - PASS — episode layers disjoint: demo=9 research=4
-- PASS — unique demo relation IDs within relation type: 288 relation rows
-- PASS — actor-issue references: 65 demo rows
+- PASS — unique demo relation IDs within relation type: 354 relation rows
+- PASS — actor-issue references: 125 demo rows
+- PASS — actor-issue display_state values are legal: illegal=0
+- PASS — frozen_bounded actor-issue rows carry missing_scope: missing=0
+- PASS — no fact-pending rows enter the demo actor-issue layer: pending=0
+- PASS — actor-issue display_state counts cover every edge: accepted_unfrozen=58 fact_pending=114 frozen_bounded=67 scope_reviewed_fact_pending=44
 - PASS — actor-place references: 53 demo rows with matching place key/label
-- PASS — strict triple references: 65 demo rows
+- PASS — strict triple references: 71 demo rows
 - PASS — actor-episode references: 15 demo rows
 - PASS — event participation references: 63 demo rows
 - PASS — legal role references: 27 demo rows
@@ -58,6 +62,20 @@ Status: **PASS**
 
 ```json
 {
+  "actor_issue_states": {
+    "display_state_counts": {
+      "accepted_unfrozen": 58,
+      "fact_pending": 114,
+      "frozen_bounded": 67,
+      "scope_reviewed_fact_pending": 44
+    },
+    "research_fact_gate_counts": {
+      "fact_pending": 128,
+      "needs_local_retrieval": 5,
+      "needs_second_source": 25
+    },
+    "valid_edges": 283
+  },
   "actor_registry": {
     "current_visible": 121,
     "hidden_provenance_rows": 1,
@@ -75,11 +93,11 @@ Status: **PASS**
     "places": 21,
     "relations": {
       "actor_episode": 15,
-      "actor_issue": 65,
+      "actor_issue": 125,
       "actor_place": 53,
       "event_participation": 63,
       "legal_roles": 27,
-      "strict_place_issue": 65
+      "strict_place_issue": 71
     },
     "sources": 295,
     "venues": 16
@@ -89,10 +107,10 @@ Status: **PASS**
     "outcomes": 12,
     "relations": {
       "actor_episode": 4,
-      "actor_issue": 173,
+      "actor_issue": 158,
       "actor_place": 77,
       "event_participation": 4,
-      "strict_place_issue": 247
+      "strict_place_issue": 234
     }
   },
   "typed_relations": {

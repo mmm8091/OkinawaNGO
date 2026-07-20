@@ -80,6 +80,13 @@ export function ActorPanel({
           <p>
             {actor.id} · {actor.legal_status}
           </p>
+          <div className="actor-meta">
+            <span>{actor.evidence_level}</span>
+            <span>{tr(actor.review_status, lang)}</span>
+            {actor.scope_status && (
+              <span className="scope-badge">{tr(actor.scope_status, lang)}</span>
+            )}
+          </div>
         </div>
       </div>
       <div className="metric-strip">
@@ -120,6 +127,11 @@ export function ActorPanel({
                 <span>
                   <strong>{issue ? tr(issue.display_label, lang) : edge.issue_id}</strong>
                 </span>
+                {edge.display_state && (
+                  <em className={`state-chip ${edge.display_state}`}>
+                    {tr(edge.display_state, lang)}
+                  </em>
+                )}
                 <CaretRight size={15} />
               </button>
             );
@@ -153,7 +165,16 @@ export function ActorPanel({
                   <span>
                     <strong>{issue ? tr(issue.display_label, lang) : edge.issue_id}</strong>
                   </span>
-                  <PendingBadge>{tu("common.pending", lang)}</PendingBadge>
+                  {edge.display_state && (
+                    <em className={`state-chip ${edge.display_state}`}>
+                      {tr(edge.display_state, lang)}
+                    </em>
+                  )}
+                  {["needs_second_source", "needs_local_retrieval"].includes(
+                    edge.fact_gate_status,
+                  ) && (
+                    <em className="overlay-chip">{tr(edge.fact_gate_status, lang)}</em>
+                  )}
                   <CaretRight size={15} />
                 </button>
               );

@@ -259,8 +259,9 @@ v2 的六项解释性发现：
 - 六维 coverage 已按 121 个有效 actor、283 条有效 actor–issue、130 条有效 actor–place 和 295 条来源重生；中央历史边界为 122／294／135。当前 120 个 category cells 是生成结果，不是固定契约。
 - HR-035 Batch 1、HR-010 batch 6、LCR001–004、HR-034、HR-029／031 均已确认并合并。当前正式剩余总账只剩12条当地／新一手材料任务，见 `docs/principal_human_review_remaining_v17.md`。
 - HR-029 数据冻结门已清除，HR-031 三项均采用保守 B；原5张 `freeze_required` 图仍须按冻结词表重绘／QA 后才能改为 ready。蓝图仍不等于正式 DOCX/PDF、论文或 PPT。
-- 探索系统 adapter 已兼容冻结后的 relation/place/actor–issue 词表，并在临时目录通过当前层
-  构建；22项 adapter、5项 R10 renderer 和7项 R1/R2 gate 测试通过。正式前端数据尚未在
-  保留现有未提交 UI 改动的前提下重生；全仓历史测试仍含冻结前快照断言，不能宣称全绿。
+- 探索系统已按冻结后的 relation/place/actor–issue 词表正式重生，当前为125人审／158候选；
+  22项 adapter、5项 R10 renderer 和7项 R1/R2 gate 测试通过。五页已在1280×900与390×844
+  复验，控制台零错误。LC001–LC004虽已人审，时间页仍因 adapter 未导出而显示0个谱系锚点；
+  这是下一轮结构缺口。全仓历史测试仍含冻结前快照断言，不能宣称全绿。
 
 对外使用时，第二次同步仍是最后已经交付的历史客户快照；`outputs/formal_comm_v2/` 是第三次同步准备稿，最终 PDF 由项目负责人排版。OPI-00 仍暂停／未完成，在其完成前不启动新的广泛研究波次。

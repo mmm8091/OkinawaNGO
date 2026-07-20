@@ -1,8 +1,22 @@
 {
   "artifact": "exploration_system_data_v1",
   "as_of_date": "2026-07-20",
-  "build_id": "dc204fa82fa44509",
+  "build_id": "5ed5528a649de4d1",
   "counts": {
+    "actor_issue_states": {
+      "display_state_counts": {
+        "accepted_unfrozen": 58,
+        "fact_pending": 114,
+        "frozen_bounded": 67,
+        "scope_reviewed_fact_pending": 44
+      },
+      "research_fact_gate_counts": {
+        "fact_pending": 128,
+        "needs_local_retrieval": 5,
+        "needs_second_source": 25
+      },
+      "valid_edges": 283
+    },
     "actor_registry": {
       "current_visible": 121,
       "hidden_provenance_rows": 1,
@@ -20,11 +34,11 @@
       "places": 21,
       "relations": {
         "actor_episode": 15,
-        "actor_issue": 65,
+        "actor_issue": 125,
         "actor_place": 53,
         "event_participation": 63,
         "legal_roles": 27,
-        "strict_place_issue": 65
+        "strict_place_issue": 71
       },
       "sources": 295,
       "venues": 16
@@ -34,10 +48,10 @@
       "outcomes": 12,
       "relations": {
         "actor_episode": 4,
-        "actor_issue": 173,
+        "actor_issue": 158,
         "actor_place": 77,
         "event_participation": 4,
-        "strict_place_issue": 247
+        "strict_place_issue": 234
       }
     },
     "typed_relations": {
@@ -70,52 +84,52 @@
   },
   "deterministic": true,
   "input_hashes": {
-    "actor_aliases": "5fbdff55018b21e53436983b90cb7d773c4a69ab09c3821408945ecbcf04310e",
-    "actor_issue": "954233c440a988d067a83090344578a93f6eba910a1757eb3dc59c3837a04628",
-    "actor_place": "9d71ab892b74fbe73387ea978c458e5926e76e93a2ef667bebee21d5ec174324",
-    "actors": "03653fe12665abc754ef09d9d30e76c6e53dd495eaceba0fef4bc5ce5540b0a3",
+    "actor_aliases": "e1e8160d33aa975d6374ba38f8490e182b832a96b7bbed285cd94d29b522b52d",
+    "actor_issue": "b9eade4e031292437aa3b753f361b21ee9036e9deaf8a5bc55b2aea6b2f266ac",
+    "actor_place": "dc933a89896fffd336a26a9a5d198bb98490dbb2ac9a84610242de714721e082",
+    "actors": "e42f53e82a4e6897bdb7d387039bfb6c04ae98c0a10bfd83756ca56dbefe9af6",
     "archive_manifest": "1e57f7e7df749b5ed0714994dc4176b69e7ad51c993c058198c4fd9bdf180d78",
-    "coverage_cells": "e2e85b773b56db2eb0ce5afff92404decc5d6b2ebc3dd0f89fbf2135c723b85d",
+    "coverage_cells": "31c13a232b83bd67e72d5281400b6d794b7b79b0e4c718438fcec4aa51c5ca31",
     "coverage_implications": "93564245fad8978438b4f5c8e0b63509e842580982c56972cf7c915e2be8368a",
     "episodes": "caa4135d7aa9c388f504d61e3c30c505aade512c9c589250f20daa217b99ca82",
-    "event_participation": "c28d5098bbd4f1ea894fc53f5cd65decd19668a7ff0718987eac9101f3effdd9",
+    "event_participation": "9e0ed9d80fda91b35f9303c31b78ce7024111ab1c4b255bd4f366af51a6c5dc8",
     "evidence_notes": "e43d35a804aec5fb0d749b2d3b822f55256d022f3f9d1a62fe91cda4627f6c0e",
-    "funding_relations": "6b3c7c52f741dfe1053b6d2a4c5e928a501ed0809b775c6e7742ee028ba7d86c",
+    "funding_relations": "3b11795150e7630ccf4cdab371ac135fab019c260609ee1272df518638f3ef23",
     "issues": "a6bda1dcdc83a0ef3ff619fd72681358afc68d4aa09c9fca6b23fa7b7d92d091",
     "legal_cases": "e4af6cec5355939e1a7f36729d935f2c8f88a1c3ad6581fa46a7305671506d79",
     "legal_roles": "b319e01e57d0d00e1e6a47d1af4ac28562aa90d893e5a24b9382ab825d842b0d",
     "map_geometry": "943b2bb21015d941038c94ccc411f95e6cd5c415441f7741537f71af0eb102da",
-    "places": "8b0461be00e7711aceec2d409c2f7c7408a75bf455f34c1859cc0af2651a2719",
+    "places": "1dfd9df377a824689fdc9e3ad74362ad3a7c67b59d8f6f1ab6523f91af624e0f",
     "source_crosswalk": "4bd059205fbf0c07efae7ccdee2deb3fbd1cf1d692a4405955b92402b18dadb1",
-    "sources": "ea5c34a2785cfede7f8eedc0420c56968c17fdca112b38d168ec5df5a87ee3a4",
-    "strict_triples": "a13bb162cd1f855c9a3db38f7875cb59081d4cbd989c9325d9d6592510d8c7ec",
+    "sources": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902",
+    "strict_triples": "cd6e36eeeac46fa71b668f5659caeb62f6b34788d92819694ea107f8ac20ab15",
     "typed_relation_handoff": "bd9ff7a0a01e02e5b8944245a32b8f5a7a6432ccd01a7b63eb8912de43f590c6",
     "venues": "373f666659acbbbcb1105bcef3496a982329eef99fae8b13572939296b45f048"
   },
   "output_hashes": {
-    "demo/actors.json": "0bb49ffaea1d20699845d8358a44ed526d4fe7ea9d98d16275f96f454d0753ca",
-    "demo/administrative_records.json": "dc1099fd369601567640122d1970c2712a1b8275ec037591e6a0a88e6aaf1ba1",
-    "demo/aggregate_observations.json": "56ee78dae21ee16b335776e562ec1a5d4624e9179767fda8dec34697c5eeee3c",
+    "demo/actors.json": "3f3c331c6231337fe2a71781acff4b50c06b94713ffedb087667d879071e6df1",
+    "demo/administrative_records.json": "595440838d32c1cc53cd521ca546c7c90658438fd5eb91bc4a5b53e38355c0de",
+    "demo/aggregate_observations.json": "33b5530706fda60df0d422ce956620e267901dd55d578c836394c6f9ae3db6fa",
     "demo/case_roles.json": "c63bdaac81c24ecdc39ac4dcd70a58338c895944c4f1b5d8bddadf34f154d4e8",
-    "demo/dyadic_relations.json": "3db5bfa3065ab6c3a36123e4005e06479fabe59d2016b447f82cf2c64e9fb024",
+    "demo/dyadic_relations.json": "cbc23a402698bb7e993f1c1a512bcecd8f51a4f3bdd33fdca0281c1baa147b44",
     "demo/episodes.json": "131f6dfb139305006941916fe3823cf051c1ad08923f8ceaf530093450e066b0",
-    "demo/evidence.json": "e6e5c2b5ac6a6797a33dcab845937035c28a8666f291353e5a12f3b0cbafe9ab",
+    "demo/evidence.json": "7513c5de77763103e72657fb01ef2800dc89be8d1d61fa4200c14a1e413e660e",
     "demo/genealogy_anchors.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "demo/historical_anchors.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "demo/issues.json": "654b5da4a2e68739ef4afd72919f8480d7393dacf796b5e820e6446debaafcb4",
     "demo/map_geometry.geojson": "281304814daf0b9960156a16026a0f55228963dff9d306b73017691bbe07d265",
     "demo/outcomes.json": "6abbb1b2545d70903641d9487fa43d5f290d39f1deebfbca21487ea3fd9d3a6f",
-    "demo/places.json": "a2171b899c134e463cf129b157275d696b3059aa0af43b491adec3ba9301a9b2",
+    "demo/places.json": "d0226a2f27c400afb6b7d8d1a69ee7a2c0e4af83dc4acc83006693f3dc1ef99f",
     "demo/relation_leads.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-    "demo/relations.json": "259245462fd38dd37c052633d9716bbb908bd22327fd7eee3615178b1477ce06",
+    "demo/relations.json": "65f67a4ba9065368553faf9c4c9cff5553712eef635f4cae376cdd53f7841ef8",
     "demo/typed_event_participation.json": "94588532f0a026278d70baf52c947011553e773bebaa7b6224f5afa45f8e082e",
     "demo/venues.json": "785f877b1ad26850f542fd82d6ebf47d92dd76d3b46c61f5d13ec40642bb32e9",
-    "research/candidates.json": "0e0de29773971a69731eefe9c9ce3eaf0b63c208883522d6e86f27461f63f43b",
-    "validation_report.md": "4e8c16ea2526395efd7527da4e6b8bf2c6510ad81794f768bcba96ad03317464",
-    "views/actors.json": "5442700197b452ea3ed860ec14aab356dfd7160f30f880a66135a75e2fd92eef",
-    "views/evidence_coverage.json": "ca58947ed190232c38ba32ade9777875984e15b50ce9c2e3984a7abd7784cd37",
+    "research/candidates.json": "74dc78a90e24ba1145ef2a20cf06ecaaeb9f3e3191032d78919c2dc1a5f493a1",
+    "validation_report.md": "a760c2a730c6ffb66593c194382eb2cd2927715ba56b6730bf9888bdeb849c17",
+    "views/actors.json": "cdd2e1c7ec040f8050f411864af408d6cd829380ded66b9eda3fe04418e6839b",
+    "views/evidence_coverage.json": "3e8673f771b66714e1b12430c837e4924f32604e4027228eeb17e6d0057b58cf",
     "views/global.json": "b5aefdd8bab9d3d5542ff3280cd3626ca983f9351ebd671d959719bd75b05150",
-    "views/overview.json": "ee619271ac0f32312add91a42cd4f5c62117bb70382c89d694c3fad88fc1463f",
+    "views/overview.json": "ad838d9b1d4268c36ed7ca9607ff475d0d677975dcb22b7997002b8ddb5e7640",
     "views/pathways.json": "4e719db64017f0023068428024f57f510c8834824ab6691a0a848eed09513358"
   },
   "schema_version": "1.0.0",

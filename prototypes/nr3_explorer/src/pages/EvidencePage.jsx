@@ -37,7 +37,7 @@ export function EvidencePage({ data }) {
             </ChartHelp>
           </h1>
         </div>
-        <div className="path-summary">
+        <div className="page-summary">
           <Books size={18} />
           {tu("evidence.summary", lang)
             .replace("{c}", cells.length)

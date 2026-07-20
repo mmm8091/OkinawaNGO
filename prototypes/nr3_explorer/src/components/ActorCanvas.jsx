@@ -16,9 +16,11 @@ export function ActorCanvas({
   setSelectedActor,
   classFilter,
   issueFilter,
+  onPickIssue,
   search,
   layer,
   candidates,
+  scopeNote,
 }) {
   const canvasRef = useRef(null);
   const wrapperRef = useRef(null);
@@ -72,10 +74,20 @@ export function ActorCanvas({
     const pendingOnlyActors = new Set(
       actorIds.filter((id) => !demoEdges.some((edge) => edge.actor_id === id)),
     );
+    const frozenCount = demoEdges.filter(
+      (edge) => edge.display_state === "frozen_bounded",
+    ).length;
+    const scopeReviewedPendingCount = pendingEdges.filter(
+      (edge) => edge.display_state === "scope_reviewed_fact_pending",
+    ).length;
+    const hasStates = edges.some((edge) => edge.display_state);
     return {
       edges,
       demoCount: demoEdges.length,
       pendingCount: pendingEdges.length,
+      frozenCount,
+      scopeReviewedPendingCount,
+      hasStates,
       actorIds,
       issueIds,
       actorById,
@@ -302,17 +314,26 @@ export function ActorCanvas({
 
   const resetView = () => setView({ k: 1, x: 0, y: 0 });
 
-  const nearest = (event) => {
+  const hitAt = (event) => {
     const rect = canvasRef.current.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-    return nodesRef.current
+    const dist = (node) =>
+      Math.hypot(node.x * view.k + view.x - x, node.y * view.k + view.y - y);
+    const actorNode = nodesRef.current
       .filter((node) => node.kind === "actor")
-      .map((node) => ({
-        ...node,
-        distance: Math.hypot(node.x * view.k + view.x - x, node.y * view.k + view.y - y),
-      }))
+      .map((node) => ({ ...node, distance: dist(node) }))
       .sort((a, b) => a.distance - b.distance)[0];
+    const issueNode = nodesRef.current
+      .filter((node) => node.kind === "issue")
+      .map((node) => ({ ...node, distance: dist(node) }))
+      .sort((a, b) => a.distance - b.distance)[0];
+    return { actorNode, issueNode, x, y };
+  };
+
+  const issueTooltip = (node) => {
+    const count = graph.edges.filter((edge) => edge.issue_id === node.id).length;
+    return `${tr(node.label, lang)} · ${count}`;
   };
 
   return (
@@ -347,15 +368,28 @@ export function ActorCanvas({
             }
             return;
           }
-          const node = nearest(event);
-          const close = node && node.distance < 14;
-          event.currentTarget.style.cursor = close ? "pointer" : "crosshair";
-          if (close) {
+          const { actorNode, issueNode } = hitAt(event);
+          const overActor =
+            actorNode &&
+            actorNode.distance < 14 &&
+            !(issueNode && issueNode.distance < actorNode.distance);
+          const overIssue =
+            !overActor && issueNode && issueNode.distance < 14;
+          event.currentTarget.style.cursor =
+            overActor || overIssue ? "pointer" : "crosshair";
+          if (overActor) {
             const rect = event.currentTarget.getBoundingClientRect();
             setHoverNode({
               x: event.clientX - rect.left,
               y: event.clientY - rect.top,
-              label: node.label,
+              label: actorNode.label,
+            });
+          } else if (overIssue) {
+            const rect = event.currentTarget.getBoundingClientRect();
+            setHoverNode({
+              x: event.clientX - rect.left,
+              y: event.clientY - rect.top,
+              label: issueTooltip(issueNode),
             });
           } else {
             setHoverNode(null);
@@ -365,8 +399,18 @@ export function ActorCanvas({
           const drag = dragRef.current;
           dragRef.current = null;
           if (drag?.moved) return;
-          const node = nearest(event);
-          setSelectedActor(node && node.distance < 16 ? node.id : null);
+          const { actorNode, issueNode } = hitAt(event);
+          const pickActor =
+            actorNode &&
+            actorNode.distance < 16 &&
+            !(issueNode && issueNode.distance < actorNode.distance);
+          if (pickActor) {
+            setSelectedActor(actorNode.id);
+          } else if (issueNode && issueNode.distance < 14) {
+            onPickIssue(issueFilter === issueNode.id ? "all" : issueNode.id);
+          } else {
+            setSelectedActor(null);
+          }
         }}
         onPointerLeave={() => {
           setHoverNode(null);
@@ -385,10 +429,20 @@ export function ActorCanvas({
       <div className="actor-canvas-note">
         <CheckCircle size={16} weight="fill" />
         {layer === "research"
-          ? tu("actors.noteResearch", lang)
-              .replace("{d}", graph.demoCount)
-              .replace("{p}", graph.pendingCount)
-          : tu("actors.noteDemo", lang).replace("{n}", graph.demoCount)}
+          ? graph.hasStates
+            ? tu("actors.noteResearch", lang)
+                .replace("{d}", graph.demoCount)
+                .replace("{p}", graph.pendingCount)
+                .replace("{s}", graph.scopeReviewedPendingCount)
+            : tu("actors.noteResearchLegacy", lang)
+                .replace("{d}", graph.demoCount)
+                .replace("{p}", graph.pendingCount)
+          : graph.hasStates
+            ? tu("actors.noteDemo", lang)
+                .replace("{n}", graph.demoCount)
+                .replace("{f}", graph.frozenCount)
+            : tu("actors.noteDemoLegacy", lang).replace("{n}", graph.demoCount)}
+        {scopeNote && <em className="edgeless-note">{scopeNote}</em>}
       </div>
       {!graph.edges.length && (
         <div className="canvas-empty">

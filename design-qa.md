@@ -136,3 +136,47 @@ following principal decisions applied:
   extension warnings).
 
 final result: pass (agent-verified with rendered evidence; awaiting principal confirmation)
+
+- Iteration 14 (2026-07-20, actor–issue gate states per `frontend_actor_issue_state_handoff_v1.md`):
+  builder derives fact/scope/schema-freeze gates plus `display_state` and passes through 10
+  central fields; counts verified exactly 7/58/59/114 with research fact-gate 143/25/5
+  (22/22 builder tests, validation PASS). Frontend consumes `display_state` without deriving:
+  edge rows carry state chips (frozen_bounded / accepted_unfrozen / scope_reviewed_fact_pending /
+  fact_pending) and needs_* overlays; canvas note reads 65 accepted (7 field-frozen) and
+  research 65+173 with "其中 59 条已完成范围复核"; pending-section sublabel no longer says
+  未人审; help text clarifies reviewed = displayed fact edges, not actor identity. Verified on
+  A002 (accepted_unfrozen chips) and A059 (scope_reviewed_fact_pending / fact_pending chips).
+  Screenshots: `qa/states_*.png`.
+
+- Iteration 13 (2026-07-20, data-version visibility rework per main-thread recheck): topbar
+  version stamp (as_of_date · short build id · 121 active / 122 provenance from manifest);
+  class filter reads 当前图中组织（25/121）and research shows 103/121 with an explicit
+  "18 个无边组织只可搜索" note; actor card shows evidence_level / review_status / scope_status;
+  X014 visibly marked watchlist_only in search and panel; A072 (merged_duplicate) hidden from
+  search and graphs; build-id watch polls manifest (20s + window focus) and offers a reload
+  banner; handoff counts unified (14 reviewed = 10 supported + 4 supported_bounded, admin
+  6+5, aggregate 2, event 4, lead 4, case roles 27). Verified at 1488×1024; console clean.
+  Screenshots: `qa/version_*.png`.
+
+- Iteration 12 (2026-07-20, header unification): page headers normalized to one spec —
+  row 1 = chart title + "?" left and the page's primary control right; row 2 (when needed) =
+  `.toolbar-row` with search and inline filters. The Actors header no longer wraps three
+  control groups into dead space; time/pathways/evidence summaries merged into one
+  `.page-summary` component. Parallel main-thread additions (case-role and event-participation
+  records in the panel, iteration 11 post-merge repair) verified intact. Screenshots:
+  `qa/unified_*.png`.
+
+- Iteration 14b (2026-07-20): page title now follows graph state — 议题生态 mode shows
+  组织—议题生态图, 组织关系 mode shows 组织关系图, each with its own "?" reading text
+  (relation help: family colors, direction arrows, solid/dashed semantics, dyadic-only scope).
+
+- Iteration 15 (2026-07-20, post-freeze regeneration and browser QA): rebuilt the explorer
+  from the merged 145-item online-review layer. Current actor–issue split is 125 reviewed /
+  158 research, with display states 67 frozen_bounded / 58 accepted_unfrozen /
+  44 scope_reviewed_fact_pending / 114 fact_pending; strict place–issue is 71 reviewed /
+  234 research. In-app browser checks passed on all five routes at 1280×900 and 390×844.
+  A real mobile overflow was found in the topbar and Actors header controls; the ≤820px
+  grid, segmented controls, search and filters now shrink or wrap, leaving all five pages at
+  375px document width in the 390px viewport. App console: 0 warning / 0 error. Time-page
+  genealogy remains an explicit open defect: four reviewed LC records exist centrally, but
+  `genealogy_anchors` still exports 0.

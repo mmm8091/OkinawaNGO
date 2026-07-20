@@ -56,10 +56,14 @@ export function ActorsPage({ data, layer, candidates }) {
   const [search, setSearch] = useState("");
   const [graphMode, setGraphMode] = useState("ecology");
   const selected = data.actors.find((actor) => actor.id === selectedActor);
+  const activeActors = useMemo(
+    () => data.actors.filter((actor) => actor.scope_status !== "merged_duplicate"),
+    [data.actors],
+  );
   const searchResults = useMemo(() => {
     const term = search.trim().toLowerCase();
     if (!term) return [];
-    return data.actors
+    return activeActors
       .filter((actor) =>
         [
           actor.id,
@@ -71,7 +75,7 @@ export function ActorsPage({ data, layer, candidates }) {
           .includes(term),
       )
       .slice(0, 8);
-  }, [data.actors, search]);
+  }, [activeActors, search]);
   const scopedActorIds = useMemo(() => {
     const ids = new Set(data.relations.actor_issue.map((edge) => edge.actor_id));
     if (layer === "research" && candidates) {
@@ -79,23 +83,47 @@ export function ActorsPage({ data, layer, candidates }) {
     }
     return ids;
   }, [data.relations.actor_issue, candidates, layer]);
-  const classCounts = data.actors.reduce((counts, actor) => {
+  const classCounts = activeActors.reduce((counts, actor) => {
     if (!scopedActorIds.has(actor.id)) return counts;
     const group = actorClassGroup(actor.actor_class);
     counts[group] = (counts[group] || 0) + 1;
     return counts;
   }, {});
   const classes = GROUP_ORDER.filter((group) => classCounts[group]);
+  const edgelessNote =
+    layer === "research" && activeActors.length > scopedActorIds.size
+      ? tu("actors.edgeless", lang).replace(
+          "{n}",
+          activeActors.length - scopedActorIds.size,
+        )
+      : "";
 
   return (
     <main className="workspace actors-workspace">
-      <div className="workspace-top actor-top">
+      <div className="workspace-top">
         <div className="page-intro">
           <h1>
-            {tu("actors.title", lang)}
-            <ChartHelp title={tu("actors.title", lang)}>
-              <p>{tu("help.actors.p1", lang)}</p>
-              <p>{tu("help.actors.p2", lang)}</p>
+            {graphMode === "ecology"
+              ? tu("actors.title", lang)
+              : tu("actors.title.relation", lang)}
+            <ChartHelp
+              title={
+                graphMode === "ecology"
+                  ? tu("actors.title", lang)
+                  : tu("actors.title.relation", lang)
+              }
+            >
+              {graphMode === "ecology" ? (
+                <>
+                  <p>{tu("help.actors.p1", lang)}</p>
+                  <p>{tu("help.actors.p2", lang)}</p>
+                </>
+              ) : (
+                <>
+                  <p>{tu("help.relation.p1", lang)}</p>
+                  <p>{tu("help.relation.p2", lang)}</p>
+                </>
+              )}
             </ChartHelp>
           </h1>
         </div>
@@ -108,70 +136,79 @@ export function ActorsPage({ data, layer, candidates }) {
             { id: "relation", label: tu("actors.mode.relation", lang), icon: ShareNetwork },
           ]}
         />
-        <div className="search-box">
-          <MagnifyingGlass size={18} />
-          <input
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-            placeholder={tu("actors.search", lang)}
-            aria-label={tu("actors.search", lang)}
-          />
-          {search.trim() && (
-            <div className="search-results">
-              {searchResults.map((actor) => (
-                <button
-                  key={actor.id}
-                  type="button"
-                  onClick={() => {
-                    setSelectedActor(actor.id);
-                    setSearch("");
-                  }}
-                >
-                  <strong>{labelOf(actor)}</strong>
-                  <small>
-                    {actor.id} · {tu(`classGroup.${actorClassGroup(actor.actor_class)}`, lang)}
-                  </small>
-                </button>
-              ))}
-              {!searchResults.length && (
-                <span className="no-match">{tu("actors.noMatch", lang)}</span>
-              )}
-            </div>
-          )}
-        </div>
-        <div className="filter-row">
-          <label>
-            {tu("actors.classLabel", lang)}
-            <select
-              value={classFilter}
-              onChange={(event) => setClassFilter(event.target.value)}
-            >
-              <option value="all">
-                {tu("actors.allClasses", lang)}（{scopedActorIds.size}）
-              </option>
-              {classes.map((value) => (
-                <option value={value} key={value}>
-                  {tu(`classGroup.${value}`, lang)}（{classCounts[value]}）
-                </option>
-              ))}
-            </select>
-          </label>
-          {graphMode === "ecology" && (
+        <div className="toolbar-row">
+          <div className="search-box">
+            <MagnifyingGlass size={18} />
+            <input
+              value={search}
+              onChange={(event) => setSearch(event.target.value)}
+              placeholder={tu("actors.search", lang)}
+              aria-label={tu("actors.search", lang)}
+            />
+            {search.trim() && (
+              <div className="search-results">
+                {searchResults.map((actor) => (
+                  <button
+                    key={actor.id}
+                    type="button"
+                    onClick={() => {
+                      setSelectedActor(actor.id);
+                      setSearch("");
+                    }}
+                  >
+                    <strong>
+                      {labelOf(actor)}
+                      {actor.scope_status === "watchlist_only" && (
+                        <em className="scope-badge">{tr("watchlist_only", lang)}</em>
+                      )}
+                    </strong>
+                    <small>
+                      {actor.id} · {tu(`classGroup.${actorClassGroup(actor.actor_class)}`, lang)}
+                    </small>
+                  </button>
+                ))}
+                {!searchResults.length && (
+                  <span className="no-match">{tu("actors.noMatch", lang)}</span>
+                )}
+              </div>
+            )}
+          </div>
+          <div className="filter-row">
             <label>
-              {tu("actors.issueLabel", lang)}
+              {tu("actors.classLabel", lang)}
               <select
-                value={issueFilter}
-                onChange={(event) => setIssueFilter(event.target.value)}
+                value={classFilter}
+                onChange={(event) => setClassFilter(event.target.value)}
               >
-                <option value="all">{tu("actors.allIssues", lang)}</option>
-                {data.issues.map((issue) => (
-                  <option value={issue.id} key={issue.id}>
-                    {tr(issue.display_label, lang)}
+                <option value="all">
+                  {tu("actors.graphCount", lang)
+                    .replace("{n}", scopedActorIds.size)
+                    .replace("{t}", activeActors.length)}
+                </option>
+                {classes.map((value) => (
+                  <option value={value} key={value}>
+                    {tu(`classGroup.${value}`, lang)}（{classCounts[value]}）
                   </option>
                 ))}
               </select>
             </label>
-          )}
+            {graphMode === "ecology" && (
+              <label>
+                {tu("actors.issueLabel", lang)}
+                <select
+                  value={issueFilter}
+                  onChange={(event) => setIssueFilter(event.target.value)}
+                >
+                  <option value="all">{tu("actors.allIssues", lang)}</option>
+                  {data.issues.map((issue) => (
+                    <option value={issue.id} key={issue.id}>
+                      {tr(issue.display_label, lang)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
+          </div>
         </div>
       </div>
       <div className="overview-grid">
@@ -196,20 +233,22 @@ export function ActorsPage({ data, layer, candidates }) {
           )}
           {graphMode === "ecology" ? (
             <ActorCanvas
-              actors={data.actors}
+              actors={activeActors}
               issues={data.issues}
               relations={data.relations}
               selectedActor={selectedActor}
               setSelectedActor={setSelectedActor}
               classFilter={classFilter}
               issueFilter={issueFilter}
+              onPickIssue={(id) => setIssueFilter(id)}
               search={search}
               layer={layer}
               candidates={candidates}
+              scopeNote={edgelessNote}
             />
           ) : (
             <RelationCanvas
-              actors={data.actors}
+              actors={activeActors}
               dyadicRelations={data.dyadicRelations}
               layer={layer}
               candidates={candidates}

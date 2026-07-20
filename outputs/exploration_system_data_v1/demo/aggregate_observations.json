@@ -18,7 +18,7 @@
     "observation_kind": "aggregate_observation",
     "place_label": "Okinawa",
     "relation_family": "resources_funding",
-    "relation_type": "aggregate_history",
+    "relation_type": "aggregate_financial_history_observation",
     "review_notes": "HR-018 deferred decomposition: the approximate forty-year aggregate cannot be assigned to a year or recipient and does not enter the organization relation graph.",
     "review_scope": "relation_existence;endpoint_identity;time_period;amount_semantics;interpretation_boundary",
     "review_status": "needs_local_retrieval",

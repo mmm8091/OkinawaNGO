@@ -123,7 +123,7 @@
     "observation_kind": "administrative_record",
     "place_label": "Okinawa/Japan",
     "relation_family": "commission_service",
-    "relation_type": "ngo_consultant_commission",
+    "relation_type": "commission",
     "review_notes": "HR-018: ONC's MOFA NGO consultant role is confirmed. JPY 2,894,630 is an organization-side project-category cost, not a contract payment.",
     "review_scope": "relation_existence;endpoint_identity;time_period;amount_semantics;interpretation_boundary",
     "review_status": "human_checked",

@@ -87,7 +87,7 @@ export function TimePage({ data, onOpenActor, layer, candidates }) {
             </ChartHelp>
           </h1>
         </div>
-        <div className="time-summary">
+        <div className="page-summary">
           <ClockCounterClockwise size={18} />
           {tu("time.summary", lang)
             .replace("{e}", events.length)
