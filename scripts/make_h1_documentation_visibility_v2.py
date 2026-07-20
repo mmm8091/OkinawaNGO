@@ -2089,6 +2089,17 @@ text{{font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif;fill:#17
 def render_sensitivity(
     scenarios: list[dict[str, object]],
 ) -> str:
+    display_labels = {
+        "SRC_NO_S004": "移除 S004 的证据支持",
+        "SRC_NO_BIG3": "移除 S003／S004／S006 的证据支持",
+        "SRC_NO_ORG_HOSTED": "移除组织托管来源的支持",
+        "SRC_NO_LEGAL": "移除法律／程序来源的支持",
+        "SRC_NO_OFFICIAL": "移除官方／行政来源的支持",
+        "SRC_NO_MEDIA": "移除媒体来源的支持",
+        "ACT_TOP10_DOC": "移除关联来源最多的 10 个 actor",
+        "ACT_TOP10_DEGREE": "移除议题度数最高的 10 个 actor",
+        "ACT_BOTTOM10_DOC": "移除关联来源最少的 10 个 actor",
+    }
     source_rows = [
         row
         for row in scenarios
@@ -2129,9 +2140,13 @@ def render_sensitivity(
             y = 215 + index * 74
             retention = float(row["edge_retention_share"])
             bar_width = max(0, (retention - 0.5) / 0.5 * 385)
+            display_label = display_labels.get(
+                str(row["scenario_id"]),
+                str(row["scenario_label"]),
+            )
             body.append(
                 f'<text x="{x0}" y="{y + 17}" class="label">'
-                f"{escape(str(row['scenario_label']))}</text>"
+                f"{escape(display_label)}</text>"
             )
             body.append(
                 f'<rect x="{x0 + 280}" y="{y}" width="{bar_width:.1f}" '
