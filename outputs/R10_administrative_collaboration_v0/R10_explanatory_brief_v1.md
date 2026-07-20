@@ -35,4 +35,4 @@ R10R030 的约 8 亿日元／40 年仍为 `needs_local_retrieval`：来源没有
 
 ## 5. 下游与图
 
-HR-021 只允许九条有解释价值的已审关系进入 R6／R11；R11 不复制 R10 金额。`fig_r10_mechanism_ecology.png` 与 `fig_r10_amount_evidence_boundary.png` 本轮没有重绘，视为 pre-HR018 快照；当前正式计数和语义以三张中央 CSV 与本 brief 为准。
+HR-021 只允许九条有解释价值的已审关系进入 R6／R11；R11 不复制 R10 金额。`render_r10_current.py` 已从三张中央表重绘 `fig_r10_mechanism_ecology.svg/.html` 与 `fig_r10_amount_evidence_boundary.svg/.html`：前者保留 24 checked／10 revised／1 local 的机制分层，后者把 5 条 actual contract、14 条 project cost 与其他金额语法分开。旧 PNG 继续作为 pre-HR018 历史快照，不得用于当前报告；F031 仍须等 HR-029 冻结受控词，F032 可按现行边界使用。

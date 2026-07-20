@@ -106,7 +106,7 @@
 
 ## 当前层已重生与仍待终稿冻结的图件
 
-本节同时保留两类资产：已按合并结果重生、可按明确边界使用的 `ready_now` 图，以及仍受 HR-029 或 post-review render 控制的 `freeze_required` 图。每条标题与“使用／冻结条件”给出当前状态，不能再把已完成人审误写成尚待复核。
+本节同时保留两类资产：已按合并结果重生、可按明确边界使用的 `ready_now` 图，以及只待 HR-029 最终受控词／alias 冻结的 `freeze_required` 图。所有 post-review render 技术缺口均已清除；每条标题与“使用／冻结条件”给出当前状态，不能再把已完成人审误写成尚待复核。
 
 ### F009｜当前 actor 组织生态（预定第 8 页；待 HR-029 最终冻结）
 
@@ -204,29 +204,29 @@
 
 **使用条件：** 本图已由 `render_r09_election_mechanism_current.py` 从中央事件表和模块汇总表交叉校验后重绘；保持 18 confirmed-held＋1 announcement-only 的分层，不以 19 条记录代替现实事件频率或选举效果。
 
-### F031｜行政与服务生态机制图（预定第 24 页；待 HR-029＋post-review render）
+### F031｜行政与服务生态机制图（预定第 24 页；当前层已重绘，待 HR-029）
 
 **建议图题：** 行政协作、项目渠道、服务与慈善的功能分层
 
-**重绘后图注：** 图把行政委托、补助、项目成本、公共外交、军属服务、慈善与非资金关系按功能和证据语法分开，说明“制度联系”并非同一种资源关系。当前正式关系层为 24 `human_checked`、10 `human_revised`、1 `needs_local_retrieval`；它不是运动资金网络，行政委托／补助不能与服务／慈善合并为同一政治阵营，组织之间的功能接触也不自动产生联盟或立场。
+**当前图注：** 图把 35 条关系观察按行政委托／指定、补助、赞助、捐赠、实物支持、成员关系、服务存在、活动协作、汇总观察与 NOFO 线索分开，并叠加 24 `human_checked`、10 `human_revised`、1 `needs_local_retrieval`。横条表示机制构成，不是资金流、联盟强度或政治阵营；43 条功能观察均禁止从服务功能推断资金或基地政治立场。
 
-**冻结条件：** HR-018 已完成，三张中央表与 brief 已重生，但 F031 PNG 仍为 pre-HR018 快照；待 HR-029 统一受控词后，以当前 reviewed／revised／local 分层作 post-review render。
+**冻结条件：** HR-018 与 HR-032 已完成，SVG/HTML 已由 `render_r10_current.py` 按当前层重绘；只待 HR-029 统一受控词后做终稿冻结。HR-032 的名称 crosswalk 不生成关系或金额分配。
 
-### F032｜金额证据边界（预定第 25 页；待 post-review render）
+### F032｜金额证据边界（预定第 25 页；ready_now）
 
 **建议图题：** 金额记录的可解释边界
 
-**重绘后图注：** 图把 28 条金额观察中的点名合同、项目总成本、机构汇总金额、赞助档位和资助机会等不同语法分层；当前状态为 21 `human_checked`、6 `human_revised`、1 `needs_local_retrieval`，其中只有 5 条是 actual contract amount。只有具名、具方向、具对象的正式记录才能支持 recipient 关系。项目总成本不是对某 actor 的付款，JPY 与 USD 不可直接相加，赞助档位不能反推出金额，NOFO 或 grant opportunity 也不等于 award／recipient。
+**正式图注：** 图把 28 条金额观察分为可作具名金额表达与只能作背景／边界金额两侧；当前状态为 21 `human_checked`、6 `human_revised`、1 `needs_local_retrieval`。其中只有 5 条是 actual contract amount，14 条是 project／program cost；其余点名委托资金流、捐赠、未解析 recipient、跨期汇总与实物价值保持各自语法。项目成本不是对某 actor 的付款，JPY 与 USD 不可直接相加，赞助档位不能反推出金额，NOFO 或 grant opportunity 也不等于 award／recipient。
 
-**冻结条件：** HR-018 已完成，金额表与 brief 已重生，但现有 F032 PNG 仍为 pre-HR018 快照；须按 current reviewed／revised／local 分层重新渲染后才能转为 `ready_now`。
+**使用条件：** HR-018 已完成，本图已由 `render_r10_current.py` 按 current reviewed／revised／local 层重绘；只有具名、具方向、具对象且语义明确的正式记录才能支持 recipient 或合同金额表述。
 
-### F008｜严格 E3／E4 支持、委托与服务分层（建议第 24 页辅图或附录；待 reviewed-only post-review render）
+### F008｜严格 E3／E4 支持、委托与服务分层（建议第 24 页辅图或附录；ready_now 分层版）
 
-**建议图题：** 高证据等级关系中的支持、委托、服务与非资金联系
+**建议图题：** 高证据等级支持、委托与服务记录的语义分层
 
-**重绘后图注：** 图只展示达到 E3／E4 来源门槛、且在 HR-018 后可按当前 review_status 明确分层的支持、委托、服务及非资金关系。证据等级高不等于关系已由人工接受，也不等于金额、政治立场或稳定联盟已经确认；标为 not_funding_relation 的组织隶属、法律代理或成员关系不得改写为资助边。
+**正式图注：** 图从 43 条中央 support／funding 样本中筛出 16 条同时达到 E3／E4、`human_checked`／`human_revised` 和 supported／bounded 语义的当前记录：7 条可作为组织—组织二元关系，6 条是行政／recipient 记录，1 条是事件级记录，2 条仅作面板线索。16 条记录不是 16 条组织关系；只有 dyadic 层可进入组织关系图。证据等级高也不等于金额、政治立场或稳定联盟已经确认。
 
-**冻结条件：** HR-018 已完成且中央关系表已更新，但当前 F008 与 A037 仍是 pre-HR018 快照；须以 reviewed／revised 关系和统一边方向执行独立 post-review render，不能只按 E3／E4 或 `confirmed_*` confidence 自动纳入。
+**使用条件：** 本图已由 `render_r10_current.py` 从中央 43 行当前层机械重绘；NOFO／grant opportunity、event participation 和 panel-only lead 不进入组织关系图，成员关系不是 funding，service／recipient 记录不产生基地政治立场。旧 38 行 evidence-only A037 与 PNG 只保留为历史快照。
 
 ## 装配时的统一短注
 

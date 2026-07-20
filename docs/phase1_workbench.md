@@ -190,7 +190,7 @@
 - 地点×议题正式替代层已建立：312 条有效同源三元事实，305 条为 E3/E4，65 条两边均经人审，100 条可附着正式事件观察。旧宽投影只作方法上界。
 - 转译机制比较已形成 13 个 episode（R8/R9 已核案件 9 个＋HR-027 事件候选 4 个）：所有入选 episode 均产生可观察中间产出，但底层项目／政策按诉求明确改变为 0，泡濑仅为跨波次 mixed；这是“已进入场域的案例”比较，不是总体成功率或因果估计。
 - R10 已对 S002 全部 86 页／616 行建立来源总体；365 个机器标签不是 actor。HR-032 的 8 项 canonical／JV／registry crosswalk 已合并，未把复合体成员展开成付款或稳定关系。
-- 正式报告装配盘点 73 个现有资源并形成 32 页报告／20 页 PPT 蓝图；27 张非 superseded 正文图已有完整图—数据—来源—脚本—人审 gate 追溯链（14 ready、13 pending gate）。78 条报告主张的 32 组数字全部匹配，缺失 source／formal path 为 0；三项解释强度进入 HR-031。正式 DOCX/PDF、论文、PPT、先岛 dossier DOCX、public data 和冻结 codebook 仍是待生产合同成品，不能把蓝图计为完成。
+- 正式报告装配盘点 73 个现有资源并形成 32 页报告／20 页 PPT 蓝图；27 张非 superseded 正文图已有完整图—数据—来源—脚本—冻结动作追溯链，当前 22 ready／5 pending freeze。F008/F030/F032 已按合并层重绘；剩余五图均受 HR-029 最终冻结控制，F031 已重绘但未冻结词表。78 条报告主张的 32 组数字全部匹配，缺失 source／formal path 为 0；三项解释强度进入 HR-031。正式 DOCX/PDF、论文、PPT、先岛 dossier DOCX、public data 和冻结 codebook 仍是待生产合同成品，不能把蓝图计为完成。
 - 第三次同步已重写为 findings-led v2：`outputs/formal_comm_v2/第三次进度同步_v2.md` 与 6 张机制图，主线为“地方损害如何被组织翻译进不同制度语法，以及制度如何把诉求转换为有限结果”；新增 R5“小型重复骨架＋事件性变动外围”解释。v1 的 4 张方法／稳健性图退到附录。两版均不生成 PDF，由项目负责人自行排版。
 - 2026-07-17 起切换为共同研究节奏：项目负责人在解释性工作中的目标参与度约 50%。首轮使用 `lessons/0001-project-reentry-5-hour.html` 重新掌握合同、证据和主轴；决策单回收前不启动新的大范围研究波次。AI继续承担已批准的机械整理、QA和制图，新的问题选择、强解释和模块取舍逐项设置负责人检查点。
 
@@ -234,6 +234,6 @@
 5. 负责人已批准证据状态与前端展示规则：界面“演示视图”改为“已核视图”；已核层允许 `supported_bounded`，但必须显示已核／缺失字段；研究层增加 candidate／lead。权威规则为 `data/metadata/coding_schema_v1.md`。
 6. 关系架构 v1 已批准：43 行是异质观察，其中 27 行两端为 registry actor、16 行含 place／program／unknown recipient 等非 actor 端点；R8 27 行保持 case-role，不得生成“同案协作边”。实现依据为 `docs/actor_relation_architecture_v1.md`。
 7. HR-033 已完成并合并：标准化的 6 条 dyadic relations＋1 条 aggregate observation 在 `outputs/hr033_integration_v1/`；前端不得把 membership 当 funding，也不得把 R10R029 的 102,000 美元附到 F025。
-8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。F036 只作事件记录，R10R029 只作汇总观察。17 个 builder tests、全套 60 个 Python tests与前端 build 通过；L2 谱系等待生命周期人审。
+8. 类型化关系与 L0/L1 前端已完成：已核 14 dyadic／6 administrative／2 aggregate／4 event records／27 case roles；研究层 8 dyadic／5 administrative／4 leads。F036 只作事件记录，R10R029 只作汇总观察。17 个 builder tests、当前全套 75 个 Python tests 与前端 build 通过；L2 谱系等待生命周期人审。
 9. NR-04／NR-05 分别做两个时期的有界线上补缺；结果先进入候选和人工队列。NR-06 统一完成 claim/evidence QA、历史集成决定和已核／研究双层验收。
 10. 既有 HR／报告 gate 保持有效；只有当其直接阻断前端默认 claim 时才按优先级处理，不恢复全面铺开。

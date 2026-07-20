@@ -19,9 +19,9 @@ GAP_REGISTER = OUT / "missing_assets_v1.csv"
 ROUTES = [
     {
         "prefix": "outputs/phase1_visuals_v1/",
-        "script": "scripts/make_phase1_visuals.py",
-        "data": "data/interim/15_funding_or_support_edges_sample_v0.csv",
-        "sources": "data/interim/15_funding_or_support_edges_sample_v0.csv",
+        "script": "scripts/render_r10_current.py",
+        "data": "data/interim/15_funding_or_support_edges_sample_v0.csv;data/interim/21_admin_collaboration_relations_v0.csv;data/interim/22_admin_amount_observations_v0.csv;data/interim/23_admin_function_observations_v0.csv;outputs/R10_official_collaboration_universe_v1/HR032_crosswalk_merge_summary_v1.csv",
+        "sources": "data/interim/15_funding_or_support_edges_sample_v0.csv;outputs/R10_administrative_collaboration_v0/source_crosswalk_v1.csv",
     },
     {
         "prefix": "outputs/R01_R02_actor_issue_v1/",
@@ -85,8 +85,8 @@ ROUTES = [
     },
     {
         "prefix": "outputs/R10_administrative_collaboration_v0/",
-        "script": "scripts/make_r10_admin_collaboration.py",
-        "data": "data/interim/21_admin_collaboration_relations_v0.csv;data/interim/22_admin_amount_observations_v0.csv;data/interim/23_admin_function_observations_v0.csv",
+        "script": "scripts/render_r10_current.py",
+        "data": "data/interim/15_funding_or_support_edges_sample_v0.csv;data/interim/21_admin_collaboration_relations_v0.csv;data/interim/22_admin_amount_observations_v0.csv;data/interim/23_admin_function_observations_v0.csv;outputs/R10_official_collaboration_universe_v1/HR032_crosswalk_merge_summary_v1.csv",
         "sources": "outputs/R10_administrative_collaboration_v0/source_crosswalk_v1.csv",
     },
     {
@@ -247,17 +247,26 @@ def main() -> None:
     write_csv(GAP_REGISTER, gaps, list(gaps[0]))
 
     status = Counter(row["traceability_status"] for row in rows)
+    pending_gates = Counter(
+        row["human_gate"]
+        for row in rows
+        if row["traceability_status"] == "complete_pending_gate"
+    )
+    pending_gate_summary = "；".join(
+        f"{gate}:{count}" for gate, count in sorted(pending_gates.items())
+    ) or "none"
     report = f"""# 正式报告图件追溯核验 v1
 
 - 纳入非 superseded 正文图：**{len(rows)}**
 - 路径完整：**{sum(row['all_paths_exist'] == 'yes' for row in rows)}/{len(rows)}**
 - 当前可用：**{status['complete_ready']}**
-- 追溯完整、仍待人工 gate 或技术冻结／重生：**{status['complete_pending_gate']}**
+- 追溯完整、仍待冻结：**{status['complete_pending_gate']}**
+- 当前待冻结 gate：**{pending_gate_summary}**
 - 中央 source log：**{len(central_ids)}** 条
 - Claim 链完整：**{sum(bool(row['report_claim_ids']) for row in rows)}/{len(rows)}**
 - Evidence-note 直接引用图：**{sum(row['evidence_note_trace'] == 'linked' for row in rows)}**；其余图以正式关系／角色／聚合表为事实层
 
-每行均指向图件、报告 claim、evidence-note 或正式关系／角色表、locator/source crosswalk、生成脚本、当前事实层、人工 gate 与冻结动作。`complete_pending_gate` 包含尚待人工 gate 和“人审已完成但仍须按现行层重绘／冻结”的技术缺口；它只表示追溯链完整，不表示图中候选事实已经获批。残余页码／案号精修继续由 MA013 控制。
+每行均指向图件、报告 claim、evidence-note 或正式关系／角色表、locator/source crosswalk、生成脚本、当前事实层、人工 gate 与冻结动作。`complete_pending_gate` 由 manifest 的 `freeze_required` 控制；它只表示追溯链完整，不表示图中候选事实已经获批。本次所有 post-review render 技术缺口均已清除，五张待冻结图都由 HR-029 控制。残余页码／案号精修继续由 MA013 控制。
 """
     (OUT / "figure_traceability_validation_v1.md").write_text(report, encoding="utf-8")
     print(f"figures={len(rows)} ready={status['complete_ready']} pending_gate={status['complete_pending_gate']}")
