@@ -4,6 +4,8 @@
 
 - `第三次进度同步_v3.md`：可直接复制到飞书后继续排版的正文。
 - `data/current_metrics_v3.csv`：正文数字的索引、口径与来源。
+- `复归后冲绳民间组织_NGO_第三次同步_研究数据与证据附件_v1.zip`：可随同步文档上传的数据与证据附件；含当前数据、前端冻结 JSON、证据索引、80 份官方一手归档和校验值。
+- `附件_研究数据与证据_v1_README.md`：压缩包目录、证据核验方法和传播边界。
 - `fig/fig1_explorer_map.png`：总览实际地图。
 - `fig/fig2_actor_issue_research.png`：组织—议题研究视图。
 - `fig/fig3_typed_relations.png`：类型化组织关系图。
