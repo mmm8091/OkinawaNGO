@@ -1,0 +1,36 @@
+metric_id,metric_label,value,unit,scope,status,source_path,notes
+M001,actor registry 历史记录,122,rows,central history,current,data/interim/01_actor_registry_initial_v0.csv,A072 为并入 A071 的溯源记录
+M002,有效组织,121,actors,current analytical layer,current,data/interim/01_actor_registry_initial_v0.csv,达到一期方案 120 下限
+M003,已有有效议题关联的组织,116,actors,current actor-issue layer,current,outputs/R01_R02_actor_issue_v1,另有 5 个有效组织暂无有效议题边
+M004,议题分类,26,categories,taxonomy,current,data/interim/03_issue_taxonomy_v0.csv,
+M005,地点与场域节点,21,nodes,place registry,current,data/interim/04_place_registry_v0.csv,
+M006,来源记录,295,sources,source log,current,data/interim/05_source_log_initial_v0.csv,
+M007,已本地归档来源,275,sources,archive manifest,current,source_docs/source_archive/source_archive_manifest.csv,273 archived + 2 manual_archived
+M008,actor-issue 历史关系,294,edges,central history,current,data/interim/07_actor_issue_edges_initial_v0.csv,
+M009,有效 actor-issue 关系,283,edges,current analytical layer,current,data/interim/07_actor_issue_edges_initial_v0.csv,141 人工复核 + 142 候选
+M010,人工复核 actor-issue 关系,141,edges,current analytical layer,current,data/interim/07_actor_issue_edges_initial_v0.csv,120 human_checked + 21 human_revised
+M011,候选 actor-issue 关系,142,edges,current analytical layer,current,data/interim/07_actor_issue_edges_initial_v0.csv,研究视图显示
+M012,有效 actor-place 关系,130,edges,current analytical layer,current,data/interim/08_actor_place_edges_initial_v0.csv,53 人工复核 + 77 候选
+M013,同源 actor-place-issue 三元组,306,triples,current strict spatial layer,current,outputs/R03_strict_place_issue_v1/same_source_actor_place_issue_triples_v1.csv,替代旧地点×议题宽投影
+M014,双侧均经人工复核的同源三元组,81,triples,current strict spatial layer,current,outputs/R03_strict_place_issue_v1/same_source_actor_place_issue_triples_v1.csv,
+M015,可附着正式事件的同源三元组,97,triples,current strict spatial layer,current,outputs/R03_strict_place_issue_v1/same_source_actor_place_issue_triples_v1.csv,
+M016,actor-event-venue 记录,67,rows,current event layer,current,data/interim/09_actor_event_venue_edges_v0.csv,63 human_checked + 4 analytical_seed
+M017,funding-support-relation 样本记录,43,rows,typed relation sample,current,data/interim/15_funding_or_support_edges_sample_v0.csv,资助、隶属、法律和其他关系分开
+M018,前端组织间已确认关系,10,dyadic edges,client_preview relation graph,current,prototypes/nr3_explorer/dist/core/typed_relations/dyadic.json,只计 registry actor 间关系
+M019,前端组织间有限确认关系,4,dyadic edges,client_preview relation graph,current,prototypes/nr3_explorer/dist/core/typed_relations/dyadic.json,缺额或边界直接显示
+M020,前端组织间候选关系,8,dyadic edges,client_preview research view,current,prototypes/nr3_explorer/dist/research/dyadic_relations.json,不进入已核视图
+M021,三份公开名单参与观察,169,rows,R5 purposive sample,current,outputs/R05_coaction_v1/actor_event_bipartite_edges_v0.csv,64 registry + 22 human-reviewed event-only + 83 other names
+M022,跨名单严格重复身份,21,identities,R5 purposive sample,current,outputs/R05_coaction_v1/repeat_participation_bridges_v0.csv,15 registry + 6 human-reviewed event-only
+M023,法律政策案件,6,cases,R8 reviewed layer,current,data/interim/17_legal_policy_procedure_cases_v0.csv,全部 human_checked
+M024,法律政策案件角色,27,roles,R8 reviewed layer,current,data/interim/18_legal_policy_actor_roles_v0.csv,全部 human_checked
+M025,公投已接受阶段,29,stages,R9 four-case comparison,current,outputs/R09_referendum_process_v0/process_stages_reviewed_all_v0.csv,另有 4 条当地材料待核阶段
+M026,公投已接受角色,29,roles,R9 four-case comparison,current,outputs/R09_referendum_process_v0/actor_process_roles_reviewed_all_v0.csv,另有 5 条当地材料待核角色
+M027,制度转译案例,13,episodes,R8-R9 plus bounded candidates,current,outputs/translation_episode_comparison_v1/translation_episode_candidates_v1.csv,9 已核 + 4 事件待审
+M028,已核案例获得有限结果,5,episodes,nine reviewed episodes,current,outputs/translation_episode_comparison_v1/translation_episode_candidates_v1.csv,其余 3 no + 1 mixed
+M029,县政府 FY2024 NPO 协作记录,616,rows,official source universe,current,outputs/R10_official_collaboration_universe_v1/official_collaboration_source_universe_v1.csv,86 页；不是 616 个组织
+M030,县政府协作部门标签,15,categories,official source universe,current,outputs/R10_official_collaboration_universe_v1/descriptive_statistics_v1.csv,
+M031,县政府协作事業分野,19,categories,official source universe,current,outputs/R10_official_collaboration_universe_v1/descriptive_statistics_v1.csv,
+M032,县政府协作机制,10,categories,official source universe,current,outputs/R10_official_collaboration_universe_v1/descriptive_statistics_v1.csv,
+M033,机制 1-4 所占记录,76.1,percent,official source universe,current,outputs/R10_official_collaboration_universe_v1/descriptive_statistics_v1.csv,469/616
+M034,人权和平与国际协力记录,3.1,percent,official source universe,current,outputs/R10_official_collaboration_universe_v1/descriptive_statistics_v1.csv,19/616
+M035,未完成当地或新一手材料任务,12,tasks,principal ledger,current,docs/principal_human_review_remaining_v19.md,当前线上空白人工决定为 0
