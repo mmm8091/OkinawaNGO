@@ -103,7 +103,9 @@ def sha256(path: Path) -> str:
 
 
 def git_value(*args: str) -> str:
-    return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
+    return subprocess.check_output(
+        ["git", *args], cwd=ROOT, text=True, encoding="utf-8"
+    ).strip()
 
 
 def source_worktree_dirty() -> bool:
