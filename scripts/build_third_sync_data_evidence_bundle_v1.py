@@ -113,7 +113,7 @@ def source_worktree_dirty() -> bool:
         OUT_README.relative_to(ROOT).as_posix(),
         STAGE.relative_to(ROOT).as_posix(),
     }
-    status = git_value("status", "--porcelain=v1")
+    status = git_value("-c", "core.quotepath=false", "status", "--porcelain=v1")
     for line in status.splitlines():
         path_text = line[3:].strip().strip('"').replace("\\", "/")
         if not any(path_text.startswith(prefix) for prefix in ignored_prefixes):
