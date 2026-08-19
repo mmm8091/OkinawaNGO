@@ -1,0 +1,67 @@
+{
+  "package_id": "us_presence_accountability_recon_v1",
+  "as_of_date": "2026-08-19",
+  "status": {
+    "package_scope": "research_only",
+    "claim_status": "candidate_fact",
+    "frontend_eligibility": "excluded_pending_human_review",
+    "central_writeback": "no"
+  },
+  "input_files": [
+    {
+      "path": "data/interim/01_actor_registry_initial_v0.csv",
+      "sha256": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4"
+    },
+    {
+      "path": "data/interim/05_source_log_initial_v0.csv",
+      "sha256": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902"
+    },
+    {
+      "path": "data/interim/18_legal_policy_actor_roles_v0.csv",
+      "sha256": "b319e01e57d0d00e1e6a47d1af4ac28562aa90d893e5a24b9382ab825d842b0d"
+    }
+  ],
+  "counts": {
+    "actor_scope": 8,
+    "sources": 7,
+    "resources": 2,
+    "people": 11,
+    "actions": 9,
+    "searches": 6,
+    "reviews": 9
+  },
+  "output_files": [
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/accountability_actor_scope_v1.csv",
+      "sha256": "ed0acf295b8952874856b351deb73167965082df8a6a6a4ac40145a9442c22ff"
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/action_relation_observations_v1.csv",
+      "sha256": "5dcb1d82e34e08c0918a4f8349fa43800c0f9d6e34d45114a7e6c350ca15eb2e"
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/bounded_search_log_v1.csv",
+      "sha256": "9d98a79ce52ee95444a64c47a6950d00f7e65d40b4b3fdb9032aaf9766d8cf08"
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/human_review_queue_v1.csv",
+      "sha256": "973674ed4c48fdaa352d4d84d667a2396555f4b242d698be4d7fb8318afb4610"
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/official_source_proposals_v1.csv",
+      "sha256": "bfc0f3b8bd50e5d6f0178db2f9bb0c7264c7329b10abf242e102671c5388bc14"
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/person_role_observations_v1.csv",
+      "sha256": "0bc05bb1ba08a7421dbea1ff1854119588cb9b31c2f697453e0e7854dc815300"
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/README.md",
+      "sha256": "249c8d9bfc07c9cd6b4bf8570788a255ac3839c21045344430900688c8120182"
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/resource_observations_v1.csv",
+      "sha256": "8acda4b79fc2aa4517a54e826081e6237a0ef6cd3438f3e2e8176e900dcc9ba0"
+    }
+  ]
+}

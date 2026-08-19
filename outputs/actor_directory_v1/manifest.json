@@ -1,0 +1,99 @@
+{
+  "package": "actor_directory_v1",
+  "generated_on": "2026-08-19",
+  "status": "candidate_only_not_central_not_frontend_ready",
+  "inputs": {
+    "actor_registry": {
+      "path": "data/interim/01_actor_registry_initial_v0.csv",
+      "sha256": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4"
+    },
+    "actor_aliases": {
+      "path": "data/interim/02_actor_aliases_initial_v0.csv",
+      "sha256": "e1e8160d33aa975d6374ba38f8490e182b832a96b7bbed285cd94d29b522b52d"
+    },
+    "source_log": {
+      "path": "data/interim/05_source_log_initial_v0.csv",
+      "sha256": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902"
+    },
+    "archive_manifest": {
+      "path": "source_docs/source_archive/source_archive_manifest.csv",
+      "sha256": "1e57f7e7df749b5ed0714994dc4176b69e7ad51c993c058198c4fd9bdf180d78"
+    },
+    "coding_schema_v0": {
+      "path": "data/metadata/coding_schema_v0.md",
+      "sha256": "4899e4fdb1c2179bfd23d081466822f976cc10b15df9b75ba66da88dbde33be5"
+    },
+    "coding_schema_v1": {
+      "path": "data/metadata/coding_schema_v1.md",
+      "sha256": "fe7fc7052ba3a6190406ceb3bcd41a7ca3d07c609aeb1ea7747418b3948424ad"
+    },
+    "frontend_contract": {
+      "path": "docs/exploration_system_data_contract_v1.md",
+      "sha256": "6b54b5f37571b442ee0f8ee29892d48b9f54d7f3e1aee75656f7c3340d0aeba1"
+    }
+  },
+  "counts": {
+    "registry_history_rows": 122,
+    "active_actor_rows": 121,
+    "excluded_tombstones": 1,
+    "us_origin_rows": 17,
+    "selected_url_rows": 65,
+    "not_found_rows": 56,
+    "source_crosswalk_rows": 254,
+    "conflict_rows": 25
+  },
+  "validation": {
+    "exactly_121_active_actors": true,
+    "A072_excluded": true,
+    "unique_actor_id": true,
+    "url_kind_enum_valid": true,
+    "selected_url_format_valid": true,
+    "selected_source_id_traceable": true,
+    "S051_not_selected": true,
+    "third_party_okinawahai_not_selected": true
+  },
+  "outputs": {
+    "actor_directory_candidate_v1.csv": {
+      "rows": 121,
+      "sha256": "6bed36ffddcf67532208187bf4d2e1e8ed51be4174c59ff1d85fbc2bb72fcd67"
+    },
+    "coverage_summary_v1.csv": {
+      "rows": 30,
+      "sha256": "5b6051498976cf3410af3ce5a01cff61d6e8f57edc49636a2a1a63a66dcf7fd1"
+    },
+    "official_url_conflicts_v1.csv": {
+      "rows": 25,
+      "sha256": "d1e963fedcec64f51fe7fffb4f93781192746133c9bb068894502f4b405caa1a"
+    },
+    "source_crosswalk_v1.csv": {
+      "rows": 254,
+      "sha256": "9e617566a04f29ad87c1528386756b6fb0ae53277ec9ab147a6d8c4974f948a1"
+    }
+  },
+  "documentation": {
+    "package_readme": {
+      "path": "outputs/actor_directory_v1/README.md",
+      "sha256": "d4fe3472dd8509b759f3875b22d0431a9c029a03460c63d629bab64dc0f93aba"
+    },
+    "frontend_slice": {
+      "path": "docs/actor_directory_frontend_slice_v1.md",
+      "sha256": "7065c994db5f15d3c3b0d5f8a7f0781540ef13277c5ec5f9f5bf5574eff34a53"
+    }
+  },
+  "interpretation_limit": "This is an AI-seeded directory candidate layer. It does not modify the central actor or source tables and must pass field-level human review and publication compilation before frontend use.",
+  "human_review_package": {
+    "assignment": {
+      "path": "docs/human_review_assignment_USN_actor_directory_v1.md",
+      "sha256": "136f553adca601268542b0ecb2ffa8131a95f1b0997580f81e6abe8db3f56bb6"
+    },
+    "decisions": {
+      "path": "outputs/actor_directory_v1/HR_USN_actor_directory_decisions_v1.csv",
+      "sha256": "6e65a2708c10d0ec7208a3a089d6e8bb52861eb52f93153cfe1490883d31c507",
+      "rows": 65
+    },
+    "validator": {
+      "path": "scripts/validate_hr_usn_actor_directory_v1.py",
+      "sha256": "f7c556f922d6f71d651b7bad2bf923e45faa14e00b713dfce43970ebea2bac97"
+    }
+  }
+}

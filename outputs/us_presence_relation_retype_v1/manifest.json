@@ -1,0 +1,46 @@
+{
+  "package": "us_presence_relation_retype_v1",
+  "generated_on": "2026-08-19",
+  "status": "research_only_ai_seeded_mapping_no_new_facts",
+  "input": {
+    "path": "data\\interim\\15_funding_or_support_edges_sample_v0.csv",
+    "sha256": "3b11795150e7630ccf4cdab371ac135fab019c260609ee1272df518638f3ef23"
+  },
+  "outputs": {
+    "relation_retype_crosswalk_v1.csv": {
+      "rows": 43,
+      "sha256": "13db63f83534aadd15cb4f0c84d416f51613d420af48074de9d5d10de6d1f302"
+    },
+    "mapping_summary_v1.csv": {
+      "rows": 29,
+      "sha256": "c30f974c385daff33fc7522b3af5e92d008d7d975473e53b174694b77dd28838"
+    },
+    "HR_USN_relation_retype_rules_v1.csv": {
+      "rows": 6,
+      "sha256": "2487808fbb2229d6ae61d9f9bc567c7f9583b3e56070bd97aadde999c7060c09"
+    }
+  },
+  "validation": {
+    "input_rows": 43,
+    "output_rows": 43,
+    "unique_edge_ids": 43,
+    "all_relation_types_mapped": true,
+    "blank_principal_decisions": true,
+    "blank_rule_decisions": true,
+    "mapping_rule_rows": 6,
+    "central_writeback": false,
+    "target_table_counts": {
+      "EXCLUDE": 1,
+      "LEAD": 1,
+      "USN02": 8,
+      "USN04": 4,
+      "USN05": 9,
+      "USN06": 20
+    }
+  },
+  "documentation": {
+    "README.md": {
+      "sha256": "9158cb6078d5f7ed8a4a5093c6430ff50076e0d2af275bb7d62c6bdb1ea982d0"
+    }
+  }
+}

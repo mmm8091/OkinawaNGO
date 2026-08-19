@@ -1,0 +1,10 @@
+﻿review_item_id,priority,decision_family,linked_rows,decision_question,principal_decision,principal_note,package_scope,claim_status,frontend_eligibility,central_writeback
+USHR001,P0,resource_semantics,USAR001,"Does the Form 990 wording support a case-level receipt observation exactly as coded, and can the payer/award order be identified?",,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR002,P0,actor_identity_continuity,A070;USAP004;USAP005;USAP006,Approve A070 identity/continuity upgrade and the 2020/2021/2023 person-role observations?,,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR003,P0,coordination_relation,USAA005,"Approve A070→A019 as recurring coordination observed in the 2023 official VFP newsletter, without membership/funding semantics?",,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR004,P0,person_bridge,USAPN008;USAPN009,Approve Hideki Yoshikawa's same-date A002/A001 roles as a person bridge?,,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR005,P1,endpoint_crosswalk,USAA004,Is CBD's Network for Okinawa the same entity as A028/JUCON?,,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR006,P1,endpoint_crosswalk,USAA006;USAA007,Resolve the two English coalition labels before any actor-to-actor edge is created.,,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR007,P1,scope_continuity,A033;A042,Keep both as event-level 2015 international participants unless organization-authored Okinawa continuity evidence is found?,,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR008,P1,opportunity_award_boundary,X013;USAR002,Retain opportunity-only status and no directed funding edge?,,,research_only,candidate_fact,excluded_pending_human_review,no
+USHR009,P1,funder_negative_search,X014,Retain watchlist/no-public-evidence status after the bounded official grant-list search?,,,research_only,candidate_fact,excluded_pending_human_review,no

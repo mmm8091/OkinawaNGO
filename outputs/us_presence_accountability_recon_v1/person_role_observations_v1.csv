@@ -1,0 +1,12 @@
+﻿person_role_observation_id,person_name_as_source,actor_id_candidate,role_title_as_source,role_start,role_observed_at,source_ref,identity_or_time_limit,review_priority,package_scope,claim_status,frontend_eligibility,central_writeback
+USAPN001,Peter Galvin,A045,Pacific Director / public contact,2003-09-25,2003-09-25,USAP003,organization-authored filing announcement,P1,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN002,Martin Wagner,A009,U.S. counsel / public contact,2003-09-25,2003-09-25,USAP003,case-specific role; not general organization leadership,P1,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN003,Takenobu Tsuchida,A003,organization speaker,2003-09-25,2003-09-25,USAP003,identity crosswalk to A003 requires human confirmation,P1,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN004,Takaaki Kagohashi,A020,organization speaker / legal collaborator,2003-09-25,2003-09-25,USAP003,does not make A020 counsel in R8C01; A020 remains plaintiff in the formal role table,P1,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN005,Takuma Higashionna,A076,organization speaker,2003-09-25,2003-09-25,USAP003,person role does not transfer plaintiff status to similarly named A002,P1,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN006,Charles Douglas Lummis,A070,chapter contact,2020-05-13,2020-05-13,USAP004,directory-date observation only,P0,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN007,Pete Doktor,A070,chapter contact,2020-05-13,2020-05-13,USAP004,directory-date observation only,P0,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN008,Hideki Yoshikawa,A002,International Director,2021-02-08,2021-02-08,USAP005,same public biography also names A001 role; candidate person bridge,P0,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN009,Hideki Yoshikawa,A001,Director,2021-02-08,2021-02-08,USAP005,same public biography also names A002 role; candidate person bridge,P0,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN010,Pete Shimazaki Doktor,A070,chapter 1003 co-founder,,2021-02-08,USAP005,formation date not stated; public biography observed in 2021,P0,research_only,candidate_fact,excluded_pending_human_review,no
+USAPN011,Doug Lummis,A070,chapter coordinator,,2021-02-08,USAP005,role observed in 2021; normalize person identity with USAPN006 only after human check,P0,research_only,candidate_fact,excluded_pending_human_review,no

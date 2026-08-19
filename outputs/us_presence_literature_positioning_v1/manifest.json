@@ -1,0 +1,60 @@
+{
+  "package_id": "us_presence_literature_positioning_v1",
+  "generated_date": "2026-08-19",
+  "status": "research_only",
+  "analysis_status": "candidate_analysis",
+  "frontend_ready": false,
+  "central_writeback": false,
+  "formal_comm_writeback": false,
+  "literature_source_count": 18,
+  "source_type_counts": {
+    "journal_article": 10,
+    "scholarly_book": 6,
+    "edited_scholarly_book": 1,
+    "departmental_bulletin_article": 1
+  },
+  "claim_row_count": 21,
+  "claim_position_counts": {
+    "existing_scholarship": 8,
+    "current_data_can_reproduce": 5,
+    "candidate_new_contribution": 4,
+    "data_gap": 4
+  },
+  "themes": [
+    "Okinawa base politics and anti-base social movements",
+    "garrison society, military families, services, and community relations",
+    "legitimation, narratives, public diplomacy, and attitudes",
+    "transnational legal and environmental accountability",
+    "social-movement and civic-organization network methods"
+  ],
+  "required_sources_verified": [
+    "Aikawa and Stewart 2026",
+    "Miyanishi 2012",
+    "Inoue 2004",
+    "Claudia Junghyun Kim 2021"
+  ],
+  "boundaries": [
+    "Service, donation, sponsorship, or contact records do not by themselves demonstrate legitimation effects.",
+    "No direct cross-group organization edge in bounded inputs does not demonstrate absence of shared people, recipients, informal ties, or real-world relations.",
+    "The literature package does not approve central facts, actor classifications, frontend publication, or client-facing conclusions.",
+    "Organization-network measures require source-deletion and missing-data sensitivity before substantive centrality claims."
+  ],
+  "files": [
+    {
+      "path": "docs/us_presence_literature_positioning_v1.md",
+      "sha256": "ac2fd38cd88ecc136b45b95e18b068c24f25ebacbf5127f7894b384a9ca51861"
+    },
+    {
+      "path": "outputs/us_presence_literature_positioning_v1/README.md",
+      "sha256": "a5301bcf5520bff4f581ab228f4d57a270a691fb8159efc55c9083ba0a5ce76c"
+    },
+    {
+      "path": "outputs/us_presence_literature_positioning_v1/bibliography_v1.csv",
+      "sha256": "4562e8ec16ee3694417313d831c3955d0a83f2fb1168d3711c54caa6519dcca9"
+    },
+    {
+      "path": "outputs/us_presence_literature_positioning_v1/claim_positioning_v1.csv",
+      "sha256": "1cc051a3f3491e6141e080a27c2c3b99bdee1103433d79ebd8a34c69d7799377"
+    }
+  ]
+}

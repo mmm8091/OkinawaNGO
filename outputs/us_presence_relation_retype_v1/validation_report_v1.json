@@ -1,0 +1,18 @@
+{
+  "input_rows": 43,
+  "output_rows": 43,
+  "unique_edge_ids": 43,
+  "all_relation_types_mapped": true,
+  "blank_principal_decisions": true,
+  "blank_rule_decisions": true,
+  "mapping_rule_rows": 6,
+  "central_writeback": false,
+  "target_table_counts": {
+    "EXCLUDE": 1,
+    "LEAD": 1,
+    "USN02": 8,
+    "USN04": 4,
+    "USN05": 9,
+    "USN06": 20
+  }
+}

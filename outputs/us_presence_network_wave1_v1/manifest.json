@@ -1,0 +1,33 @@
+{
+  "package": "us_presence_network_wave1_v1",
+  "generated_on": "2026-08-19",
+  "status": "research_only_selection_frame_not_frontend_ready",
+  "inputs": {
+    "data\\interim\\01_actor_registry_initial_v0.csv": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4",
+    "outputs\\actor_directory_v1\\actor_directory_candidate_v1.csv": "6bed36ffddcf67532208187bf4d2e1e8ed51be4174c59ff1d85fbc2bb72fcd67"
+  },
+  "counts": {
+    "accountability_comparison": 6,
+    "funder_watchlist_node": 1,
+    "public_diplomacy_program_node": 1,
+    "service_charity_comparison": 9
+  },
+  "total": 17,
+  "all_human_decisions_blank": true,
+  "central_writeback": false,
+  "outputs": {
+    "us_origin_actor_scope_v1.csv": {
+      "rows": 17,
+      "sha256": "c0e8e3210b2b4d79d62c8fd7af7968d3f229bac2678c87e5e62c9f03abe9369a"
+    },
+    "us_origin_actor_scope_summary_v1.csv": {
+      "rows": 4,
+      "sha256": "bee2e242567480a9c3730bddf6d62ebc9e74f37b5f1e5d88855e7c48156d3731"
+    }
+  },
+  "documentation": {
+    "README.md": {
+      "sha256": "0d3a13aeeda6e3728d6ac6087f12e7c58f8a4881e3a9f4c36b5dc83c53f677ea"
+    }
+  }
+}

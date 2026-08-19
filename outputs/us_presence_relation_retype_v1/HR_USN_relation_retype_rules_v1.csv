@@ -1,0 +1,7 @@
+﻿mapping_rule_id,proposed_usn_table_id,proposed_table_name,row_count,edge_ids,decision,principal_note_or_exceptions,reviewer,review_date
+USN-RT-R01,USN02,money_flows,8,F001;F002;F021;F025;F026;F027;F034;F035,,,,
+USN-RT-R02,USN04,service_recipient,4,F028;F029;F030;F036,,,,
+USN-RT-R03,USN05,affiliation_control,9,F006;F007;F017;F022;F023;F024;F037;F038;F043,,,,
+USN-RT-R04,USN06,action_institution,20,F003;F004;F005;F009;F010;F011;F013;F014;F015;F016;F018;F019;F020;F031;F032;F033;F039;F040;F041;F042,,,,
+USN-RT-R05,LEAD,research_lead,1,F012,,,,
+USN-RT-R06,EXCLUDE,history_only,1,F008,,,,
