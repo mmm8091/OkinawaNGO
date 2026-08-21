@@ -43,6 +43,19 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - **partial bounded surface**: A method-safe fact or navigation subset already visible in the frontend while its full research module still lacks the required adapter, comparison, source drilldown or method card. It must not be reported as a completed integrated module.
 - **retired artifact**: A prior figure, table, dataset, or view withdrawn from current evidentiary or explanatory use after a method, data, or scope correction. It remains available only for provenance and audit unless a new review explicitly restores it.
 
+## U.S.-Presence Network Terms
+
+- **selection frame**: A versioned declaration of the actors, observation types, period, place, sources, inclusion rules, and exclusions used as the denominator for one comparison. It is not a census and is never revised retroactively when later actors are added.
+- **function observation**: A bounded interpretation attached to a dated, sourced action or relationship. It describes what that observation does in context, not a permanent pro-U.S. or anti-U.S. position of the actor.
+- **garrison reproduction**: Observable services, mutual aid, care, fundraising, or distribution that sustain military personnel, families, or base-community life. It does not by itself show political support or legitimation.
+- **community mediation**: An observed resource, service, or organizational channel crossing from a base or military-family setting into Okinawan local society. It does not by itself show acceptance, dependence, influence, or durable alliance.
+- **LEG0**: A source-backed service, transfer, event, or relationship fact without a legitimation claim.
+- **LEG1**: An action-side or official narrative that explicitly frames an activity through trust, goodwill, partnership, friendship, understanding, or related legitimacy language.
+- **LEG2**: A bounded response in which a recipient, local institution, or independent source accepts, repeats, resists, or reinterprets a LEG1 narrative. A single response is not an effect estimate.
+- **LEG3**: Repeatable attitude, behavior, or institutional-effect evidence supported by a stated research design, comparison, or repeated observation.
+- **role observation**: A sourced observation that a named person held a named role at a stated date or bounded period. A directory or filing date is an observation date unless the source explicitly states the tenure start or end.
+- **research endpoint**: A typed person, institution, installation, case, program, recipient, aggregate, or unresolved label needed to preserve a fact without inflating the actor registry.
+
 ## Main Cautions
 
 - Do not equate co-signing with stable alliance.

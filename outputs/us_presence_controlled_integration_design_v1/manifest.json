@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "created_on": "2026-08-21",
+  "status": "design_only_no_central_writeback",
+  "hash_algorithm": "sha256",
+  "authority": {
+    "controlled_integration_design": true,
+    "central_writeback": false,
+    "publication_adapter": false,
+    "frontend_writeback": false
+  },
+  "central_baseline": {
+    "data/interim/01_actor_registry_initial_v0.csv": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4",
+    "data/interim/02_actor_aliases_initial_v0.csv": "e1e8160d33aa975d6374ba38f8490e182b832a96b7bbed285cd94d29b522b52d",
+    "data/interim/05_source_log_initial_v0.csv": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902",
+    "data/interim/15_funding_or_support_edges_sample_v0.csv": "3b11795150e7630ccf4cdab371ac135fab019c260609ee1272df518638f3ef23"
+  },
+  "counts": {
+    "expected_central_actions": 37,
+    "expected_table_deltas": 18,
+    "id_namespaces": 13,
+    "source_admission_steps": 10,
+    "mandatory_tests": 35
+  },
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 34236,
+      "sha256": "279453f5736d90980b20bd20e68bd5371a09ced221994b95eb6d890c0bb60ac5"
+    },
+    {
+      "path": "CONTEXT.md",
+      "bytes": 8287,
+      "sha256": "7917a0c80f033496f63f89e0751428c5efb5a8b07f04d182ff1eedbc0b208ad3"
+    },
+    {
+      "path": "docs/us_presence_controlled_integration_design_v1.md",
+      "bytes": 10245,
+      "sha256": "e9bc41bb1b2b14afee2d8794cb084f69dd8f74822d8c519430d537cfa414dc20"
+    },
+    {
+      "path": "docs/kimi_exploration_evidence_triage_v1.md",
+      "bytes": 8754,
+      "sha256": "dc08661f1be8586cc342a081b181933cf2c57a1000496c5383827c659178f9ad"
+    },
+    {
+      "path": "docs/phase1_workbench.md",
+      "bytes": 28968,
+      "sha256": "062109746d8f0e99056f7f26469d7dfdbb9bffb2abaaf59e78456bb003f8fa8d"
+    },
+    {
+      "path": "outputs/us_presence_controlled_integration_design_v1/README.md",
+      "bytes": 967,
+      "sha256": "dd2797fcfebb809676c7956197e910b316a3f8a26a9996a3f616e69ebe3e39be"
+    },
+    {
+      "path": "outputs/us_presence_controlled_integration_design_v1/expected_central_actions_v1.csv",
+      "bytes": 12023,
+      "sha256": "48365fed8d738aff0a624b7d26f53af194b1bfa85e22744356b8d0effac54336"
+    },
+    {
+      "path": "outputs/us_presence_controlled_integration_design_v1/expected_table_deltas_v1.csv",
+      "bytes": 3975,
+      "sha256": "223bef41810c824e903fdf1336cb3ded5b86e89e103f75bb0fc34ff947ddff74"
+    },
+    {
+      "path": "outputs/us_presence_controlled_integration_design_v1/id_namespace_plan_v1.csv",
+      "bytes": 2660,
+      "sha256": "2f8ecb85f7067adbca787396376d5000d5b0d5264725adc3ca88430d2224b644"
+    },
+    {
+      "path": "outputs/us_presence_controlled_integration_design_v1/source_admission_plan_v1.csv",
+      "bytes": 2311,
+      "sha256": "e9bcea1f01563a4b8dd27ea8195523bf6f03dac36ad544c3847984431885440b"
+    },
+    {
+      "path": "outputs/us_presence_controlled_integration_design_v1/test_matrix_v1.csv",
+      "bytes": 6080,
+      "sha256": "e98ccc0ab43054ac919a27204e3b3f96446ea8a7be0550d0bcf74a7d0268a4ad"
+    },
+    {
+      "path": "scripts/validate_us_presence_controlled_integration_design_v1.py",
+      "bytes": 8550,
+      "sha256": "5e930c7a272db7d50d20c8b605725f69b39fc83ada214f25c09c19dd8d24a169"
+    }
+  ],
+  "excluded_user_owned_file": "outputs/formal_comm_v3/第三次进度同步_v3.md",
+  "next_gate": "principal_approval_for_plan_mode_only"
+}
