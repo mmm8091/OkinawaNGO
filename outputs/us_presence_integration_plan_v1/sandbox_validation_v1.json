@@ -1,0 +1,23 @@
+{
+  "central_writeback_performed": false,
+  "changed_protected_source_files": 0,
+  "claims_real_writeback_ready": false,
+  "failure_injection_stages_passed": [
+    "after_projection",
+    "after_validation",
+    "before_commit"
+  ],
+  "first_projection_created": true,
+  "interpretation_limit": "This receipt validates software behavior with a synthetic source-freeze fixture. The real source plan is still blocked and no production apply is authorized.",
+  "protected_source_files": 91,
+  "publication_or_frontend_modified": false,
+  "real_plan_hash": "04bcec3cc339dc13d762695fea3f8432b328b0434b0b980d2be46c69be7ab5ca",
+  "real_plan_id": "USN-W1-PLAN-2026-08-21",
+  "real_plan_status": "blocked_pending_source_freeze",
+  "relation_crosswalk_expanded": false,
+  "schema_version": "1.0.0",
+  "second_projection_byte_noop": true,
+  "status": "PASS_SYNTHETIC_SANDBOX_ONLY",
+  "synthetic_fixture_scope": "test_only_non_committable",
+  "synthetic_plan_id": "USN-W1-PLAN-2026-08-21-SYNTHETIC"
+}

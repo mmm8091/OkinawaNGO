@@ -1,0 +1,5 @@
+﻿observation_id,source_actor_id,target_endpoint,endpoint_status,relation_type,graph_eligibility,source_resolution,disposition,non_inference
+USAA004,A045,Network for Okinawa,research_endpoint_off_graph,works_with,off_graph,hold_selection_frame,hold,Do not map Network for Okinawa to A028 solely from name similarity.
+USAA005,A070,EO_R5_FUTAMI_TEN_DISTRICTS,event_only_off_graph,recurring_coalition_work,off_graph,hold_selection_frame,hold,"Official newsletter supports recurring work with a named coalition; it does not establish membership, funding, or a complete partner list."
+USAA006,A070,Protect Henoko and Takae! NGO Network,event_only_off_graph,recurring_coalition_work,off_graph,hold_selection_frame,hold,Do not force-map to A060 or another registry actor without identity evidence.
+USAA007,A070,ZHAP / ZENKO Henoko Anti-base Project,provisional_research_endpoint_off_graph,recurring_coalition_work,off_graph,hold_selection_frame,hold,Keep the source label until an independent identity crosswalk exists.

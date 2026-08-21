@@ -1,0 +1,3 @@
+﻿record_id,source_endpoint,target_endpoint,relation_type,source_resolution,disposition,non_inference
+SA010-X004-MEM,X004,X018,network_membership,hold_actor_source_and_selection_frame,hold,"Membership does not establish control, funding or political alignment."
+SA010-X004-CHANNEL,X018,X004,contributing_member_to_grant_selection_distribution_channel,hold_actor_source_and_selection_frame,hold,The channel is neither exclusive nor permanent; annual amounts belong in separate flow rows.

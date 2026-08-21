@@ -1,0 +1,58 @@
+﻿source_cluster_key,normalized_url,proposal_refs,proposal_origins,titles,reference_count,existing_source_id,source_resolution,disposition,final_source_id,review_status_for_future_new_row,relation_or_claim_approved_for_future_new_row
+USNSC-A11289C9E4DA,https://earthjustice.org/document/irs-form-990-fy2021,USAP001,accountability_proposal,Earthjustice,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-1AD12E278AD7,https://foe.org/,USN07-DIR-C002,directory_new_source_needed,Friends of the Earth U.S.,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-E24F908FA058,https://installations.militaryonesource.mil/military-installation/kadena-ab/base-essentials/emergency-assistance,SP032,service_proposal,Kadena emergency assistance,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-FDAB637E8931,https://installations.militaryonesource.mil/military-installation/torii-station/base-essentials/emergency-assistance,SP031,service_proposal,Torii Station emergency assistance,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-5026701F08DE,https://kadenafss.com/private-organizations,SP002,service_proposal,Kadena Private Organizations,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-86C736CA68BE,https://kadenafss.com/wp-content/uploads/2024/08/OI-34-223-1-PO-Program-5Feb24.pdf,SP003,service_proposal,Kadena Instruction 34-223,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-AEEBF7379CA8,https://marinegiftshop.org/,SP037,service_proposal,Marine Gift Shop placeholder site,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-6FCDAB9A0946,https://marinethriftshopokinawa.org/,SP021,service_proposal,Marine Thrift Shop Okinawa,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-0563431633FF,https://marinethriftshopokinawa.org/board-members,SP022,service_proposal,Marine Thrift Shop Board,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-C686F2FAFCCB,https://marinethriftshopokinawa.org/grants,SP023,service_proposal,Marine Thrift Shop Grants,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-DEDC8EE77FA3,https://marinethriftshopokinawa.org/neighborhood-pantry-camp-butler,SP026,service_proposal,Neighborhood Pantry – Camp Butler,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-E81C8B00F04E,https://marinethriftshopokinawa.org/outreach,SP024,service_proposal,Marine Thrift Shop Outreach,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-4B14D0A63203,https://nosco.wildapricot.org/About-Us,USN07-DIR-C018,directory_new_source_needed,Naval Officers' Spouses' Club of Okinawa NOSCO,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-9BB1048AA62D,https://nosco.wildapricot.org/awwa,SP034,service_proposal,AWWA member-club page,1,S055,reuse_existing,reference_existing,,,
+USNSC-DA7C864615C1,https://okinawa.tricare.mil/About-Us/Employment-Opportunities/Volunteer-Red-Cross,USN07-DIR-C020,directory_new_source_needed,American Red Cross Okinawa,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-2776C4470D5F,https://okinawa.uso.org/,USN07-DIR-C015,directory_new_source_needed,USO Okinawa,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-9FCBC0A4BEBD,https://okinawa.uso.org/oao,SP004,service_proposal,USO Okinawa Area Office,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-B85560C875F4,https://okinawa.uso.org/stories/270,SP009,service_proposal,U.S.–Japan service-member event,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-2929829C1D17,https://okinawa.uso.org/stories/336,SP005,service_proposal,American Engineering Corporation strengthens 52-year partnership,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-E40943995D28,https://okinawa.uso.org/stories/41,SP007,service_proposal,Futenma English discussion program,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-1F10A2B2FF81,https://okinawa.uso.org/stories/6,SP006,service_proposal,USO Okinawa community Easter event,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-5DA846B8D7ED,https://okinawa.uso.org/stories/84,SP008,service_proposal,Camp Hansen preschool community event,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-B6E77655D99D,https://projects.propublica.org/nonprofits/full_text/202513109349302911/IRS990ScheduleI,SP016,service_proposal,OESC FY2025 Schedule I,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-958058C19E19,https://projects.propublica.org/nonprofits/full_text/202533199349301708/IRS990ScheduleI,SP012,service_proposal,NOSCO FY2025 Schedule I,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-D187D2D0970A,https://projects.propublica.org/nonprofits/full_text/202630129349300153/IRS990ScheduleI,SP014,service_proposal,KOSC FY2025 Schedule I,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-1FAC24FE8F73,https://projects.propublica.org/nonprofits/organizations/261170858,SP018,service_proposal,ACGO nonprofit record,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-829B39943D7A,https://projects.propublica.org/nonprofits/organizations/383924106,SP020,service_proposal,Marine Thrift Shop nonprofit record,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-AE05FFEC9B35,https://projects.propublica.org/nonprofits/organizations/460598583,SP017,service_proposal,MOSCO nonprofit record,1,S080,reuse_existing,reference_existing,,,
+USNSC-141294908C36,https://projects.propublica.org/nonprofits/organizations/980016061,SP019,service_proposal,Marine Gift Shop nonprofit record,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-0BB98A7E3FED,https://projects.propublica.org/nonprofits/organizations/980210979,SP011,service_proposal,NOSCO nonprofit record,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-B57EACC99DAC,https://projects.propublica.org/nonprofits/organizations/980214323,SP013,service_proposal,KOSC nonprofit record,1,S076,reuse_existing,reference_existing,,,
+USNSC-8D251F806EF5,https://projects.propublica.org/nonprofits/organizations/980227149,SP010,service_proposal,AWWA nonprofit record,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-A3956BDB9779,https://projects.propublica.org/nonprofits/organizations/980346507,SP015,service_proposal,OESC nonprofit record,1,S054,reuse_existing,reference_existing,,,
+USNSC-39BBCCF1948E,https://projects.propublica.org/nonprofits/states/AP,SP038,service_proposal,Tax Exempt Organizations in Armed Forces Pacific,1,,hold_official_irs_receipt,hold,,ai_seeded,no
+USNSC-01E2D3E2296E,https://tedxumgcokinawa.com/,SP036,service_proposal,TEDxUMGC Okinawa organizer profile,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-59157F17A157,https://usjapantomodachi.org/,USN07-DIR-C024,directory_new_source_needed,TOMODACHI Initiative,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-53976FF66C7B,https://www.aec-japan.co.jp/,USN07-DIR-C016,directory_new_source_needed,American Engineering Corporation AEC,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-D71C13ACA92F,https://www.biologicaldiversity.org/,USN07-DIR-C005,directory_new_source_needed,Center for Biological Diversity,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-832117B37EC5,https://www.biologicaldiversity.org/news/press_releases/dugong9-25-03.html,USAP003,accountability_proposal,Center for Biological Diversity,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-CC70E945320B,https://www.biologicaldiversity.org/species/mammals/Okinawa_dugong,USAP002,accountability_proposal,Center for Biological Diversity,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-2028B526A10B,https://www.dvidshub.net/news/87854/awwa-celebrates-40-years-giving,SP033,service_proposal,AWWA celebrates 40 years of giving,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-8021D715AF19,https://www.dvidshub.net/news/printable/465683,SP025,service_proposal,Marine Thrift Shop donates through Lions Clubs,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-41C7B88CB859,https://www.dvidshub.net/video/933952/neighborhood-pantry-camp-butler-expands-camp-kinser,SP035,service_proposal,Neighborhood Pantry Camp Butler expands to Camp Kinser video,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-C509A67F4204,https://www.jica.go.jp/domestic/okinawa/index.html,USN07-DIR-C023,directory_new_source_needed,JICA沖縄,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-8DD298976AF8,https://www.kogai-net.com/top/counsel/counsel_al,USN07-DIR-C010,directory_new_source_needed,普天間基地爆音訴訟弁護団,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-6CC920924CFB,https://www.mcipac.marines.mil/Media-Room/News/Article/3871746/neighborhood-pantry-expands-to-camp-kinser,SP027,service_proposal,Neighborhood Pantry expands to Camp Kinser,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-2A1B03969114,https://www.niosc.org/about-us,SP028,service_proposal,North Island Okinawa Spouses Club About Us,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-D86ABAAB01FA,https://www.nmcrs.org/locations/okinawa-japan,SP030;USN07-DIR-C021,directory_new_source_needed;service_proposal,NMCRS Okinawa location;Navy-Marine Corps Relief Society Okinawa,2,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-C4E6F0834C4C,https://www.okinawa.usmc-mccs.org/more/private-organizations,SP001,service_proposal,Private Organizations,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-41B343B88912,https://www.pacificenvironment.org/,USN07-DIR-C004,directory_new_source_needed,Pacific Environment,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-2BB51E5092DF,https://www.pronatura.ch/en,USN07-DIR-C006,directory_new_source_needed,Pro Natura,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-1D69F3778282,https://www.redcross.org/get-help/military-families/overseas-military-community-support.html,SP029,service_proposal,American Red Cross Overseas Military Community Support,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-95840B29401E,https://www.veteransforpeace.org/files/1415/8938/5791/20.05.13.ChapterContact.pdf,USAP004,accountability_proposal,Veterans For Peace,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-6A3DD04962E5,https://www.veteransforpeace.org/files/8616/8433/7175/VFPNews_2023.Spring-FULL_SMALL_FIN.pdf,USAP006,accountability_proposal,Veterans For Peace,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-8405ADA59F13,https://www.veteransforpeace.org/who-we-are/2025-online-business-meeting,USAP007,accountability_proposal,Veterans For Peace,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-D6D5C1D3E2A3,https://www.veteransforpeace.org/who-we-are/member-highlights/2021/02/08/okinawa-understanding-history-and-resistance-us-militarism,USAP005,accountability_proposal,Veterans For Peace,1,,candidate_new_non_propublica,project,,ai_seeded,no
+USNSC-5D1EF451B5C5,https://www.ywca.or.jp/aboutus/japan,USN07-DIR-C011,directory_new_source_needed,沖縄YWCA,1,,candidate_new_non_propublica,project,,ai_seeded,no

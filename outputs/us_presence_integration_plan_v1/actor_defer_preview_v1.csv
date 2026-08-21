@@ -1,0 +1,3 @@
+﻿upstream_id,canonical_name,decision_ref,human_decision,disposition,hold_code,non_inference
+SA016,Helping Japan International,SR-HR-006A,defer_second_source,hold,DEFER_SECOND_SOURCE,Do not infer an Okinawa service role from legal identity or name similarity.
+SA017,OAO Civilian Welfare Council,SR-HR-006B,defer_second_source,hold,DEFER_SECOND_SOURCE,"A roster name alone does not establish identity, function or relation."

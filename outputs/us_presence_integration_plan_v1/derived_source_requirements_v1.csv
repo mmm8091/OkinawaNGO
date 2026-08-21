@@ -1,0 +1,9 @@
+﻿requirement_id,supports,required_record,source_plan_status,disposition
+USNDSR-001,RF002 OESC to AWWA USD 8479,official IRS bulk XML or official filing receipt,missing_from_57_cluster_union,hold
+USNDSR-002,USAR001-JF Treasury USD 280000 payment mechanism,Treasury Judgment Fund XLSX/API receipt,missing_from_57_cluster_union,hold
+USNDSR-003,A033 2019 Henoko petition role,FoE 2019 event source receipt,missing_from_57_cluster_union,hold
+USNDSR-004,A070 2018 observation,dated official or organization source receipt,design_action_gap,hold
+USNDSR-005,A070 2025 observation,dated official or organization source receipt,design_action_gap,hold
+USNDSR-006,A070 2026 observation,dated official or organization source receipt,design_action_gap,hold
+USNDSR-007,X014 NED bounded negative search,dated official listing/search-scope receipts,missing_from_57_cluster_union,hold
+USNDSR-008,event-only and research endpoint identity crosswalks,endpoint-specific identity receipts,missing_from_57_cluster_union,hold

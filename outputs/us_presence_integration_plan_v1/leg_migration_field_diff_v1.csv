@@ -1,0 +1,34 @@
+﻿table,record_id,field,before,after
+vocabulary,legitimation,use_when,At least L1 evidence is present and mechanism_status states the achieved evidentiary level,At least LEG1 evidence is present and mechanism_status states the achieved evidentiary level
+vocabulary,legitimation,review_requirement,principal interpretation review; L2/L3 required for reception/effect wording,principal interpretation review; LEG2/LEG3 required for reception/effect wording
+vocabulary,reception_evidence,use_when,Coding L2 legitimation evidence,Coding LEG2 legitimation evidence
+vocabulary,explicit_strategy_L1,code,explicit_strategy_L1,explicit_strategy_LEG1
+vocabulary,explicit_strategy_L1,label_zh,明示策略 L1,明示策略 LEG1
+vocabulary,observed_reception_L2,code,observed_reception_L2,observed_reception_LEG2
+vocabulary,observed_reception_L2,label_zh,可观察反应 L2,可观察反应 LEG2
+vocabulary,measured_effect_L3,code,measured_effect_L3,measured_effect_LEG3
+vocabulary,measured_effect_L3,label_zh,效果证据 L3,效果证据 LEG3
+validation_rules,USV009,condition,mechanism_status is explicit_strategy_L1 observed_reception_L2 or measured_effect_L3 and matching supported evidence exists,mechanism_status is explicit_strategy_LEG1 observed_reception_LEG2 or measured_effect_LEG3 and matching supported evidence exists
+validation_rules,USV010,scope,USN01 legitimation L1,USN01 legitimation LEG1
+validation_rules,USV010,failure_message,L1 evidence is written as achieved legitimacy,LEG1 evidence is written as achieved legitimacy
+validation_rules,USV010,remediation,Use bounded intent/frame wording or add L2/L3 evidence,Use bounded intent/frame wording or add LEG2/LEG3 evidence
+vertical_slices,US-VS06,deliverables,selection frame; one reviewed USN04 or USN06 underlying fact; L0-L3 function coding; negative search log; source clusters; HR interpretation packet; validation; brief,selection frame; one reviewed USN04 or USN06 underlying fact; LEG0-LEG3 function coding; negative search log; source clusters; HR interpretation packet; validation; brief
+vertical_slices,US-VS06,principal_gate,Approve L-level; source independence; wording of intent reception or effect,Approve LEG-level; source independence; wording of intent reception or effect
+vertical_slices,US-VS06,acceptance_tests,L0 never labeled legitimation; L1 wording says intent/frame; L2 identifies distinct reception source; L3 requires explicit method; counter-readings retained,LEG0 never labeled legitimation; LEG1 wording says intent/frame; LEG2 identifies distinct reception source; LEG3 requires explicit method; counter-readings retained
+vertical_slices,US-VS06,stop_condition,Stop at L1 if no independent reception appears; do not search indefinitely or upgrade official publicity to effect,Stop at LEG1 if no independent reception appears; do not search indefinitely or upgrade official publicity to effect
+legitimation_observations,LC001,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC002,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC003,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC004,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC005,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC006,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC007,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC008,legitimation_level,L1_source_narrative,LEG1_source_narrative
+legitimation_observations,LC009,legitimation_level,L0_observed_service,LEG0_observed_service
+legitimation_observations,LC009,interpretation_limit,L0 records service capacity only. It carries no inference about host-community legitimacy or political alignment.,LEG0 records service capacity only. It carries no inference about host-community legitimacy or political alignment.
+legitimation_observations,LC010,legitimation_level,L0_observed_service,LEG0_observed_service
+legitimation_observations,LC010,interpretation_limit,L0 records assistance. Humanitarian service must not be coded as pro-base or as legitimating without separate evidence.,LEG0 records assistance. Humanitarian service must not be coded as pro-base or as legitimating without separate evidence.
+legitimation_observations,LC011,legitimation_level,L0_observed_service,LEG0_observed_service
+legitimation_observations,LC011,interpretation_limit,L0 records services to eligible households; it does not establish political intent or public legitimation.,LEG0 records services to eligible households; it does not establish political intent or public legitimation.
+legitimation_observations,LC012,legitimation_level,L1_source_narrative,LEG1_source_narrative
+table_contracts,USN01,evidence_gate,Underlying fact must exist; function_code requires principal review; legitimation must pass L1-L3 basis gate; mixed requires component_function_codes; unknown requires missing_scope,Underlying fact must exist; function_code requires principal review; legitimation must pass LEG1-LEG3 basis gate; mixed requires component_function_codes; unknown requires missing_scope

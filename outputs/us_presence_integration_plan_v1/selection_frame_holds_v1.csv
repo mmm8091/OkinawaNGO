@@ -1,0 +1,4 @@
+﻿candidate_frame,intended_scope,status,reason
+USF-ACTIVE121-DIRECTORY-CANDIDATE,121 active-actor official-site directory,hold_selection_frame,membership and denominator have not received a separate frame approval
+USF-USN-PERSON-TRACER-CANDIDATE,reviewed person-role tracer including A001 and A002,hold_selection_frame,A001 and A002 are outside the frozen US-origin17 comparison frame
+USF-USN-RESOURCE-PATH-CANDIDATE,MTS/AWWA and Earthjustice resource paths,hold_selection_frame,new actors and resource observations cannot be backfilled into the frozen 9/6/2 frame

@@ -1,0 +1,7 @@
+﻿actor_id,canonical_name,actor_class,origin_type,legal_or_scope_status,decision_ref,source_resolution,disposition,write_eligible
+X018,Marine Thrift Shop Okinawa,base_community_service_actor,us_origin,us_501c3_nonprofit,SR-HR-001,hold_source_freeze,hold,no
+X019,Marine Gift Shop,base_community_service_actor,us_origin,legal_status_unresolved,SR-HR-002,hold_source_freeze,hold,no
+X020,Neighborhood Pantry – Camp Butler,base_community_service_actor,us_origin,legal_status_unknown,SR-HR-003,hold_source_freeze,hold,no
+X021,North Island Okinawa Spouses Club,base_spouse_club,us_origin,status_not_encoded,SR-HR-004,hold_source_freeze,hold,no
+X022,Army Emergency Relief,military_family_relief_actor,us_origin,national_actor_local_presence_at_torii,SR-HR-005A,hold_source_freeze,hold,no
+X023,Air & Space Forces Aid Society,military_family_relief_actor,us_origin,national_actor_local_presence_at_kadena,SR-HR-005B,hold_source_freeze,hold,no

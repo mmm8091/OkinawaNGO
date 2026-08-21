@@ -1,0 +1,36 @@
+﻿test_id,status,observed
+UST-001,pass_plan_gate,validated or preserved as a no-write constraint
+UST-002,pass_plan_gate,validated or preserved as a no-write constraint
+UST-003,pass_plan_gate,validated or preserved as a no-write constraint
+UST-004,pass_plan_gate,validated or preserved as a no-write constraint
+UST-005,pass_plan_gate,validated or preserved as a no-write constraint
+UST-006,pass_plan_gate,validated or preserved as a no-write constraint
+UST-007,pass_plan_gate,validated or preserved as a no-write constraint
+UST-008,pass_plan_gate,validated or preserved as a no-write constraint
+UST-009,pass_plan_gate,validated or preserved as a no-write constraint
+UST-010,pass_plan_gate,validated or preserved as a no-write constraint
+UST-011,pass_plan_gate,validated or preserved as a no-write constraint
+UST-012,pass_plan_gate,validated or preserved as a no-write constraint
+UST-013,pass_plan_gate,validated or preserved as a no-write constraint
+UST-014,pass_plan_gate,validated or preserved as a no-write constraint
+UST-015,pass_plan_gate,validated or preserved as a no-write constraint
+UST-016,pass_plan_gate,validated or preserved as a no-write constraint
+UST-017,pass_plan_gate,validated or preserved as a no-write constraint
+UST-018,pass_plan_gate,validated or preserved as a no-write constraint
+UST-019,pass_plan_gate,validated or preserved as a no-write constraint
+UST-020,pass_plan_gate,validated or preserved as a no-write constraint
+UST-021,pass_plan_gate,validated or preserved as a no-write constraint
+UST-022,pass_plan_gate,validated or preserved as a no-write constraint
+UST-023,pass_plan_gate,validated or preserved as a no-write constraint
+UST-024,pass_plan_gate,validated or preserved as a no-write constraint
+UST-025,pass_plan_gate,validated or preserved as a no-write constraint
+UST-026,pass_plan_gate,validated or preserved as a no-write constraint
+UST-027,blocked,9 ProPublica filing interfaces still require official IRS receipt review
+UST-028,pass_plan_gate,validated or preserved as a no-write constraint
+UST-029,not_run_real_source_plan_blocked,reserved for explicitly synthetic sandbox verification
+UST-030,not_run_real_source_plan_blocked,reserved for explicitly synthetic sandbox verification
+UST-031,not_run_real_source_plan_blocked,reserved for explicitly synthetic sandbox verification
+UST-032,pass_plan_gate,validated or preserved as a no-write constraint
+UST-033,pass_plan_gate,validated or preserved as a no-write constraint
+UST-034,pass_plan_gate,validated or preserved as a no-write constraint
+UST-035,pass_plan_gate,validated or preserved as a no-write constraint

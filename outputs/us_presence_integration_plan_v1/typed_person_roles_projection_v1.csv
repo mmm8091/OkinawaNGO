@@ -1,0 +1,7 @@
+﻿role_id,person_identity_key,person_name_as_source,actor_id,role_title,role_start,role_observed_at,derived_actor_dyad,source_resolution,disposition
+USAPN006,PERSON_CAND_LUMMIS,Charles Douglas Lummis,A070,chapter contact,,2020-05-13,no,hold_selection_frame,hold
+USAPN007,PERSON_CAND_DOKTOR,Pete Doktor,A070,chapter contact,,2020-05-13,no,hold_selection_frame,hold
+USAPN008,PERSON_CAND_YOSHIKAWA,Hideki Yoshikawa,A002,International Director,,2021-02-08,no,hold_selection_frame,hold
+USAPN009,PERSON_CAND_YOSHIKAWA,Hideki Yoshikawa,A001,Director,,2021-02-08,no,hold_selection_frame,hold
+USAPN010,PERSON_CAND_DOKTOR,Pete Shimazaki Doktor,A070,chapter 1003 co-founder,,2021-02-08,no,hold_selection_frame,hold
+USAPN011,PERSON_CAND_LUMMIS,Doug Lummis,A070,chapter coordinator,,2021-02-08,no,hold_selection_frame,hold

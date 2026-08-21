@@ -1,0 +1,19 @@
+﻿delta_id,target_file_or_table,baseline_rows,future_delta,precision,authorization,precondition,interpretation_limit
+USD-001,data/interim/01_actor_registry_initial_v0.csv,122,+6,conditional_exact,not_authorized_for_writeback,central hash matches and X018-X023 remain free,New actors do not change the frozen 17-node frame and do not inherit stance or relations
+USD-002,data/interim/02_actor_aliases_initial_v0.csv,39,pending,unresolved,not_authorized_for_writeback,actor admission overlay and alias evidence frozen,Local presence labels are not legal aliases
+USD-003,data/interim/05_source_log_initial_v0.csv,295,0 in design; <=53 candidate upper bound later,bounded_upper_bound,not_authorized_for_writeback,URL and official-record dedupe frozen before S-ID allocation,Source admission approves no actor relation or claim
+USD-004,data/interim/15_funding_or_support_edges_sample_v0.csv,43,0,exact,must_remain_zero,all phases,Legacy facts remain byte-identical
+USD-005,selection_frames_v1.csv,0,at least 2,minimum,design_only,typed layer approved,Existing43 and frozen US-origin17 frames remain versioned and immutable
+USD-006,actor_admission_overlay_v1.csv,0,8 decisions,bounded_exact,design_only,principal return receipt verified,Six add decisions plus two deferred identities; no relationship approval
+USD-007,function_observations_v1.csv,0,pending,unresolved,design_only,underlying facts and LEG migration complete,No actor-level pro or anti U.S. label
+USD-008,money_flows_v1.csv,0,at least 1 accepted; 1 explicit defer,minimum,design_only,endpoint and period review preserved,OESC 8479 accepted; KOSC 2580 does not generate a flow
+USD-009,resource_accounting_observations_v1.csv,0,2 bounded observations,conditional_exact,design_only,Treasury locator and Earthjustice accounting semantics retained,276345.50 and 280000 remain distinct and do not imply a simple payer-recipient edge
+USD-010,person_actor_time_v1.csv,0,pending from 29 service plus 11 accountability observations,bounded_input_count,design_only,identity crosswalk and role fields reviewed,Observation date is not automatically tenure start
+USD-011,service_recipient_v1.csv,0,pending from 16 service observations,bounded_input_count,design_only,recipient identity and transaction semantics reviewed separately,Identity approval does not approve a service or flow
+USD-012,affiliation_control_v1.csv,0,43-row overlay contributes 9 mapped rows plus new approved MTS records,bounded_minimum,design_only,no fact status upgrade,Membership regional branch channel and control remain distinct
+USD-013,action_institution_v1.csv,0,43-row overlay contributes 20 mapped rows plus bounded accountability actions,bounded_minimum,design_only,event-only endpoints remain off graph,Action co-occurrence does not create an alliance
+USD-014,official_site_crosswalk_v1.csv,0,65 decision rows,exact_input_count,design_only,54 accept 4 revise 5 defer 2 reject mapping locked,Official-site review approves no stance relation funding or continuity
+USD-015,research_endpoint_crosswalk_v1.csv,0,pending,unresolved,design_only,endpoint types and identity decisions complete,Unresolved labels do not borrow registry IDs
+USD-016,relation_retype_overlay_v1.csv,0,43,exact,design_only,six principal rules and exact ID mapping assertions,Only F017 and F043 change proposed family to regional_branch
+USD-017,source_capture_overlay_v1.csv,0,at least 1,minimum,design_only,dated S097 capture retained separately,A newer capture never replaces archived bytes
+USD-018,publication adapter / frontend,not_applicable,0,exact,prohibited_in_this_round,separate approval after central integration,Research-only rows remain absent from public release

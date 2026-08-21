@@ -1,0 +1,126 @@
+{
+  "allocated_source_ids": [],
+  "candidate_references": 58,
+  "cluster_resolution_counts": {
+    "candidate_new_non_propublica": 44,
+    "hold_official_irs_receipt": 9,
+    "reuse_existing": 4
+  },
+  "existing_exact_urls": 4,
+  "new_candidate_upper_bound": 53,
+  "normalized_urls": 57,
+  "propublica_interfaces": 9,
+  "status": "pending_official_receipt_review",
+  "steps": [
+    {
+      "current_count": "38",
+      "expected_output": "38 proposal receipts",
+      "gate": "proposal IDs unique",
+      "input_scope": "service source proposals",
+      "operation": "preserve proposal rows and normalize URLs",
+      "order": "1",
+      "status": "designed",
+      "step_id": "USS-001",
+      "write_target": "planning workspace only"
+    },
+    {
+      "current_count": "7",
+      "expected_output": "7 proposal receipts",
+      "gate": "proposal IDs unique",
+      "input_scope": "accountability source proposals",
+      "operation": "preserve proposal rows and normalize URLs",
+      "order": "2",
+      "status": "designed",
+      "step_id": "USS-002",
+      "write_target": "planning workspace only"
+    },
+    {
+      "current_count": "58",
+      "expected_output": "58 directory receipts before overlap removal",
+      "gate": "directory decision mapping exact",
+      "input_scope": "accepted or revised actor-directory pages",
+      "operation": "extract verification URLs without importing stance or relation claims",
+      "order": "3",
+      "status": "designed",
+      "step_id": "USS-003",
+      "write_target": "planning workspace only"
+    },
+    {
+      "current_count": "58 candidate references in current union pre-audit",
+      "expected_output": "57 normalized URLs",
+      "gate": "manual review of near-duplicate documents",
+      "input_scope": "all proposal and directory receipts",
+      "operation": "deduplicate by normalized URL plus document owner date record type and locator",
+      "order": "4",
+      "status": "designed",
+      "step_id": "USS-004",
+      "write_target": "frozen source plan"
+    },
+    {
+      "current_count": "57",
+      "expected_output": "4 exact existing URLs plus candidates",
+      "gate": "source ownership and document identity match",
+      "input_scope": "normalized URLs versus central source log",
+      "operation": "reuse exact central sources",
+      "order": "5",
+      "status": "designed",
+      "step_id": "USS-005",
+      "write_target": "frozen source plan"
+    },
+    {
+      "current_count": "9",
+      "expected_output": "official filing receipts where available",
+      "gate": "tax period and form identity match",
+      "input_scope": "ProPublica interface URLs",
+      "operation": "pair or replace with IRS TEOS or official XML receipts",
+      "order": "6",
+      "status": "required_before_write",
+      "step_id": "USS-006",
+      "write_target": "frozen source plan"
+    },
+    {
+      "current_count": "<=53",
+      "expected_output": "exact count pending official-record substitution and dedupe",
+      "gate": "separate central writeback approval",
+      "input_scope": "remaining new URL candidates",
+      "operation": "assign contiguous S-IDs only after freeze",
+      "order": "7",
+      "status": "blocked",
+      "step_id": "USS-007",
+      "write_target": "data/interim/05_source_log_initial_v0.csv"
+    },
+    {
+      "current_count": "pending",
+      "expected_output": "review_status=ai_seeded; relation_or_claim_approved=no",
+      "gate": "zero claim approval leakage",
+      "input_scope": "new source rows",
+      "operation": "initialize workflow fields",
+      "order": "8",
+      "status": "blocked",
+      "step_id": "USS-008",
+      "write_target": "data/interim/05_source_log_initial_v0.csv"
+    },
+    {
+      "current_count": "3",
+      "expected_output": "bounded metadata and capture records",
+      "gate": "old archive hashes unchanged",
+      "input_scope": "S056 S082 S097",
+      "operation": "apply locator or capture overlays without replacing archive bytes",
+      "order": "9",
+      "status": "designed",
+      "step_id": "USS-009",
+      "write_target": "source overlays"
+    },
+    {
+      "current_count": "pending",
+      "expected_output": "archive receipts and manifest update",
+      "gate": "central merge complete and approved",
+      "input_scope": "newly merged source log",
+      "operation": "run source archive as a separate operation",
+      "order": "10",
+      "status": "blocked",
+      "step_id": "USS-010",
+      "write_target": "source_docs/source_archive"
+    }
+  ]
+}

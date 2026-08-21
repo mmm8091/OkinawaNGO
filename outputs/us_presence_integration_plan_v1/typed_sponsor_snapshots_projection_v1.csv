@@ -1,0 +1,7 @@
+﻿snapshot_id,sponsor_endpoint,program_endpoint,reported_tier,observed_at,endpoint_or_reuse_status,amount,source_resolution,disposition,non_inference
+SA001-01,Matson,USO Indo-Pacific,Mission Partner,2026-08-19,reference_existing:F035,,hold_schema_sponsor_snapshot,hold,"A dated tier does not establish amount, start date, governance, affiliation or political stance."
+SA001-02,University of Maryland Global Campus,USO Indo-Pacific,Mission Partner,2026-08-19,provisional_endpoint,,hold_schema_sponsor_snapshot,hold,"A dated tier does not establish amount, start date, governance, affiliation or political stance."
+SA001-03,AIG Japan / AIG Auto Insurance,USO Indo-Pacific,Community Partner,2026-08-19,provisional_endpoint,,hold_schema_sponsor_snapshot,hold,"A dated tier does not establish amount, start date, governance, affiliation or political stance."
+SA001-04,Mediatti Broadband Communications / MBC,USO Okinawa,Platinum,2026-08-19,reference_existing:F034,,hold_schema_sponsor_snapshot,hold,"A dated tier does not establish amount, start date, governance, affiliation or political stance."
+SA001-05,X003,USO Okinawa,Silver,2026-08-19,reference_existing:F002,,hold_schema_sponsor_snapshot,hold,"A dated tier does not establish amount, start date, governance, affiliation or political stance."
+SA001-06,BILLABONG STORE Okinawa Rycom,USO Okinawa,Bronze,2026-08-19,provisional_endpoint,,hold_schema_sponsor_snapshot,hold,"A dated tier does not establish amount, start date, governance, affiliation or political stance."

@@ -1,0 +1,3 @@
+﻿record_id,receiver_endpoint,amount,currency,period_or_date,semantics,directed_money_edge,source_resolution,disposition,non_inference
+USAR001,A009,276345.50,USD,2020-07-01/2021-06-30,court_award_amount_reported_on_accrual_filing,no,hold_selection_frame,hold,"Do not encode as a donation, grant, project budget, litigation expenditure, or payment from an Okinawa civic actor. Identify payer and award order separately before creating a directed money edge."
+USAR001-JF,payment_mechanism_record_not_simple_receiver_edge,280000,USD,2021-03-05,Judgment_Fund_payment_mechanism_record,no,hold_formal_source_receipt_and_selection_frame,hold,Do not merge this payment mechanism with the USD 276345.50 accrual-filing observation or infer a simple OSD-to-Earthjustice edge.

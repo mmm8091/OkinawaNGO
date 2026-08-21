@@ -1,0 +1,9 @@
+﻿upstream_id,approved_label_or_key,endpoint_status,actor_admission,relation_fact_approved,disposition
+SR006,NPO/ARU halfway house for teenage girls,defer_raw_label,no,no,hold
+SR007,沖縄小児在宅医療基金 てぃんさぐの会,accepted_canonical_crosswalk,no,no,project_identity_only
+SR009,Far East Council / R_BSA_FAR_EAST,accepted_existing_endpoint_crosswalk,no,no,project_identity_only
+SR010,一般社団法人Oki Hands Oki Hearts,accepted_canonical_crosswalk,no,no,project_identity_only
+USAA004,Network for Okinawa,research_endpoint_not_A028,no,no,project_identity_only
+USAA005,EO_R5_FUTAMI_TEN_DISTRICTS,event_only_endpoint,no,no,project_identity_only
+USAA006,Protect Henoko and Takae! NGO Network,event_only_endpoint,no,no,project_identity_only
+USAA007,ZHAP / ZENKO Henoko Anti-base Project,provisional_research_endpoint,no,no,project_identity_only

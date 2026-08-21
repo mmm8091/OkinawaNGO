@@ -1,0 +1,131 @@
+{
+  "files": [
+    {
+      "bytes": 936,
+      "path": "actor_admission_preview_v1.csv",
+      "sha256": "90adfbccf087af144bb9fac06e8574fb36fdead2e7a86e34999de260dee263bc"
+    },
+    {
+      "bytes": 425,
+      "path": "actor_defer_preview_v1.csv",
+      "sha256": "7d7117b47c78988ff91b96ba6dbfda1f1362d347e723f2bdd2941faa6dc9f4f3"
+    },
+    {
+      "bytes": 1004,
+      "path": "derived_source_requirements_v1.csv",
+      "sha256": "725418ce016b000becf73a4ff1a401624565db4f104153f5a5c5982749701c8e"
+    },
+    {
+      "bytes": 385,
+      "path": "design_gap_holds_v1.csv",
+      "sha256": "c2534f6b28afb868c78b28043b937c62aaffc9a63341109d3434afd4e6c19c04"
+    },
+    {
+      "bytes": 12290,
+      "path": "expected_actions_v1.csv",
+      "sha256": "9e1ca39340c3942b3f66b5540e5a824f50abca3e7a8886b9af9754f6fac8395d"
+    },
+    {
+      "bytes": 3674,
+      "path": "expected_table_deltas_v1.csv",
+      "sha256": "5fcf3d51c1f9756a4d02426acd61f0cb540a7dcbc2032a6a24e640b7596cf70c"
+    },
+    {
+      "bytes": 8277,
+      "path": "held_or_blocked_actions_v1.csv",
+      "sha256": "3c337868b84672587259656d0d10a992da76761244208acce47abb14a0dbed13"
+    },
+    {
+      "bytes": 422662,
+      "path": "integration_plan_v1.json",
+      "sha256": "94da024db2c1d9e03c61658b1f04378484cdea7450d126e210b40892b1a7ede7"
+    },
+    {
+      "bytes": 5248,
+      "path": "leg_migration_field_diff_v1.csv",
+      "sha256": "d71312e56430e0df4424172667022cb08e495196f3dde1bb35635a10b9d8f9b5"
+    },
+    {
+      "bytes": 115953,
+      "path": "leg_migration_preview_v1.json",
+      "sha256": "3d1a97f6bcafdb06125c8d165811bf6839a478c52303923495d7f0a7df4b4605"
+    },
+    {
+      "bytes": 81664,
+      "path": "official_site_decision_overlay_preview_v1.csv",
+      "sha256": "8c27b7002687a26b2d79ec4bac96a4ae3b9d39c2a197229c9ff5f7af5951d710"
+    },
+    {
+      "bytes": 654,
+      "path": "README.md",
+      "sha256": "765727f050a8e48a2d8ff0f6baf5e571dfb0b8e554790010e6ee6292e29835ac"
+    },
+    {
+      "bytes": 25908,
+      "path": "relation_retype_overlay_preview_v1.csv",
+      "sha256": "393c77bbedd392ce1fa0232b18ecdc0c8b7a83a3fa812acd30bf064a51696856"
+    },
+    {
+      "bytes": 989,
+      "path": "sandbox_validation_v1.json",
+      "sha256": "d9116db2d17fba8081b1f09d89f187c66d20163713e86ac3f69d83b40c484e29"
+    },
+    {
+      "bytes": 566,
+      "path": "selection_frame_holds_v1.csv",
+      "sha256": "ab4d79c906a80d17b3196ba1adfeb973d41b5011d344e41fa90157d225fc0fb9"
+    },
+    {
+      "bytes": 4515,
+      "path": "source_admission_state_v1.json",
+      "sha256": "e8199bde64c373c06629c5c52b672945743a5558fec214e5e3e989505a362535"
+    },
+    {
+      "bytes": 11006,
+      "path": "source_clusters_v1.csv",
+      "sha256": "d410c4914db558a273b3a2ae51c05ae9600239d01796e75ec97ce09f78be368a"
+    },
+    {
+      "bytes": 2605,
+      "path": "test_results_v1.csv",
+      "sha256": "30f268caef7ce3c080ed8ee712d7b8d552c6398ff2a71ae95bf45b807f4135d4"
+    },
+    {
+      "bytes": 766,
+      "path": "typed_accounting_projection_v1.csv",
+      "sha256": "ff6fcaa0686f3768f2cf7f9fc11a8f4453e59f20d6779216b00b1aea76462870"
+    },
+    {
+      "bytes": 1014,
+      "path": "typed_actions_projection_v1.csv",
+      "sha256": "b5f944bd74ab866783bc95a1e73b8265e1950f9820b5f26e17bd7c8a0e91087b"
+    },
+    {
+      "bytes": 488,
+      "path": "typed_affiliation_projection_v1.csv",
+      "sha256": "7e377693b91a764817e3c85fa525d75b6be91d38b53141aeef51049ab8306d74"
+    },
+    {
+      "bytes": 864,
+      "path": "typed_endpoint_crosswalks_projection_v1.csv",
+      "sha256": "c8905af34b97d9dbdf0cfb80df11885bb0bf4a663f76c9f74479576b5d2531d3"
+    },
+    {
+      "bytes": 3274,
+      "path": "typed_money_projection_v1.csv",
+      "sha256": "dfb7791285993cd605c9e7fcaf013f899b50847e9f57aa85caaf670983e59b93"
+    },
+    {
+      "bytes": 811,
+      "path": "typed_person_roles_projection_v1.csv",
+      "sha256": "c0490da8f5886f319cfc0d60a7494d34248ff9c343be8ed8466bbc484bf7804a"
+    },
+    {
+      "bytes": 1520,
+      "path": "typed_sponsor_snapshots_projection_v1.csv",
+      "sha256": "2c7b8e87737994ebd3960e4667018d9d312fdd486674f46f8a7ed654dbc7f211"
+    }
+  ],
+  "hash_algorithm": "sha256",
+  "schema_version": "1.0.0"
+}
