@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" returnVersion="2024v5.2">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2026-06-02T11:28:41-04:00</ReturnTs>
+    <TaxPeriodEndDt>2025-05-31</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmName>
+        <BusinessNameLine1Txt>FINTAX HELP</BusinessNameLine1Txt>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1Txt>222 HERWECK DR</AddressLine1Txt>
+        <CityNm>SAN ANTONIO</CityNm>
+        <StateAbbreviationCd>TX</StateAbbreviationCd>
+        <ZIPCd>78213</ZIPCd>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990EZ</ReturnTypeCd>
+    <TaxPeriodBeginDt>2024-06-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>460598583</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>MARINE OFFICERS SPOUSES CLUB OKINAWA</BusinessNameLine1Txt>
+      </BusinessName>
+      <InCareOfNm>% MARION STRELKE</InCareOfNm>
+      <BusinessNameControlTxt>MARI</BusinessNameControlTxt>
+      <PhoneNum>9107875673</PhoneNum>
+      <USAddress>
+        <AddressLine1Txt>MOSCO - UNIT 39020 BOX 2 STE 35023</AddressLine1Txt>
+        <CityNm>FPO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>963735023</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>MARION STRELKE</PersonNm>
+      <PersonTitleTxt>TREASURER</PersonTitleTxt>
+      <PhoneNum>9107875673</PhoneNum>
+      <SignatureDt>2026-04-11</SignatureDt>
+      <DiscussWithPaidPreparerInd>true</DiscussWithPaidPreparerInd>
+    </BusinessOfficerGrp>
+    <IRSResponsiblePrtyInfoCurrInd>true</IRSResponsiblePrtyInfoCurrInd>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>ANNA CRUZ</PreparerPersonNm>
+      <PTIN>P03089761</PTIN>
+      <PhoneNum>2105000098</PhoneNum>
+      <SelfEmployedInd>X</SelfEmployedInd>
+    </PreparerPersonGrp>
+    <TaxYr>2024</TaxYr>
+    <BuildTS>2025-03-06 01:10:19Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="3">
+    <IRS990EZ documentId="IRS990EZ">
+      <ScheduleBNotRequiredInd>X</ScheduleBNotRequiredInd>
+      <Organization501c3Ind referenceDocumentId="IRS990ScheduleA">X</Organization501c3Ind>
+      <TypeOfOrganizationCorpInd>X</TypeOfOrganizationCorpInd>
+      <GrossReceiptsAmt>73622</GrossReceiptsAmt>
+      <InfoInScheduleOPartIInd>X</InfoInScheduleOPartIInd>
+      <ContributionsGiftsGrantsEtcAmt>351</ContributionsGiftsGrantsEtcAmt>
+      <MembershipDuesAmt>73271</MembershipDuesAmt>
+      <TotalRevenueAmt>73622</TotalRevenueAmt>
+      <FeesAndOtherPymtToIndCntrctAmt>400</FeesAndOtherPymtToIndCntrctAmt>
+      <OtherExpensesTotalAmt>76419</OtherExpensesTotalAmt>
+      <TotalExpensesAmt>76819</TotalExpensesAmt>
+      <ExcessOrDeficitForYearAmt>-3197</ExcessOrDeficitForYearAmt>
+      <NetAssetsOrFundBalancesBOYAmt>26352</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>23155</NetAssetsOrFundBalancesEOYAmt>
+      <CashSavingsAndInvestmentsGrp>
+        <BOYAmt>26352</BOYAmt>
+        <EOYAmt>23155</EOYAmt>
+      </CashSavingsAndInvestmentsGrp>
+      <LandAndBuildingsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </LandAndBuildingsGrp>
+      <OtherAssetsTotalDetail>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </OtherAssetsTotalDetail>
+      <Form990TotalAssetsGrp>
+        <BOYAmt>26352</BOYAmt>
+        <EOYAmt>23155</EOYAmt>
+      </Form990TotalAssetsGrp>
+      <SumOfTotalLiabilitiesGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </SumOfTotalLiabilitiesGrp>
+      <NetAssetsOrFundBalancesGrp>
+        <BOYAmt>26352</BOYAmt>
+        <EOYAmt>23155</EOYAmt>
+      </NetAssetsOrFundBalancesGrp>
+      <PrimaryExemptPurposeTxt>FOSTER CONNECTION FOR MILITARY FAMILIES</PrimaryExemptPurposeTxt>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>SUPPORT THE AMERICAN WELFARE AND WORKS ASSOCIATION (AWWA), WHICH DISTRIBUTES GRANTS FOR YOUTH PROGRAMS, ELDER CARE, DISABILITY SERVICES, AND LOCAL WELFARE INITIATIVES</DescriptionProgramSrvcAccomTxt>
+        <ProgramServiceExpensesAmt>7500</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>AWARDS 5-10 SCHOLARSHIPS TO MILITARY-CONNECTED COMMUNITY APPLICANTS, SUPPORTING CONTINUING EDUCATION, PROFESSIONAL DEVELOPMENT, AND CAREER ADVANCEMENT, EMPOWERING SPOUSES AND DEPEN</DescriptionProgramSrvcAccomTxt>
+        <ProgramServiceExpensesAmt>10351</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>MEMBER ENGAGEMENT PROGRAMS FOR ITS APPROXIMATELY 120 MEMBERS BENEFITING 150-200 INDIVIDUALS TO FOSTER COMMUNITY AND REDUCE ISOLATION</DescriptionProgramSrvcAccomTxt>
+        <ProgramServiceExpensesAmt>51744</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <TotalProgramServiceExpensesAmt>69595</TotalProgramServiceExpensesAmt>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>MARION STRELKE</PersonNm>
+        <TitleTxt>TREASURER</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4.00</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <ActivitiesNotPreviouslyRptInd>false</ActivitiesNotPreviouslyRptInd>
+      <ChgMadeToOrgnzngDocNotRptInd>false</ChgMadeToOrgnzngDocNotRptInd>
+      <OrganizationHadUBIInd>false</OrganizationHadUBIInd>
+      <SubjectToProxyTaxInd>false</SubjectToProxyTaxInd>
+      <OrganizationDissolvedEtcInd>false</OrganizationDissolvedEtcInd>
+      <Form1120PolFiledInd>false</Form1120PolFiledInd>
+      <MadeLoansToFromOfficersInd>false</MadeLoansToFromOfficersInd>
+      <EngagedInExcessBenefitTransInd>false</EngagedInExcessBenefitTransInd>
+      <ProhibitedTaxShelterTransInd>false</ProhibitedTaxShelterTransInd>
+      <BooksInCareOfDetail>
+        <PersonNm>MARION STRELKE</PersonNm>
+        <USAddress>
+          <AddressLine1Txt>MOSCO - UNIT 39020 BOX 2 Ste 35023</AddressLine1Txt>
+          <CityNm>FPO</CityNm>
+          <StateAbbreviationCd>AP</StateAbbreviationCd>
+          <ZIPCd>963735023</ZIPCd>
+        </USAddress>
+        <PhoneNum>9107875673</PhoneNum>
+      </BooksInCareOfDetail>
+      <ForeignFinancialAccountInd>false</ForeignFinancialAccountInd>
+      <ForeignOfficeInd>false</ForeignOfficeInd>
+      <DonorAdvisedFndsInd>false</DonorAdvisedFndsInd>
+      <OperateHospitalInd>false</OperateHospitalInd>
+      <TanningServicesProvidedInd>false</TanningServicesProvidedInd>
+      <RelatedOrganizationCtrlEntInd>false</RelatedOrganizationCtrlEntInd>
+      <TransactionWithControlEntInd>false</TransactionWithControlEntInd>
+      <PoliticalCampaignActyInd>false</PoliticalCampaignActyInd>
+      <LobbyingActivitiesInd>false</LobbyingActivitiesInd>
+      <SchoolOperatingInd>false</SchoolOperatingInd>
+      <TrnsfrExmptNonChrtblRltdOrgInd>false</TrnsfrExmptNonChrtblRltdOrgInd>
+      <PartVIOfCompOfHghstPdEmplTxt>NONE</PartVIOfCompOfHghstPdEmplTxt>
+      <PartVIHghstPdCntrctProfSrvcTxt>NONE</PartVIHghstPdCntrctProfSrvcTxt>
+      <FiledScheduleAInd>true</FiledScheduleAInd>
+    </IRS990EZ>
+    <IRS990ScheduleA documentId="IRS990ScheduleA">
+      <PubliclySupportedOrg509a2Ind>X</PubliclySupportedOrg509a2Ind>
+      <GiftsGrantsContrisRcvd509Grp>
+        <CurrentTaxYearMinus4YearsAmt>12481</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>19220</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>20061</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>17378</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>13294</CurrentTaxYearAmt>
+        <TotalAmt>82434</TotalAmt>
+      </GiftsGrantsContrisRcvd509Grp>
+      <GrossReceiptsNonUnrltBusGrp>
+        <CurrentTaxYearMinus4YearsAmt>79409</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>7756</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>146083</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>83360</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>60328</CurrentTaxYearAmt>
+        <TotalAmt>376936</TotalAmt>
+      </GrossReceiptsNonUnrltBusGrp>
+      <Total509Grp>
+        <CurrentTaxYearMinus4YearsAmt>91890</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>26976</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>166144</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>100738</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>73622</CurrentTaxYearAmt>
+        <TotalAmt>459370</TotalAmt>
+      </Total509Grp>
+      <SubstAndDsqlfyPrsnsTotGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </SubstAndDsqlfyPrsnsTotGrp>
+      <PublicSupportTotal509Amt>459370</PublicSupportTotal509Amt>
+      <TotalSupportCalendarYearGrp>
+        <CurrentTaxYearMinus4YearsAmt>91890</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>26976</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>166144</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>100738</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>73622</CurrentTaxYearAmt>
+        <TotalAmt>459370</TotalAmt>
+      </TotalSupportCalendarYearGrp>
+      <PublicSupportCY509Pct>1.00000</PublicSupportCY509Pct>
+      <PublicSupportPY509Pct>0.00000</PublicSupportPY509Pct>
+      <InvestmentIncomeCYPct>0.00000</InvestmentIncomeCYPct>
+      <InvestmentIncomePYPct>0.00000</InvestmentIncomePYPct>
+      <ThirtyThrPctSuprtTestsCY509Ind>X</ThirtyThrPctSuprtTestsCY509Ind>
+    </IRS990ScheduleA>
+    <IRS990ScheduleO documentId="IRS990ScheduleO">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Description of other expenses Part I line 16</FormAndLineReferenceDesc>
+        <ExplanationTxt>Description AmountADVERTISING 750EVENT EXPENSES 6,315INSURANCE 121MEMBER REIMBUSERSEMENTS 90MERCHANT FEES 759AUCTION EXPENSES 48,855OPERATING EXPENSES 65WELFARE EXPENSES AND PLEDGES 2,175AWWA PLEDGES 7,250SCHOLARSHIP PLEDGES 10,039</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+  </ReturnData>
+</Return>

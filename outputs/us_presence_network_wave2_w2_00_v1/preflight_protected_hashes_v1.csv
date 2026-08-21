@@ -1,0 +1,6 @@
+path,sha256,captured_on,purpose
+data/interim/01_actor_registry_initial_v0.csv,c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4,2026-08-22,W2-00 preflight central-writeback guard
+data/interim/05_source_log_initial_v0.csv,363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902,2026-08-22,W2-00 preflight central-writeback guard
+data/interim/07_actor_issue_edges_initial_v0.csv,12f54b8b9bb16597814446ab69bfab2eca4ee72619cf62733744378a0f90a10c,2026-08-22,W2-00 preflight central-writeback guard
+data/interim/15_funding_or_support_edges_sample_v0.csv,3b11795150e7630ccf4cdab371ac135fab019c260609ee1272df518638f3ef23,2026-08-22,W2-00 preflight central-writeback guard
+prototypes/nr3_explorer/dist/release.json,04d3b05bc1b76126a0169239145eb66f6f736f9c9a7d7cb9a4b3b08fcbc5bf8f,2026-08-22,W2-00 preflight frontend-release guard

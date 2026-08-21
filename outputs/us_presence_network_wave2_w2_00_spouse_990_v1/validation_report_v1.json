@@ -1,0 +1,19 @@
+{
+  "status": "PASS_RESEARCH_ONLY_W2_00_SPOUSE_990",
+  "anchor_count": 83,
+  "source_receipt_count": 15,
+  "official_bulk_xml_receipt_count": 14,
+  "change_note_count": 8,
+  "cache_inventory_count": 24,
+  "organization_xml_periods": {
+    "AWWA": 2,
+    "KOSC": 3,
+    "MOSCO": 3,
+    "NOSCO": 3,
+    "OESC": 3
+  },
+  "oesc_awwa_flow_anchor_count": 3,
+  "kosc_2580_flow_anchor_count": 0,
+  "central_writeback": false,
+  "frontend_or_publication_adapter": false
+}

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.irs.gov/efile" returnVersion="2022v5.0">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2024-05-13T11:47:53-05:00</ReturnTs>
+    <TaxPeriodEndDt>2023-06-30</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmEIN>844026965</PreparerFirmEIN>
+      <PreparerFirmName>
+        <BusinessNameLine1Txt>Kristen's Tax Service</BusinessNameLine1Txt>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1Txt>7901 4TH ST N</AddressLine1Txt>
+        <CityNm>SAINT PETERSBURG</CityNm>
+        <StateAbbreviationCd>FL</StateAbbreviationCd>
+        <ZIPCd>337024305</ZIPCd>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990</ReturnTypeCd>
+    <TaxPeriodBeginDt>2022-07-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>980210979</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>Naval Officers' Spouses' Club of Okinawa</BusinessNameLine1Txt>
+      </BusinessName>
+      <BusinessNameControlTxt>NAVA</BusinessNameControlTxt>
+      <PhoneNum>5125627275</PhoneNum>
+      <USAddress>
+        <AddressLine1Txt>PSC 480 Box 714</AddressLine1Txt>
+        <CityNm>FPO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>963700001</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>Lucy Hill</PersonNm>
+      <PersonTitleTxt>President</PersonTitleTxt>
+      <PhoneNum>5125627275</PhoneNum>
+      <SignatureDt>2024-05-13</SignatureDt>
+      <DiscussWithPaidPreparerInd>1</DiscussWithPaidPreparerInd>
+    </BusinessOfficerGrp>
+    <SigningOfficerGrp>
+      <PersonFullName>
+        <PersonFirstNm>Lucy</PersonFirstNm>
+        <PersonLastNm>Hill</PersonLastNm>
+      </PersonFullName>
+      <SSN>999009999</SSN>
+    </SigningOfficerGrp>
+    <IRSResponsiblePrtyInfoCurrInd>0</IRSResponsiblePrtyInfoCurrInd>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>Kristen Morgan</PreparerPersonNm>
+      <PTIN>P01016516</PTIN>
+      <PhoneNum>9519733740</PhoneNum>
+      <PreparationDt>2024-05-11</PreparationDt>
+      <SelfEmployedInd>X</SelfEmployedInd>
+    </PreparerPersonGrp>
+    <AdditionalFilerInformation>
+      <TrustedCustomerGrp>
+        <TrustedCustomerCd>2</TrustedCustomerCd>
+        <AuthenticationAssuranceLevelCd>AAL1</AuthenticationAssuranceLevelCd>
+        <IdentityAssuranceLevelCd>IAL1</IdentityAssuranceLevelCd>
+      </TrustedCustomerGrp>
+    </AdditionalFilerInformation>
+    <TaxYr>2022</TaxYr>
+    <BuildTS>2023-04-26 12:10:37Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="5">
+    <IRS990 documentId="RetDoc1038000001" referenceDocumentId="RetDoc1044400001">
+      <DoingBusinessAsName>
+        <BusinessNameLine1Txt>NOSCO</BusinessNameLine1Txt>
+      </DoingBusinessAsName>
+      <PrincipalOfficerNm>Lucy Hill</PrincipalOfficerNm>
+      <USAddress>
+        <AddressLine1Txt>PSC 480 Box 714</AddressLine1Txt>
+        <CityNm>FPO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>963700001</ZIPCd>
+      </USAddress>
+      <GrossReceiptsAmt>346366</GrossReceiptsAmt>
+      <GroupReturnForAffiliatesInd>0</GroupReturnForAffiliatesInd>
+      <Organization501cInd organization501cTypeTxt="4">X</Organization501cInd>
+      <WebsiteAddressTxt>noscokinawa.com</WebsiteAddressTxt>
+      <TypeOfOrganizationOtherInd>X</TypeOfOrganizationOtherInd>
+      <FormationYr>1950</FormationYr>
+      <LegalDomicileStateCd>AP</LegalDomicileStateCd>
+      <ActivityOrMissionDesc>The Naval Officers' Spouses' Club of Okinawa (NOSCO) was established for the purpose of promoting the general welfare of both the Japanese and American charities and to offer a special service to all military members and their families stationed in Okinawa, Japan through the operation of the Fleet Gift Shop (FGS).</ActivityOrMissionDesc>
+      <VotingMembersGoverningBodyCnt>10</VotingMembersGoverningBodyCnt>
+      <VotingMembersIndependentCnt>0</VotingMembersIndependentCnt>
+      <TotalEmployeeCnt>7</TotalEmployeeCnt>
+      <TotalVolunteersCnt>60</TotalVolunteersCnt>
+      <TotalGrossUBIAmt>153</TotalGrossUBIAmt>
+      <NetUnrelatedBusTxblIncmAmt>0</NetUnrelatedBusTxblIncmAmt>
+      <PYContributionsGrantsAmt>2590</PYContributionsGrantsAmt>
+      <CYContributionsGrantsAmt>2916</CYContributionsGrantsAmt>
+      <PYProgramServiceRevenueAmt>294697</PYProgramServiceRevenueAmt>
+      <CYProgramServiceRevenueAmt>312947</CYProgramServiceRevenueAmt>
+      <PYInvestmentIncomeAmt>106</PYInvestmentIncomeAmt>
+      <CYInvestmentIncomeAmt>153</CYInvestmentIncomeAmt>
+      <PYOtherRevenueAmt>18447</PYOtherRevenueAmt>
+      <CYOtherRevenueAmt>13803</CYOtherRevenueAmt>
+      <PYTotalRevenueAmt>315840</PYTotalRevenueAmt>
+      <CYTotalRevenueAmt>329819</CYTotalRevenueAmt>
+      <PYGrantsAndSimilarPaidAmt>10900</PYGrantsAndSimilarPaidAmt>
+      <CYGrantsAndSimilarPaidAmt>11054</CYGrantsAndSimilarPaidAmt>
+      <PYBenefitsPaidToMembersAmt>0</PYBenefitsPaidToMembersAmt>
+      <CYBenefitsPaidToMembersAmt>0</CYBenefitsPaidToMembersAmt>
+      <PYSalariesCompEmpBnftPaidAmt>85005</PYSalariesCompEmpBnftPaidAmt>
+      <CYSalariesCompEmpBnftPaidAmt>68518</CYSalariesCompEmpBnftPaidAmt>
+      <PYTotalProfFndrsngExpnsAmt>0</PYTotalProfFndrsngExpnsAmt>
+      <CYTotalProfFndrsngExpnsAmt>0</CYTotalProfFndrsngExpnsAmt>
+      <CYTotalFundraisingExpenseAmt>0</CYTotalFundraisingExpenseAmt>
+      <PYOtherExpensesAmt>222919</PYOtherExpensesAmt>
+      <CYOtherExpensesAmt>199350</CYOtherExpensesAmt>
+      <PYTotalExpensesAmt>318824</PYTotalExpensesAmt>
+      <CYTotalExpensesAmt>278922</CYTotalExpensesAmt>
+      <PYRevenuesLessExpensesAmt>-2984</PYRevenuesLessExpensesAmt>
+      <CYRevenuesLessExpensesAmt>50897</CYRevenuesLessExpensesAmt>
+      <TotalAssetsBOYAmt>214796</TotalAssetsBOYAmt>
+      <TotalAssetsEOYAmt>264416</TotalAssetsEOYAmt>
+      <TotalLiabilitiesBOYAmt>2648</TotalLiabilitiesBOYAmt>
+      <TotalLiabilitiesEOYAmt>864</TotalLiabilitiesEOYAmt>
+      <NetAssetsOrFundBalancesBOYAmt>212148</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>263552</NetAssetsOrFundBalancesEOYAmt>
+      <InfoInScheduleOPartIIIInd>X</InfoInScheduleOPartIIIInd>
+      <MissionDesc>The Naval Officers' Spouses' Club of Okinawa (NOSCO) was established for the purpose of promoting the general welfare of both the Japanese and American charities and to offer a special service to all military members and their families stationed in Okinawa, Japan through the operation of the Fleet Gift Shop (FGS).</MissionDesc>
+      <SignificantNewProgramSrvcInd>0</SignificantNewProgramSrvcInd>
+      <SignificantChangeInd>0</SignificantChangeInd>
+      <ExpenseAmt>273156</ExpenseAmt>
+      <RevenueAmt>312947</RevenueAmt>
+      <Desc>The Naval Officers' Spouses' Club of Okinawa (NOSCO) was established for the purpose of promoting the general welfare of both the Japanese and American charities and to offer a special service to all military members and their families stationed in Okinawa, Japan through the operation of the Fleet Gift Shop (FGS). NOSCO operates the FGS which sells unique gifts and novelty items to all members of the armed forces and their families.</Desc>
+      <ProgSrvcAccomActy2Grp>
+        <ExpenseAmt>3766</ExpenseAmt>
+        <GrantAmt>11054</GrantAmt>
+        <Desc>The Naval Officers' Spouses' Club of Okinawa (NOSCO) was established for the purpose of promoting the general welfare of both Japanese and American charities. NOSCO hosts social events in order to increase club membership and support for our cause. NOSCO also provides monetary donations to both American and Japanese charities and fosters goodwill with our host nation.</Desc>
+      </ProgSrvcAccomActy2Grp>
+      <TotalProgramServiceExpensesAmt>276922</TotalProgramServiceExpensesAmt>
+      <DescribedInSection501c3Ind>0</DescribedInSection501c3Ind>
+      <ScheduleBRequiredInd>0</ScheduleBRequiredInd>
+      <PoliticalCampaignActyInd>0</PoliticalCampaignActyInd>
+      <SubjectToProxyTaxInd>0</SubjectToProxyTaxInd>
+      <DonorAdvisedFundInd referenceDocumentId="RetDoc1040000001">0</DonorAdvisedFundInd>
+      <ConservationEasementsInd referenceDocumentId="RetDoc1040000001">0</ConservationEasementsInd>
+      <CollectionsOfArtInd referenceDocumentId="RetDoc1040000001">0</CollectionsOfArtInd>
+      <CreditCounselingInd referenceDocumentId="RetDoc1040000001">0</CreditCounselingInd>
+      <DonorRstrOrQuasiEndowmentsInd>0</DonorRstrOrQuasiEndowmentsInd>
+      <ReportLandBuildingEquipmentInd referenceDocumentId="RetDoc1040000001">0</ReportLandBuildingEquipmentInd>
+      <ReportInvestmentsOtherSecInd referenceDocumentId="RetDoc1040000001">0</ReportInvestmentsOtherSecInd>
+      <ReportProgramRelatedInvstInd referenceDocumentId="RetDoc1040000001">0</ReportProgramRelatedInvstInd>
+      <ReportOtherAssetsInd referenceDocumentId="RetDoc1040000001">0</ReportOtherAssetsInd>
+      <ReportOtherLiabilitiesInd referenceDocumentId="RetDoc1040000001">1</ReportOtherLiabilitiesInd>
+      <IncludeFIN48FootnoteInd referenceDocumentId="RetDoc1040000001">0</IncludeFIN48FootnoteInd>
+      <IndependentAuditFinclStmtInd referenceDocumentId="RetDoc1040000001">0</IndependentAuditFinclStmtInd>
+      <ConsolidatedAuditFinclStmtInd referenceDocumentId="RetDoc1040000001">0</ConsolidatedAuditFinclStmtInd>
+      <SchoolOperatingInd>0</SchoolOperatingInd>
+      <ForeignOfficeInd>0</ForeignOfficeInd>
+      <ForeignActivitiesInd>0</ForeignActivitiesInd>
+      <MoreThan5000KToOrgInd>0</MoreThan5000KToOrgInd>
+      <MoreThan5000KToIndividualsInd>0</MoreThan5000KToIndividualsInd>
+      <ProfessionalFundraisingInd referenceDocumentId="RetDoc1041300001">0</ProfessionalFundraisingInd>
+      <FundraisingActivitiesInd referenceDocumentId="RetDoc1041300001">1</FundraisingActivitiesInd>
+      <GamingActivitiesInd referenceDocumentId="RetDoc1041300001">0</GamingActivitiesInd>
+      <OperateHospitalInd>0</OperateHospitalInd>
+      <GrantsToOrganizationsInd referenceDocumentId="RetDoc1041900001">0</GrantsToOrganizationsInd>
+      <GrantsToIndividualsInd referenceDocumentId="RetDoc1041900001">1</GrantsToIndividualsInd>
+      <ScheduleJRequiredInd>0</ScheduleJRequiredInd>
+      <TaxExemptBondsInd>0</TaxExemptBondsInd>
+      <EngagedInExcessBenefitTransInd>0</EngagedInExcessBenefitTransInd>
+      <PYExcessBenefitTransInd>0</PYExcessBenefitTransInd>
+      <LoanOutstandingInd>0</LoanOutstandingInd>
+      <GrantToRelatedPersonInd>0</GrantToRelatedPersonInd>
+      <BusinessRlnWithOrgMemInd>0</BusinessRlnWithOrgMemInd>
+      <BusinessRlnWithFamMemInd>0</BusinessRlnWithFamMemInd>
+      <BusinessRlnWith35CtrlEntInd>0</BusinessRlnWith35CtrlEntInd>
+      <DeductibleNonCashContriInd>0</DeductibleNonCashContriInd>
+      <DeductibleArtContributionInd>0</DeductibleArtContributionInd>
+      <TerminateOperationsInd>0</TerminateOperationsInd>
+      <PartialLiquidationInd>0</PartialLiquidationInd>
+      <DisregardedEntityInd>0</DisregardedEntityInd>
+      <RelatedEntityInd>0</RelatedEntityInd>
+      <RelatedOrganizationCtrlEntInd>0</RelatedOrganizationCtrlEntInd>
+      <ActivitiesConductedPrtshpInd>0</ActivitiesConductedPrtshpInd>
+      <ScheduleORequiredInd>1</ScheduleORequiredInd>
+      <IRPDocumentCnt>0</IRPDocumentCnt>
+      <IRPDocumentW2GCnt>0</IRPDocumentW2GCnt>
+      <EmployeeCnt>7</EmployeeCnt>
+      <EmploymentTaxReturnsFiledInd>1</EmploymentTaxReturnsFiledInd>
+      <UnrelatedBusIncmOverLimitInd>0</UnrelatedBusIncmOverLimitInd>
+      <ForeignFinancialAccountInd>0</ForeignFinancialAccountInd>
+      <ProhibitedTaxShelterTransInd>0</ProhibitedTaxShelterTransInd>
+      <TaxablePartyNotificationInd>0</TaxablePartyNotificationInd>
+      <NondeductibleContributionsInd>0</NondeductibleContributionsInd>
+      <QuidProQuoContributionsInd>0</QuidProQuoContributionsInd>
+      <Form8282PropertyDisposedOfInd>0</Form8282PropertyDisposedOfInd>
+      <RcvFndsToPayPrsnlBnftCntrctInd>0</RcvFndsToPayPrsnlBnftCntrctInd>
+      <PayPremiumsPrsnlBnftCntrctInd>0</PayPremiumsPrsnlBnftCntrctInd>
+      <IndoorTanningServicesInd>0</IndoorTanningServicesInd>
+      <SubjToTaxRmnrtnExPrchtPymtInd>0</SubjToTaxRmnrtnExPrchtPymtInd>
+      <SubjectToExcsTaxNetInvstIncInd>0</SubjectToExcsTaxNetInvstIncInd>
+      <InfoInScheduleOPartVIInd>X</InfoInScheduleOPartVIInd>
+      <GoverningBodyVotingMembersCnt>10</GoverningBodyVotingMembersCnt>
+      <IndependentVotingMemberCnt>0</IndependentVotingMemberCnt>
+      <FamilyOrBusinessRlnInd>0</FamilyOrBusinessRlnInd>
+      <DelegationOfMgmtDutiesInd>0</DelegationOfMgmtDutiesInd>
+      <ChangeToOrgDocumentsInd>0</ChangeToOrgDocumentsInd>
+      <MaterialDiversionOrMisuseInd>0</MaterialDiversionOrMisuseInd>
+      <MembersOrStockholdersInd>1</MembersOrStockholdersInd>
+      <ElectionOfBoardMembersInd>0</ElectionOfBoardMembersInd>
+      <DecisionsSubjectToApprovaInd>0</DecisionsSubjectToApprovaInd>
+      <MinutesOfGoverningBodyInd>1</MinutesOfGoverningBodyInd>
+      <MinutesOfCommitteesInd>1</MinutesOfCommitteesInd>
+      <OfficerMailingAddressInd>0</OfficerMailingAddressInd>
+      <LocalChaptersInd>0</LocalChaptersInd>
+      <Form990ProvidedToGvrnBodyInd>1</Form990ProvidedToGvrnBodyInd>
+      <ConflictOfInterestPolicyInd>0</ConflictOfInterestPolicyInd>
+      <WhistleblowerPolicyInd>0</WhistleblowerPolicyInd>
+      <DocumentRetentionPolicyInd>0</DocumentRetentionPolicyInd>
+      <CompensationProcessCEOInd>1</CompensationProcessCEOInd>
+      <CompensationProcessOtherInd>1</CompensationProcessOtherInd>
+      <InvestmentInJointVentureInd>0</InvestmentInJointVentureInd>
+      <UponRequestInd>X</UponRequestInd>
+      <BooksInCareOfDetail>
+        <BusinessName>
+          <BusinessNameLine1Txt>Naval Officers' Spouses' Club</BusinessNameLine1Txt>
+        </BusinessName>
+        <PhoneNum>8034377734</PhoneNum>
+        <ForeignAddress>
+          <AddressLine1Txt>Building 6300</AddressLine1Txt>
+          <CityNm>Camp Shields</CityNm>
+          <ProvinceOrStateNm>Okinawaa-shi</ProvinceOrStateNm>
+          <CountryCd>JA</CountryCd>
+          <ForeignPostalCd>904-2143</ForeignPostalCd>
+        </ForeignAddress>
+      </BooksInCareOfDetail>
+      <NoListedPersonsCompensatedInd>X</NoListedPersonsCompensatedInd>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Sally Braud</PersonNm>
+        <TitleTxt>NOSCO President</TitleTxt>
+        <AverageHoursPerWeekRt>5.00</AverageHoursPerWeekRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Cara Cole</PersonNm>
+        <TitleTxt>NOSCO VP of Charities</TitleTxt>
+        <AverageHoursPerWeekRt>2.50</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Jennifer Yapshing</PersonNm>
+        <TitleTxt>NOSCO VP of Operations</TitleTxt>
+        <AverageHoursPerWeekRt>1.25</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Cait Healy</PersonNm>
+        <TitleTxt>NOSCO Treasurer</TitleTxt>
+        <AverageHoursPerWeekRt>1.25</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Jolene Biberston</PersonNm>
+        <TitleTxt>NOSCO Secretary</TitleTxt>
+        <AverageHoursPerWeekRt>1.25</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Anna McLaughlin</PersonNm>
+        <TitleTxt>NOSCO Scholarship Chair</TitleTxt>
+        <AverageHoursPerWeekRt>1.25</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Kristen Jones</PersonNm>
+        <TitleTxt>Parliamentarian</TitleTxt>
+        <AverageHoursPerWeekRt>0.50</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Tara Viechnicki</PersonNm>
+        <TitleTxt>Fleet Gift Shop Liaison</TitleTxt>
+        <AverageHoursPerWeekRt>1.50</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Lucy Hill</PersonNm>
+        <TitleTxt>Communications Chair</TitleTxt>
+        <AverageHoursPerWeekRt>5.00</AverageHoursPerWeekRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <TotalReportableCompFromOrgAmt>0</TotalReportableCompFromOrgAmt>
+      <TotReportableCompRltdOrgAmt>0</TotReportableCompRltdOrgAmt>
+      <TotalOtherCompensationAmt>0</TotalOtherCompensationAmt>
+      <IndivRcvdGreaterThan100KCnt>0</IndivRcvdGreaterThan100KCnt>
+      <FormerOfcrEmployeesListedInd>0</FormerOfcrEmployeesListedInd>
+      <TotalCompGreaterThan150KInd>0</TotalCompGreaterThan150KInd>
+      <CompensationFromOtherSrcsInd>0</CompensationFromOtherSrcsInd>
+      <CntrctRcvdGreaterThan100KCnt>0</CntrctRcvdGreaterThan100KCnt>
+      <MembershipDuesAmt>2900</MembershipDuesAmt>
+      <AllOtherContributionsAmt>16</AllOtherContributionsAmt>
+      <TotalContributionsAmt>2916</TotalContributionsAmt>
+      <ProgramServiceRevenueGrp>
+        <Desc>Fleet Gift Shop P&amp;L</Desc>
+        <BusinessCd>459420</BusinessCd>
+        <TotalRevenueColumnAmt>306876</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>306876</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <TotalOthProgramServiceRevGrp>
+        <TotalRevenueColumnAmt>6071</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>6071</RelatedOrExemptFuncIncomeAmt>
+      </TotalOthProgramServiceRevGrp>
+      <TotalProgramServiceRevenueAmt>312947</TotalProgramServiceRevenueAmt>
+      <InvestmentIncomeGrp>
+        <TotalRevenueColumnAmt>153</TotalRevenueColumnAmt>
+        <UnrelatedBusinessRevenueAmt>153</UnrelatedBusinessRevenueAmt>
+      </InvestmentIncomeGrp>
+      <FundraisingGrossIncomeAmt>30350</FundraisingGrossIncomeAmt>
+      <FundraisingDirectExpensesAmt>16547</FundraisingDirectExpensesAmt>
+      <NetIncmFromFundraisingEvtGrp>
+        <TotalRevenueColumnAmt>13803</TotalRevenueColumnAmt>
+        <ExclusionAmt>13803</ExclusionAmt>
+      </NetIncmFromFundraisingEvtGrp>
+      <TotalRevenueGrp>
+        <TotalRevenueColumnAmt>329819</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>312947</RelatedOrExemptFuncIncomeAmt>
+        <UnrelatedBusinessRevenueAmt>153</UnrelatedBusinessRevenueAmt>
+        <ExclusionAmt>13803</ExclusionAmt>
+      </TotalRevenueGrp>
+      <ForeignGrantsGrp>
+        <TotalAmt>11054</TotalAmt>
+        <ProgramServicesAmt>11054</ProgramServicesAmt>
+      </ForeignGrantsGrp>
+      <OtherSalariesAndWagesGrp>
+        <TotalAmt>60772</TotalAmt>
+        <ProgramServicesAmt>60772</ProgramServicesAmt>
+      </OtherSalariesAndWagesGrp>
+      <OtherEmployeeBenefitsGrp>
+        <TotalAmt>3074</TotalAmt>
+        <ProgramServicesAmt>3074</ProgramServicesAmt>
+      </OtherEmployeeBenefitsGrp>
+      <PayrollTaxesGrp>
+        <TotalAmt>4672</TotalAmt>
+        <ProgramServicesAmt>4672</ProgramServicesAmt>
+      </PayrollTaxesGrp>
+      <FeesForServicesAccountingGrp>
+        <TotalAmt>2000</TotalAmt>
+        <ManagementAndGeneralAmt>2000</ManagementAndGeneralAmt>
+      </FeesForServicesAccountingGrp>
+      <OtherExpensesGrp>
+        <Desc>FGS Costs of Goods Sold</Desc>
+        <TotalAmt>175240</TotalAmt>
+        <ProgramServicesAmt>175240</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>FGS Operating Expenses</Desc>
+        <TotalAmt>11137</TotalAmt>
+        <ProgramServicesAmt>11137</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>Total AWWA Expenses</Desc>
+        <TotalAmt>7166</TotalAmt>
+        <ProgramServicesAmt>7166</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>General Expenses</Desc>
+        <TotalAmt>3766</TotalAmt>
+        <ProgramServicesAmt>3766</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <AllOtherExpensesGrp>
+        <TotalAmt>41</TotalAmt>
+        <ProgramServicesAmt>41</ProgramServicesAmt>
+      </AllOtherExpensesGrp>
+      <TotalFunctionalExpensesGrp>
+        <TotalAmt>278922</TotalAmt>
+        <ProgramServicesAmt>276922</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>2000</ManagementAndGeneralAmt>
+        <FundraisingAmt>0</FundraisingAmt>
+      </TotalFunctionalExpensesGrp>
+      <CashNonInterestBearingGrp>
+        <BOYAmt>105467</BOYAmt>
+        <EOYAmt>160608</EOYAmt>
+      </CashNonInterestBearingGrp>
+      <InventoriesForSaleOrUseGrp>
+        <BOYAmt>58251</BOYAmt>
+        <EOYAmt>47105</EOYAmt>
+      </InventoriesForSaleOrUseGrp>
+      <PrepaidExpensesDefrdChargesGrp>
+        <BOYAmt>51078</BOYAmt>
+        <EOYAmt>53787</EOYAmt>
+      </PrepaidExpensesDefrdChargesGrp>
+      <LandBldgEquipCostOrOtherBssAmt>0</LandBldgEquipCostOrOtherBssAmt>
+      <LandBldgEquipBasisNetGrp>
+        <BOYAmt>0</BOYAmt>
+      </LandBldgEquipBasisNetGrp>
+      <OtherAssetsTotalGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>2916</EOYAmt>
+      </OtherAssetsTotalGrp>
+      <TotalAssetsGrp>
+        <BOYAmt>214796</BOYAmt>
+        <EOYAmt>264416</EOYAmt>
+      </TotalAssetsGrp>
+      <AccountsPayableAccrExpnssGrp>
+        <BOYAmt>2141</BOYAmt>
+        <EOYAmt>863</EOYAmt>
+      </AccountsPayableAccrExpnssGrp>
+      <OtherLiabilitiesGrp>
+        <BOYAmt>507</BOYAmt>
+        <EOYAmt>1</EOYAmt>
+      </OtherLiabilitiesGrp>
+      <TotalLiabilitiesGrp>
+        <BOYAmt>2648</BOYAmt>
+        <EOYAmt>864</EOYAmt>
+      </TotalLiabilitiesGrp>
+      <OrgDoesNotFollowFASB117Ind>X</OrgDoesNotFollowFASB117Ind>
+      <CapStkTrPrinCurrentFundsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </CapStkTrPrinCurrentFundsGrp>
+      <PdInCapSrplsLandBldgEqpFundGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </PdInCapSrplsLandBldgEqpFundGrp>
+      <RtnEarnEndowmentIncmOthFndsGrp>
+        <BOYAmt>212148</BOYAmt>
+        <EOYAmt>263552</EOYAmt>
+      </RtnEarnEndowmentIncmOthFndsGrp>
+      <TotalNetAssetsFundBalanceGrp>
+        <BOYAmt>212148</BOYAmt>
+        <EOYAmt>263552</EOYAmt>
+      </TotalNetAssetsFundBalanceGrp>
+      <TotLiabNetAssetsFundBalanceGrp>
+        <BOYAmt>214796</BOYAmt>
+        <EOYAmt>264416</EOYAmt>
+      </TotLiabNetAssetsFundBalanceGrp>
+      <InfoInScheduleOPartXIInd>X</InfoInScheduleOPartXIInd>
+      <ReconcilationRevenueExpnssAmt>50897</ReconcilationRevenueExpnssAmt>
+      <OtherChangesInNetAssetsAmt>507</OtherChangesInNetAssetsAmt>
+      <MethodOfAccountingAccrualInd>X</MethodOfAccountingAccrualInd>
+      <AccountantCompileOrReviewInd>0</AccountantCompileOrReviewInd>
+      <FSAuditedInd>1</FSAuditedInd>
+      <FSAuditedBasisGrp>
+        <SeparateBasisFinclStmtInd>X</SeparateBasisFinclStmtInd>
+      </FSAuditedBasisGrp>
+      <AuditCommitteeInd>0</AuditCommitteeInd>
+      <FederalGrantAuditRequiredInd>0</FederalGrantAuditRequiredInd>
+    </IRS990>
+    <IRS990ScheduleD documentId="RetDoc1040000001">
+      <TotalBookValueLandBuildingsAmt>0</TotalBookValueLandBuildingsAmt>
+      <OtherLiabilitiesOrgGrp>
+        <Desc>General-Accrued Credit Card Fees</Desc>
+        <Amt>1</Amt>
+      </OtherLiabilitiesOrgGrp>
+      <TotalLiabilityAmt>1</TotalLiabilityAmt>
+    </IRS990ScheduleD>
+    <IRS990ScheduleG documentId="RetDoc1041300001">
+      <FundraisingEventInformationGrp>
+        <Event1Nm>Rug Auction Income</Event1Nm>
+        <GrossReceiptsEvent1Amt>21060</GrossReceiptsEvent1Amt>
+        <GrossRevenueEvent1Amt>21060</GrossRevenueEvent1Amt>
+        <OtherDirectExpensesEvent1Amt>12855</OtherDirectExpensesEvent1Amt>
+        <Event2Nm>Fun Run</Event2Nm>
+        <GrossReceiptsEvent2Amt>9290</GrossReceiptsEvent2Amt>
+        <GrossRevenueEvent2Amt>9290</GrossRevenueEvent2Amt>
+        <OtherDirectExpensesEvent2Amt>3692</OtherDirectExpensesEvent2Amt>
+        <GrossReceiptsTotalAmt>30350</GrossReceiptsTotalAmt>
+        <GrossRevenueTotalEventsAmt>30350</GrossRevenueTotalEventsAmt>
+        <OthDirectExpnssTotalEventsAmt>16547</OthDirectExpnssTotalEventsAmt>
+        <DirectExpenseSummaryEventsAmt>16547</DirectExpenseSummaryEventsAmt>
+        <NetIncomeSummaryAmt>13803</NetIncomeSummaryAmt>
+      </FundraisingEventInformationGrp>
+    </IRS990ScheduleG>
+    <IRS990ScheduleI documentId="RetDoc1041900001">
+      <GrantRecordsMaintainedInd>1</GrantRecordsMaintainedInd>
+      <GrantsOtherAsstToIndivInUSGrp>
+        <GrantTypeTxt>Scholarsip Pledges</GrantTypeTxt>
+        <RecipientCnt>5</RecipientCnt>
+        <CashGrantAmt>11000</CashGrantAmt>
+      </GrantsOtherAsstToIndivInUSGrp>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part III, Line 1</FormAndLineReferenceDesc>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleI>
+    <IRS990ScheduleO documentId="RetDoc1044400001">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part VI, Section A, line 6</FormAndLineReferenceDesc>
+        <ExplanationTxt>The NOSCO is comprised of members who are military or military connected.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part VI, Section B, line 11b</FormAndLineReferenceDesc>
+        <ExplanationTxt>The Director takes the completed form 990 to the Advisory Committee meeting and the Board of Directors reviews it.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part VI, Section B, line 15</FormAndLineReferenceDesc>
+        <ExplanationTxt>The Board of Directors sets the hourly compesation rate for the Shop Director in accordance with the Standard Operating Procedures. The shop assistant position is set at minimum wage and the other paid positions are incrementally increased from minimum wage in direct proportion to responsibility. Any wage change of employees are evaluated for financial impact with the bookkeeper and then the Advisory Committee makes a proposal to vote on any changes.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part VI, Section C, line 18</FormAndLineReferenceDesc>
+        <ExplanationTxt>Upon request, form 990 is available to the public.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part VI, Section C, line 19</FormAndLineReferenceDesc>
+        <ExplanationTxt>Upon written request, documents are made available to the public.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990, Part XI, line 9:</FormAndLineReferenceDesc>
+        <ExplanationTxt>Adjustment for Accrued Credit 507.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+  </ReturnData>
+</Return>

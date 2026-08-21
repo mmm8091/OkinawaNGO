@@ -1,0 +1,333 @@
+{
+  "schema_version": "1.0.0",
+  "package": "us_presence_network_wave2_w2_00_v1",
+  "generated_on": "2026-08-22",
+  "status": "PASS_W2_00_RESEARCH_ONLY",
+  "scope": "research_only",
+  "central_writeback": false,
+  "frontend_release": false,
+  "inputs": [
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/anchor_candidates_v1.csv",
+      "sha256": "6c64f04513e35aaf7a15147bb8ce205b93ab93da022b4715a95c67bb2aa49ca8"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/source_receipts_v1.csv",
+      "sha256": "0d74201f0c1b069b0d60d9b7f36e1a9bbb1ac5c766bb2ca6dc8ea3b3f0d0a178"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/change_notes_v1.csv",
+      "sha256": "f5b7def6f60303b9daf45e829bf87e8a1ff4723863ff58b23e17133f33c20671"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/cache_inventory_v1.csv",
+      "sha256": "fcd532fe30dd4f7aecbba2cc59c8252dbc78d61723528a5af3fb24ab74609d89"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/official_index_matches_v1.csv",
+      "sha256": "3c52512bcf5e66c5804eb359d1de76f27f064eb60d257acc7f1204fa199e27cc"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/package_manifest_v1.csv",
+      "sha256": "e913a679575dcfaa758a53a3a591d9ff3ea9cb1dca52bd9f8e5582a2e14759f0"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/awwa_fy2023_202410619349200461.xml",
+      "sha256": "c74f70a03c76d94e6d7ec88145c27dd7d23df5f3c0f1b11cbeed6d148434bf3e"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/awwa_fy2024_202443189349200514.xml",
+      "sha256": "9bf6113a1419862ff2228f527d955f4e0ed6391d3f5c3ad54f872a33362f9433"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/irs_202630129349300153_public.xml",
+      "sha256": "9b236ca03e122c0dbbd84f40241feca120db5eb484525c5627498135ffdad367"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/kosc_fy2023_202430969349301028.xml",
+      "sha256": "2ea525c52c090af0eb500adecac05b8c5933f9baee7bd996e773ee3b0b613eea"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/kosc_fy2024_202500669349300300.xml",
+      "sha256": "547ecf8947ac63d9409cb3c85364ea1b4514009acd3015a135de1a24abe60d39"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/mosco_fy2023_202410719349201281.xml",
+      "sha256": "d8b431a8ddf4c24e401f75b3fd4a19cb58b6bc9ae7d8d416467cd43893a21d95"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/mosco_fy2024_202501019349201215.xml",
+      "sha256": "bcfb472a8000d57650bb9640c14a49c9150a9710e3e21c0881a8b0f64ade2035"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/mosco_fy2025_202621539349200807.xml",
+      "sha256": "57fcafd2a6307f304e687420b11559812d4da5c6f240ae45bc8de24f2fb2f4b3"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/nosco_fy2023_202411349349304281.xml",
+      "sha256": "a1eebf87d557d3e9877551ec20bdf4eec2186f9aa58f5b100a02fae95b32721a"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/nosco_fy2024_202530159349302288.xml",
+      "sha256": "d4584a84ff53be952a9bee4e4e53796e49f7eecb9ab0519bae3a99db8518c440"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/nosco_fy2025_202533199349301708.xml",
+      "sha256": "bf8a395a69ad78703ca4e9c0edef7e5d396be675aa38445d443fe2f9edd95ab6"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/oesc_fy2023_202411309349303066.xml",
+      "sha256": "7546ef6d29d634cbf3c61772024a50c77429bfed9be9f486f01ad6cc8d9ff29e"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/oesc_fy2024_202403029349300610.xml",
+      "sha256": "b94118201eb51ceb0ec7390e8b26671e6ff14bac3e2f999c886e454abf73a371"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/oesc_fy2025_202513109349302911.xml",
+      "sha256": "364367b7d668293104e833958de315ad9a26f0612e087abf238a35292c310f57"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/README.md",
+      "sha256": "6123c1ab56cb8eabbb4d8e4fab350d6c075c5b751c4f4e7a4a433674e15e3f4a"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/validation_report_v1.json",
+      "sha256": "5668a657455f4d2b5d4e81a6af45001b8c84438198c354271606cd1b2fabab6f"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/anchor_candidates_v1.csv",
+      "sha256": "b7dbe406247e2fa6cec071cc28221da2d80cc56669024d65c9fb1836e7e266ae"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/source_receipts_v1.csv",
+      "sha256": "5da80466bc65c06f78ce650c0227eea74b7da46a365cdb918ed533afe9139f24"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/change_notes_v1.csv",
+      "sha256": "5a7420731829bf5092ab32e28aab0580d77f76dc0c475876e7a84ada7d4c37c8"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/usaspending_award_overview.json",
+      "sha256": "0fb07fc3ffcfad1720c4158293718da4ac74c4d5848bbda15c990e46686024d1"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/usaspending_subawards_request.json",
+      "sha256": "7e782d078d40aeedea4064be94c2a6b61db58b4beefd700b7daccd46a34a8e57"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/usaspending_subawards_response.json",
+      "sha256": "dfba40606c2c13eb717076624daa9b62107b189d753e76813d33ee626d6188a6"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/usaspending_transactions_request.json",
+      "sha256": "42e3adb1a3a461b6a534c343c73af96f7b591bb20c1085e266c5ad909ca53ac1"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/usaspending_transactions_response.json",
+      "sha256": "a59509475f7c0663024ec2321940b2b5463f6418761ef4c664fda018026dc21a"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_2024_financial_statement.pdf",
+      "sha256": "7506d5d27ca7bf6cc513ccf0b2250062c966743c59f08eda33bffce767024021"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_2024_form990.pdf",
+      "sha256": "6967386faab0a47e249305e12bf824e6c393094757f7fae8db3f9660505a21b3"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_2024_global_impact_report.pdf",
+      "sha256": "94496574e12fc77c3fdc62058f98ab46deb0e868075ac1f2fa39a7431daa581b"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_financial_statements_index.html",
+      "sha256": "70ecdd3fb6b1388eb1016b1012dab22feb5b7f8358768fe4f121c3685b73a338"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_japan_homepage.html",
+      "sha256": "19a784265df99f9e1abdc6e9d0fd3f50256cc0f2ab9bc2efc731ab53c3b8d48b"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_okinawa_homepage.html",
+      "sha256": "0ffbc5e4c629afffb9e841e6cbdc6cabf1eb4cebf4a1ea5c24488db373647ca3"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_pacific_regional_vp.html",
+      "sha256": "72f42d9b71564a4e8d82ec3206bb4c51a416e3c540715427bb8aa0ab5f2f6042"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/artifacts/uso_pacific_volunteer_spotlight_okinawa.html",
+      "sha256": "67c6f953d34844f08eea14e608e4c7e7fa999e1964c5d8bdbc0c65b3758506e1"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/README.md",
+      "sha256": "1fe655b570d95382484588ec9a67abc15ace9c0d9375a31989d3fff0b006f2ca"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/site_hierarchy_probe_v1.csv",
+      "sha256": "5c84779b510c881bff33fc7a4e284cc8d5ecd2c2a80a37d8c6ead43fa8bde992"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/anchor_candidates_v1.csv",
+      "sha256": "8d38105c7f25e0b3a1048ffa86aa1c1b0e8cbd2064bb7b101884829613841e39"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/source_receipts_v1.csv",
+      "sha256": "a92d1ed4a6747055bba054f688d73f0061b0d9a8478a0ddc5f84d72c723a7ed3"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/change_notes_v1.csv",
+      "sha256": "8c915c6539add85586cc8fe46508b0403916ebd515fe78a11a34560962d0dd1f"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/accountability_selection_frame_v1.csv",
+      "sha256": "7d0f098befbaff7312afd631c428bf68d3211089f543fbf13ca593c50b9a8c52"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/earthjustice_form990_fy2021.pdf",
+      "sha256": "487442e7f3210cfd60b75dd276dd2ea09f9aa9ec27e0b98908cba6130b55c1a0"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/japan_us_sofa_status_agreement.html",
+      "sha256": "cb71ffc170dc81b01688a3b8ed9cfe274e4986355c9bb513ebc781d88ffd607b"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/militaryonesource_camp_butler.html",
+      "sha256": "26059f65629cd4415198a10878b6230e4c404ddc3d4863be690141841d08b340"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/militaryonesource_kadena.html",
+      "sha256": "c21749f66b69f55025f31e00b87093554f4441047ab1fc7edb71e6c6cee1fd8d"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/militaryonesource_torii.html",
+      "sha256": "b86f056534894ba571c1d0bcc9b78b6733ffd1fe39205dcfa6a4fe21463d2aff"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/mod_frf_cost_faq.html",
+      "sha256": "4879221a8746e4cbe00fcc799b67bec6138e28f999cc5bf518036ea3fee2146c"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/mod_press_2025_09_30.html",
+      "sha256": "49c4f4c64343749444b9777a227df41cc27231ef05186c2f3400dc9b1a77ddba"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/okinawa_pref_us_personnel_trend_source01.pdf",
+      "sha256": "0a79ef50d95a311c5acdae3311704d7f35f5bbddc3e90f9ce1da6347bef55450"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/okinawa_rdb_change_application_overview.pdf",
+      "sha256": "133b7f63f839cda76b5d863ec81c132658857a62da3cef54eb4df185819ed449"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/okinawa_rdb_pr_197.pdf",
+      "sha256": "51c6cdfb0335630e28e3617a83ce5c5065599dc529c76aa74f105ca10eef3baa"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/okinawa_rdb_pr_202.pdf",
+      "sha256": "ccbb18e3f5a5a354d1ee5b772ffc69eb8d2f017b18b021f761fa2f63e6b277e3"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/okinawa_rdb_procurement_index.html",
+      "sha256": "20aa0e1cdedd760a20e49b892f6cf299224fef7d2ae4d991ab917fd5b473954a"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/okinawa_yearbook68_ch28.xlsx",
+      "sha256": "22b06400f83db16a3b213354554ddb445993d89203eb7f27078e4a879c00f0cf"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/treasury_jfics_control_202102348.json",
+      "sha256": "8509644a3a713b4b58ecae022b1fe48b479f35f71de89493e31c37cb5a694649"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/artifacts/treasury_judgment_fund_2021_03_01_15.xlsx",
+      "sha256": "381a77fb874ac2cf34fc0f50ef6b39ae572575a76187269bfb9e880e002aae34"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/population_denominator_options_v1.csv",
+      "sha256": "ef6c7ec1d357c753dc27bf229af5fb7329181d5949ff8e49989ac041a6c83abd"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/README.md",
+      "sha256": "2ea80cfbec4af145605718ddc9ba03b3344768aaf7c6a1cfc49eff9b64d3ea5d"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_system_accountability_v1/validation_report_v1.md",
+      "sha256": "ba2a142d6b99c36be698724a93082d728c7962fcc0eafb83e64be6a5c3ef0801"
+    },
+    {
+      "path": "outputs/us_presence_network_wave1_v1/us_origin_actor_scope_v1.csv",
+      "sha256": "c0e8e3210b2b4d79d62c8fd7af7968d3f229bac2678c87e5e62c9f03abe9369a"
+    },
+    {
+      "path": "outputs/research_wave_postfreeze_compatibility_v1/h2_accountability_actor_delta_v1.csv",
+      "sha256": "6a5a9493ebe2af61d95a85d29095f05951b61c048aeacf39a49383fd8b0c2700"
+    },
+    {
+      "path": "outputs/translation_episode_comparison_v1/translation_episode_candidates_v1.csv",
+      "sha256": "08933804af35c08d89a47d2b5d2a8c734c0f90fffe1d4ba1bf5d6100e1eb938b"
+    }
+  ],
+  "files": [
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/anchor_ledger_v1.csv",
+      "bytes": 106515,
+      "sha256": "3db4b59ae5442a75d0a1d7b60a64be6b37a19d24ec1387ec8e8162d1ecc0dcbb"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/case_scale_registry_v1.csv",
+      "bytes": 3156,
+      "sha256": "a4c6ca8f40652956a73425ab3269eb2432941be503c6682dd7fa711fada07788"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/change_notes_v1.csv",
+      "bytes": 13921,
+      "sha256": "c979122f8f89856d96de2c5d0bc182d168eed1d3692560c9b59df7b6f3e11cce"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/preflight_protected_hashes_v1.csv",
+      "bytes": 845,
+      "sha256": "22919c48af9af5f9241a3dcf7550d3ab32ad87722c00b82e4dd3ba144cb45ecc"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/principal_review_queue_v1.csv",
+      "bytes": 4509,
+      "sha256": "5cd2995b5cd991d841da4766e973fc694acb166137336e5703bda05ddb14621a"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/protected_input_hashes_v1.csv",
+      "bytes": 607,
+      "sha256": "c13b95cd36ee370eb944cb7325a2d02a3074fa65a63c1375829a461086f044be"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/README.md",
+      "bytes": 5034,
+      "sha256": "d77ebc935982a4476917cdb1e0f64e913876b8299c68a5ba3fb36192fac424c6"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/selection_frame_actor_members_v1.csv",
+      "bytes": 25836,
+      "sha256": "271864174eb32de0ff212e72a1c1508544c1986581e04ddd305cd3240cfe7ed3"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/selection_frame_episode_members_v1.csv",
+      "bytes": 2854,
+      "sha256": "3501a9ad558e0aa7af15078106402c7a6a79f6a02720175fd1bd3b6cf82a5752"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/selection_frames_v1.csv",
+      "bytes": 8473,
+      "sha256": "e8a424e825ced1926341c88776d67d84d783e2a9c4bcf4adbf949b78b572dea0"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/source_receipts_v1.csv",
+      "bytes": 30951,
+      "sha256": "65a7ab5d46585ce8110f998ece741538d03a336005328ae9e7c12162edd74917"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/validation_report_v1.json",
+      "bytes": 1393,
+      "sha256": "82960b098cd192a391a4d35258ae4f4943bf10d6e45ef8d791bb99752e6fd51d"
+    }
+  ]
+}

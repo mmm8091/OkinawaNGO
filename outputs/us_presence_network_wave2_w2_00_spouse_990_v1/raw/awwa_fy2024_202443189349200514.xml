@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.irs.gov/efile" returnVersion="2023v5.1">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2024-11-13T05:53:41-05:00</ReturnTs>
+    <TaxPeriodEndDt>2024-05-31</TaxPeriodEndDt>
+    <ReturnTypeCd>990EZ</ReturnTypeCd>
+    <TaxPeriodBeginDt>2023-06-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>980227149</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>AMERICAN WELFARE AND WORKS ASSOCIATION</BusinessNameLine1Txt>
+      </BusinessName>
+      <InCareOfNm>% Sasha Rentfro</InCareOfNm>
+      <BusinessNameControlTxt>AMER</BusinessNameControlTxt>
+      <ForeignPhoneNum>6183676296</ForeignPhoneNum>
+      <USAddress>
+        <AddressLine1Txt>Unit 39020 Box 5</AddressLine1Txt>
+        <CityNm>FPO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>96378</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>Sasha Rentfro</PersonNm>
+      <PersonTitleTxt>AWWA Financial Officer</PersonTitleTxt>
+      <SignatureDt>2024-11-13</SignatureDt>
+    </BusinessOfficerGrp>
+    <TaxYr>2023</TaxYr>
+    <BuildTS>2024-10-15 13:58:12Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="4">
+    <IRS990EZ documentId="IRS990EZ" softwareId="23017649" softwareVersionNum="V2.0" documentName="IRS990EZ" referenceDocumentName="IRS990ScheduleO ReasonableCauseExplanation TransfersPersonalBenefitsContractsDeclaration BinaryAttachment">
+      <AddressChangeInd>X</AddressChangeInd>
+      <MethodOfAccountingCashInd>X</MethodOfAccountingCashInd>
+      <Organization501c3Ind referenceDocumentId="IRS990ScheduleA1" referenceDocumentName="IRS990ScheduleA">X</Organization501c3Ind>
+      <TypeOfOrganizationAssocInd>X</TypeOfOrganizationAssocInd>
+      <GrossReceiptsAmt>97211</GrossReceiptsAmt>
+      <InfoInScheduleOPartIInd>X</InfoInScheduleOPartIInd>
+      <ContributionsGiftsGrantsEtcAmt>92625</ContributionsGiftsGrantsEtcAmt>
+      <MembershipDuesAmt>4586</MembershipDuesAmt>
+      <GainOrLossFromSaleOfAssetsAmt>0</GainOrLossFromSaleOfAssetsAmt>
+      <SpecialEventsNetIncomeLossAmt>0</SpecialEventsNetIncomeLossAmt>
+      <GrossProfitLossSlsOfInvntryAmt>0</GrossProfitLossSlsOfInvntryAmt>
+      <TotalRevenueAmt>97211</TotalRevenueAmt>
+      <GrantsAndSimilarAmountsPaidAmt>94889</GrantsAndSimilarAmountsPaidAmt>
+      <FeesAndOtherPymtToIndCntrctAmt>588</FeesAndOtherPymtToIndCntrctAmt>
+      <OtherExpensesTotalAmt>4248</OtherExpensesTotalAmt>
+      <TotalExpensesAmt>99725</TotalExpensesAmt>
+      <ExcessOrDeficitForYearAmt>-2514</ExcessOrDeficitForYearAmt>
+      <NetAssetsOrFundBalancesBOYAmt>12694</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>10180</NetAssetsOrFundBalancesEOYAmt>
+      <CashSavingsAndInvestmentsGrp>
+        <BOYAmt>12694</BOYAmt>
+        <EOYAmt>10180</EOYAmt>
+      </CashSavingsAndInvestmentsGrp>
+      <LandAndBuildingsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </LandAndBuildingsGrp>
+      <Form990TotalAssetsGrp>
+        <BOYAmt>12694</BOYAmt>
+        <EOYAmt>10180</EOYAmt>
+      </Form990TotalAssetsGrp>
+      <NetAssetsOrFundBalancesGrp>
+        <BOYAmt>12694</BOYAmt>
+        <EOYAmt>10180</EOYAmt>
+      </NetAssetsOrFundBalancesGrp>
+      <InfoInScheduleOPartIIIInd>X</InfoInScheduleOPartIIIInd>
+      <PrimaryExemptPurposeTxt>To provide grants to organizations affiliated with U.S. Military bases in Okinawa and Japanese non-profit organizations in order to support both the American and Japanese communities in Okinawa Japan.</PrimaryExemptPurposeTxt>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Donated to Ambitious an organization that supports patients in Okinawa with intractable rare diseases. We contributed to the purchase of 22 portable power supply units in the event the building loses power during a natural disaster such as a typhoon.</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>13423</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>13423</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Donated to Himawari Day Care on Ishigaki Island an organization that provides care for children with disabilities. We contributed to the purchase of a medical bed with lift and different types of outdoor indoor devices specifically designed for children with disabilities.</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>13378</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>13378</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Donated to Okinawa Southern Medical Center an organization that cares for children with disabilities in Okinawa. We contributed to the purchase of four medical beds with lift.</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>13072</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>13072</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Other grants given to organizations located in Okinawa</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>24204</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>24204</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <TotalProgramServiceExpensesAmt>64077</TotalProgramServiceExpensesAmt>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Amber Tracy</PersonNm>
+        <TitleTxt>President</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>5</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Brooke Epps</PersonNm>
+        <TitleTxt>Financial Officer</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>5</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Jen Yapsing</PersonNm>
+        <TitleTxt>Administrative Coordinator</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>3</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Brandy Serna</PersonNm>
+        <TitleTxt>Parliamentarian</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>1</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Sylvia Black</PersonNm>
+        <TitleTxt>Cultural Liaison - Interpreter</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>5</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Christina Glisson</PersonNm>
+        <TitleTxt>Marketing Coordinator</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>1</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <ActivitiesNotPreviouslyRptInd>false</ActivitiesNotPreviouslyRptInd>
+      <ChgMadeToOrgnzngDocNotRptInd>false</ChgMadeToOrgnzngDocNotRptInd>
+      <OrganizationHadUBIInd>false</OrganizationHadUBIInd>
+      <SubjectToProxyTaxInd referenceDocumentName="IRS990ScheduleC">false</SubjectToProxyTaxInd>
+      <OrganizationDissolvedEtcInd referenceDocumentName="IRS990ScheduleN BinaryAttachment">false</OrganizationDissolvedEtcInd>
+      <DirectIndirectPltclExpendAmt>0</DirectIndirectPltclExpendAmt>
+      <MadeLoansToFromOfficersInd>false</MadeLoansToFromOfficersInd>
+      <EngagedInExcessBenefitTransInd referenceDocumentName="IRS990ScheduleL">false</EngagedInExcessBenefitTransInd>
+      <BooksInCareOfDetail>
+        <PersonNm>Sasha Rentfro</PersonNm>
+        <USAddress>
+          <AddressLine1Txt>Unit 39020 Box 5</AddressLine1Txt>
+          <CityNm>FPO</CityNm>
+          <StateAbbreviationCd>AP</StateAbbreviationCd>
+          <ZIPCd>96378</ZIPCd>
+        </USAddress>
+        <PhoneNum>6183676296</PhoneNum>
+      </BooksInCareOfDetail>
+      <DonorAdvisedFndsInd>false</DonorAdvisedFndsInd>
+      <OperateHospitalInd>false</OperateHospitalInd>
+      <TanningServicesProvidedInd>false</TanningServicesProvidedInd>
+      <RelatedOrganizationCtrlEntInd>false</RelatedOrganizationCtrlEntInd>
+      <LobbyingActivitiesInd referenceDocumentName="IRS990ScheduleC">false</LobbyingActivitiesInd>
+      <SchoolOperatingInd referenceDocumentName="IRS990ScheduleE">false</SchoolOperatingInd>
+      <TrnsfrExmptNonChrtblRltdOrgInd>false</TrnsfrExmptNonChrtblRltdOrgInd>
+      <PartVIOfCompOfHghstPdEmplTxt>NONE</PartVIOfCompOfHghstPdEmplTxt>
+      <PartVIHghstPdCntrctProfSrvcTxt>NONE</PartVIHghstPdCntrctProfSrvcTxt>
+      <FiledScheduleAInd>true</FiledScheduleAInd>
+    </IRS990EZ>
+    <IRS990ScheduleA documentId="IRS990ScheduleA1" documentName="IRS990ScheduleA">
+      <PubliclySupportedOrg509a2Ind>X</PubliclySupportedOrg509a2Ind>
+      <GiftsGrantsContrisRcvd509Grp>
+        <CurrentTaxYearMinus4YearsAmt>141108</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>122378</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>164541</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>125158</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>94889</CurrentTaxYearAmt>
+        <TotalAmt>648074</TotalAmt>
+      </GiftsGrantsContrisRcvd509Grp>
+      <GrossReceiptsAdmissionsGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossReceiptsAdmissionsGrp>
+      <GrossReceiptsNonUnrltBusGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossReceiptsNonUnrltBusGrp>
+      <TaxRevLeviedOrgnztnlBnft509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </TaxRevLeviedOrgnztnlBnft509Grp>
+      <GovtFurnSrvcFcltsVl509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GovtFurnSrvcFcltsVl509Grp>
+      <Total509Grp>
+        <CurrentTaxYearMinus4YearsAmt>141108</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>122378</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>164541</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>125158</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>94889</CurrentTaxYearAmt>
+        <TotalAmt>648074</TotalAmt>
+      </Total509Grp>
+      <AmountsRcvdDsqlfyPersonGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </AmountsRcvdDsqlfyPersonGrp>
+      <SubstantialContributorsAmtGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </SubstantialContributorsAmtGrp>
+      <SubstAndDsqlfyPrsnsTotGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </SubstAndDsqlfyPrsnsTotGrp>
+      <PublicSupportTotal509Amt>648074</PublicSupportTotal509Amt>
+      <GrossInvestmentIncome509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossInvestmentIncome509Grp>
+      <Post1975UBTIGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </Post1975UBTIGrp>
+      <InvestmentIncomeAndUBTIGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </InvestmentIncomeAndUBTIGrp>
+      <NetIncomeFromOtherUBIGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </NetIncomeFromOtherUBIGrp>
+      <OtherIncome509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </OtherIncome509Grp>
+      <TotalSupportCalendarYearGrp>
+        <CurrentTaxYearMinus4YearsAmt>141108</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>122378</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>164541</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>125158</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>94889</CurrentTaxYearAmt>
+        <TotalAmt>648074</TotalAmt>
+      </TotalSupportCalendarYearGrp>
+      <PublicSupportCY509Pct>1</PublicSupportCY509Pct>
+      <PublicSupportPY509Pct>1</PublicSupportPY509Pct>
+      <InvestmentIncomeCYPct>0</InvestmentIncomeCYPct>
+      <InvestmentIncomePYPct>0.00</InvestmentIncomePYPct>
+      <ThirtyThrPctSuprtTestsCY509Ind>X</ThirtyThrPctSuprtTestsCY509Ind>
+    </IRS990ScheduleA>
+    <IRS990ScheduleB documentId="IRS990ScheduleB1" documentName="IRS990ScheduleB">
+      <ContributorInformationGrp>
+        <ContributorNum>RESTRICTED</ContributorNum>
+        <ContributorBusinessName>
+          <BusinessNameLine1>RESTRICTED</BusinessNameLine1>
+        </ContributorBusinessName>
+        <ContributorUSAddress>
+          <AddressLine1>RESTRICTED</AddressLine1>
+          <AddressLine2>RESTRICTED</AddressLine2>
+          <City>RESTRICTED</City>
+          <State>RESTRICTED</State>
+          <ZIPCode>RESTRICTED</ZIPCode>
+        </ContributorUSAddress>
+        <TotalContributionsAmt>RESTRICTED</TotalContributionsAmt>
+      </ContributorInformationGrp>
+    </IRS990ScheduleB>
+    <IRS990ScheduleO documentId="IRS990ScheduleO1" documentName="IRS990ScheduleO">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part I, line 10</FormAndLineReferenceDesc>
+        <ExplanationTxt>| Grants And Similar Amounts Paid:, Amount:| Grant funds given to Japanese organizations in Okinawa provided support to several rehabilitation centers for various needs., $64077| Grant funds given to organizations affiliated with the U.S. Military bases in Okinawa assisted with travel equipment educational expenses for sports dance leadership school groups where funding is not available to them from other resources. Approximately 6,000 people benefitted. Certain funds will provide ongoing benefits for years., $30812|</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part I, line 16</FormAndLineReferenceDesc>
+        <ExplanationTxt>| Other Expenses:, Amount:| Operating Expenses: Membership Appreciation, $194| Friendship Banquet - Annual Banquet, $3720| E-file taxes, $100| Annual insurance, $163| Bank Fees, $71|</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+  </ReturnData>
+</Return>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Return returnVersion="2022v5.0" xmlns="http://www.irs.gov/efile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2024-02-29T23:07:25-07:00</ReturnTs>
+    <TaxPeriodEndDt>2023-05-31</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmName>
+        <BusinessNameLine1Txt>PATRICIA DINGCONG CPA</BusinessNameLine1Txt>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1Txt>PSC 557 BOX 1784</AddressLine1Txt>
+        <CityNm>FPO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>96379</ZIPCd>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990EZ</ReturnTypeCd>
+    <TaxPeriodBeginDt>2022-06-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>460598583</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>MARINE OFFICERS SPOUSES CLUB OKINAWA</BusinessNameLine1Txt>
+      </BusinessName>
+      <BusinessNameControlTxt>MARI</BusinessNameControlTxt>
+      <PhoneNum>4042422782</PhoneNum>
+      <USAddress>
+        <AddressLine1Txt>PRIVATE ORG MOSCO UNIT 39020 BOX 2</AddressLine1Txt>
+        <CityNm>FPO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>96378</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>NATALIE GASTON</PersonNm>
+      <PersonTitleTxt>PRESIDENT</PersonTitleTxt>
+      <PhoneNum>4042422782</PhoneNum>
+      <SignatureDt>2024-02-29</SignatureDt>
+      <DiscussWithPaidPreparerInd>1</DiscussWithPaidPreparerInd>
+    </BusinessOfficerGrp>
+    <SigningOfficerGrp>
+      <PersonFullName>
+        <PersonFirstNm>NATALIE</PersonFirstNm>
+        <PersonLastNm>GASTON</PersonLastNm>
+      </PersonFullName>
+      <SSN>999009999</SSN>
+    </SigningOfficerGrp>
+    <IRSResponsiblePrtyInfoCurrInd>0</IRSResponsiblePrtyInfoCurrInd>
+    <Form8822BAttachedInd>X</Form8822BAttachedInd>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>PATRICIA DINGCONG</PreparerPersonNm>
+      <PTIN>P02379748</PTIN>
+      <PhoneNum>3059128151</PhoneNum>
+      <PreparationDt>2024-02-29</PreparationDt>
+      <SelfEmployedInd>X</SelfEmployedInd>
+    </PreparerPersonGrp>
+    <AdditionalFilerInformation>
+      <TrustedCustomerGrp>
+        <TrustedCustomerCd>1</TrustedCustomerCd>
+        <OOBSecurityVerificationCd>11</OOBSecurityVerificationCd>
+        <LastSubmissionRqrOOBCd>1</LastSubmissionRqrOOBCd>
+        <AuthenticationAssuranceLevelCd>AAL2</AuthenticationAssuranceLevelCd>
+      </TrustedCustomerGrp>
+    </AdditionalFilerInformation>
+    <TaxYr>2022</TaxYr>
+    <BuildTS>2023-04-26 12:10:37Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="5">
+    <IRS990EZ documentId="R000001" referenceDocumentId="R000004 R000005 R000007" softwareId="22015720" softwareVersionNum="v1.00">
+      <AddressChangeInd>X</AddressChangeInd>
+      <MethodOfAccountingCashInd>X</MethodOfAccountingCashInd>
+      <ScheduleBNotRequiredInd>X</ScheduleBNotRequiredInd>
+      <Organization501c3Ind referenceDocumentId="R000002">X</Organization501c3Ind>
+      <TypeOfOrganizationCorpInd>X</TypeOfOrganizationCorpInd>
+      <GrossReceiptsAmt>166144</GrossReceiptsAmt>
+      <InfoInScheduleOPartIInd>X</InfoInScheduleOPartIInd>
+      <ContributionsGiftsGrantsEtcAmt>20061</ContributionsGiftsGrantsEtcAmt>
+      <ProgramServiceRevenueAmt>0</ProgramServiceRevenueAmt>
+      <MembershipDuesAmt>0</MembershipDuesAmt>
+      <InvestmentIncomeAmt>0</InvestmentIncomeAmt>
+      <SaleOfAssetsGrossAmt>0</SaleOfAssetsGrossAmt>
+      <CostOrOtherBasisExpenseSaleAmt>0</CostOrOtherBasisExpenseSaleAmt>
+      <GainOrLossFromSaleOfAssetsAmt>0</GainOrLossFromSaleOfAssetsAmt>
+      <GamingGrossIncomeAmt referenceDocumentId="R000003">0</GamingGrossIncomeAmt>
+      <FundraisingGrossIncomeAmt fndrsngEventContriPrevRptAmt="0" referenceDocumentId="R000003">146083</FundraisingGrossIncomeAmt>
+      <SpecialEventsDirectExpensesAmt>127614</SpecialEventsDirectExpensesAmt>
+      <SpecialEventsNetIncomeLossAmt>18469</SpecialEventsNetIncomeLossAmt>
+      <GrossSalesOfInventoryAmt>0</GrossSalesOfInventoryAmt>
+      <CostOfGoodsSoldAmt>0</CostOfGoodsSoldAmt>
+      <GrossProfitLossSlsOfInvntryAmt>0</GrossProfitLossSlsOfInvntryAmt>
+      <OtherRevenueTotalAmt>0</OtherRevenueTotalAmt>
+      <TotalRevenueAmt>38530</TotalRevenueAmt>
+      <GrantsAndSimilarAmountsPaidAmt>7900</GrantsAndSimilarAmountsPaidAmt>
+      <BenefitsPaidToOrForMembersAmt>0</BenefitsPaidToOrForMembersAmt>
+      <SalariesOtherCompEmplBnftAmt>0</SalariesOtherCompEmplBnftAmt>
+      <FeesAndOtherPymtToIndCntrctAmt>400</FeesAndOtherPymtToIndCntrctAmt>
+      <OccupancyRentUtltsAndMaintAmt>0</OccupancyRentUtltsAndMaintAmt>
+      <PrintingPublicationsPostageAmt>0</PrintingPublicationsPostageAmt>
+      <OtherExpensesTotalAmt>4747</OtherExpensesTotalAmt>
+      <TotalExpensesAmt>13047</TotalExpensesAmt>
+      <ExcessOrDeficitForYearAmt>25483</ExcessOrDeficitForYearAmt>
+      <NetAssetsOrFundBalancesBOYAmt>4032</NetAssetsOrFundBalancesBOYAmt>
+      <OtherChangesInNetAssetsAmt>0</OtherChangesInNetAssetsAmt>
+      <NetAssetsOrFundBalancesEOYAmt>29515</NetAssetsOrFundBalancesEOYAmt>
+      <CashSavingsAndInvestmentsGrp>
+        <BOYAmt>22874</BOYAmt>
+        <EOYAmt>29515</EOYAmt>
+      </CashSavingsAndInvestmentsGrp>
+      <LandAndBuildingsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </LandAndBuildingsGrp>
+      <OtherAssetsTotalDetail>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </OtherAssetsTotalDetail>
+      <Form990TotalAssetsGrp>
+        <BOYAmt>22874</BOYAmt>
+        <EOYAmt>29515</EOYAmt>
+      </Form990TotalAssetsGrp>
+      <SumOfTotalLiabilitiesGrp>
+        <BOYAmt>18842</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </SumOfTotalLiabilitiesGrp>
+      <NetAssetsOrFundBalancesGrp>
+        <BOYAmt>4032</BOYAmt>
+        <EOYAmt>29515</EOYAmt>
+      </NetAssetsOrFundBalancesGrp>
+      <PrimaryExemptPurposeTxt>THE PURPOSE OF THE MARINE OFFICERS' SPOUSES' CLUB OKINAWA IS TO CREATE A SOCIAL NETWORK FOR CLUB MEMBERS WHILE SUPPORTING LOCAL PHILANTHROPIC INTERESTS.</PrimaryExemptPurposeTxt>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>DONATIONS TO AN AMERICAN 501(C)(3) ORGANIZATION THAT ISSUES GRANTS TO JAPANESE CHARITIES LOCATED IN OKINAWA THAT BENEFIT HUNDREDS OF LOCAL ELDERLY, PHYSICALLY AND MENTALLY CHALLENGED INDIVIDUALS, ORPHANS, AND OTHER DISADVANTAGED INDIVIDUALS.</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>3950</GrantsAndAllocationsAmt>
+        <ProgramServiceExpensesAmt>57</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>DONATIONS MADE TO AMERICAN CHARITABLE ACTIVITIES AND GROUPS LOCATED IN OKINAWA, JAPAN, INCLUDING THE SPONSORING OF FPO/APO MIDDLE SCHOOL AND HIGH SCHOOL SPORTS TEAMS AND CLUBS.</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>3950</GrantsAndAllocationsAmt>
+        <ProgramServiceExpensesAmt>57</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <TotalProgramServiceExpensesAmt>114</TotalProgramServiceExpensesAmt>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>NATALIE GASTON</PersonNm>
+        <TitleTxt>PRESIDENT</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>KIM HICKS</PersonNm>
+        <TitleTxt>SECRETARY</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>KATIE FEUQUAY</PersonNm>
+        <TitleTxt>VP OF EVENTS</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>JENNIFER BUTTA</PersonNm>
+        <TitleTxt>TREASURER</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>CHAREASE JEFFERSON</PersonNm>
+        <TitleTxt>PARLIMENTARIAN</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm>JULIA WHITAKER</PersonNm>
+        <TitleTxt>VP OF WELFARE</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>4</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <ActivitiesNotPreviouslyRptInd>0</ActivitiesNotPreviouslyRptInd>
+      <ChgMadeToOrgnzngDocNotRptInd>0</ChgMadeToOrgnzngDocNotRptInd>
+      <OrganizationHadUBIInd>0</OrganizationHadUBIInd>
+      <SubjectToProxyTaxInd>0</SubjectToProxyTaxInd>
+      <OrganizationDissolvedEtcInd>0</OrganizationDissolvedEtcInd>
+      <DirectIndirectPltclExpendAmt>0</DirectIndirectPltclExpendAmt>
+      <Form1120PolFiledInd>0</Form1120PolFiledInd>
+      <MadeLoansToFromOfficersInd>0</MadeLoansToFromOfficersInd>
+      <TaxImposedUnderIRC4911Amt>0</TaxImposedUnderIRC4911Amt>
+      <TaxImposedUnderIRC4912Amt>0</TaxImposedUnderIRC4912Amt>
+      <TaxImposedUnderIRC4955Amt>0</TaxImposedUnderIRC4955Amt>
+      <EngagedInExcessBenefitTransInd>0</EngagedInExcessBenefitTransInd>
+      <TaxImposedOnOrganizationMgrAmt>0</TaxImposedOnOrganizationMgrAmt>
+      <TaxReimbursedByOrganizationAmt>0</TaxReimbursedByOrganizationAmt>
+      <ProhibitedTaxShelterTransInd>0</ProhibitedTaxShelterTransInd>
+      <BooksInCareOfDetail>
+        <PersonNm>JENNIFER BUTTA</PersonNm>
+        <USAddress>
+          <AddressLine1Txt>PRIVATE ORG MOSCO UNIT 39020 BOX 2</AddressLine1Txt>
+          <CityNm>FPO</CityNm>
+          <StateAbbreviationCd>AP</StateAbbreviationCd>
+          <ZIPCd>96378</ZIPCd>
+        </USAddress>
+        <PhoneNum>9094524084</PhoneNum>
+      </BooksInCareOfDetail>
+      <ForeignFinancialAccountInd>0</ForeignFinancialAccountInd>
+      <ForeignOfficeInd>0</ForeignOfficeInd>
+      <DonorAdvisedFndsInd>0</DonorAdvisedFndsInd>
+      <OperateHospitalInd>0</OperateHospitalInd>
+      <TanningServicesProvidedInd>0</TanningServicesProvidedInd>
+      <RelatedOrganizationCtrlEntInd>0</RelatedOrganizationCtrlEntInd>
+      <TransactionWithControlEntInd>0</TransactionWithControlEntInd>
+      <PoliticalCampaignActyInd>0</PoliticalCampaignActyInd>
+      <LobbyingActivitiesInd>0</LobbyingActivitiesInd>
+      <SchoolOperatingInd>0</SchoolOperatingInd>
+      <TrnsfrExmptNonChrtblRltdOrgInd>0</TrnsfrExmptNonChrtblRltdOrgInd>
+      <PartVIOfCompOfHghstPdEmplTxt>NONE</PartVIOfCompOfHghstPdEmplTxt>
+      <PartVIHghstPdCntrctProfSrvcTxt>NONE</PartVIHghstPdCntrctProfSrvcTxt>
+      <FiledScheduleAInd>1</FiledScheduleAInd>
+    </IRS990EZ>
+    <IRS990ScheduleA documentId="R000002" softwareId="22015720" softwareVersionNum="v1.00">
+      <PubliclySupportedOrg509a2Ind>X</PubliclySupportedOrg509a2Ind>
+      <GiftsGrantsContrisRcvd509Grp>
+        <CurrentTaxYearMinus4YearsAmt>9001</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>20733</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>12481</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>19220</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>20061</CurrentTaxYearAmt>
+        <TotalAmt>81496</TotalAmt>
+      </GiftsGrantsContrisRcvd509Grp>
+      <GrossReceiptsAdmissionsGrp>
+        <CurrentTaxYearMinus4YearsAmt>1264</CurrentTaxYearMinus4YearsAmt>
+        <TotalAmt>1264</TotalAmt>
+      </GrossReceiptsAdmissionsGrp>
+      <GrossReceiptsNonUnrltBusGrp>
+        <CurrentTaxYearMinus4YearsAmt>75097</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>55120</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>79409</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>7756</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>146083</CurrentTaxYearAmt>
+        <TotalAmt>363465</TotalAmt>
+      </GrossReceiptsNonUnrltBusGrp>
+      <Total509Grp>
+        <CurrentTaxYearMinus4YearsAmt>85362</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>75853</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>91890</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>26976</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>166144</CurrentTaxYearAmt>
+        <TotalAmt>446225</TotalAmt>
+      </Total509Grp>
+      <PublicSupportTotal509Amt>446225</PublicSupportTotal509Amt>
+      <TotalSupportCalendarYearGrp>
+        <CurrentTaxYearMinus4YearsAmt>85362</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>75853</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>91890</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>26976</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>166144</CurrentTaxYearAmt>
+        <TotalAmt>446225</TotalAmt>
+      </TotalSupportCalendarYearGrp>
+      <PublicSupportCY509Pct>1</PublicSupportCY509Pct>
+      <PublicSupportPY509Pct>1</PublicSupportPY509Pct>
+      <InvestmentIncomeCYPct>0</InvestmentIncomeCYPct>
+      <InvestmentIncomePYPct>0</InvestmentIncomePYPct>
+      <ThirtyThrPctSuprtTestsCY509Ind>X</ThirtyThrPctSuprtTestsCY509Ind>
+    </IRS990ScheduleA>
+    <IRS990ScheduleG documentId="R000003" softwareId="22015720" softwareVersionNum="v1.00">
+      <FundraisingEventInformationGrp>
+        <Event1Nm>MOSC Auction</Event1Nm>
+        <GrossReceiptsEvent1Amt>143244</GrossReceiptsEvent1Amt>
+        <CharitableContriEvent1Amt>0</CharitableContriEvent1Amt>
+        <GrossRevenueEvent1Amt>143244</GrossRevenueEvent1Amt>
+        <CashPrizesEvent1Amt>0</CashPrizesEvent1Amt>
+        <NonCashPrizesEvent1Amt>0</NonCashPrizesEvent1Amt>
+        <RentFacilityCostsEvent1Amt>0</RentFacilityCostsEvent1Amt>
+        <FoodAndBeverageEvent1Amt>0</FoodAndBeverageEvent1Amt>
+        <EntertainmentEvent1Amt>0</EntertainmentEvent1Amt>
+        <OtherDirectExpensesEvent1Amt>119645</OtherDirectExpensesEvent1Amt>
+        <FoodAndBeverageOtherEventsAmt>0</FoodAndBeverageOtherEventsAmt>
+        <EntertainmentOtherEventsAmt>0</EntertainmentOtherEventsAmt>
+        <GrossReceiptsTotalAmt>143244</GrossReceiptsTotalAmt>
+        <CharitableContributionsTotAmt>0</CharitableContributionsTotAmt>
+        <GrossRevenueTotalEventsAmt>143244</GrossRevenueTotalEventsAmt>
+        <CashPrizesTotalEventsAmt>0</CashPrizesTotalEventsAmt>
+        <NonCashPrizesTotalEventsAmt>0</NonCashPrizesTotalEventsAmt>
+        <RentFcltyCostsTotalEventsAmt>0</RentFcltyCostsTotalEventsAmt>
+        <FoodAndBeverageTotalEventsAmt>0</FoodAndBeverageTotalEventsAmt>
+        <EntertainmentTotalEventsAmt>0</EntertainmentTotalEventsAmt>
+        <OthDirectExpnssTotalEventsAmt>119645</OthDirectExpnssTotalEventsAmt>
+        <DirectExpenseSummaryEventsAmt>119645</DirectExpenseSummaryEventsAmt>
+        <NetIncomeSummaryAmt>23599</NetIncomeSummaryAmt>
+      </FundraisingEventInformationGrp>
+    </IRS990ScheduleG>
+    <IRS990ScheduleO documentId="R000004" softwareId="22015720" softwareVersionNum="v1.00">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990-EZ, Part I, Line 10</FormAndLineReferenceDesc>
+        <ExplanationTxt>Grants paid to the American Welfare and Works Association, a 501(c)(3) organization.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990-EZ, Part I, Line 16</FormAndLineReferenceDesc>
+        <ExplanationTxt>Description;Amount^Miscellaneous Expenses;2580|Bank Fees;1564|Operating Expenses;313|Gifts;290^Total;4747^</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+    <ReasonableCauseExplanation documentId="R000005" softwareId="22015720" softwareVersionNum="v1.00">
+      <ExplanationTxt>FORM 8868 WAS FILED TIMELY TO REQUEST AN EXTENSION.</ExplanationTxt>
+    </ReasonableCauseExplanation>
+  </ReturnData>
+</Return>

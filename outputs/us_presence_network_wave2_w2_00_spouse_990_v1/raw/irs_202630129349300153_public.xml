@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns="http://www.irs.gov/efile" returnVersion="2024v5.2">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2026-01-11T18:53:25-05:00</ReturnTs>
+    <TaxPeriodEndDt>2025-05-31</TaxPeriodEndDt>
+    <PreparerFirmGrp>
+      <PreparerFirmEIN>994344061</PreparerFirmEIN>
+      <PreparerFirmName>
+        <BusinessNameLine1Txt>PTK CPA LLC</BusinessNameLine1Txt>
+      </PreparerFirmName>
+      <PreparerUSAddress>
+        <AddressLine1Txt>7901 4th St N Ste 300</AddressLine1Txt>
+        <CityNm>Saint Petersburg</CityNm>
+        <StateAbbreviationCd>FL</StateAbbreviationCd>
+        <ZIPCd>33702</ZIPCd>
+      </PreparerUSAddress>
+    </PreparerFirmGrp>
+    <ReturnTypeCd>990</ReturnTypeCd>
+    <TaxPeriodBeginDt>2024-06-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>980214323</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>Kadena Officers Spouses Club</BusinessNameLine1Txt>
+      </BusinessName>
+      <InCareOfNm>% Hannah Schaffer</InCareOfNm>
+      <BusinessNameControlTxt>KADE</BusinessNameControlTxt>
+      <PhoneNum>6624352189</PhoneNum>
+      <USAddress>
+        <AddressLine1Txt>18 SVCSVBO UNIT 5135 BOX 10</AddressLine1Txt>
+        <CityNm>APO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>963685135</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>HANNAH SCHAFFER</PersonNm>
+      <PersonTitleTxt>Incoming President</PersonTitleTxt>
+      <PhoneNum>6624352189</PhoneNum>
+      <SignatureDt>2026-01-11</SignatureDt>
+      <DiscussWithPaidPreparerInd>true</DiscussWithPaidPreparerInd>
+    </BusinessOfficerGrp>
+    <IRSResponsiblePrtyInfoCurrInd>true</IRSResponsiblePrtyInfoCurrInd>
+    <PreparerPersonGrp>
+      <PreparerPersonNm>PHILIP KING</PreparerPersonNm>
+      <PTIN>P02275218</PTIN>
+      <PhoneNum>5079938480</PhoneNum>
+      <PreparationDt>2026-01-11</PreparationDt>
+      <SelfEmployedInd>X</SelfEmployedInd>
+    </PreparerPersonGrp>
+    <TaxYr>2024</TaxYr>
+    <BuildTS>2025-03-06 01:10:19Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="5">
+    <IRS990 documentId="IRS990" referenceDocumentId="ReasonableCauseExplanation">
+      <GrossReceiptsAmt>432104</GrossReceiptsAmt>
+      <GroupReturnForAffiliatesInd>false</GroupReturnForAffiliatesInd>
+      <Organization501cInd organization501cTypeTxt="4">X</Organization501cInd>
+      <WebsiteAddressTxt>www.kadenaofficersspousesclub.com</WebsiteAddressTxt>
+      <TypeOfOrganizationOtherInd>X</TypeOfOrganizationOtherInd>
+      <OtherOrganizationDsc>Charity</OtherOrganizationDsc>
+      <FormationYr>1956</FormationYr>
+      <LegalDomicileStateCd>AP</LegalDomicileStateCd>
+      <ActivityOrMissionDesc>The Kadena Officers Spouses Club is an organization of military spouses who are committed to serving both the military and local Okinawa communities through service and philanthropy.</ActivityOrMissionDesc>
+      <VotingMembersGoverningBodyCnt>9</VotingMembersGoverningBodyCnt>
+      <VotingMembersIndependentCnt>9</VotingMembersIndependentCnt>
+      <TotalEmployeeCnt>12</TotalEmployeeCnt>
+      <TotalGrossUBIAmt>0</TotalGrossUBIAmt>
+      <NetUnrelatedBusTxblIncmAmt>0</NetUnrelatedBusTxblIncmAmt>
+      <CYContributionsGrantsAmt>0</CYContributionsGrantsAmt>
+      <PYProgramServiceRevenueAmt>345027</PYProgramServiceRevenueAmt>
+      <CYProgramServiceRevenueAmt>302431</CYProgramServiceRevenueAmt>
+      <CYInvestmentIncomeAmt>0</CYInvestmentIncomeAmt>
+      <PYOtherRevenueAmt>71848</PYOtherRevenueAmt>
+      <CYOtherRevenueAmt>-504</CYOtherRevenueAmt>
+      <PYTotalRevenueAmt>416875</PYTotalRevenueAmt>
+      <CYTotalRevenueAmt>301927</CYTotalRevenueAmt>
+      <PYGrantsAndSimilarPaidAmt>40265</PYGrantsAndSimilarPaidAmt>
+      <CYGrantsAndSimilarPaidAmt>46530</CYGrantsAndSimilarPaidAmt>
+      <CYBenefitsPaidToMembersAmt>0</CYBenefitsPaidToMembersAmt>
+      <PYSalariesCompEmpBnftPaidAmt>70575</PYSalariesCompEmpBnftPaidAmt>
+      <CYSalariesCompEmpBnftPaidAmt>51711</CYSalariesCompEmpBnftPaidAmt>
+      <CYTotalProfFndrsngExpnsAmt>0</CYTotalProfFndrsngExpnsAmt>
+      <CYTotalFundraisingExpenseAmt>0</CYTotalFundraisingExpenseAmt>
+      <PYOtherExpensesAmt>427266</PYOtherExpensesAmt>
+      <CYOtherExpensesAmt>299338</CYOtherExpensesAmt>
+      <PYTotalExpensesAmt>538106</PYTotalExpensesAmt>
+      <CYTotalExpensesAmt>397579</CYTotalExpensesAmt>
+      <PYRevenuesLessExpensesAmt>-121231</PYRevenuesLessExpensesAmt>
+      <CYRevenuesLessExpensesAmt>-95652</CYRevenuesLessExpensesAmt>
+      <TotalAssetsBOYAmt>396041</TotalAssetsBOYAmt>
+      <TotalAssetsEOYAmt>304320</TotalAssetsEOYAmt>
+      <TotalLiabilitiesBOYAmt>31935</TotalLiabilitiesBOYAmt>
+      <TotalLiabilitiesEOYAmt>35866</TotalLiabilitiesEOYAmt>
+      <NetAssetsOrFundBalancesBOYAmt>364106</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>268454</NetAssetsOrFundBalancesEOYAmt>
+      <MissionDesc>The Kadena Officers Spouses Club is an organization of military spouses who are committed to serving both the military and local Okinawa communities through service and philanthropy.</MissionDesc>
+      <SignificantNewProgramSrvcInd>false</SignificantNewProgramSrvcInd>
+      <SignificantChangeInd>false</SignificantChangeInd>
+      <ExpenseAmt>397579</ExpenseAmt>
+      <GrantAmt>46530</GrantAmt>
+      <RevenueAmt>301927</RevenueAmt>
+      <Desc>Sales from the Kadena Gift Corner are the primary source of income. The funds raised are distributed primarily through the charitable fund. The gift corner supports itself with oversight form the KOSC board. The Kadena Gift Corner had employees and relies on volunteers to maintain operations. To be an employee at the Kadena Gift Corner the indivdiual must have SOFA status.</Desc>
+      <TotalProgramServiceExpensesAmt>397579</TotalProgramServiceExpensesAmt>
+      <DescribedInSection501c3Ind>false</DescribedInSection501c3Ind>
+      <ScheduleBRequiredInd>false</ScheduleBRequiredInd>
+      <PoliticalCampaignActyInd>false</PoliticalCampaignActyInd>
+      <SubjectToProxyTaxInd>false</SubjectToProxyTaxInd>
+      <DonorAdvisedFundInd>false</DonorAdvisedFundInd>
+      <ConservationEasementsInd>false</ConservationEasementsInd>
+      <CollectionsOfArtInd>false</CollectionsOfArtInd>
+      <CreditCounselingInd>false</CreditCounselingInd>
+      <DonorRstrOrQuasiEndowmentsInd>false</DonorRstrOrQuasiEndowmentsInd>
+      <ReportLandBuildingEquipmentInd referenceDocumentId="IRS990ScheduleD">true</ReportLandBuildingEquipmentInd>
+      <ReportInvestmentsOtherSecInd>false</ReportInvestmentsOtherSecInd>
+      <ReportProgramRelatedInvstInd>false</ReportProgramRelatedInvstInd>
+      <ReportOtherAssetsInd>false</ReportOtherAssetsInd>
+      <ReportOtherLiabilitiesInd referenceDocumentId="IRS990ScheduleD-127-Copy1">true</ReportOtherLiabilitiesInd>
+      <IncludeFIN48FootnoteInd>false</IncludeFIN48FootnoteInd>
+      <IndependentAuditFinclStmtInd>false</IndependentAuditFinclStmtInd>
+      <ConsolidatedAuditFinclStmtInd>false</ConsolidatedAuditFinclStmtInd>
+      <SchoolOperatingInd>false</SchoolOperatingInd>
+      <ForeignOfficeInd>false</ForeignOfficeInd>
+      <ForeignActivitiesInd>false</ForeignActivitiesInd>
+      <MoreThan5000KToOrgInd>false</MoreThan5000KToOrgInd>
+      <MoreThan5000KToIndividualsInd>false</MoreThan5000KToIndividualsInd>
+      <ProfessionalFundraisingInd>false</ProfessionalFundraisingInd>
+      <FundraisingActivitiesInd>false</FundraisingActivitiesInd>
+      <GamingActivitiesInd>false</GamingActivitiesInd>
+      <OperateHospitalInd>false</OperateHospitalInd>
+      <GrantsToOrganizationsInd>false</GrantsToOrganizationsInd>
+      <GrantsToIndividualsInd referenceDocumentId="IRS990ScheduleI-127-Copy1">true</GrantsToIndividualsInd>
+      <ScheduleJRequiredInd>false</ScheduleJRequiredInd>
+      <TaxExemptBondsInd>false</TaxExemptBondsInd>
+      <EngagedInExcessBenefitTransInd>false</EngagedInExcessBenefitTransInd>
+      <PYExcessBenefitTransInd>false</PYExcessBenefitTransInd>
+      <LoanOutstandingInd>false</LoanOutstandingInd>
+      <GrantToRelatedPersonInd>false</GrantToRelatedPersonInd>
+      <BusinessRlnWithOrgMemInd>false</BusinessRlnWithOrgMemInd>
+      <BusinessRlnWithFamMemInd>false</BusinessRlnWithFamMemInd>
+      <BusinessRlnWith35CtrlEntInd>false</BusinessRlnWith35CtrlEntInd>
+      <DeductibleNonCashContriInd>false</DeductibleNonCashContriInd>
+      <DeductibleArtContributionInd>false</DeductibleArtContributionInd>
+      <TerminateOperationsInd>false</TerminateOperationsInd>
+      <PartialLiquidationInd>false</PartialLiquidationInd>
+      <DisregardedEntityInd>false</DisregardedEntityInd>
+      <RelatedEntityInd>false</RelatedEntityInd>
+      <RelatedOrganizationCtrlEntInd>false</RelatedOrganizationCtrlEntInd>
+      <ActivitiesConductedPrtshpInd>false</ActivitiesConductedPrtshpInd>
+      <ScheduleORequiredInd>true</ScheduleORequiredInd>
+      <IRPDocumentCnt>0</IRPDocumentCnt>
+      <IRPDocumentW2GCnt>0</IRPDocumentW2GCnt>
+      <EmployeeCnt>12</EmployeeCnt>
+      <EmploymentTaxReturnsFiledInd>true</EmploymentTaxReturnsFiledInd>
+      <UnrelatedBusIncmOverLimitInd>false</UnrelatedBusIncmOverLimitInd>
+      <ForeignFinancialAccountInd>false</ForeignFinancialAccountInd>
+      <ProhibitedTaxShelterTransInd>false</ProhibitedTaxShelterTransInd>
+      <TaxablePartyNotificationInd>false</TaxablePartyNotificationInd>
+      <NondeductibleContributionsInd>false</NondeductibleContributionsInd>
+      <QuidProQuoContributionsInd>false</QuidProQuoContributionsInd>
+      <Form8282PropertyDisposedOfInd>false</Form8282PropertyDisposedOfInd>
+      <RcvFndsToPayPrsnlBnftCntrctInd>false</RcvFndsToPayPrsnlBnftCntrctInd>
+      <PayPremiumsPrsnlBnftCntrctInd>false</PayPremiumsPrsnlBnftCntrctInd>
+      <Form8899Filedind>false</Form8899Filedind>
+      <Form1098CFiledInd>false</Form1098CFiledInd>
+      <DAFExcessBusinessHoldingsInd>false</DAFExcessBusinessHoldingsInd>
+      <TaxableDistributionsInd>false</TaxableDistributionsInd>
+      <DistributionToDonorInd>false</DistributionToDonorInd>
+      <IndoorTanningServicesInd>false</IndoorTanningServicesInd>
+      <SubjToTaxRmnrtnExPrchtPymtInd>false</SubjToTaxRmnrtnExPrchtPymtInd>
+      <SubjectToExcsTaxNetInvstIncInd>false</SubjectToExcsTaxNetInvstIncInd>
+      <InfoInScheduleOPartVIInd>X</InfoInScheduleOPartVIInd>
+      <GoverningBodyVotingMembersCnt>9</GoverningBodyVotingMembersCnt>
+      <IndependentVotingMemberCnt>9</IndependentVotingMemberCnt>
+      <FamilyOrBusinessRlnInd>false</FamilyOrBusinessRlnInd>
+      <DelegationOfMgmtDutiesInd>false</DelegationOfMgmtDutiesInd>
+      <ChangeToOrgDocumentsInd>false</ChangeToOrgDocumentsInd>
+      <MaterialDiversionOrMisuseInd>false</MaterialDiversionOrMisuseInd>
+      <MembersOrStockholdersInd>true</MembersOrStockholdersInd>
+      <ElectionOfBoardMembersInd>false</ElectionOfBoardMembersInd>
+      <DecisionsSubjectToApprovaInd>false</DecisionsSubjectToApprovaInd>
+      <MinutesOfGoverningBodyInd>true</MinutesOfGoverningBodyInd>
+      <MinutesOfCommitteesInd>true</MinutesOfCommitteesInd>
+      <OfficerMailingAddressInd>false</OfficerMailingAddressInd>
+      <LocalChaptersInd>false</LocalChaptersInd>
+      <Form990ProvidedToGvrnBodyInd>true</Form990ProvidedToGvrnBodyInd>
+      <ConflictOfInterestPolicyInd>true</ConflictOfInterestPolicyInd>
+      <AnnualDisclosureCoveredPrsnInd>true</AnnualDisclosureCoveredPrsnInd>
+      <RegularMonitoringEnfrcInd>true</RegularMonitoringEnfrcInd>
+      <WhistleblowerPolicyInd>false</WhistleblowerPolicyInd>
+      <DocumentRetentionPolicyInd>false</DocumentRetentionPolicyInd>
+      <CompensationProcessCEOInd>true</CompensationProcessCEOInd>
+      <CompensationProcessOtherInd>true</CompensationProcessOtherInd>
+      <InvestmentInJointVentureInd>false</InvestmentInJointVentureInd>
+      <UponRequestInd>X</UponRequestInd>
+      <BooksInCareOfDetail>
+        <PersonNm>Jennifer Frantz</PersonNm>
+        <PhoneNum>6624352189</PhoneNum>
+        <USAddress>
+          <AddressLine1Txt>18 SVCSBO UNIT 5135 BOX 10</AddressLine1Txt>
+          <CityNm>APO</CityNm>
+          <StateAbbreviationCd>AP</StateAbbreviationCd>
+          <ZIPCd>963685135</ZIPCd>
+        </USAddress>
+      </BooksInCareOfDetail>
+      <NoListedPersonsCompensatedInd>X</NoListedPersonsCompensatedInd>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Brandi Evans</PersonNm>
+        <TitleTxt>Advisor</TitleTxt>
+        <AverageHoursPerWeekRt>4.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <IndividualTrusteeOrDirectorInd>X</IndividualTrusteeOrDirectorInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Hannah Schaffer</PersonNm>
+        <TitleTxt>Incoming President</TitleTxt>
+        <AverageHoursPerWeekRt>5.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Brooke Epp</PersonNm>
+        <TitleTxt>Outgoing President</TitleTxt>
+        <AverageHoursPerWeekRt>5.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Anne Felts</PersonNm>
+        <TitleTxt>Pariamentarian</TitleTxt>
+        <AverageHoursPerWeekRt>5.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Olivia Coleman</PersonNm>
+        <TitleTxt>1st VP Chair of Welfare</TitleTxt>
+        <AverageHoursPerWeekRt>5.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Katie Marcucci</PersonNm>
+        <TitleTxt>1st VP Chair of Events</TitleTxt>
+        <AverageHoursPerWeekRt>4.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Brittaney Kinne</PersonNm>
+        <TitleTxt>Financial Officer</TitleTxt>
+        <AverageHoursPerWeekRt>4.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Liesliann Rodriguez</PersonNm>
+        <TitleTxt>Director of Communications</TitleTxt>
+        <AverageHoursPerWeekRt>5.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Alex Hopkin</PersonNm>
+        <TitleTxt>Administrative Coordinator</TitleTxt>
+        <AverageHoursPerWeekRt>4.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <Form990PartVIISectionAGrp>
+        <PersonNm>Annie Ranachowski</PersonNm>
+        <TitleTxt>Gift Corner Liaison</TitleTxt>
+        <AverageHoursPerWeekRt>4.00</AverageHoursPerWeekRt>
+        <AverageHoursPerWeekRltdOrgRt>0.00</AverageHoursPerWeekRltdOrgRt>
+        <OfficerInd>X</OfficerInd>
+        <ReportableCompFromOrgAmt>0</ReportableCompFromOrgAmt>
+        <ReportableCompFromRltdOrgAmt>0</ReportableCompFromRltdOrgAmt>
+        <OtherCompensationAmt>0</OtherCompensationAmt>
+      </Form990PartVIISectionAGrp>
+      <TotalReportableCompFromOrgAmt>0</TotalReportableCompFromOrgAmt>
+      <TotReportableCompRltdOrgAmt>0</TotReportableCompRltdOrgAmt>
+      <TotalOtherCompensationAmt>0</TotalOtherCompensationAmt>
+      <IndivRcvdGreaterThan100KCnt>0</IndivRcvdGreaterThan100KCnt>
+      <FormerOfcrEmployeesListedInd>false</FormerOfcrEmployeesListedInd>
+      <TotalCompGreaterThan150KInd>false</TotalCompGreaterThan150KInd>
+      <CompensationFromOtherSrcsInd>false</CompensationFromOtherSrcsInd>
+      <ProgramServiceRevenueGrp>
+        <Desc>Vendor Revenue</Desc>
+        <BusinessCd>459420</BusinessCd>
+        <TotalRevenueColumnAmt>291527</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>291527</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>General Revenue</Desc>
+        <BusinessCd>459420</BusinessCd>
+        <TotalRevenueColumnAmt>8355</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>8355</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <ProgramServiceRevenueGrp>
+        <Desc>Charitable Revenue</Desc>
+        <BusinessCd>459420</BusinessCd>
+        <TotalRevenueColumnAmt>2549</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>2549</RelatedOrExemptFuncIncomeAmt>
+      </ProgramServiceRevenueGrp>
+      <TotalProgramServiceRevenueAmt>302431</TotalProgramServiceRevenueAmt>
+      <NetIncmFromFundraisingEvtGrp>
+        <TotalRevenueColumnAmt>0</TotalRevenueColumnAmt>
+      </NetIncmFromFundraisingEvtGrp>
+      <GrossSalesOfInventoryAmt>129673</GrossSalesOfInventoryAmt>
+      <CostOfGoodsSoldAmt>130177</CostOfGoodsSoldAmt>
+      <NetIncomeOrLossGrp>
+        <TotalRevenueColumnAmt>-504</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>-504</RelatedOrExemptFuncIncomeAmt>
+      </NetIncomeOrLossGrp>
+      <TotalRevenueGrp>
+        <TotalRevenueColumnAmt>301927</TotalRevenueColumnAmt>
+        <RelatedOrExemptFuncIncomeAmt>301927</RelatedOrExemptFuncIncomeAmt>
+        <UnrelatedBusinessRevenueAmt>0</UnrelatedBusinessRevenueAmt>
+        <ExclusionAmt>0</ExclusionAmt>
+      </TotalRevenueGrp>
+      <GrantsToDomesticIndividualsGrp>
+        <TotalAmt>46530</TotalAmt>
+        <ProgramServicesAmt>46530</ProgramServicesAmt>
+      </GrantsToDomesticIndividualsGrp>
+      <OtherSalariesAndWagesGrp>
+        <TotalAmt>46414</TotalAmt>
+        <ProgramServicesAmt>46414</ProgramServicesAmt>
+      </OtherSalariesAndWagesGrp>
+      <PayrollTaxesGrp>
+        <TotalAmt>5297</TotalAmt>
+        <ProgramServicesAmt>5297</ProgramServicesAmt>
+      </PayrollTaxesGrp>
+      <AdvertisingGrp>
+        <TotalAmt>733</TotalAmt>
+        <ProgramServicesAmt>733</ProgramServicesAmt>
+      </AdvertisingGrp>
+      <OfficeExpensesGrp>
+        <TotalAmt>1039</TotalAmt>
+        <ProgramServicesAmt>1039</ProgramServicesAmt>
+      </OfficeExpensesGrp>
+      <InformationTechnologyGrp>
+        <TotalAmt>599</TotalAmt>
+        <ProgramServicesAmt>599</ProgramServicesAmt>
+      </InformationTechnologyGrp>
+      <TravelGrp>
+        <TotalAmt>3625</TotalAmt>
+        <ProgramServicesAmt>3625</ProgramServicesAmt>
+      </TravelGrp>
+      <DepreciationDepletionGrp>
+        <TotalAmt>1880</TotalAmt>
+        <ProgramServicesAmt>1880</ProgramServicesAmt>
+      </DepreciationDepletionGrp>
+      <InsuranceGrp>
+        <TotalAmt>1117</TotalAmt>
+        <ProgramServicesAmt>1117</ProgramServicesAmt>
+      </InsuranceGrp>
+      <OtherExpensesGrp>
+        <Desc>Vendor Goods</Desc>
+        <TotalAmt>248893</TotalAmt>
+        <ProgramServicesAmt>248893</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>Point of Sale</Desc>
+        <TotalAmt>2939</TotalAmt>
+        <ProgramServicesAmt>2939</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>Loyalty Program</Desc>
+        <TotalAmt>1196</TotalAmt>
+        <ProgramServicesAmt>1196</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <OtherExpensesGrp>
+        <Desc>Bank Fees</Desc>
+        <TotalAmt>6973</TotalAmt>
+        <ProgramServicesAmt>6973</ProgramServicesAmt>
+      </OtherExpensesGrp>
+      <AllOtherExpensesGrp>
+        <TotalAmt>30344</TotalAmt>
+        <ProgramServicesAmt>30344</ProgramServicesAmt>
+      </AllOtherExpensesGrp>
+      <TotalFunctionalExpensesGrp>
+        <TotalAmt>397579</TotalAmt>
+        <ProgramServicesAmt>397579</ProgramServicesAmt>
+        <ManagementAndGeneralAmt>0</ManagementAndGeneralAmt>
+        <FundraisingAmt>0</FundraisingAmt>
+      </TotalFunctionalExpensesGrp>
+      <CashNonInterestBearingGrp>
+        <BOYAmt>187744</BOYAmt>
+        <EOYAmt>133573</EOYAmt>
+      </CashNonInterestBearingGrp>
+      <InventoriesForSaleOrUseGrp>
+        <BOYAmt>144639</BOYAmt>
+        <EOYAmt>127060</EOYAmt>
+      </InventoriesForSaleOrUseGrp>
+      <PrepaidExpensesDefrdChargesGrp>
+        <BOYAmt>24267</BOYAmt>
+        <EOYAmt>6000</EOYAmt>
+      </PrepaidExpensesDefrdChargesGrp>
+      <LandBldgEquipCostOrOtherBssAmt>49048</LandBldgEquipCostOrOtherBssAmt>
+      <LandBldgEquipAccumDeprecAmt>11361</LandBldgEquipAccumDeprecAmt>
+      <LandBldgEquipBasisNetGrp>
+        <BOYAmt>39391</BOYAmt>
+        <EOYAmt>37687</EOYAmt>
+      </LandBldgEquipBasisNetGrp>
+      <TotalAssetsGrp>
+        <BOYAmt>396041</BOYAmt>
+        <EOYAmt>304320</EOYAmt>
+      </TotalAssetsGrp>
+      <AccountsPayableAccrExpnssGrp>
+        <BOYAmt>31278</BOYAmt>
+        <EOYAmt>35074</EOYAmt>
+      </AccountsPayableAccrExpnssGrp>
+      <OtherLiabilitiesGrp>
+        <BOYAmt>657</BOYAmt>
+        <EOYAmt>792</EOYAmt>
+      </OtherLiabilitiesGrp>
+      <TotalLiabilitiesGrp>
+        <BOYAmt>31935</BOYAmt>
+        <EOYAmt>35866</EOYAmt>
+      </TotalLiabilitiesGrp>
+      <OrgDoesNotFollowFASB117Ind>X</OrgDoesNotFollowFASB117Ind>
+      <RtnEarnEndowmentIncmOthFndsGrp>
+        <BOYAmt>364106</BOYAmt>
+        <EOYAmt>268454</EOYAmt>
+      </RtnEarnEndowmentIncmOthFndsGrp>
+      <TotalNetAssetsFundBalanceGrp>
+        <BOYAmt>364106</BOYAmt>
+        <EOYAmt>268454</EOYAmt>
+      </TotalNetAssetsFundBalanceGrp>
+      <TotLiabNetAssetsFundBalanceGrp>
+        <BOYAmt>396041</BOYAmt>
+        <EOYAmt>304320</EOYAmt>
+      </TotLiabNetAssetsFundBalanceGrp>
+      <ReconcilationRevenueExpnssAmt>-95652</ReconcilationRevenueExpnssAmt>
+      <OtherChangesInNetAssetsAmt>0</OtherChangesInNetAssetsAmt>
+      <MethodOfAccountingAccrualInd>X</MethodOfAccountingAccrualInd>
+      <AccountantCompileOrReviewInd>false</AccountantCompileOrReviewInd>
+      <FSAuditedInd>false</FSAuditedInd>
+      <FederalGrantAuditRequiredInd>false</FederalGrantAuditRequiredInd>
+    </IRS990>
+    <IRS990ScheduleD documentId="IRS990ScheduleD">
+      <BuildingsGrp>
+        <OtherCostOrOtherBasisAmt>33380</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>3424</DepreciationAmt>
+        <BookValueAmt>29956</BookValueAmt>
+      </BuildingsGrp>
+      <EquipmentGrp>
+        <OtherCostOrOtherBasisAmt>15668</OtherCostOrOtherBasisAmt>
+        <DepreciationAmt>7937</DepreciationAmt>
+        <BookValueAmt>7731</BookValueAmt>
+      </EquipmentGrp>
+      <TotalBookValueLandBuildingsAmt>37687</TotalBookValueLandBuildingsAmt>
+      <OtherLiabilitiesOrgGrp>
+        <Desc>Payroll liabilities</Desc>
+        <Amt>-487</Amt>
+      </OtherLiabilitiesOrgGrp>
+      <OtherLiabilitiesOrgGrp>
+        <Desc>Gift Cards Unredeemed</Desc>
+        <Amt>1345</Amt>
+      </OtherLiabilitiesOrgGrp>
+      <OtherLiabilitiesOrgGrp>
+        <Desc>Credit Card Payable</Desc>
+        <Amt>-66</Amt>
+      </OtherLiabilitiesOrgGrp>
+      <TotalLiabilityAmt>792</TotalLiabilityAmt>
+    </IRS990ScheduleD>
+    <IRS990ScheduleI documentId="IRS990ScheduleI">
+      <GrantRecordsMaintainedInd>true</GrantRecordsMaintainedInd>
+      <GrantsOtherAsstToIndivInUSGrp>
+        <GrantTypeTxt>Fall 2024 Scholarships</GrantTypeTxt>
+        <CashGrantAmt>33750</CashGrantAmt>
+      </GrantsOtherAsstToIndivInUSGrp>
+      <GrantsOtherAsstToIndivInUSGrp>
+        <GrantTypeTxt>Fall 2025 Scholarships</GrantTypeTxt>
+        <CashGrantAmt>3500</CashGrantAmt>
+      </GrantsOtherAsstToIndivInUSGrp>
+      <GrantsOtherAsstToIndivInUSGrp>
+        <GrantTypeTxt>American Womens Welfare Association</GrantTypeTxt>
+        <CashGrantAmt>2580</CashGrantAmt>
+      </GrantsOtherAsstToIndivInUSGrp>
+      <GrantsOtherAsstToIndivInUSGrp>
+        <GrantTypeTxt>Kadena Airbase Airforce Members</GrantTypeTxt>
+        <CashGrantAmt>6700</CashGrantAmt>
+      </GrantsOtherAsstToIndivInUSGrp>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Monitoring procedures (Part I, line 2)</FormAndLineReferenceDesc>
+        <ExplanationTxt>The organization maintains a detailed spreadsheet documenting each grant recipient and the amount awarded. This record is used to track grants made during the year and to support oversight and reporting requirements.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleI>
+    <IRS990ScheduleO documentId="IRS990ScheduleO">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Members or stockholder classes and rights Part VI line 6</FormAndLineReferenceDesc>
+        <ExplanationTxt>The KOSC Board members serve as officers of the organization. These officers are the voting members responsible for oversight of the organization and its membership, as well as the Kadena Gift Corner and its employees.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Form 990 governing body review Part VI line 11</FormAndLineReferenceDesc>
+        <ExplanationTxt>The prepared Form 990 and related schedules are provided to the Executive Board prior to the Executive Board meeting. The Form 990 and related schedules are reviewed and approved by the Executive Board at that meeting prior to filing with the IRS.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Conflict of interest policy compliance Part VI line 12c</FormAndLineReferenceDesc>
+        <ExplanationTxt>Whenever a member of the Executive Board or BOG has a financial or personal interest in any matter coming before the board, the affected person shall a) fully disclose the nature of the interest and b) withdraw from discussion, lobbying, and voting on the matter. Any transaction or vote involving a potential conflict of interest shall be approved only when a majority of disinterested board members determine that it is in the best interest of the organization to do so. The minutes of meetings at which such votes are taken shall record such disclosure, abstention, and rationale for approval.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>CEO executive director top management comp Part VI line 15a</FormAndLineReferenceDesc>
+        <ExplanationTxt>Officers, Executive Board members, and Board of Governors members serve on a volunteer basis and receive no compensation. The Operations Manager, Merchandising Manager, sales associates, and bookkeeper of the Kadena Gift Corner are compensated employees. Compensation is reviewed and approved by the Executive Board Salary Committee prior to payment and is determined based on prior wages paid by the Kadena Gift Corner and the expected hours worked. The Kadena Gift Corner provides funding for the overall activities of the Kadena Officers Spouses Club, and employee wages are minimal and comparable to similar retail operations on other military installations in Okinawa.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Other officer or key employee compensation Part VI line 15b</FormAndLineReferenceDesc>
+        <ExplanationTxt>The compensation review and approval process for key employees is the same as the process described in Schedule O for Part VI, Line 15a.</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Governing documents etc available to public Part VI line 19</FormAndLineReferenceDesc>
+        <ExplanationTxt>Each Executive Board member maintains copies of the organizations governing documents and conflict of interest policy in their continuity binders. Individuals requesting access to these documents or to the organizations financial statements may contact any member of the Executive Board to arrange a review. Annual financial statements are maintained at the Kadena Gift Corner, located in Building 436 on Kadena Air Base. Monthly financial statements for the Kadena Gift Corner, General Fund, and Charitable Fund are prepared by the respective bookkeeper or treasurer. Each preparer maintains copies of their reports in their continuity binder. Continued. Monthly financial statements are provided to the Executive Board prior to its monthly meetings, and the review of these reports is documented in the meeting minutes maintained by the Recording Secretary. Requests to view these documents may be made through any Executive Board member, who will assist in providing access.</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+    <ReasonableCauseExplanation documentId="ReasonableCauseExplanation">
+      <ExplanationTxt>The organization is located on a US Air Forceaffiliated military installation inOkinawa Japan All board members officers and workers are required to maintain Statusof Forces Agreement SOFA status Due to military orders governing board members andofficers frequently rotate off the installation often near or at the end of the fiscalyearDuring the tax year in question multiple leadership transitions occurred as aresult of required military reassignment which delayed completion of the Form 990 Thelate filing was not due to willful neglect but to circumstances beyond the organizationscontrol Once new leadership was established the organization acted promptly and in goodfaith to complete and file the return to the best of its abilityAccordingly the organization respectfully requests abatement of any penalties and accruedinterest under the reasonable cause provisions of the Internal Revenue Code</ExplanationTxt>
+    </ReasonableCauseExplanation>
+  </ReturnData>
+</Return>

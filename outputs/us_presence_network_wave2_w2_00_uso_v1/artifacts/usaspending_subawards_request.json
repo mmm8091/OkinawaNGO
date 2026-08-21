@@ -1,0 +1,24 @@
+{
+  "spending_level": "subawards",
+  "limit": 100,
+  "page": 1,
+  "fields": [
+    "Sub-Award ID",
+    "Sub-Awardee Name",
+    "Sub-Award Date",
+    "Sub-Award Amount",
+    "Prime Award ID",
+    "Prime Recipient Name",
+    "Sub-Award Description"
+  ],
+  "filters": {
+    "award_type_codes": ["02"],
+    "award_ids": ["HQ00342310002"],
+    "time_period": [
+      {
+        "start_date": "2023-01-01",
+        "end_date": "2026-12-31"
+      }
+    ]
+  }
+}

@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Return xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.irs.gov/efile" returnVersion="2022v5.0">
+  <ReturnHeader binaryAttachmentCnt="0">
+    <ReturnTs>2024-03-01T10:32:30-05:00</ReturnTs>
+    <TaxPeriodEndDt>2023-05-31</TaxPeriodEndDt>
+    <ReturnTypeCd>990EZ</ReturnTypeCd>
+    <TaxPeriodBeginDt>2022-06-01</TaxPeriodBeginDt>
+    <Filer>
+      <EIN>980227149</EIN>
+      <BusinessName>
+        <BusinessNameLine1Txt>AMERICAN WELFARE AND WORKS ASSOCIATION</BusinessNameLine1Txt>
+      </BusinessName>
+      <InCareOfNm>% Amber N Tracy</InCareOfNm>
+      <BusinessNameControlTxt>AMER</BusinessNameControlTxt>
+      <ForeignPhoneNum>3097334387</ForeignPhoneNum>
+      <USAddress>
+        <AddressLine1Txt>MCCS Camp Butler Executive Branch</AddressLine1Txt>
+        <CityNm>FPO</CityNm>
+        <StateAbbreviationCd>AP</StateAbbreviationCd>
+        <ZIPCd>963735623</ZIPCd>
+      </USAddress>
+    </Filer>
+    <BusinessOfficerGrp>
+      <PersonNm>Brooke Epp</PersonNm>
+      <PersonTitleTxt>AWWA Treasurer</PersonTitleTxt>
+      <SignatureDt>2024-03-01</SignatureDt>
+    </BusinessOfficerGrp>
+    <TaxYr>2022</TaxYr>
+    <BuildTS>2023-04-26 12:10:37Z</BuildTS>
+  </ReturnHeader>
+  <ReturnData documentCnt="4">
+    <IRS990EZ documentId="IRS990EZ" softwareId="22016104" softwareVersionNum="V1.0" documentName="IRS990EZ" referenceDocumentName="IRS990ScheduleO ReasonableCauseExplanation TransfersPersonalBenefitsContractsDeclaration BinaryAttachment">
+      <MethodOfAccountingCashInd>X</MethodOfAccountingCashInd>
+      <Organization501c3Ind referenceDocumentId="IRS990ScheduleA1" referenceDocumentName="IRS990ScheduleA">X</Organization501c3Ind>
+      <TypeOfOrganizationAssocInd>X</TypeOfOrganizationAssocInd>
+      <GrossReceiptsAmt>118696</GrossReceiptsAmt>
+      <InfoInScheduleOPartIInd>X</InfoInScheduleOPartIInd>
+      <ContributionsGiftsGrantsEtcAmt>114633</ContributionsGiftsGrantsEtcAmt>
+      <MembershipDuesAmt>4063</MembershipDuesAmt>
+      <GainOrLossFromSaleOfAssetsAmt>0</GainOrLossFromSaleOfAssetsAmt>
+      <SpecialEventsNetIncomeLossAmt>0</SpecialEventsNetIncomeLossAmt>
+      <GrossProfitLossSlsOfInvntryAmt>0</GrossProfitLossSlsOfInvntryAmt>
+      <TotalRevenueAmt>118696</TotalRevenueAmt>
+      <GrantsAndSimilarAmountsPaidAmt>125158</GrantsAndSimilarAmountsPaidAmt>
+      <BenefitsPaidToOrForMembersAmt>0</BenefitsPaidToOrForMembersAmt>
+      <SalariesOtherCompEmplBnftAmt>0</SalariesOtherCompEmplBnftAmt>
+      <FeesAndOtherPymtToIndCntrctAmt>500</FeesAndOtherPymtToIndCntrctAmt>
+      <OccupancyRentUtltsAndMaintAmt>0</OccupancyRentUtltsAndMaintAmt>
+      <PrintingPublicationsPostageAmt>0</PrintingPublicationsPostageAmt>
+      <OtherExpensesTotalAmt>3172</OtherExpensesTotalAmt>
+      <TotalExpensesAmt>128830</TotalExpensesAmt>
+      <ExcessOrDeficitForYearAmt>-10134</ExcessOrDeficitForYearAmt>
+      <NetAssetsOrFundBalancesBOYAmt>22828</NetAssetsOrFundBalancesBOYAmt>
+      <NetAssetsOrFundBalancesEOYAmt>12694</NetAssetsOrFundBalancesEOYAmt>
+      <CashSavingsAndInvestmentsGrp>
+        <BOYAmt>22828</BOYAmt>
+        <EOYAmt>12694</EOYAmt>
+      </CashSavingsAndInvestmentsGrp>
+      <LandAndBuildingsGrp>
+        <BOYAmt>0</BOYAmt>
+        <EOYAmt>0</EOYAmt>
+      </LandAndBuildingsGrp>
+      <Form990TotalAssetsGrp>
+        <BOYAmt>22828</BOYAmt>
+        <EOYAmt>12694</EOYAmt>
+      </Form990TotalAssetsGrp>
+      <NetAssetsOrFundBalancesGrp>
+        <BOYAmt>22828</BOYAmt>
+        <EOYAmt>12694</EOYAmt>
+      </NetAssetsOrFundBalancesGrp>
+      <InfoInScheduleOPartIIIInd>X</InfoInScheduleOPartIIIInd>
+      <PrimaryExemptPurposeTxt>To provide grants to organizations affiliated with U.S. Military bases in Okinawa and Japanese non-profit organizations in order to support both the American and Japanese communities in Okinawa Japan.</PrimaryExemptPurposeTxt>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>It is said that one in four babies in Okinawa is low birth weight and the incidence of disabled children is high. Because hospitals cannot provide long-term hospitalization and because Okinawa is a remote island there are no facilities available so even severely handicapped children children with medical care who require ventilators and other medical equipment are forced to receive care at home. The number of children with medical care living at home is increasing year by year due to advances in medical care. Social support is not keeping up and families are under a heavy burden. We believe it is important to prevent isolation increase the number of friends and gain the understanding of society. Approximately 320 families benefited- Children Kana-san Okinawa</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>15287</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>15287</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Okinawa Nanbu Rehabilitation and Medical Center opened in March 1960 when Okinawa was still under U.S. administration as a facility for physically handicapped children. At the time of its start the facility had a capacity for 50 children - Nanbu Rehabilitation</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>14870</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>14870</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Provide support for young expectant and nursing mothers children and young people in their late teens who are not supported by the existing child welfare system or the Niji Fund sister organization who supports orphans after they graduate high school by giving them a place to go a place to live and a place to work. 110 people benefited - NPO ARU</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>13986</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>13986</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <ProgramSrvcAccomplishmentGrp>
+        <DescriptionProgramSrvcAccomTxt>Other grants given to organizations located in Okinawa</DescriptionProgramSrvcAccomTxt>
+        <GrantsAndAllocationsAmt>47695</GrantsAndAllocationsAmt>
+        <ForeignGrantsInd>X</ForeignGrantsInd>
+        <ProgramServiceExpensesAmt>47695</ProgramServiceExpensesAmt>
+      </ProgramSrvcAccomplishmentGrp>
+      <TotalProgramServiceExpensesAmt>91838</TotalProgramServiceExpensesAmt>
+      <InfoInScheduleOPartIVInd>X</InfoInScheduleOPartIVInd>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Amber Ford</PersonNm>
+        <TitleTxt>President</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>5</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Danielle Kessler</PersonNm>
+        <TitleTxt>Treasurer</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>5</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Shelly Haar</PersonNm>
+        <TitleTxt>Parliamentarian</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>1</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Jen Yapsing</PersonNm>
+        <TitleTxt>Administrative Coordinator</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>3</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Sylvia Black</PersonNm>
+        <TitleTxt>Cultural Liaison - Interpreter</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>5</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <OfficerDirectorTrusteeEmplGrp>
+        <PersonNm referenceDocumentName="CompensationExplanation">Trinicia Kloepper</PersonNm>
+        <TitleTxt>Publicity</TitleTxt>
+        <AverageHrsPerWkDevotedToPosRt>1</AverageHrsPerWkDevotedToPosRt>
+        <CompensationAmt>0</CompensationAmt>
+        <EmployeeBenefitProgramAmt>0</EmployeeBenefitProgramAmt>
+        <ExpenseAccountOtherAllwncAmt>0</ExpenseAccountOtherAllwncAmt>
+      </OfficerDirectorTrusteeEmplGrp>
+      <ActivitiesNotPreviouslyRptInd>false</ActivitiesNotPreviouslyRptInd>
+      <ChgMadeToOrgnzngDocNotRptInd>false</ChgMadeToOrgnzngDocNotRptInd>
+      <OrganizationHadUBIInd>false</OrganizationHadUBIInd>
+      <SubjectToProxyTaxInd referenceDocumentName="IRS990ScheduleC">false</SubjectToProxyTaxInd>
+      <OrganizationDissolvedEtcInd referenceDocumentName="IRS990ScheduleN BinaryAttachment">false</OrganizationDissolvedEtcInd>
+      <DirectIndirectPltclExpendAmt>0</DirectIndirectPltclExpendAmt>
+      <MadeLoansToFromOfficersInd>false</MadeLoansToFromOfficersInd>
+      <EngagedInExcessBenefitTransInd referenceDocumentName="IRS990ScheduleL">false</EngagedInExcessBenefitTransInd>
+      <BooksInCareOfDetail>
+        <PersonNm>Amber N Tracy</PersonNm>
+        <USAddress>
+          <AddressLine1Txt>MCCS Camp Butler Executive Branch</AddressLine1Txt>
+          <AddressLine2Txt>Unit 35023</AddressLine2Txt>
+          <CityNm>FPO</CityNm>
+          <StateAbbreviationCd>AP</StateAbbreviationCd>
+          <ZIPCd>963735623</ZIPCd>
+        </USAddress>
+        <PhoneNum>3097334387</PhoneNum>
+      </BooksInCareOfDetail>
+      <DonorAdvisedFndsInd>false</DonorAdvisedFndsInd>
+      <OperateHospitalInd>false</OperateHospitalInd>
+      <TanningServicesProvidedInd>false</TanningServicesProvidedInd>
+      <RelatedOrganizationCtrlEntInd>false</RelatedOrganizationCtrlEntInd>
+      <LobbyingActivitiesInd referenceDocumentName="IRS990ScheduleC">false</LobbyingActivitiesInd>
+      <SchoolOperatingInd referenceDocumentName="IRS990ScheduleE">false</SchoolOperatingInd>
+      <TrnsfrExmptNonChrtblRltdOrgInd>false</TrnsfrExmptNonChrtblRltdOrgInd>
+      <PartVIOfCompOfHghstPdEmplTxt>NONE</PartVIOfCompOfHghstPdEmplTxt>
+      <PartVIHghstPdCntrctProfSrvcTxt>NONE</PartVIHghstPdCntrctProfSrvcTxt>
+      <FiledScheduleAInd>true</FiledScheduleAInd>
+    </IRS990EZ>
+    <IRS990ScheduleA documentId="IRS990ScheduleA1" documentName="IRS990ScheduleA">
+      <PubliclySupportedOrg509a2Ind>X</PubliclySupportedOrg509a2Ind>
+      <GiftsGrantsContrisRcvd509Grp>
+        <CurrentTaxYearMinus4YearsAmt>118575</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>141108</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>122378</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>164541</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>125158</CurrentTaxYearAmt>
+        <TotalAmt>671760</TotalAmt>
+      </GiftsGrantsContrisRcvd509Grp>
+      <GrossReceiptsAdmissionsGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossReceiptsAdmissionsGrp>
+      <GrossReceiptsNonUnrltBusGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossReceiptsNonUnrltBusGrp>
+      <TaxRevLeviedOrgnztnlBnft509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </TaxRevLeviedOrgnztnlBnft509Grp>
+      <GovtFurnSrvcFcltsVl509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GovtFurnSrvcFcltsVl509Grp>
+      <Total509Grp>
+        <CurrentTaxYearMinus4YearsAmt>118575</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>141108</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>122378</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>164541</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>125158</CurrentTaxYearAmt>
+        <TotalAmt>671760</TotalAmt>
+      </Total509Grp>
+      <AmountsRcvdDsqlfyPersonGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </AmountsRcvdDsqlfyPersonGrp>
+      <SubstantialContributorsAmtGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </SubstantialContributorsAmtGrp>
+      <SubstAndDsqlfyPrsnsTotGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </SubstAndDsqlfyPrsnsTotGrp>
+      <PublicSupportTotal509Amt>671760</PublicSupportTotal509Amt>
+      <GrossInvestmentIncome509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </GrossInvestmentIncome509Grp>
+      <Post1975UBTIGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </Post1975UBTIGrp>
+      <InvestmentIncomeAndUBTIGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </InvestmentIncomeAndUBTIGrp>
+      <NetIncomeFromOtherUBIGrp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </NetIncomeFromOtherUBIGrp>
+      <OtherIncome509Grp>
+        <CurrentTaxYearMinus4YearsAmt>0</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>0</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>0</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>0</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>0</CurrentTaxYearAmt>
+        <TotalAmt>0</TotalAmt>
+      </OtherIncome509Grp>
+      <TotalSupportCalendarYearGrp>
+        <CurrentTaxYearMinus4YearsAmt>118575</CurrentTaxYearMinus4YearsAmt>
+        <CurrentTaxYearMinus3YearsAmt>141108</CurrentTaxYearMinus3YearsAmt>
+        <CurrentTaxYearMinus2YearsAmt>122378</CurrentTaxYearMinus2YearsAmt>
+        <CurrentTaxYearMinus1YearAmt>164541</CurrentTaxYearMinus1YearAmt>
+        <CurrentTaxYearAmt>125158</CurrentTaxYearAmt>
+        <TotalAmt>671760</TotalAmt>
+      </TotalSupportCalendarYearGrp>
+      <PublicSupportCY509Pct>1</PublicSupportCY509Pct>
+      <PublicSupportPY509Pct>1</PublicSupportPY509Pct>
+      <InvestmentIncomeCYPct>0</InvestmentIncomeCYPct>
+      <InvestmentIncomePYPct>0.00</InvestmentIncomePYPct>
+      <ThirtyThrPctSuprtTestsCY509Ind>X</ThirtyThrPctSuprtTestsCY509Ind>
+    </IRS990ScheduleA>
+    <IRS990ScheduleB documentId="IRS990ScheduleB1" documentName="IRS990ScheduleB">
+      <ContributorInformationGrp>
+        <ContributorNum>RESTRICTED</ContributorNum>
+        <ContributorBusinessName>
+          <BusinessNameLine1>RESTRICTED</BusinessNameLine1>
+        </ContributorBusinessName>
+        <ContributorUSAddress>
+          <AddressLine1>RESTRICTED</AddressLine1>
+          <AddressLine2>RESTRICTED</AddressLine2>
+          <City>RESTRICTED</City>
+          <State>RESTRICTED</State>
+          <ZIPCode>RESTRICTED</ZIPCode>
+        </ContributorUSAddress>
+        <TotalContributionsAmt>RESTRICTED</TotalContributionsAmt>
+      </ContributorInformationGrp>
+    </IRS990ScheduleB>
+    <IRS990ScheduleO documentId="IRS990ScheduleO1" documentName="IRS990ScheduleO">
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part I, line 10</FormAndLineReferenceDesc>
+        <ExplanationTxt>| Grants And Similar Amounts Paid:, Amount:| Grant funds given to organizations affiliated with the U.S. Military bases in Okinawa assisted with travel equipment educational expenses for sports dance leadership school groups where funding is not available to them from other resources. Approximately 6,000 people benefited. Certain funds will provide ongoing benefits for years., $33320| Grant funds given to Japanese organizations in Okinawa provided support to several rehabilitation centers for various needs and a sea turtle conservation project., $91838|</ExplanationTxt>
+      </SupplementalInformationDetail>
+      <SupplementalInformationDetail>
+        <FormAndLineReferenceDesc>Part I, line 16</FormAndLineReferenceDesc>
+        <ExplanationTxt>| Other Expenses:, Amount:| Operating Expenses: Membership Appreciation, $200| Friendship Banquet - Annual Banquet, $2580| Operating Expenses, $260| Prior year error corrected in FY2023, $132|</ExplanationTxt>
+      </SupplementalInformationDetail>
+    </IRS990ScheduleO>
+  </ReturnData>
+</Return>

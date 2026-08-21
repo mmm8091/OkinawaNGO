@@ -1,0 +1,14 @@
+﻿selection_frame_id,episode_id,case_id,short_label,actor_ids,episode_status,fact_layer,local_gap,selection_basis,package_scope,frontend_eligibility,central_writeback
+USF-W2C-ENTRY13-2026-08-22,TE01,R8C01,儒艮海外诉讼,A045;A086;A020;A076;A009,human_checked,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE02,R8C02,边野古 EIA 意见,A004,human_checked,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE03,R8C03,嘉手纳第三次噪音诉讼,A052,human_checked,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE04,R8C04,普天间周边噪音诉讼,A053,human_checked,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE05,R8C05/R9C_ISHIGAKI_2018_2024,石垣部署公投诉讼,A011,human_checked,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE06,R8C06,泡濑公金诉讼,A055;A020,human_checked,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE07,R9C_NAGO_1997,名护 1997 公投,A068,accepted_process,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE08,R9C_YONAGUNI_2015,与那国 2015 公投,A014;A015,accepted_process_with_local_gap,reviewed_process_layer,yes,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE09,R9C_PREF_2019,2019 边野古县民投票,A051,accepted_process,reviewed_process_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE10,HR027E002,宫古地下水行政往来,A112,analytic_candidate_event_pending,candidate_event_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE11,HR027E004;HR027E005,宜野湾 PFAS 土壤采样→议会,A113,analytic_candidate_event_pending,candidate_event_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE12,HR027E010,石垣港罢工,A114,analytic_candidate_event_pending,candidate_event_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no
+USF-W2C-ENTRY13-2026-08-22,TE13,HR027E014,新妇人县本部公投动员,A115,analytic_candidate_event_pending,candidate_event_layer,no,existing positive institutional-entry episode,research_only,not_frontend_ready,no

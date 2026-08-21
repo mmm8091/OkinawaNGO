@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "generated_on": "2026-08-22",
+  "status": "PASS_W2_00_RESEARCH_ONLY",
+  "counts": {
+    "selection_frames": 9,
+    "selection_frame_actor_members": 116,
+    "selection_frame_episode_members": 13,
+    "anchors": 152,
+    "source_receipts": 43,
+    "source_receipts_with_local_artifact": 41,
+    "source_receipts_without_local_artifact": 2,
+    "change_notes": 24,
+    "case_scales": 4,
+    "principal_review_items": 7
+  },
+  "frame_actor_counts": {
+    "USF-W2A-SPOUSE5-2026-08-22": 5,
+    "USF-W2B-USO-LAYERS-2026-08-22": 1,
+    "USF-W2D-BRIDGE-TRACER15-2026-08-22": 15,
+    "USF-W2D-ECOLOGY-S0-A1R-2026-08-22": 50,
+    "USF-W2D-SENSITIVITY-S0-A1C-2026-08-22": 45
+  },
+  "checks": {
+    "unique_anchor_ids": true,
+    "unique_receipt_ids": true,
+    "unique_change_note_ids": true,
+    "receipt_ids_resolve": true,
+    "receipt_crosswalk_closed": true,
+    "receipt_crosswalk_bidirectional": true,
+    "available_artifact_hashes_checked": true,
+    "selection_frame_counts_checked": true,
+    "selection_frame_exact_member_sets_checked": true,
+    "a1r_a1c_disjoint": true,
+    "active_registry_mapping_checked": true,
+    "a072_excluded": true,
+    "principal_review_crosswalk_closed": true,
+    "protected_inputs_unchanged": true,
+    "central_writeback": false,
+    "frontend_release": false
+  },
+  "errors": []
+}
