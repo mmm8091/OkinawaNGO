@@ -2,6 +2,12 @@
 
 日期：2026-08-19
 
+状态：项目负责人已于 2026-08-21 按研究支持稿确认全部建议；正式 queue 的 9 项决定已回填。任务范围仍为 research-only，尚未执行中央合并或前端发布。
+
+AI 研究支持：[`human_review_research_USN_accountability_v1.md`](human_review_research_USN_accountability_v1.md)。原任务书下列“建议”是分派时的初始判断；研究支持稿已发现 A019 端点错配、A033 的 2019 补充证据、两个英文 coalition 标签的可解析 crosswalk，以及 NOFO/NED 语义修订，负责人已按研究支持稿拍板。
+
+负责人回传：[`human_review_return_USN_accountability_v1.md`](human_review_return_USN_accountability_v1.md)。正式决定以回填后的 queue 和该回传记录为准。
+
 任务量：9 项；建议先做 P0 四项
 
 回填表：`outputs/us_presence_accountability_recon_v1/human_review_queue_v1.csv`
@@ -30,11 +36,11 @@
 - 观察：三份 VFP 自有材料分别确认 chapter 1003、负责人／协调人和持续公开活动。
 - 建议：按三个观察日期接受 A070 章节身份与连续出现；不要推成 2020–2023 每日连续任期。
 
-### USHR003 A070 → A019 协调
+### USHR003 A070 → A019 协调（派发时错配，正式决定已撤回 A019）
 
 - 材料：VFP 2023 春季会报第 23 页。
 - 观察：chapter 1003 自述继续与包括 No Heliport Base Association 在内的 coalition 工作。
-- 建议：接受有界的 recurring coordination；关系类型不是 membership、funding 或完整联盟名单。
+- 派发时建议：接受有界的 recurring coordination；关系类型不是 membership、funding 或完整联盟名单。正式决定将目标改为 `EO_R5_FUTAMI_TEN_DISTRICTS` 或保留 raw label，并保持 event-only/off-graph。
 
 ### USHR004 吉川秀樹人物桥
 

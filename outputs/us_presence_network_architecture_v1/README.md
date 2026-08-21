@@ -2,7 +2,7 @@
 
 Date: 2026-08-19
 
-Status: `research_only / architecture_proposal / not_frontend_ready / no_central_writeback`
+Status: `research_only / principal_checkpoint_confirmed / not_frontend_ready / no_central_writeback`
 
 ## Purpose
 
@@ -22,6 +22,8 @@ new factual extraction.
 - `vertical_slice_register_v1.csv`: independently acceptable tracer-bullet work packages.
 - `../../docs/us_presence_network_architecture_v1.md`: rationale, compatibility map, analytical
   boundaries, and recommended execution order.
+- `principal_checkpoint_return_v1.json`: machine-readable five-item principal decision record.
+- `../../docs/human_review_return_USN_architecture_checkpoint_v1.md`: formal decision return and boundaries.
 
 ## Governing boundary
 
@@ -52,9 +54,11 @@ create actors, create person identities, create funding edges, or approve interp
 - 44 validation rules;
 - 10 tracer-bullet slices.
 
-## Suggested first run
+## Current next action
 
-Execute `US-VS00` and `US-VS01` first. They answer the client-facing directory question and retype
-existing observations without new factual claims. Then run one garrison-reproduction tracer
-(`US-VS02`) and one accountability tracer (`US-VS03`) as a paired comparison. Pause for principal
-review before expanding the wave.
+US-VS00/01 review inputs and the five-item checkpoint are complete. First prepare a controlled
+integration design, expected field-level diff and idempotent test plan; do not write central tables.
+The pre-return CSV contracts retain L1/L2/L3 suffixes as legacy aliases for approved
+LEG1/LEG2/LEG3 semantics. Migrate those codes mechanically before integration, preserving all
+non-target fields and package row counts. After integration design review, run USN-04/05/06 one
+bounded research-only slice at a time.

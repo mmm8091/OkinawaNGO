@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "checkpoint_id": "USN-WAVE1-ARCH-2026-08-21",
+  "reviewer": "project_principal_user",
+  "review_date": "2026-08-21",
+  "status": "principal_confirmed",
+  "decision_counts": {
+    "accept": 2,
+    "revise": 3,
+    "defer": 0
+  },
+  "decisions": [
+    {
+      "item_id": "USN-ARCH-01",
+      "decision": "accept",
+      "approved_rule": "Function codes attach to dated actions or relations, never to a fixed pro-U.S./anti-U.S. actor property."
+    },
+    {
+      "item_id": "USN-ARCH-02",
+      "decision": "revise",
+      "approved_rule": "Use LEG0 for service/resource facts, LEG1 for actor-authored intent or narrative, LEG2 for bounded recipient/local/independent reception or contestation, and LEG3 for repeatable attitude/behavior/institutional effects under an explicit design.",
+      "compatibility_note": "The pre-return machine contracts still use L1/L2/L3 suffixes as legacy aliases; mechanical LEG renaming remains pending and does not change the approved semantics."
+    },
+    {
+      "item_id": "USN-ARCH-03",
+      "decision": "revise",
+      "approved_rule": "Keep USF-US-ORIGIN17-2026-08-19 as a frozen 9 service / 6 accountability / 2 standalone baseline; do not retroactively add newly approved service actors or mechanically create a 15/6/2 denominator."
+    },
+    {
+      "item_id": "USN-ARCH-04",
+      "decision": "revise",
+      "approved_rule": "The first person tracer uses named VFP-ROCK people and Hideki Yoshikawa's same-date OEJP/SDCC roles. Remove A019 from the USAA005 tracer; keep the corrected event-only coalition endpoint outside the person-actor bipartite graph."
+    },
+    {
+      "item_id": "USN-ARCH-05",
+      "decision": "accept",
+      "approved_rule": "Present AWWA/spouse-club, MTS/recipient, and Earthjustice/Dugong-case resource paths side by side while keeping money, service-recipient, affiliation/channel, and case-resource semantics separate."
+    }
+  ],
+  "next_authorized_action": "prepare_controlled_integration_design_expected_field_diff_and_idempotent_test_plan",
+  "central_writeback_authorized": false,
+  "publication_adapter_authorized": false,
+  "frontend_writeback_authorized": false
+}

@@ -2,7 +2,9 @@
 
 日期：2026-08-19
 
-状态：建议案；`research_only / not_frontend_ready / no_central_writeback`
+状态：五项负责人架构决定已于 2026-08-21 确认；`research_only / not_frontend_ready / no_central_writeback`
+
+负责人回传：`docs/human_review_return_USN_architecture_checkpoint_v1.md`。机读决定：`outputs/us_presence_network_architecture_v1/principal_checkpoint_return_v1.json`。
 
 上位规则：`data/metadata/coding_schema_v0.md`、`data/metadata/coding_schema_v1.md`、`docs/actor_relation_architecture_v1.md`
 
@@ -80,12 +82,12 @@
 
 | 层级 | 证据 | 允许的表述 |
 |---|---|---|
-| L0 | 捐赠、服务、合作或同场事实 | 只写资源转移或服务；不编码 `legitimation` |
-| L1 | 行动方／美军／领馆明示使用“增进理解”“信任”“社区伙伴”“善意”等目标语言 | “关系建构／正当化的明示意图或公开叙事” |
-| L2 | 受益方、地方机构或独立媒体对该叙事的接受、转述、抵制或重新解释 | “观察到接受／争议的公共反应” |
-| L3 | 可重复的态度、信任、行为或制度效果材料 | 在明确设计和竞争解释下讨论“合法性效果” |
+| LEG0 | 捐赠、服务、合作或同场事实 | 只写资源转移或服务；不编码 `legitimation` |
+| LEG1 | 行动方／美军／领馆明示使用“增进理解”“信任”“社区伙伴”“善意”等目标语言 | “关系建构／正当化的明示意图或公开叙事” |
+| LEG2 | 受益方、地方机构或独立媒体对该叙事的接受、转述、抵制或重新解释 | “观察到接受／争议的公共反应” |
+| LEG3 | 可重复的态度、信任、行为或制度效果材料 | 在明确设计和竞争解释下讨论“合法性效果” |
 
-L1 不等于效果，官方宣传不是独立影响评估。没有 L2/L3 时，报告可以分析“合法化尝试／公开叙事”，不得写“已为美国军事存在提供合法性”。
+LEG1 不等于效果，官方宣传不是独立影响评估。没有 LEG2/LEG3 时，报告可以分析“合法化尝试／公开叙事”，不得写“已为美国军事存在提供合法性”。派发前机读契约中的 `L1/L2/L3` 后缀暂作 LEG1/LEG2/LEG3 旧别名，待机械迁移，不改变语义。
 
 ## 5. 共用证据包络
 
@@ -262,22 +264,24 @@ AI 可以执行：指定材料抽取、原文保留、名称规范化候选、�
 4. **US-VS03 对美问责个案**：以一个美方被告／目标明确的案件，区分限制目标、问责中间产出和底层项目改变。
 5. **US-VS04 人物–组织时间网**：从少数高价值组织建立经人审的年度角色表，不用同名自动连线。
 6. **US-VS05 受益方与社区中介接口**：追踪一个资源中介的 provider–intermediary–recipient 小网，区分一次性和年度重复，并只对跨过基地—地方社会边界的已核观察编码 `community_mediation`。
-7. **US-VS06 合法化证据测试**：对一个慈善／公共外交个案同时采集行动方叙事和地方反应；没有 L2 就停在意图／公开叙事。
+7. **US-VS06 合法化证据测试**：对一个慈善／公共外交个案同时采集行动方叙事和地方反应；没有 LEG2 就停在 LEG1 意图／公开叙事。
 8. **US-VS07 两侧对称接口比较**：在同地、同期和同搜索强度下分别测量组织、人物和 recipient 接口。
 9. **US-VS08 有界多层 SNA**：只在前述切片达到覆盖门后运行，不把 actor–issue 度数写成影响力。
 10. **US-VS09 1972–2011 历史切片**：使用当地／馆藏材料检验当代结构能否外推到复归后长时段。
 
 每个强解释切片后都暂停，由负责人决定继续、修订或停止；不再一次堆积多个模块后统一交付。
 
-## 12. 建议的第一个人工检查点
+## 12. 第一个人工检查点（已确认）
 
-在任何新事实采集前，负责人只需拍板五项：
+负责人于 2026-08-21 确认五项：
 
-1. 数据库统一使用“对美功能／美国军事存在”作为经验语言，“帝国扩张”只留在理论和论证层；
-2. 功能编码只附着行动／关系，不写回 actor 固定属性；
-3. `community_mediation` 必须确认跨界两端和方向；`legitimation` 使用 L0–L3 门槛，慈善、服务或跨界中介都不自动通过；
-4. 第一批用 US-VS00／01 冻结目录和现有关系语义，再从 US-VS02／03 各做一个成对案例；
-5. 本架构保持 research-only，不改中央事实表或前端；首个纵向切片验收后再决定 merger 和 publication adapter。
+1. `accept`：功能编码只附着有日期、对象和来源的行动／关系，不写回 actor 固定亲美／反美属性；
+2. `revise`：`legitimation` 使用 LEG0–LEG3 门槛，LEG2 有界地方反应与 LEG3 态度／行为／制度效果分开；
+3. `revise`：`USF-US-ORIGIN17-2026-08-19` 的9服务／6问责／2单列只作冻结基线，新批准 actor 不追溯加入旧分母；
+4. `revise`：人物 tracer 使用 VFP-ROCK 具名人物与吉川秀樹的 OEJP／SDCC 点时职务；USAA005 的 A019 错配撤回，event-only coalition 留在行动层；
+5. `accept`：AWWA／军属俱乐部、MTS／recipient、Earthjustice／Dugong case 资源路径分层并列，不合并 money、service-recipient、affiliation/channel 与 case-resource 语义。
+
+上述拍板授权下一步编写受控集成设计、预期字段级 diff 和幂等测试方案；实际中央 writeback、publication adapter 与 frontend 仍需另行授权。
 
 ## 13. 本架构的验收条件
 

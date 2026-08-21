@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "validated_on": "2026-08-21",
+  "status": "PASS",
+  "principal_return_sets": 5,
+  "counts": {
+    "service_decisions": 13,
+    "accountability_decisions": 9,
+    "directory_decisions": 65,
+    "relation_group_decisions": 6,
+    "relation_rows_covered": 43,
+    "architecture_decisions": 5
+  },
+  "decision_distributions": {
+    "accountability": {
+      "accept": 2,
+      "revise": 7
+    },
+    "directory": {
+      "accept": 54,
+      "revise": 4,
+      "defer": 5,
+      "reject": 2
+    },
+    "relation_groups": {
+      "accept": 5,
+      "revise": 1
+    },
+    "architecture": {
+      "accept": 2,
+      "revise": 3,
+      "defer": 0
+    }
+  },
+  "checks": {
+    "actor_directory_return_validator": "PASS",
+    "relation_retype_return_validator": "PASS",
+    "wave1_principal_returns_validator": "PASS",
+    "post_principal_manifest_files_verified": 23,
+    "nested_relation_manifest_files_verified": 6,
+    "git_diff_check": "PASS_WITH_LINE_ENDING_WARNINGS_ONLY",
+    "central_data_source_archive_prototype_diff_detected": false,
+    "relation_crosswalk_expanded": false,
+    "machine_leg_alias_migration": "pending"
+  },
+  "scope_note": "This report verifies principal-return completeness and bounded merge readiness. It does not authorize or validate central-data, publication-adapter, or frontend writeback."
+}

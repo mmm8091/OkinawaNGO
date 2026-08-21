@@ -18,14 +18,17 @@
 - `coverage_summary_v1.csv`：总体、来源地与 actor class 分组的页面覆盖情况。
 - `official_url_conflicts_v1.csv`：多域名、母组织页面、来源类型误标和无官网等需要人工判断的冲突。
 - `source_crosswalk_v1.csv`：actor 来源引用、中央 source log、归档状态、候选网址与取舍理由的逐行追溯。
-- `manifest.json`：输入、输出、哈希、计数与硬性校验结果。
+- `manifest.json`：派发前生成快照；其中 assignment／decision／README 哈希指向派发时 bytes，回传后的状态由 return validator 和全波次 post-principal manifest 记录。
 - `docs/actor_directory_frontend_slice_v1.md`：人工审定后进入前端第一张组织名录表的字段、交互和验收要求。
 
 ## USN07 人工复核包
 
-- `HR_USN_actor_directory_decisions_v1.csv`：65 个非 `not_found` 页面候选的空白负责人决定表；前 40 行为可批量确认区，后 25 行为逐行冲突区。
+- `HR_USN_actor_directory_decisions_v1.csv`：65 个非 `not_found` 页面候选的负责人回填表；2026-08-21 已完成 65 项决定，前 40 行为批量区，后 25 行为逐行冲突区。
 - `docs/human_review_assignment_USN_actor_directory_v1.md`：复核范围、决定语义、25 项冲突说明与回交要求。
+- `docs/human_review_research_USN_actor_directory_v1.md`：2026-08-21 完成并由负责人全部确认的逐项证据核查与建议。
+- `docs/human_review_return_USN_actor_directory_v1.md`：负责人正式回传、修订 URL、暂缓／拒绝边界与 QA 记录。
 - `scripts/validate_hr_usn_actor_directory_v1.py`：验证 65 行、40＋25 分区、actor 唯一、证据回溯和决定字段为空。
+- `scripts/validate_hr_usn_actor_directory_return_v1.py`：验证回传后的 65 项决定、4 个精确修订、reviewer/date、证据追溯和决定分布。
 
 该复核只批准页面 URL、页面类型、页面归属、可访问性和来源追溯，不批准组织立场、关系、资金、持续性或影响力。
 
@@ -45,7 +48,7 @@
 2. 将 actor 的直接来源引用与 source log 中明确带该 actor ID 的支持说明展开到 `source_crosswalk_v1.csv`。
 3. 只让能够证明页面归属的 source type 进入候选排序；组织官网优先于官方子页面、正式登记页和母组织页面。
 4. 对 17 个 `us_origin` actor 逐个检查当前官方页面；新发现的网址保留为空 `source_id`，因为本包无权改中央 source log。
-5. 对已知错配、多个可信域名、母组织代管页和无法确认的情况写入冲突表，等待字段级人工复核。
+5. 对已知错配、多个可信域名、母组织代管页和无法确认的情况写入冲突表供字段级人工复核；该复核已于 2026-08-21 完成，结果见正式 return。
 
 名称字段保留 registry 原名，并在可用时提供日文和英文展示名。项目目前没有一套经人工复核的 121 组织中文译名，因此 `name_zh` 暂留空；前端不可用机器临时翻译覆盖原名。英文名沿用项目既有英文展示 crosswalk，仍属于本候选包的一部分。
 
@@ -58,7 +61,7 @@
 - 官方页面只证明一个可供查证的组织入口；不能由此推断组织亲美／反美、资金来源、组织关系、政治立场、持续性或现实影响力。
 - 页面覆盖率反映资料发现能力，也会受组织保存网站、使用英文和拥有专业传播资源等条件影响，不能作为网络中心性或组织重要性的替代指标。
 
-人工复核应逐项确认页面归属、页面类型、当前可访问性和 source 追溯。通过后，再由受控合并器写入正式目录 overlay，并经 publication compiler 生成前端数据；前端不得直接读取本目录中的 CSV。
+65项人工复核已经完成；54个 accept 与4个 revise 可进入受控 overlay 候选，5个 defer 与2个 reject 继续排除或保留研究状态。通过后仍须由受控合并器和 publication compiler 生成前端数据；前端不得直接读取本目录中的 CSV。
 
 ## 已执行校验
 

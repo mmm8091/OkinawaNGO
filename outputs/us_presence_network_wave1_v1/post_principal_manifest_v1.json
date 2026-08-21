@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0.0",
+  "created_on": "2026-08-21",
+  "status": "principal_returns_complete_merge_ready",
+  "hash_algorithm": "sha256",
+  "scope": "Authoritative USN wave-1 decision data, research support, formal returns, validators, validation receipts and merge handoff.",
+  "files": [
+    {
+      "path": "outputs/us_presence_service_recon_v1/human_review_queue_v1.csv",
+      "sha256": "7b928afefed1c9bc464ecca844308de928655da85d33a49586fa8eed58e9d768",
+      "bytes": 13748
+    },
+    {
+      "path": "outputs/us_presence_accountability_recon_v1/human_review_queue_v1.csv",
+      "sha256": "3dd8de4dbd503cf6d6104b8e342868fe471b56a4a90d1e8db90b6a025a45f845",
+      "bytes": 6056
+    },
+    {
+      "path": "outputs/actor_directory_v1/HR_USN_actor_directory_decisions_v1.csv",
+      "sha256": "bee462ec81e548ff82b59d526f18e385f2aa09f4446831109b36fb8b92e4a4b4",
+      "bytes": 77401
+    },
+    {
+      "path": "outputs/us_presence_relation_retype_v1/HR_USN_relation_retype_rules_v1.csv",
+      "sha256": "8a6b1aaf7f55f60b5952ab80faec4ce6acbb96a51074ff48cb92e7e07cffb8be",
+      "bytes": 3806
+    },
+    {
+      "path": "outputs/us_presence_network_architecture_v1/principal_checkpoint_return_v1.json",
+      "sha256": "5bcc0a970848e96131155c8498ef1422755219567f32969a162d6a44b069a669",
+      "bytes": 2182
+    },
+    {
+      "path": "docs/human_review_research_USN_service_ecology_v1.md",
+      "sha256": "c52b59f0ada688cc684a4d52aeae1197fdefa59d102a1289994b7099961efbb5",
+      "bytes": 26490
+    },
+    {
+      "path": "docs/human_review_research_USN_accountability_v1.md",
+      "sha256": "98a27cfec7ee1d193ea25e5076fca6060774e3aeea6f28011458e81d1c8c31d1",
+      "bytes": 23730
+    },
+    {
+      "path": "docs/human_review_research_USN_actor_directory_v1.md",
+      "sha256": "4babaedb561af090af465cd655941038844b457ac2d1ab8875bbb92882ee8407",
+      "bytes": 14526
+    },
+    {
+      "path": "docs/human_review_research_USN_relation_retype_v1.md",
+      "sha256": "0add5953d11e597399cd162dbaa206a28c9faecb0131e27b4f7ad66e341bab9a",
+      "bytes": 10677
+    },
+    {
+      "path": "docs/human_review_research_USN_architecture_checkpoint_v1.md",
+      "sha256": "cde041edf4a1b152dc1cc25ffc2c2c48a733f6cbc5e3cec0a1fa29dab4d781d0",
+      "bytes": 4887
+    },
+    {
+      "path": "docs/human_review_return_USN_service_ecology_v1.md",
+      "sha256": "b8cc3262621fbc91cd6ea19bd3c25ca8588749571f0e53dbc38d63330bd06272",
+      "bytes": 3869
+    },
+    {
+      "path": "docs/human_review_return_USN_accountability_v1.md",
+      "sha256": "19df6df14a078a5d5091d6b29c5f893b7eab7ac139be55a9af460187901ddd8b",
+      "bytes": 3471
+    },
+    {
+      "path": "docs/human_review_return_USN_actor_directory_v1.md",
+      "sha256": "83bb44854d015bef306c9d32a64c51fbfe4f1c269f008f87c779541dad2f2358",
+      "bytes": 4141
+    },
+    {
+      "path": "docs/human_review_return_USN_relation_retype_v1.md",
+      "sha256": "7b1c29a97c043c5a31452c64c7a91bd3430c2a63d2b536364f3546e34ee30685",
+      "bytes": 3088
+    },
+    {
+      "path": "docs/human_review_return_USN_architecture_checkpoint_v1.md",
+      "sha256": "d769e2730d345c0ee03fd61b14f15d9042557fdb9d6c8dce9701548d53571c95",
+      "bytes": 2749
+    },
+    {
+      "path": "scripts/validate_hr_usn_actor_directory_return_v1.py",
+      "sha256": "48671cf7c12e64374cc2d84fc2441a50af061c05a7f86ada12a06726c90fca0e",
+      "bytes": 3728
+    },
+    {
+      "path": "scripts/validate_hr_usn_relation_retype_return_v1.py",
+      "sha256": "f08d9d12b10c21957278b8361bced50a5df6328df891d962ca94c2396998ce13",
+      "bytes": 5080
+    },
+    {
+      "path": "scripts/validate_usn_wave1_principal_returns_v1.py",
+      "sha256": "bb834fa7a15205e138a21dfa669fa59fd7e9366f5831172630a4fa8e98e45c3b",
+      "bytes": 6905
+    },
+    {
+      "path": "outputs/us_presence_relation_retype_v1/post_return_validation_report_v1.json",
+      "sha256": "360d25d07b5ebbc49a2e7b7af2633b96776577209f0edb04ca152af933ab06cb",
+      "bytes": 725
+    },
+    {
+      "path": "outputs/us_presence_relation_retype_v1/post_return_manifest_v1.json",
+      "sha256": "6b68a8d2507fbe8a66712b580105afc85fefb2927d24d194a569499d241a181e",
+      "bytes": 1584
+    },
+    {
+      "path": "outputs/us_presence_network_wave1_v1/README.md",
+      "sha256": "aee6a52daf9e02645d2c7fde4328aedc3920f52a2c506f45842b2b00752a3034",
+      "bytes": 2571
+    },
+    {
+      "path": "docs/us_presence_network_wave1_merge_handoff_v1.md",
+      "sha256": "37eea6d15eee2411f85b9d47398f868ecd640e730a00852ee196599072e94098",
+      "bytes": 3975
+    },
+    {
+      "path": "outputs/us_presence_network_wave1_v1/post_principal_validation_report_v1.json",
+      "sha256": "37e3866e0d7a61ca3ef9ac8fc2108b5616211e95842ed7bb601178bf541a9f81",
+      "bytes": 1353
+    }
+  ],
+  "excluded_user_owned_file": "outputs/formal_comm_v3/第三次进度同步_v3.md",
+  "central_writeback_performed": false,
+  "relation_crosswalk_expanded": false,
+  "machine_leg_alias_migration": "pending"
+}

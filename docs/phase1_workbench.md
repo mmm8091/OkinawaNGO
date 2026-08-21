@@ -2,7 +2,7 @@
 
 硬规则：本工作台永远不能超过 300 行；只记录当前状态、计划、阻塞和下一步，详细材料放到独立文档或数据表。
 
-更新时间：2026-07-20
+更新时间：2026-08-21
 
 ## 当前定位
 
@@ -183,7 +183,7 @@
 - 解释性图表包 v0：5 张 PNG 图、4 个配套 CSV、1 个 README。
 - 旧编号模块包 v0：含 R2、R3/R4、R5、跨国路径和 coverage 等现有 brief；最终方案中跨国路径属于 R6，coverage 属基础建设，不能用旧 R11/R14 编号判定验收。
 - 第一版进度稿仍是内部历史草稿；第三次 findings-led v2 与探索前端已经形成，下一次沟通应从当前系统和冻结后图件取材。
-- HR-035 Batch 1/2、HR-010 batch 6、LCR001–004、HR-034、HR-029 和 HR-031 已于 2026-07-20 全部由负责人确认并完成受控合并；HR-023／028 为零项任务。旧中央波次无空白线上人工决定，另有12项当地／新一手材料任务，详见 `docs/principal_human_review_remaining_v19.md`。2026-08-19 新启动的 USN research-only 波次另有65项官网字段、6项关系分组归位、9项问责补强和13项服务生态决定，尚未进入中央总账或中央表。
+- HR-035 Batch 1/2、HR-010 batch 6、LCR001–004、HR-034、HR-029 和 HR-031 已于 2026-07-20 全部由负责人确认并完成受控合并；HR-023／028 为零项任务。旧中央波次无空白线上人工决定，另有12项当地／新一手材料任务，详见 `docs/principal_human_review_remaining_v19.md`。2026-08-19 新启动的 USN research-only 波次所含65项官网字段、6项关系分组归位、9项问责补强和13项服务生态决定，以及五项 USN 架构检查点，已于 2026-08-20—21 全部由负责人确认；它们仍未进入中央总账或中央表，下一步是受控集成设计。
 - 信息源备份机制已跑通：manifest 为 273 archived、2 manual_archived、18 failed、2 non-URL；失败条目不等于证据不存在。
 - 六维 coverage audit v1 已按冻结后有效层重生：121 actors／283 actor-issue／130 actor-place／295 sources，中央历史边界为 122／294／135。当前生成有 120 个 category cells，但 cell 数不是稳定契约；统计只描述公开资料样本可见性，不创建 HR-023。
 - post-HR013 edge activation 的 17 actor／54 edge 是历史审计包，不是当前网络总量；HR-024 线上决定已合并，A073 为 `online_exhausted`／当地项。HR-010 batch 6 已接受46条并新增 AI249–AI294，HR010-B6-019 保持 defer。
@@ -243,10 +243,10 @@
 9. NR-04／NR-05 分别做两个时期的有界线上补缺；结果先进入候选和人工队列。NR-06 统一完成 claim/evidence QA、历史集成决定和已核／研究双层验收。
 10. 既有 HR／报告 gate 保持有效；只有当其直接阻断前端默认 claim 时才按优先级处理，不恢复全面铺开。
 11. 2026-07-20 选题波次第一轮已完成并经交叉审计收紧：H1 只支持 E3/E4 actor–issue 可见层的来源依赖，三源效应约 84% 由 S004 单源驱动，source／actor 删除不是匹配反事实；H2 得到 9 个服务侧 registry 子集与 65 个问责侧候选（18 人审锚点／47 候选锚点），限定小样本中未编码直接跨组组织关系，人物与完整 recipient 均未测；H3 建立 12 条观察、6 条事件级载体和 17 条参与候选，只支持接触／承载路径，传播方向、独立采用、词汇增长与持续共同动员均未确认。三包均 `not_frontend_ready`；统一 JSON 只是模块目录索引，状态 `module_index_ready_observation_exports_gated`。负责人证据阅读关见 `outputs/research_wave_topic_selection_v1/principal_checkpoint_v1.md`。
-12. H2 当前线上 P0 已形成 `outputs/research_wave_h2_service_universe_v1/`：完整保存 MCIPAC 页面显示的 82 个 PO（81 active／1 inactive，但目录跨 Okinawa／Fuji／Iwakuni且不是 NGO census），提出 4 个高价值服务侧 actor 候选、2 个结构 defer，整理 55 条公开人物—职务—时间观察、10 组人物 crosswalk、9/9 服务侧立场检索、18/18 问责侧反向接口检索和 6 条一般福利接口候选。当前候选修正为“服务／慈善可进入一般福利—行政 NPO，但在有界公开语料中尚未观察到与基地问责倡议的直接组织接口”；人物共享、完整 recipient、历史机制和所有新增身份／关系仍待人审，中央表与前端均未改。
+12. H2 当前线上 P0 已形成 `outputs/research_wave_h2_service_universe_v1/`：完整保存 MCIPAC 页面显示的 82 个 PO（81 active／1 inactive，但目录跨 Okinawa／Fuji／Iwakuni且不是 NGO census），提出 4 个高价值服务侧 actor 候选、2 个结构 defer，整理 55 条公开人物—职务—时间观察、10 组人物 crosswalk、9/9 服务侧立场检索、18/18 问责侧反向接口检索和 6 条一般福利接口候选。当前候选修正为“服务／慈善可进入一般福利—行政 NPO，但在有界公开语料中尚未观察到与基地问责倡议的直接组织接口”；与本轮 USN 重叠的四个高价值服务 actor 及部分身份／结构字段已完成负责人决定，人物共享、完整 recipient、历史机制、明确 defer 项及未纳入 USN queue 的其余身份／关系仍未完成中央审定，中央表与前端均未改。
 13. 前端 actor–issue 已按 `141/142/283` 正式重生，build `4913ff70fa40dfcb`；13 个 episode 的7项内容均有中／日／英显示字段（273格、0回退），TE10–TE13 仍留研究层。26项 adapter、2项前端语言测试与 production build 通过，路径页三语及控制台经浏览器复验。
 14. 研究发布架构已完成 core-surface 复验整改：26项 catalog 分为8个完整对象、4个有限事实表面、5个无公开adapter模块、5个需继续研究、4个永久退役。公开 profile 按文件／JSON pointer 投影，不再发布混合 `relations.json`／`candidates.json` 或未消费旧 views；channel、snapshot、object envelope、Git/source receipt 均有硬校验。下一步先部署当前 `dist/`，再从9个仍缺完整adapter的模块中优先做R8法律与R9公投。
 15. 2026-07-21 修复开发服务器的旧 release 锁定：生产构建和每一代开发服务器都绑定单一不可变快照；开发模式监听活动 `client_preview` channel，指针推进后整体重启。回归测试覆盖同代不混包、channel 切换触发单次重启、缺失路径 JSON 404 和 manifest hash 篡改，`localhost:4173` 原始“数据读取失败”复现已转绿。
 16. 2026-07-21 完成前端公开展示层降噪：默认页不再暴露 build／模块码与内部字段冻结流程，子视图独立命名，方法边界收进共用帮助组件或展开层；时间事件改为紧凑行并补齐事件与动作三语。已核／研究视图共用组织详情骨架，仅数据范围不同；桌面逐路由与移动端基础可用性、控制台零错误为交付门槛。
 17. 2026-08-19 启动“对美功能／美国军事存在”多层网络波次：10张表契约、70项词表、44条门禁与10个纵向切片已定；17个美国来源节点冻结为9个服务比较 actor、6个问责比较 actor、1个公共外交项目、1个资助观察节点。现有43条异质关系已候选归位为8 money／4 service-recipient／9 affiliation／20 action-institution／1 lead／1 history-only；没有状态升级。
-18. USN 第一轮 research-only 包已完成：121 actor 名录候选（65有正式页面候选／56未确认）、服务侧18组织／项目＋29人物＋14资源流＋16 recipient、问责侧8 scoped actor＋11人物＋9行动／关系＋2资源、18项学术文献／21条命题定位。负责人检查点为 `docs/us_presence_network_wave1_principal_checkpoint_v1.md`；在新人工任务回交前不改中央事实层或前端。
+18. USN 第一轮 research-only 包、四份正式人工任务及五项研究架构决定均已完成：121 actor 名录候选中65项页面决定已回传；服务侧13项、问责侧9项及覆盖43条旧关系的6项分组决定均已确认；架构为 `accept 2 / revise 3`。下一步先交受控集成设计与预期 diff；中央事实层、43行 crosswalk、publication adapter 和前端仍未写入。

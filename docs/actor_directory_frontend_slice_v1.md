@@ -4,7 +4,7 @@
 
 在“总览”或“组织”页首先回答一个简单问题：数据库收录了哪些组织，用户到哪里可以继续核查。名录是进入组织面板、证据抽屉和关系图的入口，不承担网络结论，也不把“有官网”误写成“更重要”。
 
-数据候选来自 `outputs/actor_directory_v1/actor_directory_candidate_v1.csv`，当前仍需字段级人工审定。前端只消费 publication compiler 生成的正式 JSON，不直接读取该 CSV。
+数据候选来自 `outputs/actor_directory_v1/actor_directory_candidate_v1.csv`。65个非 `not_found` 页面候选已完成字段级人工决定，但候选 CSV 仍是 pre-human 基础层；正式消费须叠加 return、经过受控 overlay 与 publication compiler，前端不直接读取该 CSV。
 
 ## 第一张表
 
@@ -56,7 +56,7 @@
 
 ## 审定与发布门槛
 
-本候选表不能直接进入“已核视图”。每个待发布页面字段至少需要人工确认：
+本候选表不能直接进入“已核视图”。65项审定已执行；其中54个 accept、4个 revise 可进入集成候选，5个 defer、2个 reject 继续排除。每个待发布页面字段至少满足：
 
 - 页面明确属于该 actor，或明确是其上级／正式登记机构托管的页面。
 - `url_kind` 与实际归属一致。
@@ -64,7 +64,7 @@
 - 已有 `source_id` 能追溯 source log；新网址应先受控加入 source log 或正式目录 overlay。
 - 页面字段的批准不能连带批准组织立场、资金、关系、持续性或其他 registry 字段。
 
-经审定后，由目录 overlay 进入 publication compiler，并分别生成 reviewed 与 research channel。候选网址可以在研究视图显示，但必须带“待复核”标记；未通过人工审定的候选不能进入默认已核视图。
+由目录 overlay 叠加正式 return 后进入 publication compiler，并分别生成 reviewed 与 research channel。defer 候选只能在研究视图显示并带状态；reject 不进入默认正式入口。未经受控集成的基础 CSV 不能进入默认已核视图。
 
 ## 前端验收
 

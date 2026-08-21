@@ -6,7 +6,7 @@
 
 回填表：`outputs/actor_directory_v1/HR_USN_actor_directory_decisions_v1.csv`
 
-状态：待负责人决定；65 项 `decision` 均为空
+状态：项目负责人已于 2026-08-21 按研究支持稿确认全部建议；65 项决定已回填。研究支持见 `docs/human_review_research_USN_actor_directory_v1.md`，正式回传见 `docs/human_review_return_USN_actor_directory_v1.md`。
 
 ## 这次只审什么
 

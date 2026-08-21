@@ -1,6 +1,12 @@
 # USN-SERVICE-01 人工复核任务：驻军社会服务／慈善生态
 
-状态：待负责人决定。任务范围仅限 `outputs/us_presence_service_recon_v1/` 的 13 项候选，不代表中央表已修改。
+状态：负责人已于 2026-08-20 按研究支持稿确认全部建议；正式 queue 已回填。任务范围仅限 `outputs/us_presence_service_recon_v1/` 的 13 项候选，不代表中央表已修改。
+
+AI 研究支持（2026-08-19）：[`human_review_research_USN_service_ecology_v1.md`](human_review_research_USN_service_ecology_v1.md) 已完成逐项证据、反证、建议决定和可粘贴 `principal_note` 草稿。该支持稿原本不构成负责人决定；现已按负责人确认写入正式 queue。
+
+负责人回传（2026-08-20）：[`human_review_return_USN_service_ecology_v1.md`](human_review_return_USN_service_ecology_v1.md)。正式决定以回填后的 queue 和该回传记录为准；尚未授权中央合并或前端发布。
+
+下列正文保留派发时问题与建议作为 provenance。SR-HR-008 的“新 flow”初始建议已被正式 `defer` 覆盖；SR-HR-012 的三级方案已被正式 LEG0–LEG3 四级决定覆盖，不得再将派发文本当作现行规则。
 
 ## 回填办法
 

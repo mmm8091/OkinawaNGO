@@ -2,6 +2,8 @@
 
 日期：2026-08-19
 
+状态：负责人已于 2026-08-21 确认；六行规则决定全部回填。研究支持见 `docs/human_review_research_USN_relation_retype_v1.md`，正式回传见 `docs/human_review_return_USN_relation_retype_v1.md`。
+
 任务性质：语义归位，不复核原事实，不新增关系
 
 ## 为什么要做

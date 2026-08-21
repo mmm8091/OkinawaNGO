@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "package": "us_presence_relation_retype_v1_post_return",
+  "return_date": "2026-08-21",
+  "status": "principal_confirmed_rules_validated_crosswalk_unexpanded",
+  "files": [
+    {
+      "path": "outputs/us_presence_relation_retype_v1/HR_USN_relation_retype_rules_v1.csv",
+      "sha256": "8a6b1aaf7f55f60b5952ab80faec4ce6acbb96a51074ff48cb92e7e07cffb8be"
+    },
+    {
+      "path": "docs/human_review_return_USN_relation_retype_v1.md",
+      "sha256": "7b1c29a97c043c5a31452c64c7a91bd3430c2a63d2b536364f3546e34ee30685"
+    },
+    {
+      "path": "scripts/validate_hr_usn_relation_retype_return_v1.py",
+      "sha256": "f08d9d12b10c21957278b8361bced50a5df6328df891d962ca94c2396998ce13"
+    },
+    {
+      "path": "outputs/us_presence_relation_retype_v1/README.md",
+      "sha256": "1bb9799b671d8085d8230f788bd24b6357feba7dc9612d0da17401cd163bb305"
+    },
+    {
+      "path": "outputs/us_presence_relation_retype_v1/post_return_validation_report_v1.json",
+      "sha256": "360d25d07b5ebbc49a2e7b7af2633b96776577209f0edb04ca152af933ab06cb"
+    },
+    {
+      "path": "outputs/us_presence_relation_retype_v1/relation_retype_crosswalk_v1.csv",
+      "sha256": "13db63f83534aadd15cb4f0c84d416f51613d420af48074de9d5d10de6d1f302"
+    }
+  ],
+  "decision_summary": {
+    "rule_rows": 6,
+    "accept": 5,
+    "revise": 1,
+    "covered_crosswalk_rows": 43,
+    "expanded_to_crosswalk": false
+  },
+  "historical_snapshot_note": "validation_report_v1.json and manifest.json remain the immutable pre-human dispatch receipts and are not overwritten by this return."
+}

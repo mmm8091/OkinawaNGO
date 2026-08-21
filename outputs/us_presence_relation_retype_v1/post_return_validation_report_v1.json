@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "validated_at": "2026-08-21",
+  "validator": "scripts/validate_hr_usn_relation_retype_return_v1.py",
+  "rule_rows": 6,
+  "covered_crosswalk_rows": 43,
+  "decision_counts": {
+    "accept": 5,
+    "revise": 1
+  },
+  "protected_rule_definition_drift_from_dispatched_git_version": 0,
+  "all_notes_reviewer_dates_present": true,
+  "r03_exceptions_explicit": [
+    "F017",
+    "F043"
+  ],
+  "lead_exclude_commission_boundaries_verified": true,
+  "crosswalk_expansion_performed": false,
+  "central_writeback_validation": "not_performed_by_this_validator",
+  "scope_note": "This is the post-human-return validation receipt. validation_report_v1.json and manifest.json remain immutable pre-human snapshots."
+}

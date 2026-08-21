@@ -2,9 +2,9 @@
 
 Date: 2026-08-19
 
-Status: `research_only / candidate_fact / no central writeback / not frontend-ready`
+Status: `research_only / 9 principal decisions complete / no central writeback / not frontend-ready`
 
-This package extends the U.S.-origin accountability/public-diplomacy side of the current database. It does not replace the six human-checked R8 case-role facts, and it does not approve any new actor, person bridge, coordination edge, award, recipient, or causal interpretation.
+This package extends the U.S.-origin accountability/public-diplomacy side of the current database. Nine field-level decisions are complete, but no approved change has yet been merged into central actor, person, relation or source tables.
 
 ## Counts
 
@@ -29,9 +29,9 @@ This package extends the U.S.-origin accountability/public-diplomacy side of the
 
 ## Strongest new candidate facts
 
-1. Earthjustice's official FY2021 Form 990 lists `1272 OKINAWA DUGONG` at USD 276,345.50 under court-awarded attorney fees and costs. It is not coded as a grant, donation, project budget, expenditure, or payment from an Okinawa group.
-2. Official Veterans For Peace records identify chapter 1003 Ryukyu/Okinawa, named chapter contacts, a 2021 Okinawa webinar, and a 2023 report of continuing coalition work with named Okinawa anti-base groups. These can support a much denser people/coordination layer after human review.
-3. Friends of the Earth U.S. and Pacific Environment remain visible in the bounded Okinawa corpus through the 2015 NACSJ statement; this wave did not locate organization-authored Okinawa continuity material on their official domains.
+1. Earthjustice's official FY2021 Form 990 lists `1272 OKINAWA DUGONG` at USD 276,345.50 under court-awarded attorney fees and costs. A separate Judgment Fund record shows USD 280,000; the two amounts are not merged and do not create a simple OSD→Earthjustice money edge.
+2. Official Veterans For Peace records identify chapter 1003 Ryukyu/Okinawa and named people. The original USAA005 A019 endpoint has been withdrawn; the corrected coalition target remains event-only/off-graph. Hideki Yoshikawa's same-date OEJP/SDCC person bridge is approved without creating an organization alliance.
+3. Friends of the Earth U.S. now has two discrete Okinawa event observations, 2015 and 2019. Pacific Environment remains bounded mainly to the 2015 Okinawa event; neither supports a continuous project claim.
 
 ## Hard boundaries
 
@@ -41,3 +41,5 @@ This package extends the U.S.-origin accountability/public-diplomacy side of the
 - Named coalition work is not membership or funding.
 - A bounded negative search is not evidence of real-world absence.
 - New source URLs stay in this proposal package until source-log/archive review.
+
+The formal review record is `docs/human_review_return_USN_accountability_v1.md`; the package `manifest.json` remains the immutable pre-human generation receipt, so its queue/README hashes refer to dispatched bytes.

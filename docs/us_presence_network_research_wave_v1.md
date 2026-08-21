@@ -2,7 +2,7 @@
 
 日期：2026-08-19
 
-状态：第一轮线上普查完成；USN-00／01／02／03 已交付；中央事实层与前端暂不改，等待负责人复核
+状态：第一轮线上普查、四份正式人工任务及五项负责人架构检查点已于 2026-08-21 完成；USN-00／01／02／03 已交付；中央事实层与前端暂不改，下一步为受控集成设计
 
 ## 1. 研究问题
 
@@ -75,42 +75,42 @@
 - 产出：一行一个有效 actor；规范名、类别、地区、官网、官网类型、来源、证据状态。
 - 验收：正好 121 行；A072 不出现；17 个美国来源 actor 逐个核官网；新闻页不冒充官网。
 - 前端价值：组织页默认就是可筛选名录，点开可直达官网和证据。
-- 状态：候选层完成。121 个有效 actor 全部在表，65 个有正式页面候选，56 个本轮未确认；17 个美国来源 actor 中 16 个有候选入口。40 项可批量复核、25 项冲突逐行复核，见 `docs/human_review_assignment_USN_actor_directory_v1.md`。
+- 状态：候选层与65项页面决定完成（`accept 54 / revise 4 / defer 5 / reject 2`）。121 个有效 actor 全部在表，正式目录 overlay 尚待受控集成；见 `docs/human_review_return_USN_actor_directory_v1.md`。
 
 ### USN-02 驻军服务／慈善生态
 
 - 产出：九个既有 actor 加 MCCS private-organization universe 的组织、人物、资金、受赠和服务候选表。
 - 核心问题：谁提供资源，谁做中介，资源进入哪些地方机构，军方／组织如何解释这些行动。
 - 验收：捐赠、赞助、会费、服务和 opportunity 分开；合法化话语不自动升级为合法化效果。
-- 状态：第一版完成。18 条组织／项目普查、29 条人物职务、14 条资源流、16 条 recipient、12 条 L0/L1 观察、38 条来源提案和 13 项人工决定；L2 效果证据为 0。见 `outputs/us_presence_service_recon_v1/`。
+- 状态：第一版及13项负责人决定完成。18 条组织／项目普查、29 条人物职务、14 条资源流、16 条 recipient、12 条 LEG0/LEG1 观察和38条来源提案仍为 research-only；LEG2 可另建有界反应候选，LEG3 效果证据为0。见 `outputs/us_presence_service_recon_v1/`。
 
 ### USN-03 美国来源问责／公共外交节点
 
 - 产出：六个问责 actor 加 X013/X014 的案件、人物、资源、协调、负检索和人工队列。
 - 当前新增：Earthjustice 的 Okinawa Dugong 案件级法院判给律师费／成本；VFP-ROCK 章节、人物和具名协调材料。
 - 验收：一次署名与持续项目分开；case role 与联盟分开；NOFO 与 award 分开。
-- 状态：第一版完成。8 个 scoped actor、7 个新官方来源候选、11 条人物职务、9 条行动／关系、2 条资源观察和 9 项人工决定，见 `outputs/us_presence_accountability_recon_v1/`。另已把现有 43 条异质关系候选归位为 8 money／4 service-recipient／9 affiliation／20 action-institution／1 lead／1 history-only，见 `outputs/us_presence_relation_retype_v1/`。
+- 状态：第一版及9项负责人决定完成。8 个 scoped actor、7 个新官方来源候选、11 条人物职务、9 条行动／关系和2条资源观察仍为 research-only，见 `outputs/us_presence_accountability_recon_v1/`。现有43条异质关系的6项分组决定也已确认：8 money／4 service-recipient／9 affiliation／20 action-institution／1 lead／1 history-only；R03 仅将 F017、F043 的 record family 修订为 `regional_branch`。43行 crosswalk 尚未展开，见 `outputs/us_presence_relation_retype_v1/`。
 
 ### USN-04 人物网络第一条可视化切片
 
-- tracer case：VFP-ROCK—OEJP—SDCC—本地反基地 coalition—VFP 全国组织。
+- tracer case：VFP-ROCK 的具名人物与吉川秀樹的 OEJP—SDCC 点时 person bridge；VFP 全国组织只作已证结构背景，本地 coalition 留在行动／协调层，不进入人物二模图。
 - 产出：经人审的人物—组织—职务—时间表与一个时间感知二部图。
 - 停止条件：人物同名、任期或组织 crosswalk 无法从公开材料区分时，转人工／当地任务，不猜。
-- 阻塞：USN-00 契约与 USN-03 人工决定。
+- 前置条件已满足；等待受控集成设计与本切片单独启动。
 
 ### USN-05 资源网络第一条可视化切片
 
-- tracer case A：AWWA／军属俱乐部／recipient；
-- tracer case B：Earthjustice／Okinawa Dugong case；
-- tracer case C：USO Okinawa／企业 sponsor。
+- tracer case A：AWWA／军属俱乐部；
+- tracer case B：Marine Thrift Shop／recipient；
+- tracer case C：Earthjustice／Okinawa Dugong case。USO sponsor 作为后续扩展，不替代这三条获批路径。
 - 产出：三种完全不同的资源路径图，并列展示，而非合并成一个 funding network。
-- 阻塞：USN-00 契约、USN-02 结果和金额语义人审。
+- 前置条件已满足；等待受控集成设计与本切片单独启动。
 
 ### USN-06 美国政府、领馆与公共外交
 
 - 产出：NOFO、award、recipient、program、contract 五类记录；Grants.gov、USAspending、使领馆公告和组织报告逐年 crosswalk。
 - 核心判断：公开机会是否真正产生冲绳 recipient；不能只收“项目机会”。
-- 阻塞：USN-00 资金契约。
+- 前置条件已满足；等待受控集成设计与本切片单独启动。
 
 ### USN-07 “限制／维持／合法化”比较
 
@@ -126,18 +126,21 @@
 - 第三步才上线人物和资金图；只发布已审事实，候选事实单独开关。
 - 不能把 research-only 输出直接搬进现有前端。
 
-## 6. 第一轮负责人检查点
+## 6. 第一轮负责人检查点（已完成）
 
-第一轮完成后只需要负责人判断四件事：
+四份人工任务完成后，负责人于 2026-08-21 确认五件事；完整证据与正式回传见 `docs/human_review_research_USN_architecture_checkpoint_v1.md` 和 `docs/human_review_return_USN_architecture_checkpoint_v1.md`：
 
-1. 是否接受以“行动／关系的作用”替代“组织亲美／反美二分”；
-2. 是否把 VFP-ROCK 作为第一条人物网络 tracer case；
-3. 是否把 AWWA recipient 与 Earthjustice case resources 并列作为两种资源网络，而不强行合成同一资金图；
-4. 对外是否采用这句主轴：
+1. `accept`：以“行动／关系的作用”替代“组织亲美／反美二分”；
+2. `revise`：采用 LEG0–LEG3，并把地方有界反应与社会效果分开；
+3. `revise`：9／6／2 只保留为 2026-08-19 的17节点冻结基线；
+4. `revise`：人物 tracer 删除 USAA005 的 A019 错配；
+5. `accept`：AWWA／军属俱乐部、MTS／recipient 与 Earthjustice／Dugong case 分层并列，不合成同一种 funding edge。
+
+对外主轴仍需在完成至少一个纵向切片后另过解释门：
 
 > 冲绳的民间组织网络一方面提高美国军事存在的问责成本，另一方面承担驻军及其地方接口的日常维持；本研究追踪的不是抽象立场，而是人物、资金、服务、案件和组织结构如何分别产生这两类作用。
 
-负责人完成检查点后，再启动 USN-04/05/06。这样负责人保留选题和结论强度判断，AI 继续承担抽取、归一化、负检索日志、QA 和图表生成。
+下一步先提交受控集成设计与预期 diff，再一项一停启动 USN-04/05/06。这样负责人保留选题和结论强度判断，AI 继续承担抽取、归一化、负检索日志、QA 和图表生成。
 
 ## 7. 本轮禁止直接对外写出的句子
 
