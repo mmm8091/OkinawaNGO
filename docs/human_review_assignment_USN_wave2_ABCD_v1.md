@@ -68,7 +68,11 @@
 
 原队列：W2A-HR011。
 
-分别阅读 Kana-san、Ambitious、Himawari 的 recipient／地方原文。每条可多选但须说明：`practical_use / gratitude / partner_or_bridge_narration / rights_or_compensation_reframing / distance_or_rejection / insufficient`。
+补充原件包：`outputs/us_presence_network_wave2_leg2_originals_v1/`，其中冻结 4 个端点、8 条回应证据和 9 份本地归档原件。
+
+分别阅读 Kana-san、Ambitious、Himawari 的 recipient／地方原文。分类时优先使用：`receipt_or_use_only / courtesy_gratitude / practical_reinterpretation / relationship_frame_local / narrative_uptake / rights_or_compensation_reframe / distance_or_refusal / insufficient`。
+
+既有字段 `partner_or_bridge_narration` 只是兼容宽类。地方文本自己出现 goodwill／bridge／cross-border support 时可判 `relationship_frame_local`；只有同一行动或可比持续关系中存在时间在先的行动方 LEG1，才判 `narrative_uptake`。本轮原件尚未闭合后一条件。
 
 负责人决定：
 

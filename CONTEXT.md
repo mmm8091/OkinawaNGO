@@ -51,7 +51,9 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - **community mediation**: An observed resource, service, or organizational channel crossing from a base or military-family setting into Okinawan local society. It does not by itself show acceptance, dependence, influence, or durable alliance.
 - **LEG0**: A source-backed service, transfer, event, or relationship fact without a legitimation claim.
 - **LEG1**: An action-side or official narrative that explicitly frames an activity through trust, goodwill, partnership, friendship, understanding, or related legitimacy language.
-- **LEG2**: A bounded response in which a recipient, local institution, or independent source accepts, repeats, resists, or reinterprets a LEG1 narrative. A single response is not an effect estimate.
+- **LEG2**: A bounded recipient/local response to a service, transfer, or related relationship narrative. Receipt/use, courtesy, a locally authored relationship frame, narrative uptake, practical or rights-based reinterpretation, distance, and refusal remain distinct. A single response is not an effect estimate.
+- **local relationship frame**: Goodwill, bridge, friendship, cross-border support, or similar relationship language authored by a recipient or local source. It does not by itself show that a specific action-side LEG1 was transmitted.
+- **narrative uptake**: A recipient/local source repeats or claims a demonstrably earlier, comparable action-side LEG1. It still does not establish attitude change or legitimation effect.
 - **LEG3**: Repeatable attitude, behavior, or institutional-effect evidence supported by a stated research design, comparison, or repeated observation.
 - **role observation**: A sourced observation that a named person held a named role at a stated date or bounded period. A directory or filing date is an observation date unless the source explicitly states the tenure start or end.
 - **research endpoint**: A typed person, institution, installation, case, program, recipient, aggregate, or unresolved label needed to preserve a fact without inflating the actor registry.

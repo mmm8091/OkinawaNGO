@@ -1,0 +1,107 @@
+{
+  "package": "us_presence_network_wave2_w2_c_nonentry_v1",
+  "generated_on": "2026-08-22",
+  "status": "research_only_arm_not_established",
+  "files": [
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/arm_status_v1.csv",
+      "bytes": 673,
+      "sha256": "92ee8f3e0411b3b340f7ff620ec28206ca5873c3b1093d551a0c70717dbaeacf"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/candidate_screen_v1.csv",
+      "bytes": 4492,
+      "sha256": "5408377087f7e10c40596f8ce96f96a85f23f1f5fbca28c4b68e651ca4860218"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/change_notes_v1.csv",
+      "bytes": 1428,
+      "sha256": "0a30414b2fe116a9795bf04f4bf8e5c7f36888d3e90eec76c73fb84a0889d9c4"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/gate_control_comparison_v1.csv",
+      "bytes": 866,
+      "sha256": "645beba39c213bd7f596fd29006df8a62c223a952359c258a4a9c8ed221cb50e"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/negative_search_log_v1.csv",
+      "bytes": 3278,
+      "sha256": "cb031b17eaba4bdfc42d1ce0c9d60dc16fad64dcdd5f9355bfc7794e41ed8e7f"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/outcome_table_v1.csv",
+      "bytes": 188,
+      "sha256": "752e62963bf4f279e0e16be004334a52545b52559ade67faa427dc6aedfe36bf"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/principal_checkpoint_v1.md",
+      "bytes": 1848,
+      "sha256": "2ec75f36b7ded96a6b96e9cc93453dfde5c2d166eb2c64d3409de90c5961d901"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/hosei_environmental_archives_catalog_0007.pdf",
+      "bytes": 2212549,
+      "sha256": "1118dc971afa9c76f54b42c1f73eb1c334e027179f2b0531887f207e115bc0ef"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/nacsj_2012_henoko_opinion_cover.pdf",
+      "bytes": 138866,
+      "sha256": "a8de2cf72fb238b274f4cadbd836845f776826e5bb0ffa4a7082a521080447b2"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/ocean_white_paper_2005.pdf",
+      "bytes": 11369280,
+      "sha256": "a8228e7336def27573e389d789d101899cbfe5b6a4a63ab0934c3e9b71abf7d9"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/okinawa_pollution_board_terminated_cases.html",
+      "bytes": 49951,
+      "sha256": "ac3550ee4a6a5b8a5195881f38bab2afde6a085af8e0f7c3256107c904451327"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/pollution_dispute_settlement_act_2004.html",
+      "bytes": 800,
+      "sha256": "b2e5ede6447907450aadd16d512d97d3ffed4c35dac9e5ba0fa6a9859de8ab55"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/ryukyu_shimpo_2018_ryukyu_cement_refusal.html",
+      "bytes": 127024,
+      "sha256": "c11f312f0f896ce74b2f3bc3ce9d72f4b39fbf702c791a7ab104f781e7d80dae"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/yaeyama_nippo_2018_ryukyu_cement_refusal.html",
+      "bytes": 93186,
+      "sha256": "325125d9c0ec25e0493d5c25186203f3c9d682f0b63186996f7690fdd47de319"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/README.md",
+      "bytes": 4753,
+      "sha256": "d49d72f38deb2336b3a7db39e92055b2bfa44f4fa6361325c1b7d541a7d74fbb"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/selection_matching_table_v1.csv",
+      "bytes": 2286,
+      "sha256": "4e781c4e1b7f761219bd5f66e8125c532372917f14e6fedb3b103db8093650a2"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/selection_rules_v1.csv",
+      "bytes": 1921,
+      "sha256": "acb9e5c86fcbe4957962053d2584e151c39a6e7d203fc592a7bd4e3fec63b2db"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/source_receipts_v1.csv",
+      "bytes": 7063,
+      "sha256": "230dae5fa783a7676136e4c65e05487849c0d72fd80adb9ef3567235d4c3ec14"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/unexpected_findings_register_v1.csv",
+      "bytes": 277,
+      "sha256": "bd81920952f0960e81c467bf2395348476ae4bdf78f8f44c7f949efba98c635a"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_c_nonentry_v1/validation_report_v1.json",
+      "bytes": 626,
+      "sha256": "71cdaf13f8b83db0673cb6973eb15018d02c4196dca3ce96527685c8f4f3615a"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "package_id": "us_presence_network_wave2_leg2_originals_v1",
+  "status": "PASS",
+  "research_status": "research_only",
+  "checks": {
+    "required_files": 9,
+    "source_receipts": 9,
+    "archived_artifacts": 9,
+    "frozen_endpoints": 4,
+    "response_evidence_rows": 8,
+    "principal_review_inputs": 7,
+    "all_response_rows_research_only": true,
+    "all_leg3_evidence_no": true,
+    "provider_news_as_recipient_response": false,
+    "existing_hr_only": true
+  },
+  "errors": [],
+  "boundaries": [
+    "No W2-F synthesis, central writeback, publication adapter or frontend release.",
+    "Recipient/local-response evidence does not establish LEG3 legitimacy effects.",
+    "Kana-san, Ambitious and Himawari local materials do not close their referenced AWWA Form 990 rows.",
+    "Marine Thrift Shop to Lions remains provider-to-intermediary only."
+  ]
+}

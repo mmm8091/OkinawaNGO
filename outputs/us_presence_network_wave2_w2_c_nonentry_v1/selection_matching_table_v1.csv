@@ -1,0 +1,15 @@
+candidate_id,matched_episode_id,dimension,required,assessment,evidence_basis,gate_result,notes
+W2CNE-C001,TE02,project_place,yes,pass,Same Henoko/Oura Bay Futenma replacement facility,pass,Official case page anonymizes city/sea but case title and project identify the facility.
+W2CNE-C001,TE02,issue,yes,pass,Environmental and future-pollution risks tied to construction/boring/EIA,pass,Comparable environmental accountability problem.
+W2CNE-C001,TE02,action_family,yes,pass,Formal written environmental-administrative application/comment,pass,Specific instruments differ: mediation versus EIA opinion.
+W2CNE-C001,TE02,time,yes,pass,2004 case and 2004 NACSJ method-statement opinion,pass,Exact year overlap.
+W2CNE-C001,TE02,true_nonentry,yes,fail,Official receipt plus three committee meetings,fail,Statutory dismissal occurred after procedural entry.
+W2CNE-C001,TE02,primary_source,yes,pass,Okinawa Pollution Review Board official case record,pass,Supports entry and dismissal; it defeats rather than supports non-entry.
+W2CNE-C001,TE02,later_route_audit,yes,pass_bounded,Related EIA opinion route is documented,pass_bounded,Different submission and venue; no retroactive entry inference.
+W2CNE-C002,TE09,project_place,yes,pass,Same Henoko replacement project and landfill logistics,pass,Delivery occurred at company headquarters rather than the project site.
+W2CNE-C002,TE09,issue,yes,pass,Opposition to landfill construction and soil transport,pass,Comparable project issue but not referendum procedure.
+W2CNE-C002,TE09,action_family,yes,fail,Corporate request-letter delivery versus prefectural referendum,fail,Generic opposition is not enough to call action families matched.
+W2CNE-C002,TE09,time,yes,pass,2018 refusal and 2019 referendum,pass,Within one year.
+W2CNE-C002,TE09,true_nonentry,yes,pass_media_only,Two local outlets report refusal to receive the letter,conditional,Later contact-person designation does not prove letter acceptance.
+W2CNE-C002,TE09,primary_source,yes,fail,No company-issued or official nonreceipt record located,fail,Two independent local reports retain the screen candidate only.
+W2CNE-C002,TE09,later_route_audit,yes,unresolved,Same-day contact channel reported; same-letter acceptance not shown,fail,Other prefectural requests are distinct actions.

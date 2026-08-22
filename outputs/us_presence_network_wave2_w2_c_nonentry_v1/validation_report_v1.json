@@ -1,0 +1,22 @@
+{
+  "package": "us_presence_network_wave2_w2_c_nonentry_v1",
+  "validated_on": "2026-08-22",
+  "status": "PASS",
+  "checks": {
+    "required_files_present": true,
+    "readme_scope": true,
+    "arm_rows": 1,
+    "outcome_rows": 0,
+    "candidate_rows": 8,
+    "gate_control_rows": 1,
+    "unexpected_findings_rows": 0,
+    "scoped_rows_checked": 37,
+    "receipt_artifact_hashes_verified": 11,
+    "receipt_rows": 12,
+    "upstream_w2c_hashes_verified": 3,
+    "status": "PASS"
+  },
+  "interpretive_result": "arm_not_established",
+  "central_writeback": "no",
+  "frontend_status": "not_frontend_ready"
+}

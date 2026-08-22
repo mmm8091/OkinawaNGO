@@ -122,11 +122,13 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 放行前先完成三类工作：
 
-1. 完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`，同时只补一个有界的 matched non-entry arm 与最关键 recipient／LEG2 原件；
+1. 完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`；non-entry 与 recipient／LEG2 两项有界调查已经完成，结果分别为 `arm_not_established` 与 4 端点／8 条回应证据，现等负责人按 `docs/us_presence_network_wave2_prerequisite_principal_checkpoint_v1.md` 审定；
 2. **已完成图表修正**：USO 瀑布图已删除无口径的 47,000 population 标注；该数只保留在原始服务覆盖观察中，并明确是 2025 年 USO 自述的服务覆盖规模，不是当前同年同定义总人口，也不能用于人均计算；
 3. **草稿已完成、尚未发送**：发出并登记三份信息公开请求——`HQ00342310002` 的地区／日本／冲绳 allocation 与 subaward／执行分配、MCCS Okinawa／MCIPAC MCCS 年度财务报表、冲绳防卫局冲绳相关分项预算／支出／合同执行。
 
 请求文本、受理路径和 `draft_not_sent` 状态统一放在 `docs/information_disclosure_request_plan_USN_wave2_v1.md` 及其 request ledger。发出请求本身不生成事实，也不保证本轮等到答复；但本轮收尾前必须留下发送记录。W2-G 中央写回、publication adapter 和前端仍需另行授权。
+
+两项前置调查没有为了放行而降低门槛：八个 non-entry 候选没有一条获准进入 outcome，2004 年公害调停只作进入后的 gate-control；LEG2 原件则闭合 Kana-san、Ambitious、Himawari 与 MTS→Lions 四个端点的不同可见层，并保持 LEG3 为零。负责人接受 `arm_not_established` 作为有界失败后，该项可以视为研究前置完成，但不会生成负案例估计。
 
 ## 研究主动性补丁
 

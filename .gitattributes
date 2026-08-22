@@ -16,3 +16,7 @@ source_docs/source_archive/**/raw.* binary
 # W2-00 freezes downloaded official evidence bytes and verifies them by SHA-256.
 outputs/us_presence_network_wave2_w2_00_*_v1/artifacts/** binary
 outputs/us_presence_network_wave2_w2_00_*_v1/raw/** binary
+
+# Preserve W2 prerequisite evidence bytes used by package-local SHA-256 receipts.
+outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/** binary
+outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/** binary

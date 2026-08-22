@@ -1,0 +1,98 @@
+{
+  "package_id": "us_presence_network_wave2_leg2_originals_v1",
+  "status": "research_only",
+  "generated_on": "2026-08-22",
+  "scope": "four frozen recipient/local-response endpoints",
+  "files": [
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/ambitious_activity_2024.pdf",
+      "bytes": 18197075,
+      "sha256": "8a96aaac5a793f05e5de73f35493cc4c0132e4bd25d6f1d73fd0c06ceb88563b"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/ambitious_magazine_127.html",
+      "bytes": 36755,
+      "sha256": "f03dce8a6dac6b073e42b79a0b3829f719c622152ba7b4d32056a8b71b20b12d"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/ambitious_magazine_253.html",
+      "bytes": 40010,
+      "sha256": "c66aa6dc25edc995081ca0ae7a8a33501e71e74a4689e218ee8f7288236a00bb"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/ambitious_magazine_264.html",
+      "bytes": 49251,
+      "sha256": "f4ffbce726be564d6b69bacc1f28a01805c945d5110eb112ac67b50726007d26"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/ambitious_magazine_264.pdf",
+      "bytes": 2407628,
+      "sha256": "4dedb8db3d28b1f6311944a8c8c2ff4e4fedb059f6594527335c3ff042abb3ae"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/ishigaki_shakyo_news_202411.pdf",
+      "bytes": 4656052,
+      "sha256": "ffb922e2a800625adac4b7f979e73839eb7cd582c9fd839ab1eaba0f4daa140f"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/kanasan_awwa_acknowledgment_20230424.html",
+      "bytes": 48908,
+      "sha256": "36ad50a1153123911a9d55151767bc3ae0c0ae912ce3c066a45593fe89ba1529"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/kanasan_awwa_flyer_2023.pdf",
+      "bytes": 918971,
+      "sha256": "65f724ee1984f08d0fb8c4cde23d8b6f4210bab6ff26ca0b220bf9b2afc0ce05"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/recipient/ryukyu_ambitious_awwa_20240604.html",
+      "bytes": 130864,
+      "sha256": "bae44d4381bc217b78338ccb74d1f185da148736a51a8debd833b4104783443d"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/competing_interpretations_v1.csv",
+      "bytes": 2572,
+      "sha256": "3a37165b5afba7a8e19235903c576e96a76ca8037b65e5fc4b0e201d8c413cad"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/endpoint_action_crosswalk_v1.csv",
+      "bytes": 3271,
+      "sha256": "a9e032809f9549fc8f05550e30e8e4f6420eb6780f7b66f417f6e735960abd68"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/negative_search_log_v1.csv",
+      "bytes": 2224,
+      "sha256": "a1aac2cd7f42f26d377ecce04989473ed763671a41f7101a28a9aa0afc16dcc0"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/principal_checkpoint_v1.md",
+      "bytes": 2748,
+      "sha256": "153002a6928a456ec548552751f94d949f323ec27fd804dff7f6b2e361511abf"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/principal_review_queue_v1.csv",
+      "bytes": 2631,
+      "sha256": "59fba6b1cc811f5b12cb2f8eecbf2e4317a3eca43412947d0530a8a7325d8db3"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/README.md",
+      "bytes": 5203,
+      "sha256": "49482474d4192de6cab1ddaea24421cf5c15f8e162c0e288330dfa7518527ab1"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/response_evidence_excerpts_v1.csv",
+      "bytes": 6037,
+      "sha256": "6c5be77dfda8ff34a115f695db4d8cb911c482c8d61a68fbb4a1356f35663fba"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/source_receipts_v1.csv",
+      "bytes": 6017,
+      "sha256": "40794616f5da5dd1112a87557580daebecf961eef592803719decdb78fd67f35"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_leg2_originals_v1/unexpected_findings_register_v1.csv",
+      "bytes": 1266,
+      "sha256": "6a7a2bae3a152b5be31e5cbd569be66d850f540c7ffc3713fcb5e6555fe3aaaf"
+    }
+  ]
+}
