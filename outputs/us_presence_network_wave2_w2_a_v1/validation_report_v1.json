@@ -1,0 +1,43 @@
+{
+  "status": "PASS_RESEARCH_ONLY_W2_A",
+  "generated_at": "2026-08-22T17:30:00+08:00",
+  "counts": {
+    "filing_slots": 18,
+    "core_five_target_slots": 15,
+    "core_five_official_xml": 14,
+    "mts_official_xml": 2,
+    "metric_rows": 72,
+    "person_rows": 104,
+    "resource_rows": 55,
+    "recipient_rows": 6,
+    "recipient_side_awwa_acknowledgments": 3,
+    "exact_recipient_transaction_closures": 0,
+    "mediation_rows": 16,
+    "review_items": 16,
+    "w2d_endpoint_handoff_rows": 132,
+    "negative_logs": 8,
+    "source_receipts": 36
+  },
+  "checks": {
+    "core_five_14_of_15_official_xml": true,
+    "mts_2_of_3_official_xml": true,
+    "six_recipient_candidates": true,
+    "three_recipient_side_acknowledgments": true,
+    "zero_exact_recipient_row_closures": true,
+    "oesc_three_principal_confirmed_anchors": true,
+    "mts_two_official_candidate_flows_to_awwa": true,
+    "kosc_2580_held_not_relation": true,
+    "mosco_latest_blank_not_zero": true,
+    "no_leg3_rows": true,
+    "w2d_candidates_not_promoted_to_bridges": true,
+    "source_artifact_hashes_match": true,
+    "protected_central_hashes_unchanged": true,
+    "all_dedup_summaries_close_or_explicit_blank": true
+  },
+  "protected_hashes": {
+    "data/interim/01_actor_registry_initial_v0.csv": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4",
+    "data/interim/07_actor_issue_edges_initial_v0.csv": "12f54b8b9bb16597814446ab69bfab2eca4ee72619cf62733744378a0f90a10c",
+    "data/interim/21_admin_collaboration_relations_v0.csv": "687811291584524b461bceb5e33413e726d370a99c5e9fcaae83b3a15f332134",
+    "data/interim/05_source_log_initial_v0.csv": "363f21256d074cc9577752728b1f950c5c899991fefeea633e86fb78c2aaf902"
+  }
+}

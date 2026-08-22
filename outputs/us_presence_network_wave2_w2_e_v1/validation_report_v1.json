@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "generated_date": "2026-08-22",
+  "checks": {
+    "unique_spine_ids": true,
+    "unique_receipt_ids": true,
+    "two_lanes_only": true,
+    "both_periods_each_lane": true,
+    "dates_within_contract": true,
+    "all_source_refs_resolve": true,
+    "review_status_legal": true,
+    "no_central_writeback": true,
+    "no_frontend_release": true,
+    "no_genealogy_relation_type": true,
+    "local_receipt_hashes_match": true,
+    "svg_parses": true
+  },
+  "counts": {
+    "historical_spine_rows": 30,
+    "accountability_rows": 18,
+    "service_care_rows": 12,
+    "human_reviewed_rows": 6,
+    "source_receipts": 46,
+    "locally_frozen_new_sources": 5,
+    "claims": 7
+  },
+  "boundaries": {
+    "package_scope": "research_only",
+    "central_writeback": "no",
+    "publication_adapter": "not_created",
+    "frontend_release": "not_created",
+    "historical_actorization": "not_created"
+  }
+}

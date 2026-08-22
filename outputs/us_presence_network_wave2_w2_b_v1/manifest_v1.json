@@ -1,0 +1,205 @@
+{
+  "package": "us_presence_network_wave2_w2_b_v1",
+  "build_date": "2026-08-22",
+  "scope": "research_only",
+  "central_writeback": "no",
+  "frontend_status": "not_frontend_ready",
+  "file_count": 39,
+  "files": [
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/README.md",
+      "sha256": "a5ebe6f826a1161d46c1f466418664b5064692d243247fe86f202ff1d23d982d",
+      "bytes": 7161
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/allocation_waterfall_v1.csv",
+      "sha256": "d280232045d9f7ef1f792a15f05f7b971df1157c8a5692decaa4b96364fb165e",
+      "bytes": 4531
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/nmcrs_annual_reports_financials.html",
+      "sha256": "790c064357e0486e6bc5b9d4ec1abf4293c81ee33c434852662c2203f8bf4d2f",
+      "bytes": 75870
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/nmcrs_get_help.html",
+      "sha256": "f080306198df2f4bfab7303f20bc621e173107dfb49b8f42d11ff4206b712df2",
+      "bytes": 77135
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/nmcrs_okinawa_location.html",
+      "sha256": "594fa51d0905c595c3e8b7622fb190949141b08713f37f7a6508c46901e3460e",
+      "bytes": 91993
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/redcross_armed_forces_volunteer.html",
+      "sha256": "dde93eb0f6121c465e99c0cab1634f1d8ed51a9837a10d6c4e57ac65c34b7702",
+      "bytes": 136212
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/redcross_overseas_military_support.html",
+      "sha256": "a50ec7a1ca554d2d6e453093cc4185daea77fbcae456accc6f73fd20dc911817",
+      "bytes": 166924
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_accounts_request.json",
+      "sha256": "ec26111d0d806d2803f577342da7ef39e57225cabd0760fd08898938d75c26fb",
+      "bytes": 143
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_accounts_response.json",
+      "sha256": "0ca8f61243380a3ad7d30b18163b7b00d185af48b8f606c67e2c46ad416adfbd",
+      "bytes": 446
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_api_contract_accounts.md",
+      "sha256": "f3a7e00f1e8eff1f951b85baa62d6954652de6a5c84a3654574568b124f2db4a",
+      "bytes": 3275
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_api_contract_funding.md",
+      "sha256": "30c06ffdd1327d2a99e1bb5cb52cd88c2bd7d02f951696d4f81d83c000717c01",
+      "bytes": 7346
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_api_contract_funding_rollup.md",
+      "sha256": "358946f28a8b1c4fa01a46d7f62f27a2367aba1bbebe42b911dff5a046480a14",
+      "bytes": 1155
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_funding_request.json",
+      "sha256": "c08bd93d47f28010f8a2377bb81227607568019b24d62189b678f33fd0147774",
+      "bytes": 129
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_funding_response.json",
+      "sha256": "60253216d7a4839e04b7b5240c9bccd2e7f90ed7197b31e133cbd8a6ce5b8956",
+      "bytes": 4117
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_funding_rollup_request.json",
+      "sha256": "7fd7df93f113c0622c4efc4ba6a93b6ad01147b749b5a98829d02610d06777a5",
+      "bytes": 47
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/usaspending_funding_rollup_response.json",
+      "sha256": "f841f5e80605c8a61f6351e7c57d4623c143bccb17c8f1c8861b64880c7fc3a6",
+      "bytes": 127
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_aec_18000.html",
+      "sha256": "7a3aa13d0fcd0af6a9d88163b1703982474e4b3863fca13e950b1871478b8fc9",
+      "bytes": 35868
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_aec_2018_18000.html",
+      "sha256": "d439cd026322beb7e25a330025a2e9b44dcaf1bb80772250f322cffb217c1afd",
+      "bytes": 32925
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_aec_2025_16000.html",
+      "sha256": "494a9e036788b4b14097da48cb9158d1481395104a36492fd70f9d0613f6f870",
+      "bytes": 35013
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_ak_kogyo_1000000jpy.html",
+      "sha256": "2171575c6192ee44e7a10361cd41ac8babb00862b7f8aac96a871280816fb8e7",
+      "bytes": 36023
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_chubb_1000000jpy.html",
+      "sha256": "4ab67d9127494b6da98d224b6ec5cc8f37589d8c8d47d75c9457d79f5e6efe9c",
+      "bytes": 32778
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_mbc_12_years.html",
+      "sha256": "6058687d31213b17f950423d32da73ec9e98b39153121015ff9ccdc8056a0573",
+      "bytes": 35043
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_mbc_2018_40000.html",
+      "sha256": "59919813e857440cf45fc2ce59a4a9e7363d979309f0f4130188f7a49cb9a241",
+      "bytes": 32701
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_schwab_volunteers.html",
+      "sha256": "a99ac816e04b3503712a81385fcfdcf59f3caf2826ef7bfa2ac3418151f61ccb",
+      "bytes": 35874
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_okinawa_story_2021_service_salute.html",
+      "sha256": "edfde2b9d7c409015d138e3d252e782205620b7d2387dedee6fb3104787bfa64",
+      "bytes": 38715
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_pacific_okinawa_outreach_torii.html",
+      "sha256": "0607dc3dd2caf952a45842f9d5ed98f7c31c69ce9a6423cb0ac022cddbb2a21c",
+      "bytes": 37381
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/uso_pacific_story_center_service_examples.html",
+      "sha256": "ca213578ab7559687ca0bb240699b82d7ccff6eccbf1641cc38297c7951f2356",
+      "bytes": 38268
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/change_notes_v1.csv",
+      "sha256": "85d124844a9ec65013d7d115dd53eca4f99a45822b7b46d22564069d588a1986",
+      "bytes": 4520
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/federal_award_allocation_audit_v1.csv",
+      "sha256": "1d1ecde7c41f0ec53feb0590cba6c3445021ae26a6cb00a044c95d9a79a87e00",
+      "bytes": 9367
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/fig_allocation_visibility_waterfall_v1.svg",
+      "sha256": "f3208a75d0ae2f74d17a03f37bcc1f77a2f14d7caffb7a81af07b33348c29119",
+      "bytes": 11653
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/hierarchy_and_site_year_v1.csv",
+      "sha256": "5a0a9af69fa192d052557f782e38211e67045fd6dffe6015133f0ce99cc15903",
+      "bytes": 6758
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/negative_search_log_v1.csv",
+      "sha256": "851030103e5bacd43ad999d3242ade76d4a495d7c94d5127c27dafa3162a604c",
+      "bytes": 5784
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/principal_review_queue_v1.csv",
+      "sha256": "43026dd63d3e960a4804d2e3cad8a18e72f5a8bf3e488adec05d1fee6b4a604c",
+      "bytes": 4129
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/service_capacity_observations_v1.csv",
+      "sha256": "d7c109ecf3407eedd1f6a4e9584197ec017c1a73566ecce834b1135e5169c192",
+      "bytes": 7081
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/service_function_boundary_v1.csv",
+      "sha256": "a68ad4075f8d8a1134a2a251286c957c75a3913e6b226397c19b7c12ea588c61",
+      "bytes": 7475
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/source_receipts_v1.csv",
+      "sha256": "d10cf8d47aa31c63e30a517b1a08e93f946263fab94cf805ee90f921e91ef14b",
+      "bytes": 20363
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/sponsor_and_local_flow_observations_v1.csv",
+      "sha256": "960770ad9835d2d68dbf21f6b347544e390191b80ffee470ffecaca946ecff18",
+      "bytes": 7190
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/validation_report_v1.json",
+      "sha256": "36902c1eb5911a8fdbd8f9c6ce27951753f6538d69d16deb2b3588c704568283",
+      "bytes": 7014
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/w2_d_endpoint_candidates_v1.csv",
+      "sha256": "6860f4e8e24dd1a866ffbc053fd8c95cfaa43ceb9e225db1fa93316620843280",
+      "bytes": 16192
+    }
+  ]
+}

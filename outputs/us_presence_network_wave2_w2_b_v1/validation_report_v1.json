@@ -1,0 +1,233 @@
+{
+  "package": "us_presence_network_wave2_w2_b_v1",
+  "build_date": "2026-08-22",
+  "status": "PASS_RESEARCH_ONLY",
+  "check_count": 44,
+  "pass_count": 44,
+  "fail_count": 0,
+  "checks": [
+    {
+      "check_id": "W2B-V001",
+      "status": "PASS",
+      "detail": "source receipts=34; expected=34"
+    },
+    {
+      "check_id": "W2B-V-COUNT-hierarchy_and_site_year_v1.csv",
+      "status": "PASS",
+      "detail": "hierarchy_and_site_year_v1.csv: 16 rows; expected=16"
+    },
+    {
+      "check_id": "W2B-V-COUNT-service_capacity_observations_v1.csv",
+      "status": "PASS",
+      "detail": "service_capacity_observations_v1.csv: 15 rows; expected=15"
+    },
+    {
+      "check_id": "W2B-V-COUNT-sponsor_and_local_flow_observations_v1.csv",
+      "status": "PASS",
+      "detail": "sponsor_and_local_flow_observations_v1.csv: 17 rows; expected=17"
+    },
+    {
+      "check_id": "W2B-V-COUNT-federal_award_allocation_audit_v1.csv",
+      "status": "PASS",
+      "detail": "federal_award_allocation_audit_v1.csv: 19 rows; expected=19"
+    },
+    {
+      "check_id": "W2B-V-COUNT-service_function_boundary_v1.csv",
+      "status": "PASS",
+      "detail": "service_function_boundary_v1.csv: 10 rows; expected=10"
+    },
+    {
+      "check_id": "W2B-V-COUNT-allocation_waterfall_v1.csv",
+      "status": "PASS",
+      "detail": "allocation_waterfall_v1.csv: 9 rows; expected=9"
+    },
+    {
+      "check_id": "W2B-V-COUNT-negative_search_log_v1.csv",
+      "status": "PASS",
+      "detail": "negative_search_log_v1.csv: 10 rows; expected=10"
+    },
+    {
+      "check_id": "W2B-V-COUNT-change_notes_v1.csv",
+      "status": "PASS",
+      "detail": "change_notes_v1.csv: 6 rows; expected=6"
+    },
+    {
+      "check_id": "W2B-V-COUNT-principal_review_queue_v1.csv",
+      "status": "PASS",
+      "detail": "principal_review_queue_v1.csv: 7 rows; expected=7"
+    },
+    {
+      "check_id": "W2B-V-COUNT-w2_d_endpoint_candidates_v1.csv",
+      "status": "PASS",
+      "detail": "w2_d_endpoint_candidates_v1.csv: 28 rows; expected=28"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-hierarchy_and_site_year_v1.csv",
+      "status": "PASS",
+      "detail": "hierarchy_and_site_year_v1.csv: 16/16 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-service_capacity_observations_v1.csv",
+      "status": "PASS",
+      "detail": "service_capacity_observations_v1.csv: 15/15 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-sponsor_and_local_flow_observations_v1.csv",
+      "status": "PASS",
+      "detail": "sponsor_and_local_flow_observations_v1.csv: 17/17 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-federal_award_allocation_audit_v1.csv",
+      "status": "PASS",
+      "detail": "federal_award_allocation_audit_v1.csv: 19/19 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-service_function_boundary_v1.csv",
+      "status": "PASS",
+      "detail": "service_function_boundary_v1.csv: 10/10 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-allocation_waterfall_v1.csv",
+      "status": "PASS",
+      "detail": "allocation_waterfall_v1.csv: 9/9 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-negative_search_log_v1.csv",
+      "status": "PASS",
+      "detail": "negative_search_log_v1.csv: 10/10 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-change_notes_v1.csv",
+      "status": "PASS",
+      "detail": "change_notes_v1.csv: 6/6 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-principal_review_queue_v1.csv",
+      "status": "PASS",
+      "detail": "principal_review_queue_v1.csv: 7/7 unique IDs"
+    },
+    {
+      "check_id": "W2B-V-UNIQUE-w2_d_endpoint_candidates_v1.csv",
+      "status": "PASS",
+      "detail": "w2_d_endpoint_candidates_v1.csv: 28/28 unique IDs"
+    },
+    {
+      "check_id": "W2B-V002",
+      "status": "PASS",
+      "detail": "illegal review_status values=[]"
+    },
+    {
+      "check_id": "W2B-V003",
+      "status": "PASS",
+      "detail": "all rows are research_only"
+    },
+    {
+      "check_id": "W2B-V004",
+      "status": "PASS",
+      "detail": "all rows prohibit central writeback"
+    },
+    {
+      "check_id": "W2B-V005",
+      "status": "PASS",
+      "detail": "missing receipt references=[]"
+    },
+    {
+      "check_id": "W2B-V006",
+      "status": "PASS",
+      "detail": "receipt supports unknown row IDs=[]"
+    },
+    {
+      "check_id": "W2B-V007",
+      "status": "PASS",
+      "detail": "artifact errors=[]"
+    },
+    {
+      "check_id": "W2B-V008",
+      "status": "PASS",
+      "detail": "award total=72000000.0"
+    },
+    {
+      "check_id": "W2B-V009",
+      "status": "PASS",
+      "detail": "transactions=5; sum=72000000.0"
+    },
+    {
+      "check_id": "W2B-V010",
+      "status": "PASS",
+      "detail": "rollup=41212463.29"
+    },
+    {
+      "check_id": "W2B-V011",
+      "status": "PASS",
+      "detail": "accounts=41212463.29"
+    },
+    {
+      "check_id": "W2B-V012",
+      "status": "PASS",
+      "detail": "typed obligation records sum=41212463.29"
+    },
+    {
+      "check_id": "W2B-V013",
+      "status": "PASS",
+      "detail": "award overview and bounded search both expose zero public subaward rows"
+    },
+    {
+      "check_id": "W2B-V014",
+      "status": "PASS",
+      "detail": "current operating centers=6"
+    },
+    {
+      "check_id": "W2B-V015",
+      "status": "PASS",
+      "detail": "current typed presences represented=8"
+    },
+    {
+      "check_id": "W2B-V016",
+      "status": "PASS",
+      "detail": "Okinawa budget remains blank and typed as an allocation gap"
+    },
+    {
+      "check_id": "W2B-V017",
+      "status": "PASS",
+      "detail": "region, area and Okinawa allocation stages contain no synthetic amounts"
+    },
+    {
+      "check_id": "W2B-V018",
+      "status": "PASS",
+      "detail": "distinct AEC USD18k rows=[('W2B2-SP008', '2018-03-01'), ('W2B2-SP011', '2024-10-16')]"
+    },
+    {
+      "check_id": "W2B-V019",
+      "status": "PASS",
+      "detail": "Red Cross/NMCRS handoff keeps service and money provenance typed"
+    },
+    {
+      "check_id": "W2B-V020",
+      "status": "PASS",
+      "detail": "all seven principal decisions remain open"
+    },
+    {
+      "check_id": "W2B-V022",
+      "status": "PASS",
+      "detail": "W2-D person-role candidates=15"
+    },
+    {
+      "check_id": "W2B-V023",
+      "status": "PASS",
+      "detail": "W2-D exposes one precisely typed ARC/NMCRS service interface"
+    },
+    {
+      "check_id": "W2B-V024",
+      "status": "PASS",
+      "detail": "co-location/referral does not auto-promote to organization bridge"
+    },
+    {
+      "check_id": "W2B-V021",
+      "status": "PASS",
+      "detail": "synthetic national-to-Okinawa money rows=[]"
+    }
+  ],
+  "scope": "research_only",
+  "central_writeback": "no",
+  "frontend_status": "not_frontend_ready"
+}

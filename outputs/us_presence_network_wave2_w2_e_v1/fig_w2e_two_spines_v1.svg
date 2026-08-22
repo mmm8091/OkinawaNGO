@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#F7F4EC"/>
+<style>text{font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif;fill:#16343A}.title{font-size:34px;font-weight:700}.sub{font-size:17px;fill:#536A6D}.lane{font-size:23px;font-weight:700}.tick{font-size:14px;fill:#65777A}.label{font-size:14px;font-weight:600}.note{font-size:15px;fill:#6A5A45}.legend{font-size:14px;fill:#526568}</style>
+<text x="70" y="65" class="title">1972-2012：同一驻军周围的两条组织基础设施历史线</text>
+<text x="70" y="98" class="sub">圆点是有来源的时间锚；上方为服务／照护，下方为问责。密度差异首先反映记录制度，不等于活动强弱。</text>
+<rect x="1024.0" y="140" width="20" height="570" fill="#D8E1DE" opacity="0.75"/>
+<text x="1049.0" y="160" class="note">1998：NPO法新增一种认证／公开通道；不是共同起点</text>
+<line x1="150.0" y1="180" x2="150.0" y2="700" stroke="#D9DFDC" stroke-width="1"/>
+<text x="150.0" y="735" text-anchor="middle" class="tick">1972</text>
+<line x1="422.0" y1="180" x2="422.0" y2="700" stroke="#D9DFDC" stroke-width="1"/>
+<text x="422.0" y="735" text-anchor="middle" class="tick">1980</text>
+<line x1="762.0" y1="180" x2="762.0" y2="700" stroke="#D9DFDC" stroke-width="1"/>
+<text x="762.0" y="735" text-anchor="middle" class="tick">1990</text>
+<line x1="1034.0" y1="180" x2="1034.0" y2="700" stroke="#D9DFDC" stroke-width="1"/>
+<text x="1034.0" y="735" text-anchor="middle" class="tick">1998</text>
+<line x1="1102.0" y1="180" x2="1102.0" y2="700" stroke="#D9DFDC" stroke-width="1"/>
+<text x="1102.0" y="735" text-anchor="middle" class="tick">2000</text>
+<line x1="1442.0" y1="180" x2="1442.0" y2="700" stroke="#D9DFDC" stroke-width="1"/>
+<text x="1442.0" y="735" text-anchor="middle" class="tick">2010</text>
+<line x1="1510.0" y1="180" x2="1510.0" y2="700" stroke="#D9DFDC" stroke-width="1"/>
+<text x="1510.0" y="735" text-anchor="middle" class="tick">2012</text>
+<line x1="150" y1="320" x2="1510" y2="320" stroke="#B7791F" stroke-width="3" opacity="0.55"/>
+<text x="135" y="327" text-anchor="end" class="lane" fill="#B7791F">服务／照护基础设施</text>
+<line x1="150" y1="610" x2="1510" y2="610" stroke="#0F6B6D" stroke-width="3" opacity="0.55"/>
+<text x="135" y="617" text-anchor="end" class="lane" fill="#0F6B6D">问责基础设施</text>
+<circle cx="490.0" cy="610" r="8" fill="#0F6B6D" stroke="#0F6B6D" stroke-width="3"/>
+<line x1="490.0" y1="620" x2="490.0" y2="672" stroke="#0F6B6D" stroke-width="1.5"/>
+<text x="490.0" y="688" text-anchor="middle" class="label">1982：嘉手纳首轮诉讼</text>
+<circle cx="932.0" cy="610" r="8" fill="#0F6B6D" stroke="#0F6B6D" stroke-width="3"/>
+<line x1="932.0" y1="600" x2="926.0" y2="535" stroke="#0F6B6D" stroke-width="1.5"/>
+<text x="926.0" y="528" text-anchor="middle" class="label">1995：女性反基地组织形成</text>
+<circle cx="940.0" cy="610" r="8" fill="#0F6B6D" stroke="#0F6B6D" stroke-width="3"/>
+<circle cx="1000.0" cy="610" r="8" fill="#0F6B6D" stroke="#0F6B6D" stroke-width="3"/>
+<line x1="1000.0" y1="620" x2="988.0" y2="670" stroke="#0F6B6D" stroke-width="1.5"/>
+<text x="988.0" y="686" text-anchor="middle" class="label">1997：直接请求与条例</text>
+<circle cx="1008.0" cy="610" r="8" fill="#0F6B6D" stroke="#0F6B6D" stroke-width="3"/>
+<circle cx="1034.0" cy="610" r="8" fill="#0F6B6D" stroke="#0F6B6D" stroke-width="3"/>
+<circle cx="1170.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1204.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="1204.0" y1="620" x2="1196.0" y2="672" stroke="#0F6B6D" stroke-width="1.5"/>
+<text x="1196.0" y="688" text-anchor="middle" class="label">2003：儒艮案进入美国法院</text>
+<circle cx="1238.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="1238.0" y1="600" x2="1250.0" y2="535" stroke="#0F6B6D" stroke-width="1.5"/>
+<text x="1250.0" y="528" text-anchor="middle" class="label">2004：调停程序门前排除</text>
+<circle cx="1246.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1254.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1272.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1374.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1442.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="1442.0" y1="600" x2="1432.0" y2="535" stroke="#0F6B6D" stroke-width="1.5"/>
+<text x="1432.0" y="528" text-anchor="end" class="label">2010：67团体声明</text>
+<circle cx="1476.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1484.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1510.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1518.0" cy="610" r="8" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="1518.0" y1="620" x2="1510.0" y2="672" stroke="#0F6B6D" stroke-width="1.5"/>
+<text x="1510.0" y="688" text-anchor="end" class="label">2012：与那国临时载体</text>
+<circle cx="150.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="150.0" y1="310" x2="164.0" y2="239" stroke="#B7791F" stroke-width="1.5"/>
+<text x="164.0" y="232" text-anchor="start" class="label">1972：AWWA伞状组织说法／福利机构治理转移</text>
+<circle cx="158.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="388.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="388.0" y1="310" x2="388.0" y2="251" stroke="#B7791F" stroke-width="1.5"/>
+<text x="388.0" y="244" text-anchor="middle" class="label">1979：照护个案→政策提言</text>
+<circle cx="422.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="456.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="524.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="558.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="558.0" y1="330" x2="558.0" y2="376" stroke="#B7791F" stroke-width="1.5"/>
+<text x="558.0" y="392" text-anchor="middle" class="label">1984：国会证言</text>
+<circle cx="592.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="830.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1000.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<circle cx="1034.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<line x1="1034.0" y1="330" x2="1026.0" y2="382" stroke="#B7791F" stroke-width="1.5"/>
+<text x="1026.0" y="398" text-anchor="middle" class="label">1998：机构关闭／功能交接</text>
+<circle cx="1068.0" cy="320" r="8" fill="#F7F4EC" stroke="#B7791F" stroke-width="3" stroke-dasharray="3 2"/>
+<path d="M 388.0 245 Q 490.0 185 592.0 245" fill="none" stroke="#B7791F" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="490.0" y="182" text-anchor="middle" class="note">照护个案→提言→听证／国会（政策归因仍有界）</text>
+<circle cx="1020" cy="800" r="7" fill="#0F6B6D"/><text x="1035" y="805" class="legend">既有人审锚点</text>
+<circle cx="1180" cy="800" r="7" fill="#F7F4EC" stroke="#0F6B6D" stroke-width="3" stroke-dasharray="3 2"/><text x="1195" y="805" class="legend">研究候选／待原件</text>
+<text x="70" y="845" class="sub">关键修正：功能边界并非天然封闭。至少一条福利机构路径把照护案件转成权利与政策主张；当代是否仍有桥接，需另做同口径审计。</text>
+</svg>

@@ -1,0 +1,92 @@
+{
+  "package": "us_presence_network_wave2_w2_e_v1",
+  "generated_date": "2026-08-22",
+  "status": "research_only_principal_checkpoint_pending",
+  "files": [
+    {
+      "path": "claim_table_v1.csv",
+      "bytes": 3881,
+      "sha256": "a592ed7c03f84d33b738331c578b11139915b6696501b17de02a8dfed69d54f2"
+    },
+    {
+      "path": "fig_w2e_two_spines_v1.svg",
+      "bytes": 8406,
+      "sha256": "0559e1ae4435cea7577cf6286fce4530f35d0543d2cec05b7f69bc802fc0b9ff"
+    },
+    {
+      "path": "historical_spine_v1.csv",
+      "bytes": 20350,
+      "sha256": "8e3d5f47b1ff3fd4c38e469ee520fbb75d4241eff5cce6e59e915ba28ee0de2f"
+    },
+    {
+      "path": "literature_comparison_v1.csv",
+      "bytes": 11150,
+      "sha256": "2230f4dc92ac8e52c9c8af51716f6099de83ac48b92f624fa8fe4a5e10d2a5b7"
+    },
+    {
+      "path": "local_retrieval_candidates_v1.csv",
+      "bytes": 3554,
+      "sha256": "276d4bca11a9079ebb589b6b754e89eb99f009db1ebf17a85286889af4d2ccb3"
+    },
+    {
+      "path": "principal_checkpoint_v1.md",
+      "bytes": 2410,
+      "sha256": "64c625b7f05f473388dc51847abc4d909b9a6f2c04f6213d4d92dbe748e35e4d"
+    },
+    {
+      "path": "raw/diet_justice_committee_1984_04_20.html",
+      "bytes": 229858,
+      "sha256": "c49fab2a25ac452e2d8fb8432153bd7e57f315951e2b3fb02dbd7b706ed0f4d2"
+    },
+    {
+      "path": "raw/international_welfare_consultation_archive_guide.html",
+      "bytes": 70337,
+      "sha256": "18667919b69271bed815524e8eecf139fe555fb5de45025d1926279903824eab"
+    },
+    {
+      "path": "raw/okinawa_archives_journal_23_2021.pdf",
+      "bytes": 1186002,
+      "sha256": "b9d561632e2fd79f30e6b5072b0facfc688eed1f99861579ec32efe38df1d818"
+    },
+    {
+      "path": "raw/okinawa_womens_history_reference_2026.pdf",
+      "bytes": 3822796,
+      "sha256": "39eb8b3afe9d14779fb9108ebd09fd51a2592c34652f6d270e4154e6ddaa733c"
+    },
+    {
+      "path": "raw/ryukyuan_american_welfare_council_1971_photo_record.html",
+      "bytes": 345374,
+      "sha256": "3cd71b5b64dc05591c7540d211c303b224872ba5aad97222ad42c08243aa98b6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2786,
+      "sha256": "32c32a9be3b1ce62035d36ac46f76aacccac300b756e8d04ebc0e618f63f07ce"
+    },
+    {
+      "path": "record_regime_comparison_v1.csv",
+      "bytes": 4685,
+      "sha256": "02661b01f8d488947a769b209d3d22c36c91420b0dfc31d28cfa530acd98df9d"
+    },
+    {
+      "path": "search_log.md",
+      "bytes": 1508,
+      "sha256": "d52a7352e4d684f9bdea0e243a08cd642bce1026f059d6ee1d354a782c0e01f2"
+    },
+    {
+      "path": "source_coverage_v1.csv",
+      "bytes": 2271,
+      "sha256": "7ca9f5f016406be7dcfcd8b33b260b8cff3ddb5e03d57e6cbbeb3513fa717d2a"
+    },
+    {
+      "path": "source_receipts_v1.csv",
+      "bytes": 29726,
+      "sha256": "512245651107ac60628e663843daa1bde8ae3daa46d75d6b6838ebf86128e249"
+    },
+    {
+      "path": "validation_report_v1.json",
+      "bytes": 951,
+      "sha256": "3cdd361181e87949880d7da261566f4444b111901dc5e8a4dadccb0f07fa7b0a"
+    }
+  ]
+}

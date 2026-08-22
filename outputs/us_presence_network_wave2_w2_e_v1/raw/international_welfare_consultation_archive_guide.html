@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="UTF-8">
+	<meta name="description" content="沖縄の公文書を扱っています。">
+	<meta name="keywords" content="一筆地調査図,土地所有申請書,一筆限調書,沖縄戦,移民,兵籍簿,軍雇用員カード,軍歴,立法院,空中写真,復帰,米軍基地,アイスバーグ作戦,公文書,米軍,土地,琉球政府,米国国立公文書館,沖縄県文書,USCAR,行政,通貨切替,交通変更">
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/css/default.css">
+	<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/style.css">
+	<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/css/video.css">
+	<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/css/dha.css">
+	<script src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/js/jquery-1.12.4.js" type="text/javascript"></script>
+	<script src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/js/jquery.cookie.js" type="text/javascript"></script>
+	<script>
+		$(function() {
+			$('nav.pc ul.main_nav > li').hover(function() {
+				$("a img", this).attr('src', $("a img", this).attr('src').replace('_off', '_on'));
+				$("ul.sub_nav", this).css("display", "block");
+			}, function() {
+				if (!$(this).hasClass('current')) {
+					$("a img", this).attr('src', $("a img", this).attr('src').replace('_on', '_off'));
+					$("ul.sub_nav", this).css("display", "none");
+				} else {
+					$("ul.sub_nav", this).css("display", "none");
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			$('#nav nav.sp ul.main_nav > li').click(function() {
+				if ($(this).hasClass('active')) {
+					$(this).removeClass("active");
+					$("ul.sub_nav", this).slideUp("fast");
+				} else {
+					$('#nav nav.sp ul.main_nav > li').removeClass("active");
+					$("#nav nav.sp ul.main_nav > li ul.sub_nav").css("display", "none");
+					$(this).addClass("active");
+					$("ul.sub_nav", this).slideDown("fast");
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			$(".material_menu .menu_tab").click(function() {
+				$(".material_menu .menu_tab").each(function(i, elem) {
+					$("img", elem).attr('src', $("img", elem).attr('src').replace('_on', '_off'));
+					$(elem).removeClass("active");
+				});
+				$("img", this).attr('src', $("img", this).attr('src').replace('_off', '_on'));
+				$(this).addClass("active");
+
+				if ($(this).hasClass("tab_01")) {
+					$(".material_achive").removeClass("active").css("display", "none");
+					$(".material_achive.tab_01_list").prop("style", false).addClass("active");
+				}
+				if ($(this).hasClass("tab_02")) {
+					$(".material_achive").css("display", "none");
+					$(".material_achive.tab_02_list").prop("style", false).addClass("active");
+				}
+				if ($(this).hasClass("tab_03")) {
+					$(".material_achive").css("display", "none");
+					$(".material_achive.tab_03_list").prop("style", false).addClass("active");
+				}
+			});
+		})
+	</script>
+	<script>
+		$(function() {
+			var fz = $.cookie('fontSize');
+			//size_s = 75%;
+			//size_n = 100%
+			//size_l = 150%
+			if (fz) {
+				if (fz == 'size_s') {
+					$('body').css('fontSize', '75%');
+				} else if (fz == 'size_l') {
+					$('body').css('fontSize', '150%');
+				} else {
+					$('body').css('fontSize', '100%');
+				}
+			}
+			//サイズ変更時にクッキーに保存
+			$('.select_size .size_btn').click(function() {
+				$('.select_size .size_btn').removeClass("on");
+				$(this).addClass("on");
+				var clk_size = null;
+				if ($(this).hasClass("size_s")) {
+					clk_size = "size_s";
+				} else if ($(this).hasClass("size_l")) {
+					clk_size = "size_l";
+				} else {
+					clk_size = "size_n";
+				}
+
+				$.cookie('fontSize', clk_size);
+				//クリックしたサイズを反映
+				if (clk_size == 'size_s') {
+					$('body').css('font-size', '75%');
+				} else if (clk_size == 'size_n') {
+					$('body').css('font-size', '100%');
+				} else if (clk_size == 'size_l') {
+					$('body').css('font-size', '150%');
+				}
+			});
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/js/slick/slick.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/js/slick/slick-theme.css" media="screen" />
+	<script src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/js/slick/slick.min.js" type="text/javascript"></script>
+	<script>
+		$(function() {
+			$('.slide_block').slick({
+				infinite: true,
+				dots: true,
+				slidesToShow: 1,
+				centerMode: true, //要素を中央寄せ
+				centerPadding: '520px', //両サイドの見えている部分のサイズ
+				autoplay: true, //自動再生
+				responsive: [{
+					breakpoint: 520,
+					settings: {
+						centerMode: false,
+					}
+				}]
+			});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/js/fancybox/dist/jquery.fancybox.min.css" media="screen" />
+	<script src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/js/fancybox/dist/jquery.fancybox.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$("[data-fancybox]").fancybox({
+			// Options will go here
+		});
+	</script>
+	<script>
+		$(function() {
+			$("#header #btn_sp_menu").click(function() {
+				$("nav.sp .main_nav").slideToggle();
+			});
+		})
+	</script>
+	<title>国際福祉相談所文書 &#8211; 沖縄県公文書館</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+<link rel='dns-prefetch' href='//s3.amazonaws.com' />
+<link rel="alternate" type="application/rss+xml" title="沖縄県公文書館 &raquo; フィード" href="https://www.archives.pref.okinawa.jp/feed" />
+<link rel="alternate" type="application/rss+xml" title="沖縄県公文書館 &raquo; コメントフィード" href="https://www.archives.pref.okinawa.jp/comments/feed" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.archives.pref.okinawa.jp\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://www.archives.pref.okinawa.jp/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css' media='all' />
+<style id='xo-event-calendar-event-calendar-style-inline-css' type='text/css'>
+.xo-event-calendar{font-family:Helvetica Neue,Helvetica,Hiragino Kaku Gothic ProN,Meiryo,MS PGothic,sans-serif;overflow:auto;position:relative}.xo-event-calendar td,.xo-event-calendar th{padding:0!important}.xo-event-calendar .calendar:nth-child(n+2) .month-next,.xo-event-calendar .calendar:nth-child(n+2) .month-prev{visibility:hidden}.xo-event-calendar table{background-color:transparent;border-collapse:separate;border-spacing:0;color:#333;margin:0;padding:0;table-layout:fixed;width:100%}.xo-event-calendar table caption,.xo-event-calendar table tbody,.xo-event-calendar table td,.xo-event-calendar table tfoot,.xo-event-calendar table th,.xo-event-calendar table thead,.xo-event-calendar table tr{background:transparent;border:0;margin:0;opacity:1;outline:0;padding:0;vertical-align:baseline}.xo-event-calendar table table tr{display:table-row}.xo-event-calendar table table td,.xo-event-calendar table table th{display:table-cell;padding:0}.xo-event-calendar table.xo-month{border:1px solid #ccc;border-right-width:0;margin:0 0 8px;padding:0}.xo-event-calendar table.xo-month td,.xo-event-calendar table.xo-month th{background-color:#fff;border:1px solid #ccc;padding:0}.xo-event-calendar table.xo-month caption{caption-side:top}.xo-event-calendar table.xo-month .month-header{display:flex;flex-flow:wrap;justify-content:center;margin:4px 0}.xo-event-calendar table.xo-month .month-header>span{flex-grow:1;text-align:center}.xo-event-calendar table.xo-month button{background-color:transparent;border:0;box-shadow:none;color:#333;cursor:pointer;margin:0;overflow:hidden;padding:0;text-shadow:none;width:38px}.xo-event-calendar table.xo-month button[disabled]{cursor:default;opacity:.3}.xo-event-calendar table.xo-month button>span{text-align:center;vertical-align:middle}.xo-event-calendar table.xo-month button span.nav-prev{border-bottom:2px solid #333;border-left:2px solid #333;display:inline-block;font-size:0;height:13px;transform:rotate(45deg);width:13px}.xo-event-calendar table.xo-month button span.nav-next{border-right:2px solid #333;border-top:2px solid #333;display:inline-block;font-size:0;height:13px;transform:rotate(45deg);width:13px}.xo-event-calendar table.xo-month button:hover span.nav-next,.xo-event-calendar table.xo-month button:hover span.nav-prev{border-width:3px}.xo-event-calendar table.xo-month>thead th{border-width:0 1px 0 0;color:#333;font-size:.9em;font-weight:700;padding:1px 0;text-align:center}.xo-event-calendar table.xo-month>thead th.sunday{color:#d00}.xo-event-calendar table.xo-month>thead th.saturday{color:#00d}.xo-event-calendar table.xo-month .month-week{border:0;overflow:hidden;padding:0;position:relative;width:100%}.xo-event-calendar table.xo-month .month-week table{border:0;margin:0;padding:0}.xo-event-calendar table.xo-month .month-dayname{border-width:1px 0 0 1px;bottom:0;left:0;position:absolute;right:0;top:0}.xo-event-calendar table.xo-month .month-dayname td{border-width:1px 1px 0 0;padding:0}.xo-event-calendar table.xo-month .month-dayname td div{border-width:1px 1px 0 0;font-size:100%;height:1000px;line-height:1.2em;padding:4px;text-align:right}.xo-event-calendar table.xo-month .month-dayname td div.other-month{opacity:.6}.xo-event-calendar table.xo-month .month-dayname td div.today{color:#00d;font-weight:700}.xo-event-calendar table.xo-month .month-dayname-space{height:1.5em;position:relative;top:0}.xo-event-calendar table.xo-month .month-event{background-color:transparent;position:relative;top:0}.xo-event-calendar table.xo-month .month-event td{background-color:transparent;border-width:0 1px 0 0;padding:0 1px 2px}.xo-event-calendar table.xo-month .month-event-space{background-color:transparent;height:1.5em}.xo-event-calendar table.xo-month .month-event-space td{border-width:0 1px 0 0}.xo-event-calendar table.xo-month .month-event tr,.xo-event-calendar table.xo-month .month-event-space tr{background-color:transparent}.xo-event-calendar table.xo-month .month-event-title{background-color:#ccc;border-radius:3px;color:#666;display:block;font-size:.8em;margin:1px;overflow:hidden;padding:0 4px;text-align:left;white-space:nowrap}.xo-event-calendar p.holiday-title{font-size:90%;margin:0;padding:2px 0;vertical-align:middle}.xo-event-calendar p.holiday-title span{border:1px solid #ccc;margin:0 6px 0 0;padding:0 0 0 18px}.xo-event-calendar .loading-animation{left:50%;margin:-20px 0 0 -20px;position:absolute;top:50%}@media(min-width:600px){.xo-event-calendar .calendars.columns-2{-moz-column-gap:15px;column-gap:15px;display:grid;grid-template-columns:repeat(2,1fr);row-gap:5px}.xo-event-calendar .calendars.columns-2 .month-next,.xo-event-calendar .calendars.columns-2 .month-prev{visibility:hidden}.xo-event-calendar .calendars.columns-2 .calendar:first-child .month-prev,.xo-event-calendar .calendars.columns-2 .calendar:nth-child(2) .month-next{visibility:visible}.xo-event-calendar .calendars.columns-3{-moz-column-gap:15px;column-gap:15px;display:grid;grid-template-columns:repeat(3,1fr);row-gap:5px}.xo-event-calendar .calendars.columns-3 .month-next,.xo-event-calendar .calendars.columns-3 .month-prev{visibility:hidden}.xo-event-calendar .calendars.columns-3 .calendar:first-child .month-prev,.xo-event-calendar .calendars.columns-3 .calendar:nth-child(3) .month-next{visibility:visible}.xo-event-calendar .calendars.columns-4{-moz-column-gap:15px;column-gap:15px;display:grid;grid-template-columns:repeat(4,1fr);row-gap:5px}.xo-event-calendar .calendars.columns-4 .month-next,.xo-event-calendar .calendars.columns-4 .month-prev{visibility:hidden}.xo-event-calendar .calendars.columns-4 .calendar:first-child .month-prev,.xo-event-calendar .calendars.columns-4 .calendar:nth-child(4) .month-next{visibility:visible}}.xo-event-calendar.xo-calendar-loading .xo-months{opacity:.5}.xo-event-calendar.xo-calendar-loading .loading-animation{animation:loadingCircRot .8s linear infinite;border:5px solid rgba(0,0,0,.2);border-radius:50%;border-top-color:#4285f4;height:40px;width:40px}@keyframes loadingCircRot{0%{transform:rotate(0deg)}to{transform:rotate(359deg)}}.xo-event-calendar.is-style-legacy table.xo-month .month-header>span{font-size:120%;line-height:28px}.xo-event-calendar.is-style-regular table.xo-month button:not(:hover):not(:active):not(.has-background){background-color:transparent;color:#333}.xo-event-calendar.is-style-regular table.xo-month button>span{text-align:center;vertical-align:middle}.xo-event-calendar.is-style-regular table.xo-month button>span:not(.dashicons){font-size:2em;overflow:hidden;text-indent:100%;white-space:nowrap}.xo-event-calendar.is-style-regular table.xo-month .month-next,.xo-event-calendar.is-style-regular table.xo-month .month-prev{height:2em;width:2em}.xo-event-calendar.is-style-regular table.xo-month .month-header{align-items:center;display:flex;justify-content:center;padding:.2em 0}.xo-event-calendar.is-style-regular table.xo-month .month-header .calendar-caption{flex-grow:1}.xo-event-calendar.is-style-regular table.xo-month .month-header>span{font-size:1.1em}.xo-event-calendar.is-style-regular table.xo-month>thead th{background:#fafafa;font-size:.8em}.xo-event-calendar.is-style-regular table.xo-month .month-dayname td div{font-size:1em;padding:.2em}.xo-event-calendar.is-style-regular table.xo-month .month-dayname td div.today{color:#339;font-weight:700}.xo-event-calendar.is-style-regular .holiday-titles{display:inline-flex;flex-wrap:wrap;gap:.25em 1em}.xo-event-calendar.is-style-regular p.holiday-title{font-size:.875em;margin:0 0 .5em}.xo-event-calendar.is-style-regular p.holiday-title span{margin:0 .25em 0 0;padding:0 0 0 1.25em}
+
+</style>
+<style id='xo-event-calendar-simple-calendar-style-inline-css' type='text/css'>
+.xo-simple-calendar{box-sizing:border-box;font-family:Helvetica Neue,Helvetica,Hiragino Kaku Gothic ProN,Meiryo,MS PGothic,sans-serif;margin:0;padding:0;position:relative}.xo-simple-calendar td,.xo-simple-calendar th{padding:0!important}.xo-simple-calendar .calendar:nth-child(n+2) .month-next,.xo-simple-calendar .calendar:nth-child(n+2) .month-prev{visibility:hidden}.xo-simple-calendar .calendar table.month{border:0;border-collapse:separate;border-spacing:1px;box-sizing:border-box;margin:0 0 .5em;min-width:auto;outline:0;padding:0;table-layout:fixed;width:100%}.xo-simple-calendar .calendar table.month caption,.xo-simple-calendar .calendar table.month tbody,.xo-simple-calendar .calendar table.month td,.xo-simple-calendar .calendar table.month tfoot,.xo-simple-calendar .calendar table.month th,.xo-simple-calendar .calendar table.month thead,.xo-simple-calendar .calendar table.month tr{background:transparent;border:0;margin:0;opacity:1;outline:0;padding:0;vertical-align:baseline}.xo-simple-calendar .calendar table.month caption{caption-side:top;font-size:1.1em}.xo-simple-calendar .calendar table.month .month-header{align-items:center;display:flex;justify-content:center;width:100%}.xo-simple-calendar .calendar table.month .month-header .month-title{flex-grow:1;font-size:1em;font-weight:400;letter-spacing:.1em;line-height:1em;padding:0;text-align:center}.xo-simple-calendar .calendar table.month .month-header button{background:none;background-color:transparent;border:0;font-size:1.4em;line-height:1.4em;margin:0;outline-offset:0;padding:0;width:1.4em}.xo-simple-calendar .calendar table.month .month-header button:not(:hover):not(:active):not(.has-background){background-color:transparent}.xo-simple-calendar .calendar table.month .month-header button:hover{opacity:.6}.xo-simple-calendar .calendar table.month .month-header button:disabled{cursor:auto;opacity:.3}.xo-simple-calendar .calendar table.month .month-header .month-next,.xo-simple-calendar .calendar table.month .month-header .month-prev{background-color:transparent;color:#333;cursor:pointer}.xo-simple-calendar .calendar table.month tr{background:transparent;border:0;outline:0}.xo-simple-calendar .calendar table.month td,.xo-simple-calendar .calendar table.month th{background:transparent;border:0;outline:0;text-align:center;vertical-align:middle;word-break:normal}.xo-simple-calendar .calendar table.month th{font-size:.8em;font-weight:700}.xo-simple-calendar .calendar table.month td{font-size:1em;font-weight:400}.xo-simple-calendar .calendar table.month .day.holiday{color:#333}.xo-simple-calendar .calendar table.month .day.other{opacity:.3}.xo-simple-calendar .calendar table.month .day>span{box-sizing:border-box;display:inline-block;padding:.2em;width:100%}.xo-simple-calendar .calendar table.month th>span{color:#333}.xo-simple-calendar .calendar table.month .day.sun>span,.xo-simple-calendar .calendar table.month th.sun>span{color:#ec0220}.xo-simple-calendar .calendar table.month .day.sat>span,.xo-simple-calendar .calendar table.month th.sat>span{color:#0069de}.xo-simple-calendar .calendars-footer{margin:.5em;padding:0}.xo-simple-calendar .calendars-footer ul.holiday-titles{border:0;display:inline-flex;flex-wrap:wrap;gap:.25em 1em;margin:0;outline:0;padding:0}.xo-simple-calendar .calendars-footer ul.holiday-titles li{border:0;list-style:none;margin:0;outline:0;padding:0}.xo-simple-calendar .calendars-footer ul.holiday-titles li:after,.xo-simple-calendar .calendars-footer ul.holiday-titles li:before{content:none}.xo-simple-calendar .calendars-footer ul.holiday-titles .mark{border-radius:50%;display:inline-block;height:1.2em;vertical-align:middle;width:1.2em}.xo-simple-calendar .calendars-footer ul.holiday-titles .title{font-size:.7em;vertical-align:middle}@media(min-width:600px){.xo-simple-calendar .calendars.columns-2{-moz-column-gap:15px;column-gap:15px;display:grid;grid-template-columns:repeat(2,1fr);row-gap:5px}.xo-simple-calendar .calendars.columns-2 .month-next,.xo-simple-calendar .calendars.columns-2 .month-prev{visibility:hidden}.xo-simple-calendar .calendars.columns-2 .calendar:first-child .month-prev,.xo-simple-calendar .calendars.columns-2 .calendar:nth-child(2) .month-next{visibility:visible}.xo-simple-calendar .calendars.columns-3{-moz-column-gap:15px;column-gap:15px;display:grid;grid-template-columns:repeat(3,1fr);row-gap:5px}.xo-simple-calendar .calendars.columns-3 .month-next,.xo-simple-calendar .calendars.columns-3 .month-prev{visibility:hidden}.xo-simple-calendar .calendars.columns-3 .calendar:first-child .month-prev,.xo-simple-calendar .calendars.columns-3 .calendar:nth-child(3) .month-next{visibility:visible}.xo-simple-calendar .calendars.columns-4{-moz-column-gap:15px;column-gap:15px;display:grid;grid-template-columns:repeat(4,1fr);row-gap:5px}.xo-simple-calendar .calendars.columns-4 .month-next,.xo-simple-calendar .calendars.columns-4 .month-prev{visibility:hidden}.xo-simple-calendar .calendars.columns-4 .calendar:first-child .month-prev,.xo-simple-calendar .calendars.columns-4 .calendar:nth-child(4) .month-next{visibility:visible}}.xo-simple-calendar .calendar-loading-animation{left:50%;margin:-20px 0 0 -20px;position:absolute;top:50%}.xo-simple-calendar.xo-calendar-loading .calendars{opacity:.3}.xo-simple-calendar.xo-calendar-loading .calendar-loading-animation{animation:SimpleCalendarLoadingCircRot .8s linear infinite;border:5px solid rgba(0,0,0,.2);border-radius:50%;border-top-color:#4285f4;height:40px;width:40px}@keyframes SimpleCalendarLoadingCircRot{0%{transform:rotate(0deg)}to{transform:rotate(359deg)}}.xo-simple-calendar.is-style-regular table.month{border-collapse:collapse;border-spacing:0}.xo-simple-calendar.is-style-regular table.month tr{border:0}.xo-simple-calendar.is-style-regular table.month .day>span{border-radius:50%;line-height:2em;padding:.1em;width:2.2em}.xo-simple-calendar.is-style-frame table.month{background:transparent;border-collapse:collapse;border-spacing:0}.xo-simple-calendar.is-style-frame table.month thead tr{background:#eee}.xo-simple-calendar.is-style-frame table.month tbody tr{background:#fff}.xo-simple-calendar.is-style-frame table.month td,.xo-simple-calendar.is-style-frame table.month th{border:1px solid #ccc}.xo-simple-calendar.is-style-frame .calendars-footer{margin:8px 0}.xo-simple-calendar.is-style-frame .calendars-footer ul.holiday-titles .mark{border:1px solid #ccc;border-radius:0}
+
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.archives.pref.okinawa.jp/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wp_pushpress_jqueryui_css-css' href='https://www.archives.pref.okinawa.jp/wp-content/plugins/pushpress-integration/css/jquery-ui.min.css?ver=1.11.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_pushpress_css-css' href='https://www.archives.pref.okinawa.jp/wp-content/plugins/pushpress-integration/css/pushpress.css?ver=1.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_pushpress_icons-css' href='//s3.amazonaws.com/icomoon.io/27761/PushPressiconfont/style.css?ver=1.6.6' type='text/css' media='all' />
+<link rel='stylesheet' id='rc_style-css' href='https://www.archives.pref.okinawa.jp/wp-content/plugins/reserve-calendar/assets/rc_style.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://www.archives.pref.okinawa.jp/wp-includes/css/dashicons.min.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='xo-event-calendar-css' href='https://www.archives.pref.okinawa.jp/wp-content/plugins/xo-event-calendar/css/xo-event-calendar.css?ver=3.2.10' type='text/css' media='all' />
+<link rel='stylesheet' id='addtoany-css' href='https://www.archives.pref.okinawa.jp/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16' type='text/css' media='all' />
+<script type='text/javascript' id='addtoany-core-js-before'>
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "共有",
+	Save: "ブックマーク",
+	Subscribe: "購読",
+	Email: "メール",
+	Bookmark: "ブックマーク",
+	ShowAll: "すべて表示する",
+	ShowLess: "小さく表示する",
+	FindServices: "サービスを探す",
+	FindAnyServiceToAddTo: "追加するサービスを今すぐ探す",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "メールでシェアする",
+	SubscribeViaEmail: "メールで購読する",
+	BookmarkInYourBrowser: "ブラウザにブックマーク",
+	BookmarkInstructions: "このページをブックマークするには、 Ctrl+D または \u2318+D を押下。",
+	AddToYourFavorites: "お気に入りに追加",
+	SendFromWebOrProgram: "任意のメールアドレスまたはメールプログラムから送信",
+	EmailProgram: "メールプログラム",
+	More: "詳細&#8230;",
+	ThanksForSharing: "共有ありがとうございます !",
+	ThanksForFollowing: "フォローありがとうございます !"
+};
+</script>
+<script type='text/javascript' defer src='https://static.addtoany.com/menu/page.js' id='addtoany-core-js'></script>
+<script type='text/javascript' src='https://www.archives.pref.okinawa.jp/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.archives.pref.okinawa.jp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' defer src='https://www.archives.pref.okinawa.jp/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1' id='addtoany-jquery-js'></script>
+<link rel="https://api.w.org/" href="https://www.archives.pref.okinawa.jp/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.archives.pref.okinawa.jp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.archives.pref.okinawa.jp/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel="canonical" href="https://www.archives.pref.okinawa.jp/okinawa_related/10752" />
+<link rel='shortlink' href='https://www.archives.pref.okinawa.jp/?p=10752' />
+<link rel="alternate" type="application/json+oembed" href="https://www.archives.pref.okinawa.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.archives.pref.okinawa.jp%2Fokinawa_related%2F10752" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.archives.pref.okinawa.jp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.archives.pref.okinawa.jp%2Fokinawa_related%2F10752&#038;format=xml" />
+    <script>
+      let rc_ajaxUrl = 'https://www.archives.pref.okinawa.jp/wp-admin/admin-ajax.php';
+    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+<link rel="icon" href="/wp-content/uploads/logoicon-100x100.jpg" sizes="32x32" />
+<link rel="icon" href="/wp-content/uploads/logoicon.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="/wp-content/uploads/logoicon.jpg" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/logoicon.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<style>
+#rc_body, #rc_modal{
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+</style>		<style type="text/css" id="wp-custom-css">
+			.xo-event-calendar table.xo-month .month-event-space {
+    height: 1.5em;
+    background-color: transparent;
+    display: none;
+}
+
+.xo-event-calendar table.xo-month .month-dayname td div {
+    height: 1000px;
+    padding: 7px 4px;
+    border-width: 1px 1px 0 0;
+    text-align: center;
+    font-size: 100%;
+    line-height: 1.2em;
+}
+
+.xo-event-calendar table.xo-month .month-dayname-space {
+    position: relative;
+    top: 0;
+    height: 1.5em;
+    padding: 5px;
+}
+
+.xo-event-calendar p.holiday-title {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 90%;
+    vertical-align: middle;
+    display: none;
+}		</style>
+		</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<span id="btn_sp_menu" class="sp"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/btn_sp_menu.png" alt=""></span>
+			<div class="header_block">
+				<script>
+					$(function() {
+						$("#search_btn").click(function() {
+							$("#search_form").submit();
+						})
+					})
+				</script>
+				<h1><a href="https://www.archives.pref.okinawa.jp"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/logo.png" alt="沖縄県公文書館"></a></h1>
+				<div class="option_box">
+					<span class="btn_home"><a href="https://www.archives.pref.okinawa.jp"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/btn_header_home.png" alt="ホームへ"></a></span><span class="btn_home"><a href="https://www.archives.pref.okinawa.jp/about"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/btn_header_about.png" alt="当館について"></a></span><form id="search_form" action="https://www.archives.pref.okinawa.jp" method="GET">
+	<input type="text" name="s" id="search_text" value="" placeholder="サイト内検索"><img id="search_btn" src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/btn_rens.png" alt="">
+</form>					<span class="select_size pc"><span class="title">文字サイズ</span><span class="size_btn size_s" style="font-size: 12px;">A</span><span class="size_btn size_m on" style="font-size: 14px;">A</span><span class="size_btn size_l" style="font-size: 16px;">A</span></span>
+				</div>
+			</div>
+			<div id="nav">
+	<nav class="pc">
+		<ul class="main_nav">
+						<li class="">
+				<a href="https://www.archives.pref.okinawa.jp/guide"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/nav_01_off.png" alt="利用案内"></a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/guide">利用案内</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/to_visit">来館して利用する</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/no_visit">来館せずに利用する</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/application">出版物等掲載許可申請</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/DHA">特定歴史公文書等の利用請求</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/prefecture_staff">沖縄県職員のみなさまへ</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/tour">団体見学</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/interview-request">取材希望の方へ</a></li>
+				</ul>
+			</li>
+			<li class="current">
+				<a href="https://www.archives.pref.okinawa.jp/archive_information"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/nav_02_on.png" alt="資料紹介"></a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/ryukyu_government/">琉球政府文書</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/prefecture_document/">沖縄県文書</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/uscar_document/">米国収集資料</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/okinawa_related/">沖縄関係資料</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/news/that_day/">あの日の沖縄</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/qanda/">レファレンスQ&A</a></li>
+				</ul>
+			</li>
+			<li class="">
+				<a href="https://www.archives.pref.okinawa.jp/event_information"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/nav_03_off.png" alt="行事案内"></a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/event_information/exhibition_course/">イベント案内</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/event_information/past_exhibitions/">過去の展示会を見る</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/event_information/on_demand/">過去の講演講座を見る</a></li>
+				</ul>
+			</li>
+			<li class="">
+				<a href="https://www.archives.pref.okinawa.jp/publications"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/nav_04_off.png" alt="刊行物"></a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/archives/">公文書館だより</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/research/">研究紀要</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/pathfinder/">パスファインダー</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/other/">その他</a></li>
+				</ul>
+			</li>
+			<li class="">
+				<a href="https://www.archives.pref.okinawa.jp/search_materials"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/nav_05_off.png" alt="資料検索"></a>
+				<ul class="sub_nav">
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/OPA100_SSMK_KEY.aspx">所蔵資料目録</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/searchpics.aspx">写真</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/sitv_movie.aspx">映像</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/search_materials/photo">空中写真</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/SearchAudio.aspx" target="blank">音声</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/search_materials/official_bulletin">公報</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/OPA_HWBS.aspx" target="blank">引渡文書目録</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/search_materials/reference_tool">参考ツール</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<nav class="sp">
+		<ul class="main_nav">
+			<li>
+				<a class="nav01">利用案内</a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/guide">利用案内</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/to_visit">来館して利用する</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/no_visit">来館せずに利用する</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/application">出版物等掲載許可申請</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/prefecture_staff">沖縄県職員のみなさまへ</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/tour">団体見学</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/guide/interview-request">取材希望の方へ</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="nav02">資料紹介</a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/ryukyu_government/">琉球政府文書</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/prefecture_document/">沖縄県文書</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/uscar_document/">USCAR文書</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/okinawa_related/">沖縄関連資料</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/news/that_day/">あの日の沖縄</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/qanda/">レファレンスQ&A</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="nav03">行事案内</a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/event_information/exhibition_course/">イベント案内</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/event_information/past_exhibitions/">過去の展示会を見る</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/event_information/on_demand/">過去の講演講座を見る</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="nav04">刊行物</a>
+				<ul class="sub_nav">
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/archives/">公文書館だより</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/research/">研究紀要</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/pathfinder/">パスファインダー</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/publication/other/">その他</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="nav05">資料検索</a>
+				<ul class="sub_nav">
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/OPA100_SSMK_KEY.aspx">所蔵資料目録</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/searchpics.aspx">写真</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/sitv_movie.aspx">映像</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/search_materials/photo">空中写真</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/SearchAudio.aspx" target="blank">音声</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/search_materials/official_bulletin">公報</a></li>
+					<li><a href="https://www2.archives.pref.okinawa.jp/opa/OPA_HWBS.aspx" target="blank">引渡文書目録</a></li>
+					<li><a href="https://www.archives.pref.okinawa.jp/search_materials/reference_tool">参考ツール</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</div>		</div><!-- header -->
+		<div id="pankuzu">
+						<div class="pankuzu" typeof="BreadcrumbList" vocab="http://schema.org/">
+				<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="沖縄県公文書館へ移動" href="https://www.archives.pref.okinawa.jp" class="home"><span property="name">沖縄県公文書館</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="沖縄関係資料へ移動" href="https://www.archives.pref.okinawa.jp/okinawa_related" class="archive post-okinawa_related-archive"><span property="name">沖縄関係資料</span></a><meta property="position" content="2"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name">国際福祉相談所文書</span><meta property="position" content="3"></span>			</div>
+		</div>
+		<div id="contents" class="sub">
+<div id="content" class="sub">
+	<article class="main_article">
+		<h1 class="page_title">沖縄関連資料</h1>
+		<div id="prefecture_document" class="post_content single">
+									
+				
+<article class="post_content post10752 detail">
+	<h1>国際福祉相談所文書</h1>
+		<div class="content_block">
+
+				<p><strong>【資料の名称】国際福祉相談所文書　</strong><br />
+<strong>【資料ガイド】沖縄関係資料＞団体文書＞国際福祉相談所文書</strong></p>
+<p><strong>【文書の概要】</strong><br />
+　国際福祉相談所は、1958年に国際社会事業団沖縄代表部として設立されて以来、1998年の閉鎖まで40年にわたって、国際養子縁組を中心に国際結婚や離婚、国際児に関する相談業務を担い、戦後沖縄における国際福祉と児童福祉の向上に貢献した団体です。主に、国際養子縁組やさまざまな相談業務、無国籍児問題の解決や外国籍、無国籍児の福祉向上に向けた取り組み、国際児を含む青少年の健全育成などに尽力しました。なお、団体の名称は、1972年に社会福祉法人国際福祉沖縄事務所に、1980年に社会福祉法人国際福祉会国際福祉相談所に改称されました。<br />
+　</p>
+<p>　国際福祉相談所文書は大きく２つのシリーズに分かれます。一つは、理事会議事録や事業報告書、予算や職員に関する書類など団体の運営に関する文書です。もう一つは、相談事案ごとに綴られたケース・ファイルや養子縁組に関する書類、無国籍児問題に関する書類などの業務内容に関する文書が含まれています。</p>
+<p>　本資料群は、2009年、国際福祉相談所にて長くケースワーカーを務めた平田正代元所長より寄贈されました。</p>
+<p><strong>【シリーズ・リスト】</strong><br />
+　1. 運営に関する文書<br />
+　2. ケース・ファイル</p>
+<p><strong>【数量】95件</strong></p>
+<p><strong>【公開日】2019年5月21日</strong></p>
+<p>&nbsp;</p>
+<h3>国際児童年―沖縄からの提言<br />
+（無国籍児問題に関する資料　資料コード：0000146880）</h3>
+<p><a href="/wp-content/uploads/copy_a4_a32560_1_resize.jpg"><img decoding="async" class="size-medium wp-image-10764 alignnone" src="/wp-content/uploads/copy_a4_a32560_1_resize-211x300.jpg" alt="" width="211" height="300" srcset="https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32560_1_resize-211x300.jpg 211w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32560_1_resize-70x100.jpg 70w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32560_1_resize-141x200.jpg 141w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32560_1_resize.jpg 640w" sizes="(max-width: 211px) 100vw, 211px" /></a><a href="/wp-content/uploads/copy_a4_a32561_2_resize.jpg"><img decoding="async" loading="lazy" class="size-medium wp-image-10765 alignnone" src="/wp-content/uploads/copy_a4_a32561_2_resize-212x300.jpg" alt="" width="212" height="300" srcset="https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32561_2_resize-212x300.jpg 212w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32561_2_resize-71x100.jpg 71w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32561_2_resize-141x200.jpg 141w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32561_2_resize.jpg 640w" sizes="(max-width: 212px) 100vw, 212px" /></a></p>
+<p>1979年、国際福祉沖縄事務所は、国際児童年にあわせて「国際児童年―沖縄からの提言」を発表しました。提言は、共同通信社から配信され、沖縄の無国籍児の実態を広く日本社会に知らせ大きな反響を呼びました。そのなかで、無国籍児の発生事例を示しながら、父母のどちらかが日本国籍ならばその子どもに日本国籍を与えられるよう国籍法を改正し、無国籍児の発生を防ぐべきだと訴えています。この提言が国を動かし、1985年の国籍法改正につながりました。</p>
+<h3> 国際結婚に関する資料（資料コード：0000146881）</h3>
+<p><a href="/wp-content/uploads/copy_a4_a32098.jpg"><img decoding="async" loading="lazy" class="size-medium wp-image-10766 alignnone" src="/wp-content/uploads/copy_a4_a32098-233x300.jpg" alt="" width="233" height="300" srcset="https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32098-233x300.jpg 233w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32098-768x990.jpg 768w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32098-794x1024.jpg 794w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32098-78x100.jpg 78w, https://www.archives.pref.okinawa.jp/wp-content/uploads/copy_a4_a32098-155x200.jpg 155w" sizes="(max-width: 233px) 100vw, 233px" /></a></p>
+<p>国際福祉沖縄事務所の1970年度事業報告書には、国際結婚をした夫婦の相談事業とグループ活動を強化し「国際結婚夫婦に関する調査」を実施したとあります。このように同事務所は、国際結婚の家庭の実態調査を通して相談事業の充実を図っていました。<br />
+本資料は、国際結婚をした日本人妻たちの対談および米国人夫たちの対談記録です。交際のきっかけや日々の生活、子育てへの意識の違い、海外での生活や親類との交際、人種への意識など、1970年当時の国際結婚家庭のリアルな実態が読み取れます。</p>
+<p>&nbsp;</p>
+<p><strong>【参考文献】</p>
+<p></strong>『戦後沖縄における労働とジェンダーに関する基礎的研究 戦後沖縄をめぐる国際福祉相談所関連資料群 ―平田正代資料集―』（研究代表者 成定洋子）<br />
+2023年度科学研究費助成事業・基礎研究（C）　</p>
+<p><a href="/wp-content/uploads/3b539779080144c21231e9c484b46e35.pdf"><u>表紙、はじめに、目次、写真、年譜</u></a></p>
+<p><a href="/wp-content/uploads/61e150ff35e88508712b2d746f437f5c.pdf"><u>第I部（著作・講演編）-１</u></a></p>
+<p><a href="/wp-content/uploads/31ed209fe129ce05c832b87a37b02dc3.pdf"><u>第I部（著作・講演編）-２</u></a></p>
+<p><a href="/wp-content/uploads/89817ca7832268dc7007f6e8cfa90883.pdf"><u>第I部（著作・講演編）-３、主要著作一覧、主要講演一覧</u></a></p>
+<p><a href="/wp-content/uploads/9fde36cb69fb9fe1a05d2d9018ab0858.pdf"><u>第Ⅱ部（関連資料編）-１</u></a></p>
+<p><a href="/wp-content/uploads/c544964d094327fed697d661098779a0.pdf"><u>第Ⅱ部（関連資料編）-２</u></a></p>
+<p><a href="/wp-content/uploads/eba27dbf49c80b3b3d1d4a877d0df51c.pdf"><u>第Ⅲ部（追悼集）</u></a></p>
+<p><a href="/wp-content/uploads/80e937f31270a49aa9b92fd74cf83605.pdf"><u>第Ⅳ部（新聞記事・俳句・エッセイ編）-１</u></a></p>
+<p><a href="/wp-content/uploads/8e6149230f712c3d55f2d7636b9fc1cc-1.pdf"><u>第Ⅳ部（新聞記事・俳句・エッセイ編）-２</u></a></p>
+<p><a href="/wp-content/uploads/e2104093eefcfb4eca42f020bc3e8f03-1.pdf"><u>第Ⅳ部（新聞記事・俳句・エッセイ編）-３</u></a></p>
+<p><a href="/wp-content/uploads/f38bc3bb31b8af269dcfe019de3eec3e.pdf"><u>奥付、裏表紙</u></a></p>
+<p>
+※参考文献についてのお問い合わせは当該文献の編集・発行元にお願い申し上げます。</p>
+<div class="addtoany_share_save_container addtoany_content addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://www.archives.pref.okinawa.jp/okinawa_related/10752" data-a2a-title="国際福祉相談所文書"><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fwww.archives.pref.okinawa.jp%2Fokinawa_related%2F10752&amp;linkname=%E5%9B%BD%E9%9A%9B%E7%A6%8F%E7%A5%89%E7%9B%B8%E8%AB%87%E6%89%80%E6%96%87%E6%9B%B8" title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fwww.archives.pref.okinawa.jp%2Fokinawa_related%2F10752&amp;linkname=%E5%9B%BD%E9%9A%9B%E7%A6%8F%E7%A5%89%E7%9B%B8%E8%AB%87%E6%89%80%E6%96%87%E6%9B%B8" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_line" href="https://www.addtoany.com/add_to/line?linkurl=https%3A%2F%2Fwww.archives.pref.okinawa.jp%2Fokinawa_related%2F10752&amp;linkname=%E5%9B%BD%E9%9A%9B%E7%A6%8F%E7%A5%89%E7%9B%B8%E8%AB%87%E6%89%80%E6%96%87%E6%9B%B8" title="Line" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div>
+
+			</div>
+</article>
+				
+					<div class="navigation post">
+		<div class="nav-links">
+		
+								<a href="https://www.archives.pref.okinawa.jp/okinawa_related/"><span class="meta-nav">一覧へ</span></a>
+		
+				</div>
+	</div>
+
+			
+						</div>
+	</article>
+</div><!-- #content -->
+
+<div id="sidebar">
+	<script>
+		$(function(){
+			// マップメニュー
+			$(".map_menu > li > a").click(function(){
+				if(!$(this).parent().hasClass("active")) {
+					$(".map_menu > li").removeClass("active");
+					$(this).parent().addClass("active");
+					$(".map_menu .sub-menu").hide();
+					$(this).parent().find(".sub-menu").slideDown("fast");
+				} else {
+					$(this).parent().removeClass("active");
+					$(this).parent().find(".sub-menu").slideUp("fast");
+				}
+			});
+			$(".map_menu ul.sub-menu li a, .side_menu ul.sub-menu li a").click(function(){
+				$(this).css("background-color", "#5f1919");
+				$(this).css("color", "#fff");
+			});
+			//　初期動作　指定するクラスがある場合、サブメニューを表示
+			$(".map_menu > li").each(function(){
+				if($(".sub-menu li", this).hasClass("current-menu-item")) {
+					$(this).find(".sub-menu").show();
+				}
+			});
+
+			// サイドメニュー
+			$(".side_menu > li > a").click(function(){
+				if($(this).parent().hasClass("level_top")) {
+					if(!$(this).parent().hasClass("active")) {
+						$(".side_menu > li.level_top > a").removeClass("arrow_up").addClass("arrow_down");
+						$(".side_menu > li").removeClass("active");
+						$(this).parent().addClass("active");
+						$(".side_menu .sub-menu").hide();
+						$(this).removeClass("arrow_down").addClass("arrow_up");
+						$(this).parent().find(".sub-menu").slideDown("fast");
+					} else {
+						$(this).removeClass("arrow_up").addClass("arrow_down");
+						$(this).parent().removeClass("active");
+						$(this).parent().find(".sub-menu").slideUp("fast");
+					}
+				}
+			});
+
+			// 現在表示しているページに対応したサイドメニューは開いた状態
+			$(".side_menu > li.level_top").each(function(){
+				if($(".sub-menu li", this).hasClass("current-menu-item")) {
+					$("> a", this).addClass("arrow_up");
+					$(this).find(".sub-menu").show();
+				} else {
+					$("> a", this).addClass("arrow_down");
+				}
+			});
+		})
+	</script>
+		<aside>
+																															
+			</aside>
+	<div class="contact pc">
+		<p class="title">【問合せ先】</p>
+		<dl>
+			<dt>(閲覧室)</dt>
+			<dd><p>TEL：098-888-3871</p>
+		<p>FAX：098-888-3874</p></dd>
+			<dt>(代 表)</dt>
+			<dd><p>TEL：098-888-3875</p></dd>
+		</dl>
+	</div>
+</div>
+			</div><!-- contents -->
+			<div id="footer_sitemap">
+				<table class="sitemap_box">
+					<tr>
+						<td class="sitemap_left">
+							<p><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/title_sitemap.png" alt="サイトマップ"></p>
+						</td>
+						<td class="sitemap_right">
+							<ul class="sitemap_list">
+								<li>
+									<p class="title"><a href="https://www.archives.pref.okinawa.jp/guide">利用案内</a></p>
+									<ul>
+										<li><a href="https://www.archives.pref.okinawa.jp/guide">利用案内</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/guide/to_visit">来館して利用する</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/guide/no_visit">来館せずに利用する</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/guide/application">出版物等掲載許可申請</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/guide/prefecture_staff">沖縄県職員のみなさまへ</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/guide/visitor_information">団体見学</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<p class="title"><a href="https://www.archives.pref.okinawa.jp/archive_information">資料紹介</a></p>
+									<ul>
+										<li><a href="https://www.archives.pref.okinawa.jp/ryukyu_government/">琉球政府文書</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/prefecture_document/">沖縄県文書</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/uscar_document/">米国収集資料</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/okinawa_related/">沖縄関係資料</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<p class="title"><a href="https://www.archives.pref.okinawa.jp/event_information">行事案内</a></p>
+									<ul>
+										<li><a href="https://www.archives.pref.okinawa.jp/event_information/exhibition_course/">イベント案内</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/event_information/past_exhibitions/">過去の展示会を見る</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/event_information/on_demand/">過去の講演講座を見る</a></li>
+									</ul>
+								</li>
+								<li>
+									<p class="title"><a href="https://www.archives.pref.okinawa.jp/publications">刊行物</a></p>
+									<ul>
+										<li><a href="https://www.archives.pref.okinawa.jp/publication/archives/">公文書館だより</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/publication/research/">研究紀要</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/publication/other/">その他</a></li>
+									</ul>
+								</li>
+								<li>
+									<p class="title"><a href="https://www.archives.pref.okinawa.jp/search_materials">資料検索</a></p>
+									<ul>
+										<li><a href="https://www2.archives.pref.okinawa.jp/opa/OPA100_SSMK_KEY.aspx">所蔵資料目録</a></li>
+										<li><a href="https://www2.archives.pref.okinawa.jp/opa/searchpics.aspx">写真</a></li>
+
+										<li><a href="https://www2.archives.pref.okinawa.jp/opa/sitv_movie.aspx">映像</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/search_materials/photo">空中写真</a></li>
+										<li><a href="https://www2.archives.pref.okinawa.jp/opa/SearchAudio.aspx" target="blank">音声</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/search_materials/official_bulletin">公報</a></li>
+
+										<li><a href="https://www2.archives.pref.okinawa.jp/opa/OPA_HWBS.aspx" target="_blank">引渡文書目録</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/search_materials/reference_tool">参考ツール</a></li>
+									</ul>
+								</li>
+								<li>
+									<p class="title"><a href="https://www.archives.pref.okinawa.jp/news">公文書館通信</a></p>
+									<ul>
+										<li><a href="https://www.archives.pref.okinawa.jp/news/business_diary">お知らせ</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/news/that_day">あの日の沖縄</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/recomane_okinawa">レコマネ沖縄</a></li>
+									</ul>
+								</li>
+								<li>
+									<p class="title"><a href="https://www.archives.pref.okinawa.jp/about">当館について</a></p>
+									<ul>
+										<li><a href="https://www.archives.pref.okinawa.jp/about/role">概要</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/about/summary">施設</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/about/movie">動画で見る公文書館</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/about/guideline">関係法令</a></li>
+										<li><a href="https://www.archives.pref.okinawa.jp/about/business_report">事業報告</a></li>
+									</ul>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		    <div id="footer">
+		    	<div class="footer_block">
+			    	<div class="footer_left">
+			    		<span class="footer_logo"><a href="https://www.archives.pref.okinawa.jp"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/footer_logo.png" alt="公文書館"></a></span>
+			    					    	</div>
+			    	<div class="footer_right">
+			    		<div class="fb_block">
+			    			<div class="fb_box">
+					    		<div class="fb-like pc" data-href="https://www.archives.pref.okinawa.jp/" data-width="" data-layout="button_count" data-action="" data-size="" data-share="true"></div>
+					    		<div class="fb_logo"><a href="https://www.facebook.com/OkinawaPrefecturalArchivesfb/"><img src="https://www.archives.pref.okinawa.jp/wp-content/themes/koubunsyokan/img/fb_logo.png" alt="Facebook"></a></div>
+					    	</div>
+				    	</div>
+			    		<ul>
+			    			<li class="name">沖縄県公文書館</li>
+			    			<li class="address">住所：〒901-1105 沖縄県南風原町字新川148番地の3</li>
+			    			<li class="number"><span class="num01"><span class="label">【代表】</span><span class="tel">電話：098-888-3875　</span><span class="fax">FAX：098-888-3879</span></span><span class="num02"><span class="label">【閲覧室】</span><span class="tel">電話：098-888-3871　</span><span class="fax">FAX：098-888-3874</span></span></li>
+			    		</ul>
+			    	</div>
+			    </div>
+	    	</div><!-- footer -->
+	    </div><!-- container -->
+	    <script>
+	    	$(function(){
+	    		$(".detail a img").each(function(index){
+	    			var str = $(this).parent().attr('href');
+	    			if(str.indexOf('upload') != -1) {
+	    				$(this).parent().attr('data-fancybox', '');
+	    			}
+	    		});
+	    	})
+	    </script>
+	    <script type='text/javascript' id='xo-event-calendar-ajax-js-extra'>
+/* <![CDATA[ */
+var xo_event_calendar_object = {"ajax_url":"https:\/\/www.archives.pref.okinawa.jp\/wp-admin\/admin-ajax.php","action":"xo_event_calendar_month"};
+var xo_simple_calendar_object = {"ajax_url":"https:\/\/www.archives.pref.okinawa.jp\/wp-admin\/admin-ajax.php","action":"xo_simple_calendar_month"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.archives.pref.okinawa.jp/wp-content/plugins/xo-event-calendar/js/ajax.js?ver=3.2.10' id='xo-event-calendar-ajax-js'></script>
+<script type='text/javascript' src='https://www.archives.pref.okinawa.jp/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.archives.pref.okinawa.jp/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"\u9589\u3058\u308b","currentText":"\u4eca\u65e5","monthNames":["1\u6708","2\u6708","3\u6708","4\u6708","5\u6708","6\u6708","7\u6708","8\u6708","9\u6708","10\u6708","11\u6708","12\u6708"],"monthNamesShort":["1\u6708","2\u6708","3\u6708","4\u6708","5\u6708","6\u6708","7\u6708","8\u6708","9\u6708","10\u6708","11\u6708","12\u6708"],"nextText":"\u6b21","prevText":"\u524d","dayNames":["\u65e5\u66dc\u65e5","\u6708\u66dc\u65e5","\u706b\u66dc\u65e5","\u6c34\u66dc\u65e5","\u6728\u66dc\u65e5","\u91d1\u66dc\u65e5","\u571f\u66dc\u65e5"],"dayNamesShort":["\u65e5","\u6708","\u706b","\u6c34","\u6728","\u91d1","\u571f"],"dayNamesMin":["\u65e5","\u6708","\u706b","\u6c34","\u6728","\u91d1","\u571f"],"dateFormat":"yy\u5e74mm\u6708d\u65e5","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://www.archives.pref.okinawa.jp/wp-content/plugins/pushpress-integration/js/script.js?ver=1.0.0' id='wp_pushpress_script_js-js'></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4548189-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPL6JL22DZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JPL6JL22DZ');
+</script>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+{
+  "package": "us_presence_network_wave2_w2_a_v1",
+  "generated_at": "2026-08-22T17:30:00+08:00",
+  "status": "research_only_principal_review_pending",
+  "files": [
+    {
+      "path": "artifacts/irs/mts_fy2023_202401989349301535.xml",
+      "bytes": 44878,
+      "sha256": "a81a330f15a6d23d672e675c653ba511857a033b424b687781d1035c32d67e43"
+    },
+    {
+      "path": "artifacts/irs/mts_fy2024_202510939349300851.xml",
+      "bytes": 38712,
+      "sha256": "896ce02e6f3f859b3cb0f87f4e29161d4a3833afaabe9bd362a1ec530e333917"
+    },
+    {
+      "path": "artifacts/recipient/ambitious_activity_2024.pdf",
+      "bytes": 18197075,
+      "sha256": "8a96aaac5a793f05e5de73f35493cc4c0132e4bd25d6f1d73fd0c06ceb88563b"
+    },
+    {
+      "path": "artifacts/recipient/ambitious_magazine_212.html",
+      "bytes": 42144,
+      "sha256": "652f42e002d4e406243b90b02edbe32f3f54e9e5b1c6061cc18d5e4b45ad4132"
+    },
+    {
+      "path": "artifacts/recipient/ambitious_magazine_253.html",
+      "bytes": 40010,
+      "sha256": "c66aa6dc25edc995081ca0ae7a8a33501e71e74a4689e218ee8f7288236a00bb"
+    },
+    {
+      "path": "artifacts/recipient/ambitious_magazine_265.html",
+      "bytes": 46331,
+      "sha256": "d5891286825d1b59ff9e429d5ea14f8a9254e58ad8a1e3a011181609dea74c8c"
+    },
+    {
+      "path": "artifacts/recipient/aru_gbizinfo.html",
+      "bytes": 54725,
+      "sha256": "5c11c3ce5e75f1aa6608c4cc31711bbe43383573e8821b25edb6c1c9b38c6362"
+    },
+    {
+      "path": "artifacts/recipient/aru_official.html",
+      "bytes": 158002,
+      "sha256": "5d7ff3d13bd1205c480c9cb573d2035c087b94b632966d853ab10fa7710c3737"
+    },
+    {
+      "path": "artifacts/recipient/aru_statute.pdf",
+      "bytes": 243542,
+      "sha256": "937d424935f56273aafeeecb04f4a6c305ceb614fa9b5aef516d2059524b89af"
+    },
+    {
+      "path": "artifacts/recipient/ishigaki_city_disability_services_r7.pdf",
+      "bytes": 40498,
+      "sha256": "5504a00c2e9293572bc2fd2f9b28bd87f266d96c199b7f577668497ce28372d4"
+    },
+    {
+      "path": "artifacts/recipient/ishigaki_shakyo_news_202411.pdf",
+      "bytes": 4656052,
+      "sha256": "ffb922e2a800625adac4b7f979e73839eb7cd582c9fd839ab1eaba0f4daa140f"
+    },
+    {
+      "path": "artifacts/recipient/kanasan_about.html",
+      "bytes": 62494,
+      "sha256": "7e7f3df4c354d465d742bd3d371172c5c4b9d085fe9b8c03e6732acabc03d596"
+    },
+    {
+      "path": "artifacts/recipient/kanasan_awwa_flyer_2023.pdf",
+      "bytes": 918971,
+      "sha256": "65f724ee1984f08d0fb8c4cde23d8b6f4210bab6ff26ca0b220bf9b2afc0ce05"
+    },
+    {
+      "path": "artifacts/recipient/nanbu_official.html",
+      "bytes": 20190,
+      "sha256": "04f18b0137e463feecfb4cc329c2da291e21f569f219647510650862f53b5560"
+    },
+    {
+      "path": "artifacts/recipient/ryukyu_ambitious_awwa_20240604.html",
+      "bytes": 130864,
+      "sha256": "bae44d4381bc217b78338ccb74d1f185da148736a51a8debd833b4104783443d"
+    },
+    {
+      "path": "artifacts/recipient/southern_medical_center_official.html",
+      "bytes": 55062,
+      "sha256": "ef73e39535aa12babc44504d72684a5bf41c6b21a3d39d3721c0d8cb985aa991"
+    },
+    {
+      "path": "artifacts/tracer/dvids_mts_lions_20240222.html",
+      "bytes": 72079,
+      "sha256": "25e62827de88c04dfdc34fcc97030fecc4fa2706fe5d5ede9204940701f3f661"
+    },
+    {
+      "path": "artifacts/tracer/dvids_mts_lions_bilingual.pdf",
+      "bytes": 3107896,
+      "sha256": "6a16703f9b494062ae2bde28f3df547dacaa7105f4a4be303c36c02b9bcf383b"
+    },
+    {
+      "path": "artifacts/tracer/mts_board.html",
+      "bytes": 209569,
+      "sha256": "f7e51de004864e62f5fad1f3a6afc9f9c3cd1dd956236b65402242f55806d888"
+    },
+    {
+      "path": "artifacts/tracer/mts_grants.html",
+      "bytes": 266008,
+      "sha256": "609576eca629f5a0fa4b4e9fb189b9d4ffb8fcdd2c472c0e7cadf24fd66f1494"
+    },
+    {
+      "path": "awwa_mediation_structure_v1.csv",
+      "bytes": 6806,
+      "sha256": "a71db7487cd02ce0f2ec7f16a29d5f018b6f2b09cfda678d10ca7ac4256472e5"
+    },
+    {
+      "path": "awwa_recipient_identity_leg2_v1.csv",
+      "bytes": 4830,
+      "sha256": "e1d63c267158bbc8912ca993b01b454bb2f367f592faa41d04c1d6bfcf84721e"
+    },
+    {
+      "path": "change_notes_v1.csv",
+      "bytes": 2605,
+      "sha256": "38eef2743b4893b109941d72adaf752616fff6682ebe3bef89ac13a00f6fbff7"
+    },
+    {
+      "path": "fig_awwa_mediation_structure_v1.svg",
+      "bytes": 2791,
+      "sha256": "a5cd2caa953ba4cb988739d5af8be3741f70d8a08930b7b52cb0a1d8970cce0a"
+    },
+    {
+      "path": "filing_metric_long_v1.csv",
+      "bytes": 27543,
+      "sha256": "1a14d1481487659a8eb3e26cca1053c00df651c5dfa884c638ff126083f4c161"
+    },
+    {
+      "path": "filing_period_register_v1.csv",
+      "bytes": 7970,
+      "sha256": "ddde8813a8dfba8a93fa1ffe8a776ee0ef8b75239e7ecd6df41fe5da2101ff02"
+    },
+    {
+      "path": "marine_thrift_shop_tracer_v1.csv",
+      "bytes": 4181,
+      "sha256": "336429752cae43324d65ad1797b5a64a8c6554b23a7a6627f3b2bc7c697f76f9"
+    },
+    {
+      "path": "negative_search_log_v1.csv",
+      "bytes": 3523,
+      "sha256": "73c28d1fe45bb7e93efaf83078ad342eff3ebb45226acff7f85462373c33f325"
+    },
+    {
+      "path": "person_actor_role_time_v1.csv",
+      "bytes": 53880,
+      "sha256": "329ba267b8689a06eeb3bef32eb7d38186c3819387c6a5c80119ea9b0f02d0aa"
+    },
+    {
+      "path": "principal_review_queue_v1.csv",
+      "bytes": 6500,
+      "sha256": "ddb49553eef9ed61640a0e1c152c18575b2b0fbcd750b212343b9da1a8fbd62e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6669,
+      "sha256": "e4a562382b2982b415de0008d5839659e859939b41410ab73b56c747fdccd5e3"
+    },
+    {
+      "path": "recipient_coverage_v1.csv",
+      "bytes": 1349,
+      "sha256": "18df364506e523d92dbba5dced24a7e4b092cc1e68625c71db1e068d57c8b3e7"
+    },
+    {
+      "path": "resource_flow_dedup_summary_v1.csv",
+      "bytes": 4484,
+      "sha256": "b8f61c23ed02a161e307f6eba235d6d1caa4cce330ba8c32ef74eea8da380634"
+    },
+    {
+      "path": "resource_flow_ledger_v1.csv",
+      "bytes": 43663,
+      "sha256": "da39165b78097a0b3e9674db2421122467bf5102aaea6e728fc7de6076a8389c"
+    },
+    {
+      "path": "source_receipts_v1.csv",
+      "bytes": 23400,
+      "sha256": "7d34d402a6754b2852b72f81842aa3af1c7af1cc7ff264f2d3700abbfd3a3f8b"
+    },
+    {
+      "path": "validation_report_v1.json",
+      "bytes": 1764,
+      "sha256": "e2c20e81075eac094b2684f09034f28da6db68325a64f112353d997384c1a336"
+    },
+    {
+      "path": "w2d_endpoint_handoff_v1.csv",
+      "bytes": 66302,
+      "sha256": "cc701ff168682d99e466675a205712411f210cd4a22b9d05b42e91d0137b4a94"
+    }
+  ],
+  "prohibited_writes": [
+    "central facts",
+    "legacy 43 rows",
+    "publication adapter",
+    "frontend",
+    "control documents"
+  ]
+}
