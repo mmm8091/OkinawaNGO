@@ -55,6 +55,10 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - **LEG3**: Repeatable attitude, behavior, or institutional-effect evidence supported by a stated research design, comparison, or repeated observation.
 - **role observation**: A sourced observation that a named person held a named role at a stated date or bounded period. A directory or filing date is an observation date unless the source explicitly states the tenure start or end.
 - **research endpoint**: A typed person, institution, installation, case, program, recipient, aggregate, or unresolved label needed to preserve a fact without inflating the actor registry.
+- **system interface**: A non-NGO institutional node that connects the two analytical ecologies through different typed relations, such as DoD as national prime-award institution for USO and as defendant or accountability target in litigation. It is not counted as an NGO-to-NGO bridge.
+- **audited public-record zero**: A negative result limited to a declared actor pair, relation family, time window and source corpus after both endpoints are observable and the named source audit is complete. It never means that the real-world relationship does not exist.
+- **gate/control frame**: Entered cases, post-entry institutional gates, response controls or unresolved procedural observations used to interpret pathways. It is not a matched non-entry sample unless independent inclusion rules establish that comparison.
+- **judgment-level outcome**: A result stated in a court judgment's operative text. It is coded separately from persistence, implementation, actual budget/outturn change and durable project change.
 
 ## Main Cautions
 

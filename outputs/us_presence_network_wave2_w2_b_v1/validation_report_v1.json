@@ -2,8 +2,8 @@
   "package": "us_presence_network_wave2_w2_b_v1",
   "build_date": "2026-08-22",
   "status": "PASS_RESEARCH_ONLY",
-  "check_count": 44,
-  "pass_count": 44,
+  "check_count": 52,
+  "pass_count": 52,
   "fail_count": 0,
   "checks": [
     {
@@ -14,7 +14,7 @@
     {
       "check_id": "W2B-V-COUNT-hierarchy_and_site_year_v1.csv",
       "status": "PASS",
-      "detail": "hierarchy_and_site_year_v1.csv: 16 rows; expected=16"
+      "detail": "hierarchy_and_site_year_v1.csv: 17 rows; expected=17"
     },
     {
       "check_id": "W2B-V-COUNT-service_capacity_observations_v1.csv",
@@ -39,7 +39,7 @@
     {
       "check_id": "W2B-V-COUNT-allocation_waterfall_v1.csv",
       "status": "PASS",
-      "detail": "allocation_waterfall_v1.csv: 9 rows; expected=9"
+      "detail": "allocation_waterfall_v1.csv: 11 rows; expected=11"
     },
     {
       "check_id": "W2B-V-COUNT-negative_search_log_v1.csv",
@@ -64,7 +64,7 @@
     {
       "check_id": "W2B-V-UNIQUE-hierarchy_and_site_year_v1.csv",
       "status": "PASS",
-      "detail": "hierarchy_and_site_year_v1.csv: 16/16 unique IDs"
+      "detail": "hierarchy_and_site_year_v1.csv: 17/17 unique IDs"
     },
     {
       "check_id": "W2B-V-UNIQUE-service_capacity_observations_v1.csv",
@@ -89,7 +89,7 @@
     {
       "check_id": "W2B-V-UNIQUE-allocation_waterfall_v1.csv",
       "status": "PASS",
-      "detail": "allocation_waterfall_v1.csv: 9/9 unique IDs"
+      "detail": "allocation_waterfall_v1.csv: 11/11 unique IDs"
     },
     {
       "check_id": "W2B-V-UNIQUE-negative_search_log_v1.csv",
@@ -182,6 +182,16 @@
       "detail": "current typed presences represented=8"
     },
     {
+      "check_id": "W2B-V025",
+      "status": "PASS",
+      "detail": "site vocabularies are fixed as 2021 listed locations, 2025 physical centers and current directory entries"
+    },
+    {
+      "check_id": "W2B-V026",
+      "status": "PASS",
+      "detail": "dated site vocabularies prohibit lifecycle inference"
+    },
+    {
       "check_id": "W2B-V016",
       "status": "PASS",
       "detail": "Okinawa budget remains blank and typed as an allocation gap"
@@ -192,6 +202,21 @@
       "detail": "region, area and Okinawa allocation stages contain no synthetic amounts"
     },
     {
+      "check_id": "W2B-V027",
+      "status": "PASS",
+      "detail": "USD72m and USD41.21246329m are parallel same-award views with one regional allocation gap"
+    },
+    {
+      "check_id": "W2B-V028",
+      "status": "PASS",
+      "detail": "2024 gross program services USD204.912m includes USD105.538m in-kind and yields USD99.374m net"
+    },
+    {
+      "check_id": "W2B-V029",
+      "status": "PASS",
+      "detail": "official audited PDF locator names the exact p.8 gross, in-kind and net cells"
+    },
+    {
       "check_id": "W2B-V018",
       "status": "PASS",
       "detail": "distinct AEC USD18k rows=[('W2B2-SP008', '2018-03-01'), ('W2B2-SP011', '2024-10-16')]"
@@ -199,12 +224,22 @@
     {
       "check_id": "W2B-V019",
       "status": "PASS",
-      "detail": "Red Cross/NMCRS handoff keeps service and money provenance typed"
+      "detail": "NMCRS -> ARC after-hours intake/disbursement delegation is directional, uses NMCRS funds and remains pending principal review"
+    },
+    {
+      "check_id": "W2B-V030",
+      "status": "PASS",
+      "detail": "NMCRS -> ARC candidate row contains no confirmed wording"
     },
     {
       "check_id": "W2B-V020",
       "status": "PASS",
       "detail": "all seven principal decisions remain open"
+    },
+    {
+      "check_id": "W2B-V031",
+      "status": "PASS",
+      "detail": "principal queue carries the corrected award and directional service-interface questions"
     },
     {
       "check_id": "W2B-V022",
@@ -214,12 +249,17 @@
     {
       "check_id": "W2B-V023",
       "status": "PASS",
-      "detail": "W2-D exposes one precisely typed ARC/NMCRS service interface"
+      "detail": "W2-D exposes one precisely typed directional NMCRS -> ARC delegation candidate pending principal review"
     },
     {
       "check_id": "W2B-V024",
       "status": "PASS",
       "detail": "co-location/referral does not auto-promote to organization bridge"
+    },
+    {
+      "check_id": "W2B-V032",
+      "status": "PASS",
+      "detail": "SVG uses parallel same-award views rather than the retired sequential arrow"
     },
     {
       "check_id": "W2B-V021",

@@ -1,0 +1,43 @@
+{
+  "status": "PASS_RESEARCH_ONLY_W2_D",
+  "build_date": "2026-08-22",
+  "counts": {
+    "s0": 9,
+    "a0": 6,
+    "a1r": 41,
+    "a1c": 36,
+    "s1_confirmatory": 0,
+    "matrix_rows": 4482,
+    "source_family_rows": 75,
+    "audited_public_record_zero_rows": 36,
+    "confirmed_cross_ecology_bridge_rows": 0
+  },
+  "checks": {
+    "s0_exact_9": true,
+    "a0_exact_6": true,
+    "a1r_exact_41": true,
+    "a1c_exact_36": true,
+    "matrix_exact_4482": true,
+    "tracer_exact_324": true,
+    "a1r_exact_2214": true,
+    "a1c_exact_1944": true,
+    "source_audit_exact_75": true,
+    "six_relation_families_only": true,
+    "audit_results_legal": true,
+    "review_status_legal": true,
+    "all_research_only": true,
+    "all_not_frontend_ready": true,
+    "no_central_writeback": true,
+    "no_confirmed_cross_ecology_bridge": true,
+    "audited_zero_only_tracer_direct": true,
+    "audited_zero_both_observable": true,
+    "audited_zero_exact_36": true,
+    "shared_place_never_bridge": true,
+    "shared_funder_never_coordination": true,
+    "graph_no_direct_s0_a0_actor_edge": true,
+    "dod_interface_not_bridge": true,
+    "receipt_hashes_valid": true,
+    "protected_files_unchanged": true
+  },
+  "scope": "research_only_no_central_no_adapter_no_frontend"
+}

@@ -156,7 +156,7 @@
     {
       "path": "README.md",
       "bytes": 6669,
-      "sha256": "e4a562382b2982b415de0008d5839659e859939b41410ab73b56c747fdccd5e3"
+      "sha256": "3466e0fe16ae12e8d9ba5f21898919ae11a90fd7706fb24d9579581e80e41de3"
     },
     {
       "path": "recipient_coverage_v1.csv",
@@ -180,8 +180,8 @@
     },
     {
       "path": "validation_report_v1.json",
-      "bytes": 1764,
-      "sha256": "e2c20e81075eac094b2684f09034f28da6db68325a64f112353d997384c1a336"
+      "bytes": 1817,
+      "sha256": "0010a4e2458cd0941b3d359d8f817e416adc284da275dc836eb76757c16f8550"
     },
     {
       "path": "w2d_endpoint_handoff_v1.csv",

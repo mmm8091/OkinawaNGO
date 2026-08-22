@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Build the research-only W2-C accountability outcome package.
 
-The package recodes the fixed 13 translation episodes onto parallel outcome
-axes, keeps matched gate cases separate from project-change counterexamples,
-and preserves attribution as an independently evidenced field.  It never
+The package recodes 13 selected translation episodes onto parallel outcome
+axes, keeps a gate/control frame separate from project-change attribution
+comparators, and preserves attribution as an independently evidenced field.
+The selected episodes are not a uniform positive-entry denominator, and the
+gate/control rows are not a true matched non-entry arm.  The builder never
 writes central facts, publication adapters, frontend assets, or control docs.
 """
 
@@ -38,6 +40,11 @@ SOURCE_LOG = ROOT / "data" / "interim" / "05_source_log_initial_v0.csv"
 ARCHIVE_MANIFEST = ROOT / "source_docs" / "source_archive" / "source_archive_manifest.csv"
 W200 = ROOT / "outputs" / "us_presence_network_wave2_w2_00_system_accountability_v1"
 RUN_DATE = "2026-08-22"
+OBSOLETE_OUTPUTS = (
+    "positive_entry_sample_v1.csv",
+    "nonentry_negative_sample_v1.csv",
+    "project_change_counterexample_sample_v1.csv",
+)
 
 SCOPE = {
     "package_scope": "research_only",
@@ -100,7 +107,7 @@ CENTRAL_RECEIPTS = [
     ("W2C2-SR004", "S135", "Naha District Court Okinawa Branch", "judgment operative disposition and plaintiff-period damages table", "Futenma noise damages judgment."),
     ("W2C2-SR005", "S137", "Naha District Court", "PDF pp.1-4: disposition, 14,263 signatures, two council rejections and duty-action holding", "Ishigaki referendum duty-action judgment."),
     ("W2C2-SR006", "S138", "Ishigaki City", "official council-result page and linked ordinance disposition", "Municipal record of the first referendum ordinance rejection."),
-    ("W2C2-SR007", "S140", "Naha District Court", "PDF p.1 operative paragraphs 3-4; pp.197-198 economic-rationality and future-spending holding", "First Awase public-funds judgment; this is the direct bounded project-authority counterexample."),
+    ("W2C2-SR007", "S140", "Naha District Court", "PDF p.1 operative paragraphs 3-4; pp.197-198 economic-rationality and future-spending holding", "Official first-instance operative text supports a bounded judgment-level fiscal/authority restriction candidate; principal confirmation remains pending."),
     ("W2C2-SR008", "S141", "Naha District Court", "FY2017 preserved-case list", "Official existence/termination record for the later Awase wave; substantive result still uses the prior human-reviewed case package."),
     ("W2C2-SR009", "S143", "Okinawa Prefecture", "official litigation annual report, relevant Awase entry", "Official prefectural litigation context."),
     ("W2C2-SR010", "S171", "Nago City", "official election-results landing page", "Official Nago referendum-results entry point."),
@@ -156,7 +163,7 @@ W200_RECEIPTS = [
 ANALYSIS_UNITS = [
     {
         "episode_id": "TE01", "analysis_unit_id": "TE01", "receipts": "W2C2-SR001;W2C2-SR040;W2C2-SR041;W2C2-SR042",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "yes_bounded_attorney_fee_only_pending_review",
+        "entry": "documented_institutional_entry", "record": "official_or_formal_record_observed", "relief": "yes_bounded_attorney_fee_only_pending_review",
         "entry_claim": "Federal litigation was docketed and decided.", "record_claim": "The appellate decisions and payment records are observable.",
         "relief_claim": "Official records show a case-related attorney-fee award/payment, not merits relief to the underlying project claim.",
         "projects": {}, "attribution": "not_applicable_without_confirmed_project_change",
@@ -164,14 +171,14 @@ ANALYSIS_UNITS = [
     },
     {
         "episode_id": "TE02", "analysis_unit_id": "TE02", "receipts": "W2C2-SR002;W2C2-SR048;W2C2-SR049",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "no_in_reviewed_record",
+        "entry": "documented_institutional_entry", "record": "official_or_formal_record_observed", "relief": "no_in_reviewed_record",
         "entry_claim": "NACSJ comments are documented within the EIA process.", "record_claim": "The corrected EIA and organization comment records are observable.",
         "relief_claim": "No redo order or direct relief is established by the selected administrative-comment record.",
         "projects": {}, "attribution": "not_applicable_without_confirmed_project_change", "notes": "Formal comment is not the same as adoption of the comment.",
     },
     {
         "episode_id": "TE03", "analysis_unit_id": "TE03", "receipts": "W2C2-SR003",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "yes_bounded_past_damages",
+        "entry": "documented_institutional_entry", "record": "official_or_formal_record_observed", "relief": "yes_bounded_past_damages",
         "entry_claim": "The third Kadena action entered civil litigation.", "record_claim": "The appellate judgment records liability and rejected claims.",
         "relief_claim": "Past noise injury received partial damages; injunction and future-damages claims were rejected.",
         "projects": {"PROJECT_AUTHORITY": ("no_requested_operational_injunction", "The requested operational injunction was not granted.")},
@@ -179,33 +186,33 @@ ANALYSIS_UNITS = [
     },
     {
         "episode_id": "TE04", "analysis_unit_id": "TE04", "receipts": "W2C2-SR004",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "yes_bounded_past_damages",
+        "entry": "documented_institutional_entry", "record": "official_or_formal_record_observed", "relief": "yes_bounded_past_damages",
         "entry_claim": "The Futenma noise claims entered civil litigation.", "record_claim": "The judgment identifies compensated plaintiffs and periods.",
         "relief_claim": "Specified plaintiffs and periods received damages; no operational injunction is established.",
-        "projects": {"PROJECT_AUTHORITY": ("no_requested_operational_injunction", "No executable restriction on flight operations is established in the selected judgment.")},
+        "projects": {"PROJECT_AUTHORITY": ("no_requested_operational_injunction", "No operational restriction on flight operations is established in the selected judgment.")},
         "attribution": "not_applicable_without_confirmed_project_change", "notes": "Relief remains case- and period-specific.",
     },
     {
         "episode_id": "TE05", "analysis_unit_id": "TE05", "receipts": "W2C2-SR005;W2C2-SR006",
-        "entry": "yes_multi_stage_terminal_gate_blocked", "record": "yes_selection_condition", "relief": "no_in_reviewed_record",
+        "entry": "documented_multistage_entry_terminal_gate_blocked", "record": "official_or_formal_record_observed", "relief": "no_in_reviewed_record",
         "entry_claim": "The direct request entered council processing and a duty-action entered court, but the intended referendum never occurred.",
         "record_claim": "Council dispositions and the court judgment are observable.", "relief_claim": "The duty-action was procedurally dismissed and no referendum was ordered.",
         "projects": {}, "attribution": "not_applicable_without_confirmed_project_change", "notes": "Requester organization and individual plaintiffs remain distinct.",
     },
     {
         "episode_id": "TE06", "analysis_unit_id": "TE06-W1", "receipts": "W2C2-SR007",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "yes_bounded_future_spending_restriction",
+        "entry": "documented_institutional_entry", "record": "official_first_instance_judgment_record", "relief": "candidate_bounded_judgment_level_future_spending_restriction_pending_principal",
         "entry_claim": "The first Awase public-funds action entered court.", "record_claim": "The district judgment is a full official record.",
-        "relief_claim": "The court prohibited future public spending, contracts and obligations, subject to already-incurred liabilities.",
+        "relief_claim": "The official first-instance operative text supports a bounded judgment-level future-spending restriction candidate, pending principal confirmation.",
         "projects": {
-            "PROJECT_BUDGET": ("yes_bounded", "Future public expenditure and new obligations were judicially restricted."),
-            "PROJECT_AUTHORITY": ("yes_bounded", "The judgment imposed an executable restriction on prefectural and city financial authority."),
+            "PROJECT_BUDGET": ("yes_bounded", "Judgment-level outcome only: the official first-instance operative text supports a bounded future-expenditure/new-obligation restriction candidate, pending principal confirmation; this does not establish that an actual budget or fiscal outturn changed."),
+            "PROJECT_AUTHORITY": ("yes_bounded", "Judgment-level outcome only: the official first-instance operative text supports a bounded fiscal/authority restriction candidate, pending principal confirmation; this does not establish a durable authority change or lasting project bar."),
         },
-        "attribution": "direct_official_bounded", "notes": "This is a real counterexample to a blanket 'record/compensation only' ceiling.",
+        "attribution": "candidate_judgment_level_link_pending_principal", "notes": "Candidate exception at the judgment-text level only; project durability, cancellation and actual budget change are not established.",
     },
     {
         "episode_id": "TE06", "analysis_unit_id": "TE06-W2", "receipts": "W2C2-SR008;W2C2-SR009;W2C2-SR027",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "no_second_wave_relief",
+        "entry": "documented_institutional_entry", "record": "official_or_formal_record_observed", "relief": "no_second_wave_relief",
         "entry_claim": "The later Awase public-funds wave entered litigation.", "record_claim": "Official case and project records establish later termination and project restart.",
         "relief_claim": "The residents lost the second wave; no continuing equivalent restriction is established.",
         "projects": {"PROJECT_AUTHORITY": ("no_continuing_restriction_established", "The later record does not preserve the first-wave restriction as a durable bar.")},
@@ -213,7 +220,7 @@ ANALYSIS_UNITS = [
     },
     {
         "episode_id": "TE07", "analysis_unit_id": "TE07", "receipts": "W2C2-SR010;W2C2-SR011;W2C2-SR028",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "not_applicable_referendum_output",
+        "entry": "documented_institutional_entry", "record": "official_or_formal_record_observed", "relief": "not_applicable_referendum_output",
         "entry_claim": "The direct request produced an ordinance and advisory referendum.", "record_claim": "Official results and the post-vote municipal chronology are observable.",
         "relief_claim": "A referendum result is coded as a formal output, not individual legal relief.",
         "projects": {
@@ -224,14 +231,14 @@ ANALYSIS_UNITS = [
     },
     {
         "episode_id": "TE08", "analysis_unit_id": "TE08", "receipts": "W2C2-SR012",
-        "entry": "yes_selection_condition_with_local_identity_gap", "record": "yes_selection_condition_with_local_identity_gap", "relief": "not_applicable_referendum_output",
+        "entry": "documented_institutional_entry_with_local_identity_gap", "record": "official_record_observed_with_local_identity_gap", "relief": "not_applicable_referendum_output",
         "entry_claim": "The referendum was held; organization-level carrier identity remains locally unresolved.", "record_claim": "The town policy statement records the vote and administrative interpretation.",
         "relief_claim": "The vote is a formal output rather than individual relief.", "projects": {},
         "attribution": "not_applicable_without_confirmed_project_change", "notes": "Do not upgrade A014/A015 identity from the vote record.",
     },
     {
         "episode_id": "TE09", "analysis_unit_id": "TE09", "receipts": "W2C2-SR013;W2C2-SR014;W2C2-SR015;W2C2-SR016",
-        "entry": "yes_selection_condition", "record": "yes_selection_condition", "relief": "not_applicable_referendum_output",
+        "entry": "documented_institutional_entry", "record": "official_or_formal_record_observed", "relief": "not_applicable_referendum_output",
         "entry_claim": "The direct request produced an ordinance and prefecture-wide vote.", "record_claim": "Official gazettes, legislative records and chronology preserve the output and notifications.",
         "relief_claim": "The referendum and notifications are formal outputs, not a binding stop order.", "projects": {},
         "attribution": "not_applicable_without_confirmed_project_change", "notes": "The vote did not automatically suspend construction.",
@@ -271,18 +278,18 @@ ANALYSIS_UNITS = [
 ]
 
 
-NEGATIVE_ROWS = [
-    ("W2C-NEG001", "TN01", "宫古2016住民投票陳情不採択", "municipal_referendum", "Miyako", "2016", "petition_for_referendum", "municipal_council", "post_entry_legislative_disposition", "yes_docketed", "yes_nonadoption_record", "W2C2-SR031;W2C2-SR032", "TE05;TE08", "strict_matched_gate", "included_matched_gate", "none", "A referendum petition was docketed and deliberated but not adopted.", "Do not describe it as never entering the council or as proof that all Miyako referendum demands were blocked."),
-    ("W2C-NEG002", "TN02", "PFAS公害调停因防卫设施除外而却下", "administrative_eligibility", "Ginowan/Okinawa", "2025-2026", "pollution_mediation_application", "Okinawa pollution mediation", "pre_substantive_eligibility", "reported_received", "reported_dismissal_primary_missing", "W2C2-SR039", "TE11", "bounded_unresolved", "included_exploratory_unresolved", "application_and_dismissal_originals_missing", "The available package indicates a reported eligibility gate; the procedure design is official.", "Do not freeze the dismissal reason or any PFAS source/health finding until the application and decision originals are obtained."),
-    ("W2C-NEG003", "TN03", "安保法制违宪冲绳诉讼未进入违宪判断", "judicial_legal_interest", "Okinawa", "2017-2021", "damages_litigation", "Japanese courts", "post_entry_relief_and_merits_gate", "yes_heard", "yes_judgment", "W2C2-SR033;W2C2-SR034", "TE03;TE04", "outside_strict_nonentry", "excluded_from_strict_nonentry_retained_control", "none", "The claims entered court and failed at protected-interest/damage and constitutional-merits gates.", "Do not count this as no institutional entry."),
-    ("W2C-NEG004", "TN04", "与那国导弹问题书面答复被拒（对应未闭合）", "administrative_response_modality", "Yonaguni", "2023", "written_question_request", "Okinawa Defense Bureau/local briefing", "response_format_gate", "reported_received", "official_alternative_QA_exists_linkage_unclosed", "W2C2-SR035;W2C2-SR036", "TE08;TE10", "bounded_unresolved", "included_exploratory_unresolved", "original_letter_and_official_refusal_missing", "Public Q&A channels existed, while the requested written-response linkage remains unclosed.", "Do not call this total administrative silence or transfer the 15 signers to A016."),
-    ("W2C-NEG005", "TN05", "边野古白宫请愿达标后政策回应未闭合", "transnational_petition_response", "Henoko/Oura Bay", "2018-2019", "online_petition", "White House We the People", "post_entry_policy_response_trace", "yes_threshold_met", "yes_petition_record_response_not_located", "W2C2-SR037;W2C2-SR038", "TE01;TE09", "response_trace_control", "included_bounded_response_trace", "issue_specific_response_not_found_in_bounded_archive", "The official archive preserves 212,945 signatures; no issue-specific policy update was located in the bounded trace.", "Do not claim that no response ever existed or that the petition changed/failed to change construction."),
-    ("W2C-NEG006", "", "边野古EIA重做义务确认诉讼被程序性驳回", "administrative_EIA_judicial", "Henoko/Oura Bay", "2009-2014", "confirmation_and_damages_litigation", "Fukuoka High Court Naha Branch", "post_entry_justiciability_and_relief_gate", "yes_heard", "yes_official_judgment", "W2C2-SR023;W2C2-SR024", "TE02", "strict_matched_judicial_gate", "included_matched_gate", "none", "The redo/illegality confirmation suits were held improper and damages were rejected; the appeal was dismissed.", "Do not treat this as rejection of all EIA comment participation or as proof the EIA itself had no environmental effects."),
+GATE_CONTROL_ROWS = [
+    ("W2C-GC001", "TN01", "宫古2016住民投票陳情不採択", "municipal_referendum", "Miyako", "2016", "petition_for_referendum", "municipal_council", "post_entry_legislative_disposition", "yes_docketed", "yes_nonadoption_record", "W2C2-SR031;W2C2-SR032", "TE05;TE08", "route_matched_gate_control", "included_gate_control", "none", "A referendum petition was docketed and deliberated but not adopted.", "Do not describe it as never entering the council, treat it as a matched non-entry observation, or use it as proof that all Miyako referendum demands were blocked."),
+    ("W2C-GC002", "TN02", "PFAS公害调停因防卫设施除外而却下", "administrative_eligibility", "Ginowan/Okinawa", "2025-2026", "pollution_mediation_application", "Okinawa pollution mediation", "pre_substantive_eligibility", "reported_received", "reported_dismissal_primary_missing", "W2C2-SR039", "TE11", "unresolved_gate_control", "included_exploratory_gate_control", "application_and_dismissal_originals_missing", "The available package indicates a reported eligibility gate; the procedure design is official.", "Do not freeze the dismissal reason, treat this unresolved row as a matched non-entry observation, or infer any PFAS source/health finding until the application and decision originals are obtained."),
+    ("W2C-GC003", "TN03", "安保法制违宪冲绳诉讼未进入违宪判断", "judicial_legal_interest", "Okinawa", "2017-2021", "damages_litigation", "Japanese courts", "post_entry_relief_and_merits_gate", "yes_heard", "yes_judgment", "W2C2-SR033;W2C2-SR034", "TE03;TE04", "entered_relief_merits_control", "included_entered_case_control", "none", "The claims entered court and failed at protected-interest/damage and constitutional-merits gates.", "Do not count this as no institutional entry or place it in a matched non-entry arm."),
+    ("W2C-GC004", "TN04", "与那国导弹问题书面答复被拒（对应未闭合）", "administrative_response_modality", "Yonaguni", "2023", "written_question_request", "Okinawa Defense Bureau/local briefing", "response_format_gate", "reported_received", "official_alternative_QA_exists_linkage_unclosed", "W2C2-SR035;W2C2-SR036", "TE08;TE10", "unresolved_gate_control", "included_exploratory_gate_control", "original_letter_and_official_refusal_missing", "Public Q&A channels existed, while the requested written-response linkage remains unclosed.", "Do not call this total administrative silence, treat it as a matched non-entry observation, or transfer the 15 signers to A016."),
+    ("W2C-GC005", "TN05", "边野古白宫请愿达标后政策回应未闭合", "transnational_petition_response", "Henoko/Oura Bay", "2018-2019", "online_petition", "White House We the People", "post_entry_policy_response_trace", "yes_threshold_met", "yes_petition_record_response_not_located", "W2C2-SR037;W2C2-SR038", "TE01;TE09", "bounded_response_trace_control", "included_bounded_response_trace_control", "issue_specific_response_not_found_in_bounded_archive", "The official archive preserves 212,945 signatures; no issue-specific policy update was located in the bounded trace.", "Do not claim that no response ever existed, place the row in a matched non-entry arm, or infer that the petition changed/failed to change construction."),
+    ("W2C-GC006", "", "边野古EIA重做义务确认诉讼被程序性驳回", "administrative_EIA_judicial", "Henoko/Oura Bay", "2009-2014", "confirmation_and_damages_litigation", "Fukuoka High Court Naha Branch", "post_entry_justiciability_and_relief_gate", "yes_heard", "yes_official_judgment", "W2C2-SR023;W2C2-SR024", "TE02", "route_matched_judicial_gate_control", "included_gate_control", "none", "The redo/illegality confirmation suits were held improper and damages were rejected; the appeal was dismissed.", "Do not treat this entered judicial case as a matched non-entry observation, rejection of all EIA comment participation, or proof the EIA itself had no environmental effects."),
 ]
 
 
 PROJECT_ROWS = [
-    ("W2C-PC001", "Awase public-funds litigation first wave", "Awase/Okinawa City", "2008", "PROJECT_BUDGET;PROJECT_AUTHORITY", "Future spending and new obligations legally available", "Court prohibited future spending/contracts/obligations except liabilities already incurred", "Naha District Court", "W2C2-SR007", "TE06-W1", "resident_public_funds_litigation", "action preceded judgment", "direct_official_bounded", "operative order expressly responds to plaintiffs' request", "none needed for the existence of the order; durability is tested separately", "confirmed_bounded_counterexample", "The first-wave judgment imposed an executable future-spending/authority restriction.", "Do not infer permanent cancellation or attribute the later area reduction to this order."),
+    ("W2C-PC001", "Awase public-funds litigation first wave", "Awase/Okinawa City", "2008", "PROJECT_BUDGET;PROJECT_AUTHORITY", "Future spending and new obligations legally available", "Official first-instance operative text addresses future spending/contracts/obligations except liabilities already incurred", "Naha District Court", "W2C2-SR007", "TE06-W1", "resident_public_funds_litigation", "action preceded first-instance judgment", "candidate_judgment_level_link_pending_principal", "official operative text supports the bounded judgment-level candidate; principal confirmation remains pending", "durability, later project course and actual fiscal implementation remain separate", "candidate_bounded_judgment_outcome_pending_principal", "The official first-instance operative text supports a bounded fiscal/authority restriction candidate, pending principal confirmation.", "PROJECT_BUDGET/PROJECT_AUTHORITY yes_bounded describe only the judgment-level outcome; do not infer permanent cancellation, a durable authority change, an actual budget/outturn change, or causation of the later area reduction."),
     ("W2C-PC002", "Awase land-use plan", "Awase/Okinawa City", "2006-2011", "PROJECT_SCOPE", "Approximately 185ha land-use plan", "Current approximately 95ha plan; official plan/permit changes in 2011", "Okinawa City/Okinawa Prefecture", "W2C2-SR026;W2C2-SR027", "TE06", "litigation overlaps project-review period", "municipal review started 2006; revision work Aug 2008; judgment later in 2008", "chronology_not_causal", "No official source reviewed attributes the reduction to the lawsuit", "study council, mayoral policy and administrative plan review began before judgment", "confirmed_change_nonattributed", "Official project records show a 185ha-to-95ha scope change.", "Do not infer the court or NGO caused the area reduction from temporal proximity."),
     ("W2C-PC003", "Futenma Replacement Facility ground-improvement revision", "Henoko/Oura Bay", "2019-2024", "PROJECT_SCOPE;PROJECT_TIMING;PROJECT_BUDGET", "Earlier construction plan and cost basis", "Ground-improvement/change application and rough total estimate about JPY 930bn", "Ministry of Defense/Okinawa Defense Bureau", "W2C2-SR030;W2C2-SR043;W2C2-SR044", "TE01;TE02;TE09", "civic actions occurred in same project arena", "official change application identifies ground/security work", "none_official_to_civic_action", "Technical/geotechnical and security design factors are stated", "technical/geotechnical project requirements", "confirmed_change_non_civic_comparator", "The project changed in scope/cost/time for officially stated technical reasons.", "Do not attribute this change to NGO action or call JPY 930bn cumulative expenditure."),
     ("W2C-PC004", "Futenma Replacement Facility 2016 pause/resumption", "Henoko/Oura Bay", "2016-2017", "PROJECT_TIMING", "Construction underway/disputed", "Work paused under national-prefectural court settlement and later resumed after government/court sequence", "Japan/Okinawa intergovernmental litigation and Ministry of Defense", "W2C2-SR030", "TE01;TE02;TE09", "civic movement is background but not a party to the settlement", "official chronology names settlement and later resumption", "none_official_to_civic_action", "Government-to-government legal conflict", "intergovernmental dispute and judicial/administrative decisions", "confirmed_change_non_civic_comparator", "Official records show a temporary project-timing change.", "Do not attribute the pause to NGO activity without party/causal evidence."),
@@ -291,16 +298,25 @@ PROJECT_ROWS = [
 ]
 
 
-def build_positive_rows(te_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+def build_comparison_rows(te_rows: list[dict[str, str]]) -> list[dict[str, str]]:
     units_by_episode: dict[str, list[str]] = defaultdict(list)
+    unit_rows_by_episode: dict[str, list[dict[str, str]]] = defaultdict(list)
     for unit in ANALYSIS_UNITS:
         units_by_episode[unit["episode_id"]].append(unit["analysis_unit_id"])
+        unit_rows_by_episode[unit["episode_id"]].append(unit)
     rows = []
     for index, te in enumerate(te_rows, start=1):
         eid = te["episode_id"]
+        unit_rows = unit_rows_by_episode[eid]
+        if eid in {"TE12", "TE13"}:
+            frame_role = "comparison_case_without_independent_institutional_entry"
+        elif eid in {"TE10", "TE11"}:
+            frame_role = "candidate_institutional_pathway_pending_event_human_review"
+        else:
+            frame_role = "documented_institutional_pathway_comparison"
         rows.append(scoped({
-            "sample_id": f"W2C-POS{index:03d}",
-            "selection_frame_id": "USF-W2C-ENTRY13-2026-08-22",
+            "comparison_id": f"W2C-CMP{index:03d}",
+            "selection_frame_id": "USF-W2C-COMPARISON13-2026-08-22",
             "episode_id": eid,
             "analysis_unit_ids": ";".join(units_by_episode[eid]),
             "short_label": te["short_label"],
@@ -309,28 +325,30 @@ def build_positive_rows(te_rows: list[dict[str, str]]) -> list[dict[str, str]]:
             "action_type": te["route_family"],
             "intended_venue": te["venue"],
             "source_review_status": te["review_status"],
-            "entry_condition": "selected_on_documented_or_candidate_formal_pathway",
-            "record_condition": "selected_on_observable_or_candidate_output",
+            "entry_status_at_selection": ";".join(sorted({unit["entry"] for unit in unit_rows})),
+            "record_status_at_selection": ";".join(sorted({unit["record"] for unit in unit_rows})),
+            "episode_frame_role": frame_role,
+            "event_review_gate": "pending_event_human_review" if eid in {"TE10", "TE11", "TE12", "TE13"} else "no_w2c_event_gate_pending",
             "split_rule": "split_into_first_and_second_litigation_waves" if eid == "TE06" else "one_analysis_unit",
             "legacy_source_refs": te["source_refs"],
-            "inclusion_status": "fixed_positive_frame_retained",
-            "selection_bias": "ENTRY/RECORD are selection conditions; this frame cannot estimate an entry success rate.",
-            "notes": "TE10-TE13 remain candidate event facts; retention does not upgrade them." if eid in {"TE10", "TE11", "TE12", "TE13"} else "No new central fact approval is created.",
+            "inclusion_status": "selected_comparison_input_pending_event_review" if eid in {"TE10", "TE11", "TE12", "TE13"} else "selected_comparison_input",
+            "selection_limit": "Selected for parallel-axis comparison, not as a positive-entry denominator; entry status varies by row and no entry rate may be estimated.",
+            "notes": "TE10-TE13 remain candidate event facts; TE12/TE13 do not show independent institutional entry; retention does not upgrade any event." if eid in {"TE10", "TE11", "TE12", "TE13"} else "No new central fact approval is created.",
         }))
     return rows
 
 
-def build_negative_rows() -> list[dict[str, str]]:
+def build_gate_control_rows() -> list[dict[str, str]]:
     rows = []
-    for raw in NEGATIVE_ROWS:
+    for raw in GATE_CONTROL_ROWS:
         (
-            negative_id, legacy_case_id, label, route, place, period, action,
+            control_id, legacy_case_id, label, route, place, period, action,
             venue, gate, entry, record, receipts, matches, frame_fit, inclusion,
             gap, allowed, prohibited,
         ) = raw
         rows.append(scoped({
-            "negative_id": negative_id,
-            "selection_frame_id": "USF-W2C-NONENTRY-MATCHED-2026-08-22",
+            "control_id": control_id,
+            "selection_frame_id": "USF-W2C-GATECONTROL-2026-08-22",
             "legacy_case_id": legacy_case_id,
             "short_label": label,
             "route_family": route,
@@ -346,6 +364,8 @@ def build_negative_rows() -> list[dict[str, str]]:
             "source_receipt_ids": receipts,
             "secondary_source_refs": legacy_case_id,
             "frame_fit": frame_fit,
+            "frame_role": "gate_or_control_case_not_matched_nonentry_arm",
+            "true_matched_nonentry_arm_status": "not_established",
             "inclusion_status": inclusion,
             "authority_gap": gap,
             "allowed_claim": allowed,
@@ -364,7 +384,7 @@ def build_project_rows() -> list[dict[str, str]]:
         ) = raw
         rows.append(scoped({
             "project_change_id": pid,
-            "selection_frame_id": "USF-W2C-PROJECTCHANGE-COUNTEREX-2026-08-22",
+            "selection_frame_id": "USF-W2C-PROJECTCHANGE-ATTRIBUTION-2026-08-22",
             "project": project,
             "place": place,
             "period": period,
@@ -394,18 +414,17 @@ def build_outcomes(te_rows: list[dict[str, str]]) -> list[dict[str, str]]:
         te = te_map[unit["episode_id"]]
         for axis in AXES:
             if axis == "ENTRY":
-                status, claim, selection = unit["entry"], unit["entry_claim"], "yes"
+                status, claim = unit["entry"], unit["entry_claim"]
             elif axis == "RECORD":
-                status, claim, selection = unit["record"], unit["record_claim"], "yes"
+                status, claim = unit["record"], unit["record_claim"]
             elif axis == "RELIEF":
-                status, claim, selection = unit["relief"], unit["relief_claim"], "no"
+                status, claim = unit["relief"], unit["relief_claim"]
             elif axis == "ATTRIBUTION":
                 status = unit["attribution"]
                 claim = (
                     "Attribution is coded independently from chronology and project change; "
                     f"current unit status is {status}."
                 )
-                selection = "no"
             else:
                 status, claim = unit["projects"].get(
                     axis,
@@ -414,10 +433,9 @@ def build_outcomes(te_rows: list[dict[str, str]]) -> list[dict[str, str]]:
                         "The reviewed record does not establish this project-axis change; this is not proof that no change occurred.",
                     ),
                 )
-                selection = "no"
             rows.append(scoped({
                 "outcome_id": f"W2C-OUT{counter:03d}",
-                "selection_frame_id": "USF-W2C-ENTRY13-2026-08-22",
+                "selection_frame_id": "USF-W2C-COMPARISON13-2026-08-22",
                 "episode_id": unit["episode_id"],
                 "analysis_unit_id": unit["analysis_unit_id"],
                 "short_label": te["short_label"],
@@ -430,11 +448,12 @@ def build_outcomes(te_rows: list[dict[str, str]]) -> list[dict[str, str]]:
                 "source_receipt_ids": unit["receipts"],
                 "legacy_source_refs": te["source_refs"],
                 "exact_locator": "See source_receipts_v1.csv; row-specific locators remain source-bound.",
-                "evidence_status": "candidate_event_pending" if te["review_status"].startswith("analytic_candidate") else "official_or_formal_record_research_recode",
+                "evidence_status": "candidate_event_pending_human_review" if unit["episode_id"] in {"TE10", "TE11", "TE12", "TE13"} else "official_or_formal_record_research_recode",
                 "attribution_status": unit["attribution"],
                 "allowed_claim": claim,
-                "prohibited_inference": "Do not infer causation from temporal order, count ENTRY/RECORD as success, or generalize beyond the selected episode.",
-                "selection_condition": selection,
+                "prohibited_inference": "Do not infer causation from temporal order, treat the selected comparison frame as a positive-entry denominator, or generalize beyond the selected episode.",
+                "selection_condition": "selected_comparison_axis",
+                "entry_status_at_selection": unit["entry"],
                 "notes": unit["notes"],
             }))
             counter += 1
@@ -453,40 +472,39 @@ def build_causal_evidence(project_rows: list[dict[str, str]]) -> list[dict[str, 
             "causal_statement_evidence": project["attribution_evidence"],
             "source_receipt_ids": project["source_receipt_ids"],
             "attribution_status": project["attribution_status"],
-            "missing_causal_link": "none_for_bounded_order" if project["project_change_id"] == "W2C-PC001" else "official_civic_attribution_not_closed",
+            "missing_causal_link": "principal_confirmation_durability_and_actual_fiscal_change_not_closed" if project["project_change_id"] == "W2C-PC001" else "official_civic_attribution_not_closed",
             "principal_attention": "yes" if project["project_change_id"] in {"W2C-PC001", "W2C-PC005"} else "no",
             "notes": project["prohibited_inference"],
         }))
     return rows
 
 
-def build_inclusion_log(positive: list[dict[str, str]], negative: list[dict[str, str]], projects: list[dict[str, str]]) -> list[dict[str, str]]:
+def build_inclusion_log(comparisons: list[dict[str, str]], controls: list[dict[str, str]], projects: list[dict[str, str]]) -> list[dict[str, str]]:
     rows = []
     index = 1
-    for row in positive:
+    for row in comparisons:
         rows.append(scoped({
             "log_id": f"W2C-IE{index:03d}", "selection_frame_id": row["selection_frame_id"],
-            "unit_id": row["episode_id"], "unit_type": "positive_episode", "decision": "include_fixed_input",
+            "unit_id": row["episode_id"], "unit_type": "selected_comparison_episode", "decision": "include_selected_comparison_input",
             "inclusion_reason": row["inclusion_status"], "exclusion_reason": "",
             "matching_variables": "route;place;period;venue", "decision_date": RUN_DATE,
-            "change_trigger": row["split_rule"], "notes": row["selection_bias"],
+            "change_trigger": row["split_rule"], "notes": row["selection_limit"],
         })); index += 1
-    for row in negative:
-        decision = "exclude_strict_keep_control" if row["inclusion_status"].startswith("excluded") else "include_bounded"
+    for row in controls:
         rows.append(scoped({
             "log_id": f"W2C-IE{index:03d}", "selection_frame_id": row["selection_frame_id"],
-            "unit_id": row["negative_id"], "unit_type": "matched_gate_candidate", "decision": decision,
-            "inclusion_reason": row["frame_fit"], "exclusion_reason": row["authority_gap"] if decision.startswith("exclude") else "",
+            "unit_id": row["control_id"], "unit_type": "gate_control_case", "decision": "include_gate_or_control_only",
+            "inclusion_reason": row["frame_fit"], "exclusion_reason": "not_admitted_to_matched_nonentry_arm",
             "matching_variables": row["matching_variables"], "decision_date": RUN_DATE,
-            "change_trigger": "prior negative package reclassified by gate position", "notes": row["prohibited_inference"],
+            "change_trigger": "prior negative candidates reclassified as gate/control observations", "notes": "True matched non-entry arm not established. " + row["prohibited_inference"],
         })); index += 1
     for row in projects:
         rows.append(scoped({
             "log_id": f"W2C-IE{index:03d}", "selection_frame_id": row["selection_frame_id"],
-            "unit_id": row["project_change_id"], "unit_type": "project_change_candidate", "decision": row["candidate_disposition"],
+            "unit_id": row["project_change_id"], "unit_type": "project_change_attribution_comparator", "decision": row["candidate_disposition"],
             "inclusion_reason": "official before/after or decision record available", "exclusion_reason": "",
             "matching_variables": "project;place;period;axis;decision authority", "decision_date": RUN_DATE,
-            "change_trigger": "counterexample search", "notes": row["prohibited_inference"],
+            "change_trigger": "project-change attribution comparison", "notes": row["prohibited_inference"],
         })); index += 1
     return rows
 
@@ -495,7 +513,7 @@ def build_negative_search_log() -> list[dict[str, str]]:
     raw = [
         ("international_legal", "TE01/TE09", "White House petition archive; federal appellate records", "bounded_complete_for_named_candidates", "Threshold-entry case found; issue-specific response trace not closed", "No unmatched no-entry denominator can be claimed."),
         ("administrative_EIA", "TE02", "official EIA hub; court judgments/case lists", "matched_gate_found", "EIA redo/illegality confirmation litigation dismissed and damages rejected", "Administrative comment entry and judicial redo gate are distinct venues."),
-        ("noise_civil_litigation", "TE03/TE04", "official court judgments and case search", "no_defensible_nonentry_match_found", "Reviewed candidates entered and received judgments", "Absence of a matched candidate is not a zero rate."),
+        ("noise_civil_litigation", "TE03/TE04", "official court judgments and case search", "true_matched_nonentry_arm_not_established", "Reviewed candidates entered and received judgments", "Absence of a matched candidate is not a zero rate."),
         ("public_funds_litigation", "TE06", "first judgment, later case record, project timeline", "within_episode_wave_contrast", "Opposite waves occur within TE06", "Do not double-count the second wave as an independent actor/case denominator."),
         ("referendum_ordinance", "TE05/TE07/TE08/TE09", "council dispositions, ordinances, court and election records", "matched_gates_found", "Miyako petition and Ishigaki terminal referendum gate identified", "Council processing is entry even when the requested referendum is blocked."),
         ("local_administrative", "TE10/TE11", "official response/Q&A/procedure pages", "mixed_primary_coverage", "PFAS dismissal original missing; Yonaguni response linkage unclosed", "Keep both cases unresolved."),
@@ -510,21 +528,21 @@ def build_negative_search_log() -> list[dict[str, str]]:
             "matched_episode_ids": match, "official_source_families_checked": families,
             "search_status": status, "result": result, "bounded_limit": limit,
             "search_date": RUN_DATE, "searcher": "AI research pass; principal review pending",
-            "notes": "Negative search is a documented design, not proof of real-world absence.",
+            "notes": "Search is documented, but a true matched non-entry arm has not been established; this is not proof of real-world absence.",
         }))
     return rows
 
 
 def build_competing_explanations() -> list[dict[str, str]]:
     raw = [
-        ("venue_design", "Formal rules may admit, redirect or exclude claims independently of their substantive evidence.", "TN01;TN02;W2C-NEG006"),
-        ("justiciability_claim_fit", "Standing, confirmation interest, protected interest or remedy design can stop adjudication before project merits.", "TE05;W2C-NEG003;W2C-NEG006"),
+        ("venue_design", "Formal rules may admit, redirect or exclude claims independently of their substantive evidence.", "TN01;TN02;W2C-GC006"),
+        ("justiciability_claim_fit", "Standing, confirmation interest, protected interest or remedy design can stop adjudication before project merits.", "TE05;W2C-GC003;W2C-GC006"),
         ("project_action_unit_mismatch", "An action-level record or damages award need not map to facility-level change.", "TE01;TE03;TE04;TE09"),
         ("technical_geotechnical_change", "Project scope/cost/timing can change for ground, engineering or safety reasons rather than civic action.", "W2C-PC003"),
         ("intergovernmental_conflict", "National-prefectural litigation and settlement can change project timing without NGO party status.", "W2C-PC004"),
         ("local_government_negotiation", "Mayoral, gubernatorial and Japan-U.S. bargaining can alter location/design after a referendum.", "W2C-PC005"),
         ("preexisting_plan_review", "Administrative plan review that starts before judgment weakens later post hoc attribution.", "W2C-PC002"),
-        ("archive_visibility", "Official online preservation differs by venue, year and record type; missing response is not no response.", "W2C-NEG002;W2C-NEG004;W2C-NEG005"),
+        ("archive_visibility", "Official online preservation differs by venue, year and record type; missing response is not no response.", "W2C-GC002;W2C-GC004;W2C-GC005"),
         ("actor_document_capacity", "Organizations with litigation counsel or durable websites leave more linkable records than short-lived carriers.", "all_frames"),
     ]
     return [scoped({
@@ -538,15 +556,16 @@ def build_competing_explanations() -> list[dict[str, str]]:
 def build_review_queue() -> list[dict[str, str]]:
     raw = [
         ("P0", "TE01", "Does the attorney-fee award/payment count as bounded RELIEF while remaining distinct from merits relief?", "Earthjustice FY2021 Form 990; Treasury API/workbook; appellate opinion", "USD 276,345.50 versus USD 280,000 remains unreconciled", "accept_bounded;revise;defer_primary;reject"),
-        ("P0", "TE06-W1", "Confirm PROJECT_BUDGET=yes_bounded and PROJECT_AUTHORITY=yes_bounded from the first-wave operative order.", "S140/W2C2-SR007 pp.1,197-198", "Durability and later project course must remain separate", "accept;revise;defer;reject"),
+        ("P0", "TE06-W1", "May PROJECT_BUDGET=yes_bounded and PROJECT_AUTHORITY=yes_bounded be accepted as judgment-level outcome candidates from the official first-instance operative text?", "S140/W2C2-SR007 pp.1,197-198", "Principal confirmation is pending; the codes do not establish persistent cancellation, durable authority change or actual budget/outturn change", "accept_bounded_judgment_level;revise;defer;reject"),
         ("P0", "W2C-PC002", "Confirm that the 185ha-to-95ha scope change cannot currently be attributed to the lawsuit.", "W2C2-SR026;W2C2-SR027;W2C2-SR007", "Revision process began before judgment; causal statement absent", "accept_nonattribution;revise;defer"),
         ("P0", "W2C-PC005", "How strongly may the Nago/FRF design evolution be linked to the 1997 referendum?", "W2C2-SR028 plus any explicit decision memo", "Chronology is clear; civic attribution is not", "indirect_contested;defer_primary;reject_link"),
-        ("P0", "W2C-NEG006", "Accept the EIA redo lawsuit as a matched judicial gate case rather than a no-entry case?", "W2C2-SR023;W2C2-SR024", "It entered court and failed at justiciability/relief", "accept_gate;revise;exclude"),
-        ("P0", "W2C-NEG002", "Can the PFAS mediation dismissal reason be frozen?", "Original application and dismissal notice", "Decisive primary documents absent", "accept_candidate;defer_primary;reject"),
-        ("P1", "W2C-NEG004", "Can the ten-question letter be mapped to the later official Q&A?", "Original letter, formal refusal and item-level crosswalk", "Refusal currently resident-attributed; alternative Q&A exists", "accept_narrow;revise;defer_primary;reject"),
-        ("P0", "TE10;TE11;TE12;TE13", "Which candidate event facts and outcome axes may be human-approved?", "Official rows listed in source receipts; actor-action sources where needed", "Central event gate is still pending", "accept_each;revise_each;defer_each;reject_each"),
+        ("P0", "W2C-GC006", "Accept the EIA redo lawsuit as an entered judicial gate/control case rather than a non-entry observation?", "W2C2-SR023;W2C2-SR024", "It entered court and failed at justiciability/relief; no true matched non-entry arm has been established", "accept_gate_control;revise;exclude"),
+        ("P0", "W2C-GC002", "Can the PFAS mediation dismissal reason be frozen?", "Original application and dismissal notice", "Decisive primary documents absent; row remains gate/control only", "accept_candidate;defer_primary;reject"),
+        ("P1", "W2C-GC004", "Can the ten-question letter be mapped to the later official Q&A?", "Original letter, formal refusal and item-level crosswalk", "Refusal currently resident-attributed; alternative Q&A exists; row remains gate/control only", "accept_narrow;revise;defer_primary;reject"),
+        ("P0", "TE10;TE11;TE12;TE13", "Which candidate event facts and outcome axes may be human-approved, while keeping TE12/TE13 outside independent institutional entry?", "Official rows listed in source receipts; actor-action sources where needed", "All four event facts remain pending human review; TE12/TE13 do not satisfy independent institutional entry", "accept_each;revise_each;defer_each;reject_each"),
         ("P0", "TE12", "Confirm that the destroyer visit completed and no military-visit timing change is attributable to the strike.", "W2C2-SR020;W2C2-SR021;W2C2-SR025", "Civilian cargo effect is separate", "accept;revise;defer"),
-        ("P0", "SYNTHESIS", "Replace the blanket result-ceiling claim with the bounded formulation proposed in README?", "outcome ledger, project-change table and competing explanations", "One direct budget/authority counterexample weakens the blanket claim", "accept_revised_claim;revise;defer"),
+        ("P0", "FRAME-DESIGN", "Confirm that the six rows are a gate/control frame and that a true matched non-entry arm remains to be built separately?", "gate_control_frame_v1.csv; negative_search_log_v1.csv", "Current rows are entered cases, post-entry gates, response controls or unresolved candidates", "accept_frame;revise;defer"),
+        ("P0", "SYNTHESIS", "May the synthesis mention a pending Awase judgment-level candidate exception without treating it as a confirmed project-change counterexample?", "outcome ledger, project-change attribution frame and competing explanations", "Principal confirmation, durability and actual fiscal implementation remain open", "accept_bounded_candidate;revise;defer"),
     ]
     rows = []
     for i, (priority, unit, question, material, gap, decisions) in enumerate(raw, start=1):
@@ -628,10 +647,10 @@ def collect_supports(tables: Iterable[tuple[Sequence[Mapping[str, str]], str]]) 
     return result
 
 
-POS_FIELDS = ["sample_id", "selection_frame_id", "episode_id", "analysis_unit_ids", "short_label", "route_family", "place", "action_type", "intended_venue", "source_review_status", "entry_condition", "record_condition", "split_rule", "legacy_source_refs", "inclusion_status", "selection_bias", "package_scope", "frontend_status", "central_writeback", "review_status", "notes"]
-NEG_FIELDS = ["negative_id", "selection_frame_id", "legacy_case_id", "short_label", "route_family", "place", "period", "action_type", "intended_venue", "gate_position", "entry_status", "record_status", "match_to_episode_ids", "matching_variables", "source_receipt_ids", "secondary_source_refs", "frame_fit", "inclusion_status", "authority_gap", "allowed_claim", "prohibited_inference", "package_scope", "frontend_status", "central_writeback", "review_status"]
+COMPARISON_FIELDS = ["comparison_id", "selection_frame_id", "episode_id", "analysis_unit_ids", "short_label", "route_family", "place", "action_type", "intended_venue", "source_review_status", "entry_status_at_selection", "record_status_at_selection", "episode_frame_role", "event_review_gate", "split_rule", "legacy_source_refs", "inclusion_status", "selection_limit", "package_scope", "frontend_status", "central_writeback", "review_status", "notes"]
+GATE_CONTROL_FIELDS = ["control_id", "selection_frame_id", "legacy_case_id", "short_label", "route_family", "place", "period", "action_type", "intended_venue", "gate_position", "entry_status", "record_status", "match_to_episode_ids", "matching_variables", "source_receipt_ids", "secondary_source_refs", "frame_fit", "frame_role", "true_matched_nonentry_arm_status", "inclusion_status", "authority_gap", "allowed_claim", "prohibited_inference", "package_scope", "frontend_status", "central_writeback", "review_status"]
 PROJECT_FIELDS = ["project_change_id", "selection_frame_id", "project", "place", "period", "change_axes", "pre_state", "post_state", "decision_authority", "source_receipt_ids", "related_episode_ids", "civic_action_candidate", "temporal_order", "attribution_status", "attribution_evidence", "competing_explanation", "candidate_disposition", "allowed_claim", "prohibited_inference", "package_scope", "frontend_status", "central_writeback", "review_status"]
-OUTCOME_FIELDS = ["outcome_id", "selection_frame_id", "episode_id", "analysis_unit_id", "short_label", "route_family", "place", "axis", "axis_status", "status_basis", "observation_unit", "source_receipt_ids", "legacy_source_refs", "exact_locator", "evidence_status", "attribution_status", "allowed_claim", "prohibited_inference", "selection_condition", "package_scope", "frontend_status", "central_writeback", "review_status", "notes"]
+OUTCOME_FIELDS = ["outcome_id", "selection_frame_id", "episode_id", "analysis_unit_id", "short_label", "route_family", "place", "axis", "axis_status", "status_basis", "observation_unit", "source_receipt_ids", "legacy_source_refs", "exact_locator", "evidence_status", "attribution_status", "allowed_claim", "prohibited_inference", "selection_condition", "entry_status_at_selection", "package_scope", "frontend_status", "central_writeback", "review_status", "notes"]
 RECEIPT_FIELDS = ["receipt_id", "publisher", "title", "source_family", "url", "retrieved_at", "artifact_path", "sha256", "mime_type", "exact_locator", "supports_ids", "archive_status", "central_source_id", "notes"]
 SEARCH_FIELDS = ["search_log_id", "search_stratum", "matched_episode_ids", "official_source_families_checked", "search_status", "result", "bounded_limit", "search_date", "searcher", "package_scope", "frontend_status", "central_writeback", "review_status", "notes"]
 CAUSAL_FIELDS = ["causal_evidence_id", "project_change_id", "action_evidence", "decision_evidence", "time_order_evidence", "causal_statement_evidence", "source_receipt_ids", "attribution_status", "missing_causal_link", "principal_attention", "package_scope", "frontend_status", "central_writeback", "review_status", "notes"]
@@ -643,26 +662,26 @@ ANCHOR_XW_FIELDS = ["crosswalk_id", "w2_00_anchor_ids", "source_receipt_ids", "v
 
 def build_tables() -> dict[str, tuple[list[dict[str, str]], list[str]]]:
     te_rows = read_csv(TE_PATH)
-    positive = build_positive_rows(te_rows)
-    negative = build_negative_rows()
+    comparisons = build_comparison_rows(te_rows)
+    controls = build_gate_control_rows()
     projects = build_project_rows()
     outcomes = build_outcomes(te_rows)
     causal = build_causal_evidence(projects)
-    inclusion = build_inclusion_log(positive, negative, projects)
+    inclusion = build_inclusion_log(comparisons, controls, projects)
     searches = build_negative_search_log()
     explanations = build_competing_explanations()
     review = build_review_queue()
     anchor_xw = build_resource_anchor_crosswalk()
     supports = collect_supports([
-        (negative, "negative_id"), (projects, "project_change_id"),
+        (controls, "control_id"), (projects, "project_change_id"),
         (outcomes, "outcome_id"), (causal, "causal_evidence_id"),
         (anchor_xw, "crosswalk_id"),
     ])
     receipts = make_receipts(supports)
     return {
-        "positive_entry_sample_v1.csv": (positive, POS_FIELDS),
-        "nonentry_negative_sample_v1.csv": (negative, NEG_FIELDS),
-        "project_change_counterexample_sample_v1.csv": (projects, PROJECT_FIELDS),
+        "selected_episode_comparison_frame_v1.csv": (comparisons, COMPARISON_FIELDS),
+        "gate_control_frame_v1.csv": (controls, GATE_CONTROL_FIELDS),
+        "project_change_attribution_frame_v1.csv": (projects, PROJECT_FIELDS),
         "accountability_outcome_ledger_v1.csv": (outcomes, OUTCOME_FIELDS),
         "source_receipts_v1.csv": (receipts, RECEIPT_FIELDS),
         "negative_search_log_v1.csv": (searches, SEARCH_FIELDS),
@@ -676,39 +695,58 @@ def build_tables() -> dict[str, tuple[list[dict[str, str]], list[str]]]:
 
 def validate(tables: Mapping[str, tuple[list[dict[str, str]], list[str]]]) -> list[str]:
     checks: list[str] = []
-    positive = tables["positive_entry_sample_v1.csv"][0]
-    negative = tables["nonentry_negative_sample_v1.csv"][0]
-    projects = tables["project_change_counterexample_sample_v1.csv"][0]
+    comparisons = tables["selected_episode_comparison_frame_v1.csv"][0]
+    controls = tables["gate_control_frame_v1.csv"][0]
+    projects = tables["project_change_attribution_frame_v1.csv"][0]
     outcomes = tables["accountability_outcome_ledger_v1.csv"][0]
     receipts = tables["source_receipts_v1.csv"][0]
     review = tables["principal_review_queue_v1.csv"][0]
     anchor_xw = tables["resource_anchor_crosswalk_v1.csv"][0]
 
     expected_episodes = {f"TE{i:02d}" for i in range(1, 14)}
-    assert {row["episode_id"] for row in positive} == expected_episodes
-    assert len(positive) == 13
-    checks.append("PASS: fixed positive frame contains TE01-TE13 exactly once")
+    assert {row["episode_id"] for row in comparisons} == expected_episodes
+    assert len(comparisons) == 13
+    assert all(row["selection_frame_id"] == "USF-W2C-COMPARISON13-2026-08-22" for row in comparisons)
+    comparison_by_episode = {row["episode_id"]: row for row in comparisons}
+    assert all(comparison_by_episode[eid]["event_review_gate"] == "pending_event_human_review" for eid in {"TE10", "TE11", "TE12", "TE13"})
+    assert all("without_independent_institutional_entry" in comparison_by_episode[eid]["episode_frame_role"] for eid in {"TE12", "TE13"})
+    checks.append("PASS: TE01-TE13 form a selected comparison frame, not a uniform positive-entry denominator")
     assert len({row["analysis_unit_id"] for row in outcomes}) == 14
     assert {row["axis"] for row in outcomes} == set(AXES)
     assert len(outcomes) == 14 * len(AXES)
     checks.append("PASS: 13 episodes expand to 14 analysis units and 126 parallel-axis rows")
-    assert len([row for row in outcomes if row["selection_condition"] == "yes"]) == 14 * 2
-    checks.append("PASS: only ENTRY and RECORD are marked as selection conditions")
-    assert any(row["analysis_unit_id"] == "TE06-W1" and row["axis"] == "PROJECT_AUTHORITY" and row["axis_status"] == "yes_bounded" for row in outcomes)
-    assert any(row["analysis_unit_id"] == "TE06-W1" and row["axis"] == "PROJECT_BUDGET" and row["axis_status"] == "yes_bounded" for row in outcomes)
-    checks.append("PASS: Awase first-wave budget/authority counterexample is explicit")
-    assert any(row["negative_id"] == "W2C-NEG003" and row["inclusion_status"].startswith("excluded_from_strict") for row in negative)
-    assert any(row["negative_id"] == "W2C-NEG006" and row["frame_fit"] == "strict_matched_judicial_gate" for row in negative)
-    checks.append("PASS: non-entry frame separates entered relief controls from matched formal gates")
+    assert all(row["selection_condition"] == "selected_comparison_axis" for row in outcomes)
+    assert all(row["entry_status_at_selection"] for row in outcomes)
+    assert all(row["evidence_status"] == "candidate_event_pending_human_review" for row in outcomes if row["episode_id"] in {"TE10", "TE11", "TE12", "TE13"})
+    checks.append("PASS: every ledger row is a selected comparison axis with entry status encoded separately")
+    awase = {
+        row["axis"]: row
+        for row in outcomes
+        if row["analysis_unit_id"] == "TE06-W1" and row["axis"] in {"PROJECT_AUTHORITY", "PROJECT_BUDGET"}
+    }
+    assert set(awase) == {"PROJECT_AUTHORITY", "PROJECT_BUDGET"}
+    assert all(row["axis_status"] == "yes_bounded" for row in awase.values())
+    assert all("Judgment-level outcome only" in row["allowed_claim"] for row in awase.values())
+    assert all("pending principal confirmation" in row["allowed_claim"] for row in awase.values())
+    assert "actual budget or fiscal outturn" in awase["PROJECT_BUDGET"]["allowed_claim"]
+    assert "durable authority change or lasting project bar" in awase["PROJECT_AUTHORITY"]["allowed_claim"]
+    checks.append("PASS: Awase yes_bounded codes are judgment-level candidates pending principal, not durable project/fiscal changes")
+    assert len(controls) == 6
+    assert all(row["true_matched_nonentry_arm_status"] == "not_established" for row in controls)
+    assert all(row["frame_role"] == "gate_or_control_case_not_matched_nonentry_arm" for row in controls)
+    assert any(row["control_id"] == "W2C-GC003" and row["entry_status"] == "yes_heard" for row in controls)
+    assert any(row["control_id"] == "W2C-GC006" and row["frame_fit"] == "route_matched_judicial_gate_control" for row in controls)
+    checks.append("PASS: six rows are gate/control observations; a true matched non-entry arm is not established")
     assert all(row["attribution_status"] for row in projects)
+    assert any(row["project_change_id"] == "W2C-PC001" and row["candidate_disposition"] == "candidate_bounded_judgment_outcome_pending_principal" for row in projects)
     assert any(row["project_change_id"] == "W2C-PC002" and row["attribution_status"] == "chronology_not_causal" for row in projects)
     checks.append("PASS: every project-change row carries independent attribution coding")
 
     receipt_ids = {row["receipt_id"] for row in receipts}
     used: dict[str, set[str]] = defaultdict(set)
     for filename, id_field in [
-        ("nonentry_negative_sample_v1.csv", "negative_id"),
-        ("project_change_counterexample_sample_v1.csv", "project_change_id"),
+        ("gate_control_frame_v1.csv", "control_id"),
+        ("project_change_attribution_frame_v1.csv", "project_change_id"),
         ("accountability_outcome_ledger_v1.csv", "outcome_id"),
         ("project_change_causal_evidence_v1.csv", "causal_evidence_id"),
         ("resource_anchor_crosswalk_v1.csv", "crosswalk_id"),
@@ -739,20 +777,30 @@ def validate(tables: Mapping[str, tuple[list[dict[str, str]], list[str]]]) -> li
     assert xw["W2C-A020"]["value_text"] == "USD 276,345.50"
     assert xw["W2C-A021"]["value_text"] == "USD 280,000.00"
     assert xw["W2C-A022"]["value_text"] == "USD 3,654.50"
+    assert xw["W2C-A030"]["value_text"] == "about JPY 930bn"
+    assert "not expenditure" in xw["W2C-A030"]["preserved_semantics"]
     assert "Reporter premise only" in xw["W2C-A041"]["preserved_semantics"]
-    checks.append("PASS: Earthjustice/Treasury difference and JPY 648.3bn reporter-premise semantics remain unclosed")
+    checks.append("PASS: Earthjustice/Treasury difference plus JPY 930bn/648.3bn boundaries remain explicit")
     assert not any("success rate" in row["allowed_claim"].lower() for row in outcomes)
-    checks.append("PASS: no success rate or chronology-only civic attribution is generated")
+    table_text = "\n".join(
+        str(value)
+        for rows, _ in tables.values()
+        for row in rows
+        for value in row.values()
+    )
+    for prohibited in ("direct_official_bounded", "confirmed_bounded_counterexample", "real counterexample", "USF-W2C-ENTRY13", "USF-W2C-NONENTRY"):
+        assert prohibited not in table_text
+    checks.append("PASS: no success rate, uniform positive-entry denominator, or overstrong Awase counterexample claim is generated")
     return checks
 
 
 def readme(tables: Mapping[str, tuple[list[dict[str, str]], list[str]]]) -> str:
-    positive = tables["positive_entry_sample_v1.csv"][0]
-    negative = tables["nonentry_negative_sample_v1.csv"][0]
-    projects = tables["project_change_counterexample_sample_v1.csv"][0]
+    comparisons = tables["selected_episode_comparison_frame_v1.csv"][0]
+    controls = tables["gate_control_frame_v1.csv"][0]
+    projects = tables["project_change_attribution_frame_v1.csv"][0]
     outcomes = tables["accountability_outcome_ledger_v1.csv"][0]
     receipts = tables["source_receipts_v1.csv"][0]
-    return f"""# W2-C 问责结果、负案例与项目改变反例 v1
+    return f"""# W2-C 问责结果、闸门／控制与项目改变归因 v1
 
 日期：{RUN_DATE}
 
@@ -760,37 +808,39 @@ def readme(tables: Mapping[str, tuple[list[dict[str, str]], list[str]]]) -> str:
 
 ## 结论先行
 
-原先“制度只能记录、认定、补偿，不能进一步改变项目”的**笼统结果上限判断被削弱**。
+本包不能把“制度只能记录、认定、补偿，不能进一步改变项目”的笼统结果上限判断写成已被确认推翻。泡濑第一波公金诉讼提供的是一个**待负责人确认的有界候选**：官方一审判决主文支持在判决层编码财政／权限限制，但当前 W2-C 研究层尚未完成人工解释确认。
 
-原因不是出现了基地取消或迁移，而是泡濑第一波公金诉讼提供了一个明确、可执行、可归因的反例：那霸地裁禁止县与市继续作未来公金支出、签订合同或负担新义务（已经发生的支付义务除外）。因此它同时落在 `PROJECT_BUDGET=yes_bounded` 与 `PROJECT_AUTHORITY=yes_bounded`。
+`PROJECT_BUDGET=yes_bounded` 与 `PROJECT_AUTHORITY=yes_bounded` 只表示官方一审判决主文所支持的 judgment-level outcome candidate。它们不表示项目被持久取消、不表示权限限制后来持续有效，也不表示实际预算、财政支出或决算已经改变。后续项目过程与约 185ha→95ha 的范围变化必须另行解释。
 
-目前仍可保留的窄结论是：在这组选择性案例中，民间行动较稳定地留下制度入口与正式记录，部分案件获得过去损害赔偿或程序性产出；除泡濑第一波的有界财政／权限限制外，尚无经负责人复核的案例证明民间行动造成了军事设施／部署的持久取消、迁移或核心运行改变。观察到的其他项目变化，多数有技术、行政审查、地方政府协商或政府间争议等竞争解释。
+目前只能保留更窄的描述：13 个既有 episode 被选择用于九轴并列比较，入口状态必须逐行读取。TE12（工作场所／港口行动）和 TE13（参与／动员记录）不满足独立制度入口；TE10–TE13 的事件事实仍待人审。其余若干案例有正式入口、记录、赔偿或程序产出，但这组选择性材料不能估计入口率、成功率或总体结果上限。
 
-这不是成功率，也不是冲绳全部民间行动的总体结论。13 个正向 episode 本来就是按可观察入口／记录选出的。
+六行补充材料只构成 gate/control frame。它们包含已入场后遇到的闸门、回应追踪控制和一手材料未闭合案例；真正可与已入场案例比较的 matched non-entry arm 尚未建立。
 
 ## 三组样本
 
-- 正向入口框：{len(positive)} 个 source episode；泡濑拆为两波，共 14 个分析单元。
-- 匹配闸门框：{len(negative)} 行；其中包含严格匹配闸门、有界未决、回应追踪控制，以及 1 个明确排除出严格“未入场”框但保留作司法救济控制的案件。
-- 项目改变／反例框：{len(projects)} 行，逐项分开事实改变与 civic attribution。
+- 被选 episode 比较框：{len(comparisons)} 个 source episode；泡濑拆为两波，共 14 个分析单元。它不是正向入口分母。
+- 闸门／控制框：{len(controls)} 行；所有行均标记 `true_matched_nonentry_arm_status=not_established`。
+- 项目改变／归因比较框：{len(projects)} 行，逐项分开事实改变、决定主体与 civic attribution。
 - 并列结果账本：{len(outcomes)} 行（14 分析单元 × 9 轴）。
 - 来源收据：{len(receipts)} 条；每个在表中使用的 receipt 均有本地文件、SHA-256 和双向 row↔receipt crosswalk。
 
 ## 这轮最重要的校正
 
-1. `ENTRY` 与 `RECORD` 是正向框的入选条件，不是发现，不能拿 13/13 算成功率。
+1. `selection_condition` 现在只编码 `selected_comparison_axis`；实际入口状态另存 `entry_status_at_selection`，不能拿 13/13 算入口率或成功率。
 2. TE05 不是简单的“进入”：请求进入议会、诉讼进入法院，但目标公投被正式闸门挡住。
 3. TE06 必须分 `TE06-W1` 与 `TE06-W2`；两波结果相反。
-4. TE12 的罢工真实发生并影响民用物流，但美国海军官方记录确认军舰访问仍完成；不能把物流扰动写成军事访问被阻止。
-5. 泡濑面积由约 185ha 缩为约 95ha 是项目改变，但市方审查／修订在判决前已启动；不能从前后顺序推断诉讼造成缩减。
-6. Henoko 约 JPY 930bn 是 2019 年官方粗略总成本估计；JPY 648.3bn 仍只是 2025 记者提问中的累计支出前提，未由底层官方支出表闭合。
-7. Earthjustice 申报 USD 276,345.50，Treasury 付款记录 USD 280,000；差额 USD 3,654.50 保留为 `unreconciled difference`，不猜解释。
+4. TE10–TE13 全部待事件级人审；TE12/TE13 只能按各自行动／参与状态进入比较，不能称为独立制度入口。
+5. 泡濑一审的两个 `yes_bounded` 是待负责人确认的判决层候选，不是持久取消、持续权限限制或实际预算改变。
+6. TE12 的罢工真实发生并影响民用物流，但美国海军官方记录确认军舰访问仍完成；不能把物流扰动写成军事访问被阻止。
+7. 泡濑面积由约 185ha 缩为约 95ha 是项目改变，但市方审查／修订在判决前已启动；不能从前后顺序推断诉讼造成缩减。
+8. Henoko 约 JPY 930bn 是 2019 年官方粗略总成本估计；JPY 648.3bn 仍只是 2025 记者提问中的累计支出前提，未由底层官方支出表闭合。
+9. Earthjustice 申报 USD 276,345.50，Treasury 付款记录 USD 280,000；差额 USD 3,654.50 保留为 `unreconciled difference`，不猜解释。
 
 ## 文件
 
-- `positive_entry_sample_v1.csv`：固定 13 episode 与 14 分析单元。
-- `nonentry_negative_sample_v1.csv`：按闸门位置重分的负／控制案例。
-- `project_change_counterexample_sample_v1.csv`：项目改变与独立 attribution。
+- `selected_episode_comparison_frame_v1.csv`：13 个被选 episode、逐行入口状态与 14 个分析单元。
+- `gate_control_frame_v1.csv`：六行闸门／控制观察；不构成 matched non-entry arm。
+- `project_change_attribution_frame_v1.csv`：项目改变与独立 attribution。
 - `accountability_outcome_ledger_v1.csv`：9 个并列结果轴。
 - `source_receipts_v1.csv`：来源、locator、本地路径、哈希与反向支持行。
 - `negative_search_log_v1.csv`：每条 route family 的有界检索结果。
@@ -817,11 +867,12 @@ def validation_report(checks: Sequence[str], tables: Mapping[str, tuple[list[dic
     return "\n".join([
         "# W2-C validation report v1", "", f"Date: {RUN_DATE}", "", "Overall: **PASS**", "",
         *[f"- {check}" for check in checks], "",
-        f"- positive episodes: {len(tables['positive_entry_sample_v1.csv'][0])}",
+        f"- selected comparison episodes: {len(tables['selected_episode_comparison_frame_v1.csv'][0])}",
         f"- analysis units: {len({r['analysis_unit_id'] for r in tables['accountability_outcome_ledger_v1.csv'][0]})}",
         f"- outcome rows: {len(tables['accountability_outcome_ledger_v1.csv'][0])}",
-        f"- matched gate/control rows: {len(tables['nonentry_negative_sample_v1.csv'][0])}",
-        f"- project-change rows: {len(tables['project_change_counterexample_sample_v1.csv'][0])}",
+        f"- gate/control rows: {len(tables['gate_control_frame_v1.csv'][0])}",
+        "- true matched non-entry arm: not established",
+        f"- project-change attribution rows: {len(tables['project_change_attribution_frame_v1.csv'][0])}",
         f"- source receipts: {len(tables['source_receipts_v1.csv'][0])}", "",
         "No central, publication-adapter, frontend or control-document write occurred.", "",
     ])
@@ -847,6 +898,9 @@ def main() -> int:
             path = OUT / name
             if not path.is_file() or path.read_text(encoding="utf-8") != text:
                 mismatches.append(name)
+        for name in OBSOLETE_OUTPUTS:
+            if (OUT / name).exists():
+                mismatches.append(f"obsolete:{name}")
         if mismatches:
             print("FAIL stale/missing outputs: " + ", ".join(mismatches), file=sys.stderr)
             return 1

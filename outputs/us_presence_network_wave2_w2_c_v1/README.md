@@ -1,4 +1,4 @@
-# W2-C 问责结果、负案例与项目改变反例 v1
+# W2-C 问责结果、闸门／控制与项目改变归因 v1
 
 日期：2026-08-22
 
@@ -6,37 +6,39 @@
 
 ## 结论先行
 
-原先“制度只能记录、认定、补偿，不能进一步改变项目”的**笼统结果上限判断被削弱**。
+本包不能把“制度只能记录、认定、补偿，不能进一步改变项目”的笼统结果上限判断写成已被确认推翻。泡濑第一波公金诉讼提供的是一个**待负责人确认的有界候选**：官方一审判决主文支持在判决层编码财政／权限限制，但当前 W2-C 研究层尚未完成人工解释确认。
 
-原因不是出现了基地取消或迁移，而是泡濑第一波公金诉讼提供了一个明确、可执行、可归因的反例：那霸地裁禁止县与市继续作未来公金支出、签订合同或负担新义务（已经发生的支付义务除外）。因此它同时落在 `PROJECT_BUDGET=yes_bounded` 与 `PROJECT_AUTHORITY=yes_bounded`。
+`PROJECT_BUDGET=yes_bounded` 与 `PROJECT_AUTHORITY=yes_bounded` 只表示官方一审判决主文所支持的 judgment-level outcome candidate。它们不表示项目被持久取消、不表示权限限制后来持续有效，也不表示实际预算、财政支出或决算已经改变。后续项目过程与约 185ha→95ha 的范围变化必须另行解释。
 
-目前仍可保留的窄结论是：在这组选择性案例中，民间行动较稳定地留下制度入口与正式记录，部分案件获得过去损害赔偿或程序性产出；除泡濑第一波的有界财政／权限限制外，尚无经负责人复核的案例证明民间行动造成了军事设施／部署的持久取消、迁移或核心运行改变。观察到的其他项目变化，多数有技术、行政审查、地方政府协商或政府间争议等竞争解释。
+目前只能保留更窄的描述：13 个既有 episode 被选择用于九轴并列比较，入口状态必须逐行读取。TE12（工作场所／港口行动）和 TE13（参与／动员记录）不满足独立制度入口；TE10–TE13 的事件事实仍待人审。其余若干案例有正式入口、记录、赔偿或程序产出，但这组选择性材料不能估计入口率、成功率或总体结果上限。
 
-这不是成功率，也不是冲绳全部民间行动的总体结论。13 个正向 episode 本来就是按可观察入口／记录选出的。
+六行补充材料只构成 gate/control frame。它们包含已入场后遇到的闸门、回应追踪控制和一手材料未闭合案例；真正可与已入场案例比较的 matched non-entry arm 尚未建立。
 
 ## 三组样本
 
-- 正向入口框：13 个 source episode；泡濑拆为两波，共 14 个分析单元。
-- 匹配闸门框：6 行；其中包含严格匹配闸门、有界未决、回应追踪控制，以及 1 个明确排除出严格“未入场”框但保留作司法救济控制的案件。
-- 项目改变／反例框：6 行，逐项分开事实改变与 civic attribution。
+- 被选 episode 比较框：13 个 source episode；泡濑拆为两波，共 14 个分析单元。它不是正向入口分母。
+- 闸门／控制框：6 行；所有行均标记 `true_matched_nonentry_arm_status=not_established`。
+- 项目改变／归因比较框：6 行，逐项分开事实改变、决定主体与 civic attribution。
 - 并列结果账本：126 行（14 分析单元 × 9 轴）。
 - 来源收据：49 条；每个在表中使用的 receipt 均有本地文件、SHA-256 和双向 row↔receipt crosswalk。
 
 ## 这轮最重要的校正
 
-1. `ENTRY` 与 `RECORD` 是正向框的入选条件，不是发现，不能拿 13/13 算成功率。
+1. `selection_condition` 现在只编码 `selected_comparison_axis`；实际入口状态另存 `entry_status_at_selection`，不能拿 13/13 算入口率或成功率。
 2. TE05 不是简单的“进入”：请求进入议会、诉讼进入法院，但目标公投被正式闸门挡住。
 3. TE06 必须分 `TE06-W1` 与 `TE06-W2`；两波结果相反。
-4. TE12 的罢工真实发生并影响民用物流，但美国海军官方记录确认军舰访问仍完成；不能把物流扰动写成军事访问被阻止。
-5. 泡濑面积由约 185ha 缩为约 95ha 是项目改变，但市方审查／修订在判决前已启动；不能从前后顺序推断诉讼造成缩减。
-6. Henoko 约 JPY 930bn 是 2019 年官方粗略总成本估计；JPY 648.3bn 仍只是 2025 记者提问中的累计支出前提，未由底层官方支出表闭合。
-7. Earthjustice 申报 USD 276,345.50，Treasury 付款记录 USD 280,000；差额 USD 3,654.50 保留为 `unreconciled difference`，不猜解释。
+4. TE10–TE13 全部待事件级人审；TE12/TE13 只能按各自行动／参与状态进入比较，不能称为独立制度入口。
+5. 泡濑一审的两个 `yes_bounded` 是待负责人确认的判决层候选，不是持久取消、持续权限限制或实际预算改变。
+6. TE12 的罢工真实发生并影响民用物流，但美国海军官方记录确认军舰访问仍完成；不能把物流扰动写成军事访问被阻止。
+7. 泡濑面积由约 185ha 缩为约 95ha 是项目改变，但市方审查／修订在判决前已启动；不能从前后顺序推断诉讼造成缩减。
+8. Henoko 约 JPY 930bn 是 2019 年官方粗略总成本估计；JPY 648.3bn 仍只是 2025 记者提问中的累计支出前提，未由底层官方支出表闭合。
+9. Earthjustice 申报 USD 276,345.50，Treasury 付款记录 USD 280,000；差额 USD 3,654.50 保留为 `unreconciled difference`，不猜解释。
 
 ## 文件
 
-- `positive_entry_sample_v1.csv`：固定 13 episode 与 14 分析单元。
-- `nonentry_negative_sample_v1.csv`：按闸门位置重分的负／控制案例。
-- `project_change_counterexample_sample_v1.csv`：项目改变与独立 attribution。
+- `selected_episode_comparison_frame_v1.csv`：13 个被选 episode、逐行入口状态与 14 个分析单元。
+- `gate_control_frame_v1.csv`：六行闸门／控制观察；不构成 matched non-entry arm。
+- `project_change_attribution_frame_v1.csv`：项目改变与独立 attribution。
 - `accountability_outcome_ledger_v1.csv`：9 个并列结果轴。
 - `source_receipts_v1.csv`：来源、locator、本地路径、哈希与反向支持行。
 - `negative_search_log_v1.csv`：每条 route family 的有界检索结果。

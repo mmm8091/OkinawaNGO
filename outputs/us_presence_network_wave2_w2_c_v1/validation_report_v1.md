@@ -4,22 +4,23 @@ Date: 2026-08-22
 
 Overall: **PASS**
 
-- PASS: fixed positive frame contains TE01-TE13 exactly once
+- PASS: TE01-TE13 form a selected comparison frame, not a uniform positive-entry denominator
 - PASS: 13 episodes expand to 14 analysis units and 126 parallel-axis rows
-- PASS: only ENTRY and RECORD are marked as selection conditions
-- PASS: Awase first-wave budget/authority counterexample is explicit
-- PASS: non-entry frame separates entered relief controls from matched formal gates
+- PASS: every ledger row is a selected comparison axis with entry status encoded separately
+- PASS: Awase yes_bounded codes are judgment-level candidates pending principal, not durable project/fiscal changes
+- PASS: six rows are gate/control observations; a true matched non-entry arm is not established
 - PASS: every project-change row carries independent attribution coding
 - PASS: receipt artifacts/hashes exist and every row↔receipt crosswalk closes bidirectionally
 - PASS: research-only gates and blank principal decisions are preserved
-- PASS: Earthjustice/Treasury difference and JPY 648.3bn reporter-premise semantics remain unclosed
-- PASS: no success rate or chronology-only civic attribution is generated
+- PASS: Earthjustice/Treasury difference plus JPY 930bn/648.3bn boundaries remain explicit
+- PASS: no success rate, uniform positive-entry denominator, or overstrong Awase counterexample claim is generated
 
-- positive episodes: 13
+- selected comparison episodes: 13
 - analysis units: 14
 - outcome rows: 126
-- matched gate/control rows: 6
-- project-change rows: 6
+- gate/control rows: 6
+- true matched non-entry arm: not established
+- project-change attribution rows: 6
 - source receipts: 49
 
 No central, publication-adapter, frontend or control-document write occurred.

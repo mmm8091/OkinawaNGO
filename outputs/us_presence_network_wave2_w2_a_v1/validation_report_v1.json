@@ -32,7 +32,8 @@
     "w2d_candidates_not_promoted_to_bridges": true,
     "source_artifact_hashes_match": true,
     "protected_central_hashes_unchanged": true,
-    "all_dedup_summaries_close_or_explicit_blank": true
+    "all_dedup_summaries_close_or_explicit_blank": true,
+    "coverage_percentages_match_source_rows": true
   },
   "protected_hashes": {
     "data/interim/01_actor_registry_initial_v0.csv": "c77dbc62e2a1019269a9a5ef5d64d1ac14f4cd54e4abf4b45953e33a67c22df4",

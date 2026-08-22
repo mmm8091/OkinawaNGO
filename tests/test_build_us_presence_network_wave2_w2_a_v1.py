@@ -76,6 +76,11 @@ class W2ABuilderTests(unittest.TestCase):
         self.assertEqual(combined["named_descriptor_amount_usd"], "84016")
         self.assertEqual(combined["named_share_of_japanese_bucket_pct"], "53.89")
         self.assertEqual(combined["named_share_of_total_grants_pct"], "38.18")
+        fy2023 = next(row for row in rows("recipient_coverage_v1.csv") if row["coverage_scope"] == "2023-05-31")
+        self.assertEqual(fy2023["named_share_of_japanese_bucket_pct"], "48.07")
+        readme = (DEFAULT_OUT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("FY ending 2023，48.07%／35.27%", readme)
+        self.assertNotIn("48.06%", readme)
         self.assertEqual(combined["recipient_side_awwa_acknowledgment_count"], "3")
         self.assertEqual(combined["exact_amount_and_period_closed_count"], "0")
 

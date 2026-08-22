@@ -1,0 +1,21 @@
+﻿node_id,label,node_type,selection_status,review_status,package_scope,frontend_status,central_writeback
+X001,USO Okinawa,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X004,AWWA,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X005,NOSCO,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X006,KOSC,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X007,OESC,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X008,American Red Cross Okinawa,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X009,NMCRS Okinawa,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X016,MOSCO,service_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X017,ACGO,service_actor_unobservable,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+X018,Marine Thrift Shop,s1_candidate,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+USO_NATIONAL,"United Service Organizations, Inc.",system_or_parent,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+DOD,U.S. Department of Defense,system_interface,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+R8C01,Okinawa Dugong litigation,case_endpoint,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+A009,Earthjustice,accountability_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+A033,Friends of the Earth U.S.,accountability_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+A042,Pacific Environment,accountability_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+A045,Center for Biological Diversity,accountability_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+A070,VFP-ROCK,accountability_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+A086,Turtle Island Restoration Network,accountability_actor,research_endpoint,ai_seeded,research_only,not_frontend_ready,no
+LOCAL_RECIPIENTS,Named Okinawa welfare/medical recipients,recipient_cluster,research_endpoint,ai_seeded,research_only,not_frontend_ready,no

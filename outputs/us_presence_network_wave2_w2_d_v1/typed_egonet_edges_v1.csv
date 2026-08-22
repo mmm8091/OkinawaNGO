@@ -1,0 +1,20 @@
+﻿edge_id,source_node_id,target_node_id,relation_family,edge_status,source_refs,direction_semantics,counts_as_cross_ecology_actor_bridge,interpretation_limit,review_status,package_scope,frontend_status,central_writeback
+W2D-EG001,X004,X005,affiliation_membership,historical_and_current_bounded,F006,,no,AWWA umbrella membership; not control/funding,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG002,X004,X006,affiliation_membership,bounded,F007,,no,AWWA umbrella membership,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG003,X004,X007,affiliation_membership,bounded,F022,,no,AWWA umbrella membership,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG004,X004,X016,affiliation_membership,bounded,F023,,no,AWWA umbrella membership,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG005,X004,X017,historical_membership,out_of_window,F024,,no,Current continuity unconfirmed,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG006,X007,X004,money_flow,confirmed_dated,EH0122;EH0123;EH0124,,no,Three dated filing flows; no downstream earmarking,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG007,X018,X004,money_flow,candidate,EH0125;EH0131,,no,"S1 candidate, not confirmatory frame",ai_seeded,research_only,not_frontend_ready,no
+W2D-EG008,X007,X001,money_flow,confirmed_dated,F021,,no,"USD 3,250 donation on 2025-12-02",ai_seeded,research_only,not_frontend_ready,no
+W2D-EG009,X004,LOCAL_RECIPIENTS,service_recipient,candidate_partial,EH0110:EH0121,,no,Six descriptors; 3 local responses; 0 exact transaction closure,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG010,X009,X008,service_intermediation,official_source_supported_candidate_pending_principal,W2B2-DE028,NMCRS delegates after-hours intake/disbursement to ARC; ARC acts on NMCRS's behalf using NMCRS funds,no,"Directed delegation/interface candidate: NMCRS funds and authority flow to ARC, which provides after-hours intake on NMCRS's behalf; pending principal review",ai_seeded,research_only,not_frontend_ready,no
+W2D-EG011,USO_NATIONAL,X001,organization_hierarchy,official_operating_structure,W2B2-DE001:W2B2-DE004,,no,Hierarchy visible; local allocation not visible,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG012,DOD,USO_NATIONAL,official_award,national_prime,W2B-A006,,no,USD 72m national prime award; not Okinawa receipt,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG013,A045,R8C01,case_role,historical_human_checked,R8R001,,no,Named plaintiff,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG014,A086,R8C01,case_role,historical_human_checked,R8R002,,no,Named plaintiff,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG015,A009,R8C01,case_role,historical_human_checked,R8R005,,no,Counsel,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG016,R8C01,DOD,action_institution,historical_human_checked,R8C01,,no,DoD defendant/target; case did not stop project,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG017,A033,A045,same_event,historical_event_only,EV2015_NACSJ_31,,no,Co-signing only; not alliance,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG018,A042,A045,same_event,historical_event_only,EV2015_NACSJ_31,,no,Co-signing only; not alliance,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG019,A070,DOD,action_institution_context,window_event,USAP006;USAP007,,no,Okinawa military-expansion resolutions/actions,ai_seeded,research_only,not_frontend_ready,no

@@ -4,6 +4,10 @@
 
 状态：`principal_confirmed_2026-08-22`。负责人已完成七项决定，W2-A、W2-B、W2-C、W2-E 放行 `research_only` 工作；中央事实层、publication adapter 与前端仍未授权。
 
+## 后续交叉审计补记
+
+W2-00 的放行决定不变，但后续原件复核收紧了两处术语：USO 当前材料应写成“8 条 directory entries＝6 个 physical centers＋1 条 terminal entry＋1 个 area office”，不再简称“8 个站点／typed presences”；13 个问责 episode 是比较框，其中 TE12／TE13 不是独立制度入口，原 `NONENTRY` 六行也是 gate／control frame，真正的 matched non-entry arm 尚未建立。W2-B／W2-C 按这一口径继续，不能把 W2-00 的早期简称当作样本事实。
+
 ## 先看结果
 
 W2-00 已建立 9 套选择框、152 条锚点、43 条权威来源收据、41 件本地冻结原件、24 条口径修订和 4 套案例量尺。统一包在 `outputs/us_presence_network_wave2_w2_00_v1/`。
@@ -59,7 +63,7 @@ W2-00 已建立 9 套选择框、152 条锚点、43 条权威来源收据、41 �
 
 ### PR005：USO 财务与站点口径——确认
 
-**建议确认**：审计合并财报与 USO Inc. Form 990 并列保存，不相加或互换；以 6 个 operating centers＋AMC terminal＋area office 记录 8 个 typed presences。
+**交叉审计后的执行口径**：审计合并财报与 USO Inc. Form 990 并列保存，不相加或互换；当前材料写成 8 条 directory entries＝6 个 physical centers＋1 条 terminal entry＋1 个 area office，不称八个站点或 typed presences。
 
 ### PR006：USD 72m DoD award 的边界——确认
 
@@ -67,15 +71,15 @@ W2-00 已建立 9 套选择框、152 条锚点、43 条权威来源收据、41 �
 
 ### PR007：问责研究的三组比较——确认
 
-**建议确认**：将 13 个正向入场 episode、匹配的未入场案例、项目改变反例并列建样；后两组完成前，暂停对“制度结果上限”的总体扩大。
+**交叉审计后的执行口径**：将 13 个异质比较 episode、gate／control、真正 matched non-entry arm 和项目改变／归因反例分层建样；TE12／TE13 不计独立制度入口，真正 non-entry arm 完成前暂停对“制度结果上限”的总体扩大。
 
 ## 检查点后的执行顺序
 
-七项已全部通过，W2-A、W2-B、W2-C 和 W2-E 四个 `research_only` 包正式放行；W2-D 等 W2-A 产生人物与 recipient 端点后再开始。结构化状态见 `outputs/us_presence_network_wave2_w2_00_v1/work_package_release_v1.csv`。
+七项已全部通过并据此完成 W2-A、W2-B、W2-C、W2-D、W2-E 五个 `research_only` 包。结构化放行记录仍见 `outputs/us_presence_network_wave2_w2_00_v1/work_package_release_v1.csv`；完成后的新检查点为 `docs/us_presence_network_wave2_abcde_principal_checkpoint_v1.md`。
 
 - W2-A 的首个交付不是网站摘要，而是五家组织三税期长表、去重流向表、人物职务表和 recipient 反向证据。
 - W2-B 首先补 Indo-Pacific／Japan／Okinawa 分配层；仍找不到时，用层级瀑布图明确显示断点。
-- W2-C 先建负案例和项目改变反例，再回编 13 个正向入场 episode；不反过来用 13 例选择后特征找结论。
+- W2-C 先把 13 个异质 episode、gate／control、真正 non-entry 和项目改变／归因分开；不反过来用 13 例选择后特征找结论。
 - W2-E 以问责侧／服务照护侧两条历史线建背景，来源结构不对称时直接显示缺口。
 
 本检查点只放行后续研究包，不同时授权中央写回、publication adapter 或前端发布。

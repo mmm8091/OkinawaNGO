@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+<title id="title">W2-D bounded typed egonet</title>
+<desc id="desc">Service-side internal relations and accountability-side case relations connect to a shared Department of Defense institutional interface, while no direct service-to-accountability organization edge is drawn.</desc>
+<defs><marker id="arrow-candidate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/></marker></defs>
+<rect width="1120" height="500" fill="#fffdf8"/>
+<text x="32" y="38" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#172554">同一制度核心，不等于两套 NGO 已经相连</text>
+<text x="32" y="64" font-family="Arial,sans-serif" font-size="13" fill="#475569">2023–2025 tracer audit；实线=已核/官方结构，虚线=候选或历史；图中没有 S0→A0 组织桥</text>
+<text x="70" y="480" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#0f766e">驻军服务／慈善侧</text>
+<text x="495" y="480" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#334155">共同制度接口</text>
+<text x="850" y="480" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#be185d">问责／倡议侧</text>
+<line x1="190" y1="215" x2="70" y2="115" stroke="#64748b" stroke-width="1.7"/>
+<line x1="190" y1="215" x2="70" y2="165" stroke="#64748b" stroke-width="1.7"/>
+<line x1="190" y1="215" x2="70" y2="215" stroke="#64748b" stroke-width="1.7"/>
+<line x1="190" y1="215" x2="70" y2="265" stroke="#64748b" stroke-width="1.7"/>
+<line x1="190" y1="215" x2="70" y2="325" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="70" y1="215" x2="190" y2="215" stroke="#64748b" stroke-width="1.7"/>
+<line x1="190" y1="100" x2="190" y2="215" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="70" y1="215" x2="350" y2="215" stroke="#64748b" stroke-width="1.7"/>
+<line x1="190" y1="215" x2="350" y2="100" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="350" y1="355" x2="201.0" y2="355.0" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arrow-candidate)"/>
+<line x1="500" y1="215" x2="350" y2="215" stroke="#64748b" stroke-width="1.7"/>
+<line x1="650" y1="250" x2="500" y2="215" stroke="#64748b" stroke-width="1.7"/>
+<line x1="900" y1="190" x2="790" y2="250" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="900" y1="290" x2="790" y2="250" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="900" y1="90" x2="790" y2="250" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="790" y1="250" x2="650" y2="250" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="900" y1="140" x2="900" y2="190" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="900" y1="240" x2="900" y2="190" stroke="#94a3b8" stroke-width="1.7" stroke-dasharray="6 5"/>
+<line x1="900" y1="340" x2="650" y2="250" stroke="#64748b" stroke-width="1.7"/>
+<circle cx="190" cy="215" r="7" fill="#0f766e"/>
+<text x="190" y="199" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">AWWA</text>
+<circle cx="70" cy="115" r="7" fill="#0f766e"/>
+<text x="58" y="119" text-anchor="end" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">NOSCO</text>
+<circle cx="70" cy="165" r="7" fill="#0f766e"/>
+<text x="58" y="169" text-anchor="end" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">KOSC</text>
+<circle cx="70" cy="215" r="7" fill="#0f766e"/>
+<text x="58" y="219" text-anchor="end" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">OESC</text>
+<circle cx="70" cy="265" r="7" fill="#0f766e"/>
+<text x="58" y="269" text-anchor="end" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">MOSCO</text>
+<circle cx="70" cy="325" r="7" fill="#94a3b8"/>
+<text x="58" y="329" text-anchor="end" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">ACGO</text>
+<circle cx="190" cy="100" r="7" fill="#d97706"/>
+<text x="190" y="82" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">Marine Thrift Shop</text>
+<circle cx="350" cy="215" r="7" fill="#0f766e"/>
+<text x="350" y="199" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">USO Okinawa</text>
+<circle cx="190" cy="355" r="7" fill="#0f766e"/>
+<text x="190" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">Red Cross Okinawa</text>
+<circle cx="350" cy="355" r="7" fill="#0f766e"/>
+<text x="350" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">NMCRS Okinawa</text>
+<circle cx="350" cy="100" r="7" fill="#ca8a04"/>
+<text x="350" y="82" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">冲绳地方受赠方</text>
+<circle cx="500" cy="215" r="7" fill="#475569"/>
+<text x="500" y="198" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">USO 全国组织</text>
+<circle cx="650" cy="250" r="7" fill="#334155"/>
+<text x="650" y="276" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">美国国防部（DoD）</text>
+<circle cx="790" cy="250" r="7" fill="#7c3aed"/>
+<text x="790" y="276" text-anchor="middle" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">冲绳儒艮诉讼</text>
+<circle cx="900" cy="90" r="7" fill="#be185d"/>
+<text x="914" y="94" text-anchor="start" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">Earthjustice</text>
+<circle cx="900" cy="140" r="7" fill="#be185d"/>
+<text x="914" y="144" text-anchor="start" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">Friends of the Earth U.S.</text>
+<circle cx="900" cy="190" r="7" fill="#be185d"/>
+<text x="914" y="194" text-anchor="start" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">Center for Biological Diversity</text>
+<circle cx="900" cy="240" r="7" fill="#be185d"/>
+<text x="914" y="244" text-anchor="start" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">Pacific Environment</text>
+<circle cx="900" cy="290" r="7" fill="#be185d"/>
+<text x="914" y="294" text-anchor="start" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">Turtle Island Restoration Network</text>
+<circle cx="900" cy="340" r="7" fill="#be185d"/>
+<text x="914" y="344" text-anchor="start" font-family="Arial,sans-serif" font-size="11.5" fill="#1e293b" paint-order="stroke" stroke="#fffdf8" stroke-width="3" stroke-linejoin="round">VFP-ROCK</text>
+<text x="270" y="347" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" fill="#64748b" paint-order="stroke" stroke="#fffdf8" stroke-width="3">NMCRS→ARC（待审）</text>
+<rect x="470" y="82" width="330" height="44" rx="4" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="635" y="100" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#334155">DoD 是共同制度端点</text>
+<text x="635" y="117" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#475569">对 USO：全国 prime award；在儒艮案：被告／问责对象</text>
+<rect x="450" y="405" width="380" height="39" rx="4" fill="#fff7ed" stroke="#fdba74"/>
+<text x="640" y="421" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#9a3412">这是一条“共同制度接口”，不是两家 NGO 的关系边</text>
+<text x="640" y="437" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" fill="#9a3412">共享地点、同场和共同资助方也分别保留，不自动升级为联盟</text>
+</svg>

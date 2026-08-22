@@ -935,7 +935,15 @@ def render_mediation_svg(rows: list[dict[str, object]], output: Path) -> None:
     (output / "fig_awwa_mediation_structure_v1.svg").write_text(svg, encoding="utf-8")
 
 
-def build_readme(output: Path, counts: dict[str, int]) -> None:
+def build_readme(
+    output: Path,
+    counts: dict[str, int],
+    coverage: list[dict[str, object]],
+) -> None:
+    coverage_by_scope = {str(row["coverage_scope"]): row for row in coverage}
+    fy2023 = coverage_by_scope["2023-05-31"]
+    fy2024 = coverage_by_scope["2024-05-31"]
+    combined = coverage_by_scope["combined_two_tax_periods"]
     text = f"""# W2-A：军属俱乐部资源网络与受赠端核查 v1
 
 日期：2026-08-22  
@@ -965,7 +973,7 @@ Marine Thrift Shop 另有一条 2024-02-22 经 Lions 的 USD 10,000 路径；行
 
 ### AWWA 的具名端点只覆盖拨出的一部分
 
-两期六个具名描述合计 USD 84,016，占日本组织桶 USD 155,915 的 **53.89%**，占两期 grant line USD 220,047 的 **38.18%**。分期分别为：FY ending 2023，48.06%／35.27%；FY ending 2024，62.23%／42.02%。其余部分仍是汇总桶或未具名端点。
+两期六个具名描述合计 USD {int(combined['named_descriptor_amount_usd']):,}，占日本组织桶 USD {int(combined['japanese_organization_bucket_usd']):,} 的 **{float(combined['named_share_of_japanese_bucket_pct']):.2f}%**，占两期 grant line USD {int(combined['grant_line_total_usd']):,} 的 **{float(combined['named_share_of_total_grants_pct']):.2f}%**。分期分别为：FY ending 2023，{float(fy2023['named_share_of_japanese_bucket_pct']):.2f}%／{float(fy2023['named_share_of_total_grants_pct']):.2f}%；FY ending 2024，{float(fy2024['named_share_of_japanese_bucket_pct']):.2f}%／{float(fy2024['named_share_of_total_grants_pct']):.2f}%。其余部分仍是汇总桶或未具名端点。
 
 这两个百分比是**申报可见度**，不是受益覆盖、地方接受度或完整 recipient universe。
 
@@ -1090,7 +1098,7 @@ def build(output: Path = DEFAULT_OUT) -> dict[str, object]:
         "mediation_rows": len(mediation), "review_items": len(review), "w2d_endpoint_handoff_rows": len(endpoint_handoff),
         "negative_logs": len(negative), "source_receipts": len(receipts),
     }
-    build_readme(output, counts)
+    build_readme(output, counts, coverage)
 
     artifact_receipts = [r for r in receipts if r["artifact_path"]]
     hash_ok = all((ROOT / str(r["artifact_path"])).exists() and sha256(ROOT / str(r["artifact_path"])) == r["sha256"] for r in artifact_receipts)
@@ -1117,6 +1125,11 @@ def build(output: Path = DEFAULT_OUT) -> dict[str, object]:
         "source_artifact_hashes_match": hash_ok,
         "protected_central_hashes_unchanged": protected_before == protected_after,
         "all_dedup_summaries_close_or_explicit_blank": all(r["closure_status"] in {"components_reconcile_to_grant_line", "grant_field_absent_not_zero"} for r in dedup),
+        "coverage_percentages_match_source_rows": (
+            next(r for r in coverage if r["coverage_scope"] == "2023-05-31")["named_share_of_japanese_bucket_pct"] == 48.07
+            and next(r for r in coverage if r["coverage_scope"] == "combined_two_tax_periods")["named_share_of_japanese_bucket_pct"] == 53.89
+            and next(r for r in coverage if r["coverage_scope"] == "combined_two_tax_periods")["named_share_of_total_grants_pct"] == 38.18
+        ),
     }
     status = "PASS_RESEARCH_ONLY_W2_A" if all(checks.values()) else "FAIL_W2_A_VALIDATION"
     report = {"status": status, "generated_at": FIXED_AT, "counts": counts, "checks": checks, "protected_hashes": protected_after}

@@ -1,0 +1,152 @@
+{
+  "package": "us_presence_network_wave2_w2_d_v1",
+  "generated_at": "2026-08-22",
+  "scope": "research_only_no_central_no_adapter_no_frontend",
+  "files": [
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/actor_window_observability_v1.csv",
+      "sha256": "8e814c0d6c69b8f4b5e36f3e4920f8ab037a9ed117dcaa20ca663d8fa47cc4ec",
+      "bytes": 33298
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a009_financial_statements.html",
+      "sha256": "c72870e6b42a3221c934fc9d15267222e45f0e3d997b85980ff85adc5a602769",
+      "bytes": 647931
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a009_okinawa_dugong_case.html",
+      "sha256": "f1294bd015b72c8b68c41e70100680e1d502b69bcae19d5eba6333ae58eb3dea",
+      "bytes": 461335
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a042_2025_imo_article.html",
+      "sha256": "d95f5ae362231391fb14052f4b8099e1bff517769164206c8c243cdf35d87d6a",
+      "bytes": 141670
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a042_financials.html",
+      "sha256": "95a8fd606bf5d65b5686441acb8141778fde3e544fcafc825f840e5aa353839f",
+      "bytes": 77914
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a042_fy24_990.pdf",
+      "sha256": "0e063e0752161e161c200dc4d67dafff381664e3e4a25c1eb619befead584bac",
+      "bytes": 3028634
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a045_2023_990.pdf",
+      "sha256": "ff1192bdd4f5b9a760cdfd5e24b521fd6e914a895e5fdb6d95fabd69fa0b442e",
+      "bytes": 265206
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a045_financials.html",
+      "sha256": "75078d5c095789ab23a014dfad709821f8b48c09df1d74205fff9d5ce9c628d1",
+      "bytes": 36516
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a045_japan_program.html",
+      "sha256": "4e12089ca1ab8f05f172bec60afa39ddd76ddd48988b9160f3ddaab2cdd1416f",
+      "bytes": 21964
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a070_2023_resolutions.pdf",
+      "sha256": "41dd03f54506a03adfd906674afd541b43e5809bb5de69bb73f34af52c322241",
+      "bytes": 271308
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a070_2024_peace_tour.html",
+      "sha256": "cda16b84c149991140ae341f67c376a9feb7abef1b105b05dcd5374504cb00f4",
+      "bytes": 43616
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a070_2025_resolution.html",
+      "sha256": "6c90751bbcdc32d78ddd9d3dff3522053ea0f2f6651e9923d8ed7f1add059112",
+      "bytes": 13837
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a086_2025_activity.html",
+      "sha256": "c817b5cd49948a8695c005030d91aef9a2f734f170263bd65f31941f663cb366",
+      "bytes": 163211
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a086_fy24_990.pdf",
+      "sha256": "13034572e15ce25257b0f3b04278e87a13877d38dcd3fb2f72b4e720bf759fef",
+      "bytes": 341873
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/artifacts/a0_official/a086_fy24_audit.pdf",
+      "sha256": "96b12b11e15a891e9da6b4f70122c46d1dd35edbc65aeeb11d75b2ba527c6fcc",
+      "bytes": 205915
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/bridge_audit_matrix_v1.csv",
+      "sha256": "42be0ae1ace96d492e264c105b96e585e3c05e47530e03070e8b8158ea1f58cc",
+      "bytes": 3736647
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/claim_table_v1.csv",
+      "sha256": "2eecf0b0ddcb0c4f7ffbbd2b0c7349069ed70f47ccd1c9bc53606b84d7119b59",
+      "bytes": 3657
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/fig_bounded_bridge_egonet_v1.png",
+      "sha256": "5154a57bf75baeaf7e630219db0559f928b5b047bb2b637951ec801c227b31b3",
+      "bytes": 83107
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/fig_bounded_bridge_egonet_v1.svg",
+      "sha256": "64fe2d5fe7e878bb8c708b03c5e1095700b5753a3e22497a6f350408f75b3e17",
+      "bytes": 9443
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/negative_search_log_v1.csv",
+      "sha256": "fc46d4553b528cc2116052b408671ee0bd0b7f76971e79ffab033fef797a95c7",
+      "bytes": 4525
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/person_disambiguation_queue_v1.csv",
+      "sha256": "a0b199339ff518ea8b9514e49c0246486881e5fac5687b70f43af16fb171584e",
+      "bytes": 4882
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/principal_review_queue_v1.csv",
+      "sha256": "d259df131d84dc6147a70f2e82cb437ff78a5a0bd8679c449fe9a7f00748dab1",
+      "bytes": 3104
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/README.md",
+      "sha256": "7131d89c19f98dfa0c8f9c61bc61c21055fcdd11376832a94f5d58afa5567d48",
+      "bytes": 5142
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/relation_family_coverage_v1.csv",
+      "sha256": "4773a1a1969e3cd9ddb37d8b35fe867e3ac4c6c99aae98755968de9d074dae4d",
+      "bytes": 7063
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/source_family_actor_coverage_v1.csv",
+      "sha256": "0c91ded3a37a3aad637b69417ad69aafd5b76387be537007154a9db904387321",
+      "bytes": 36230
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/source_receipts_v1.csv",
+      "sha256": "f11254c9c2878af04f6642e61adefdc9cb2934863838ae963f0bc857a9c02b5a",
+      "bytes": 11640
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/typed_egonet_edges_v1.csv",
+      "sha256": "ff29f726f042bafeb3c4fe9e0f7984909e7cecbe1e427db84a8a56e27a0fdc39",
+      "bytes": 3398
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/typed_egonet_nodes_v1.csv",
+      "sha256": "4b1d5c45018e53490bcb156643c73a182ef708cf3a54e348a71477e6f7aeb2f0",
+      "bytes": 2240
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/validation_report_v1.json",
+      "sha256": "1e0f24a99c797a65dff2c16a80957ce1dcea88cf7d54570ef1f247cb16bac16d",
+      "bytes": 1309
+    }
+  ]
+}
