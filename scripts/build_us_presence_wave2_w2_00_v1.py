@@ -149,8 +149,22 @@ PRINCIPAL_REVIEW_FIELDS = [
     "what_this_unlocks",
     "principal_decision",
     "principal_note",
+    "principal_reviewer",
+    "principal_decision_date",
     "status",
     "package_scope",
+]
+
+WORK_PACKAGE_RELEASE_FIELDS = [
+    "work_package",
+    "research_scope",
+    "release_status",
+    "authorized_on",
+    "dependency",
+    "central_writeback",
+    "publication_adapter",
+    "frontend_release",
+    "interpretation_limit",
 ]
 
 
@@ -585,9 +599,9 @@ def case_scales() -> list[dict[str, str]]:
 
 def principal_review_queue() -> list[dict[str, str]]:
     common = {
-        "principal_decision": "",
-        "principal_note": "",
-        "status": "pending_principal_review",
+        "principal_reviewer": "project_principal_user",
+        "principal_decision_date": "2026-08-22",
+        "status": "principal_confirmed",
         "package_scope": "research_only",
     }
     rows = [
@@ -662,7 +676,91 @@ def principal_review_queue() -> list[dict[str, str]]:
             "what_this_unlocks": "W2-C 按 ENTRY／RECORD／RELIEF／PROJECT_*／ATTRIBUTION 分轴编码，并启动负案例与反例检索。",
         },
     ]
-    return [{**common, **row} for row in rows]
+    notes = {
+        "W2-00-PR001": "负责人确认当前同年同定义分母未闭合，不发布当前人均数。",
+        "W2-00-PR002": "负责人核对后三期金额均确认；三份官方 IRS XML 与 Schedule I 渲染均列 recipient EIN 980227149。",
+        "W2-00-PR003": "负责人同意六个 recipient descriptor 全部进入 W2-A research tracer 补查。",
+        "W2-00-PR004": "负责人同意混合税期诊断的精确标签，并维持 KOSC 暂缓与 MOSCO 缺失语义。",
+        "W2-00-PR005": "负责人同意两套财务边界及 6 个 center／8 个 typed presence 口径。",
+        "W2-00-PR006": "负责人同意只确认全国 prime award，不建立 DoD→USO Okinawa 资金关系。",
+        "W2-00-PR007": "负责人同意三组问责比较，并暂停扩大结果上限结论。",
+    }
+    return [
+        {
+            **common,
+            **row,
+            "principal_decision": row["recommended_decision"],
+            "principal_note": notes[row["decision_id"]],
+        }
+        for row in rows
+    ]
+
+
+def work_package_releases() -> list[dict[str, str]]:
+    common = {
+        "authorized_on": "2026-08-22",
+        "central_writeback": "no",
+        "publication_adapter": "no",
+        "frontend_release": "no",
+    }
+    return [
+        {
+            **common,
+            "work_package": "W2-A",
+            "research_scope": "five spouse-club organizations: three-period resource flows, people and recipient-side evidence",
+            "release_status": "authorized_research_only",
+            "dependency": "W2-00 PR002-PR004 principal_confirmed",
+            "interpretation_limit": "No ecosystem-wide annual total, donor penetration or legitimacy effect.",
+        },
+        {
+            **common,
+            "work_package": "W2-B",
+            "research_scope": "USO national-region-Okinawa hierarchy, service volume and allocation gap",
+            "release_status": "authorized_research_only",
+            "dependency": "W2-00 PR001, PR005 and PR006 principal_confirmed",
+            "interpretation_limit": "No local allocation estimate without a comparable regional or local denominator.",
+        },
+        {
+            **common,
+            "work_package": "W2-C",
+            "research_scope": "parallel accountability outcomes, matched non-entry cases and project-change countercases",
+            "release_status": "authorized_research_only",
+            "dependency": "W2-00 PR007 principal_confirmed",
+            "interpretation_limit": "Do not generalize a result ceiling from the 13 positive-entry episodes alone.",
+        },
+        {
+            **common,
+            "work_package": "W2-E",
+            "research_scope": "1972-2012 accountability and service-care historical spines plus literature",
+            "release_status": "authorized_research_only",
+            "dependency": "W2-00 checkpoint principal_confirmed",
+            "interpretation_limit": "Show source asymmetry; do not claim a complete longitudinal network.",
+        },
+        {
+            **common,
+            "work_package": "W2-D",
+            "research_scope": "six-family bridge audit and person-actor-time network",
+            "release_status": "waiting_on_w2_a_endpoints",
+            "dependency": "W2-A dated people and recipient endpoints",
+            "interpretation_limit": "No cross-ecology zero claim before relation-family coverage is reported.",
+        },
+        {
+            **common,
+            "work_package": "W2-F",
+            "research_scope": "claim table, shared figures, report, paper and PPT synthesis",
+            "release_status": "waiting_on_upstream_assets",
+            "dependency": "stable outputs from W2-A/B/C/D/E and principal interpretation checkpoint",
+            "interpretation_limit": "No full drafting before case-level claim review.",
+        },
+        {
+            **common,
+            "work_package": "W2-G",
+            "research_scope": "controlled central writeback and publication inputs",
+            "release_status": "not_authorized",
+            "dependency": "separate principal authorization and controlled integration plan",
+            "interpretation_limit": "Research outputs remain outside central facts and frontend until separately approved.",
+        },
+    ]
 
 
 def protected_hashes() -> list[dict[str, str]]:
@@ -719,6 +817,7 @@ def main() -> None:
     actor_members, episode_members = selection_members()
     scales = case_scales()
     review_queue = principal_review_queue()
+    releases = work_package_releases()
 
     write_csv(OUT / "selection_frames_v1.csv", FRAME_FIELDS, frames)
     write_csv(
@@ -779,6 +878,11 @@ def main() -> None:
         OUT / "principal_review_queue_v1.csv",
         PRINCIPAL_REVIEW_FIELDS,
         review_queue,
+    )
+    write_csv(
+        OUT / "work_package_release_v1.csv",
+        WORK_PACKAGE_RELEASE_FIELDS,
+        releases,
     )
     current_protected = protected_hashes()
     write_csv(
@@ -879,6 +983,32 @@ def main() -> None:
             errors.append(
                 f"{row['decision_id']} unknown review receipts: {sorted(unknown_receipts)}"
             )
+        if row["status"] != "principal_confirmed":
+            errors.append(f"{row['decision_id']} principal decision is not closed")
+        if not row["principal_decision"] or not row["principal_note"]:
+            errors.append(f"{row['decision_id']} missing principal decision record")
+
+    expected_release_statuses = {
+        "W2-A": "authorized_research_only",
+        "W2-B": "authorized_research_only",
+        "W2-C": "authorized_research_only",
+        "W2-D": "waiting_on_w2_a_endpoints",
+        "W2-E": "authorized_research_only",
+        "W2-F": "waiting_on_upstream_assets",
+        "W2-G": "not_authorized",
+    }
+    actual_release_statuses = {
+        row["work_package"]: row["release_status"] for row in releases
+    }
+    if actual_release_statuses != expected_release_statuses:
+        errors.append(f"work package release mismatch: {actual_release_statuses!r}")
+    if any(
+        row["central_writeback"] != "no"
+        or row["publication_adapter"] != "no"
+        or row["frontend_release"] != "no"
+        for row in releases
+    ):
+        errors.append("work package release leaked central or frontend authority")
 
     expected_frame_counts = {
         "USF-W2A-SPOUSE5-2026-08-22": 5,
@@ -984,6 +1114,14 @@ def main() -> None:
             "change_notes": len(changes),
             "case_scales": len(scales),
             "principal_review_items": len(review_queue),
+            "principal_review_items_confirmed": sum(
+                row["status"] == "principal_confirmed" for row in review_queue
+            ),
+            "work_package_release_rows": len(releases),
+            "research_packages_authorized": sum(
+                row["release_status"] == "authorized_research_only"
+                for row in releases
+            ),
         },
         "frame_actor_counts": actual_counts,
         "checks": {
@@ -1007,6 +1145,15 @@ def main() -> None:
             "principal_review_crosswalk_closed": not any(
                 "review anchors" in error or "review receipts" in error
                 for error in errors
+            ),
+            "principal_review_complete": all(
+                row["status"] == "principal_confirmed"
+                and bool(row["principal_decision"])
+                and bool(row["principal_note"])
+                for row in review_queue
+            ),
+            "work_package_release_scope_checked": not any(
+                "work package release" in error for error in errors
             ),
             "protected_inputs_unchanged": not any(
                 error.startswith("protected input changed") for error in errors

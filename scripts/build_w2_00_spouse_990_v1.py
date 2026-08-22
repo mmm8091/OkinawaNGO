@@ -497,11 +497,11 @@ def build_anchors(index_receipt_id: str) -> list[dict[str, object]]:
             review_status="ai_seeded",
         )
 
-    # OESC Schedule I provides a clean three-period series to AWWA.  Only the
-    # latest row has already received the principal's earlier fact decision.
+    # OESC Schedule I provides a clean three-period series to AWWA.  The
+    # principal confirmed all three official rows at the W2-00 checkpoint.
     oesc_awwa = [
-        ("2022-07-01", "2023-06-30", "W2A-SR012", 16308, "ai_seeded"),
-        ("2023-07-01", "2024-06-30", "W2A-SR013", 14371, "ai_seeded"),
+        ("2022-07-01", "2023-06-30", "W2A-SR012", 16308, "human_checked"),
+        ("2023-07-01", "2024-06-30", "W2A-SR013", 14371, "human_checked"),
         ("2024-07-01", "2025-06-30", "W2A-SR014", 8479, "human_checked"),
     ]
     for start, end, receipt_id, amount, review in oesc_awwa:
@@ -767,12 +767,12 @@ def build_change_notes() -> list[dict[str, object]]:
             "change_type": "adjacent_period_extension",
             "trigger": "Official OESC Schedule I rows report AWWA cash grants in three consecutive periods: USD 16,308; USD 14,371; USD 8,479.",
             "previous_assumption": "Only the latest USD 8,479 period had a frozen, clean candidate flow.",
-            "revised_treatment": "Keep all three as research-only anchors; the latest retains human_checked, while the two earlier rows remain ai_seeded pending principal relation review.",
+            "revised_treatment": "Keep all three as human_checked research-only anchors after principal confirmation on 2026-08-22; all three official XML rows report recipient EIN 980227149.",
             "impact_on_numbers": "Three period-specific amounts are available; no cross-period total is created.",
             "impact_on_claims": "The filings support repeated OESC-to-AWWA reporting across three observed periods, but not recurrence outside them or downstream allocation.",
             "evidence_receipt_ids": "W2A-SR012;W2A-SR013;W2A-SR014",
-            "requires_principal_decision": "yes_for_two_earlier_flow_rows",
-            "status": "research_only_candidates_added",
+            "requires_principal_decision": "completed_2026-08-22",
+            "status": "principal_confirmed_research_only",
         },
     ]
 
@@ -801,6 +801,10 @@ def validate(
         row["case_id"] == "KOSC_to_AWWA" and str(row["value"]) == "2580"
         for row in anchors
     )
+    oesc_flows = [row for row in anchors if row["case_id"] == "OESC_to_AWWA"]
+    assert len(oesc_flows) == 3
+    assert all(row["review_status"] == "human_checked" for row in oesc_flows)
+    assert all("980227149" in str(row["definition"]) for row in oesc_flows)
     assert not any("annual ecosystem total" in str(row["allowed_claim"]).lower() for row in anchors)
     return {
         "status": "PASS_RESEARCH_ONLY_W2_00_SPOUSE_990",
@@ -814,6 +818,11 @@ def validate(
             for case_id in ["AWWA", "KOSC", "MOSCO", "NOSCO", "OESC"]
         },
         "oesc_awwa_flow_anchor_count": sum(row["case_id"] == "OESC_to_AWWA" for row in anchors),
+        "oesc_awwa_human_checked_flow_anchor_count": sum(
+            row["case_id"] == "OESC_to_AWWA"
+            and row["review_status"] == "human_checked"
+            for row in anchors
+        ),
         "kosc_2580_flow_anchor_count": 0,
         "central_writeback": False,
         "frontend_or_publication_adapter": False,

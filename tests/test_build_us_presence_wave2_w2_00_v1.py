@@ -69,13 +69,32 @@ class W200BuilderTest(unittest.TestCase):
         self.assertTrue(all(row["status"] == "initial_scale_registered" for row in scales))
         self.assertTrue(all(row["adaptation_rule"] for row in scales))
 
-    def test_principal_review_queue_is_bounded_and_research_only(self):
+    def test_principal_review_queue_is_confirmed_and_research_only(self):
         rows = MODULE.principal_review_queue()
         self.assertEqual(7, len(rows))
         self.assertEqual(7, len({row["decision_id"] for row in rows}))
-        self.assertTrue(all(row["status"] == "pending_principal_review" for row in rows))
+        self.assertTrue(all(row["status"] == "principal_confirmed" for row in rows))
         self.assertTrue(all(row["package_scope"] == "research_only" for row in rows))
-        self.assertTrue(all(row["principal_decision"] == "" for row in rows))
+        self.assertTrue(
+            all(row["principal_decision"] == row["recommended_decision"] for row in rows)
+        )
+        self.assertTrue(all(row["principal_note"] for row in rows))
+        self.assertTrue(all(row["principal_reviewer"] == "project_principal_user" for row in rows))
+        self.assertTrue(all(row["principal_decision_date"] == "2026-08-22" for row in rows))
+
+    def test_work_package_release_keeps_research_separate_from_writeback(self):
+        rows = MODULE.work_package_releases()
+        status = {row["work_package"]: row["release_status"] for row in rows}
+        self.assertEqual(
+            {"W2-A", "W2-B", "W2-C", "W2-E"},
+            {key for key, value in status.items() if value == "authorized_research_only"},
+        )
+        self.assertEqual("waiting_on_w2_a_endpoints", status["W2-D"])
+        self.assertEqual("waiting_on_upstream_assets", status["W2-F"])
+        self.assertEqual("not_authorized", status["W2-G"])
+        self.assertTrue(all(row["central_writeback"] == "no" for row in rows))
+        self.assertTrue(all(row["publication_adapter"] == "no" for row in rows))
+        self.assertTrue(all(row["frontend_release"] == "no" for row in rows))
 
 
 if __name__ == "__main__":

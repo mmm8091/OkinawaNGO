@@ -12,7 +12,10 @@
     "source_receipts_without_local_artifact": 2,
     "change_notes": 24,
     "case_scales": 4,
-    "principal_review_items": 7
+    "principal_review_items": 7,
+    "principal_review_items_confirmed": 7,
+    "work_package_release_rows": 7,
+    "research_packages_authorized": 4
   },
   "frame_actor_counts": {
     "USF-W2A-SPOUSE5-2026-08-22": 5,
@@ -35,6 +38,8 @@
     "active_registry_mapping_checked": true,
     "a072_excluded": true,
     "principal_review_crosswalk_closed": true,
+    "principal_review_complete": true,
+    "work_package_release_scope_checked": true,
     "protected_inputs_unchanged": true,
     "central_writeback": false,
     "frontend_release": false

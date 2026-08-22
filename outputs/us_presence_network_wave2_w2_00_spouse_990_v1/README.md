@@ -1,7 +1,7 @@
 # W2-00：AWWA／五家军属俱乐部 IRS 锚点包 v1
 
 日期：2026-08-22
-状态：`research_only`；官方收据已冻结，尚未授权中央事实层、关系表、publication adapter 或前端写回。
+状态：`research_only / principal_checkpoint_confirmed`；官方收据已冻结，三期 OESC→AWWA 行已由负责人确认。尚未授权中央事实层、关系表、publication adapter 或前端写回。
 
 ## 1. 本包完成了什么
 
@@ -50,7 +50,7 @@ OESC 的三份官方 Schedule I 连续报告 AWWA（EIN `98-0227149`）为 recip
 | 2023-07-01—2024-06-30 | USD 14,371 |
 | 2024-07-01—2025-06-30 | USD 8,479 |
 
-最晚一期 USD 8,479 保留既有 `human_checked`；前两期是本轮新增的官方收据事实，仍为 `ai_seeded`，等待负责人决定是否扩成三期研究关系。这里可以说“申报连续三期出现”，不能说三期之外持续发生，也不能推断 AWWA 下游 recipient、资金最初来源或政治立场。
+负责人于 2026-08-22 确认三行金额与身份，三期均记为 `human_checked` research-only 锚点。三份官方 XML 的 recipient EIN 均为 `98-0227149`。这里可以说“申报连续三期出现”，不能说三期之外持续发生，也不能推断 AWWA 下游 recipient、资金最初来源或政治立场。
 
 ### 4.2 AWWA 明确把拨出资金分成基地关联侧与日本地方侧
 
@@ -117,16 +117,16 @@ python scripts\extract_remote_irs_xml_v1.py `
 
 NOSCO FY2025 的 IRS ZIP 成员使用 Deflate64。标准库不能解压 method 9；本轮把 `inflate64` 安装在忽略目录 `tmp/w2_00_python_deps`，再通过 `PYTHONPATH` 调用。无该可选依赖时，抽取器会明确退出，不会悄悄下载整份 494 MB ZIP 或退回第三方收据。
 
-## 8. 主线程下一检查点
+## 8. 负责人检查点结果
 
-负责人只需判断四项：
+负责人于 2026-08-22 完成四项判断：
 
-1. 是否把 OESC→AWWA 的前两期 Schedule I 行与既有 USD 8,479 一并标为 `human_checked`；
-2. 是否允许在报告中使用四个“混合税期毛量级”数；若使用，必须保留上述口径标题；
-3. 六个 AWWA 具名 recipient descriptor 中，哪些值得进入 W2-A 身份／收款端人工复核；
-4. MOSCO 最新 grants 元素缺失是否需要进一步判为零。建议本轮维持缺失语义即可。
+1. OESC→AWWA 三期 Schedule I 行全部确认为 `human_checked` research-only 锚点；
+2. 四个“混合税期毛量级”可作为内部诊断和后续案例比较使用，必须保留精确口径标题；
+3. 六个 AWWA 具名 recipient descriptor 全部进入 W2-A 身份、收款端与 LEG2 地方回应补查；
+4. MOSCO 最新 grants 元素维持缺失语义，不改写为 0。
 
-KOSC USD 2,580 继续 defer；AWWA 2022-05 期末申报继续记官方 index gap。两项都不妨碍 W2-00 收束。
+KOSC USD 2,580 继续 defer；AWWA 2022-05 期末申报继续记官方 index gap。W2-A 已放行研究层工作，中央事实和前端仍需另行授权。
 
 ## 9. 不得被主线程误读为
 

@@ -9,7 +9,7 @@
   "inputs": [
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/anchor_candidates_v1.csv",
-      "sha256": "6c64f04513e35aaf7a15147bb8ce205b93ab93da022b4715a95c67bb2aa49ca8"
+      "sha256": "6a776cf44f9d8e1b8441ff5dd33071d9f01735f29e7ddd2e6c6728c486312851"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/source_receipts_v1.csv",
@@ -17,7 +17,7 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/change_notes_v1.csv",
-      "sha256": "f5b7def6f60303b9daf45e829bf87e8a1ff4723863ff58b23e17133f33c20671"
+      "sha256": "621af6cb95999274b1887eb1300eb3aff0e20d759d8bef4da7f90cd6b6d9426c"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/cache_inventory_v1.csv",
@@ -29,7 +29,7 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/package_manifest_v1.csv",
-      "sha256": "e913a679575dcfaa758a53a3a591d9ff3ea9cb1dca52bd9f8e5582a2e14759f0"
+      "sha256": "5e84a7cf13d84bb0268452cf1090e4fdb99e5010c13a233dcd9521a00d257bf0"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/raw/awwa_fy2023_202410619349200461.xml",
@@ -89,11 +89,11 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/README.md",
-      "sha256": "6123c1ab56cb8eabbb4d8e4fab350d6c075c5b751c4f4e7a4a433674e15e3f4a"
+      "sha256": "1d1c709452ce04d502e669c05656db78122fc0373018ec937aa064d9d900cf7f"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_spouse_990_v1/validation_report_v1.json",
-      "sha256": "5668a657455f4d2b5d4e81a6af45001b8c84438198c354271606cd1b2fabab6f"
+      "sha256": "aeec217b8181b181f1c9e8b8d1a93ed076ef87069bef1ad0f35a181bb690a862"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_uso_v1/anchor_candidates_v1.csv",
@@ -271,8 +271,8 @@
   "files": [
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/anchor_ledger_v1.csv",
-      "bytes": 106515,
-      "sha256": "3db4b59ae5442a75d0a1d7b60a64be6b37a19d24ec1387ec8e8162d1ecc0dcbb"
+      "bytes": 106465,
+      "sha256": "67ea11d3b7ee7bcd725db5982a441cf36966813121c7ea664e297e587b210226"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/case_scale_registry_v1.csv",
@@ -281,8 +281,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/change_notes_v1.csv",
-      "bytes": 13921,
-      "sha256": "c979122f8f89856d96de2c5d0bc182d168eed1d3692560c9b59df7b6f3e11cce"
+      "bytes": 13917,
+      "sha256": "e2b41fd4a3fba370894757db03cd9d9aff9107f89c80276680bdf67e625ecfd4"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/preflight_protected_hashes_v1.csv",
@@ -291,8 +291,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/principal_review_queue_v1.csv",
-      "bytes": 4509,
-      "sha256": "5cd2995b5cd991d841da4766e973fc694acb166137336e5703bda05ddb14621a"
+      "bytes": 5826,
+      "sha256": "150b28c504c08c9a6d9b2e7c13c74b15d0dc7d9cb416f42f08f41344221e4991"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/protected_input_hashes_v1.csv",
@@ -301,8 +301,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/README.md",
-      "bytes": 5034,
-      "sha256": "d77ebc935982a4476917cdb1e0f64e913876b8299c68a5ba3fb36192fac424c6"
+      "bytes": 5235,
+      "sha256": "42657c5896f1193253f96b1bed3d676f2262b3709aaf74605f9d7312c2b02d26"
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/selection_frame_actor_members_v1.csv",
@@ -326,8 +326,13 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_00_v1/validation_report_v1.json",
-      "bytes": 1393,
-      "sha256": "82960b098cd192a391a4d35258ae4f4943bf10d6e45ef8d791bb99752e6fd51d"
+      "bytes": 1603,
+      "sha256": "a327dbaae590cfabaf47570bd8d3054cd4eca354b9d45533d24bbc2c4983ae42"
+    },
+    {
+      "path": "outputs/us_presence_network_wave2_w2_00_v1/work_package_release_v1.csv",
+      "bytes": 1856,
+      "sha256": "a03db0b35989aca339a4501c58ba8a627c952b669ffd6cca28c744672e062615"
     }
   ]
 }

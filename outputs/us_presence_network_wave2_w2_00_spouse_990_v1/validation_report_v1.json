@@ -13,6 +13,7 @@
     "OESC": 3
   },
   "oesc_awwa_flow_anchor_count": 3,
+  "oesc_awwa_human_checked_flow_anchor_count": 3,
   "kosc_2580_flow_anchor_count": 0,
   "central_writeback": false,
   "frontend_or_publication_adapter": false

@@ -2,7 +2,7 @@
 
 日期：2026-08-22
 
-状态：`evidence_reading_required_before_W2-A_B_C_E`。W2-00 锚点冻结已完成；本检查点通过前，152 条锚点中的新提取项继续保持 `research_only`，不写中央事实层、publication adapter 或前端。
+状态：`principal_confirmed_2026-08-22`。负责人已完成七项决定，W2-A、W2-B、W2-C、W2-E 放行 `research_only` 工作；中央事实层、publication adapter 与前端仍未授权。
 
 ## 先看结果
 
@@ -35,41 +35,43 @@ W2-00 已建立 9 套选择框、152 条锚点、43 条权威来源收据、41 �
 - 对照 Earthjustice USD 276,345.50 申报行与 Treasury USD 280,000 付款行；差额原因不明；
 - 读 `selection_frames_v1.csv` 中 `ENTRY13`、`NONENTRY`、`PROJECTCHANGE` 三行。
 
-## 请决定的七项
+## 七项决定结果
 
 结构化回传表是 `outputs/us_presence_network_wave2_w2_00_v1/principal_review_queue_v1.csv`。
 
-### PR001：当前人口分母
+### PR001：当前人口分母——确认
 
 **建议确认**：当前同年同定义的全冲绳分母未闭合，W2-A／W2-B 不发布当前人均数，改用总额、申报内覆盖率和端点覆盖率。
 
-### PR002：OESC→AWWA 三税期关系
+### PR002：OESC→AWWA 三税期关系——确认
 
 **建议确认**：新补 USD 16,308 和 14,371 两行为 `human_checked`，与既有 USD 8,479 组成三税期连续申报关系。不外推资金最初来源、AWWA 下游去向或三期之外的持续性。
 
-### PR003：AWWA 六个具名 recipient
+**复核补记**：三份官方 IRS XML 和 Schedule I 渲染均列 recipient EIN `98-0227149`；负责人确认三行金额属实。
+
+### PR003：AWWA 六个具名 recipient——全部放行 research tracer
 
 **建议全部放行为 research tracer**：进入身份、收款端与 LEG2 地方回应补查；未确认正式名称和受赠端证据前，不进中央资金关系。
 
-### PR004：五家组织的量级与异常字段
+### PR004：五家组织的量级与异常字段——确认
 
 **建议确认**：USD 1.011m 收入、USD 1.146m 支出、USD 239k grants 下限、USD 625,527 net assets 只称“五家最新申报的跨税期毛运作量级”；KOSC USD 2,580 继续暂缓；MOSCO 最新 grants 元素保持缺失，不改写为 0。
 
-### PR005：USO 财务与站点口径
+### PR005：USO 财务与站点口径——确认
 
 **建议确认**：审计合并财报与 USO Inc. Form 990 并列保存，不相加或互换；以 6 个 operating centers＋AMC terminal＋area office 记录 8 个 typed presences。
 
-### PR006：USD 72m DoD award 的边界
+### PR006：USD 72m DoD award 的边界——确认
 
 **建议确认**：只建立 DoD／WHS→USO Inc. 全国 prime award 锚点；USD 41.212m 保留为字段语义冲突；0 subaward 只是公开 subaward 检索结果；不生成 DoD→USO Okinawa 资金关系。
 
-### PR007：问责研究的三组比较
+### PR007：问责研究的三组比较——确认
 
 **建议确认**：将 13 个正向入场 episode、匹配的未入场案例、项目改变反例并列建样；后两组完成前，暂停对“制度结果上限”的总体扩大。
 
 ## 检查点后的执行顺序
 
-七项全部通过后，放行 W2-A、W2-B、W2-C 和 W2-E 四个 `research_only` 包；W2-D 等 W2-A 产生人物与 recipient 端点后再开始。
+七项已全部通过，W2-A、W2-B、W2-C 和 W2-E 四个 `research_only` 包正式放行；W2-D 等 W2-A 产生人物与 recipient 端点后再开始。结构化状态见 `outputs/us_presence_network_wave2_w2_00_v1/work_package_release_v1.csv`。
 
 - W2-A 的首个交付不是网站摘要，而是五家组织三税期长表、去重流向表、人物职务表和 recipient 反向证据。
 - W2-B 首先补 Indo-Pacific／Japan／Okinawa 分配层；仍找不到时，用层级瀑布图明确显示断点。

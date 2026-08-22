@@ -2,7 +2,7 @@
 
 日期：2026-08-22
 
-状态：`research_only / not_frontend_ready / central_writeback=no`
+状态：`research_only / principal_checkpoint_confirmed / not_frontend_ready / central_writeback=no`
 
 W2-00 的任务不是提前下结论，而是先把第二轮的选择框、量尺、权威原件和口径冲突固定下来。本包合并了军属组织 990、USO 全国—冲绳层级、人口分母与问责尺度三条工作线，不改中央数据和前端。
 
@@ -12,9 +12,9 @@ W2-00 的任务不是提前下结论，而是先把第二轮的选择框、量�
 - 152 条锚点：W2-A 83、W2-B 32、W2-C 37；
 - 43 条权威来源收据，其中 41 件原件已本地冻结并校验 SHA-256，2 个官方页面因 403 保留 URL、locator 与失败状态；
 - 24 条 change note，记录预期口径在原件面前为什么失效、如何修订、会改变哪条结论；
-- 4 套案例量尺和 7 项负责人决定队列。
+- 4 套案例量尺、7 项已完成的负责人决定和 7 行工作包放行记录。
 
-152 条锚点中，151 条仍为 `ai_seeded`，1 条是既有的 `human_checked` OESC→AWWA USD 8,479。“已归档官方原件”不等于“已经负责人批准写入结论”。
+152 条锚点中，149 条仍为 `ai_seeded`，3 条 OESC→AWWA 三税期关系为 `human_checked`。“已归档官方原件”仍不等于“已经批准写入中央事实或对外结论”。
 
 ## 2. W2-00 已经改变的研究认识
 
@@ -47,7 +47,8 @@ USO 2024 审计合并财报与 USO Inc. Form 990 是两个不同报告边界，�
 | `source_receipts_v1.csv` | 43 条权威收据及本地原件哈希 |
 | `change_notes_v1.csv` | 24 条口径调整及对数字／结论的影响 |
 | `case_scale_registry_v1.csv` | AWWA／军属俱乐部、USO、问责、公共资源四套初始与当前量尺 |
-| `principal_review_queue_v1.csv` | 7 项负责人决定，未回传前均不改事实状态 |
+| `principal_review_queue_v1.csv` | 7 项负责人决定及 2026-08-22 正式回传记录 |
+| `work_package_release_v1.csv` | W2-A／B／C／E 放行、W2-D／F 依赖和 W2-G 未授权状态 |
 | `validation_report_v1.json` | 唯一键、引用、原件哈希、选择框计数和中央／前端零写入检查 |
 
 三个子包保留更细的原始表与说明：
@@ -56,15 +57,16 @@ USO 2024 审计合并财报与 USO Inc. Form 990 是两个不同报告边界，�
 - `outputs/us_presence_network_wave2_w2_00_uso_v1/`
 - `outputs/us_presence_network_wave2_w2_00_system_accountability_v1/`
 
-## 4. 下一步的放行条件
+## 4. 工作包状态
 
-负责人检查点见 `docs/us_presence_network_wave2_w2_00_principal_checkpoint_v1.md`。七项决定完成后：
+负责人于 2026-08-22 完成七项检查点决定：
 
 - W2-A 可做五家组织的三税期资源流、人物和 recipient 反向核查；
 - W2-B 可做 USO 全国—地区—冲绳的层级瀑布图和服务量缺口；
 - W2-C 可开始匹配未入场案例、项目改变反例与并列结果轴；
 - W2-E 可并行整理 1972–2012 两条历史背景线；
-- W2-D 等 W2-A 的人物与 recipient 端点出来后再展开六类 Bridge audit。
+- W2-D 等 W2-A 的人物与 recipient 端点出来后再展开六类 Bridge audit；
+- W2-F 等上游研究资产与负责人解释检查点；W2-G 中央落库仍未授权。
 
 ## 5. 复现
 
