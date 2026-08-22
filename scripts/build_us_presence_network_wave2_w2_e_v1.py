@@ -23,6 +23,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "outputs" / "us_presence_network_wave2_w2_e_v1"
 SOURCE_RAW = DEFAULT_OUTPUT / "raw"
 BUILD_DATE = "2026-08-22"
+UNEXPECTED_FINDINGS_TEMPLATE = (
+    ROOT / "data" / "metadata" / "unexpected_findings_register_template_v1.csv"
+)
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -36,6 +39,19 @@ def write_csv(path: Path, rows: list[dict[str, object]], fieldnames: list[str]) 
         writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
+
+
+def unexpected_findings_fieldnames() -> list[str]:
+    """Read the package-local lead contract from its single authoritative template."""
+    with UNEXPECTED_FINDINGS_TEMPLATE.open(
+        "r", encoding="utf-8-sig", newline=""
+    ) as handle:
+        fieldnames = next(csv.reader(handle), [])
+    if len(fieldnames) != 19:
+        raise ValueError(
+            f"Unexpected-findings template must contain 19 columns, got {len(fieldnames)}"
+        )
+    return fieldnames
 
 
 def sha256(path: Path) -> str:
@@ -740,11 +756,18 @@ def write_readme(output_dir: Path, counts: dict[str, int]) -> None:
 没有建立 AWWA 前身关系，也没有改中央表、publication adapter 或前端。`ai_seeded` 锚点仍需负责人
 判断；来源是官方原件，也不自动把解释升级成人审结论。
 
+## 意外发现登记
+
+- `unexpected_findings_register_v1.csv`：本轮 {counts['unexpected_findings']} 条；本次构建没有登记新的偶发线索。
+- 登记项全部使用 `lead_only`，不进入本包结论、中央事实层或前端，也不触发人工复核。
+- 每条根线索最多向外追查 3 步，每包最多 10 条新观察；空表不表示现实中不存在其他关系或材料。
+
 ## 复现
 
 ```powershell
-python scripts\build_us_presence_network_wave2_w2_e_v1.py
+python scripts/build_us_presence_network_wave2_w2_e_v1.py
 python -m unittest tests.test_build_us_presence_network_wave2_w2_e_v1
+python scripts/validate_research_work_package_v1.py outputs/us_presence_network_wave2_w2_e_v1
 ```
 """
     (output_dir / "README.md").write_text(text, encoding="utf-8")
@@ -826,9 +849,22 @@ def validate(
     spine: list[dict[str, object]],
     receipts: list[dict[str, str]],
     claims: list[dict[str, str]],
+    unexpected_findings: list[dict[str, str]],
 ) -> dict[str, object]:
     receipt_ids = {row["receipt_id"] for row in receipts}
     allowed_statuses = {"human_checked", "human_revised", "ai_seeded", "needs_local_retrieval"}
+    register_path = output_dir / "unexpected_findings_register_v1.csv"
+    with register_path.open("r", encoding="utf-8-sig", newline="") as handle:
+        register_reader = csv.DictReader(handle)
+        register_fieldnames = register_reader.fieldnames or []
+        written_unexpected_findings = list(register_reader)
+    required_lead_values = {
+        "workflow_status": "lead_only",
+        "claim_eligibility": "no",
+        "central_writeback": "no",
+        "human_review_trigger": "no",
+        "publication_eligibility": "no",
+    }
     checks: dict[str, bool] = {
         "unique_spine_ids": len({str(row["spine_id"]) for row in spine}) == len(spine),
         "unique_receipt_ids": len(receipt_ids) == len(receipts),
@@ -840,6 +876,16 @@ def validate(
         "no_central_writeback": all(str(row["central_writeback"]) == "no" for row in spine + claims) and all(row["central_writeback"] == "no" for row in receipts),
         "no_frontend_release": all(str(row["frontend_eligibility"]) == "not_frontend_ready" for row in spine + claims) and all(row["frontend_eligibility"] == "not_frontend_ready" for row in receipts),
         "no_genealogy_relation_type": all(str(row["event_type"]) not in {"predecessor_of", "successor_of", "same_actor"} for row in spine),
+        "unexpected_findings_register_contract": (
+            register_fieldnames == unexpected_findings_fieldnames()
+            and written_unexpected_findings == unexpected_findings
+            and len(unexpected_findings) <= 10
+            and all(
+                row.get(field, "") == expected
+                for row in unexpected_findings
+                for field, expected in required_lead_values.items()
+            )
+        ),
         "local_receipt_hashes_match": True,
         "svg_parses": True,
     }
@@ -866,6 +912,7 @@ def validate(
             "source_receipts": len(receipts),
             "locally_frozen_new_sources": sum(row["archive_status"] == "local_frozen" for row in receipts),
             "claims": len(claims),
+            "unexpected_findings_rows": len(unexpected_findings),
         },
         "boundaries": {
             "package_scope": "research_only",
@@ -906,6 +953,7 @@ def build(output_dir: Path) -> dict[str, object]:
     local_tasks = build_local_tasks()
     literature = build_literature_comparison()
     coverage = build_coverage(spine)
+    unexpected_findings: list[dict[str, str]] = []
 
     write_csv(output_dir / "historical_spine_v1.csv", spine, list(spine[0]))
     write_csv(output_dir / "record_regime_comparison_v1.csv", regimes, list(regimes[0]))
@@ -914,6 +962,11 @@ def build(output_dir: Path) -> dict[str, object]:
     write_csv(output_dir / "literature_comparison_v1.csv", literature, list(literature[0]))
     write_csv(output_dir / "claim_table_v1.csv", claims, list(claims[0]))
     write_csv(output_dir / "local_retrieval_candidates_v1.csv", local_tasks, list(local_tasks[0]))
+    write_csv(
+        output_dir / "unexpected_findings_register_v1.csv",
+        unexpected_findings,
+        unexpected_findings_fieldnames(),
+    )
     render_svg(spine, output_dir / "fig_w2e_two_spines_v1.svg")
     counts = {
         "spine": len(spine),
@@ -921,11 +974,12 @@ def build(output_dir: Path) -> dict[str, object]:
         "service": sum(row["lane"] == "service_care" for row in spine),
         "sources": len(receipts),
         "literature": len(literature),
+        "unexpected_findings": len(unexpected_findings),
     }
     write_readme(output_dir, counts)
     write_checkpoint(output_dir)
     write_search_log(output_dir)
-    validation = validate(output_dir, spine, receipts, claims)
+    validation = validate(output_dir, spine, receipts, claims, unexpected_findings)
     (output_dir / "validation_report_v1.json").write_text(json.dumps(validation, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if validation["status"] != "PASS":
         raise RuntimeError(json.dumps(validation, ensure_ascii=False, indent=2))

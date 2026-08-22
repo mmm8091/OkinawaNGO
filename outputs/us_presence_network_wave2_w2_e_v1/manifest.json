@@ -60,8 +60,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2786,
-      "sha256": "32c32a9be3b1ce62035d36ac46f76aacccac300b756e8d04ebc0e618f63f07ce"
+      "bytes": 3265,
+      "sha256": "c23d52c109a3010bdfc59ee6f92a4b5208e47d0d059f0df7d752c8bb9eed1e53"
     },
     {
       "path": "record_regime_comparison_v1.csv",
@@ -84,9 +84,14 @@
       "sha256": "512245651107ac60628e663843daa1bde8ae3daa46d75d6b6838ebf86128e249"
     },
     {
+      "path": "unexpected_findings_register_v1.csv",
+      "bytes": 281,
+      "sha256": "72205721a177c241f1142932b0cb06f9f660fc6dbd626419808922eea5a75af6"
+    },
+    {
       "path": "validation_report_v1.json",
-      "bytes": 951,
-      "sha256": "3cdd361181e87949880d7da261566f4444b111901dc5e8a4dadccb0f07fa7b0a"
+      "bytes": 1039,
+      "sha256": "22f3fd4bc0fc2b7ae49b8dc5a1f374d725c8e62d447f7fc0bd990830313cb17e"
     }
   ]
 }

@@ -1,12 +1,19 @@
 from __future__ import annotations
 
+import csv
 import importlib.util
+import io
+import subprocess
+import sys
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "make_us_presence_network_wave2_w2_c_v1.py"
+TEMPLATE = ROOT / "data" / "metadata" / "unexpected_findings_register_template_v1.csv"
+VALIDATOR = ROOT / "scripts" / "validate_research_work_package_v1.py"
+OUT = ROOT / "outputs" / "us_presence_network_wave2_w2_c_v1"
 SPEC = importlib.util.spec_from_file_location("w2c_builder", SCRIPT)
 assert SPEC and SPEC.loader
 BUILDER = importlib.util.module_from_spec(SPEC)
@@ -106,6 +113,27 @@ class W2CBuilderTest(unittest.TestCase):
         )
         for prohibited in ("direct_official_bounded", "confirmed_bounded_counterexample", "real counterexample", "USF-W2C-ENTRY13"):
             self.assertNotIn(prohibited, text)
+
+    def test_unexpected_findings_register_is_header_only_and_protocol_valid(self) -> None:
+        payloads = BUILDER.payloads()
+        register = payloads["unexpected_findings_register_v1.csv"]
+        generated_rows = list(csv.reader(io.StringIO(register)))
+        with TEMPLATE.open("r", encoding="utf-8-sig", newline="") as handle:
+            template_rows = list(csv.reader(handle))
+        self.assertEqual(template_rows, generated_rows)
+        self.assertEqual(1, len(generated_rows))
+        self.assertIn("## 意外发现登记", payloads["README.md"])
+        self.assertIn("validate_research_work_package_v1.py", payloads["README.md"])
+
+        subprocess.run([sys.executable, str(SCRIPT)], cwd=ROOT, check=True, capture_output=True, text=True)
+        result = subprocess.run(
+            [sys.executable, str(VALIDATOR), str(OUT)],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(0, result.returncode, result.stderr)
 
 
 if __name__ == "__main__":

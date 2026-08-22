@@ -12,6 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs" / "us_presence_network_wave2_w2_d_v1"
 SCRIPT = ROOT / "scripts" / "build_us_presence_network_wave2_w2_d_v1.py"
+TEMPLATE = ROOT / "data" / "metadata" / "unexpected_findings_register_template_v1.csv"
+VALIDATOR = ROOT / "scripts" / "validate_research_work_package_v1.py"
 
 
 def digest(path: Path) -> str:
@@ -96,6 +98,27 @@ class TestW2DBridgeAudit(unittest.TestCase):
         for row in rows("source_receipts_v1.csv"):
             if row["artifact_path"]:
                 self.assertEqual(digest(ROOT / row["artifact_path"]), row["sha256"])
+
+    def test_unexpected_findings_register_is_header_only_and_protocol_valid(self) -> None:
+        with TEMPLATE.open("r", encoding="utf-8-sig", newline="") as handle:
+            expected_fields = next(csv.reader(handle))
+        with (OUT / "unexpected_findings_register_v1.csv").open(
+            "r", encoding="utf-8-sig", newline=""
+        ) as handle:
+            reader = csv.DictReader(handle)
+            self.assertEqual(expected_fields, reader.fieldnames)
+            self.assertEqual([], list(reader))
+        readme = (OUT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("## 意外发现登记", readme)
+        self.assertIn("validate_research_work_package_v1.py", readme)
+        result = subprocess.run(
+            [sys.executable, str(VALIDATOR), str(OUT)],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(0, result.returncode, result.stderr)
 
     def test_rebuild_is_byte_deterministic(self) -> None:
         before = {path.name: digest(path) for path in OUT.iterdir() if path.is_file()}

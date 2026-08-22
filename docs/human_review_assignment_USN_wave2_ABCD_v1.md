@@ -179,6 +179,20 @@
 
 负责人决定：
 
+## HR-USN2-14：三份信息公开请求审定与发送
+
+本项是取证行动，不是事实复核，不计入 W2-A—D 的 relation／claim 人审数量。先读 `docs/information_disclosure_request_plan_USN_wave2_v1.md` 与三份请求草稿。
+
+| 子项 | 请求对象 | 需要负责人完成 | 状态／受理编号 |
+|---|---|---|---|
+| 14a | `HQ00342310002` 地区／日本／冲绳 allocation、subaward 与执行分配 | 审定受理机构、时间范围与请求文本；发出后填日期、编号、费用／转送状态 |  |
+| 14b | MCCS Okinawa／MCIPAC MCCS 年度财务报表与可分配项目收支 | 审定 NAFI／财务口径、年度与隐私排除；发出后填日期、编号、费用／转送状态 |  |
+| 14c | 冲绳防卫局冲绳相关分项预算、支出与合同执行 | 审定文书名称、年度、机关与电子交付范围；提交后填日期、编号、费用／转送状态 |  |
+
+可选决定：`approve_and_send / revise_then_send / defer_with_reason / reject_route_and_retarget`。
+
+边界：请求本身不是来源事实；“机关未答复／转送／称无记录”也只先进入 request ledger。任何实质答复须另行归档，再按字段语义决定能否进入 `anchor_ledger`、`resource_flow_ledger` 或缺口结论。
+
 ## 正式回传格式
 
 建议新建：`docs/human_review_return_USN_wave2_ABCD_v1.md`。

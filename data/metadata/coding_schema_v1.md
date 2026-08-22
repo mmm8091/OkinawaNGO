@@ -90,6 +90,16 @@ crosswalk 后迁移，不能由构建脚本自动视为 `human_checked`。
 | `lead` | 只确认检索机会、同场线索或未知 recipient；尚未形成关系命题 |
 | `unsupported` | 材料不能支持当前命题 |
 
+### 6.1 `lead_only` 不属于 claim_status
+
+`lead_only` 是研究工作包《意外发现登记》使用的包内 workflow state，不是本节合法的
+`claim_status`，也不是第 3 节的 `review_status`。它位于 `lead` 之前：只表示执行中遇到一条
+值得保留并可作有限侦察的线索，尚未形成关系或解释命题。
+
+`lead_only` 不进入中央表、人工复核任务、研究视图或 publication snapshot。若以后要升级为
+`claim_status=lead`、`candidate` 或其他研究观察，必须另开问题与选择框，重新经过现行证据、
+复核和展示门禁。具体登记与三步／十条边界见 `docs/research_work_package_protocol_v1.md`。
+
 `supported_bounded` 必须同时提供：
 
 - `confirmed_scope`

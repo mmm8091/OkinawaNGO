@@ -21,6 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / "outputs" / "us_presence_network_wave2_w2_a_v1"
 W2_00 = ROOT / "outputs" / "us_presence_network_wave2_w2_00_spouse_990_v1"
+UNEXPECTED_TEMPLATE = ROOT / "data" / "metadata" / "unexpected_findings_register_template_v1.csv"
 FIXED_AT = "2026-08-22T17:30:00+08:00"
 
 ACTORS = {
@@ -112,6 +113,15 @@ def write_csv(path: Path, fields: list[str], rows: list[dict[str, object]]) -> N
         writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="raise")
         writer.writeheader()
         writer.writerows(rows)
+
+
+def write_empty_unexpected_findings_register(output: Path) -> None:
+    """Create the package-local lead-only register with the canonical 19 columns."""
+    with UNEXPECTED_TEMPLATE.open(encoding="utf-8-sig", newline="") as handle:
+        fields = csv.DictReader(handle).fieldnames or []
+    if len(fields) != 19:
+        raise ValueError(f"unexpected-findings template must have 19 columns, got {len(fields)}")
+    write_csv(output / "unexpected_findings_register_v1.csv", fields, [])
 
 
 def normalize_name(name: str) -> str:
@@ -1018,11 +1028,16 @@ Ambitious 与 Himawari 的金额／日期并不与当前 AWWA 申报行直接闭
 | `change_notes_v1.csv` | 口径调整与影响 |
 | `fig_awwa_mediation_structure_v1.svg` | 中介结构解释图 |
 
+## 意外发现登记
+
+本轮 **0 条**。`unexpected_findings_register_v1.csv` 仅保留规范表头。未来若在本包中遇到题外线索，只能以 `lead_only` 留在包内：不进入结论、中央事实、人工复核队列、publication snapshot 或前端；有限侦察最多沿线索三步、全包最多十条观察。
+
 ## 6. 复现
 
 ```powershell
 python scripts/build_us_presence_network_wave2_w2_a_v1.py
 python -m unittest tests.test_build_us_presence_network_wave2_w2_a_v1
+python scripts/validate_research_work_package_v1.py outputs/us_presence_network_wave2_w2_a_v1
 ```
 
 脚本只重建本包的派生 CSV／SVG／README／validation／manifest，原始网络收据已冻结在 `artifacts/`；W2-00 的 14 份核心 IRS XML 通过原包路径与哈希引用。
@@ -1085,6 +1100,7 @@ def build(output: Path = DEFAULT_OUT) -> dict[str, object]:
     write_csv(output / "negative_search_log_v1.csv", list(negative[0]), negative)
     write_csv(output / "change_notes_v1.csv", list(changes[0]), changes)
     write_csv(output / "source_receipts_v1.csv", list(receipts[0]), receipts)
+    write_empty_unexpected_findings_register(output)
     render_mediation_svg(mediation, output)
 
     counts = {

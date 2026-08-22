@@ -41,9 +41,16 @@
 没有建立 AWWA 前身关系，也没有改中央表、publication adapter 或前端。`ai_seeded` 锚点仍需负责人
 判断；来源是官方原件，也不自动把解释升级成人审结论。
 
+## 意外发现登记
+
+- `unexpected_findings_register_v1.csv`：本轮 0 条；本次构建没有登记新的偶发线索。
+- 登记项全部使用 `lead_only`，不进入本包结论、中央事实层或前端，也不触发人工复核。
+- 每条根线索最多向外追查 3 步，每包最多 10 条新观察；空表不表示现实中不存在其他关系或材料。
+
 ## 复现
 
 ```powershell
-python scriptsuild_us_presence_network_wave2_w2_e_v1.py
+python scripts/build_us_presence_network_wave2_w2_e_v1.py
 python -m unittest tests.test_build_us_presence_network_wave2_w2_e_v1
+python scripts/validate_research_work_package_v1.py outputs/us_presence_network_wave2_w2_e_v1
 ```

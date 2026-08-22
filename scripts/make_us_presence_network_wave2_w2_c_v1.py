@@ -24,6 +24,9 @@ from typing import Iterable, Mapping, Sequence
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs" / "us_presence_network_wave2_w2_c_v1"
 ARTIFACTS = OUT / "artifacts"
+UNEXPECTED_FINDINGS_TEMPLATE = (
+    ROOT / "data" / "metadata" / "unexpected_findings_register_template_v1.csv"
+)
 TE_PATH = (
     ROOT
     / "outputs"
@@ -86,6 +89,11 @@ def csv_text(rows: Sequence[Mapping[str, object]], fields: Sequence[str]) -> str
     for row in rows:
         writer.writerow({field: row.get(field, "") for field in fields})
     return buf.getvalue()
+
+
+def unexpected_findings_fields() -> list[str]:
+    with UNEXPECTED_FINDINGS_TEMPLATE.open("r", encoding="utf-8-sig", newline="") as fh:
+        return next(csv.reader(fh))
 
 
 def scoped(row: dict[str, str]) -> dict[str, str]:
@@ -690,6 +698,7 @@ def build_tables() -> dict[str, tuple[list[dict[str, str]], list[str]]]:
         "principal_review_queue_v1.csv": (review, REVIEW_FIELDS),
         "inclusion_exclusion_log_v1.csv": (inclusion, INCLUSION_FIELDS),
         "resource_anchor_crosswalk_v1.csv": (anchor_xw, ANCHOR_XW_FIELDS),
+        "unexpected_findings_register_v1.csv": ([], unexpected_findings_fields()),
     }
 
 
@@ -849,7 +858,12 @@ def readme(tables: Mapping[str, tuple[list[dict[str, str]], list[str]]]) -> str:
 - `principal_review_queue_v1.csv`：负责人需要判断的高影响项目，决定栏全部留白。
 - `inclusion_exclusion_log_v1.csv`：三组样本的冻结纳入／排除记录。
 - `resource_anchor_crosswalk_v1.csv`：W2-00 金额与预算口径原样保留。
+- `unexpected_findings_register_v1.csv`：包内 `lead_only` 线索登记；本轮仅保留 19 列表头。
 - `artifacts/`：本轮新增或重新冻结的官方原件。
+
+## 意外发现登记
+
+本轮登记 **0 条**。`unexpected_findings_register_v1.csv` 只保留统一表头。以后如出现超出本包既定问题的观察，可以标为 `lead_only` 并沿单条线索追查最多三步，单包起点与跟进合计最多十条。这些记录不进入本包结论、中央事实、人工复核队列、publication snapshot 或前端。
 
 ## 复现与验证
 
@@ -857,6 +871,7 @@ def readme(tables: Mapping[str, tuple[list[dict[str, str]], list[str]]]) -> str:
 python scripts\\make_us_presence_network_wave2_w2_c_v1.py
 python scripts\\make_us_presence_network_wave2_w2_c_v1.py --check
 python -m unittest tests.test_make_us_presence_network_wave2_w2_c_v1
+python scripts\\validate_research_work_package_v1.py outputs\\us_presence_network_wave2_w2_c_v1
 ```
 
 本包不修改中央事实、publication adapter、前端或控制文档。负责人复核前，任何结论都不得提升为正式 publication claim。

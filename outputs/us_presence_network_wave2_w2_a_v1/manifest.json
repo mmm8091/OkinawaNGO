@@ -155,8 +155,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6669,
-      "sha256": "3466e0fe16ae12e8d9ba5f21898919ae11a90fd7706fb24d9579581e80e41de3"
+      "bytes": 7103,
+      "sha256": "133ce4b6f81fb11bafc31d7f31defabe85453fca3b58007c03a1822e82641812"
     },
     {
       "path": "recipient_coverage_v1.csv",
@@ -177,6 +177,11 @@
       "path": "source_receipts_v1.csv",
       "bytes": 23400,
       "sha256": "7d34d402a6754b2852b72f81842aa3af1c7af1cc7ff264f2d3700abbfd3a3f8b"
+    },
+    {
+      "path": "unexpected_findings_register_v1.csv",
+      "bytes": 281,
+      "sha256": "72205721a177c241f1142932b0cb06f9f660fc6dbd626419808922eea5a75af6"
     },
     {
       "path": "validation_report_v1.json",

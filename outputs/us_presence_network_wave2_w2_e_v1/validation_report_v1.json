@@ -12,6 +12,7 @@
     "no_central_writeback": true,
     "no_frontend_release": true,
     "no_genealogy_relation_type": true,
+    "unexpected_findings_register_contract": true,
     "local_receipt_hashes_match": true,
     "svg_parses": true
   },
@@ -22,7 +23,8 @@
     "human_reviewed_rows": 6,
     "source_receipts": 46,
     "locally_frozen_new_sources": 5,
-    "claims": 7
+    "claims": 7,
+    "unexpected_findings_rows": 0
   },
   "boundaries": {
     "package_scope": "research_only",

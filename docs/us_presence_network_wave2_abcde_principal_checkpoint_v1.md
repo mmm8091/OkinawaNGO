@@ -2,7 +2,7 @@
 
 日期：2026-08-22
 
-状态：`principal_review_pending`。W2-A／B／C／D／E 已完成 `research_only` 调查和交叉审计；本检查点不授权中央写回、publication adapter、前端发布或正式论文结论。
+状态：`principal_review_pending / W2-F_blocked_by_principal`。W2-A／B／C／D／E 已完成 `research_only` 调查和交叉审计；负责人于 2026-08-22 明确 W2-F 现在不放行。本检查点不授权中央写回、publication adapter、前端发布或正式论文结论。
 
 ## 先看研究结果
 
@@ -54,7 +54,7 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 | W2-D | Bridge audit | 4,482 pair-family 行；54 个 S0×A0 dyad；36 有界零；18 未决 |
 | W2-E | 历史与文献 | 30 历史锚点；15 文献定位；7 候选 claim；10 当地／新一手任务 |
 
-五包全部为 `research_only / not_frontend_ready / central_writeback=no`。五包定向测试共 43 项通过；来源哈希、重建确定性与中央保护文件检查均通过。
+五包全部为 `research_only / not_frontend_ready / central_writeback=no`。接入意外发现登记协议后，五包定向测试与通用协议测试合计 54 项通过；来源哈希、重建确定性与中央保护文件检查均通过。
 
 ## 建议的 75—90 分钟阅读
 
@@ -118,7 +118,19 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 ### P9：下一步放行边界
 
-建议先完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`，同时只补一个有界的 matched non-entry arm 与最关键 recipient／LEG2 原件。九项判断完成后再放行 W2-F 合成；W2-G 中央写回、publication adapter 和前端仍需另行授权。
+负责人决定：**W2-F 当前不放行。**
+
+放行前先完成三类工作：
+
+1. 完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`，同时只补一个有界的 matched non-entry arm 与最关键 recipient／LEG2 原件；
+2. **已完成图表修正**：USO 瀑布图已删除无口径的 47,000 population 标注；该数只保留在原始服务覆盖观察中，并明确是 2025 年 USO 自述的服务覆盖规模，不是当前同年同定义总人口，也不能用于人均计算；
+3. **草稿已完成、尚未发送**：发出并登记三份信息公开请求——`HQ00342310002` 的地区／日本／冲绳 allocation 与 subaward／执行分配、MCCS Okinawa／MCIPAC MCCS 年度财务报表、冲绳防卫局冲绳相关分项预算／支出／合同执行。
+
+请求文本、受理路径和 `draft_not_sent` 状态统一放在 `docs/information_disclosure_request_plan_USN_wave2_v1.md` 及其 request ledger。发出请求本身不生成事实，也不保证本轮等到答复；但本轮收尾前必须留下发送记录。W2-G 中央写回、publication adapter 和前端仍需另行授权。
+
+## 研究主动性补丁
+
+负责人同意给每个新建或重新打开的工作包增加《意外发现登记》，并允许执行者沿一条线索自主侦察最多三步、单包最多 10 条观察。全部使用 `lead_only`，不进结论、中央层、人工复核或前端；完整协议见 `docs/research_work_package_protocol_v1.md`。
 
 ## 本检查点不会自动发生的事
 
@@ -127,3 +139,5 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 - 不会从 LEG0—LEG2 推出合法性提升；
 - 不会开始正式论文、报告全文或前端发布；
 - 不会把 W2-F 合成授权解释为 W2-G 落库授权。
+- 不会把信息公开请求的发出、未回复或转送状态写成实质事实。
+- 不会把 `lead_only` 线索或侦察结果混进本检查点已有计数。

@@ -30,6 +30,9 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs" / "us_presence_network_wave2_w2_d_v1"
+UNEXPECTED_FINDINGS_TEMPLATE = (
+    ROOT / "data" / "metadata" / "unexpected_findings_register_template_v1.csv"
+)
 ART = OUT / "artifacts" / "a0_official"
 BUILD_DATE = "2026-08-22"
 WINDOW_START = "2023-01-01"
@@ -100,6 +103,11 @@ def write_csv(path: Path, fields: list[str], rows: list[dict[str, object]]) -> N
         writer.writeheader()
         for raw in rows:
             writer.writerow({field: raw.get(field, "") for field in fields})
+
+
+def unexpected_findings_fields() -> list[str]:
+    with UNEXPECTED_FINDINGS_TEMPLATE.open("r", encoding="utf-8-sig", newline="") as handle:
+        return next(csv.reader(handle))
 
 
 def common(row: dict[str, object]) -> dict[str, object]:
@@ -1025,9 +1033,14 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 | `claim_table_v1.csv` | 可写／不可写的结论表 |
 | `principal_review_queue_v1.csv` | 负责人判断队列 |
 | `source_receipts_v1.csv` | 官方与内部输入的 URL／哈希收据 |
+| `unexpected_findings_register_v1.csv` | 包内 `lead_only` 线索登记；本轮仅保留 19 列表头 |
 | `validation_report_v1.json` / `manifest_v1.json` | 验证与文件清单 |
 
-## 5. 负责人当前需要决定
+## 意外发现登记
+
+本轮登记 **0 条**。`unexpected_findings_register_v1.csv` 只保留统一表头。以后如出现超出本包既定问题的观察，可以标为 `lead_only` 并沿单条线索追查最多三步，单包起点与跟进合计最多十条。这些记录不进入本包结论、中央事实、人工复核队列、publication snapshot 或前端。
+
+## 6. 负责人当前需要决定
 
 1. 是否接受 36 个 direct pair 的有界零措辞；
 2. W2-A 四组跨组织姓名候选和 A070 chapter／人物别名；
@@ -1036,7 +1049,7 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 5. 是否维持人物层 tracer egonet，而不做覆盖不足的全网中心性。
 6. 是否按 `NMCRS→ARC` 批准非营业时段入口／资金方向；批准前保持 candidate。
 
-## 6. 不得误读为
+## 7. 不得误读为
 
 - 不是现实中“两套生态零连接”的证明；
 - 不是人物网络、资助网络或 recipient 网络已经穷尽；
@@ -1044,11 +1057,12 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 - 不是把 DoD award、诉讼角色或系统接口写成 NGO 间资金边；
 - 不是中央写回、publication adapter 或前端发布授权。
 
-## 7. 复现
+## 8. 复现
 
 ```powershell
 python scripts/build_us_presence_network_wave2_w2_d_v1.py
 python -m unittest tests.test_build_us_presence_network_wave2_w2_d_v1
+python scripts/validate_research_work_package_v1.py outputs/us_presence_network_wave2_w2_d_v1
 ```
 """
 
@@ -1170,6 +1184,11 @@ def main() -> None:
         "mime_type", "exact_locator", "supports_row_ids", "archive_status", "notes", "review_status", "package_scope",
         "frontend_status", "central_writeback",
     ], receipts)
+    write_csv(
+        OUT / "unexpected_findings_register_v1.csv",
+        unexpected_findings_fields(),
+        [],
+    )
 
     counts = {
         "matrix": len(matrix), "source_coverage": len(source_audit), "person_queue": len(person_queue),

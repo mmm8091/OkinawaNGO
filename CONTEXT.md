@@ -59,6 +59,9 @@ How do Okinawa civic organizations / NGOs translate base issues into environment
 - **audited public-record zero**: A negative result limited to a declared actor pair, relation family, time window and source corpus after both endpoints are observable and the named source audit is complete. It never means that the real-world relationship does not exist.
 - **gate/control frame**: Entered cases, post-entry institutional gates, response controls or unresolved procedural observations used to interpret pathways. It is not a matched non-entry sample unless independent inclusion rules establish that comparison.
 - **judgment-level outcome**: A result stated in a court judgment's operative text. It is coded separately from persistence, implementation, actual budget/outturn change and durable project change.
+- **unexpected finding**: An observation encountered while doing an approved work package but lying outside that package's stated question or selection frame. It is preserved so it can motivate a later question, not treated as a result of the current package.
+- **lead_only**: A package-local workflow state for an unexpected finding and its bounded follow-up. It is neither a legal `review_status` nor the publishable research-view `claim_status=lead`; it has no claim, central-writeback, human-review-trigger or publication eligibility.
+- **bounded reconnaissance**: A short, source-traceable follow-up from a registered unexpected finding. It preserves research initiative without silently enlarging the package's selection frame; promotion requires a separately approved research question.
 
 ## Main Cautions
 

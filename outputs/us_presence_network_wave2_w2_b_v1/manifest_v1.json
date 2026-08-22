@@ -4,17 +4,17 @@
   "scope": "research_only",
   "central_writeback": "no",
   "frontend_status": "not_frontend_ready",
-  "file_count": 39,
+  "file_count": 40,
   "files": [
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/README.md",
-      "sha256": "90816d95533824b2dbf7ea806637c10b71e8731076ca89b814b0c0d96b151f13",
-      "bytes": 7858
+      "sha256": "22760a5abecb4873e5aab209b6d615f298017db425211cbd4e6f87638134a2ad",
+      "bytes": 8666
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/allocation_waterfall_v1.csv",
-      "sha256": "db1e360c051156f5ebfb722e53f8c476b21eeb1bc95ac4467a4e23d891020017",
-      "bytes": 6131
+      "sha256": "ad03c726bb63c9efe5e332cdb0a728c3e0b5bf01fe3d014be6cf3eab2837e588",
+      "bytes": 6087
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/artifacts/nmcrs_annual_reports_financials.html",
@@ -143,8 +143,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/change_notes_v1.csv",
-      "sha256": "482712c554b6fa7a5d6a0529123b8824d4133fcf9df812ed542271dde3d55361",
-      "bytes": 5203
+      "sha256": "96275e5f32584bbd8dabbd28fd62987b3575183e66d004b10b1e00dbb6dd8c86",
+      "bytes": 5306
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/federal_award_allocation_audit_v1.csv",
@@ -153,8 +153,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/fig_allocation_visibility_waterfall_v1.svg",
-      "sha256": "4e5b79fde3dee44e929a3edf1b169a2d4319d66245372669a9ec39c728cf514e",
-      "bytes": 10599
+      "sha256": "412dceb9fc124ea470d34cd2374ae754aeaa13c007b10ff631f1e0d736969fc1",
+      "bytes": 10574
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/hierarchy_and_site_year_v1.csv",
@@ -163,8 +163,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/negative_search_log_v1.csv",
-      "sha256": "094bec2b6dffe1c94d79c6b0e0e032674c4f9725a24f64b94c191cf3d686150c",
-      "bytes": 6091
+      "sha256": "8afe1720b2a8a57e25b17e17afbb369dd5e60caad7bfbd20e329f13090bc91f9",
+      "bytes": 6276
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/principal_review_queue_v1.csv",
@@ -173,8 +173,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/service_capacity_observations_v1.csv",
-      "sha256": "d7c109ecf3407eedd1f6a4e9584197ec017c1a73566ecce834b1135e5169c192",
-      "bytes": 7081
+      "sha256": "c4a78eec809b2dafdc1625e88d8a554fcc8345935e36815424fa7b4ef78bfcd9",
+      "bytes": 7197
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/service_function_boundary_v1.csv",
@@ -192,9 +192,14 @@
       "bytes": 7190
     },
     {
+      "path": "outputs/us_presence_network_wave2_w2_b_v1/unexpected_findings_register_v1.csv",
+      "sha256": "72205721a177c241f1142932b0cb06f9f660fc6dbd626419808922eea5a75af6",
+      "bytes": 281
+    },
+    {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/validation_report_v1.json",
-      "sha256": "5fb4256bf5c01c678519f364475349fc88d67b082545889e16c9ef8f6aea8c73",
-      "bytes": 8485
+      "sha256": "94c9b8f730651961535c44570ac94dba790bdd621cd46380219a20d2c468c9af",
+      "bytes": 9072
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_b_v1/w2_d_endpoint_candidates_v1.csv",

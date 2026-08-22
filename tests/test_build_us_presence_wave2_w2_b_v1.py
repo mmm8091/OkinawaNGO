@@ -8,6 +8,8 @@ from pathlib import Path
 import unittest
 import xml.etree.ElementTree as ET
 
+from scripts.validate_research_work_package_v1 import REQUIRED_COLUMNS, validate_package
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "build_us_presence_wave2_w2_b_v1.py"
@@ -56,11 +58,27 @@ class W2BPackageTests(unittest.TestCase):
 
     def test_all_rows_are_research_only_ai_seeded(self) -> None:
         for path in OUT.glob("*.csv"):
+            if path.name == "unexpected_findings_register_v1.csv":
+                continue
             for row in read_csv(path.name):
                 self.assertEqual(row["review_status"], "ai_seeded", path.name)
                 self.assertEqual(row["package_scope"], "research_only", path.name)
                 self.assertEqual(row["frontend_status"], "not_frontend_ready", path.name)
                 self.assertEqual(row["central_writeback"], "no", path.name)
+
+    def test_unexpected_findings_register_is_empty_and_isolated(self) -> None:
+        register = OUT / "unexpected_findings_register_v1.csv"
+        with register.open(encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle)
+            self.assertEqual(reader.fieldnames, REQUIRED_COLUMNS)
+            self.assertEqual(list(reader), [])
+        readme = (OUT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("## 意外发现登记", readme)
+        self.assertIn("本轮 **0 条**", readme)
+        self.assertIn("lead_only", readme)
+        self.assertIn("最多沿线索三步、全包最多十条观察", readme)
+        self.assertIn("validate_research_work_package_v1.py", readme)
+        self.assertEqual(validate_package(OUT), [])
 
     def test_current_site_types_resolve_six_vs_eight(self) -> None:
         rows = read_csv("hierarchy_and_site_year_v1.csv")
@@ -126,6 +144,31 @@ class W2BPackageTests(unittest.TestCase):
         for row_id in ("W2B2-WF003", "W2B2-WF004", "W2B2-WF005"):
             self.assertEqual(rows[row_id]["known_amount"], "")
             self.assertEqual(rows[row_id]["visibility_status"], "allocation_gap")
+
+    def test_47000_is_bounded_service_coverage_not_an_allocation_denominator(self) -> None:
+        waterfall = {row["stage_id"]: row for row in read_csv("allocation_waterfall_v1.csv")}
+        local_scale = " ".join(waterfall["W2B2-WF008"].values()).lower()
+        for token in ("47k", "47,000", "47000"):
+            self.assertNotIn(token, local_scale)
+
+        svg = (OUT / "fig_allocation_visibility_waterfall_v1.svg").read_text(encoding="utf-8").lower()
+        for token in ("47k", "47,000", "47000"):
+            self.assertNotIn(token, svg)
+
+        capacity = {row["observation_id"]: row for row in read_csv("service_capacity_observations_v1.csv")}
+        bounded = capacity["W2B2-SC002"]
+        self.assertEqual(bounded["value"], "47000")
+        self.assertIn("2025 uso", bounded["allowed_claim"].lower())
+        self.assertIn("self-reported service-coverage scale", bounded["allowed_claim"].lower())
+        self.assertIn("not a population denominator", bounded["prohibited_inference"].lower())
+
+        negative = {row["search_id"]: row for row in read_csv("negative_search_log_v1.csv")}["W2B2-NS002"]
+        self.assertIn("2025 uso self-report", " ".join(negative.values()).lower())
+        self.assertIn("not a population denominator", " ".join(negative.values()).lower())
+
+        readme = (OUT / "README.md").read_text(encoding="utf-8").lower()
+        self.assertIn("2025 uso self-reported service-coverage scale", readme)
+        self.assertIn("not a population denominator", readme)
 
     def test_same_award_reporting_views_are_parallel_not_a_money_chain(self) -> None:
         rows = {row["stage_id"]: row for row in read_csv("allocation_waterfall_v1.csv")}
@@ -204,7 +247,7 @@ class W2BPackageTests(unittest.TestCase):
         validation = json.loads((OUT / "validation_report_v1.json").read_text(encoding="utf-8"))
         self.assertEqual(validation["status"], "PASS_RESEARCH_ONLY")
         self.assertEqual(validation["fail_count"], 0)
-        self.assertGreaterEqual(validation["check_count"], 50)
+        self.assertGreaterEqual(validation["check_count"], 55)
         manifest = json.loads((OUT / "manifest_v1.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["scope"], "research_only")
         self.assertGreaterEqual(manifest["file_count"], 30)

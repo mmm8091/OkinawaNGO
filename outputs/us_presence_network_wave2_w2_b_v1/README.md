@@ -42,6 +42,8 @@
 
 这三组数可以并存。不将 8 directory entries 称为 8 个站点；三个时间截面也不能推出中心开闭、组织解散或任何生命周期变化。
 
+`47,000` 仅保留在 `service_capacity_observations_v1.csv` 中，其语义是 **2025 USO self-reported service-coverage scale**（USO 2025 年自述的服务覆盖规模），**not a population denominator**。它不进入 `allocation_waterfall_v1.csv` 或对外解释图，也不能转换为年度唯一用户、uses、visits、人口普查数或地区分配权重。
+
 ### 3.2 已知金额与未知金额
 
 已知：
@@ -89,11 +91,16 @@
 
 供 W2-D 使用的端点另列在 `w2_d_endpoint_candidates_v1.csv`。人物行只保留资料中实际观察到的职务日期；`J. Phil VanEtten / Phil VanEtten` 与 `E.J. Schulz / Shultz` 仍需要姓名规范化。唯一进入关系复核的服务接口候选是 NMCRS -> ARC 的非营业时段 intake/disbursement 委托；ARC 代表 NMCRS 并使用 NMCRS funds。它仍是 `official_source_supported_candidate_pending_principal`。同址、一般转介、共同服务对象或功能重叠都没有自动升格为组织桥。
 
+## 意外发现登记
+
+本轮 **0 条**。`unexpected_findings_register_v1.csv` 仅保留规范表头。未来若在本包中遇到题外线索，只能以 `lead_only` 留在包内：不进入结论、中央事实、人工复核队列、publication snapshot 或前端；有限侦察最多沿线索三步、全包最多十条观察。
+
 ## 7. 复现与验证
 
 ```powershell
 python scripts\build_us_presence_wave2_w2_b_v1.py
 python -m unittest tests.test_build_us_presence_wave2_w2_b_v1
+python scripts\validate_research_work_package_v1.py outputs\us_presence_network_wave2_w2_b_v1
 ```
 
 `validation_report_v1.json` 必须为 `PASS_RESEARCH_ONLY`。`manifest_v1.json` 给出本包表格、图、README、验证报告与来源下载件的 SHA-256。构建只读取已经冻结的官方／既有归档件，不联网，也不分配中央 S-ID。

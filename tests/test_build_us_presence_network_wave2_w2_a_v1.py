@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 from scripts.build_us_presence_network_wave2_w2_a_v1 import DEFAULT_OUT, ROOT, build
+from scripts.validate_research_work_package_v1 import REQUIRED_COLUMNS, validate_package
 
 
 def rows(name: str) -> list[dict[str, str]]:
@@ -131,6 +132,22 @@ class W2ABuilderTests(unittest.TestCase):
         validation = json.loads((DEFAULT_OUT / "validation_report_v1.json").read_text(encoding="utf-8"))
         for rel, expected in validation["protected_hashes"].items():
             self.assertEqual(digest(ROOT / rel), expected, rel)
+
+    def test_unexpected_findings_register_is_empty_and_isolated(self) -> None:
+        register = DEFAULT_OUT / "unexpected_findings_register_v1.csv"
+        with register.open(encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle)
+            self.assertEqual(reader.fieldnames, REQUIRED_COLUMNS)
+            self.assertEqual(list(reader), [])
+        readme = (DEFAULT_OUT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("## 意外发现登记", readme)
+        self.assertIn("本轮 **0 条**", readme)
+        self.assertIn("lead_only", readme)
+        self.assertIn("最多沿线索三步、全包最多十条观察", readme)
+        self.assertIn("validate_research_work_package_v1.py", readme)
+        self.assertEqual(validate_package(DEFAULT_OUT), [])
+        manifest = json.loads((DEFAULT_OUT / "manifest.json").read_text(encoding="utf-8"))
+        self.assertIn("unexpected_findings_register_v1.csv", {item["path"] for item in manifest["files"]})
 
     def test_rebuild_is_byte_deterministic(self) -> None:
         before = digest(DEFAULT_OUT / "manifest.json")

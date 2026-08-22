@@ -2,8 +2,8 @@
   "package": "us_presence_network_wave2_w2_b_v1",
   "build_date": "2026-08-22",
   "status": "PASS_RESEARCH_ONLY",
-  "check_count": 52,
-  "pass_count": 52,
+  "check_count": 55,
+  "pass_count": 55,
   "fail_count": 0,
   "checks": [
     {
@@ -260,6 +260,21 @@
       "check_id": "W2B-V032",
       "status": "PASS",
       "detail": "SVG uses parallel same-award views rather than the retired sequential arrow"
+    },
+    {
+      "check_id": "W2B-V033",
+      "status": "PASS",
+      "detail": "47,000 self-reported service coverage is absent from WF008 and the public allocation figure"
+    },
+    {
+      "check_id": "W2B-V034",
+      "status": "PASS",
+      "detail": "SC002 retains 47,000 only as a bounded 2025 USO self-reported service-coverage scale, not a population denominator"
+    },
+    {
+      "check_id": "W2B-V035",
+      "status": "PASS",
+      "detail": "negative log and README preserve the 2025 USO self-report boundary and reject use as a population denominator"
     },
     {
       "check_id": "W2B-V021",
