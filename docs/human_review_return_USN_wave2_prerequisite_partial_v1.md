@@ -47,7 +47,9 @@ HR-USN2-06b 决定 `accept_current_boundary`：USD 10,000 只闭合到 Lions 中
 
 ## 五、尚未完成
 
-- HR-USN2-01—03、06a／06c、07—14；
+- HR-USN2-02—03、06a／06c、07—14；
 - 三份信息公开请求的实际发送与登记；
 
 以上完成前，W2-F 继续阻断。
+
+HR-USN2-01 的后续人物决定已另行完成并记录于 `docs/human_review_return_USN_wave2_person_disambiguation_v1.md`；本件继续保留 non-entry、recipient、LEG2 与 MTS 边界的原回传范围。

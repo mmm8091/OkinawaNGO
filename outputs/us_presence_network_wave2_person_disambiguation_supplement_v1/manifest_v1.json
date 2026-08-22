@@ -1,7 +1,7 @@
 {
   "package_id": "USN_W2_PERSON_DISAMBIGUATION_SUPPLEMENT_V1",
   "generated_on": "2026-08-22",
-  "status": "research_only_principal_decision_pending",
+  "status": "research_only_principal_decisions_recorded",
   "manifest_self_excluded": true,
   "file_count": 10,
   "files": [
@@ -12,8 +12,8 @@
     },
     {
       "path": "candidate_assessment_v1.csv",
-      "bytes": 3693,
-      "sha256": "5c628937351d6558c3e512a7569dc970a3d120f8490ec1cf2b39dc414a7414ba"
+      "bytes": 4178,
+      "sha256": "1d70e9342d36d39bc77888d6fdf23122120ed6e263d44243ad28abebd13a075d"
     },
     {
       "path": "candidate_timeline_v1.csv",
@@ -32,13 +32,13 @@
     },
     {
       "path": "principal_checkpoint_v1.md",
-      "bytes": 6887,
-      "sha256": "2c0cac9d160357956c0853554585968c9db17b06339e1cf527b186b812886500"
+      "bytes": 8105,
+      "sha256": "ce2c91eda4afd18a5bcd89d1f3065e0c419c4737751ec390145dcec5f84d163f"
     },
     {
       "path": "README.md",
-      "bytes": 5663,
-      "sha256": "d68071151e398044f59bef1a1dccd108046fa861fdd6b0f86b75b672b1c48647"
+      "bytes": 6023,
+      "sha256": "cf5842cb6ffbefcd1e2ce4ca56ba54b830068af4406d0fff1338ade84e2c2160"
     },
     {
       "path": "source_receipts_v1.csv",
@@ -52,15 +52,17 @@
     },
     {
       "path": "validation_report_v1.json",
-      "bytes": 2990,
-      "sha256": "f5ea2e8b8f35099d713a97e157d7bf7ddaab5f6bc558a3bf74cdb32e222e87ef"
+      "bytes": 3323,
+      "sha256": "f1eea92c4027d49ba93dad589c9be7fc2a76fb6c9c278aa2b61b10e1f52fe575"
     }
   ],
   "boundaries": {
     "central_writeback": "no",
     "frontend_release": "no",
     "publication_eligibility": "no",
-    "principal_decisions_written": 0,
+    "principal_decisions_written": 5,
+    "same_person_or_spelling_variant_accepts": 4,
+    "remain_unresolved_decisions": 1,
     "cross_ecology_bridges_created": 0,
     "git_commit_created": false
   }

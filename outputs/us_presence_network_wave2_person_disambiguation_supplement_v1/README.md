@@ -1,13 +1,13 @@
 # W2-A／W2-D 人物消歧补证侦察 v1
 
 日期：2026-08-22
-状态：`research_only / principal_decision_pending / not_frontend_ready / no_central_writeback`
+状态：`research_only / principal_decisions_recorded / not_frontend_ready / no_central_writeback`
 
 ## 1. 本包回答什么
 
-本包只补强 `HR-USN2-01a—01e` 五组人物候选的证据，不替负责人合并姓名、建立 person node 或批准组织桥。侦察以现有官方 IRS XML 为主，另对 exact／near-name 做了有界的政府或组织官网检索；数据经纪、私人社交账号和私人联系方式一律不进入证据链。
+本包补强 `HR-USN2-01a—01e` 五组人物候选的证据，并记录负责人于 2026-08-22 作出的身份判断。侦察以现有官方 IRS XML 为主，另对 exact／near-name 做了有界的政府或组织官网检索；数据经纪、私人社交账号和私人联系方式一律不进入证据链。四项 `same_person` 决定只进入另建的 principal-confirmed research overlay，不建立中央 person node。
 
-五组候选全部位于驻军服务／军属慈善侧：AWWA、KOSC、NOSCO 与 OESC。即使负责人以后认定某组为同一人，也只能形成 **service-side 内部人物桥**，不能据此写成问责侧与服务侧之间的跨生态桥。
+五组候选全部位于驻军服务／军属慈善侧：AWWA、KOSC、NOSCO 与 OESC。负责人确认的同一人关系只能形成 **service-side 内部人物桥**，不能据此写成问责侧与服务侧之间的跨生态桥。
 
 ## 2. 这次补证改变了什么
 
@@ -17,7 +17,7 @@
 - **01e Lesilee Du Fresne／DuFresne：同一 OESC 的相邻税期连续性很强。** 差异只在姓氏空格，角色从 2nd Vice President 转为 Advisor；它是组织内连续性候选，不是跨组织桥。
 - **01b Jen Yapsing／Jennifer Yapshing：仍是五组中最弱的一组。** AWWA 连续两税期写 exact `Jen Yapsing`，NOSCO 在重叠税期写 `Jennifer Yapshing`；罕见近名、缩写和一字母倒置使同一人解释可行，但当前组织官网只展示现届 roster，未闭合历史身份。
 
-以上只是证据强度变化；原 HR 决定栏保持未动。
+负责人据此确认 01a、01c、01d、01e 为同一人，01b 保持未解决且不合并。决定已写入 `candidate_assessment_v1.csv` 与 `principal_checkpoint_v1.md`；中央事实、原始 W2-A 长表和前端均未改。
 
 ## 3. 关键语义边界
 
@@ -35,7 +35,7 @@ Return header 的 `BusinessOfficerGrp` 通常对应申报签署时点，Part VII
 | `bounded_search_log_v1.csv` | 最多三步的官方／组织网页 exact-name 检索日志 |
 | `source_receipts_v1.csv` | 9 份官方 IRS XML 与 4 个政府／组织网页入口 |
 | `hash_verification_v1.csv` | 9 份继承 XML 的 SHA-256 复核 |
-| `principal_checkpoint_v1.md` | 负责人逐组判断页；不预填决定 |
+| `principal_checkpoint_v1.md` | 负责人逐组判断页与 2026-08-22 决定记录 |
 | `unexpected_findings_register_v1.csv` | 19 列 `lead_only` 方法线索登记 |
 | `validation_report_v1.json` | CSV、lead protocol 与哈希验证结果 |
 | `manifest_v1.json` | 本包文件清单与 SHA-256 |
@@ -46,12 +46,12 @@ Return header 的 `BusinessOfficerGrp` 通常对应申报签署时点，Part VII
 
 ## 6. 不得被误读为
 
-- 不是负责人已经认定任何两条姓名记录为同一人；
-- 不是批准 person node、跨组织人物边或组织控制关系；
+- 不是中央层已经建立 person node 或正式发布人物边；本包只记录 4 项负责人确认的 research-overlay 身份；
+- 不是组织控制关系；共享人物只说明具名角色记录由同一人承担；
 - 不是两套生态之间发现了共享人物；五组都只在 service-side 内部；
 - 不是 return header 角色覆盖整个 tax period；
 - 不是 `BooksInCareOf` 等于 officer／board member；
-- 不是中央写回、前端发布或 W2-F 放行。
+- 不是中央写回、前端发布或 W2-F 放行；01b 仍未合并。
 
 ## 7. 复核与验证
 

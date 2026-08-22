@@ -1,0 +1,76 @@
+{
+  "package_id": "us_presence_network_wave2_base_private_org_governance_rules_v1",
+  "schema_version": "BGR-1.0.0",
+  "generated_at": "2026-08-22",
+  "status": "research_only",
+  "review_status": "ai_seeded",
+  "frontend_status": "not_frontend_ready",
+  "central_writeback": "no",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6506,
+      "sha256": "51040B410EFF84AE90A042E717C609DCE9498C9FBEEE104342B7F65552E2370C"
+    },
+    {
+      "path": "artifacts/kadena_18fss_oi_34_223_1_20240205.pdf",
+      "bytes": 210676,
+      "sha256": "DE86FABE38283F250FCB2547A5190E9A93DB128728C3094EFEDD9C595CD6EB61"
+    },
+    {
+      "path": "bounded_report_claims_v1.csv",
+      "bytes": 5674,
+      "sha256": "14DB4140BD2261EEEF3C45633A50B76B55FE68101446D107788441A809563AED"
+    },
+    {
+      "path": "governance_relation_grammar_v1.csv",
+      "bytes": 5252,
+      "sha256": "1C9D35E91C7DE1F3BCE8BF2A7B6539ED29999AABDD665E28766693F192FDFD4A"
+    },
+    {
+      "path": "lead_promotion_crosswalk_v1.csv",
+      "bytes": 2809,
+      "sha256": "93D9E6A959FA9D61BC2545E58CBF030DFA59FD18E3ABC8B0A77DD93EE5BF7584"
+    },
+    {
+      "path": "local_artifact_manifest_v1.csv",
+      "bytes": 637,
+      "sha256": "2866E7488ED0FD376D69C859752103DFBF5E3CDA8B707D7142B1F72809E1D87F"
+    },
+    {
+      "path": "public_rule_facts_v1.csv",
+      "bytes": 18997,
+      "sha256": "77A6B31A70A297D167018E1FDBB280BB831A02177E667C56E380BE1C9EB8FC6D"
+    },
+    {
+      "path": "regime_comparison_matrix_v1.csv",
+      "bytes": 5022,
+      "sha256": "44067C19D9F64DEC99EC98614CE6CEA42C8A662BD625F68E9D75A2416C46188C"
+    },
+    {
+      "path": "scope_exclusions_v1.csv",
+      "bytes": 1724,
+      "sha256": "5EBDD153F04F638183F29597F474DD9A6831DA3054BA80FE0800D3D76084829E"
+    },
+    {
+      "path": "selection_frame_v1.csv",
+      "bytes": 904,
+      "sha256": "45F20B851863548C19B8FC53D056391315E680D9F6DFCD97EB19BEBC0EDCC483"
+    },
+    {
+      "path": "source_receipts_v1.csv",
+      "bytes": 2018,
+      "sha256": "41A4C90BCFFCF83735D0605F8908478E5E13B3C0EFA7C5FE27CF4480CF3B7A49"
+    },
+    {
+      "path": "unexpected_findings_register_v1.csv",
+      "bytes": 277,
+      "sha256": "BD81920952F0960E81C467BF2395348476AE4BDF78F8F44C7F949EFBA98C635A"
+    },
+    {
+      "path": "validate_package_v1.py",
+      "bytes": 15879,
+      "sha256": "3FD7234ECAA362B4485CDEBE9EA0FC16AE29578E2A9C2046E5275D6CE08FD0F4"
+    }
+  ]
+}

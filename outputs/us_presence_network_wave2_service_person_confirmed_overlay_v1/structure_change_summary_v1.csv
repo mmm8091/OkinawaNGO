@@ -1,0 +1,9 @@
+metric_id,metric,layer,before_hr_usn2_01,after_hr_usn2_01,delta,scope,interpretation
+"SPN-SC001","principal-confirmed unified person identities","person_identity","0","4","+4","five assigned identity groups","Four identity groups enter the research overlay; one remains unresolved."
+"SPN-SC002","unresolved assigned identity groups","person_identity","5","1","-4","five assigned identity groups","Only Jen Yapsing/Jennifer Yapshing remains unresolved and unmerged."
+"SPN-SC003","principal-confirmed cross-actor shared people","person_projection","0","3","+3","service-side assigned groups","Brooke, Amber and Trinicia connect role records across service-side organizations."
+"SPN-SC004","actor pairs with confirmed person projection","person_projection","0","2","+2","service-side assigned groups","The new actor pairs are AWWA-KOSC and AWWA-OESC."
+"SPN-SC005","within-actor identity continuities","person_identity","0","1","+1","service-side assigned groups","Lesilee DuFresne joins two adjacent OESC role records without a cross-actor edge."
+"SPN-SC006","human-reviewed money observations imported","money_flow","4","4","0","overlay money layer","The identity decision does not create, delete or reinterpret any money fact."
+"SPN-SC007","OESC-to-AWWA dated money observations and total USD","money_flow","3 / 39158","3 / 39158","0","three filing periods","AWWA-OESC becomes multiplex only because a person layer is added beside the unchanged money layer."
+"SPN-SC008","service-to-accountability cross-ecology bridge status","cross_ecology","not_assessed","not_assessed","not_applicable","outside this package's comparison frame","Every endpoint in this decision batch is service-side; accountability-side rosters were not audited here, so this package cannot report a cross-ecology zero."

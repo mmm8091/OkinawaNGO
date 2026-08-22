@@ -1,0 +1,5 @@
+person_id,canonical_name,alias_strings,principal_decision_id,identity_decision,identity_scope,review_status,fact_status,service_side_only,cross_ecology_bridge,central_writeback,frontend_status
+"PCP001","Brooke Epp","Brooke Epps","HR-USN2-01a","accept_same_person","AWWA X004 / KOSC X006","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"
+"PCP002","Amber Tracy","Amber N Tracy | AMBER TRACY","HR-USN2-01c","accept_same_person","AWWA X004 / OESC X007","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"
+"PCP003","Trinicia Kloepper","","HR-USN2-01d","accept_same_person","AWWA X004 / KOSC X006","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"
+"PCP004","Lesilee DuFresne","Lesilee Du Fresne","HR-USN2-01e","accept_spelling_variant_same_person","within OESC X007","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"

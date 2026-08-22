@@ -1,0 +1,88 @@
+{
+  "package_id": "USN_W2_SERVICE_PERSON_CONFIRMED_OVERLAY_V1",
+  "validated_on": "2026-08-22",
+  "status": "PASS_RESEARCH_ONLY_PRINCIPAL_CONFIRMED_OVERLAY",
+  "package_scope": {
+    "principal_confirmed_person_nodes": 4,
+    "person_actor_observations": 13,
+    "actor_person_projections": 2,
+    "unresolved_identity_pairs": 1,
+    "human_reviewed_money_edges": 4,
+    "actor_pair_layer_summaries": 5,
+    "layered_network_nodes": 10,
+    "layered_network_edges": 17,
+    "structure_change_metrics": 8,
+    "research_figures": 1,
+    "package_specific_validators": 1,
+    "unexpected_findings": 0
+  },
+  "checks": [
+    {
+      "check": "principal_decision_projection",
+      "status": "PASS",
+      "detail": "HR-USN2-01a, 01c, 01d and 01e create four resolved research-overlay persons; 01b remains unresolved and is excluded from the confirmed projection."
+    },
+    {
+      "check": "person_reference_integrity",
+      "status": "PASS",
+      "detail": "Every person-role edge resolves to one of four person nodes and every projected shared_person_id resolves to the same node table."
+    },
+    {
+      "check": "layer_separation",
+      "status": "PASS",
+      "detail": "The combined edge interface contains exactly 13 person_role and 4 money_flow rows; no mixed weight or inferred money edge was generated."
+    },
+    {
+      "check": "money_preservation",
+      "status": "PASS",
+      "detail": "Three OESC-to-AWWA flows retain USD 16,308, 14,371 and 8,479; F021 retains USD 3,250. RF015 and RF041 are excluded from the money layer."
+    },
+    {
+      "check": "temporal_semantics",
+      "status": "PASS",
+      "detail": "Tax-period roles, filing-point roles, filing contact and books contact remain separately typed; no filing period is presented as an exact tenure."
+    },
+    {
+      "check": "cross_ecology_boundary",
+      "status": "PASS",
+      "detail": "All 50 service-only node/edge rows use not_applicable_service_only; accountability-side rosters are outside this package, so package-level cross-ecology status is not_assessed rather than a zero finding."
+    },
+    {
+      "check": "package_specific_validator",
+      "status": "PASS",
+      "detail": "validate_overlay_v1.py enforces row-level not_applicable_service_only, package-level not_assessed, layer counts, 01b exclusion, money total and manifest hashes."
+    },
+    {
+      "check": "mandatory_unexpected_findings_protocol",
+      "status": "PASS",
+      "detail": "README contains the required section and the exact 19-column register is present with zero new observations."
+    },
+    {
+      "check": "publication_and_writeback_boundary",
+      "status": "PASS",
+      "detail": "Central writeback and frontend status remain no/not_frontend_ready; this overlay does not release W2-F or W2-G."
+    },
+    {
+      "check": "csv_parse_and_shape",
+      "status": "PASS",
+      "detail": "All ten CSV files parse with stable headers and expected row counts."
+    },
+    {
+      "check": "manifest_hash_integrity",
+      "status": "PASS",
+      "detail": "Every non-manifest file is listed with matching byte length and SHA-256 in manifest_v1.json."
+    },
+    {
+      "check": "non_source_whitespace_and_eof",
+      "status": "PASS",
+      "detail": "Package-authored Markdown, CSV and JSON files have no trailing horizontal whitespace and end with exactly one LF."
+    }
+  ],
+  "known_limits": [
+    "The overlay does not create central person nodes or central relationship facts.",
+    "HR-USN2-01b remains unresolved and contributes no person projection.",
+    "Person and money co-occurrence does not establish control, authorization, alliance, political position or legitimation effect.",
+    "Cross-ecology bridge status is not assessed here because accountability-side rosters are outside the package frame.",
+    "W2-F remains blocked and no frontend release is authorized."
+  ]
+}

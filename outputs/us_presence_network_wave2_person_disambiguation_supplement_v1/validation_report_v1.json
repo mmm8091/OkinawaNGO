@@ -1,7 +1,7 @@
 {
   "package_id": "USN_W2_PERSON_DISAMBIGUATION_SUPPLEMENT_V1",
   "validated_on": "2026-08-22",
-  "status": "PASS_RESEARCH_ONLY_PRINCIPAL_DECISION_PENDING",
+  "status": "PASS_RESEARCH_ONLY_PRINCIPAL_DECISIONS_RECORDED",
   "package_scope": {
     "candidate_groups": 5,
     "evidence_rows": 18,
@@ -11,7 +11,10 @@
     "source_receipts": 13,
     "local_xml_hashes": 9,
     "unexpected_finding_chains": 1,
-    "unexpected_finding_observations": 3
+    "unexpected_finding_observations": 3,
+    "principal_decisions_recorded": 5,
+    "same_person_or_spelling_variant_accepts": 4,
+    "remain_unresolved_decisions": 1
   },
   "checks": [
     {
@@ -40,9 +43,9 @@
       "detail": "The bounded exact/near-name search log has 8 observations; no chain exceeds step 2 and no private/data-broker source was admitted."
     },
     {
-      "check": "principal_decision_boundary",
+      "check": "principal_decision_projection",
       "status": "PASS",
-      "detail": "All five principal_decision cells are blank; central_writeback is no and cross_ecology_bridge_eligible is no for every group."
+      "detail": "Four same-person/spelling-variant decisions and one remain-unresolved decision are recorded; 01b remains unmerged, while central_writeback and cross_ecology_bridge_eligible remain no for every group."
     },
     {
       "check": "semantic_time_boundary",
@@ -66,7 +69,8 @@
     }
   ],
   "known_limits": [
-    "No candidate is resolved without the principal's decision.",
+    "Four identities are resolved only in the principal-confirmed research overlay; no central person node is created.",
+    "Jen Yapsing and Jennifer Yapshing remain unresolved and unmerged.",
     "No unique personal identifier was sought or stored.",
     "Current organization pages do not provide a complete historical roster.",
     "All possible network effects are service-side only and do not establish a service-accountability bridge."

@@ -1,0 +1,27 @@
+{
+  "package_id": "us_presence_network_wave2_base_private_org_governance_rules_v1",
+  "validated_at": "2026-08-22",
+  "status": "PASS",
+  "counts": {
+    "selection_frames": 1,
+    "sources": 2,
+    "rule_facts": 25,
+    "mcipac_facts": 14,
+    "kadena_facts": 11,
+    "relation_grammars": 9,
+    "comparison_units": 10,
+    "bounded_report_claims": 6,
+    "scope_exclusions": 5,
+    "unexpected_findings": 0
+  },
+  "checks": {
+    "no_dyadic_org_edges": true,
+    "no_government_funder_or_control_type": true,
+    "records_retrieval_remains_lead_only": true,
+    "unexpected_register_empty": true,
+    "kadena_pdf_hash_verified": true,
+    "kadena_dissolution_wording_preserved": true,
+    "kadena_external_legal_effect_unresolved": true
+  },
+  "errors": []
+}

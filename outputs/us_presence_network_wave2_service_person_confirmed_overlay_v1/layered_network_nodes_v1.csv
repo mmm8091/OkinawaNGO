@@ -1,0 +1,11 @@
+node_id,label,node_type,selection_note,review_status,fact_status,service_side_only,cross_ecology_bridge,central_writeback,frontend_status
+"X001","USO Okinawa","service_actor","confirmed money endpoint","upstream_human_reviewed","research_only_existing_actor_endpoint","yes","not_applicable_service_only","no","not_frontend_ready"
+"X004","American Welfare & Works Association (AWWA)","service_actor","person and money endpoint","upstream_research_selection","research_only_existing_actor_endpoint","yes","not_applicable_service_only","no","not_frontend_ready"
+"X005","Naval Officers' Spouses' Club of Okinawa (NOSCO)","service_actor","unresolved person-pair endpoint; no confirmed overlay edge","upstream_research_selection","research_only_existing_actor_endpoint","yes","not_applicable_service_only","no","not_frontend_ready"
+"X006","Kadena Officers' Spouses' Club (KOSC)","service_actor","confirmed person endpoint","upstream_research_selection","research_only_existing_actor_endpoint","yes","not_applicable_service_only","no","not_frontend_ready"
+"X007","Okinawa Enlisted Spouses' Club (OESC)","service_actor","person and money endpoint","upstream_research_selection","research_only_existing_actor_endpoint","yes","not_applicable_service_only","no","not_frontend_ready"
+"X016","Marine Officers' Spouses' Club Okinawa (MOSCO)","service_actor","comparison endpoint; no confirmed person or money overlay edge","upstream_research_selection","research_only_existing_actor_endpoint","yes","not_applicable_service_only","no","not_frontend_ready"
+"PCP001","Brooke Epp","person","HR-USN2-01a accepted","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"
+"PCP002","Amber Tracy","person","HR-USN2-01c accepted","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"
+"PCP003","Trinicia Kloepper","person","HR-USN2-01d accepted","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"
+"PCP004","Lesilee DuFresne","person","HR-USN2-01e accepted","principal_confirmed_research_overlay","research_only_identity_overlay","yes","not_applicable_service_only","no","not_frontend_ready"

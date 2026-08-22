@@ -122,11 +122,11 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 放行前先完成三类工作：
 
-1. 完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`；负责人已审定 non-entry、三笔 recipient 交易、LEG2 与 MTS→Lions 边界，HR-USN2-01—03、06a／06c、07—14 仍待回传；
+1. 完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`；负责人已审定人物消歧、non-entry、三笔 recipient 交易、LEG2 与 MTS→Lions 边界，HR-USN2-02—03、06a／06c、07—14 仍待回传；
 2. **已完成图表修正**：USO 瀑布图已删除无口径的 47,000 population 标注；该数只保留在原始服务覆盖观察中，并明确是 2025 年 USO 自述的服务覆盖规模，不是当前同年同定义总人口，也不能用于人均计算；
 3. **草稿已完成、尚未发送**：发出并登记三份信息公开请求——`HQ00342310002` 的地区／日本／冲绳 allocation 与 subaward／执行分配、MCCS Okinawa／MCIPAC MCCS 年度财务报表、冲绳防卫局冲绳相关分项预算／支出／合同执行。
 
-请求文本、受理路径和 `draft_not_sent` 状态统一放在 `docs/information_disclosure_request_plan_USN_wave2_v1.md` 及其 request ledger。发出请求本身不生成事实，也不保证本轮等到答复；但本轮收尾前必须留下发送记录。W2-G 中央写回、publication adapter 和前端仍需另行授权。
+请求文本、受理路径和 `draft_not_sent` 状态统一放在 `docs/information_disclosure_request_plan_USN_wave2_v1.md` 及其 request ledger。`outputs/us_presence_network_wave2_information_disclosure_pilot_v1/` 已把三份宽草稿收缩为单年度、单保有层级的微请求方案；它校正费用类别但没有发送。发出请求本身不生成事实，也不保证本轮等到答复；实际发件仍须负责人填真实身份、费用与联系方式。W2-G 中央写回、publication adapter 和前端仍需另行授权。
 
 两项前置调查没有为了放行而降低门槛：八个 non-entry 候选没有一条获准进入 outcome，2004 年公害调停只作进入后的 gate-control；负责人已接受 `arm_not_established` 与具名 T2-H 新一手任务。LEG2 原件闭合 Kana-san、Ambitious、Himawari 与 MTS→Lions 四个端点的不同可见层，并保持 LEG3 为零；MTS→Lions 的下游链另登记为 T2-I。AWWA 下一税期公开申报补查亦已完成，因 IRS 公开索引尚无 2025-05-31 期末申报，Himawari 两条记录继续分开。
 
@@ -134,7 +134,7 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 负责人同意给每个新建或重新打开的工作包增加《意外发现登记》，并允许执行者沿一条线索自主侦察最多三步、单包最多 10 条观察。全部使用 `lead_only`，不进结论、中央层、人工复核或前端；完整协议见 `docs/research_work_package_protocol_v1.md`。
 
-按该协议完成的本轮侦察、情景网络与解释性暂停统一索引在 `docs/us_presence_network_wave2_detective_checkpoint_v1.md`。其中的基地准入结构、AWWA 人物—资源重叠情景、recipient 去重和角色分仓仍是 research-only 研究方向，不改写本检查点的正式计数或放行状态。
+按该协议完成的本轮侦察、人物决定与解释性暂停统一索引在 `docs/us_presence_network_wave2_detective_checkpoint_v2.md`。其中基地准入的公开规则层已正式化为 `research_only` 事实包；人物层已按负责人决定形成确认 overlay；recipient 去重和角色分仓继续留在线索层。它们不改写 W2-F 放行状态。
 
 ## 本检查点不会自动发生的事
 

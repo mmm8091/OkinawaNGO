@@ -4,6 +4,8 @@
 状态：`draft_not_sent`
 范围：仅生成可执行草稿和发送清单；未提交、未取得案号、未写入中央事实层，也不改变任何研究结论。
 
+2026-08-22 补充：`outputs/us_presence_network_wave2_information_disclosure_pilot_v1/` 已核实费用规则，并把下述三份宽草稿收缩为三个单年度、单一保有层级的微请求。未来若实际发送，应先用该 pilot 的 readiness matrix 生成窄版，不直接发送本文件中的五年宽口径。pilot 本身仍为 `draft_not_sent`，没有形成请求或案号。
+
 ## 1. 为什么现在提出这三类请求
 
 公开资料已经能看到三个全国或汇总层事实，但无法闭合到冲绳执行层：

@@ -2,7 +2,7 @@
 
 日期：2026-08-22
 
-状态：`assigned_to_principal / partial_return_recorded`。负责人已完成 HR-USN2-04、05 与 06b；正式部分回传见 `docs/human_review_return_USN_wave2_prerequisite_partial_v1.md`。其余项目仍待决定。本任务只处理会改变人物桥、recipient 端点、资金／服务关系语义、问责结果或跨生态表述的判断。原始逐行队列仍保存在 W2-A／B／C／D 各包的 `principal_review_queue_v1.csv`；本任务按阅读包合并展示，不删除任何原决定。
+状态：`assigned_to_principal / partial_return_recorded`。负责人已完成 HR-USN2-01、04、05 与 06b；人物消歧正式回传见 `docs/human_review_return_USN_wave2_person_disambiguation_v1.md`，其余已完成项见 `docs/human_review_return_USN_wave2_prerequisite_partial_v1.md`。尚未填写的项目仍待决定。本任务只处理会改变人物桥、recipient 端点、资金／服务关系语义、问责结果或跨生态表述的判断。原始逐行队列仍保存在 W2-A／B／C／D 各包的 `principal_review_queue_v1.csv`；本任务按阅读包合并展示，不删除任何原决定。
 
 ## 回传规则
 
@@ -14,17 +14,17 @@
 
 原队列：W2A-HR001、002、003、004、016；W2D-PR002。
 
-先读：补证后的负责人判断页 `outputs/us_presence_network_wave2_person_disambiguation_supplement_v1/principal_checkpoint_v1.md`，再按需打开该包的 `evidence_matrix_v1.csv` 与原 IRS XML。补证把 01a／01c 提高到高收敛、01d 提高到很高收敛、01e 提高到很高的组织内连续性；01b 仍为中等收敛。补证没有替负责人作人物合并决定。
+先读：补证后的负责人判断页 `outputs/us_presence_network_wave2_person_disambiguation_supplement_v1/principal_checkpoint_v1.md`，再按需打开该包的 `evidence_matrix_v1.csv` 与原 IRS XML。补证把 01a／01c 提高到高收敛、01d 提高到很高收敛、01e 提高到很高的组织内连续性；01b 仍为中等收敛。负责人于 2026-08-22 完成五项判断。
 
 | 子项 | 候选 | 需要决定 | 负责人决定 |
 |---|---|---|---|
-| 01a | Brooke Epps（AWWA）／Brooke Epp（KOSC） | same person／different／unresolved |  |
-| 01b | Jen Yapsing（AWWA）／Jennifer Yapshing（NOSCO） | same person／different／unresolved |  |
-| 01c | Amber Tracy（AWWA／OESC） | 是否为同一人且任期重叠 |  |
-| 01d | Trinicia Kloepper（AWWA／KOSC） | 是否为同一人且任期重叠 |  |
-| 01e | Lesilee Du Fresne／DuFresne（OESC） | spelling variant／different／unresolved |  |
+| 01a | Brooke Epps（AWWA）／Brooke Epp（KOSC） | same person／different／unresolved | **accept — same_person** |
+| 01b | Jen Yapsing（AWWA）／Jennifer Yapshing（NOSCO） | same person／different／unresolved | **remain_unresolved — 不合并；Yapsing／Yapshing 可能是不同姓氏，且无 bio 闭合** |
+| 01c | Amber Tracy（AWWA／OESC） | 是否为同一人且任期重叠 | **accept — same_person；申报期不能当作精确任期** |
+| 01d | Trinicia Kloepper（AWWA／KOSC） | 是否为同一人且任期重叠 | **accept — same_person；申报期重叠不等于精确任期重叠** |
+| 01e | Lesilee Du Fresne／DuFresne（OESC） | spelling variant／different／unresolved | **accept — spelling_variant / same_person** |
 
-边界：这些最多形成服务侧人物桥；即使确认，也不是问责侧—服务侧的跨生态人物桥。
+边界：四项确认只形成服务侧人物身份与人物桥研究层 overlay；它们不是问责侧—服务侧的跨生态人物桥，也不批准中央 person node、组织控制关系或前端发布。
 
 ## HR-USN2-02：VFP-ROCK chapter 身份连续性
 
@@ -192,7 +192,7 @@
 
 ## HR-USN2-14：三份信息公开请求审定与发送
 
-本项是取证行动，不是事实复核，不计入 W2-A—D 的 relation／claim 人审数量。先读 `docs/information_disclosure_request_plan_USN_wave2_v1.md` 与三份请求草稿。
+本项是取证行动，不是事实复核，不计入 W2-A—D 的 relation／claim 人审数量。先读 `outputs/us_presence_network_wave2_information_disclosure_pilot_v1/principal_checkpoint_v1.md`，再按需对照 `docs/information_disclosure_request_plan_USN_wave2_v1.md` 与三份宽口径草稿。pilot 已明确：原稿不应原样发送，未来优先采用单年度、单保有层级的微请求。
 
 | 子项 | 请求对象 | 需要负责人完成 | 状态／受理编号 |
 |---|---|---|---|

@@ -3,6 +3,8 @@
 日期：2026-08-22
 状态：`draft_not_sent`。
 
+发送边界更新：`outputs/us_presence_network_wave2_information_disclosure_pilot_v1/` 已把三份宽草稿改造成低成本微请求方案。以下原稿继续作为范围库存保存，但不应原样发送；实际发件前先按 pilot 的 `request_readiness_matrix_v1.csv` 收缩，并由负责人填写真实 requester 类别、费用与身份字段。
+
 本包包含三份尚未发送的正式请求草稿：
 
 1. `request_01_whs_uso_award_en_v1.md`：WHS／USO award `HQ00342310002`；

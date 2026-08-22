@@ -1,0 +1,89 @@
+{
+  "package_id": "USN_W2_SERVICE_PERSON_CONFIRMED_OVERLAY_V1",
+  "generated_on": "2026-08-22",
+  "status": "research_only_principal_confirmed_identity_overlay",
+  "manifest_self_excluded": true,
+  "file_count": 14,
+  "files": [
+    {
+      "path": "actor_pair_layer_summary_v1.csv",
+      "bytes": 1914,
+      "sha256": "32850a6b931b62ab0e2006a457da421bbe88fce14f4b0b0c2dcd90235b0abd55"
+    },
+    {
+      "path": "actor_person_projection_principal_confirmed_v1.csv",
+      "bytes": 1475,
+      "sha256": "fdb2ff5887d3379212f2bcc58e4992eb3bdc8538341080246db87fc29e12b09b"
+    },
+    {
+      "path": "fig_service_person_money_overlay_v1.svg",
+      "bytes": 5987,
+      "sha256": "bfb768bce169708f5eb1cc8940cdf8753a5498d2d5ddfd94275f2dbad211018e"
+    },
+    {
+      "path": "layered_network_edges_v1.csv",
+      "bytes": 6082,
+      "sha256": "5b9a244001f85c7f61e0b3e066e07f5df99de85f08fc4e3c3357c66ab95f1775"
+    },
+    {
+      "path": "layered_network_nodes_v1.csv",
+      "bytes": 2307,
+      "sha256": "116c40aea3d42dff74eae35753c36b1c068809e9043bb0df34808b59e54a2041"
+    },
+    {
+      "path": "money_edges_principal_confirmed_v1.csv",
+      "bytes": 2552,
+      "sha256": "8ca2b81392ddb28fcdfedecc1be89c9292af3b6ebcebc6e035660765a3ab63bb"
+    },
+    {
+      "path": "person_actor_role_edges_principal_confirmed_v1.csv",
+      "bytes": 6731,
+      "sha256": "b3b30282efd9b69f58954a5119d9da0d076efb6ff4ec86120350cabf2693d21a"
+    },
+    {
+      "path": "person_nodes_principal_confirmed_v1.csv",
+      "bytes": 1146,
+      "sha256": "bda25ca516b9e33af4e33d5e4b4f479a8e78dfa9a362725cbc65a3e23af5bcb7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5204,
+      "sha256": "4bb22596a06df5c6e7e85e812c5d2c5bfbc14cf084d148e1d5e8ee6176d382c4"
+    },
+    {
+      "path": "structure_change_summary_v1.csv",
+      "bytes": 1791,
+      "sha256": "53e4d05c9750afc5a1b25839141f82869bf07190d43341403c78e0782fba27e0"
+    },
+    {
+      "path": "unexpected_findings_register_v1.csv",
+      "bytes": 277,
+      "sha256": "bd81920952f0960e81c467bf2395348476ae4bdf78f8f44c7f949efba98c635a"
+    },
+    {
+      "path": "unresolved_identity_pairs_v1.csv",
+      "bytes": 685,
+      "sha256": "7fda571f7d959c6f88c77820ec5edfd2c53e910a0c520cc9e665e5fab186545c"
+    },
+    {
+      "path": "validate_overlay_v1.py",
+      "bytes": 4135,
+      "sha256": "cf65bca11a2c5d214686411540ec6d703564afaa8ac7e6a8e9c7ff59c8c6a0b6"
+    },
+    {
+      "path": "validation_report_v1.json",
+      "bytes": 3879,
+      "sha256": "eb2f55009a65588bc7275c0ce24df8ee277931038bbafca942ab1416322d17a5"
+    }
+  ],
+  "boundaries": {
+    "central_writeback": "no",
+    "frontend_release": "no",
+    "publication_eligibility": "no",
+    "W2_F_release": "no",
+    "principal_confirmed_person_nodes": 4,
+    "unresolved_person_pairs": 1,
+    "cross_ecology_bridge_status": "not_assessed",
+    "git_commit_created": false
+  }
+}

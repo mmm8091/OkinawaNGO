@@ -1,7 +1,7 @@
 # HR-USN2-01 人物消歧补证：负责人判断页
 
 日期：2026-08-22
-状态：`research_only / decisions_blank`。本页只把证据摊开，不替负责人填写 `same_person`、`different_person` 或 `remain_unresolved`。
+状态：`research_only / principal_decisions_recorded / not_central`。本页保留补证依据，并记录负责人于 2026-08-22 作出的 `same_person` 或 `remain_unresolved` 判断。
 
 ## 先看总表
 
@@ -31,7 +31,7 @@
 - header 只证明申报时点的签署身份，不能把 Brooke 的 Treasurer／President 角色回填到整个税期；
 - 909th ARS 的 Brooke Epp 可能又是第三位同名者，故该网页只作场域与时点佐证。
 
-负责人决定：`__________`
+负责人决定：**`accept — same_person`**。在 research overlay 中合并为一人；header 与 Part VII 的时间语义继续分开。
 
 ## 01b Jen Yapsing／Jennifer Yapshing
 
@@ -46,7 +46,7 @@
 
 竞争解释：`Yapsing` 与 `Yapshing` 可能是不同姓氏；即使是录入错误，也还不能确定哪一组织的拼写正确；两个组织没有在同一官方页面并列该人。
 
-负责人决定：`__________`
+负责人决定：**`remain_unresolved — no merge`**。`Yapsing`／`Yapshing` 可能是不同姓氏，在没有 bio 或历史 roster 闭合前保留为两条人物字符串。
 
 ## 01c Amber N Tracy／Amber Tracy
 
@@ -60,7 +60,7 @@
 
 竞争解释：两个组织可能分别有同名者；AWWA BooksInCareOf 可能只是受托联系人，不代表组织任职；两份申报的 tax period 与签署日不能混为一条无缝任期。
 
-负责人决定：`__________`
+负责人决定：**`accept — same_person`**。在 research overlay 中合并为一人；AWWA 的 `InCareOfNm`／`BooksInCareOfDetail` 只作为联系／账簿语境，不能改写成 officer role。
 
 ## 01d Trinicia Kloepper
 
@@ -75,7 +75,7 @@
 
 竞争解释：极低概率同名碰撞仍未由生日、邮箱或其他唯一标识排除；本包不使用私人联系方式去闭合；也不能从兼任推导 AWWA 控制 KOSC 或反之。
 
-负责人决定：`__________`
+负责人决定：**`accept — same_person`**。在 research overlay 中合并为一人；相同申报期只支持角色记录共期，不能当作精确任职起止日。
 
 ## 01e Lesilee Du Fresne／Lesilee DuFresne
 
@@ -88,10 +88,12 @@
 
 竞争解释：理论上可能是两个近名者；OESC 官网未提供可检索历史 roster，本包没有明示 alias 的组织原件。
 
-负责人决定：`__________`
+负责人决定：**`accept — spelling_variant / same_person`**。在 research overlay 中合并 OESC 内部任职时间线，不生成跨组织边。
 
 ## 对网络分析的实际影响
 
-若负责人接受 01a、01c、01d，服务侧至少会出现 AWWA—KOSC、AWWA—OESC 的人物兼任／连续性桥；01b 若接受，再增加 AWWA—NOSCO。01e 只改善 OESC 内部任职连续性。它们说明军属俱乐部并非彼此完全孤立的组织集合，人物层可能与 AWWA 的资源中介层相互叠合。
+负责人决定后，服务侧确认了 4 个统一人物身份：其中 3 人跨组织，投影为两组 actor pair。AWWA—KOSC 有 Brooke Epp／Epps 与 Trinicia Kloepper 两名共享人物；AWWA—OESC 有 Amber Tracy 一名共享人物；Lesilee DuFresne 只改善 OESC 内部连续性。Jen Yapsing／Jennifer Yapshing 未合并，因此 AWWA—NOSCO 不新增人物边。
 
-但这仍不能回答“服务侧与问责侧是否共享人物”。本包五组没有任何问责侧 actor、行动或职务端点；因此无论负责人如何决定，W2-D 的跨生态人物桥状态都不能由本包升级。
+人物层与资金层必须分开解释：OESC→AWWA 已有三个税期、合计 USD 39,158 的负责人确认资金记录，Amber 又构成人物桥，因此 AWWA—OESC 是目前确认的多层 service-side pair；AWWA—KOSC 虽有两名共享人物，却没有确认的 KOSC→AWWA 资金边。KOSC 申报中 USD 2,580 的 AWWA 名称行仍是个人援助组语义，不能因人物关系确认而转成组织资金流。
+
+这仍不能回答“服务侧与问责侧是否共享人物”。本包五组没有任何问责侧 actor、行动或职务端点；因此这些决定只改变 service-side 内部结构，W2-D 的跨生态人物桥状态不能由本包升级。
