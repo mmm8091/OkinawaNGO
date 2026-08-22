@@ -1,0 +1,27 @@
+{
+  "package_id": "us_presence_network_wave2_recurrent_recipient_lead_v1",
+  "status": "PASS",
+  "checks": {
+    "all_inputs_exist": true,
+    "inventory_rows_nonzero": true,
+    "eligible_endpoint_group_count_is_11": true,
+    "all_endpoint_groups_generated": true,
+    "independent_multi_provider_count_is_zero": true,
+    "required_dedup_classes_present": true,
+    "followup_observation_count_within_10": true,
+    "unexpected_register_count_within_10": true,
+    "all_package_rows_lead_only": true,
+    "new_artifact_hashes_match_expected": true,
+    "derived_text_has_no_trailing_whitespace_and_one_final_lf": true
+  },
+  "counts": {
+    "inventory_observations": 30,
+    "eligible_endpoint_groups": 11,
+    "apparent_multi_provider_groups": 2,
+    "confirmed_independent_multi_provider_groups": 0,
+    "same_provider_recurrence_groups": 3,
+    "online_followup_observations": 6,
+    "unexpected_register_observations": 8
+  },
+  "boundary": "PASS validates package mechanics and boundaries; it does not approve a research finding, central fact, HR decision or publication claim."
+}

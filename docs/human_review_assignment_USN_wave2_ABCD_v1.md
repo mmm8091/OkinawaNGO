@@ -2,7 +2,7 @@
 
 日期：2026-08-22
 
-状态：`assigned_to_principal / decisions_blank`。本任务只处理会改变人物桥、recipient 端点、资金／服务关系语义、问责结果或跨生态表述的判断。原始逐行队列仍保存在 W2-A／B／C／D 各包的 `principal_review_queue_v1.csv`；本任务按阅读包合并展示，不删除任何原决定。
+状态：`assigned_to_principal / partial_return_recorded`。负责人已完成 HR-USN2-04、05 与 06b；正式部分回传见 `docs/human_review_return_USN_wave2_prerequisite_partial_v1.md`。其余项目仍待决定。本任务只处理会改变人物桥、recipient 端点、资金／服务关系语义、问责结果或跨生态表述的判断。原始逐行队列仍保存在 W2-A／B／C／D 各包的 `principal_review_queue_v1.csv`；本任务按阅读包合并展示，不删除任何原决定。
 
 ## 回传规则
 
@@ -14,7 +14,7 @@
 
 原队列：W2A-HR001、002、003、004、016；W2D-PR002。
 
-先读：`outputs/us_presence_network_wave2_w2_a_v1/person_actor_role_time_v1.csv`、`w2d_endpoint_handoff_v1.csv` 和对应 IRS XML Part VII。
+先读：补证后的负责人判断页 `outputs/us_presence_network_wave2_person_disambiguation_supplement_v1/principal_checkpoint_v1.md`，再按需打开该包的 `evidence_matrix_v1.csv` 与原 IRS XML。补证把 01a／01c 提高到高收敛、01d 提高到很高收敛、01e 提高到很高的组织内连续性；01b 仍为中等收敛。补证没有替负责人作人物合并决定。
 
 | 子项 | 候选 | 需要决定 | 负责人决定 |
 |---|---|---|---|
@@ -58,11 +58,13 @@
 
 | 子项 | 申报行／地方材料 | 当前问题 | 决定 |
 |---|---|---|---|
-| 04a | Himawari USD 13,378／地方通讯 JPY 2m | 是否同一事件；现有地方记录时间似晚于申报期 |  |
-| 04b | Ambitious USD 13,423／2024-06 JPY 2m | 是否应继续视为不同事件 |  |
-| 04c | Kana-san USD 15,287／2023 无金额传单 | 是否只能确认 recipient 回应，不能闭合金额 |  |
+| 04a | Himawari USD 13,378／地方通讯 JPY 2m | 是否同一事件；现有地方记录时间似晚于申报期 | `separate_events_under_current_evidence`；定向补查已完成：截至 2026-08-22，IRS 官方公开索引尚未检出 AWWA 2025-05-31 期末申报，故 `transaction_closure=not_closed`，不以负检索推断未申报 |
+| 04b | Ambitious USD 13,423／2024-06 JPY 2m | 是否应继续视为不同事件 | `separate_events` |
+| 04c | Kana-san USD 15,287／2023 无金额传单 | 是否只能确认 recipient 回应，不能闭合金额 | `acknowledgment_only` |
 
 可选：`same_transaction / separate_events / acknowledgment_only / defer_ledger_or_accounts`。
+
+04a 补查证据包：`outputs/us_presence_network_wave2_himawari_filing_followup_v1/`。现有 FY2024 USD 13,378 行与 2024-08-09 JPY 2m 赠呈仍按两条独立记录保存；下一期申报公开后再按税期、recipient、金额与用途复核。
 
 ## HR-USN2-05：LEG2 地方回应分类
 
@@ -76,6 +78,11 @@
 
 负责人决定：
 
+- Kana-san：原文“米軍関係者の皆さんの善意が詰まり”判为 `relationship_frame_local`；检验对象正是关系叙事是否在地方端出现。仍不自动判 `narrative_uptake` 或 LEG3。
+- Ambitious：受赠方自有刊物“沖縄と米国の懸け橋”判为 `relationship_frame_local`。
+- ToiToi：其代表“国境を越えた支援”是下游受益方的独立回应记录，不并入 Ambitious 的组织回应行。
+- Himawari：只判 `receipt_confirmation + courtesy_gratitude + reciprocal_exchange`；原件没有用途和 bridge 语言，不再拔高。
+
 边界：任何 LEG2 决定都不能生成 LEG3“合法性提升”。
 
 ## HR-USN2-06：Marine Thrift Shop／MOSCO 新一手材料门
@@ -85,7 +92,7 @@
 | 子项 | 当前缺口 | 建议 | 决定 |
 |---|---|---|---|
 | 06a | MTS `>110k`／DVIDS `>126k`／IRS `125,218` 三口径 | 保持并列，不任选或相加 |  |
-| 06b | MTS→Lions USD 10k 的最终儿童医疗 recipient | 未闭合 Lions→最终端点 |  |
+| 06b | MTS→Lions USD 10k 的最终儿童医疗 recipient | 未闭合 Lions→最终端点 | `accept_current_boundary`；不向下建边，同时在新一手任务书保留具名完整链条取件任务 |
 | 06c | MOSCO FY2025 grants 元素缺失、USD 7,500 program expense | blank 不是 0，不能写成付给 AWWA |  |
 
 可选：`accept_current_boundary / revise / defer_new_primary`。

@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<title>あるについて &#8211; 一般社団法人ある</title>
+<meta name='robots' content='max-image-preview:large' />
+<meta name="google-site-verification" content="google-site-verification=SDjv214snOetjtUr7VAeUWxJQqoOpqiad8s0IP8SrjM" />
+<meta name="p:domain_verify" content="8f786e30e2bf1b65568e362250f78d92" />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=54'
+					+ '&is_singular=';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9hcnUtb2tpbmF3YS5qcA%3D%3D"
+		+ "&wpcomid=188760947"
+		+ "&time=" + Math.floor( Date.now() / 1000 );
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//fonts-api.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="一般社団法人ある &raquo; フィード" href="https://aru-okinawa.jp/feed/" />
+<link rel="alternate" type="application/rss+xml" title="一般社団法人ある &raquo; コメントフィード" href="https://aru-okinawa.jp/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/common.min.css */
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons{box-sizing:border-box}.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons .wp-block-button__link{width:100%}.wp-block-button.aligncenter{text-align:center}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/buttons/style.min.css */
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/separator/style.min.css */
+</style>
+<style id="wp-block-separator-theme-inline-css">
+.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/separator/theme.min.css */
+</style>
+<style id="wp-block-spacer-inline-css">
+.wp-block-spacer{clear:both}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/spacer/style.min.css */
+</style>
+<style id="wp-block-button-inline-css">
+.wp-block-button__link{align-content:center;box-sizing:border-box;cursor:pointer;display:inline-block;height:100%;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button[class*=wp-block-button__width]{width:calc(var(--wp--block-button--width)*1% - var(--wp--style--block-gap, .5em)*(1 - var(--wp--block-button--width)/100))}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button[class*=wp-block-button__width]{width:calc(var(--wp--block-button--width)*1%)}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:transparent;background-image:none}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/button/style.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/heading/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/paragraph/style.min.css */
+</style>
+<style id="wp-block-library-inline-css-extra">
+.has-text-align-justify {
+	text-align:justify;
+}
+.has-text-align-justify{text-align:justify;}
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+.wp-block-button__link{background-color:#32373c;border-radius:9999px;box-shadow:none;color:#fff;font-size:1.125em;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-file__button{background:#32373c;color:#fff}.wp-block-accordion-heading{margin:0}.wp-block-accordion-heading__toggle{background-color:inherit!important;color:inherit!important}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:focus,.wp-block-accordion-heading__toggle:hover{background-color:inherit!important;border:none;box-shadow:none;color:inherit;padding:var(--wp--preset--spacing--20,1em) 0;text-decoration:none}.wp-block-accordion-heading__toggle:focus-visible{outline:auto;outline-offset:0}.wp-block-tab:not(.has-text-color){color:inherit!important}.wp-block-tab:not(.has-background){background-color:inherit!important}.wp-block-tab:focus,.wp-block-tab:hover{text-decoration:none}.wp-block-tab:focus-visible{outline:auto;outline-offset:0}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.8.0/build/styles/block-library/classic.min.css */
+</style>
+
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-3' href='/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/contact-form/css/jetpack-forms-layout.css?m=1786746543i&cssminify=yes' type='text/css' media='all' />
+
+<style id="coblocks-inline-format-inline-css">
+.uppercase{text-transform:uppercase}
+/*# sourceURL=coblocks-inline-format-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-12-1' href='/_static/??-eJx9jEEOAiEQBD/kQECjeDC+ZWEnijIwYWA3/l72op689KFTVXplCCU3zE1z6reYRYfiUwlP0VYZpwxIJE4IFRd10HOU9iFA2iuhCiI7/ROiDt9WxfETT20jCOc4YUIa2D9t5eGA91xRBMZS7ATtPkTZvCtdzNEZt7f2fHq8Afl7R7w=&cssminify=yes' type='text/css' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #ee793f;--wp--preset--color--secondary: #278c8f;--wp--preset--color--foreground: #242527;--wp--preset--color--background: #ffffff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 15px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 25.92px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 18px;--wp--preset--font-size--huge: 31.104px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link crossorigin='anonymous' rel='stylesheet' id='print-css-15-1' href='/wp-content/themes/pub/varia/print.css?m=1738187798i&cssminify=yes' type='text/css' media='print' />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='/_static/??-eJx9i0EOAiEMAD8kNhsP4MH4FiCVxUBLaJH4e9d40Wi8zSQzMJuJTIqkoCtWFGgjgKx+htEJRO8F91FkB7/Lm+/ZQ6b4Ss1skevXUIdpZaRMAh1D4bRhgq16039TQjaFo9fM9CHmUnzuz/VcT4s9uMVZe3TXB7FgUCU=&cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='shawburn-fonts-css' href='https://fonts-api.wp.com/css?family=PT+Sans%3A400%2C400i%2C700%2C700i%7CPT+Serif%3A400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-18-1' href='/wp-content/themes/pub/shawburn/style.css?m=1738187798i&cssminify=yes' type='text/css' media='all' />
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-20-1' href='/wp-content/themes/h4/global.css?m=1420737423i&cssminify=yes' type='text/css' media='all' />
+<script id="wpcom-actionbar-placeholder-js-extra">
+var actionbardata = {"siteID":"188760947","postID":"54","siteURL":"https://aru-okinawa.jp","xhrURL":"https://aru-okinawa.jp/wp-admin/admin-ajax.php","nonce":"856b14f597","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https://s0.wp.com/wp-content/js/wpcom-proxy-request.js?m=1513050504i&amp;ver=20211021","shortlink":"https://wp.me/PcM1lp-S","i18n":{"followedText":"\u3053\u306e\u30b5\u30a4\u30c8\u306e\u65b0\u3057\u3044\u6295\u7a3f\u306f \u003Ca href=\"https://wordpress.com/reader\"\u003EReader\u003C/a\u003E \u306b\u8868\u793a\u3055\u308c\u308b\u3088\u3046\u306b\u306a\u308a\u307e\u3057\u305f","foldBar":"\u3053\u306e\u30d0\u30fc\u3092\u6298\u308a\u305f\u305f\u3080","unfoldBar":"\u3053\u306e\u30d0\u30fc\u3092\u5c55\u958b","shortLinkCopied":"\u77ed\u7e2e\u30ea\u30f3\u30af\u304c\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u306b\u30b3\u30d4\u30fc\u3055\u308c\u307e\u3057\u305f\u3002"}};
+//# sourceURL=wpcom-actionbar-placeholder-js-extra
+</script>
+<script id="jetpack-mu-wpcom-settings-js-before">
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://s1.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-content/js/rlt-proxy.js?m=1720530689i'></script>
+<script id="rlt-proxy-js-after">
+	rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+//# sourceURL=rlt-proxy-js-after
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aruokinawa.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://aru-okinawa.jp/%e3%81%82%e3%82%8b%e3%80%82%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/" />
+<link rel='shortlink' href='https://wp.me/PcM1lp-S' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Faru-okinawa.jp%2F%25e3%2581%2582%25e3%2582%258b%25e3%2580%2582%25e3%2581%25ab%25e3%2581%25a4%25e3%2581%2584%25e3%2581%25a6%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Faru-okinawa.jp%2F%25e3%2581%2582%25e3%2582%258b%25e3%2580%2582%25e3%2581%25ab%25e3%2581%25a4%25e3%2581%2584%25e3%2581%25a6%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="あるについて" />
+<meta property="og:url" content="https://aru-okinawa.jp/%e3%81%82%e3%82%8b%e3%80%82%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/" />
+<meta property="og:description" content="あるの成り立ち 1997年12月に、自宅出産や助産院出産など選択肢のある自分らしいお産をしたい女たちが集まり立&hellip;" />
+<meta property="article:published_time" content="2021-02-02T01:40:17+00:00" />
+<meta property="article:modified_time" content="2026-08-07T03:08:02+00:00" />
+<meta property="og:site_name" content="一般社団法人ある" />
+<meta property="og:image" content="https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=200" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:creator" content="@10daimama" />
+<meta name="twitter:site" content="@10daimama" />
+<meta name="twitter:text:title" content="あるについて" />
+<meta name="twitter:image" content="https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=240" />
+<meta name="twitter:card" content="summary" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="search" type="application/opensearchdescription+xml" href="https://aru-okinawa.jp/osd.xml" title="一般社団法人ある" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="description" content="あるの成り立ち 1997年12月に、自宅出産や助産院出産など選択肢のある自分らしいお産をしたい女たちが集まり立&hellip;" />
+<style type="text/css" id="custom-colors-css">
+	:root,
+	#editor .editor-styles-wrapper {
+					--wp--preset--color--background: #ffffff;
+			--wp--preset--color--background-low-contrast: hsl( 0,0%,90%);
+			--wp--preset--color--background-high-contrast: hsl( 0,0%,110%);
+						--wp--preset--color--foreground: #242527;
+			--wp--preset--color--foreground-low-contrast: hsl( 220,7.6923076923077%,25.294117647059%);
+			--wp--preset--color--foreground-high-contrast: hsl( 220,7.6923076923077%,5.2941176470588%);
+						--wp--preset--color--primary: #ee793f;
+			--wp--preset--color--primary-hover: hsl( 19.885714285714,73.529411764706%,103.33333333333%);
+			--wp--preset--color--primary-dark: hsl( 19.885714285714,73.529411764706%,83.333333333333%);
+						--wp--preset--color--secondary: #278c8f;
+			--wp--preset--color--secondary-hover: hsl( 181.73076923077,72.727272727273%,66.078431372549%);
+				}
+
+	.wp--preset--color--background { background-color: #ffffff;}
+.wp--preset--color--foreground { color: #242527;}
+.wp--preset--color--primary { color: #ee793f;}
+.wp--preset--color--secondary { color: #278c8f;}
+</style>
+<link rel="icon" href="https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=32" sizes="32x32" />
+<link rel="icon" href="https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=180" />
+<meta name="msapplication-TileImage" content="https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=257" />
+<style id="jetpack-block-button-inline-css">
+.amp-wp-article .wp-block-jetpack-button{color:#fff}.wp-block-jetpack-button.aligncenter,.wp-block-jetpack-button.alignleft,.wp-block-jetpack-button.alignright{display:block}.wp-block-jetpack-button.aligncenter{margin-left:auto;margin-right:auto}.wp-block-jetpack-button.alignleft{margin-right:auto}.wp-block-jetpack-button.alignright{margin-left:auto}.wp-block-jetpack-button{height:fit-content;margin:0;max-width:100%;width:fit-content}.wp-block-jetpack-button.is-style-outline>.wp-block-button__link{background-color:#0000;border:1px solid;color:currentColor}:where(.wp-block-jetpack-button:not(.is-style-outline) button){border:none}.wp-block-jetpack-button .spinner{display:none;fill:currentColor}.wp-block-jetpack-button .spinner svg{display:block}.wp-block-jetpack-button .is-submitting .spinner{display:inline}.wp-block-jetpack-button .is-visually-hidden{clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}.wp-block-jetpack-button .disable-spinner .spinner{display:none}
+/*# sourceURL=/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/button/view.css?minify=false */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-5' href='/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/contact-form/css/grunion.css?m=1786991505i&cssminify=yes' type='text/css' media='all' />
+<style id="core-block-supports-inline-css">
+.wp-elements-1 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-2 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-3 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-4 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-5 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-7 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-8 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-9 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-10 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-11 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-12 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-13 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-14 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-15 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-16 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-17 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-18 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-19 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-20 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-21 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-22 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-23 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-24 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-25 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-26 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-27 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-28 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-29 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-elements-30 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--secondary);}.wp-container-jetpack-contact-form-is-layout-b9bba262{justify-content:flex-start;align-items:flex-start;}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+
+</head>
+
+<body class="wp-singular page-template-default page page-id-54 wp-custom-logo wp-embed-responsive wp-theme-pubvaria wp-child-theme-pubshawburn customizer-styles-applied singular image-filters-enabled jetpack-reblog-enabled custom-colors">
+
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">コンテンツへスキップ</a>
+
+	
+<header id="masthead" class="site-header responsive-max-width has-logo has-title-and-tagline has-menu" role="banner">
+	<div class="site-branding">
+
+			<div class="site-logo"><a href="https://aru-okinawa.jp/" class="custom-logo-link" rel="home"><img width="285" height="78" src="https://aru-okinawa.jp/wp-content/uploads/2021/08/arulogo-1.gif" class="custom-logo" alt="一般社団法人ある" decoding="async" srcset="https://aru-okinawa.jp/wp-content/uploads/2021/08/arulogo-1.gif 285w, https://aru-okinawa.jp/wp-content/uploads/2021/08/arulogo-1.gif?w=150&amp;h=41 150w" sizes="(max-width: 285px) 100vw, 285px" data-attachment-id="328" data-permalink="https://aru-okinawa.jp/arulogo/" data-orig-file="https://aru-okinawa.jp/wp-content/uploads/2021/08/arulogo-1.gif" data-orig-size="285,78" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="" data-image-description="" data-image-caption="" data-large-file="https://aru-okinawa.jp/wp-content/uploads/2021/08/arulogo-1.gif?w=285" /></a></div>
+								<p class="site-title"><a href="https://aru-okinawa.jp/" rel="home">一般社団法人ある</a></p>
+			
+				<p class="site-description">
+				あるだけでいい。一人ひとりの「あるがまま」を大事にしたい。沖縄県で活動する団体です。			</p>
+	</div><!-- .site-branding -->
+		<nav id="site-navigation" class="main-navigation" aria-label="メインナビゲーション">
+
+		<input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="hide-visually">
+		<label for="toggle" id="toggle-menu" class="button">
+			メニュー			<span class="dropdown-icon open">+</span>
+			<span class="dropdown-icon close">&times;</span>
+			<span class="hide-visually expanded-text">開いた状態</span>
+			<span class="hide-visually collapsed-text">閉じた状態</span>
+		</label>
+
+		<div class="menu-primary-container"><ul id="menu-primary-1" class="main-menu" aria-label="submenu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="https://aru-okinawa.jp/%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88%e3%81%ae%e3%81%8a%e9%a1%98%e3%81%84/">サポートのお願い</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604"><a href="https://aru-okinawa.jp/10%e4%bb%a320%e4%bb%a3%e3%81%ae%e3%83%92%e3%83%8b%e3%83%b3%e9%81%bf%e5%a6%8a%e7%9b%b8%e8%ab%87/">10代20代のヒニン(避妊)相談＆包括的性の学習</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://aru-okinawa.jp/10%e4%bb%a3%e3%83%9e%e3%83%9e%e3%81%8f%e3%82%89%e3%81%b6-2/">10代ママくらぶ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://aru-okinawa.jp/%e3%81%84%e3%81%ae%e3%81%a1%e3%81%ae%e6%95%99%e5%ae%a4/">性教育＆いのちの教室</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="https://aru-okinawa.jp/%e3%82%b0%e3%83%aa%e3%83%bc%e3%83%95%e3%82%b1%e3%82%a2/">グリーフワーク＆ケア</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2778"><a href="https://aru-okinawa.jp/%e3%81%b0%e3%81%81%e3%81%b0%e4%bf%9d%e8%82%b2%e5%9c%92/">ばぁば保育園</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://aru-okinawa.jp/%e3%81%ab%e3%81%98%e3%81%ae%e3%81%97%e3%81%9a%e3%81%8f/">アフターケア相談室にじのしずく</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://aru-okinawa.jp/%e3%82%b0%e3%83%ab%e3%83%bc%e3%83%97%e3%83%9b%e3%83%bc%e3%83%a0/">シェアハウスあるところ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-54 current_page_item menu-item-56"><a href="https://aru-okinawa.jp/%e3%81%82%e3%82%8b%e3%80%82%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/" aria-current="page">あるについて</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1973"><a href="https://aru-okinawa.jp/%e3%82%b9%e3%82%bf%e3%83%83%e3%83%95%e5%8b%9f%e9%9b%86%e2%99%a1/">＊＊スタッフ募集＊＊</a></li>
+</ul></div>	</nav><!-- #site-navigation -->
+		<nav class="social-navigation" role="navigation" aria-label="﻿ソーシャルリンクメニュー">
+		<div class="menu-social-container"><ul id="menu-social" class="social-links-menu"><li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100055739794494"><span class="screen-reader-text">Facebook</span><svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M20.007,3H3.993C3.445,3,3,3.445,3,3.993v16.013C3,20.555,3.445,21,3.993,21h8.621v-6.971h-2.346v-2.717h2.346V9.31 c0-2.325,1.42-3.591,3.494-3.591c0.993,0,1.847,0.074,2.096,0.107v2.43l-1.438,0.001c-1.128,0-1.346,0.536-1.346,1.323v1.734h2.69 l-0.35,2.717h-2.34V21h4.587C20.555,21,21,20.555,21,20.007V3.993C21,3.445,20.555,3,20.007,3z"></path></svg></a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a target="_blank" rel="noopener" href="https://twitter.com/10daimama"><span class="screen-reader-text">Twitter</span><svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg></a></li>
+<li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a target="_blank" rel="noopener" href="https://osannokai.ti-da.net/"><span class="screen-reader-text">ブ</span><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></li>
+<li id="menu-item-1350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1350"><a href="https://www.instagram.com/nijinoshizuku2019/"><span class="screen-reader-text">インスタグラム</span><svg class="svg-icon" width="26" height="26" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg></a></li>
+</ul></div>	</nav><!-- .social-navigation -->
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			
+<article id="post-54" class="post-54 page type-page status-publish hentry entry">
+
+	<header class="entry-header responsive-max-width">
+		
+<h1 class="entry-title">あるについて</h1>
+	</header>
+
+	
+	<div class="entry-content">
+		
+<p class="wp-block-paragraph" style="font-size:27px"><strong>あるの成り立ち</strong></p>
+
+
+
+<p class="wp-block-paragraph">1997年12月に、自宅出産や助産院出産など選択肢のある自分らしいお産をしたい女たちが集まり立ち上げた、営利を目的としないボランティア団体「<strong>私らしいお産を考える会</strong>」が、24年を経て「<strong>一般社団法人ある</strong>」になりました。</p>
+
+
+
+<p class="wp-block-paragraph"><strong>沿革</strong><br>１）お産の体験を聴く・語る・分かち合う場として「お産の定例会」、２）こどもとおとなのための生・性を科学的に学ぶ「包括的性教育」、そして３）悲しいお産になったとき…グリーフワークの場として「流産・死産（誕生死）の体験者の集い」を開催し、〈<strong>おとなとこどもの自己肯定感をはぐくむ</strong>〉という思いで活動を重ねてきました。<br>そして2020年12月、さらなる社会課題へ対応するために法人化する運びとなりました。<br>赤ちゃんをこの手に抱いた時のうれしさを忘れない、その人のあるがままを大事にしたい… そんな願いを込めて、法人名を「ある」と名付けました。</p>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-primary-color has-css-opacity has-primary-background-color has-background is-style-wide" />
+
+
+
+<h2 id="事業内容" class="wp-block-heading"><strong>事業内容</strong></h2>
+
+
+
+<p class="wp-block-paragraph"><strong>●<a href="https://aru-okinawa.jp/10%e4%bb%a3%e3%83%9e%e3%83%9e%e3%81%8f%e3%82%89%e3%81%b6-2/" target="_blank" rel="noreferrer noopener">10代ママくらぶ</a></strong><br>活動を継続して15年目となります。2020年には<strong>「りゅうちゃん子どもの希望募金助成事業」</strong>、2021年には<strong>「ＷＡＭ助成（社会福祉振興助成事業）</strong>＊制度の狭間に対する、民間福祉活動を応援し社会課題の解決の仕組みをつくる＊<strong>」</strong>、に採択されました。<strong>2022年は「りゅうちゃん子どもの希望募金助成事業」の他、「新型コロナウィルス感染症対応市民活動チャレンジ助成事業」「赤い羽根共同募金」「OK基金」からも</strong>助成を受け、コロナ禍の厳しい状況を社会で支える支援にも取り組みました。<strong>2023年からは「那覇市若年妊産婦の居場所事業」を受託</strong>し、これまでの民間運営のノウハウを活かし、行政事業として10代ママサポートを強化していきます。民間運営広域事業「10代ママくらぶ」も引き続き並行して運営いたします。相乗効果でよりパワーアップを目指します☆</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph"><strong>●<a href="https://aru-okinawa.jp/%e3%81%84%e3%81%ae%e3%81%a1%e3%81%ae%e6%95%99%e5%ae%a4/" target="_blank" rel="noreferrer noopener">性教育　いのちの教室、</a></strong><mark class="has-inline-color has-primary-color"><span style="text-decoration:underline"><strong>避妊相談</strong></span></mark><br>活動開始から26年目を迎えました。”<strong>わたしのからだはわたしもの</strong>”という人権を軸に<br>こどもとおとなのための包括的性(生)教育として、出前講座を行なっています</p>
+
+
+
+<p class="wp-block-paragraph"><strong><span style="text-decoration:underline">2022年より、<mark class="has-inline-color has-foreground-color">内閣府「沖縄こどもの貧困緊急対策事業</mark><mark class="has-inline-color has-primary-color">（女性の避妊に係る相談支援事業）</mark><mark class="has-inline-color has-foreground-color">」</mark></span></strong>に採択され、2年目となります。沖縄県全域（離島含む）の若年層の女性を対象とした避妊相談・避妊リングの補助等に取り組んでいます。並行して、<strong>「わたしの体はわたしのもの～相談する力を育む～」をコンセプトに性教育講座「人権・性・コミュニケーション学習・キャリア設計」</strong>も個人・グループを中心に実施しました。<strong>2023年は、少人数への性教育に加え、集団（クラス単位～学年単位）へのアプローチを強化</strong>し、保育園（こども・保護者）、小学校・中学校・高校・特別支援高校にて実施しました。正しい避妊法を含め、「人権・真の性的同意」への理解を深め、<strong>性虐待・性暴力・性的搾取の防止</strong>にも取り組んでいます。</p>
+
+
+
+<p class="wp-block-paragraph">●<strong><a href="https://aru-okinawa.jp/%e3%82%b0%e3%83%aa%e3%83%bc%e3%83%95%e3%82%b1%e3%82%a2/" target="_blank" rel="noreferrer noopener">グリーフワーク</a></strong><br>活動を継続して23年目となりました。<strong>「誕生死を体験された方とその家族」を対象とした、当事者の集い</strong>をこれまでの２ヶ月に１回から2023年より<strong>１ヶ月に１回開催へ拡充</strong>しました。併せて、個別面談も行なっています。その他、当法人オリジナルで作成した、<strong>グリーフ冊子「赤ちゃんとのお別れに寄りそって」</strong>を当法人経由だけでなく、行政（那覇市・浦添市）や医療機関（産婦人科）でも取り扱っていただき、配付されています</p>
+
+
+
+<p class="wp-block-paragraph">●<a href="https://aru-okinawa.jp/%e3%82%b0%e3%83%ab%e3%83%bc%e3%83%97%e3%83%9b%e3%83%bc%e3%83%a0/"><strong>シェアハウスあるところ</strong></a><br>指定障害福祉サービス事業所<br>共同生活援助<br>介護サービス 包括型：定員４人<br>短期入所 空床型：定員１人<br>2020年開所。障がいのある方と若者たち、そして赤ちゃんが育ち合う居場所をめざすシェアハウスです。</p>
+
+
+
+<p class="wp-block-paragraph">●<a href="https://aru-okinawa.jp/%e3%82%b0%e3%83%ab%e3%83%bc%e3%83%97%e3%83%9b%e3%83%bc%e3%83%a0/" target="_blank" rel="noreferrer noopener"><strong>にじのしずく</strong></a><br>2019年4月1日に沖縄県から委託を受けてスタートした<strong>社会的養護自立支援事業「アフターケア相談室　にじのしずく」</strong>は、2023年<a href="https://www.nijinohashi-okinawa.com/">NPO法人にじのはしファンド</a>より業務移管しました。施設や里親を卒業したこどもたちの相談窓口として、行政・就職・進学・金銭・人間関係・ただお話を聞いてほしいなど様々に対応しています。毎週金曜日にはみんなでご飯を食べる「金ちゃん」、名護市内での「やんばる金ちゃん」などの交流会、BBQやキャンプなど体験を広げる取り組みも行なっています。（<a href="https://www.akaihane.or.jp/wp/wp-content/uploads/2cae04aeb290a63de0e9e81eed2788ec.pdf">ソフトバンク・チャリティスマイル 第7回「社会に巣立とう」応援助成決定</a>）</p>
+
+
+
+<p class="wp-block-paragraph">●<strong><a href="https://aru-okinawa.jp/%e3%81%b0%e3%81%81%e3%81%b0%e4%bf%9d%e8%82%b2%e5%9c%92/" target="_blank" rel="noreferrer noopener">ばぁば保育園</a></strong><br>2024年、頼る実家のない若年ママたちのサポートのため、保育所入所が決まるまでの間赤ちゃんを預かる定員3名の小さな認可外保育園が発足しました。ばぁば保育園を拠点に、<strong>地域で支える仕組みづくり</strong>を目標としています。（<a href="https://www.u-shien.jp/kyumin/" target="_blank" rel="noreferrer noopener">休眠預金活用助成</a>「親に頼れない若者の独り立ちサポート事業助成」（2023年度緊急枠採択事業）に採択されました《<a href="https://aru-okinawa.jp/wp-content/uploads/2026/01/johokokai.pdf" target="_blank" rel="noreferrer noopener">人件費水準の公開について2026年1月現在</a>》<a href="https://aru-okinawa.jp/2024/11/11/%e6%83%85%e5%a0%b1%e5%85%ac%e9%96%8b/" target="_blank" rel="noreferrer noopener">2024年版</a>）</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">●<strong>受託事業</strong><br> <a href="https://aru-okinawa.jp/2023/01/20/%E3%82%B7%E3%83%B3%E3%83%9D%E3%82%B8%E3%82%A6%E3%83%A0%E9%96%8B%E5%82%AC%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/" target="_blank" rel="noreferrer noopener">沖縄県「令和4年度若年妊産婦支援促進事業」</a><br> <a href="https://aru-okinawa.jp/2023/09/21/%e3%82%b7%e3%83%b3%e3%83%9d%e3%82%b8%e3%82%a6%e3%83%a0%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/" target="_blank" rel="noreferrer noopener">沖縄県「令和5年度若年妊産婦支援促進事業」</a></p>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-primary-color has-css-opacity has-primary-background-color has-background is-style-wide" />
+
+
+
+<h2 id="teikan" class="wp-block-heading"><strong>法人規定</strong></h2>
+
+
+
+<p class="wp-block-paragraph">定款 <a href="https://aru-okinawa.jp/wp-content/uploads/2025/01/teikan20201110.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+
+
+
+<p class="wp-block-paragraph"><span class="uppercase">理事名簿</span>　<a href="https://aru-okinawa.jp/wp-content/uploads/2025/01/yakuinmeibo.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+
+
+
+<p class="wp-block-paragraph">全部事項証明 <a href="https://aru-okinawa.jp/wp-content/uploads/2024/11/zenbu20241113.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+
+
+
+<p class="wp-block-paragraph">利益相反管理規程 <a href="https://aru-okinawa.jp/wp-content/uploads/2025/03/rieki_souhan.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+
+
+
+<p class="wp-block-paragraph">コンプライアンス規定 <a href="https://aru-okinawa.jp/wp-content/uploads/2025/03/compliance.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+
+
+
+<p class="wp-block-paragraph">プライバシーポリシー <a href="https://aru-okinawa.jp/wp-content/uploads/2025/08/privacypolicy_20250824.pdf" target="_blank" rel="noreferrer noopener">PDF</a></p>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-primary-color has-css-opacity has-primary-background-color has-background is-style-wide" />
+
+
+
+<h2 id="報告書" class="wp-block-heading"><strong>報告書</strong></h2>
+
+
+
+<p class="wp-block-paragraph">2022年度の報告書です。こちらの<a href="https://aru-okinawa.jp/wp-content/uploads/2023/11/2023e3838be383a5e383bce382b9e383ace382bfe383bc_09.pdf" target="_blank" rel="noreferrer noopener">PDF</a>をご参照ください。</p>
+
+
+
+<p class="wp-block-paragraph">2024年度の報告書です。こちらの<a href="https://aru-okinawa.jp/wp-content/uploads/2025/03/2024newsletter.pdf" target="_blank" rel="noreferrer noopener">PDF</a>をご参照ください。</p>
+
+
+
+<p class="wp-block-paragraph">2025年度の報告書です。こちらの<a href="https://aru-okinawa.jp/wp-content/uploads/2026/08/2026news_letter_a3.pdf" target="_blank" rel="noopener">PDF</a>をご参照ください。</p>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-primary-color has-css-opacity has-primary-background-color has-background is-style-wide" />
+
+
+
+<h2 id="連携団体" class="wp-block-heading"><strong>連携団体・連携機関</strong></h2>
+
+
+
+<h5 id="npo法人にじのはしファンド" class="wp-block-heading has-link-color wp-elements-1"><span class="uppercase"><a href="https://www.nijinohashi-okinawa.com/">NPO法人にじのはしファンド</a></span></h5>
+
+
+
+<h5 id="一般社団法人虹のまほろ場" class="wp-block-heading has-link-color wp-elements-2"><a href="https://ponpon.mahoroba.ryukyu/">一般社団法人虹のまほろ場</a></h5>
+
+
+
+<h5 id="助産院パピヨン" class="wp-block-heading has-link-color wp-elements-3"><a href="https://papillon.care/">助産院パピヨン</a><span class="uppercase"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"></mark></span></h5>
+
+
+
+<p class="has-link-color wp-elements-4 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><span class="uppercase"><a href="https://kukuruokinawa.com/service/support/kids-clinique/" target="_blank" rel="noreferrer noopener">kukuruきっずくりにっく</a></span></mark></p>
+
+
+
+<p class="has-link-color wp-elements-5 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://www.churayui.org/" target="_blank" rel="noreferrer noopener">NPO法人沖縄県自立援助センターちゅらゆい</a></mark></p>
+
+
+
+<p class="has-link-color wp-elements-6 wp-block-paragraph"><a href="https://www.2h-okinawa.org/">フードバンクセカンドハーベスト沖縄</a></p>
+
+
+
+<p class="has-secondary-color has-text-color wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">しののめケアハウス</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-7 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://okinawaseikyokyo.org/?page_id=25" target="_blank" rel="noreferrer noopener">沖縄県”人間と性”教育研究協議会</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-8 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">開南法律事務所</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-9 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">さよウィメンズ・メンタルクリニック</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-10 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://www.kokoronohattatsu.com/" target="_blank" rel="noreferrer noopener">南上原こころの発達クリニック</a></mark>   　　</p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-11 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://www.lequios.co.jp/" target="_blank" rel="noreferrer noopener">㈱レキオスホールディングス</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-12 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://www.yuiclinic.com/" target="_blank" rel="noreferrer noopener">ゆいクリニック</a>（産婦人科）</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-13 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://suketto.ti-da.net/" target="_blank" rel="noreferrer noopener">保育すけっとイン那覇</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-14 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://oniwaok.blogspot.com/" target="_blank" rel="noreferrer noopener">若年シングルマザーを応援するシェルター（通称おにわ）</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-15 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://www.houkan-en.com/" target="_blank" rel="noreferrer noopener">訪問看護ステーション　えん</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-16 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">オハナース浦添訪問看護ステーション</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-17 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://chubuweb.hosp.pref.okinawa.jp/departments/gynecology/" target="_blank" rel="noreferrer noopener">沖縄県立中部病院（婦人科）</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-18 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://naokoclinic.suzume-design.net/" target="_blank" rel="noreferrer noopener">Naoko女性クリニック</a>（婦人科）</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-19 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://inabat2k2.wixsite.com/shiyuri/home" target="_blank" rel="noreferrer noopener">しゆり助産院・しゆり鍼灸マッサージサロン</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-20 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">一般社団法人 日本女性財団</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-21 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">豊見城市ファミリーサポートセンター</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-22 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">那覇市ファミリーサポートセンター</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-23 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">浦添市ファミリーサポートセンター</mark><br><br><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">那覇市10代ママに居場所　ねいろ (音色)</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-24 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">沖縄若年妊産婦の居場所「ゆくるん」</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-25 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://ogaoga.ti-da.net/e11941275.html" target="_blank" rel="noreferrer noopener">若年妊産婦事業　ママ笑room</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-26 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color"><a href="https://associa-lnd.co.jp/assets/pdf/consignment-project/pdf02.pdf" target="_blank" rel="noreferrer noopener">coco MAMARU</a></mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-27 wp-block-paragraph"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-primary-color">しんぐるまざあず・ふぉーらむ沖縄</mark></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-28 wp-block-paragraph"><a href="https://01.engeki.okinawa/">ゼロワンエンターテイメント</a></p>
+
+
+
+<p class="has-secondary-color has-text-color has-link-color wp-elements-29 wp-block-paragraph"><a href="https://teens-mama.com/">ティーンズママ ルームー ～つながーる～</a></p>
+
+
+
+<p class="has-link-color wp-elements-30 wp-block-paragraph"><a href="https://www.instagram.com/action_okinawa/">Action Ryukyu Okinawa</a></p>
+
+
+
+<p class="wp-block-paragraph"><mark class="has-inline-color has-primary-color"></mark></p>
+
+
+
+<p class="wp-block-paragraph">　　　</p>
+
+
+
+<p class="wp-block-paragraph">　　　</p>
+
+
+
+<div style="height:50px" aria-hidden="true" id="contact_us" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-primary-color has-css-opacity has-primary-background-color has-background is-style-wide" />
+
+
+
+<h2 class="wp-block-heading"><strong>お問い合わせ</strong></h2>
+
+
+<div data-test='contact-form'
+			id='contact-form-54'
+			class='jetpack-contact-form-container '
+			data-wp-interactive='jetpack/form' data-wp-context='{"formId":"54","formHash":"edc8145d14cac64c34d401b57a57342e6dc0b4b8","showErrors":false,"errors":[],"fields":[],"isMultiStep":false,"useAjax":true,"submissionData":null,"formattedSubmissionData":[],"submissionSuccess":false,"submissionError":null,"elementId":"jp-form-edc8145d14cac64c34d401b57a57342e6dc0b4b8","isSingleInputForm":false,"isForcedHorizontal":false,"conditionalLogic":[]}'
+			data-wp-on--focusin="actions.trackFirstInteraction"
+			data-wp-watch--scroll-to-wrapper="callbacks.scrollToWrapper"
+		>
+<div class="contact-form-submission contact-form-ajax-submission" data-wp-bind--aria-hidden="state.isSuccessMessageAriaHidden" data-wp-class--submission-success="context.submissionSuccess" id="contact-form-success-edc8145d14cac64c34d401b57a57342e6dc0b4b8" tabindex="-1" aria-labelledby="contact-form-success-header-edc8145d14cac64c34d401b57a57342e6dc0b4b8"><p class="go-back-message"><a class="link" role="button" tabindex="0" data-wp-on--click="actions.goBack" href="/%E3%81%82%E3%82%8B%E3%80%82%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/">← 戻る</a></p><h4 data-wp-bind--aria-hidden="state.isSuccessMessageAriaHidden" id="contact-form-success-header-edc8145d14cac64c34d401b57a57342e6dc0b4b8">ご回答をありがとうございました。 ✨</h4>
+
+<template data-wp-each--submission="context.formattedSubmissionData">
+					<div class="jetpack_forms_contact-form-success-summary">
+						<div class="field-name-wrapper">
+							<div class="field-type-icon" data-wp-watch="callbacks.watchFieldTypeIcon"></div>
+							<div class="field-name" data-wp-text="context.submission.label" data-wp-bind--hidden="!context.submission.label"></div>
+						</div>
+						<div class="field-value" data-wp-text="context.submission.value" data-wp-bind--hidden="!context.submission.showPlainValue"></div>
+						<a class="field-url" data-wp-bind--href="context.submission.url" data-wp-text="context.submission.value" data-wp-bind--hidden="!context.submission.url" target="_blank" rel="noopener noreferrer"></a>
+						<div class="field-rating" data-wp-bind--hidden="!context.submission.rating" data-wp-watch="callbacks.watchRatingIcons"></div>
+						<div class="field-images" data-wp-bind--hidden="!context.submission.images">
+							<template data-wp-each--image="context.submission.images">
+								<div class="field-image-option" data-wp-class--is-empty="!context.image.src">
+									<figure class="field-image-option__image" data-wp-class--is-empty="!context.image.src">
+										<img data-wp-bind--src="context.image.src" data-wp-bind--hidden="!context.image.src" />
+										<img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-wp-bind--hidden="context.image.src" />
+									</figure>
+									<div class="field-image-option__label-wrapper">
+										<span class="field-image-option__label-code" data-wp-text="context.image.letterCode"></span>
+										<span class="field-image-option__label" data-wp-text="context.image.label" data-wp-bind--hidden="!context.image.label"></span>
+									</div>
+								</div>
+							</template>
+						</div>
+						<div class="field-files" data-wp-bind--hidden="!context.submission.files">
+							<template data-wp-each--file="context.submission.files">
+								<div class="field-file">
+									<div class="field-file__thumbnail" data-wp-style--background-image="context.file.previewUrl" data-wp-style--mask-image="context.file.iconUrl" data-wp-bind--hidden="!context.file.hasPreview"></div>
+									<svg class="field-file__icon" data-wp-bind--hidden="context.file.hasPreview" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+										<path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="currentColor"/>
+									</svg>
+									<span class="field-file__name" data-wp-text="context.file.name"></span>
+									<span class="field-file__size" data-wp-text="context.file.size"></span>
+								</div>
+							</template>
+						</div>
+					</div>
+				</template></div><form action='https://aru-okinawa.jp/%e3%81%82%e3%82%8b%e3%80%82%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/'
+				id='jp-form-edc8145d14cac64c34d401b57a57342e6dc0b4b8'
+				method='post'
+				class='contact-form commentsblock jetpack-contact-form__form has-no-jetpack-form-layout' aria-label="&lt;strong&gt;お問い合わせ&lt;/strong&gt;"
+				data-wp-on--submit="actions.onFormSubmit"
+				data-wp-on--reset="actions.onFormReset"
+				data-wp-class--submission-success="context.submissionSuccess"
+				data-wp-class--is-first-step="state.isFirstStep"
+				data-wp-class--is-last-step="state.isLastStep"
+				data-wp-class--is-ajax-form="context.useAjax"
+				novalidate >
+<input type='hidden' name='jetpack_contact_form_jwt' value='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbmNyeXB0ZWRfYXR0cmlidXRlcyI6IkIyWjd5S2JUdDd2WkplTjQ5cjF3UmZaK2c5ZlZseXhSVG1SMFJhYnRkWUsyN2F2a1ZGM1RrVWs2QXl3WkloVFFMenpxaGZRejU0OFNRd1pjblNISEFvQWNRMHlKb3ZsdXZ5S2xGazdaQ2JPNnFMenpsSUFMaUxTMzVPeFh5aXJ0V3hQZXhFMWNJcm1lQjA5TjRXUEZIMWZ2U0Y0UUFHUTlhZFBhNkc5ZnNsenlONHQwU3FDNHhwRW9EVU5nOGFiZytsazNyeitDWThJeXJTeTFFZG1LaURLeGxSUjJjRnRFOTNYTnlDTzI3TGJzR1RCNEp2bGRuTERYQklwVlBXeTlwOXlUcmtjS3pQb2g1ZEFHMUUwdFRqanJSSUQ4NU5WNG1lSnQ5NVNlS1EvUVIyeHJFeWtOWkQ0SENHeFNvYWZsR1RMOW9tTnFFRmFrQnVCdEVQVm8xTkxiQStabVRvVENEMkVUS3ZtM05RTjQ1VWZiSjNCN0gxbnRVMkM5VDU3a0FBN2dia05lVW9CT2c0Z0ZaTkhMUVc2OElGWEw2bGY4bzdhbk9SM21rUWRuT3diVitubzkzdW5FaThnTHRwRWJmdEc5VFQ3bjBwYnB0Yng5bXFtY1dBc0xjVG9SZmQyTmQzbENjaTVTWTgxc085cHJkR1VaRVZNZ1lvMkhkUUIwRW5SZk5NQ05JV3JTTW5zRzdFTFBBQVI3UXdqbDlxaEFXeFJjNXp2cjdZai9xUzRNSXUvQ0RLbTR4YnkzTWttWE1qUUVrdThuWXpOdlNEdUVoVGgzNUhXUGg3aU1RRGphUjBFcUZmejVkTUN3TytNTExLc016WmdyMU5DVEJ1bEMycXMzZVZvN2RYS04vMHBGRjFDN2lPL3hPQ0NaT3Z5WWVNdWRMNHN2WkRxR0REd0FEYkdaOUptMEhFanNNNW9KdkJXc2VCVkQxVThmNkRSQ0ZJS3B4M3pJZXZORXhFRkNRdU9ocDFudnoyTTY2V0pyeXJhZDFzZ3g1RThuTm9aZWw5T3hMWE1Na3M5MHZOTFJER0ExdDVuNS9lSmJyR1kxL1ZzWmxkZU84VkkxZE9QcFdvdTBmVS9odFhFRmp0a2huUmRVRDlyZ2NVUmppNjRPbVVtNzhVRnBHZVBYVVdSbXZhNVVTQmVweWpYdFVzLzI4R0JydWJwajltWi9iOVpwbUV6UnhGSDRPKzM2d2hRc3VQSGdNZzJCZFFzdlpueGNyUnJIcC9ONUgzVkdEV2hRZE95Tk5uVzZQMzYvVFI4UEE5cjV3TUpEMjdpeXdkTVpaYitSamxTTko5YThFQnUyK2xYS1FNNE1JU0x4eXR2NGN3N3Uvb2xHamN2MlNId1ZvWjlsczR4TzlKWXVRMW16NFBYUXJNZ1dkZXUvTjlCd3RkVjArM29ET2lDYXBSYUQreGpNRUNZZWN5THFqMFV1LzZyY2FmT1B0cHY2VjhjRGNpME1zVXYybGR4Tll6Qkc3bGIyR3gyWG9NRjM1d1JhaWNXMkZzTk10L05YRE8yQ1h4YzlhY3h5Q1gyTGQzdFdkR0d4L0p6NFp0OVljU3BzaU5BUVRzS2o2N0pNU24zWHVkVVMwZUdGR2tnQ0ZwU1FSeSsvWEx6M0FLdXJVL1IwMExWUitubEhwc1JvWCtnPSIsImNvbnRlbnQiOiJcbjxkaXYgY2xhc3M9XCJ3cC1ibG9jay1qZXRwYWNrLWNvbnRhY3QtZm9ybVwiPltjb250YWN0LWZpZWxkIGlkPVwiXCIgcmVxdWlyZWQ9XCIxXCIgZmllbGRWYXJpYW50PVwibmFtZVwiIHR5cGU9XCJuYW1lXCIgbGFiZWw9XCJOYW1lXCIgcmVxdWlyZWRUZXh0PVwiKFx1NWZjNVx1OTgwOClcIiBsYWJlbGNsYXNzZXM9XCJ3cC1ibG9jay1qZXRwYWNrLWxhYmVsXCIgbGFiZWxoaWRkZW5ieWJsb2NrdmlzaWJpbGl0eT1cIlwiIHBsYWNlaG9sZGVyPVwiXCIgbWluPVwiXCIgbWF4PVwiXCIgaW5wdXRjbGFzc2VzPVwid3AtYmxvY2stamV0cGFjay1pbnB1dFwiIGlucHV0c3R5bGVzPVwiYm9yZGVyLXN0eWxlOnNvbGlkXCIgc3R5bGV2YXJpYXRpb25hdHRyaWJ1dGVzPVwieyZxdW90O2JvcmRlciZxdW90Ozp7JnF1b3Q7c3R5bGUmcXVvdDs6JnF1b3Q7c29saWQmcXVvdDt9fVwiIHN0eWxldmFyaWF0aW9uY2xhc3Nlcz1cIlwiIHN0eWxldmFyaWF0aW9uc3R5bGVzPVwiYm9yZGVyLXN0eWxlOnNvbGlkXCIgZmllbGR3cmFwcGVyY2xhc3Nlcz1cIndwLWJsb2NrLWpldHBhY2stZmllbGQtbmFtZVwiXSZsdDtkaXYmZ3Q7XG5cbiZsdDsvZGl2Jmd0O1svY29udGFjdC1maWVsZF1cblxuW2NvbnRhY3QtZmllbGQgaWQ9XCJcIiByZXF1aXJlZD1cIjFcIiB0eXBlPVwiZW1haWxcIiBsYWJlbD1cIkVtYWlsXCIgcmVxdWlyZWRUZXh0PVwiKFx1NWZjNVx1OTgwOClcIiBsYWJlbGNsYXNzZXM9XCJ3cC1ibG9jay1qZXRwYWNrLWxhYmVsXCIgbGFiZWxoaWRkZW5ieWJsb2NrdmlzaWJpbGl0eT1cIlwiIHBsYWNlaG9sZGVyPVwiXCIgbWluPVwiXCIgbWF4PVwiXCIgaW5wdXRjbGFzc2VzPVwid3AtYmxvY2stamV0cGFjay1pbnB1dFwiIGlucHV0c3R5bGVzPVwiYm9yZGVyLXN0eWxlOnNvbGlkXCIgc3R5bGV2YXJpYXRpb25hdHRyaWJ1dGVzPVwieyZxdW90O2JvcmRlciZxdW90Ozp7JnF1b3Q7c3R5bGUmcXVvdDs6JnF1b3Q7c29saWQmcXVvdDt9fVwiIHN0eWxldmFyaWF0aW9uY2xhc3Nlcz1cIlwiIHN0eWxldmFyaWF0aW9uc3R5bGVzPVwiYm9yZGVyLXN0eWxlOnNvbGlkXCIgZmllbGR3cmFwcGVyY2xhc3Nlcz1cIndwLWJsb2NrLWpldHBhY2stZmllbGQtZW1haWxcIl0mbHQ7ZGl2Jmd0O1xuXG4mbHQ7L2RpdiZndDtbL2NvbnRhY3QtZmllbGRdXG5cbltjb250YWN0LWZpZWxkIGlkPVwiXCIgdHlwZT1cInRleHRhcmVhXCIgbGFiZWw9XCJcdTMwZTFcdTMwYzNcdTMwYmJcdTMwZmNcdTMwYjhcIiByZXF1aXJlZFRleHQ9XCIoXHU1ZmM1XHU5ODA4KVwiIGxhYmVsY2xhc3Nlcz1cIndwLWJsb2NrLWpldHBhY2stbGFiZWxcIiBsYWJlbGhpZGRlbmJ5YmxvY2t2aXNpYmlsaXR5PVwiXCIgcGxhY2Vob2xkZXI9XCJcIiBtaW49XCJcIiBtYXg9XCJcIiBpbnB1dGNsYXNzZXM9XCJ3cC1ibG9jay1qZXRwYWNrLWlucHV0XCIgaW5wdXRzdHlsZXM9XCJib3JkZXItc3R5bGU6c29saWRcIiBzdHlsZXZhcmlhdGlvbmF0dHJpYnV0ZXM9XCJ7JnF1b3Q7Ym9yZGVyJnF1b3Q7OnsmcXVvdDtzdHlsZSZxdW90OzomcXVvdDtzb2xpZCZxdW90O319XCIgc3R5bGV2YXJpYXRpb25jbGFzc2VzPVwiXCIgc3R5bGV2YXJpYXRpb25zdHlsZXM9XCJib3JkZXItc3R5bGU6c29saWRcIiBmaWVsZHdyYXBwZXJjbGFzc2VzPVwid3AtYmxvY2stamV0cGFjay1maWVsZC10ZXh0YXJlYVwiXSZsdDtkaXYmZ3Q7XG5cbiZsdDsvZGl2Jmd0O1svY29udGFjdC1maWVsZF1cblxuPGRpdiBjbGFzcz1cIndwLWJsb2NrLWpldHBhY2stYnV0dG9uIHdwLWJsb2NrLWJ1dHRvblwiIHN0eWxlPVwiXCI-PGJ1dHRvbiBjbGFzcz1cIndwLWJsb2NrLWJ1dHRvbl9fbGlua1wiIHN0eWxlPVwiXCIgZGF0YS1pZC1hdHRyPVwicGxhY2Vob2xkZXJcIiB0eXBlPVwic3VibWl0XCIgZGF0YS13cC1jbGFzcy0taXMtc3VibWl0dGluZz1cInN0YXRlLmlzU3VibWl0dGluZ1wiIGRhdGEtd3AtYmluZC0tYXJpYS1kaXNhYmxlZD1cInN0YXRlLmlzQXJpYURpc2FibGVkXCI-Q29udGFjdCBVczxzcGFuIGNsYXNzPVwic3Bpbm5lclwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiPjxzdmcgd2lkdGg9XCIyNFwiIGhlaWdodD1cIjI0XCIgdmlld0JveD1cIjAgMCAyNCAyNFwiIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIj48cGF0aCBkPVwiTTEyLDFBMTEsMTEsMCwxLDAsMjMsMTIsMTEsMTEsMCwwLDAsMTIsMVptMCwxOWE4LDgsMCwxLDEsOC04QTgsOCwwLDAsMSwxMiwyMFpcIiBvcGFjaXR5PVwiLjI1XCIvPjxwYXRoIGQ9XCJNMTAuMTQsMS4xNmExMSwxMSwwLDAsMC05LDguOTJBMS41OSwxLjU5LDAsMCwwLDIuNDYsMTIsMS41MiwxLjUyLDAsMCwwLDQuMTEsMTAuN2E4LDgsMCwwLDEsNi42Ni02LjYxQTEuNDIsMS40MiwwLDAsMCwxMiwyLjY5aDBBMS41NywxLjU3LDAsMCwwLDEwLjE0LDEuMTZaXCI-PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT1cInRyYW5zZm9ybVwiIHR5cGU9XCJyb3RhdGVcIiBkdXI9XCIwLjc1c1wiIHZhbHVlcz1cIjAgMTIgMTI7MzYwIDEyIDEyXCIgcmVwZWF0Q291bnQ9XCJpbmRlZmluaXRlXCIvPjwvcGF0aD48L3N2Zz48c3BhbiBjbGFzcz1cImlzLXZpc3VhbGx5LWhpZGRlblwiPlx1MzBkNVx1MzBhOVx1MzBmY1x1MzBlMFx1MzA5Mlx1OTAwMVx1NGZlMVx1MzA1N1x1MzA2Nlx1MzA0NFx1MzA3ZVx1MzA1OTwvc3Bhbj48L3NwYW4-PC9idXR0b24-PC9kaXY-PC9kaXY-XG4iLCJoYXNoIjoiZWRjODE0NWQxNGNhYzY0YzM0ZDQwMWI1N2E1NzM0MmU2ZGMwYjRiOCIsInNvdXJjZSI6eyJlbnRyeV90aXRsZSI6Ilx1MzA0Mlx1MzA4Ylx1MzA2Ylx1MzA2NFx1MzA0NFx1MzA2NiIsImVudHJ5X3BhZ2UiOjEsInNvdXJjZV9pZCI6NTQsInNvdXJjZV90eXBlIjoic2luZ2xlIiwicmVxdWVzdF91cmwiOiJodHRwczovL2FydS1va2luYXdhLmpwLyVFMyU4MSU4MiVFMyU4MiU4QiVFMyU4MCU4MiVFMyU4MSVBQiVFMyU4MSVBNCVFMyU4MSU4NCVFMyU4MSVBNiJ9LCJ2ZXJzaW9uIjoyLCJjaXBoZXIiOiJhZXMtMjU2LWdjbSJ9.kDVphj9HwvpWSYTcH-KkZOvBpdwqokTtukIe415r0v0' />
+<input type='hidden' name='jetpack_form_fill_duration' value='' />
+
+<div class="wp-block-jetpack-contact-form is-layout-flex wp-container-jetpack-contact-form-is-layout-b9bba262 wp-block-jetpack-contact-form-is-layout-flex">
+<div style=""  data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g54-name","fieldType":"name","fieldLabel":"Name","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"1","fieldErrorMessage":"","fieldExtra":[],"formHash":"edc8145d14cac64c34d401b57a57342e6dc0b4b8"}'  class='wp-block-jetpack-field-name grunion-field-name-wrap wp-block-jetpack-input-wrap grunion-field-wrap'  data-jp-field-id='g54-name' data-jp-visibility-root='g54-name' data-wp-class--jetpack-field--conditionally-hidden="state.isFieldHidden" data-wp-watch--conditional-focus="callbacks.manageConditionalFocus" data-wp-init='callbacks.initializeField' data-wp-on--jetpack-form-reset='callbacks.initializeField' >
+<label
+				for='g54-name' class="grunion-field-label name wp-block-jetpack-label" >Name<span class="grunion-label-required" aria-hidden="true">(必須)</span></label>
+<input
+					type='text'
+					name='g54-name'
+					id='g54-name'
+					value=''
+
+					data-wp-bind--aria-invalid='state.fieldAriaInvalid'
+					data-wp-bind--value='state.getFieldValue'
+					aria-describedby='g54-name-text-error-message'
+					data-wp-on--input='actions.onFieldChange'
+					data-wp-on--blur='actions.onFieldBlur'
+					data-wp-class--has-value='state.hasFieldValue'
+
+					class='name wp-block-jetpack-input grunion-field' 
+					required='true' aria-required='true' style="border-style:solid"  />
+ 
+			<div id="g54-name-text-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
+				<span class="contact-form__warning-icon" aria-hidden="true">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z" />
+						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z" />
+					</svg>
+				</span>
+				<span data-wp-text="state.errorMessage" id="g54-name-text-error-message"></span>
+			</div> 
+	</div>
+
+
+
+<div style=""  data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g54-email","fieldType":"email","fieldLabel":"Email","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"1","fieldErrorMessage":"","fieldExtra":[],"formHash":"edc8145d14cac64c34d401b57a57342e6dc0b4b8"}'  class='wp-block-jetpack-field-email grunion-field-email-wrap wp-block-jetpack-input-wrap grunion-field-wrap'  data-jp-field-id='g54-email' data-jp-visibility-root='g54-email' data-wp-class--jetpack-field--conditionally-hidden="state.isFieldHidden" data-wp-watch--conditional-focus="callbacks.manageConditionalFocus" data-wp-init='callbacks.initializeField' data-wp-on--jetpack-form-reset='callbacks.initializeField' >
+<label
+				for='g54-email' class="grunion-field-label email wp-block-jetpack-label" >Email<span class="grunion-label-required" aria-hidden="true">(必須)</span></label>
+<input
+					type='email'
+					name='g54-email'
+					id='g54-email'
+					value=''
+
+					data-wp-bind--aria-invalid='state.fieldAriaInvalid'
+					data-wp-bind--value='state.getFieldValue'
+					aria-describedby='g54-email-email-error-message'
+					data-wp-on--input='actions.onFieldChange'
+					data-wp-on--blur='actions.onFieldBlur'
+					data-wp-class--has-value='state.hasFieldValue'
+
+					class='email wp-block-jetpack-input grunion-field' 
+					required='true' aria-required='true' style="border-style:solid"  />
+ 
+			<div id="g54-email-email-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
+				<span class="contact-form__warning-icon" aria-hidden="true">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z" />
+						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z" />
+					</svg>
+				</span>
+				<span data-wp-text="state.errorMessage" id="g54-email-email-error-message"></span>
+			</div> 
+	</div>
+
+
+
+<div style=""  data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g54","fieldType":"textarea","fieldLabel":"\u30e1\u30c3\u30bb\u30fc\u30b8","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"","fieldErrorMessage":"","fieldExtra":[],"formHash":"edc8145d14cac64c34d401b57a57342e6dc0b4b8"}'  class='wp-block-jetpack-field-textarea grunion-field-textarea-wrap wp-block-jetpack-input-wrap grunion-field-wrap'  data-jp-field-id='g54' data-jp-visibility-root='g54' data-wp-class--jetpack-field--conditionally-hidden="state.isFieldHidden" data-wp-watch--conditional-focus="callbacks.manageConditionalFocus" data-wp-init='callbacks.initializeField' data-wp-on--jetpack-form-reset='callbacks.initializeField' >
+<label
+				for='contact-form-comment-g54' class="grunion-field-label textarea wp-block-jetpack-label" >メッセージ</label>
+<textarea
+		                style='border-style:solid'
+		                name='g54'
+		                id='contact-form-comment-g54'
+		                rows='20'
+						data-wp-text='state.getFieldValue'
+						data-wp-on--input='actions.onFieldChange'
+						data-wp-on--blur='actions.onFieldBlur'
+						data-wp-class--has-value='state.hasFieldValue'
+						aria-describedby='g54-textarea-error-message'
+						data-wp-bind--aria-invalid='state.fieldAriaInvalid'
+						class='textarea wp-block-jetpack-input grunion-field'  ></textarea>
+ 
+			<div id="g54-textarea-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
+				<span class="contact-form__warning-icon" aria-hidden="true">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z" />
+						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z" />
+					</svg>
+				</span>
+				<span data-wp-text="state.errorMessage" id="g54-textarea-error-message"></span>
+			</div>
+	</div>
+
+
+<div class="contact-form__error" data-wp-class--show-errors="state.showFormErrors"><span class="contact-form__warning-icon" aria-hidden="true"><i></i></span><span class="contact-form__error-message" tabindex="-1" data-wp-watch="callbacks.focusOnValidationError" data-wp-text="state.getFormErrorMessage"></span><ul aria-label="フォームエラー">
+				<template data-wp-each="state.getErrorList" data-wp-key="context.item.id">
+					<li><a data-wp-bind--href="context.item.anchor" data-wp-on--click="actions.scrollIntoView" data-wp-text="context.item.label"></a></li>
+				</template>
+				</ul></div><div class="contact-form__error" data-wp-class--show-errors="state.showSubmissionError" data-wp-text="context.submissionError" tabindex="-1" data-wp-watch="callbacks.focusOnSubmissionError"></div> <div class="wp-block-jetpack-button wp-block-button" style=""><button data-wp-bind--disabled="state.isAriaDisabled" class="wp-block-button__link" style="" data-id-attr="placeholder" type="submit" data-wp-class--is-submitting="state.isSubmitting" data-wp-bind--aria-disabled="state.isAriaDisabled">Contact Us<span class="spinner" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/><path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><animateTransform attributeName="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatCount="indefinite"/></path></svg><span class="is-visually-hidden">フォームを送信しています</span></span></button></div></div>
+		<input type='hidden' name='contact-form-id' value='54' />
+		<input type='hidden' name='action' value='grunion-contact-form' />
+		<input type='hidden' name='contact-form-hash' value='edc8145d14cac64c34d401b57a57342e6dc0b4b8' />
+<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="184"/><script>
+document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
+</script>
+</p></form>
+</div>
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h3 class="wp-block-heading has-text-align-center has-primary-color has-text-color" id="一般社団法人ある住所-901-2104-浦添市当山2-5-6-301電話-080-1703-9738メール"><strong>一般社団法人ある<br><br>電話：080-1703-9738</strong>　<strong>mail：aru030303@gmail.com</strong></h3>
+
+
+
+<p class="wp-block-paragraph"></p>
+	</div><!-- .entry-content -->
+
+	</article><!-- #post-54 -->
+
+		</main><!-- #main -->
+	</section><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	
+	<footer id="colophon" class="site-footer responsive-max-width">
+				<nav class="footer-navigation" aria-label="フッターメニュー">
+		<div class="menu-primary-container"><ul id="menu-primary-2" class="footer-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="https://aru-okinawa.jp/%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88%e3%81%ae%e3%81%8a%e9%a1%98%e3%81%84/">サポートのお願い</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604"><a href="https://aru-okinawa.jp/10%e4%bb%a320%e4%bb%a3%e3%81%ae%e3%83%92%e3%83%8b%e3%83%b3%e9%81%bf%e5%a6%8a%e7%9b%b8%e8%ab%87/">10代20代のヒニン(避妊)相談＆包括的性の学習</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://aru-okinawa.jp/10%e4%bb%a3%e3%83%9e%e3%83%9e%e3%81%8f%e3%82%89%e3%81%b6-2/">10代ママくらぶ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://aru-okinawa.jp/%e3%81%84%e3%81%ae%e3%81%a1%e3%81%ae%e6%95%99%e5%ae%a4/">性教育＆いのちの教室</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="https://aru-okinawa.jp/%e3%82%b0%e3%83%aa%e3%83%bc%e3%83%95%e3%82%b1%e3%82%a2/">グリーフワーク＆ケア</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2778"><a href="https://aru-okinawa.jp/%e3%81%b0%e3%81%81%e3%81%b0%e4%bf%9d%e8%82%b2%e5%9c%92/">ばぁば保育園</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2298"><a href="https://aru-okinawa.jp/%e3%81%ab%e3%81%98%e3%81%ae%e3%81%97%e3%81%9a%e3%81%8f/">アフターケア相談室にじのしずく</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://aru-okinawa.jp/%e3%82%b0%e3%83%ab%e3%83%bc%e3%83%97%e3%83%9b%e3%83%bc%e3%83%a0/">シェアハウスあるところ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-54 current_page_item menu-item-56"><a href="https://aru-okinawa.jp/%e3%81%82%e3%82%8b%e3%80%82%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/" aria-current="page">あるについて</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1973"><a href="https://aru-okinawa.jp/%e3%82%b9%e3%82%bf%e3%83%83%e3%83%95%e5%8b%9f%e9%9b%86%e2%99%a1/">＊＊スタッフ募集＊＊</a></li>
+</ul></div>	</nav><!-- .footer-navigation -->
+
+	
+		<div class="site-info">
+		<a class="site-name" href="https://aru-okinawa.jp/" rel="home">一般社団法人ある</a><span class="comma">,</span>
+<a href="https://wordpress.com/ja/do-it-for-me?ref=footer_custom_difml" rel="nofollow">WordPress.com でサイトを構築</a>.	</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/pub/shawburn/*","/wp-content/themes/pub/varia/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="wp-importmap" type="importmap">
+{"imports":{"@wordpress/interactivity":"/wp-content/plugins/gutenberg-core/v23.8.0/build/modules/interactivity/index.min.js?m=1787137145i&ver=b0929e0bd08daccaa778"}}
+</script>
+<script id="wp-script-module-data-@wordpress/interactivity" type="application/json">
+{"config":{"jetpack/form":{"error_types":{"invalid_email":"有効なメールアドレスを入力してください","is_required":"この欄は入力必須です。","invalid_form_empty":"送信しようとしているフォームは空です。","invalid_form":"フォームの内容を正しく入力してください。","network_error":"フォームの送信中に接続の問題が発生しました。 インターネットに接続されていることを確認して、もう一度お試しください。"},"admin_ajax_url":"https://aruokinawa.wordpress.com/wp-admin/admin-ajax.php"}}}
+</script>
+<script id="grofiles-cards-js" src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202634d1133547e8a1f2801609f51cef12522abe7f6647d869e9fbc974fe356a37e613"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":""};
+//# sourceURL=wpgroho-js-extra
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile →': 'プロフィールを編集 →',
+							'View profile →': 'プロフィールを表示→',
+							'Contact': 'お問い合わせ',
+							'Send money': '送金する',
+							'Sorry, we are unable to load this Gravatar profile.': 'この Gravatar プロフィールを読み込めません。',
+							'Gravatar not found.': 'Gravatar が見つかりません。',
+							'Too Many Requests.': 'リクエスト数が多すぎます。',
+							'Internal Server Error.': '内部サーバーエラー。',
+							'Is this you?': 'このユーザーはあなたですか ?',
+							'Claim your free profile.': '無料プロフィールを取得しましょう。',
+							'Email': 'メール',
+							'Home Phone': '自宅電話番号',
+							'Work Phone': '職場電話番号',
+							'Cell Phone': '携帯電話番号',
+							'Contact Form': 'お問い合わせフォーム',
+							'Calendar': 'カレンダー',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	</div>
+		<div id="actionbar" dir="ltr" style="display: none;"
+			class="actnbr-pub-shawburn actnbr-has-follow actnbr-has-actions">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>登録</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V3H17.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H14.5V13.5H10.5V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path d="M19.5303 15.0303L15.5 19.0605L12.9697 16.5303L14.0303 15.4697L15.5 16.9395L18.4697 13.9697L19.5303 15.0303Z" fill="#008A20"></path></svg>
+			<span>開始日</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="https://aru-okinawa.jp">
+				<img loading='lazy' alt='' src='https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=50' srcset='https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=50 1x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=75 1.5x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=100 2x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=150 3x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=200 4x' class='avatar avatar-50' height='50' width='50' />				一般社団法人ある			</a>
+		</li>
+										<div class="actnbr-message no-display"></div>
+									<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																				<div>
+										<input type="email" name="email" placeholder="メールアドレスを入力" class="actnbr-email-field" aria-label="メールアドレスを入力" />
+										</div>
+										<input type="hidden" name="action" value="subscribe" />
+										<input type="hidden" name="blog_id" value="188760947" />
+										<input type="hidden" name="source" value="https://aru-okinawa.jp/%E3%81%82%E3%82%8B%E3%80%82%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/" />
+										<input type="hidden" name="sub-type" value="actionbar-follow" />
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="378e5b3a87" />										<div class="actnbr-button-wrap">
+											<button type="submit" value="登録する">
+												登録する											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											WordPress.com のアカウントをすでにお持ちですか ? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Faru-okinawa.jp%252F%2525e3%252581%252582%2525e3%252582%25258b%2525e3%252580%252582%2525e3%252581%2525ab%2525e3%252581%2525a4%2525e3%252581%252584%2525e3%252581%2525a6%252F">今すぐログイン</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+								<li class="actnbr-sitename">
+			<a href="https://aru-okinawa.jp">
+				<img loading='lazy' alt='' src='https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=50' srcset='https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=50 1x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=75 1.5x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=100 2x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=150 3x, https://aru-okinawa.jp/wp-content/uploads/2021/03/osannokaiimg.jpg?w=200 4x' class='avatar avatar-50' height='50' width='50' />				一般社団法人ある			</a>
+		</li>
+								<li class="actnbr-folded-follow">
+										<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>登録</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V3H17.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H14.5V13.5H10.5V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path d="M19.5303 15.0303L15.5 19.0605L12.9697 16.5303L14.0303 15.4697L15.5 16.9395L18.4697 13.9697L19.5303 15.0303Z" fill="#008A20"></path></svg>
+			<span>開始日</span>
+		</a>
+								</li>
+														<li class="actnbr-signup"><a href="https://wordpress.com/start/">登録</a></li>
+							<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Faru-okinawa.jp%252F%2525e3%252581%252582%2525e3%252582%25258b%2525e3%252580%252582%2525e3%252581%2525ab%2525e3%252581%2525a4%2525e3%252581%252584%2525e3%252581%2525a6%252F">ログイン</a></li>
+																<li class="actnbr-shortlink">
+										<a href="https://wp.me/PcM1lp-S">
+											<span class="actnbr-shortlink__text">短縮リンクをコピー</span>
+											<span class="actnbr-shortlink__icon"><svg class="gridicon gridicons-checkmark" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M9 19.414l-6.707-6.707 1.414-1.414L9 16.586 20.293 5.293l1.414 1.414"/></g></svg></span>
+										</a>
+									</li>
+																<li class="flb-report">
+									<a href="https://wordpress.com/abuse/?report_url=https://aru-okinawa.jp/%e3%81%82%e3%82%8b%e3%80%82%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/" target="_blank" rel="noopener noreferrer">
+										このコンテンツを報告									</a>
+								</li>
+															<li class="actnbr-reader">
+									<a href="https://wordpress.com/reader/blogs/188760947/posts/54">
+										Reader で投稿を表示									</a>
+								</li>
+															<li class="actnbr-subs">
+									<a href="https://subscribe.wordpress.com/">購読管理</a>
+								</li>
+																<li class="actnbr-fold"><a href="">このバーを折りたたむ</a></li>
+														</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "DOMContentLoaded", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "/wp-content/mu-plugins/actionbar/actionbar.css?v=20250116";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "/wp-content/mu-plugins/actionbar/actionbar.js?v=20250204";
+	document.body.appendChild( script );
+} );
+</script>
+
+		<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-includes/js/dist/vendor/wp-polyfill.min.js?m=1786440387i'></script>
+<script id="wp-hooks-js" src="/wp-content/plugins/gutenberg-core/v23.8.0/build/scripts/hooks/index.min.js?m=1787137145i&#038;ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="/wp-content/plugins/gutenberg-core/v23.8.0/build/scripts/i18n/index.min.js?m=1787137145i&#038;ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script data-wp-strategy="defer" defer id="jp-forms-blocks-js" src="/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/blocks/view.js?m=1786991505i&#038;minify=false&#038;ver=dbfe3342f61ccbce6bb8"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/","ext":".png","svgUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?m=1783090810i&ver=7.1-RC3-63319"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script id="jp-forms-view-js-module" src="/wp-content/mu-plugins/jetpack-plugin/sun/jetpack_vendor/automattic/jetpack-forms/dist/modules/form/view.js?m=1786991505i&#038;ver=16.2-a.2" type="module"></script>
+<link rel="modulepreload" href="/wp-content/plugins/gutenberg-core/v23.8.0/build/modules/interactivity/index.min.js?m=1787137145i&#038;ver=b0929e0bd08daccaa778" id="@wordpress/interactivity-js-modulepreload" data-wp-fetchpriority="low">
+<script src="//stats.wp.com/w.js?69" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'188760947','blog_tz':'9','user_lang':'ja','blog_lang':'ja','user_id':'0'}]);
+		// Prevent sending pageview tracking from WP-Admin pages.
+		_stq.push(['view', {'blog':'188760947','v':'wpcom','tz':'9','user_id':'0','post':'54','subd':'aruokinawa'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGRmOGhzbUhnYVZlRX5rWkVQTDVRaUViS2lqNm9odS9MMmwuZEV6fD0vOC0zaGc4bUthWT9PNUxJMVNVUDJDczZVWXFLRV11Mz12V2RGfDh0Y0RzTGovUUZ+bDIteEZtSTU3WT9vWl80S1MxMlNTeUdVeSVTSlRiNDRzcGlqLl1FKyxOdDJuL0Y9aThXR093dzJfVzVbW29scURZJTBzXzZ4LzR8czBafGY='}]);
+_stq.push([ 'clickTrackerInit', '188760947', '54' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<meta id="bilmur" property="bilmur:data" content="" data-provider="wordpress.com" data-service="simple" data-site-tz="Asia/Tokyo" data-custom-props="{&quot;enq_wp-polyfill&quot;:&quot;1&quot;,&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;pub\/shawburn&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}"   >
+		<script defer src="/wp-content/js/bilmur.min.js?i=17&amp;m=202634"></script> 	
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "package_id": "us_presence_network_wave2_recipient_voice_recon_v1",
+  "validated_on": "2026-08-22",
+  "status": "PASS_LEAD_ONLY_BOUNDED_RECON",
+  "origin_lead": "UF-L2-001",
+  "observation_count": 9,
+  "maximum_recon_step": 3,
+  "source_receipt_count": 7,
+  "new_local_artifact_count": 5,
+  "reused_local_artifact_count": 2,
+  "voice_role_crosswalk_count": 8,
+  "generic_protocol_validator": "PASS",
+  "source_path_hash_check": "PASS",
+  "raw_artifact_hash_check": "PASS_5_LOCAL_PLUS_2_REUSED",
+  "non_source_whitespace_eof_check": "PASS",
+  "per_file_git_no_index_check": "PASS_NON_SOURCE_TEXT",
+  "central_writeback": "no",
+  "human_review_trigger": "no",
+  "publication_eligibility": "no"
+}

@@ -1,0 +1,8 @@
+﻿scenario_id,actor_id_1,actor_label_1,actor_id_2,actor_label_2,person_layer_present,person_candidate_count,person_candidate_ids,resource_layer_present,resource_observation_count,resource_observation_ids,multilayer_overlap,allowed_reading
+SC01_VERY_HIGH_ONLY,X004,AWWA,X006,KOSC,yes,1,W2D-PD004,no,0,,no,"Layer co-presence on an organization pair; it does not prove control, earmarking or the same causal channel."
+SC01_VERY_HIGH_ONLY,X004,AWWA,X007,OESC,no,0,,yes,3,RF020;RF022;RF024,no,"Layer co-presence on an organization pair; it does not prove control, earmarking or the same causal channel."
+SC02_ADD_HIGH,X004,AWWA,X006,KOSC,yes,2,W2D-PD001;W2D-PD004,no,0,,no,"Layer co-presence on an organization pair; it does not prove control, earmarking or the same causal channel."
+SC02_ADD_HIGH,X004,AWWA,X007,OESC,yes,1,W2D-PD003,yes,3,RF020;RF022;RF024,yes,"Layer co-presence on an organization pair; it does not prove control, earmarking or the same causal channel."
+SC03_ADD_MODERATE,X004,AWWA,X005,NOSCO,yes,1,W2D-PD002,no,0,,no,"Layer co-presence on an organization pair; it does not prove control, earmarking or the same causal channel."
+SC03_ADD_MODERATE,X004,AWWA,X006,KOSC,yes,2,W2D-PD001;W2D-PD004,no,0,,no,"Layer co-presence on an organization pair; it does not prove control, earmarking or the same causal channel."
+SC03_ADD_MODERATE,X004,AWWA,X007,OESC,yes,1,W2D-PD003,yes,3,RF020;RF022;RF024,yes,"Layer co-presence on an organization pair; it does not prove control, earmarking or the same causal channel."

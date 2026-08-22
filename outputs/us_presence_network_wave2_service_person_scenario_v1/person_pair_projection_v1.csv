@@ -1,0 +1,9 @@
+﻿scenario_id,candidate_id,candidate_short_label,evidence_tier,actor_id_1,actor_label_1,actor_id_2,actor_label_2,projection_semantics,principal_same_person_decision,fact_status,central_writeback,frontend_eligible
+SC01_VERY_HIGH_ONLY,W2D-PD004,Trinicia Kloepper,very_high,X004,AWWA,X006,KOSC,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no
+SC02_ADD_HIGH,W2D-PD001,Brooke Epp / Brooke Epps,high,X004,AWWA,X006,KOSC,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no
+SC02_ADD_HIGH,W2D-PD003,Amber N Tracy / AMBER TRACY / Amber Tracy,high,X004,AWWA,X007,OESC,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no
+SC02_ADD_HIGH,W2D-PD004,Trinicia Kloepper,very_high,X004,AWWA,X006,KOSC,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no
+SC03_ADD_MODERATE,W2D-PD001,Brooke Epp / Brooke Epps,high,X004,AWWA,X006,KOSC,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no
+SC03_ADD_MODERATE,W2D-PD002,Jen Yapsing / Jennifer Yapshing,moderate,X004,AWWA,X005,NOSCO,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no
+SC03_ADD_MODERATE,W2D-PD003,Amber N Tracy / AMBER TRACY / Amber Tracy,high,X004,AWWA,X007,OESC,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no
+SC03_ADD_MODERATE,W2D-PD004,Trinicia Kloepper,very_high,X004,AWWA,X006,KOSC,if_same_person_then_shared_person_pair,pending,research_only_scenario_not_fact,no,no

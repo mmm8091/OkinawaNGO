@@ -1,0 +1,4 @@
+﻿scenario_id,candidate_id,candidate_short_label,evidence_tier,actor_id,actor_label,network_effect,fact_status
+SC01_VERY_HIGH_ONLY,W2D-PD005,Lesilee Du Fresne / Lesilee DuFresne,very_high,X007,OESC,within_actor_timeline_normalization_only,research_only_scenario_not_fact
+SC02_ADD_HIGH,W2D-PD005,Lesilee Du Fresne / Lesilee DuFresne,very_high,X007,OESC,within_actor_timeline_normalization_only,research_only_scenario_not_fact
+SC03_ADD_MODERATE,W2D-PD005,Lesilee Du Fresne / Lesilee DuFresne,very_high,X007,OESC,within_actor_timeline_normalization_only,research_only_scenario_not_fact

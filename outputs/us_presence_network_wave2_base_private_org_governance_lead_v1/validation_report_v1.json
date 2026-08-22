@@ -1,0 +1,16 @@
+{
+    "package":  "us_presence_network_wave2_base_private_org_governance_lead_v1",
+    "validated_at":  "2026-08-22T21:05:59+08:00",
+    "status":  "PASS",
+    "counts":  {
+                   "unexpected_findings":  10,
+                   "source_receipts":  10,
+                   "governance_regimes":  2,
+                   "actor_crosswalk_rows":  7,
+                   "negative_searches":  5,
+                   "local_artifacts":  2
+               },
+    "errors":  [
+
+               ]
+}

@@ -1,0 +1,74 @@
+{
+  "package_id": "USN_W2_PERSON_DISAMBIGUATION_SUPPLEMENT_V1",
+  "validated_on": "2026-08-22",
+  "status": "PASS_RESEARCH_ONLY_PRINCIPAL_DECISION_PENDING",
+  "package_scope": {
+    "candidate_groups": 5,
+    "evidence_rows": 18,
+    "timeline_rows": 17,
+    "candidate_assessment_rows": 5,
+    "bounded_search_observations": 8,
+    "source_receipts": 13,
+    "local_xml_hashes": 9,
+    "unexpected_finding_chains": 1,
+    "unexpected_finding_observations": 3
+  },
+  "checks": [
+    {
+      "check": "mandatory_unexpected_findings_protocol",
+      "status": "PASS",
+      "detail": "README contains the required section; the register has the exact 19-column schema, one chain, three observations and no recon step above 2."
+    },
+    {
+      "check": "csv_parse_and_shape",
+      "status": "PASS",
+      "detail": "Seven CSV files parsed with stable headers and expected row counts."
+    },
+    {
+      "check": "source_reference_integrity",
+      "status": "PASS",
+      "detail": "Every nonblank source_receipt_id used by the evidence matrix, timeline and search log resolves to source_receipts_v1.csv."
+    },
+    {
+      "check": "inherited_xml_sha256",
+      "status": "PASS",
+      "detail": "All 9 inherited official IRS XML files match their expected SHA-256 and byte length."
+    },
+    {
+      "check": "bounded_reconnaissance",
+      "status": "PASS",
+      "detail": "The bounded exact/near-name search log has 8 observations; no chain exceeds step 2 and no private/data-broker source was admitted."
+    },
+    {
+      "check": "principal_decision_boundary",
+      "status": "PASS",
+      "detail": "All five principal_decision cells are blank; central_writeback is no and cross_ecology_bridge_eligible is no for every group."
+    },
+    {
+      "check": "semantic_time_boundary",
+      "status": "PASS",
+      "detail": "Return-header filing-point roles, tax-period Part VII roles and BooksInCareOf contact observations remain separately typed."
+    },
+    {
+      "check": "publication_and_frontend_boundary",
+      "status": "PASS",
+      "detail": "Package is research_only, not_frontend_ready and supplies no W2-F, W2-G, publication adapter or release authorization."
+    },
+    {
+      "check": "non_source_whitespace_and_eof",
+      "status": "PASS",
+      "detail": "Package-authored Markdown, CSV and JSON files have no trailing horizontal whitespace and end with exactly one LF; upstream IRS XML files were not modified."
+    },
+    {
+      "check": "per_file_git_no_index_check",
+      "status": "PASS",
+      "detail": "Every package file passed git diff --no-index --check against NUL after whitespace cleanup."
+    }
+  ],
+  "known_limits": [
+    "No candidate is resolved without the principal's decision.",
+    "No unique personal identifier was sought or stored.",
+    "Current organization pages do not provide a complete historical roster.",
+    "All possible network effects are service-side only and do not establish a service-accountability bridge."
+  ]
+}

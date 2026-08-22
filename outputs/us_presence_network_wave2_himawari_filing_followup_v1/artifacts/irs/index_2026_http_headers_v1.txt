@@ -1,0 +1,20 @@
+URL: https://apps.irs.gov/pub/epostcard/990/xml/2026/index_2026.csv
+Observed: 2026-08-22T20:10:07+08:00
+HTTP status: 200 OK
+Content-Type: text/csv
+Content-Length: 47506032
+Last-Modified: Wed, 19 Aug 2026 13:00:43 GMT
+ETag: "2d4e270-65965fdbe2d60"
+Accept-Ranges: bytes
+
+Local uncompressed SHA-256:
+74ECEC3794FBF6F95F207C625E6A88C4F49B3F24815DB694721139B79F5C1DE8
+
+Local line count including header:
+385891
+
+Exact negative searches:
+- 980227149: 0 hits
+- AMERICAN WELFARE AND WORKS ASSOCIATION: 0 hits
+
+Boundary: this is a bounded official-index zero as of the observation date. It does not prove that no return was filed or that a later index will not publish one.

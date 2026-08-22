@@ -1,0 +1,75 @@
+{
+  "package_id": "us_presence_network_wave2_recurrent_recipient_lead_v1",
+  "generated_on": "2026-08-22",
+  "status": "lead_only",
+  "central_writeback": "no",
+  "human_review_trigger": "no",
+  "publication_eligibility": "no",
+  "frontend_eligibility": "no",
+  "input_count": 10,
+  "output_count": 9,
+  "outputs": [
+    {
+      "path": "recipient_observation_inventory_v1.csv",
+      "sha256": "6621a4332fa84f68257e867ddc2e1a833e3bfb07da7fbcafd2b36eaf2ba4af64",
+      "bytes": 17346
+    },
+    {
+      "path": "recurrent_recipient_audit_v1.csv",
+      "sha256": "70fe60cfcbc012de598f6fae9295fd6f762402f5a231e93b6abfd61cae59ad83",
+      "bytes": 4020
+    },
+    {
+      "path": "endpoint_dedup_disambiguation_v1.csv",
+      "sha256": "c07c26917a8724ef69393e2436d5c7e6b9fa4a5e150196a48f8c67ce6830dc89",
+      "bytes": 2666
+    },
+    {
+      "path": "audit_summary_v1.csv",
+      "sha256": "2081b1083b56c31e63d3ae083e51e94380c88766aa6a907ea6d30289c8494aec",
+      "bytes": 1184
+    },
+    {
+      "path": "lead_only_online_followup_v1.csv",
+      "sha256": "61b505c342b811754a6efee8d31663aa3bb1e0d4599f02f8ea5246f114378ded",
+      "bytes": 2598
+    },
+    {
+      "path": "source_receipts_v1.csv",
+      "sha256": "39de533a539893e665bb75a0b53f2be01e2c93583a381543d47450563c9033b0",
+      "bytes": 2410
+    },
+    {
+      "path": "negative_search_log_v1.csv",
+      "sha256": "165afacb14591632533e1961537b91c49456830ed0191093e1794392214b02c5",
+      "bytes": 1644
+    },
+    {
+      "path": "unexpected_findings_register_v1.csv",
+      "sha256": "fe7caca7e22740f3a3292c886b2a7adadbfd5b23222c94535a1f62ed79b99068",
+      "bytes": 5091
+    },
+    {
+      "path": "input_manifest_v1.csv",
+      "sha256": "f03a46c45f6f92e18ef2b2420e7c1132eb3ec207430aa136294a6c8b3c214076",
+      "bytes": 1967
+    }
+  ],
+  "control_files": [
+    {
+      "path": "README.md",
+      "sha256": "3a83947700bb89e5f3c98b5631d84870f588c077bbd3f7bab07f92a9dbeb021f",
+      "bytes": 7603
+    },
+    {
+      "path": "reproduce_recurrent_recipient_audit_v1.py",
+      "sha256": "56a2cf7c0fddcef155f9b8cdb83372cf4997d0e0a46e89ce00ec0b21d2b44a58",
+      "bytes": 61028
+    },
+    {
+      "path": "validate_recurrent_recipient_package_v1.py",
+      "sha256": "b4c763a814423b677c441cfe435368cdfb0c61dcb2ac7ebcdf29431602bd73c5",
+      "bytes": 5818
+    }
+  ]
+}

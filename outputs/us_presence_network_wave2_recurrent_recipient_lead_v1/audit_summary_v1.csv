@@ -1,0 +1,8 @@
+﻿metric,value,unit,interpretation
+input_csv_rows_inspected,137,rows,Mechanical audit denominator across six existing tables before endpoint filtering.
+inventory_observations,30,observations,"Selected direct, indirect, same-event and explicit exclusion observations used by this endpoint audit."
+eligible_unique_local_endpoint_groups,11,endpoint groups,"Named or provisional Okinawa welfare/child/medical/education endpoints after excluding AWWA, USO, base-side beneficiary groups and generic buckets."
+apparent_multi_provider_endpoint_groups_before_event_chain_identity_gates,2,endpoint groups,ARU and Heshikiya appear multi-provider before route/identity and event-aware deduplication.
+confirmed_independent_multi_provider_local_recipients_after_dedup,0,endpoint groups,No named local endpoint currently has two independently closed provider-to-recipient inflows.
+same_provider_recurrence_endpoint_groups,3,endpoint groups,"Kana-san, Ambitious and Himawari recur in AWWA-only records; recurrence is not cross-provider convergence."
+bounded_online_followup_observations,6,follow-up observations,"Three follow-up steps each for ARU and Heshikiya/Kimutaka, within the package limit."

@@ -1,0 +1,63 @@
+{
+  "package_id": "USN_W2_SERVICE_PERSON_SCENARIO_V1",
+  "generated_by": "build_service_person_scenarios_v1.py",
+  "status": "research_only_not_frontend_ready",
+  "files": {
+    "README.md": {
+      "sha256": "6b111b0446f4e30c166dc42c85de83fe69c9cf77cba28296061daed2fc56fc29",
+      "bytes": 8507
+    },
+    "build_service_person_scenarios_v1.py": {
+      "sha256": "96481724c9c87caa0a665b4da46da53b16b02e9128e4e1b4ea152d4e31c4304b",
+      "bytes": 42071
+    },
+    "scenario_nodes_v1.csv": {
+      "sha256": "22e7991527331e1d457d0e310267cb5ea24d36a465605310453e3fd273538f3a",
+      "bytes": 3820
+    },
+    "person_layer_incidence_edges_v1.csv": {
+      "sha256": "5cf78474fc149931b9267cf383867ff94c7882fe7f0fa4fba579442870eabd2c",
+      "bytes": 5471
+    },
+    "person_pair_projection_v1.csv": {
+      "sha256": "a4333bc8eaf84e536d27f299dbf93d81d3e6b4ce622359fbc1d2c2761c799fd2",
+      "bytes": 1548
+    },
+    "within_actor_continuity_by_scenario_v1.csv": {
+      "sha256": "2deef29ebe27815e0972768e1e6aadf94bd27d829a11c0fcfbdb3cd9a73a19fb",
+      "bytes": 584
+    },
+    "resource_layer_edges_v1.csv": {
+      "sha256": "ea491d1bcbf5fe5a2ba8a33bbcd7ffebb2a7c7127a22bd41e7e9747469b9c44d",
+      "bytes": 1738
+    },
+    "scenario_node_components_v1.csv": {
+      "sha256": "7ab17d30bff27c3361c5ed160f71bc88a69028adfd52198d5095c3f5ed91e3e1",
+      "bytes": 2645
+    },
+    "scenario_pair_overlap_v1.csv": {
+      "sha256": "89bea4363f6afa4e6d44b1bdce1a1308941214c4b2bcb7147462a9a9026b4710",
+      "bytes": 1521
+    },
+    "scenario_summary_v1.csv": {
+      "sha256": "0989b51a1a29c644a25f6f56bcce176d32db290127e266c802ac9154a4fc753a",
+      "bytes": 1320
+    },
+    "excluded_inputs_v1.csv": {
+      "sha256": "e755ef77a5fddc4e1ca1311878ee26571582e2aeb9123115d5f47fc9947a1fd9",
+      "bytes": 608
+    },
+    "unexpected_findings_register_v1.csv": {
+      "sha256": "1faa51ca1a210eebdc11b93835ccc114826611b6f497f458e993e5a31bd3b88a",
+      "bytes": 280
+    },
+    "fig_service_person_scenarios_v1.svg": {
+      "sha256": "4090f6c5b2f1674aa4093ef7e98fd976248758278dbcc49d144f9666e0ad4ccd",
+      "bytes": 17032
+    },
+    "validation_report_v1.json": {
+      "sha256": "fe3b9fb684c1a57d11c5d795656cabddb0bc3ba0a887da4e23cd9efd0e97fd13",
+      "bytes": 2260
+    }
+  }
+}

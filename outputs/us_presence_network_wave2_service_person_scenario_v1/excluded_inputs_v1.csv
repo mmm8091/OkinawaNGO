@@ -1,0 +1,3 @@
+﻿input_type,input_id,source_id,target_id,observed_value,unit,input_status,exclusion_reason,effect_if_later_accepted
+resource_flow,RF026,X018,X004,41183,USD,ai_seeded/research_only_official_filing_candidate,Official filing candidate is not principal-confirmed; excluded from confirmed resource layer.,Would connect MTS to AWWA inside the five-actor focal frame.
+resource_flow,RF034,X018,X004,19669,USD,ai_seeded/research_only_official_filing_candidate,Official filing candidate is not principal-confirmed; excluded from confirmed resource layer.,Would connect MTS to AWWA inside the five-actor focal frame.

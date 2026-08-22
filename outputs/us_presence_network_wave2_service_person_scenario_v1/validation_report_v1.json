@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "package_status": "research_only_not_frontend_ready",
+  "input_hashes": {
+    "outputs\\us_presence_network_wave2_person_disambiguation_supplement_v1\\candidate_assessment_v1.csv": "5c628937351d6558c3e512a7569dc970a3d120f8490ec1cf2b39dc414a7414ba",
+    "outputs\\us_presence_network_wave2_person_disambiguation_supplement_v1\\candidate_timeline_v1.csv": "966b9b00b471d20381850c9c7c385f983282878ef483f173a59a02089d2ea979",
+    "outputs\\us_presence_network_wave2_w2_a_v1\\resource_flow_ledger_v1.csv": "da39165b78097a0b3e9674db2421122467bf5102aaea6e728fc7de6076a8389c",
+    "docs\\human_review_return_USN_wave2_prerequisite_partial_v1.md": "9ea9725250ddb8ab4d3cdc1ee11f93b62fb08974bdf3a947a1cc7371f063d1b3"
+  },
+  "row_counts": {
+    "scenario_nodes_v1.csv": 29,
+    "person_layer_incidence_edges_v1.csv": 19,
+    "person_pair_projection_v1.csv": 8,
+    "within_actor_continuity_by_scenario_v1.csv": 3,
+    "resource_layer_edges_v1.csv": 4,
+    "scenario_node_components_v1.csv": 15,
+    "scenario_pair_overlap_v1.csv": 7,
+    "scenario_summary_v1.csv": 3,
+    "excluded_inputs_v1.csv": 2,
+    "unexpected_findings_register_v1.csv": 0
+  },
+  "invariants": {
+    "candidate_groups": [
+      "W2D-PD001",
+      "W2D-PD002",
+      "W2D-PD003",
+      "W2D-PD004",
+      "W2D-PD005"
+    ],
+    "confirmed_resource_rows": [
+      "RF020",
+      "RF022",
+      "RF024"
+    ],
+    "principal_boundary_row": "RF054",
+    "unapproved_mts_awwa_rows_excluded": [
+      "RF026",
+      "RF034"
+    ],
+    "scenario_expected_tuples": {
+      "SC01_VERY_HIGH_ONLY": {
+        "person_components": 4,
+        "combined_components": 3,
+        "multilayer_overlap_pairs": 0,
+        "awwa_component_size": 3
+      },
+      "SC02_ADD_HIGH": {
+        "person_components": 3,
+        "combined_components": 3,
+        "multilayer_overlap_pairs": 1,
+        "awwa_component_size": 3
+      },
+      "SC03_ADD_MODERATE": {
+        "person_components": 2,
+        "combined_components": 2,
+        "multilayer_overlap_pairs": 1,
+        "awwa_component_size": 4
+      }
+    },
+    "person_and_resource_files_separate": true,
+    "central_writeback": false,
+    "frontend_ready": false,
+    "human_review_created": false,
+    "publication_eligible": false
+  }
+}

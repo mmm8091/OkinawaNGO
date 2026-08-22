@@ -1,0 +1,16 @@
+﻿scenario_id,actor_id,actor_label,person_component_id,person_component_size,resource_component_id,resource_component_size,combined_component_id,combined_component_size,person_unique_neighbors,resource_unique_neighbors,combined_unique_neighbors,interpretation_boundary
+SC01_VERY_HIGH_ONLY,X004,AWWA,P01,2,R01,2,C01,3,1,1,2,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC01_VERY_HIGH_ONLY,X005,NOSCO,P02,1,R02,1,C02,1,0,0,0,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC01_VERY_HIGH_ONLY,X006,KOSC,P01,2,R03,1,C01,3,1,0,1,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC01_VERY_HIGH_ONLY,X007,OESC,P03,1,R01,2,C01,3,0,1,1,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC01_VERY_HIGH_ONLY,X018,MTS,P04,1,R04,1,C03,1,0,0,0,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC02_ADD_HIGH,X004,AWWA,P01,3,R01,2,C01,3,2,1,2,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC02_ADD_HIGH,X005,NOSCO,P02,1,R02,1,C02,1,0,0,0,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC02_ADD_HIGH,X006,KOSC,P01,3,R03,1,C01,3,1,0,1,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC02_ADD_HIGH,X007,OESC,P01,3,R01,2,C01,3,1,1,1,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC02_ADD_HIGH,X018,MTS,P03,1,R04,1,C03,1,0,0,0,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC03_ADD_MODERATE,X004,AWWA,P01,4,R01,2,C01,4,3,1,3,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC03_ADD_MODERATE,X005,NOSCO,P01,4,R02,1,C01,4,1,0,1,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC03_ADD_MODERATE,X006,KOSC,P01,4,R03,1,C01,4,1,0,1,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC03_ADD_MODERATE,X007,OESC,P01,4,R01,2,C01,4,1,1,1,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.
+SC03_ADD_MODERATE,X018,MTS,P02,1,R04,1,C02,1,0,0,0,Weak undirected connectivity among five focal organizations; external Lions excluded from component count.

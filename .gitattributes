@@ -20,3 +20,9 @@ outputs/us_presence_network_wave2_w2_00_*_v1/raw/** binary
 # Preserve W2 prerequisite evidence bytes used by package-local SHA-256 receipts.
 outputs/us_presence_network_wave2_leg2_originals_v1/artifacts/** binary
 outputs/us_presence_network_wave2_w2_c_nonentry_v1/raw/** binary
+
+# Preserve bounded-reconnaissance source artifacts byte-for-byte; package ledgers
+# record their SHA-256 and must not be invalidated by line-ending normalization.
+outputs/us_presence_network_wave2_*_lead_v1/artifacts/** binary
+outputs/us_presence_network_wave2_*_recon_v1/artifacts/** binary
+outputs/us_presence_network_wave2_himawari_filing_followup_v1/artifacts/** binary

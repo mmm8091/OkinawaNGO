@@ -1,0 +1,67 @@
+{
+  "package_id": "USN_W2_PERSON_DISAMBIGUATION_SUPPLEMENT_V1",
+  "generated_on": "2026-08-22",
+  "status": "research_only_principal_decision_pending",
+  "manifest_self_excluded": true,
+  "file_count": 10,
+  "files": [
+    {
+      "path": "bounded_search_log_v1.csv",
+      "bytes": 4229,
+      "sha256": "db2c2957789f1b04168b4a9c22777cfacb1ec270a94bdabb5d72a13fc3523df7"
+    },
+    {
+      "path": "candidate_assessment_v1.csv",
+      "bytes": 3693,
+      "sha256": "5c628937351d6558c3e512a7569dc970a3d120f8490ec1cf2b39dc414a7414ba"
+    },
+    {
+      "path": "candidate_timeline_v1.csv",
+      "bytes": 4159,
+      "sha256": "966b9b00b471d20381850c9c7c385f983282878ef483f173a59a02089d2ea979"
+    },
+    {
+      "path": "evidence_matrix_v1.csv",
+      "bytes": 8984,
+      "sha256": "3bf01972693a09fea3d69e6c6e0e5fb4877565d613ab5f4aa0b07f4b961061e4"
+    },
+    {
+      "path": "hash_verification_v1.csv",
+      "bytes": 2518,
+      "sha256": "952d7c22b771742ae92fe8555c5af3ccdd7224739a3ee7ef92a4cf8643ab9e33"
+    },
+    {
+      "path": "principal_checkpoint_v1.md",
+      "bytes": 6887,
+      "sha256": "2c0cac9d160357956c0853554585968c9db17b06339e1cf527b186b812886500"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5663,
+      "sha256": "d68071151e398044f59bef1a1dccd108046fa861fdd6b0f86b75b672b1c48647"
+    },
+    {
+      "path": "source_receipts_v1.csv",
+      "bytes": 6200,
+      "sha256": "3f4387f78c9d737224e35008f8aed6e1b41daf4a2b23eec71cf9dccfdbc57ce3"
+    },
+    {
+      "path": "unexpected_findings_register_v1.csv",
+      "bytes": 2970,
+      "sha256": "f3bccf225e5f93ba03d2584850672661a8355aaa2a8cad82a9f313fb67bb72be"
+    },
+    {
+      "path": "validation_report_v1.json",
+      "bytes": 2990,
+      "sha256": "f5ea2e8b8f35099d713a97e157d7bf7ddaab5f6bc558a3bf74cdb32e222e87ef"
+    }
+  ],
+  "boundaries": {
+    "central_writeback": "no",
+    "frontend_release": "no",
+    "publication_eligibility": "no",
+    "principal_decisions_written": 0,
+    "cross_ecology_bridges_created": 0,
+    "git_commit_created": false
+  }
+}

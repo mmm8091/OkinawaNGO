@@ -1,0 +1,4 @@
+search_id,observed_on,source_scope,query,match_count,result,source_receipt_ids,next_check,boundary
+HIM-NS001,2026-08-22,complete_official_index_2026,"exact EIN 980227149",0,no_row_found,HIM-SR001,"Repeat after IRS posts a new index or a 202505 AWWA object appears.","Index absence is not non-filing evidence."
+HIM-NS002,2026-08-22,complete_official_index_2026,"exact legal name AMERICAN WELFARE AND WORKS ASSOCIATION",0,no_row_found,HIM-SR001,"Repeat with EIN as the controlling identifier.","Name search is secondary to EIN and may miss spelling variants."
+HIM-NS003,2026-08-22,w2_00_official_index_excerpt,"AWWA tax_period_yyyymm=202505 in 2025 and 2026 index coverage",0,no_target_period_row,HIM-SR002,"Check future IRS annual indexes and TEOS return copies.","The normalized excerpt is not a byte-for-byte copy of both full indexes."
