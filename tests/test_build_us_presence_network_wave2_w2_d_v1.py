@@ -80,6 +80,48 @@ class TestW2DBridgeAudit(unittest.TestCase):
         self.assertEqual(claims["W2D-CL001"]["principal_decision_needed"], "yes")
         self.assertTrue(any(row["review_item_id"] == "W2D-PR001" for row in queue))
 
+    def test_dod_interface_provenance_and_interpretive_overlay(self) -> None:
+        edges = {row["edge_id"]: row for row in rows("typed_egonet_edges_v1.csv")}
+        eg012_refs = set(edges["W2D-EG012"]["source_refs"].split(";"))
+        self.assertIn("W2B2-FA001", eg012_refs)
+        self.assertTrue({"W2B-A021", "W2B-A022", "W2B-A024", "W2B-A026", "W2B-A032"}.issubset(eg012_refs))
+        self.assertNotIn("W2B-A006", eg012_refs)
+
+        claims = {row["claim_id"]: row for row in rows("claim_table_v1.csv")}
+        self.assertEqual(
+            set(claims["W2D-CL007"]["evidence_refs"].split(";")),
+            {"W2D-EG012", "W2D-EG016", "W2B-A024", "R8C01"},
+        )
+
+        queue = {row["review_item_id"]: row for row in rows("principal_review_queue_v1.csv")}
+        self.assertEqual(queue["W2D-PR004"]["decision_status"], "principal_confirmed")
+        self.assertTrue(
+            all(
+                row["decision_status"] == "principal_review_pending"
+                for review_id, row in queue.items()
+                if review_id != "W2D-PR004"
+            )
+        )
+
+        overlay = rows("principal_interpretive_overlay_v1.csv")
+        self.assertEqual(len(overlay), 1)
+        self.assertEqual(overlay[0]["target_claim_id"], "W2D-CL007")
+        self.assertEqual(overlay[0]["decision_status"], "principal_confirmed")
+        self.assertEqual(overlay[0]["review_scope"], "interpretive_position_only")
+        self.assertEqual(overlay[0]["approved_position"], "report_main_finding")
+        self.assertEqual(overlay[0]["underlying_fact_rows_approved"], "no")
+        self.assertEqual(overlay[0]["underlying_fact_review_status"], "unchanged")
+        self.assertEqual(overlay[0]["w2f_status"], "blocked")
+        self.assertEqual(overlay[0]["w2g_status"], "not_authorized")
+        self.assertEqual(overlay[0]["central_writeback"], "no")
+        self.assertEqual(overlay[0]["frontend_status"], "not_frontend_ready")
+
+        receipts = {row["title"]: row for row in rows("source_receipts_v1.csv")}
+        self.assertEqual(receipts["W2-00 anchor ledger"]["supports_row_ids"], "W2D-EG012;W2D-CL007")
+        self.assertEqual(receipts["W2-B federal award audit"]["supports_row_ids"], "W2D-EG012")
+        self.assertTrue(receipts["W2-00 anchor ledger"]["sha256"])
+        self.assertTrue(receipts["W2-B federal award audit"]["sha256"])
+
     def test_arc_nmcrs_edge_is_directed_candidate_pending_principal(self) -> None:
         edges = rows("typed_egonet_edges_v1.csv")
         arc_nmcrs = [row for row in edges if row["relation_family"] == "service_intermediation"]

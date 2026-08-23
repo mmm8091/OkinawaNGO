@@ -2,7 +2,11 @@
 
 日期：2026-08-22
 
-状态：`principal_review_pending / W2-F_blocked_by_principal`。W2-A／B／C／D／E 已完成 `research_only` 调查和交叉审计；负责人于 2026-08-22 明确 W2-F 现在不放行。本检查点不授权中央写回、publication adapter、前端发布或正式论文结论。
+状态：`principal_review_partial / W2-F_blocked_by_principal`。W2-A／B／C／D／E 已完成 `research_only` 调查和交叉审计；负责人于 2026-08-22 明确 W2-F 现在不放行，并于 2026-08-23 固定三项解释位置：DoD 共同制度核心列为报告第一结构性发现；AWWA 列为服务侧核心机制；合法性维持弱结论。完整决定见 `docs/us_presence_network_wave2_detective_checkpoint_v3.md`。本检查点不授权中央写回、publication adapter、前端发布或完整论文合成。
+
+## 2026-08-23 解释顺序更新
+
+下文保留 W2-A—E 原始调查顺序以便追溯，正式报告顺序改为：DoD 共同制度核心 → 两套公民基础设施 → AWWA 服务侧机制 → 问责结果 → 直接组织桥审计。共同制度接口与 NGO—NGO 直接桥是两种关系：前者升为主发现，后者仍按有界公开记录审计。合法性不再是 W2-F 的开放判断。
 
 ## 先看研究结果
 
@@ -10,7 +14,7 @@
 
 五家军属组织加 Marine Thrift Shop 的申报已整理为 18 个税期槽位、72 条财务指标、104 条人物—组织—税期观察和 55 条资源流观察。OESC 连续三期向 AWWA 申报 USD 16,308、14,371、8,479；Marine Thrift Shop 两期申报 USD 41,183、19,669。AWWA 自身又把拨出分成日本组织与基地关联组织两个桶。
 
-因此可以把 AWWA 写成**多家军属组织反复使用的分配中介**。但税期不同、没有 earmarking，不能把上游五笔钱追到某个下游 recipient，也不能计算 AWWA 占全部渠道的份额。Marine Thrift Shop→Lions 的 USD 10,000 候选说明 AWWA 不是唯一渠道。
+因此可以把 AWWA 写成**多家军属组织反复使用的分配中介**。结合已确认的跨组织人物角色和基地 private-organization 的公开准入规则，它进一步构成“以 AWWA 为中介核心、嵌入基地治理制度的人物—资金复合网络”。但治理规则目前主要是通用制度与 KOSC 的具名位置，不能画成 command→AWWA 的直接 funding／affiliation／control 边；税期不同、没有 earmarking，也不能把上游资金追到某个下游 recipient 或计算 AWWA 占全部渠道的份额。Marine Thrift Shop→Lions 的 USD 10,000 候选说明 AWWA 不是唯一渠道。
 
 两期六个具名 recipient descriptor 合计 USD 84,016，占日本组织桶 53.89%，占两期 grant line 38.18%。这是申报端点的可见度，不是地方受益覆盖率。3/6 找到受赠方或地方侧回应，0/6 闭合同一金额与税期。
 
@@ -86,7 +90,7 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 ### P1：AWWA 的中介表述
 
-建议同意：写“多家军属组织反复使用的分配中介”，不写“唯一中介”、渠道份额或上游款项到下游 recipient 的 earmarked chain；53.89%／38.18% 只称申报可见度。
+负责人已决定：AWWA 升为服务侧核心机制，正式写成“以 AWWA 为中介核心、嵌入基地治理制度的人物—资金复合网络”。它不等于 AWWA 获得 DoD 直接授权或资助；不写“唯一中介”、渠道份额或上游款项到下游 recipient 的 earmarked chain；53.89%／38.18% 只称申报可见度。
 
 ### P2：USO 的财务、站点与分配缺口
 
@@ -106,7 +110,7 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 ### P6：两套生态的分离与共同接口
 
-建议同意 36/54 个 direct pair 的有界措辞，并把 DoD 单列为 `system_interface`；不把它计入 NGO bridge，不把未闭合人物／recipient／funder 写成零。
+负责人已决定：把“两套生态共享 DoD 这一制度核心”升为报告主发现。DoD 单列为 `system_interface`，实际端点仍保存 WHS、installation command、OSD／案件被告等层级；不把它计入 NGO bridge，也不把未闭合人物／recipient／funder 写成零。36/54 个 direct pair 只保留为直接组织桥的有界审计结果。
 
 ### P7：人物网络与选择框
 
@@ -122,7 +126,7 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 放行前先完成三类工作：
 
-1. 完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`；负责人已审定人物消歧、non-entry、三笔 recipient 交易、LEG2 与 MTS→Lions 边界，HR-USN2-02—03、06a／06c、07—14 仍待回传；
+1. 完成 `docs/human_review_assignment_USN_wave2_ABCD_v1.md`；负责人已审定人物消歧、non-entry、三笔 recipient 交易、LEG2、MTS→Lions 边界与 HR-USN2-13.1 的共同制度接口，HR-USN2-02—03、06a／06c、07—12、13.2—13.4、14 仍待回传；
 2. **已完成图表修正**：USO 瀑布图已删除无口径的 47,000 population 标注；该数只保留在原始服务覆盖观察中，并明确是 2025 年 USO 自述的服务覆盖规模，不是当前同年同定义总人口，也不能用于人均计算；
 3. **草稿已完成、尚未发送**：发出并登记三份信息公开请求——`HQ00342310002` 的地区／日本／冲绳 allocation 与 subaward／执行分配、MCCS Okinawa／MCIPAC MCCS 年度财务报表、冲绳防卫局冲绳相关分项预算／支出／合同执行。
 
@@ -134,7 +138,7 @@ USO 2024 审计财报的 program services 为 gross USD 204.912m，其中包含 
 
 负责人同意给每个新建或重新打开的工作包增加《意外发现登记》，并允许执行者沿一条线索自主侦察最多三步、单包最多 10 条观察。全部使用 `lead_only`，不进结论、中央层、人工复核或前端；完整协议见 `docs/research_work_package_protocol_v1.md`。
 
-按该协议完成的本轮侦察、人物决定与解释性暂停统一索引在 `docs/us_presence_network_wave2_detective_checkpoint_v2.md`。其中基地准入的公开规则层已正式化为 `research_only` 事实包；人物层已按负责人决定形成确认 overlay；recipient 去重和角色分仓继续留在线索层。它们不改写 W2-F 放行状态。
+按该协议完成的本轮侦察、人物决定与解释性暂停统一索引在 `docs/us_presence_network_wave2_detective_checkpoint_v3.md`。其中基地准入的公开规则层已正式化为 `research_only` 事实包；人物层已按负责人决定形成确认 overlay；recipient 去重和角色分仓继续留在线索层。三项解释位置已经固定，但不改写 W2-F 放行状态。
 
 ## 本检查点不会自动发生的事
 

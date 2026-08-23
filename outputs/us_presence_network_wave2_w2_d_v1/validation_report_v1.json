@@ -36,6 +36,11 @@
     "shared_funder_never_coordination": true,
     "graph_no_direct_s0_a0_actor_edge": true,
     "dod_interface_not_bridge": true,
+    "eg012_uses_award_anchors_not_form990_revenue": true,
+    "cl007_evidence_chain_exact": true,
+    "pr004_only_principal_confirmed": true,
+    "principal_overlay_interpretive_only": true,
+    "award_input_receipts_hashed_and_scoped": true,
     "receipt_hashes_valid": true,
     "protected_files_unchanged": true
   },

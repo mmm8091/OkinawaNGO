@@ -105,7 +105,7 @@ Ambitious 127 号同一期中，一边刊载机构对 AWWA 资格视察和福利
 | USO 图中 47,000 口径修正 | 已完成 | 否 |
 | bounded non-entry 调查 | 已完成；负责人接受 `arm_not_established` 与具名后续任务 | 否 |
 | 关键 recipient／LEG2 原件 | 已完成；HR-USN2-04／05／06b 已回传 | 否 |
-| HR-USN2-01—14 | 01、04、05、06b 已回传；02—03、06a／06c、07—14 待定 | 是 |
+| HR-USN2-01—14 | 01、04、05、06b、13.1 已回传；02—03、06a／06c、07—12、13.2—13.4、14 待定 | 是 |
 | 三份信息公开请求 | 草稿完成，`draft_not_sent` | 是，填身份／费用并实际发送登记 |
 | W2-G 中央写回／发布／前端 | 未授权 | 以后另决 |
 
@@ -113,7 +113,7 @@ Ambitious 127 号同一期中，一边刊载机构对 AWWA 资格视察和福利
 
 ## 六、已完成阅读与剩余入口
 
-non-entry、recipient／LEG2 与人物消歧的负责人阅读已完成。剩余判断继续从 `docs/human_review_assignment_USN_wave2_ABCD_v1.md` 的 HR-USN2-02—03、06a／06c、07—14 进入。人物正式回传见 `docs/human_review_return_USN_wave2_person_disambiguation_v1.md`；AWWA 下一税期核查见 `outputs/us_presence_network_wave2_himawari_filing_followup_v1/`；Lions 受领侧图片与正文线索见 `outputs/us_presence_network_wave2_lions_recipient_lead_v1/`。
+non-entry、recipient／LEG2、人物消歧与 HR-USN2-13.1 的共同制度接口决定已完成。剩余判断继续从 `docs/human_review_assignment_USN_wave2_ABCD_v1.md` 的 HR-USN2-02—03、06a／06c、07—12、13.2—13.4、14 进入。人物正式回传见 `docs/human_review_return_USN_wave2_person_disambiguation_v1.md`；AWWA 下一税期核查见 `outputs/us_presence_network_wave2_himawari_filing_followup_v1/`；Lions 受领侧图片与正文线索见 `outputs/us_presence_network_wave2_lions_recipient_lead_v1/`。
 
 ## 七、控制文件
 
@@ -129,6 +129,6 @@ non-entry、recipient／LEG2 与人物消歧的负责人阅读已完成。剩余
 - 服务侧人物—资金确认 overlay：`outputs/us_presence_network_wave2_service_person_confirmed_overlay_v1/`；
 - 基地私人组织公开规则层：`outputs/us_presence_network_wave2_base_private_org_governance_rules_v1/`；
 - 信息公开微型试验设计：`outputs/us_presence_network_wave2_information_disclosure_pilot_v1/`；
-- 本轮解释性侦察检查点：`docs/us_presence_network_wave2_detective_checkpoint_v2.md`。
+- 本轮解释性侦察检查点：`docs/us_presence_network_wave2_detective_checkpoint_v3.md`。
 
 本检查点不修改中央事实，不批准 W2-F／W2-G，不向 publication adapter 或前端投放任何行。

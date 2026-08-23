@@ -10,7 +10,7 @@ W2D-EG008,X007,X001,money_flow,confirmed_dated,F021,,no,"USD 3,250 donation on 2
 W2D-EG009,X004,LOCAL_RECIPIENTS,service_recipient,candidate_partial,EH0110:EH0121,,no,Six descriptors; 3 local responses; 0 exact transaction closure,ai_seeded,research_only,not_frontend_ready,no
 W2D-EG010,X009,X008,service_intermediation,official_source_supported_candidate_pending_principal,W2B2-DE028,NMCRS delegates after-hours intake/disbursement to ARC; ARC acts on NMCRS's behalf using NMCRS funds,no,"Directed delegation/interface candidate: NMCRS funds and authority flow to ARC, which provides after-hours intake on NMCRS's behalf; pending principal review",ai_seeded,research_only,not_frontend_ready,no
 W2D-EG011,USO_NATIONAL,X001,organization_hierarchy,official_operating_structure,W2B2-DE001:W2B2-DE004,,no,Hierarchy visible; local allocation not visible,ai_seeded,research_only,not_frontend_ready,no
-W2D-EG012,DOD,USO_NATIONAL,official_award,national_prime,W2B-A006,,no,USD 72m national prime award; not Okinawa receipt,ai_seeded,research_only,not_frontend_ready,no
+W2D-EG012,DOD,USO_NATIONAL,official_award,national_prime,W2B2-FA001;W2B-A021;W2B-A022;W2B-A024;W2B-A026;W2B-A032,,no,USD 72m national cumulative obligation; not cash paid or Okinawa receipt,ai_seeded,research_only,not_frontend_ready,no
 W2D-EG013,A045,R8C01,case_role,historical_human_checked,R8R001,,no,Named plaintiff,ai_seeded,research_only,not_frontend_ready,no
 W2D-EG014,A086,R8C01,case_role,historical_human_checked,R8R002,,no,Named plaintiff,ai_seeded,research_only,not_frontend_ready,no
 W2D-EG015,A009,R8C01,case_role,historical_human_checked,R8R005,,no,Counsel,ai_seeded,research_only,not_frontend_ready,no

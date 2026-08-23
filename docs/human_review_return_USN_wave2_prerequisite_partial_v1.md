@@ -53,3 +53,5 @@ HR-USN2-06b 决定 `accept_current_boundary`：USD 10,000 只闭合到 Lions 中
 以上完成前，W2-F 继续阻断。
 
 HR-USN2-01 的后续人物决定已另行完成并记录于 `docs/human_review_return_USN_wave2_person_disambiguation_v1.md`；本件继续保留 non-entry、recipient、LEG2 与 MTS 边界的原回传范围。
+
+后续解释性决定中，HR-USN2-13.1 已于 2026-08-23 接受为 `system_interface` 并升为报告主发现；该决定记录于 `docs/us_presence_network_wave2_detective_checkpoint_v3.md` 与 W2-D 的 `principal_interpretive_overlay_v1.csv`，不改变本件原始回传范围或其余待审项。

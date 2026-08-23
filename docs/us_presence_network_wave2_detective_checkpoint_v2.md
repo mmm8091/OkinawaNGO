@@ -4,6 +4,8 @@
 
 状态：`principal_checkpoint / research_only / W2-F_still_blocked / central_writeback=no / not_frontend_ready`
 
+历史说明：本页保留 2026-08-22 的侦察收口。2026-08-23 负责人将 DoD 共同制度核心与 AWWA 复合机制升为主发现，并固定合法性弱结论；当前解释入口改为 `docs/us_presence_network_wave2_detective_checkpoint_v3.md`。
+
 ## 一、探长本轮裁决
 
 人物消歧已经从条件情景变成负责人确认的研究 overlay：

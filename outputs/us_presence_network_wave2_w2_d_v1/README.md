@@ -1,7 +1,7 @@
 # W2-D Bridge audit v1
 
 日期：2026-08-22  
-状态：`research_only / principal_review_pending / not_frontend_ready`。
+状态：`research_only / W2D-CL007_interpretive_position_principal_confirmed / other_items_pending / not_frontend_ready`。
 
 ## 1. 审计对象与计数
 
@@ -29,7 +29,9 @@ S0×A0 的 54 个直接组织配对中，**36 个**满足本轮 `audited_public_
 
 ### 真正闭合的是共同制度接口
 
-DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边是 Okinawa Dugong 诉讼的被告／问责对象。它说明两套组织生态围绕同一制度核心运作，但**不是 USO Okinawa 与 Earthjustice／CBD／TIRN 的组织桥**，也不能把全国 USD 72m award 分配给冲绳。
+DoD／WHS 一边是 USO 全国 `HQ00342310002` prime award 的 awarding/funding agency，公开记录的 USD 72m 是全国 award 的累计 obligation；DoD 另一边是 Okinawa Dugong 诉讼的被告／问责对象。它说明两套组织生态围绕同一制度核心运作，但**不是 USO Okinawa 与 Earthjustice／CBD／TIRN 的组织桥**，也不能把全国 award 分配给冲绳或改写成现金支出。
+
+2026-08-23，负责人已把 `W2D-CL007` 升为报告主发现。该决定只确认它在合成中的**解释性位置**：底层事实行及其审核状态不变，W2-F 仍 blocked，W2-G、中央写回和前端发布仍未授权。决定收据单独保存在 `principal_interpretive_overlay_v1.csv`。
 
 服务侧另有一条官方来源支持、但尚未过负责人审定的有向候选：**NMCRS→ARC**。它表示 NMCRS 委托 ARC 在非营业时段提供入口，并使用 NMCRS 资金；审定前不写成已确认服务中介。
 
@@ -53,6 +55,7 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 | `fig_bounded_bridge_egonet_v1.svg` / `.png` | 共同制度接口与两侧内部关系图及 QA 预览 |
 | `claim_table_v1.csv` | 可写／不可写的结论表 |
 | `principal_review_queue_v1.csv` | 负责人判断队列 |
+| `principal_interpretive_overlay_v1.csv` | W2D-CL007 的负责人解释性位置决定；不批准底层事实行 |
 | `source_receipts_v1.csv` | 官方与内部输入的 URL／哈希收据 |
 | `unexpected_findings_register_v1.csv` | 包内 `lead_only` 线索登记；本轮仅保留 19 列表头 |
 | `validation_report_v1.json` / `manifest_v1.json` | 验证与文件清单 |
@@ -65,7 +68,7 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 
 1. 是否接受 36 个 direct pair 的有界零措辞；
 2. W2-A 四组跨组织姓名候选和 A070 chapter／人物别名；
-3. DoD 是否作为独立 `system_interface` 层进入合成，而不进入 bridge 计数；
+3. **已决定（2026-08-23）**：DoD 作为独立 `system_interface` 层进入合成且不进入 bridge 计数；这是解释性位置决定，不改变底层事实审核；
 4. X018 是否在 actor admission 后进入新版本 S1 frame；
 5. 是否维持人物层 tracer egonet，而不做覆盖不足的全网中心性。
 6. 是否按 `NMCRS→ARC` 批准非营业时段入口／资金方向；批准前保持 candidate。
@@ -76,6 +79,7 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 - 不是人物网络、资助网络或 recipient 网络已经穷尽；
 - 不是共享地点／同场／共同资助方自动构成组织联盟；
 - 不是把 DoD award、诉讼角色或系统接口写成 NGO 间资金边；
+- 负责人对 `W2D-CL007` 的解释性升格，不是对其底层 award／case 行的人工事实批准，也不解除 W2-F 阻断；
 - 不是中央写回、publication adapter 或前端发布授权。
 
 ## 8. 复现

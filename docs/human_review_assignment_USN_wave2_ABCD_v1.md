@@ -2,7 +2,7 @@
 
 日期：2026-08-22
 
-状态：`assigned_to_principal / partial_return_recorded`。负责人已完成 HR-USN2-01、04、05 与 06b；人物消歧正式回传见 `docs/human_review_return_USN_wave2_person_disambiguation_v1.md`，其余已完成项见 `docs/human_review_return_USN_wave2_prerequisite_partial_v1.md`。尚未填写的项目仍待决定。本任务只处理会改变人物桥、recipient 端点、资金／服务关系语义、问责结果或跨生态表述的判断。原始逐行队列仍保存在 W2-A／B／C／D 各包的 `principal_review_queue_v1.csv`；本任务按阅读包合并展示，不删除任何原决定。
+状态：`assigned_to_principal / partial_return_recorded`。负责人已完成 HR-USN2-01、04、05、06b 与 13.1；人物消歧正式回传见 `docs/human_review_return_USN_wave2_person_disambiguation_v1.md`，其余已完成项见 `docs/human_review_return_USN_wave2_prerequisite_partial_v1.md`。2026-08-23 的解释决定见 `docs/us_presence_network_wave2_detective_checkpoint_v3.md`。尚未填写的项目仍待决定。本任务只处理会改变人物桥、recipient 端点、资金／服务关系语义、问责结果或跨生态表述的判断。原始逐行队列仍保存在 W2-A／B／C／D 各包的 `principal_review_queue_v1.csv`；本任务按阅读包合并展示，不删除任何原决定。
 
 ## 回传规则
 
@@ -84,6 +84,8 @@
 - Himawari：只判 `receipt_confirmation + courtesy_gratitude + reciprocal_exchange`；原件没有用途和 bridge 语言，不再拔高。
 
 边界：任何 LEG2 决定都不能生成 LEG3“合法性提升”。
+
+负责人解释决定（2026-08-23）：合法性线维持弱结论并在本期关闭。LEG0—LEG2 继续记录资源、叙事与地方回应类型，但“这些活动是否提高了对军事存在的接受或合法性”不再作为 W2-F 的开放判断；现有材料不足以证明该效果，LEG3 留待另设研究设计。
 
 ## HR-USN2-06：Marine Thrift Shop／MOSCO 新一手材料门
 
@@ -183,12 +185,12 @@
 
 请分别决定：
 
-1. DoD 是否单列 `system_interface`：对 USO 全国组织是 prime-award institution，对问责侧是被告／诉求对象；不计 NGO bridge；
+1. DoD 是否单列 `system_interface`：对 USO 全国组织是 prime-award institution，对问责侧是被告／诉求对象；不计 NGO bridge；**负责人已接受，并决定升为报告第一结构性发现。解释范围仅限 system-interface 位置，不批准底层 award／治理规则行为 human_checked，也不生成 DoD→USO Okinawa 资金边。**
 2. 人物层是否只做 tracer egonet，不做覆盖不足的全网中心性；
 3. Marine Thrift Shop（X018）是否继续留在 tracer，待 actor admission 和 S1 版本化；
 4. ARC Okinawa、NMCRS Okinawa、ACGO 的当前 roster／财务是否进入下一批当地／新一手材料任务。
 
-负责人决定：
+负责人决定：**13.1 `accept_system_interface_and_promote_main_finding`（2026-08-23）；13.2—13.4 仍待决定。**
 
 ## HR-USN2-14：三份信息公开请求审定与发送
 

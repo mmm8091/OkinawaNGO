@@ -4,7 +4,7 @@
 
 状态：`principal_checkpoint / research_only / W2-F_still_blocked / central_writeback=no / not_frontend_ready`
 
-历史状态说明：本页记录人物决定与公开规则层升格之前的侦察暂停。负责人后续决定及当前结构见 `docs/us_presence_network_wave2_detective_checkpoint_v2.md`；本页不据此回写原先的条件情景。
+历史状态说明：本页记录人物决定与公开规则层升格之前的侦察暂停。负责人后续决定及当前结构见 `docs/us_presence_network_wave2_detective_checkpoint_v3.md`；本页不据此回写原先的条件情景。
 
 ## 一、这轮侦察把问题推进到了哪里
 

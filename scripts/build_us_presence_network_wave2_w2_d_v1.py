@@ -723,7 +723,11 @@ def build_graph() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
             "Directed delegation/interface candidate: NMCRS funds and authority flow to ARC, which provides after-hours intake on NMCRS's behalf; pending principal review",
         ),
         ("USO_NATIONAL", "X001", "organization_hierarchy", "official_operating_structure", "W2B2-DE001:W2B2-DE004", "Hierarchy visible; local allocation not visible"),
-        ("DOD", "USO_NATIONAL", "official_award", "national_prime", "W2B-A006", "USD 72m national prime award; not Okinawa receipt"),
+        (
+            "DOD", "USO_NATIONAL", "official_award", "national_prime",
+            "W2B2-FA001;W2B-A021;W2B-A022;W2B-A024;W2B-A026;W2B-A032",
+            "USD 72m national cumulative obligation; not cash paid or Okinawa receipt",
+        ),
         ("A045", "R8C01", "case_role", "historical_human_checked", "R8R001", "Named plaintiff"),
         ("A086", "R8C01", "case_role", "historical_human_checked", "R8R002", "Named plaintiff"),
         ("A009", "R8C01", "case_role", "historical_human_checked", "R8R005", "Counsel"),
@@ -860,7 +864,12 @@ def build_claims(matrix: list[dict[str, object]]) -> list[dict[str, object]]:
         ("shared_funder", "not_testable_to_zero", "尚未确认共同资助方；Schedule B 匿名性和部分 Schedule I/资助方提取缺口使负面判断不可成立。", "source_family_actor_coverage_v1.csv", "未来若命中共同资助方，也只表示资源来源相交，不表示协调。"),
         ("same_event", "unresolved", "所审 2023–2025 记录没有确认 S0 与 A0 同一公开事件。", "negative_search_log_v1.csv", "事件材料不穷尽；共同出现也不升格为联盟。"),
         ("shared_place", "context_only", "中央 actor-place 表出现若干同地点编码，但缺少同一时间、行动或组织关系闭合。", "bridge_audit_matrix_v1.csv", "地点只作背景，绝不计入 bridge。"),
-        ("system_interface", "bounded_supported", "DoD 同时是 USO 全国 prime award 的拨款机构和儒艮诉讼中的被告／问责对象；这是同一驻军体系的共同制度端点。", "typed_egonet_edges_v1.csv", "这不是 USO Okinawa 与 Earthjustice/CBD/TIRN 的组织桥，也不把全国 award 分配到冲绳。"),
+        (
+            "system_interface", "bounded_supported",
+            "DoD／WHS 是 USO 全国 prime award 的 awarding/funding agency，公开记录的累计 obligation 为 USD 72m；DoD 同时是儒艮诉讼中的被告／问责对象。这是同一驻军体系的共同制度端点。",
+            "W2D-EG012;W2D-EG016;W2B-A024;R8C01",
+            "这是系统接口，不是 USO Okinawa 与 Earthjustice/CBD/TIRN 的组织桥；USD 72m 是全国 award 的累计 obligation，不是现金支出或冲绳分配。",
+        ),
         ("service_internal_structure", "bounded_with_pending_relation", "服务侧已确认 AWWA 伞状成员、反复输入与部分再分配；另有一条官方来源支持的有向候选：NMCRS 委托 ARC 提供非营业时段入口，并使用 NMCRS 资金，仍待负责人审定。", "W2-A/W2-B endpoint handoffs", "ARC—NMCRS 关系在审定前不得写成已确认服务中介；内部结构也不能自动解释政治立场、地方接受或合法性效果。"),
         ("ecology_screen", "exploratory_only", "S0×A1R 与 S0×A1C 的现行 typed-input screen 没有产生确认的跨侧组织桥，但没有完成逐 actor 的对称来源审计。", "relation_family_coverage_v1.csv", "不能把探索屏幕写成 41/36 actor 生态的零连接率。"),
         ("s1_status", "frame_gap", "Marine Thrift Shop 有充分的渠道 tracer 材料，但仍是 X018 admission/selection-frame 候选，不进入 S1 确认计数。", "W2-A handoff;integration plan hold", "不得用它悄悄扩充 S0/S1 分母。"),
@@ -902,10 +911,40 @@ def build_principal_queue() -> list[dict[str, object]]:
                 "recommended_decision": recommendation,
                 "impact_if_unresolved": impact,
                 "priority": "P0" if index <= 5 else "P1",
-                "decision_status": "principal_review_pending",
+                "decision_status": "principal_confirmed" if topic == "shared_dod_interface" else "principal_review_pending",
             }
         )
         for index, (topic, question, recommendation, impact) in enumerate(items, 1)
+    ]
+
+
+def build_principal_interpretive_overlay() -> list[dict[str, object]]:
+    """Record the principal's synthesis decision without approving underlying fact rows."""
+    return [
+        {
+            "decision_id": "W2D-ID001",
+            "decision_date": "2026-08-23",
+            "principal": "project_principal_user",
+            "target_claim_id": "W2D-CL007",
+            "decision_status": "principal_confirmed",
+            "review_scope": "interpretive_position_only",
+            "approved_position": "report_main_finding",
+            "approved_wording": (
+                "DoD／WHS 是 USO 全国 prime award 的 awarding/funding agency，公开记录的累计 obligation 为 USD 72m；"
+                "DoD 同时是儒艮诉讼中的被告／问责对象。这是同一驻军体系的共同制度端点。"
+            ),
+            "evidence_refs": "W2D-EG012;W2D-EG016;W2B-A024;R8C01",
+            "interpretation_limit": (
+                "解释性升格不批准底层事实行，不把系统接口写成 NGO 桥、USO Okinawa 收款、全生态中心性或合法性效果。"
+            ),
+            "underlying_fact_rows_approved": "no",
+            "underlying_fact_review_status": "unchanged",
+            "w2f_status": "blocked",
+            "w2g_status": "not_authorized",
+            "package_scope": "research_only",
+            "frontend_status": "not_frontend_ready",
+            "central_writeback": "no",
+        }
     ]
 
 
@@ -951,8 +990,18 @@ def build_source_receipts() -> list[dict[str, object]]:
         ("Current typed relations", ROOT / "data" / "interim" / "15_funding_or_support_edges_sample_v0.csv"),
         ("Current actor-place", ROOT / "data" / "interim" / "08_actor_place_edges_initial_v0.csv"),
         ("Current actor-event", ROOT / "data" / "interim" / "09_actor_event_venue_edges_v0.csv"),
+        ("W2-00 anchor ledger", OUT.parent / "us_presence_network_wave2_w2_00_v1" / "anchor_ledger_v1.csv"),
+        ("W2-B federal award audit", OUT.parent / "us_presence_network_wave2_w2_b_v1" / "federal_award_allocation_audit_v1.csv"),
     ]
     for title, path in internal:
+        exact_locator = "whole controlled input"
+        supports_row_ids = "W2-D package"
+        if title == "W2-00 anchor ledger":
+            exact_locator = "rows W2B-A021;W2B-A022;W2B-A024;W2B-A026;W2B-A032"
+            supports_row_ids = "W2D-EG012;W2D-CL007"
+        elif title == "W2-B federal award audit":
+            exact_locator = "row W2B2-FA001"
+            supports_row_ids = "W2D-EG012"
         rows.append(
             common(
                 {
@@ -965,8 +1014,8 @@ def build_source_receipts() -> list[dict[str, object]]:
                     "artifact_path": str(path.relative_to(ROOT)).replace("\\", "/"),
                     "sha256": sha256(path),
                     "mime_type": "text/csv",
-                    "exact_locator": "whole controlled input",
-                    "supports_row_ids": "W2-D package",
+                    "exact_locator": exact_locator,
+                    "supports_row_ids": supports_row_ids,
                     "archive_status": "internal_hashed_reference",
                     "notes": "Referenced in place; source package remains immutable.",
                 }
@@ -980,7 +1029,7 @@ def build_readme(counts: dict[str, int]) -> str:
     return f"""# W2-D Bridge audit v1
 
 日期：2026-08-22  
-状态：`research_only / principal_review_pending / not_frontend_ready`。
+状态：`research_only / W2D-CL007_interpretive_position_principal_confirmed / other_items_pending / not_frontend_ready`。
 
 ## 1. 审计对象与计数
 
@@ -1008,7 +1057,9 @@ S0×A0 的 54 个直接组织配对中，**36 个**满足本轮 `audited_public_
 
 ### 真正闭合的是共同制度接口
 
-DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边是 Okinawa Dugong 诉讼的被告／问责对象。它说明两套组织生态围绕同一制度核心运作，但**不是 USO Okinawa 与 Earthjustice／CBD／TIRN 的组织桥**，也不能把全国 USD 72m award 分配给冲绳。
+DoD／WHS 一边是 USO 全国 `HQ00342310002` prime award 的 awarding/funding agency，公开记录的 USD 72m 是全国 award 的累计 obligation；DoD 另一边是 Okinawa Dugong 诉讼的被告／问责对象。它说明两套组织生态围绕同一制度核心运作，但**不是 USO Okinawa 与 Earthjustice／CBD／TIRN 的组织桥**，也不能把全国 award 分配给冲绳或改写成现金支出。
+
+2026-08-23，负责人已把 `W2D-CL007` 升为报告主发现。该决定只确认它在合成中的**解释性位置**：底层事实行及其审核状态不变，W2-F 仍 blocked，W2-G、中央写回和前端发布仍未授权。决定收据单独保存在 `principal_interpretive_overlay_v1.csv`。
 
 服务侧另有一条官方来源支持、但尚未过负责人审定的有向候选：**NMCRS→ARC**。它表示 NMCRS 委托 ARC 在非营业时段提供入口，并使用 NMCRS 资金；审定前不写成已确认服务中介。
 
@@ -1032,6 +1083,7 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 | `fig_bounded_bridge_egonet_v1.svg` / `.png` | 共同制度接口与两侧内部关系图及 QA 预览 |
 | `claim_table_v1.csv` | 可写／不可写的结论表 |
 | `principal_review_queue_v1.csv` | 负责人判断队列 |
+| `principal_interpretive_overlay_v1.csv` | W2D-CL007 的负责人解释性位置决定；不批准底层事实行 |
 | `source_receipts_v1.csv` | 官方与内部输入的 URL／哈希收据 |
 | `unexpected_findings_register_v1.csv` | 包内 `lead_only` 线索登记；本轮仅保留 19 列表头 |
 | `validation_report_v1.json` / `manifest_v1.json` | 验证与文件清单 |
@@ -1044,7 +1096,7 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 
 1. 是否接受 36 个 direct pair 的有界零措辞；
 2. W2-A 四组跨组织姓名候选和 A070 chapter／人物别名；
-3. DoD 是否作为独立 `system_interface` 层进入合成，而不进入 bridge 计数；
+3. **已决定（2026-08-23）**：DoD 作为独立 `system_interface` 层进入合成且不进入 bridge 计数；这是解释性位置决定，不改变底层事实审核；
 4. X018 是否在 actor admission 后进入新版本 S1 frame；
 5. 是否维持人物层 tracer egonet，而不做覆盖不足的全网中心性。
 6. 是否按 `NMCRS→ARC` 批准非营业时段入口／资金方向；批准前保持 candidate。
@@ -1055,6 +1107,7 @@ DoD 一边是 USO 全国 `HQ00342310002` prime award 的拨款机构，另一边
 - 不是人物网络、资助网络或 recipient 网络已经穷尽；
 - 不是共享地点／同场／共同资助方自动构成组织联盟；
 - 不是把 DoD award、诉讼角色或系统接口写成 NGO 间资金边；
+- 负责人对 `W2D-CL007` 的解释性升格，不是对其底层 award／case 行的人工事实批准，也不解除 W2-F 阻断；
 - 不是中央写回、publication adapter 或前端发布授权。
 
 ## 8. 复现
@@ -1070,9 +1123,18 @@ python scripts/validate_research_work_package_v1.py outputs/us_presence_network_
 def validate(
     s0: dict[str, str], a0: dict[str, str], a1r: dict[str, str], a1c: dict[str, str],
     matrix: list[dict[str, object]], source_audit: list[dict[str, object]],
-    graph_edges: list[dict[str, object]], receipts: list[dict[str, object]],
+    graph_edges: list[dict[str, object]], claims: list[dict[str, object]],
+    principal: list[dict[str, object]], principal_overlay: list[dict[str, object]],
+    receipts: list[dict[str, object]],
     protected_before: dict[str, str],
 ) -> dict[str, object]:
+    edge_by_id = {str(row["edge_id"]): row for row in graph_edges}
+    claim_by_id = {str(row["claim_id"]): row for row in claims}
+    principal_by_id = {str(row["review_item_id"]): row for row in principal}
+    receipt_by_title = {str(row["title"]): row for row in receipts}
+    eg012_refs = set(str(edge_by_id["W2D-EG012"]["source_refs"]).split(";"))
+    cl007_refs = set(str(claim_by_id["W2D-CL007"]["evidence_refs"]).split(";"))
+    overlay = principal_overlay[0] if len(principal_overlay) == 1 else {}
     checks: dict[str, bool] = {
         "s0_exact_9": len(s0) == 9,
         "a0_exact_6": len(a0) == 6,
@@ -1097,6 +1159,42 @@ def validate(
         "shared_funder_never_coordination": all("coordination" not in str(row["reason"]).lower() for row in matrix if row["relation_family"] == "shared_funder_or_sponsor"),
         "graph_no_direct_s0_a0_actor_edge": not any(row["counts_as_cross_ecology_actor_bridge"] == "yes" for row in graph_edges),
         "dod_interface_not_bridge": all(row["counts_as_cross_ecology_actor_bridge"] == "no" for row in graph_edges if "DOD" in {row["source_node_id"], row["target_node_id"]}),
+        "eg012_uses_award_anchors_not_form990_revenue": (
+            "W2B2-FA001" in eg012_refs
+            and {"W2B-A021", "W2B-A022", "W2B-A024", "W2B-A026", "W2B-A032"}.issubset(eg012_refs)
+            and "W2B-A006" not in eg012_refs
+        ),
+        "cl007_evidence_chain_exact": cl007_refs == {"W2D-EG012", "W2D-EG016", "W2B-A024", "R8C01"},
+        "pr004_only_principal_confirmed": (
+            principal_by_id.get("W2D-PR004", {}).get("decision_status") == "principal_confirmed"
+            and all(
+                row["decision_status"] == "principal_review_pending"
+                for row in principal
+                if row["review_item_id"] != "W2D-PR004"
+            )
+        ),
+        "principal_overlay_interpretive_only": (
+            len(principal_overlay) == 1
+            and overlay.get("target_claim_id") == "W2D-CL007"
+            and overlay.get("decision_status") == "principal_confirmed"
+            and overlay.get("review_scope") == "interpretive_position_only"
+            and overlay.get("approved_position") == "report_main_finding"
+            and overlay.get("underlying_fact_rows_approved") == "no"
+            and overlay.get("underlying_fact_review_status") == "unchanged"
+            and overlay.get("w2f_status") == "blocked"
+            and overlay.get("w2g_status") == "not_authorized"
+            and overlay.get("package_scope") == "research_only"
+            and overlay.get("frontend_status") == "not_frontend_ready"
+            and overlay.get("central_writeback") == "no"
+        ),
+        "award_input_receipts_hashed_and_scoped": (
+            receipt_by_title.get("W2-00 anchor ledger", {}).get("supports_row_ids") == "W2D-EG012;W2D-CL007"
+            and receipt_by_title.get("W2-B federal award audit", {}).get("supports_row_ids") == "W2D-EG012"
+            and all(
+                receipt_by_title.get(title, {}).get("sha256")
+                for title in ("W2-00 anchor ledger", "W2-B federal award audit")
+            )
+        ),
         "receipt_hashes_valid": all((not row["artifact_path"]) or sha256(ROOT / str(row["artifact_path"])) == row["sha256"] for row in receipts),
         "protected_files_unchanged": all(sha256(Path(path)) == digest for path, digest in protected_before.items()),
     }
@@ -1127,6 +1225,7 @@ def main() -> None:
     graph_nodes, graph_edges = build_graph()
     claims = build_claims(matrix)
     principal = build_principal_queue()
+    principal_overlay = build_principal_interpretive_overlay()
     receipts = build_source_receipts()
 
     write_csv(OUT / "actor_window_observability_v1.csv", [
@@ -1179,6 +1278,12 @@ def main() -> None:
         "review_item_id", "topic", "question", "recommended_decision", "impact_if_unresolved", "priority",
         "decision_status", "review_status", "package_scope", "frontend_status", "central_writeback",
     ], principal)
+    write_csv(OUT / "principal_interpretive_overlay_v1.csv", [
+        "decision_id", "decision_date", "principal", "target_claim_id", "decision_status", "review_scope",
+        "approved_position", "approved_wording", "evidence_refs", "interpretation_limit",
+        "underlying_fact_rows_approved", "underlying_fact_review_status", "w2f_status", "w2g_status",
+        "package_scope", "frontend_status", "central_writeback",
+    ], principal_overlay)
     write_csv(OUT / "source_receipts_v1.csv", [
         "receipt_id", "publisher", "title", "source_family", "url", "retrieved_at", "artifact_path", "sha256",
         "mime_type", "exact_locator", "supports_row_ids", "archive_status", "notes", "review_status", "package_scope",
@@ -1195,7 +1300,10 @@ def main() -> None:
         "negative_search": len(negatives), "principal_queue": len(principal),
     }
     (OUT / "README.md").write_text(build_readme(counts), encoding="utf-8")
-    validation = validate(s0, a0, a1r, a1c, matrix, source_audit, graph_edges, receipts, protected_before)
+    validation = validate(
+        s0, a0, a1r, a1c, matrix, source_audit, graph_edges, claims,
+        principal, principal_overlay, receipts, protected_before,
+    )
     (OUT / "validation_report_v1.json").write_text(json.dumps(validation, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     manifest_files = [path for path in OUT.rglob("*") if path.is_file() and path.name != "manifest_v1.json"]

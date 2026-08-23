@@ -85,8 +85,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/claim_table_v1.csv",
-      "sha256": "2eecf0b0ddcb0c4f7ffbbd2b0c7349069ed70f47ccd1c9bc53606b84d7119b59",
-      "bytes": 3657
+      "sha256": "a17bc9dd7da9dfee72c3e5bd3a2f4f79c2c36cbcd7d7d60ec09937c941dde664",
+      "bytes": 3799
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/fig_bounded_bridge_egonet_v1.png",
@@ -109,14 +109,19 @@
       "bytes": 4882
     },
     {
+      "path": "outputs/us_presence_network_wave2_w2_d_v1/principal_interpretive_overlay_v1.csv",
+      "sha256": "85875b018da32b24bddc9ea0969a07e86281c2547035e76f718f0fd3408b8927",
+      "bytes": 870
+    },
+    {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/principal_review_queue_v1.csv",
-      "sha256": "d259df131d84dc6147a70f2e82cb437ff78a5a0bd8679c449fe9a7f00748dab1",
-      "bytes": 3104
+      "sha256": "3ea058a57d4ad0779a1b19cd5894eeed52cda94f5953f8e9f37ce3989ebdb052",
+      "bytes": 3099
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/README.md",
-      "sha256": "0c5b6f11f7e9be980a31ca371d411d8f6be5c6bfabcb9b5b3f33180f7e6dcdb5",
-      "bytes": 5723
+      "sha256": "16d95346014396290ef94d7aa9a31d21b43a18fabbe66149963be9ca0a27ba9e",
+      "bytes": 6517
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/relation_family_coverage_v1.csv",
@@ -130,13 +135,13 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/source_receipts_v1.csv",
-      "sha256": "f11254c9c2878af04f6642e61adefdc9cb2934863838ae963f0bc857a9c02b5a",
-      "bytes": 11640
+      "sha256": "3ecfe8b8740d57fa8e0b6b6f703e065fcbc3c32add01f16ae5d9d481d146e2e8",
+      "bytes": 12466
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/typed_egonet_edges_v1.csv",
-      "sha256": "ff29f726f042bafeb3c4fe9e0f7984909e7cecbe1e427db84a8a56e27a0fdc39",
-      "bytes": 3398
+      "sha256": "a1f1c6f670d6ff130c952bbefd32dd6c09562fcee12c48d56d4c0cae99f52535",
+      "bytes": 3468
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/typed_egonet_nodes_v1.csv",
@@ -150,8 +155,8 @@
     },
     {
       "path": "outputs/us_presence_network_wave2_w2_d_v1/validation_report_v1.json",
-      "sha256": "1e0f24a99c797a65dff2c16a80957ce1dcea88cf7d54570ef1f247cb16bac16d",
-      "bytes": 1309
+      "sha256": "a4dc88d09ff44462f49edd2d735d5b68f2e59d10362347f0cce40a3ce25916c2",
+      "bytes": 1557
     }
   ]
 }
